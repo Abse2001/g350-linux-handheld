@@ -2,7 +2,7 @@ import { Fragment } from "react"
 
 // Assign every automatically generated connection to a phase explicitly.
 // Signals first, broad power/ground connections last.
-const rails = new Set(["GND","V5V","V3V3","USB_5V","VBAT","VSYS","BOOST_SW"])
+const rails = new Set(["GND","V5V","V3V3","V_LCD3V3","USB_5V","VBAT","VSYS","BOOST_SW"])
 const controls = new Set(["SDA","SCL","CHARGING_N","BAT_ALERT_N","USB_GOOD_N"])
 export function Connections({name,connections}: {name:string,connections:Record<string,string>}) {
   return <Fragment>{Object.entries(connections).map(([pin,target])=> {

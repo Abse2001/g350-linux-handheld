@@ -16,11 +16,12 @@
     "snapshot:update": "tsci snapshot --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
-    "check:shorts": "tsci check shorts dist/index/circuit.json",
+    "check:shorts": "tsci check shorts dist/index/circuit.json --layer all",
     "fabrication": "node scripts/fabrication.mjs"
   },
   "devDependencies": {
-    "tscircuit": "0.0.2706",
+    "@tscircuit/capacity-autorouter": "0.0.951",
+    "tscircuit": "0.0.2709",
     "typescript": "5.9.3"
   },
   "author": "abse"

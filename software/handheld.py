@@ -8,7 +8,7 @@ from gpiozero import DigitalOutputDevice, DigitalInputDevice
 from smbus2 import SMBus
 
 BUTTONS = [e.BTN_DPAD_UP, e.BTN_DPAD_DOWN, e.BTN_DPAD_LEFT, e.BTN_DPAD_RIGHT,
-           e.BTN_SOUTH, e.BTN_EAST, e.BTN_NORTH, e.BTN_WEST,
+           e.BTN_EAST, e.BTN_SOUTH, e.BTN_NORTH, e.BTN_WEST,
            e.BTN_SELECT, e.BTN_START, e.BTN_MODE]
 MASK = (1 << len(BUTTONS)) - 1
 
@@ -22,7 +22,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
     # Physical J8 37 = BCM26. GPIO default low suppresses boot noise.
     with DigitalOutputDevice(26, initial_value=False) as amplifier, \
-         DigitalInputDevice(5, pull_up=None) as charging, \
+         DigitalInputDevice(5, pull_up=None, active_state=False) as charging, \
          SMBus(1) as bus, \
          UInput({e.EV_KEY: BUTTONS}, name="G350 front controls") as gamepad:
         # Reset power-on BANK=0 configuration; internal pullups yield active-low keys.
@@ -30,7 +30,7 @@ def main():
         bus.write_byte_data(0x20, 0x00, 0xFF)
         bus.write_byte_data(0x20, 0x01, 0xFF)
         bus.write_byte_data(0x20, 0x0C, 0xFF)
-        bus.write_byte_data(0x20, 0x0D, 0x07)
+        bus.write_byte_data(0x20, 0x0D, 0xFF)
         stable = candidate = 0
         changed_at = last_battery = time.monotonic()
         amplifier.on()
@@ -50,7 +50,7 @@ def main():
                     stable = candidate
                 if now - last_battery >= 30:
                     v = voltage(bus)
-                    logging.info("Battery %.3f V; charging=%s", v, not charging.value)
+                    logging.info("Battery %.3f V; charging=%s", v, charging.value)
                     if v < 3.2:
                         logging.warning("Low battery: exit your game and shut Linux down.")
                     last_battery = now
