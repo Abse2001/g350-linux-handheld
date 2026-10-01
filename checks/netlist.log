@@ -1,0 +1,731 @@
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - J_PI: 2x20 2.54mm GPIO ribbon header
+ - U_AUDIO: MAX98357AETE+T
+ - C_AUDIO_HF: 100nF capacitor
+ - C_AUDIO_BULK: 10uF capacitor
+ - R_AUDIO_EN: 1kΩ resistor
+ - R_AUDIO_PD: 100kΩ resistor
+ - J_SPEAKER: J_SPEAKER, source_component
+ - J_USB: TYPE-C-31-M-12
+ - U_CHARGE: BQ24074RGTR
+ - J_BAT: J_BAT, source_component
+ - U_BOOST: TPS61023DRLR
+ - L_BOOST: L_BOOST, source_component
+ - J_OFF: J_OFF, source_component
+ - R_CC1: 5.1kΩ resistor
+ - R_CC2: 5.1kΩ resistor
+ - R_ISET: 3.3kΩ resistor
+ - R_ILIM: 3.3kΩ resistor
+ - R_TIMER: 68kΩ resistor
+ - R_EN: 100kΩ resistor
+ - R_FB_HI: 732kΩ resistor
+ - R_FB_LO: 100kΩ resistor
+ - R_CHG_PULL: 100kΩ resistor
+ - R_GOOD_PULL: 100kΩ resistor
+ - R_ALERT_PULL: 100kΩ resistor
+ - C_USB: 1uF capacitor
+ - C_BAT: 10uF capacitor
+ - C_SYS: 10uF capacitor
+ - C_BOOST_IN: 10uF capacitor
+ - C_BOOST_OUT1: 22uF capacitor
+ - C_BOOST_OUT2: 22uF capacitor
+ - C_FEEDFORWARD: 220pF capacitor
+ - C_GAUGE: 100nF capacitor
+ - U_GAUGE: MAX17048G+T10
+ - J_LCD: J_LCD, source_component
+ - U_KEYS: MCP23017-E/SO
+ - R_RESET: 10kΩ resistor
+ - C_KEYS: 100nF capacitor
+ - C_KEYS_BULK: 10uF capacitor
+ - SW_UP: SW_UP, source_component
+ - SW_DOWN: SW_DOWN, source_component
+ - SW_LEFT: SW_LEFT, source_component
+ - SW_RIGHT: SW_RIGHT, source_component
+ - SW_A: SW_A, source_component
+ - SW_B: SW_B, source_component
+ - SW_X: SW_X, source_component
+ - SW_Y: SW_Y, source_component
+ - SW_SELECT: SW_SELECT, source_component
+ - SW_START: SW_START, source_component
+ - SW_MENU: SW_MENU, source_component
+ - TP_GND: TP_GND, source_component
+ - TP_5V: TP_5V, source_component
+ - TP_3V3: TP_3V3, source_component
+
+NET: I2S_DIN
+  - U_AUDIO DIN
+  - J_PI J8_40
+
+NET: I2S_BCLK
+  - U_AUDIO BCLK
+  - J_PI J8_12
+
+NET: I2S_LRCLK
+  - U_AUDIO LRCLK
+  - J_PI J8_35
+
+NET: AMP_ENABLE
+  - R_AUDIO_EN pin1
+  - J_PI J8_37
+
+NET: U_AUDIO_N_SD_MODE
+  - R_AUDIO_PD pin1
+  - R_AUDIO_EN pin2
+  - U_AUDIO N_SD_MODE
+
+NET: U_AUDIO_OUTP
+  - J_SPEAKER pin1
+  - U_AUDIO OUTP
+
+NET: U_AUDIO_OUTN
+  - J_SPEAKER pin2
+  - U_AUDIO OUTN
+
+NET: U_CHARGE_TS
+  - U_CHARGE TS
+  - J_BAT pin3
+
+NET: BOOST_SW
+  - L_BOOST pin2 (-)
+  - U_BOOST SW
+
+NET: R_CC1_pos
+  - R_CC1 pin1
+  - J_USB A5
+
+NET: R_CC2_pos
+  - R_CC2 pin1
+  - J_USB B5
+
+NET: U_CHARGE_ISET
+  - R_ISET pin1
+  - U_CHARGE ISET
+
+NET: U_CHARGE_ILIM
+  - R_ILIM pin1
+  - U_CHARGE ILIM
+
+NET: U_CHARGE_TMR
+  - R_TIMER pin1
+  - U_CHARGE TMR
+
+NET: U_BOOST_EN
+  - R_EN pin2
+  - J_OFF pin1
+  - U_BOOST EN
+
+NET: CHARGING_N
+  - R_CHG_PULL pin2
+  - U_CHARGE N_CHG
+  - J_PI J8_29
+
+NET: USB_GOOD_N
+  - R_GOOD_PULL pin2
+  - U_CHARGE N_PGOOD
+  - J_PI J8_32
+
+NET: USB_5V
+  - C_USB pin1 (+)
+  - U_CHARGE IN
+  - J_USB A4B9
+  - J_USB B4A9
+
+NET: VSYS
+  - C_BOOST_IN pin1 (+)
+  - C_SYS pin1 (+)
+  - R_EN pin1
+  - L_BOOST pin1 (+)
+  - U_BOOST VIN
+  - U_CHARGE EN1
+  - U_CHARGE OUT2
+  - U_CHARGE OUT1
+
+NET: FB
+  - C_FEEDFORWARD pin2 (-)
+  - R_FB_LO pin1
+  - R_FB_HI pin2
+  - U_BOOST FB
+
+NET: VBAT
+  - U_GAUGE VDD
+  - U_GAUGE CELL
+  - C_GAUGE pin1 (+)
+  - C_BAT pin1 (+)
+  - J_BAT pin1
+  - U_CHARGE BAT2
+  - U_CHARGE BAT1
+
+NET: BAT_ALERT_N
+  - U_GAUGE N_ALRT
+  - R_ALERT_PULL pin2
+  - J_PI J8_31
+
+NET: TOUCH_CS
+  - J_LCD pin2
+  - J_PI J8_26
+
+NET: LCD_BL
+  - J_LCD pin3
+  - J_PI J8_16
+
+NET: LCD_RESET
+  - J_LCD pin4
+  - J_PI J8_13
+
+NET: LCD_DC
+  - J_LCD pin5
+  - J_PI J8_15
+
+NET: LCD_CS
+  - J_LCD pin6
+  - J_PI J8_24
+
+NET: SPI_SCLK
+  - J_LCD pin7
+  - J_PI J8_23
+
+NET: SPI_MOSI
+  - J_LCD pin8
+  - J_PI J8_19
+
+NET: SPI_MISO
+  - J_LCD pin9
+  - J_PI J8_21
+
+NET: SDA
+  - U_KEYS SDA
+  - U_GAUGE SDA
+  - J_PI J8_3
+
+NET: SCL
+  - U_KEYS SCL
+  - U_GAUGE SCL
+  - J_PI J8_5
+
+NET: U_KEYS_N_RESET
+  - R_RESET pin1
+  - U_KEYS N_RESET
+
+NET: SW_UP_A
+  - SW_UP A
+  - SW_UP B
+  - U_KEYS GPA0
+
+NET: SW_DOWN_A
+  - SW_DOWN A
+  - SW_DOWN B
+  - U_KEYS GPA1
+
+NET: SW_LEFT_A
+  - SW_LEFT A
+  - SW_LEFT B
+  - U_KEYS GPA2
+
+NET: SW_RIGHT_A
+  - SW_RIGHT A
+  - SW_RIGHT B
+  - U_KEYS GPA3
+
+NET: SW_A_A
+  - SW_A A
+  - SW_A B
+  - U_KEYS GPA4
+
+NET: SW_B_A
+  - SW_B A
+  - SW_B B
+  - U_KEYS GPA5
+
+NET: SW_X_A
+  - SW_X A
+  - SW_X B
+  - U_KEYS GPA6
+
+NET: SW_Y_A
+  - SW_Y A
+  - SW_Y B
+  - U_KEYS GPA7
+
+NET: SW_SELECT_A
+  - SW_SELECT A
+  - SW_SELECT B
+  - U_KEYS GPB0
+
+NET: SW_START_A
+  - SW_START A
+  - SW_START B
+  - U_KEYS GPB1
+
+NET: SW_MENU_A
+  - SW_MENU A
+  - SW_MENU B
+  - U_KEYS GPB2
+
+NET: GND
+  - TP_GND pin1
+  - SW_MENU C
+  - SW_MENU D
+  - SW_START C
+  - SW_START D
+  - SW_SELECT C
+  - SW_SELECT D
+  - SW_Y C
+  - SW_Y D
+  - SW_X C
+  - SW_X D
+  - SW_B C
+  - SW_B D
+  - SW_A C
+  - SW_A D
+  - SW_RIGHT C
+  - SW_RIGHT D
+  - SW_LEFT C
+  - SW_LEFT D
+  - SW_DOWN C
+  - SW_DOWN D
+  - SW_UP C
+  - SW_UP D
+  - C_KEYS_BULK pin2 (-)
+  - C_KEYS pin2 (-)
+  - U_KEYS A2
+  - U_KEYS A1
+  - U_KEYS A0
+  - U_KEYS VSS
+  - J_LCD pin10
+  - U_GAUGE QSTRT
+  - U_GAUGE EP
+  - U_GAUGE GND
+  - U_GAUGE CTG
+  - C_GAUGE pin2 (-)
+  - C_BOOST_OUT2 pin2 (-)
+  - C_BOOST_OUT1 pin2 (-)
+  - C_BOOST_IN pin2 (-)
+  - C_SYS pin2 (-)
+  - C_BAT pin2 (-)
+  - C_USB pin2 (-)
+  - R_FB_LO pin2
+  - R_TIMER pin2
+  - R_ILIM pin2
+  - R_ISET pin2
+  - R_CC2 pin2
+  - R_CC1 pin2
+  - J_OFF pin2
+  - U_BOOST GND
+  - J_BAT pin2
+  - U_CHARGE EP
+  - U_CHARGE VSS
+  - U_CHARGE EN2
+  - U_CHARGE N_CE
+  - J_USB EH4
+  - J_USB EH3
+  - J_USB EH2
+  - J_USB EH1
+  - J_USB B1A12
+  - J_USB A1B12
+  - R_AUDIO_PD pin2
+  - C_AUDIO_BULK pin2 (-)
+  - C_AUDIO_HF pin2 (-)
+  - U_AUDIO EP
+  - U_AUDIO GND3
+  - U_AUDIO GND2
+  - U_AUDIO GND1
+  - J_PI J8_39
+  - J_PI J8_34
+  - J_PI J8_30
+  - J_PI J8_25
+  - J_PI J8_20
+  - J_PI J8_14
+  - J_PI J8_9
+  - J_PI J8_6
+
+NET: V5V
+  - TP_5V pin1
+  - J_LCD pin11
+  - C_FEEDFORWARD pin1 (+)
+  - C_BOOST_OUT2 pin1 (+)
+  - C_BOOST_OUT1 pin1 (+)
+  - R_FB_HI pin1
+  - U_BOOST VOUT
+  - C_AUDIO_BULK pin1 (+)
+  - C_AUDIO_HF pin1 (+)
+  - U_AUDIO GAIN_SLOT
+  - U_AUDIO VDD2
+  - U_AUDIO VDD1
+  - J_PI J8_4
+  - J_PI J8_2
+
+NET: V3V3
+  - TP_3V3 pin1
+  - C_KEYS_BULK pin1 (+)
+  - C_KEYS pin1 (+)
+  - R_RESET pin2
+  - U_KEYS VDD
+  - R_ALERT_PULL pin1
+  - R_GOOD_PULL pin1
+  - R_CHG_PULL pin1
+  - J_PI J8_17
+  - J_PI J8_1
+
+
+COMPONENT_PINS:
+J_PI (2x20 2.54mm GPIO ribbon header)
+- pin1(J8_1): NETS(V3V3)
+- pin2(J8_2): NETS(V5V)
+- pin3(J8_3): NETS(SDA)
+- pin4(J8_4): NETS(V5V)
+- pin5(J8_5): NETS(SCL)
+- pin6(J8_6): NETS(GND)
+- pin7(J8_7): NOT_CONNECTED
+- pin8(J8_8): NOT_CONNECTED
+- pin9(J8_9): NETS(GND)
+- pin10(J8_10): NOT_CONNECTED
+- pin11(J8_11): NOT_CONNECTED
+- pin12(J8_12): NETS(I2S_BCLK)
+- pin13(J8_13): NETS(LCD_RESET)
+- pin14(J8_14): NETS(GND)
+- pin15(J8_15): NETS(LCD_DC)
+- pin16(J8_16): NETS(LCD_BL)
+- pin17(J8_17): NETS(V3V3)
+- pin18(J8_18): NOT_CONNECTED
+- pin19(J8_19): NETS(SPI_MOSI)
+- pin20(J8_20): NETS(GND)
+- pin21(J8_21): NETS(SPI_MISO)
+- pin22(J8_22): NOT_CONNECTED
+- pin23(J8_23): NETS(SPI_SCLK)
+- pin24(J8_24): NETS(LCD_CS)
+- pin25(J8_25): NETS(GND)
+- pin26(J8_26): NETS(TOUCH_CS)
+- pin27(J8_27): NOT_CONNECTED
+- pin28(J8_28): NOT_CONNECTED
+- pin29(J8_29): NETS(CHARGING_N)
+- pin30(J8_30): NETS(GND)
+- pin31(J8_31): NETS(BAT_ALERT_N)
+- pin32(J8_32): NETS(USB_GOOD_N)
+- pin33(J8_33): NOT_CONNECTED
+- pin34(J8_34): NETS(GND)
+- pin35(J8_35): NETS(I2S_LRCLK)
+- pin36(J8_36): NOT_CONNECTED
+- pin37(J8_37): NETS(AMP_ENABLE)
+- pin38(J8_38): NOT_CONNECTED
+- pin39(J8_39): NETS(GND)
+- pin40(J8_40): NETS(I2S_DIN)
+
+U_AUDIO (MAX98357AETE+T)
+- pin1(DIN): NETS(I2S_DIN)
+- pin2(GAIN_SLOT): NETS(V5V)
+- pin3(GND1): NETS(GND)
+- pin4(N_SD_MODE): NETS(U_AUDIO_N_SD_MODE)
+- pin5: NOT_CONNECTED
+- pin6: NOT_CONNECTED
+- pin7(VDD1): NETS(V5V)
+- pin8(VDD2): NETS(V5V)
+- pin9(OUTP): NETS(U_AUDIO_OUTP)
+- pin10(OUTN): NETS(U_AUDIO_OUTN)
+- pin11(GND2): NETS(GND)
+- pin12: NOT_CONNECTED
+- pin13: NOT_CONNECTED
+- pin14(LRCLK): NETS(I2S_LRCLK)
+- pin15(GND3): NETS(GND)
+- pin16(BCLK): NETS(I2S_BCLK)
+- pin17(EP): NETS(GND)
+
+C_AUDIO_HF (100nF undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_AUDIO_BULK (10uF undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_AUDIO_EN (1kΩ undefined)
+- pin1(anode, pos, left): NETS(AMP_ENABLE)
+- pin2(cathode, neg, right): NETS(U_AUDIO_N_SD_MODE)
+
+R_AUDIO_PD (100kΩ undefined)
+- pin1(anode, pos, left): NETS(U_AUDIO_N_SD_MODE)
+- pin2(cathode, neg, right): NETS(GND)
+
+J_SPEAKER (1x2 2.54mm speaker harness)
+- pin1: NETS(U_AUDIO_OUTP)
+- pin2: NETS(U_AUDIO_OUTN)
+
+J_USB (TYPE-C-31-M-12)
+- pin1(EH2): NETS(GND)
+- pin2(EH1): NETS(GND)
+- pin3(EH4): NETS(GND)
+- pin4(EH3): NETS(GND)
+- pin5(B8, SBU2): NOT_CONNECTED
+- pin6(A5, CC1): NETS(R_CC1_pos)
+- pin7(B7, DN2): NOT_CONNECTED
+- pin8(A6, DP1): NOT_CONNECTED
+- pin9(A7, DN1): NOT_CONNECTED
+- pin10(B6, DP2): NOT_CONNECTED
+- pin11(A8, SBU1): NOT_CONNECTED
+- pin12(B5, CC2): NETS(R_CC2_pos)
+- pin13(A1B12, GND1): NETS(GND)
+- pin14(B1A12, GND2): NETS(GND)
+- pin15(B4A9, VBUS1): NETS(USB_5V)
+- pin16(A4B9, VBUS2): NETS(USB_5V)
+
+U_CHARGE (BQ24074RGTR)
+- pin1(TS): NETS(U_CHARGE_TS)
+- pin2(BAT1): NETS(VBAT)
+- pin3(BAT2): NETS(VBAT)
+- pin4(N_CE): NETS(GND)
+- pin5(EN2): NETS(GND)
+- pin6(EN1): NETS(VSYS)
+- pin7(N_PGOOD): NETS(USB_GOOD_N)
+- pin8(VSS): NETS(GND)
+- pin9(N_CHG): NETS(CHARGING_N)
+- pin10(OUT1): NETS(VSYS)
+- pin11(OUT2): NETS(VSYS)
+- pin12(ILIM): NETS(U_CHARGE_ILIM)
+- pin13(IN): NETS(USB_5V)
+- pin14(TMR): NETS(U_CHARGE_TMR)
+- pin15(ITERM): NOT_CONNECTED
+- pin16(ISET): NETS(U_CHARGE_ISET)
+- pin17(EP): NETS(GND)
+
+J_BAT (1x3 2.54mm protected 1S battery + NTC harness)
+- pin1: NETS(VBAT)
+- pin2: NETS(GND)
+- pin3: NETS(U_CHARGE_TS)
+
+U_BOOST (TPS61023DRLR)
+- pin1(FB): NETS(FB)
+- pin2(EN): NETS(U_BOOST_EN)
+- pin3(VIN): NETS(VSYS)
+- pin4(GND): NETS(GND)
+- pin5(SW): NETS(BOOST_SW)
+- pin6(VOUT): NETS(V5V)
+
+L_BOOST (WPN252012E1R0MT)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(BOOST_SW)
+
+J_OFF (1x2 2.54mm slide-switch harness)
+- pin1: NETS(U_BOOST_EN)
+- pin2: NETS(GND)
+
+R_CC1 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(R_CC1_pos)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_CC2 (5.1kΩ undefined)
+- pin1(anode, pos, left): NETS(R_CC2_pos)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_ISET (3.3kΩ undefined)
+- pin1(anode, pos, left): NETS(U_CHARGE_ISET)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_ILIM (3.3kΩ undefined)
+- pin1(anode, pos, left): NETS(U_CHARGE_ILIM)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_TIMER (68kΩ undefined)
+- pin1(anode, pos, left): NETS(U_CHARGE_TMR)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_EN (100kΩ undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(U_BOOST_EN)
+
+R_FB_HI (732kΩ undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(FB)
+
+R_FB_LO (100kΩ undefined)
+- pin1(anode, pos, left): NETS(FB)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_CHG_PULL (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(CHARGING_N)
+
+R_GOOD_PULL (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(USB_GOOD_N)
+
+R_ALERT_PULL (100kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(BAT_ALERT_N)
+
+C_USB (1uF undefined)
+- pin1(anode, pos, left): NETS(USB_5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_BAT (10uF undefined)
+- pin1(anode, pos, left): NETS(VBAT)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_SYS (10uF undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_BOOST_IN (10uF undefined)
+- pin1(anode, pos, left): NETS(VSYS)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_BOOST_OUT1 (22uF undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_BOOST_OUT2 (22uF undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_FEEDFORWARD (220pF undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(FB)
+
+C_GAUGE (100nF undefined)
+- pin1(anode, pos, left): NETS(VBAT)
+- pin2(cathode, neg, right): NETS(GND)
+
+U_GAUGE (MAX17048G+T10)
+- pin1(CTG): NETS(GND)
+- pin2(CELL): NETS(VBAT)
+- pin3(VDD): NETS(VBAT)
+- pin4(GND): NETS(GND)
+- pin5(N_ALRT): NETS(BAT_ALERT_N)
+- pin6(QSTRT): NETS(GND)
+- pin7(SCL): NETS(SCL)
+- pin8(SDA): NETS(SDA)
+- pin9(EP): NETS(GND)
+
+J_LCD (1x11 2.54mm display harness header)
+- pin1: NOT_CONNECTED
+- pin2: NETS(TOUCH_CS)
+- pin3: NETS(LCD_BL)
+- pin4: NETS(LCD_RESET)
+- pin5: NETS(LCD_DC)
+- pin6: NETS(LCD_CS)
+- pin7: NETS(SPI_SCLK)
+- pin8: NETS(SPI_MOSI)
+- pin9: NETS(SPI_MISO)
+- pin10: NETS(GND)
+- pin11: NETS(V5V)
+
+U_KEYS (MCP23017-E/SO)
+- pin1(GPB0): NETS(SW_SELECT_A)
+- pin2(GPB1): NETS(SW_START_A)
+- pin3(GPB2): NETS(SW_MENU_A)
+- pin4(GPB3): NOT_CONNECTED
+- pin5(GPB4): NOT_CONNECTED
+- pin6(GPB5): NOT_CONNECTED
+- pin7(GPB6): NOT_CONNECTED
+- pin8(GPB7): NOT_CONNECTED
+- pin9(VDD): NETS(V3V3)
+- pin10(VSS): NETS(GND)
+- pin11(NC1): NOT_CONNECTED
+- pin12(SCL): NETS(SCL)
+- pin13(SDA): NETS(SDA)
+- pin14(NC2): NOT_CONNECTED
+- pin15(A0): NETS(GND)
+- pin16(A1): NETS(GND)
+- pin17(A2): NETS(GND)
+- pin18(N_RESET): NETS(U_KEYS_N_RESET)
+- pin19(INTB): NOT_CONNECTED
+- pin20(INTA): NOT_CONNECTED
+- pin21(GPA0): NETS(SW_UP_A)
+- pin22(GPA1): NETS(SW_DOWN_A)
+- pin23(GPA2): NETS(SW_LEFT_A)
+- pin24(GPA3): NETS(SW_RIGHT_A)
+- pin25(GPA4): NETS(SW_A_A)
+- pin26(GPA5): NETS(SW_B_A)
+- pin27(GPA6): NETS(SW_X_A)
+- pin28(GPA7): NETS(SW_Y_A)
+
+R_RESET (10kΩ undefined)
+- pin1(anode, pos, left): NETS(U_KEYS_N_RESET)
+- pin2(cathode, neg, right): NETS(V3V3)
+
+C_KEYS (100nF undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_KEYS_BULK (10uF undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(GND)
+
+SW_UP (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_UP_A)
+- pin2(B): NETS(SW_UP_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_DOWN (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_DOWN_A)
+- pin2(B): NETS(SW_DOWN_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_LEFT (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_LEFT_A)
+- pin2(B): NETS(SW_LEFT_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_RIGHT (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_RIGHT_A)
+- pin2(B): NETS(SW_RIGHT_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_A (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_A_A)
+- pin2(B): NETS(SW_A_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_B (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_B_A)
+- pin2(B): NETS(SW_B_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_X (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_X_A)
+- pin2(B): NETS(SW_X_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_Y (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_Y_A)
+- pin2(B): NETS(SW_Y_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_SELECT (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_SELECT_A)
+- pin2(B): NETS(SW_SELECT_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_START (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_START_A)
+- pin2(B): NETS(SW_START_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+SW_MENU (TS-1187A-B-A-B)
+- pin1(A): NETS(SW_MENU_A)
+- pin2(B): NETS(SW_MENU_A)
+- pin3(C): NETS(GND)
+- pin4(D): NETS(GND)
+
+TP_GND
+- pin1: NETS(GND)
+
+TP_5V
+- pin1: NETS(V5V)
+
+TP_3V3
+- pin1: NETS(V3V3)
+

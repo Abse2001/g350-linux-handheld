@@ -1,0 +1,12 @@
+[Unit]
+Description=G350 front controls and battery monitor
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/opt/g350/venv/bin/python /opt/g350/handheld.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

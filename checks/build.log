@@ -1,0 +1,36 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/autorouter-debug/placement-unrouted.png
+Autorouting <board#850 /> phase 1/3 "CONTROLS" start: connections=16, obstacles=549, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=0f3db717/aa993e11
+  connections: SW_UP.A to U_KEYS.GPA0, SW_DOWN.A to U_KEYS.GPA1, SW_LEFT.A to U_KEYS.GPA2, SW_RIGHT.A to U_KEYS.GPA3, SW_A.A to U_KEYS.GPA4, SW_B.A to U_KEYS.GPA5, SW_X.A to U_KEYS.GPA6, SW_Y.A to U_KEYS.GPA7, SW_SELECT.A to U_KEYS.GPB0, SW_START.A to U_KEYS.GPB1, SW_MENU.A to U_KEYS.GPB2, net.SDA, net.SCL, net.CHARGING_N, net.BAT_ALERT_N, net.USB_GOOD_N
+Wrote debug artifact: dist/autorouter-debug/phase-0.input.simple-route.json
+  phase 1/3 "CONTROLS" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=433 elapsed=7.3s
+  phase 1/3 "CONTROLS" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=portPointPathingSolver steps=11 progress=44% iterations_per_second=15 elapsed=25.8s
+  phase 1/3 "CONTROLS" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=traceSimplificationSolver steps=27 progress=68% iterations_per_second=2446 elapsed=36.0s
+  phase 1/3 "CONTROLS" done: routed_traces=21, jumpers=0, errors=0, elapsed=45.6s
+Wrote debug artifact: dist/autorouter-debug/phase-0.output.traces.json
+Wrote debug artifact: dist/autorouter-debug/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/index-circuit-tsx-2e2764dae4/subcircuit_source_group_0-phase-0-order-0-stage-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 2/3 "DISPLAY_AUDIO" start: connections=28, obstacles=549, previous_traces=21, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=0f3db717/f09f5c14
+  connections: R_AUDIO_EN.pin2 to U_AUDIO.N_SD_MODE, R_AUDIO_PD.pin1 to U_AUDIO.N_SD_MODE, J_SPEAKER.pin1 to U_AUDIO.OUTP, J_SPEAKER.pin2 to U_AUDIO.OUTN, U_CHARGE.TS to J_BAT.pin3, J_OFF.pin1 to U_BOOST.EN, R_CC1.pin1 to J_USB.A5, R_CC2.pin1 to J_USB.B5, R_ISET.pin1 to U_CHARGE.ISET, R_ILIM.pin1 to U_CHARGE.ILIM, R_TIMER.pin1 to U_CHARGE.TMR, R_EN.pin2 to U_BOOST.EN, R_FB_HI.pin2 to U_BOOST.FB, R_FB_LO.pin1 to U_BOOST.FB, R_RESET.pin1 to U_KEYS.N_RESET, net.I2S_DIN, net.I2S_BCLK, net.I2S_LRCLK, net.AMP_ENABLE, net.LCD_RESET, net.LCD_DC, net.LCD_BL, net.SPI_MOSI, net.SPI_MISO, net.SPI_SCLK, net.LCD_CS, net.TOUCH_CS, net.FB
+Wrote debug artifact: dist/autorouter-debug/phase-1.input.simple-route.json
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=1008 elapsed=315ms
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=availableSegmentPointSolver steps=9 progress=32% iterations_per_second=442 elapsed=11.8s
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=portPointPathingSolver steps=12 progress=44% iterations_per_second=0 elapsed=36.3s
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=29 progress=53% iterations_per_second=4244 elapsed=46.3s
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=traceSimplificationSolver steps=51 progress=68% iterations_per_second=176 elapsed=56.4s
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=globalDrcForceImproveSolver steps=64 progress=80% iterations_per_second=1 elapsed=66.6s
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=pipeline9JointDrcRepairSolver steps=79 progress=84% iterations_per_second=1 elapsed=77.3s
+  phase 2/3 "DISPLAY_AUDIO" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=effortCleanupSolver steps=100 progress=88% iterations_per_second=0 elapsed=96.6s
+  phase 2/3 "DISPLAY_AUDIO" done: routed_traces=49, jumpers=0, errors=0, elapsed=99.9s
+Wrote debug artifact: dist/autorouter-debug/phase-1.output.traces.json
+Wrote debug artifact: dist/autorouter-debug/phase-1-routed.png
+Could not save autorouting paths for subcircuit_source_group_0: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 3/3 "POWER" start: connections=7, obstacles=549, previous_traces=49, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=0f3db717/365870a6
+  connections: net.GND, net.V3V3, net.V5V, net.USB_5V, net.VBAT, net.VSYS, net.BOOST_SW
+Wrote debug artifact: dist/autorouter-debug/phase-2.input.simple-route.json
+  phase 3/3 "POWER" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=netToPointPairsSolver steps=1 progress=12% iterations_per_second=3 elapsed=4.4s
+  phase 3/3 "POWER" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=availableSegmentPointSolver steps=12 progress=32% iterations_per_second=482 elapsed=19.9s
+  phase 3/3 "POWER" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=portPointPathingSolver steps=15 progress=44% iterations_per_second=91 elapsed=30.3s
