@@ -3,7 +3,7 @@ import { createHash } from "node:crypto"
 import {
   convertCircuitJsonToPickAndPlaceCsv,
 } from "circuit-json-to-pnp-csv"
-import { prepareJlcpcbAssembly } from "./assembly.mjs"
+import { prepareJlcpcbAssembly, isJlcpcbAssembledComponent } from "./assembly.mjs"
 
 const sourcePath = "dist/index/circuit.json"
 const original = readFileSync(sourcePath)
@@ -52,6 +52,7 @@ const packages = {U_CHARGE:"QFN-16-EP(3x3)",U_AUDIO:"TQFN-16-EP(3x3)",
   J_USB:"TYPE-C-31-M-12",L_BOOST:"1008",J_LCD:"FPC-0.5-18P",U_LCD_PWR:"SOT-25-5"}
 for (const p of pcb) {
   const s = source.get(p.source_component_id)
+  if (!isJlcpcbAssembledComponent(s)) continue
   const part = s?.supplier_part_numbers?.jlcpcb?.[0]
   if (!part) continue
   const g = groups.get(part) ?? {refs:[],part,comment:s.manufacturer_part_number ?? s.display_capacitance ?? s.display_resistance ?? s.display_inductance ?? s.name,

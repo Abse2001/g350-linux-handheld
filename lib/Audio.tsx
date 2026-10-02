@@ -8,6 +8,16 @@ export function Audio() {
       pcbPathRelativeTo="U_AUDIO.LRCLK" pcbPath={["U_AUDIO.LRCLK",{x:-3,y:0.252095},
         {x:-42,y:1.5},{x:-48.5,y:8},{x:-48.5,y:26.4},
         {x:-36.05,y:26.4},"J_PI.pin35"]}/>
+    <trace from="U_AUDIO.BCLK" to="J_PI.pin12" thickness={0.2} routingPhaseIndex={2}
+      pcbPathRelativeTo="U_AUDIO.BCLK" pcbPath={["U_AUDIO.BCLK",{x:-3.5,y:-1.7},
+        {x:-3.5,y:-1.7,via:true,toLayer:"bottom"},{x:-3.5,y:-1.7},
+        {x:-4.5,y:-0.7},{x:-4.5,y:16},{x:-4.5,y:16,via:true,toLayer:"top"},
+        {x:-4.5,y:16},{x:-4.5,y:20.5},"J_PI.pin12"]}/>
+    <trace from="U_AUDIO.DIN" to="J_PI.pin40" thickness={0.2} routingPhaseIndex={2}
+      pcbPathRelativeTo="U_AUDIO.DIN" pcbPath={["U_AUDIO.DIN",{x:-0.748411,y:-2.8},
+        {x:-6.7,y:-2.8},{x:-6.7,y:-2.8,via:true,toLayer:"bottom"},{x:-6.7,y:-2.8},
+        {x:-6.7,y:17.25},{x:-6.7,y:17.25,via:true,toLayer:"top"},
+        {x:-6.7,y:17.25},{x:-6.7,y:18},{x:-41.13,y:18},"J_PI.pin40"]}/>
     <Fragment><MAX98357AETE_T name="U_AUDIO" pcbX={17} pcbY={12}
       schX={2} schY={15} schSectionName="audio"
       

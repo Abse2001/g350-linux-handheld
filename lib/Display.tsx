@@ -21,6 +21,20 @@ export function Display() {
       pin9:"net.LCD_CS",pin10:"net.V_LCD3V3",pin13:"net.SCL",
       pin14:"net.SDA",pin15:"net.TOUCH_IRQ",pin19:"net.GND",pin20:"net.GND",
     }}/>
+    {/* Cross the charger-status trace between the I2S route and GPIO rows. */}
+    <via name="LCD_RESET_BRIDGE0" pcbX={7.62} pcbY={30.85} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="bottom" toLayer="top" connectsTo="net.LCD_RESET"/>
+    <via name="LCD_RESET_BRIDGE1" pcbX={7.62} pcbY={32.3} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="top" toLayer="bottom" connectsTo="net.LCD_RESET"/>
+    <trace from="LCD_RESET_BRIDGE0.bottom" to="J_LCD.pin8" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="LCD_RESET_BRIDGE0.bottom"
+      pcbPath={["LCD_RESET_BRIDGE0.bottom",{x:0,y:-4.85},{x:-34.62,y:-6.85},
+        {x:-39.12,y:-11.6000874},"J_LCD.pin8"]}/>
+    <trace from="LCD_RESET_BRIDGE0.top" to="LCD_RESET_BRIDGE1.top" thickness={0.15} routingPhaseIndex={2}
+      pcbPath={["LCD_RESET_BRIDGE0.top","LCD_RESET_BRIDGE1.top"]}/>
+    <trace from="LCD_RESET_BRIDGE1.bottom" to="J_PI.pin13" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="LCD_RESET_BRIDGE1.bottom"
+      pcbPath={["LCD_RESET_BRIDGE1.bottom",{x:0,y:3.97},"J_PI.pin13"]}/>
     <via name="LCD_GND" pcbX={-38} pcbY={16.75} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.GND"/>
     <trace from="J_LCD.pin3" to="LCD_GND.bottom" thickness={0.15} routingPhaseIndex={1}

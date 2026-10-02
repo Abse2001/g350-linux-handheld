@@ -55,7 +55,7 @@ export function Power() {
     <Fragment><BQ24074RGTR name="U_CHARGE" pcbX={19} pcbY={42}
       schX={98} schY={-1} schSectionName="power"
        /><Connections name="U_CHARGE" connections={{N_CE:"net.GND",
-        EN2:"net.GND",VSS:"net.GND",EP:"net.GND",TS:"J_BAT.pin3",
+        EN2:"net.GND",VSS:"net.GND",EP:"net.GND",
         N_CHG:"net.CHARGING_N",N_PGOOD:"net.USB_GOOD_N"}}/></Fragment>
     {/* ITERM open: 10% termination. TMR 68k: nominal 9.07 h safety timer. */}
     <Fragment><pinheader name="J_BAT" pinCount={3} pitch={2.54} gender="male"
@@ -63,6 +63,11 @@ export function Power() {
       schX={87} schY={-1} schSectionName="power"
       manufacturerPartNumber="1x3 2.54mm protected 1S battery + NTC harness"
        /><Connections name="J_BAT" connections={{pin1:"net.VBAT",pin2:"net.GND"}}/></Fragment>
+    <trace from="U_CHARGE.TS" to="J_BAT.pin3" thickness={0.2} routingPhaseIndex={2} maxLength={70}
+      pcbPathRelativeTo="U_CHARGE.TS" pcbPath={["U_CHARGE.TS",{x:-2.55,y:0.750189},
+        {x:-3.1,y:1.6},{x:-6.6,y:1.7},{x:-6.6,y:1.7,via:true,toLayer:"bottom"},
+        {x:-6.6,y:1.7},{x:-5.8,y:0.6},{x:14.5,y:0.6},{x:14.5,y:0.6,via:true,toLayer:"top"},
+        {x:14.5,y:0.6},{x:14.5,y:-11.46},"J_BAT.pin3"]}/>
     <Fragment><TPS61023DRLR name="U_BOOST" pcbX={10} pcbY={49}
       schX={74} schY={-9} schSectionName="power"
        /><Connections name="U_BOOST" connections={{GND:"net.GND",FB:"net.FB"}}/></Fragment>
@@ -107,6 +112,17 @@ export function Power() {
       pcbPath={["R_FB_LO.pin1","R_FB_HI.pin2"]}/>
     <trace from="C_FEEDFORWARD.pin2" to="R_FB_HI.pin2" thickness={0.2} routingPhaseIndex={2}
       pcbPath={["C_FEEDFORWARD.pin2","R_FB_HI.pin2"]}/>
+    {/* Kelvin sense the output capacitor; these feeds carry microamps, not Pi load current. */}
+    <trace from="R_FB_HI.pin1" to="C_BOOST_OUT1.pin1" thickness={0.15} routingPhaseIndex={1} maxLength={15}
+      pcbPathRelativeTo="R_FB_HI.pin1"
+      pcbPath={["R_FB_HI.pin1",{x:-1.7,y:1},{x:-1.7,y:1,via:true,toLayer:"bottom"},
+        {x:-1.7,y:1},{x:6,y:1},{x:6,y:1,via:true,toLayer:"top"},
+        {x:6,y:1},"C_BOOST_OUT1.pin1"]}/>
+    <trace from="C_FEEDFORWARD.pin1" to="R_FB_HI.pin1" thickness={0.15} routingPhaseIndex={1}
+      pcbPathRelativeTo="C_FEEDFORWARD.pin1"
+      pcbPath={["C_FEEDFORWARD.pin1",{x:-0.825,y:2},"R_FB_HI.pin1"]}/>
+    <trace from="R_EN.pin1" to="C_BOOST_IN.pin1" thickness={0.15} routingPhaseIndex={1} maxLength={6}
+      pcbPath={["R_EN.pin1","C_BOOST_IN.pin1"]}/>
     <trace from="U_CHARGE.TMR" to="R_TIMER.pin1" thickness={0.15} routingPhaseIndex={2}
       pcbPathRelativeTo="U_CHARGE.TMR" pcbPath={["U_CHARGE.TMR",{x:0.250063,y:4.3},"R_TIMER.pin1"]}/>
     <via name="TIMER_GND" pcbX={19.825} pcbY={48.3} holeDiameter={0.3} outerDiameter={0.65}

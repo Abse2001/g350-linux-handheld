@@ -89,8 +89,8 @@ export default () => (
     <Fragment><capacitor name="C_KEYS" schRotation={-90} capacitance="100nF" footprint="0603" supplierPartNumbers={passivePart("C14663")}
       pcbX={-2.73} pcbY={-15.5} layer="bottom" maxDecouplingTraceLength={2.5}
       schX={-20} schY={-8} schSectionName="controls"
-       /><trace from="C_KEYS.pin1" to="net.V3V3" thickness={0.2}
-         routingPhaseIndex={1} maxLength={25}/></Fragment>
+       /><trace from="C_KEYS.pin1" to="C_KEYS_BULK.pin1" thickness={0.2}
+         routingPhaseIndex={1} maxLength={25} pcbPath={["C_KEYS.pin1","C_KEYS_BULK.pin1"]}/></Fragment>
     <trace from="U_KEYS.VDD" to="C_KEYS.pin1" thickness={0.2} routingPhaseIndex={1}
       pcbPath={["U_KEYS.VDD","C_KEYS.pin1"]}/>
     <trace from="C_KEYS.pin2" to="KEYS_BYPASS_GND.bottom" thickness={0.2} routingPhaseIndex={1}
