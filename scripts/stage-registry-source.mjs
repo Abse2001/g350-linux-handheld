@@ -15,7 +15,12 @@ const required=new Set(["LICENSE","README.md","index.circuit.tsx","rev-b.circuit
   "checks/integrated/memory-43-kicad-drc.json","checks/integrated/memory-43-shorts.log",
   "checks/integrated/memory-36-diagnostic-export.json","checks/integrated/memory-36-kicad-drc.json",
   "checks/integrated/memory-36-shorts.log","checks/integrated/phase-via-validation.json",
-  "checks/integrated/import-validation.json","checks/integrated/manual-escape-clearance.json"])
+  "checks/integrated/import-validation.json","checks/integrated/manual-escape-clearance.json",
+  "checks/integrated/am3352-import-validation.json","checks/integrated/am3352-swizzle-validation.json",
+  "checks/integrated/am3352-clearance-11-check-summary.json","checks/integrated/am3352-clearance-11-connectivity.json",
+  "checks/integrated/am3352-clearance-11-diagnostic-export.json","checks/integrated/am3352-clearance-11-kicad-drc.json",
+  "checks/integrated/am3352-clearance-11-shorts.log","checks/integrated/am3352-11-check-summary.json",
+  "checks/integrated/hdi-38-check-summary.json","checks/integrated/thin-hdi-34-check-summary.json"])
 const directories=["imports/","lib/","experiments/","routing/","scripts/","software/","docs/","images/"]
 const tracked=execFileSync("git",["ls-files","-z"],{encoding:"utf8"}).split("\0").filter(Boolean)
 const paths=tracked.filter(p=>required.has(p)||directories.some(d=>p.startsWith(d)))

@@ -1,0 +1,1640 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-02T19:18:14",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "circuit.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [U_SOC.pin2 to U_RAM.pin30] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 106.8
+                    },
+                    "uuid": "73308170-265d-f330-2674-9b1073472950"
+                },
+                {
+                    "description": "Pad 30 [U_SOC.pin2 to U_RAM.pin30] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 131.4
+                    },
+                    "uuid": "6de89920-3824-01bf-21cf-63627bc2c883"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [U_SOC.pin3 to U_RAM.pin47] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.8,
+                        "y": 106.8
+                    },
+                    "uuid": "6ef8de54-2e9f-1f8c-33c8-e29469cf1b4c"
+                },
+                {
+                    "description": "Pad 47 [U_SOC.pin3 to U_RAM.pin47] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 132.2
+                    },
+                    "uuid": "06d9aba0-5319-b981-52f2-e15e070083c3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [U_SOC.pin4 to U_RAM.pin58] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 95.6,
+                        "y": 106.8
+                    },
+                    "uuid": "3f9fe014-5df8-1dcc-046f-e45466d7e674"
+                },
+                {
+                    "description": "Pad 58 [U_SOC.pin4 to U_RAM.pin58] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 128.2
+                    },
+                    "uuid": "65357760-0b42-123f-4eb1-52e2575b47fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [U_SOC.pin5 to U_RAM.pin77] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 96.4,
+                        "y": 106.8
+                    },
+                    "uuid": "1046e1d4-72ae-e3f4-2ae9-19ec377ee834"
+                },
+                {
+                    "description": "Pad 77 [U_SOC.pin5 to U_RAM.pin77] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 130.6
+                    },
+                    "uuid": "22eb1280-3708-52a1-6f04-483e1510e31d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [U_SOC.pin6 to U_RAM.pin42] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 97.2,
+                        "y": 106.8
+                    },
+                    "uuid": "1f121c6c-4355-e5b4-5a42-182c0825e9f4"
+                },
+                {
+                    "description": "Pad 42 [U_SOC.pin6 to U_RAM.pin42] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 128.2
+                    },
+                    "uuid": "3032974a-4bb9-586a-6740-198a7d392556"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 10 [U_SOC.pin7 to U_RAM.pin10] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 96.8,
+                        "y": 128.2
+                    },
+                    "uuid": "2c4f8d30-10c8-cc10-0abd-f5102644b630"
+                },
+                {
+                    "description": "Pad 7 [U_SOC.pin7 to U_RAM.pin10] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 106.8
+                    },
+                    "uuid": "1e25d542-2eac-b8fe-7b7f-473e37ae2a82"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [U_SOC.pin8 to U_RAM.pin62] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 106.8
+                    },
+                    "uuid": "3a3a72be-282d-8f62-756a-6e7e13026c5e"
+                },
+                {
+                    "description": "Pad 62 [U_SOC.pin8 to U_RAM.pin62] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 131.4
+                    },
+                    "uuid": "7518ff6c-777c-0dd4-6411-1b1450a62854"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [U_SOC.pin9 to U_RAM.pin52] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 99.6,
+                        "y": 106.8
+                    },
+                    "uuid": "699370fe-072b-6ede-5b3c-9342425b6a9e"
+                },
+                {
+                    "description": "Pad 52 [U_SOC.pin9 to U_RAM.pin52] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 123.4
+                    },
+                    "uuid": "090567ae-248c-28ce-4012-e9ee5b99ab0e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 35 [U_SOC.pin10 to U_RAM.pin35] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 122.6
+                    },
+                    "uuid": "5535022c-70bb-c34c-73bd-7b945836ba74"
+                },
+                {
+                    "description": "Pad 10 [U_SOC.pin10 to U_RAM.pin35] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 100.4,
+                        "y": 106.8
+                    },
+                    "uuid": "31e3441c-3084-be04-6d13-3fdc0aab3dbc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 11 [U_SOC.pin11 to U_RAM.pin51] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 101.2,
+                        "y": 106.8
+                    },
+                    "uuid": "59dd7d9c-088a-8484-6af2-86a432a5773c"
+                },
+                {
+                    "description": "Pad 51 [U_SOC.pin11 to U_RAM.pin51] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 122.6
+                    },
+                    "uuid": "55a89020-5064-0abf-098f-5a626382bf83"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 33 [U_SOC.pin12 to U_RAM.pin33] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 121.0
+                    },
+                    "uuid": "716e6f22-2c29-8ebe-363e-736267598a7e"
+                },
+                {
+                    "description": "Pad 12 [U_SOC.pin12 to U_RAM.pin33] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 106.8
+                    },
+                    "uuid": "0bebe8e0-58be-7720-5a6e-faa00d9c6c60"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 20 [U_SOC.pin20 to U_RAM.pin43] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 106.0
+                    },
+                    "uuid": "72ff6f80-4f7c-c5c1-2bfa-1c0208777243"
+                },
+                {
+                    "description": "Pad 43 [U_SOC.pin20 to U_RAM.pin43] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 129.0
+                    },
+                    "uuid": "6dd77be0-44a9-4a41-08d5-ef9e5655297d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 21 [U_SOC.pin21 to U_RAM.pin78] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.8,
+                        "y": 106.0
+                    },
+                    "uuid": "763dcec0-3c42-f761-113c-427e5ebb7c5d"
+                },
+                {
+                    "description": "Pad 78 [U_SOC.pin21 to U_RAM.pin78] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 131.4
+                    },
+                    "uuid": "211254a4-347d-4764-47e8-3a245b532ce4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 22 [U_SOC.pin22 to U_RAM.pin57] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 95.6,
+                        "y": 106.0
+                    },
+                    "uuid": "3b068540-1278-b49f-5ff7-ee7e5288d7a3"
+                },
+                {
+                    "description": "Pad 57 [U_SOC.pin22 to U_RAM.pin57] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 127.4
+                    },
+                    "uuid": "51438e20-54c9-0cbf-052a-58625f1dbd83"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 23 [U_SOC.pin23 to U_RAM.pin31] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 96.4,
+                        "y": 106.0
+                    },
+                    "uuid": "13b526c0-6134-609f-514c-658203cd2ba3"
+                },
+                {
+                    "description": "Pad 31 [U_SOC.pin23 to U_RAM.pin31] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 132.2
+                    },
+                    "uuid": "677805e0-3e94-94ff-1b5e-d02275523543"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 24 [U_SOC.pin24 to U_RAM.pin63] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 97.2,
+                        "y": 106.0
+                    },
+                    "uuid": "6270d2c0-500f-f361-0290-b9824aee805d"
+                },
+                {
+                    "description": "Pad 63 [U_SOC.pin24 to U_RAM.pin63] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 132.2
+                    },
+                    "uuid": "504a4b24-63b5-3de4-7720-30a47574dc9c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 32 [U_SOC.pin25 to U_RAM.pin32] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 133.0
+                    },
+                    "uuid": "2c3772c0-79b6-ac9f-38ca-198214b5205d"
+                },
+                {
+                    "description": "Pad 25 [U_SOC.pin25 to U_RAM.pin32] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 106.0
+                    },
+                    "uuid": "080cba20-2b8f-63df-4f12-0d9e7294b75d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 27 [U_SOC.pin26 to U_RAM.pin27] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 129.0
+                    },
+                    "uuid": "62654580-14e6-0ba1-3899-2e3e79e797e3"
+                },
+                {
+                    "description": "Pad 26 [U_SOC.pin26 to U_RAM.pin27] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 106.0
+                    },
+                    "uuid": "14cc9de0-38b2-9bff-79ce-2a222c4ef043"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 36 [U_SOC.pin27 to U_RAM.pin36] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 123.4
+                    },
+                    "uuid": "7a01f340-24b0-9041-30a0-d2be7a0dca43"
+                },
+                {
+                    "description": "Pad 27 [U_SOC.pin27 to U_RAM.pin36] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 99.6,
+                        "y": 106.0
+                    },
+                    "uuid": "39ef0e20-7891-b801-2b12-7e22226cbbbd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 28 [U_SOC.pin28 to U_RAM.pin67] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 100.4,
+                        "y": 106.0
+                    },
+                    "uuid": "2551391e-7223-c75e-4109-aa620bc8e3de"
+                },
+                {
+                    "description": "Pad 67 [U_SOC.pin28 to U_RAM.pin67] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 122.6
+                    },
+                    "uuid": "112092a0-6b13-f7c1-3af8-a31e1efac203"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 29 [U_SOC.pin29 to U_RAM.pin50] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 101.2,
+                        "y": 106.0
+                    },
+                    "uuid": "15246f9e-61f6-fdde-5136-73e20463e5a2"
+                },
+                {
+                    "description": "Pad 50 [U_SOC.pin29 to U_RAM.pin50] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 121.8
+                    },
+                    "uuid": "1dd1cc20-77c5-3141-2e47-699e2babfb83"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 38 [U_SOC.pin38 to U_RAM.pin44] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 105.2
+                    },
+                    "uuid": "323efb00-1b40-3edf-68bf-78be49c14d63"
+                },
+                {
+                    "description": "Pad 44 [U_SOC.pin38 to U_RAM.pin44] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 129.8
+                    },
+                    "uuid": "71a9b506-72cf-89da-5748-c8ba3bc2079a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 39 [U_SOC.pin39 to U_RAM.pin29] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.8,
+                        "y": 105.2
+                    },
+                    "uuid": "1c682540-31cf-e341-4737-a1425c9f5f43"
+                },
+                {
+                    "description": "Pad 29 [U_SOC.pin39 to U_RAM.pin29] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 130.6
+                    },
+                    "uuid": "1e2d1a90-39b3-dbb0-553a-9cd070c15df0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 41 [U_SOC.pin41 to U_RAM.pin61] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 96.4,
+                        "y": 105.2
+                    },
+                    "uuid": "1d587160-07f0-b35f-0d77-0aa222dec8a3"
+                },
+                {
+                    "description": "Pad 61 [U_SOC.pin41 to U_RAM.pin61] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 130.6
+                    },
+                    "uuid": "219ceb00-7b90-5021-2a7c-4abe2f771a63"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 42 [U_SOC.pin42 to U_RAM.pin45] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 97.2,
+                        "y": 105.2
+                    },
+                    "uuid": "0f5c2aa0-24c3-e8a1-3a2b-a6a24f9364a3"
+                },
+                {
+                    "description": "Pad 45 [U_SOC.pin42 to U_RAM.pin45] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 130.6
+                    },
+                    "uuid": "09b42f82-253a-f0a2-40c1-b1c25c4872e2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 43 [U_SOC.pin43 to U_RAM.pin90] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 105.2
+                    },
+                    "uuid": "64f3a040-4d8d-25e1-000d-ec024d714ddd"
+                },
+                {
+                    "description": "Pad 90 [U_SOC.pin43 to U_RAM.pin90] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 103.2,
+                        "y": 128.2
+                    },
+                    "uuid": "221791e0-7c0a-f701-2a01-a3de2ff1c143"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 48 [U_SOC.pin44 to U_RAM.pin48] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 133.0
+                    },
+                    "uuid": "25c8d3c0-27b6-661f-7535-9ffe3d4b2623"
+                },
+                {
+                    "description": "Pad 44 [U_SOC.pin44 to U_RAM.pin48] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 105.2
+                    },
+                    "uuid": "5d91a980-72f9-6781-779e-da7e62371c7d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 19 [U_SOC.pin46 to U_RAM.pin19] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 122.6
+                    },
+                    "uuid": "69aded3a-7acb-51a6-5f44-908643bdcf66"
+                },
+                {
+                    "description": "Pad 46 [U_SOC.pin46 to U_RAM.pin19] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 100.4,
+                        "y": 105.2
+                    },
+                    "uuid": "1b5929e4-470e-d83c-5689-25a40bdedc7c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 17 [U_SOC.pin47 to U_RAM.pin17] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 121.0
+                    },
+                    "uuid": "4b68e430-522f-19b0-1038-e87072a0ea90"
+                },
+                {
+                    "description": "Pad 47 [U_SOC.pin47 to U_RAM.pin17] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 101.2,
+                        "y": 105.2
+                    },
+                    "uuid": "43536364-1f14-9ebc-7e83-5f241c1b5d04"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 57 [U_SOC.pin57 to U_RAM.pin28] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 94.8,
+                        "y": 104.4
+                    },
+                    "uuid": "1266d5e0-27ce-93e1-3d36-51e2529e0fe3"
+                },
+                {
+                    "description": "Pad 28 [U_SOC.pin57 to U_RAM.pin28] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 129.8
+                    },
+                    "uuid": "79dd5fec-5e56-9ecc-42cf-ddac27491c8c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 58 [U_SOC.pin58 to U_RAM.pin80] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 95.6,
+                        "y": 104.4
+                    },
+                    "uuid": "3f1b71e0-5483-2fe1-69ea-ede27f52abe3"
+                },
+                {
+                    "description": "Pad 80 [U_SOC.pin58 to U_RAM.pin80] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 133.0
+                    },
+                    "uuid": "3e7c8abc-0e56-0384-5b28-91c45804dffc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 59 [U_SOC.pin59 to U_RAM.pin46] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 96.4,
+                        "y": 104.4
+                    },
+                    "uuid": "6bd00de0-7ec8-341f-6960-761e53f8b81d"
+                },
+                {
+                    "description": "Pad 46 [U_SOC.pin59 to U_RAM.pin46] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 131.4
+                    },
+                    "uuid": "00691860-598a-4cc1-4c82-4e1e0d711703"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 60 [U_SOC.pin60 to U_RAM.pin59] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 97.2,
+                        "y": 104.4
+                    },
+                    "uuid": "055adb40-1ac2-9941-302a-574245921543"
+                },
+                {
+                    "description": "Pad 59 [U_SOC.pin60 to U_RAM.pin59] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 129.0
+                    },
+                    "uuid": "527ab4ea-05a8-26aa-472a-67966c030a2a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 61 [U_SOC.pin61 to U_RAM.pin41] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 104.4
+                    },
+                    "uuid": "2dc735a0-1fb8-043f-6d37-3e1e45498803"
+                },
+                {
+                    "description": "Pad 41 [U_SOC.pin61 to U_RAM.pin41] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.4,
+                        "y": 127.4
+                    },
+                    "uuid": "67d7e332-4c51-2212-30ca-60f215439fd2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 62 [U_SOC.pin62 to U_RAM.pin64] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 104.4
+                    },
+                    "uuid": "53905a20-68f8-1821-7e5f-d6226c386bdd"
+                },
+                {
+                    "description": "Pad 64 [U_SOC.pin62 to U_RAM.pin64] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 133.0
+                    },
+                    "uuid": "242a5b52-70fc-e992-4230-882e0aa20612"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 64 [U_SOC.pin64 to U_RAM.pin49] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 100.4,
+                        "y": 104.4
+                    },
+                    "uuid": "6ce49e56-30b3-5f8a-31b4-a2966be35b4a"
+                },
+                {
+                    "description": "Pad 49 [U_SOC.pin64 to U_RAM.pin49] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.6,
+                        "y": 121.0
+                    },
+                    "uuid": "0dcb5da0-3fb3-dc3f-72cc-e9e2254db003"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 65 [U_SOC.pin65 to U_RAM.pin66] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 101.2,
+                        "y": 104.4
+                    },
+                    "uuid": "44ea64d6-58ad-990a-09ba-69166c226b36"
+                },
+                {
+                    "description": "Pad 66 [U_SOC.pin65 to U_RAM.pin66] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 121.8
+                    },
+                    "uuid": "26b63160-333d-33c1-72cf-671e18dc01fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 76 [U_SOC.pin76 to U_RAM.pin79] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 95.6,
+                        "y": 103.6
+                    },
+                    "uuid": "351a2280-4a81-e081-5fe9-9e8275515c83"
+                },
+                {
+                    "description": "Pad 79 [U_SOC.pin76 to U_RAM.pin79] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 132.2
+                    },
+                    "uuid": "03bc5fa4-0fae-931c-2319-85dc3684789c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1807 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin32 to U_RAM.pin39] on In2.Cu, length 0.1153 mm",
+                    "pos": {
+                        "x": 98.29752,
+                        "y": 125.21091
+                    },
+                    "uuid": "0ecc2820-31ce-fa61-54d1-cca277d49ee3"
+                },
+                {
+                    "description": "Via [U_SOC.pin13 to U_RAM.pin22] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 125.4
+                    },
+                    "uuid": "7d1e9480-09c7-a301-698f-4e7e2319c003"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1807 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin32 to U_RAM.pin39] on In2.Cu, length 0.7106 mm",
+                    "pos": {
+                        "x": 98.29752,
+                        "y": 125.32624
+                    },
+                    "uuid": "2ff62c40-6210-e761-0be8-04fe79e0f15d"
+                },
+                {
+                    "description": "Via [U_SOC.pin13 to U_RAM.pin22] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 125.4
+                    },
+                    "uuid": "7d1e9480-09c7-a301-698f-4e7e2319c003"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 1.4229 mm",
+                    "pos": {
+                        "x": 102.70241,
+                        "y": 104.49759
+                    },
+                    "uuid": "4c8cd240-1824-565f-1c44-258250aca163"
+                },
+                {
+                    "description": "Via [U_SOC.pin68 to U_RAM.pin56] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 104.8
+                    },
+                    "uuid": "494ddb00-42ae-6c9f-3c0e-fe3e356f8fdd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 1.4466 mm",
+                    "pos": {
+                        "x": 104.125262,
+                        "y": 104.49759
+                    },
+                    "uuid": "5db3e280-3570-4541-0d2c-a8021b16f53d"
+                },
+                {
+                    "description": "Via [U_SOC.pin68 to U_RAM.pin56] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 104.8
+                    },
+                    "uuid": "494ddb00-42ae-6c9f-3c0e-fe3e356f8fdd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 0.2505 mm",
+                    "pos": {
+                        "x": 101.874738,
+                        "y": 127.30241
+                    },
+                    "uuid": "63914c32-7af6-ecd2-6da3-728e563dd1ee"
+                },
+                {
+                    "description": "Via [U_SOC.pin68 to U_RAM.pin56] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 127.0
+                    },
+                    "uuid": "0c035ea0-6753-92df-2555-7ba24e0175dd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 1.4229 mm",
+                    "pos": {
+                        "x": 101.69759,
+                        "y": 127.125262
+                    },
+                    "uuid": "7151ae00-3ce9-321f-0880-b63e2be7c5a3"
+                },
+                {
+                    "description": "Via [U_SOC.pin68 to U_RAM.pin56] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 127.0
+                    },
+                    "uuid": "0c035ea0-6753-92df-2555-7ba24e0175dd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 0.2505 mm",
+                    "pos": {
+                        "x": 102.125262,
+                        "y": 127.30241
+                    },
+                    "uuid": "1a242a94-02be-89f4-14a7-16ac2c0cb74c"
+                },
+                {
+                    "description": "Via [U_SOC.pin68 to U_RAM.pin56] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 127.0
+                    },
+                    "uuid": "0c035ea0-6753-92df-2555-7ba24e0175dd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 3.7484 mm",
+                    "pos": {
+                        "x": 105.14813,
+                        "y": 124.224198
+                    },
+                    "uuid": "46b46e20-6ef8-0b5f-68c4-57624080ba23"
+                },
+                {
+                    "description": "Via [U_SOC.pin67 to U_RAM.pin72] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 127.0
+                    },
+                    "uuid": "75faeb00-6f5b-7c9f-68bc-0e3e621c9fdd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1846 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 0.0553 mm",
+                    "pos": {
+                        "x": 102.49759,
+                        "y": 126.874738
+                    },
+                    "uuid": "63f4db58-4c8f-3ab8-3529-9a181dc3f978"
+                },
+                {
+                    "description": "Via [U_SOC.pin67 to U_RAM.pin72] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 127.0
+                    },
+                    "uuid": "75faeb00-6f5b-7c9f-68bc-0e3e621c9fdd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 1.4229 mm",
+                    "pos": {
+                        "x": 102.70241,
+                        "y": 104.49759
+                    },
+                    "uuid": "4c8cd240-1824-565f-1c44-258250aca163"
+                },
+                {
+                    "description": "Via [U_SOC.pin67 to U_RAM.pin72] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.2,
+                        "y": 104.8
+                    },
+                    "uuid": "0145a180-223d-083f-45bf-b1fe69425bbd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1846 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 0.5266 mm",
+                    "pos": {
+                        "x": 102.49759,
+                        "y": 126.930082
+                    },
+                    "uuid": "03bf1964-13a6-873c-2b0c-27dc4271c87c"
+                },
+                {
+                    "description": "Via [U_SOC.pin67 to U_RAM.pin72] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.8,
+                        "y": 127.0
+                    },
+                    "uuid": "75faeb00-6f5b-7c9f-68bc-0e3e621c9fdd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin66 to U_RAM.pin54] on In2.Cu, length 0.5266 mm",
+                    "pos": {
+                        "x": 102.49759,
+                        "y": 126.930082
+                    },
+                    "uuid": "03bf1964-13a6-873c-2b0c-27dc4271c87c"
+                },
+                {
+                    "description": "Via [U_SOC.pin68 to U_RAM.pin56] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 127.0
+                    },
+                    "uuid": "0c035ea0-6753-92df-2555-7ba24e0175dd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin67 to U_RAM.pin72] on In2.Cu, length 0.6229 mm",
+                    "pos": {
+                        "x": 102.89759,
+                        "y": 105.10241
+                    },
+                    "uuid": "38ebcec0-597c-ef1f-141a-53027e4e6add"
+                },
+                {
+                    "description": "Via [U_SOC.pin66 to U_RAM.pin54] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 104.8
+                    },
+                    "uuid": "220c0982-10a5-98de-4357-3b3e7608dd9e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin67 to U_RAM.pin72] on In2.Cu, length 0.2505 mm",
+                    "pos": {
+                        "x": 102.09759,
+                        "y": 104.925262
+                    },
+                    "uuid": "1e740920-4925-95df-73d7-229e617750a3"
+                },
+                {
+                    "description": "Via [U_SOC.pin66 to U_RAM.pin54] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 104.8
+                    },
+                    "uuid": "220c0982-10a5-98de-4357-3b3e7608dd9e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin67 to U_RAM.pin72] on In2.Cu, length 0.5379 mm",
+                    "pos": {
+                        "x": 102.09759,
+                        "y": 104.674738
+                    },
+                    "uuid": "2ec22540-5973-b1ff-7bda-c14251293483"
+                },
+                {
+                    "description": "Via [U_SOC.pin66 to U_RAM.pin54] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 104.8
+                    },
+                    "uuid": "220c0982-10a5-98de-4357-3b3e7608dd9e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin67 to U_RAM.pin72] on In2.Cu, length 0.2505 mm",
+                    "pos": {
+                        "x": 102.274738,
+                        "y": 105.10241
+                    },
+                    "uuid": "3a527828-5a22-6d68-79f2-62a8663da818"
+                },
+                {
+                    "description": "Via [U_SOC.pin66 to U_RAM.pin54] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 104.8
+                    },
+                    "uuid": "220c0982-10a5-98de-4357-3b3e7608dd9e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin30 to U_RAM.pin53] on In2.Cu, length 5.4475 mm",
+                    "pos": {
+                        "x": 94.82278,
+                        "y": 123.450452
+                    },
+                    "uuid": "2ec0be40-36c4-0640-63b7-354001cd8f40"
+                },
+                {
+                    "description": "Via [U_SOC.pin50 to U_RAM.pin23] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 126.2
+                    },
+                    "uuid": "51ac45a0-4933-8420-40ba-c2a038420120"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin49 to U_RAM.pin40] on In2.Cu, length 0.6229 mm",
+                    "pos": {
+                        "x": 103.50241,
+                        "y": 105.29759
+                    },
+                    "uuid": "78681ef0-2ef0-e0f0-29b6-1f307da2e0b0"
+                },
+                {
+                    "description": "Via [U_SOC.pin50 to U_RAM.pin23] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 105.6
+                    },
+                    "uuid": "5336a360-4c97-34ff-45f7-c69e3f58583d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin49 to U_RAM.pin40] on In2.Cu, length 0.8718 mm",
+                    "pos": {
+                        "x": 104.125262,
+                        "y": 105.29759
+                    },
+                    "uuid": "13c64840-3e77-d4ff-6929-61be6c251183"
+                },
+                {
+                    "description": "Via [U_SOC.pin50 to U_RAM.pin23] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 105.6
+                    },
+                    "uuid": "5336a360-4c97-34ff-45f7-c69e3f58583d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin30 to U_RAM.pin53] on In2.Cu, length 5.4475 mm",
+                    "pos": {
+                        "x": 94.82278,
+                        "y": 123.450452
+                    },
+                    "uuid": "2ec0be40-36c4-0640-63b7-354001cd8f40"
+                },
+                {
+                    "description": "Via [U_SOC.pin49 to U_RAM.pin40] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 127.0
+                    },
+                    "uuid": "142c6832-0bb3-a6b2-033a-e532053ddc4e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin30 to U_RAM.pin53] on In2.Cu, length 0.6229 mm",
+                    "pos": {
+                        "x": 98.674738,
+                        "y": 127.30241
+                    },
+                    "uuid": "08d870e0-1c80-f4df-3029-78de43d1fcdd"
+                },
+                {
+                    "description": "Via [U_SOC.pin49 to U_RAM.pin40] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 127.0
+                    },
+                    "uuid": "142c6832-0bb3-a6b2-033a-e532053ddc4e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin50 to U_RAM.pin23] on In2.Cu, length 0.6229 mm",
+                    "pos": {
+                        "x": 98.925262,
+                        "y": 126.50241
+                    },
+                    "uuid": "0a26ef22-5741-0cde-4756-f7221a1104de"
+                },
+                {
+                    "description": "Via [U_SOC.pin32 to U_RAM.pin39] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 126.2
+                    },
+                    "uuid": "0845950a-2a6c-0d56-5d1d-afb67030adea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin50 to U_RAM.pin23] on In2.Cu, length 6.5829 mm",
+                    "pos": {
+                        "x": 103.580072,
+                        "y": 121.8476
+                    },
+                    "uuid": "062d3300-5140-fe61-63ab-363e18976add"
+                },
+                {
+                    "description": "Via [U_SOC.pin32 to U_RAM.pin39] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 126.2
+                    },
+                    "uuid": "0845950a-2a6c-0d56-5d1d-afb67030adea"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin48 to U_RAM.pin37] on In2.Cu, length 1.2277 mm",
+                    "pos": {
+                        "x": 102.89759,
+                        "y": 106.09759
+                    },
+                    "uuid": "012507e6-1640-98ba-2da6-395a450bd9fa"
+                },
+                {
+                    "description": "Via [U_SOC.pin32 to U_RAM.pin39] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 106.4
+                    },
+                    "uuid": "665e0b60-5fbe-9cff-591f-2e9e527fc03d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin48 to U_RAM.pin37] on In2.Cu, length 0.2970 mm",
+                    "pos": {
+                        "x": 104.125262,
+                        "y": 106.09759
+                    },
+                    "uuid": "1599d69a-2cff-773a-4465-17da5bcab87a"
+                },
+                {
+                    "description": "Via [U_SOC.pin32 to U_RAM.pin39] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 106.4
+                    },
+                    "uuid": "665e0b60-5fbe-9cff-591f-2e9e527fc03d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin31 to U_RAM.pin70] on In2.Cu, length 3.4055 mm",
+                    "pos": {
+                        "x": 99.466708,
+                        "y": 127.50562
+                    },
+                    "uuid": "37b843e0-135b-8781-5e6f-52e2567ce1bd"
+                },
+                {
+                    "description": "Via [U_SOC.pin66 to U_RAM.pin54] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 125.4
+                    },
+                    "uuid": "05514914-0327-786c-0ba0-39ec1418fb6c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin31 to U_RAM.pin70] on In2.Cu, length 0.6229 mm",
+                    "pos": {
+                        "x": 101.874738,
+                        "y": 125.09759
+                    },
+                    "uuid": "34db22e0-6943-9ec1-6253-e55e2deb697d"
+                },
+                {
+                    "description": "Via [U_SOC.pin66 to U_RAM.pin54] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 125.4
+                    },
+                    "uuid": "05514914-0327-786c-0ba0-39ec1418fb6c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin48 to U_RAM.pin37] on In2.Cu, length 1.2277 mm",
+                    "pos": {
+                        "x": 102.89759,
+                        "y": 106.09759
+                    },
+                    "uuid": "012507e6-1640-98ba-2da6-395a450bd9fa"
+                },
+                {
+                    "description": "Via [U_SOC.pin31 to U_RAM.pin70] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 103.2,
+                        "y": 106.4
+                    },
+                    "uuid": "77484146-5606-1c5a-2354-79fa0f5d2866"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1766 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin31 to U_RAM.pin70] on In2.Cu, length 8.3066 mm",
+                    "pos": {
+                        "x": 102.586164,
+                        "y": 106.09759
+                    },
+                    "uuid": "348b73c0-7f9f-3f21-354c-f57e15c6d5e3"
+                },
+                {
+                    "description": "Via [U_SOC.pin30 to U_RAM.pin53] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.4,
+                        "y": 106.4
+                    },
+                    "uuid": "0018cec4-3298-d39c-654a-75fc6803e7a4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1862 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin32 to U_RAM.pin39] on In2.Cu, length 1.5183 mm",
+                    "pos": {
+                        "x": 103.687973,
+                        "y": 106.712027
+                    },
+                    "uuid": "245d4460-6e0b-797f-0074-375e6d230ac3"
+                },
+                {
+                    "description": "Via [U_SOC.pin14 to U_RAM.pin38] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.0,
+                        "y": 107.2
+                    },
+                    "uuid": "61d5788a-595c-b70a-50e3-f58a486b340a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (rule 'AM3352 copper to drill' clearance 0.2000 mm; actual 0.1774 mm)",
+            "items": [
+                {
+                    "description": "Track [U_SOC.pin32 to U_RAM.pin39] on In2.Cu, length 0.7106 mm",
+                    "pos": {
+                        "x": 98.29752,
+                        "y": 125.32624
+                    },
+                    "uuid": "2ff62c40-6210-e761-0be8-04fe79e0f15d"
+                },
+                {
+                    "description": "Via [U_SOC.pin14 to U_RAM.pin38] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.8,
+                        "y": 125.4
+                    },
+                    "uuid": "4c82b860-45e3-49ff-3f43-db9e38a46d3d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'AM3352 DDR3 STUDY — DO NOT FAB' on F.Silkscreen",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 135.0
+                    },
+                    "uuid": "5fcc5740-32a8-8de1-0584-c482279f04dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        }
+    ]
+}

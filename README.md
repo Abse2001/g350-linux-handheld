@@ -1,55 +1,50 @@
-# G350-style integrated Linux handheld — in progress
+# G350-style AM3352 Linux handheld — in progress
 
-The Linux/GPU processor, RAM and power management must be directly on the handheld PCB. **The integrated design is not ready to fabricate or order.** The default entry displays a memory-routing experiment. Existing Revision B Gerbers and `rev-b.circuit.tsx` describe an external Raspberry Pi carrier and do not satisfy this requirement. The fabrication exporter blocks release while integration is incomplete.
+The selected processor is a **bare TI AM3352BZCZ100**, directly on the main PCB, with **512 MB Micron MT41K256M16TW-107:P DDR3L** operated in DDR3-compatible mode. The user chose AM3352 for simple games rendered by the CPU; a 3D GPU is no longer required. The design is authored in **tscircuit**, using individually imported JLCPCB components. No complete SBC or processor module is imported.
 
-The architecture under investigation is a bare **Rockchip RK3566**, **1 GB Hynix LPDDR4**, **RK817-5 PMIC** and **RK860-0 CPU regulator**, authored in tscircuit. Individual components were imported with `tsci import --jlcpcb --use-exact-footprint`. No complete computer board or processor module is imported. See [the integrated-host design record](docs/INTEGRATED_HOST.md).
+**The integrated handheld is not ready to fabricate or order.** The default entry is the new AM3352 DDR signal bootstrap. It has no powered host, storage, USB, display or controls yet. The fabrication exporter remains blocked by `design-status.json`. Previous Raspberry Pi carrier exports and RK3566 routing checks do not apply to AM3352.
 
-The completed handheld must have all components on top, eleven front buttons, an FPC display, an onboard microSD holder and one USB-C connector for charging and data/provisioning. It has no analog sticks or rear buttons. Imported power ICs and the microSD socket are candidates for integration; the memory fixture does not yet contain those circuits.
+The completed handheld must have eleven front buttons, an FPC display, an onboard microSD holder and one USB-C connector for charging and data/provisioning. Components and copper routing are allowed on both sides. There are no analog sticks or rear buttons.
 
-## Current routing work
+## DDR routing workflow
 
-`experiments/rk3566-memory.circuit.tsx` tests direct autorouting with the actual 565-ball SoC and 200-ball RAM footprints. Its first clock/strobe phase timed out at 120 seconds. `experiments/rk3566-memory-vip.circuit.tsx` adds 134 explicit full-depth escapes and moves RAM closer to the processor. Some outer-row vias are staggered outside the processor; 25 fine-pitch escapes use 0.25mm lands, and the other escapes use 0.30mm lands. All drills are 0.15mm. The latest manual geometry passes its drill-to-copper/drill-to-drill precheck.
+The [tscircuit DDR routing guide](https://docs.tscircuit.com/guides/routing-ddr) was reviewed on 2026-10-02, including the complete AM3352 example. The native preset is `autorouter="bus_lanes"`. The default circuit uses this preset to generate local dogbones and route the channel. Manual fanouts, placement changes and local trace repairs may supplement it when needed; successful copper still requires independent checks.
 
-An earlier eight-phase trial routed 39/67 signals before timing out, using escape lands that subsequently failed the drill-clearance review. Three-signal retries reached the planner's iteration limit. The current retry routes the 24 inner-array signals before clocks/strobes and the outer data/control signals. The byte-group trial hit the planner limit; the current experiment uses 31 individual outer-signal phases after six earlier phases, plus two manual fanout stages. Each phase uses the installed local Pipeline 9 autorouter with earlier copper frozen as obstacles. A four-layer routing model maps onto the four signal layers of the physical six-layer board because the current router ignored the bus layer restriction. Physical through-vias remain obstacles on every signal layer; Inner1/Inner4 are reserved for future reference planes.
+The new fixture declares **49 actual shared DDR signals**, two 11-signal byte buses, a 26-signal command/clock timing group, and separate reset. It declares both DQS differential pairs and the CK pair. The 4 Gb x16 memory uses A0–A14; its M7 is NC. CPU DDR_A15 is therefore unused. Numeric port selectors avoid collisions between RAM ball labels such as A3 and address-function aliases with the same name.
 
-The earlier 24-signal diagnostic failed Gerber shorts and independent KiCad DRC. Eight local via movements and one wire dogleg repair those routes: the repaired diagnostic passes Gerber shorts and KiCad copper/drill clearances, while retaining 43 unrouted signals and incomplete-fixture warnings. At that stage, only those checked routes were retained under a full input fingerprint. Later routing progress is described below. New vias and wires are checked against actual physical copper/drills. See `checks/integrated/repaired-check-summary.json` and `checks/integrated/phase-via-validation.json`.
+All **324 CPU and 96 RAM balls**, functions and nominal 0.8 mm grids have been checked against the manufacturer documents. The supplier import's incomplete CPU aliases and malformed RAM aliases were corrected. CPU pads use TI's 0.4 mm example lands; RAM pads use the Micron TW drawing's 0.42 mm lands. This is a nominal geometry/function check, not complete solder-mask or assembly qualification. See `checks/integrated/am3352-import-validation.json`.
 
-The through-via terminal-access retry completed clocks/strobes, reaching 36/67 signals. Seven explicit outer traces now extend the fixture to **43/67**: DQ0_A uses a reviewed path with six points, five further traces use a supplementary constant-layer grid search, and DQ4_A uses a grid-planned detour with one full-depth layer-change via. The six initial phases retain actual Pipeline 9 routing; remaining unmatched phases still use the live Pipeline 9 autorouter. Explicit coordinates are reused only under the complete input fingerprint and fresh wire/via checks.
+The best checked native result is **11/49 DDR signals**, the complete first byte lane. It has **zero Gerber shorts and zero independent KiCad copper/drill violations**, and passes the byte's 0.635 mm planar skew and DQS pair's 0.127 mm planar skew. **38 signals remain open.** This is an unpowered, partial diagnostic, not a completed DDR channel. [Check summary](checks/integrated/am3352-clearance-11-check-summary.json).
 
-The actual **43-signal** diagnostic passes Gerber shorts and independent KiCad copper/drill checks. Its connectivity graph confirms 43 signals, with **24 opens and 61 dangling-via warnings** remaining. DQ8_A timed out at 134.4 seconds; bounded one- and two-via grid searches have not found an accepted continuation. See `checks/integrated/memory-43-check-summary.json`, `memory-43-connectivity.json` and `memory-43-phase-validation.json`. This is routing progress, not a manufacturing release.
+The original 0.30/0.15 mm vias produced 31 drill-clearance errors. Increasing the native dogbone lands to 0.35 mm while retaining 0.15 mm drills removed those errors in the rerouted lane. The second lane still times out. Manual fanouts, permitted data-swapping maps, coordinated dogbones and opposing boundary fanouts are retained as distinct experiments; their failures are recorded instead of being treated as successful copper. See [DDR routing record](docs/AM3352_DDR_ROUTING.md).
 
-![Actual 43-signal memory diagnostic; not the completed handheld](images/rk3566-memory-43.png)
+![Native byte0 partial diagnostic, 11/49 signals](images/am3352-memory-clearance-11.png)
 
-These are **memory-routing feasibility fixtures**, containing 67 datasheet-checked signal connections. They omit host power, decoupling, clock, boot, storage, USB, display, controls and audio circuits. They cannot run Linux. DDR timing, coupled-pair geometry, reference planes, impedance, package flight times and electrical via lengths require qualification on the complete host.
+The trial uses an eight-layer routing allocation and ordinary full-depth vias. Byte lanes and command/clock are restricted to chosen signal layers, leaving reference-plane resources available. The 0.635 mm bus and 0.127 mm pair skew constraints follow TI's planar limits. The pair gap, actual impedance, via electrical length, power planes, return paths and complete timing budget require qualification on the powered board. A successful solver run alone does not establish those properties.
 
-Eighteen imported RAM pads were off the manufacturer's nominal grid and have been corrected. The SoC and RAM grids and all 67 signal functions pass the import checker. All 69 PMIC pin aliases were checked; internal 1.8 V filter rails must be decoupled rather than driven by another regulator. The microSD shell/contact aliases were corrected against its manufacturer drawing; full geometry comparison remains pending. Attempt sources, logs and verification evidence are in `checks/integrated/`.
+## Build and verify
 
-## Build the memory fixture
-
-Versions verified and pinned on 2026-10-02: **tscircuit 0.0.2727**, **tsci CLI 0.1.2227**, **capacity-autorouter 0.0.951**. The npm lock uses legacy peer resolution because the current upstream CLI and tscircuit packages request different circuit-json peer versions.
+Versions verified and pinned on 2026-10-02: **tscircuit 0.0.2727**, **tsci CLI 0.1.2227**, **capacity-autorouter 0.0.951**, with **core 0.0.2048** supporting the native DDR preset.
 
 ```sh
 npm ci --legacy-peer-deps
 npm run typecheck
-npm run check:integrated-imports
-npm run build:memory > checks/integrated/memory-vip-build.log 2>&1
-npm run check:memory-escapes
+npm run check:am3352-imports
+npm run check:am3352-swizzle
+npm run build:memory
 npm run check:memory-connectivity
+npm run check:shorts
 ```
 
-`npm run check:shorts` first requires complete memory connectivity, then runs the Gerber shorts checker on that same fixture output. Run independent DRC on the actual exported copper too. Shorts checks on an aborted render with no traces or vias do not prove routed connectivity. None of the fixture's checks qualifies the completed handheld.
+The legacy peer option is required by the current upstream packages' circuit-json peer versions. All-layer Gerber shorts, full signal connectivity, end-to-end skew measurements and independent KiCad copper/drill checks must be run on actual exported AM3352 copper. The completed handheld requires fresh checks after power and peripherals are integrated.
 
-The six-layer trial targets ENIG with **filled and copper-capped** 0.15mm drilled vias, no blind or buried vias, and top-only assembly. This is a proposed fabrication process. Final stackup, impedance, drill clearances and manufacturer assembly review remain required. [JLCPCB's capabilities](https://jlcpcb.com/capabilities/pcb-capabilities/) provide the fabrication limits used in this investigation.
-
-## Repositories and earlier revision
+## Repositories and records
 
 - [GitHub](https://github.com/Abse2001/g350-linux-handheld)
-- [tscircuit integrated experiment](https://tscircuit.com/abse/g350-linux-handheld?version=1.2.2-integrated-experimental)
-- [Historical Revision B carrier documentation](docs/REV_B_CARRIER.md)
-- [Historical fabrication status](fabrication/STATUS.md)
+- [tscircuit: AM3352 experimental source v1.3.0](https://tscircuit.com/abse/g350-linux-handheld?version=1.3.0-integrated-experimental)
+- [Current integrated-host record](docs/INTEGRATED_HOST.md)
+- [Historical RK3566 host investigation](docs/RK3566_HOST_RECORD.md)
+- [Historical RK3566 memory experiments](docs/RK3566_MEMORY_EXPERIMENTS.md)
+- [Historical Revision B carrier](docs/REV_B_CARRIER.md)
 
-Registry v1.1.0 still describes Revision B. **1.2.1-integrated-experimental** contains the checked 36-signal integrated source; all 105 stored files were verified by SHA-256 after recovering an archive-response timeout. The current 43-signal source uses **1.2.2-integrated-experimental**. Experimental versions remain explicitly incomplete; the old carrier's successful checks cannot be reused for Revision C.
-
-`tsci push` currently ignores `.gitignore`. Use `node scripts/stage-registry-source.mjs tmp/registry-source-VERSION` to prepare the reviewed tracked source allowlist, then push from that directory. It excludes local reference PDFs, temporary work and historical fabrication archives. An aborted native render with no copper is never accepted as a shorts/connectivity pass.
-
-The 1.2.2 publication uploaded 120 source/evidence files. `bun scripts/verify-registry-source.mjs tmp/registry-source-1.2.2` reads every file back and compares SHA-256 hashes, then checks the release is non-latest. The registry initially marked the tagged upload latest despite the CLI option; that metadata was corrected and the previous default retained. This explicit version link opens the integrated experiment. Publication does not establish successful full routing or fabrication readiness.
+Registry publication is not fabrication approval. `tsci push` ignores `.gitignore`; use the tracked source allowlist in `scripts/stage-registry-source.mjs` and verify every published file hash. Reference PDFs, temporary files and historical manufacturing archives are excluded.

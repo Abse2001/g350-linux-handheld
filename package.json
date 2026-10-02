@@ -1,7 +1,7 @@
 {
   "name": "@tsci/abse.g350-linux-handheld",
-  "version": "1.2.2",
-  "description": "G350 integrated RK3566 Linux handheld in progress; memory-routing experiments and historical Rev B carrier",
+  "version": "1.3.0",
+  "description": "G350 bare-AM3352 Linux handheld in progress; native bus_lanes DDR3 bootstrap and historical routing experiments",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -17,15 +17,18 @@
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
     "check:integrated-imports": "node scripts/check-integrated-imports.mjs",
-    "build:memory": "tsci build experiments/rk3566-memory-vip.circuit.tsx --autorouter-debug --autorouter-debug-dir dist/rk3566-memory-individual --autorouter-dump-srj all --autorouter-timeout 2m --pcb-png --kicad-project",
+    "build:memory": "tsci build experiments/am3352-ddr-clearance-bootstrap.circuit.tsx --autorouter-debug --autorouter-debug-dir dist/am3352-ddr-bootstrap --autorouter-dump-srj all --autorouter-timeout 2m --pcb-png --kicad-project",
+    "check:am3352-imports": "node scripts/check-am3352-imports.mjs",
     "check:memory-escapes": "node scripts/check-memory-escapes.mjs dist/rk3566-memory-individual/phase-0.input.simple-route.json",
-    "check:memory-connectivity": "node scripts/check-memory-routing.mjs",
+    "check:memory-connectivity": "node scripts/check-am3352-routing.mjs dist/experiments/am3352-ddr-clearance-bootstrap/circuit.json checks/integrated/am3352-memory-connectivity.json",
     "compact:circuit": "node scripts/compact-circuit.mjs",
-    "check:shorts": "node scripts/check-memory-routing.mjs dist/experiments/rk3566-memory-vip/circuit.json checks/integrated/pre-shorts-connectivity.json && tsci check shorts dist/experiments/rk3566-memory-vip/circuit.json --mode gerber --layer all",
+    "check:shorts": "npm run check:memory-connectivity && tsci check shorts dist/experiments/am3352-ddr-clearance-bootstrap/circuit.json --mode gerber --layer all",
     "check:kicad": "node scripts/check-kicad.mjs",
     "fabrication": "node scripts/export-fabrication.mjs",
     "restore:models": "node scripts/restore-3d-models.mjs",
-    "check:memory-phase-copper": "bun scripts/check-memory-phase-vias.mjs dist/rk3566-memory-individual 37"
+    "check:memory-phase-copper": "bun scripts/check-memory-phase-vias.mjs dist/rk3566-memory-individual 37",
+    "check:am3352-swizzle": "node scripts/check-am3352-swizzle.mjs",
+    "check:rk3566-memory-connectivity": "node scripts/check-memory-routing.mjs"
   },
   "devDependencies": {
     "@tscircuit/capacity-autorouter": "0.0.951",

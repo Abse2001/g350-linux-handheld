@@ -1,0 +1,1727 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-02T17:58:18",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "circuit.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 19 [U_SOC.M2 to U_RAM.F4] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 87.0
+                    },
+                    "uuid": "0b5be6fa-1ec6-d9ba-3231-cc7a459cbf3a"
+                },
+                {
+                    "description": "Pad 295 [U_SOC.M2 to U_RAM.F4] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 97.584968
+                    },
+                    "uuid": "439db73c-51a9-c8e4-190e-b6fc7c38c924"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 272 [U_SOC.E1 to U_RAM.F2] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 92.629809,
+                        "y": 94.785126
+                    },
+                    "uuid": "420bfae0-060b-a9e1-4e23-4ea269c50c9d"
+                },
+                {
+                    "description": "Pad 21 [U_SOC.E1 to U_RAM.F2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 88.6
+                    },
+                    "uuid": "74aab300-2d0d-48df-313a-bb42707d409d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 294 [U_SOC.M1 to U_RAM.F9] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 92.629809,
+                        "y": 97.584968
+                    },
+                    "uuid": "79bd13a0-1a7e-8841-44c0-031e5c017183"
+                },
+                {
+                    "description": "Pad 27 [U_SOC.M1 to U_RAM.F9] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 83.0
+                    },
+                    "uuid": "1b6871a0-368b-d91f-777f-dc22258b9163"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 29 [U_SOC.T2 to U_RAM.F11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 81.4
+                    },
+                    "uuid": "709f00de-7e18-8d1e-746d-e6a266f45a62"
+                },
+                {
+                    "description": "Pad 308 [U_SOC.T2 to U_RAM.F11] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 99.184914
+                    },
+                    "uuid": "10528478-7b0b-0458-1a3c-7bc8507c0418"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 37 [U_SOC.G2 to U_RAM.B2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 89.825,
+                        "y": 88.6
+                    },
+                    "uuid": "317dc8c0-703a-331f-11f2-2efe4c55d523"
+                },
+                {
+                    "description": "Pad 279 [U_SOC.G2 to U_RAM.B2] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 95.584972
+                    },
+                    "uuid": "38d4ac60-68e3-4f7f-0a9b-4b5e53acb8c3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.P2 to U_RAM.B11] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 98.385068
+                    },
+                    "uuid": "315692ae-3011-6952-6e86-9aae0d1e9eae"
+                },
+                {
+                    "description": "Pad 44 [U_SOC.P2 to U_RAM.B11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 89.825,
+                        "y": 81.4
+                    },
+                    "uuid": "142d14e0-7275-1901-2f42-e2de2f052143"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 47 [U_SOC.F2 to U_RAM.C2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 90.475,
+                        "y": 88.6
+                    },
+                    "uuid": "3d609140-7c1a-cba1-3596-288210ee7a9d"
+                },
+                {
+                    "description": "Track [U_SOC.F2 to U_RAM.C2] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 95.184922
+                    },
+                    "uuid": "2f5f9f1a-6f38-64e6-0dd0-68e65397931a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.K2 to U_RAM.C4] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 96.785122
+                    },
+                    "uuid": "1b9aa2f2-6c3d-6672-431f-d60e0d82ed72"
+                },
+                {
+                    "description": "Pad 49 [U_SOC.K2 to U_RAM.C4] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 90.475,
+                        "y": 87.0
+                    },
+                    "uuid": "31e88b74-3687-728c-6108-8f7407676e8c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 54 [U_SOC.R1 to U_RAM.C11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 90.475,
+                        "y": 81.4
+                    },
+                    "uuid": "772c4aa2-69b2-be62-5c39-32224ebfa5e2"
+                },
+                {
+                    "description": "Track [U_SOC.R1 to U_RAM.C11] on F.Cu, length 1.0798 mm",
+                    "pos": {
+                        "x": 92.629809,
+                        "y": 98.785118
+                    },
+                    "uuid": "1244e9a0-3cf6-765f-67a8-031e6da67023"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 275 [U_SOC.F1 to U_RAM.E2] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 92.629809,
+                        "y": 95.184922
+                    },
+                    "uuid": "0d1b0560-5223-85ff-4e9d-eea210a09cbd"
+                },
+                {
+                    "description": "Pad 66 [U_SOC.F1 to U_RAM.E2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 91.775,
+                        "y": 88.6
+                    },
+                    "uuid": "2cb00720-7334-aa3f-4646-b2a2003df07d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 288 [U_SOC.K1 to U_RAM.E4] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 92.629809,
+                        "y": 96.785122
+                    },
+                    "uuid": "4b436c46-0620-5f86-3f02-ad3a7bda4606"
+                },
+                {
+                    "description": "Pad 68 [U_SOC.K1 to U_RAM.E4] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 91.775,
+                        "y": 87.0
+                    },
+                    "uuid": "5f12c502-095d-38fe-71cd-36fe25c2cb02"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.R2 to U_RAM.E11] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 98.785118
+                    },
+                    "uuid": "34430b40-6a54-f8c0-08ec-fcc0587aff40"
+                },
+                {
+                    "description": "Pad 73 [U_SOC.R2 to U_RAM.E11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 91.775,
+                        "y": 81.4
+                    },
+                    "uuid": "0be32cce-195c-b90e-26d6-454e344fd18e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.E2 to U_RAM.G2] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 94.785126
+                    },
+                    "uuid": "6e553460-5aac-b061-4704-2c62335ba863"
+                },
+                {
+                    "description": "Pad 75 [U_SOC.E2 to U_RAM.G2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 93.075,
+                        "y": 88.6
+                    },
+                    "uuid": "665f1e4e-0459-6192-6f11-e17226359eae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.C2 to U_RAM.H2] on F.Cu, length 0.0001 mm",
+                    "pos": {
+                        "x": 93.029859,
+                        "y": 93.985026
+                    },
+                    "uuid": "5519fdc0-497e-0640-17e9-f5c07951f1c0"
+                },
+                {
+                    "description": "Pad 84 [U_SOC.C2 to U_RAM.H2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 93.725,
+                        "y": 88.6
+                    },
+                    "uuid": "6f03e016-044b-6036-666d-1faa2eda6076"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 86 [U_SOC.B3 to U_RAM.H4] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 93.725,
+                        "y": 87.0
+                    },
+                    "uuid": "44356720-15bd-fe01-6fb1-6322365b37bd"
+                },
+                {
+                    "description": "Pad 230 [U_SOC.B3 to U_RAM.H4] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 93.429909,
+                        "y": 93.584976
+                    },
+                    "uuid": "5aae87e0-4709-73ff-173e-902275869443"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 266 [U_SOC.C1 to U_RAM.J2] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 92.629809,
+                        "y": 93.985026
+                    },
+                    "uuid": "5a801ca0-4641-5801-18fd-335e783bbebd"
+                },
+                {
+                    "description": "Pad 93 [U_SOC.C1 to U_RAM.J2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 94.375,
+                        "y": 88.6
+                    },
+                    "uuid": "7ccb77d2-1212-f7f2-58a5-87ee3ca1f832"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 95 [U_SOC.B4 to U_RAM.J4] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 94.375,
+                        "y": 87.0
+                    },
+                    "uuid": "76a1c9a0-2f6a-d13f-2a88-93e27b8406fd"
+                },
+                {
+                    "description": "Pad 231 [U_SOC.B4 to U_RAM.J4] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 93.829959,
+                        "y": 93.584976
+                    },
+                    "uuid": "640d6d20-05c5-68ff-5882-9b22493560bd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 120 [U_SOC.B9 to U_RAM.P2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.625,
+                        "y": 88.6
+                    },
+                    "uuid": "34dae534-606c-9aec-0a4b-e4f4750464d4"
+                },
+                {
+                    "description": "Pad 236 [U_SOC.B9 to U_RAM.P2] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 95.829955,
+                        "y": 93.584976
+                    },
+                    "uuid": "62525ee0-040a-5abf-5a3d-a962477a527d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 127 [U_SOC.B8 to U_RAM.P11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 97.625,
+                        "y": 81.4
+                    },
+                    "uuid": "61759c20-4042-5fbf-1e05-a4627c4da883"
+                },
+                {
+                    "description": "Pad 235 [U_SOC.B8 to U_RAM.P11] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 95.429905,
+                        "y": 93.584976
+                    },
+                    "uuid": "462f53ac-4f18-2c74-1ba0-536c79a72cb4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 129 [U_SOC.A9 to U_RAM.R2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.275,
+                        "y": 88.6
+                    },
+                    "uuid": "324a0312-386e-7cce-5cd9-03520ddf7c8e"
+                },
+                {
+                    "description": "Track [U_SOC.A9 to U_RAM.R2] on F.Cu, length 1.0349 mm",
+                    "pos": {
+                        "x": 95.829955,
+                        "y": 93.184926
+                    },
+                    "uuid": "71fdce40-6350-a501-389f-18420ded8b83"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 138 [U_SOC.A10 to U_RAM.T2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 98.925,
+                        "y": 88.6
+                    },
+                    "uuid": "4def9840-53c8-639f-0a7f-a08268c7a4a3"
+                },
+                {
+                    "description": "Track [U_SOC.A10 to U_RAM.T2] on F.Cu, length 1.6849 mm",
+                    "pos": {
+                        "x": 96.229751,
+                        "y": 93.184926
+                    },
+                    "uuid": "4c2ae970-34c5-48d0-1d5f-a83005fa0790"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.B13 to U_RAM.U4] on F.Cu, length 0.0001 mm",
+                    "pos": {
+                        "x": 97.429901,
+                        "y": 93.584976
+                    },
+                    "uuid": "1a834f8a-46e4-ac76-57b3-578a09b4a476"
+                },
+                {
+                    "description": "Pad 147 [U_SOC.B13 to U_RAM.U4] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 99.575,
+                        "y": 87.0
+                    },
+                    "uuid": "6c44dc20-39c7-bebf-202b-a6627a1f0b83"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 152 [U_SOC.A15 to U_RAM.U9] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 99.575,
+                        "y": 83.0
+                    },
+                    "uuid": "16638708-02f8-9448-1072-5e7823dd5138"
+                },
+                {
+                    "description": "Track [U_SOC.A15 to U_RAM.U9] on F.Cu, length 1.0349 mm",
+                    "pos": {
+                        "x": 98.229747,
+                        "y": 93.184926
+                    },
+                    "uuid": "6ae633e0-6a68-3f61-3fb6-b2a2150525e3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 154 [U_SOC.B20 to U_RAM.U11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 99.575,
+                        "y": 81.4
+                    },
+                    "uuid": "5d3f8122-4fc5-f4e2-424c-68a234d2dc62"
+                },
+                {
+                    "description": "Pad 247 [U_SOC.B20 to U_RAM.U11] of U_SOC on F.Cu",
+                    "pos": {
+                        "x": 100.229743,
+                        "y": 93.584976
+                    },
+                    "uuid": "14836be2-7f3b-ebc2-160b-945e54aceb82"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.B15 to U_RAM.V9] on F.Cu, length 0.0003 mm",
+                    "pos": {
+                        "x": 98.229747,
+                        "y": 93.584976
+                    },
+                    "uuid": "77acf980-1644-fd80-4b22-fe8053750580"
+                },
+                {
+                    "description": "Pad 161 [U_SOC.B15 to U_RAM.V9] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 100.225,
+                        "y": 83.0
+                    },
+                    "uuid": "6f60c200-1d6c-7741-3487-d37e7983e1c3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.A20 to U_RAM.V11] on F.Cu, length 1.6849 mm",
+                    "pos": {
+                        "x": 100.229743,
+                        "y": 93.184926
+                    },
+                    "uuid": "6318f5a8-7166-ff18-45e6-f3d81a66e898"
+                },
+                {
+                    "description": "Pad 163 [U_SOC.A20 to U_RAM.V11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 100.225,
+                        "y": 81.4
+                    },
+                    "uuid": "1d4b94e8-2ac5-2128-383e-ad6845b839a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.B10 to U_RAM.Y2] on F.Cu, length 0.0003 mm",
+                    "pos": {
+                        "x": 96.229751,
+                        "y": 93.584976
+                    },
+                    "uuid": "00b0f67c-6218-f27c-3c7f-118424e8ea7c"
+                },
+                {
+                    "description": "Pad 174 [U_SOC.B10 to U_RAM.Y2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.525,
+                        "y": 88.6
+                    },
+                    "uuid": "0896a028-734f-2008-21f8-601848c01fc8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 181 [U_SOC.A19 to U_RAM.Y11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 101.525,
+                        "y": 81.4
+                    },
+                    "uuid": "32332560-6f84-d67f-113c-d25e4d0b31c3"
+                },
+                {
+                    "description": "Track [U_SOC.A19 to U_RAM.Y11] on F.Cu, length 1.0349 mm",
+                    "pos": {
+                        "x": 99.829947,
+                        "y": 93.184926
+                    },
+                    "uuid": "52721500-27c0-8841-02f1-047e2da2913d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.B12 to U_RAM.AA2] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 97.029851,
+                        "y": 93.584976
+                    },
+                    "uuid": "70c57e20-5d1c-fa21-4974-762235cbf223"
+                },
+                {
+                    "description": "Pad 183 [U_SOC.B12 to U_RAM.AA2] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.175,
+                        "y": 88.6
+                    },
+                    "uuid": "71630ba0-3054-f03f-2df3-13e273c4e7fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [U_SOC.B16 to U_RAM.AA9] on F.Cu, length 0.0002 mm",
+                    "pos": {
+                        "x": 98.629797,
+                        "y": 93.584976
+                    },
+                    "uuid": "2b084a28-738f-b9d8-1227-bdd84f403e28"
+                },
+                {
+                    "description": "Pad 188 [U_SOC.B16 to U_RAM.AA9] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.175,
+                        "y": 83.0
+                    },
+                    "uuid": "0e349ca0-43bf-ae1f-6a4c-07221857bc63"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 190 [U_SOC.B19 to U_RAM.AA11] of U_RAM on F.Cu",
+                    "pos": {
+                        "x": 102.175,
+                        "y": 81.4
+                    },
+                    "uuid": "5de8596c-6b61-e5ac-78db-71ec79ab01d4"
+                },
+                {
+                    "description": "Track [U_SOC.B19 to U_RAM.AA11] on F.Cu, length 0.0001 mm",
+                    "pos": {
+                        "x": 99.829947,
+                        "y": 93.584976
+                    },
+                    "uuid": "6b96e250-3301-21b0-2e66-da50703129b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.M2 to U_RAM.F4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 87.0
+                    },
+                    "uuid": "547c3480-4ddc-c61f-473d-57be409de95d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.M2 to U_RAM.F4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 97.585
+                    },
+                    "uuid": "7928b8d4-3a04-b8ec-12cd-d5545fa06394"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.E1 to U_RAM.F2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.55,
+                        "y": 94.785126
+                    },
+                    "uuid": "57fc11ca-169f-336a-2abd-aaf66c1a8956"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.E1 to U_RAM.F2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 88.6
+                    },
+                    "uuid": "6ed7e780-4b55-3dc1-27d2-9402044fea43"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.M1 to U_RAM.F9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 83.0
+                    },
+                    "uuid": "18d84e40-1238-dfdf-0b99-717e04fa031d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.M1 to U_RAM.F9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 90.9,
+                        "y": 97.584968
+                    },
+                    "uuid": "4b4381ca-5254-7c16-1013-860a727b882a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.T2 to U_RAM.F11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 92.425,
+                        "y": 81.4
+                    },
+                    "uuid": "2065eba0-43e8-955f-676b-3f1e75121723"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.T2 to U_RAM.F11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 99.185
+                    },
+                    "uuid": "30c5bcaa-1c0c-d196-68df-5fd64a4e11ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.G2 to U_RAM.B2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 89.825,
+                        "y": 88.6
+                    },
+                    "uuid": "02409822-34f2-3a82-67a3-dce265aa80be"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.G2 to U_RAM.B2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 95.585
+                    },
+                    "uuid": "4ca699c0-7029-437f-6c54-12c248d16903"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.P2 to U_RAM.B11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 98.385
+                    },
+                    "uuid": "39861c14-79a7-55ac-2cd4-c76c1ffdc6d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.P2 to U_RAM.B11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 89.825,
+                        "y": 81.4
+                    },
+                    "uuid": "3be4cc60-5f67-761f-7d15-e02259933663"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.F2 to U_RAM.C2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 95.185
+                    },
+                    "uuid": "236918ca-703b-a70a-42f1-cab609e0c38a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.F2 to U_RAM.C2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 90.475,
+                        "y": 88.6
+                    },
+                    "uuid": "3e9702e0-6219-ac9f-7a63-a9a256e0ffe3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.K2 to U_RAM.C4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 90.475,
+                        "y": 87.0
+                    },
+                    "uuid": "093aba80-0fda-28e1-1679-97421d1905a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.K2 to U_RAM.C4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 96.785
+                    },
+                    "uuid": "22a61028-2a2c-7e18-76ff-0c583c2e6568"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.R1 to U_RAM.C11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.55,
+                        "y": 98.785118
+                    },
+                    "uuid": "4bec79e0-61ad-8c5f-776e-9ede72d04ea3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.R1 to U_RAM.C11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 90.475,
+                        "y": 81.4
+                    },
+                    "uuid": "68227520-745a-e121-50d8-37622d558da3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.F1 to U_RAM.E2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 90.9,
+                        "y": 95.184922
+                    },
+                    "uuid": "10d5eb80-0678-15df-03e5-bfc20e439563"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.F1 to U_RAM.E2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.775,
+                        "y": 88.6
+                    },
+                    "uuid": "2b975134-071a-512c-39cb-f38c6c7d95ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.K1 to U_RAM.E4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.775,
+                        "y": 87.0
+                    },
+                    "uuid": "160631a2-0d8d-7022-0514-aea2036412de"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.K1 to U_RAM.E4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 90.9,
+                        "y": 96.785122
+                    },
+                    "uuid": "3baaffa0-76d5-c681-2956-8ca22428ad3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.R2 to U_RAM.E11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.775,
+                        "y": 81.4
+                    },
+                    "uuid": "5ec0eb20-3b3e-4161-17bb-97a20bc7121d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.R2 to U_RAM.E11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 98.785
+                    },
+                    "uuid": "6ff2bdaa-2320-2f6a-29b2-5ed67684ed16"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.E2 to U_RAM.G2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.075,
+                        "y": 88.6
+                    },
+                    "uuid": "0579b3a0-1e08-f61f-418b-9fde650e499d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.E2 to U_RAM.G2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 94.785
+                    },
+                    "uuid": "253de4a6-2794-a99a-7467-37da3ec639e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.C2 to U_RAM.H2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.725,
+                        "y": 88.6
+                    },
+                    "uuid": "2c8e70c0-090b-c701-1a76-e2be3df98c7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.C2 to U_RAM.H2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.03,
+                        "y": 93.985
+                    },
+                    "uuid": "68feeea2-1c2c-6062-30a6-2dde7d78bc1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B3 to U_RAM.H4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.43,
+                        "y": 93.585
+                    },
+                    "uuid": "0b983020-413a-5e20-71f3-13a025208560"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B3 to U_RAM.H4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.725,
+                        "y": 87.0
+                    },
+                    "uuid": "20af4d40-274e-bba1-2dee-2a02348d9863"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.C1 to U_RAM.J2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 94.375,
+                        "y": 88.6
+                    },
+                    "uuid": "020aa200-2178-07bf-44fa-b17e687d5b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.C1 to U_RAM.J2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.55,
+                        "y": 93.985026
+                    },
+                    "uuid": "2eb8eb80-18f7-d901-0336-c682128a4bfd"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B4 to U_RAM.J4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.83,
+                        "y": 93.585
+                    },
+                    "uuid": "570f431c-5c1e-2ea4-0f4b-a0643d86eddc"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B4 to U_RAM.J4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 94.375,
+                        "y": 87.0
+                    },
+                    "uuid": "5d5c2700-63fb-9561-6a9b-03c2713a7223"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B9 to U_RAM.P2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 95.83,
+                        "y": 93.585
+                    },
+                    "uuid": "411827aa-7215-4a16-2542-bbd6278fd26a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B9 to U_RAM.P2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 97.625,
+                        "y": 88.6
+                    },
+                    "uuid": "574c2ee0-33c9-8521-1046-db62133bce5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B8 to U_RAM.P11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 97.625,
+                        "y": 81.4
+                    },
+                    "uuid": "06e8c0e0-1c99-e8df-401c-929e639f3c5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B8 to U_RAM.P11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 95.43,
+                        "y": 93.585
+                    },
+                    "uuid": "195b3a54-662d-c894-4cff-a92c002d1aec"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A9 to U_RAM.R2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 95.829955,
+                        "y": 92.15
+                    },
+                    "uuid": "1445d980-017b-38ff-173c-4b7e2cfd5dfd"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A9 to U_RAM.R2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 98.275,
+                        "y": 88.6
+                    },
+                    "uuid": "2cc86020-0945-b661-1a3c-f35e3dbf9d1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A10 to U_RAM.T2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 96.229751,
+                        "y": 91.5
+                    },
+                    "uuid": "2a31c420-172b-1a40-5887-f8a0661b2900"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A10 to U_RAM.T2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 98.925,
+                        "y": 88.6
+                    },
+                    "uuid": "603807a0-7c45-4ea1-58c2-a4e2353ffb23"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B13 to U_RAM.U4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 99.575,
+                        "y": 87.0
+                    },
+                    "uuid": "0d9fba40-143f-28a1-1ade-9702217e0563"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B13 to U_RAM.U4] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 97.43,
+                        "y": 93.585
+                    },
+                    "uuid": "35815416-7dac-1daa-30d9-8f6a1bf8fed6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A15 to U_RAM.U9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 98.229747,
+                        "y": 92.15
+                    },
+                    "uuid": "1a3cb4e0-047b-a261-1145-701e2706829d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A15 to U_RAM.U9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 99.575,
+                        "y": 83.0
+                    },
+                    "uuid": "4b1cf3a0-51bc-6201-585b-d0625efb3ec3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B20 to U_RAM.U11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 100.23,
+                        "y": 93.585
+                    },
+                    "uuid": "54a695c0-5dda-3061-105a-f6823d24435d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B20 to U_RAM.U11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 99.575,
+                        "y": 81.4
+                    },
+                    "uuid": "56b58c00-7a38-35bf-6245-20823ec276c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B15 to U_RAM.V9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 98.23,
+                        "y": 93.585
+                    },
+                    "uuid": "33d7d45e-18fa-b9e2-65cd-48224d60299e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B15 to U_RAM.V9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 100.225,
+                        "y": 83.0
+                    },
+                    "uuid": "58a4364c-74aa-2754-41f8-84f40f46e294"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A20 to U_RAM.V11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 100.229743,
+                        "y": 91.5
+                    },
+                    "uuid": "201fc7e0-35e0-da5f-4ba1-ecde6162ff5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A20 to U_RAM.V11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 100.225,
+                        "y": 81.4
+                    },
+                    "uuid": "686c0982-4ac1-683e-0211-26024ee3b442"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B10 to U_RAM.Y2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 96.23,
+                        "y": 93.585
+                    },
+                    "uuid": "1d340d2e-2f9e-8112-7c71-0f5236bc626e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B10 to U_RAM.Y2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 101.525,
+                        "y": 88.6
+                    },
+                    "uuid": "70e0d292-424c-9f2e-0a85-ef1257587d52"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A19 to U_RAM.Y11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 99.829947,
+                        "y": 92.15
+                    },
+                    "uuid": "024d7c40-1373-963f-2934-a8be3ef5bb3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.A19 to U_RAM.Y11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 101.525,
+                        "y": 81.4
+                    },
+                    "uuid": "1c3d9a36-6910-2876-4a1d-494a02b544f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B12 to U_RAM.AA2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 97.03,
+                        "y": 93.585
+                    },
+                    "uuid": "22ff76f8-29d3-1748-76a5-a5883c87cc38"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B12 to U_RAM.AA2] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 102.175,
+                        "y": 88.6
+                    },
+                    "uuid": "37d1f89a-7b5b-7926-2e88-eae61e49a35a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B16 to U_RAM.AA9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 98.63,
+                        "y": 93.585
+                    },
+                    "uuid": "062c661a-52fe-f45a-602e-7d66135bef26"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B16 to U_RAM.AA9] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 102.175,
+                        "y": 83.0
+                    },
+                    "uuid": "555322fc-22a1-809c-1010-21c442c1c424"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B19 to U_RAM.AA11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 102.175,
+                        "y": 81.4
+                    },
+                    "uuid": "03b1540e-5083-e24e-62a9-8f7215d70132"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.B19 to U_RAM.AA11] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 99.83,
+                        "y": 93.585
+                    },
+                    "uuid": "2a81df5e-2250-aee2-6f23-3d22440a349e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Blind via [U_SOC.N1 to U_RAM.D10] on In1.Cu - In6.Cu",
+                    "pos": {
+                        "x": 91.125,
+                        "y": 82.2
+                    },
+                    "uuid": "38fd0a0a-064b-67aa-2c66-3ab65f17dd16"
+                },
+                {
+                    "description": "Micro via [U_SOC.N1 to U_RAM.D10] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 91.125,
+                        "y": 82.2
+                    },
+                    "uuid": "761a1be4-4368-7984-10b6-d72421facb3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Micro via [U_SOC.1B3 to U_RAM.H10] on F.Cu - In1.Cu",
+                    "pos": {
+                        "x": 93.725,
+                        "y": 82.2
+                    },
+                    "uuid": "0902a680-2c85-503f-5007-f9fe738aa3bd"
+                },
+                {
+                    "description": "Blind via [U_SOC.1B3 to U_RAM.H10] on In1.Cu - In6.Cu",
+                    "pos": {
+                        "x": 93.725,
+                        "y": 82.2
+                    },
+                    "uuid": "6bcd3d60-484a-93a1-24c7-e9e201454023"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        }
+    ]
+}

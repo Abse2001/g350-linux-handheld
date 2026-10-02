@@ -1,0 +1,1843 @@
+{
+  "status": "PIN_INVENTORY_ONLY_HOST_UNPOWERED",
+  "fabricationReady": false,
+  "scope": "Every documented processor supply/ground ball plus RAM supply/ground balls. No physical power wiring, regulator choice or decoupling qualification is implied.",
+  "processorSource": {
+    "path": "lib/integrated/rk3566-ball-map.json",
+    "sha256": "6e9979fb07e1a37c413c97e6692bd7129e6d608947c253898456bee7f16e58e7",
+    "url": "https://wiki.friendlyelec.com/wiki/images/8/89/Rockchip_RK3566_Datasheet_V1.2-20220930.pdf"
+  },
+  "hardwareGuide": "https://dl.xkwy2018.com/downloads/RK3568/RK356X/Hardware/Rockchip_RK3566_Hardware_Design_Guide_V1.1_EN.pdf",
+  "socPowerAndGroundBalls": 265,
+  "socDomains": [
+    {
+      "domain": "GND",
+      "kind": "ground",
+      "balls": [
+        {
+          "ball": "1T3",
+          "function": "VSS_127",
+          "datasheetPage": 24
+        },
+        {
+          "ball": "1T5",
+          "function": "VSS_128",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T7",
+          "function": "AVSS_21",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T8",
+          "function": "AVSS_22",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T9",
+          "function": "AVSS_23",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T10",
+          "function": "AVSS_24",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T11",
+          "function": "AVSS_25",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T12",
+          "function": "AVSS_26",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T13",
+          "function": "AVSS_27",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T14",
+          "function": "AVSS_28",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T15",
+          "function": "AVSS_29",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T16",
+          "function": "AVSS_30",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1T17",
+          "function": "AVSS_31",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1U2",
+          "function": "VSS_129",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1B10",
+          "function": "VSS_30",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1B11",
+          "function": "VSS_31",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1B15",
+          "function": "VSS_32",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1B19",
+          "function": "VSS_33",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1U12",
+          "function": "AVSS_32",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1U13",
+          "function": "AVSS_33",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1U15",
+          "function": "AVSS_34",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1U17",
+          "function": "AVSS_35",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C4",
+          "function": "VSS_34",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C5",
+          "function": "VSS_35",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C6",
+          "function": "VSS_36",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1V1",
+          "function": "VSS_130",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C8",
+          "function": "VSS_37",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C9",
+          "function": "VSS_38",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1V4",
+          "function": "VSS_131",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C14",
+          "function": "VSS_39",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1V7",
+          "function": "AVSS_36",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C16",
+          "function": "VSS_40",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1C18",
+          "function": "VSS_41",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1V12",
+          "function": "AVSS_37",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1V13",
+          "function": "AVSS_38",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D1",
+          "function": "VSS_42",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D3",
+          "function": "VSS_43",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1V18",
+          "function": "AVSS_39",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D4",
+          "function": "DDR_AVSS",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "A1",
+          "function": "VSS_1",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "A2",
+          "function": "VSS_2",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D10",
+          "function": "VSS_44",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D14",
+          "function": "VSS_45",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E3",
+          "function": "VSS_46",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E8",
+          "function": "VSS_47",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E10",
+          "function": "VSS_48",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "A38",
+          "function": "VSS_3",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "AA2",
+          "function": "VSS_18",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E14",
+          "function": "VSS_49",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E15",
+          "function": "VSS_50",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E17",
+          "function": "VSS_51",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "AC37",
+          "function": "VSS_24",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "AD2",
+          "function": "VSS_19",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "AE37",
+          "function": "VSS_25",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1F6",
+          "function": "VSS_52",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F7",
+          "function": "VSS_53",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F8",
+          "function": "VSS_54",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F9",
+          "function": "VSS_55",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F10",
+          "function": "VSS_56",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AH37",
+          "function": "VSS_26",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F15",
+          "function": "VSS_57",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F16",
+          "function": "VSS_58",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F20",
+          "function": "AVSS1_6",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G3",
+          "function": "VSS_59",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AL37",
+          "function": "VSS_27",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G6",
+          "function": "VSS_60",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G7",
+          "function": "VSS_61",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G8",
+          "function": "VSS_62",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G9",
+          "function": "VSS_63",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G10",
+          "function": "VSS_64",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G11",
+          "function": "VSS_65",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G12",
+          "function": "VSS_66",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AP2",
+          "function": "VSS_20",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G14",
+          "function": "VSS_67",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G16",
+          "function": "AVSS1_7",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G18",
+          "function": "AVSS1_8",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G19",
+          "function": "AVSS1_9",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AP8",
+          "function": "VSS_22",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G20",
+          "function": "AVSS1_10",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H1",
+          "function": "VSS_68",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H2",
+          "function": "VSS_69",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AP13",
+          "function": "AVSS_1",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H6",
+          "function": "VSS_70",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AP16",
+          "function": "AVSS_2",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "AP19",
+          "function": "AVSS_3",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1H11",
+          "function": "VSS_71",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1H12",
+          "function": "VSS_72",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1H13",
+          "function": "VSS_73",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AP22",
+          "function": "AVSS_4",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AP25",
+          "function": "AVSS_5",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AP28",
+          "function": "AVSS_6",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J1",
+          "function": "VSS_74",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AP31",
+          "function": "AVSS_7",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AP34",
+          "function": "AVSS_8",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J6",
+          "function": "VSS_75",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J8",
+          "function": "VSS_76",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AP37",
+          "function": "VSS_28",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J9",
+          "function": "VSS_77",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AR1",
+          "function": "VSS_21",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J11",
+          "function": "VSS_78",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J12",
+          "function": "VSS_79",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J13",
+          "function": "VSS_80",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J16",
+          "function": "AVSS1_11",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J18",
+          "function": "AVSS1_12",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K2",
+          "function": "VSS_81",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K3",
+          "function": "VSS_82",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K4",
+          "function": "VSS_83",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K5",
+          "function": "VSS_84",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K6",
+          "function": "VSS_85",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K8",
+          "function": "VSS_86",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K9",
+          "function": "VSS_87",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K11",
+          "function": "VSS_88",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K12",
+          "function": "VSS_89",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K13",
+          "function": "VSS_90",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K14",
+          "function": "VSS_91",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "AR38",
+          "function": "VSS_29",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K15",
+          "function": "VSS_92",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "B1",
+          "function": "VSS_4",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "B2",
+          "function": "VSS_5",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K18",
+          "function": "AVSS1_13",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "B6",
+          "function": "VSS_6",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1L3",
+          "function": "VSS_93",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "B11",
+          "function": "VSS_7",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1L6",
+          "function": "VSS_94",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "B14",
+          "function": "VSS_8",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L10",
+          "function": "VSS_95",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L11",
+          "function": "VSS_96",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L12",
+          "function": "VSS_97",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "B18",
+          "function": "VSS_9",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L13",
+          "function": "VSS_98",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L14",
+          "function": "VSS_99",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L15",
+          "function": "VSS_100",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "B21",
+          "function": "VSS_10",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L19",
+          "function": "AVSS1_14",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M3",
+          "function": "VSS_101",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M4",
+          "function": "VSS_102",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M5",
+          "function": "VSS_103",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M6",
+          "function": "VSS_104",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "B28",
+          "function": "VSS_11",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M10",
+          "function": "VSS_105",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M11",
+          "function": "VSS_106",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "B31",
+          "function": "VSS_12",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M12",
+          "function": "VSS_107",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M13",
+          "function": "VSS_108",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M14",
+          "function": "VSS_109",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M15",
+          "function": "VSS_110",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M16",
+          "function": "VSS_111",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M17",
+          "function": "VSS_112",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M18",
+          "function": "TVSS",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M20",
+          "function": "VSS_113",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "D2",
+          "function": "VSS_13",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N3",
+          "function": "VSS_114",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N4",
+          "function": "VSS_115",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N7",
+          "function": "VSS_116",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "E37",
+          "function": "VSS_23",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N11",
+          "function": "AVSS_9",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N12",
+          "function": "AVSS_10",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N17",
+          "function": "PMUPLL_AVSS",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "H37",
+          "function": "AVSS1_1",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "J2",
+          "function": "VSS_14",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P1",
+          "function": "VSS_117",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P5",
+          "function": "VSS_118",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "L2",
+          "function": "VSS_15",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P6",
+          "function": "VSS_119",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "L37",
+          "function": "AVSS1_2",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P7",
+          "function": "VSS_120",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P8",
+          "function": "AVSS_11",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P10",
+          "function": "AVSS_12",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P14",
+          "function": "AVSS_13",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1P15",
+          "function": "VSS_121",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "P37",
+          "function": "AVSS1_3",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R3",
+          "function": "VSS_122",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R4",
+          "function": "VSS_123",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "U2",
+          "function": "VSS_16",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R5",
+          "function": "VSS_124",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "U37",
+          "function": "AVSS1_4",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R6",
+          "function": "VSS_125",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R7",
+          "function": "VSS_126",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R8",
+          "function": "AVSS_14",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R9",
+          "function": "AVSS_15",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "W2",
+          "function": "VSS_17",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R11",
+          "function": "AVSS_16",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R12",
+          "function": "AVSS_17",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R13",
+          "function": "AVSS_18",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R14",
+          "function": "AVSS_19",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "1R15",
+          "function": "AVSS_20",
+          "datasheetPage": 30
+        },
+        {
+          "ball": "Y37",
+          "function": "AVSS1_5",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0
+    },
+    {
+      "domain": "VDD_CPU",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1C12",
+          "function": "VDD_CPU_1",
+          "datasheetPage": 25
+        },
+        {
+          "ball": "1D11",
+          "function": "VDD_CPU_2",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D12",
+          "function": "VDD_CPU_3",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E11",
+          "function": "VDD_CPU_4",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E12",
+          "function": "VDD_CPU_5",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E13",
+          "function": "VDD_CPU_6",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1F11",
+          "function": "VDD_CPU_7",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F12",
+          "function": "VDD_CPU_8",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F13",
+          "function": "VDD_CPU_9",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1F14",
+          "function": "VDD_CPU_10",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1G13",
+          "function": "VDD_CPU_11",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "voltageKind": "DYNAMIC",
+      "selectionStatus": "Pending regulator, DVFS and load/sequence qualification"
+    },
+    {
+      "domain": "VCCIO2",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1C13",
+          "function": "VCCIO2",
+          "datasheetPage": 25
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "DDRPHY_VDDQ",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1D5",
+          "function": "DDRPHY_VDDQ_1",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D6",
+          "function": "DDRPHY_VDDQ_2",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D7",
+          "function": "DDRPHY_VDDQ_3",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D8",
+          "function": "DDRPHY_VDDQ_4",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1D9",
+          "function": "DDRPHY_VDDQ_5",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E4",
+          "function": "DDRPHY_VDDQ_6",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1F4",
+          "function": "DDRPHY_VDDQ_7",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1G4",
+          "function": "DDRPHY_VDDQ_8",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.1,
+      "voltageEvidence": "RK3566 hardware guide Figure 2-25, LPDDR4 supply, p39"
+    },
+    {
+      "domain": "VCCIO1",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1D13",
+          "function": "VCCIO1",
+          "datasheetPage": 26
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "OTP_VCC18",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1D15",
+          "function": "OTP_VCC18",
+          "datasheetPage": 26
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "SARADC_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1D16",
+          "function": "SARADC_AVDD_1V8",
+          "datasheetPage": 26
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "DDRPHY_VDDQL",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1E6",
+          "function": "DDRPHY_VDDQL_1",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E7",
+          "function": "DDRPHY_VDDQL_2",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1E9",
+          "function": "DDRPHY_VDDQL_3",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1F5",
+          "function": "DDRPHY_VDDQL_4",
+          "datasheetPage": 26
+        },
+        {
+          "ball": "1G5",
+          "function": "DDRPHY_VDDQL_5",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.1,
+      "voltageEvidence": "RK3566 hardware guide Figure 2-25, LPDDR4 supply, p39"
+    },
+    {
+      "domain": "VCCIO4",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1E16",
+          "function": "VCCIO4",
+          "datasheetPage": 26
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "VCCIO3",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1F17",
+          "function": "VCCIO3",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "VDD_NPU",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1G15",
+          "function": "VDD_NPU_1",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H14",
+          "function": "VDD_NPU_2",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1H15",
+          "function": "VDD_NPU_3",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J14",
+          "function": "VDD_NPU_4",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J15",
+          "function": "VDD_NPU_5",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "voltageKind": "DYNAMIC",
+      "selectionStatus": "Pending regulator, DVFS and load/sequence qualification"
+    },
+    {
+      "domain": "EDP_TX_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1G17",
+          "function": "EDP_TX_AVDD_1V8",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "SYSPLL_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1H4",
+          "function": "SYSPLL_AVDD_1V8",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "SYSPLL_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1H5",
+          "function": "SYSPLL_AVDD_0V9",
+          "datasheetPage": 27
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "VDD_LOGIC",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1H7",
+          "function": "VDD_LOGIC_1",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H8",
+          "function": "VDD_LOGIC_2",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H9",
+          "function": "VDD_LOGIC_3",
+          "datasheetPage": 27
+        },
+        {
+          "ball": "1H10",
+          "function": "VDD_LOGIC_4",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J7",
+          "function": "VDD_LOGIC_5",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1J10",
+          "function": "VDD_LOGIC_6",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K7",
+          "function": "VDD_LOGIC_7",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1K10",
+          "function": "VDD_LOGIC_8",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1L7",
+          "function": "VDD_LOGIC_9",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "voltageKind": "DYNAMIC",
+      "selectionStatus": "Pending regulator, DVFS and load/sequence qualification"
+    },
+    {
+      "domain": "USB_AVDD1_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1H16",
+          "function": "USB_AVDD1_1V8",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "EDP_TX_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1H17",
+          "function": "EDP_TX_AVDD_0V9",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "USB_AVDD1_3V3",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1H18",
+          "function": "USB_AVDD1_3V3",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 3.3
+    },
+    {
+      "domain": "USB_AVDD2_3V3",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1J2",
+          "function": "USB_AVDD2_3V3",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 3.3
+    },
+    {
+      "domain": "USB_AVDD2_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1J3",
+          "function": "USB_AVDD2_1V8",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "USB_AVDD2_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1J4",
+          "function": "USB_AVDD2_0V9",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "USB_AVDD1_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1J17",
+          "function": "USB_AVDD1_0V9",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "MULTI_PHY_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1K16",
+          "function": "MULTI_PHY_AVDD_0V9",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "MULTI_PHY_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1K17",
+          "function": "MULTI_PHY_AVDD_1V8",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "VCCIO6",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1L4",
+          "function": "VCCIO6_1",
+          "datasheetPage": 28
+        },
+        {
+          "ball": "1L5",
+          "function": "VCCIO6_2",
+          "datasheetPage": 28
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "VDD_GPU",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1L8",
+          "function": "VDD_GPU_1",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1L9",
+          "function": "VDD_GPU_2",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M7",
+          "function": "VDD_GPU_3",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M8",
+          "function": "VDD_GPU_4",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1M9",
+          "function": "VDD_GPU_5",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "voltageKind": "DYNAMIC",
+      "selectionStatus": "Pending regulator, DVFS and load/sequence qualification"
+    },
+    {
+      "domain": "VCCIO5",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N5",
+          "function": "VCCIO5_1",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N6",
+          "function": "VCCIO5_2",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "VCCIO7",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N8",
+          "function": "VCCIO7",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "MIPI_CSI_RX_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N9",
+          "function": "MIPI_CSI_RX_AVDD_0V9",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "MIPI_DSI_TX1_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N10",
+          "function": "MIPI_DSI_TX1_AVDD_0V9",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "HDMI_TX_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N13",
+          "function": "HDMI_TX_AVDD_0V9_2",
+          "datasheetPage": 29
+        },
+        {
+          "ball": "1N14",
+          "function": "HDMI_TX_AVDD_0V9_1",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "PMUIO2",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N15",
+          "function": "PMUIO2",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "allowedVoltages": [
+        1.8,
+        3.3
+      ],
+      "selectionStatus": "Pending complete IO allocation and matching boot/software configuration"
+    },
+    {
+      "domain": "PMU_VDD_LOGIC_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N16",
+          "function": "PMU_VDD_LOGIC_0V9",
+          "datasheetPage": 29
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "PMUPLL_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1N18",
+          "function": "PMUPLL_AVDD_1V8",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "MIPI_CSI_RX_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1P9",
+          "function": "MIPI_CSI_RX_AVDD_1V8",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "HDMI_TX_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1P13",
+          "function": "HDMI_TX_AVDD_1V8",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    },
+    {
+      "domain": "PMUIO1",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1P16",
+          "function": "PMUIO1",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 3.3
+    },
+    {
+      "domain": "PMUPLL_AVDD_0V9",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1P17",
+          "function": "PMUPLL_AVDD_0V9",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 0.9
+    },
+    {
+      "domain": "MIPI_DSI_TX1_AVDD_1V8",
+      "kind": "supply",
+      "balls": [
+        {
+          "ball": "1R10",
+          "function": "MIPI_DSI_TX1_AVDD_1V8",
+          "datasheetPage": 30
+        }
+      ],
+      "assignmentStatus": "UNWIRED",
+      "requiredVoltage": 1.8
+    }
+  ],
+  "ramDomains": [
+    {
+      "domain": "VDD1",
+      "requiredVoltage": 1.8,
+      "balls": [
+        "F1",
+        "F12",
+        "G4",
+        "G9",
+        "T4",
+        "T9",
+        "U1",
+        "U12"
+      ],
+      "assignmentStatus": "UNWIRED"
+    },
+    {
+      "domain": "VDD2",
+      "requiredVoltage": 1.1,
+      "balls": [
+        "A4",
+        "A9",
+        "F5",
+        "F8",
+        "H1",
+        "H5",
+        "H8",
+        "H12",
+        "K1",
+        "K3",
+        "K10",
+        "K12",
+        "N1",
+        "N3",
+        "N10",
+        "N12",
+        "R1",
+        "R5",
+        "R8",
+        "R12",
+        "U5",
+        "U8",
+        "AB4",
+        "AB9"
+      ],
+      "assignmentStatus": "UNWIRED"
+    },
+    {
+      "domain": "VDDQ",
+      "requiredVoltage": 1.1,
+      "balls": [
+        "B3",
+        "B5",
+        "B8",
+        "B10",
+        "D1",
+        "D5",
+        "D8",
+        "D12",
+        "F3",
+        "F10",
+        "U3",
+        "U10",
+        "W1",
+        "W5",
+        "W8",
+        "W12",
+        "AA3",
+        "AA5",
+        "AA8",
+        "AA10"
+      ],
+      "assignmentStatus": "UNWIRED"
+    },
+    {
+      "domain": "VSS",
+      "requiredVoltage": 0,
+      "balls": [
+        "A3",
+        "A10",
+        "C1",
+        "C5",
+        "C8",
+        "C12",
+        "D2",
+        "D4",
+        "D9",
+        "D11",
+        "E1",
+        "E5",
+        "E8",
+        "E12",
+        "G1",
+        "G3",
+        "G5",
+        "G8",
+        "G10",
+        "G12",
+        "J1",
+        "J3",
+        "J10",
+        "J12",
+        "K2",
+        "K4",
+        "K9",
+        "K11",
+        "N2",
+        "N4",
+        "N9",
+        "N11",
+        "P1",
+        "P3",
+        "P10",
+        "P12",
+        "T1",
+        "T3",
+        "T5",
+        "T8",
+        "T10",
+        "T12",
+        "V1",
+        "V5",
+        "V8",
+        "V12",
+        "W2",
+        "W4",
+        "W9",
+        "W11",
+        "Y1",
+        "Y5",
+        "Y8",
+        "Y12",
+        "AB3",
+        "AB5",
+        "AB8",
+        "AB10"
+      ],
+      "assignmentStatus": "UNWIRED"
+    }
+  ],
+  "pmicInternalFilterPinsDoNotDriveExternally": {
+    "VCC_1P8A": 44,
+    "VCC_1P8D": 48,
+    "VCC_RTC": 45
+  },
+  "requiredSequence": [
+    "0.9V PMU/analog/logic",
+    "1.8V PMU/general and early 3.3V PMU/GPU",
+    "CPU",
+    "DDR",
+    "remaining 3.3V",
+    "reset release at least 10ms after last stable rail"
+  ],
+  "unresolvedPowerPath": "RK817 SYS follows the battery without USB input. A 3.3V step-down regulator cannot maintain 3.3V when SYS falls below it. A qualified buck-boost/boost-fed power architecture and USB current-limit policy remain required."
+}

@@ -1,0 +1,32 @@
+{
+  "proposedProcess": "1+6+1 STANDARD HDI: exact stackup unapproved",
+  "status": "PARTIAL_ROUTING_DIAGNOSTIC_ONLY",
+  "fabricationReady": false,
+  "scope": "Exact saved manual escapes plus completed autorouting phases from an aborted build. Native failure/error records retained. No routing is invented or repaired here.",
+  "completedSignals": 38,
+  "requiredSignals": 67,
+  "manualEscapes": 134,
+  "microVias": 134,
+  "buriedVias": 52,
+  "tracePieces": 172,
+  "physicalVias": 186,
+  "source": {
+    "path": "dist/experiments/rk3566-memory-hdi/circuit.json",
+    "sha256": "2004b49ec9298c3fc174ec47e3fb776b2a69f56b728e0ce65b6e59cec48d048a"
+  },
+  "checkpoint": {
+    "path": "dist/rk3566-memory-hdi-grid/phase-8.input.simple-route.json",
+    "sha256": "cb0752018808ad30681c6aef49d7d9ee560303a3c84de2aa8be0baa2bea6a280"
+  },
+  "savedEscapes": [
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-hdi-circuit-tsx-c137c99c24/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json",
+      "sha256": "0e20058516e42ddf65a003a83c743af4d98f7419c4991051afc22e7c87935ad4"
+    },
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-hdi-circuit-tsx-c137c99c24/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json",
+      "sha256": "7f7d33f9347561925b04e94cde9875f489b36b99f90351b97ee339c6ba878f97"
+    }
+  ],
+  "diagnosticSha256": "8b035b1d4e4b0707f4c070082a03a8c1487e2aa8c29fbaaaddfd4bf4cebaa2cb"
+}

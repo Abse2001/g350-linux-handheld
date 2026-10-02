@@ -1,0 +1,71 @@
+{
+  "status": "PARTIAL_NATIVE_DDR_BOOTSTRAP_GEOMETRY_PASS_HOST_INCOMPLETE",
+  "fabricationReady": false,
+  "scope": "Exact native byte0 copper from larger-land attempt 10; the other 38 DDR signals remain open. No powered host or reference planes.",
+  "circuitSha256": "1e87c6b9c8a77c126479cff58b0f043808b372c049994d61cc20c1a1d91e1fb3",
+  "connectedSignals": 11,
+  "requiredSignals": 49,
+  "unconnectedSignals": 38,
+  "gerberShorts": 0,
+  "independentCopperDrillErrors": 0,
+  "independentWarnings": 0,
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000012264161,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 0.12699999999853162,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    }
+  ],
+  "physicalVias": 22,
+  "viaGeometry": {
+    "landMm": 0.35,
+    "drillMm": 0.15
+  },
+  "poweredHost": false,
+  "fullElectricalTimingQualified": false,
+  "evidence": [
+    "am3352-clearance-11-connectivity.json",
+    "am3352-clearance-11-shorts.log",
+    "am3352-clearance-11-kicad-drc.json",
+    "am3352-clearance-11-diagnostic-export.json"
+  ],
+  "checkedCircuit": "routing/am3352-byte0-native-diagnostic.circuit.json",
+  "errorPresentationCompaction": "All physical/source record hashes unchanged when debug overlays were omitted from the retained timeout message"
+}

@@ -1,0 +1,146 @@
+Building 1 file(s)...
+Building experiments/am3352-ddr-swizzled.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `DdrConstraints`. See https://react.dev/link/warning-keys for more information.
+Wrote debug artifact: dist/am3352-ddr-swizzled-attempt-9/placement-unrouted.png
+Autorouting <board#483 /> phase 1/4 "DDR_BYTE0_BUS_LANES" start: connections=11, obstacles=420, previous_traces=0, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D0, DDR_DQM0, DDR_D2, DDR_DQS0, DDR_D1, DDR_D3, DDR_D6, DDR_DQSn0, DDR_D4, DDR_D7, DDR_D5
+Wrote debug artifact: dist/am3352-ddr-swizzled-attempt-9/phase-1.input.simple-route.json
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=200 progress=0% elapsed=2.0s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=40000 progress=0% elapsed=12.0s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=80200 progress=36% elapsed=22.1s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=117000 progress=0% elapsed=32.1s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=153000 progress=0% elapsed=42.1s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=189600 progress=0% elapsed=52.1s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" error after 61.8s: Error: No shared tuning corridor for DDR_DQS0, DDR_DQSn0
+Wrote debug artifact: dist/am3352-ddr-swizzled-attempt-9/phase-1.input.simple-route.json
+Wrote debug artifact: dist/am3352-ddr-swizzled-attempt-9/phase-1.error.json
+Async effect error in PcbTraceRender "autorouting":
+Error: Error: No shared tuning corridor for source_trace_14, source_trace_18
+    at tick (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:73141:24)
+Wrote debug artifact: dist/am3352-ddr-swizzled-attempt-9/board.meta.json
+Circuit JSON written to dist/experiments/am3352-ddr-swizzled/circuit.json
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+Failed to fetch supplier footprint for <chip#336 name=".U_RAM" /> (jlcpcb:C253882): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#11 name=".U_SOC" /> (jlcpcb:C468247): Unable to connect. Is the computer able to access the url?
+All pins on U_SOC are underspecified (no pinAttributes set)
+All pins on U_RAM are underspecified (no pinAttributes set)
+U_SOC has no pin with requires_power=true
+U_RAM has no pin with requires_power=true
+U_SOC has no pin with requires_ground=true
+U_RAM has no pin with requires_ground=true
+Error: No shared tuning corridor for source_trace_14, source_trace_18
+Ports [U_SOC.L3, U_RAM.D7] are not connected together through the same net.
+Ports [U_SOC.M1, U_RAM.C8] are not connected together through the same net.
+Ports [U_SOC.K4, U_RAM.A7] are not connected together through the same net.
+Ports [U_SOC.L2, U_RAM.B7] are not connected together through the same net.
+Ports [U_SOC.L4, U_RAM.B8] are not connected together through the same net.
+Ports [U_SOC.K3, U_RAM.C3] are not connected together through the same net.
+Ports [U_SOC.K1, U_RAM.C2] are not connected together through the same net.
+Ports [U_SOC.L1, U_RAM.C7] are not connected together through the same net.
+Ports [U_SOC.K2, U_RAM.A3] are not connected together through the same net.
+Ports [U_SOC.J2, U_RAM.D3] are not connected together through the same net.
+Ports [U_SOC.J1, U_RAM.A2] are not connected together through the same net.
+Ports [U_SOC.M3, U_RAM.F2] are not connected together through the same net.
+Ports [U_SOC.M2, U_RAM.E7] are not connected together through the same net.
+Ports [U_SOC.N1, U_RAM.E3] are not connected together through the same net.
+Ports [U_SOC.P1, U_RAM.F3] are not connected together through the same net.
+Ports [U_SOC.M4, U_RAM.G2] are not connected together through the same net.
+Ports [U_SOC.N2, U_RAM.H3] are not connected together through the same net.
+Ports [U_SOC.P3, U_RAM.F8] are not connected together through the same net.
+Ports [U_SOC.P2, U_RAM.G3] are not connected together through the same net.
+Ports [U_SOC.N3, U_RAM.F7] are not connected together through the same net.
+Ports [U_SOC.P4, U_RAM.H8] are not connected together through the same net.
+Ports [U_SOC.N4, U_RAM.H7] are not connected together through the same net.
+Ports [U_SOC.G4, U_RAM.J3] are not connected together through the same net.
+Ports [U_SOC.D2, U_RAM.J7] are not connected together through the same net.
+Ports [U_SOC.G1, U_RAM.K1] are not connected together through the same net.
+Ports [U_SOC.F1, U_RAM.K3] are not connected together through the same net.
+Ports [U_SOC.D1, U_RAM.K7] are not connected together through the same net.
+Ports [U_SOC.G3, U_RAM.K9] are not connected together through the same net.
+Ports [U_SOC.H2, U_RAM.L2] are not connected together through the same net.
+Ports [U_SOC.B2, U_RAM.L3] are not connected together through the same net.
+Ports [U_SOC.F4, U_RAM.L7] are not connected together through the same net.
+Ports [U_SOC.C4, U_RAM.M2] are not connected together through the same net.
+Ports [U_SOC.B3, U_RAM.M3] are not connected together through the same net.
+Ports [U_SOC.C3, U_RAM.N2] are not connected together through the same net.
+Ports [U_SOC.F3, U_RAM.N3] are not connected together through the same net.
+Ports [U_SOC.E3, U_RAM.N7] are not connected together through the same net.
+Ports [U_SOC.E1, U_RAM.N8] are not connected together through the same net.
+Ports [U_SOC.B1, U_RAM.P2] are not connected together through the same net.
+Ports [U_SOC.E4, U_RAM.P3] are not connected together through the same net.
+Ports [U_SOC.H1, U_RAM.P7] are not connected together through the same net.
+Ports [U_SOC.C2, U_RAM.P8] are not connected together through the same net.
+Ports [U_SOC.E2, U_RAM.R2] are not connected together through the same net.
+Ports [U_SOC.C1, U_RAM.R3] are not connected together through the same net.
+Ports [U_SOC.F2, U_RAM.R7] are not connected together through the same net.
+Ports [U_SOC.D5, U_RAM.R8] are not connected together through the same net.
+Ports [U_SOC.G2, U_RAM.T2] are not connected together through the same net.
+Ports [U_SOC.H3, U_RAM.T3] are not connected together through the same net.
+Ports [U_SOC.H4, U_RAM.T7] are not connected together through the same net.
+Ports [U_SOC.D4, U_RAM.T8] are not connected together through the same net.
+Trace [U_SOC.pin47 to U_RAM.pin52] is not connected (it has no PCB trace)
+Trace [U_SOC.pin12 to U_RAM.pin67] is not connected (it has no PCB trace)
+Trace [U_SOC.pin64 to U_RAM.pin49] is not connected (it has no PCB trace)
+Trace [U_SOC.pin29 to U_RAM.pin50] is not connected (it has no PCB trace)
+Trace [U_SOC.pin65 to U_RAM.pin66] is not connected (it has no PCB trace)
+Trace [U_SOC.pin46 to U_RAM.pin35] is not connected (it has no PCB trace)
+Trace [U_SOC.pin10 to U_RAM.pin19] is not connected (it has no PCB trace)
+Trace [U_SOC.pin11 to U_RAM.pin51] is not connected (it has no PCB trace)
+Trace [U_SOC.pin28 to U_RAM.pin33] is not connected (it has no PCB trace)
+Trace [U_SOC.pin27 to U_RAM.pin36] is not connected (it has no PCB trace)
+Trace [U_SOC.pin9 to U_RAM.pin17] is not connected (it has no PCB trace)
+Trace [U_SOC.pin48 to U_RAM.pin22] is not connected (it has no PCB trace)
+Trace [U_SOC.pin30 to U_RAM.pin53] is not connected (it has no PCB trace)
+Trace [U_SOC.pin13 to U_RAM.pin37] is not connected (it has no PCB trace)
+Trace [U_SOC.pin14 to U_RAM.pin38] is not connected (it has no PCB trace)
+Trace [U_SOC.pin66 to U_RAM.pin23] is not connected (it has no PCB trace)
+Trace [U_SOC.pin31 to U_RAM.pin40] is not connected (it has no PCB trace)
+Trace [U_SOC.pin50 to U_RAM.pin70] is not connected (it has no PCB trace)
+Trace [U_SOC.pin32 to U_RAM.pin39] is not connected (it has no PCB trace)
+Trace [U_SOC.pin49 to U_RAM.pin54] is not connected (it has no PCB trace)
+Trace [U_SOC.pin68 to U_RAM.pin72] is not connected (it has no PCB trace)
+Trace [U_SOC.pin67 to U_RAM.pin56] is not connected (it has no PCB trace)
+Trace [U_SOC.pin61 to U_RAM.pin41] is not connected (it has no PCB trace)
+Trace [U_SOC.pin22 to U_RAM.pin57] is not connected (it has no PCB trace)
+Trace [U_SOC.pin7 to U_RAM.pin10] is not connected (it has no PCB trace)
+Trace [U_SOC.pin6 to U_RAM.pin42] is not connected (it has no PCB trace)
+Trace [U_SOC.pin4 to U_RAM.pin58] is not connected (it has no PCB trace)
+Trace [U_SOC.pin43 to U_RAM.pin90] is not connected (it has no PCB trace)
+Trace [U_SOC.pin26 to U_RAM.pin27] is not connected (it has no PCB trace)
+Trace [U_SOC.pin20 to U_RAM.pin43] is not connected (it has no PCB trace)
+Trace [U_SOC.pin60 to U_RAM.pin59] is not connected (it has no PCB trace)
+Trace [U_SOC.pin57 to U_RAM.pin28] is not connected (it has no PCB trace)
+Trace [U_SOC.pin38 to U_RAM.pin44] is not connected (it has no PCB trace)
+Trace [U_SOC.pin39 to U_RAM.pin29] is not connected (it has no PCB trace)
+Trace [U_SOC.pin42 to U_RAM.pin45] is not connected (it has no PCB trace)
+Trace [U_SOC.pin41 to U_RAM.pin61] is not connected (it has no PCB trace)
+Trace [U_SOC.pin5 to U_RAM.pin77] is not connected (it has no PCB trace)
+Trace [U_SOC.pin2 to U_RAM.pin30] is not connected (it has no PCB trace)
+Trace [U_SOC.pin59 to U_RAM.pin46] is not connected (it has no PCB trace)
+Trace [U_SOC.pin8 to U_RAM.pin62] is not connected (it has no PCB trace)
+Trace [U_SOC.pin21 to U_RAM.pin78] is not connected (it has no PCB trace)
+Trace [U_SOC.pin23 to U_RAM.pin31] is not connected (it has no PCB trace)
+Trace [U_SOC.pin3 to U_RAM.pin47] is not connected (it has no PCB trace)
+Trace [U_SOC.pin24 to U_RAM.pin63] is not connected (it has no PCB trace)
+Trace [U_SOC.pin76 to U_RAM.pin79] is not connected (it has no PCB trace)
+Trace [U_SOC.pin25 to U_RAM.pin32] is not connected (it has no PCB trace)
+Trace [U_SOC.pin44 to U_RAM.pin48] is not connected (it has no PCB trace)
+Trace [U_SOC.pin62 to U_RAM.pin64] is not connected (it has no PCB trace)
+Trace [U_SOC.pin58 to U_RAM.pin80] is not connected (it has no PCB trace)
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C468247.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C253882.step
+Generating preview images...
+[experiments/am3352-ddr-swizzled] Generating PCB PNG...
+[experiments/am3352-ddr-swizzled] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

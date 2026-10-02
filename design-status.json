@@ -1,21 +1,32 @@
 {
   "revision": "C",
-  "architecture": "bare RK3566, separate LPDDR4 and power-management ICs on the main PCB",
+  "architecture": "bare TI AM3352BZCZ100 Cortex-A8, 512MB Micron MT41K256M16TW-107:P DDR3L in DDR3-compatible mode, individual PMIC circuits on main PCB",
   "status": "INTEGRATION_IN_PROGRESS",
   "fabricationReady": false,
-  "activeEntry": "experiments/rk3566-memory-vip.circuit.tsx",
-  "activeEntryScope": "Memory routing feasibility fixture only; not the completed handheld",
+  "activeEntry": "experiments/am3352-ddr-clearance-bootstrap.circuit.tsx",
+  "activeEntryScope": "Native bus_lanes DDR3 signal bootstrap only; no powered host or completed handheld",
   "historicalCarrierEntry": "rev-b.circuit.tsx",
   "requiredFeatures": {
-    "onboardLinuxAndGpu": true,
     "onboardMicroSD": true,
     "sharedUsbCChargingAndData": true,
-    "topOnlyComponents": true,
+    "topOnlyComponents": false,
+    "allowedComponentSides": [
+      "top",
+      "bottom"
+    ],
+    "allowedOuterCopperLayers": [
+      "top",
+      "bottom"
+    ],
     "fpcDisplay": true,
     "frontButtons": 11,
     "analogSticks": false,
     "rearButtons": false,
-    "phasedAutorouterAndManualCriticalRoutes": true
+    "phasedAutorouterAndManualCriticalRoutes": true,
+    "onboardLinux": true,
+    "hardware3dGpu": false,
+    "softwareRenderedSimpleGames": true,
+    "nativeDdrBusLanesBootstrap": true
   },
   "releaseEvidenceRequired": [
     "Complete powered host and handheld circuit, including boot and recovery hardware",
@@ -24,10 +35,10 @@
     "Complete phased routing and native checks on that integrated circuit",
     "All-layer Gerber shorts check on the completed integrated circuit",
     "Independent DRC/connectivity and manufacturing checks with no unresolved violations",
-    "Matching integrated Gerbers, drills, BOM, top-side placements and release hashes",
+    "Matching integrated Gerbers, drills, BOM, placements for both assembly sides and release hashes",
     "Prototype Linux image, DDR configuration, USB provisioning and hardware bring-up instructions"
   ],
-  "memoryFixture": {
+  "historicalRk3566MemoryFixture": {
     "connectedSignals": 43,
     "requiredSignals": 67,
     "gerberShorts": 0,
@@ -37,5 +48,19 @@
     "poweredHost": false,
     "ddrTimingQualified": false,
     "evidence": "checks/integrated/memory-43-check-summary.json"
+  },
+  "memoryFixture": {
+    "architecture": "AM3352 + 512MB DDR3",
+    "requiredSignals": 49,
+    "connectedSignals": 11,
+    "unconnectedSignals": 38,
+    "gerberShorts": 0,
+    "independentCopperDrillErrors": 0,
+    "physicalVias": 22,
+    "poweredHost": false,
+    "ddrTimingQualified": false,
+    "status": "Partial native bus_lanes diagnostic passes byte0 planar skew and physical clearance; full DDR continuity fails",
+    "evidence": "checks/integrated/am3352-clearance-11-check-summary.json",
+    "snapshot": "images/am3352-memory-clearance-11.png"
   }
 }

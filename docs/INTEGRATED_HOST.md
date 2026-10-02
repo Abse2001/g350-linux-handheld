@@ -1,83 +1,51 @@
-# Integrated Linux host requirement — 2026-10-02
+# Integrated AM3352 host — 2026-10-02
 
-The handheld must contain the Linux computer directly on its main PCB. The existing Revision B source and Gerbers use an external Raspberry Pi Zero 2 W through J_PI and a data pigtail; they do not meet this requirement. Their successful fabrication checks are not evidence that an integrated host has been designed or checked.
+The user selected **AM3352** and accepted CPU rendering for simple games. The computer must be built from individual chips on the handheld PCB. Both assembly sides and both outer routing layers are allowed. The required controls are eleven front buttons, no analog sticks and no rear buttons. The display needs an FPC connector, storage needs an onboard microSD holder, and a single USB-C connector must support charging and data/provisioning.
 
-The requested redesign retains top-only component assembly, eleven front buttons, no analog sticks or rear buttons, a display with a flexible-cable connector, a microSD holder on the main PCB, and one USB-C port for charging and data/provisioning. It must be authored in tscircuit with verified component footprints, phased autorouting and manual critical routes. New routing, shorts, independent manufacturing/connectivity checks and matching fabrication exports are required after the architecture changes.
+## Current parts
 
-## Exact Pi Zero 2 W silicon
-
-[Raspberry Pi's processor documentation](https://www.raspberrypi.com/documentation/computers/processors.html) identifies RP3A0 as a system-in-package containing BCM2710A1 silicon and 512 MB LPDDR2. The [published Zero 2 W schematic](https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-reduced-schematics.pdf) is reduced, rather than a complete design package. It does not supply the complete processor power/ground ball map, SD/USB host circuitry, RF design or all implementation constraints needed for a verified clone.
-
-No standard bare-RP3A0 JLCPCB/LCSC part number or complete manufacturer implementation package has been verified in this investigation. This is an unresolved sourcing/documentation condition, not a claim that such a chip could never be used.
-
-The primary author of the [RP3A0 reverse-engineering project](https://github.com/jonny12375/rp3a0) reports a booting bare-chip proof of concept and supplies reconstructed design information. Its documented assembly method harvests and reballs an RP3A0 from a donor Zero 2 W. That is an experimental donor-chip assembly path; it does not establish standard JLCPCB sourcing, equivalent Wi-Fi integration or fabrication readiness for this handheld. The author notes that their prototype has no Wi-Fi.
-
-## Architecture decision
-
-The user's earlier authorization to select another Linux/GPU chip and request to try routing are being applied to a bare RK3566 architecture. This is chip-level integration; no processor module or complete SBC is substituted. The processor and RAM footprints have been imported and real routing experiments are underway. Existing Pi software, device trees and flashing instructions cannot automatically be reused.
-
-[Compute Module Zero](https://www.raspberrypi.com/products/compute-module-zero/) is a documented RP3A0 option that solders directly onto a PCB using castellated pads. It remains a prebuilt module, so it must not be silently substituted for the requested chip-level integration. Its Lite variant exposes SDIO for a carrier microSD holder.
-
-## Selected components and verification scope
-
-| Function | Candidate | JLCPCB part | Evidence / current scope |
+| Function | Part | JLCPCB part | Verified scope |
 |---|---|---|---|
-| Linux/GPU SoC | RK3566, FCCSP565 | C2943786 | Imported; 565 ball labels, 67 memory functions and both nominal pitch grids checked against Rockchip documents |
-| RAM | H9HCNNN8KUMLHR-NME, 1 GB LPDDR4 | C2912103 | Imported 200-ball footprint; manufacturer single-rank ballout checked; 18 off-grid pad centres corrected |
-| PMIC | RK817-5 | C5179490 | All 69 imported pin aliases checked; regulator/charger integration and complete footprint geometry pending |
-| CPU buck | RK860-0 | C19188628 | Imported 20-ball footprint; manufacturer functions checked; separate from the RK817's four bucks |
-| 24 MHz crystal | SX32Y024000BC1T | C271629 | Imported; drive resistor, feedback and load capacitors must be designed from actual load/parasitics |
-| Top microSD | SOFNG TF-013 | C444917 | Imported; signal and shell/contact aliases corrected; full geometry and switch behavior pending |
+| Linux processor | AM3352BZCZ100, 1 GHz Cortex-A8, 324-ball ZCZ | C468247 | tsci import; all primary ball functions, 0.8 mm grid and 0.4 mm nominal lands checked |
+| RAM | MT41K256M16TW-107:P, 4 Gb x16 DDR3L, 96-ball TW | C253882 | tsci import; full primary ball map, 0.8 mm grid and 0.42 mm nominal lands checked |
+| PMIC candidate | TPS65217CRSLR | C116081 | Individual tsci import and TI AM335x sequencing/variant review; footprint and complete implementation pending |
+| microSD candidate | SOFNG TF-013 | C444917 | Existing individual import; actual geometry and switch behavior still need qualification |
 
-The RAM has one rank and two 16-bit channels. Hynix A8 is NC, not the second ZQ of some other 200-ball packages. CS1/CKE1 must not be connected. A5 ZQ0 needs its termination to VDDQ; processor DDR_RZQ needs a separate 120-ohm 1% pull-up to the DDR rail. These terminations and power rails are absent from the signal-only fixture.
+The memory is **512 MB**, single rank, with A0–A14. AM3352 DDR_A15 is unused with this part. Micron documents DDR3L compatibility at VDD=VDDQ=1.5 V ±0.075 V; the AM3352 DDR domain must be powered separately from its other supplies. The selected DDR3L part's higher speed grade does not raise the AM3352 controller's supported limit.
 
-## Routing experiments
+Supplier libraries are component sources, not an implementation specification. Corrections are recorded with original and corrected import hashes in `lib/am3352/*-ball-map.json`. All 420 balls remain in the circuit and routing obstacle set. Numeric pin selectors avoid ambiguous RAM aliases such as ball A3 versus address A3.
 
-The 67 memory signals are 32 DQ, eight DQS, four DMI/DM, twelve CA, four clock lines, two CKE, two CS, two ODT and reset. Direct routing timed out at 120 seconds during clock/strobe length matching. A longer retry was interrupted during task continuation; process absence was checked before restarting work.
+## Native DDR bootstrap
 
-The manual experiment uses 134 full-depth escapes with 0.15mm drills. All 765 pads remain obstacles; components stay on top. The first manual-escape attempt completed clocks/strobes but timed out at 241.5 seconds on its combined 36-signal data group. The byte-group retry completed clocks/strobes but the router rejected an invalid layer jump on DQ4_A. Its aborted final render contains no traces/vias: its no-shorts result does not demonstrate routed connectivity. Later retries use a fresh installed Pipeline 9 solver per phase with earlier copper frozen as obstacles, rejecting missing routes and layer transitions without a represented via. Traversal of an existing same-net via is checked explicitly.
+Read [tscircuit's DDR routing guide](https://docs.tscircuit.com/guides/routing-ddr). The public `bus_lanes` preset creates local dogbones for direct pad connections, connects each bus without intermediate vias, includes planar fanout lengths in matching, and couples declared differential pairs. It requires compatible endpoint layers. When it cannot route, adjust package placement, fanout directions, layers and available corridor space; add explicit manual escapes when needed.
 
-The staggered eight-phase trial routed 39/67 signals, then timed out at 226.8 seconds on channel B's second byte group. That trial's fine-pitch lands subsequently failed the drill-clearance review. Three-signal retries reached the port planner's iteration limit. The current six-layer trial routes the 24 inner-array signals first, then twelve clocks/strobes and 31 individual outer signals: 37 signal phases plus two manual fanout stages. Inner1/Inner4 are reserved for future reference planes. A four-layer routing model maps back to the four physical signal layers because the current solver ignored the bus's allowedLayers. The manufacturing export still describes six layers, with full-depth via obstacles.
+The active fixture is `experiments/am3352-ddr-clearance-bootstrap.circuit.tsx`. It has 49 traces, byte0 and byte1 buses (11 signals each), a combined command/clock timing group (26 signals), and asynchronous reset. TI's 25 mil intra-byte/class and 5 mil differential planar skew limits are configured as 0.635 and 0.127 mm. The active trial requests a 0.12 mm differential gap; other trials use 0.127 mm. Both remain provisional until the exact stackup establishes the required impedance.
 
-The fine-pitch review found 0.30mm lands at 0.40mm pitch left only 0.175mm from a neighboring 0.15mm drill to copper, below the 0.20mm requirement. Twenty-five predefined processor escapes now use 0.25mm lands, nominal-grid drill centres and alternating 10µm offsets within their BGA pads. Other manual escapes and ordinary autorouted vias use 0.30mm lands. The corrected manual geometry passes its independent analytical precheck: 0.200500mm minimum drill-to-foreign-copper and 0.250500mm drill-to-drill. These tight nominal limits still need verification on exported copper and manufacturer review. All-layer shorts, full connectivity and KiCad DRC remain separate checks.
+The proposed eight-layer allocation is Top/local signal, L2/GND, L3/byte0, L4/GND, L5/command+clock, L6/DDR1V5, L7/byte1, and Bottom/general. It uses through-vias rather than HDI. No reference planes or powered nets are in the current signal-only fixture. All three signal regions need continuous adjacent references on the final board; verify plane transitions, decoupling and DDR keepout. TI requires no cuts in the relevant reference region and specified routing/impedance limits. Nominal geometry is not a stackup approval.
 
-The inner-first run completed 24/67 signals, then stopped on an overly strict same-net via-traversal validator. The validator now accounts for finite trace width. A separate diagnostic export reconstructs the exact saved copper and keeps every native error. Gerber shorts checks and KiCad independently found two real shorts. KiCad also reports drill-clearance violations and 43 unconnected signals; this diagnostic must not be ordered. The KiCad conversion is checked against declared Circuit JSON via diameters and full physical spans, including duplicate route-transition vias.
+The current best diagnostic contains the exact native first-byte routes from attempt 10: **11/49 connected signals**, **22 full-depth vias**, **0 all-layer Gerber shorts**, **0 KiCad physical violations**, and passing first-byte/DQS0 planar skew. The other 38 signals are open. The native second-phase timeout remains in the diagnostic Circuit JSON. The 0.35/0.15 mm dogbone construction removed 31 drill-clearance errors seen with the original 0.30/0.15 mm vias; it is still an unqualified fabrication process. See `AM3352_DDR_ROUTING.md` and `checks/integrated/am3352-clearance-11-check-summary.json`.
 
-New autorouted vias are now checked against all six physical layers before a phase is accepted, including other routes in that same phase. The check catches both known shorts and six additional invalid via sites in the old copper. Rejected drill sites become nonconductive local keepouts and the actual autorouter reruns the phase. This does not relax manufacturing rules or invent a passing route. The first completed phases of this retry are recorded in `checks/integrated/phase-via-validation.json`; final Gerber/independent DRC remains required.
+## PMIC investigation
 
-Eight bounded local via adjustments and one 10µm wire dogleg repair the actual 24-signal diagnostic. Re-exported Gerber shorts checks find zero shorts. Independent KiCad checks find zero copper/drill clearance errors and retain 43 opens, 91 dangling-via warnings and one silk/edge warning on the incomplete fixture. The default source retains these real Pipeline9 routes only when the complete physical-input fingerprint and package versions match, and rechecks their copper/drill geometry. Other signals still use the live autorouter. Reports: `repaired-check-summary.json`, `repaired-kicad-drc.json`, `repaired-shorts.log`, and `phase-via-validation.json` under `checks/integrated/`.
+TI's TPS65217C sequencing guide specifically addresses AM335x ZCZ. Default rails are DCDC1=1.5 V for DDR, DCDC2=1.1 V for MPU, DCDC3=1.1 V for core, LDO1=1.8 V for VDDS/RTC, LDO3/LS1=1.8 V for PLL/analog/SRAM and LDO4/LS2=3.3 V for appropriate high-voltage I/O/USB analog domains. The default MPU voltage does not qualify 1 GHz operation; firmware must select a supported voltage/OPP. Every CPU domain and decoupling requirement needs its own verified connection.
 
-The clock/strobe retry timed out at 482.2 seconds after rejecting each physically invalid candidate. The next experiment makes only verified full-depth breakout-via terminals accessible on every signal layer; SMT pads stay on top. That retry completes the 12 clock/strobe signals, reaching 36/67 with physical phase checks passing; its actual diagnostic subsequently passes Gerber shorts and independent KiCad copper/drill checks. Manual-via obstacles are circular, matching their actual physical lands/drills.
+PGOOD drives CPU PWRONRSTn, LDO_PGOOD drives RTC_PWRONRSTn and PMIC_PWR_EN controls PWR_EN. PMIC nRESET is a shutdown input, not a CPU reset output. INT_LDO and BYPASS are internal bias nodes and cannot power external loads. The C variant does not support RTC-only mode. Its integrated charger is limited to 700 mA, and the three bucks to 1.2 A each; the complete handheld power and thermal budget remains to be calculated. This part is imported but not wired into the active fixture.
 
-The fixture has no host power, decoupling, PMIC, crystal, microSD, USB, display, audio or buttons. It cannot boot Linux. A board image or completed signal routes cannot establish a complete computer.
+## Shared USB-C and Linux provisioning
 
-Rockchip's [RK3566 hardware guide](https://dl.xkwy2018.com/downloads/RK3568/RK356X/Hardware/Rockchip_RK3566_Hardware_Design_Guide_V1.1_EN.pdf), section 2.1.9, prohibits LPDDR4 DQ/CA swaps and recommends an approved DDR template or consultation for custom layouts. The manufacturer [RK3568 high-speed guide](https://github.com/hqnicolas/RK3568-hardware-design/blob/main/01_Common%20Document/Rockchip_RK3568_High_Speed_PCB_Design_Guide_V10_EN_2021-4-12.pdf), table 33, is useful supporting information; RK3566-specific package timing and constraints remain unqualified. Its length guidance includes package and electrical via lengths. In-plane lengths alone do not qualify DDR.
+AM3352 provides USB2.0 interfaces and a boot ROM; one USB-C connector can carry USB0 data and input power for a charger/power path. The circuit needs correct CC sink termination, VBUS sensing, ESD protection, differential routing, battery protection and control of reverse current. Charger/PMIC choice and integration remain unfinished.
 
-## USB-C and Linux provisioning
+An onboard microSD socket is required. A USB-loaded installer or a running Linux USB gadget can write that storage, but boot ROM support alone does not implement an SD installer. The boot straps, reset/recovery control, compatible SPL/U-Boot DDR configuration, installer and Linux device tree must be designed and tested for this board. Historical Pi/Rockchip flashing commands do not apply.
 
-One USB-C connector can carry USB 2.0 data to RK3566 OTG and supply a charging/power-path circuit. It needs CC sink termination/current handling, ESD protection, VBUS detection, controlled differential routing and protection against backfeeding the computer. The Pi pigtail is removed in the integrated architecture. This integrated USB circuit has not yet been routed.
+## Release state
 
-The onboard microSD holder is selected. Provisioning from a blank/unbootable card needs a documented Maskrom path, a RAM loader compatible with the selected RAM and a tested way to write that card through the same connector. [Radxa's RK3566 USB-tool documentation](https://docs.radxa.com/en/zero/zero3/low-level-dev/rkdeveloptool) does not establish arbitrary storage selection with rkdeveloptool. Do not promise a generic `wl` command flashes this custom board's SD slot. An SD-capable recovery loader or USB-loaded RAM installer remains required.
+`design-status.json` has `fabricationReady: false`. The active fixture omits PMIC/power sequencing, all CPU voltage domains and decoupling, VREF/VTP/ZQ/clock termination, oscillator/reset/boot straps, storage, USB, FPC display, controls and audio. It cannot boot Linux. The next release evidence is the complete powered circuit, fully routed copper, all-layer Gerber shorts, independent connectivity/DRC, stackup-aware DDR/USB qualification, matching Gerbers/drills/BOM/CPL and tested bring-up/provisioning instructions.
 
-The seven-signal outer-data phase reached the port planner's iteration limit at 138 seconds. The 36-signal diagnostic is re-exported and passes Gerber shorts and independent KiCad copper/drill checks; 31 opens and incomplete-fixture warnings remain. The latest source retains the six checked phases under their full physical-input fingerprints, then attempts the remaining 31 signals in individual live-autorouting phases.
+Historical RK3566 experiments are retained in `RK3566_HOST_RECORD.md` and `RK3566_MEMORY_EXPERIMENTS.md`. Their partial-route passes are not AM3352 evidence. Revision B is an external Pi carrier and its order files do not satisfy this integrated architecture.
 
-## Remaining release work
+## Primary sources
 
-The target remains the complete integrated handheld: power sequencing/decoupling; clock/reset/straps; microSD and USB recovery; FPC display; eleven front buttons and audio; top-only placement; DDR/USB constraints and continuous returns; phased routing/manual critical paths; all-layer shorts and independent DRC/connectivity; matching BOM/CPL/Gerbers/drills; Linux configuration and bring-up instructions. `design-status.json` records the release requirements and blocks the historical fabrication exporter while integration is incomplete.
-
-No integrated-host pinout has been invented, and no integrated-host order bundle is represented as complete.
-
-## Primary reference documents
-
-- [Rockchip RK3566 datasheet Rev1.2](https://wiki.friendlyelec.com/wiki/images/8/89/Rockchip_RK3566_Datasheet_V1.2-20220930.pdf), package drawings and ball table.
-- [Hynix RAM datasheet](https://datasheet.lcsc.com/datasheet/pdf/8c6bc79fc4ddd7e4f398b954dcc5c828.pdf?productCode=C2912103), page 6 ballout.
-- [Rockchip RK817 datasheet](https://datasheet.lcsc.com/datasheet/pdf/6e7101f379724d9d81189bd12b0f2a10.pdf?productCode=C5179490).
-- [Rockchip RK860 datasheet](https://datasheet.lcsc.com/datasheet/pdf/62ee1e0e01dad0c63ac0887e8961f700.pdf?productCode=C19188628), page 4 ball functions and application circuit.
-- [SOFNG TF-013 drawing](https://datasheet.lcsc.com/datasheet/pdf/39f1cd9ef11c8e978307af2d313df3b6.pdf?productCode=C444917), page 2 contacts and copper.
-- [Radxa Zero 3W V1.12 schematic](https://dl2.radxa.com/zero3/docs/hw/3w/radxa_zero_3w_v1.12_schematic.pdf), independently drawn reference circuitry; no PCB imported.
-
-The individual-phase attempt stopped on DQ0_A after 120.1 seconds. A reviewed explicit trace with six points bypasses that planner stall. Five further explicit traces were generated with a supplementary constant-layer grid search, and DQ4_A uses a grid-planned detour with one added full-depth via. These seven outer phases bring the fixture to **43/67 signals**. The full input fingerprint, endpoint-via checks, layer continuity, physical wire checks and all-layer new-via checks guard every reused coordinate route. The six initial phases still contain actual Pipeline 9 autorouting and subsequent unmatched phases still invoke the live Pipeline 9 solver.
-
-The actual 43-signal diagnostic has zero Gerber shorts and zero independent KiCad copper/drill error violations. Its separate connectivity graph confirms 43 signals; 24 opens and 61 dangling-via warnings remain. Native failure records are preserved in the diagnostic. DQ8_A times out at 134.4 seconds. Bounded single-layer, one-via and two-via grid searches have not found an accepted continuation. No fabrication rules were relaxed. The current source has 37 signal phases plus two manual fanout stages. Reports are `memory-43-check-summary.json`, `memory-43-kicad-drc.json`, `memory-43-phase-validation.json` and `memory-43-connectivity.json` under `checks/integrated/`.
-
-An aborted native render with no copper is never accepted as a shorts/connectivity pass. The fixture remains unpowered and cannot boot Linux; complete DDR timing and return-path qualification remain required even after all signal connectivity is achieved.
+- [TI AM3352 product](https://www.ti.com/product/AM3352) and [SPRS717L datasheet](https://www.ti.com/lit/ds/symlink/am3352.pdf): ZCZ functions pp15–17, DDR3 routing pp170–188, ZCZ lands p261.
+- [Micron selected-part datasheet](https://www.lcsc.com/datasheet/C253882.pdf): 4Gb_DDR3L Rev Q 12/17, voltage p1, x16 map p17, TW package p27.
+- [tscircuit DDR guide](https://docs.tscircuit.com/guides/routing-ddr): native `bus_lanes`, fanouts, timing groups and verification.
+- [TI TPS65217 datasheet](https://www.ti.com/lit/ds/symlink/tps65217.pdf), SLVSB64I, and [AM335x sequencing guide](https://www.ti.com/lit/ug/slvu551i/slvu551i.pdf), SLVU551I: candidate rails, reset connections, variant and charger limits. Full circuit and thermal qualification pending.

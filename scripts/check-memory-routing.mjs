@@ -14,15 +14,24 @@ const sources=byType("source_trace")
 const traces=byType("pcb_trace")
 const vias=byType("pcb_via")
 const ports=byType("pcb_port")
-const signalLayers=["top","inner2","inner3","bottom"]
-const allLayers=["top","inner1","inner2","inner3","inner4","bottom"]
+const thin=process.argv[4]==="--thin-hdi"
+const hdi=thin||process.argv[4]==="--hdi"
+const signalLayers=hdi?["top","inner1","inner3","inner5","inner6"]:["top","inner2","inner3","bottom"]
+const allLayers=hdi?["top","inner1","inner2","inner3","inner4","inner5","inner6","bottom"]:["top","inner1","inner2","inner3","inner4","bottom"]
+const sameLayers=(a,b)=>a?.length===b.length&&b.every(l=>a.includes(l))
 const problems=[]
-if(board?.num_layers!==6) problems.push("Expected six physical copper layers")
+if(board?.num_layers!==allLayers.length) problems.push(`Expected ${allLayers.length} physical copper layers`)
 if(traces.length===0||vias.length<134) problems.push("Missing routed copper or declared manual escapes")
+if(byType("pcb_smtpad").length!==765)problems.push("Expected every one of the 765 processor/RAM pads")
 if(byType("pcb_component").some(c=>c.layer!=="top")) problems.push("Bottom-side component present")
-for(const v of vias)
-  if(v.layers?.length!==6||!allLayers.every(l=>v.layers.includes(l)))
-    problems.push(`Non-through via: ${v.pcb_via_id}`)
+for(const v of vias) {
+  if(hdi) {
+    const micro=sameLayers(v.layers,["top","inner1"])&&v.hole_diameter===.1&&v.outer_diameter===.25
+    const buried=sameLayers(v.layers,allLayers.slice(1,-1))&&v.hole_diameter===(thin?.1:.15)&&v.outer_diameter===(thin?.25:.3)
+    if(!micro&&!buried||v.through_hole!==false)problems.push(`Invalid HDI drill geometry/span: ${v.pcb_via_id}`)
+  } else if(!sameLayers(v.layers,allLayers))problems.push(`Non-through via: ${v.pcb_via_id}`)
+}
+if(hdi&&vias.filter(v=>sameLayers(v.layers,["top","inner1"])).length!==134)problems.push("Expected 134 Top-L2 microvias")
 for(const t of traces) for(const p of t.route)
   if(p.route_type==="wire"&&!signalLayers.includes(p.layer))
     problems.push(`Signal on reserved reference layer: ${t.pcb_trace_id}/${p.layer}`)
@@ -53,7 +62,7 @@ for(const connection of selected) {
         last=id
       } else if(p.route_type==="via") {
         const a=add(p,p.from_layer),b=add(p,p.to_layer)
-        const represented=netVias.some(v=>distance(v,p)<1e-5)
+        const represented=netVias.some(v=>distance(v,p)<1e-5&&v.layers.includes(p.from_layer)&&v.layers.includes(p.to_layer))
         if(!represented) problems.push(`Missing physical via: ${connection.name}`)
         else join(a,b)
         if(last!==undefined&&nodes[last].layer===p.from_layer&&distance(nodes[last],p)<1e-5) join(last,a)
@@ -62,7 +71,7 @@ for(const connection of selected) {
       } else if(p.route_type==="through_pad") {
         const a=add({...p.start,width:p.width},p.start_layer),b=add({...p.end,width:p.width},p.end_layer)
         const represented=netVias.some(v=>distance(v,p.start)<=v.outer_diameter/2+p.width/2+1e-5&&
-          distance(v,p.end)<=v.outer_diameter/2+p.width/2+1e-5)
+          distance(v,p.end)<=v.outer_diameter/2+p.width/2+1e-5&&v.layers.includes(p.start_layer)&&v.layers.includes(p.end_layer))
         if(!represented) problems.push(`Unverified through-pad traversal: ${connection.name}`)
         else join(a,b)
         if(last!==undefined&&nodes[last].layer===p.start_layer&&distance(nodes[last],p.start)<1e-5) join(last,a)
@@ -89,7 +98,7 @@ for(const connection of selected) {
 }
 const nativeErrors=elements.filter(e=>e.type.endsWith("_error"))
 const report={status:problems.length?"MEMORY_CONNECTIVITY_FAIL":"MEMORY_CONNECTIVITY_PASS_HOST_INCOMPLETE",
-  scope:"Memory copper connectivity, signal-layer restriction, physical through-vias and top-only placement. No DDR timing, shorts, impedance or full-host qualification.",
+  scope:`Memory copper connectivity, signal-layer restriction, physical ${hdi?"HDI drill spans":"through-vias"} and top-only placement. No DDR timing, shorts, impedance or full-host qualification.`,
   input,sha256:createHash("sha256").update(raw).digest("hex"),
   pads:byType("pcb_smtpad").length,traces:traces.length,vias:vias.length,
   connectedSignals:results.filter(r=>r.connected).length,requiredSignals:67,
