@@ -41,6 +41,9 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
     o.circuitJsonMetadata?.source_port_name==="BCLK")?.circuitJsonMetadata?.pcb_port_id
   const dinPortId = input.obstacles.find(o=>o.componentId===audioId &&
     o.circuitJsonMetadata?.source_port_name==="DIN")?.circuitJsonMetadata?.pcb_port_id
+  const audioModePortId = input.obstacles.find(o=>o.componentId===audioId &&
+    o.circuitJsonMetadata?.source_port_name==="N_SD_MODE")?.circuitJsonMetadata?.pcb_port_id
+  if (!audioModePortId) throw new Error("Review the manual amplifier enable connection")
   if (!bclkPortId || !dinPortId) throw new Error("Review the amplifier's manual I2S clock/data connections")
   if (!lrclkPortId) throw new Error("Review the amplifier's manual frame-clock connection after changing its footprint")
   const audioManualPortIds = new Set(input.obstacles.filter(o=>o.componentId === audioId &&
@@ -57,6 +60,8 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   if (groundAsPlane && audioHfPortIds.size !== 1)
     throw new Error("Review the amplifier bypass feed after changing its manual connections")
   const statusPairs = input.connections.find(c=>c.name === "source_net_1")?.externallyConnectedPointIds??[]
+  const pi3v3PortId=input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name==="J8_1")
+    ?.circuitJsonMetadata?.pcb_port_id
   const keysId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "GPA0")?.componentId
   const keysVddPortId = input.obstacles.find(o=>o.componentId === keysId &&
     o.circuitJsonMetadata?.source_port_name === "VDD")?.circuitJsonMetadata?.pcb_port_id
@@ -77,11 +82,23 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   if (groundAsPlane && gaugeCapPortIds.size!==1)
     throw new Error("Review the manual fuel-gauge supply and bypass connections")
   if (!gaugeSdaPortId) throw new Error("Review the fuel-gauge SDA escape after changing its footprint")
-  const pullupPair = statusPairs.filter(pair=>!pair.includes(keysVddPortId??"") &&
-    !pair.some(id=>keysCapPortIds.has(id)))
-  if (groundAsPlane && (pullupPair.length !== 1 || pullupPair[0].length !== 2 || !keysVddPortId))
-    throw new Error("Review the manual 3.3V bypass/status branches after changing their connections")
-  const statusManualPortId = pullupPair[0]?.[1]
+  const statusManualPortIds=new Set([pi3v3PortId??""])
+  let changed=true
+  while (changed) {
+    changed=false
+    for (const pair of statusPairs) {
+      if (!pair.some(id=>statusManualPortIds.has(id))) continue
+      for (const id of pair) if (!statusManualPortIds.has(id)) {
+        statusManualPortIds.add(id); changed=true
+      }
+    }
+  }
+  const statusSupplyTestpointIds=[...statusManualPortIds]
+    .filter(id=>id!==pi3v3PortId&&platedPortIds.has(id))
+  statusManualPortIds.delete(pi3v3PortId??"")
+  for (const id of statusSupplyTestpointIds) statusManualPortIds.delete(id)
+  if (groundAsPlane && (statusManualPortIds.size!==3 || statusSupplyTestpointIds.length!==1 || !keysVddPortId))
+    throw new Error("Review the three manual status pull-up feeds and 3.3V supply testpoint")
   const chargerId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "N_PGOOD")?.componentId
   const pgoodPortId = input.obstacles.find(o=>o.componentId===chargerId &&
     o.circuitJsonMetadata?.source_port_name === "N_PGOOD")?.circuitJsonMetadata?.pcb_port_id
@@ -130,9 +147,10 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
     (o.componentId === boostId && ["VIN","VOUT","SW"].includes(o.circuitJsonMetadata?.source_port_name ?? "")) ||
     (o.componentId === gaugeId && ["CELL","VDD"].includes(o.circuitJsonMetadata?.source_port_name ?? "")) ||
     (o.componentId === lcdRegulatorId && ["VIN","EN"].includes(o.circuitJsonMetadata?.source_port_name ?? "")) ||
-    (o.componentId === usbId && ["B4A9","A4B9"].includes(o.circuitJsonMetadata?.source_port_name ?? "")))
+    (o.componentId === usbId && ["B4A9","A4B9"].includes(o.circuitJsonMetadata?.source_port_name ?? "")) ||
+    ["J8_1","J8_2","J8_4"].includes(o.circuitJsonMetadata?.source_port_name??""))
     .map(o=>o.circuitJsonMetadata?.pcb_port_id))
-  if (groundAsPlane && powerManualPortIds.size !== 15)
+  if (groundAsPlane && powerManualPortIds.size !== 18)
     throw new Error("Review the charger and boost manual supply escapes after changing their footprints")
   const chargerBatPortIds = new Set(input.obstacles.filter(o=>o.componentId === chargerId &&
     ["BAT1","BAT2"].includes(o.circuitJsonMetadata?.source_port_name??""))
@@ -154,6 +172,7 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
       // The complete local feedback net has actual manual traces.
       !c.pointsToConnect.some(p=>p.pcb_port_id === feedbackPortId || p.pcb_port_id === lrclkPortId ||
         p.pcb_port_id === bclkPortId || p.pcb_port_id === dinPortId ||
+        p.pcb_port_id === audioModePortId ||
         p.pcb_port_id === lcdOutPortId || p.pcb_port_id === pgoodPortId || p.pcb_port_id === thermistorPortId ||
         p.pcb_port_id === lcdResetPortId))
       .map(c=>({...c,pointsToConnect:c.pointsToConnect
@@ -167,7 +186,7 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
           !keysCapPortIds.has(p.pcb_port_id??"")&&
           !feedbackFeedIds.has(p.pcb_port_id??"")&&!feedforwardFeedIds.has(p.pcb_port_id??"")&&
           !enableFeedIds.has(p.pcb_port_id??"")&&
-          p.pcb_port_id !== statusManualPortId&&p.pcb_port_id !== keysVddPortId))
+          !statusManualPortIds.has(p.pcb_port_id??"")&&p.pcb_port_id !== keysVddPortId))
         .map(p=>{
         if (!platedPortIds.has(p.pcb_port_id)) return p
         const {layer,...rest} = p

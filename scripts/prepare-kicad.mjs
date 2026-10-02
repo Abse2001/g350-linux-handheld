@@ -55,7 +55,7 @@ writeFileSync("dist/index/kicad/index.kicad_dru",`(version 1)
 (rule "G350 drilled hole minimum"
   (constraint hole_size (min 0.3mm)))
 (rule "G350 hole separation"
-  (constraint hole_to_hole (min 0.2mm)))
+  (constraint hole_to_hole (min 0.45mm)))
 (rule "G350 copper to drill"
   (constraint hole_clearance (min 0.2mm)))
 (rule "G350 routed edge clearance"

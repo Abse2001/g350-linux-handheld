@@ -12,6 +12,24 @@ export const piPins: Record<number, string> = {
 
 export function PiZero2W() {
   return <Fragment>
+    <trace from="TP_3V3.pin1" to="J_PI.pin1" thickness={0.2} routingPhaseIndex={1} maxLength={140}
+      pcbPathRelativeTo="TP_3V3.pin1"
+      pcbPath={["TP_3V3.pin1",{x:0,y:10},{x:44.4,y:10},{x:44.4,y:-5.2},
+        {x:44.4,y:-5.2,via:true,toLayer:"bottom"},{x:44.4,y:-5.2},
+        {x:42.3,y:-5.2},{x:42.3,y:-6.9},{x:42.3,y:-6.9,via:true,toLayer:"top"},
+        {x:42.3,y:-6.9},{x:42.3,y:-9.05},{x:42.3,y:-9.05,via:true,toLayer:"bottom"},
+        {x:42.3,y:-9.05},{x:40.7,y:-9.05},{x:40.7,y:-9.05,via:true,toLayer:"top"},
+        {x:40.7,y:-9.05},{x:40.7,y:-8.8},{x:32.13,y:-8.8},{x:32.13,y:-8.4},
+        {x:32.13,y:-8.4,via:true,toLayer:"bottom"},{x:32.13,y:-8.4},"J_PI.pin1"]}/>
+    {/* Keep the Pi load feed wide around the charger and signal escapes. */}
+    <trace from="TP_5V.pin1" to="J_PI.pin2" thickness={0.8} routingPhaseIndex={1} maxLength={160}
+      pcbPathRelativeTo="TP_5V.pin1"
+      pcbPath={["TP_5V.pin1",{x:0,y:14},{x:54.2,y:14},{x:54.2,y:-8},{x:54.2,y:-8,via:true,toLayer:"bottom"},
+        {x:54.2,y:-8},{x:46.6,y:-8},{x:46.6,y:-8,via:true,toLayer:"top"},{x:46.6,y:-8},
+        {x:40,y:-8},{x:40,y:-8,via:true,toLayer:"bottom"},{x:40,y:-8},
+        {x:40,y:-13.27},"J_PI.pin2"]}/>
+    <trace from="J_PI.pin2" to="J_PI.pin4" thickness={0.8} routingPhaseIndex={1}
+      pcbPath={["J_PI.pin2","J_PI.pin4"]}/>
     <chip name="J_PI" layer="bottom" pcbX={0} pcbY={35}
       schX={-32} schY={12} schSectionName="host"
       manufacturerPartNumber="2x20 2.54mm GPIO ribbon header"
@@ -29,7 +47,7 @@ export function PiZero2W() {
             portHints={[`pin${i+1}`]} />
         </Fragment>)}
         <silkscreenrect width={51.3} height={5.1} strokeWidth={0.15}/>
-        <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="1" pcbX={-25.8} pcbY={1.27} fontSize={0.8}/>
+        <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="1" pcbX={-25.8} pcbY={1.27} fontSize={1}/>
       </footprint>}
     />
     {Object.entries(piPins).map(([pin,net]) => <trace key={pin}

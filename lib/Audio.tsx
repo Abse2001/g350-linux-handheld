@@ -4,6 +4,24 @@ import { MAX98357AETE_T } from "../imports/MAX98357AETE_T"
 
 export function Audio() {
   return <Fragment>
+    <net name="AMP_MODE" routingPhaseIndex={2}/>
+    <via name="AUDIO_MODE" pcbX={18.8} pcbY={10} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="top" toLayer="bottom" connectsTo="net.AMP_MODE"/>
+    <via name="AUDIO_MODE_EN" pcbX={20.7} pcbY={7} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="bottom" toLayer="top" connectsTo="net.AMP_MODE"/>
+    <via name="AUDIO_MODE_PD" pcbX={13.3} pcbY={7} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="top" toLayer="bottom" connectsTo="net.AMP_MODE"/>
+    <trace from="U_AUDIO.N_SD_MODE" to="AUDIO_MODE.top" thickness={0.15} routingPhaseIndex={2}
+      pcbPath={["U_AUDIO.N_SD_MODE","AUDIO_MODE.top"]}/>
+    <trace from="AUDIO_MODE.bottom" to="AUDIO_MODE_EN.bottom" thickness={0.15} routingPhaseIndex={2}
+      pcbPath={["AUDIO_MODE.bottom","AUDIO_MODE_EN.bottom"]}/>
+    <trace from="AUDIO_MODE_EN.top" to="R_AUDIO_EN.pin2" thickness={0.15} routingPhaseIndex={2}
+      pcbPath={["AUDIO_MODE_EN.top","R_AUDIO_EN.pin2"]}/>
+    <trace from="R_AUDIO_PD.pin1" to="AUDIO_MODE_PD.top" thickness={0.15} routingPhaseIndex={2}
+      pcbPath={["R_AUDIO_PD.pin1","AUDIO_MODE_PD.top"]}/>
+    <trace from="AUDIO_MODE_PD.bottom" to="AUDIO_MODE_EN.bottom" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="AUDIO_MODE_PD.bottom"
+      pcbPath={["AUDIO_MODE_PD.bottom",{x:0,y:-1.5},{x:7.4,y:-1.5},"AUDIO_MODE_EN.bottom"]}/>
     <trace from="U_AUDIO.LRCLK" to="J_PI.pin35" thickness={0.2} routingPhaseIndex={2}
       pcbPathRelativeTo="U_AUDIO.LRCLK" pcbPath={["U_AUDIO.LRCLK",{x:-3,y:0.252095},
         {x:-42,y:1.5},{x:-48.5,y:8},{x:-48.5,y:26.4},
@@ -22,7 +40,7 @@ export function Audio() {
       schX={2} schY={15} schSectionName="audio"
       
     /><Connections name="U_AUDIO" connections={{DIN:"net.I2S_DIN",BCLK:"net.I2S_BCLK",LRCLK:"net.I2S_LRCLK",
-        GND1:"net.GND",GND2:"net.GND",GND3:"net.GND",EP:"net.GND"}}/></Fragment>
+        N_SD_MODE:"net.AMP_MODE",GND1:"net.GND",GND2:"net.GND",GND3:"net.GND",EP:"net.GND"}}/></Fragment>
     <Fragment><capacitor name="C_AUDIO_HF" capacitance="100nF" footprint="0603"
       supplierPartNumbers={{jlcpcb:["C14663"]}} pcbX={20.65} pcbY={12.5}
       maxDecouplingTraceLength={1.5}
@@ -55,16 +73,16 @@ export function Audio() {
     <Fragment><resistor name="R_AUDIO_EN" resistance="1k" footprint="0603"
       supplierPartNumbers={{jlcpcb:["C21190"]}} pcbX={19} pcbY={7}
       schX={2} schY={8} schSectionName="audio"
-       /><Connections name="R_AUDIO_EN" connections={{pin1:"net.AMP_ENABLE",pin2:"U_AUDIO.N_SD_MODE"}}/></Fragment>
+       /><Connections name="R_AUDIO_EN" connections={{pin1:"net.AMP_ENABLE",pin2:"net.AMP_MODE"}}/></Fragment>
     <Fragment><resistor name="R_AUDIO_PD" resistance="100k" footprint="0603"
       supplierPartNumbers={{jlcpcb:["C25803"]}} pcbX={15} pcbY={7}
       schX={5} schY={4} schRotation={-90} schSectionName="audio"
-       /><Connections name="R_AUDIO_PD" connections={{pin1:"U_AUDIO.N_SD_MODE",pin2:"net.GND"}}/></Fragment>
+       /><Connections name="R_AUDIO_PD" connections={{pin1:"net.AMP_MODE",pin2:"net.GND"}}/></Fragment>
     <Fragment><pinheader name="J_SPEAKER" pinCount={2} pitch={2.54} gender="male"
       pcbX={18} pcbY={18} layer="bottom" schX={2} schY={23} schSectionName="audio"
       manufacturerPartNumber="1x2 2.54mm speaker harness"
        /><Connections name="J_SPEAKER" connections={{pin1:"U_AUDIO.OUTP",pin2:"U_AUDIO.OUTN"}}/></Fragment>
     <silkscreentext text="SPK +  - / 8 OHM" pcbX={18} pcbY={21}
-      layer="bottom" fontSize={0.8} />
+      layer="bottom" fontSize={1} />
   </Fragment>
 }

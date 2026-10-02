@@ -7,6 +7,7 @@ const macCli = "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli"
 const cli = process.env.G350_KICAD_CLI ?? (existsSync(macCli) ? macCli : "kicad-cli")
 const board = "dist/index/kicad/index.kicad_pcb"
 rmSync("checks/kicad-board.sha256",{force:true})
+rmSync("checks/kicad-drc.json",{force:true})
 const log = openSync("checks/kicad-drc.log","w")
 const result = spawnSync(cli,["pcb","drc","--refill-zones","--save-board","--format","json",
   "--all-track-errors","--exit-code-violations","-o","checks/kicad-drc.json",board],

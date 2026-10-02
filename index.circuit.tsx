@@ -37,7 +37,7 @@ export default () => (
     minViaHoleDiameter={0.3} minViaPadDiameter={0.65}
     allowBlindAndBuriedVias={false} isViaInPadAllowed={false} defaultViaTenting
     autorouter="auto_local" autorouterVersion="latest" autorouterEffortLevel="2x"
-    pcbStyle={{viaHoleDiameter:0.3,viaPadDiameter:0.65,silkscreenFontSize:0.8,silkscreenTextVisibility:"hidden"}}
+    pcbStyle={{viaHoleDiameter:0.3,viaPadDiameter:0.65,silkscreenFontSize:1,silkscreenTextVisibility:"hidden"}}
   >
     <schematicsection name="host" displayName="Linux host — physical Pi J8 pins" />
     <schematicsection name="display" displayName="ST7796S display — 18-pin FPC" />
@@ -113,7 +113,7 @@ export default () => (
         />
         <trace from={`${b.name}.pin1`} to={`U_KEYS.${b.port}`} thickness={0.2} routingPhaseIndex={0}/>
         <Wire from={`${b.name}.pin3`} net="GND" phase={1}/>
-        <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text={b.label} pcbX={b.x} pcbY={b.y-4.6} fontSize={0.9} />
+        <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text={b.label} pcbX={b.x} pcbY={b.y-4.6} fontSize={1} />
       </Fragment>
     ))}
 
@@ -141,14 +141,14 @@ export default () => (
     {[{text:"GND",x:-20,y:44.5},{text:"5V",x:-14,y:44.5},{text:"3V3",x:-8,y:44.5},
       {text:"SPEAKER",x:18,y:22.5},{text:"BAT / NTC",x:36,y:34.5},{text:"OFF",x:40,y:45}].map(label=>
       <Fragment key={label.text}><silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}}
-        text={label.text} pcbX={label.x} pcbY={label.y} layer="bottom" fontSize={0.8}/></Fragment>)}
+        text={label.text} pcbX={label.x} pcbY={label.y} layer="bottom" fontSize={1}/></Fragment>)}
     {[{text:"+",x:38,y:25.46},{text:"-",x:38,y:28},{text:"NTC",x:38,y:30.54},
       {text:"+",x:19.27,y:20},{text:"-",x:16.73,y:20}].map(label=>
       <Fragment key={`polarity-${label.x}-${label.y}`}><silkscreentext
         pcbSx={{"& silkscreentext":{visibility:"visible"}}} text={label.text}
-        pcbX={label.x} pcbY={label.y} layer="bottom" fontSize={0.8}/></Fragment>)}
+        pcbX={label.x} pcbY={label.y} layer="bottom" fontSize={1}/></Fragment>)}
     <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="G350 LINUX  /  REV A" pcbX={0} pcbY={-59} fontSize={1.2} />
-    <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="J8 PIN 1: 3V3" pcbX={24} pcbY={39} layer="bottom" fontSize={0.8} />
+    <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="J8 PIN 1: 3V3" pcbX={24} pcbY={39} layer="bottom" fontSize={1} />
     <copperpour layer="top" connectsTo="net.GND" clearance={0.2} boardEdgeMargin={0.6} />
     <copperpour layer="inner1" connectsTo="net.GND" clearance={0.2} boardEdgeMargin={0.6} />
     <copperpour layer="inner2" connectsTo="net.GND" clearance={0.2} boardEdgeMargin={0.6} />

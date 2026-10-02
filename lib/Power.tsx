@@ -157,6 +157,12 @@ export function Power() {
       pcbPathRelativeTo="GOOD_SIGNAL.bottom" pcbPath={["GOOD_SIGNAL.bottom",{x:0,y:6},
         {x:-40.27,y:6},"J_PI.pin32"]}/>
     {/* Low-current status pull-up feed crosses the I2C clock on the other outer layer. */}
+    <trace from="R_GOOD_PULL.pin1" to="R_CHG_PULL.pin1" thickness={0.15} routingPhaseIndex={1}
+      pcbPath={["R_GOOD_PULL.pin1","R_CHG_PULL.pin1"]}/>
+    <trace from="R_GOOD_PULL.pin1" to="J_PI.pin1" thickness={0.15} routingPhaseIndex={1}
+      pcbPathRelativeTo="R_GOOD_PULL.pin1"
+      pcbPath={["R_GOOD_PULL.pin1",{x:-0.825,y:1.3},{x:1.6,y:1.3},
+        {x:1.6,y:9.27},"J_PI.pin1"]}/>
     <trace from="R_GOOD_PULL.pin1" to="R_ALERT_PULL.pin1" thickness={0.15} routingPhaseIndex={1}
       pcbPathRelativeTo="R_GOOD_PULL.pin1" pcbPath={["R_GOOD_PULL.pin1",{x:-1.2,y:1.5},
         {x:-1.2,y:1.5,via:true,toLayer:"bottom"},{x:-1.2,y:1.5},{x:6.5,y:-13.5},
@@ -225,8 +231,8 @@ export function Power() {
       pcbPath={["U_GAUGE.QSTRT","U_GAUGE.EP"]}/>
     <trace from="U_GAUGE.CTG" to="GAUGE_CTG_GND.top" thickness={0.15} routingPhaseIndex={1}
       pcbPath={["U_GAUGE.CTG","GAUGE_CTG_GND.top"]}/>
-    <silkscreentext text="BAT + / - / NTC" pcbX={37} pcbY={29} pcbRotation={90} layer="bottom" fontSize={0.8}/>
-    <silkscreentext text="OFF WHEN CLOSED" pcbX={32} pcbY={48} layer="bottom" fontSize={0.8}/>
-    <silkscreentext text="USB-C CHARGE 5V" pcbX={25} pcbY={51} layer="bottom" fontSize={0.8}/>
+    <silkscreentext text="BAT + / - / NTC" pcbX={37} pcbY={29} pcbRotation={90} layer="bottom" fontSize={1}/>
+    <silkscreentext text="OFF WHEN CLOSED" pcbX={32} pcbY={48} layer="bottom" fontSize={1}/>
+    <silkscreentext text="USB-C CHARGE 5V" pcbX={25} pcbY={51} layer="bottom" fontSize={1}/>
   </Fragment>
 }
