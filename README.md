@@ -44,10 +44,12 @@ The six-layer trial targets ENIG with **filled and copper-capped** 0.15mm drille
 ## Repositories and earlier revision
 
 - [GitHub](https://github.com/Abse2001/g350-linux-handheld)
-- [tscircuit registry](https://tscircuit.com/abse/g350-linux-handheld)
+- [tscircuit integrated experiment](https://tscircuit.com/abse/g350-linux-handheld?version=1.2.2-integrated-experimental)
 - [Historical Revision B carrier documentation](docs/REV_B_CARRIER.md)
 - [Historical fabrication status](fabrication/STATUS.md)
 
 Registry v1.1.0 still describes Revision B. **1.2.1-integrated-experimental** contains the checked 36-signal integrated source; all 105 stored files were verified by SHA-256 after recovering an archive-response timeout. The current 43-signal source uses **1.2.2-integrated-experimental**. Experimental versions remain explicitly incomplete; the old carrier's successful checks cannot be reused for Revision C.
 
 `tsci push` currently ignores `.gitignore`. Use `node scripts/stage-registry-source.mjs tmp/registry-source-VERSION` to prepare the reviewed tracked source allowlist, then push from that directory. It excludes local reference PDFs, temporary work and historical fabrication archives. An aborted native render with no copper is never accepted as a shorts/connectivity pass.
+
+The 1.2.2 publication uploaded 120 source/evidence files. `bun scripts/verify-registry-source.mjs tmp/registry-source-1.2.2` reads every file back and compares SHA-256 hashes, then checks the release is non-latest. The registry initially marked the tagged upload latest despite the CLI option; that metadata was corrected and the previous default retained. This explicit version link opens the integrated experiment. Publication does not establish successful full routing or fabrication readiness.

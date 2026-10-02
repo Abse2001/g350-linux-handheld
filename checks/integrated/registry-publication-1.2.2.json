@@ -1,0 +1,489 @@
+{
+  "status": "EXPERIMENTAL_SOURCE_PUBLISHED",
+  "fabricationReady": false,
+  "name": "abse/g350-linux-handheld@1.2.2-integrated-experimental",
+  "releaseId": "155217a3-451a-4fe4-978c-a9c4322685db",
+  "isLatest": false,
+  "files": [
+    {
+      "file": "bun.lock",
+      "sha256": "2d07cc73e91a502cb04063ec95116b6226d265a771e8cda185f5f7dcfeeec17c"
+    },
+    {
+      "file": "checks/integrated/import-validation.json",
+      "sha256": "935073c8941e50c3981f4bce74b979b6daad00699672ddc5884ac9c60bafee0d"
+    },
+    {
+      "file": "checks/integrated/manual-escape-clearance.json",
+      "sha256": "b8779c39ecb42933e794eb95070aacc1437ad5b1496bb502e2f060969731af18"
+    },
+    {
+      "file": "checks/integrated/memory-36-check-summary.json",
+      "sha256": "213cee6b39e0df56f67d85d4e4816eaa67a8e833e2df171a785183628cf1fcfb"
+    },
+    {
+      "file": "checks/integrated/memory-36-diagnostic-export.json",
+      "sha256": "99f74d2f49532057f43a9d786685ad3a2a3ca0caa9e494a8985096125f86883d"
+    },
+    {
+      "file": "checks/integrated/memory-36-kicad-drc.json",
+      "sha256": "1fd6ab81ec981df5d13620f643cd2594ca547f9d7224c8fc4f4839cec61f301d"
+    },
+    {
+      "file": "checks/integrated/memory-36-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "file": "checks/integrated/memory-43-check-summary.json",
+      "sha256": "ecf87d425edfaf9f6e937ed41ad1084d155a7774a041b0f8c766f9a8b4ba7a21"
+    },
+    {
+      "file": "checks/integrated/memory-43-connectivity.json",
+      "sha256": "5fc3a01880cc0f86dc048a763ab3e879d2f95571fea446986a3e80a1978479f1"
+    },
+    {
+      "file": "checks/integrated/memory-43-diagnostic-export.json",
+      "sha256": "71b4a319217e503f4b4890f31658b3031ffd31ef24666492d22e8c141b9ad6ea"
+    },
+    {
+      "file": "checks/integrated/memory-43-kicad-drc.json",
+      "sha256": "78a3aa8263f8776ec377971bfbde553903bd94436cd64bc480e6b5f1022c1c1e"
+    },
+    {
+      "file": "checks/integrated/memory-43-phase-validation.json",
+      "sha256": "7e5f1e95364119593480898f9dbaf6038b8ffc1a8c83c3f971d2e1bf52bbcceb"
+    },
+    {
+      "file": "checks/integrated/memory-43-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "file": "checks/integrated/phase-via-validation.json",
+      "sha256": "14c9fbdac7b19924be2c7791e82781585cf76e8bbe99f4a54756f4ba44ad7981"
+    },
+    {
+      "file": "design-status.json",
+      "sha256": "13ed741576d90060eb7e66e264a42cf9e0985df14bf99c1954750ae1c09bc9a6"
+    },
+    {
+      "file": "docs/INTEGRATED_HOST.md",
+      "sha256": "1e9f816e02334b29d876d1fb97603280f5eb5dccb0db159562a744ffcf95b8a5"
+    },
+    {
+      "file": "docs/REV_B_CARRIER.md",
+      "sha256": "e32216d139f1cf3dfefb594c38763b0794491e32035267137672e065cdbbb57c"
+    },
+    {
+      "file": "experiments/rk3566-memory-vip.circuit.tsx",
+      "sha256": "aa6d671e718da6b5dd0d4a678ed023411e79a1483d2af1ab5387d6c31e4b32b7"
+    },
+    {
+      "file": "experiments/rk3566-memory.circuit.tsx",
+      "sha256": "146656eac027b2cee346ad246478e577d3e7937dcb10e914c60f2b782af12870"
+    },
+    {
+      "file": "fabrication/STATUS.md",
+      "sha256": "687d51d891d954699822f5e00cc007fac74214083a56f893e1619c6e682ea3e5"
+    },
+    {
+      "file": "images/pcb-rev-b.png",
+      "sha256": "4a50204db3af66603849bdc8a07a9b927601bb127d77d02d3d7a75c5f309a68e"
+    },
+    {
+      "file": "images/rk3566-memory-36.png",
+      "sha256": "8653522a710f120180ffc08e4a2d08b26e34c74074d0cd6cbc314e97794f7d44"
+    },
+    {
+      "file": "images/rk3566-memory-37.png",
+      "sha256": "198c488bfd3f47e997e794eb2789d608c577f2790b009e1fb80fa6dc70473c6f"
+    },
+    {
+      "file": "images/rk3566-memory-42.png",
+      "sha256": "18be2998fee64248c58c69d90804a9a9f209ee1721daa12dd333a8594b78d21f"
+    },
+    {
+      "file": "images/rk3566-memory-43.png",
+      "sha256": "952ad2ba4d3d48eaca30b9b46f43d5689a8144b7de078173e485a4aa73196a77"
+    },
+    {
+      "file": "images/rk3566-memory-partial.png",
+      "sha256": "caed13e5c81b199bcee388ef3bde1a1cfdd779052fa049e5dbca18cda203f839"
+    },
+    {
+      "file": "images/rk3566-memory-repaired.png",
+      "sha256": "1f3ce4a43d119c7a186e52a4e1f681326839884f9d4b49f8544cb1bb0f5343e5"
+    },
+    {
+      "file": "images/schematic-rev-b.png",
+      "sha256": "fd238631a31af0788595539ac9584a9e022d4bff6c3aeda24c290cf68a0ebc1b"
+    },
+    {
+      "file": "imports/A_0603WAF3301T5E.tsx",
+      "sha256": "8ba952cb5f4c74c61c095aab6c7bc96ce8446c9913db3ae296d804c9d75e7d96"
+    },
+    {
+      "file": "imports/A_0603WAF6802T5E.tsx",
+      "sha256": "bf4e236bfc1cb0532d86ea03ab36e3362820914d133ffe8aa5376123cee84d7b"
+    },
+    {
+      "file": "imports/A_0603WAF7323T5E.tsx",
+      "sha256": "4f50c58b173df9da6a97132bf30245d710b521508d5c5af1067b6d0a3c56c249"
+    },
+    {
+      "file": "imports/AP2112K_3_3TRG1.tsx",
+      "sha256": "d501f22f5c926faabd3dc749be156cb7a8d834fad8c1b933c2ef4105e7c94257"
+    },
+    {
+      "file": "imports/BQ24074RGTR.tsx",
+      "sha256": "a80eef1648ab025dff9f960ce15fc0f94e06289a874faf447994fec596315100"
+    },
+    {
+      "file": "imports/CC0603KRX7R9BB104.tsx",
+      "sha256": "1e27a2feb22da0269808b90f299e7833f00c81ccb62c7c5c2f5747b46eb280d2"
+    },
+    {
+      "file": "imports/CL10B221KB8NNNC.tsx",
+      "sha256": "b52571069ffe0d68dac52ddd7146e3fe158f778be311e7e360b0fa42565f7190"
+    },
+    {
+      "file": "imports/CL31A226KAHNNNE.tsx",
+      "sha256": "e5dc41160c9fa477d18e466246c719d9e759673d1d88e2fe58794e6d72e77bfe"
+    },
+    {
+      "file": "imports/FPC_05F_18PH20.tsx",
+      "sha256": "e384b57bc340edb284fc42c75cdd0d21c25d8ccd14dbfc737cb9b0764b2feb47"
+    },
+    {
+      "file": "imports/H9HCNNN8KUMLHR_NME.tsx",
+      "sha256": "187a08395f0609efd5460a602afde06dfab855c9c9e0459772e685b4f3cee883"
+    },
+    {
+      "file": "imports/MAX17048G_T10.tsx",
+      "sha256": "42e51f18fcd8eb5ee9bf2b8b105f407880a3021da3c3c092b7745845c91d1235"
+    },
+    {
+      "file": "imports/MAX98357AETE_T.tsx",
+      "sha256": "3bb035b1fe0a673a09d4ef1eba50d0ef70727e874ed0950bbbba9fec290c45b7"
+    },
+    {
+      "file": "imports/MCP23017_E_SO.tsx",
+      "sha256": "74699c6bdfbb020526c9cfd8f00ad03c81d6e2c1c00118ce8513acbed3586570"
+    },
+    {
+      "file": "imports/RK3566.tsx",
+      "sha256": "2eb948709b7097b7a7bf1e0ca70b75105256732d93465da1fe2cd499b5146269"
+    },
+    {
+      "file": "imports/RK817_5.tsx",
+      "sha256": "7617bf35e352183a4a0550c8b385e7c33777bddef345629dfc907c1938fd4ee3"
+    },
+    {
+      "file": "imports/RK860_0.tsx",
+      "sha256": "3dfa513de41c66135c0f94fcd1294cd6b8d8b87570f2c7924687b5a3244fc0b5"
+    },
+    {
+      "file": "imports/SX32Y024000BC1T.tsx",
+      "sha256": "4f9a472a5019ef980286b2b1da1ae1637f8fdd33c34fe77a627ee1fb8c147ecb"
+    },
+    {
+      "file": "imports/TF_013.tsx",
+      "sha256": "28bc6138955a13b195dc47ea5453caaeec2f4b649c24e33ec90f92e24448f38a"
+    },
+    {
+      "file": "imports/TPS61023DRLR.tsx",
+      "sha256": "214f59239c3936f4884e12971f22607dbbf9b04e556ec9797f72bdd43e2c2eac"
+    },
+    {
+      "file": "imports/TS_1187A_B_A_B.tsx",
+      "sha256": "c48b934fc226e3f196e61e899249a340d1b0ba0f4297bfea30af9b0ea678f1bf"
+    },
+    {
+      "file": "imports/TYPE_C_31_M_12.tsx",
+      "sha256": "fc11aacca99ff4e19b4262b93da03944c42decfd60399084914ef603c808350e"
+    },
+    {
+      "file": "imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45"
+    },
+    {
+      "file": "imports/USBLC6_2SC6/USBLC6_2SC6.step",
+      "sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff"
+    },
+    {
+      "file": "imports/USBLC6_2SC6/USBLC6_2SC6.step.gz",
+      "sha256": "4eb8c39c5cbe1ef674be06177d319baebd31b32953a829299e7a654e5d434497"
+    },
+    {
+      "file": "imports/USBLC6_2SC6/USBLC6_2SC6.step.sha256",
+      "sha256": "1ff4db98f98f0b031594258eea13370316d059dc9fdba7b8702fbf3bd66fc8a4"
+    },
+    {
+      "file": "imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "sha256": "7279b8dbf13f2a33f68471379cbaa79bd0638043f1a5be7c9799774f64f9b31d"
+    },
+    {
+      "file": "imports/WPN252012E1R0MT.tsx",
+      "sha256": "e4388f5b34c5f7379c2998ceaef726ef23ff667783c67a58013f440a22ce7141"
+    },
+    {
+      "file": "index.circuit.tsx",
+      "sha256": "dd2aa46ee9cec5154c2c22ac30036c7c0b73aab03de1bed212d702cf171ce758"
+    },
+    {
+      "file": "lib/Audio.tsx",
+      "sha256": "e2d83528a46a965f84e7d22b1c3c822f28edfe0f1d2913f61fcef2c384bfe9bb"
+    },
+    {
+      "file": "lib/Connections.tsx",
+      "sha256": "85882aa733b01b18fcef06b2b792624b0d106300422fbdd78bd6b56f4d21b711"
+    },
+    {
+      "file": "lib/ConservativeTraceObstacles.ts",
+      "sha256": "8587d1dc9a11a854ae225a2f6fd1f40bef975171c2ac67a20b91a275a27f9c4b"
+    },
+    {
+      "file": "lib/ControlEscapes.tsx",
+      "sha256": "f4a6a2b3e94a7b64cd2711086734f90e02745c74121e92b5e7d3aa1a55217ca4"
+    },
+    {
+      "file": "lib/Display.tsx",
+      "sha256": "5c4ea68a16485e24fba5f080a250598c5c28f3149b6153e13d0f783650ea78d4"
+    },
+    {
+      "file": "lib/integrated/auditMemoryThroughVias.ts",
+      "sha256": "cc8bfabf89c5782fd1ce097a201f427a756de407e60f5b713cbf485cf6053787"
+    },
+    {
+      "file": "lib/integrated/auditMemoryWires.ts",
+      "sha256": "edf5387e535919e58a35898569bbc5705b367fa26beed2d8f190709ea35c23b2"
+    },
+    {
+      "file": "lib/integrated/GridMemoryCandidate.ts",
+      "sha256": "3484fb2bd58bb05c746f8f31eda79b1ef824d75d7c199c2e1cdd6465219ea220"
+    },
+    {
+      "file": "lib/integrated/GridMemoryViaCandidate.ts",
+      "sha256": "f964e01d7308fce21a88fec9d8da622586f3998b539a1ecba59020a208152692"
+    },
+    {
+      "file": "lib/integrated/H9HCNNN8KUMLHR_NME-pad-centres.json",
+      "sha256": "13223fb8bce8c3189cabfb98dd50d087090df3147cc9681f0479410794b31e3b"
+    },
+    {
+      "file": "lib/integrated/hynix-ball-map.json",
+      "sha256": "56fb59f06d2c9af87d6356770ea85d51e9d258c6c4cfacca74b8ac2f85e6463f"
+    },
+    {
+      "file": "lib/integrated/ManualOuterMemoryRouting.ts",
+      "sha256": "8a8bb7f12f256d537cb2b6cc06a903a87a8e7d150f419c90d80da797c29bc5c6"
+    },
+    {
+      "file": "lib/integrated/memory-connections.json",
+      "sha256": "f5845c34448a0fb10136643b6c948550dea2bacac917900bc58ea69ccbc7e62c"
+    },
+    {
+      "file": "lib/integrated/MemoryRoutingIdentity.ts",
+      "sha256": "40e707df293cbed57cd7124262e566779d66ba82a99ea23a175139d9131f70f9"
+    },
+    {
+      "file": "lib/integrated/PhasedMemoryAutorouter.ts",
+      "sha256": "8066544af0d3b3dbca5a78d83052bc0ada4b9e291f5e52452d961ac1f21fa176"
+    },
+    {
+      "file": "lib/integrated/repairMemoryViaSites.ts",
+      "sha256": "d8be26a9908c47aaf273d8109982a498bf10ed933342ae0557795ed408ca0869"
+    },
+    {
+      "file": "lib/integrated/rk3566-ball-map.json",
+      "sha256": "6e9979fb07e1a37c413c97e6692bd7129e6d608947c253898456bee7f16e58e7"
+    },
+    {
+      "file": "lib/integrated/RK3566-pad-centres.json",
+      "sha256": "3a1453b0e5abeb9d409620eec4a366fa71ba1e59e8cfca18d667e8fc06c2fff7"
+    },
+    {
+      "file": "lib/integrated/rk817-pin-map.json",
+      "sha256": "f9673c1f45af45894a77a9b8e5753c14b0847c52d798b21b951db244b8012f18"
+    },
+    {
+      "file": "lib/integrated/SavedMemoryRouting.ts",
+      "sha256": "69a7bc992e6ff650b069af0970edd33f8916722227dff7f16560d3f24cfde216"
+    },
+    {
+      "file": "lib/PhasedAutorouter.ts",
+      "sha256": "03b2f2d86f2a00e612db1e83d9457a3920e7115b7fd3588277e6c8756c614273"
+    },
+    {
+      "file": "lib/PiZero2W.tsx",
+      "sha256": "7faf10ff0f5ce9905fa2bf733f132efa0d67f68317d3b16e35f25a5bca1a17d5"
+    },
+    {
+      "file": "lib/Power.tsx",
+      "sha256": "f1df753b93d9816448f711bd7167fe2b0b0f95935eb092fad08da006faab292f"
+    },
+    {
+      "file": "lib/SavedRouting.ts",
+      "sha256": "b1e491d5c2ed1eb716fd5322ff2c2880bf708fd97a54b9715c0cc2ca07556f28"
+    },
+    {
+      "file": "lib/ThroughSignalVia.ts",
+      "sha256": "aec203b226579291489ee30933a2b308618d885ab9cd73e5460f5894b6c0f9aa"
+    },
+    {
+      "file": "lib/UsbData.tsx",
+      "sha256": "f9ba1389e9d9ebc1f0f7e8f130d503a2f66021c872385092b51680c48dadb72a"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "8fcb9a7a3ef563b8c78605467c45d4882663b3bad09f595eac35fdcfa4c01e7f"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "288aa13cadf6c7af958be4ed40527738abe210f1870358b614a7b39a54ca39c3"
+    },
+    {
+      "file": "package.json",
+      "sha256": "d2b2d56eb1c448ffa273700bd7404019a4620e996de1da4ee668d87146c616ff"
+    },
+    {
+      "file": "README.md",
+      "sha256": "06974a05142243586c62ac2ed3572e53423b95093f9c848764ee1e90efba4413"
+    },
+    {
+      "file": "registry-source-manifest.json",
+      "sha256": "37422935f0ab387c74eda7281cce271299ef2e1b3beae3431727c48815b2fb48"
+    },
+    {
+      "file": "rev-b.circuit.tsx",
+      "sha256": "aa409f5aae0dfd3378852e2744a8f88c74919d83b7442a41197494a9a2fd154d"
+    },
+    {
+      "file": "routing/initial-autorouter-run.log",
+      "sha256": "331db03a10ceafe9a4b7dde057b7375a97b1597999d0f0f5fd5b7d6439b55dc7"
+    },
+    {
+      "file": "routing/README.txt",
+      "sha256": "150f428e1e69e2ca27c336a0d68d45a5f8c3349d92f5d7e84d8fd901c86dfad8"
+    },
+    {
+      "file": "routing/rev-b-routes.json",
+      "sha256": "4e9d8d15c9349142d3e4edd41cf5a71e8a2404e519e03cee4a7d597e86ef5640"
+    },
+    {
+      "file": "routing/rk3566-manual-outer-routes.json",
+      "sha256": "8486dcb85e1b883ebfa1a2b65acbc68bfd45f2a0735e93dc713c6460d13bfc1d"
+    },
+    {
+      "file": "routing/rk3566-memory-routes.json",
+      "sha256": "7f75b8954a2e3af53311450869d01c192505c813a96ace97a3c120950cac674d"
+    },
+    {
+      "file": "scripts/assembly.mjs",
+      "sha256": "e848d7294254178fed9ed16fa9405a63cbfd2d01bb7af446f81c019c7e0c053f"
+    },
+    {
+      "file": "scripts/capture-memory-phases.mjs",
+      "sha256": "ca3400ae713c3aa74dbbe3745edc956d17b341b12531acf8f3f9d00be1df9d99"
+    },
+    {
+      "file": "scripts/check-integrated-imports.mjs",
+      "sha256": "7ef73b6bf20667c9ec5ed4557bdb3450149a53e72f960366ce4020a676eda5f5"
+    },
+    {
+      "file": "scripts/check-kicad.mjs",
+      "sha256": "e4d9cc6ad21d05fe349092a0ed8f85684304c302e85119a972782b9487433b72"
+    },
+    {
+      "file": "scripts/check-memory-escapes.mjs",
+      "sha256": "262adfc6c370277188701ee837fec4498e253713cc21b29cd1633027b0694860"
+    },
+    {
+      "file": "scripts/check-memory-phase-vias.mjs",
+      "sha256": "123a4c7d4cfb8050935f7ad53c4fe1279babfbd777449f1a78dcd73d2460ae27"
+    },
+    {
+      "file": "scripts/check-memory-routing.mjs",
+      "sha256": "970f37b823711d0785394336947b296649777a940eae6c58236a27b1aa38da4f"
+    },
+    {
+      "file": "scripts/compact-circuit.mjs",
+      "sha256": "448c3c49da1ebf524b519aaab112d691dab8956e33ff2d42d4b02c473505952a"
+    },
+    {
+      "file": "scripts/export-fabrication.mjs",
+      "sha256": "a264e3d7a4aea033e2fab8abf3a1b6f2e2cd2296322b3522f50f01e6a45dcd8b"
+    },
+    {
+      "file": "scripts/export-memory-diagnostic.mjs",
+      "sha256": "87396b1eea9a5633943a039226ee4a4adee98531bb75989f5558f14163c8c039"
+    },
+    {
+      "file": "scripts/fabrication.mjs",
+      "sha256": "28e37b95262bebeca635c695e893fea12d745610116e8f403bc6fd350b4e7063"
+    },
+    {
+      "file": "scripts/plan-memory-detours.mjs",
+      "sha256": "58e81f09c3cecaf8af0dfa606409c5cc6366431a169c2d0ac3a091b4d6fd45a5"
+    },
+    {
+      "file": "scripts/prepare-kicad-library.py",
+      "sha256": "4bd5517dd8a63776d94e82d6cf6c4b09a2fad88f5f4448f310c1a8add2412609"
+    },
+    {
+      "file": "scripts/prepare-kicad.mjs",
+      "sha256": "4d802b68eb94ba23f962a73771d3813c9600429c93df70cc4aa6c8676be1493b"
+    },
+    {
+      "file": "scripts/prepare-memory-kicad.mjs",
+      "sha256": "625d79e107716af06a7faff998190ca72a932c82bea4145a13ab81212abeed6a"
+    },
+    {
+      "file": "scripts/restore-3d-models.mjs",
+      "sha256": "8967c626f38599cb8536b1164acf90d4658797e14d2270292e965fbddf96bfca"
+    },
+    {
+      "file": "scripts/stage-registry-source.mjs",
+      "sha256": "1cc9a91d428f47ab3218159bd9b0375d5d89a78ffcd9939dd781ad8b6af52efb"
+    },
+    {
+      "file": "scripts/verify-gerber-coordinates.mjs",
+      "sha256": "6ef03efedc4b6287b20d0e90baf05422a8e19dc38de4821b251495a3bc92fc2b"
+    },
+    {
+      "file": "software/asound.conf",
+      "sha256": "93ddb0546ca731ef527bcb2824068734f8641199835f9e12f6275abb2f8ff192"
+    },
+    {
+      "file": "software/g350-input.service",
+      "sha256": "f8627808f973a0a89dfdc2978bd3dbd839f89c437b83d152f00f33eb20418f4b"
+    },
+    {
+      "file": "software/g350-usb-gadget.service",
+      "sha256": "8a4f8228a8bddff6a62bea69c8a847a061f0c0759358fe5ec3c7d1e2b9305de8"
+    },
+    {
+      "file": "software/g350-usb-power.service",
+      "sha256": "9c710a34e733dadb31894ead1408bf8450fc13f42c5915e7966d5c8709e43575"
+    },
+    {
+      "file": "software/handheld.py",
+      "sha256": "06be89fd139d10883f79087312abe569e67fd62b5b90ff086e4512b6ef544d91"
+    },
+    {
+      "file": "software/requirements.txt",
+      "sha256": "eb1608e15aa2db36b8f16678023e2f7aab78d42b6a7327c99965dc4a5c976e09"
+    },
+    {
+      "file": "software/usb_power.py",
+      "sha256": "97b57f4fa771cf7c2e7c6f80049bf61db807b8771bebda485169cc86a619dc80"
+    },
+    {
+      "file": "software/usb-gadget.sh",
+      "sha256": "d72d66c68a20c3492345a36f9a688df970c8d319c312508215603dc0057a3c47"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "923e93e798cdafa75dd3479551c2221fccf1889515e7d0cee722b054ed61c718"
+    }
+  ]
+}
