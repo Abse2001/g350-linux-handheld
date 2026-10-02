@@ -26,5 +26,16 @@
     "Independent DRC/connectivity and manufacturing checks with no unresolved violations",
     "Matching integrated Gerbers, drills, BOM, top-side placements and release hashes",
     "Prototype Linux image, DDR configuration, USB provisioning and hardware bring-up instructions"
-  ]
+  ],
+  "memoryFixture": {
+    "connectedSignals": 43,
+    "requiredSignals": 67,
+    "gerberShorts": 0,
+    "independentCopperDrillErrors": 0,
+    "unconnectedSignals": 24,
+    "danglingViaWarnings": 61,
+    "poweredHost": false,
+    "ddrTimingQualified": false,
+    "evidence": "checks/integrated/memory-43-check-summary.json"
+  }
 }
