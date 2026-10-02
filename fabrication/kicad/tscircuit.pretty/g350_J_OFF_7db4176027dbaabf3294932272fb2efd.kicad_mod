@@ -1,0 +1,111 @@
+(footprint "g350_J_OFF_7db4176027dbaabf3294932272fb2efd"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "J_OFF"
+		(at 0 3 180)
+		(layer "B.SilkS")
+		(hide yes)
+		(uuid "8b01532a-8641-4216-93d9-a3b8c21b0f25")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Value" "J_OFF"
+		(at 0 -3 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "ad6ba856-d37a-402b-853e-a43ca7da5f3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "3cf5eb23-e9b5-4b4e-8497-8a18ef49b10b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "c5f9d77d-8bc3-4b46-95b4-3db336c74d5d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Supplier Part Number" "C7430358, C7501260, C7509507"
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "182b9660-729b-d441-32f3-edde277c5003")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.04 1.77)
+		(end 3.04 -1.77)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "4b478f57-af35-48ea-afc6-ad0c66da0bd7")
+	)
+	(pad "1" thru_hole rect
+		(at 1.27 0 180)
+		(size 1.5 1.5)
+		(drill 1)
+		(layers "*.Mask" "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+		(remove_unused_layers no)
+		(uuid "7ab1d4e0-25d6-d7e0-2f04-25207c20dde0")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 0)
+		(size 1.5 1.5)
+		(drill 1)
+		(layers "*.Mask" "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+		(remove_unused_layers no)
+		(uuid "683620c0-5145-3c21-0ac0-99023bc40a1d")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/tscircuit_builtin.3dshapes/pinrow2_p2.54_nopinlabels.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

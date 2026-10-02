@@ -29,12 +29,7 @@ if (!readFileSync("checks/shorts.log","utf8").includes("No shorts detected"))
 if (statSync("checks/shorts.log").mtimeMs < statSync(sourcePath).mtimeMs)
   throw new Error("The final circuit changed after the shorts check")
 const drc = JSON.parse(readFileSync("checks/kicad-drc.json","utf8"))
-// Embedded supplier footprints are self-contained in this export; KiCad's
-// absent external 'tscircuit' library warning is recorded but cannot compare
-// those footprints against a local library. All geometry warnings still block.
-const drcIssues = [...(drc.violations ?? []),...(drc.unconnected_items ?? [])].filter(e=>
-  !(e.type==="lib_footprint_issues" && e.severity==="warning" &&
-    e.description==="The current configuration does not include the footprint library 'tscircuit'"))
+const drcIssues = [...drc.violations,...drc.unconnected_items]
 if (drcIssues.length)
   throw new Error(`Fabrication export blocked by ${drcIssues.length} independent KiCad DRC/connectivity issues`)
 if (statSync("checks/kicad-drc.json").mtimeMs < statSync(sourcePath).mtimeMs)

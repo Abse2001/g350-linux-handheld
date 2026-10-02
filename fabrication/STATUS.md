@@ -9,7 +9,7 @@ The 100 × 124 × 1.6 mm, four-layer FR4 carrier uses a complete Raspberry Pi Ze
 - Latest versions verified against npm on 2026-10-02: tscircuit 0.0.2715, tsci 0.1.2220 and capacity-autorouter 0.0.951. TypeScript, source, pin specification, netlist, schematic placement, PCB placement and routing-difficulty checks passed.
 - Full CONTROLS, POWER and DISPLAY_AUDIO routing build passed with zero native errors. Manual critical paths and fixed earlier-phase copper are preserved. All 123 vias have standard 0.3 mm drills and 0.65 mm outer diameters through all four copper layers; no blind/buried vias are used.
 - Final Gerber-mode shorts check passed on every copper layer: **no shorts detected**.
-- Independent KiCad checks, with refilled copper zones: **zero geometry issues and zero unconnected items**. The 141 recorded warnings are exclusively comparisons against the unavailable external `tscircuit` footprint library; the supplier footprints are embedded in the exported board.
+- Independent KiCad checks, with refilled copper zones: **zero DRC violations, zero warnings and zero unconnected items**. The project includes all 141 exact local footprint templates and `fp-lib-table`. Library preparation preserved all 1,140 physical board records; the final gate requires an entirely empty violations/connectivity report.
 - The actual exported Gerber positions match all 217 center-based SMT pads. All 187 drill features match their positions, diameters and slot directions. All 619 exported tracks match their circuit geometry, widths and layers within 5 µm. Assembly coordinates use the same lower-left plot datum.
 - JLCPCB assembly data contains 22 BOM entries and 48 components: 39 on top and 9 on bottom, with supplier-verified rotations. Through-hole headers, Pi, display, cables, battery, speaker, switch and mounting hardware are listed separately in `bom-manual.csv`.
 
@@ -20,14 +20,14 @@ Native metadata warnings about reference names, unnamed traces, the schematic sh
 - `g350-rev-a-gerbers.zip`: four copper layers, masks, paste, silk, outline and separate plated/non-plated drills.
 - `bom-jlcpcb.csv` and `pnp-jlcpcb.csv`: SMD assembly files.
 - `bom-manual.csv`: hand-fitted and external items.
-- `kicad/`: independently checked, refilled board, schematic, rules and local 3D models.
+- `kicad/`: independently checked, refilled board, schematic, rules, local footprint library and local 3D models.
 - `circuit.json`, `circuit.sha256` and `SHA256SUMS`: released circuit and file integrity records.
 
 Tscircuit distributes three large local STEP models as lossless `.step.gz` files because of its per-request upload limit. Run `npm run restore:models` in the downloaded project before viewing the KiCad models or checking the entire manifest. GitHub includes the original models as well. Model restoration verifies their recorded SHA256 values; circuit geometry, Gerbers, drills and assembly data are unchanged.
 
 Circuit SHA256: `c9d54168f7ca03b0a7f376d0a7121c59fb74694853312247e5164e4793d5c2be`.
 
-Checked KiCad board SHA256: `d4c442e840242bfe02c5cc0832b7d02f8dc1cd65d552f2badb18e70116162723`.
+Checked KiCad board SHA256: `96d3aa6692fa6ecf51e72bf0da8149fca12d5abc5fdc17810d9bcec70e33ec4e`.
 
 ## Prototype bring-up
 

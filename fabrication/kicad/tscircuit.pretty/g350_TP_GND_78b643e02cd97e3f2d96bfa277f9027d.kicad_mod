@@ -1,0 +1,81 @@
+(footprint "g350_TP_GND_78b643e02cd97e3f2d96bfa277f9027d"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "TP_GND"
+		(at 0 3 180)
+		(layer "B.SilkS")
+		(hide yes)
+		(uuid "a22cca4a-e9b1-4e12-a6b8-1a20bac91e95")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Value" "TP_GND"
+		(at 0 -3 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "1029cc63-f2d6-493d-b0b7-72b9609c7a9d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "18a7a734-d2f7-497b-9b1f-939a7ccf187e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "025bf9b2-bd5f-4491-b749-8ae699753166")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Supplier Part Number" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "1d10fba6-10a8-79c6-043f-f7e6082889fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 0.6)
+		(layers "*.Mask" "F.Cu" "B.Cu" "In1.Cu" "In2.Cu")
+		(remove_unused_layers no)
+		(uuid "020c525c-6663-aba4-312c-565c3743a7a4")
+	)
+	(embedded_fonts no)
+)
