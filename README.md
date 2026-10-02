@@ -35,6 +35,8 @@ The release exporter requires a successful three-phase build, a fresh all-layer 
 
 Production Gerbers are plotted from the independently checked and refilled KiCad conversion of the tscircuit board. Gerbers, separate plated/non-plated drills and supplier-verified CPL placements all use the lower-left bounding corner as their origin. The release verifier compares actual Gerber pad flashes, plated/non-plated drills and every exported KiCad track with the tscircuit model. `fabrication/SHA256SUMS` identifies the released files. See `fabrication/STATUS.md` before ordering.
 
+The tscircuit registry limits individual uploads, so three large STEP models are distributed there as lossless `.step.gz` files. Run `npm run restore:models` after downloading that repository to restore the local KiCad models; the command verifies the original release checksums. GitHub also includes the uncompressed models. The Gerbers and assembly files are identical in both repositories.
+
 Manufacturing targets green solder mask, 1 oz outer copper and standard 0.5 oz inner copper. Pad-sized mask openings follow JLCPCB's current 1:1 mask capability; fiducials retain their larger explicit openings. Visible labels are at least 1 mm high. Through-hole spacing is checked against a conservative 0.45 mm minimum. These limits follow the [JLCPCB rigid-board capabilities](https://jlcpcb.com/capabilities/pcb-capabilities/).
 
 ## Assembly

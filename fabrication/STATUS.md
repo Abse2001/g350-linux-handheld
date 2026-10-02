@@ -23,6 +23,8 @@ Native metadata warnings about reference names, unnamed traces, the schematic sh
 - `kicad/`: independently checked, refilled board, schematic, rules and local 3D models.
 - `circuit.json`, `circuit.sha256` and `SHA256SUMS`: released circuit and file integrity records.
 
+Tscircuit distributes three large local STEP models as lossless `.step.gz` files because of its per-request upload limit. Run `npm run restore:models` in the downloaded project before viewing the KiCad models or checking the entire manifest. GitHub includes the original models as well. Model restoration verifies their recorded SHA256 values; circuit geometry, Gerbers, drills and assembly data are unchanged.
+
 Circuit SHA256: `c9d54168f7ca03b0a7f376d0a7121c59fb74694853312247e5164e4793d5c2be`.
 
 Checked KiCad board SHA256: `d4c442e840242bfe02c5cc0832b7d02f8dc1cd65d552f2badb18e70116162723`.

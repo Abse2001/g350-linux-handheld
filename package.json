@@ -18,7 +18,8 @@
     "typecheck": "tsc --noEmit",
     "check:shorts": "tsci check shorts dist/index/circuit.json --mode gerber --layer all",
     "check:kicad": "node scripts/check-kicad.mjs",
-    "fabrication": "node scripts/export-fabrication.mjs"
+    "fabrication": "node scripts/export-fabrication.mjs",
+    "restore:models": "node scripts/restore-3d-models.mjs"
   },
   "devDependencies": {
     "@tscircuit/capacity-autorouter": "0.0.951",

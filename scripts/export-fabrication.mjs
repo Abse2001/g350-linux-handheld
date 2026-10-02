@@ -1,5 +1,6 @@
 import {existsSync, mkdirSync, openSync, closeSync, cpSync, readdirSync, readFileSync, writeFileSync, rmSync} from "node:fs"
 import {createHash} from "node:crypto"
+import {gzipSync} from "node:zlib"
 import {spawnSync} from "node:child_process"
 // This module checks the completed route, shorts, DRC and source freshness
 // before writing any ordering files, including supplier assembly rotations.
@@ -28,6 +29,13 @@ try {
 await import("./verify-gerber-coordinates.mjs")
 cpSync("dist/index/kicad","fabrication/kicad",{recursive:true,
   filter:path=>!path.endsWith(".kicad_prl")})
+// Registry request limits can reject large plain-text STEP models. Supply
+// lossless gzip copies; GitHub keeps the original models as well.
+const modelDir="fabrication/kicad/3dmodels/tscircuit_builtin.3dshapes"
+for(const file of readdirSync(modelDir).filter(file=>file.endsWith(".step"))){
+  const bytes=readFileSync(`${modelDir}/${file}`)
+  if(bytes.length>3_000_000) writeFileSync(`${modelDir}/${file}.gz`,gzipSync(bytes,{level:9}))
+}
 const files = ["circuit.json","bom-jlcpcb.csv","bom-manual.csv","pnp-jlcpcb.csv","g350-rev-a-gerbers.zip",
   ...readdirSync("fabrication/kicad",{recursive:true,withFileTypes:true}).filter(e=>e.isFile())
     .map(e=>`${e.parentPath.replace(/^fabrication\//,"")}/${e.name}`)]
