@@ -1,0 +1,67 @@
+{
+  "status": "PARTIAL_NATIVE_BYTE1_GEOMETRY_PASS_HOST_INCOMPLETE",
+  "fabricationReady": false,
+  "scope": "Exact native byte1-only permutation experiment. Separate from byte0; no combined 22-signal result. Unpowered and incomplete.",
+  "circuitSha256": "44fc8dbcc1585daeb255628ba939eb43ca9c447367fb93127996dfc54f2ddff1",
+  "checkedCircuit": "routing/am3352-byte1-native-diagnostic.circuit.json",
+  "connectedSignals": 11,
+  "requiredSignals": 49,
+  "unconnectedSignals": 38,
+  "physicalVias": 22,
+  "gerberShorts": 0,
+  "independentCopperDrillErrors": 0,
+  "independentWarnings": 0,
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 0.6350000012668389,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0.011685078328504517,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    }
+  ],
+  "poweredHost": false,
+  "fullElectricalTimingQualified": false,
+  "nativeFailuresRetained": true,
+  "evidence": [
+    "am3352-byte1-11-connectivity.json",
+    "am3352-byte1-11-kicad-drc.json",
+    "am3352-byte1-11-shorts.log",
+    "am3352-byte1-11-diagnostic-export.json"
+  ]
+}

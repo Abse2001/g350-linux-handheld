@@ -3,8 +3,8 @@
   "architecture": "bare TI AM3352BZCZ100 Cortex-A8, 512MB Micron MT41K256M16TW-107:P DDR3L in DDR3-compatible mode, individual PMIC circuits on main PCB",
   "status": "INTEGRATION_IN_PROGRESS",
   "fabricationReady": false,
-  "activeEntry": "experiments/am3352-ddr-clearance-bootstrap.circuit.tsx",
-  "activeEntryScope": "Native bus_lanes DDR3 signal bootstrap only; no powered host or completed handheld",
+  "activeEntry": "experiments/am3352-powered-host.circuit.tsx",
+  "activeEntryScope": "142-component unrouted power/DDR source draft; logical power/bypass audit passes; clock/boot/peripherals and complete routing unfinished",
   "historicalCarrierEntry": "rev-b.circuit.tsx",
   "requiredFeatures": {
     "onboardMicroSD": true,
@@ -62,5 +62,37 @@
     "status": "Partial native bus_lanes diagnostic passes byte0 planar skew and physical clearance; full DDR continuity fails",
     "evidence": "checks/integrated/am3352-clearance-11-check-summary.json",
     "snapshot": "images/am3352-memory-clearance-11.png"
+  },
+  "powerSourceDraft": {
+    "components": 142,
+    "routedPower": false,
+    "poweredHost": false,
+    "logicalPowerBypassCheck": "PASS",
+    "nativeSourcePlacementErrors": 0,
+    "evidence": "checks/integrated/am3352-power-validation.json"
+  },
+  "independentByte1Diagnostic": {
+    "connectedSignals": 11,
+    "requiredSignals": 49,
+    "unconnectedSignals": 38,
+    "gerberShorts": 0,
+    "independentCopperDrillErrors": 0,
+    "combinableWithByte0": false,
+    "poweredHost": false,
+    "evidence": "checks/integrated/am3352-byte1-11-check-summary.json"
+  },
+  "integratedDdrDiagnostic": {
+    "components": 142,
+    "connectedSignals": 11,
+    "requiredSignals": 49,
+    "unconnectedSignals": 38,
+    "gerberShorts": 0,
+    "independentCopperDrillErrors": 0,
+    "independentWarnings": 402,
+    "allHostUnconnectedItems": 499,
+    "poweredHost": false,
+    "combinableWithOtherDiagnostics": false,
+    "evidence": "checks/integrated/am3352-host-byte0-19-check-summary.json",
+    "snapshot": "images/am3352-host-byte0-native-diagnostic.png"
   }
 }

@@ -20,7 +20,10 @@ if(expected.length!==49||new Set(expected.map(c=>c.name)).size!==49||
   throw new Error("Expected the complete 49-signal connection map")
 const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y)
 if(board?.num_layers!==8)problems.push("Expected eight physical layers")
-if(byType("pcb_smtpad").length!==420)problems.push("Expected all 420 processor/RAM pads")
+const packageSourceIds=components.filter(c=>["U_SOC","U_RAM"].includes(c.name)).map(c=>c.source_component_id)
+const packagePcbIds=byType("pcb_component").filter(c=>packageSourceIds.includes(c.source_component_id)).map(c=>c.pcb_component_id)
+if(byType("pcb_smtpad").filter(p=>packagePcbIds.includes(p.pcb_component_id)).length!==420)
+  problems.push("Expected all 420 processor/RAM pads")
 if(!traces.length||!vias.length)problems.push("No completed routed copper")
 for(const v of vias) {
   if(v.layers?.length!==8||!layers.every(l=>v.layers.includes(l)))problems.push(`Not a full-depth through-via: ${v.pcb_via_id}`)

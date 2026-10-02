@@ -1,4 +1,5 @@
 import connections from "./memory-connections.json"
+import {Fragment} from "react"
 
 // TI SPRS717L Tables 7-68/7-69: 25mil intra-class/byte and 5mil
 // differential skew. These are planar route constraints, not SI approval.
@@ -24,7 +25,7 @@ if(ddrGroups[0].signals.length!==11||ddrGroups[1].signals.length!==11||ddrGroups
 
 export const DdrConstraints=({pairGap=.127}:{pairGap?:number}={})=> <>
   <bus name="DDR_RESET" connections={["DDR_RESETn"]} pcbAllowedLayers={["inner4"]} pcbTraceWidth={.1016}/>
-  {ddrGroups.map(g=><bus name={g.name} connections={g.signals}
-    pcbAllowedLayers={[g.layer]} pcbTraceWidth={.1016} maxLengthSkew={.635}/>)}
-  {differentialPairs.map(p=><differentialpair {...p} maxLengthSkew={.127} pcbTraceGap={pairGap}/>)}
+  {ddrGroups.map(g=><Fragment key={g.name}><bus name={g.name} connections={g.signals}
+    pcbAllowedLayers={[g.layer]} pcbTraceWidth={.1016} maxLengthSkew={.635}/></Fragment>)}
+  {differentialPairs.map(p=><Fragment key={p.name}><differentialpair {...p} maxLengthSkew={.127} pcbTraceGap={pairGap}/></Fragment>)}
 </>

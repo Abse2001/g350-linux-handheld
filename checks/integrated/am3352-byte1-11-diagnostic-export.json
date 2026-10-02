@@ -1,0 +1,47 @@
+{
+  "status": "EXACT_NATIVE_BUS_LANES_PARTIAL_DIAGNOSTIC",
+  "fabricationReady": false,
+  "completedSignals": 11,
+  "requiredSignals": 49,
+  "physicalVias": 22,
+  "viaGeometry": {
+    "landMm": 0.35,
+    "drillMm": 0.15
+  },
+  "source": {
+    "path": "dist/experiments/am3352-ddr-byte1-swizzled/circuit.json",
+    "sha256": "cca8d31179681212dc52e8ea954956653e8e95a3cf68272cdb505b2f29f83466"
+  },
+  "checkpoint": {
+    "path": "dist/am3352-ddr-byte1-swizzled-attempt-14/phase-2.input.simple-route.json",
+    "sha256": "aba54c71cee5ba13d3f04b99bb05b26add5d42887d8c4fdb2dd9fdea547764ec"
+  },
+  "failure": {
+    "path": "dist/am3352-ddr-byte1-swizzled-attempt-14/phase-2.error.json",
+    "sha256": "fa9628ce36d63df22b2c7549796b687db318d8903e45ea4213f955404171cc43",
+    "record": {
+      "type": "autorouter_phase_error",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "routingPhaseIndex": 2,
+      "phaseName": "DDR_BYTE0_BUS_LANES",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 4,
+      "elapsedMs": 410,
+      "connectionCount": 11,
+      "obstacleCount": 420,
+      "previousTraceCount": 11,
+      "autorouterName": "bus_lanes",
+      "solverName": "BusLanesPipelineSolver",
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "error": {
+        "message": "No collision-free local dogbone assignment"
+      }
+    },
+    "omittedPresentationData": "lastProgress.debugGraphics only; original file hash retained"
+  },
+  "diagnosticSha256": "44fc8dbcc1585daeb255628ba939eb43ca9c447367fb93127996dfc54f2ddff1",
+  "scope": "Unmodified native completed route coordinates from this failed run. All source pads and original native failures retained. Signal-only, unpowered and incomplete."
+}

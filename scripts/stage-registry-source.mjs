@@ -2,7 +2,7 @@ import {execFileSync} from "node:child_process"
 import {cpSync,mkdirSync,readFileSync,writeFileSync} from "node:fs"
 import {resolve,dirname,relative} from "node:path"
 
-// tsci push 0.1.2227 does not consult .gitignore. Publish only a reviewed,
+// tsci push does not consult .gitignore. Publish only a reviewed,
 // tracked source allowlist, never local reference PDFs or historical Gerbers.
 const root=process.cwd()
 const destination=resolve(process.argv[2]??"tmp/registry-source")
@@ -20,6 +20,14 @@ const required=new Set(["LICENSE","README.md","index.circuit.tsx","rev-b.circuit
   "checks/integrated/am3352-clearance-11-check-summary.json","checks/integrated/am3352-clearance-11-connectivity.json",
   "checks/integrated/am3352-clearance-11-diagnostic-export.json","checks/integrated/am3352-clearance-11-kicad-drc.json",
   "checks/integrated/am3352-clearance-11-shorts.log","checks/integrated/am3352-11-check-summary.json",
+  "checks/integrated/am3352-byte1-11-check-summary.json","checks/integrated/am3352-byte1-11-connectivity.json",
+  "checks/integrated/am3352-byte1-11-diagnostic-export.json","checks/integrated/am3352-byte1-11-kicad-drc.json",
+  "checks/integrated/am3352-byte1-11-shorts.log","checks/integrated/am3352-native-dogbone-bootstrap.json",
+  "checks/integrated/am3352-power-validation.json","checks/integrated/am3352-power-part-imports.json",
+  "checks/integrated/am3352-host-byte0-19-check-summary.json","checks/integrated/am3352-host-byte0-19-connectivity.json",
+  "checks/integrated/am3352-host-byte0-19-diagnostic-export.json","checks/integrated/am3352-host-byte0-19-kicad-drc.json",
+  "checks/integrated/am3352-host-byte0-19-shorts.log",
+  "checks/integrated/am3352-latest-package-versions.jsonl",
   "checks/integrated/hdi-38-check-summary.json","checks/integrated/thin-hdi-34-check-summary.json"])
 const directories=["imports/","lib/","experiments/","routing/","scripts/","software/","docs/","images/"]
 const tracked=execFileSync("git",["ls-files","-z"],{encoding:"utf8"}).split("\0").filter(Boolean)

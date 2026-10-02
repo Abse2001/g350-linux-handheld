@@ -2,7 +2,7 @@
 
 The selected processor is a **bare TI AM3352BZCZ100**, directly on the main PCB, with **512 MB Micron MT41K256M16TW-107:P DDR3L** operated in DDR3-compatible mode. The user chose AM3352 for simple games rendered by the CPU; a 3D GPU is no longer required. The design is authored in **tscircuit**, using individually imported JLCPCB components. No complete SBC or processor module is imported.
 
-**The integrated handheld is not ready to fabricate or order.** The default entry is the new AM3352 DDR signal bootstrap. It has no powered host, storage, USB, display or controls yet. The fabrication exporter remains blocked by `design-status.json`. Previous Raspberry Pi carrier exports and RK3566 routing checks do not apply to AM3352.
+**The integrated handheld is not ready to fabricate or order.** The default entry now contains the bare AM3352, RAM, PMIC, supplementary I/O boost and decoupling: **142 components in an unrouted power/DDR source draft**. Clock/boot, storage, USB connector/data, display, game controls and audio remain unfinished. The fabrication exporter remains blocked by `design-status.json`. Previous Raspberry Pi carrier exports and RK3566 routing checks do not apply to AM3352.
 
 The completed handheld must have eleven front buttons, an FPC display, an onboard microSD holder and one USB-C connector for charging and data/provisioning. Components and copper routing are allowed on both sides. There are no analog sticks or rear buttons.
 
@@ -16,7 +16,9 @@ All **324 CPU and 96 RAM balls**, functions and nominal 0.8 mm grids have been c
 
 The best checked native result is **11/49 DDR signals**, the complete first byte lane. It has **zero Gerber shorts and zero independent KiCad copper/drill violations**, and passes the byte's 0.635 mm planar skew and DQS pair's 0.127 mm planar skew. **38 signals remain open.** This is an unpowered, partial diagnostic, not a completed DDR channel. [Check summary](checks/integrated/am3352-clearance-11-check-summary.json).
 
-The original 0.30/0.15 mm vias produced 31 drill-clearance errors. Increasing the native dogbone lands to 0.35 mm while retaining 0.15 mm drills removed those errors in the rerouted lane. The second lane still times out. Manual fanouts, permitted data-swapping maps, coordinated dogbones and opposing boundary fanouts are retained as distinct experiments; their failures are recorded instead of being treated as successful copper. See [DDR routing record](docs/AM3352_DDR_ROUTING.md).
+The original 0.30/0.15 mm vias produced 31 drill-clearance errors. Increasing the native dogbone lands to 0.35 mm while retaining 0.15 mm drills removed those errors in the rerouted lane. Byte1 also routed in its own permitted DQ-permutation experiment and passed its independent physical/skew checks. These are separate 11-signal results; there is no combined 22-signal route. Shared dogbones and coordinated byte-channel attempts remain incomplete. See [DDR routing record](docs/AM3352_DDR_ROUTING.md).
+
+Byte0 now also routes on the actual **142-component power/DDR placement**, with zero Gerber shorts and zero KiCad copper/drill errors. The checked partial host still has **38 open DDR signals, 402 silkscreen warnings and 499 unconnected host items**. Its native byte1 failure is retained. [Integrated byte0 check summary](checks/integrated/am3352-host-byte0-19-check-summary.json).
 
 ![Native byte0 partial diagnostic, 11/49 signals](images/am3352-memory-clearance-11.png)
 
@@ -24,13 +26,15 @@ The trial uses an eight-layer routing allocation and ordinary full-depth vias. B
 
 ## Build and verify
 
-Versions verified and pinned on 2026-10-02: **tscircuit 0.0.2727**, **tsci CLI 0.1.2227**, **capacity-autorouter 0.0.951**, with **core 0.0.2048** supporting the native DDR preset.
+Versions verified and pinned on 2026-10-02: **tscircuit 0.0.2729**, **tsci CLI 0.1.2228**, **capacity-autorouter 0.0.952**, with **core 0.0.2050** supporting the native DDR preset. The required Three.js runtime peer is pinned explicitly so npm installs reproduce the working CLI environment.
 
 ```sh
 npm ci --legacy-peer-deps
 npm run typecheck
 npm run check:am3352-imports
 npm run check:am3352-swizzle
+npm run build:host-netlist
+npm run check:power-netlist
 npm run build:memory
 npm run check:memory-connectivity
 npm run check:shorts
@@ -38,10 +42,12 @@ npm run check:shorts
 
 The legacy peer option is required by the current upstream packages' circuit-json peer versions. All-layer Gerber shorts, full signal connectivity, end-to-end skew measurements and independent KiCad copper/drill checks must be run on actual exported AM3352 copper. The completed handheld requires fresh checks after power and peripherals are integrated.
 
+`build:host-netlist` deliberately disables routing to audit generated source connections and placement. Its pass proves no completed copper. The source audit covers processor voltage domains, PMIC reset/enable/I2C, internal-output isolation, DDR VREF/VTP/ZQ and nominal bypass placement/counts. Power rails and all 49 DDR channels still need actual routing, reference planes and electrical qualification.
+
 ## Repositories and records
 
 - [GitHub](https://github.com/Abse2001/g350-linux-handheld)
-- [tscircuit: AM3352 experimental source v1.3.0](https://tscircuit.com/abse/g350-linux-handheld?version=1.3.0-integrated-experimental)
+- [tscircuit: AM3352 experimental source v1.3.1](https://tscircuit.com/abse/g350-linux-handheld?version=1.3.1-integrated-experimental)
 - [Current integrated-host record](docs/INTEGRATED_HOST.md)
 - [Historical RK3566 host investigation](docs/RK3566_HOST_RECORD.md)
 - [Historical RK3566 memory experiments](docs/RK3566_MEMORY_EXPERIMENTS.md)

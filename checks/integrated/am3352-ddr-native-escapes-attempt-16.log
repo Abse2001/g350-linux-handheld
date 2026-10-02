@@ -1,0 +1,66 @@
+Building 1 file(s)...
+Building experiments/am3352-ddr-native-escapes.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `DdrConstraints`. See https://react.dev/link/warning-keys for more information.
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/placement-unrouted.png
+Autorouting <board#485 /> phase 1/6 start: connections=49, obstacles=420, previous_traces=0, router=precomputed, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12, breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30, breakout:pcb_breakout_point_31, breakout:pcb_breakout_point_32, breakout:pcb_breakout_point_33, breakout:pcb_breakout_point_34, breakout:pcb_breakout_point_35, breakout:pcb_breakout_point_36, breakout:pcb_breakout_point_37, breakout:pcb_breakout_point_38, breakout:pcb_breakout_point_39, breakout:pcb_breakout_point_40, breakout:pcb_breakout_point_41, breakout:pcb_breakout_point_42, breakout:pcb_breakout_point_43, breakout:pcb_breakout_point_44, breakout:pcb_breakout_point_45, breakout:pcb_breakout_point_46, breakout:pcb_breakout_point_47, breakout:pcb_breakout_point_48
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-0.input.simple-route.json
+  phase 1/6 done: routed_traces=49, jumpers=0, errors=0, elapsed=2.2s
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-0.output.traces.json
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/am3352-ddr-native-escapes-circuit-tsx-b21d9aaed5/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#485 /> phase 2/6 start: connections=49, obstacles=861, previous_traces=0, router=precomputed, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_49, breakout:pcb_breakout_point_50, breakout:pcb_breakout_point_51, breakout:pcb_breakout_point_52, breakout:pcb_breakout_point_53, breakout:pcb_breakout_point_54, breakout:pcb_breakout_point_55, breakout:pcb_breakout_point_56, breakout:pcb_breakout_point_57, breakout:pcb_breakout_point_58, breakout:pcb_breakout_point_59, breakout:pcb_breakout_point_60, breakout:pcb_breakout_point_61, breakout:pcb_breakout_point_62, breakout:pcb_breakout_point_63, breakout:pcb_breakout_point_64, breakout:pcb_breakout_point_65, breakout:pcb_breakout_point_66, breakout:pcb_breakout_point_67, breakout:pcb_breakout_point_68, breakout:pcb_breakout_point_69, breakout:pcb_breakout_point_70, breakout:pcb_breakout_point_71, breakout:pcb_breakout_point_72, breakout:pcb_breakout_point_73, breakout:pcb_breakout_point_74, breakout:pcb_breakout_point_75, breakout:pcb_breakout_point_76, breakout:pcb_breakout_point_77, breakout:pcb_breakout_point_78, breakout:pcb_breakout_point_79, breakout:pcb_breakout_point_80, breakout:pcb_breakout_point_81, breakout:pcb_breakout_point_82, breakout:pcb_breakout_point_83, breakout:pcb_breakout_point_84, breakout:pcb_breakout_point_85, breakout:pcb_breakout_point_86, breakout:pcb_breakout_point_87, breakout:pcb_breakout_point_88, breakout:pcb_breakout_point_89, breakout:pcb_breakout_point_90, breakout:pcb_breakout_point_91, breakout:pcb_breakout_point_92, breakout:pcb_breakout_point_93, breakout:pcb_breakout_point_94, breakout:pcb_breakout_point_95, breakout:pcb_breakout_point_96, breakout:pcb_breakout_point_97
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1.input.simple-route.json
+  phase 2/6 done: routed_traces=49, jumpers=0, errors=0, elapsed=30ms
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1.output.traces.json
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/am3352-ddr-native-escapes-circuit-tsx-b21d9aaed5/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#485 /> phase 3/6 "DDR_BYTE0_BUS_LANES" start: connections=11, obstacles=420, previous_traces=98, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D2, DDR_D6, DDR_D0, DDR_DQS0, DDR_DQSn0, DDR_D4, DDR_DQM0, DDR_D1, DDR_D7, DDR_D3, DDR_D5
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1.input.simple-route.json
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=200 progress=0% elapsed=183ms
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=15600 progress=64% elapsed=10.3s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=33400 progress=18% elapsed=20.3s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=52800 progress=0% elapsed=30.4s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=65800 progress=0% elapsed=41.1s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=71000 progress=18% elapsed=51.5s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=77600 progress=18% elapsed=61.7s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=87800 progress=9% elapsed=71.8s
+  phase 3/6 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=90800 progress=27% elapsed=82.4s
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1.input.simple-route.json
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1.previous-output.traces.json
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/am3352-ddr-native-escapes-attempt-16/phase-1.timeout.json
+Autorouter timeout after 90.2s in phase 3/6 "DDR_BYTE0_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158747 |       return;
+158748 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158749 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158750 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158751 |     this.log(kleur_default.red(message));
+158752 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 90.2s in phase 3/6 "DDR_BYTE0_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/am3352-ddr-native-escapes-attempt-16/phase-1.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158752:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167808:27)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167917:28)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182439:38)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182561:15)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 90.2s in phase 3/6 "DDR_BYTE0_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred
