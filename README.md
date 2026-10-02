@@ -47,7 +47,7 @@ The legacy peer option is required by the current upstream packages' circuit-jso
 ## Repositories and records
 
 - [GitHub](https://github.com/Abse2001/g350-linux-handheld)
-- [tscircuit: AM3352 experimental source v1.3.1](https://tscircuit.com/abse/g350-linux-handheld?version=1.3.1-integrated-experimental)
+- [tscircuit: AM3352 experimental source v1.3.3](https://tscircuit.com/abse/g350-linux-handheld?version=1.3.3-integrated-experimental)
 - [Current integrated-host record](docs/INTEGRATED_HOST.md)
 - [Historical RK3566 host investigation](docs/RK3566_HOST_RECORD.md)
 - [Historical RK3566 memory experiments](docs/RK3566_MEMORY_EXPERIMENTS.md)
