@@ -38,6 +38,24 @@ const localBypass:Record<string,{x:number,y:number,max:number}> = {
 
 export function Power() {
   return <Fragment>
+    {[{name:"VSYS_CHARGER",x:23,y:39.9},{name:"VSYS_BOOST",x:9,y:51.7},
+      {name:"VSYS_INDUCTOR",x:3.8,y:50.5}].map(p=><Fragment key={p.name}><via name={p.name}
+      pcbX={p.x} pcbY={p.y} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="top" toLayer="bottom" connectsTo="net.VSYS"/></Fragment>)}
+    <trace from="C_SYS.pin1" to="VSYS_CHARGER.top" thickness={0.8} routingPhaseIndex={1}
+      maxLength={3} pcbPath={["C_SYS.pin1","VSYS_CHARGER.top"]}/>
+    <trace from="VSYS_CHARGER.bottom" to="VSYS_BOOST.bottom" thickness={0.8} routingPhaseIndex={1}
+      pcbPathRelativeTo="VSYS_CHARGER.bottom"
+      pcbPath={["VSYS_CHARGER.bottom",{x:0,y:-2.1},{x:-9.2,y:-2.1},
+        {x:-9.2,y:0.9},{x:-15,y:0.9},{x:-15,y:11.8},"VSYS_BOOST.bottom"]}/>
+    <trace from="VSYS_BOOST.top" to="C_BOOST_IN.pin1" thickness={0.8} routingPhaseIndex={1}
+      maxLength={8} pcbPathRelativeTo="VSYS_BOOST.top"
+      pcbPath={["VSYS_BOOST.top",{x:3.2875,y:0},"C_BOOST_IN.pin1"]}/>
+    <trace from="VSYS_INDUCTOR.bottom" to="VSYS_BOOST.bottom" thickness={0.8} routingPhaseIndex={1}
+      pcbPath={["VSYS_INDUCTOR.bottom","VSYS_BOOST.bottom"]}/>
+    <trace from="L_BOOST.pin1" to="VSYS_INDUCTOR.top" thickness={0.8} routingPhaseIndex={1}
+      pcbPathRelativeTo="L_BOOST.pin1"
+      pcbPath={["L_BOOST.pin1","VSYS_INDUCTOR.top"]}/>
     <net name="VBAT" isPowerNet nominalTraceWidth={1} routingPhaseIndex={1}/><net name="VSYS" isPowerNet nominalTraceWidth={1} routingPhaseIndex={1}/><net name="FB" routingPhaseIndex={2}/><net name="BOOST_SW" nominalTraceWidth={0.8} routingPhaseIndex={1}/>
     <TYPE_C_31_M_12 name="J_USB" pcbX={25} pcbY={56.6} pcbRotation={180}
       layer="bottom" schX={94} schY={17} schSectionName="power"

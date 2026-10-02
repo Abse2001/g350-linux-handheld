@@ -85,7 +85,10 @@ export default () => (
     <Wire from="U_KEYS.SCL" net="SCL" />
     <Fragment><resistor name="R_RESET" schRotation={90} resistance="10k" footprint="0603" supplierPartNumbers={passivePart("C25804")}
       pcbX={6} pcbY={1} layer="bottom" schX={-5} schY={0} schSectionName="controls"
-       /><Connections name="R_RESET" connections={{pin1:"U_KEYS.N_RESET",pin2:"net.V3V3"}}/></Fragment>
+       /><Connections name="R_RESET" connections={{pin2:"net.V3V3"}}/></Fragment>
+    <trace from="R_RESET.pin1" to="U_KEYS.N_RESET" thickness={0.2} routingPhaseIndex={2}
+      pcbPathRelativeTo="R_RESET.pin1"
+      pcbPath={["R_RESET.pin1",{x:0.825,y:-1.8},{x:-10.445,y:-1.8},"U_KEYS.N_RESET"]}/>
     <Fragment><capacitor name="C_KEYS" schRotation={-90} capacitance="100nF" footprint="0603" supplierPartNumbers={passivePart("C14663")}
       pcbX={-2.73} pcbY={-15.5} layer="bottom" maxDecouplingTraceLength={2.5}
       schX={-20} schY={-8} schSectionName="controls"

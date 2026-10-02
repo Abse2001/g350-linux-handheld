@@ -21,6 +21,15 @@ export function Display() {
       pin9:"net.LCD_CS",pin10:"net.V_LCD3V3",pin13:"net.SCL",
       pin14:"net.SDA",pin15:"net.TOUCH_IRQ",pin19:"net.GND",pin20:"net.GND",
     }}/>
+    <via name="LCD_CS_ESCAPE" pcbX={-32.15} pcbY={19.95} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="bottom" toLayer="top" connectsTo="net.LCD_CS"/>
+    <trace from="LCD_CS_ESCAPE.bottom" to="J_LCD.pin9" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="LCD_CS_ESCAPE.bottom"
+      pcbPath={["LCD_CS_ESCAPE.bottom",{x:-0.35,y:-0.2000881},"J_LCD.pin9"]}/>
+    <trace from="LCD_CS_ESCAPE.top" to="J_PI.pin24" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="LCD_CS_ESCAPE.top"
+      pcbPath={["LCD_CS_ESCAPE.top",{x:-0.2,y:1.05},{x:-0.2,y:19.55},
+        {x:27.07,y:19.55},{x:27.07,y:13.78},"J_PI.pin24"]}/>
     {/* Cross the charger-status trace between the I2S route and GPIO rows. */}
     <via name="LCD_RESET_BRIDGE0" pcbX={7.62} pcbY={30.85} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.LCD_RESET"/>
@@ -69,7 +78,7 @@ export function Display() {
       fromLayer="bottom" toLayer="top" connectsTo="net.V_LCD3V3"/>
     <via name="LCD_VCC" pcbX={-33} pcbY={15.7500466} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.V_LCD3V3"/>
-    <via name="LCD_SD_CS" pcbX={-33} pcbY={20.2499106} holeDiameter={0.3} outerDiameter={0.65}
+    <via name="LCD_SD_CS" pcbX={-33} pcbY={21.2} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.V_LCD3V3"/>
     <trace from="C_LCD_OUT.pin1" to="LCD_FEED.bottom" thickness={0.3} routingPhaseIndex={1}
       maxLength={25} pcbPath={["C_LCD_OUT.pin1","LCD_FEED.bottom"]}/>
@@ -80,7 +89,8 @@ export function Display() {
     <trace from="LCD_VCC.top" to="LCD_SD_CS.top" thickness={0.2} routingPhaseIndex={1}
       pcbPath={["LCD_VCC.top","LCD_SD_CS.top"]}/>
     <trace from="LCD_SD_CS.bottom" to="J_LCD.pin10" thickness={0.15} routingPhaseIndex={1}
-      pcbPath={["LCD_SD_CS.bottom","J_LCD.pin10"]}/>
+      pcbPathRelativeTo="LCD_SD_CS.bottom"
+      pcbPath={["LCD_SD_CS.bottom",{x:-1.2,y:-0.9500894},"J_LCD.pin10"]}/>
     {[{name:"LCD_IN_GND",x:-41,y:-3,pin:"C_LCD_IN.pin2"},
       {name:"LCD_OUT_GND",x:-41,y:3,pin:"C_LCD_OUT.pin2"},
       {name:"LCD_LDO_GND",x:-35,y:-0.1,pin:"U_LCD_PWR.GND"}].map(p=><Fragment key={p.name}>

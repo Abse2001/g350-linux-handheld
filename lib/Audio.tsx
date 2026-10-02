@@ -5,6 +5,34 @@ import { MAX98357AETE_T } from "../imports/MAX98357AETE_T"
 export function Audio() {
   return <Fragment>
     <net name="AMP_MODE" routingPhaseIndex={2}/>
+    {[{name:"AUDIO_SUPPLY",x:24.2,y:10.8},{name:"AUDIO_SUPPLY_CROSS0",x:24,y:2},
+      {name:"AUDIO_SUPPLY_CROSS1",x:38.2,y:2},{name:"AUDIO_SUPPLY_CROSS2",x:37.6,y:36.5},
+      {name:"AUDIO_SUPPLY_CROSS3",x:37.6,y:43.5}].map(p=><Fragment key={p.name}><via name={p.name}
+      pcbX={p.x} pcbY={p.y} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="top" toLayer="bottom" connectsTo="net.V5V"/></Fragment>)}
+    <trace from="C_AUDIO_BULK.pin1" to="AUDIO_SUPPLY.top" thickness={0.6} routingPhaseIndex={1}
+      maxLength={6} pcbPathRelativeTo="C_AUDIO_BULK.pin1"
+      pcbPath={["C_AUDIO_BULK.pin1",{x:-0.9125,y:1.8},"AUDIO_SUPPLY.top"]}/>
+    <trace from="AUDIO_SUPPLY.bottom" to="AUDIO_SUPPLY_CROSS0.bottom" thickness={0.8} routingPhaseIndex={1}
+      pcbPathRelativeTo="AUDIO_SUPPLY.bottom"
+      pcbPath={["AUDIO_SUPPLY.bottom",{x:0,y:-8.8},"AUDIO_SUPPLY_CROSS0.bottom"]}/>
+    <trace from="AUDIO_SUPPLY_CROSS0.top" to="AUDIO_SUPPLY_CROSS1.top" thickness={0.8} routingPhaseIndex={1}
+      pcbPath={["AUDIO_SUPPLY_CROSS0.top","AUDIO_SUPPLY_CROSS1.top"]}/>
+    <trace from="AUDIO_SUPPLY_CROSS1.bottom" to="AUDIO_SUPPLY_CROSS2.bottom" thickness={0.8} routingPhaseIndex={1}
+      pcbPath={["AUDIO_SUPPLY_CROSS1.bottom","AUDIO_SUPPLY_CROSS2.bottom"]}/>
+    <trace from="AUDIO_SUPPLY_CROSS2.top" to="AUDIO_SUPPLY_CROSS3.top" thickness={0.8} routingPhaseIndex={1}
+      pcbPath={["AUDIO_SUPPLY_CROSS2.top","AUDIO_SUPPLY_CROSS3.top"]}/>
+    <trace from="AUDIO_SUPPLY_CROSS3.bottom" to="TP_5V.pin1" thickness={0.8} routingPhaseIndex={1}
+      pcbPathRelativeTo="AUDIO_SUPPLY_CROSS3.bottom"
+      pcbPath={["AUDIO_SUPPLY_CROSS3.bottom",{x:2.4,y:1.5},{x:2.4,y:13.8},{x:-51.6,y:13.8},"TP_5V.pin1"]}/>
+    <trace from="R_AUDIO_EN.pin1" to="J_PI.pin37" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="R_AUDIO_EN.pin1"
+      pcbPath={["R_AUDIO_EN.pin1",{x:-0.825,y:-2.8},
+        {x:-0.825,y:-2.8,via:true,toLayer:"bottom"},{x:-0.825,y:-2.8},
+        {x:-0.825,y:-5},{x:-39.32,y:-5},{x:-39.32,y:15},
+        {x:-39.32,y:15,via:true,toLayer:"top"},{x:-39.32,y:15},
+        {x:-39.32,y:20},{x:-39.32,y:20,via:true,toLayer:"bottom"},
+        {x:-39.32,y:20},{x:-39.32,y:29.27},"J_PI.pin37"]}/>
     <via name="AUDIO_MODE" pcbX={18.8} pcbY={10} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="top" toLayer="bottom" connectsTo="net.AMP_MODE"/>
     <via name="AUDIO_MODE_EN" pcbX={20.7} pcbY={7} holeDiameter={0.3} outerDiameter={0.65}
@@ -50,7 +78,7 @@ export function Audio() {
       supplierPartNumbers={{jlcpcb:["C15850"]}} pcbX={21} pcbY={9}
       maxDecouplingTraceLength={6}
       schX={-32.5} schY={-28} schRotation={-90} schSectionName="decoupling"
-       /><Connections name="C_AUDIO_BULK" connections={{pin1:"net.V5V"}}/></Fragment>
+       /><trace from="C_AUDIO_BULK.pin1" to="net.V5V" thickness={0.8} routingPhaseIndex={1} maxLength={200}/></Fragment>
     {/* Short local supply escapes; the autorouter joins the capacitor pads to 5V. */}
     <trace from="U_AUDIO.VDD1" to="C_AUDIO_HF.pin1" thickness={0.15} routingPhaseIndex={1}
       pcbPath={["U_AUDIO.VDD1","C_AUDIO_HF.pin1"]}/>

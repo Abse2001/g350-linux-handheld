@@ -12,6 +12,22 @@ export const piPins: Record<number, string> = {
 
 export function PiZero2W() {
   return <Fragment>
+    <via name="KEYS_SUPPLY" pcbX={5.2} pcbY={-17} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="top" toLayer="bottom" connectsTo="net.V3V3"/>
+    <via name="RESET_SUPPLY" pcbX={-5.5} pcbY={1} holeDiameter={0.3} outerDiameter={0.65}
+      fromLayer="bottom" toLayer="top" connectsTo="net.V3V3"/>
+    <trace from="TP_3V3.pin1" to="KEYS_SUPPLY.top" thickness={0.3} routingPhaseIndex={1} maxLength={200}
+      pcbPathRelativeTo="TP_3V3.pin1"
+      pcbPath={["TP_3V3.pin1",{x:0,y:-1.5},{x:-37.8,y:-1.5},
+        {x:-37.8,y:-67},{x:13.2,y:-67},"KEYS_SUPPLY.top"]}/>
+    <trace from="KEYS_SUPPLY.bottom" to="C_KEYS_BULK.pin1" thickness={0.3} routingPhaseIndex={1}
+      pcbPath={["KEYS_SUPPLY.bottom","C_KEYS_BULK.pin1"]}/>
+    <trace from="R_RESET.pin2" to="RESET_SUPPLY.bottom" thickness={0.2} routingPhaseIndex={1}
+      pcbPathRelativeTo="R_RESET.pin2"
+      pcbPath={["R_RESET.pin2","RESET_SUPPLY.bottom"]}/>
+    <trace from="RESET_SUPPLY.top" to="KEYS_SUPPLY.top" thickness={0.2} routingPhaseIndex={1}
+      pcbPathRelativeTo="RESET_SUPPLY.top"
+      pcbPath={["RESET_SUPPLY.top",{x:0,y:-18},"KEYS_SUPPLY.top"]}/>
     <trace from="TP_3V3.pin1" to="J_PI.pin1" thickness={0.2} routingPhaseIndex={1} maxLength={140}
       pcbPathRelativeTo="TP_3V3.pin1"
       pcbPath={["TP_3V3.pin1",{x:0,y:10},{x:44.4,y:10},{x:44.4,y:-5.2},
