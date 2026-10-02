@@ -1,0 +1,120 @@
+Building 1 file(s)...
+Building experiments/rk3566-memory-vip.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/rk3566-memory-checked-local/placement-unrouted.png
+Autorouting <board#850 /> phase 1/14 start: connections=67, obstacles=765, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12, breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30, breakout:pcb_breakout_point_31, breakout:pcb_breakout_point_32, breakout:pcb_breakout_point_33, breakout:pcb_breakout_point_34, breakout:pcb_breakout_point_35, breakout:pcb_breakout_point_36, breakout:pcb_breakout_point_37, breakout:pcb_breakout_point_38, breakout:pcb_breakout_point_39, breakout:pcb_breakout_point_40, breakout:pcb_breakout_point_41, breakout:pcb_breakout_point_42, breakout:pcb_breakout_point_43, breakout:pcb_breakout_point_44, breakout:pcb_breakout_point_45, breakout:pcb_breakout_point_46, breakout:pcb_breakout_point_47, breakout:pcb_breakout_point_48, breakout:pcb_breakout_point_49, breakout:pcb_breakout_point_50, breakout:pcb_breakout_point_51, breakout:pcb_breakout_point_52, breakout:pcb_breakout_point_53, breakout:pcb_breakout_point_54, breakout:pcb_breakout_point_55, breakout:pcb_breakout_point_56, breakout:pcb_breakout_point_57, breakout:pcb_breakout_point_58, breakout:pcb_breakout_point_59, breakout:pcb_breakout_point_60, breakout:pcb_breakout_point_61, breakout:pcb_breakout_point_62, breakout:pcb_breakout_point_63, breakout:pcb_breakout_point_64, breakout:pcb_breakout_point_65, breakout:pcb_breakout_point_66
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-0.input.simple-route.json
+  phase 1/14 done: routed_traces=67, jumpers=0, errors=0, elapsed=2.3s
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 2/14 start: connections=67, obstacles=1033, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_67, breakout:pcb_breakout_point_68, breakout:pcb_breakout_point_69, breakout:pcb_breakout_point_70, breakout:pcb_breakout_point_71, breakout:pcb_breakout_point_72, breakout:pcb_breakout_point_73, breakout:pcb_breakout_point_74, breakout:pcb_breakout_point_75, breakout:pcb_breakout_point_76, breakout:pcb_breakout_point_77, breakout:pcb_breakout_point_78, breakout:pcb_breakout_point_79, breakout:pcb_breakout_point_80, breakout:pcb_breakout_point_81, breakout:pcb_breakout_point_82, breakout:pcb_breakout_point_83, breakout:pcb_breakout_point_84, breakout:pcb_breakout_point_85, breakout:pcb_breakout_point_86, breakout:pcb_breakout_point_87, breakout:pcb_breakout_point_88, breakout:pcb_breakout_point_89, breakout:pcb_breakout_point_90, breakout:pcb_breakout_point_91, breakout:pcb_breakout_point_92, breakout:pcb_breakout_point_93, breakout:pcb_breakout_point_94, breakout:pcb_breakout_point_95, breakout:pcb_breakout_point_96, breakout:pcb_breakout_point_97, breakout:pcb_breakout_point_98, breakout:pcb_breakout_point_99, breakout:pcb_breakout_point_100, breakout:pcb_breakout_point_101, breakout:pcb_breakout_point_102, breakout:pcb_breakout_point_103, breakout:pcb_breakout_point_104, breakout:pcb_breakout_point_105, breakout:pcb_breakout_point_106, breakout:pcb_breakout_point_107, breakout:pcb_breakout_point_108, breakout:pcb_breakout_point_109, breakout:pcb_breakout_point_110, breakout:pcb_breakout_point_111, breakout:pcb_breakout_point_112, breakout:pcb_breakout_point_113, breakout:pcb_breakout_point_114, breakout:pcb_breakout_point_115, breakout:pcb_breakout_point_116, breakout:pcb_breakout_point_117, breakout:pcb_breakout_point_118, breakout:pcb_breakout_point_119, breakout:pcb_breakout_point_120, breakout:pcb_breakout_point_121, breakout:pcb_breakout_point_122, breakout:pcb_breakout_point_123, breakout:pcb_breakout_point_124, breakout:pcb_breakout_point_125, breakout:pcb_breakout_point_126, breakout:pcb_breakout_point_127, breakout:pcb_breakout_point_128, breakout:pcb_breakout_point_129, breakout:pcb_breakout_point_130, breakout:pcb_breakout_point_131, breakout:pcb_breakout_point_132, breakout:pcb_breakout_point_133
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-1.input.simple-route.json
+  phase 2/14 done: routed_traces=67, jumpers=0, errors=0, elapsed=96ms
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#850 /> phase 3/14 "MEMORY_INNER_A_DATA" start: connections=6, obstacles=1301, previous_traces=0, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ7_A, LPDDR4_DQ15_A, LPDDR4_DM0_A, LPDDR4_DQ14_A, LPDDR4_DM1_A, LPDDR4_DQ13_A
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-0.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 0, 6 signals
+  phase 3/14 "MEMORY_INNER_A_DATA" done: routed_traces=6, jumpers=0, errors=0, elapsed=79ms
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-0-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 4/14 "MEMORY_INNER_B_DATA" start: connections=8, obstacles=1301, previous_traces=6, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ3_B, LPDDR4_DQ2_B, LPDDR4_DQ5_B, LPDDR4_DM0_B, LPDDR4_DQ6_B, LPDDR4_DQ14_B, LPDDR4_DM1_B, LPDDR4_DQ7_B
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-1.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 1, 8 signals
+  phase 4/14 "MEMORY_INNER_B_DATA" done: routed_traces=14, jumpers=0, errors=0, elapsed=138ms
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-1-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 5/14 "MEMORY_INNER_A_CONTROL" start: connections=4, obstacles=1301, previous_traces=14, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_A2_A, LPDDR4_A3_A, LPDDR4_A4_A, LPDDR4_A5_A
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-2.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 2, 4 signals
+  phase 5/14 "MEMORY_INNER_A_CONTROL" done: routed_traces=18, jumpers=0, errors=0, elapsed=35ms
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-2.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-2-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 6/14 "MEMORY_INNER_B_CONTROL" start: connections=5, obstacles=1301, previous_traces=18, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_CKE0_B, LPDDR4_CS0n_B, LPDDR4_A2_B, LPDDR4_A3_B, LPDDR4_A4_B
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-3.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 3, 5 signals
+  phase 6/14 "MEMORY_INNER_B_CONTROL" done: routed_traces=23, jumpers=0, errors=0, elapsed=129ms
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-3.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-3-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 7/14 "MEMORY_RESET" start: connections=1, obstacles=1301, previous_traces=23, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_RESETn
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-4.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 4, 1 signals
+  phase 7/14 "MEMORY_RESET" done: routed_traces=24, jumpers=0, errors=0, elapsed=24ms
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-4.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-4-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#850 /> phase 8/14 "MEMORY_CLOCK_STROBES" start: connections=12, obstacles=1301, previous_traces=24, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQS0P_A, LPDDR4_DQS1P_A, LPDDR4_DQS0N_A, LPDDR4_DQS1N_A, LPDDR4_CLKP_A, LPDDR4_CLKN_A, LPDDR4_CLKP_B, LPDDR4_CLKN_B, LPDDR4_DQS0N_B, LPDDR4_DQS1N_B, LPDDR4_DQS0P_B, LPDDR4_DQS1P_B
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-5.input.simple-route.json
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=1180 elapsed=302ms
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=nodeDimensionSubdivisionSolver steps=16 progress=24% iterations_per_second=29 elapsed=19.0s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=portPointPathingSolver steps=25 progress=44% iterations_per_second=0 elapsed=66.8s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=portPointPathingSolver steps=54 progress=44% iterations_per_second=148930 elapsed=76.8s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=portPointPathingSolver steps=86 progress=44% iterations_per_second=156200 elapsed=87.0s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=highDensityRouteSolver steps=106 progress=52% iterations_per_second=465 elapsed=97.2s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=highDensityRouteSolver steps=138 progress=56% iterations_per_second=690 elapsed=107.4s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=pipeline9JointDrcRepairSolver steps=165 progress=84% iterations_per_second=2 elapsed=118.1s
+Manual adjustments to autorouted copper: 8 via sites, 0 wire doglegs
+Memory phase rejected 3 through-via positions (11 physical clearance violations), retry 1/8
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=194 progress=16% iterations_per_second=117 elapsed=181.4s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=nodeDimensionSubdivisionSolver steps=220 progress=24% iterations_per_second=6 elapsed=210.7s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=portPointPathingSolver steps=230 progress=44% iterations_per_second=0 elapsed=252.2s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=portPointPathingSolver steps=266 progress=44% iterations_per_second=208870 elapsed=262.5s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=uniformPortDistributionSolver steps=293 progress=48% iterations_per_second=1740 elapsed=272.7s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=globalDrcForceImproveSolver steps=326 progress=80% iterations_per_second=2 elapsed=282.9s
+Manual adjustments to autorouted copper: 11 via sites, 0 wire doglegs
+Memory phase rejected 1 through-via positions (4 physical clearance violations), retry 2/8
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=354 progress=16% iterations_per_second=99 elapsed=297.3s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=topologyMergingSolver steps=384 progress=22% iterations_per_second=425 elapsed=307.5s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=nodeDimensionSubdivisionSolver steps=396 progress=24% iterations_per_second=1 elapsed=360.3s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=availableSegmentPointSolver steps=404 progress=32% iterations_per_second=578 elapsed=373.3s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=portPointPathingSolver steps=409 progress=44% iterations_per_second=0 elapsed=428.1s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=uniformPortDistributionSolver steps=442 progress=48% iterations_per_second=1 elapsed=438.2s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=effortCleanupSolver steps=477 progress=88% iterations_per_second=3645 elapsed=448.4s
+Manual adjustments to autorouted copper: 11 via sites, 0 wire doglegs
+Memory phase rejected 3 through-via positions (7 physical clearance violations), retry 3/8
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=480 progress=16% iterations_per_second=838 elapsed=460.4s
+  phase 8/14 "MEMORY_CLOCK_STROBES" progress: solver_phase=nodeDimensionSubdivisionSolver steps=494 progress=24% iterations_per_second=8 elapsed=477.5s
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-5.input.simple-route.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-5.previous-output.traces.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/rk3566-memory-checked-local/phase-5.timeout.json
+Autorouter timeout after 482.2s in phase 8/14 "MEMORY_CLOCK_STROBES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158747 |       return;
+158748 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158749 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158750 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158751 |     this.log(kleur_default.red(message));
+158752 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 482.2s in phase 8/14 "MEMORY_CLOCK_STROBES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/rk3566-memory-checked-local/phase-5.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158752:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167808:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 482.2s in phase 8/14 "MEMORY_CLOCK_STROBES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

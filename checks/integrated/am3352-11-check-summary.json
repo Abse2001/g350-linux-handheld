@@ -1,0 +1,40 @@
+{
+  "status": "PARTIAL_NATIVE_DDR_BOOTSTRAP_DRC_FAIL",
+  "fabricationReady": false,
+  "scope": "Original native byte0 copper, before widening the router clearance",
+  "connectedSignals": 11,
+  "requiredSignals": 49,
+  "unconnectedSignals": 38,
+  "gerberShorts": 0,
+  "independentCopperDrillErrors": 31,
+  "independentWarnings": 1,
+  "violationsByType": {
+    "hole_clearance": 31,
+    "text_height": 1
+  },
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000014395434,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 0.127000000000713,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "physicalVias": 22,
+  "poweredHost": false,
+  "fullElectricalTimingQualified": false,
+  "evidence": [
+    "am3352-11-connectivity.json",
+    "am3352-11-shorts.log",
+    "am3352-11-kicad-drc.json",
+    "am3352-11-diagnostic-export.json"
+  ]
+}

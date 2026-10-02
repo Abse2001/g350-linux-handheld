@@ -1,0 +1,36 @@
+Building 1 file(s)...
+Building experiments/rk3566-memory.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/rk3566-memory-routing-long/placement-unrouted.png
+Autorouting <board#844 /> phase 1/3 "MEMORY_CLOCK_STROBES" start: connections=12, obstacles=765, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=0f3db717/e06c2de0
+  connections: LPDDR4_DQS0P_A, LPDDR4_DQS1P_A, LPDDR4_DQS0N_A, LPDDR4_DQS1N_A, LPDDR4_CLKP_A, LPDDR4_CLKN_A, LPDDR4_CLKP_B, LPDDR4_CLKN_B, LPDDR4_DQS0N_B, LPDDR4_DQS1N_B, LPDDR4_DQS0P_B, LPDDR4_DQS1P_B
+Wrote debug artifact: dist/rk3566-memory-routing-long/phase-0.input.simple-route.json
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=17% iterations_per_second=11732 elapsed=2.6s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=nodeDimensionSubdivisionSolver steps=3 progress=24% iterations_per_second=13 elapsed=14.0s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=portPointPathingSolver steps=9 progress=44% iterations_per_second=2 elapsed=34.9s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRouteSolver steps=32 progress=56% iterations_per_second=1057 elapsed=45.3s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=61 progress=92% iterations_per_second=494 elapsed=55.4s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=93 progress=92% iterations_per_second=328 elapsed=65.6s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=123 progress=92% iterations_per_second=404 elapsed=75.9s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=147 progress=92% iterations_per_second=288 elapsed=86.3s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=174 progress=92% iterations_per_second=403 elapsed=96.6s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=200 progress=92% iterations_per_second=444 elapsed=106.8s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=231 progress=92% iterations_per_second=508 elapsed=116.9s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=262 progress=92% iterations_per_second=252 elapsed=127.2s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=292 progress=92% iterations_per_second=360 elapsed=137.5s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=322 progress=92% iterations_per_second=558 elapsed=147.6s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=353 progress=92% iterations_per_second=412 elapsed=157.7s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=383 progress=92% iterations_per_second=154 elapsed=167.9s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=408 progress=92% iterations_per_second=191 elapsed=178.4s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=432 progress=92% iterations_per_second=226 elapsed=188.8s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=455 progress=92% iterations_per_second=123 elapsed=198.9s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=482 progress=92% iterations_per_second=232 elapsed=209.0s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=505 progress=92% iterations_per_second=207 elapsed=219.3s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=528 progress=92% iterations_per_second=267 elapsed=229.6s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=551 progress=92% iterations_per_second=286 elapsed=239.7s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=579 progress=92% iterations_per_second=343 elapsed=249.7s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=607 progress=92% iterations_per_second=391 elapsed=259.8s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=633 progress=92% iterations_per_second=293 elapsed=270.2s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=653 progress=92% iterations_per_second=35 elapsed=280.7s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=668 progress=92% iterations_per_second=41 elapsed=290.8s

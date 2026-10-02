@@ -1,0 +1,32 @@
+{
+  "status": "AM3352_ALLOWED_SWIZZLE_MAPS_PASS",
+  "source": "https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1205797/am4376-about-ddr3-data-line-swapping",
+  "scope": "TI engineer AM335x-specific guidance; no signal-integrity or fabrication qualification",
+  "cases": [
+    {
+      "path": "lib/am3352/memory-swizzled-connections.json",
+      "sha256": "282754370a2b2d178c0c7426e96ab2ff33e26a321ad60347f23f98cf99ba77f7",
+      "wholeByteSwap": false,
+      "byte1Only": false,
+      "signals": 49,
+      "status": "BIJECTIVE_MAP_WITH_ASSOCIATED_DQS_AND_DM_CHECKED"
+    },
+    {
+      "path": "lib/am3352/memory-byte-swapped-connections.json",
+      "sha256": "6ebd82f25ffb1e0b6d7133a31b8d9d1af550a2b0b72655c5edeafd1b4560dd89",
+      "wholeByteSwap": true,
+      "byte1Only": false,
+      "signals": 49,
+      "status": "BIJECTIVE_MAP_WITH_ASSOCIATED_DQS_AND_DM_CHECKED"
+    },
+    {
+      "path": "lib/am3352/memory-byte1-swizzled-connections.json",
+      "sha256": "9e833a40b6cd5ccffbe5499254455d1f6f713c7278a0f6195d0aa9dab6546671",
+      "wholeByteSwap": false,
+      "byte1Only": true,
+      "signals": 49,
+      "status": "BIJECTIVE_MAP_WITH_ASSOCIATED_DQS_AND_DM_CHECKED"
+    }
+  ],
+  "fabricationReady": false
+}

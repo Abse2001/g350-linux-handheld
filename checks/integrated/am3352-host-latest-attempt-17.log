@@ -1,0 +1,769 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `DdrConstraints`. See https://react.dev/link/warning-keys for more information.
+Wrote debug artifact: dist/am3352-host-latest-attempt-17/placement-unrouted.png
+Autorouting <board#1482 /> phase 1/5 "DDR_BYTE0_BUS_LANES" start: connections=11, obstacles=749, previous_traces=0, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D2, DDR_D6, DDR_D0, DDR_DQS0, DDR_DQSn0, DDR_D4, DDR_DQM0, DDR_D1, DDR_D7, DDR_D3, DDR_D5
+Wrote debug artifact: dist/am3352-host-latest-attempt-17/phase-1.input.simple-route.json
+  phase 1/5 "DDR_BYTE0_BUS_LANES" error after 30.7s: No collision-free local dogbone assignment
+Wrote debug artifact: dist/am3352-host-latest-attempt-17/phase-1.input.simple-route.json
+Wrote debug artifact: dist/am3352-host-latest-attempt-17/phase-1.error.json
+Async effect error in PcbTraceRender "autorouting":
+Error: No collision-free local dogbone assignment
+    at tick (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:73141:24)
+Wrote debug artifact: dist/am3352-host-latest-attempt-17/board.meta.json
+Circuit JSON written to dist/index/circuit.json
+TP_BAT_INPUT has no courtyard
+TP_BAT_NTC has no courtyard
+TP_BAT_GND has no courtyard
+TP_USB_INPUT has no courtyard
+Failed to fetch supplier footprint for <chip#25 name=".U_SOC" /> (jlcpcb:C468247): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#886 name=".C_BATTERY" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#881 name=".C_PMIC_BYPASS" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#876 name=".C_PMIC_IO_OUT" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#871 name=".C_PMIC_ANALOG_OUT" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#866 name=".C_PMIC_CORE_OUT" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#861 name=".C_PMIC_MPU_OUT" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#856 name=".C_PMIC_DDR_OUT" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#851 name=".C_PMIC_DCDC3_IN" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#846 name=".C_PMIC_DCDC2_IN" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#841 name=".C_PMIC_DCDC1_IN" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#836 name=".C_PMIC_SYS" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#803 name=".U_IO_BOOST" /> (jlcpcb:C919459): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <pushbutton#796 name=".SW_POWER" /> (jlcpcb:C318884): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#350 name=".U_RAM" /> (jlcpcb:C253882): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#891 name=".C_IO_BOOST_OUT1" /> (jlcpcb:C12891): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1036 name=".C_MPU_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#991 name=".C_CORE_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#941 name=".C_IO_BOOST_FF" /> (jlcpcb:C1603): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#931 name=".R_IO_BOOST_HI" /> (jlcpcb:C23239): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#896 name=".C_IO_BOOST_OUT2" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1066 name=".C_VDDS_BULK" /> (jlcpcb:C12891): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1156 name=".C_HV4_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1141 name=".C_HV3_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1126 name=".C_HV2_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1111 name=".C_HV1_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1101 name=".C_SRAM_MPU_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1091 name=".C_SRAM_CORE_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1171 name=".C_HV5_BULK" /> (jlcpcb:C12891): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1391 name=".C_DDR_CPU_BULK2" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1386 name=".C_DDR_CPU_BULK1" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1186 name=".C_HV6_BULK" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1456 name=".C_DDR_RAM_BULK1" /> (jlcpcb:C12891): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1461 name=".C_DDR_RAM_BULK2" /> (jlcpcb:C12891): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#678 name=".U_PMIC" /> (jlcpcb:C116081): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <resistor#946 name=".R_PMIC_RESET" /> (jlcpcb:C25741): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#936 name=".R_IO_BOOST_LO" /> (jlcpcb:C25741): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#926 name=".C_PMIC_INT_LDO" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#921 name=".C_PMIC_LDO2" /> (jlcpcb:C1607): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#916 name=".C_PMIC_LDO1" /> (jlcpcb:C1607): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#911 name=".C_IO_BOOST_IN" /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#906 name=".C_PMIC_USB" /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#901 name=".C_PMIC_VINLDO" /> (jlcpcb:C19666): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#831 name=".L_IO_BOOST" /> (jlcpcb:C122469): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#826 name=".L_CORE" /> (jlcpcb:C122469): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#821 name=".L_MPU" /> (jlcpcb:C122469): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#816 name=".L_DDR" /> (jlcpcb:C122469): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#951 name=".R_PMIC_WAKEUP" /> (jlcpcb:C25741): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#996 name=".C_CORE_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#986 name=".R_DDR_ZQ" /> (jlcpcb:C114755): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#981 name=".R_DDR_VTP" /> (jlcpcb:C87044): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#976 name=".R_VREF_LO" /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#971 name=".R_VREF_HI" /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#966 name=".R_PMIC_SCL" /> (jlcpcb:C25900): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#961 name=".R_PMIC_SDA" /> (jlcpcb:C25900): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#956 name=".R_PMIC_INT" /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1001 name=".C_CORE_2" /> (jlcpcb:C15195): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1056 name=".C_MPU_4" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1051 name=".C_MPU_3" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1046 name=".C_MPU_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1041 name=".C_MPU_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1031 name=".C_CORE_8" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1026 name=".C_CORE_7" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1021 name=".C_CORE_6" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1016 name=".C_CORE_5" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1011 name=".C_CORE_4" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1006 name=".C_CORE_3" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1061 name=".C_MPU_5" /> (jlcpcb:C15195): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1106 name=".C_SRAM_MPU_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1096 name=".C_SRAM_CORE_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1086 name=".C_VDDS_4" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1081 name=".C_VDDS_3" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1076 name=".C_VDDS_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1071 name=".C_VDDS_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1116 name=".C_HV1_1" /> (jlcpcb:C15195): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1166 name=".C_HV4_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1161 name=".C_HV4_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1151 name=".C_HV3_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1146 name=".C_HV3_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1136 name=".C_HV2_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1131 name=".C_HV2_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1121 name=".C_HV1_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1176 name=".C_HV5_1" /> (jlcpcb:C15195): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1216 name=".C_HV6_6" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1211 name=".C_HV6_5" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1206 name=".C_HV6_4" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1201 name=".C_HV6_3" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1196 name=".C_HV6_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1191 name=".C_HV6_1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1181 name=".C_HV5_2" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1221 name=".C_VDDS_RTC" /> (jlcpcb:C15195): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1256 name=".C_VDDA1P8V_USB0" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1251 name=".C_VDDA3P3V_USB1" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1246 name=".C_VDDA3P3V_USB0" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1241 name=".C_VDDS_PLL_MPU" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1236 name=".C_VDDS_OSC" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1231 name=".C_VDDS_PLL_CORE_LCD" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1226 name=".C_VDDS_PLL_DDR" /> (jlcpcb:C15195): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1261 name=".C_VDDA1P8V_USB1" /> (jlcpcb:C15195): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1291 name=".C_DDR_CPU_2" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1286 name=".C_DDR_CPU_1" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1281 name=".C_CAP_VDD_RTC" /> (jlcpcb:C52923): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1276 name=".C_CAP_VBB_MPU" /> (jlcpcb:C52923): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1271 name=".C_CAP_VDD_SRAM_MPU" /> (jlcpcb:C52923): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1266 name=".C_CAP_VDD_SRAM_CORE" /> (jlcpcb:C52923): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1296 name=".C_DDR_CPU_3" /> (jlcpcb:C1525): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1336 name=".C_DDR_CPU_11" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1331 name=".C_DDR_CPU_10" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1326 name=".C_DDR_CPU_9" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1321 name=".C_DDR_CPU_8" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1316 name=".C_DDR_CPU_7" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1311 name=".C_DDR_CPU_6" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1306 name=".C_DDR_CPU_5" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1301 name=".C_DDR_CPU_4" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1341 name=".C_DDR_CPU_12" /> (jlcpcb:C1525): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1376 name=".C_DDR_CPU_19" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1371 name=".C_DDR_CPU_18" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1366 name=".C_DDR_CPU_17" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1361 name=".C_DDR_CPU_16" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1356 name=".C_DDR_CPU_15" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1351 name=".C_DDR_CPU_14" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1346 name=".C_DDR_CPU_13" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1381 name=".C_DDR_CPU_20" /> (jlcpcb:C1525): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1426 name=".C_DDR_RAM_7" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1421 name=".C_DDR_RAM_6" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1416 name=".C_DDR_RAM_5" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1411 name=".C_DDR_RAM_4" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1406 name=".C_DDR_RAM_3" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1401 name=".C_DDR_RAM_2" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1396 name=".C_DDR_RAM_1" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1431 name=".C_DDR_RAM_8" /> (jlcpcb:C1525): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <capacitor#1476 name=".C_VREF_RAM_DQ" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1471 name=".C_VREF_RAM_CA" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1466 name=".C_VREF_CPU" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1451 name=".C_DDR_RAM_12" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1446 name=".C_DDR_RAM_11" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1441 name=".C_DDR_RAM_10" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#1436 name=".C_DDR_RAM_9" /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+No collision-free local dogbone assignment
+Ports [U_SOC.G1, U_RAM.K1] are not connected together through the same net.
+Ports [U_SOC.J1, U_RAM.A2] are not connected together through the same net.
+Ports [U_SOC.K1, U_RAM.C2] are not connected together through the same net.
+Ports [U_SOC.N1, U_RAM.F2] are not connected together through the same net.
+Ports [U_SOC.P3, U_RAM.G2] are not connected together through the same net.
+Ports [U_SOC.H2, U_RAM.L2] are not connected together through the same net.
+Ports [U_SOC.C4, U_RAM.M2] are not connected together through the same net.
+Ports [U_SOC.C3, U_RAM.N2] are not connected together through the same net.
+Ports [U_SOC.B1, U_RAM.P2] are not connected together through the same net.
+Ports [U_SOC.E2, U_RAM.R2] are not connected together through the same net.
+Ports [U_SOC.G2, U_RAM.T2] are not connected together through the same net.
+Ports [U_SOC.K2, U_RAM.A3] are not connected together through the same net.
+Ports [U_SOC.K3, U_RAM.C3] are not connected together through the same net.
+Ports [U_SOC.J2, U_RAM.D3] are not connected together through the same net.
+Ports [U_SOC.M3, U_RAM.E3] are not connected together through the same net.
+Ports [U_SOC.P1, U_RAM.F3] are not connected together through the same net.
+Ports [U_SOC.P2, U_RAM.G3] are not connected together through the same net.
+Ports [U_SOC.N3, U_RAM.H3] are not connected together through the same net.
+Ports [U_SOC.G4, U_RAM.J3] are not connected together through the same net.
+Ports [U_SOC.F1, U_RAM.K3] are not connected together through the same net.
+Ports [U_SOC.B2, U_RAM.L3] are not connected together through the same net.
+Ports [U_SOC.B3, U_RAM.M3] are not connected together through the same net.
+Ports [U_SOC.F3, U_RAM.N3] are not connected together through the same net.
+Ports [U_SOC.E4, U_RAM.P3] are not connected together through the same net.
+Ports [U_SOC.C1, U_RAM.R3] are not connected together through the same net.
+Ports [U_SOC.H3, U_RAM.T3] are not connected together through the same net.
+Ports [U_SOC.K4, U_RAM.A7] are not connected together through the same net.
+Ports [U_SOC.L2, U_RAM.B7] are not connected together through the same net.
+Ports [U_SOC.L1, U_RAM.C7] are not connected together through the same net.
+Ports [U_SOC.L3, U_RAM.D7] are not connected together through the same net.
+Ports [U_SOC.M2, U_RAM.E7] are not connected together through the same net.
+Ports [U_SOC.M4, U_RAM.F7] are not connected together through the same net.
+Ports [U_SOC.P4, U_RAM.H7] are not connected together through the same net.
+Ports [U_SOC.D2, U_RAM.J7] are not connected together through the same net.
+Ports [U_SOC.D1, U_RAM.K7] are not connected together through the same net.
+Ports [U_SOC.F4, U_RAM.L7] are not connected together through the same net.
+Ports [U_SOC.E3, U_RAM.N7] are not connected together through the same net.
+Ports [U_SOC.H1, U_RAM.P7] are not connected together through the same net.
+Ports [U_SOC.F2, U_RAM.R7] are not connected together through the same net.
+Ports [U_SOC.H4, U_RAM.T7] are not connected together through the same net.
+Ports [U_SOC.L4, U_RAM.B8] are not connected together through the same net.
+Ports [U_SOC.M1, U_RAM.C8] are not connected together through the same net.
+Ports [U_SOC.N2, U_RAM.F8] are not connected together through the same net.
+Ports [U_SOC.N4, U_RAM.H8] are not connected together through the same net.
+Ports [U_SOC.E1, U_RAM.N8] are not connected together through the same net.
+Ports [U_SOC.C2, U_RAM.P8] are not connected together through the same net.
+Ports [U_SOC.D5, U_RAM.R8] are not connected together through the same net.
+Ports [U_SOC.D4, U_RAM.T8] are not connected together through the same net.
+Ports [U_SOC.G3, U_RAM.K9] are not connected together through the same net.
+Port [U_SOC.A1] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.V1] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.A2] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.J3] is not connected to net [DDR_VTP] by a PCB trace.
+Port [U_SOC.B4] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J4] is not connected to net [DDR_VREF] by a PCB trace.
+Port [U_SOC.A5] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B5] is not connected to net [RTC_PORn] by a PCB trace.
+Port [U_SOC.C5] is not connected to net [PMIC_WAKEUPn] by a PCB trace.
+Port [U_SOC.E5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.F5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.G5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.H5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.J5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.K5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.L5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.N5] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.P5] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.B6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C6] is not connected to net [PMIC_ENABLE] by a PCB trace.
+Port [U_SOC.D6] is not connected to net [CAP_VDD_RTC] by a PCB trace.
+Port [U_SOC.E6] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.F6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.G6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.H6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.L6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N6] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.P6] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.A7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.D7] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.E7] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.F7] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.G7] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.H7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L7] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P7] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.A8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.D8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.E8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.F8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.G8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K8] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.L8] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N8] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P8] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.A9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.D9] is not connected to net [CAP_VDD_SRAM_CORE] by a PCB trace.
+Port [U_SOC.E9] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.F9] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.G9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L9] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N9] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P9] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.C10] is not connected to net [CAP_VBB_MPU] by a PCB trace.
+Port [U_SOC.D10] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.E10] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F10] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G10] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.H10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P10] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.R10] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.D11] is not connected to net [CAP_VDD_SRAM_MPU] by a PCB trace.
+Port [U_SOC.E11] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F11] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H11] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.J11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M11] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.N11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P11] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.R11] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.V11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.E12] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F12] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J12] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.K12] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.L12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N12] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P12] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.E13] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.H13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.J13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.K13] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.L13] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M13] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.N13] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P13] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.E14] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.F14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.G14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.H14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.J14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.K14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.L14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.M14] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N14] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P14] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.B15] is not connected to net [CPU_PORn] by a PCB trace.
+Port [U_SOC.H15] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.N15] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.R15] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.C16] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [U_SOC.N16] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.R16] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.C17] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [U_SOC.A18] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B18] is not connected to net [PMIC_INTn] by a PCB trace.
+Port [U_SOC.V18] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.A1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.B1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.C1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.E1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.F1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.G1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.H1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [U_RAM.M1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.N1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.P1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.R1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.T1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.B2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.E2] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.H2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.J2] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.K2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.B3] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.G7] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.A8] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.E8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.G8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.J8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.K8] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.L8] is not connected to net [DDR_ZQ] by a PCB trace.
+Port [U_RAM.M8] is not connected to net [DDR_VREF] by a PCB trace.
+Port [U_RAM.A9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.B9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.C9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.E9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.F9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.G9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.H9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.M9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.N9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.P9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.R9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.T9] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.VLDO2] is not connected to net [LDO2_3V3] by a PCB trace.
+Port [U_PMIC.VINLDO] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_PMIC.VLDO1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_PMIC.BAT1] is not connected to net [VBAT] by a PCB trace.
+Port [U_PMIC.BAT2] is not connected to net [VBAT] by a PCB trace.
+Port [U_PMIC.SYS1] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.SYS2] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.PWR_EN] is not connected to net [PMIC_ENABLE] by a PCB trace.
+Port [U_PMIC.TS] is not connected to net [BAT_NTC] by a PCB trace.
+Port [U_PMIC.USB] is not connected to net [USB_5V] by a PCB trace.
+Port [U_PMIC.nWAKEUP] is not connected to net [PMIC_WAKEUPn] by a PCB trace.
+Port [U_PMIC.VIO] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_PMIC.VDCDC1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_PMIC.L1] is not connected to net [SW_DDR] by a PCB trace.
+Port [U_PMIC.VIN_DCDC1] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.VIN_DCDC2] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.L2] is not connected to net [SW_MPU] by a PCB trace.
+Port [U_PMIC.VDCDC2] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_PMIC.PB_IN] is not connected to net [PMIC_BUTTONn] by a PCB trace.
+Port [U_PMIC.PGOOD] is not connected to net [CPU_PORn] by a PCB trace.
+Port [U_PMIC.SDA] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [U_PMIC.SCL] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [U_PMIC.VDCDC3] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_PMIC.PGND] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.L3] is not connected to net [SW_CORE] by a PCB trace.
+Port [U_PMIC.VIN_DCDC3] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.LS1_IN] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.LS1_OUT] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_PMIC.AGND] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.LS2_IN] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_PMIC.LS2_OUT] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_PMIC.nRESET] is not connected to net [PMIC_RESETn] by a PCB trace.
+Port [U_PMIC.nINT] is not connected to net [PMIC_INTn] by a PCB trace.
+Port [U_PMIC.LDO_PGOOD] is not connected to net [RTC_PORn] by a PCB trace.
+Port [U_PMIC.BYPASS] is not connected to net [PMIC_BYPASS] by a PCB trace.
+Port [U_PMIC.INT_LDO] is not connected to net [PMIC_INT_LDO] by a PCB trace.
+Port [U_PMIC.EP] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.ISINK2] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.ISINK1] is not connected to net [GND] by a PCB trace.
+Port [TP_BAT_INPUT.pin1] is not connected to net [VBAT] by a PCB trace.
+Ports [U_PMIC.BAT_SENSE, TP_BAT_INPUT.pin1] are not connected together through the same net.
+Port [TP_BAT_NTC.pin1] is not connected to net [BAT_NTC] by a PCB trace.
+Port [TP_BAT_GND.pin1] is not connected to net [GND] by a PCB trace.
+Port [TP_USB_INPUT.pin1] is not connected to net [USB_5V] by a PCB trace.
+Port [SW_POWER.A] is not connected to net [PMIC_BUTTONn] by a PCB trace.
+Port [SW_POWER.C] is not connected to net [GND] by a PCB trace.
+Port [U_IO_BOOST.VIN] is not connected to net [VSYS] by a PCB trace.
+Port [U_IO_BOOST.EN] is not connected to net [VSYS] by a PCB trace.
+Port [U_IO_BOOST.GND] is not connected to net [GND] by a PCB trace.
+Port [U_IO_BOOST.VOUT] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_IO_BOOST.FB] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [U_IO_BOOST.SW] is not connected to net [IO_BOOST_SW] by a PCB trace.
+Port [L_DDR.pin1] is not connected to net [SW_DDR] by a PCB trace.
+Port [L_DDR.pin2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [L_MPU.pin1] is not connected to net [SW_MPU] by a PCB trace.
+Port [L_MPU.pin2] is not connected to net [VDD_MPU] by a PCB trace.
+Port [L_CORE.pin1] is not connected to net [SW_CORE] by a PCB trace.
+Port [L_CORE.pin2] is not connected to net [VDD_CORE] by a PCB trace.
+Port [L_IO_BOOST.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [L_IO_BOOST.pin2] is not connected to net [IO_BOOST_SW] by a PCB trace.
+Port [C_PMIC_SYS.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_SYS.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DCDC1_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_DCDC1_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DCDC2_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_DCDC2_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DCDC3_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_DCDC3_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DDR_OUT.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_PMIC_DDR_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_MPU_OUT.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_PMIC_MPU_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_CORE_OUT.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_PMIC_CORE_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_ANALOG_OUT.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_PMIC_ANALOG_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_IO_OUT.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_PMIC_IO_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_BYPASS.pin1] is not connected to net [PMIC_BYPASS] by a PCB trace.
+Port [C_PMIC_BYPASS.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_BATTERY.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [C_BATTERY.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_OUT1.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_IO_BOOST_OUT1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_OUT2.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_IO_BOOST_OUT2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_VINLDO.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_PMIC_VINLDO.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_USB.pin1] is not connected to net [USB_5V] by a PCB trace.
+Port [C_PMIC_USB.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_IO_BOOST_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_LDO1.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_PMIC_LDO1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_LDO2.pin1] is not connected to net [LDO2_3V3] by a PCB trace.
+Port [C_PMIC_LDO2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_INT_LDO.pin1] is not connected to net [PMIC_INT_LDO] by a PCB trace.
+Port [C_PMIC_INT_LDO.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_IO_BOOST_HI.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [R_IO_BOOST_HI.pin2] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [R_IO_BOOST_LO.pin1] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [R_IO_BOOST_LO.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_FF.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_IO_BOOST_FF.pin2] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [R_PMIC_RESET.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [R_PMIC_RESET.pin2] is not connected to net [PMIC_RESETn] by a PCB trace.
+Port [R_PMIC_WAKEUP.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [R_PMIC_WAKEUP.pin2] is not connected to net [PMIC_WAKEUPn] by a PCB trace.
+Port [R_PMIC_INT.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_PMIC_INT.pin2] is not connected to net [PMIC_INTn] by a PCB trace.
+Port [R_PMIC_SDA.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_PMIC_SDA.pin2] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [R_PMIC_SCL.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_PMIC_SCL.pin2] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [R_VREF_HI.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [R_VREF_HI.pin2] is not connected to net [DDR_VREF] by a PCB trace.
+Port [R_VREF_LO.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [R_VREF_LO.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_DDR_VTP.pin1] is not connected to net [DDR_VTP] by a PCB trace.
+Port [R_DDR_VTP.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_DDR_ZQ.pin1] is not connected to net [DDR_ZQ] by a PCB trace.
+Port [R_DDR_ZQ.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_BULK.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_1.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_2.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_3.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_4.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_5.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_6.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_7.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_7.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_8.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_BULK.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_1.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_2.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_3.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_4.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_5.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_BULK.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_1.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_2.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_3.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_4.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_CORE_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_CORE_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_CORE_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_CORE_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_MPU_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_MPU_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_MPU_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_MPU_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV1_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV1_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV1_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV1_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV1_2.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV1_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV2_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV2_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV2_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV2_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV2_2.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV2_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV3_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV3_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV3_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV3_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV3_2.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV3_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV4_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV4_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV4_1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV4_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV4_2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV4_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV5_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV5_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV5_1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV5_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV5_2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV5_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_3.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_4.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_5.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_6.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_RTC.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_RTC.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_PLL_DDR.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_PLL_DDR.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_PLL_CORE_LCD.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_PLL_CORE_LCD.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_OSC.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_OSC.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_PLL_MPU.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_PLL_MPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA3P3V_USB0.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_VDDA3P3V_USB0.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA3P3V_USB1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_VDDA3P3V_USB1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA1P8V_USB0.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDA1P8V_USB0.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA1P8V_USB1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDA1P8V_USB1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VDD_SRAM_CORE.pin1] is not connected to net [CAP_VDD_SRAM_CORE] by a PCB trace.
+Port [C_CAP_VDD_SRAM_CORE.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VDD_SRAM_MPU.pin1] is not connected to net [CAP_VDD_SRAM_MPU] by a PCB trace.
+Port [C_CAP_VDD_SRAM_MPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VBB_MPU.pin1] is not connected to net [CAP_VBB_MPU] by a PCB trace.
+Port [C_CAP_VBB_MPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VDD_RTC.pin1] is not connected to net [CAP_VDD_RTC] by a PCB trace.
+Port [C_CAP_VDD_RTC.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_3.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_4.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_5.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_6.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_7.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_7.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_8.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_9.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_9.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_10.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_10.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_11.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_11.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_12.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_12.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_13.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_13.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_14.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_14.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_15.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_15.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_16.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_16.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_17.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_17.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_18.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_18.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_19.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_19.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_20.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_20.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_BULK1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_BULK1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_BULK2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_BULK2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_3.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_4.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_5.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_6.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_7.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_7.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_8.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_9.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_9.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_10.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_10.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_11.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_11.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_12.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_12.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_BULK1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_BULK1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_BULK2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_BULK2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VREF_CPU.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [C_VREF_CPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VREF_RAM_CA.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [C_VREF_RAM_CA.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VREF_RAM_DQ.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [C_VREF_RAM_DQ.pin2] is not connected to net [GND] by a PCB trace.
+Trace [U_SOC.pin7 to U_RAM.pin10] is not connected (it has no PCB trace)
+Trace [U_SOC.pin9 to U_RAM.pin17] is not connected (it has no PCB trace)
+Trace [U_SOC.pin10 to U_RAM.pin19] is not connected (it has no PCB trace)
+Trace [U_SOC.pin13 to U_RAM.pin22] is not connected (it has no PCB trace)
+Trace [U_SOC.pin50 to U_RAM.pin23] is not connected (it has no PCB trace)
+Trace [U_SOC.pin26 to U_RAM.pin27] is not connected (it has no PCB trace)
+Trace [U_SOC.pin57 to U_RAM.pin28] is not connected (it has no PCB trace)
+Trace [U_SOC.pin39 to U_RAM.pin29] is not connected (it has no PCB trace)
+Trace [U_SOC.pin2 to U_RAM.pin30] is not connected (it has no PCB trace)
+Trace [U_SOC.pin23 to U_RAM.pin31] is not connected (it has no PCB trace)
+Trace [U_SOC.pin25 to U_RAM.pin32] is not connected (it has no PCB trace)
+Trace [U_SOC.pin28 to U_RAM.pin33] is not connected (it has no PCB trace)
+Trace [U_SOC.pin46 to U_RAM.pin35] is not connected (it has no PCB trace)
+Trace [U_SOC.pin27 to U_RAM.pin36] is not connected (it has no PCB trace)
+Trace [U_SOC.pin48 to U_RAM.pin37] is not connected (it has no PCB trace)
+Trace [U_SOC.pin14 to U_RAM.pin38] is not connected (it has no PCB trace)
+Trace [U_SOC.pin32 to U_RAM.pin39] is not connected (it has no PCB trace)
+Trace [U_SOC.pin49 to U_RAM.pin40] is not connected (it has no PCB trace)
+Trace [U_SOC.pin61 to U_RAM.pin41] is not connected (it has no PCB trace)
+Trace [U_SOC.pin6 to U_RAM.pin42] is not connected (it has no PCB trace)
+Trace [U_SOC.pin20 to U_RAM.pin43] is not connected (it has no PCB trace)
+Trace [U_SOC.pin38 to U_RAM.pin44] is not connected (it has no PCB trace)
+Trace [U_SOC.pin42 to U_RAM.pin45] is not connected (it has no PCB trace)
+Trace [U_SOC.pin59 to U_RAM.pin46] is not connected (it has no PCB trace)
+Trace [U_SOC.pin3 to U_RAM.pin47] is not connected (it has no PCB trace)
+Trace [U_SOC.pin44 to U_RAM.pin48] is not connected (it has no PCB trace)
+Trace [U_SOC.pin64 to U_RAM.pin49] is not connected (it has no PCB trace)
+Trace [U_SOC.pin29 to U_RAM.pin50] is not connected (it has no PCB trace)
+Trace [U_SOC.pin11 to U_RAM.pin51] is not connected (it has no PCB trace)
+Trace [U_SOC.pin47 to U_RAM.pin52] is not connected (it has no PCB trace)
+Trace [U_SOC.pin30 to U_RAM.pin53] is not connected (it has no PCB trace)
+Trace [U_SOC.pin66 to U_RAM.pin54] is not connected (it has no PCB trace)
+Trace [U_SOC.pin68 to U_RAM.pin56] is not connected (it has no PCB trace)
+Trace [U_SOC.pin22 to U_RAM.pin57] is not connected (it has no PCB trace)
+Trace [U_SOC.pin4 to U_RAM.pin58] is not connected (it has no PCB trace)
+Trace [U_SOC.pin60 to U_RAM.pin59] is not connected (it has no PCB trace)
+Trace [U_SOC.pin41 to U_RAM.pin61] is not connected (it has no PCB trace)
+Trace [U_SOC.pin8 to U_RAM.pin62] is not connected (it has no PCB trace)
+Trace [U_SOC.pin24 to U_RAM.pin63] is not connected (it has no PCB trace)
+Trace [U_SOC.pin62 to U_RAM.pin64] is not connected (it has no PCB trace)
+Trace [U_SOC.pin65 to U_RAM.pin66] is not connected (it has no PCB trace)
+Trace [U_SOC.pin12 to U_RAM.pin67] is not connected (it has no PCB trace)
+Trace [U_SOC.pin31 to U_RAM.pin70] is not connected (it has no PCB trace)
+Trace [U_SOC.pin67 to U_RAM.pin72] is not connected (it has no PCB trace)
+Trace [U_SOC.pin5 to U_RAM.pin77] is not connected (it has no PCB trace)
+Trace [U_SOC.pin21 to U_RAM.pin78] is not connected (it has no PCB trace)
+Trace [U_SOC.pin76 to U_RAM.pin79] is not connected (it has no PCB trace)
+Trace [U_SOC.pin58 to U_RAM.pin80] is not connected (it has no PCB trace)
+Trace [U_SOC.pin43 to U_RAM.pin90] is not connected (it has no PCB trace)
+Trace [U_PMIC.pin6 to TP_BAT_INPUT.pin1] is not connected (it has no PCB trace)
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

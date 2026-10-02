@@ -1,0 +1,57 @@
+Building 1 file(s)...
+Building experiments/am3352-ddr-clearance-bootstrap.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `DdrConstraints`. See https://react.dev/link/warning-keys for more information.
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/placement-unrouted.png
+Autorouting <board#483 /> phase 1/4 "DDR_BYTE0_BUS_LANES" start: connections=11, obstacles=420, previous_traces=0, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D0, DDR_DQM0, DDR_D2, DDR_DQS0, DDR_D1, DDR_D3, DDR_D6, DDR_DQSn0, DDR_D4, DDR_D7, DDR_D5
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-1.input.simple-route.json
+  phase 1/4 "DDR_BYTE0_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=200 progress=0% elapsed=1.5s
+  phase 1/4 "DDR_BYTE0_BUS_LANES" done: routed_traces=11, jumpers=0, errors=0, elapsed=7.5s
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-1.output.traces.json
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/am3352-ddr-clearance-bootstrap-circuit-tsx-3705db7138/subcircuit_source_group_0-phase-1-order-0-stage-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#483 /> phase 2/4 "DDR_BYTE1_BUS_LANES" start: connections=11, obstacles=420, previous_traces=11, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D13, DDR_D15, DDR_D12, DDR_DQSn1, DDR_D14, DDR_D11, DDR_D9, DDR_DQS1, DDR_D10, DDR_DQM1, DDR_D8
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-2.input.simple-route.json
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=200 progress=0% elapsed=167ms
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=33400 progress=36% elapsed=10.2s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=66600 progress=27% elapsed=20.2s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=100600 progress=9% elapsed=30.2s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=133600 progress=0% elapsed=40.2s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=168400 progress=18% elapsed=50.3s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=203600 progress=36% elapsed=60.3s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=236000 progress=27% elapsed=70.3s
+  phase 2/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=268800 progress=36% elapsed=80.4s
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-2.input.simple-route.json
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-2.previous-output.traces.json
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/am3352-ddr-clearance-attempt-10/phase-2.timeout.json
+Autorouter timeout after 90.1s in phase 2/4 "DDR_BYTE1_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158747 |       return;
+158748 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158749 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158750 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158751 |     this.log(kleur_default.red(message));
+158752 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 90.1s in phase 2/4 "DDR_BYTE1_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/am3352-ddr-clearance-attempt-10/phase-2.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158752:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167808:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 90.1s in phase 2/4 "DDR_BYTE1_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

@@ -1,0 +1,452 @@
+{
+  "status": "MEMORY_CONNECTIVITY_FAIL",
+  "scope": "Memory copper connectivity, signal-layer restriction, physical HDI drill spans and top-only placement. No DDR timing, shorts, impedance or full-host qualification.",
+  "input": "dist/diagnostics/rk3566-memory-hdi-38/circuit.json",
+  "sha256": "8b035b1d4e4b0707f4c070082a03a8c1487e2aa8c29fbaaaddfd4bf4cebaa2cb",
+  "pads": 765,
+  "traces": 172,
+  "vias": 186,
+  "connectedSignals": 38,
+  "requiredSignals": 67,
+  "nativeErrorCounts": {
+    "pcb_autorouting_error": 1,
+    "pcb_port_not_connected_error": 67,
+    "pcb_trace_missing_error": 67,
+    "source_pin_must_be_connected_error": 260
+  },
+  "problems": [
+    "Unconnected memory signal: LPDDR4_DQ1_A",
+    "Unconnected memory signal: LPDDR4_DQ6_A",
+    "Unconnected memory signal: LPDDR4_DQ9_A",
+    "Unconnected memory signal: LPDDR4_DQ2_A",
+    "Unconnected memory signal: LPDDR4_DQ5_A",
+    "Unconnected memory signal: LPDDR4_DQ10_A",
+    "Unconnected memory signal: LPDDR4_DQ3_A",
+    "Unconnected memory signal: LPDDR4_DQ4_A",
+    "Unconnected memory signal: LPDDR4_DQ12_A",
+    "Unconnected memory signal: LPDDR4_DQ11_A",
+    "Unconnected memory signal: LPDDR4_ODT0_CA_A",
+    "Unconnected memory signal: LPDDR4_A0_A",
+    "Unconnected memory signal: LPDDR4_CS0n_A",
+    "Unconnected memory signal: LPDDR4_A1_A",
+    "Unconnected memory signal: LPDDR4_CKE0_A",
+    "Unconnected memory signal: LPDDR4_A1_B",
+    "Unconnected memory signal: LPDDR4_A5_B",
+    "Unconnected memory signal: LPDDR4_A0_B",
+    "Unconnected memory signal: LPDDR4_ODT0_CA_B",
+    "Unconnected memory signal: LPDDR4_DQ4_B",
+    "Unconnected memory signal: LPDDR4_DQ12_B",
+    "Unconnected memory signal: LPDDR4_DQ11_B",
+    "Unconnected memory signal: LPDDR4_DQ13_B",
+    "Unconnected memory signal: LPDDR4_DQ10_B",
+    "Unconnected memory signal: LPDDR4_DQ1_B",
+    "Unconnected memory signal: LPDDR4_DQ9_B",
+    "Unconnected memory signal: LPDDR4_DQ0_B",
+    "Unconnected memory signal: LPDDR4_DQ15_B",
+    "Unconnected memory signal: LPDDR4_DQ8_B"
+  ],
+  "signals": [
+    {
+      "name": "LPDDR4_DQ0_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ7_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ15_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ8_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ1_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DM0_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ6_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ14_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DM1_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ9_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQS0P_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQS1P_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ2_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQS0N_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ5_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ13_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQS1N_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ10_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ3_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ4_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ12_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ11_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_ODT0_CA_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_A0_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_CS0n_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_A2_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A3_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A4_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A1_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_CKE0_A",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_CLKP_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_CLKN_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A5_A",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A1_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_CKE0_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_CLKP_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_CLKN_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A5_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_A0_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_CS0n_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A2_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A3_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_A4_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_ODT0_CA_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_RESETn",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ3_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ4_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ12_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ11_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ2_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQS0N_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ5_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ13_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQS1N_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ10_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQS0P_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQS1P_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ1_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DM0_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ6_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ14_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DM1_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ9_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ0_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ7_B",
+      "connected": true,
+      "tracePieces": 3,
+      "physicalVias": 4
+    },
+    {
+      "name": "LPDDR4_DQ15_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    },
+    {
+      "name": "LPDDR4_DQ8_B",
+      "connected": false,
+      "tracePieces": 2,
+      "physicalVias": 2
+    }
+  ]
+}

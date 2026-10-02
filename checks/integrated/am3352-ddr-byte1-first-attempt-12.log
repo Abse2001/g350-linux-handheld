@@ -1,0 +1,49 @@
+Building 1 file(s)...
+Building experiments/am3352-ddr-byte1-first.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `DdrConstraints`. See https://react.dev/link/warning-keys for more information.
+Wrote debug artifact: dist/am3352-ddr-byte1-first-attempt-12/placement-unrouted.png
+Autorouting <board#483 /> phase 1/4 "DDR_BYTE1_BUS_LANES" start: connections=11, obstacles=420, previous_traces=0, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D13, DDR_D15, DDR_D12, DDR_DQSn1, DDR_D14, DDR_D11, DDR_D9, DDR_DQS1, DDR_D10, DDR_DQM1, DDR_D8
+Wrote debug artifact: dist/am3352-ddr-byte1-first-attempt-12/phase-1.input.simple-route.json
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_coupled_pairs steps=200 progress=0% elapsed=1.8s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=40000 progress=18% elapsed=11.8s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=82200 progress=18% elapsed=21.8s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=123200 progress=9% elapsed=31.9s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=164000 progress=27% elapsed=41.9s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=206600 progress=0% elapsed=52.0s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=248400 progress=0% elapsed=62.0s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=287000 progress=36% elapsed=72.0s
+  phase 1/4 "DDR_BYTE1_BUS_LANES" progress: solver=BusLanesPipelineSolver solver_phase=lanes_route steps=329600 progress=27% elapsed=82.1s
+Wrote debug artifact: dist/am3352-ddr-byte1-first-attempt-12/phase-1.input.simple-route.json
+Wrote debug artifact: dist/am3352-ddr-byte1-first-attempt-12/phase-1.previous-output.traces.json
+Wrote debug artifact: dist/am3352-ddr-byte1-first-attempt-12/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/am3352-ddr-byte1-first-attempt-12/phase-1.timeout.json
+Autorouter timeout after 90.1s in phase 1/4 "DDR_BYTE1_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158747 |       return;
+158748 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158749 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158750 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158751 |     this.log(kleur_default.red(message));
+158752 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 90.1s in phase 1/4 "DDR_BYTE1_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/am3352-ddr-byte1-first-attempt-12/phase-1.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158752:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167808:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 90.1s in phase 1/4 "DDR_BYTE1_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

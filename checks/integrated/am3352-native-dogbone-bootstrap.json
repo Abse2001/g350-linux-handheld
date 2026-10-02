@@ -1,0 +1,31 @@
+{
+  "status": "NATIVE_SIGNAL_DOGBONES_PREPARED_CHANNEL_UNROUTED",
+  "source": {
+    "path": "dist/experiments/am3352-ddr-byte1-swizzled/circuit.json",
+    "sha256": "cca8d31179681212dc52e8ea954956653e8e95a3cf68272cdb505b2f29f83466"
+  },
+  "srjTemplate": {
+    "path": "dist/am3352-ddr-coordinated-bytes-attempt-15/phase-1.input.simple-route.json",
+    "sha256": "635d9369c01fc0894b4e5026ab3ebfa0217948cb7651b689a73291f10f4ed68d"
+  },
+  "map": {
+    "path": "lib/am3352/memory-byte1-swizzled-connections.json",
+    "sha256": "9e833a40b6cd5ccffbe5499254455d1f6f713c7278a0f6195d0aa9dab6546671"
+  },
+  "nativeInput": {
+    "path": "dist/am3352-native-coordinated-dogbones/input.simple-route.json",
+    "sha256": "21148b37e02a9a0ff8149d42a80f98d92346ed3a889a00bd721c9d568165f259"
+  },
+  "output": {
+    "path": "lib/am3352/native-coordinated-dogbones.json",
+    "sha256": "ddc344e85e470f74337a51564d9acd87d33ad386d46fd45dd9b6435115c0770e"
+  },
+  "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver.prepare",
+  "coreVersion": "0.0.2048",
+  "signalEscapes": 98,
+  "physicalThroughVias": 98,
+  "signalConnections": 49,
+  "connectedChannels": 0,
+  "fabricationReady": false,
+  "scope": "Native local signal escapes only. No global channel, supply/ground escapes, reference planes, SI qualification, or fabrication approval."
+}

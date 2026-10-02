@@ -1,0 +1,51 @@
+{
+  "scope": "Known rejected real two-signal autorouter candidate; bounded manual bend repair",
+  "beforeIssues": [
+    {
+      "kind": "wire_via_hole",
+      "trace": "source_trace_10",
+      "obstacle": "micro_escape_0",
+      "clearance": 0.19081453772044676,
+      "minimum": 0.2,
+      "index": 0
+    },
+    {
+      "kind": "wire_via_hole",
+      "trace": "source_trace_10",
+      "obstacle": "micro_escape_0",
+      "clearance": 0.19081453772044676,
+      "minimum": 0.2,
+      "index": 1
+    }
+  ],
+  "afterIssues": [],
+  "moves": [
+    {
+      "trace": "source_trace_10",
+      "indices": [
+        1,
+        2
+      ],
+      "dx": -0.01,
+      "dy": 0
+    },
+    {
+      "trace": "source_trace_10",
+      "indices": [
+        1,
+        2
+      ],
+      "dx": -0.01,
+      "dy": 0
+    },
+    {
+      "trace": "source_trace_10",
+      "indices": [
+        1,
+        2
+      ],
+      "dx": -0.01,
+      "dy": 0
+    }
+  ]
+}

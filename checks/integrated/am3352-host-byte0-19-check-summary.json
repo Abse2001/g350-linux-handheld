@@ -1,0 +1,83 @@
+{
+  "status": "PARTIAL_INTEGRATED_BYTE0_COPPER_PASS_SILK_AND_HOST_INCOMPLETE",
+  "fabricationReady": false,
+  "scope": "Actual 142-component power/DDR source layout with unchanged native byte0 copper from attempt 19. No combined byte1/command routing, power copper, planes or boot/peripheral completion.",
+  "checkedCircuit": "routing/am3352-host-byte0-native-diagnostic.circuit.json",
+  "circuitSha256": "ee403c3eebe70802982008ae69f80844f8b416c810d76c20239aae2fda2c3f03",
+  "components": 142,
+  "connectedSignals": 11,
+  "requiredSignals": 49,
+  "unconnectedMemorySignals": 38,
+  "physicalVias": 22,
+  "gerberShorts": 0,
+  "independentCopperDrillErrors": 0,
+  "independentWarnings": 402,
+  "silkscreenWarnings": {
+    "text_height": 4,
+    "silk_overlap": 199,
+    "silk_over_copper": 199
+  },
+  "allHostUnconnectedItems": 499,
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000010189092,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 0.126999999998489,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    }
+  ],
+  "poweredHost": false,
+  "fullElectricalTimingQualified": false,
+  "nativeFailuresRetained": true,
+  "completeConnectivityCheck": "FAIL",
+  "evidence": [
+    "am3352-host-byte0-19-connectivity.json",
+    "am3352-host-byte0-19-kicad-drc.json",
+    "am3352-host-byte0-19-shorts.log",
+    "am3352-host-byte0-19-diagnostic-export.json",
+    "am3352-power-validation.json"
+  ],
+  "formattingCompaction": {
+    "beforeSha256": "eca3e2613960e88cb3be37d69fea7a70380be2fbf0911ce54ddc65bbea21f2a8",
+    "afterSha256": "ee403c3eebe70802982008ae69f80844f8b416c810d76c20239aae2fda2c3f03",
+    "beforeBytes": 4855125,
+    "afterBytes": 3437448,
+    "allParsedRecordsUnchanged": true
+  }
+}

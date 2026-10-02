@@ -1,0 +1,32 @@
+{
+  "proposedProcess": "1+6+1 THIN HDI: buried dielectric <=1.0mm, exact stackup unapproved",
+  "status": "PARTIAL_ROUTING_DIAGNOSTIC_ONLY",
+  "fabricationReady": false,
+  "scope": "Exact saved manual escapes plus completed autorouting phases from an aborted build. Native failure/error records retained. No routing is invented or repaired here.",
+  "completedSignals": 34,
+  "requiredSignals": 67,
+  "manualEscapes": 134,
+  "microVias": 134,
+  "buriedVias": 54,
+  "tracePieces": 168,
+  "physicalVias": 188,
+  "source": {
+    "path": "dist/experiments/rk3566-memory-thin-hdi/circuit.json",
+    "sha256": "d59fe9ecce9b25a13e05579a276564c794234de84387f332ab96e919f35bf328"
+  },
+  "checkpoint": {
+    "path": "dist/rk3566-memory-thin-hdi-local/phase-10.input.simple-route.json",
+    "sha256": "7a2f97628acffc30072273408eb4e006ebf418c487aff7aaad0e172159a06f98"
+  },
+  "savedEscapes": [
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-thin-hdi-circuit-tsx-dc20795f87/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json",
+      "sha256": "0e20058516e42ddf65a003a83c743af4d98f7419c4991051afc22e7c87935ad4"
+    },
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-thin-hdi-circuit-tsx-dc20795f87/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json",
+      "sha256": "7f7d33f9347561925b04e94cde9875f489b36b99f90351b97ee339c6ba878f97"
+    }
+  ],
+  "diagnosticSha256": "14e32910f4c4a3055a66403334487bc173c9d150689210a1e052931f747421d6"
+}

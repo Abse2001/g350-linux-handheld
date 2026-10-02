@@ -1,0 +1,43 @@
+Building 1 file(s)...
+Building experiments/rk3566-memory.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/rk3566-memory-routing/placement-unrouted.png
+Autorouting <board#844 /> phase 1/3 "MEMORY_CLOCK_STROBES" start: connections=12, obstacles=765, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=2x, cache=miss, cache_id=0f3db717/e06c2de0
+  connections: LPDDR4_DQS0P_A, LPDDR4_DQS1P_A, LPDDR4_DQS0N_A, LPDDR4_DQS1N_A, LPDDR4_CLKP_A, LPDDR4_CLKN_A, LPDDR4_CLKP_B, LPDDR4_CLKN_B, LPDDR4_DQS0N_B, LPDDR4_DQS1N_B, LPDDR4_DQS0P_B, LPDDR4_DQS1P_B
+Wrote debug artifact: dist/rk3566-memory-routing/phase-0.input.simple-route.json
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=383 elapsed=4.4s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=nodeDimensionSubdivisionSolver steps=7 progress=24% iterations_per_second=4 elapsed=48.4s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=edgeSolver steps=12 progress=28% iterations_per_second=15188 elapsed=59.0s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=portPointPathingSolver steps=18 progress=44% iterations_per_second=1 elapsed=97.8s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=highDensityRepairSolver steps=41 progress=60% iterations_per_second=1311 elapsed=108.1s
+  phase 1/3 "MEMORY_CLOCK_STROBES" progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=lengthMatchingPostProcessingSolver steps=63 progress=92% iterations_per_second=442 elapsed=118.2s
+Wrote debug artifact: dist/rk3566-memory-routing/phase-0.input.simple-route.json
+Wrote debug artifact: dist/rk3566-memory-routing/phase-0.previous-output.traces.json
+Wrote debug artifact: dist/rk3566-memory-routing/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/rk3566-memory-routing/phase-0.timeout.json
+Autorouter timeout after 120.1s in phase 1/3 "MEMORY_CLOCK_STROBES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158747 |       return;
+158748 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158749 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158750 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158751 |     this.log(kleur_default.red(message));
+158752 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 120.1s in phase 1/3 "MEMORY_CLOCK_STROBES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/rk3566-memory-routing/phase-0.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158752:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167808:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 120.1s in phase 1/3 "MEMORY_CLOCK_STROBES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

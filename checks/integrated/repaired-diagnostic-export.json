@@ -1,0 +1,29 @@
+{
+  "status": "PARTIAL_ROUTING_DIAGNOSTIC_ONLY",
+  "fabricationReady": false,
+  "scope": "Exact saved manual escapes plus completed autorouting phases from an aborted build. Native failure/error records retained. No routing is invented or repaired here.",
+  "completedSignals": 24,
+  "requiredSignals": 67,
+  "manualEscapes": 134,
+  "tracePieces": 158,
+  "physicalVias": 177,
+  "source": {
+    "path": "dist/experiments/rk3566-memory-vip/circuit.json",
+    "sha256": "a98cea00ab4b6d6ec4d755aae4024c8e91c0c384db1a188fb5f649640ebe6917"
+  },
+  "checkpoint": {
+    "path": "tmp/memory-repaired-checkpoint/phase-5.input.simple-route.json",
+    "sha256": "1a48b57d6bd1fdf882d70b31700cb32a358a2f324490793cba6bd9d4f621fe25"
+  },
+  "savedEscapes": [
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json",
+      "sha256": "33bdabc3607795ea7127f506a3e37b97daf439868956d716d42f45b9bd89fa57"
+    },
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json",
+      "sha256": "457bd82bfcf02a302e9b9f0ac9a659c87978606d120d2d2a8cf56e3635f4ec35"
+    }
+  ],
+  "diagnosticSha256": "cae1f5b8881e8bff4570c25dbf13adf784fec9ab3d413fb09301aa9fe20338c0"
+}

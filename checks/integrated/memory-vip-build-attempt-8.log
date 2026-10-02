@@ -1,0 +1,59 @@
+Building 1 file(s)...
+Building experiments/rk3566-memory-vip.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/placement-unrouted.png
+Autorouting <board#858 /> phase 1/22 start: connections=67, obstacles=765, previous_traces=0, router=precomputed, effort=2x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12, breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30, breakout:pcb_breakout_point_31, breakout:pcb_breakout_point_32, breakout:pcb_breakout_point_33, breakout:pcb_breakout_point_34, breakout:pcb_breakout_point_35, breakout:pcb_breakout_point_36, breakout:pcb_breakout_point_37, breakout:pcb_breakout_point_38, breakout:pcb_breakout_point_39, breakout:pcb_breakout_point_40, breakout:pcb_breakout_point_41, breakout:pcb_breakout_point_42, breakout:pcb_breakout_point_43, breakout:pcb_breakout_point_44, breakout:pcb_breakout_point_45, breakout:pcb_breakout_point_46, breakout:pcb_breakout_point_47, breakout:pcb_breakout_point_48, breakout:pcb_breakout_point_49, breakout:pcb_breakout_point_50, breakout:pcb_breakout_point_51, breakout:pcb_breakout_point_52, breakout:pcb_breakout_point_53, breakout:pcb_breakout_point_54, breakout:pcb_breakout_point_55, breakout:pcb_breakout_point_56, breakout:pcb_breakout_point_57, breakout:pcb_breakout_point_58, breakout:pcb_breakout_point_59, breakout:pcb_breakout_point_60, breakout:pcb_breakout_point_61, breakout:pcb_breakout_point_62, breakout:pcb_breakout_point_63, breakout:pcb_breakout_point_64, breakout:pcb_breakout_point_65, breakout:pcb_breakout_point_66
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-0.input.simple-route.json
+  phase 1/22 done: routed_traces=67, jumpers=0, errors=0, elapsed=1.9s
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#858 /> phase 2/22 start: connections=67, obstacles=1078, previous_traces=0, router=precomputed, effort=2x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_67, breakout:pcb_breakout_point_68, breakout:pcb_breakout_point_69, breakout:pcb_breakout_point_70, breakout:pcb_breakout_point_71, breakout:pcb_breakout_point_72, breakout:pcb_breakout_point_73, breakout:pcb_breakout_point_74, breakout:pcb_breakout_point_75, breakout:pcb_breakout_point_76, breakout:pcb_breakout_point_77, breakout:pcb_breakout_point_78, breakout:pcb_breakout_point_79, breakout:pcb_breakout_point_80, breakout:pcb_breakout_point_81, breakout:pcb_breakout_point_82, breakout:pcb_breakout_point_83, breakout:pcb_breakout_point_84, breakout:pcb_breakout_point_85, breakout:pcb_breakout_point_86, breakout:pcb_breakout_point_87, breakout:pcb_breakout_point_88, breakout:pcb_breakout_point_89, breakout:pcb_breakout_point_90, breakout:pcb_breakout_point_91, breakout:pcb_breakout_point_92, breakout:pcb_breakout_point_93, breakout:pcb_breakout_point_94, breakout:pcb_breakout_point_95, breakout:pcb_breakout_point_96, breakout:pcb_breakout_point_97, breakout:pcb_breakout_point_98, breakout:pcb_breakout_point_99, breakout:pcb_breakout_point_100, breakout:pcb_breakout_point_101, breakout:pcb_breakout_point_102, breakout:pcb_breakout_point_103, breakout:pcb_breakout_point_104, breakout:pcb_breakout_point_105, breakout:pcb_breakout_point_106, breakout:pcb_breakout_point_107, breakout:pcb_breakout_point_108, breakout:pcb_breakout_point_109, breakout:pcb_breakout_point_110, breakout:pcb_breakout_point_111, breakout:pcb_breakout_point_112, breakout:pcb_breakout_point_113, breakout:pcb_breakout_point_114, breakout:pcb_breakout_point_115, breakout:pcb_breakout_point_116, breakout:pcb_breakout_point_117, breakout:pcb_breakout_point_118, breakout:pcb_breakout_point_119, breakout:pcb_breakout_point_120, breakout:pcb_breakout_point_121, breakout:pcb_breakout_point_122, breakout:pcb_breakout_point_123, breakout:pcb_breakout_point_124, breakout:pcb_breakout_point_125, breakout:pcb_breakout_point_126, breakout:pcb_breakout_point_127, breakout:pcb_breakout_point_128, breakout:pcb_breakout_point_129, breakout:pcb_breakout_point_130, breakout:pcb_breakout_point_131, breakout:pcb_breakout_point_132, breakout:pcb_breakout_point_133
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-1.input.simple-route.json
+  phase 2/22 done: routed_traces=67, jumpers=0, errors=0, elapsed=47ms
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#858 /> phase 3/22 "MEMORY_CLOCK_STROBES" start: connections=12, obstacles=1346, previous_traces=0, router=custom, effort=2x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQS0P_A, LPDDR4_DQS1P_A, LPDDR4_DQS0N_A, LPDDR4_DQS1N_A, LPDDR4_CLKP_A, LPDDR4_CLKN_A, LPDDR4_CLKP_B, LPDDR4_CLKN_B, LPDDR4_DQS0N_B, LPDDR4_DQS1N_B, LPDDR4_DQS0P_B, LPDDR4_DQS1P_B
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-0.input.simple-route.json
+  phase 3/22 "MEMORY_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=3285 elapsed=228ms
+  phase 3/22 "MEMORY_CLOCK_STROBES" progress: solver_phase=uniformPortDistributionSolver steps=17 progress=48% iterations_per_second=53877 elapsed=10.3s
+  phase 3/22 "MEMORY_CLOCK_STROBES" done: routed_traces=12, jumpers=0, errors=0, elapsed=12.7s
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-0-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#858 /> phase 4/22 "MEMORY_A_BYTE0_DQ0_2" start: connections=3, obstacles=1346, previous_traces=12, router=custom, effort=2x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ0_A, LPDDR4_DQ1_A, LPDDR4_DQ2_A
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-1.input.simple-route.json
+  phase 4/22 "MEMORY_A_BYTE0_DQ0_2" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=1285 elapsed=216ms
+  phase 4/22 "MEMORY_A_BYTE0_DQ0_2" progress: solver_phase=portPointPathingSolver steps=9 progress=44% iterations_per_second=11 elapsed=12.7s
+  phase 4/22 "MEMORY_A_BYTE0_DQ0_2" done: routed_traces=15, jumpers=0, errors=0, elapsed=15.9s
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-1-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#858 /> phase 5/22 "MEMORY_A_BYTE0_DQ3_5" start: connections=3, obstacles=1346, previous_traces=15, router=custom, effort=2x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ5_A, LPDDR4_DQ3_A, LPDDR4_DQ4_A
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-2.input.simple-route.json
+  phase 5/22 "MEMORY_A_BYTE0_DQ3_5" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=1165 elapsed=218ms
+  phase 5/22 "MEMORY_A_BYTE0_DQ3_5" progress: solver_phase=portPointPathingSolver steps=9 progress=44% iterations_per_second=10 elapsed=13.0s
+  phase 5/22 "MEMORY_A_BYTE0_DQ3_5" done: routed_traces=18, jumpers=0, errors=0, elapsed=16.6s
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-2.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-2-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#858 /> phase 6/22 "MEMORY_A_BYTE0_DQ6_7_DM" start: connections=3, obstacles=1346, previous_traces=18, router=custom, effort=2x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ7_A, LPDDR4_DM0_A, LPDDR4_DQ6_A
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-3.input.simple-route.json
+  phase 6/22 "MEMORY_A_BYTE0_DQ6_7_DM" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=968 elapsed=268ms
+  phase 6/22 "MEMORY_A_BYTE0_DQ6_7_DM" progress: solver_phase=portPointPathingSolver steps=12 progress=44% iterations_per_second=0 elapsed=15.9s
+  phase 6/22 "MEMORY_A_BYTE0_DQ6_7_DM" done: routed_traces=21, jumpers=0, errors=0, elapsed=25.5s
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-3.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-3-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#858 /> phase 7/22 "MEMORY_A_BYTE1_DQ0_2" start: connections=3, obstacles=1346, previous_traces=21, router=custom, effort=2x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ8_A, LPDDR4_DQ9_A, LPDDR4_DQ10_A
+Wrote debug artifact: dist/rk3566-memory-hybrid-small-groups/phase-4.input.simple-route.json
+  phase 7/22 "MEMORY_A_BYTE1_DQ0_2" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=664 elapsed=428ms

@@ -1,0 +1,39 @@
+{
+  "status": "PIN_MAP_AND_CHIP_GRIDS_PASS",
+  "scope": "Chip ball labels, 67 memory functions, SoC/RAM pad grids, CPU-regulator and PMIC pin functions, and SD contact aliases only; not fabrication qualification",
+  "soc": {
+    "supplier": "C2943786",
+    "ballCount": 565,
+    "sha256": "2eb948709b7097b7a7bf1e0ca70b75105256732d93465da1fe2cd499b5146269"
+  },
+  "ram": {
+    "supplier": "C2912103",
+    "ballCount": 200,
+    "sha256": "187a08395f0609efd5460a602afde06dfab855c9c9e0459772e685b4f3cee883"
+  },
+  "cpuBuck": {
+    "supplier": "C19188628",
+    "ballCount": 20,
+    "sha256": "3dfa513de41c66135c0f94fcd1294cd6b8d8b87570f2c7924687b5a3244fc0b5"
+  },
+  "pmic": {
+    "supplier": "C5179490",
+    "pinCount": 69,
+    "sha256": "7617bf35e352183a4a0550c8b385e7c33777bddef345629dfc907c1938fd4ee3",
+    "geometryQualification": "Pending: full pad geometry versus manufacturer drawing"
+  },
+  "microSD": {
+    "supplier": "C444917",
+    "sha256": "28bc6138955a13b195dc47ea5453caaeec2f4b649c24e33ec90f92e24448f38a",
+    "geometryQualification": "Pending: manufacturer drawing/import geometry comparison"
+  },
+  "sources": {
+    "soc": "Rockchip RK3566 datasheet Rev1.2 pp20-30 and RK3566 brief package pitches",
+    "ram": "Hynix H9HCNNN8KUMLHR-NME manufacturer datasheet p6",
+    "cpuBuck": "Rockchip RK860 datasheet Rev1.2 p4",
+    "pmic": "Rockchip RK817 Datasheet Rev2.1 pp16–18; 56/57 BAT, 58/59 SYS; exposed ground pad numbered69 by supplier footprint",
+    "microSD": "SOFNG TF-013 manufacturer drawing p2"
+  },
+  "memoryConnections": 67,
+  "geometryIssues": []
+}

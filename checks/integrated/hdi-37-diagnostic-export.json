@@ -1,0 +1,31 @@
+{
+  "status": "PARTIAL_ROUTING_DIAGNOSTIC_ONLY",
+  "fabricationReady": false,
+  "scope": "Exact saved manual escapes plus completed autorouting phases from an aborted build. Native failure/error records retained. No routing is invented or repaired here.",
+  "completedSignals": 37,
+  "requiredSignals": 67,
+  "manualEscapes": 134,
+  "microVias": 134,
+  "buriedVias": 52,
+  "tracePieces": 171,
+  "physicalVias": 186,
+  "source": {
+    "path": "dist/experiments/rk3566-memory-hdi/circuit.json",
+    "sha256": "ad931891bbdd37deaefc0da48700688696a53a05daca13661a47ea42854db8df"
+  },
+  "checkpoint": {
+    "path": "dist/rk3566-memory-hdi-continue/phase-7.input.simple-route.json",
+    "sha256": "f14c09ce6e07e01d297c08ea0e8e83684c9dad1c77731674de413c505ee5c9ac"
+  },
+  "savedEscapes": [
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-hdi-circuit-tsx-c137c99c24/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json",
+      "sha256": "0e20058516e42ddf65a003a83c743af4d98f7419c4991051afc22e7c87935ad4"
+    },
+    {
+      "path": ".tscircuit/autorouting-artifacts/rk3566-memory-hdi-circuit-tsx-c137c99c24/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json",
+      "sha256": "7f7d33f9347561925b04e94cde9875f489b36b99f90351b97ee339c6ba878f97"
+    }
+  ],
+  "diagnosticSha256": "175ba1b2e1ede21be9af22ab5d97a0e731cf4bdca1c0e25ec86b69d33780499c"
+}

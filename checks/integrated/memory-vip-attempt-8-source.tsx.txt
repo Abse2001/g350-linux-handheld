@@ -1,0 +1,120 @@
+import type { FanoutTracePath } from "@tscircuit/props"
+import { Fragment } from "react"
+import { RK3566 } from "../imports/RK3566"
+import { H9HCNNN8KUMLHR_NME } from "../imports/H9HCNNN8KUMLHR_NME"
+import connections from "../lib/integrated/memory-connections.json"
+import socPads from "../lib/integrated/RK3566-pad-centres.json"
+import ramPads from "../lib/integrated/H9HCNNN8KUMLHR_NME-pad-centres.json"
+import { routeMemoryAroundEarlierCopper } from "../lib/integrated/PhasedMemoryAutorouter"
+
+// Feasibility fixture, not a powered computer or manufacturing release.
+// Manual full-depth, filled/capped via-in-pad escapes; the eight subsequent
+// signal phases still run the actual local autorouter. No blind/buried vias.
+// This fixture measures connectivity first. It does not qualify DDR skew,
+// package flight times, controlled impedance, or continuous return planes.
+const escapes = (chip: "U_SOC" | "U_RAM"): FanoutTracePath[] =>
+  connections.map(c => {
+    const pad = chip === "U_SOC"
+      ? socPads[c.socBall as keyof typeof socPads]
+      : ramPads[c.ramBall as keyof typeof ramPads]
+    // RAM is rotated +90 degrees inside an unrotated breakout group.
+    const x = chip === "U_SOC" ? pad.x : -pad.y
+    const y = chip === "U_SOC" ? pad.y : pad.x
+    const layer = c.name.endsWith("_B") ? "inner3" : "inner2"
+    // Move outermost processor-row vias into the free area around its body.
+    // Alternating offsets avoid a solid wall of through-vias at 0.4mm pitch.
+    // Inner balls and RAM retain explicit filled/capped via-in-pad escapes.
+    let viaX=x,viaY=y,viaDiameter=0.3
+    if(chip === "U_SOC" && /^A\d+$/.test(c.socBall))
+      viaY=Number(c.socBall.slice(1))%2 ? 7.85 : 8.5
+    else if(chip === "U_SOC" && Math.abs(x+7.370191)<0.005)
+      viaX=Math.round((y-0.015)/0.4)%2 ? -8.45 : -9.1
+    else if(chip === "U_SOC" && !c.socBall.startsWith("1")) {
+      // A 0.30mm land at 0.40mm pitch leaves only 0.175mm from the
+      // adjacent 0.15mm drill to copper. Use the supported 0.25mm land.
+      // Snap the drill centres to the nominal pitch, retaining the import's
+      // datum, then offset alternating drills by 20µm within their BGA pads.
+      // This provides a small margin over the 0.20mm drill-to-copper limit.
+      viaDiameter=0.25
+      const column=Math.round((x-0.03)/0.4)
+      const row=Math.round((y-0.015)/0.4)
+      viaX=0.03+column*0.4
+      viaY=0.015+row*0.4
+      if(c.socBall.startsWith("B")) viaY+=column%2 ? 0.02 : -0.02
+      else viaX+=row%2 ? 0.02 : -0.02
+    }
+    return {
+      connection: `${chip}.${chip === "U_SOC" ? c.socBall : c.ramBall}`,
+      route: [
+        {route_type:"wire",x,y,layer:"top",width:0.1},
+        {route_type:"wire",x:viaX,y:viaY,layer:"top",width:0.1},
+        {route_type:"via",x:viaX,y:viaY,from_layer:"top",to_layer:layer,
+          via_diameter:viaDiameter,via_hole_diameter:0.15},
+        {route_type:"wire",x:viaX,y:viaY,layer,width:0.1},
+      ],
+    }
+  })
+
+// Route three signals at a time inside each byte lane to reduce topology
+// balancing in dense regions. Clocks/strobes retain their own first phase.
+// The autorouter must retain the previous phase's actual copper obstacles.
+const signalPhase = (c: typeof connections[number]) => {
+  if(c.phase === 0) return 0
+  const channel = c.name.endsWith("_B") ? 1 : 0
+  if(c.phase === 1) {
+    const dq = /DQ(\d+)_/.exec(c.name)
+    const dm = /DM(\d+)_/.exec(c.name)
+    const byte = dq ? Math.floor(Number(dq[1])/8) : Number(dm![1])
+    const slice=dq?Math.min(2,Math.floor((Number(dq[1])%8)/3)):2
+    return 1+channel*6+byte*3+slice
+  }
+  if(c.name === "LPDDR4_RESETn") return 19
+  const ca=["A0","A1","A2","A3","A4","A5","CS0n","CKE0","ODT0_CA"]
+    .indexOf(c.name.replace(/^LPDDR4_/,"").replace(/_[AB]$/,""))
+  if(ca<0) throw new Error(`Unclassified memory control ${c.name}`)
+  return 13+channel*3+Math.floor(ca/3)
+}
+const phaseNames=["MEMORY_CLOCK_STROBES",
+  ...["A","B"].flatMap(channel=>[0,1].flatMap(byte=>[
+    `MEMORY_${channel}_BYTE${byte}_DQ0_2`,
+    `MEMORY_${channel}_BYTE${byte}_DQ3_5`,
+    `MEMORY_${channel}_BYTE${byte}_DQ6_7_DM`,
+  ])),
+  ...["A","B"].flatMap(channel=>["CA0_2","CA3_5","CONTROL"].map(group=>`MEMORY_${channel}_${group}`)),
+  "MEMORY_RESET"]
+
+export default () => (
+  <board title="G350 integrated RK3566 — manual BGA escape experiment"
+    width={36} height={44} layers={6} thickness={1.2}
+    minTraceWidth={0.09} nominalTraceWidth={0.1}
+    minTraceToPadEdgeClearance={0.09} minPadEdgeToPadEdgeClearance={0.15}
+    minViaHoleDiameter={0.15} minViaPadDiameter={0.25}
+    minTraceToHoleEdgeClearance={0.2}
+    minViaHoleEdgeToViaHoleEdgeClearance={0.2}
+    minViaEdgeToPadEdgeClearance={0.09}
+    isViaInPadAllowed={true} allowBlindAndBuriedVias={false}
+    pcbStyle={{viaHoleDiameter:0.15,viaPadDiameter:0.3}}
+    autorouter="auto_local" autorouterEffortLevel="2x" routeRemaining={false}>
+    {phaseNames.map((name,phaseIndex)=><autoroutingphase key={name} name={name}
+      phaseIndex={phaseIndex} algorithmFn={routeMemoryAroundEarlierCopper}/>)}
+    <bus name="MEMORY_SIGNAL_LAYERS" connections={connections.map(c=>c.name)}
+      pcbAllowedLayers={["top","inner2","inner3","bottom"]}/>
+    <breakout name="SOC_ESCAPE" pcbX={0} pcbY={0}
+      width={19} height={19} pcbTracePaths={escapes("U_SOC")}>
+      <RK3566 name="U_SOC" pcbX={0} pcbY={0} layer="top"
+        schX={-15} schY={0} schWidth={8} schHeight={50}/>
+    </breakout>
+    <breakout name="RAM_ESCAPE" pcbX={-4} pcbY={15}
+      width={16} height={11} pcbTracePaths={escapes("U_RAM")}>
+      <H9HCNNN8KUMLHR_NME name="U_RAM" pcbX={0} pcbY={0}
+        pcbRotation={90} layer="top" schX={15} schY={0}
+        schWidth={8} schHeight={30}/>
+    </breakout>
+    {connections.map(c=><Fragment key={c.name}>
+      <trace name={c.name} from={`U_SOC.${c.socBall}`} to={`U_RAM.${c.ramBall}`}
+        thickness={0.1} routingPhaseIndex={signalPhase(c)}/>
+    </Fragment>)}
+    <silkscreentext text="MEMORY ROUTING TEST — NOT FOR FABRICATION"
+      pcbX={0} pcbY={-20} fontSize={1}/>
+  </board>
+)

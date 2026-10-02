@@ -1,0 +1,29 @@
+{
+  "status": "AM3352_IMPORTS_PASS_HOST_INCOMPLETE",
+  "parts": [
+    {
+      "part": "cpu",
+      "supplier": "C468247",
+      "pads": 324,
+      "sha256": "9818d5494e2460af36d898f788681bdb23f5e87d3d382556baefdbe1efff5ff2",
+      "source": "https://www.ti.com/lit/ds/symlink/am3352.pdf",
+      "sourceDocument": "SPRS717L: ZCZ pin maps pp15–17; ZCZ0324A layout p261",
+      "status": "ALL_BALL_FUNCTIONS_AND_NOMINAL_GRID_CHECKED",
+      "solderMaskQualification": "Pending full assembly/manufacturing review"
+    },
+    {
+      "part": "ram",
+      "supplier": "C253882",
+      "pads": 96,
+      "sha256": "8e1ecc5c4c542565227dff59534063975ec6759f7c101abc4b0902a3a5928acc",
+      "source": "https://datasheet.lcsc.com/datasheet/pdf/087aaa645ee65877864bf6a18cb1247b.pdf?productCode=C253882",
+      "sourceDocument": "4Gb_DDR3L Rev Q 12/17: x16 map p17; TW dimensions p27",
+      "status": "ALL_BALL_FUNCTIONS_AND_NOMINAL_GRID_CHECKED",
+      "solderMaskQualification": "Pending full assembly/manufacturing review"
+    }
+  ],
+  "memorySignals": 49,
+  "ramBytes": 536870912,
+  "requiredSupply": "DDR3-compatible VDD=VDDQ=1.5V; AM3352 VDDS_DDR remains a separate CPU domain",
+  "fabricationReady": false
+}

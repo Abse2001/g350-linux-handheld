@@ -1,0 +1,120 @@
+
+> @tsci/abse.g350-linux-handheld@1.2.1 build:memory
+> tsci build experiments/rk3566-memory-vip.circuit.tsx --autorouter-debug --autorouter-debug-dir dist/rk3566-memory-individual --autorouter-dump-srj all --autorouter-timeout 2m --pcb-png --kicad-project
+
+Building 1 file(s)...
+Building experiments/rk3566-memory-vip.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/rk3566-memory-individual/placement-unrouted.png
+Autorouting <board#875 /> phase 1/39 start: connections=67, obstacles=765, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12, breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30, breakout:pcb_breakout_point_31, breakout:pcb_breakout_point_32, breakout:pcb_breakout_point_33, breakout:pcb_breakout_point_34, breakout:pcb_breakout_point_35, breakout:pcb_breakout_point_36, breakout:pcb_breakout_point_37, breakout:pcb_breakout_point_38, breakout:pcb_breakout_point_39, breakout:pcb_breakout_point_40, breakout:pcb_breakout_point_41, breakout:pcb_breakout_point_42, breakout:pcb_breakout_point_43, breakout:pcb_breakout_point_44, breakout:pcb_breakout_point_45, breakout:pcb_breakout_point_46, breakout:pcb_breakout_point_47, breakout:pcb_breakout_point_48, breakout:pcb_breakout_point_49, breakout:pcb_breakout_point_50, breakout:pcb_breakout_point_51, breakout:pcb_breakout_point_52, breakout:pcb_breakout_point_53, breakout:pcb_breakout_point_54, breakout:pcb_breakout_point_55, breakout:pcb_breakout_point_56, breakout:pcb_breakout_point_57, breakout:pcb_breakout_point_58, breakout:pcb_breakout_point_59, breakout:pcb_breakout_point_60, breakout:pcb_breakout_point_61, breakout:pcb_breakout_point_62, breakout:pcb_breakout_point_63, breakout:pcb_breakout_point_64, breakout:pcb_breakout_point_65, breakout:pcb_breakout_point_66
+Wrote debug artifact: dist/rk3566-memory-individual/phase-0.input.simple-route.json
+  phase 1/39 done: routed_traces=67, jumpers=0, errors=0, elapsed=2.0s
+Wrote debug artifact: dist/rk3566-memory-individual/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#875 /> phase 2/39 start: connections=67, obstacles=1033, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_67, breakout:pcb_breakout_point_68, breakout:pcb_breakout_point_69, breakout:pcb_breakout_point_70, breakout:pcb_breakout_point_71, breakout:pcb_breakout_point_72, breakout:pcb_breakout_point_73, breakout:pcb_breakout_point_74, breakout:pcb_breakout_point_75, breakout:pcb_breakout_point_76, breakout:pcb_breakout_point_77, breakout:pcb_breakout_point_78, breakout:pcb_breakout_point_79, breakout:pcb_breakout_point_80, breakout:pcb_breakout_point_81, breakout:pcb_breakout_point_82, breakout:pcb_breakout_point_83, breakout:pcb_breakout_point_84, breakout:pcb_breakout_point_85, breakout:pcb_breakout_point_86, breakout:pcb_breakout_point_87, breakout:pcb_breakout_point_88, breakout:pcb_breakout_point_89, breakout:pcb_breakout_point_90, breakout:pcb_breakout_point_91, breakout:pcb_breakout_point_92, breakout:pcb_breakout_point_93, breakout:pcb_breakout_point_94, breakout:pcb_breakout_point_95, breakout:pcb_breakout_point_96, breakout:pcb_breakout_point_97, breakout:pcb_breakout_point_98, breakout:pcb_breakout_point_99, breakout:pcb_breakout_point_100, breakout:pcb_breakout_point_101, breakout:pcb_breakout_point_102, breakout:pcb_breakout_point_103, breakout:pcb_breakout_point_104, breakout:pcb_breakout_point_105, breakout:pcb_breakout_point_106, breakout:pcb_breakout_point_107, breakout:pcb_breakout_point_108, breakout:pcb_breakout_point_109, breakout:pcb_breakout_point_110, breakout:pcb_breakout_point_111, breakout:pcb_breakout_point_112, breakout:pcb_breakout_point_113, breakout:pcb_breakout_point_114, breakout:pcb_breakout_point_115, breakout:pcb_breakout_point_116, breakout:pcb_breakout_point_117, breakout:pcb_breakout_point_118, breakout:pcb_breakout_point_119, breakout:pcb_breakout_point_120, breakout:pcb_breakout_point_121, breakout:pcb_breakout_point_122, breakout:pcb_breakout_point_123, breakout:pcb_breakout_point_124, breakout:pcb_breakout_point_125, breakout:pcb_breakout_point_126, breakout:pcb_breakout_point_127, breakout:pcb_breakout_point_128, breakout:pcb_breakout_point_129, breakout:pcb_breakout_point_130, breakout:pcb_breakout_point_131, breakout:pcb_breakout_point_132, breakout:pcb_breakout_point_133
+Wrote debug artifact: dist/rk3566-memory-individual/phase-1.input.simple-route.json
+  phase 2/39 done: routed_traces=67, jumpers=0, errors=0, elapsed=48ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-vip-circuit-tsx-74aceb5fc6/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#875 /> phase 3/39 "MEMORY_INNER_A_DATA" start: connections=6, obstacles=1301, previous_traces=0, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ7_A, LPDDR4_DQ15_A, LPDDR4_DM0_A, LPDDR4_DQ14_A, LPDDR4_DM1_A, LPDDR4_DQ13_A
+Wrote debug artifact: dist/rk3566-memory-individual/phase-0.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 0, 6 signals
+  phase 3/39 "MEMORY_INNER_A_DATA" done: routed_traces=6, jumpers=0, errors=0, elapsed=60ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-0-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 4/39 "MEMORY_INNER_B_DATA" start: connections=8, obstacles=1301, previous_traces=6, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ3_B, LPDDR4_DQ2_B, LPDDR4_DQ5_B, LPDDR4_DM0_B, LPDDR4_DQ6_B, LPDDR4_DQ14_B, LPDDR4_DM1_B, LPDDR4_DQ7_B
+Wrote debug artifact: dist/rk3566-memory-individual/phase-1.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 1, 8 signals
+  phase 4/39 "MEMORY_INNER_B_DATA" done: routed_traces=14, jumpers=0, errors=0, elapsed=42ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-1-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 5/39 "MEMORY_INNER_A_CONTROL" start: connections=4, obstacles=1301, previous_traces=14, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_A2_A, LPDDR4_A3_A, LPDDR4_A4_A, LPDDR4_A5_A
+Wrote debug artifact: dist/rk3566-memory-individual/phase-2.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 2, 4 signals
+  phase 5/39 "MEMORY_INNER_A_CONTROL" done: routed_traces=18, jumpers=0, errors=0, elapsed=27ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-2.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-2-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 6/39 "MEMORY_INNER_B_CONTROL" start: connections=5, obstacles=1301, previous_traces=18, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_CKE0_B, LPDDR4_CS0n_B, LPDDR4_A2_B, LPDDR4_A3_B, LPDDR4_A4_B
+Wrote debug artifact: dist/rk3566-memory-individual/phase-3.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 3, 5 signals
+  phase 6/39 "MEMORY_INNER_B_CONTROL" done: routed_traces=23, jumpers=0, errors=0, elapsed=85ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-3.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-3-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 7/39 "MEMORY_RESET" start: connections=1, obstacles=1301, previous_traces=23, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_RESETn
+Wrote debug artifact: dist/rk3566-memory-individual/phase-4.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 4, 1 signals
+  phase 7/39 "MEMORY_RESET" done: routed_traces=24, jumpers=0, errors=0, elapsed=145ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-4.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-4-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 8/39 "MEMORY_CLOCK_STROBES" start: connections=12, obstacles=1301, previous_traces=24, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQS0P_A, LPDDR4_DQS1P_A, LPDDR4_DQS0N_A, LPDDR4_DQS1N_A, LPDDR4_CLKP_A, LPDDR4_CLKN_A, LPDDR4_CLKP_B, LPDDR4_CLKN_B, LPDDR4_DQS0N_B, LPDDR4_DQS1N_B, LPDDR4_DQS0P_B, LPDDR4_DQS1P_B
+Wrote debug artifact: dist/rk3566-memory-individual/phase-5.input.simple-route.json
+Retaining verified Pipeline9 + manual memory copper: phase 5, 12 signals
+  phase 8/39 "MEMORY_CLOCK_STROBES" done: routed_traces=36, jumpers=0, errors=0, elapsed=193ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-5.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-5-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Only port-anchored wire/via routes can be saved
+Autorouting <board#875 /> phase 9/39 "MEMORY_OUTER_LPDDR4_DQ0_A" start: connections=1, obstacles=1301, previous_traces=36, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ0_A
+Wrote debug artifact: dist/rk3566-memory-individual/phase-6.input.simple-route.json
+Applying explicit manual DQ0_A trace: physical wire clearances checked
+  phase 9/39 "MEMORY_OUTER_LPDDR4_DQ0_A" done: routed_traces=37, jumpers=0, errors=0, elapsed=39ms
+Wrote debug artifact: dist/rk3566-memory-individual/phase-6.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-6-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Only port-anchored wire/via routes can be saved
+Autorouting <board#875 /> phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" start: connections=1, obstacles=1301, previous_traces=37, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ1_A
+Wrote debug artifact: dist/rk3566-memory-individual/phase-7.input.simple-route.json
+  phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=1340 elapsed=272ms
+  phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" progress: solver_phase=nodeDimensionSubdivisionSolver steps=22 progress=24% iterations_per_second=13 elapsed=24.8s
+  phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" progress: solver_phase=availableSegmentPointSolver steps=26 progress=32% iterations_per_second=2067 elapsed=34.9s
+  phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" progress: solver_phase=portPointPathingSolver steps=30 progress=44% iterations_per_second=0 elapsed=90.5s
+Manual adjustments to autorouted copper: 1 via sites, 0 wire doglegs
+MEMORY_REJECTED_PHASE_JSON={"attempt":0,"traces":[{"type":"pcb_trace","pcb_trace_id":"source_trace_4_0","connection_name":"source_trace_4","connectsTo":["pcb_breakout_point_4","pcb_breakout_point_71"],"route":[{"route_type":"wire","x":-6.9799999999999995,"y":4.865,"width":0.09,"layer":"top"},{"route_type":"wire","x":-6.627690999999977,"y":4.7025779999999715,"width":0.09,"layer":"top"},{"route_type":"wire","x":-6.582690999999977,"y":2.8575779999999713,"width":0.09,"layer":"top"},{"route_type":"via","x":-6.582690999999977,"y":2.8575779999999713,"from_layer":"top","to_layer":"bottom","via_diameter":0.3,"via_hole_diameter":0.15},{"route_type":"wire","x":-6.582690999999977,"y":2.8575779999999713,"width":0.09,"layer":"bottom"},{"route_type":"wire","x":-8.427690999999978,"y":2.7675779999999714,"width":0.09,"layer":"bottom"},{"route_type":"via","x":-8.427690999999978,"y":2.7675779999999714,"from_layer":"bottom","to_layer":"inner3","via_diameter":0.3,"via_hole_diameter":0.15},{"route_type":"wire","x":-8.427690999999978,"y":2.7675779999999714,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-10.382690999999976,"y":2.977577999999971,"width":0.09,"layer":"inner3"},{"route_type":"via","x":-10.382690999999976,"y":2.977577999999971,"from_layer":"inner3","to_layer":"bottom","via_diameter":0.3,"via_hole_diameter":0.15},{"route_type":"wire","x":-10.382690999999976,"y":2.977577999999971,"width":0.09,"layer":"bottom"},{"route_type":"wire","x":-11.870190999999977,"y":3.3216450391542387,"width":0.09,"layer":"bottom"},{"route_type":"wire","x":-12.436,"y":2.755836039154216,"width":0.09,"layer":"bottom"},{"route_type":"wire","x":-12.436,"y":2.7200726999999705,"width":0.09,"layer":"bottom"},{"route_type":"via","x":-12.436,"y":2.7200726999999705,"from_layer":"bottom","to_layer":"top","via_diameter":0.3,"via_hole_diameter":0.15},{"route_type":"wire","x":-12.436,"y":2.7200726999999705,"width":0.09,"layer":"top"},{"route_type":"wire","x":-12.870190999999977,"y":2.7200726999999705,"width":0.09,"layer":"top"},{"route_type":"wire","x":-14.123104667589786,"y":2.7200726999999705,"width":0.09,"layer":"top"},{"route_type":"wire","x":-15.64,"y":4.236968032410185,"width":0.09,"layer":"top"},{"route_type":"wire","x":-15.64,"y":8.01495185011095,"width":0.09,"layer":"top"},{"route_type":"wire","x":-14.429199341488303,"y":9.225752508622648,"width":0.09,"layer":"top"},{"route_type":"wire","x":-14.429199341488303,"y":9.234873358511667,"width":0.09,"layer":"top"},{"route_type":"wire","x":-14.318,"y":9.346072699999972,"width":0.09,"layer":"top"},{"route_type":"via","x":-14.318,"y":9.346072699999972,"from_layer":"top","to_layer":"inner3","via_diameter":0.3,"via_hole_diameter":0.15},{"route_type":"wire","x":-14.318,"y":9.346072699999972,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-14.318,"y":11.97420433252308,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-13.000052392062791,"y":13.292151940460286,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-12.846920759539683,"y":13.292151940460286,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-12.817,"y":13.322072699999971,"width":0.09,"layer":"inner3"},{"route_type":"via","x":-12.817,"y":13.322072699999971,"from_layer":"inner3","to_layer":"bottom","via_diameter":0.3,"via_hole_diameter":0.15},{"route_type":"wire","x":-12.817,"y":13.322072699999971,"width":0.09,"layer":"bottom"},{"route_type":"wire","x":-11.337,"y":13.322072699999971,"width":0.09,"layer":"bottom"},{"route_type":"wire","x":-9.525,"y":11.51007269999997,"width":0.09,"layer":"bottom"}]}],"viaIssues":[{"via":{"x":-8.427690999999978,"y":2.7675779999999714,"id":"source_trace_4_via_6","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_32_segment_1","rule":"hole_clearance","clearance":0.18262771021198254,"minimum":0.2},{"via":{"x":-8.427690999999978,"y":2.7675779999999714,"id":"source_trace_4_via_6","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_34_segment_24","rule":"hole_clearance","clearance":0.17531165444188096,"minimum":0.2},{"via":{"x":-8.427690999999978,"y":2.7675779999999714,"id":"source_trace_4_via_6","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_34_segment_25","rule":"hole_clearance","clearance":0.17531165444188013,"minimum":0.2},{"via":{"x":-12.817,"y":13.322072699999971,"id":"source_trace_4_via_29","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_0_via_9","rule":"copper_clearance","clearance":0.08069630427061769,"minimum":0.09},{"via":{"x":-12.817,"y":13.322072699999971,"id":"source_trace_4_via_29","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_0_via_9","rule":"hole_clearance","clearance":0.1556963042706177,"minimum":0.2},{"via":{"x":-12.817,"y":13.322072699999971,"id":"source_trace_4_via_29","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_0_segment_10","rule":"copper_clearance","clearance":0.0420000000000004,"minimum":0.09},{"via":{"x":-12.817,"y":13.322072699999971,"id":"source_trace_4_via_29","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_0_segment_10","rule":"hole_clearance","clearance":0.1170000000000004,"minimum":0.2},{"via":{"x":-12.817,"y":13.322072699999971,"id":"source_trace_4_via_29","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_28_segment_20","rule":"copper_clearance","clearance":0.041176416410584143,"minimum":0.09},{"via":{"x":-12.817,"y":13.322072699999971,"id":"source_trace_4_via_29","net":["source_trace_4","source_trace_4_0","pcb_breakout_point_4","pcb_breakout_point_71"]},"obstacle":"memory_fixed_28_segment_20","rule":"hole_clearance","clearance":0.11617641641058414,"minimum":0.2}],"wireIssues":[]}
+Memory phase rejected 2 through-via positions (9 physical clearance violations), retry 1/8
+  phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" progress: solver_phase=topologyPlanningSolver steps=49 progress=16% iterations_per_second=299 elapsed=101.8s
+  phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A" progress: solver_phase=nodeDimensionSubdivisionSolver steps=78 progress=24% iterations_per_second=5 elapsed=138.1s
+Wrote debug artifact: dist/rk3566-memory-individual/phase-7.input.simple-route.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-7.previous-output.traces.json
+Wrote debug artifact: dist/rk3566-memory-individual/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/rk3566-memory-individual/phase-7.timeout.json
+Autorouter timeout after 138.3s in phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158747 |       return;
+158748 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158749 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158750 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158751 |     this.log(kleur_default.red(message));
+158752 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 138.3s in phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/rk3566-memory-individual/phase-7.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158752:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167808:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 138.3s in phase 10/39 "MEMORY_OUTER_LPDDR4_DQ1_A". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

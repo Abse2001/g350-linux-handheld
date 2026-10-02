@@ -1,0 +1,73 @@
+{
+  "status": "EXACT_NATIVE_BUS_LANES_PARTIAL_DIAGNOSTIC",
+  "fabricationReady": false,
+  "completedSignals": 11,
+  "requiredSignals": 49,
+  "physicalVias": 22,
+  "viaGeometry": {
+    "landMm": 0.3,
+    "drillMm": 0.15
+  },
+  "source": {
+    "path": "dist/am3352-ddr-bootstrap-attempt-4/board.source-and-pcb.circuit.json",
+    "sha256": "a69c8ca11a7bdc2cf7a7afb3f70bb1f8861fd465ce05e58e6f6dc4fc3108e3bb"
+  },
+  "checkpoint": {
+    "path": "dist/am3352-ddr-bootstrap-attempt-4/phase-2.input.simple-route.json",
+    "sha256": "c656e27c9587b1010355a60f54698a6e887300812c442193d05e10fb33f88fea"
+  },
+  "failure": {
+    "path": "dist/am3352-ddr-bootstrap-attempt-4/phase-2.timeout.json",
+    "sha256": "49af7526570be10fe45fffa8b5197770b8728703d37eb6af83b2e5d9cd2a9f9c",
+    "record": {
+      "type": "autorouter_phase_timeout",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "componentDisplayName": "<board#483 />",
+      "routingPhaseIndex": 2,
+      "phaseName": "DDR_BYTE1_BUS_LANES",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 4,
+      "elapsedMs": 90061,
+      "connectionCount": 11,
+      "obstacleCount": 420,
+      "previousTraceCount": 11,
+      "autorouterName": "bus_lanes",
+      "solverName": "BusLanesPipelineSolver",
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "files": {
+        "inputSimpleRouteJson": "phase-2.input.simple-route.json",
+        "previousOutputTraces": "phase-2.previous-output.traces.json",
+        "boardCircuitJson": "board.source-and-pcb.circuit.json"
+      },
+      "lastProgress": {
+        "subcircuit_id": "subcircuit_source_group_0",
+        "componentDisplayName": "<board#483 />",
+        "phaseName": "DDR_BYTE1_BUS_LANES",
+        "phaseStageIndex": 0,
+        "phaseStageCount": 1,
+        "routingPhaseIndex": 2,
+        "_actualRoutingPhaseOrderIndex": 1,
+        "phaseOrdinal": 2,
+        "phaseCount": 4,
+        "connectionCount": 11,
+        "obstacleCount": 420,
+        "previousTraceCount": 11,
+        "isReroutePhase": false,
+        "autorouterName": "bus_lanes",
+        "solverName": "BusLanesPipelineSolver",
+        "cacheStatus": "disabled",
+        "cacheDisabledReason": "strategy_not_cacheable",
+        "type": "autorouting:progress",
+        "steps": 284200,
+        "progress": 0,
+        "phase": "lanes_route"
+      }
+    },
+    "omittedPresentationData": "lastProgress.debugGraphics only; original file hash retained"
+  },
+  "diagnosticSha256": "1135ef77f99779016b6bcf1c3df3fd8b5060694cf6f8dbc4725aeebe6a105a01",
+  "scope": "Unmodified native completed route coordinates from this timeout. All source pads and native timeout retained. Signal-only, unpowered and incomplete."
+}

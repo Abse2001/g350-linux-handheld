@@ -1,0 +1,786 @@
+Building 1 file(s)...
+Building experiments/rk3566-memory-hdi.circuit.tsx...
+Generating circuit JSON...
+autoroutingphase: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/placement-unrouted.png
+Autorouting <board#875 /> phase 1/39 start: connections=67, obstacles=765, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_0, breakout:pcb_breakout_point_1, breakout:pcb_breakout_point_2, breakout:pcb_breakout_point_3, breakout:pcb_breakout_point_4, breakout:pcb_breakout_point_5, breakout:pcb_breakout_point_6, breakout:pcb_breakout_point_7, breakout:pcb_breakout_point_8, breakout:pcb_breakout_point_9, breakout:pcb_breakout_point_10, breakout:pcb_breakout_point_11, breakout:pcb_breakout_point_12, breakout:pcb_breakout_point_13, breakout:pcb_breakout_point_14, breakout:pcb_breakout_point_15, breakout:pcb_breakout_point_16, breakout:pcb_breakout_point_17, breakout:pcb_breakout_point_18, breakout:pcb_breakout_point_19, breakout:pcb_breakout_point_20, breakout:pcb_breakout_point_21, breakout:pcb_breakout_point_22, breakout:pcb_breakout_point_23, breakout:pcb_breakout_point_24, breakout:pcb_breakout_point_25, breakout:pcb_breakout_point_26, breakout:pcb_breakout_point_27, breakout:pcb_breakout_point_28, breakout:pcb_breakout_point_29, breakout:pcb_breakout_point_30, breakout:pcb_breakout_point_31, breakout:pcb_breakout_point_32, breakout:pcb_breakout_point_33, breakout:pcb_breakout_point_34, breakout:pcb_breakout_point_35, breakout:pcb_breakout_point_36, breakout:pcb_breakout_point_37, breakout:pcb_breakout_point_38, breakout:pcb_breakout_point_39, breakout:pcb_breakout_point_40, breakout:pcb_breakout_point_41, breakout:pcb_breakout_point_42, breakout:pcb_breakout_point_43, breakout:pcb_breakout_point_44, breakout:pcb_breakout_point_45, breakout:pcb_breakout_point_46, breakout:pcb_breakout_point_47, breakout:pcb_breakout_point_48, breakout:pcb_breakout_point_49, breakout:pcb_breakout_point_50, breakout:pcb_breakout_point_51, breakout:pcb_breakout_point_52, breakout:pcb_breakout_point_53, breakout:pcb_breakout_point_54, breakout:pcb_breakout_point_55, breakout:pcb_breakout_point_56, breakout:pcb_breakout_point_57, breakout:pcb_breakout_point_58, breakout:pcb_breakout_point_59, breakout:pcb_breakout_point_60, breakout:pcb_breakout_point_61, breakout:pcb_breakout_point_62, breakout:pcb_breakout_point_63, breakout:pcb_breakout_point_64, breakout:pcb_breakout_point_65, breakout:pcb_breakout_point_66
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-0.input.simple-route.json
+  phase 1/39 done: routed_traces=67, jumpers=0, errors=0, elapsed=1.5s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-hdi-circuit-tsx-c137c99c24/subcircuit_source_group_2-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#875 /> phase 2/39 start: connections=67, obstacles=1033, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: breakout:pcb_breakout_point_67, breakout:pcb_breakout_point_68, breakout:pcb_breakout_point_69, breakout:pcb_breakout_point_70, breakout:pcb_breakout_point_71, breakout:pcb_breakout_point_72, breakout:pcb_breakout_point_73, breakout:pcb_breakout_point_74, breakout:pcb_breakout_point_75, breakout:pcb_breakout_point_76, breakout:pcb_breakout_point_77, breakout:pcb_breakout_point_78, breakout:pcb_breakout_point_79, breakout:pcb_breakout_point_80, breakout:pcb_breakout_point_81, breakout:pcb_breakout_point_82, breakout:pcb_breakout_point_83, breakout:pcb_breakout_point_84, breakout:pcb_breakout_point_85, breakout:pcb_breakout_point_86, breakout:pcb_breakout_point_87, breakout:pcb_breakout_point_88, breakout:pcb_breakout_point_89, breakout:pcb_breakout_point_90, breakout:pcb_breakout_point_91, breakout:pcb_breakout_point_92, breakout:pcb_breakout_point_93, breakout:pcb_breakout_point_94, breakout:pcb_breakout_point_95, breakout:pcb_breakout_point_96, breakout:pcb_breakout_point_97, breakout:pcb_breakout_point_98, breakout:pcb_breakout_point_99, breakout:pcb_breakout_point_100, breakout:pcb_breakout_point_101, breakout:pcb_breakout_point_102, breakout:pcb_breakout_point_103, breakout:pcb_breakout_point_104, breakout:pcb_breakout_point_105, breakout:pcb_breakout_point_106, breakout:pcb_breakout_point_107, breakout:pcb_breakout_point_108, breakout:pcb_breakout_point_109, breakout:pcb_breakout_point_110, breakout:pcb_breakout_point_111, breakout:pcb_breakout_point_112, breakout:pcb_breakout_point_113, breakout:pcb_breakout_point_114, breakout:pcb_breakout_point_115, breakout:pcb_breakout_point_116, breakout:pcb_breakout_point_117, breakout:pcb_breakout_point_118, breakout:pcb_breakout_point_119, breakout:pcb_breakout_point_120, breakout:pcb_breakout_point_121, breakout:pcb_breakout_point_122, breakout:pcb_breakout_point_123, breakout:pcb_breakout_point_124, breakout:pcb_breakout_point_125, breakout:pcb_breakout_point_126, breakout:pcb_breakout_point_127, breakout:pcb_breakout_point_128, breakout:pcb_breakout_point_129, breakout:pcb_breakout_point_130, breakout:pcb_breakout_point_131, breakout:pcb_breakout_point_132, breakout:pcb_breakout_point_133
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-1.input.simple-route.json
+  phase 2/39 done: routed_traces=67, jumpers=0, errors=0, elapsed=44ms
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-1-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/rk3566-memory-hdi-circuit-tsx-c137c99c24/subcircuit_source_group_2-phase-default-order-1.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Autorouting <board#875 /> phase 3/39 "HDI_INNER_A_DATA" start: connections=6, obstacles=1301, previous_traces=0, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ7_A, LPDDR4_DQ15_A, LPDDR4_DM0_A, LPDDR4_DQ14_A, LPDDR4_DM1_A, LPDDR4_DQ13_A
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-0.input.simple-route.json
+  phase 3/39 "HDI_INNER_A_DATA" progress: solver_phase=portPointPathingSolver steps=1 progress=44% iterations_per_second=29649 elapsed=229ms
+HDI wire corrections: [{"trace":"source_trace_7","indices":[4,5],"dx":-0.01,"dy":0}]
+HDI phase candidate: 6 signals, 6 core vias, 0 physical issues
+  phase 3/39 "HDI_INNER_A_DATA" done: routed_traces=6, jumpers=0, errors=0, elapsed=2.9s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-0.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-0-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 4/39 "HDI_INNER_B_DATA" start: connections=8, obstacles=1301, previous_traces=6, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ3_B, LPDDR4_DQ2_B, LPDDR4_DQ5_B, LPDDR4_DM0_B, LPDDR4_DQ6_B, LPDDR4_DQ14_B, LPDDR4_DM1_B, LPDDR4_DQ7_B
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-1.input.simple-route.json
+  phase 4/39 "HDI_INNER_B_DATA" progress: solver_phase=edgeSolver steps=1 progress=28% iterations_per_second=55695 elapsed=208ms
+HDI local corrections: [{"trace":"source_trace_59","before":{"x":3.352,"y":8.244},"after":{"x":3.3619999999999997,"y":8.244}}]
+HDI phase candidate: 8 signals, 8 core vias, 0 physical issues
+  phase 4/39 "HDI_INNER_B_DATA" done: routed_traces=14, jumpers=0, errors=0, elapsed=2.5s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-1.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-1-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 5/39 "HDI_INNER_A_CONTROL" start: connections=4, obstacles=1301, previous_traces=14, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_A2_A, LPDDR4_A3_A, LPDDR4_A4_A, LPDDR4_A5_A
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-2.input.simple-route.json
+  phase 5/39 "HDI_INNER_A_CONTROL" progress: solver_phase=topologyPlanningSolver steps=1 progress=17% iterations_per_second=13790 elapsed=208ms
+HDI local corrections: [{"trace":"source_trace_27","before":{"x":-6.885,"y":17.419},"after":{"x":-6.885,"y":17.399}},{"trace":"source_trace_27","before":{"x":-5.694260537848833,"y":4.917537137559075},"after":{"x":-5.784260537848833,"y":4.947537137559075}},{"trace":"source_trace_26","before":{"x":-6.730999298995812,"y":17.798556964243684},"after":{"x":-6.275,"y":17.8}}]
+HDI phase candidate: 4 signals, 8 core vias, 0 physical issues
+  phase 5/39 "HDI_INNER_A_CONTROL" done: routed_traces=18, jumpers=0, errors=0, elapsed=6.7s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-2.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-2-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 6/39 "HDI_INNER_B_CONTROL" start: connections=5, obstacles=1301, previous_traces=18, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_CKE0_B, LPDDR4_CS0n_B, LPDDR4_A2_B, LPDDR4_A3_B, LPDDR4_A4_B
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-3.input.simple-route.json
+  phase 6/39 "HDI_INNER_B_CONTROL" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=11345 elapsed=210ms
+HDI local corrections: [{"trace":"source_trace_42","before":{"x":-3.9433701861729036,"y":5.954},"after":{"x":-3.9633701861729036,"y":5.954}},{"trace":"source_trace_39","before":{"x":-3.168,"y":3.625015279191961},"after":{"x":-3.188,"y":3.605015279191961}}]
+HDI wire corrections: [{"trace":"source_trace_41","indices":[21,22],"dx":0,"dy":0.01},{"trace":"source_trace_41","indices":[21,22],"dx":-0.01,"dy":0}]
+HDI phase candidate: 5 signals, 10 core vias, 0 physical issues
+  phase 6/39 "HDI_INNER_B_CONTROL" done: routed_traces=23, jumpers=0, errors=0, elapsed=5.0s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-3.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-3-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 7/39 "HDI_RESET" start: connections=1, obstacles=1301, previous_traces=23, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_RESETn
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-4.input.simple-route.json
+  phase 7/39 "HDI_RESET" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=10665 elapsed=208ms
+HDI wire corrections: [{"trace":"source_trace_44","indices":[4,5,6,7],"dx":0.06,"dy":-0.03},{"trace":"source_trace_44","indices":[5,6,7],"dx":0.04,"dy":-0.06},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01},{"trace":"source_trace_44","indices":[5,6,7],"dx":0,"dy":-0.01}]
+HDI phase candidate: 1 signals, 2 core vias, 0 physical issues
+  phase 7/39 "HDI_RESET" done: routed_traces=24, jumpers=0, errors=0, elapsed=4.4s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-4.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-4-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 8/39 "HDI_CLOCK_STROBES" start: connections=12, obstacles=1301, previous_traces=24, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQS0P_A, LPDDR4_DQS1P_A, LPDDR4_DQS0N_A, LPDDR4_DQS1N_A, LPDDR4_CLKP_A, LPDDR4_CLKN_A, LPDDR4_CLKP_B, LPDDR4_CLKN_B, LPDDR4_DQS0N_B, LPDDR4_DQS1N_B, LPDDR4_DQS0P_B, LPDDR4_DQS1P_B
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-5.input.simple-route.json
+  phase 8/39 "HDI_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=11835 elapsed=209ms
+HDI local corrections: [{"trace":"source_trace_56","before":{"x":-0.8886396103067892,"y":8.26},"after":{"x":-0.9086396103067892,"y":8.26}},{"trace":"source_trace_53","before":{"x":-0.87,"y":6.825},"after":{"x":-0.89,"y":6.825}},{"trace":"source_trace_36","before":{"x":-2.246,"y":16.689},"after":{"x":-2.236,"y":16.659}},{"trace":"source_trace_31","before":{"x":-6.486,"y":7.65},"after":{"x":-6.4959999999999996,"y":7.65}},{"trace":"source_trace_30","before":{"x":-5.597,"y":15.875},"after":{"x":-5.597,"y":15.835}},{"trace":"source_trace_11","before":{"x":-8.28,"y":17.385},"after":{"x":-8.875,"y":17.8}}]
+HDI wire corrections: [{"trace":"source_trace_31","indices":[10,11,12],"dx":-0.01,"dy":0},{"trace":"source_trace_31","indices":[10,11,12],"dx":-0.01,"dy":0}]
+HDI phase candidate: 12 signals, 18 core vias, 1 physical issues
+HDI_REJECTED_PHASE_JSON={"attempt":0,"traces":[{"type":"pcb_trace","pcb_trace_id":"source_trace_56_0","connection_name":"source_trace_56","connectsTo":["pcb_breakout_point_56","pcb_breakout_point_123"],"route":[{"route_type":"wire","x":0.875,"y":17.8,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.875,"y":18.524661807401976,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":1.2464155386299272,"y":18.896077346031905,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":1.2510773460319038,"y":18.896077346031905,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":1.365,"y":19.015,"width":0.1,"layer":"inner1"},{"route_type":"via","x":1.365,"y":19.015,"from_layer":"inner1","to_layer":"inner6","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":1.365,"y":19.015,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":1.365,"y":10.452288218488912,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-0.7147543780626184,"y":8.372533840426293,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-0.771466159573707,"y":8.372533840426293,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-0.9086396103067892,"y":8.26,"width":0.1,"layer":"inner6"},{"route_type":"via","x":-0.9086396103067892,"y":8.26,"from_layer":"inner6","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-0.9086396103067892,"y":8.26,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.884,"y":7.936,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.9701529999999821,"y":7.85,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_55_0","connection_name":"source_trace_55","connectsTo":["pcb_breakout_point_55","pcb_breakout_point_122"],"route":[{"route_type":"wire","x":-2.5700989999999138,"y":7.85,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.5700989999999138,"y":10.98913308948382,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.999791763029526,"y":11.418825852513432,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.3127814832911735,"y":12.105836132251785,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.035119763367217,"y":12.105836132251785,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.6697671004566517,"y":13.47118879516235,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.6476106310788401,"y":13.47118879516235,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.875,"y":13.243799426241189,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.875,"y":12.2,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_53_0","connection_name":"source_trace_53","connectsTo":["pcb_breakout_point_53","pcb_breakout_point_120"],"route":[{"route_type":"wire","x":-0.9700000000000002,"y":6.415,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.9700000000000002,"y":6.623109723391075,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.9404391009618023,"y":6.652670622429273,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.9404391009618023,"y":6.7495608990381974,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-0.89,"y":6.825,"width":0.1,"layer":"inner1"},{"route_type":"via","x":-0.89,"y":6.825,"from_layer":"inner1","to_layer":"inner3","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-0.89,"y":6.825,"width":0.1,"layer":"inner3"},{"route_type":"wire","x":0.10786040061735647,"y":7.797860400617356,"width":0.1,"layer":"inner3"},{"route_type":"wire","x":0.1078604006173565,"y":12.920707778330875,"width":0.1,"layer":"inner3"},{"route_type":"wire","x":0.1078604006173565,"y":16.011226725658407,"width":0.1,"layer":"inner3"},{"route_type":"wire","x":0.3961504593960007,"y":16.299516784437053,"width":0.1,"layer":"inner3"},{"route_type":"wire","x":0.3961504593960007,"y":16.396150459396,"width":0.1,"layer":"inner3"},{"route_type":"wire","x":0.4,"y":16.4,"width":0.1,"layer":"inner3"},{"route_type":"via","x":0.4,"y":16.4,"from_layer":"inner3","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":0.4,"y":16.4,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.5777641937339042,"y":16.577764193733902,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.5777641937339042,"y":17.447235806266097,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.22499999999999964,"y":17.8,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_50_0","connection_name":"source_trace_50","connectsTo":["pcb_breakout_point_50","pcb_breakout_point_117"],"route":[{"route_type":"wire","x":0.22499999999999964,"y":12.2,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.3404963646293923,"y":12.35545675231472,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.49463828788972286,"y":12.477260294546138,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.5154081600523003,"y":12.494,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.475,"y":12.509,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":0.5436391098166511,"y":12.548838713998173,"width":0.1,"layer":"inner1"},{"route_type":"via","x":0.5436391098166511,"y":12.548838713998173,"from_layer":"inner1","to_layer":"inner5","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":0.5436391098166511,"y":12.548838713998173,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":0.5388455009148176,"y":13.431784149473796,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-0.24457080428158562,"y":14.2152004546702,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-0.24457080428158562,"y":14.215570804281587,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-0.259,"y":14.23,"width":0.1,"layer":"inner5"},{"route_type":"via","x":-0.259,"y":14.23,"from_layer":"inner5","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-0.259,"y":14.23,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-1.774462933300332,"y":14.23,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.999344249147412,"y":13.00511868415292,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-3.395585125947608,"y":12.608877807352725,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-3.395585125947608,"y":8.925585125947608,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.970149000000106,"y":8.5,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_36_0","connection_name":"source_trace_36","connectsTo":["pcb_breakout_point_36","pcb_breakout_point_103"],"route":[{"route_type":"wire","x":-2.375,"y":17,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.306513459540886,"y":16.931513459540888,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.306513459540886,"y":16.7784612806031,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.306513459540886,"y":16.744513459540887,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.236,"y":16.659,"width":0.1,"layer":"inner1"},{"route_type":"via","x":-2.236,"y":16.659,"from_layer":"inner1","to_layer":"inner5","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-2.236,"y":16.659,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-2.251,"y":13.46483152368766,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-4.2130407921357484,"y":11.502790731551912,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-4.2130407921357484,"y":8.77695920786425,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-4.405135938644383,"y":8.584864061355615,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-4.438,"y":8.552,"width":0.1,"layer":"inner5"},{"route_type":"via","x":-4.438,"y":8.552,"from_layer":"inner5","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-4.438,"y":8.552,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-4.596911797948289,"y":8.393088202051711,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-4.596911797948289,"y":7.6203496136740885,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-4.97,"y":7.247261411622378,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-4.97,"y":6.415,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_35_0","connection_name":"source_trace_35","connectsTo":["pcb_breakout_point_35","pcb_breakout_point_102"],"route":[{"route_type":"wire","x":-4.970145000000002,"y":7.85,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-4.970145000000002,"y":12.399845992071342,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-3.0609161510802267,"y":14.309074840991117,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-3.0609161510802267,"y":15.514083848919773,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-2.375,"y":16.2,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_31_0","connection_name":"source_trace_31","connectsTo":["pcb_breakout_point_31","pcb_breakout_point_98"],"route":[{"route_type":"wire","x":-5.625,"y":17,"width":0.095,"layer":"inner1"},{"route_type":"wire","x":-5.625,"y":17.668700814993542,"width":0.095,"layer":"inner1"},{"route_type":"wire","x":-5.682432720152437,"y":17.72613353514598,"width":0.095,"layer":"inner1"},{"route_type":"wire","x":-5.682432720152437,"y":17.743432720152438,"width":0.095,"layer":"inner1"},{"route_type":"wire","x":-5.693765215797536,"y":17.76462410332847,"width":0.095,"layer":"inner1"},{"route_type":"via","x":-5.693765215797536,"y":17.76462410332847,"from_layer":"inner1","to_layer":"inner3","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-5.693765215797536,"y":17.76462410332847,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-5.699,"y":16.357444883102236,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.651,"y":15.405444883102236,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.651,"y":9.176736589678903,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.6994913026966705,"y":9.168406660096865,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.822664835372887,"y":8.902736124804163,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.768219574759423,"y":8.71053660539006,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.743,"y":8.080418041944414,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.470871655022718,"y":7.808289696967131,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.470871655022718,"y":7.6651283449772825,"width":0.095,"layer":"inner3"},{"route_type":"wire","x":-6.4959999999999996,"y":7.65,"width":0.095,"layer":"inner3"},{"route_type":"via","x":-6.4959999999999996,"y":7.65,"from_layer":"inner3","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-6.4959999999999996,"y":7.65,"width":0.095,"layer":"inner1"},{"route_type":"wire","x":-5.77,"y":6.934,"width":0.095,"layer":"inner1"},{"route_type":"wire","x":-5.77,"y":6.415,"width":0.095,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_30_0","connection_name":"source_trace_30","connectsTo":["pcb_breakout_point_30","pcb_breakout_point_97"],"route":[{"route_type":"wire","x":-5.625,"y":16.2,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-5.625,"y":15.965300587973182,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-5.614190972628188,"y":15.954491560601369,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-5.614190972628188,"y":15.892190972628187,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-5.597,"y":15.835,"width":0.1,"layer":"inner1"},{"route_type":"via","x":-5.597,"y":15.835,"from_layer":"inner1","to_layer":"inner5","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-5.597,"y":15.835,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-6.4650232767881475,"y":15.006976723211853,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-6.4650232767881475,"y":8.98578985473032,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-6.4650232767881475,"y":8.890765403085808,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-6.47080067314253,"y":8.875683732542843,"width":0.1,"layer":"inner5"},{"route_type":"via","x":-6.47080067314253,"y":8.875683732542843,"from_layer":"inner5","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-6.47080067314253,"y":8.875683732542843,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-6.466788679873956,"y":8.54654367987391,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-5.770245000000045,"y":7.85,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_16_0","connection_name":"source_trace_16","connectsTo":["pcb_breakout_point_16","pcb_breakout_point_83"],"route":[{"route_type":"wire","x":-8.225,"y":17.8,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-8.619118886885085,"y":18.194118886885086,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-9.802433368976907,"y":18.194118886885086,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-11.151283691411638,"y":16.845268564450354,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-11.151283691411638,"y":5.254026855517553,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-10.826158283312488,"y":5.254026855517553,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-9.481541377933342,"y":3.9094099501384063,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-9.410342217098316,"y":3.7934861346415345,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-9.261475150054553,"y":3.6138236800025045,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-8.764186672598381,"y":3.6150000000000007,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.261358819364467,"y":2.1121721467660866,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.164186672598381,"y":2.015,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-6.97,"y":2.015,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_13_0","connection_name":"source_trace_13","connectsTo":["pcb_breakout_point_13","pcb_breakout_point_80"],"route":[{"route_type":"wire","x":-9.1,"y":4.014977999999928,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-10.76111665148759,"y":5.676094651487519,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-10.76111665148759,"y":6.8,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-10.8,"y":6.8,"width":0.1,"layer":"inner1"},{"route_type":"via","x":-10.8,"y":6.8,"from_layer":"inner1","to_layer":"inner5","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-10.8,"y":6.8,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-10.8,"y":8.83440989375284,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-8.003564491198015,"y":11.630845402554826,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-8.003564491198015,"y":11.72711043638909,"width":0.1,"layer":"inner5"},{"route_type":"wire","x":-7.930674927587105,"y":11.8,"width":0.1,"layer":"inner5"},{"route_type":"via","x":-7.930674927587105,"y":11.8,"from_layer":"inner5","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-7.930674927587105,"y":11.8,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.930674927587105,"y":11.905674927587103,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-8.225,"y":12.2,"width":0.1,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_11_0","connection_name":"source_trace_11","connectsTo":["pcb_breakout_point_11","pcb_breakout_point_78"],"route":[{"route_type":"wire","x":-8.875,"y":17.8,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.473205877353864,"y":17.520074323844344,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.30716612597196,"y":17.453544741066285,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.875,"y":17.8,"width":0.09,"layer":"inner1"},{"route_type":"via","x":-8.875,"y":17.8,"from_layer":"inner1","to_layer":"inner3","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-8.875,"y":17.8,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-9.467602401136581,"y":16.23939759886342,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-9.467602401136581,"y":4.920416077599125,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-9.467602401136581,"y":4.5902503213328245,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-10.596926361234702,"y":3.4609263612347037,"width":0.09,"layer":"inner3"},{"route_type":"wire","x":-10.591,"y":3.455,"width":0.09,"layer":"inner3"},{"route_type":"via","x":-10.591,"y":3.455,"from_layer":"inner3","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-10.591,"y":3.455,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-9.950999999999999,"y":2.815,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-9.108354447342961,"y":2.815,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.966462391609925,"y":2.815,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.86435103308227,"y":2.7674289629116187,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.64585693222596,"y":2.4106958739751265,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.67968067645062,"y":2.244662676450538,"width":0.09,"layer":"inner1"},{"route_type":"wire","x":-8.45,"y":2.014981999999918,"width":0.09,"layer":"inner1"}]},{"type":"pcb_trace","pcb_trace_id":"source_trace_10_0","connection_name":"source_trace_10","connectsTo":["pcb_breakout_point_10","pcb_breakout_point_77"],"route":[{"route_type":"wire","x":-6.97,"y":4.015,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.18932972029365,"y":4.08277555432077,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.287028912150272,"y":4.202133828594938,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.326093260093786,"y":4.593999999999999,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.326093260093786,"y":5.045713260093786,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-7.385,"y":5.09962,"width":0.1,"layer":"inner1"},{"route_type":"via","x":-7.385,"y":5.09962,"from_layer":"inner1","to_layer":"inner6","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-7.385,"y":5.09962,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-7.38,"y":10.655225241764441,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-8.753816936096133,"y":12.029042177860575,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-8.753816936096133,"y":13.02149272602108,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-9.097662105037527,"y":13.365337894962474,"width":0.1,"layer":"inner6"},{"route_type":"wire","x":-9.053,"y":13.41,"width":0.1,"layer":"inner6"},{"route_type":"via","x":-9.053,"y":13.41,"from_layer":"inner6","to_layer":"inner1","via_diameter":0.3,"via_hole_diameter":0.15,"layers":["inner1","inner2","inner3","inner4","inner5","inner6"]},{"route_type":"wire","x":-9.053,"y":13.41,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-8.875,"y":13.232,"width":0.1,"layer":"inner1"},{"route_type":"wire","x":-8.875,"y":12.2,"width":0.1,"layer":"inner1"}]}],"audit":{"newVias":18,"issues":[{"kind":"via_hole_copper","trace":"source_trace_30_via_11","obstacle":"hdi_17_segment_8","clearance":0.17999999999999977,"minimum":0.2,"x":-6.47080067314253,"y":8.875683732542843}]}}
+  phase 8/39 "HDI_CLOCK_STROBES" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=10440 elapsed=44.7s
+HDI local corrections: [{"trace":"source_trace_53","before":{"x":-0.87,"y":6.825},"after":{"x":-0.89,"y":6.825}},{"trace":"source_trace_36","before":{"x":-2.246,"y":16.689},"after":{"x":-2.236,"y":16.659}},{"trace":"source_trace_30","before":{"x":-5.597,"y":15.875},"after":{"x":-5.597,"y":15.835}},{"trace":"source_trace_30","before":{"x":-6.47080067314253,"y":8.274},"after":{"x":-6.490800673142529,"y":8.274}},{"trace":"source_trace_11","before":{"x":-8.28,"y":17.385},"after":{"x":-8.875,"y":17.8}}]
+HDI phase candidate: 12 signals, 18 core vias, 0 physical issues
+  phase 8/39 "HDI_CLOCK_STROBES" done: routed_traces=36, jumpers=0, errors=0, elapsed=55.0s
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-5.output.traces.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-5-routed.png
+Could not save autorouting paths for subcircuit_source_group_2: Routes contain a junction or endpoint that cannot select a unique PCB port
+Autorouting <board#875 /> phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" start: connections=1, obstacles=1301, previous_traces=36, router=custom, effort=5x, cache=disabled(custom_algorithm)
+  connections: LPDDR4_DQ0_A
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-6.input.simple-route.json
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=7290 elapsed=210ms
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" progress: solver_phase=portPointPathingSolver steps=5 progress=44% iterations_per_second=0 elapsed=38.9s
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" progress: solver_phase=portPointPathingSolver steps=47 progress=44% iterations_per_second=51677 elapsed=49.0s
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" progress: solver_phase=portPointPathingSolver steps=90 progress=44% iterations_per_second=51163 elapsed=59.2s
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" progress: solver_phase=portPointPathingSolver steps=132 progress=44% iterations_per_second=55530 elapsed=69.3s
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" progress: solver_phase=portPointPathingSolver steps=176 progress=44% iterations_per_second=54090 elapsed=79.5s
+  phase 9/39 "HDI_OUTER_LPDDR4_DQ0_A" error after 87.8s: HDI portPointPathingSolver: Jq ran out of iterations
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-6.input.simple-route.json
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/phase-6.error.json
+Async effect error in PcbTraceRender "autorouting":
+Error: HDI portPointPathingSolver: Jq ran out of iterations
+    at <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/lib/integrated/hdi/HdiMemoryAutorouter.ts:38:36)
+    at processTicksAndRejections (native:7:39)
+Wrote debug artifact: dist/rk3566-memory-hdi-inner/board.meta.json
+Circuit JSON written to dist/experiments/rk3566-memory-hdi/circuit.json
+Port 1B10 on U_SOC is missing a trace
+Port 1B11 on U_SOC is missing a trace
+Port 1B15 on U_SOC is missing a trace
+Port 1B19 on U_SOC is missing a trace
+Port 1C4 on U_SOC is missing a trace
+Port 1C5 on U_SOC is missing a trace
+Port 1C6 on U_SOC is missing a trace
+Port 1C8 on U_SOC is missing a trace
+Port 1C9 on U_SOC is missing a trace
+Port 1C12 on U_SOC is missing a trace
+Port 1C13 on U_SOC is missing a trace
+Port 1C14 on U_SOC is missing a trace
+Port 1C16 on U_SOC is missing a trace
+Port 1C18 on U_SOC is missing a trace
+Port 1D1 on U_SOC is missing a trace
+Port 1D3 on U_SOC is missing a trace
+Port 1D4 on U_SOC is missing a trace
+Port 1D5 on U_SOC is missing a trace
+Port 1D6 on U_SOC is missing a trace
+Port 1D7 on U_SOC is missing a trace
+Port 1D8 on U_SOC is missing a trace
+Port 1D11 on U_SOC is missing a trace
+Port 1D12 on U_SOC is missing a trace
+Port 1D13 on U_SOC is missing a trace
+Port 1D14 on U_SOC is missing a trace
+Port 1D15 on U_SOC is missing a trace
+Port 1D16 on U_SOC is missing a trace
+Port 1E3 on U_SOC is missing a trace
+Port 1E4 on U_SOC is missing a trace
+Port 1E6 on U_SOC is missing a trace
+Port 1E7 on U_SOC is missing a trace
+Port 1E8 on U_SOC is missing a trace
+Port 1E9 on U_SOC is missing a trace
+Port 1E12 on U_SOC is missing a trace
+Port 1E13 on U_SOC is missing a trace
+Port 1E14 on U_SOC is missing a trace
+Port 1E15 on U_SOC is missing a trace
+Port 1E16 on U_SOC is missing a trace
+Port 1E17 on U_SOC is missing a trace
+Port 1F4 on U_SOC is missing a trace
+Port 1F5 on U_SOC is missing a trace
+Port 1F6 on U_SOC is missing a trace
+Port 1F7 on U_SOC is missing a trace
+Port 1F8 on U_SOC is missing a trace
+Port 1F9 on U_SOC is missing a trace
+Port 1F10 on U_SOC is missing a trace
+Port 1F11 on U_SOC is missing a trace
+Port 1F12 on U_SOC is missing a trace
+Port 1F13 on U_SOC is missing a trace
+Port 1F14 on U_SOC is missing a trace
+Port 1F15 on U_SOC is missing a trace
+Port 1F16 on U_SOC is missing a trace
+Port 1F17 on U_SOC is missing a trace
+Port 1F20 on U_SOC is missing a trace
+Port 1D10 on U_SOC is missing a trace
+Port 1D9 on U_SOC is missing a trace
+Port 1E10 on U_SOC is missing a trace
+Port 1E11 on U_SOC is missing a trace
+Port 1L3 on U_SOC is missing a trace
+Port 1L4 on U_SOC is missing a trace
+Port 1L5 on U_SOC is missing a trace
+Port 1L6 on U_SOC is missing a trace
+Port 1L7 on U_SOC is missing a trace
+Port 1L8 on U_SOC is missing a trace
+Port 1L9 on U_SOC is missing a trace
+Port 1L10 on U_SOC is missing a trace
+Port 1L11 on U_SOC is missing a trace
+Port 1L12 on U_SOC is missing a trace
+Port 1L13 on U_SOC is missing a trace
+Port 1L15 on U_SOC is missing a trace
+Port 1L19 on U_SOC is missing a trace
+Port 1L14 on U_SOC is missing a trace
+Port 1K2 on U_SOC is missing a trace
+Port 1K3 on U_SOC is missing a trace
+Port 1K4 on U_SOC is missing a trace
+Port 1K5 on U_SOC is missing a trace
+Port 1K6 on U_SOC is missing a trace
+Port 1K7 on U_SOC is missing a trace
+Port 1K8 on U_SOC is missing a trace
+Port 1K9 on U_SOC is missing a trace
+Port 1K10 on U_SOC is missing a trace
+Port 1K11 on U_SOC is missing a trace
+Port 1K12 on U_SOC is missing a trace
+Port 1K13 on U_SOC is missing a trace
+Port 1K14 on U_SOC is missing a trace
+Port 1K15 on U_SOC is missing a trace
+Port 1K16 on U_SOC is missing a trace
+Port 1K17 on U_SOC is missing a trace
+Port 1K18 on U_SOC is missing a trace
+Port 1M3 on U_SOC is missing a trace
+Port 1M4 on U_SOC is missing a trace
+Port 1M5 on U_SOC is missing a trace
+Port 1M6 on U_SOC is missing a trace
+Port 1M7 on U_SOC is missing a trace
+Port 1M8 on U_SOC is missing a trace
+Port 1M9 on U_SOC is missing a trace
+Port 1M10 on U_SOC is missing a trace
+Port 1M12 on U_SOC is missing a trace
+Port 1M13 on U_SOC is missing a trace
+Port 1M14 on U_SOC is missing a trace
+Port 1M15 on U_SOC is missing a trace
+Port 1M16 on U_SOC is missing a trace
+Port 1M17 on U_SOC is missing a trace
+Port 1M18 on U_SOC is missing a trace
+Port 1M20 on U_SOC is missing a trace
+Port 1U2 on U_SOC is missing a trace
+Port 1U12 on U_SOC is missing a trace
+Port 1U13 on U_SOC is missing a trace
+Port 1U15 on U_SOC is missing a trace
+Port 1U17 on U_SOC is missing a trace
+Port 1V1 on U_SOC is missing a trace
+Port 1V4 on U_SOC is missing a trace
+Port 1V7 on U_SOC is missing a trace
+Port 1V12 on U_SOC is missing a trace
+Port 1V13 on U_SOC is missing a trace
+Port 1V18 on U_SOC is missing a trace
+Port 1M11 on U_SOC is missing a trace
+Port A1 on U_SOC is missing a trace
+Port A2 on U_SOC is missing a trace
+Port A38 on U_SOC is missing a trace
+Port B1 on U_SOC is missing a trace
+Port B2 on U_SOC is missing a trace
+Port B6 on U_SOC is missing a trace
+Port B11 on U_SOC is missing a trace
+Port B14 on U_SOC is missing a trace
+Port B18 on U_SOC is missing a trace
+Port B21 on U_SOC is missing a trace
+Port B28 on U_SOC is missing a trace
+Port B31 on U_SOC is missing a trace
+Port D2 on U_SOC is missing a trace
+Port E37 on U_SOC is missing a trace
+Port H37 on U_SOC is missing a trace
+Port J2 on U_SOC is missing a trace
+Port L2 on U_SOC is missing a trace
+Port L37 on U_SOC is missing a trace
+Port P37 on U_SOC is missing a trace
+Port U2 on U_SOC is missing a trace
+Port U37 on U_SOC is missing a trace
+Port W2 on U_SOC is missing a trace
+Port Y37 on U_SOC is missing a trace
+Port AA2 on U_SOC is missing a trace
+Port AC37 on U_SOC is missing a trace
+Port AD2 on U_SOC is missing a trace
+Port AE37 on U_SOC is missing a trace
+Port AH37 on U_SOC is missing a trace
+Port AL37 on U_SOC is missing a trace
+Port AP2 on U_SOC is missing a trace
+Port AP8 on U_SOC is missing a trace
+Port AP13 on U_SOC is missing a trace
+Port AP16 on U_SOC is missing a trace
+Port AP19 on U_SOC is missing a trace
+Port AP22 on U_SOC is missing a trace
+Port AP25 on U_SOC is missing a trace
+Port AP28 on U_SOC is missing a trace
+Port AP31 on U_SOC is missing a trace
+Port AP34 on U_SOC is missing a trace
+Port AP37 on U_SOC is missing a trace
+Port AR1 on U_SOC is missing a trace
+Port AR38 on U_SOC is missing a trace
+Port 1G3 on U_SOC is missing a trace
+Port 1G4 on U_SOC is missing a trace
+Port 1G5 on U_SOC is missing a trace
+Port 1G6 on U_SOC is missing a trace
+Port 1G7 on U_SOC is missing a trace
+Port 1G8 on U_SOC is missing a trace
+Port 1G9 on U_SOC is missing a trace
+Port 1G10 on U_SOC is missing a trace
+Port 1G11 on U_SOC is missing a trace
+Port 1G12 on U_SOC is missing a trace
+Port 1G13 on U_SOC is missing a trace
+Port 1G14 on U_SOC is missing a trace
+Port 1G15 on U_SOC is missing a trace
+Port 1G16 on U_SOC is missing a trace
+Port 1G17 on U_SOC is missing a trace
+Port 1G18 on U_SOC is missing a trace
+Port 1G19 on U_SOC is missing a trace
+Port 1G20 on U_SOC is missing a trace
+Port 1H1 on U_SOC is missing a trace
+Port 1H2 on U_SOC is missing a trace
+Port 1H4 on U_SOC is missing a trace
+Port 1H5 on U_SOC is missing a trace
+Port 1H6 on U_SOC is missing a trace
+Port 1H7 on U_SOC is missing a trace
+Port 1H8 on U_SOC is missing a trace
+Port 1H9 on U_SOC is missing a trace
+Port 1H10 on U_SOC is missing a trace
+Port 1H11 on U_SOC is missing a trace
+Port 1H13 on U_SOC is missing a trace
+Port 1H14 on U_SOC is missing a trace
+Port 1H15 on U_SOC is missing a trace
+Port 1H16 on U_SOC is missing a trace
+Port 1H17 on U_SOC is missing a trace
+Port 1H18 on U_SOC is missing a trace
+Port 1H12 on U_SOC is missing a trace
+Port 1J1 on U_SOC is missing a trace
+Port 1J2 on U_SOC is missing a trace
+Port 1J3 on U_SOC is missing a trace
+Port 1J4 on U_SOC is missing a trace
+Port 1J5 on U_SOC is missing a trace
+Port 1J6 on U_SOC is missing a trace
+Port 1J7 on U_SOC is missing a trace
+Port 1J8 on U_SOC is missing a trace
+Port 1J9 on U_SOC is missing a trace
+Port 1J10 on U_SOC is missing a trace
+Port 1J11 on U_SOC is missing a trace
+Port 1J12 on U_SOC is missing a trace
+Port 1J13 on U_SOC is missing a trace
+Port 1J14 on U_SOC is missing a trace
+Port 1J15 on U_SOC is missing a trace
+Port 1J16 on U_SOC is missing a trace
+Port 1J17 on U_SOC is missing a trace
+Port 1J18 on U_SOC is missing a trace
+Port 1N3 on U_SOC is missing a trace
+Port 1N4 on U_SOC is missing a trace
+Port 1N5 on U_SOC is missing a trace
+Port 1N6 on U_SOC is missing a trace
+Port 1N7 on U_SOC is missing a trace
+Port 1N8 on U_SOC is missing a trace
+Port 1N9 on U_SOC is missing a trace
+Port 1N10 on U_SOC is missing a trace
+Port 1N11 on U_SOC is missing a trace
+Port 1N12 on U_SOC is missing a trace
+Port 1N13 on U_SOC is missing a trace
+Port 1N14 on U_SOC is missing a trace
+Port 1N15 on U_SOC is missing a trace
+Port 1N16 on U_SOC is missing a trace
+Port 1N17 on U_SOC is missing a trace
+Port 1N18 on U_SOC is missing a trace
+Port 1P1 on U_SOC is missing a trace
+Port 1P5 on U_SOC is missing a trace
+Port 1P6 on U_SOC is missing a trace
+Port 1P7 on U_SOC is missing a trace
+Port 1P8 on U_SOC is missing a trace
+Port 1P9 on U_SOC is missing a trace
+Port 1P10 on U_SOC is missing a trace
+Port 1P11 on U_SOC is missing a trace
+Port 1P12 on U_SOC is missing a trace
+Port 1P13 on U_SOC is missing a trace
+Port 1P14 on U_SOC is missing a trace
+Port 1P15 on U_SOC is missing a trace
+Port 1P16 on U_SOC is missing a trace
+Port 1P17 on U_SOC is missing a trace
+Port 1R3 on U_SOC is missing a trace
+Port 1R4 on U_SOC is missing a trace
+Port 1R5 on U_SOC is missing a trace
+Port 1R6 on U_SOC is missing a trace
+Port 1R7 on U_SOC is missing a trace
+Port 1R8 on U_SOC is missing a trace
+Port 1R9 on U_SOC is missing a trace
+Port 1R10 on U_SOC is missing a trace
+Port 1R11 on U_SOC is missing a trace
+Port 1R12 on U_SOC is missing a trace
+Port 1R13 on U_SOC is missing a trace
+Port 1R14 on U_SOC is missing a trace
+Port 1R15 on U_SOC is missing a trace
+Port 1T3 on U_SOC is missing a trace
+Port 1T5 on U_SOC is missing a trace
+Port 1T7 on U_SOC is missing a trace
+Port 1T8 on U_SOC is missing a trace
+Port 1T9 on U_SOC is missing a trace
+Port 1T10 on U_SOC is missing a trace
+Port 1T11 on U_SOC is missing a trace
+Port 1T13 on U_SOC is missing a trace
+Port 1T14 on U_SOC is missing a trace
+Port 1T15 on U_SOC is missing a trace
+Port 1T16 on U_SOC is missing a trace
+Port 1T17 on U_SOC is missing a trace
+Port 1T12 on U_SOC is missing a trace
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+Failed to fetch supplier footprint for <chip#605(.RAM_ESCAPE>.U_RAM) /> (jlcpcb:C2912103): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#38(.SOC_ESCAPE>.U_SOC) /> (jlcpcb:C2943786): Unable to connect. Is the computer able to access the url?
+All pins on U_RAM are underspecified (no pinAttributes set)
+U_RAM has no pin with requires_power=true
+U_RAM has no pin with requires_ground=true
+U_SOC has schematic pins outside its body (1A1, 1T12, 1A2, 1T20, 1A3, 1T19, 1A4, 1T18, 1A5, 1T17, 1A6, 1T16, 1A7, 1T15, 1A8, 1T14, 1A9, 1T13, 1A10, 1T11, 1A11, 1T10, 1A13, 1T9, 1A14, 1T8, 1A15, 1T7, 1A16, 1T6, 1A17, 1T5, N2, C37, N1, D2, M38, D37, M37, D38, M2, E1, M1, E2, L37, E37, L2, F1, K38, F2, K37, F37, K2, F38, K1, G2, J38, G37, J37, G38, J2, H1, H37, H2); increase schHeight to at least 56.40mm
+HDI portPointPathingSolver: Jq ran out of iterations
+Ports [U_SOC.G2, U_RAM.B2] are not connected together through the same net.
+Ports [U_SOC.1E1, U_RAM.B4] are not connected together through the same net.
+Ports [U_SOC.1G2, U_RAM.B9] are not connected together through the same net.
+Ports [U_SOC.P2, U_RAM.B11] are not connected together through the same net.
+Ports [U_SOC.F2, U_RAM.C2] are not connected together through the same net.
+Ports [U_SOC.1E2, U_RAM.C3] are not connected together through the same net.
+Ports [U_SOC.K2, U_RAM.C4] are not connected together through the same net.
+Ports [U_SOC.1F1, U_RAM.C9] are not connected together through the same net.
+Ports [U_SOC.1G1, U_RAM.C10] are not connected together through the same net.
+Ports [U_SOC.R1, U_RAM.C11] are not connected together through the same net.
+Ports [U_SOC.H2, U_RAM.D3] are not connected together through the same net.
+Ports [U_SOC.N1, U_RAM.D10] are not connected together through the same net.
+Ports [U_SOC.F1, U_RAM.E2] are not connected together through the same net.
+Ports [U_SOC.H1, U_RAM.E3] are not connected together through the same net.
+Ports [U_SOC.K1, U_RAM.E4] are not connected together through the same net.
+Ports [U_SOC.1F2, U_RAM.E9] are not connected together through the same net.
+Ports [U_SOC.N2, U_RAM.E10] are not connected together through the same net.
+Ports [U_SOC.R2, U_RAM.E11] are not connected together through the same net.
+Ports [U_SOC.E1, U_RAM.F2] are not connected together through the same net.
+Ports [U_SOC.M2, U_RAM.F4] are not connected together through the same net.
+Ports [U_SOC.M1, U_RAM.F9] are not connected together through the same net.
+Ports [U_SOC.T2, U_RAM.F11] are not connected together through the same net.
+Ports [U_SOC.E2, U_RAM.G2] are not connected together through the same net.
+Ports [U_SOC.C2, U_RAM.H2] are not connected together through the same net.
+Ports [U_SOC.B3, U_RAM.H4] are not connected together through the same net.
+Ports [U_SOC.1C1, U_RAM.H9] are not connected together through the same net.
+Ports [U_SOC.1B3, U_RAM.H10] are not connected together through the same net.
+Ports [U_SOC.1B1, U_RAM.H11] are not connected together through the same net.
+Ports [U_SOC.C1, U_RAM.J2] are not connected together through the same net.
+Ports [U_SOC.B4, U_RAM.J4] are not connected together through the same net.
+Ports [U_SOC.A5, U_RAM.J8] are not connected together through the same net.
+Ports [U_SOC.B5, U_RAM.J9] are not connected together through the same net.
+Ports [U_SOC.1A1, U_RAM.J11] are not connected together through the same net.
+Ports [U_SOC.B9, U_RAM.P2] are not connected together through the same net.
+Ports [U_SOC.1A3, U_RAM.P4] are not connected together through the same net.
+Ports [U_SOC.A7, U_RAM.P8] are not connected together through the same net.
+Ports [U_SOC.B7, U_RAM.P9] are not connected together through the same net.
+Ports [U_SOC.B8, U_RAM.P11] are not connected together through the same net.
+Ports [U_SOC.A9, U_RAM.R2] are not connected together through the same net.
+Ports [U_SOC.1B5, U_RAM.R4] are not connected together through the same net.
+Ports [U_SOC.1B7, U_RAM.R9] are not connected together through the same net.
+Ports [U_SOC.1B6, U_RAM.R10] are not connected together through the same net.
+Ports [U_SOC.1A6, U_RAM.R11] are not connected together through the same net.
+Ports [U_SOC.A10, U_RAM.T2] are not connected together through the same net.
+Ports [U_SOC.1C7, U_RAM.T11] are not connected together through the same net.
+Ports [U_SOC.1A7, U_RAM.U2] are not connected together through the same net.
+Ports [U_SOC.B13, U_RAM.U4] are not connected together through the same net.
+Ports [U_SOC.A15, U_RAM.U9] are not connected together through the same net.
+Ports [U_SOC.B20, U_RAM.U11] are not connected together through the same net.
+Ports [U_SOC.1A8, U_RAM.V2] are not connected together through the same net.
+Ports [U_SOC.A12, U_RAM.V3] are not connected together through the same net.
+Ports [U_SOC.1A10, U_RAM.V4] are not connected together through the same net.
+Ports [U_SOC.B15, U_RAM.V9] are not connected together through the same net.
+Ports [U_SOC.B17, U_RAM.V10] are not connected together through the same net.
+Ports [U_SOC.A20, U_RAM.V11] are not connected together through the same net.
+Ports [U_SOC.A13, U_RAM.W3] are not connected together through the same net.
+Ports [U_SOC.A17, U_RAM.W10] are not connected together through the same net.
+Ports [U_SOC.B10, U_RAM.Y2] are not connected together through the same net.
+Ports [U_SOC.1B8, U_RAM.Y3] are not connected together through the same net.
+Ports [U_SOC.1B9, U_RAM.Y4] are not connected together through the same net.
+Ports [U_SOC.1C10, U_RAM.Y9] are not connected together through the same net.
+Ports [U_SOC.1A11, U_RAM.Y10] are not connected together through the same net.
+Ports [U_SOC.A19, U_RAM.Y11] are not connected together through the same net.
+Ports [U_SOC.B12, U_RAM.AA2] are not connected together through the same net.
+Ports [U_SOC.1A9, U_RAM.AA4] are not connected together through the same net.
+Ports [U_SOC.B16, U_RAM.AA9] are not connected together through the same net.
+Ports [U_SOC.B19, U_RAM.AA11] are not connected together through the same net.
+Trace [U_SOC.G2 to U_RAM.B2] is not connected (it has no PCB trace)
+Trace [U_SOC.1E1 to U_RAM.B4] is not connected (it has no PCB trace)
+Trace [U_SOC.1G2 to U_RAM.B9] is not connected (it has no PCB trace)
+Trace [U_SOC.P2 to U_RAM.B11] is not connected (it has no PCB trace)
+Trace [U_SOC.F2 to U_RAM.C2] is not connected (it has no PCB trace)
+Trace [U_SOC.1E2 to U_RAM.C3] is not connected (it has no PCB trace)
+Trace [U_SOC.K2 to U_RAM.C4] is not connected (it has no PCB trace)
+Trace [U_SOC.1F1 to U_RAM.C9] is not connected (it has no PCB trace)
+Trace [U_SOC.1G1 to U_RAM.C10] is not connected (it has no PCB trace)
+Trace [U_SOC.R1 to U_RAM.C11] is not connected (it has no PCB trace)
+Trace [U_SOC.H2 to U_RAM.D3] is not connected (it has no PCB trace)
+Trace [U_SOC.N1 to U_RAM.D10] is not connected (it has no PCB trace)
+Trace [U_SOC.F1 to U_RAM.E2] is not connected (it has no PCB trace)
+Trace [U_SOC.H1 to U_RAM.E3] is not connected (it has no PCB trace)
+Trace [U_SOC.K1 to U_RAM.E4] is not connected (it has no PCB trace)
+Trace [U_SOC.1F2 to U_RAM.E9] is not connected (it has no PCB trace)
+Trace [U_SOC.N2 to U_RAM.E10] is not connected (it has no PCB trace)
+Trace [U_SOC.R2 to U_RAM.E11] is not connected (it has no PCB trace)
+Trace [U_SOC.E1 to U_RAM.F2] is not connected (it has no PCB trace)
+Trace [U_SOC.M2 to U_RAM.F4] is not connected (it has no PCB trace)
+Trace [U_SOC.M1 to U_RAM.F9] is not connected (it has no PCB trace)
+Trace [U_SOC.T2 to U_RAM.F11] is not connected (it has no PCB trace)
+Trace [U_SOC.E2 to U_RAM.G2] is not connected (it has no PCB trace)
+Trace [U_SOC.C2 to U_RAM.H2] is not connected (it has no PCB trace)
+Trace [U_SOC.B3 to U_RAM.H4] is not connected (it has no PCB trace)
+Trace [U_SOC.1C1 to U_RAM.H9] is not connected (it has no PCB trace)
+Trace [U_SOC.1B3 to U_RAM.H10] is not connected (it has no PCB trace)
+Trace [U_SOC.1B1 to U_RAM.H11] is not connected (it has no PCB trace)
+Trace [U_SOC.C1 to U_RAM.J2] is not connected (it has no PCB trace)
+Trace [U_SOC.B4 to U_RAM.J4] is not connected (it has no PCB trace)
+Trace [U_SOC.A5 to U_RAM.J8] is not connected (it has no PCB trace)
+Trace [U_SOC.B5 to U_RAM.J9] is not connected (it has no PCB trace)
+Trace [U_SOC.1A1 to U_RAM.J11] is not connected (it has no PCB trace)
+Trace [U_SOC.B9 to U_RAM.P2] is not connected (it has no PCB trace)
+Trace [U_SOC.1A3 to U_RAM.P4] is not connected (it has no PCB trace)
+Trace [U_SOC.A7 to U_RAM.P8] is not connected (it has no PCB trace)
+Trace [U_SOC.B7 to U_RAM.P9] is not connected (it has no PCB trace)
+Trace [U_SOC.B8 to U_RAM.P11] is not connected (it has no PCB trace)
+Trace [U_SOC.A9 to U_RAM.R2] is not connected (it has no PCB trace)
+Trace [U_SOC.1B5 to U_RAM.R4] is not connected (it has no PCB trace)
+Trace [U_SOC.1B7 to U_RAM.R9] is not connected (it has no PCB trace)
+Trace [U_SOC.1B6 to U_RAM.R10] is not connected (it has no PCB trace)
+Trace [U_SOC.1A6 to U_RAM.R11] is not connected (it has no PCB trace)
+Trace [U_SOC.A10 to U_RAM.T2] is not connected (it has no PCB trace)
+Trace [U_SOC.1C7 to U_RAM.T11] is not connected (it has no PCB trace)
+Trace [U_SOC.1A7 to U_RAM.U2] is not connected (it has no PCB trace)
+Trace [U_SOC.B13 to U_RAM.U4] is not connected (it has no PCB trace)
+Trace [U_SOC.A15 to U_RAM.U9] is not connected (it has no PCB trace)
+Trace [U_SOC.B20 to U_RAM.U11] is not connected (it has no PCB trace)
+Trace [U_SOC.1A8 to U_RAM.V2] is not connected (it has no PCB trace)
+Trace [U_SOC.A12 to U_RAM.V3] is not connected (it has no PCB trace)
+Trace [U_SOC.1A10 to U_RAM.V4] is not connected (it has no PCB trace)
+Trace [U_SOC.B15 to U_RAM.V9] is not connected (it has no PCB trace)
+Trace [U_SOC.B17 to U_RAM.V10] is not connected (it has no PCB trace)
+Trace [U_SOC.A20 to U_RAM.V11] is not connected (it has no PCB trace)
+Trace [U_SOC.A13 to U_RAM.W3] is not connected (it has no PCB trace)
+Trace [U_SOC.A17 to U_RAM.W10] is not connected (it has no PCB trace)
+Trace [U_SOC.B10 to U_RAM.Y2] is not connected (it has no PCB trace)
+Trace [U_SOC.1B8 to U_RAM.Y3] is not connected (it has no PCB trace)
+Trace [U_SOC.1B9 to U_RAM.Y4] is not connected (it has no PCB trace)
+Trace [U_SOC.1C10 to U_RAM.Y9] is not connected (it has no PCB trace)
+Trace [U_SOC.1A11 to U_RAM.Y10] is not connected (it has no PCB trace)
+Trace [U_SOC.A19 to U_RAM.Y11] is not connected (it has no PCB trace)
+Trace [U_SOC.B12 to U_RAM.AA2] is not connected (it has no PCB trace)
+Trace [U_SOC.1A9 to U_RAM.AA4] is not connected (it has no PCB trace)
+Trace [U_SOC.B16 to U_RAM.AA9] is not connected (it has no PCB trace)
+Trace [U_SOC.B19 to U_RAM.AA11] is not connected (it has no PCB trace)
+Port 1B10 on U_SOC must be connected but is floating
+Port 1B11 on U_SOC must be connected but is floating
+Port 1B15 on U_SOC must be connected but is floating
+Port 1B19 on U_SOC must be connected but is floating
+Port 1C4 on U_SOC must be connected but is floating
+Port 1C5 on U_SOC must be connected but is floating
+Port 1C6 on U_SOC must be connected but is floating
+Port 1C8 on U_SOC must be connected but is floating
+Port 1C9 on U_SOC must be connected but is floating
+Port 1C12 on U_SOC must be connected but is floating
+Port 1C14 on U_SOC must be connected but is floating
+Port 1C16 on U_SOC must be connected but is floating
+Port 1C18 on U_SOC must be connected but is floating
+Port 1D1 on U_SOC must be connected but is floating
+Port 1D3 on U_SOC must be connected but is floating
+Port 1D4 on U_SOC must be connected but is floating
+Port 1D5 on U_SOC must be connected but is floating
+Port 1D6 on U_SOC must be connected but is floating
+Port 1D7 on U_SOC must be connected but is floating
+Port 1D8 on U_SOC must be connected but is floating
+Port 1D11 on U_SOC must be connected but is floating
+Port 1D12 on U_SOC must be connected but is floating
+Port 1D14 on U_SOC must be connected but is floating
+Port 1D15 on U_SOC must be connected but is floating
+Port 1D16 on U_SOC must be connected but is floating
+Port 1E3 on U_SOC must be connected but is floating
+Port 1E4 on U_SOC must be connected but is floating
+Port 1E6 on U_SOC must be connected but is floating
+Port 1E7 on U_SOC must be connected but is floating
+Port 1E8 on U_SOC must be connected but is floating
+Port 1E9 on U_SOC must be connected but is floating
+Port 1E12 on U_SOC must be connected but is floating
+Port 1E13 on U_SOC must be connected but is floating
+Port 1E14 on U_SOC must be connected but is floating
+Port 1E15 on U_SOC must be connected but is floating
+Port 1E17 on U_SOC must be connected but is floating
+Port 1F3 on U_SOC must be connected but is floating
+Port 1F4 on U_SOC must be connected but is floating
+Port 1F5 on U_SOC must be connected but is floating
+Port 1F6 on U_SOC must be connected but is floating
+Port 1F7 on U_SOC must be connected but is floating
+Port 1F8 on U_SOC must be connected but is floating
+Port 1F9 on U_SOC must be connected but is floating
+Port 1F10 on U_SOC must be connected but is floating
+Port 1F11 on U_SOC must be connected but is floating
+Port 1F12 on U_SOC must be connected but is floating
+Port 1F13 on U_SOC must be connected but is floating
+Port 1F14 on U_SOC must be connected but is floating
+Port 1F15 on U_SOC must be connected but is floating
+Port 1F16 on U_SOC must be connected but is floating
+Port 1F20 on U_SOC must be connected but is floating
+Port 1D10 on U_SOC must be connected but is floating
+Port 1D9 on U_SOC must be connected but is floating
+Port 1E10 on U_SOC must be connected but is floating
+Port 1E11 on U_SOC must be connected but is floating
+Port 1L3 on U_SOC must be connected but is floating
+Port 1L6 on U_SOC must be connected but is floating
+Port 1L7 on U_SOC must be connected but is floating
+Port 1L8 on U_SOC must be connected but is floating
+Port 1L9 on U_SOC must be connected but is floating
+Port 1L10 on U_SOC must be connected but is floating
+Port 1L11 on U_SOC must be connected but is floating
+Port 1L12 on U_SOC must be connected but is floating
+Port 1L13 on U_SOC must be connected but is floating
+Port 1L15 on U_SOC must be connected but is floating
+Port 1L19 on U_SOC must be connected but is floating
+Port 1L14 on U_SOC must be connected but is floating
+Port 1K2 on U_SOC must be connected but is floating
+Port 1K3 on U_SOC must be connected but is floating
+Port 1K4 on U_SOC must be connected but is floating
+Port 1K5 on U_SOC must be connected but is floating
+Port 1K6 on U_SOC must be connected but is floating
+Port 1K7 on U_SOC must be connected but is floating
+Port 1K8 on U_SOC must be connected but is floating
+Port 1K9 on U_SOC must be connected but is floating
+Port 1K10 on U_SOC must be connected but is floating
+Port 1K11 on U_SOC must be connected but is floating
+Port 1K12 on U_SOC must be connected but is floating
+Port 1K13 on U_SOC must be connected but is floating
+Port 1K14 on U_SOC must be connected but is floating
+Port 1K15 on U_SOC must be connected but is floating
+Port 1K16 on U_SOC must be connected but is floating
+Port 1K17 on U_SOC must be connected but is floating
+Port 1K18 on U_SOC must be connected but is floating
+Port 1M3 on U_SOC must be connected but is floating
+Port 1M4 on U_SOC must be connected but is floating
+Port 1M5 on U_SOC must be connected but is floating
+Port 1M6 on U_SOC must be connected but is floating
+Port 1M7 on U_SOC must be connected but is floating
+Port 1M8 on U_SOC must be connected but is floating
+Port 1M9 on U_SOC must be connected but is floating
+Port 1M10 on U_SOC must be connected but is floating
+Port 1M12 on U_SOC must be connected but is floating
+Port 1M13 on U_SOC must be connected but is floating
+Port 1M14 on U_SOC must be connected but is floating
+Port 1M15 on U_SOC must be connected but is floating
+Port 1M16 on U_SOC must be connected but is floating
+Port 1M17 on U_SOC must be connected but is floating
+Port 1M18 on U_SOC must be connected but is floating
+Port 1M20 on U_SOC must be connected but is floating
+Port 1U2 on U_SOC must be connected but is floating
+Port 1U12 on U_SOC must be connected but is floating
+Port 1U13 on U_SOC must be connected but is floating
+Port 1U15 on U_SOC must be connected but is floating
+Port 1U16 on U_SOC must be connected but is floating
+Port 1U17 on U_SOC must be connected but is floating
+Port 1V1 on U_SOC must be connected but is floating
+Port 1V4 on U_SOC must be connected but is floating
+Port 1V7 on U_SOC must be connected but is floating
+Port 1V12 on U_SOC must be connected but is floating
+Port 1V13 on U_SOC must be connected but is floating
+Port 1V18 on U_SOC must be connected but is floating
+Port 1M11 on U_SOC must be connected but is floating
+Port A1 on U_SOC must be connected but is floating
+Port A2 on U_SOC must be connected but is floating
+Port A38 on U_SOC must be connected but is floating
+Port B1 on U_SOC must be connected but is floating
+Port B2 on U_SOC must be connected but is floating
+Port B6 on U_SOC must be connected but is floating
+Port B11 on U_SOC must be connected but is floating
+Port B14 on U_SOC must be connected but is floating
+Port B18 on U_SOC must be connected but is floating
+Port B21 on U_SOC must be connected but is floating
+Port B28 on U_SOC must be connected but is floating
+Port B31 on U_SOC must be connected but is floating
+Port D2 on U_SOC must be connected but is floating
+Port E37 on U_SOC must be connected but is floating
+Port H37 on U_SOC must be connected but is floating
+Port J2 on U_SOC must be connected but is floating
+Port L2 on U_SOC must be connected but is floating
+Port L37 on U_SOC must be connected but is floating
+Port P37 on U_SOC must be connected but is floating
+Port U2 on U_SOC must be connected but is floating
+Port U37 on U_SOC must be connected but is floating
+Port W2 on U_SOC must be connected but is floating
+Port Y37 on U_SOC must be connected but is floating
+Port AA2 on U_SOC must be connected but is floating
+Port AC37 on U_SOC must be connected but is floating
+Port AD2 on U_SOC must be connected but is floating
+Port AE37 on U_SOC must be connected but is floating
+Port AH37 on U_SOC must be connected but is floating
+Port AL37 on U_SOC must be connected but is floating
+Port AP2 on U_SOC must be connected but is floating
+Port AP8 on U_SOC must be connected but is floating
+Port AP13 on U_SOC must be connected but is floating
+Port AP16 on U_SOC must be connected but is floating
+Port AP19 on U_SOC must be connected but is floating
+Port AP22 on U_SOC must be connected but is floating
+Port AP25 on U_SOC must be connected but is floating
+Port AP28 on U_SOC must be connected but is floating
+Port AP31 on U_SOC must be connected but is floating
+Port AP34 on U_SOC must be connected but is floating
+Port AP37 on U_SOC must be connected but is floating
+Port AR1 on U_SOC must be connected but is floating
+Port AR38 on U_SOC must be connected but is floating
+Port 1G3 on U_SOC must be connected but is floating
+Port 1G4 on U_SOC must be connected but is floating
+Port 1G5 on U_SOC must be connected but is floating
+Port 1G6 on U_SOC must be connected but is floating
+Port 1G7 on U_SOC must be connected but is floating
+Port 1G8 on U_SOC must be connected but is floating
+Port 1G9 on U_SOC must be connected but is floating
+Port 1G10 on U_SOC must be connected but is floating
+Port 1G11 on U_SOC must be connected but is floating
+Port 1G12 on U_SOC must be connected but is floating
+Port 1G13 on U_SOC must be connected but is floating
+Port 1G14 on U_SOC must be connected but is floating
+Port 1G15 on U_SOC must be connected but is floating
+Port 1G16 on U_SOC must be connected but is floating
+Port 1G17 on U_SOC must be connected but is floating
+Port 1G18 on U_SOC must be connected but is floating
+Port 1G19 on U_SOC must be connected but is floating
+Port 1G20 on U_SOC must be connected but is floating
+Port 1H1 on U_SOC must be connected but is floating
+Port 1H2 on U_SOC must be connected but is floating
+Port 1H4 on U_SOC must be connected but is floating
+Port 1H5 on U_SOC must be connected but is floating
+Port 1H6 on U_SOC must be connected but is floating
+Port 1H7 on U_SOC must be connected but is floating
+Port 1H8 on U_SOC must be connected but is floating
+Port 1H9 on U_SOC must be connected but is floating
+Port 1H10 on U_SOC must be connected but is floating
+Port 1H11 on U_SOC must be connected but is floating
+Port 1H13 on U_SOC must be connected but is floating
+Port 1H14 on U_SOC must be connected but is floating
+Port 1H15 on U_SOC must be connected but is floating
+Port 1H16 on U_SOC must be connected but is floating
+Port 1H17 on U_SOC must be connected but is floating
+Port 1H18 on U_SOC must be connected but is floating
+Port 1H12 on U_SOC must be connected but is floating
+Port 1J1 on U_SOC must be connected but is floating
+Port 1J2 on U_SOC must be connected but is floating
+Port 1J3 on U_SOC must be connected but is floating
+Port 1J4 on U_SOC must be connected but is floating
+Port 1J5 on U_SOC must be connected but is floating
+Port 1J6 on U_SOC must be connected but is floating
+Port 1J7 on U_SOC must be connected but is floating
+Port 1J8 on U_SOC must be connected but is floating
+Port 1J9 on U_SOC must be connected but is floating
+Port 1J10 on U_SOC must be connected but is floating
+Port 1J11 on U_SOC must be connected but is floating
+Port 1J12 on U_SOC must be connected but is floating
+Port 1J13 on U_SOC must be connected but is floating
+Port 1J14 on U_SOC must be connected but is floating
+Port 1J15 on U_SOC must be connected but is floating
+Port 1J16 on U_SOC must be connected but is floating
+Port 1J17 on U_SOC must be connected but is floating
+Port 1J18 on U_SOC must be connected but is floating
+Port 1N3 on U_SOC must be connected but is floating
+Port 1N4 on U_SOC must be connected but is floating
+Port 1N7 on U_SOC must be connected but is floating
+Port 1N9 on U_SOC must be connected but is floating
+Port 1N10 on U_SOC must be connected but is floating
+Port 1N11 on U_SOC must be connected but is floating
+Port 1N12 on U_SOC must be connected but is floating
+Port 1N13 on U_SOC must be connected but is floating
+Port 1N14 on U_SOC must be connected but is floating
+Port 1N16 on U_SOC must be connected but is floating
+Port 1N17 on U_SOC must be connected but is floating
+Port 1N18 on U_SOC must be connected but is floating
+Port 1P1 on U_SOC must be connected but is floating
+Port 1P5 on U_SOC must be connected but is floating
+Port 1P6 on U_SOC must be connected but is floating
+Port 1P7 on U_SOC must be connected but is floating
+Port 1P8 on U_SOC must be connected but is floating
+Port 1P9 on U_SOC must be connected but is floating
+Port 1P10 on U_SOC must be connected but is floating
+Port 1P11 on U_SOC must be connected but is floating
+Port 1P12 on U_SOC must be connected but is floating
+Port 1P13 on U_SOC must be connected but is floating
+Port 1P14 on U_SOC must be connected but is floating
+Port 1P15 on U_SOC must be connected but is floating
+Port 1P16 on U_SOC must be connected but is floating
+Port 1P17 on U_SOC must be connected but is floating
+Port 1R3 on U_SOC must be connected but is floating
+Port 1R4 on U_SOC must be connected but is floating
+Port 1R5 on U_SOC must be connected but is floating
+Port 1R6 on U_SOC must be connected but is floating
+Port 1R7 on U_SOC must be connected but is floating
+Port 1R8 on U_SOC must be connected but is floating
+Port 1R9 on U_SOC must be connected but is floating
+Port 1R10 on U_SOC must be connected but is floating
+Port 1R11 on U_SOC must be connected but is floating
+Port 1R12 on U_SOC must be connected but is floating
+Port 1R13 on U_SOC must be connected but is floating
+Port 1R14 on U_SOC must be connected but is floating
+Port 1R15 on U_SOC must be connected but is floating
+Port 1T3 on U_SOC must be connected but is floating
+Port 1T5 on U_SOC must be connected but is floating
+Port 1T7 on U_SOC must be connected but is floating
+Port 1T8 on U_SOC must be connected but is floating
+Port 1T9 on U_SOC must be connected but is floating
+Port 1T10 on U_SOC must be connected but is floating
+Port 1T11 on U_SOC must be connected but is floating
+Port 1T13 on U_SOC must be connected but is floating
+Port 1T14 on U_SOC must be connected but is floating
+Port 1T15 on U_SOC must be connected but is floating
+Port 1T16 on U_SOC must be connected but is floating
+Port 1T17 on U_SOC must be connected but is floating
+Port 1T12 on U_SOC must be connected but is floating
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C2943786.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C2912103.step
+Generating preview images...
+[experiments/rk3566-memory-hdi] Generating PCB PNG...
+[experiments/rk3566-memory-hdi] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

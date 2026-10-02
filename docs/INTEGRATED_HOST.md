@@ -1,21 +1,59 @@
-# Integrated Linux host requirement — 2026-10-02
+# Integrated AM3352 host — 2026-10-02
 
-The handheld must contain the Linux computer directly on its main PCB. The existing Revision B source and Gerbers use an external Raspberry Pi Zero 2 W through J_PI and a data pigtail; they do not meet this requirement. Their successful fabrication checks are not evidence that an integrated host has been designed or checked.
+The user selected **AM3352** and accepted CPU rendering for simple games. The computer must be built from individual chips on the handheld PCB. Both assembly sides and both outer routing layers are allowed. The required controls are eleven front buttons, no analog sticks and no rear buttons. The display needs an FPC connector, storage needs an onboard microSD holder, and a single USB-C connector must support charging and data/provisioning.
 
-The requested redesign retains top-only component assembly, eleven front buttons, no analog sticks or rear buttons, a display with a flexible-cable connector, a microSD holder on the main PCB, and one USB-C port for charging and data/provisioning. It must be authored in tscircuit with verified component footprints, phased autorouting and manual critical routes. New routing, shorts, independent manufacturing/connectivity checks and matching fabrication exports are required after the architecture changes.
+## Current parts
 
-## Exact Pi Zero 2 W silicon
+| Function | Part | JLCPCB part | Verified scope |
+|---|---|---|---|
+| Linux processor | AM3352BZCZ100, 1 GHz Cortex-A8, 324-ball ZCZ | C468247 | tsci import; all primary ball functions, 0.8 mm grid and 0.4 mm nominal lands checked |
+| RAM | MT41K256M16TW-107:P, 4 Gb x16 DDR3L, 96-ball TW | C253882 | tsci import; full primary ball map, 0.8 mm grid and 0.42 mm nominal lands checked |
+| PMIC source stage | TPS65217CRSLR | C116081 | Individual tsci import; generated rail/control netlist checked against TI; paste, thermal vias, routing and startup qualification pending |
+| microSD candidate | SOFNG TF-013 | C444917 | Existing individual import; actual geometry and switch behavior still need qualification |
 
-[Raspberry Pi's processor documentation](https://www.raspberrypi.com/documentation/computers/processors.html) identifies RP3A0 as a system-in-package containing BCM2710A1 silicon and 512 MB LPDDR2. The [published Zero 2 W schematic](https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-reduced-schematics.pdf) is reduced, rather than a complete design package. It does not supply the complete processor power/ground ball map, SD/USB host circuitry, RF design or all implementation constraints needed for a verified clone.
+The memory is **512 MB**, single rank, with A0–A14. AM3352 DDR_A15 is unused with this part. Micron documents DDR3L compatibility at VDD=VDDQ=1.5 V ±0.075 V; the AM3352 DDR domain must be powered separately from its other supplies. The selected DDR3L part's higher speed grade does not raise the AM3352 controller's supported limit.
 
-No standard bare-RP3A0 JLCPCB/LCSC part number or complete manufacturer implementation package has been verified in this investigation. This is an unresolved sourcing/documentation condition, not a claim that such a chip could never be used.
+Supplier libraries are component sources, not an implementation specification. Corrections are recorded with original and corrected import hashes in `lib/am3352/*-ball-map.json`. All 420 balls remain in the circuit and routing obstacle set. Numeric pin selectors avoid ambiguous RAM aliases such as ball A3 versus address A3.
 
-The primary author of the [RP3A0 reverse-engineering project](https://github.com/jonny12375/rp3a0) reports a booting bare-chip proof of concept and supplies reconstructed design information. Its documented assembly method harvests and reballs an RP3A0 from a donor Zero 2 W. That is an experimental donor-chip assembly path; it does not establish standard JLCPCB sourcing, equivalent Wi-Fi integration or fabrication readiness for this handheld. The author notes that their prototype has no Wi-Fi.
+## Native DDR bootstrap
 
-## Architecture decision
+Read [tscircuit's DDR routing guide](https://docs.tscircuit.com/guides/routing-ddr). The public `bus_lanes` preset creates local dogbones for direct pad connections, connects each bus without intermediate vias, includes planar fanout lengths in matching, and couples declared differential pairs. It requires compatible endpoint layers. When it cannot route, adjust package placement, fanout directions, layers and available corridor space; add explicit manual escapes when needed.
 
-Before creating processor symbols, BGA footprints or new production copper, resolve whether the exact bare RP3A0 is mandatory or a purchasable Linux/GPU processor directly on the main PCB is acceptable. A donor-chip design needs an explicit sourcing and qualified assembly plan, verified pin mapping, power sequencing and a hardware bring-up plan. A different processor needs its own verified datasheet, package drawing, RAM/PMIC selection, boot support and display/USB mapping; the existing Pi software and flashing instructions cannot automatically be reused.
+The isolated signal fixture is `experiments/am3352-ddr-clearance-bootstrap.circuit.tsx`. The default entry now points to `experiments/am3352-powered-host.circuit.tsx`, an unrouted power/DDR integration draft. Both have 49 DDR traces, byte0 and byte1 buses (11 signals each), a combined command/clock timing group (26 signals), and asynchronous reset. TI's 25 mil intra-byte/class and 5 mil differential planar skew limits are configured as 0.635 and 0.127 mm. The active trial requests a 0.12 mm differential gap; other trials use 0.127 mm. Both remain provisional until the exact stackup establishes the required impedance.
 
-[Compute Module Zero](https://www.raspberrypi.com/products/compute-module-zero/) is a documented RP3A0 option that solders directly onto a PCB using castellated pads. It remains a prebuilt module, so it must not be silently substituted for the requested chip-level integration. Its Lite variant exposes SDIO for a carrier microSD holder.
+The proposed eight-layer allocation is Top/local signal, L2/GND, L3/byte0, L4/GND, L5/command+clock, L6/DDR1V5, L7/byte1, and Bottom/general. It uses through-vias rather than HDI. No reference planes or powered nets are in the current signal-only fixture. All three signal regions need continuous adjacent references on the final board; verify plane transitions, decoupling and DDR keepout. TI requires no cuts in the relevant reference region and specified routing/impedance limits. Nominal geometry is not a stackup approval.
 
-No integrated-host footprint or pinout has been invented, and no integrated-host order bundle is being represented as complete.
+The current best diagnostic contains the exact native first-byte routes from attempt 10: **11/49 connected signals**, **22 full-depth vias**, **0 all-layer Gerber shorts**, **0 KiCad physical violations**, and passing first-byte/DQS0 planar skew. The other 38 signals are open. The native second-phase timeout remains in the diagnostic Circuit JSON. The 0.35/0.15 mm dogbone construction removed 31 drill-clearance errors seen with the original 0.30/0.15 mm vias; it is still an unqualified fabrication process. See `AM3352_DDR_ROUTING.md` and `checks/integrated/am3352-clearance-11-check-summary.json`.
+
+Attempt 19 also checks the first byte on the actual 142-component power/DDR placement: eleven connected DDR signals, twenty-two vias, zero Gerber shorts, zero KiCad copper/drill errors and passing byte0/DQS0 planar skew. It retains 402 silkscreen warnings and 499 unconnected host items, plus the failed byte1 phase. This is a partial integrated routing diagnostic; the source/netlist-only build has no copper. See `checks/integrated/am3352-host-byte0-19-check-summary.json`.
+
+## PMIC investigation
+
+TI's TPS65217C sequencing guide specifically addresses AM335x ZCZ. Default rails are DCDC1=1.5 V for DDR, DCDC2=1.1 V for MPU, DCDC3=1.1 V for core, LDO1=1.8 V for VDDS/RTC, LDO3/LS1=1.8 V for PLL/analog/SRAM and LDO4/LS2=3.3 V for appropriate high-voltage I/O/USB analog domains. The default MPU voltage does not qualify 1 GHz operation; firmware must select a supported voltage/OPP. Every CPU domain and decoupling requirement needs its own verified connection.
+
+PGOOD drives CPU PWRONRSTn, LDO_PGOOD drives RTC_PWRONRSTn and PMIC_PWR_EN controls PWR_EN. PMIC nRESET is a shutdown input, not a CPU reset output. INT_LDO and BYPASS are internal bias nodes and cannot power external loads. The C variant does not support RTC-only mode. Its integrated charger is limited to 700 mA, and the three bucks to 1.2 A each; the complete handheld power and thermal budget remains to be calculated.
+
+The new source draft wires 73 CPU supply terminals, 43 CPU grounds, every RAM power/ground/reference/calibration terminal, PMIC buck stages and reset/enable/I2C. It includes 98 CPU/RAM decouplers, including 20 CPU and 12 RAM 0402 DDR capacitors on the bottom side and two bulk capacitors per package. An actual generated-netlist audit checks these connections, nominal counts, internal-output isolation and nearby terminal distances. All power copper is still absent. VPP is explicitly NC for functional GP operation, following TI's AM3352-specific guidance.
+
+HV1–3 are assigned to 1.8 V for unused GPMC interfaces; HV4–6 remain at 3.3 V for LCD/MMC/control interfaces. Conservative CPU-only rail totals are 55 mA on LDO1, 265 mA on LDO3 and 280 mA on LDO4. Memory, SD, display, audio, controls, transients and losses are not yet a complete load budget. Storage requires a separate supply. PMIC VIO follows the AM335x diagram's 1.8 V to preserve RTC reset levels; I2C pull-ups use HV6's 3.3 V.
+
+A TPS61023 5 V boost supplements VINLDO and LS2_IN to preserve LDO headroom on battery. Its source-stage inductor/divider/capacitors are present; startup, tolerance, feedback stability, USB input limit, battery discharge protection, switching layout and thermal performance remain unqualified. Present testpoint input pads are placeholders for the qualified USB-C and protected battery/NTC connections. The power button is present; game controls are not yet integrated. See `checks/integrated/am3352-power-validation.json`.
+
+## Shared USB-C and Linux provisioning
+
+AM3352 provides USB2.0 interfaces and a boot ROM; one USB-C connector can carry USB0 data and input power for a charger/power path. The circuit needs correct CC sink termination, VBUS sensing, ESD protection, differential routing, battery protection and control of reverse current. Charger/PMIC choice and integration remain unfinished.
+
+An onboard microSD socket is required. A USB-loaded installer or a running Linux USB gadget can write that storage, but boot ROM support alone does not implement an SD installer. The boot straps, reset/recovery control, compatible SPL/U-Boot DDR configuration, installer and Linux device tree must be designed and tested for this board. Historical Pi/Rockchip flashing commands do not apply.
+
+## Release state
+
+`design-status.json` has `fabricationReady: false`. The power/DDR source draft has no completed copper or reference planes and still omits clock termination, oscillator/boot straps, storage, USB data connector, FPC display, game controls and audio. PMIC sequencing is wired logically but has not been tested. It cannot boot Linux. The next release evidence is the complete powered circuit, fully routed copper, all-layer Gerber shorts, independent connectivity/DRC, stackup-aware DDR/USB qualification, matching Gerbers/drills/BOM/CPL and tested bring-up/provisioning instructions.
+
+Historical RK3566 experiments are retained in `RK3566_HOST_RECORD.md` and `RK3566_MEMORY_EXPERIMENTS.md`. Their partial-route passes are not AM3352 evidence. Revision B is an external Pi carrier and its order files do not satisfy this integrated architecture.
+
+## Primary sources
+
+- [TI AM3352 product](https://www.ti.com/product/AM3352) and [SPRS717L datasheet](https://www.ti.com/lit/ds/symlink/am3352.pdf): ZCZ functions pp15–17, DDR3 routing pp170–188, ZCZ lands p261.
+- [Micron selected-part datasheet](https://www.lcsc.com/datasheet/C253882.pdf): 4Gb_DDR3L Rev Q 12/17, voltage p1, x16 map p17, TW package p27.
+- [tscircuit DDR guide](https://docs.tscircuit.com/guides/routing-ddr): native `bus_lanes`, fanouts, timing groups and verification.
+- [TI TPS65217 datasheet](https://www.ti.com/lit/ds/symlink/tps65217.pdf), SLVSB64I, and [AM335x sequencing guide](https://www.ti.com/lit/ug/slvu551i/slvu551i.pdf), SLVU551I: candidate rails, reset connections, variant and charger limits. Full circuit and thermal qualification pending.

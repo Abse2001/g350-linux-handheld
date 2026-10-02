@@ -1,0 +1,879 @@
+Uploading package archive...
+Archive upload failed, falling back to file-by-file upload: TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/upload_archive
+  LICENSE - failed
+  README.md - failed
+  bun.lock - failed
+  checks/integrated/am3352-11-check-summary.json - failed
+  checks/integrated/am3352-byte1-11-check-summary.json - failed
+  checks/integrated/am3352-byte1-11-connectivity.json - failed
+  checks/integrated/am3352-byte1-11-diagnostic-export.json - failed
+  checks/integrated/am3352-byte1-11-kicad-drc.json - failed
+  checks/integrated/am3352-byte1-11-shorts.log - failed
+  checks/integrated/am3352-clearance-11-check-summary.json - failed
+  checks/integrated/am3352-clearance-11-connectivity.json - failed
+  checks/integrated/am3352-clearance-11-diagnostic-export.json - failed
+  checks/integrated/am3352-clearance-11-kicad-drc.json - failed
+  checks/integrated/am3352-clearance-11-shorts.log - failed
+  checks/integrated/am3352-host-byte0-19-check-summary.json - failed
+  checks/integrated/am3352-host-byte0-19-connectivity.json - failed
+  checks/integrated/am3352-host-byte0-19-diagnostic-export.json - failed
+  checks/integrated/am3352-host-byte0-19-kicad-drc.json - failed
+  checks/integrated/am3352-host-byte0-19-shorts.log - failed
+  checks/integrated/am3352-import-validation.json - failed
+  checks/integrated/am3352-latest-package-versions.jsonl - failed
+  checks/integrated/am3352-native-dogbone-bootstrap.json - failed
+  checks/integrated/am3352-power-part-imports.json - failed
+  checks/integrated/am3352-power-validation.json - failed
+  checks/integrated/am3352-swizzle-validation.json - failed
+  checks/integrated/hdi-38-check-summary.json - failed
+  checks/integrated/import-validation.json - failed
+  checks/integrated/manual-escape-clearance.json - failed
+  checks/integrated/memory-36-check-summary.json - failed
+  checks/integrated/memory-36-diagnostic-export.json - failed
+  checks/integrated/memory-36-kicad-drc.json - failed
+  checks/integrated/memory-36-shorts.log - failed
+  checks/integrated/memory-43-check-summary.json - failed
+  checks/integrated/memory-43-connectivity.json - failed
+  checks/integrated/memory-43-diagnostic-export.json - failed
+  checks/integrated/memory-43-kicad-drc.json - failed
+  checks/integrated/memory-43-phase-validation.json - failed
+  checks/integrated/memory-43-shorts.log - failed
+  checks/integrated/phase-via-validation.json - failed
+  checks/integrated/thin-hdi-34-check-summary.json - failed
+  design-status.json - failed
+  docs/AM3352_DDR_ROUTING.md - failed
+  docs/INTEGRATED_HOST.md - failed
+  docs/REV_B_CARRIER.md - failed
+  docs/RK3566_HOST_RECORD.md - failed
+  docs/RK3566_MEMORY_EXPERIMENTS.md - failed
+  experiments/am3352-ddr-bootstrap.circuit.tsx - failed
+  experiments/am3352-ddr-byte-swapped.circuit.tsx - failed
+  experiments/am3352-ddr-byte1-first.circuit.tsx - failed
+  experiments/am3352-ddr-byte1-swizzled.circuit.tsx - failed
+  experiments/am3352-ddr-clearance-bootstrap.circuit.tsx - failed
+  experiments/am3352-ddr-coordinated-bootstrap.circuit.tsx - failed
+  experiments/am3352-ddr-coordinated-bytes.circuit.tsx - failed
+  experiments/am3352-ddr-native-escapes.circuit.tsx - failed
+  experiments/am3352-ddr-ordered-fanouts.circuit.tsx - failed
+  experiments/am3352-ddr-swizzled.circuit.tsx - failed
+  experiments/am3352-powered-host.circuit.tsx - failed
+  experiments/rk3566-ddr-bootstrap.circuit.tsx - failed
+  experiments/rk3566-memory-hdi.circuit.tsx - failed
+  experiments/rk3566-memory-thin-hdi.circuit.tsx - failed
+  experiments/rk3566-memory-vip.circuit.tsx - failed
+  experiments/rk3566-memory.circuit.tsx - failed
+  fabrication/STATUS.md - failed
+  images/am3352-host-byte0-native-diagnostic.png - failed
+  images/am3352-memory-11.png - failed
+  images/am3352-memory-clearance-11.png - failed
+  images/am3352-power-source-draft.png - failed
+  images/pcb-rev-b.png - failed
+  images/rk3566-memory-36.png - failed
+  images/rk3566-memory-37.png - failed
+  images/rk3566-memory-42.png - failed
+  images/rk3566-memory-43.png - failed
+  images/rk3566-memory-hdi-36.png - failed
+  images/rk3566-memory-hdi-38.png - failed
+  images/rk3566-memory-partial.png - failed
+  images/rk3566-memory-repaired.png - failed
+  images/schematic-rev-b.png - failed
+  imports/AM3352BZCZ100.tsx - failed
+  imports/AP2112K_3_3TRG1.tsx - failed
+  imports/A_0402WGF1002TCE.tsx - failed
+  imports/A_0402WGF1003TCE.tsx - failed
+  imports/A_0402WGF4701TCE.tsx - failed
+  imports/A_0603WAF3301T5E.tsx - failed
+  imports/A_0603WAF6802T5E.tsx - failed
+  imports/A_0603WAF7323T5E.tsx - failed
+  imports/BQ24074RGTR.tsx - failed
+  imports/CC0603KRX7R9BB104.tsx - failed
+  imports/CL05A105KA5NQNC.tsx - failed
+  imports/CL05B103KB5NNNC.tsx - failed
+  imports/CL05B104KO5NNNC.tsx - failed
+  imports/CL10A225KP8NNNC.tsx - failed
+  imports/CL10A475KO8NNNC.tsx - failed
+  imports/CL10B221KB8NNNC.tsx - failed
+  imports/CL31A226KAHNNNE.tsx - failed
+  imports/FPC_05F_18PH20.tsx - failed
+  imports/H9HCNNN8KUMLHR_NME.tsx - failed
+  imports/MAX17048G_T10.tsx - failed
+  imports/MAX98357AETE_T.tsx - failed
+  imports/MCP23017_E_SO.tsx - failed
+  imports/MT41K256M16TW_107_P.tsx - failed
+  imports/RC0402FR_07240RL.tsx - failed
+  imports/RC0402FR_0749R9L.tsx - failed
+  imports/RK3566.tsx - failed
+  imports/RK817_5.tsx - failed
+  imports/RK860_0.tsx - failed
+  imports/SX32Y024000BC1T.tsx - failed
+  imports/TF_013.tsx - failed
+  imports/TPS61023DRLR.tsx - failed
+  imports/TPS65217CRSLR.tsx - failed
+  imports/TS_1187A_B_A_B.tsx - failed
+  imports/TYPE_C_31_M_12.tsx - failed
+  imports/USBLC6_2SC6/USBLC6_2SC6.obj - failed
+  imports/USBLC6_2SC6/USBLC6_2SC6.step - failed
+  imports/USBLC6_2SC6/USBLC6_2SC6.step.gz - failed
+  imports/USBLC6_2SC6/USBLC6_2SC6.step.sha256 - failed
+  imports/USBLC6_2SC6/USBLC6_2SC6.tsx - failed
+  imports/WPN252012E1R0MT.tsx - failed
+  imports/XFL4020_222MEC.tsx - failed
+  index.circuit.tsx - failed
+  lib/Audio.tsx - failed
+  lib/Connections.tsx - failed
+  lib/ConservativeTraceObstacles.ts - failed
+  lib/ControlEscapes.tsx - failed
+  lib/Display.tsx - failed
+  lib/PhasedAutorouter.ts - failed
+  lib/PiZero2W.tsx - failed
+  lib/Power.tsx - failed
+  lib/SavedRouting.ts - failed
+  lib/ThroughSignalVia.ts - failed
+  lib/UsbData.tsx - failed
+  lib/am3352/DdrConstraints.tsx - failed
+  lib/am3352/ManualEscapes.ts - failed
+  lib/am3352/NativeEscapes.ts - failed
+  lib/am3352/Power.tsx - failed
+  lib/am3352/PowerNetworks.ts - failed
+  lib/am3352/cpu-ball-map.json - failed
+  lib/am3352/memory-byte-swapped-connections.json - failed
+  lib/am3352/memory-byte1-swizzled-connections.json - failed
+  lib/am3352/memory-connections.json - failed
+  lib/am3352/memory-swizzled-connections.json - failed
+  lib/am3352/native-coordinated-dogbones.json - failed
+  lib/am3352/ram-ball-map.json - failed
+  lib/integrated/DdrRoutingGroups.ts - failed
+  lib/integrated/GridHdiCandidate.ts - failed
+  lib/integrated/GridMemoryCandidate.ts - failed
+  lib/integrated/GridMemoryViaCandidate.ts - failed
+  lib/integrated/H9HCNNN8KUMLHR_NME-pad-centres.json - failed
+  lib/integrated/ManualOuterMemoryRouting.ts - failed
+  lib/integrated/MemoryRoutingIdentity.ts - failed
+  lib/integrated/PhasedMemoryAutorouter.ts - failed
+  lib/integrated/RK3566-pad-centres.json - failed
+  lib/integrated/SavedMemoryRouting.ts - failed
+  lib/integrated/auditMemoryThroughVias.ts - failed
+  lib/integrated/auditMemoryWires.ts - failed
+  lib/integrated/hdi/HdiGeometry.ts - failed
+  lib/integrated/hdi/HdiMemoryAutorouter.ts - failed
+  lib/integrated/hdi/HdiProcess.ts - failed
+  lib/integrated/hdi/RepairHdiVias.ts - failed
+  lib/integrated/hdi/RepairHdiWires.ts - failed
+  lib/integrated/hdi/SavedHdiMemoryRouting.ts - failed
+  lib/integrated/host-power-inventory.json - failed
+  lib/integrated/hynix-ball-map.json - failed
+  lib/integrated/memory-connections.json - failed
+  lib/integrated/repairMemoryViaSites.ts - failed
+  lib/integrated/rk3566-ball-map.json - failed
+  lib/integrated/rk817-pin-map.json - failed
+  package-lock.json - failed
+  package.json - failed
+  registry-source-manifest.json - failed
+  rev-b.circuit.tsx - failed
+  routing/README.txt - failed
+  routing/am3352-11-memory-map.json - failed
+  routing/am3352-byte0-native-diagnostic.circuit.json - failed
+  routing/am3352-byte1-native-diagnostic.circuit.json - failed
+  routing/am3352-host-byte0-native-diagnostic.circuit.json - failed
+  routing/initial-autorouter-run.log - failed
+  routing/rev-b-routes.json - failed
+  routing/rk3566-manual-outer-routes.json - failed
+  routing/rk3566-memory-hdi-routes.json - failed
+  routing/rk3566-memory-routes.json - failed
+  scripts/assembly.mjs - failed
+  scripts/bootstrap-am3352-native-dogbones.mjs - failed
+  scripts/capture-memory-phases.mjs - failed
+  scripts/check-am3352-imports.mjs - failed
+  scripts/check-am3352-power.mjs - failed
+  scripts/check-am3352-routing.mjs - failed
+  scripts/check-am3352-swizzle.mjs - failed
+  scripts/check-hdi-memory-geometry.mjs - failed
+  scripts/check-integrated-imports.mjs - failed
+  scripts/check-kicad.mjs - failed
+  scripts/check-memory-escapes.mjs - failed
+  scripts/check-memory-phase-vias.mjs - failed
+  scripts/check-memory-routing.mjs - failed
+  scripts/compact-circuit.mjs - failed
+  scripts/export-am3352-diagnostic.mjs - failed
+  scripts/export-fabrication.mjs - failed
+  scripts/export-hdi-memory-diagnostic.mjs - failed
+  scripts/export-memory-diagnostic.mjs - failed
+  scripts/fabrication.mjs - failed
+  scripts/inventory-host-power.mjs - failed
+  scripts/normalize-am3352-imports.mjs - failed
+  scripts/plan-memory-detours.mjs - failed
+  scripts/prepare-am3352-kicad.mjs - failed
+  scripts/prepare-hdi-memory-kicad.mjs - failed
+  scripts/prepare-kicad-library.py - failed
+  scripts/prepare-kicad.mjs - failed
+  scripts/prepare-memory-kicad.mjs - failed
+  scripts/restore-3d-models.mjs - failed
+  scripts/stage-registry-source.mjs - failed
+  scripts/verify-gerber-coordinates.mjs - failed
+  scripts/verify-registry-source.mjs - failed
+  software/asound.conf - failed
+  software/g350-input.service - failed
+  software/g350-usb-gadget.service - failed
+  software/g350-usb-power.service - failed
+  software/handheld.py - failed
+  software/requirements.txt - failed
+  software/usb-gadget.sh - failed
+  software/usb_power.py - failed
+  tsconfig.json - failed
+
+
+Upload Summary
+  Succeeded: 0 files
+  Failed: 220 files
+    - LICENSE
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - README.md
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - bun.lock
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-11-check-summary.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-byte1-11-check-summary.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-byte1-11-connectivity.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-byte1-11-diagnostic-export.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-byte1-11-kicad-drc.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-byte1-11-shorts.log
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-clearance-11-check-summary.json
+      TimeoutError: Request timed out: POST https://registry-api.tscircuit.com/package_files/create
+    - checks/integrated/am3352-clearance-11-connectivity.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-clearance-11-diagnostic-export.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-clearance-11-kicad-drc.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-clearance-11-shorts.log
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-host-byte0-19-check-summary.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-host-byte0-19-connectivity.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-host-byte0-19-diagnostic-export.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-host-byte0-19-kicad-drc.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-host-byte0-19-shorts.log
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-import-validation.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-latest-package-versions.jsonl
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-native-dogbone-bootstrap.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-power-part-imports.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-power-validation.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/am3352-swizzle-validation.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/hdi-38-check-summary.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/import-validation.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/manual-escape-clearance.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-36-check-summary.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-36-diagnostic-export.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-36-kicad-drc.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-36-shorts.log
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-43-check-summary.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-43-connectivity.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-43-diagnostic-export.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-43-kicad-drc.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-43-phase-validation.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/memory-43-shorts.log
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/phase-via-validation.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - checks/integrated/thin-hdi-34-check-summary.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - design-status.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - docs/AM3352_DDR_ROUTING.md
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - docs/INTEGRATED_HOST.md
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - docs/REV_B_CARRIER.md
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - docs/RK3566_HOST_RECORD.md
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - docs/RK3566_MEMORY_EXPERIMENTS.md
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-bootstrap.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-byte-swapped.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-byte1-first.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-byte1-swizzled.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-clearance-bootstrap.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-coordinated-bootstrap.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-coordinated-bytes.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-native-escapes.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-ordered-fanouts.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-ddr-swizzled.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/am3352-powered-host.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/rk3566-ddr-bootstrap.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/rk3566-memory-hdi.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/rk3566-memory-thin-hdi.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/rk3566-memory-vip.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - experiments/rk3566-memory.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - fabrication/STATUS.md
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/am3352-host-byte0-native-diagnostic.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/am3352-memory-11.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/am3352-memory-clearance-11.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/am3352-power-source-draft.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/pcb-rev-b.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-36.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-37.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-42.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-43.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-hdi-36.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-hdi-38.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-partial.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/rk3566-memory-repaired.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - images/schematic-rev-b.png
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/AM3352BZCZ100.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/AP2112K_3_3TRG1.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/A_0402WGF1002TCE.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/A_0402WGF1003TCE.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/A_0402WGF4701TCE.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/A_0603WAF3301T5E.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/A_0603WAF6802T5E.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/A_0603WAF7323T5E.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/BQ24074RGTR.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CC0603KRX7R9BB104.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL05A105KA5NQNC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL05B103KB5NNNC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL05B104KO5NNNC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL10A225KP8NNNC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL10A475KO8NNNC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL10B221KB8NNNC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/CL31A226KAHNNNE.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/FPC_05F_18PH20.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/H9HCNNN8KUMLHR_NME.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/MAX17048G_T10.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/MAX98357AETE_T.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/MCP23017_E_SO.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/MT41K256M16TW_107_P.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/RC0402FR_07240RL.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/RC0402FR_0749R9L.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/RK3566.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/RK817_5.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/RK860_0.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/SX32Y024000BC1T.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/TF_013.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/TPS61023DRLR.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/TPS65217CRSLR.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/TS_1187A_B_A_B.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/TYPE_C_31_M_12.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/USBLC6_2SC6/USBLC6_2SC6.obj
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/USBLC6_2SC6/USBLC6_2SC6.step
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/USBLC6_2SC6/USBLC6_2SC6.step.gz
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/USBLC6_2SC6/USBLC6_2SC6.step.sha256
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/USBLC6_2SC6/USBLC6_2SC6.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/WPN252012E1R0MT.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - imports/XFL4020_222MEC.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - index.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/Audio.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/Connections.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/ConservativeTraceObstacles.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/ControlEscapes.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/Display.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/PhasedAutorouter.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/PiZero2W.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/Power.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/SavedRouting.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/ThroughSignalVia.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/UsbData.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/DdrConstraints.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/ManualEscapes.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/NativeEscapes.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/Power.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/PowerNetworks.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/cpu-ball-map.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/memory-byte-swapped-connections.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/memory-byte1-swizzled-connections.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/memory-connections.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/memory-swizzled-connections.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/native-coordinated-dogbones.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/am3352/ram-ball-map.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/DdrRoutingGroups.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/GridHdiCandidate.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/GridMemoryCandidate.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/GridMemoryViaCandidate.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/H9HCNNN8KUMLHR_NME-pad-centres.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/ManualOuterMemoryRouting.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/MemoryRoutingIdentity.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/PhasedMemoryAutorouter.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/RK3566-pad-centres.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/SavedMemoryRouting.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/auditMemoryThroughVias.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/auditMemoryWires.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hdi/HdiGeometry.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hdi/HdiMemoryAutorouter.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hdi/HdiProcess.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hdi/RepairHdiVias.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hdi/RepairHdiWires.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hdi/SavedHdiMemoryRouting.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/host-power-inventory.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/hynix-ball-map.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/memory-connections.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/repairMemoryViaSites.ts
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/rk3566-ball-map.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - lib/integrated/rk817-pin-map.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - package-lock.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - package.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - registry-source-manifest.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - rev-b.circuit.tsx
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/README.txt
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/am3352-11-memory-map.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/am3352-byte0-native-diagnostic.circuit.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/am3352-byte1-native-diagnostic.circuit.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/am3352-host-byte0-native-diagnostic.circuit.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/initial-autorouter-run.log
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/rev-b-routes.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/rk3566-manual-outer-routes.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/rk3566-memory-hdi-routes.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - routing/rk3566-memory-routes.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/assembly.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/bootstrap-am3352-native-dogbones.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/capture-memory-phases.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-am3352-imports.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-am3352-power.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-am3352-routing.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-am3352-swizzle.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-hdi-memory-geometry.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-integrated-imports.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-kicad.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-memory-escapes.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-memory-phase-vias.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/check-memory-routing.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/compact-circuit.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/export-am3352-diagnostic.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/export-fabrication.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/export-hdi-memory-diagnostic.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/export-memory-diagnostic.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/fabrication.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/inventory-host-power.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/normalize-am3352-imports.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/plan-memory-detours.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/prepare-am3352-kicad.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/prepare-hdi-memory-kicad.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/prepare-kicad-library.py
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/prepare-kicad.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/prepare-memory-kicad.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/restore-3d-models.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/stage-registry-source.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/verify-gerber-coordinates.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - scripts/verify-registry-source.mjs
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/asound.conf
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/g350-input.service
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/g350-usb-gadget.service
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/g350-usb-power.service
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/handheld.py
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/requirements.txt
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/usb-gadget.sh
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - software/usb_power.py
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+    - tsconfig.json
+      Error: FAIL [500]: POST /package_files/create
+internal_server_error: duplicate key value violates unique constraint "package_release_filepath_pkey"
+
+Publish completed with 220 failed upload(s)
