@@ -2,64 +2,67 @@ trace: `key` is not a prop. Trying to access it will result in `undefined` being
 placement summary: no placement issues
 
 board top-layer utilization:
-- occupied: 6.136% (654.354mm^2 of 10664mm^2)
+- occupied: 5.277% (654.354mm^2 of 12400mm^2)
 - empty spaces over 5% of board area:
-  - 34.242% (3651.598mm^2); bounds=(minX=-43mm, maxX=3.72mm, minY=-16.159mm, maxY=62mm)
-  - 7.043% (751.116mm^2); bounds=(minX=34.48mm, maxX=43mm, minY=-26.159mm, maxY=62mm)
+  - 34.176% (4237.792mm^2); bounds=(minX=-50mm, maxX=4.22mm, minY=-16.159mm, maxY=62mm)
+  - 12.245% (1518.355mm^2); bounds=(minX=37.755mm, maxX=50mm, minY=-62mm, maxY=62mm)
 
 board-edge status:
-- J_PI: 17.97mm inside left edge
-- U_AUDIO: 24.2mm inside right edge
-- C_AUDIO_HF: 20.775mm inside right edge
-- C_AUDIO_BULK: 20.575mm inside right edge
-- R_AUDIO_EN: 22.775mm inside right edge
-- R_AUDIO_PD: 26.775mm inside right edge
-- J_SPEAKER: 22.98mm inside right edge
+- J_PI: 24.83mm inside bottom edge
+- U_AUDIO: 31.2mm inside right edge
+- C_AUDIO_HF: 28.125mm inside right edge
+- C_AUDIO_BULK: 27.575mm inside right edge
+- R_AUDIO_EN: 29.775mm inside right edge
+- R_AUDIO_PD: 33.775mm inside right edge
+- J_SPEAKER: 29.98mm inside right edge
 - J_USB: 1.726mm inside bottom edge
 - U_CHARGE: 18.075mm inside bottom edge
-- J_BAT: 7.25mm inside right edge
+- J_BAT: 14.25mm inside right edge
 - U_BOOST: 12.35mm inside bottom edge
 - L_BOOST: 11.9mm inside bottom edge
-- J_OFF: 6.98mm inside right edge
+- J_OFF: 13.98mm inside right edge
 - R_CC1: 10.525mm inside bottom edge
 - R_CC2: 10.525mm inside bottom edge
 - R_ISET: 21.525mm inside bottom edge
-- R_ILIM: 17.775mm inside right edge
+- R_ILIM: 18.525mm inside bottom edge
 - R_TIMER: 14.525mm inside bottom edge
 - R_EN: 8.525mm inside bottom edge
-- R_FB_HI: 13.525mm inside bottom edge
+- R_FB_HI: 14.525mm inside bottom edge
 - R_FB_LO: 16.525mm inside bottom edge
-- R_CHG_PULL: 16.775mm inside right edge
-- R_GOOD_PULL: 16.775mm inside right edge
-- R_ALERT_PULL: 8.775mm inside right edge
-- C_USB: 14.525mm inside bottom edge
-- C_BAT: 18.8mm inside bottom edge
-- C_SYS: 18.575mm inside right edge
-- C_BOOST_IN: 8.3mm inside bottom edge
-- C_BOOST_OUT1: 15.125mm inside bottom edge
+- R_CHG_PULL: 23.775mm inside right edge
+- R_GOOD_PULL: 23.775mm inside right edge
+- R_ALERT_PULL: 15.775mm inside right edge
+- C_USB: 16.425mm inside bottom edge
+- C_BAT: 19.3mm inside bottom edge
+- C_SYS: 19.4mm inside bottom edge
+- C_BOOST_IN: 11.8mm inside bottom edge
+- C_BOOST_OUT1: 14.875mm inside bottom edge
 - C_BOOST_OUT2: 18.125mm inside bottom edge
 - C_FEEDFORWARD: 11.525mm inside bottom edge
-- C_GAUGE: 9.775mm inside right edge
-- U_GAUGE: 10.11mm inside right edge
-- J_LCD: 6.25mm inside left edge
-- U_KEYS: 34.445mm inside left edge
-- R_RESET: 35.775mm inside right edge
-- C_KEYS: 39.775mm inside right edge
-- C_KEYS_BULK: 34.575mm inside right edge
-- SW_UP: 15.5mm inside left edge
-- SW_DOWN: 15.5mm inside left edge
-- SW_LEFT: 5.5mm inside left edge
-- SW_RIGHT: 25.5mm inside left edge
-- SW_A: 5.5mm inside right edge
-- SW_B: 15.5mm inside right edge
-- SW_X: 15.5mm inside right edge
-- SW_Y: 25.5mm inside right edge
+- C_GAUGE: 18.775mm inside right edge
+- U_GAUGE: 17.11mm inside right edge
+- J_LCD: 10.775mm inside left edge
+- U_LCD_PWR: 13.739mm inside left edge
+- C_LCD_IN: 9.775mm inside left edge
+- C_LCD_OUT: 9.775mm inside left edge
+- U_KEYS: 41.445mm inside left edge
+- R_RESET: 42.775mm inside right edge
+- C_KEYS: 46.025mm inside top edge
+- C_KEYS_BULK: 41.575mm inside right edge
+- SW_UP: 22.5mm inside left edge
+- SW_DOWN: 20.775mm inside top edge
+- SW_LEFT: 12.5mm inside left edge
+- SW_RIGHT: 30.775mm inside top edge
+- SW_A: 12.5mm inside right edge
+- SW_B: 20.775mm inside top edge
+- SW_X: 22.5mm inside right edge
+- SW_Y: 30.775mm inside top edge
 - SW_SELECT: 7.775mm inside top edge
 - SW_START: 7.775mm inside top edge
 - SW_MENU: 17.775mm inside top edge
-- TP_GND: 14.625mm inside bottom edge
-- TP_5V: 14.625mm inside bottom edge
-- TP_3V3: 14.625mm inside bottom edge
+- TP_GND: 14.25mm inside bottom edge
+- TP_5V: 14.25mm inside bottom edge
+- TP_3V3: 14.25mm inside bottom edge
 
 placement drc:
 Errors: 0

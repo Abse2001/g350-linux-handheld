@@ -48,7 +48,8 @@ function explicitSegmentWidths(traces: NonNullable<SimpleRouteJson["traces"]>) {
   })
 }
 
-// Keep signals on the outer layers and reserve both inner layers for ground.
+// Keep autorouted signals on the outer layers. Manual display paths use the
+// inner layers, where ground pours retain the surrounding return copper.
 // This also makes every autorouted transition a standard full-depth via.
 // Through-hole terminals are accessible on either outer layer; the generated
 // input otherwise fixes them to the port's display layer unnecessarily.
@@ -73,6 +74,9 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   const ampEnablePortId=input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name==="J8_37")
     ?.circuitJsonMetadata?.pcb_port_id
   if (!ampEnablePortId) throw new Error("Review the manual amplifier GPIO enable feed")
+  const lcdInnerSignalPortIds=new Set(input.obstacles.filter(o=>["J8_15","J8_19","J8_21","J8_23"].includes(o.circuitJsonMetadata?.source_port_name??""))
+    .map(o=>o.circuitJsonMetadata?.pcb_port_id))
+  if(lcdInnerSignalPortIds.size!==4) throw new Error("Review the manual inner-layer display signals")
   const lcdSelectPortId=input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name==="J8_24")
     ?.circuitJsonMetadata?.pcb_port_id
   if (!lcdSelectPortId) throw new Error("Review the manual LCD chip-select escape")
@@ -188,15 +192,21 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
     defaultObstacleMargin:0.25,minTraceToPadEdgeClearance:0.25,
     minTraceToHoleEdgeClearance:0.8,
     minViaEdgeToPadEdgeClearance:0.35,minViaHoleEdgeToViaHoleEdgeClearance:0.7,minPlatedHoleDrillEdgeToDrillEdgeClearance:0.5,
-    obstacles:[...input.obstacles,...fixedCopper(previous)].map(o=>({...o,layers:o.layers.filter(l=>layers.includes(l))}))
-      .filter(o=>o.layers.length),
+    obstacles:[...input.obstacles,...fixedCopper(previous)].map(o=>{
+      const outerLayers=o.layers.filter(l=>layers.includes(l))
+      // A through-via must clear inner display copper as well. Conservatively
+      // project inner-only obstacles to both routing layers so the outer-layer
+      // solver cannot place a via through those paths.
+      return {...o,layers:outerLayers.length?outerLayers:
+        o.layers.some(l=>l.startsWith("inner"))?layers:[]}
+    }).filter(o=>o.layers.length),
     connections:input.connections.filter(c=>(!groundAsPlane||!["source_net_0","source_net_1"].includes(c.name)) &&
       // The complete local feedback net has actual manual traces.
       !c.pointsToConnect.some(p=>p.pcb_port_id === feedbackPortId || p.pcb_port_id === lrclkPortId ||
         p.pcb_port_id === bclkPortId || p.pcb_port_id === dinPortId ||
         p.pcb_port_id === audioModePortId ||
         p.pcb_port_id === ampEnablePortId ||
-        p.pcb_port_id === lcdSelectPortId ||
+        p.pcb_port_id === lcdSelectPortId || lcdInnerSignalPortIds.has(p.pcb_port_id) ||
         (groundAsPlane && p.pcb_port_id === boostVinPortId) ||
         p.pcb_port_id === keysResetPortId ||
         p.pcb_port_id === lcdOutPortId || p.pcb_port_id === pgoodPortId || p.pcb_port_id === thermistorPortId ||

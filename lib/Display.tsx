@@ -1,4 +1,5 @@
 import { Fragment } from "react"
+import "./ThroughSignalVia"
 import { FPC_05F_18PH20 } from "../imports/FPC_05F_18PH20"
 import { AP2112K_3_3TRG1 } from "../imports/AP2112K_3_3TRG1"
 import { Connections } from "./Connections"
@@ -21,6 +22,28 @@ export function Display() {
       pin9:"net.LCD_CS",pin10:"net.V_LCD3V3",pin13:"net.SCL",
       pin14:"net.SDA",pin15:"net.TOUCH_IRQ",pin19:"net.GND",pin20:"net.GND",
     }}/>
+    {/* Short bottom-side FPC escapes feed inner-layer SPI/control paths. All
+        four named vias are full-depth; inner2 carries only MISO. */}
+    {[
+      {pin:4,host:23,net:"SPI_SCLK",layer:"inner1",path:[[-34.7,17.25],[-34,16.6],[-32.3,16.6],[-32.3,18.1],[-33.8,19.3],[-33.8,29.5],[-5.1,29.5],[-5.1,35]]},
+      {pin:5,host:19,net:"SPI_MOSI",layer:"inner1",path:[[-34.3,17.7500426],[-33.9,17.35],[-31.4,17.25],[-31.4,29],[0,29],[0,35]]},
+      {pin:6,host:21,net:"SPI_MISO",layer:"inner2",path:[[-34.3,18.2499146],[-33.9,18.2499146],[-33.65,17.95],[-33.65,30.5],[-2.5,30.5],[-2.5,35]]},
+      {pin:7,host:15,net:"LCD_DC",layer:"inner1",path:[[-34.3,18.7500406],[-33.9,18.7500406],[-30.4,17.7],[-30.4,28.5],[5.1,28.5],[5.1,35]]},
+    ].map(signal=>{
+      const name=`LCD_SIGNAL_${signal.net}`
+      const [vx,vy]=signal.path[2]
+      const points=signal.path.map(([x,y])=>({x:x-vx,y:y-vy}))
+      return <Fragment key={signal.pin}>
+        <via name={name} pcbX={vx} pcbY={vy} fromLayer="bottom" toLayer="top"
+          holeDiameter={0.3} outerDiameter={0.65} connectsTo={`net.${signal.net}`}/>
+        <trace from={`${name}.bottom`} to={`J_LCD.pin${signal.pin}`} thickness={0.15}
+          routingPhaseIndex={2} pcbPathRelativeTo={`${name}.bottom`}
+          pcbPath={[`${name}.bottom`,...points.slice(0,2).reverse(),`J_LCD.pin${signal.pin}`]}/>
+        <trace from={`${name}.${signal.layer}`} to={`J_PI.pin${signal.host}`} thickness={0.15}
+          routingPhaseIndex={2} pcbPathRelativeTo={`${name}.${signal.layer}`}
+          pcbPath={[`${name}.${signal.layer}`,...points.slice(3),`J_PI.pin${signal.host}`]}/>
+      </Fragment>
+    })}
     <via name="LCD_CS_ESCAPE" pcbX={-32.15} pcbY={19.95} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.LCD_CS"/>
     <trace from="LCD_CS_ESCAPE.bottom" to="J_LCD.pin9" thickness={0.15} routingPhaseIndex={2}

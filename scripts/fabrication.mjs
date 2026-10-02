@@ -10,6 +10,12 @@ const original = readFileSync(sourcePath)
 const circuit = JSON.parse(original)
 const errors = circuit.filter(e => e.type.endsWith("_error"))
 if (errors.length) throw new Error(`Fabrication export blocked by ${errors.length} circuit errors`)
+const throughLayers = ["top","inner1","inner2","bottom"]
+const invalidVias = circuit.filter(e=>e.type==="pcb_via" &&
+  (e.layers.length!==throughLayers.length || throughLayers.some(layer=>!e.layers.includes(layer)) ||
+   e.hole_diameter!==0.3 || e.outer_diameter!==0.65))
+if (invalidVias.length)
+  throw new Error(`Fabrication export requires standard full-depth 0.3/0.65mm vias; ${invalidVias.length} invalid spans or dimensions`)
 if (!circuit.some(e=>e.type==="source_net"&&e.source_net_id==="source_net_0"&&e.name==="GND"))
   throw new Error("Ground-plane net identifier changed; update the phase router before exporting")
 if (!circuit.some(e=>e.type==="source_net"&&e.source_net_id==="source_net_1"&&e.name==="V3V3"))

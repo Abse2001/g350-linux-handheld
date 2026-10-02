@@ -37,7 +37,10 @@ COMPONENTS:
  - C_FEEDFORWARD: 220pF capacitor
  - C_GAUGE: 100nF capacitor
  - U_GAUGE: MAX17048G+T10
- - J_LCD: J_LCD, source_component
+ - J_LCD: FPC-05F-18PH20
+ - U_LCD_PWR: AP2112K-3.3TRG1
+ - C_LCD_IN: 1uF capacitor
+ - C_LCD_OUT: 1uF capacitor
  - U_KEYS: MCP23017-E/SO
  - R_RESET: 10kΩ resistor
  - C_KEYS: 100nF capacitor
@@ -73,7 +76,7 @@ NET: AMP_ENABLE
   - R_AUDIO_EN pin1
   - J_PI J8_37
 
-NET: U_AUDIO_N_SD_MODE
+NET: AMP_MODE
   - R_AUDIO_PD pin1
   - R_AUDIO_EN pin2
   - U_AUDIO N_SD_MODE
@@ -94,6 +97,21 @@ NET: BOOST_SW
   - L_BOOST pin2 (-)
   - U_BOOST SW
 
+NET: FB
+  - C_FEEDFORWARD pin2 (-)
+  - R_FB_LO pin1
+  - U_BOOST FB
+  - R_FB_HI pin2
+
+NET: U_CHARGE_TMR
+  - U_CHARGE TMR
+  - R_TIMER pin1
+
+NET: U_BOOST_EN
+  - J_OFF pin1
+  - U_BOOST EN
+  - R_EN pin2
+
 NET: R_CC1_pos
   - R_CC1 pin1
   - J_USB A5
@@ -107,17 +125,8 @@ NET: U_CHARGE_ISET
   - U_CHARGE ISET
 
 NET: U_CHARGE_ILIM
-  - R_ILIM pin1
   - U_CHARGE ILIM
-
-NET: U_CHARGE_TMR
-  - R_TIMER pin1
-  - U_CHARGE TMR
-
-NET: U_BOOST_EN
-  - R_EN pin2
-  - J_OFF pin1
-  - U_BOOST EN
+  - R_ILIM pin1
 
 NET: CHARGING_N
   - R_CHG_PULL pin2
@@ -125,85 +134,87 @@ NET: CHARGING_N
   - J_PI J8_29
 
 NET: USB_GOOD_N
-  - R_GOOD_PULL pin2
   - U_CHARGE N_PGOOD
   - J_PI J8_32
+  - R_GOOD_PULL pin2
 
 NET: USB_5V
-  - C_USB pin1 (+)
   - U_CHARGE IN
+  - C_USB pin1 (+)
   - J_USB A4B9
   - J_USB B4A9
 
 NET: VSYS
-  - C_BOOST_IN pin1 (+)
-  - C_SYS pin1 (+)
   - R_EN pin1
-  - L_BOOST pin1 (+)
   - U_BOOST VIN
   - U_CHARGE EN1
   - U_CHARGE OUT2
   - U_CHARGE OUT1
-
-NET: FB
-  - C_FEEDFORWARD pin2 (-)
-  - R_FB_LO pin1
-  - R_FB_HI pin2
-  - U_BOOST FB
-
-NET: VBAT
-  - U_GAUGE VDD
-  - U_GAUGE CELL
-  - C_GAUGE pin1 (+)
-  - C_BAT pin1 (+)
-  - J_BAT pin1
-  - U_CHARGE BAT2
-  - U_CHARGE BAT1
+  - L_BOOST pin1 (+)
+  - C_BOOST_IN pin1 (+)
+  - C_SYS pin1 (+)
 
 NET: BAT_ALERT_N
   - U_GAUGE N_ALRT
   - R_ALERT_PULL pin2
   - J_PI J8_31
 
-NET: TOUCH_CS
-  - J_LCD pin2
-  - J_PI J8_26
+NET: VBAT
+  - U_GAUGE VDD
+  - U_GAUGE CELL
+  - C_GAUGE pin1 (+)
+  - U_CHARGE BAT2
+  - U_CHARGE BAT1
+  - C_BAT pin1 (+)
+  - J_BAT pin1
 
 NET: LCD_BL
-  - J_LCD pin3
+  - J_LCD pin2
   - J_PI J8_16
 
-NET: LCD_RESET
-  - J_LCD pin4
-  - J_PI J8_13
-
-NET: LCD_DC
-  - J_LCD pin5
-  - J_PI J8_15
-
-NET: LCD_CS
-  - J_LCD pin6
-  - J_PI J8_24
+NET: TOUCH_IRQ
+  - J_LCD pin15
+  - J_PI J8_22
 
 NET: SPI_SCLK
-  - J_LCD pin7
+  - J_LCD pin4
   - J_PI J8_23
 
 NET: SPI_MOSI
-  - J_LCD pin8
+  - J_LCD pin5
   - J_PI J8_19
 
 NET: SPI_MISO
-  - J_LCD pin9
+  - J_LCD pin6
   - J_PI J8_21
 
+NET: LCD_DC
+  - J_LCD pin7
+  - J_PI J8_15
+
+NET: LCD_CS
+  - J_LCD pin9
+  - J_PI J8_24
+
+NET: LCD_RESET
+  - J_LCD pin8
+  - J_PI J8_13
+
+NET: V_LCD3V3
+  - C_LCD_OUT pin1 (+)
+  - U_LCD_PWR VOUT
+  - J_LCD pin10
+  - J_LCD pin1
+
 NET: SDA
-  - U_KEYS SDA
+  - J_LCD pin14
   - U_GAUGE SDA
   - J_PI J8_3
+  - U_KEYS SDA
 
 NET: SCL
   - U_KEYS SCL
+  - J_LCD pin13
   - U_GAUGE SCL
   - J_PI J8_5
 
@@ -249,7 +260,7 @@ NET: SW_X_A
 NET: SW_Y_A
   - SW_Y A
   - SW_Y B
-  - U_KEYS GPA7
+  - U_KEYS GPB3
 
 NET: SW_SELECT_A
   - SW_SELECT A
@@ -296,7 +307,12 @@ NET: GND
   - U_KEYS A1
   - U_KEYS A0
   - U_KEYS VSS
-  - J_LCD pin10
+  - C_LCD_IN pin2 (-)
+  - C_LCD_OUT pin2 (-)
+  - U_LCD_PWR GND
+  - J_LCD pin20
+  - J_LCD pin19
+  - J_LCD pin3
   - U_GAUGE QSTRT
   - U_GAUGE EP
   - U_GAUGE GND
@@ -308,13 +324,13 @@ NET: GND
   - C_SYS pin2 (-)
   - C_BAT pin2 (-)
   - C_USB pin2 (-)
-  - R_FB_LO pin2
-  - R_TIMER pin2
   - R_ILIM pin2
   - R_ISET pin2
   - R_CC2 pin2
   - R_CC1 pin2
   - J_OFF pin2
+  - R_FB_LO pin2
+  - R_TIMER pin2
   - U_BOOST GND
   - J_BAT pin2
   - U_CHARGE EP
@@ -344,32 +360,33 @@ NET: GND
   - J_PI J8_6
 
 NET: V5V
-  - TP_5V pin1
-  - J_LCD pin11
-  - C_FEEDFORWARD pin1 (+)
+  - C_LCD_IN pin1 (+)
+  - U_LCD_PWR EN
+  - U_LCD_PWR VIN
   - C_BOOST_OUT2 pin1 (+)
-  - C_BOOST_OUT1 pin1 (+)
+  - C_FEEDFORWARD pin1 (+)
   - R_FB_HI pin1
   - U_BOOST VOUT
-  - C_AUDIO_BULK pin1 (+)
-  - C_AUDIO_HF pin1 (+)
+  - C_BOOST_OUT1 pin1 (+)
   - U_AUDIO GAIN_SLOT
   - U_AUDIO VDD2
   - U_AUDIO VDD1
-  - J_PI J8_4
+  - C_AUDIO_HF pin1 (+)
+  - C_AUDIO_BULK pin1 (+)
+  - TP_5V pin1
   - J_PI J8_2
+  - J_PI J8_4
 
 NET: V3V3
-  - TP_3V3 pin1
-  - C_KEYS_BULK pin1 (+)
-  - C_KEYS pin1 (+)
-  - R_RESET pin2
   - U_KEYS VDD
-  - R_ALERT_PULL pin1
+  - C_KEYS pin1 (+)
   - R_GOOD_PULL pin1
   - R_CHG_PULL pin1
-  - J_PI J8_17
+  - R_RESET pin2
+  - C_KEYS_BULK pin1 (+)
+  - TP_3V3 pin1
   - J_PI J8_1
+  - R_ALERT_PULL pin1
 
 
 COMPONENT_PINS:
@@ -390,16 +407,16 @@ J_PI (2x20 2.54mm GPIO ribbon header)
 - pin14(J8_14): NETS(GND)
 - pin15(J8_15): NETS(LCD_DC)
 - pin16(J8_16): NETS(LCD_BL)
-- pin17(J8_17): NETS(V3V3)
+- pin17(J8_17): NOT_CONNECTED
 - pin18(J8_18): NOT_CONNECTED
 - pin19(J8_19): NETS(SPI_MOSI)
 - pin20(J8_20): NETS(GND)
 - pin21(J8_21): NETS(SPI_MISO)
-- pin22(J8_22): NOT_CONNECTED
+- pin22(J8_22): NETS(TOUCH_IRQ)
 - pin23(J8_23): NETS(SPI_SCLK)
 - pin24(J8_24): NETS(LCD_CS)
 - pin25(J8_25): NETS(GND)
-- pin26(J8_26): NETS(TOUCH_CS)
+- pin26(J8_26): NOT_CONNECTED
 - pin27(J8_27): NOT_CONNECTED
 - pin28(J8_28): NOT_CONNECTED
 - pin29(J8_29): NETS(CHARGING_N)
@@ -419,7 +436,7 @@ U_AUDIO (MAX98357AETE+T)
 - pin1(DIN): NETS(I2S_DIN)
 - pin2(GAIN_SLOT): NETS(V5V)
 - pin3(GND1): NETS(GND)
-- pin4(N_SD_MODE): NETS(U_AUDIO_N_SD_MODE)
+- pin4(N_SD_MODE): NETS(AMP_MODE)
 - pin5: NOT_CONNECTED
 - pin6: NOT_CONNECTED
 - pin7(VDD1): NETS(V5V)
@@ -444,10 +461,10 @@ C_AUDIO_BULK (10uF undefined)
 
 R_AUDIO_EN (1kΩ undefined)
 - pin1(anode, pos, left): NETS(AMP_ENABLE)
-- pin2(cathode, neg, right): NETS(U_AUDIO_N_SD_MODE)
+- pin2(cathode, neg, right): NETS(AMP_MODE)
 
 R_AUDIO_PD (100kΩ undefined)
-- pin1(anode, pos, left): NETS(U_AUDIO_N_SD_MODE)
+- pin1(anode, pos, left): NETS(AMP_MODE)
 - pin2(cathode, neg, right): NETS(GND)
 
 J_SPEAKER (1x2 2.54mm speaker harness)
@@ -599,24 +616,48 @@ U_GAUGE (MAX17048G+T10)
 - pin8(SDA): NETS(SDA)
 - pin9(EP): NETS(GND)
 
-J_LCD (1x11 2.54mm display harness header)
-- pin1: NOT_CONNECTED
-- pin2: NETS(TOUCH_CS)
-- pin3: NETS(LCD_BL)
-- pin4: NETS(LCD_RESET)
-- pin5: NETS(LCD_DC)
-- pin6: NETS(LCD_CS)
-- pin7: NETS(SPI_SCLK)
-- pin8: NETS(SPI_MOSI)
-- pin9: NETS(SPI_MISO)
-- pin10: NETS(GND)
-- pin11: NETS(V5V)
+J_LCD (FPC-05F-18PH20)
+- pin1: NETS(V_LCD3V3)
+- pin2: NETS(LCD_BL)
+- pin3: NETS(GND)
+- pin4: NETS(SPI_SCLK)
+- pin5: NETS(SPI_MOSI)
+- pin6: NETS(SPI_MISO)
+- pin7: NETS(LCD_DC)
+- pin8: NETS(LCD_RESET)
+- pin9: NETS(LCD_CS)
+- pin10: NETS(V_LCD3V3)
+- pin11: NOT_CONNECTED
+- pin12: NOT_CONNECTED
+- pin13: NETS(SCL)
+- pin14: NETS(SDA)
+- pin15: NETS(TOUCH_IRQ)
+- pin16: NOT_CONNECTED
+- pin17: NOT_CONNECTED
+- pin18: NOT_CONNECTED
+- pin19: NETS(GND)
+- pin20: NETS(GND)
+
+U_LCD_PWR (AP2112K-3.3TRG1)
+- pin1(VIN): NETS(V5V)
+- pin2(GND): NETS(GND)
+- pin3(EN): NETS(V5V)
+- pin4(NC): NOT_CONNECTED
+- pin5(VOUT): NETS(V_LCD3V3)
+
+C_LCD_IN (1uF undefined)
+- pin1(anode, pos, left): NETS(V5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+C_LCD_OUT (1uF undefined)
+- pin1(anode, pos, left): NETS(V_LCD3V3)
+- pin2(cathode, neg, right): NETS(GND)
 
 U_KEYS (MCP23017-E/SO)
 - pin1(GPB0): NETS(SW_SELECT_A)
 - pin2(GPB1): NETS(SW_START_A)
 - pin3(GPB2): NETS(SW_MENU_A)
-- pin4(GPB3): NOT_CONNECTED
+- pin4(GPB3): NETS(SW_Y_A)
 - pin5(GPB4): NOT_CONNECTED
 - pin6(GPB5): NOT_CONNECTED
 - pin7(GPB6): NOT_CONNECTED
@@ -640,7 +681,7 @@ U_KEYS (MCP23017-E/SO)
 - pin25(GPA4): NETS(SW_A_A)
 - pin26(GPA5): NETS(SW_B_A)
 - pin27(GPA6): NETS(SW_X_A)
-- pin28(GPA7): NETS(SW_Y_A)
+- pin28(GPA7): NOT_CONNECTED
 
 R_RESET (10kΩ undefined)
 - pin1(anode, pos, left): NETS(U_KEYS_N_RESET)
