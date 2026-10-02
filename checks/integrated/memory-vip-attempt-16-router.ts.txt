@@ -1,0 +1,150 @@
+import { AutoroutingPipelineSolver9_PreloadedTraceGraph,
+  type SimpleRouteJson, type Obstacle } from "@tscircuit/capacity-autorouter"
+import {auditMemoryThroughVias,isMemoryEscapeVia,memoryCopperObstacles} from "./auditMemoryThroughVias"
+import {repairMemoryViaSites} from "./repairMemoryViaSites"
+import {repairMemoryWireSites} from "./auditMemoryWires"
+import {savedMemoryRouting} from "./SavedMemoryRouting"
+
+const layers = ["top", "inner1", "inner2", "inner3", "inner4", "bottom"]
+const signalLayers = ["top", "inner2", "inner3", "bottom"]
+const toVirtual:Record<string,string>={top:"top",inner2:"inner1",inner3:"inner2",bottom:"bottom"}
+const toPhysical:Record<string,string>={top:"top",inner1:"inner2",inner2:"inner3",bottom:"bottom"}
+const signalLayer=(name:string)=>{
+  const mapped=toVirtual[name]
+  if(!mapped) throw new Error(`Signal endpoint uses reserved plane ${name}`)
+  return mapped
+}
+
+// Freeze the actual copper from completed phases. Running graph repair on
+// preloaded routes in capacity-autorouter 0.0.951 produced an invalid layer
+// jump in the byte-lane experiment. A fresh Pipeline 9 solver still performs
+// each autorouting phase, with earlier copper as immutable obstacles.
+export async function routeMemoryAroundEarlierCopper(input: SimpleRouteJson) {
+  if(input.layerCount !== 6 || input.allowBlindAndBuriedVias !== false)
+    throw new Error("Memory experiment requires six layers and full-depth vias")
+  const previous = input.traces ?? []
+  // Saved fanout paths currently expose their via's logical layer span in
+  // SRJ obstacles. These 134 declared escapes are physically through-vias.
+  // Preserve them on every copper layer and reserve enough extra space for
+  // 0.2mm drill-to-trace clearance. A 0.15mm hole needs a 0.37mm
+  // obstacle envelope with the solver's 0.09mm copper-clearance setting,
+  // for either the 0.25mm fine-pitch or 0.30mm ordinary copper land.
+  const viaObstacles=input.obstacles.filter(isMemoryEscapeVia)
+  if(viaObstacles.length!==134) throw new Error(`Expected 134 manual BGA escapes, found ${viaObstacles.length}`)
+  const viaSet=new Set(viaObstacles)
+  const obstacles=input.obstacles.map(o=>viaSet.has(o)?{...o,layers,width:0.37,height:0.37}:o)
+  // The current solver does not enforce bus.allowedLayers during global
+  // routing. Give it a four-layer *routing model*, then map the result onto
+  // the four signal layers of the real six-layer PCB. Through-via obstacles
+  // still block every signal layer. The board/export stays six layers.
+  const routingInput: SimpleRouteJson = {...input,traces:undefined,layerCount:4,
+    // Only the 25 predefined fine-pitch escapes use 0.25mm lands. Ordinary
+    // autorouted through-vias retain a larger 0.30mm land / 0.15mm drill.
+    minViaDiameter:0.3,minViaPadDiameter:0.3,min_via_pad_diameter:0.3,
+    obstacles:[...obstacles,...memoryCopperObstacles(previous)].map(o=>({...o,
+      layers:o.layers.filter(l=>signalLayers.includes(l)).map(signalLayer)})).filter(o=>o.layers.length),
+    connections:input.connections.map(c=>({...c,pointsToConnect:c.pointsToConnect.map(p=>
+      p.layer !== undefined ? {...p,layer:signalLayer(p.layer)} :
+        {...p,layers:p.layers.map(signalLayer)})})),
+    buses:input.buses?.map(b=>({...b,
+      allowedLayers:b.allowedLayers?.map(signalLayer),
+      preferredLayer:b.preferredLayer?signalLayer(b.preferredLayer):undefined,
+      preferredLayers:b.preferredLayers?.map(signalLayer)}))}
+  const listeners:Record<string,((event:any)=>void)[]> = {}
+  let output=previous,stopped=false
+  const emit=(type:string,event:any)=>listeners[type]?.forEach(fn=>fn(event))
+  const run=async()=>{
+    try {
+      const saved=await savedMemoryRouting(input)
+      if(stopped)return
+      if(saved) {
+        output=[...previous,...saved]
+        emit("complete",{traces:output})
+        return
+      }
+      let steps=0
+      const avoid:Obstacle[]=[]
+      for(let attempt=0;attempt<9;attempt++) {
+      const solver = new AutoroutingPipelineSolver9_PreloadedTraceGraph(
+        {...routingInput,obstacles:[...routingInput.obstacles,...avoid]}, {effort:5})
+      while(!stopped && !solver.solved && !solver.failed) {
+        const start=Date.now(),iterations=solver.iterations
+        while(!stopped && Date.now()-start<200 && !solver.solved && !solver.failed) solver.step()
+        emit("progress",{steps:++steps,progress:solver.progress,phase:solver.getCurrentPhase(),attempt,
+          iterationsPerSecond:(solver.iterations-iterations)*1000/Math.max(1,Date.now()-start)})
+        await new Promise(resolve=>setTimeout(resolve,0))
+      }
+      if(stopped) return
+      if(solver.failed) throw new Error(`Memory ${solver.getCurrentPhase()}: ${solver.error??"autorouting failed"}`)
+      let traces=solver.getOutputSimplifiedPcbTraces().map(t=>({...t,
+        route:t.route.map(p=>p.route_type==="wire"?{...p,layer:toPhysical[p.layer]}:
+          p.route_type==="via"||p.route_type==="through_obstacle"?
+            {...p,from_layer:toPhysical[p.from_layer],to_layer:toPhysical[p.to_layer]}:p)}))
+      const covered=new Set(traces.map(trace=>trace.connection_name))
+      for(const connection of input.connections)
+        if(!covered.has(connection.name)) throw new Error(`Autorouter omitted ${connection.name}`)
+      for(const trace of traces) {
+        let lastLayer:string|undefined
+        for(const point of trace.route) {
+          if(point.route_type === "via") {
+            if(lastLayer && point.from_layer !== lastLayer)
+              throw new Error(`Disconnected via in ${trace.connection_name}`)
+            lastLayer=point.to_layer
+          } else if(point.route_type === "through_obstacle") {
+            // Pipeline 9 can traverse an existing same-net via. This is not
+            // an unrepresented layer jump: core exports it as through_pad.
+            const sameNetVia=viaObstacles.find(o=>o.connectedTo.includes(trace.connection_name) &&
+              // A wire endpoint may lie just outside the land's centreline
+              // boundary while its finite copper width still overlaps it.
+              [point.start,point.end].every(p=>Math.hypot(p.x-o.center.x,p.y-o.center.y)<=o.width/2+point.width/2+0.00001))
+            if(!sameNetVia || (lastLayer && point.from_layer!==lastLayer))
+              throw Object.assign(new Error(`Unverified via traversal in ${trace.connection_name}`),{invalidRoute:trace})
+            lastLayer=point.to_layer
+          } else if(point.route_type === "wire") {
+            if(lastLayer && point.layer !== lastLayer)
+              throw Object.assign(new Error(`Autorouter changed layers without a via in ${trace.connection_name}`),{invalidRoute:trace})
+            lastLayer=point.layer
+          } else throw new Error(`Unsupported ${point.route_type} route element in ${trace.connection_name}`)
+        }
+      }
+      const viaRepair=repairMemoryViaSites(input,traces)
+      traces=viaRepair.traces
+      const wireRepair=repairMemoryWireSites(input,traces)
+      traces=wireRepair.traces
+      if(viaRepair.moves.length||wireRepair.moves.length)
+        console.log(`Manual adjustments to autorouted copper: ${viaRepair.moves.length} via sites, ${wireRepair.moves.length} wire doglegs`)
+      const audit=auditMemoryThroughVias(input,traces)
+      emit("physical_via_audit",{attempt,...audit})
+      if(audit.issues.length||wireRepair.audit.issues.length) {
+        const bad=new Map(audit.issues.map(i=>[`${i.via.x.toFixed(6)},${i.via.y.toFixed(6)}`,i.via]))
+        console.warn(`Memory phase rejected ${bad.size} through-via positions (${audit.issues.length} physical clearance violations), retry ${attempt+1}/8`)
+        if(attempt===8)throw Object.assign(new Error("Unable to route physical through-vias within clearance rules"),{viaAudit:audit})
+        // Nonconductive local keepouts on all routing layers force the REAL
+        // autorouter to choose new drill sites. Empty connectedTo is crucial:
+        // these circles must never become phantom same-net via traversals.
+        for(const via of bad.values())avoid.push({obstacleId:`memory_rejected_via_${avoid.length}`,
+          type:"rect",shape:"circle",center:{x:via.x,y:via.y},width:0.1,height:0.1,
+          layers:["top","inner1","inner2","bottom"],connectedTo:[]})
+        for(const issue of wireRepair.audit.issues) {
+          const t=traces.find(t=>t.connection_name===issue.trace)!,a=t.route[issue.index],b=t.route[issue.index+1]
+          if(a.route_type!=="wire"||b.route_type!=="wire")throw new Error("Invalid rejected wire segment")
+          avoid.push({obstacleId:`memory_rejected_wire_${avoid.length}`,type:"rect",shape:"circle",
+            center:{x:(a.x+b.x)/2,y:(a.y+b.y)/2},width:0.1,height:0.1,
+            layers:[signalLayer(a.layer)],connectedTo:[]})
+        }
+        continue
+      }
+      output=[...previous,...traces]
+      console.log(`Accepted memory phase: ${traces.length} signals, ${audit.newViaCount} new full-depth vias, physical via clearances checked on six layers`)
+      emit("complete",{traces:output})
+      return
+      }
+    } catch(error) {emit("error",{error,invalidRoute:(error as {invalidRoute?:unknown})?.invalidRoute,viaAudit:(error as {viaAudit?:unknown})?.viaAudit})}
+  }
+  return {
+    on(type:string,fn:(event:any)=>void){(listeners[type]??=[]).push(fn)},
+    start(){void run()},
+    stop(){stopped=true},
+    getOutputSimpleRouteJson(){return {...input,traces:output}},
+  }
+}

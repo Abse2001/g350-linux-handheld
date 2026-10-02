@@ -1,0 +1,3 @@
+$ node scripts/check-memory-routing.mjs dist/experiments/rk3566-memory-vip/circuit.json checks/integrated/pre-shorts-connectivity.json && tsci check shorts dist/experiments/rk3566-memory-vip/circuit.json --mode gerber --layer all
+MEMORY_CONNECTIVITY_FAIL: 0/67 signals; 0 traces, 0 vias; 68 problems. See checks/integrated/pre-shorts-connectivity.json
+error: script "check:shorts" exited with code 1

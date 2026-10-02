@@ -1,0 +1,192 @@
+{
+  "status": "MANUAL_ESCAPE_CLEARANCE_FAIL",
+  "scope": "134 manual 0.15mm drills versus physical manual copper/pads and other drills. Autorouted copper, complete export, DDR timing and full-host design require separate checks.",
+  "input": "dist/rk3566-memory-hybrid-small-groups/phase-0.input.simple-route.json",
+  "sha256": "12f3f7ab81ebe095c12732c765f9f6bd1ae00670946654d336b6d0794bc88755",
+  "viaCount": 134,
+  "finePitchLandCount": 25,
+  "minDrillCopper": 0.195079302663823,
+  "minDrillDrill": 0.25199502484483494,
+  "issues": [
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19519630800121912,
+      "via": [
+        "breakout:pcb_breakout_point_4",
+        "source_trace_4",
+        "pcb_port_275",
+        "pcb_breakout_point_4"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_274",
+        "pcb_port_id": "pcb_port_274",
+        "source_port_name": "F1"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19519631957434913,
+      "via": [
+        "breakout:pcb_breakout_point_6",
+        "source_trace_6",
+        "pcb_port_288",
+        "pcb_breakout_point_6"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_287",
+        "pcb_port_id": "pcb_port_287",
+        "source_port_name": "K1"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.1951963006364999,
+      "via": [
+        "breakout:pcb_breakout_point_10",
+        "source_trace_10",
+        "pcb_port_282",
+        "pcb_breakout_point_10"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_281",
+        "pcb_port_id": "pcb_port_281",
+        "source_port_name": "H1"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.1951963013466692,
+      "via": [
+        "breakout:pcb_breakout_point_19",
+        "source_trace_19",
+        "pcb_port_294",
+        "pcb_breakout_point_19"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_293",
+        "pcb_port_id": "pcb_port_293",
+        "source_port_name": "M1"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.1950793108937991,
+      "via": [
+        "breakout:pcb_breakout_point_24",
+        "source_trace_24",
+        "pcb_port_229",
+        "pcb_breakout_point_24"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_205",
+        "pcb_port_id": "pcb_port_205",
+        "source_port_name": "A3"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19507937896474575,
+      "via": [
+        "breakout:pcb_breakout_point_31",
+        "source_trace_31",
+        "pcb_port_231",
+        "pcb_breakout_point_31"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_206",
+        "pcb_port_id": "pcb_port_206",
+        "source_port_name": "A5"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.195079302663823,
+      "via": [
+        "breakout:pcb_breakout_point_33",
+        "source_trace_33",
+        "pcb_port_235",
+        "pcb_breakout_point_33"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_208",
+        "pcb_port_id": "pcb_port_208",
+        "source_port_name": "A9"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19507932765895458,
+      "via": [
+        "breakout:pcb_breakout_point_36",
+        "source_trace_36",
+        "pcb_port_233",
+        "pcb_breakout_point_36"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_207",
+        "pcb_port_id": "pcb_port_207",
+        "source_port_name": "A7"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19507931289340963,
+      "via": [
+        "breakout:pcb_breakout_point_46",
+        "source_trace_46",
+        "pcb_port_239",
+        "pcb_breakout_point_46"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_211",
+        "pcb_port_id": "pcb_port_211",
+        "source_port_name": "A13"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19507938420582915,
+      "via": [
+        "breakout:pcb_breakout_point_52",
+        "source_trace_52",
+        "pcb_port_241",
+        "pcb_breakout_point_52"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_212",
+        "pcb_port_id": "pcb_port_212",
+        "source_port_name": "A15"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.19507933079518563,
+      "via": [
+        "breakout:pcb_breakout_point_53",
+        "source_trace_53",
+        "pcb_port_243",
+        "pcb_breakout_point_53"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_213",
+        "pcb_port_id": "pcb_port_213",
+        "source_port_name": "A17"
+      }
+    },
+    {
+      "message": "Manual drill-to-foreign-copper below 0.2mm",
+      "clearance": 0.1950793036952011,
+      "via": [
+        "breakout:pcb_breakout_point_66",
+        "source_trace_66",
+        "pcb_port_245",
+        "pcb_breakout_point_66"
+      ],
+      "obstacle": {
+        "pcb_smtpad_id": "pcb_smtpad_214",
+        "pcb_port_id": "pcb_port_214",
+        "source_port_name": "A19"
+      }
+    }
+  ]
+}

@@ -5,6 +5,10 @@ import {
 } from "circuit-json-to-pnp-csv"
 import { prepareJlcpcbAssembly, isJlcpcbAssembledComponent } from "./assembly.mjs"
 
+const designStatus=JSON.parse(readFileSync("design-status.json","utf8"))
+if(designStatus.fabricationReady!==true)
+  throw new Error("Fabrication export blocked: the required integrated Linux handheld is still in progress. Revision B is an external-Pi carrier; see docs/INTEGRATED_HOST.md.")
+
 const sourcePath = "dist/index/circuit.json"
 if (JSON.parse(readFileSync("routing/rev-b-routes.json","utf8"))
     .some(phase=>!/^[a-f0-9]{64}$/.test(phase.inputFingerprint??"")))

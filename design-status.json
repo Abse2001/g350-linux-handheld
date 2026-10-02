@@ -1,0 +1,30 @@
+{
+  "revision": "C",
+  "architecture": "bare RK3566, separate LPDDR4 and power-management ICs on the main PCB",
+  "status": "INTEGRATION_IN_PROGRESS",
+  "fabricationReady": false,
+  "activeEntry": "experiments/rk3566-memory-vip.circuit.tsx",
+  "activeEntryScope": "Memory routing feasibility fixture only; not the completed handheld",
+  "historicalCarrierEntry": "rev-b.circuit.tsx",
+  "requiredFeatures": {
+    "onboardLinuxAndGpu": true,
+    "onboardMicroSD": true,
+    "sharedUsbCChargingAndData": true,
+    "topOnlyComponents": true,
+    "fpcDisplay": true,
+    "frontButtons": 11,
+    "analogSticks": false,
+    "rearButtons": false,
+    "phasedAutorouterAndManualCriticalRoutes": true
+  },
+  "releaseEvidenceRequired": [
+    "Complete powered host and handheld circuit, including boot and recovery hardware",
+    "Verified supplier footprints and every processor/RAM/PMIC power and signal connection",
+    "Qualified DDR constraints including package delays, via lengths, impedance and return paths",
+    "Complete phased routing and native checks on that integrated circuit",
+    "All-layer Gerber shorts check on the completed integrated circuit",
+    "Independent DRC/connectivity and manufacturing checks with no unresolved violations",
+    "Matching integrated Gerbers, drills, BOM, top-side placements and release hashes",
+    "Prototype Linux image, DDR configuration, USB provisioning and hardware bring-up instructions"
+  ]
+}

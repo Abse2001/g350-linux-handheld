@@ -1,0 +1,62 @@
+import type { FanoutTracePath } from "@tscircuit/props"
+import { RK3566 } from "../imports/RK3566"
+import { H9HCNNN8KUMLHR_NME } from "../imports/H9HCNNN8KUMLHR_NME"
+import connections from "../lib/integrated/memory-connections.json"
+import socPads from "../lib/integrated/RK3566-pad-centres.json"
+import ramPads from "../lib/integrated/H9HCNNN8KUMLHR_NME-pad-centres.json"
+
+// Feasibility fixture, not a powered computer or manufacturing release.
+// Manual full-depth, filled/capped via-in-pad escapes; the three subsequent
+// signal phases still run the actual local autorouter. No blind/buried vias.
+// This fixture measures connectivity first. It does not qualify DDR skew,
+// package flight times, controlled impedance, or continuous return planes.
+const escapes = (chip: "U_SOC" | "U_RAM"): FanoutTracePath[] =>
+  connections.map(c => {
+    const pad = chip === "U_SOC"
+      ? socPads[c.socBall as keyof typeof socPads]
+      : ramPads[c.ramBall as keyof typeof ramPads]
+    // RAM is rotated +90 degrees inside an unrotated breakout group.
+    const x = chip === "U_SOC" ? pad.x : -pad.y
+    const y = chip === "U_SOC" ? pad.y : pad.x
+    const layer = c.name.endsWith("_B") ? "inner3" : "inner1"
+    return {
+      connection: `${chip}.${chip === "U_SOC" ? c.socBall : c.ramBall}`,
+      route: [
+        {route_type:"wire",x,y,layer:"top",width:0.1},
+        {route_type:"via",x,y,from_layer:"top",to_layer:layer,
+          via_diameter:0.3,via_hole_diameter:0.15},
+        {route_type:"wire",x,y,layer,width:0.1},
+      ],
+    }
+  })
+
+export default () => (
+  <board title="G350 integrated RK3566 — manual BGA escape experiment"
+    width={64} height={50} layers={6} thickness={1.2}
+    minTraceWidth={0.09} nominalTraceWidth={0.1}
+    minTraceToPadEdgeClearance={0.09} minPadEdgeToPadEdgeClearance={0.15}
+    minViaHoleDiameter={0.15} minViaPadDiameter={0.3}
+    isViaInPadAllowed={true} allowBlindAndBuriedVias={false}
+    pcbStyle={{viaHoleDiameter:0.15,viaPadDiameter:0.3}}
+    autorouter="auto_local" autorouterEffortLevel="2x" routeRemaining={false}>
+    <autoroutingphase name="MEMORY_CLOCK_STROBES" phaseIndex={0}/>
+    <autoroutingphase name="MEMORY_DATA" phaseIndex={1}/>
+    <autoroutingphase name="MEMORY_ADDRESS_CONTROL" phaseIndex={2}/>
+    <breakout name="SOC_ESCAPE" pcbX={0} pcbY={0}
+      width={16} height={15} pcbTracePaths={escapes("U_SOC")}>
+      <RK3566 name="U_SOC" pcbX={0} pcbY={0} layer="top"
+        schX={-15} schY={0} schWidth={8} schHeight={50}/>
+    </breakout>
+    <breakout name="RAM_ESCAPE" pcbX={-4} pcbY={15}
+      width={16} height={11} pcbTracePaths={escapes("U_RAM")}>
+      <H9HCNNN8KUMLHR_NME name="U_RAM" pcbX={0} pcbY={0}
+        pcbRotation={90} layer="top" schX={15} schY={0}
+        schWidth={8} schHeight={30}/>
+    </breakout>
+    {connections.map(c=><trace name={c.name}
+      from={`U_SOC.${c.socBall}`} to={`U_RAM.${c.ramBall}`}
+      thickness={0.1} routingPhaseIndex={c.phase}/>)}
+    <silkscreentext text="MEMORY ROUTING TEST — NOT FOR FABRICATION"
+      pcbX={0} pcbY={-20} fontSize={1}/>
+  </board>
+)

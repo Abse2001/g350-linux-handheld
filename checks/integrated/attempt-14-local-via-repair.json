@@ -1,0 +1,124 @@
+{
+  "scope": "Proposed local manual via movements on exact 24-signal autorouted diagnostic; final copper checks remain required",
+  "moves": [
+    {
+      "net": "source_trace_58",
+      "before": {
+        "x": -1.5273644402554183,
+        "y": 3.955030699999941
+      },
+      "after": {
+        "x": -1.8773644402554184,
+        "y": 4.505030699999941
+      }
+    },
+    {
+      "net": "source_trace_51",
+      "before": {
+        "x": 6.664836300000059,
+        "y": 3.31
+      },
+      "after": {
+        "x": 6.614836300000059,
+        "y": 3.31
+      }
+    },
+    {
+      "net": "source_trace_25",
+      "before": {
+        "x": -6.06121,
+        "y": 16.269
+      },
+      "after": {
+        "x": -5.96121,
+        "y": 16.468999999999998
+      }
+    },
+    {
+      "net": "source_trace_39",
+      "before": {
+        "x": -4.6651450000000025,
+        "y": 7.295
+      },
+      "after": {
+        "x": -4.615145000000003,
+        "y": 7.295
+      }
+    },
+    {
+      "net": "source_trace_39",
+      "before": {
+        "x": -4.4202677903496905,
+        "y": 5.763601742666281
+      },
+      "after": {
+        "x": -4.47026779034969,
+        "y": 5.263601742666281
+      }
+    },
+    {
+      "net": "source_trace_34",
+      "before": {
+        "x": -3.2751490000001056,
+        "y": 7.175
+      },
+      "after": {
+        "x": -3.3251490000001054,
+        "y": 7.175
+      }
+    },
+    {
+      "net": "source_trace_44",
+      "before": {
+        "x": -0.5865891316757268,
+        "y": 1.9441542853791622
+      },
+      "after": {
+        "x": -0.6365891316757268,
+        "y": 1.3941542853791622
+      }
+    }
+  ],
+  "audit": {
+    "newViaCount": 43,
+    "minDrillCopper": 0.18000000000000016,
+    "minCopper": 0.10500000000000018,
+    "minDrillDrill": 0.28057887094003964,
+    "issues": [
+      {
+        "via": {
+          "x": -1.4652529999999113,
+          "y": 7.322856965440058,
+          "id": "source_trace_34_via_33",
+          "net": [
+            "source_trace_34",
+            "source_trace_34_0",
+            "pcb_breakout_point_34",
+            "pcb_breakout_point_101"
+          ]
+        },
+        "obstacle": "[\"breakout:pcb_breakout_point_47\",\"source_trace_47\",\"pcb_port_212\",\"pcb_breakout_point_47\"]",
+        "rule": "hole_clearance",
+        "clearance": 0.18000000000000016,
+        "minimum": 0.2
+      },
+      {
+        "via": {
+          "x": -1.4652529999999113,
+          "y": 7.322856965440058,
+          "id": "source_trace_34_via_33",
+          "net": [
+            "source_trace_34",
+            "source_trace_34_0",
+            "pcb_breakout_point_34",
+            "pcb_breakout_point_101"
+          ]
+        },
+        "obstacle": "memory_fixed_18_segment_29",
+        "rule": "hole_clearance",
+        "clearance": 0.18946325687431637,
+        "minimum": 0.2
+      }
+    ]
+  }
+}

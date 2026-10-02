@@ -1,7 +1,7 @@
 {
   "name": "@tsci/abse.g350-linux-handheld",
-  "version": "1.1.0",
-  "description": "Top-only G350 Linux handheld carrier with shared USB-C charging/data and Pi Zero 2 W microSD boot storage",
+  "version": "1.2.0",
+  "description": "G350 integrated RK3566 Linux handheld in progress; memory-routing experiments and historical Rev B carrier",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -16,15 +16,21 @@
     "snapshot:update": "tsci snapshot --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
+    "check:integrated-imports": "node scripts/check-integrated-imports.mjs",
+    "build:memory": "tsci build experiments/rk3566-memory-vip.circuit.tsx --autorouter-debug --autorouter-debug-dir dist/rk3566-memory-individual --autorouter-dump-srj all --autorouter-timeout 2m --pcb-png --kicad-project",
+    "check:memory-escapes": "node scripts/check-memory-escapes.mjs dist/rk3566-memory-individual/phase-0.input.simple-route.json",
+    "check:memory-connectivity": "node scripts/check-memory-routing.mjs",
     "compact:circuit": "node scripts/compact-circuit.mjs",
-    "check:shorts": "tsci check shorts dist/index/circuit.json --mode gerber --layer all",
+    "check:shorts": "node scripts/check-memory-routing.mjs dist/experiments/rk3566-memory-vip/circuit.json checks/integrated/pre-shorts-connectivity.json && tsci check shorts dist/experiments/rk3566-memory-vip/circuit.json --mode gerber --layer all",
     "check:kicad": "node scripts/check-kicad.mjs",
     "fabrication": "node scripts/export-fabrication.mjs",
-    "restore:models": "node scripts/restore-3d-models.mjs"
+    "restore:models": "node scripts/restore-3d-models.mjs",
+    "check:memory-phase-copper": "bun scripts/check-memory-phase-vias.mjs dist/rk3566-memory-individual 37"
   },
   "devDependencies": {
     "@tscircuit/capacity-autorouter": "0.0.951",
-    "tscircuit": "0.0.2715",
+    "@tscircuit/cli": "0.1.2227",
+    "tscircuit": "0.0.2727",
     "typescript": "5.9.3"
   },
   "author": "abse"
