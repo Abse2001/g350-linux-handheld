@@ -1,6 +1,6 @@
-# Revision B fabrication status — ready for a first PCB prototype
+# Revision B fabrication status — carrier only; integrated redesign pending
 
-**The Revision B fabrication and top-only assembly files pass the recorded checks and are ready for a first PCB prototype order. No assembled handheld has been tested.** Order the Revision B files listed below; the previous two-sided Revision A files have been replaced.
+**Do not order these files for the newly requested integrated-computer handheld. They describe Revision B, which requires an external Pi Zero 2 W. The Linux processor is not on this PCB.** The recorded checks qualify that carrier geometry only; no integrated-computer revision or assembled handheld has been tested. See `../docs/INTEGRATED_HOST.md` for the redesign requirements and unresolved processor sourcing.
 
 The 100 × 124 × 1.6 mm, four-layer FR4 carrier uses a complete Raspberry Pi Zero 2 W through a hand-drawn GPIO interface and mounting layout. All 60 carrier components, including hand-fitted headers, are on top. The Pi and display mount above the carrier on insulating hardware; the carrier's back has copper and through-hole solder joints but no component bodies. The Pi's existing microSD holder supplies accessible Linux boot storage. This carrier requires a custom enclosure and is not a stock G350 replacement.
 

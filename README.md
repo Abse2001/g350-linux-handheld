@@ -1,6 +1,6 @@
 # G350-style Linux handheld
 
-**Revision B PCB fabrication files are ready for a first prototype order. All carrier components are fitted on top, and one USB-C port provides charging and data. See `fabrication/STATUS.md` for order settings and checks. The assembled handheld has not been tested on hardware.**
+**The current requirement is a Linux computer built directly on the handheld PCB. Revision B is an external-Pi carrier and does not meet that requirement. Do not order its files for the integrated-computer design. That redesign is not fabrication-ready; see `docs/INTEGRATED_HOST.md`. Revision B's checks below apply only to the existing carrier.**
 
 Custom tscircuit handheld PCB, revision B. A complete Raspberry Pi Zero 2 W is the Linux/GPU host, connected through a **hand-drawn J8 interface and mechanical layout** in `lib/PiZero2W.tsx`. The Pi's proprietary computer circuitry is not recreated here. No complete SBC PCB design is imported.
 
