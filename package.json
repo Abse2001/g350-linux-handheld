@@ -16,12 +16,13 @@
     "snapshot:update": "tsci snapshot --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
-    "check:shorts": "tsci check shorts dist/index/circuit.json --layer all",
-    "fabrication": "node scripts/fabrication.mjs"
+    "check:shorts": "tsci check shorts dist/index/circuit.json --mode gerber --layer all",
+    "check:kicad": "node scripts/check-kicad.mjs",
+    "fabrication": "node scripts/export-fabrication.mjs"
   },
   "devDependencies": {
     "@tscircuit/capacity-autorouter": "0.0.951",
-    "tscircuit": "0.0.2709",
+    "tscircuit": "0.0.2711",
     "typescript": "5.9.3"
   },
   "author": "abse"

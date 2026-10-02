@@ -11,6 +11,14 @@ BUTTONS = [e.BTN_DPAD_UP, e.BTN_DPAD_DOWN, e.BTN_DPAD_LEFT, e.BTN_DPAD_RIGHT,
            e.BTN_EAST, e.BTN_SOUTH, e.BTN_NORTH, e.BTN_WEST,
            e.BTN_SELECT, e.BTN_START, e.BTN_MODE]
 MASK = (1 << len(BUTTONS)) - 1
+# Logical button order follows the PCB; GPA7 and GPB7 are output-only.
+BUTTON_PORT_BITS = (0, 1, 2, 3, 4, 5, 6, 11, 8, 9, 10)
+
+
+def pressed_from_ports(a, b):
+    active = (~(a | (b << 8))) & 0xFFFF
+    return sum(((active >> bit) & 1) << i
+               for i, bit in enumerate(BUTTON_PORT_BITS)) & MASK
 
 
 def voltage(bus):
@@ -27,10 +35,13 @@ def main():
          UInput({e.EV_KEY: BUTTONS}, name="G350 front controls") as gamepad:
         # Reset power-on BANK=0 configuration; internal pullups yield active-low keys.
         bus.write_byte_data(0x20, 0x0A, 0x00)
-        bus.write_byte_data(0x20, 0x00, 0xFF)
-        bus.write_byte_data(0x20, 0x01, 0xFF)
-        bus.write_byte_data(0x20, 0x0C, 0xFF)
-        bus.write_byte_data(0x20, 0x0D, 0xFF)
+        # Keep the unused output-only bit 7 low on both ports.
+        bus.write_byte_data(0x20, 0x14, 0x00)
+        bus.write_byte_data(0x20, 0x15, 0x00)
+        bus.write_byte_data(0x20, 0x00, 0x7F)
+        bus.write_byte_data(0x20, 0x01, 0x7F)
+        bus.write_byte_data(0x20, 0x0C, 0x7F)
+        bus.write_byte_data(0x20, 0x0D, 0x7F)
         stable = candidate = 0
         changed_at = last_battery = time.monotonic()
         amplifier.on()
@@ -38,7 +49,7 @@ def main():
             while True:
                 now = time.monotonic()
                 a, b = bus.read_i2c_block_data(0x20, 0x12, 2)
-                pressed = (~(a | (b << 8))) & MASK
+                pressed = pressed_from_ports(a, b)
                 if pressed != candidate:
                     candidate, changed_at = pressed, now
                 if candidate != stable and now - changed_at >= 0.008:

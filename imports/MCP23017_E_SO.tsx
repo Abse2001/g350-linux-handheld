@@ -31,7 +31,10 @@ const pinLabels = {
   pin28: ["GPA7"]
 } as const
 
+// Current MCP23017 datasheet: GPA7/GPB7 are output-only; unused here.
 const pinAttributes = {
+  pin8: {doNotConnect: true},
+  pin28: {doNotConnect: true},
   pin9: {requiresPower: true},
   pin10: {requiresGround: true},
   pin11: {doNotConnect: true},

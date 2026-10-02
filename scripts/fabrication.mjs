@@ -12,6 +12,8 @@ const errors = circuit.filter(e => e.type.endsWith("_error"))
 if (errors.length) throw new Error(`Fabrication export blocked by ${errors.length} circuit errors`)
 if (!circuit.some(e=>e.type==="source_net"&&e.source_net_id==="source_net_0"&&e.name==="GND"))
   throw new Error("Ground-plane net identifier changed; update the phase router before exporting")
+if (!circuit.some(e=>e.type==="source_net"&&e.source_net_id==="source_net_1"&&e.name==="V3V3"))
+  throw new Error("Status pull-up net identifier changed; update the phase router before exporting")
 const buildLog = readFileSync("checks/build.log","utf8")
 if (!/^\s*Circuits\s+1 passed\s*$/m.test(buildLog) || !buildLog.includes("Build exiting with code 0") ||
   (buildLog.match(/phase [123]\/3 .* done:.*errors=0/g) ?? []).length !== 3)
@@ -31,6 +33,10 @@ if (drcIssues.length)
   throw new Error(`Fabrication export blocked by ${drcIssues.length} independent KiCad DRC/connectivity issues`)
 if (statSync("checks/kicad-drc.json").mtimeMs < statSync(sourcePath).mtimeMs)
   throw new Error("The final circuit changed after independent DRC")
+const checkedBoard = readFileSync("dist/index/kicad/index.kicad_pcb")
+if (readFileSync("checks/kicad-board.sha256","utf8").trim().split(/\s+/)[0] !==
+    createHash("sha256").update(checkedBoard).digest("hex"))
+  throw new Error("The KiCad board changed after independent DRC")
 const sourceFiles = ["index.circuit.tsx",...['lib','imports'].flatMap(dir =>
   readdirSync(dir).filter(f=>f.endsWith('.tsx')||f.endsWith('.ts')).map(f=>`${dir}/${f}`))]
 if (sourceFiles.some(path => statSync(path).mtimeMs > statSync(sourcePath).mtimeMs))
@@ -57,7 +63,14 @@ const bom = csv([["Comment","Designator","Footprint","LCSC Part #"],
   ...[...groups.values()].map(g=>[g.comment,g.refs.join(","),g.footprint,g.part])])
 
 const prepared = await prepareJlcpcbAssembly(circuit)
-const pnp = convertCircuitJsonToPickAndPlaceCsv(prepared, {supplier:"jlcpcb",requireSupplierRotation:true})
+const board = circuit.find(e=>e.type === "pcb_board")
+if (board.width !== 100 || board.height !== 124 || board.center.x !== 0 || board.center.y !== 0)
+  throw new Error("Review the manufacturing datum after changing board dimensions")
+// Supplier rotations are resolved against the original part geometry above.
+// Translate only exported placement centers to the Gerber/drill plot origin.
+const assemblyAtPlotOrigin = prepared.map(e=>e.type === "pcb_component"
+  ? {...e,center:{x:e.center.x+50,y:e.center.y+62}} : e)
+const pnp = convertCircuitJsonToPickAndPlaceCsv(assemblyAtPlotOrigin, {supplier:"jlcpcb",requireSupplierRotation:true})
 writeFileSync("fabrication/bom-jlcpcb.csv",bom)
 writeFileSync("fabrication/pnp-jlcpcb.csv",pnp)
 writeFileSync("fabrication/circuit.json",original)
