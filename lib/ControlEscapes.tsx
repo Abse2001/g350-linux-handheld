@@ -6,31 +6,32 @@ import "./ThroughSignalVia"
 export function ControlEscapes(){
   return <Fragment>
     {[
-      {name:"SIGNAL_SCL_KEYS",x:-6.15,y:-14.5},
-      {name:"SIGNAL_SCL_LCD",x:-29.3,y:22.5},
+      {name:"SIGNAL_SCL_KEYS",x:6.15,y:-14.5},
     ].map(v=><Fragment key={v.name}><via name={v.name} pcbX={v.x} pcbY={v.y} fromLayer="bottom" toLayer="top"
       holeDiameter={0.3} outerDiameter={0.65} connectsTo="net.SCL"/></Fragment>)}
-    <trace from="SIGNAL_SCL_KEYS.bottom" to="U_KEYS.SCL" thickness={0.15} routingPhaseIndex={0}
-      pcbPathRelativeTo="SIGNAL_SCL_KEYS.bottom"
-      pcbPath={["SIGNAL_SCL_KEYS.bottom",{x:.435,y:.85},"U_KEYS.SCL"]}/>
-    <trace from="SIGNAL_SCL_LCD.bottom" to="J_LCD.pin13" thickness={0.15} routingPhaseIndex={0}
-      pcbPathRelativeTo="SIGNAL_SCL_LCD.bottom"
-      pcbPath={["SIGNAL_SCL_LCD.bottom",{x:-4.5,y:0},{x:-4.5,y:-.75},"J_LCD.pin13"]}/>
+    <trace from="SIGNAL_SCL_KEYS.top" to="U_KEYS.SCL" thickness={0.15} routingPhaseIndex={0}
+      pcbPathRelativeTo="SIGNAL_SCL_KEYS.top"
+      pcbPath={["SIGNAL_SCL_KEYS.top",{x:-.435,y:.85},"U_KEYS.SCL"]}/>
+    <via name="SIGNAL_SCL_LCD_INPUT" pcbX={-33} pcbY={22.5} fromLayer="top" toLayer="bottom"
+      holeDiameter={0.3} outerDiameter={0.65} connectsTo="net.SCL"/>
+    <trace from="SIGNAL_SCL_LCD_INPUT.top" to="J_LCD.pin13" thickness={0.15} routingPhaseIndex={0}
+      pcbPathRelativeTo="SIGNAL_SCL_LCD_INPUT.top"
+      pcbPath={["SIGNAL_SCL_LCD_INPUT.top",{x:-1.3,y:-.750194},"J_LCD.pin13"]}/>
     <trace from="SIGNAL_SCL_KEYS.inner2" to="J_PI.pin5" thickness={0.15} routingPhaseIndex={0}
       pcbPathRelativeTo="SIGNAL_SCL_KEYS.inner2"
-      pcbPath={["SIGNAL_SCL_KEYS.inner2",{x:-3.85,y:0},{x:-3.85,y:40.7},
-        {x:23.93,y:40.7},{x:23.93,y:49.5},"J_PI.pin5"]}/>
-    <trace from="SIGNAL_SCL_LCD.inner2" to="SIGNAL_SCL_KEYS.inner2" thickness={0.15} routingPhaseIndex={0}
-      pcbPathRelativeTo="SIGNAL_SCL_LCD.inner2"
-      pcbPath={["SIGNAL_SCL_LCD.inner2",{x:0,y:3.7},{x:19.3,y:3.7},
-        {x:19.3,y:-37},"SIGNAL_SCL_KEYS.inner2"]}/>
+      pcbPath={["SIGNAL_SCL_KEYS.inner2",{x:2.65,y:0},{x:2.65,y:40.7},
+        {x:11.63,y:40.7},{x:11.63,y:49.5},"J_PI.pin5"]}/>
+    <trace from="SIGNAL_SCL_LCD_INPUT.inner2" to="SIGNAL_SCL_KEYS.inner2" thickness={0.15} routingPhaseIndex={0}
+      pcbPathRelativeTo="SIGNAL_SCL_LCD_INPUT.inner2"
+      pcbPath={["SIGNAL_SCL_LCD_INPUT.inner2",{x:3.7,y:3.7},{x:23,y:3.7},
+        {x:23,y:-37},"SIGNAL_SCL_KEYS.inner2"]}/>
     {[
-      {net:"BUTTON_MENU",button:"SW_MENU",port:"GPB2",entry:[-4,-23],exit:[-11,-10],input:[5.715,-10.6],
+      {net:"BUTTON_MENU",button:"SW_MENU",port:"GPB2",entry:[-4,-23],exit:[-11,-10],input:[-5.715,-15.2],
         front:[[-3,-25]],rear:[]},
-      {net:"BUTTON_SELECT",button:"SW_SELECT",port:"GPB0",entry:[-9,-22],exit:[-9,-9],input:[8.255,-10.6],
-        front:[[-6,-23],[-6,-49.3],[-16,-49.3],[-16,-50.150118]],rear:[[8.255,-9]]},
-      {net:"BUTTON_UP",button:"SW_UP",port:"GPA0",entry:[-18,-13],exit:[-18,-4],input:[-.635,-4.7],
-        front:[],rear:[[-5,-4]]},
+      {net:"BUTTON_SELECT",button:"SW_SELECT",port:"GPB0",entry:[-11,-22],exit:[-11,-9],input:[-8.255,-15.2],
+        front:[[-6,-23],[-6,-49.3],[-16,-49.3],[-16,-50.150118]],rear:[[-8.255,-9]]},
+      {net:"BUTTON_UP",button:"SW_UP",port:"GPA0",entry:[-18,-13],exit:[-18,-4],input:[.635,-4.7],
+        front:[],rear:[[-5,-7]]},
     ].map(c=>{
       const entry=`SIGNAL_${c.net}_ENTRY`,exit=`SIGNAL_${c.net}_EXIT`,input=`SIGNAL_${c.net}_INPUT`
       const isMenu=c.net==="BUTTON_MENU"
@@ -44,22 +45,22 @@ export function ControlEscapes(){
           pcbPath={[`${entry}.top`,...c.front.map(([x,y])=>({x:x-c.entry[0],y:y-c.entry[1]})),`${c.button}.pin1`]}/>
         {isMenu?<trace from={`${entry}.inner1`} to={`${input}.inner1`} thickness={0.15} routingPhaseIndex={0}
           pcbPathRelativeTo={`${entry}.inner1`}
-          pcbPath={[`${entry}.inner1`,{x:c.exit[0]-c.entry[0],y:c.exit[1]-c.entry[1]},`${input}.inner1`]}/>:
+          pcbPath={[`${entry}.inner1`,{x:1,y:6},`${input}.inner1`]}/>:
         <Fragment><trace from={`${entry}.bottom`} to={`${exit}.bottom`} thickness={0.15} routingPhaseIndex={0}
           pcbPath={[`${entry}.bottom`,`${exit}.bottom`]}/>
         <trace from={`${exit}.inner1`} to={`${input}.inner1`} thickness={0.15} routingPhaseIndex={0}
           pcbPathRelativeTo={`${exit}.inner1`}
           pcbPath={[`${exit}.inner1`,...c.rear.map(([x,y])=>({x:x-c.exit[0],y:y-c.exit[1]})),`${input}.inner1`]}/></Fragment>}
-        <trace from={`${input}.bottom`} to={`U_KEYS.${c.port}`} thickness={0.15} routingPhaseIndex={0}
-          pcbPath={[`${input}.bottom`,`U_KEYS.${c.port}`]}/>
+        <trace from={`${input}.top`} to={`U_KEYS.${c.port}`} thickness={0.15} routingPhaseIndex={0}
+          pcbPath={[`${input}.top`,`U_KEYS.${c.port}`]}/>
       </Fragment>
     })}
     {/* Fix the LEFT input escape; autoroute its remaining run to the switch. */}
     <net name="BUTTON_LEFT" routingPhaseIndex={0}/>
-    <via name="SIGNAL_BUTTON_LEFT_INPUT" pcbX={1.23} pcbY={-4.62} fromLayer="bottom" toLayer="top"
+    <via name="SIGNAL_BUTTON_LEFT_INPUT" pcbX={-1.23} pcbY={-4.62} fromLayer="bottom" toLayer="top"
       holeDiameter={0.3} outerDiameter={0.65} connectsTo="net.BUTTON_LEFT"/>
-    <trace from="SIGNAL_BUTTON_LEFT_INPUT.bottom" to="U_KEYS.GPA2" thickness={0.15} routingPhaseIndex={0}
-      pcbPath={["SIGNAL_BUTTON_LEFT_INPUT.bottom","U_KEYS.GPA2"]}/>
+    <trace from="SIGNAL_BUTTON_LEFT_INPUT.top" to="U_KEYS.GPA2" thickness={0.15} routingPhaseIndex={0}
+      pcbPath={["SIGNAL_BUTTON_LEFT_INPUT.top","U_KEYS.GPA2"]}/>
     <trace from="SIGNAL_BUTTON_LEFT_INPUT.inner2" to="SW_LEFT.pin1" thickness={0.2} routingPhaseIndex={0}/>
     {/* Keep the charger's current-setting connection clear of ground vias. */}
     <net name="CHARGE_ISET" routingPhaseIndex={2}/>

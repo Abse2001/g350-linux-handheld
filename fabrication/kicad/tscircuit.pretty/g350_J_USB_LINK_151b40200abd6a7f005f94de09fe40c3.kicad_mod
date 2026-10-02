@@ -1,0 +1,103 @@
+(footprint "g350_J_USB_LINK_151b40200abd6a7f005f94de09fe40c3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "J_USB_LINK"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8cfadb3f-f43a-4113-8698-45823db14eb1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "J_USB_LINK"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f735c063-7a27-48a7-91a6-f010cbd077c6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c8d33e18-1d8b-4f64-a83e-f318af6d50d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "15757a2c-3ee2-4d50-b857-98648718c297")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C49257, C2937625, C541857"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31786186-72d5-3fe6-4bcd-e1ba0a71035a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3c396680-1917-fc7f-6e69-5f7e3c453d83")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7c97b740-672f-f93f-51c8-3b3e3c607d3d")
+	)
+	(pad "3" thru_hole circle
+		(at 0 -2.54)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "16ac78ca-3e2e-8436-6cf6-7eca181b81ca")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/tscircuit_builtin.3dshapes/pinrow3_p2.54_nopinlabels.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

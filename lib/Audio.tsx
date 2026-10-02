@@ -52,7 +52,8 @@ export function Audio() {
       pcbPath={["AUDIO_MODE_PD.bottom",{x:0,y:-1.5},{x:7.4,y:-1.5},"AUDIO_MODE_EN.bottom"]}/>
     <trace from="U_AUDIO.LRCLK" to="J_PI.pin35" thickness={0.2} routingPhaseIndex={2}
       pcbPathRelativeTo="U_AUDIO.LRCLK" pcbPath={["U_AUDIO.LRCLK",{x:-3,y:0.252095},
-        {x:-42,y:1.5},{x:-48.5,y:8},{x:-48.5,y:26.4},
+        {x:-42,y:1.5},{x:-47.7,y:8},{x:-47.7,y:15.9},
+        {x:-48.5,y:16.7},{x:-48.5,y:26.4},
         {x:-36.05,y:26.4},"J_PI.pin35"]}/>
     <trace from="U_AUDIO.BCLK" to="J_PI.pin12" thickness={0.2} routingPhaseIndex={2}
       pcbPathRelativeTo="U_AUDIO.BCLK" pcbPath={["U_AUDIO.BCLK",{x:-3.5,y:-1.7},
@@ -107,10 +108,10 @@ export function Audio() {
       schX={5} schY={4} schRotation={-90} schSectionName="audio"
        /><Connections name="R_AUDIO_PD" connections={{pin1:"net.AMP_MODE",pin2:"net.GND"}}/></Fragment>
     <Fragment><pinheader name="J_SPEAKER" pinCount={2} pitch={2.54} gender="male"
-      pcbX={18} pcbY={18} layer="bottom" schX={2} schY={23} schSectionName="audio"
+      pcbX={18} pcbY={18} pcbRotation={180} layer="top" schX={2} schY={23} schSectionName="audio"
       manufacturerPartNumber="1x2 2.54mm speaker harness"
        /><Connections name="J_SPEAKER" connections={{pin1:"U_AUDIO.OUTP",pin2:"U_AUDIO.OUTN"}}/></Fragment>
     <silkscreentext text="SPK +  - / 8 OHM" pcbX={18} pcbY={21}
-      layer="bottom" fontSize={1} />
+      layer="top" fontSize={1} />
   </Fragment>
 }

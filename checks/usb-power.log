@@ -1,0 +1,6 @@
+PASS: 6 USB configuration/current-permission cases.
+PASS: All 9 GPIO mode transitions avoid the BQ24074 resistor-limit mode.
+PASS: 7 gadget binding cases covering VBUS absence, reconnect, disconnect, missing files and ambiguous controllers.
+PASS: All software Python syntax.
+GPIO hardware, USB enumeration and suspend timing remain untested.
+PASS: Simulated service SIGTERM unbinds the gadget and returns charging to USB100.

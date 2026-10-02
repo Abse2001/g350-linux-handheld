@@ -5,7 +5,7 @@ import {readFileSync, writeFileSync} from "node:fs"
 // vias and copper pours remain excluded from their solder-mask openings.
 const circuit = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
 const keepouts = circuit.filter(e => e.type === "pcb_keepout")
-const expected = [[-38,-49],[38,49],[-38,49]]
+const expected = [[-38,-49],[43,40],[-38,49]]
 if (keepouts.length !== 3 || !expected.every(([x,y]) => keepouts.some(e =>
   e.shape === "circle" && e.radius === 1.2 && e.allow_placements === true &&
   e.center.x === x && e.center.y === y && e.layers.join(",") === "top,bottom")))

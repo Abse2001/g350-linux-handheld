@@ -1,0 +1,158 @@
+(footprint "g350_U_USB_ESD_7ae7b8e0673f34e15396b0e23fee2ce3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "U_USB_ESD"
+		(at 0 -3 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "eb04fe0e-da63-48a4-bf41-dc95cc14396b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USBLC6-2SC6"
+		(at 0 3 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b93423f-ba55-4d25-9765-993ed8693605")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29daa9f9-a00e-4aff-9ad8-42431a4789b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4649d012-f36d-43e4-aaaa-3e2ee6bee24f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C7519"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05eace80-0473-0721-0ed0-dcc2192eb263")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.539189 0.889203)
+		(end -1.539189 -0.889203)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "be8b7122-c470-432f-9740-bf17980a921a")
+	)
+	(fp_line
+		(start 1.539189 0.889203)
+		(end 1.539189 -0.889203)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3ec702b8-a1ab-472b-92ee-d48b56a22769")
+	)
+	(fp_circle
+		(center -1.668272 1.301496)
+		(end -1.518158 1.301496)
+		(stroke
+			(width 0.299999)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "089c7c0a-a169-4536-99c8-e5a73e01298a")
+	)
+	(fp_poly
+		(pts
+			(xy -2.0788 -1.9264) (xy 1.774 -1.9264) (xy 1.774 2.028) (xy -2.0788 2.028) (xy -2.0788 -1.9264)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "32036f20-5aa5-9f61-18b1-521e73f7bc63")
+	)
+	(pad "1" smd rect
+		(at -0.94996 1.149096 270)
+		(size 1.072007 0.532003)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "684b8708-5ad1-fac8-4d58-6e883fdee248")
+	)
+	(pad "2" smd rect
+		(at 0 1.149096 270)
+		(size 1.072007 0.532003)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "09453422-6173-4bbe-33d4-346236e44b7e")
+	)
+	(pad "3" smd rect
+		(at 0.94996 1.149096 270)
+		(size 1.072007 0.532003)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1b9ec7a0-6ea2-b35f-3e59-60e214aa8add")
+	)
+	(pad "4" smd rect
+		(at 0.94996 -1.149096 270)
+		(size 1.072007 0.532003)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "089a6b60-55ad-98c1-4c0a-631e123da103")
+	)
+	(pad "5" smd rect
+		(at 0 -1.149096 270)
+		(size 1.072007 0.532003)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2dfad176-336d-2a8a-6b2a-d97609c2dd76")
+	)
+	(pad "6" smd rect
+		(at -0.94996 -1.149096 270)
+		(size 1.072007 0.532003)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "10254224-5a93-3dbc-3ab4-426430043d7c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/index.3dshapes/USBLC6_2SC6.step"
+		(offset
+			(xyz 0.0000127000000703 0.0000127000000703 0.048939)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

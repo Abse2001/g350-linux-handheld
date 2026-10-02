@@ -3,46 +3,30 @@ Building index.circuit.tsx...
 Generating circuit JSON...
 trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
 Wrote debug artifact: dist/autorouter-debug/placement-unrouted.png
-Autorouting <board#1255 /> phase 1/3 "CONTROLS" start: connections=20, obstacles=3581, previous_traces=0, router=custom, version=latest, effort=2x, cache=disabled(custom_algorithm)
-  connections: SW_UP.A to U_KEYS.GPA0, SW_DOWN.A to U_KEYS.GPA1, SW_LEFT.A to U_KEYS.GPA2, SW_RIGHT.A to U_KEYS.GPA3, SW_A.A to U_KEYS.GPA4, SW_B.A to U_KEYS.GPA5, SW_X.A to U_KEYS.GPA6, SW_Y.A to U_KEYS.GPB3, SW_SELECT.A to U_KEYS.GPB0, SW_START.A to U_KEYS.GPB1, SW_MENU.A to U_KEYS.GPB2, net.SDA, net.SCL, net.CHARGING_N, net.BAT_ALERT_N, net.USB_GOOD_N, net.BUTTON_MENU, net.BUTTON_SELECT, net.BUTTON_UP, net.BUTTON_LEFT
+Autorouting <board#1410 /> phase 1/3 "CONTROLS" start: connections=22, obstacles=3747, previous_traces=0, router=custom, version=latest, effort=2x, cache=disabled(custom_algorithm)
+  connections: SW_UP.A to U_KEYS.GPA0, SW_DOWN.A to U_KEYS.GPA1, SW_LEFT.A to U_KEYS.GPA2, SW_RIGHT.A to U_KEYS.GPA3, SW_A.A to U_KEYS.GPA4, SW_B.A to U_KEYS.GPA5, SW_X.A to U_KEYS.GPA6, SW_Y.A to U_KEYS.GPB3, SW_SELECT.A to U_KEYS.GPB0, SW_START.A to U_KEYS.GPB1, SW_MENU.A to U_KEYS.GPB2, net.SDA, net.SCL, net.CHARGING_N, net.BAT_ALERT_N, net.USB_GOOD_N, net.USB_EN1, net.USB_EN2, net.BUTTON_MENU, net.BUTTON_SELECT, net.BUTTON_UP, net.BUTTON_LEFT
 Wrote debug artifact: dist/autorouter-debug/phase-0.input.simple-route.json
-  phase 1/3 "CONTROLS" progress: solver_phase=componentDetectionSolver steps=1 progress=4% iterations_per_second=7 elapsed=15.6s
-  phase 1/3 "CONTROLS" progress: solver_phase=topologyPlanningSolver steps=15 progress=16% iterations_per_second=3095 elapsed=25.8s
-  phase 1/3 "CONTROLS" progress: solver_phase=topologyMergingSolver steps=38 progress=22% iterations_per_second=498 elapsed=35.8s
-  phase 1/3 "CONTROLS" progress: solver_phase=nodeDimensionSubdivisionSolver steps=50 progress=24% iterations_per_second=0 elapsed=106.7s
-  phase 1/3 "CONTROLS" progress: solver_phase=edgeSolver steps=51 progress=28% iterations_per_second=0 elapsed=122.9s
-  phase 1/3 "CONTROLS" progress: solver_phase=availableSegmentPointSolver steps=66 progress=32% iterations_per_second=54 elapsed=161.0s
-  phase 1/3 "CONTROLS" progress: solver_phase=portPointPathingSolver steps=72 progress=44% iterations_per_second=0 elapsed=283.7s
-  phase 1/3 "CONTROLS" progress: solver_phase=globalDrcForceImproveSolver steps=102 progress=80% iterations_per_second=1 elapsed=294.1s
-  phase 1/3 "CONTROLS" progress: solver_phase=pipeline9JointDrcRepairSolver steps=113 progress=84% iterations_per_second=2 elapsed=304.4s
-  phase 1/3 "CONTROLS" progress: solver_phase=pipeline9JointDrcRepairSolver steps=123 progress=84% iterations_per_second=2 elapsed=314.5s
-  phase 1/3 "CONTROLS" progress: solver_phase=pipeline9JointDrcRepairSolver steps=132 progress=84% iterations_per_second=2 elapsed=324.6s
-  phase 1/3 "CONTROLS" done: routed_traces=12, jumpers=0, errors=0, elapsed=331.4s
+Routing input SHA256: phase=0 88545f3a7cb2d7741a56757d2a757abdc846a6c553242ee95df16c6939cd4d28
+Using saved Pipeline 9 routes with manual corrections: phase=0
+  phase 1/3 "CONTROLS" done: routed_traces=16, jumpers=0, errors=0, elapsed=7.5s
 Wrote debug artifact: dist/autorouter-debug/phase-0.output.traces.json
 Wrote debug artifact: dist/autorouter-debug/phase-0-routed.png
 Could not save autorouting paths for subcircuit_source_group_0: Routes contain a junction or endpoint that cannot select a unique PCB port
-Autorouting <board#1255 /> phase 2/3 "POWER" start: connections=8, obstacles=3581, previous_traces=12, router=custom, version=latest, effort=2x, cache=disabled(custom_algorithm)
+Autorouting <board#1410 /> phase 2/3 "POWER" start: connections=8, obstacles=3747, previous_traces=16, router=custom, version=latest, effort=2x, cache=disabled(custom_algorithm)
   connections: net.GND, net.V3V3, net.V5V, net.USB_5V, net.VBAT, , net.BOOST_SW, net.V_LCD3V3
 Wrote debug artifact: dist/autorouter-debug/phase-1.input.simple-route.json
-  phase 2/3 "POWER" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=660 elapsed=293ms
-  phase 2/3 "POWER" progress: solver_phase=nodeDimensionSubdivisionSolver steps=23 progress=24% iterations_per_second=9 elapsed=41.2s
-  phase 2/3 "POWER" progress: solver_phase=availableSegmentPointSolver steps=31 progress=32% iterations_per_second=55 elapsed=73.5s
-  phase 2/3 "POWER" progress: solver_phase=portPointPathingSolver steps=36 progress=44% iterations_per_second=0 elapsed=178.2s
-  phase 2/3 "POWER" progress: solver_phase=none steps=54 progress=100% iterations_per_second=261 elapsed=188.3s
-  phase 2/3 "POWER" done: routed_traces=101, jumpers=0, errors=0, elapsed=188.4s
+Routing input SHA256: phase=1 57cd3d62aa1667eca73495105acb0fba9885fbdec4067c5fdb54c11bce1602b7
+Using saved Pipeline 9 routes with manual corrections: phase=1
+  phase 2/3 "POWER" done: routed_traces=110, jumpers=0, errors=0, elapsed=140ms
 Wrote debug artifact: dist/autorouter-debug/phase-1.output.traces.json
 Wrote debug artifact: dist/autorouter-debug/phase-1-routed.png
 Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .undefined > port.top
-Autorouting <board#1255 /> phase 3/3 "DISPLAY_AUDIO" start: connections=22, obstacles=3581, previous_traces=101, router=custom, version=latest, effort=2x, cache=disabled(custom_algorithm)
-  connections: J_SPEAKER.pin1 to U_AUDIO.OUTP, J_SPEAKER.pin2 to U_AUDIO.OUTN, J_OFF.pin1 to R_EN.pin2, R_CC1.pin1 to J_USB.A5, R_CC2.pin1 to J_USB.B5, R_ISET.pin1 to U_CHARGE.ISET, net.I2S_DIN, net.I2S_BCLK, net.I2S_LRCLK, net.AMP_ENABLE, net.LCD_RESET, net.LCD_DC, net.LCD_BL, net.SPI_MOSI, net.SPI_MISO, net.SPI_SCLK, net.LCD_CS, net.TOUCH_IRQ, net.AMP_MODE, net.USB_CC2, net.FB, net.CHARGE_ISET
+Autorouting <board#1410 /> phase 3/3 "DISPLAY_AUDIO" start: connections=23, obstacles=3747, previous_traces=110, router=custom, version=latest, effort=2x, cache=disabled(custom_algorithm)
+  connections: J_SPEAKER.pin1 to U_AUDIO.OUTP, J_SPEAKER.pin2 to U_AUDIO.OUTN, J_OFF.pin1 to R_EN.pin2, R_CC1.pin1 to J_USB.A5, R_CC2.pin1 to J_USB.B5, R_ISET.pin1 to U_CHARGE.ISET, net.I2S_DIN, net.I2S_BCLK, net.I2S_LRCLK, net.AMP_ENABLE, net.LCD_RESET, net.LCD_DC, net.LCD_BL, net.SPI_MOSI, net.SPI_MISO, net.SPI_SCLK, net.LCD_CS, net.TOUCH_IRQ, net.AMP_MODE, net.FB, net.USB_DP, net.USB_DN, net.CHARGE_ISET
 Wrote debug artifact: dist/autorouter-debug/phase-2.input.simple-route.json
-  phase 3/3 "DISPLAY_AUDIO" progress: solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=79 elapsed=404ms
-  phase 3/3 "DISPLAY_AUDIO" progress: solver_phase=topologyMergingSolver steps=33 progress=23% iterations_per_second=615 elapsed=10.6s
-  phase 3/3 "DISPLAY_AUDIO" progress: solver_phase=nodeDimensionSubdivisionSolver steps=40 progress=24% iterations_per_second=2 elapsed=87.6s
-  phase 3/3 "DISPLAY_AUDIO" progress: solver_phase=edgeSolver steps=41 progress=28% iterations_per_second=0 elapsed=103.2s
-  phase 3/3 "DISPLAY_AUDIO" progress: solver_phase=availableSegmentPointSolver steps=50 progress=32% iterations_per_second=215 elapsed=134.8s
-  phase 3/3 "DISPLAY_AUDIO" progress: solver_phase=portPointPathingSolver steps=55 progress=44% iterations_per_second=0 elapsed=253.8s
-  phase 3/3 "DISPLAY_AUDIO" done: routed_traces=105, jumpers=0, errors=0, elapsed=261.3s
+Routing input SHA256: phase=2 1f06e22ae6363de60eed7478fba088b8c6422b6a893e6a8975eadd9d51ad5ac0
+Using saved Pipeline 9 routes with manual corrections: phase=2
+  phase 3/3 "DISPLAY_AUDIO" done: routed_traces=114, jumpers=0, errors=0, elapsed=387ms
 Wrote debug artifact: dist/autorouter-debug/phase-2.output.traces.json
 Wrote debug artifact: dist/autorouter-debug/phase-2-routed.png
 Could not save autorouting paths for subcircuit_source_group_0: Routes contain a junction or endpoint that cannot select a unique PCB port
@@ -54,80 +38,81 @@ The "J" prefix is being used with a <chip />, try using it with a <connector /> 
 <trace#41(from:TP_3V3.pin1 to:J_PI.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
 <trace#42(from:TP_5V.pin1 to:J_PI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
 <trace#43(from:J_PI.pin2 to:J_PI.pin4) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#141(from:R_AUDIO_EN.pin1 to:J_PI.pin37) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#156(from:U_AUDIO.LRCLK to:J_PI.pin35) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#157(from:U_AUDIO.BCLK to:J_PI.pin12) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#158(from:U_AUDIO.DIN to:J_PI.pin40) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#210(from:U_AUDIO.VDD1 to:C_AUDIO_HF.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#211(from:U_AUDIO.VDD2 to:C_AUDIO_HF.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#212(from:C_AUDIO_HF.pin1 to:C_AUDIO_BULK.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#213(from:U_AUDIO.GAIN_SLOT to:C_AUDIO_BULK.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#259(from:J_SPEAKER.pin1 to:U_AUDIO.OUTP) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#260(from:J_SPEAKER.pin2 to:U_AUDIO.OUTN) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#313(from:J_USB.VBUS1 to:J_USB.VBUS2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#314(from:C_USB.pin1 to:J_USB.VBUS2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#350(from:U_CHARGE.TS to:J_BAT.pin3) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#364(from:L_BOOST.pin2 to:U_BOOST.SW) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#366(from:U_CHARGE.OUT1 to:C_SYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#367(from:U_CHARGE.OUT2 to:C_SYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#368(from:U_CHARGE.BAT1 to:C_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#369(from:U_CHARGE.BAT2 to:C_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#370(from:C_BAT.pin1 to:J_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#371(from:U_CHARGE.IN to:C_USB.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#372(from:U_CHARGE.EN1 to:C_SYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#373(from:U_BOOST.VIN to:C_BOOST_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#374(from:U_BOOST.VOUT to:C_BOOST_OUT1.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#375(from:U_BOOST.FB to:R_FB_HI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#376(from:R_FB_LO.pin1 to:R_FB_HI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#377(from:C_FEEDFORWARD.pin2 to:R_FB_HI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#378(from:R_FB_HI.pin1 to:C_BOOST_OUT1.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#379(from:C_FEEDFORWARD.pin1 to:R_FB_HI.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#380(from:R_EN.pin1 to:C_BOOST_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#381(from:U_CHARGE.TMR to:R_TIMER.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#390(from:U_BOOST.EN to:R_EN.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#392(from:U_CHARGE.EP to:U_CHARGE.VSS) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#393(from:U_CHARGE.N_PGOOD to:R_GOOD_PULL.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#399(from:R_GOOD_PULL.pin1 to:R_CHG_PULL.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#400(from:R_GOOD_PULL.pin1 to:J_PI.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#401(from:R_GOOD_PULL.pin1 to:R_ALERT_PULL.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#421(from:J_OFF.pin1 to:R_EN.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#436(from:R_CC1.pin1 to:J_USB.CC1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#451(from:R_CC2.pin1 to:J_USB.CC2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#466(from:R_ISET.pin1 to:U_CHARGE.ISET) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#482(from:U_CHARGE.ILIM to:R_ILIM.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#731(from:U_GAUGE.CELL to:C_GAUGE.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#732(from:U_GAUGE.VDD to:C_GAUGE.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#733(from:C_GAUGE.pin1 to:J_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#742(from:U_GAUGE.QSTRT to:U_GAUGE.EP) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#866(from:C_LCD_IN.pin1 to:TP_5V.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#867(from:U_LCD_PWR.VIN to:C_LCD_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#868(from:U_LCD_PWR.EN to:C_LCD_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#883(from:U_LCD_PWR.VOUT to:C_LCD_OUT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1014(from:U_GAUGE.SCL to:J_PI.pin5) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1015(from:U_GAUGE.SDA to:U_KEYS.SDA) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1065(from:R_RESET.pin1 to:U_KEYS.N_RESET) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1078(from:C_KEYS.pin1 to:C_KEYS_BULK.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1079(from:U_KEYS.VDD to:C_KEYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1107(from:SW_UP.pin1 to:U_KEYS.GPA0) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1115(from:SW_DOWN.pin1 to:U_KEYS.GPA1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1123(from:SW_LEFT.pin1 to:U_KEYS.GPA2) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1131(from:SW_RIGHT.pin1 to:U_KEYS.GPA3) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1139(from:SW_A.pin1 to:U_KEYS.GPA4) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1147(from:SW_B.pin1 to:U_KEYS.GPA5) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1155(from:SW_X.pin1 to:U_KEYS.GPA6) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1163(from:SW_Y.pin1 to:U_KEYS.GPB3) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1171(from:SW_SELECT.pin1 to:U_KEYS.GPB0) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1179(from:SW_START.pin1 to:U_KEYS.GPB1) /> is missing a name. Add a name prop to make the trace easier to identify.
-<trace#1187(from:SW_MENU.pin1 to:U_KEYS.GPB2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#143(from:R_AUDIO_EN.pin1 to:J_PI.pin37) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#158(from:U_AUDIO.LRCLK to:J_PI.pin35) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#159(from:U_AUDIO.BCLK to:J_PI.pin12) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#160(from:U_AUDIO.DIN to:J_PI.pin40) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#212(from:U_AUDIO.VDD1 to:C_AUDIO_HF.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#213(from:U_AUDIO.VDD2 to:C_AUDIO_HF.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#214(from:C_AUDIO_HF.pin1 to:C_AUDIO_BULK.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#215(from:U_AUDIO.GAIN_SLOT to:C_AUDIO_BULK.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#261(from:J_SPEAKER.pin1 to:U_AUDIO.OUTP) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#262(from:J_SPEAKER.pin2 to:U_AUDIO.OUTN) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#265(from:J_USB.CC2 to:R_CC2.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#346(from:U_CHARGE.TS to:J_BAT.pin3) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#360(from:L_BOOST.pin2 to:U_BOOST.SW) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#362(from:U_CHARGE.OUT1 to:C_SYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#363(from:U_CHARGE.OUT2 to:C_SYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#364(from:U_CHARGE.BAT1 to:C_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#365(from:U_CHARGE.BAT2 to:C_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#366(from:C_BAT.pin1 to:J_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#367(from:U_CHARGE.IN to:C_USB.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#368(from:U_BOOST.VIN to:C_BOOST_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#369(from:U_BOOST.VOUT to:C_BOOST_OUT1.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#370(from:U_BOOST.FB to:R_FB_HI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#371(from:R_FB_LO.pin1 to:R_FB_HI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#372(from:C_FEEDFORWARD.pin2 to:R_FB_HI.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#373(from:R_FB_HI.pin1 to:C_BOOST_OUT1.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#374(from:C_FEEDFORWARD.pin1 to:R_FB_HI.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#375(from:R_EN.pin1 to:C_BOOST_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#376(from:U_CHARGE.TMR to:R_TIMER.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#385(from:U_BOOST.EN to:R_EN.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#387(from:U_CHARGE.EP to:U_CHARGE.VSS) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#388(from:U_CHARGE.N_PGOOD to:R_GOOD_PULL.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#394(from:R_GOOD_PULL.pin1 to:R_CHG_PULL.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#395(from:R_GOOD_PULL.pin1 to:J_PI.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#396(from:R_GOOD_PULL.pin1 to:R_ALERT_PULL.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#416(from:J_OFF.pin1 to:R_EN.pin2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#431(from:R_CC1.pin1 to:J_USB.CC1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#446(from:R_CC2.pin1 to:J_USB.CC2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#461(from:R_ISET.pin1 to:U_CHARGE.ISET) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#477(from:U_CHARGE.ILIM to:R_ILIM.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#726(from:U_GAUGE.CELL to:C_GAUGE.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#727(from:U_GAUGE.VDD to:C_GAUGE.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#728(from:C_GAUGE.pin1 to:J_BAT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#737(from:U_GAUGE.QSTRT to:U_GAUGE.EP) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#798(from:U_USB_ESD.pin6 to:U_USB_ESD.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#799(from:U_USB_ESD.pin4 to:U_USB_ESD.pin3) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1018(from:C_LCD_IN.pin1 to:TP_5V.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1019(from:U_LCD_PWR.VIN to:C_LCD_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1020(from:U_LCD_PWR.EN to:C_LCD_IN.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1035(from:U_LCD_PWR.VOUT to:C_LCD_OUT.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1166(from:U_GAUGE.SCL to:J_PI.pin5) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1223(from:R_RESET.pin1 to:U_KEYS.N_RESET) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1236(from:C_KEYS.pin1 to:C_KEYS_BULK.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1237(from:U_KEYS.VDD to:C_KEYS.pin1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1265(from:SW_UP.pin1 to:U_KEYS.GPA0) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1273(from:SW_DOWN.pin1 to:U_KEYS.GPA1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1281(from:SW_LEFT.pin1 to:U_KEYS.GPA2) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1289(from:SW_RIGHT.pin1 to:U_KEYS.GPA3) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1297(from:SW_A.pin1 to:U_KEYS.GPA4) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1305(from:SW_B.pin1 to:U_KEYS.GPA5) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1313(from:SW_X.pin1 to:U_KEYS.GPA6) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1321(from:SW_Y.pin1 to:U_KEYS.GPB3) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1329(from:SW_SELECT.pin1 to:U_KEYS.GPB0) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1337(from:SW_START.pin1 to:U_KEYS.GPB1) /> is missing a name. Add a name prop to make the trace easier to identify.
+<trace#1345(from:SW_MENU.pin1 to:U_KEYS.GPB2) /> is missing a name. Add a name prop to make the trace easier to identify.
 No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+component is facing x+ but should face x- so the connector is accessible from the board edge
 J_PI has no courtyard
+J_USB_LINK has no courtyard
 TP_GND has no courtyard
 TP_5V has no courtyard
 TP_3V3 has no courtyard
 Trace [TP_3V3.pin1 to KEYS_SUPPLY.top] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
-Trace [KEYS_SUPPLY.bottom to C_KEYS_BULK.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
-Trace [R_RESET.pin2 to RESET_SUPPLY.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [RESET_SUPPLY.top to KEYS_SUPPLY.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [KEYS_SUPPLY.top to C_KEYS_BULK.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
+Trace [R_RESET.pin2 to RESET_SUPPLY.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [RESET_SUPPLY.bottom to KEYS_SUPPLY.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [TP_3V3.pin1 to J_PI.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [TP_5V.pin1 to J_PI.pin2] is routed thinner than requested (requested: 0.8mm, actual: 0.15mm).
 Trace [J_PI.pin2 to J_PI.pin4] is routed thinner than requested (requested: 0.8mm, actual: 0.15mm).
@@ -145,13 +130,13 @@ Trace [VSYS_CHARGER.bottom to VSYS_BOOST.bottom] is routed thinner than requeste
 Trace [VSYS_BOOST.top to C_BOOST_IN.pin1] is routed thinner than requested (requested: 0.8mm, actual: 0.15mm).
 Trace [VSYS_INDUCTOR.bottom to VSYS_BOOST.bottom] is routed thinner than requested (requested: 0.8mm, actual: 0.15mm).
 Trace [L_BOOST.pin1 to VSYS_INDUCTOR.top] is routed thinner than requested (requested: 0.8mm, actual: 0.15mm).
-Trace [J_USB.VBUS1 to J_USB.VBUS2] is routed thinner than requested (requested: 0.5mm, actual: 0.3mm).
-Trace [C_USB.pin1 to J_USB.VBUS2] is routed thinner than requested (requested: 0.5mm, actual: 0.3mm).
+Trace [C_USB.pin1 to SIGNAL_USB_VBUS_LEFT.bottom] is routed thinner than requested (requested: 0.5mm, actual: 0.2mm).
 Trace [U_CHARGE.OUT1 to C_SYS.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [U_CHARGE.OUT2 to C_SYS.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [U_CHARGE.BAT1 to C_BAT.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [U_CHARGE.BAT2 to C_BAT.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [C_BAT.pin1 to J_BAT.pin1] is routed thinner than requested (requested: 0.8mm, actual: 0.15mm).
+Trace [U_CHARGE.IN to C_USB.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.2mm).
 Trace [U_BOOST.VIN to C_BOOST_IN.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [U_BOOST.VOUT to C_BOOST_OUT1.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [R_TIMER.pin2 to TIMER_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
@@ -159,7 +144,7 @@ Trace [R_FB_LO.pin2 to FEEDBACK_GND.top] is routed thinner than requested (reque
 Trace [U_BOOST.EN to R_EN.pin2] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [U_CHARGE.EP to U_CHARGE.VSS] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [J_OFF.pin1 to R_EN.pin2] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [R_CC1.pin1 to J_USB.CC1] is routed thinner than requested (requested: 0.2mm, actual: 0.175mm).
+Trace [R_CC1.pin1 to J_USB.CC1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [R_CC2.pin1 to J_USB.CC2] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [R_ISET.pin1 to U_CHARGE.ISET] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [C_USB.pin2 to C_USB_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
@@ -169,28 +154,44 @@ Trace [C_BOOST_IN.pin2 to C_BOOST_IN_GND.top] is routed thinner than requested (
 Trace [C_BOOST_OUT1.pin2 to C_BOOST_OUT1_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [C_GAUGE.pin2 to C_GAUGE_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [C_GAUGE.pin1 to J_BAT.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DP_A.inner1 to SIGNAL_USB_DP_B.inner1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DP_A.inner1 to SIGNAL_USB_DP_ESD.inner1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DP_ESD.top to U_USB_ESD.pin4] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [U_USB_ESD.pin6 to U_USB_ESD.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [U_USB_ESD.pin4 to U_USB_ESD.pin3] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DN_A.inner1 to SIGNAL_USB_DN_B.inner1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DN_B.inner1 to SIGNAL_USB_DN_ESD.inner1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DN_ESD.top to U_USB_ESD.pin6] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [U_USB_ESD.pin1 to SIGNAL_USB_DN_OUTPUT.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DN_OUTPUT.inner1 to J_USB_LINK.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [U_USB_ESD.pin3 to SIGNAL_USB_DP_OUTPUT.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_USB_DP_OUTPUT.inner1 to J_USB_LINK.pin2] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [J_USB.VBUS1 to SIGNAL_USB_VBUS_LEFT.top] is routed thinner than requested (requested: 0.5mm, actual: 0.2mm).
+Trace [J_USB.VBUS2 to SIGNAL_USB_VBUS_RIGHT.top] is routed thinner than requested (requested: 0.5mm, actual: 0.2mm).
+Trace [SIGNAL_USB_VBUS_LEFT.inner2 to SIGNAL_USB_VBUS_RIGHT.inner2] is routed thinner than requested (requested: 0.5mm, actual: 0.2mm).
+Trace [C_USB_ESD.pin2 to USB_ESD_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [C_LCD_IN.pin1 to TP_5V.pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
 Trace [U_LCD_PWR.VIN to C_LCD_IN.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
 Trace [U_LCD_PWR.EN to C_LCD_IN.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [U_LCD_PWR.VOUT to C_LCD_OUT.pin1] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
-Trace [C_LCD_OUT.pin1 to LCD_FEED.bottom] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
-Trace [LCD_FEED.top to LCD_VCC.top] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
-Trace [LCD_VCC.bottom to J_LCD.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [LCD_VCC.top to LCD_SD_CS.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [C_LCD_IN.pin2 to LCD_IN_GND.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [C_LCD_OUT.pin2 to LCD_OUT_GND.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [U_LCD_PWR.GND to LCD_LDO_GND.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [C_LCD_OUT.pin1 to LCD_FEED.top] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
+Trace [LCD_FEED.bottom to LCD_VCC.bottom] is routed thinner than requested (requested: 0.3mm, actual: 0.15mm).
+Trace [LCD_VCC.top to J_LCD.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [LCD_VCC.bottom to LCD_SD_CS.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [C_LCD_IN.pin2 to LCD_IN_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [C_LCD_OUT.pin2 to LCD_OUT_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [U_LCD_PWR.GND to LCD_LDO_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SIGNAL_BUTTON_LEFT_INPUT.inner2 to SW_LEFT.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [U_GAUGE.SCL to J_PI.pin5] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [U_GAUGE.SDA to U_KEYS.SDA] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [U_GAUGE.SDA to SIGNAL_SDA_KEYS.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [SIGNAL_SDA_KEYS.top to U_KEYS.SDA] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [C_KEYS.pin1 to C_KEYS_BULK.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [U_KEYS.VDD to C_KEYS.pin1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [C_KEYS.pin2 to KEYS_BYPASS_GND.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [C_KEYS_BULK.pin2 to KEYS_BULK_GND.bottom] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [C_KEYS.pin2 to KEYS_BYPASS_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [C_KEYS_BULK.pin2 to KEYS_BULK_GND.top] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SW_UP.pin1 to U_KEYS.GPA0] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SW_DOWN.pin1 to U_KEYS.GPA1] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SW_LEFT.pin1 to U_KEYS.GPA2] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
-Trace [SW_RIGHT.pin1 to U_KEYS.GPA3] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SW_A.pin1 to U_KEYS.GPA4] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SW_B.pin1 to U_KEYS.GPA5] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
 Trace [SW_X.pin1 to U_KEYS.GPA6] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).

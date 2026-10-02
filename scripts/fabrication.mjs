@@ -6,6 +6,9 @@ import {
 import { prepareJlcpcbAssembly, isJlcpcbAssembledComponent } from "./assembly.mjs"
 
 const sourcePath = "dist/index/circuit.json"
+if (JSON.parse(readFileSync("routing/rev-b-routes.json","utf8"))
+    .some(phase=>!/^[a-f0-9]{64}$/.test(phase.inputFingerprint??"")))
+  throw new Error("Route snapshots require qualified input fingerprints")
 const original = readFileSync(sourcePath)
 const circuit = JSON.parse(original)
 const errors = circuit.filter(e => e.type.endsWith("_error"))
@@ -51,19 +54,25 @@ for(const via of exportedVias){
      !expectedVias.some(e=>Math.hypot(Number(at[1])-100-e.x,100-Number(at[2])-e.y)<0.005))
     throw new Error("KiCad via span, dimensions or position differs from a standard circuit through-via")
 }
-const sourceFiles = ["index.circuit.tsx",...['lib','imports'].flatMap(dir =>
-  readdirSync(dir).filter(f=>f.endsWith('.tsx')||f.endsWith('.ts')).map(f=>`${dir}/${f}`))]
+const sourceFiles = ["index.circuit.tsx","routing/rev-b-routes.json",...['lib','imports'].flatMap(dir =>
+  readdirSync(dir,{recursive:true,withFileTypes:true})
+    .filter(e=>e.isFile() && /\.(tsx?|jsx?)$/.test(e.name))
+    .map(e=>`${e.parentPath}/${e.name}`))]
 if (sourceFiles.some(path => statSync(path).mtimeMs > statSync(sourcePath).mtimeMs))
   throw new Error("Hardware source changed after the qualified circuit build")
 const source = new Map(circuit.filter(e => e.type === "source_component").map(e => [e.source_component_id,e]))
 const pcb = circuit.filter(e => e.type === "pcb_component")
+const bottomComponents=pcb.filter(p=>source.has(p.source_component_id) && p.layer!=="top")
+if(bottomComponents.length)
+  throw new Error("Revision B requires every carrier component and hand-fitted header on the top side")
 const quote = v => `"${String(v ?? "").replaceAll('"','""')}"`
 const csv = rows => rows.map(row => row.map(quote).join(",")).join("\n") + "\n"
 mkdirSync("fabrication", { recursive: true })
 const groups = new Map()
 const packages = {U_CHARGE:"QFN-16-EP(3x3)",U_AUDIO:"TQFN-16-EP(3x3)",
   U_GAUGE:"DFN-8-EP(2x2)",U_BOOST:"SOT-563",U_KEYS:"SOIC-28",
-  J_USB:"TYPE-C-31-M-12",L_BOOST:"1008",J_LCD:"FPC-0.5-18P",U_LCD_PWR:"SOT-25-5"}
+  J_USB:"TYPE-C-31-M-12",L_BOOST:"1008",J_LCD:"FPC-0.5-18P",U_LCD_PWR:"SOT-25-5",
+  U_USB_ESD:"SOT-23-6"}
 for (const p of pcb) {
   const s = source.get(p.source_component_id)
   if (!isJlcpcbAssembledComponent(s)) continue
@@ -90,10 +99,13 @@ writeFileSync("fabrication/bom-jlcpcb.csv",bom)
 writeFileSync("fabrication/pnp-jlcpcb.csv",pnp)
 writeFileSync("fabrication/bom-manual.csv",csv([
   ["Item","Quantity","Specification","Assembly notes"],
-  ["J_PI",1,"Unshrouded 2x20 male header, 2.54 mm pitch","Fit on bottom; match silkscreen pin 1"],
-  ["J_BAT",1,"1x3 male header, 2.54 mm pitch; battery harness rated at least 3 A","Bottom; pin 1 battery positive, 2 negative, 3 NTC"],
-  ["J_OFF, J_SPEAKER",2,"1x2 male header, 2.54 mm pitch","Fit on bottom; speaker outputs are both driven"],
-  ["Linux host",1,"Raspberry Pi Zero 2 W with populated GPIO header","Complete external module; insulating M2.5 standoffs"],
+  ["J_PI",1,"Unshrouded 2x20 male header, 2.54 mm pitch","Fit on top; match silkscreen pin 1"],
+  ["J_BAT",1,"1x3 male header, 2.54 mm pitch; battery harness rated at least 3 A","Top; pin 1 battery positive, 2 negative, 3 NTC"],
+  ["J_OFF, J_SPEAKER",2,"1x2 male header, 2.54 mm pitch","Fit on top; speaker outputs are both driven"],
+  ["J_USB_LINK",1,"1x3 male header, 2.54 mm pitch","Top; pin 1 D-, pin 2 D+, pin 3 GND; no VBUS pin"],
+  ["Pi USB cable",1,"Shielded micro-B male data-only pigtail with twisted D+/D- pair, nominal 100 mm","Allow routing and plug clearance from the Pi USB port to J_USB_LINK; pin 2 to link 1, pin 3 to link 2, pin 5/shield to link 3; pin 1 VBUS disconnected and insulated, pin 4 ID open"],
+  ["Linux host",1,"Raspberry Pi Zero 2 W with populated GPIO header","Complete external module on top-side insulating standoffs; preserve microSD insertion/removal access"],
+  ["Boot storage",1,"microSD card sized for the selected Raspberry Pi OS image","Install in the Pi's own microSD holder; Linux installation via the carrier USB-C data path and rpiboot or a separate card reader"],
   ["GPIO cable",1,"Straight-through 40-wire female-to-female GPIO ribbon","Pin 1 to pin 1; preserve both pin rows"],
   ["Display",1,"Waveshare 3.5inch Capacitive Touch LCD, ST7796S + FT6336U","18-pin 0.5 mm FPC host port; use custom GPIO assignments"],
   ["Display cable",1,"18-conductor 0.5 mm pitch, 0.3 mm thick FFC","Choose contact sides for both connectors; verify pin-1 continuity"],

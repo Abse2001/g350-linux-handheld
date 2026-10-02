@@ -12,6 +12,7 @@ const board = "dist/index/kicad/index.kicad_pcb"
 const output = "fabrication/gerbers"
 rmSync(output,{recursive:true,force:true})
 rmSync("fabrication/g350-rev-a-gerbers.zip",{force:true})
+rmSync("fabrication/g350-rev-b-gerbers.zip",{force:true})
 mkdirSync(output,{recursive:true})
 const log = openSync("checks/fabrication-export.log","w")
 function run(command,args) {
@@ -24,19 +25,22 @@ try {
     "--use-drill-file-origin","--subtract-soldermask","--output",`${output}/`,board])
   run(cli,["pcb","export","drill","--format","excellon","--drill-origin","plot",
     "--excellon-units","mm","--excellon-separate-th","--output",`${output}/`,board])
-  run("zip",["-j","fabrication/g350-rev-a-gerbers.zip",...readdirSync(output).map(f=>`${output}/${f}`)])
+  run("zip",["-j","fabrication/g350-rev-b-gerbers.zip",...readdirSync(output).map(f=>`${output}/${f}`)])
 } finally { closeSync(log) }
 await import("./verify-gerber-coordinates.mjs")
+rmSync("fabrication/kicad",{recursive:true,force:true})
 cpSync("dist/index/kicad","fabrication/kicad",{recursive:true,
   filter:path=>!path.endsWith(".kicad_prl")})
 // Registry request limits can reject large plain-text STEP models. Supply
 // lossless gzip copies; GitHub keeps the original models as well.
-const modelDir="fabrication/kicad/3dmodels/tscircuit_builtin.3dshapes"
-for(const file of readdirSync(modelDir).filter(file=>file.endsWith(".step"))){
-  const bytes=readFileSync(`${modelDir}/${file}`)
-  if(bytes.length>3_000_000) writeFileSync(`${modelDir}/${file}.gz`,gzipSync(bytes,{level:9}))
+const modelDir="fabrication/kicad/3dmodels"
+for(const entry of readdirSync(modelDir,{recursive:true,withFileTypes:true})
+  .filter(e=>e.isFile()&&e.name.endsWith(".step"))){
+  const path=`${entry.parentPath}/${entry.name}`
+  const bytes=readFileSync(path)
+  if(bytes.length>3_000_000) writeFileSync(`${path}.gz`,gzipSync(bytes,{level:9}))
 }
-const files = ["circuit.json","bom-jlcpcb.csv","bom-manual.csv","pnp-jlcpcb.csv","g350-rev-a-gerbers.zip",
+const files = ["circuit.json","bom-jlcpcb.csv","bom-manual.csv","pnp-jlcpcb.csv","g350-rev-b-gerbers.zip",
   ...readdirSync("fabrication/kicad",{recursive:true,withFileTypes:true}).filter(e=>e.isFile())
     .map(e=>`${e.parentPath.replace(/^fabrication\//,"")}/${e.name}`)]
 writeFileSync("fabrication/SHA256SUMS",files.map(f=>

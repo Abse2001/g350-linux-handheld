@@ -8,8 +8,9 @@ import { Power } from "./lib/Power"
 import { Audio } from "./lib/Audio"
 import { Display } from "./lib/Display"
 import { ControlEscapes } from "./lib/ControlEscapes"
+import { UsbData } from "./lib/UsbData"
 
-// All coordinates are mm. Front controls are top; support electronics are rear.
+// All coordinates are mm. All carrier components and hand-fitted headers are assembled on the top side.
 const buttons = [
   {name:"SW_UP",    x:-24,y:-19,port:"GPA0",label:"UP"},
   {name:"SW_DOWN",  x:-24,y:-39,port:"GPA1",label:"DOWN"},
@@ -29,7 +30,7 @@ const Wire = ({from,net,width=0.2,phase=0}:{from:string,net:string,width?:number
   <trace from={from} to={`net.${net}`} thickness={width} routingPhaseIndex={phase} />
 
 export default () => (
-  <board title="G350 Linux Handheld — Pi Zero 2 W Carrier Rev A"
+  <board title="G350 Linux Handheld — Pi Zero 2 W Carrier Rev B"
     width={100} height={124} thickness={1.6} layers={4} borderRadius={3}
     material="fr4" fabricatorPreset="jlcpcb_standard" solderMaskColor="green"
     minTraceWidth={0.15} nominalTraceWidth={0.2}
@@ -43,7 +44,7 @@ export default () => (
     <schematicsection name="host" displayName="Linux host — physical Pi J8 pins" />
     <schematicsection name="display" displayName="ST7796S display — 18-pin FPC" />
     <schematicsection name="audio" displayName="I2S audio" />
-    <schematicsection name="controls" displayName="Front controls — MCP23017 address 0x20" />
+    <schematicsection name="controls" displayName="Controls / MCP23017 0x20" />
     <schematicsection name="power" displayName="USB-C charger and 5V boost" />
     <schematicsection name="battery" displayName="MAX17048 fuel gauge" />
 
@@ -65,6 +66,7 @@ export default () => (
     <PiZero2W />
     <Audio />
     <Power />
+    <UsbData />
     <Display />
     <ControlEscapes />
 
@@ -73,42 +75,46 @@ export default () => (
       pcbPathRelativeTo="U_GAUGE.SCL"
       pcbPath={["U_GAUGE.SCL",{x:-0.249936,y:2.5},{x:-2.18,y:2.5},
         {x:-7.68,y:8},{x:-11.68,y:8},{x:-11.68,y:16.9},"J_PI.pin5"]}/>
-    <trace from="U_GAUGE.SDA" to="U_KEYS.SDA" thickness={0.2} routingPhaseIndex={0}
+    <via name="SIGNAL_SDA_KEYS" pcbX={6.985} pcbY={-15.8} fromLayer="bottom" toLayer="top"
+      holeDiameter={0.3} outerDiameter={0.65} connectsTo="net.SDA"/>
+    <trace from="U_GAUGE.SDA" to="SIGNAL_SDA_KEYS.bottom" thickness={0.2} routingPhaseIndex={0}
       pcbPathRelativeTo="U_GAUGE.SDA" pcbPath={["U_GAUGE.SDA",{x:-1.85,y:1.5},
         {x:-1.85,y:1.5,via:true,toLayer:"bottom"},{x:-1.85,y:1.5},
         {x:3,y:-3.35},{x:3,y:-10},{x:-7,y:-20},{x:-15,y:-28},
-        {x:-24,y:-37},{x:-38.985,y:-36},"U_KEYS.SDA"]}/>
+        "SIGNAL_SDA_KEYS.bottom"]}/>
+    <trace from="SIGNAL_SDA_KEYS.top" to="U_KEYS.SDA" thickness={0.2} routingPhaseIndex={0}
+      pcbPath={["SIGNAL_SDA_KEYS.top","U_KEYS.SDA"]}/>
 
-    <MCP23017_E_SO name="U_KEYS" pcbX={0} pcbY={-8} layer="bottom"
+    <MCP23017_E_SO name="U_KEYS" pcbX={0} pcbY={-8} layer="top"
       schX={-12} schY={-8} schWidth={2.245} schHeight={3} schSectionName="controls"
     />
     {["VSS","A0","A1","A2"].map(p=><Wire key={p} from={`U_KEYS.${p}`} net="GND" width={0.4} phase={1}/>)}
     <Wire from="U_KEYS.SDA" net="SDA" />
     <Wire from="U_KEYS.SCL" net="SCL" />
     <Fragment><resistor name="R_RESET" schRotation={90} resistance="10k" footprint="0603" supplierPartNumbers={passivePart("C25804")}
-      pcbX={6} pcbY={1} layer="bottom" schX={-5} schY={0} schSectionName="controls"
+      pcbX={-6} pcbY={1} layer="top" schX={-5} schY={0} schSectionName="controls"
        /><Connections name="R_RESET" connections={{pin2:"net.V3V3"}}/></Fragment>
     <trace from="R_RESET.pin1" to="U_KEYS.N_RESET" thickness={0.2} routingPhaseIndex={2}
       pcbPathRelativeTo="R_RESET.pin1"
-      pcbPath={["R_RESET.pin1",{x:0.825,y:-1.8},{x:-10.445,y:-1.8},"U_KEYS.N_RESET"]}/>
+      pcbPath={["R_RESET.pin1",{x:-0.825,y:-1},{x:10.445,y:-1},"U_KEYS.N_RESET"]}/>
     <Fragment><capacitor name="C_KEYS" schRotation={-90} capacitance="100nF" footprint="0603" supplierPartNumbers={passivePart("C14663")}
-      pcbX={-2.73} pcbY={-15.5} layer="bottom" maxDecouplingTraceLength={2.5}
+      pcbX={2.73} pcbY={-15.5} layer="top" maxDecouplingTraceLength={2.5}
       schX={-20} schY={-8} schSectionName="controls"
        /><trace from="C_KEYS.pin1" to="C_KEYS_BULK.pin1" thickness={0.2}
          routingPhaseIndex={1} maxLength={25} pcbPath={["C_KEYS.pin1","C_KEYS_BULK.pin1"]}/></Fragment>
     <trace from="U_KEYS.VDD" to="C_KEYS.pin1" thickness={0.2} routingPhaseIndex={1}
       pcbPath={["U_KEYS.VDD","C_KEYS.pin1"]}/>
-    <trace from="C_KEYS.pin2" to="KEYS_BYPASS_GND.bottom" thickness={0.2} routingPhaseIndex={1}
-      pcbPath={["C_KEYS.pin2","KEYS_BYPASS_GND.bottom"]}/>
-    <via name="KEYS_BYPASS_GND" pcbX={-4.7} pcbY={-15.5} holeDiameter={0.3} outerDiameter={0.65}
+    <trace from="C_KEYS.pin2" to="KEYS_BYPASS_GND.top" thickness={0.2} routingPhaseIndex={1}
+      pcbPath={["C_KEYS.pin2","KEYS_BYPASS_GND.top"]}/>
+    <via name="KEYS_BYPASS_GND" pcbX={4.7} pcbY={-15.5} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.GND"/>
     <Fragment><capacitor name="C_KEYS_BULK" schRotation={-90} capacitance="10uF" footprint="0805" supplierPartNumbers={passivePart("C15850")}
-      pcbX={7} pcbY={-17} pcbRotation={180} layer="bottom" schX={-20} schY={-12} schSectionName="controls"
+      pcbX={-7} pcbY={-17} pcbRotation={180} layer="top" schX={-20} schY={-12} schSectionName="controls"
        /><Connections name="C_KEYS_BULK" connections={{pin1:"net.V3V3",pin2:"net.GND"}}/></Fragment>
-    <via name="KEYS_BULK_GND" pcbX={9.5} pcbY={-16} holeDiameter={0.3} outerDiameter={0.65}
+    <via name="KEYS_BULK_GND" pcbX={-9.5} pcbY={-16} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.GND"/>
-    <trace from="C_KEYS_BULK.pin2" to="KEYS_BULK_GND.bottom" thickness={0.2} routingPhaseIndex={1}
-      pcbPath={["C_KEYS_BULK.pin2","KEYS_BULK_GND.bottom"]}/>
+    <trace from="C_KEYS_BULK.pin2" to="KEYS_BULK_GND.top" thickness={0.2} routingPhaseIndex={1}
+      pcbPath={["C_KEYS_BULK.pin2","KEYS_BULK_GND.top"]}/>
     {/* Pi J8 already supplies the I2C pull-ups. No parallel pull-ups fitted. */}
     {buttons.map((b,i) => (
       <Fragment key={b.name}>
@@ -122,20 +128,17 @@ export default () => (
       </Fragment>
     ))}
 
-    <Fragment><testpoint name="TP_GND" pcbX={-20} pcbY={47} layer="bottom" padDiameter={1.5} holeDiameter={0.6} footprint={<footprint><platedhole shape="circle" holeDiameter={0.6} outerDiameter={1.5} portHints={["pin1"]}/></footprint>} schX={-20} schY={26} schSectionName="host" /><Connections name="TP_GND" connections={{pin1:"net.GND"}}/></Fragment>
-    <Fragment><testpoint name="TP_5V" pcbX={-14} pcbY={47} layer="bottom" padDiameter={1.5} holeDiameter={0.6} footprint={<footprint><platedhole shape="circle" holeDiameter={0.6} outerDiameter={1.5} portHints={["pin1"]}/></footprint>} schX={-26} schY={26} schSectionName="host" /><Connections name="TP_5V" connections={{pin1:"net.V5V"}}/></Fragment>
-    <Fragment><testpoint name="TP_3V3" pcbX={-8} pcbY={47} layer="bottom" padDiameter={1.5} holeDiameter={0.6} footprint={<footprint><platedhole shape="circle" holeDiameter={0.6} outerDiameter={1.5} portHints={["pin1"]}/></footprint>} schX={-32} schY={26} schSectionName="host" /><Connections name="TP_3V3" connections={{pin1:"net.V3V3"}}/></Fragment>
+    <Fragment><testpoint name="TP_GND" pcbX={-20} pcbY={47} layer="top" padDiameter={1.5} holeDiameter={0.6} footprint={<footprint><platedhole shape="circle" holeDiameter={0.6} outerDiameter={1.5} portHints={["pin1"]}/></footprint>} schX={-20} schY={26} schSectionName="host" /><Connections name="TP_GND" connections={{pin1:"net.GND"}}/></Fragment>
+    <Fragment><testpoint name="TP_5V" pcbX={-14} pcbY={47} layer="top" padDiameter={1.5} holeDiameter={0.6} footprint={<footprint><platedhole shape="circle" holeDiameter={0.6} outerDiameter={1.5} portHints={["pin1"]}/></footprint>} schX={-26} schY={26} schSectionName="host" /><Connections name="TP_5V" connections={{pin1:"net.V5V"}}/></Fragment>
+    <Fragment><testpoint name="TP_3V3" pcbX={-8} pcbY={47} layer="top" padDiameter={1.5} holeDiameter={0.6} footprint={<footprint><platedhole shape="circle" holeDiameter={0.6} outerDiameter={1.5} portHints={["pin1"]}/></footprint>} schX={-32} schY={26} schSectionName="host" /><Connections name="TP_3V3" connections={{pin1:"net.V3V3"}}/></Fragment>
     {[-46,46].flatMap(x=>[-58,58].map(y=><Fragment key={`${x},${y}`}><hole name={`MOUNT_${x}_${y}`} diameter={2.7} pcbX={x} pcbY={y} /></Fragment>))}
     <fiducial padDiameter={1} name="FID1" pcbX={-38} pcbY={-49} />
-    <fiducial padDiameter={1} name="FID2" pcbX={38} pcbY={49} />
+    <fiducial padDiameter={1} name="FID2" pcbX={43} pcbY={40} />
     <fiducial padDiameter={1} name="FID3" pcbX={-38} pcbY={49} />
-    <fiducial padDiameter={1} name="FID4" pcbX={-38} pcbY={-49} layer="bottom" />
-    <fiducial padDiameter={1} name="FID5" pcbX={38} pcbY={49} layer="bottom" />
-    <fiducial padDiameter={1} name="FID6" pcbX={-38} pcbY={49} layer="bottom" />
     {/* Keep ground copper out of the fiducials' 2mm mask openings. */}
-    {[[-38,-49],[38,49],[-38,49]].map(([x,y],i)=><Fragment key={`fid-clearance${i}`}>
+    {[[-38,-49],[43,40],[-38,49]].map(([x,y],i)=><Fragment key={`fid-clearance${i}`}>
       <keepout shape="circle" pcbX={x} pcbY={y} radius={1.2} layers={["top","bottom"]}
-        allowPlacements excludeRefs={["FID1","FID2","FID3","FID4","FID5","FID6"]}/>
+        allowPlacements excludeRefs={["FID1","FID2","FID3"]}/>
     </Fragment>)}
     {[[-39,40],[-39,-40],[39,40],[39,-40],[0,55],[0,-56],[-20,0],[20,0]].map(([x,y],i)=><Fragment key={`stitch${i}`}>
       <via name={`GND_STITCH_${i}`} pcbX={x} pcbY={y} holeDiameter={0.3} outerDiameter={0.65}
@@ -146,14 +149,14 @@ export default () => (
     {[{text:"GND",x:-20,y:44.5},{text:"5V",x:-14,y:44.5},{text:"3V3",x:-8,y:44.5},
       {text:"SPEAKER",x:18,y:22.5},{text:"BAT / NTC",x:36,y:34.5},{text:"OFF",x:40,y:45}].map(label=>
       <Fragment key={label.text}><silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}}
-        text={label.text} pcbX={label.x} pcbY={label.y} layer="bottom" fontSize={1}/></Fragment>)}
+        text={label.text} pcbX={label.x} pcbY={label.y} layer="top" fontSize={1}/></Fragment>)}
     {[{text:"+",x:38,y:25.46},{text:"-",x:38,y:28},{text:"NTC",x:38,y:30.54},
       {text:"+",x:19.27,y:20},{text:"-",x:16.73,y:20}].map(label=>
       <Fragment key={`polarity-${label.x}-${label.y}`}><silkscreentext
         pcbSx={{"& silkscreentext":{visibility:"visible"}}} text={label.text}
-        pcbX={label.x} pcbY={label.y} layer="bottom" fontSize={1}/></Fragment>)}
-    <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="G350 LINUX  /  REV A" pcbX={0} pcbY={-59} fontSize={1.2} />
-    <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="J8 PIN 1: 3V3" pcbX={24} pcbY={39} layer="bottom" fontSize={1} />
+        pcbX={label.x} pcbY={label.y} layer="top" fontSize={1}/></Fragment>)}
+    <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="G350 LINUX  /  REV B" pcbX={0} pcbY={-59} fontSize={1.2} />
+    <silkscreentext pcbSx={{"& silkscreentext":{visibility:"visible"}}} text="J8 PIN 1: 3V3" pcbX={24} pcbY={39} layer="top" fontSize={1} />
     <copperpour layer="top" connectsTo="net.GND" clearance={0.2} boardEdgeMargin={0.6} />
     <copperpour layer="inner1" connectsTo="net.GND" clearance={0.2} boardEdgeMargin={0.6} />
     <copperpour layer="inner2" connectsTo="net.GND" clearance={0.2} boardEdgeMargin={0.6} />

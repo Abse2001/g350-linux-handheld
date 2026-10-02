@@ -29,9 +29,9 @@ export const TYPE_C_31_M_12 = (props: ChipProps<typeof pinLabels>) => {
         pin13:{requiresGround:true},pin14:{requiresGround:true},
         pin15:{requiresPower:true,requiresVoltage:"5V"},
         pin16:{requiresPower:true,requiresVoltage:"5V"},
-        pin5:{doNotConnect:true},pin7:{doNotConnect:true},
-        pin8:{doNotConnect:true},pin9:{doNotConnect:true},
-        pin10:{doNotConnect:true},pin11:{doNotConnect:true},
+        pin5:{doNotConnect:true},pin7:{isPassive:true},
+        pin8:{isPassive:true},pin9:{isPassive:true},
+        pin10:{isPassive:true},pin11:{doNotConnect:true},
       }}
       supplierPartNumbers={{
   "jlcpcb": [

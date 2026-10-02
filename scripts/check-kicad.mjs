@@ -19,7 +19,7 @@ function runDrc(name){
   return result
 }
 // First let KiCad normalize the converter's board format. The second pass
-// qualifies the board against its complete local library with no exceptions.
+// qualifies the board against its complete local library with no per-item exclusions.
 runDrc("kicad-normalization")
 const macPython="/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/3.9/bin/python3.9"
 const python=process.env.G350_KICAD_PYTHON??(existsSync(macPython)?macPython:"python3")

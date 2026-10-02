@@ -29,9 +29,9 @@ for (const [layer,file] of [["top","index-F_Cu.gtl"],["bottom","index-B_Cu.gbl"]
   for (const pad of circuit.filter(e=>e.type === "pcb_smtpad" && e.layer === layer && Number.isFinite(e.x) && Number.isFinite(e.y))) {
     const name = components.get(pad.pcb_component_id)
     // Fiducials are componentless copper primitives. KiCad exports their
-    // pad attribute with an empty reference; require the known six marks.
-    const fiducial = pad.pcb_component_id === null && pad.shape === "circle" && pad.radius === 0.5 &&
-      [[-38,-49],[38,49],[-38,49]].some(([x,y])=>pad.x===x&&pad.y===y)
+    // pad attribute with an empty reference; require the three top-side marks.
+    const fiducial = pad.pcb_component_id === null && layer === "top" && pad.shape === "circle" && pad.radius === 0.5 &&
+      [[-38,-49],[43,40],[-38,49]].some(([x,y])=>pad.x===x&&pad.y===y)
     if (!name && !fiducial) throw new Error(`Unexpected componentless SMT pad ${pad.pcb_smtpad_id}`)
     if (!(flashes.get(fiducial?"":name) ?? []).some(p=>Math.hypot(p.x-pad.x-50,p.y-pad.y-62)<0.005))
       throw new Error(`Gerber coordinate mismatch: ${name}/${pad.pcb_smtpad_id} on ${layer}`)

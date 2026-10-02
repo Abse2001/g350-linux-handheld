@@ -37,6 +37,11 @@ COMPONENTS:
  - C_FEEDFORWARD: 220pF capacitor
  - C_GAUGE: 100nF capacitor
  - U_GAUGE: MAX17048G+T10
+ - U_USB_ESD: USBLC6-2SC6
+ - C_USB_ESD: 100nF capacitor
+ - J_USB_LINK: J_USB_LINK, source_component
+ - R_USB_EN1: 100kΩ resistor
+ - R_USB_EN2: 100kΩ resistor
  - J_LCD: FPC-05F-18PH20
  - U_LCD_PWR: AP2112K-3.3TRG1
  - C_LCD_IN: 1uF capacitor
@@ -116,7 +121,7 @@ NET: R_CC1_pos
   - R_CC1 pin1
   - J_USB A5
 
-NET: USB_CC2
+NET: R_CC2_pos
   - J_USB B5
   - R_CC2 pin1
 
@@ -129,16 +134,9 @@ NET: USB_GOOD_N
   - J_PI J8_32
   - R_GOOD_PULL pin2
 
-NET: USB_5V
-  - U_CHARGE IN
-  - C_USB pin1 (+)
-  - J_USB A4B9
-  - J_USB B4A9
-
 NET: VSYS
   - R_EN pin1
   - U_BOOST VIN
-  - U_CHARGE EN1
   - U_CHARGE OUT2
   - U_CHARGE OUT1
   - L_BOOST pin1 (+)
@@ -158,6 +156,38 @@ NET: VBAT
   - U_CHARGE BAT1
   - C_BAT pin1 (+)
   - J_BAT pin1
+
+NET: USB_DN
+  - J_USB_LINK pin1
+  - J_USB B7
+  - J_USB A7
+  - U_USB_ESD pin6
+  - U_USB_ESD pin1
+
+NET: USB_DP
+  - J_USB_LINK pin2
+  - J_USB B6
+  - J_USB A6
+  - U_USB_ESD pin4
+  - U_USB_ESD pin3
+
+NET: USB_5V
+  - C_USB_ESD pin1 (+)
+  - U_USB_ESD pin5
+  - U_CHARGE IN
+  - C_USB pin1 (+)
+  - J_USB A4B9
+  - J_USB B4A9
+
+NET: USB_EN1
+  - R_USB_EN1 pin1
+  - U_CHARGE EN1
+  - J_PI J8_18
+
+NET: USB_EN2
+  - R_USB_EN2 pin1
+  - U_CHARGE EN2
+  - J_PI J8_36
 
 NET: SPI_SCLK
   - J_LCD pin4
@@ -207,10 +237,10 @@ NET: CHARGING_N
   - J_PI J8_29
 
 NET: SDA
+  - U_KEYS SDA
   - J_LCD pin14
   - U_GAUGE SDA
   - J_PI J8_3
-  - U_KEYS SDA
 
 NET: SCL
   - U_KEYS SCL
@@ -313,6 +343,11 @@ NET: GND
   - J_LCD pin20
   - J_LCD pin19
   - J_LCD pin3
+  - R_USB_EN2 pin2
+  - R_USB_EN1 pin2
+  - J_USB_LINK pin3
+  - C_USB_ESD pin2 (-)
+  - U_USB_ESD pin2
   - U_GAUGE QSTRT
   - U_GAUGE EP
   - U_GAUGE GND
@@ -335,7 +370,6 @@ NET: GND
   - J_BAT pin2
   - U_CHARGE EP
   - U_CHARGE VSS
-  - U_CHARGE EN2
   - U_CHARGE N_CE
   - J_USB EH4
   - J_USB EH3
@@ -383,8 +417,8 @@ NET: V3V3
   - R_GOOD_PULL pin1
   - R_CHG_PULL pin1
   - R_RESET pin2
-  - C_KEYS_BULK pin1 (+)
   - TP_3V3 pin1
+  - C_KEYS_BULK pin1 (+)
   - J_PI J8_1
   - R_ALERT_PULL pin1
 
@@ -408,7 +442,7 @@ J_PI (2x20 2.54mm GPIO ribbon header)
 - pin15(J8_15): NETS(LCD_DC)
 - pin16(J8_16): NETS(LCD_BL)
 - pin17(J8_17): NOT_CONNECTED
-- pin18(J8_18): NOT_CONNECTED
+- pin18(J8_18): NETS(USB_EN1)
 - pin19(J8_19): NETS(SPI_MOSI)
 - pin20(J8_20): NETS(GND)
 - pin21(J8_21): NETS(SPI_MISO)
@@ -426,7 +460,7 @@ J_PI (2x20 2.54mm GPIO ribbon header)
 - pin33(J8_33): NOT_CONNECTED
 - pin34(J8_34): NETS(GND)
 - pin35(J8_35): NETS(I2S_LRCLK)
-- pin36(J8_36): NOT_CONNECTED
+- pin36(J8_36): NETS(USB_EN2)
 - pin37(J8_37): NETS(AMP_ENABLE)
 - pin38(J8_38): NOT_CONNECTED
 - pin39(J8_39): NETS(GND)
@@ -478,12 +512,12 @@ J_USB (TYPE-C-31-M-12)
 - pin4(EH3): NETS(GND)
 - pin5(B8, SBU2): NOT_CONNECTED
 - pin6(A5, CC1): NETS(R_CC1_pos)
-- pin7(B7, DN2): NOT_CONNECTED
-- pin8(A6, DP1): NOT_CONNECTED
-- pin9(A7, DN1): NOT_CONNECTED
-- pin10(B6, DP2): NOT_CONNECTED
+- pin7(B7, DN2): NETS(USB_DN)
+- pin8(A6, DP1): NETS(USB_DP)
+- pin9(A7, DN1): NETS(USB_DN)
+- pin10(B6, DP2): NETS(USB_DP)
 - pin11(A8, SBU1): NOT_CONNECTED
-- pin12(B5, CC2): NETS(USB_CC2)
+- pin12(B5, CC2): NETS(R_CC2_pos)
 - pin13(A1B12, GND1): NETS(GND)
 - pin14(B1A12, GND2): NETS(GND)
 - pin15(B4A9, VBUS1): NETS(USB_5V)
@@ -494,8 +528,8 @@ U_CHARGE (BQ24074RGTR)
 - pin2(BAT1): NETS(VBAT)
 - pin3(BAT2): NETS(VBAT)
 - pin4(N_CE): NETS(GND)
-- pin5(EN2): NETS(GND)
-- pin6(EN1): NETS(VSYS)
+- pin5(EN2): NETS(USB_EN2)
+- pin6(EN1): NETS(USB_EN1)
 - pin7(N_PGOOD): NETS(USB_GOOD_N)
 - pin8(VSS): NETS(GND)
 - pin9(N_CHG): NETS(CHARGING_N)
@@ -534,7 +568,7 @@ R_CC1 (5.1kΩ undefined)
 - pin2(cathode, neg, right): NETS(GND)
 
 R_CC2 (5.1kΩ undefined)
-- pin1(anode, pos, left): NETS(USB_CC2)
+- pin1(anode, pos, left): NETS(R_CC2_pos)
 - pin2(cathode, neg, right): NETS(GND)
 
 R_ISET (3.3kΩ undefined)
@@ -615,6 +649,31 @@ U_GAUGE (MAX17048G+T10)
 - pin7(SCL): NETS(SCL)
 - pin8(SDA): NETS(SDA)
 - pin9(EP): NETS(GND)
+
+U_USB_ESD (USBLC6-2SC6)
+- pin1: NETS(USB_DN)
+- pin2: NETS(GND)
+- pin3: NETS(USB_DP)
+- pin4: NETS(USB_DP)
+- pin5: NETS(USB_5V)
+- pin6: NETS(USB_DN)
+
+C_USB_ESD (100nF undefined)
+- pin1(anode, pos, left): NETS(USB_5V)
+- pin2(cathode, neg, right): NETS(GND)
+
+J_USB_LINK (1x3 2.54mm Pi micro-B data-only pigtail)
+- pin1: NETS(USB_DN)
+- pin2: NETS(USB_DP)
+- pin3: NETS(GND)
+
+R_USB_EN1 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_EN1)
+- pin2(cathode, neg, right): NETS(GND)
+
+R_USB_EN2 (100kΩ undefined)
+- pin1(anode, pos, left): NETS(USB_EN2)
+- pin2(cathode, neg, right): NETS(GND)
 
 J_LCD (FPC-05F-18PH20)
 - pin1: NETS(V_LCD3V3)
@@ -769,4 +828,3 @@ TP_5V
 
 TP_3V3
 - pin1: NETS(V3V3)
-

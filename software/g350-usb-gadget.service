@@ -1,0 +1,12 @@
+[Unit]
+Description=G350 USB serial gadget
+Before=g350-usb-power.service serial-getty@ttyGS0.service
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/g350-usb-gadget
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

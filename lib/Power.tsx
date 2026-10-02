@@ -8,8 +8,8 @@ import { TYPE_C_31_M_12 } from "../imports/TYPE_C_31_M_12"
 import "./ThroughSignalVia"
 
 const resistors = [
-  {name:"R_CC1",value:"5.1k",part:"C23186",x:23,y:51,sx:18,sy:8,a:"J_USB.CC1",b:"net.GND"},
-  {name:"R_CC2",value:"5.1k",part:"C23186",x:27,y:51,sx:24,sy:8,a:"J_USB.CC2",b:"net.GND"},
+  {name:"R_CC1",value:"5.1k",part:"C23186",x:27,y:51,sx:18,sy:8,a:"J_USB.CC1",b:"net.GND"},
+  {name:"R_CC2",value:"5.1k",part:"C23186",x:23,y:51,sx:24,sy:8,a:"J_USB.CC2",b:"net.GND"},
   {name:"R_ISET",value:"3.3k",part:"C22978",x:14,y:40,sx:25,sy:-9,a:"U_CHARGE.ISET",b:"net.GND"},
   {name:"R_ILIM",value:"3.3k",part:"C22978",x:26.5,y:43,sx:31,sy:-9,a:"U_CHARGE.ILIM",b:"net.GND"},
   {name:"R_TIMER",value:"68k",part:"C23231",x:19,y:47,sx:37,sy:-9,a:"U_CHARGE.TMR",b:"net.GND"},
@@ -40,14 +40,8 @@ const localBypass:Record<string,{x:number,y:number,max:number}> = {
 export function Power() {
   return <Fragment>
     <net name="USB_CC2" routingPhaseIndex={2}/>
-    <via name="SIGNAL_USB_CC2" pcbX={26.7} pcbY={55.95} fromLayer="bottom" toLayer="top"
-      holeDiameter={0.3} outerDiameter={0.65} connectsTo="net.USB_CC2"/>
-    <trace from="SIGNAL_USB_CC2.top" to="R_CC2.pin1" thickness={0.15} routingPhaseIndex={2}
-      pcbPathRelativeTo="SIGNAL_USB_CC2.top"
-      pcbPath={["SIGNAL_USB_CC2.top",{x:-.525,y:-.95},"R_CC2.pin1"]}/>
-    <trace from="SIGNAL_USB_CC2.bottom" to="J_USB.CC2" thickness={0.15} routingPhaseIndex={2}
-      pcbPathRelativeTo="SIGNAL_USB_CC2.bottom"
-      pcbPath={["SIGNAL_USB_CC2.bottom",{x:.05,y:-.75},"J_USB.CC2"]}/>
+    <trace from="J_USB.CC2" to="R_CC2.pin1" thickness={0.15} routingPhaseIndex={2}
+      pcbPath={["J_USB.CC2",{x:1.75006,y:4.8},"R_CC2.pin1"]}/>
     {[{name:"VSYS_CHARGER",x:23,y:39.9},{name:"VSYS_BOOST",x:9,y:51.7},
       {name:"VSYS_INDUCTOR",x:3.8,y:50.5}].map(p=><Fragment key={p.name}><via name={p.name}
       pcbX={p.x} pcbY={p.y} holeDiameter={0.3} outerDiameter={0.65}
@@ -68,26 +62,22 @@ export function Power() {
       pcbPath={["L_BOOST.pin1","VSYS_INDUCTOR.top"]}/>
     <net name="VBAT" isPowerNet nominalTraceWidth={1} routingPhaseIndex={1}/><net name="VSYS" isPowerNet nominalTraceWidth={1} routingPhaseIndex={1}/><net name="FB" routingPhaseIndex={2}/><net name="BOOST_SW" nominalTraceWidth={0.8} routingPhaseIndex={1}/>
     <TYPE_C_31_M_12 name="J_USB" pcbX={25} pcbY={56.6} pcbRotation={180}
-      layer="bottom" schX={94} schY={17} schSectionName="power"
+      layer="top" schX={94} schY={17} schSectionName="power"
       schPinArrangement={{leftSide:["VBUS1","VBUS2","CC1","CC2","DP1","DN1","DP2","DN2"],
         rightSide:["GND1","GND2","EH1","EH2","EH3","EH4","SBU1","SBU2"]}} />
     {["VBUS1","VBUS2"].map(p=><trace key={p} from={`J_USB.${p}`} to="net.USB_5V" thickness={0.5} routingPhaseIndex={1}/>)}
     {["GND1","GND2","EH1","EH2","EH3","EH4"].map(p=><trace key={p} from={`J_USB.${p}`} to="net.GND" thickness={0.4} routingPhaseIndex={1}/>)}
-    <trace from="J_USB.VBUS1" to="J_USB.VBUS2" thickness={0.5} routingPhaseIndex={1}
-      pcbPathRelativeTo="J_USB.VBUS1" pcbPath={["J_USB.VBUS1",{x:-2.4001603,y:3.4},
-        {x:2.3999571,y:3.4},"J_USB.VBUS2"]}/>
-    <trace from="C_USB.pin1" to="J_USB.VBUS2" thickness={0.5} routingPhaseIndex={1} maxLength={15}
-      pcbPathRelativeTo="C_USB.pin1" pcbPath={["C_USB.pin1",{x:-0.8,y:2.4},
-        {x:-0.8,y:6.7},{x:-0.8,y:6.7,via:true,toLayer:"bottom"},{x:-0.8,y:6.7},
-        {x:0.6000429,y:8.1},"J_USB.VBUS2"]}/>
+    <trace from="C_USB.pin1" to="SIGNAL_USB_VBUS_LEFT.bottom" thickness={0.5} routingPhaseIndex={1} maxLength={15}
+      pcbPath={["C_USB.pin1",{x:-.8,y:2.4},{x:-.8,y:6.7},
+        {x:-.8,y:6.7,via:true,toLayer:"bottom"},{x:-.8,y:6.7},"SIGNAL_USB_VBUS_LEFT.bottom"]}/>
     <Fragment><BQ24074RGTR name="U_CHARGE" pcbX={19} pcbY={42}
       schX={98} schY={-1} schSectionName="power"
        /><Connections name="U_CHARGE" connections={{N_CE:"net.GND",
-        EN2:"net.GND",VSS:"net.GND",EP:"net.GND",
+        EN2:"net.USB_EN2",EN1:"net.USB_EN1",VSS:"net.GND",EP:"net.GND",
         N_CHG:"net.CHARGING_N",N_PGOOD:"net.USB_GOOD_N"}}/></Fragment>
     {/* ITERM open: 10% termination. TMR 68k: nominal 9.07 h safety timer. */}
     <Fragment><pinheader name="J_BAT" pinCount={3} pitch={2.54} gender="male"
-      pcbX={35} pcbY={28} pcbOrientation="vertical" layer="bottom"
+      pcbX={35} pcbY={28} pcbRotation={90} layer="top"
       schX={87} schY={-1} schSectionName="power"
       manufacturerPartNumber="1x3 2.54mm protected 1S battery + NTC harness"
        /><Connections name="J_BAT" connections={{pin1:"net.VBAT",pin2:"net.GND"}}/></Fragment>
@@ -124,10 +114,6 @@ export function Power() {
         {x:-17,y:14},"J_BAT.pin1"]}/>
     <trace from="U_CHARGE.IN" to="C_USB.pin1" thickness={0.3} routingPhaseIndex={1}
       pcbPathRelativeTo="U_CHARGE.IN" pcbPath={["U_CHARGE.IN",{x:0.750189,y:2.1},"C_USB.pin1"]}/>
-    <trace from="U_CHARGE.EN1" to="C_SYS.pin1" thickness={0.15} routingPhaseIndex={1} maxLength={12}
-      pcbPathRelativeTo="U_CHARGE.EN1" pcbPath={["U_CHARGE.EN1",{x:-0.249809,y:-2.35},
-        {x:-0.5,y:-2.7},{x:-0.5,y:-2.7,via:true,toLayer:"bottom"},{x:-0.5,y:-2.7},
-        {x:3,y:-3.7},{x:3,y:-3.4},{x:3,y:-3.4,via:true,toLayer:"top"},{x:3,y:-3.4},"C_SYS.pin1"]}/>
     <trace from="U_BOOST.VIN" to="C_BOOST_IN.pin1" thickness={0.3} routingPhaseIndex={1}
       pcbPath={["U_BOOST.VIN","C_BOOST_IN.pin1"]}/>
     <trace from="U_BOOST.VOUT" to="C_BOOST_OUT1.pin1" thickness={0.3} routingPhaseIndex={1}
@@ -200,12 +186,12 @@ export function Power() {
         fromLayer="top" toLayer="bottom" connectsTo="net.GND" />
     </Fragment>)}
     <Fragment><pinheader name="J_OFF" pinCount={2} pitch={2.54} gender="male"
-      pcbX={34} pcbY={45} layer="bottom" schX={66} schY={-2} schSectionName="power"
+      pcbX={34} pcbY={45} pcbRotation={180} layer="top" schX={66} schY={-2} schSectionName="power"
       manufacturerPartNumber="1x2 2.54mm slide-switch harness"
        /><Connections name="J_OFF" connections={{pin1:"R_EN.pin2",pin2:"net.GND"}}/></Fragment>
     {resistors.map(r=><Fragment key={r.name}><resistor key={r.name} name={r.name} resistance={r.value}
       footprint="0603" supplierPartNumbers={{jlcpcb:[r.part]}}
-      pcbX={r.x} pcbY={r.y} pcbRotation={r.name==="R_ISET"||r.name==="R_FB_HI"?180:0} schX={r.sx+(r.name==="R_ALERT_PULL"?6:70)} schY={r.sy} schRotation={-90}
+      pcbX={r.x} pcbY={r.y} pcbRotation={r.name==="R_ISET"||r.name==="R_FB_HI"||r.name==="R_CC2"?180:0} schX={r.sx+(r.name==="R_ALERT_PULL"?6:70)} schY={r.sy} schRotation={-90}
       schSectionName={r.name==="R_ALERT_PULL"?"battery":"power"}
        />{r.name === "R_ILIM" ? <Fragment>
         <Connections name={r.name} connections={{pin2:r.b}}/>

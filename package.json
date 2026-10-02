@@ -1,7 +1,7 @@
 {
   "name": "@tsci/abse.g350-linux-handheld",
-  "version": "1.0.0",
-  "description": "G350-style Linux handheld PCB with hand-drawn Pi Zero 2 W interface, integrated charger, boost, audio, battery monitor and front controls",
+  "version": "1.1.0",
+  "description": "Top-only G350 Linux handheld carrier with shared USB-C charging/data and Pi Zero 2 W microSD boot storage",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -16,6 +16,7 @@
     "snapshot:update": "tsci snapshot --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
+    "compact:circuit": "node scripts/compact-circuit.mjs",
     "check:shorts": "tsci check shorts dist/index/circuit.json --mode gerber --layer all",
     "check:kicad": "node scripts/check-kicad.mjs",
     "fabrication": "node scripts/export-fabrication.mjs",

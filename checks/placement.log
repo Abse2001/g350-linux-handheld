@@ -1,11 +1,11 @@
-trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
 placement summary: no placement issues
 
 board top-layer utilization:
-- occupied: 5.277% (654.354mm^2 of 12400mm^2)
+- occupied: 11.666% (1446.63mm^2 of 12400mm^2)
 - empty spaces over 5% of board area:
-  - 34.176% (4237.792mm^2); bounds=(minX=-50mm, maxX=4.22mm, minY=-16.159mm, maxY=62mm)
-  - 12.245% (1518.355mm^2); bounds=(minX=37.755mm, maxX=50mm, minY=-62mm, maxY=62mm)
+  - 10.868% (1347.663mm^2); bounds=(minX=37.755mm, maxX=50mm, minY=-62mm, maxY=48.06mm)
+  - 9.52% (1180.48mm^2); bounds=(minX=-50mm, maxX=-40.48mm, minY=-62mm, maxY=62mm)
+  - 9.075% (1125.311mm^2); bounds=(minX=-29.664mm, maxX=6.52mm, minY=1.73mm, maxY=32.83mm)
 
 board-edge status:
 - J_PI: 24.83mm inside bottom edge
@@ -41,14 +41,19 @@ board-edge status:
 - C_FEEDFORWARD: 11.525mm inside bottom edge
 - C_GAUGE: 18.775mm inside right edge
 - U_GAUGE: 17.11mm inside right edge
-- J_LCD: 10.775mm inside left edge
+- U_USB_ESD: 10.284mm inside bottom edge
+- C_USB_ESD: 13.525mm inside bottom edge
+- J_USB_LINK: 4.6mm inside right edge
+- R_USB_EN1: 40.775mm inside right edge
+- R_USB_EN2: 40.775mm inside right edge
+- J_LCD: 13.975mm inside left edge
 - U_LCD_PWR: 13.739mm inside left edge
 - C_LCD_IN: 9.775mm inside left edge
 - C_LCD_OUT: 9.775mm inside left edge
 - U_KEYS: 41.445mm inside left edge
-- R_RESET: 42.775mm inside right edge
+- R_RESET: 42.775mm inside left edge
 - C_KEYS: 46.025mm inside top edge
-- C_KEYS_BULK: 41.575mm inside right edge
+- C_KEYS_BULK: 41.575mm inside left edge
 - SW_UP: 22.5mm inside left edge
 - SW_DOWN: 20.775mm inside top edge
 - SW_LEFT: 12.5mm inside left edge
@@ -66,4 +71,5 @@ board-edge status:
 
 placement drc:
 Errors: 0
-Warnings: 0
+Warnings: 1
+- pcb_connector_not_in_accessible_orientation_warning: component is facing x+ but should face x- so the connector is accessible from the board edge

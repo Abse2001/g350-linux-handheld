@@ -1,6 +1,7 @@
 import { AutoroutingPipelineSolver9_PreloadedTraceGraph,
   type SimpleRouteJson, type Obstacle } from "@tscircuit/capacity-autorouter"
 import {conservativeTraceObstacles} from "./ConservativeTraceObstacles"
+import {savedRouting} from "./SavedRouting"
 
 // Later phases may not relocate completed earlier copper. Pipeline 9's
 // preloaded-graph repair can move those traces, so represent them as fixed
@@ -153,6 +154,10 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   if (!lcdResetPortId) throw new Error("Review the manual LCD reset connection")
   const boostId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "SW")?.componentId
   const usbId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "B4A9")?.componentId
+  const usbDataPortIds=new Set(input.obstacles.filter(o=>o.componentId===usbId &&
+    ["A6","B6","A7","B7"].includes(o.circuitJsonMetadata?.source_port_name??""))
+    .map(o=>o.circuitJsonMetadata?.pcb_port_id))
+  if(usbDataPortIds.size!==4) throw new Error("Review the four manually routed USB-C data contacts")
   const cc2PortId=input.obstacles.find(o=>o.componentId===usbId &&
     o.circuitJsonMetadata?.source_port_name==="B5")?.circuitJsonMetadata?.pcb_port_id
   if(!cc2PortId) throw new Error("Review the manual second USB-C CC escape")
@@ -225,7 +230,8 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
         (groundAsPlane && p.pcb_port_id === boostVinPortId) ||
         p.pcb_port_id === keysResetPortId || manualControlPortIds.has(p.pcb_port_id) ||
         p.pcb_port_id === lcdOutPortId || p.pcb_port_id === pgoodPortId || p.pcb_port_id === chargingPortId || p.pcb_port_id === thermistorPortId ||
-        p.pcb_port_id === lcdResetPortId || p.pcb_port_id===currentSettingPortId || p.pcb_port_id===cc2PortId))
+        p.pcb_port_id === lcdResetPortId || p.pcb_port_id===currentSettingPortId || p.pcb_port_id===cc2PortId ||
+        usbDataPortIds.has(p.pcb_port_id)))
       .map(c=>({...c,pointsToConnect:c.pointsToConnect
         .filter(p=>p.pcb_port_id !== gaugeSdaPortId && p.pcb_port_id!==keysLeftPortId &&
           !keysLeftManualPeerIds.has(p.pcb_port_id??""))
@@ -245,7 +251,8 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
         return {...rest,layers}
       })})).filter(c=>c.pointsToConnect.length >= 2),
   }
-  const solver = routingInput.connections.length?
+  const saved = await savedRouting(input,groundAsPlane?1:previous.length?2:0)
+  const solver = !saved && routingInput.connections.length?
     new AutoroutingPipelineSolver9_PreloadedTraceGraph(routingInput,{effort:2}):undefined
   const listeners: Record<string,((event:any)=>void)[]> = {}
   let output = previous
@@ -263,7 +270,7 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
       }
       if (stopped) return
       if (solver?.failed) throw new Error(solver.error ?? "Power autorouting failed")
-      output=[...previous,...(solver?explicitSegmentWidths(solver.getOutputSimplifiedPcbTraces()):[])]
+      output=[...previous,...(saved??(solver?explicitSegmentWidths(solver.getOutputSimplifiedPcbTraces()):[]))]
       if (groundAsPlane) {
         // Explicit short copper contacts remain entirely inside each GND pad.
         // They let the trace-only native connectivity check see the plane net;
