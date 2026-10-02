@@ -3,7 +3,7 @@
   "fabricationReady": false,
   "scope": "Actual 142-component power/DDR source layout with unchanged native byte0 copper from attempt 19. No combined byte1/command routing, power copper, planes or boot/peripheral completion.",
   "checkedCircuit": "routing/am3352-host-byte0-native-diagnostic.circuit.json",
-  "circuitSha256": "eca3e2613960e88cb3be37d69fea7a70380be2fbf0911ce54ddc65bbea21f2a8",
+  "circuitSha256": "ee403c3eebe70802982008ae69f80844f8b416c810d76c20239aae2fda2c3f03",
   "components": 142,
   "connectedSignals": 11,
   "requiredSignals": 49,
@@ -72,5 +72,12 @@
     "am3352-host-byte0-19-shorts.log",
     "am3352-host-byte0-19-diagnostic-export.json",
     "am3352-power-validation.json"
-  ]
+  ],
+  "formattingCompaction": {
+    "beforeSha256": "eca3e2613960e88cb3be37d69fea7a70380be2fbf0911ce54ddc65bbea21f2a8",
+    "afterSha256": "ee403c3eebe70802982008ae69f80844f8b416c810d76c20239aae2fda2c3f03",
+    "beforeBytes": 4855125,
+    "afterBytes": 3437448,
+    "allParsedRecordsUnchanged": true
+  }
 }
