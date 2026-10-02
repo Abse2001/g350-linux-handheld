@@ -23,14 +23,14 @@ export function Display() {
       pin14:"net.SDA",pin15:"net.TOUCH_IRQ",pin19:"net.GND",pin20:"net.GND",
     }}/>
     {/* Short bottom-side FPC escapes feed inner-layer SPI/control paths. All
-        four named vias are full-depth; inner2 carries only MISO. */}
+        four named vias are full-depth; this group puts MISO on inner2. */}
     {[
       {pin:4,host:23,net:"SPI_SCLK",layer:"inner1",path:[[-34.7,17.25],[-34,16.6],[-32.3,16.6],[-32.3,18.1],[-33.8,19.3],[-33.8,29.5],[-5.1,29.5],[-5.1,35]]},
       {pin:5,host:19,net:"SPI_MOSI",layer:"inner1",path:[[-34.3,17.7500426],[-33.9,17.35],[-31.4,17.25],[-31.4,29],[0,29],[0,35]]},
       {pin:6,host:21,net:"SPI_MISO",layer:"inner2",path:[[-34.3,18.2499146],[-33.9,18.2499146],[-33.65,17.95],[-33.65,30.5],[-2.5,30.5],[-2.5,35]]},
       {pin:7,host:15,net:"LCD_DC",layer:"inner1",path:[[-34.3,18.7500406],[-33.9,18.7500406],[-30.4,17.7],[-30.4,28.5],[5.1,28.5],[5.1,35]]},
     ].map(signal=>{
-      const name=`LCD_SIGNAL_${signal.net}`
+      const name=`SIGNAL_${signal.net}`
       const [vx,vy]=signal.path[2]
       const points=signal.path.map(([x,y])=>({x:x-vx,y:y-vy}))
       return <Fragment key={signal.pin}>
@@ -42,6 +42,24 @@ export function Display() {
         <trace from={`${name}.${signal.layer}`} to={`J_PI.pin${signal.host}`} thickness={0.15}
           routingPhaseIndex={2} pcbPathRelativeTo={`${name}.${signal.layer}`}
           pcbPath={[`${name}.${signal.layer}`,...points.slice(3),`J_PI.pin${signal.host}`]}/>
+      </Fragment>
+    })}
+    {[
+      {pin:2,host:16,net:"LCD_BL",x:-34,y:16,escape:[[-34.7,16.2499186]],
+        path:[[-35,16],[-35,41.6],[5.08,41.6],[5.08,34.99]]},
+      {pin:15,host:22,net:"TOUCH_IRQ",x:-33,y:23.7,escape:[[-34.4,22.7499386]],
+        path:[[-34.2,24.85],[-34.2,41],[0,41],[0,34.99]]},
+    ].map(c=>{
+      const name=`SIGNAL_${c.net}`
+      return <Fragment key={c.net}>
+        <via name={name} pcbX={c.x} pcbY={c.y} fromLayer="bottom" toLayer="top"
+          holeDiameter={0.3} outerDiameter={0.65} connectsTo={`net.${c.net}`}/>
+        <trace from={`${name}.bottom`} to={`J_LCD.pin${c.pin}`} thickness={0.15} routingPhaseIndex={2}
+          pcbPathRelativeTo={`${name}.bottom`}
+          pcbPath={[`${name}.bottom`,...c.escape.map(([x,y])=>({x:x-c.x,y:y-c.y})),`J_LCD.pin${c.pin}`]}/>
+        <trace from={`${name}.top`} to={`J_PI.pin${c.host}`} thickness={0.15} routingPhaseIndex={2}
+          pcbPathRelativeTo={`${name}.top`}
+          pcbPath={[`${name}.top`,...c.path.map(([x,y])=>({x:x-c.x,y:y-c.y})),`J_PI.pin${c.host}`]}/>
       </Fragment>
     })}
     <via name="LCD_CS_ESCAPE" pcbX={-32.15} pcbY={19.95} holeDiameter={0.3} outerDiameter={0.65}
@@ -99,7 +117,7 @@ export function Display() {
     {/* Two manual FPC supply escapes avoid routing a rail across adjacent SPI pads. */}
     <via name="LCD_FEED" pcbX={-36.7} pcbY={4.5} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.V_LCD3V3"/>
-    <via name="LCD_VCC" pcbX={-33} pcbY={15.7500466} holeDiameter={0.3} outerDiameter={0.65}
+    <via name="LCD_VCC" pcbX={-35.7} pcbY={14.7} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.V_LCD3V3"/>
     <via name="LCD_SD_CS" pcbX={-33} pcbY={21.2} holeDiameter={0.3} outerDiameter={0.65}
       fromLayer="bottom" toLayer="top" connectsTo="net.V_LCD3V3"/>
@@ -110,7 +128,7 @@ export function Display() {
     <trace from="LCD_VCC.bottom" to="J_LCD.pin1" thickness={0.2} routingPhaseIndex={1}
       pcbPath={["LCD_VCC.bottom","J_LCD.pin1"]}/>
     <trace from="LCD_VCC.top" to="LCD_SD_CS.top" thickness={0.2} routingPhaseIndex={1}
-      pcbPath={["LCD_VCC.top","LCD_SD_CS.top"]}/>
+      pcbPathRelativeTo="LCD_VCC.top" pcbPath={["LCD_VCC.top",{x:2.7,y:0},"LCD_SD_CS.top"]}/>
     <trace from="LCD_SD_CS.bottom" to="J_LCD.pin10" thickness={0.15} routingPhaseIndex={1}
       pcbPathRelativeTo="LCD_SD_CS.bottom"
       pcbPath={["LCD_SD_CS.bottom",{x:-1.2,y:-0.9500894},"J_LCD.pin10"]}/>

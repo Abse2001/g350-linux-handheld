@@ -5,6 +5,7 @@ import { TPS61023DRLR } from "../imports/TPS61023DRLR"
 import { WPN252012E1R0MT } from "../imports/WPN252012E1R0MT"
 import { MAX17048G_T10 } from "../imports/MAX17048G_T10"
 import { TYPE_C_31_M_12 } from "../imports/TYPE_C_31_M_12"
+import "./ThroughSignalVia"
 
 const resistors = [
   {name:"R_CC1",value:"5.1k",part:"C23186",x:23,y:51,sx:18,sy:8,a:"J_USB.CC1",b:"net.GND"},
@@ -38,6 +39,15 @@ const localBypass:Record<string,{x:number,y:number,max:number}> = {
 
 export function Power() {
   return <Fragment>
+    <net name="USB_CC2" routingPhaseIndex={2}/>
+    <via name="SIGNAL_USB_CC2" pcbX={26.7} pcbY={55.95} fromLayer="bottom" toLayer="top"
+      holeDiameter={0.3} outerDiameter={0.65} connectsTo="net.USB_CC2"/>
+    <trace from="SIGNAL_USB_CC2.top" to="R_CC2.pin1" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="SIGNAL_USB_CC2.top"
+      pcbPath={["SIGNAL_USB_CC2.top",{x:-.525,y:-.95},"R_CC2.pin1"]}/>
+    <trace from="SIGNAL_USB_CC2.bottom" to="J_USB.CC2" thickness={0.15} routingPhaseIndex={2}
+      pcbPathRelativeTo="SIGNAL_USB_CC2.bottom"
+      pcbPath={["SIGNAL_USB_CC2.bottom",{x:.05,y:-.75},"J_USB.CC2"]}/>
     {[{name:"VSYS_CHARGER",x:23,y:39.9},{name:"VSYS_BOOST",x:9,y:51.7},
       {name:"VSYS_INDUCTOR",x:3.8,y:50.5}].map(p=><Fragment key={p.name}><via name={p.name}
       pcbX={p.x} pcbY={p.y} holeDiameter={0.3} outerDiameter={0.65}
@@ -117,7 +127,7 @@ export function Power() {
     <trace from="U_CHARGE.EN1" to="C_SYS.pin1" thickness={0.15} routingPhaseIndex={1} maxLength={12}
       pcbPathRelativeTo="U_CHARGE.EN1" pcbPath={["U_CHARGE.EN1",{x:-0.249809,y:-2.35},
         {x:-0.5,y:-2.7},{x:-0.5,y:-2.7,via:true,toLayer:"bottom"},{x:-0.5,y:-2.7},
-        {x:3,y:-3.4},{x:3,y:-3.4,via:true,toLayer:"top"},{x:3,y:-3.4},"C_SYS.pin1"]}/>
+        {x:3,y:-3.7},{x:3,y:-3.4},{x:3,y:-3.4,via:true,toLayer:"top"},{x:3,y:-3.4},"C_SYS.pin1"]}/>
     <trace from="U_BOOST.VIN" to="C_BOOST_IN.pin1" thickness={0.3} routingPhaseIndex={1}
       pcbPath={["U_BOOST.VIN","C_BOOST_IN.pin1"]}/>
     <trace from="U_BOOST.VOUT" to="C_BOOST_OUT1.pin1" thickness={0.3} routingPhaseIndex={1}

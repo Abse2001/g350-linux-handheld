@@ -28,10 +28,37 @@ board = /\(aux_axis_origin [^)]+\)/.test(board)
 // Remove only disconnected zone islands when KiCad refills the copper. They
 // have no return-path purpose and would otherwise be reported as open GND.
 board = board.replace(/\(island_removal_mode [12]\)/g,"(island_removal_mode 0)")
-// Partial-layer route transitions can currently be exported twice with the
-// identical UUID. Preserve one physical through-via, rejecting inconsistencies.
+// The converter emits disconnected parts of a pour as separate zone outlines.
+// KiCad requires distinct priorities when those outlines touch or overlap,
+// even for the same net. Refill their union using the same clearance rules;
+// preserve the explicit switching-node pour above the surrounding ground.
+let groundPriority=0
+board=board.replace(/^([ \t]+)\(zone\b[\s\S]*?^\1\)/gm,(block,indent)=>{
+  if(block.includes("(keepout")) return block
+  const net=/\(net_name\s+"?([^"\s)]+)"?\)/.exec(block)?.[1] ??
+    /\(net\s+"([^"]+)"\)/.exec(block)?.[1]
+  if(!["GND","BOOST_SW"].includes(net)) throw new Error(`Review exported copper zone ${net}`)
+  const priority=net==="GND"?++groundPriority:10000
+  return /\(priority \d+\)/.test(block)?block.replace(/\(priority \d+\)/,`(priority ${priority})`):
+    block.replace("(zone",`(zone\n${indent}${indent}(priority ${priority})`)
+})
+if(groundPriority<4) throw new Error("Expected ground zones on all four copper layers")
+// The converter emits both the physical via and its route transition, using
+// the same UUID. An inner signal endpoint incorrectly narrows the second
+// copy's span. Restore the full span declared in Circuit JSON, then preserve
+// one physical through-via and reject any other inconsistent attributes.
 const vias = new Map()
-board = board.replace(/\(via\s[\s\S]*?\n  \)/g,block=>{
+board = board.replace(/^([ \t]+)\(via\b[\s\S]*?^\1\)/gm,block=>{
+  const at=/\(at ([^ )]+) ([^ )]+)\)/.exec(block)
+  const diameter=Number(/\(size ([^ )]+)\)/.exec(block)?.[1])
+  const drill=Number(/\(drill ([^ )]+)\)/.exec(block)?.[1])
+  const declared=at && circuit.filter(e=>e.type==="pcb_via").find(e=>
+    Math.hypot(Number(at[1])-100-e.x,100-Number(at[2])-e.y)<1e-5 &&
+    Math.abs(e.outer_diameter-diameter)<1e-6 && Math.abs(e.hole_diameter-drill)<1e-6)
+  if(!declared || declared.layers.length!==4 ||
+     !["top","inner1","inner2","bottom"].every(layer=>declared.layers.includes(layer)))
+    throw new Error("KiCad via does not match a declared standard full-depth via")
+  block=block.replace(/\(layers [^)]+\)/,'(layers "F.Cu" "B.Cu")')
   const uuid = /\(uuid ([^)]+)\)/.exec(block)?.[1]
   if (!uuid) throw new Error("Exported via has no UUID")
   if (!vias.has(uuid)) { vias.set(uuid,block); return block }

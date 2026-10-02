@@ -28,7 +28,7 @@ try {
 await import("./verify-gerber-coordinates.mjs")
 cpSync("dist/index/kicad","fabrication/kicad",{recursive:true,
   filter:path=>!path.endsWith(".kicad_prl")})
-const files = ["circuit.json","bom-jlcpcb.csv","pnp-jlcpcb.csv","g350-rev-a-gerbers.zip",
+const files = ["circuit.json","bom-jlcpcb.csv","bom-manual.csv","pnp-jlcpcb.csv","g350-rev-a-gerbers.zip",
   ...readdirSync("fabrication/kicad",{recursive:true,withFileTypes:true}).filter(e=>e.isFile())
     .map(e=>`${e.parentPath.replace(/^fabrication\//,"")}/${e.name}`)]
 writeFileSync("fabrication/SHA256SUMS",files.map(f=>

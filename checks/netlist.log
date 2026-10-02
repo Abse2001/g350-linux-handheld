@@ -116,22 +116,13 @@ NET: R_CC1_pos
   - R_CC1 pin1
   - J_USB A5
 
-NET: R_CC2_pos
-  - R_CC2 pin1
+NET: USB_CC2
   - J_USB B5
-
-NET: U_CHARGE_ISET
-  - R_ISET pin1
-  - U_CHARGE ISET
+  - R_CC2 pin1
 
 NET: U_CHARGE_ILIM
   - U_CHARGE ILIM
   - R_ILIM pin1
-
-NET: CHARGING_N
-  - R_CHG_PULL pin2
-  - U_CHARGE N_CHG
-  - J_PI J8_29
 
 NET: USB_GOOD_N
   - U_CHARGE N_PGOOD
@@ -168,14 +159,6 @@ NET: VBAT
   - C_BAT pin1 (+)
   - J_BAT pin1
 
-NET: LCD_BL
-  - J_LCD pin2
-  - J_PI J8_16
-
-NET: TOUCH_IRQ
-  - J_LCD pin15
-  - J_PI J8_22
-
 NET: SPI_SCLK
   - J_LCD pin4
   - J_PI J8_23
@@ -192,6 +175,14 @@ NET: LCD_DC
   - J_LCD pin7
   - J_PI J8_15
 
+NET: LCD_BL
+  - J_LCD pin2
+  - J_PI J8_16
+
+NET: TOUCH_IRQ
+  - J_LCD pin15
+  - J_PI J8_22
+
 NET: LCD_CS
   - J_LCD pin9
   - J_PI J8_24
@@ -205,6 +196,15 @@ NET: V_LCD3V3
   - U_LCD_PWR VOUT
   - J_LCD pin10
   - J_LCD pin1
+
+NET: CHARGE_ISET
+  - R_ISET pin1
+  - U_CHARGE ISET
+
+NET: CHARGING_N
+  - R_CHG_PULL pin2
+  - U_CHARGE N_CHG
+  - J_PI J8_29
 
 NET: SDA
   - J_LCD pin14
@@ -222,17 +222,17 @@ NET: U_KEYS_N_RESET
   - R_RESET pin1
   - U_KEYS N_RESET
 
-NET: SW_UP_A
+NET: BUTTON_UP
+  - U_KEYS GPA0
   - SW_UP A
   - SW_UP B
-  - U_KEYS GPA0
 
 NET: SW_DOWN_A
   - SW_DOWN A
   - SW_DOWN B
   - U_KEYS GPA1
 
-NET: SW_LEFT_A
+NET: BUTTON_LEFT
   - SW_LEFT A
   - SW_LEFT B
   - U_KEYS GPA2
@@ -262,20 +262,20 @@ NET: SW_Y_A
   - SW_Y B
   - U_KEYS GPB3
 
-NET: SW_SELECT_A
+NET: BUTTON_SELECT
+  - U_KEYS GPB0
   - SW_SELECT A
   - SW_SELECT B
-  - U_KEYS GPB0
 
 NET: SW_START_A
   - SW_START A
   - SW_START B
   - U_KEYS GPB1
 
-NET: SW_MENU_A
+NET: BUTTON_MENU
+  - U_KEYS GPB2
   - SW_MENU A
   - SW_MENU B
-  - U_KEYS GPB2
 
 NET: GND
   - TP_GND pin1
@@ -483,7 +483,7 @@ J_USB (TYPE-C-31-M-12)
 - pin9(A7, DN1): NOT_CONNECTED
 - pin10(B6, DP2): NOT_CONNECTED
 - pin11(A8, SBU1): NOT_CONNECTED
-- pin12(B5, CC2): NETS(R_CC2_pos)
+- pin12(B5, CC2): NETS(USB_CC2)
 - pin13(A1B12, GND1): NETS(GND)
 - pin14(B1A12, GND2): NETS(GND)
 - pin15(B4A9, VBUS1): NETS(USB_5V)
@@ -505,7 +505,7 @@ U_CHARGE (BQ24074RGTR)
 - pin13(IN): NETS(USB_5V)
 - pin14(TMR): NETS(U_CHARGE_TMR)
 - pin15(ITERM): NOT_CONNECTED
-- pin16(ISET): NETS(U_CHARGE_ISET)
+- pin16(ISET): NETS(CHARGE_ISET)
 - pin17(EP): NETS(GND)
 
 J_BAT (1x3 2.54mm protected 1S battery + NTC harness)
@@ -534,11 +534,11 @@ R_CC1 (5.1kΩ undefined)
 - pin2(cathode, neg, right): NETS(GND)
 
 R_CC2 (5.1kΩ undefined)
-- pin1(anode, pos, left): NETS(R_CC2_pos)
+- pin1(anode, pos, left): NETS(USB_CC2)
 - pin2(cathode, neg, right): NETS(GND)
 
 R_ISET (3.3kΩ undefined)
-- pin1(anode, pos, left): NETS(U_CHARGE_ISET)
+- pin1(anode, pos, left): NETS(CHARGE_ISET)
 - pin2(cathode, neg, right): NETS(GND)
 
 R_ILIM (3.3kΩ undefined)
@@ -654,9 +654,9 @@ C_LCD_OUT (1uF undefined)
 - pin2(cathode, neg, right): NETS(GND)
 
 U_KEYS (MCP23017-E/SO)
-- pin1(GPB0): NETS(SW_SELECT_A)
+- pin1(GPB0): NETS(BUTTON_SELECT)
 - pin2(GPB1): NETS(SW_START_A)
-- pin3(GPB2): NETS(SW_MENU_A)
+- pin3(GPB2): NETS(BUTTON_MENU)
 - pin4(GPB3): NETS(SW_Y_A)
 - pin5(GPB4): NOT_CONNECTED
 - pin6(GPB5): NOT_CONNECTED
@@ -674,9 +674,9 @@ U_KEYS (MCP23017-E/SO)
 - pin18(N_RESET): NETS(U_KEYS_N_RESET)
 - pin19(INTB): NOT_CONNECTED
 - pin20(INTA): NOT_CONNECTED
-- pin21(GPA0): NETS(SW_UP_A)
+- pin21(GPA0): NETS(BUTTON_UP)
 - pin22(GPA1): NETS(SW_DOWN_A)
-- pin23(GPA2): NETS(SW_LEFT_A)
+- pin23(GPA2): NETS(BUTTON_LEFT)
 - pin24(GPA3): NETS(SW_RIGHT_A)
 - pin25(GPA4): NETS(SW_A_A)
 - pin26(GPA5): NETS(SW_B_A)
@@ -696,8 +696,8 @@ C_KEYS_BULK (10uF undefined)
 - pin2(cathode, neg, right): NETS(GND)
 
 SW_UP (TS-1187A-B-A-B)
-- pin1(A): NETS(SW_UP_A)
-- pin2(B): NETS(SW_UP_A)
+- pin1(A): NETS(BUTTON_UP)
+- pin2(B): NETS(BUTTON_UP)
 - pin3(C): NETS(GND)
 - pin4(D): NETS(GND)
 
@@ -708,8 +708,8 @@ SW_DOWN (TS-1187A-B-A-B)
 - pin4(D): NETS(GND)
 
 SW_LEFT (TS-1187A-B-A-B)
-- pin1(A): NETS(SW_LEFT_A)
-- pin2(B): NETS(SW_LEFT_A)
+- pin1(A): NETS(BUTTON_LEFT)
+- pin2(B): NETS(BUTTON_LEFT)
 - pin3(C): NETS(GND)
 - pin4(D): NETS(GND)
 
@@ -744,8 +744,8 @@ SW_Y (TS-1187A-B-A-B)
 - pin4(D): NETS(GND)
 
 SW_SELECT (TS-1187A-B-A-B)
-- pin1(A): NETS(SW_SELECT_A)
-- pin2(B): NETS(SW_SELECT_A)
+- pin1(A): NETS(BUTTON_SELECT)
+- pin2(B): NETS(BUTTON_SELECT)
 - pin3(C): NETS(GND)
 - pin4(D): NETS(GND)
 
@@ -756,8 +756,8 @@ SW_START (TS-1187A-B-A-B)
 - pin4(D): NETS(GND)
 
 SW_MENU (TS-1187A-B-A-B)
-- pin1(A): NETS(SW_MENU_A)
-- pin2(B): NETS(SW_MENU_A)
+- pin1(A): NETS(BUTTON_MENU)
+- pin2(B): NETS(BUTTON_MENU)
 - pin3(C): NETS(GND)
 - pin4(D): NETS(GND)
 

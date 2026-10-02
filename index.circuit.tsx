@@ -7,6 +7,7 @@ import { PiZero2W } from "./lib/PiZero2W"
 import { Power } from "./lib/Power"
 import { Audio } from "./lib/Audio"
 import { Display } from "./lib/Display"
+import { ControlEscapes } from "./lib/ControlEscapes"
 
 // All coordinates are mm. Front controls are top; support electronics are rear.
 const buttons = [
@@ -65,6 +66,7 @@ export default () => (
     <Audio />
     <Power />
     <Display />
+    <ControlEscapes />
 
     {/* Keep the host-to-gauge clock branch on the outer copper, with no via cluster. */}
     <trace from="U_GAUGE.SCL" to="J_PI.pin5" thickness={0.2} routingPhaseIndex={0}

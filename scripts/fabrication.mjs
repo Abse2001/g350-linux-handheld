@@ -43,6 +43,19 @@ const checkedBoard = readFileSync("dist/index/kicad/index.kicad_pcb")
 if (readFileSync("checks/kicad-board.sha256","utf8").trim().split(/\s+/)[0] !==
     createHash("sha256").update(checkedBoard).digest("hex"))
   throw new Error("The KiCad board changed after independent DRC")
+// Independently require the converted board to retain standard through-vias,
+// including transitions whose signal wires terminate on an inner layer.
+const exportedVias=[...checkedBoard.toString().matchAll(/^([ \t]+)\(via\b[\s\S]*?^\1\)/gm)].map(m=>m[0])
+const expectedVias=circuit.filter(e=>e.type==="pcb_via")
+if(exportedVias.length!==expectedVias.length) throw new Error("KiCad through-via count differs from the circuit")
+for(const via of exportedVias){
+  const at=/\(at ([^ )]+) ([^ )]+)\)/.exec(via)
+  if(!/\(layers\s+"F\.Cu"\s+"B\.Cu"\)/.test(via) || /\(via\s+(?:blind|micro)\b/.test(via) ||
+     Number(/\(size ([^ )]+)\)/.exec(via)?.[1])!==0.65 ||
+     Number(/\(drill ([^ )]+)\)/.exec(via)?.[1])!==0.3 || !at ||
+     !expectedVias.some(e=>Math.hypot(Number(at[1])-100-e.x,100-Number(at[2])-e.y)<0.005))
+    throw new Error("KiCad via span, dimensions or position differs from a standard circuit through-via")
+}
 const sourceFiles = ["index.circuit.tsx",...['lib','imports'].flatMap(dir =>
   readdirSync(dir).filter(f=>f.endsWith('.tsx')||f.endsWith('.ts')).map(f=>`${dir}/${f}`))]
 if (sourceFiles.some(path => statSync(path).mtimeMs > statSync(sourcePath).mtimeMs))
@@ -80,6 +93,20 @@ const assemblyAtPlotOrigin = prepared.map(e=>e.type === "pcb_component"
 const pnp = convertCircuitJsonToPickAndPlaceCsv(assemblyAtPlotOrigin, {supplier:"jlcpcb",requireSupplierRotation:true})
 writeFileSync("fabrication/bom-jlcpcb.csv",bom)
 writeFileSync("fabrication/pnp-jlcpcb.csv",pnp)
+writeFileSync("fabrication/bom-manual.csv",csv([
+  ["Item","Quantity","Specification","Assembly notes"],
+  ["J_PI",1,"Unshrouded 2x20 male header, 2.54 mm pitch","Fit on bottom; match silkscreen pin 1"],
+  ["J_BAT",1,"1x3 male header, 2.54 mm pitch; battery harness rated at least 3 A","Bottom; pin 1 battery positive, 2 negative, 3 NTC"],
+  ["J_OFF, J_SPEAKER",2,"1x2 male header, 2.54 mm pitch","Fit on bottom; speaker outputs are both driven"],
+  ["Linux host",1,"Raspberry Pi Zero 2 W with populated GPIO header","Complete external module; insulating M2.5 standoffs"],
+  ["GPIO cable",1,"Straight-through 40-wire female-to-female GPIO ribbon","Pin 1 to pin 1; preserve both pin rows"],
+  ["Display",1,"Waveshare 3.5inch Capacitive Touch LCD, ST7796S + FT6336U","18-pin 0.5 mm FPC host port; use custom GPIO assignments"],
+  ["Display cable",1,"18-conductor 0.5 mm pitch, 0.3 mm thick FFC","Choose contact sides for both connectors; verify pin-1 continuity"],
+  ["Battery",1,"Protected 1S 4.2 V Li-ion/LiPo with attached 10 kOhm 103AT-2-compatible NTC","NTC returns to battery negative; harness rated at least 3 A"],
+  ["Speaker",1,"8 Ohm, at least 2 W","Connect between J_SPEAKER pins 1 and 2"],
+  ["Off switch",1,"External SPST slide switch","Closing J_OFF disables the boost; shut Linux down first"],
+  ["Pi mounting hardware",4,"Insulating M2.5 nylon screws and standoffs","Choose height to clear the Pi connectors and carrier components"],
+]))
 writeFileSync("fabrication/circuit.json",original)
 writeFileSync("fabrication/circuit.sha256",createHash("sha256").update(original).digest("hex")+"  circuit.json\n")
 console.log(`Exported ${groups.size} supplier BOM entries and verified assembly rotations.`)

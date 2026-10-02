@@ -1,0 +1,87 @@
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: circuit-json-to-pnp-csv@0.0.16
+npm warn Found: circuit-json@0.0.507
+npm warn node_modules/circuit-json
+npm warn   peer circuit-json@"*" from @tscircuit/checks@0.0.233
+npm warn   node_modules/@tscircuit/checks
+npm warn     peer @tscircuit/checks@"*" from @tscircuit/core@0.0.1974
+npm warn     node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core
+npm warn     1 more (tscircuit)
+npm warn   9 more (@tscircuit/circuit-json-util, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer circuit-json@"^0.0.489" from circuit-json-to-pnp-csv@0.0.16
+npm warn node_modules/circuit-json-to-pnp-csv
+npm warn   circuit-json-to-pnp-csv@"^0.0.16" from tscircuit@0.0.2715
+npm warn   node_modules/tscircuit
+npm warn
+npm warn Conflicting peer dependency: circuit-json@0.0.489
+npm warn node_modules/circuit-json
+npm warn   peer circuit-json@"^0.0.489" from circuit-json-to-pnp-csv@0.0.16
+npm warn   node_modules/circuit-json-to-pnp-csv
+npm warn     circuit-json-to-pnp-csv@"^0.0.16" from tscircuit@0.0.2715
+npm warn     node_modules/tscircuit
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: @tscircuit/cli@0.1.2220
+npm warn Found: circuit-json@0.0.507
+npm warn node_modules/circuit-json
+npm warn   peer circuit-json@"*" from @tscircuit/checks@0.0.233
+npm warn   node_modules/@tscircuit/checks
+npm warn     peer @tscircuit/checks@"*" from @tscircuit/core@0.0.1974
+npm warn     node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core
+npm warn     1 more (tscircuit)
+npm warn   9 more (@tscircuit/circuit-json-util, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer circuit-json@"^0.0.489" from @tscircuit/cli@0.1.2220
+npm warn node_modules/@tscircuit/cli
+npm warn   @tscircuit/cli@"^0.1.2220" from tscircuit@0.0.2715
+npm warn   node_modules/tscircuit
+npm warn
+npm warn Conflicting peer dependency: circuit-json@0.0.489
+npm warn node_modules/circuit-json
+npm warn   peer circuit-json@"^0.0.489" from @tscircuit/cli@0.1.2220
+npm warn   node_modules/@tscircuit/cli
+npm warn     @tscircuit/cli@"^0.1.2220" from tscircuit@0.0.2715
+npm warn     node_modules/tscircuit
+npm warn ERESOLVE overriding peer dependency
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: jscad-electronics@0.0.178
+npm warn Found: @tscircuit/alphabet@0.0.25
+npm warn node_modules/@tscircuit/alphabet
+npm warn   @tscircuit/alphabet@"^0.0.25" from graphics-debug@0.0.96
+npm warn   node_modules/@tscircuit/create-fdm-enclosure/node_modules/graphics-debug
+npm warn     graphics-debug@"^0.0.96" from @tscircuit/create-fdm-enclosure@0.0.4
+npm warn     node_modules/@tscircuit/create-fdm-enclosure
+npm warn     1 more (@tscircuit/solver-utils)
+npm warn   6 more (graphics-debug, graphics-debug, tscircuit, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer @tscircuit/alphabet@"^0.0.24" from jscad-electronics@0.0.178
+npm warn node_modules/circuit-json-to-gltf/node_modules/jscad-electronics
+npm warn   jscad-electronics@"^0.0.178" from circuit-json-to-gltf@0.0.139
+npm warn   node_modules/circuit-json-to-gltf
+npm warn
+npm warn Conflicting peer dependency: @tscircuit/alphabet@0.0.24
+npm warn node_modules/@tscircuit/alphabet
+npm warn   peer @tscircuit/alphabet@"^0.0.24" from jscad-electronics@0.0.178
+npm warn   node_modules/circuit-json-to-gltf/node_modules/jscad-electronics
+npm warn     jscad-electronics@"^0.0.178" from circuit-json-to-gltf@0.0.139
+npm warn     node_modules/circuit-json-to-gltf
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'circuit-to-svg@0.0.437',
+npm warn EBADENGINE   required: { node: '24.x' },
+npm warn EBADENGINE   current: { node: 'v25.6.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+
+changed 9 packages, and audited 316 packages in 29s
+
+41 packages are looking for funding
+  run `npm fund` for details
+
+13 vulnerabilities (10 moderate, 3 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.

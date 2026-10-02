@@ -1,0 +1,17 @@
+(version 1)
+(rule "G350 minimum copper spacing"
+  (constraint clearance (min 0.15mm)))
+(rule "G350 minimum trace width"
+  (constraint track_width (min 0.15mm)))
+(rule "G350 through-via diameter"
+  (constraint via_diameter (min 0.65mm)))
+(rule "G350 annular ring"
+  (constraint annular_width (min 0.15mm)))
+(rule "G350 drilled hole minimum"
+  (constraint hole_size (min 0.3mm)))
+(rule "G350 hole separation"
+  (constraint hole_to_hole (min 0.45mm)))
+(rule "G350 copper to drill"
+  (constraint hole_clearance (min 0.2mm)))
+(rule "G350 routed edge clearance"
+  (constraint edge_clearance (min 0.5mm)))

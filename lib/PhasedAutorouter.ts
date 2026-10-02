@@ -1,5 +1,6 @@
 import { AutoroutingPipelineSolver9_PreloadedTraceGraph,
   type SimpleRouteJson, type Obstacle } from "@tscircuit/capacity-autorouter"
+import {conservativeTraceObstacles} from "./ConservativeTraceObstacles"
 
 // Later phases may not relocate completed earlier copper. Pipeline 9's
 // preloaded-graph repair can move those traces, so represent them as fixed
@@ -14,7 +15,7 @@ function fixedCopper(traces:NonNullable<SimpleRouteJson["traces"]>):Obstacle[] {
       if (a.route_type==="via") {
         const diameter=a.via_diameter??0.65
         obstacles.push({obstacleId:`fixed_${ti}_via_${i}`,type:"rect",shape:"circle",
-          layers:["top","bottom"],center:{x:a.x,y:a.y},width:diameter,height:diameter,connectedTo})
+          layers:["top","inner1","inner2","bottom"],center:{x:a.x,y:a.y},width:diameter,height:diameter,connectedTo})
       }
       if (a.route_type!=="wire"||b?.route_type!=="wire"||a.layer!==b.layer) continue
       const dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy)
@@ -48,17 +49,17 @@ function explicitSegmentWidths(traces: NonNullable<SimpleRouteJson["traces"]>) {
   })
 }
 
-// Keep autorouted signals on the outer layers. Manual display paths use the
-// inner layers, where ground pours retain the surrounding return copper.
-// This also makes every autorouted transition a standard full-depth via.
-// Through-hole terminals are accessible on either outer layer; the generated
+// Use the four-layer physical stack with blind/buried vias disabled. Core
+// materializes each autorouted transition as a standard full-depth via.
+// Through-hole terminals are accessible on every layer; the generated
 // input otherwise fixes them to the port's display layer unnecessarily.
 async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   const previous = input.traces ?? []
   // GND is the first declared source net on this project. Its pads connect by
   // filled zones and stitching vias; fabrication.mjs verifies this identifier.
   // Final KiCad connectivity and Gerber shorts checks still qualify the copper.
-  const layers = ["top","bottom"]
+  const layers = ["top","inner1","inner2","bottom"]
+  if(input.layerCount!==4) throw new Error("Review the autorouter after changing the four-layer stack")
   const platedPortIds = new Set(input.obstacles.filter(o=>o.circuitJsonMetadata?.pcb_plated_hole_id)
     .map(o=>o.circuitJsonMetadata?.pcb_port_id))
   const audioId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "GAIN_SLOT")?.componentId
@@ -74,9 +75,9 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   const ampEnablePortId=input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name==="J8_37")
     ?.circuitJsonMetadata?.pcb_port_id
   if (!ampEnablePortId) throw new Error("Review the manual amplifier GPIO enable feed")
-  const lcdInnerSignalPortIds=new Set(input.obstacles.filter(o=>["J8_15","J8_19","J8_21","J8_23"].includes(o.circuitJsonMetadata?.source_port_name??""))
+  const lcdManualSignalPortIds=new Set(input.obstacles.filter(o=>["J8_15","J8_16","J8_19","J8_21","J8_22","J8_23"].includes(o.circuitJsonMetadata?.source_port_name??""))
     .map(o=>o.circuitJsonMetadata?.pcb_port_id))
-  if(lcdInnerSignalPortIds.size!==4) throw new Error("Review the manual inner-layer display signals")
+  if(lcdManualSignalPortIds.size!==6) throw new Error("Review the manual display signals")
   const lcdSelectPortId=input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name==="J8_24")
     ?.circuitJsonMetadata?.pcb_port_id
   if (!lcdSelectPortId) throw new Error("Review the manual LCD chip-select escape")
@@ -101,6 +102,17 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   if (groundAsPlane && audioHfPortIds.size !== 1)
     throw new Error("Review the amplifier bypass feed after changing its manual connections")
   const keysId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "GPA0")?.componentId
+  const manualControlPortIds=new Set(input.obstacles.filter(o=>o.componentId===keysId &&
+    ["GPA0","GPB0","GPB2","SCL"].includes(o.circuitJsonMetadata?.source_port_name??""))
+    .map(o=>o.circuitJsonMetadata?.pcb_port_id))
+  if(manualControlPortIds.size!==4) throw new Error("Review the manual clock and front-control escapes")
+  const keysLeftPortId=input.obstacles.find(o=>o.componentId===keysId &&
+    o.circuitJsonMetadata?.source_port_name==="GPA2")?.circuitJsonMetadata?.pcb_port_id
+  if(!keysLeftPortId) throw new Error("Review the LEFT input fanout")
+  const keysLeftManualPeerIds=new Set(input.connections.flatMap(c=>(c.externallyConnectedPointIds??[])
+    .filter(pair=>pair.includes(keysLeftPortId)).flatMap(pair=>pair.filter(id=>id!==keysLeftPortId))))
+  if(input.connections.some(c=>c.pointsToConnect.some(p=>p.pcb_port_id===keysLeftPortId)) && keysLeftManualPeerIds.size!==1)
+    throw new Error("Expected one manual bottom-layer LEFT input escape")
   const keysVddPortId = input.obstacles.find(o=>o.componentId === keysId &&
     o.circuitJsonMetadata?.source_port_name === "VDD")?.circuitJsonMetadata?.pcb_port_id
   const keysResetPortId=input.obstacles.find(o=>o.componentId===keysId &&
@@ -127,6 +139,12 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   const pgoodPortId = input.obstacles.find(o=>o.componentId===chargerId &&
     o.circuitJsonMetadata?.source_port_name === "N_PGOOD")?.circuitJsonMetadata?.pcb_port_id
   if (!pgoodPortId) throw new Error("Review the manual charger PGOOD connection")
+  const chargingPortId=input.obstacles.find(o=>o.componentId===chargerId &&
+    o.circuitJsonMetadata?.source_port_name==="N_CHG")?.circuitJsonMetadata?.pcb_port_id
+  if(!chargingPortId) throw new Error("Review the manual charger indication path")
+  const currentSettingPortId=input.obstacles.find(o=>o.componentId===chargerId &&
+    o.circuitJsonMetadata?.source_port_name==="ISET")?.circuitJsonMetadata?.pcb_port_id
+  if(!currentSettingPortId) throw new Error("Review the manual charge-current setting path")
   const thermistorPortId = input.obstacles.find(o=>o.componentId===chargerId &&
     o.circuitJsonMetadata?.source_port_name==="TS")?.circuitJsonMetadata?.pcb_port_id
   if (!thermistorPortId) throw new Error("Review the manual battery thermistor connection")
@@ -135,6 +153,9 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   if (!lcdResetPortId) throw new Error("Review the manual LCD reset connection")
   const boostId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "SW")?.componentId
   const usbId = input.obstacles.find(o=>o.circuitJsonMetadata?.source_port_name === "B4A9")?.componentId
+  const cc2PortId=input.obstacles.find(o=>o.componentId===usbId &&
+    o.circuitJsonMetadata?.source_port_name==="B5")?.circuitJsonMetadata?.pcb_port_id
+  if(!cc2PortId) throw new Error("Review the manual second USB-C CC escape")
   const feedbackPortId = input.obstacles.find(o=>o.componentId === boostId &&
     o.circuitJsonMetadata?.source_port_name === "FB")?.circuitJsonMetadata?.pcb_port_id
   const boostVoutPortId = input.obstacles.find(o=>o.componentId===boostId &&
@@ -186,33 +207,28 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
     .flatMap(pair=>pair.filter(id=>!chargerBatPortIds.has(id)))))
   if (groundAsPlane && batteryCapPortIds.size !== 1)
     throw new Error("Review the manual battery feed after changing its bypass connections")
-  const routingInput: SimpleRouteJson = {...input,traces:[],layerCount:2,allowViaInPad:false,
+  const routingInput: SimpleRouteJson = {...input,traces:[],layerCount:4,allowBlindAndBuriedVias:false,allowViaInPad:false,
     // 0.25mm leaves room for the 0.5mm-pitch FPC's 0.3mm pads;
     // its immediate 0.15mm escapes have at most 0.275mm to adjacent pads.
     defaultObstacleMargin:0.25,minTraceToPadEdgeClearance:0.25,
     minTraceToHoleEdgeClearance:0.8,
     minViaEdgeToPadEdgeClearance:0.35,minViaHoleEdgeToViaHoleEdgeClearance:0.7,minPlatedHoleDrillEdgeToDrillEdgeClearance:0.5,
-    obstacles:[...input.obstacles,...fixedCopper(previous)].map(o=>{
-      const outerLayers=o.layers.filter(l=>layers.includes(l))
-      // A through-via must clear inner display copper as well. Conservatively
-      // project inner-only obstacles to both routing layers so the outer-layer
-      // solver cannot place a via through those paths.
-      return {...o,layers:outerLayers.length?outerLayers:
-        o.layers.some(l=>l.startsWith("inner"))?layers:[]}
-    }).filter(o=>o.layers.length),
+    obstacles:[...conservativeTraceObstacles(input.obstacles),...fixedCopper(previous)].map(o=>({...o,
+      layers:o.layers.filter(l=>layers.includes(l))})).filter(o=>o.layers.length),
     connections:input.connections.filter(c=>(!groundAsPlane||!["source_net_0","source_net_1"].includes(c.name)) &&
       // The complete local feedback net has actual manual traces.
       !c.pointsToConnect.some(p=>p.pcb_port_id === feedbackPortId || p.pcb_port_id === lrclkPortId ||
         p.pcb_port_id === bclkPortId || p.pcb_port_id === dinPortId ||
         p.pcb_port_id === audioModePortId ||
         p.pcb_port_id === ampEnablePortId ||
-        p.pcb_port_id === lcdSelectPortId || lcdInnerSignalPortIds.has(p.pcb_port_id) ||
+        p.pcb_port_id === lcdSelectPortId || lcdManualSignalPortIds.has(p.pcb_port_id) ||
         (groundAsPlane && p.pcb_port_id === boostVinPortId) ||
-        p.pcb_port_id === keysResetPortId ||
-        p.pcb_port_id === lcdOutPortId || p.pcb_port_id === pgoodPortId || p.pcb_port_id === thermistorPortId ||
-        p.pcb_port_id === lcdResetPortId))
+        p.pcb_port_id === keysResetPortId || manualControlPortIds.has(p.pcb_port_id) ||
+        p.pcb_port_id === lcdOutPortId || p.pcb_port_id === pgoodPortId || p.pcb_port_id === chargingPortId || p.pcb_port_id === thermistorPortId ||
+        p.pcb_port_id === lcdResetPortId || p.pcb_port_id===currentSettingPortId || p.pcb_port_id===cc2PortId))
       .map(c=>({...c,pointsToConnect:c.pointsToConnect
-        .filter(p=>p.pcb_port_id !== gaugeSdaPortId)
+        .filter(p=>p.pcb_port_id !== gaugeSdaPortId && p.pcb_port_id!==keysLeftPortId &&
+          !keysLeftManualPeerIds.has(p.pcb_port_id??""))
         // These three pins have actual manual traces to bypass capacitor pads,
         // which remain targets of the wide 5V autoroute.
         .filter(p=>!groundAsPlane||(!audioManualPortIds.has(p.pcb_port_id)&&
@@ -229,7 +245,8 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
         return {...rest,layers}
       })})).filter(c=>c.pointsToConnect.length >= 2),
   }
-  const solver = new AutoroutingPipelineSolver9_PreloadedTraceGraph(routingInput,{effort:2})
+  const solver = routingInput.connections.length?
+    new AutoroutingPipelineSolver9_PreloadedTraceGraph(routingInput,{effort:2}):undefined
   const listeners: Record<string,((event:any)=>void)[]> = {}
   let output = previous
   let stopped = false
@@ -237,7 +254,7 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
   const run = async () => {
     try {
       let steps=0
-      while (!stopped && !solver.solved && !solver.failed) {
+      while (!stopped && solver && !solver.solved && !solver.failed) {
         const start=Date.now(),iterations=solver.iterations
         while (!stopped && Date.now()-start<200 && !solver.solved && !solver.failed) solver.step()
         emit("progress",{steps:++steps,progress:solver.progress,phase:solver.getCurrentPhase(),
@@ -245,8 +262,8 @@ async function routePhase(input: SimpleRouteJson, groundAsPlane: boolean) {
         await new Promise(resolve=>setTimeout(resolve,0))
       }
       if (stopped) return
-      if (solver.failed) throw new Error(solver.error ?? "Power autorouting failed")
-      output=[...previous,...explicitSegmentWidths(solver.getOutputSimplifiedPcbTraces())]
+      if (solver?.failed) throw new Error(solver.error ?? "Power autorouting failed")
+      output=[...previous,...(solver?explicitSegmentWidths(solver.getOutputSimplifiedPcbTraces()):[])]
       if (groundAsPlane) {
         // Explicit short copper contacts remain entirely inside each GND pad.
         // They let the trace-only native connectivity check see the plane net;
