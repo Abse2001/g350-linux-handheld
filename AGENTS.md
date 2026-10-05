@@ -16,12 +16,14 @@ shaped board. Its checked byte0 subset has 11/49 DDR signals connected. The
 historical DDR42 and other larger layouts do not qualify this shell layout.
 `fabricationReady` must stay false until all documented release gates pass.
 
-Use `bash scripts/setup-cloud.sh` in an Ubuntu cloud environment, then
+Use `bash scripts/setup-cloud.sh` in the Linux cloud environment, then
 `source cloud/env.sh` in each new shell. Use the project `node_modules/.bin/tsci`,
 never a global tsci. Restore ignored evidence using
 `python3 scripts/restore-cloud-evidence.py`. Keep lockfiles and the reviewed
 native checks patch. Verify versions after dependency changes; do not silently
 replace pinned solvers with newer code or disable native/independent checks.
+The verified cloud host is Debian 13 with isolated official KiCad 10.0.6 tools;
+read `cloud/LINUX_VALIDATION.md` for container restoration and Python compatibility.
 
 Layout all components before routing. Bootstrap DDR with native `bus_lanes`
 phases, then repair geometry as needed. Preserve both complete byte buses and

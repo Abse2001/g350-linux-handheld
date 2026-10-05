@@ -5,6 +5,14 @@ user-visible conversation, and routing evidence to GitHub before cloud setup.
 **The PCB is unfinished and must not be ordered.** Moving it to cloud does not
 qualify the electronics or prove that it fits the original shell.
 
+Cloud setup is now verified on **Debian 13**, using isolated official **KiCad
+10.0.6** tools. The initial Ubuntu setup assumption below is superseded by the
+tested Debian/Ubuntu implementation and [Linux validation report](../cloud/LINUX_VALIDATION.md).
+The **G350 AM3352 handheld** environment is **published**, with all twelve repos
+attached. See [cloud setup](https://chatgpt.com/local/01a10e5b-3bbd-746c-bbc6-06cbc27d4064),
+`cloud/transfer-status.json` and its publication screenshot. A new platform board
+task has not yet been started or independently verified.
+
 ## Read first
 
 - [Complete user-visible chat](CHAT_CONTEXT.md): all recorded human messages,
@@ -241,8 +249,9 @@ unbuilt main-branch code into the pinned board runtime.
 Verified package pins are tscircuit **0.0.2744**, core **0.0.2088**, props
 **0.0.687**, checks **0.0.239**, capacity-autorouter **0.0.958**, CLI **0.1.2237**,
 Circuit JSON **0.0.515**, React **19.3.0**, TypeScript **5.9.3**. Local runtime was
-Node **25.6.1**, Bun **1.3.14**, KiCad **10.0.5**. Ubuntu setup uses official KiCad
-10 stable packages; record the actual installed version and rerun fresh checks.
+Node **25.6.1**, Bun **1.3.14**, KiCad **10.0.5**. The verified cloud runtime uses
+the same Node/Bun pins and official KiCad **10.0.6** tools on Debian 13. Read
+`cloud/LINUX_VALIDATION.md` for tested setup, Docker-image restoration and API checks.
 
 `npm ci --legacy-peer-deps --ignore-scripts` avoids unrelated lifecycle execution;
 the reviewed checks patch is then applied explicitly. It corrects the declared

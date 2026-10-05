@@ -4,14 +4,18 @@
   "branch": "codex/cloud-handoff",
   "githubPushVerified": true,
   "cloudEnvironmentCreated": true,
-  "cloudEnvironmentPublished": false,
+  "cloudEnvironmentPublished": true,
   "cloudSetupVerified": true,
   "fabricationReady": false,
-  "note": "Debian cloud installation, restored evidence, pinned native runtime and fresh Linux smoke/API checks verified. Environment publication remains pending; fabricationReady remains false.",
+  "note": "Published state verified in the G350 environment UI. All twelve repositories are attached. Debian cloud setup, evidence restoration, pinned native runtime and fresh Linux smoke/API checks passed. A new platform board task has not been started or independently verified; fabricationReady remains false.",
   "githubVerifiedCommit": "a1c21f05b10e2d7951eb153cd972a6406d2a0535",
   "cloudSetupThread": "https://chatgpt.com/local/01a10e5b-3bbd-746c-bbc6-06cbc27d4064",
   "attachedRepositories": 12,
   "cloudSetupReport": "cloud/LINUX_VALIDATION.md",
   "cloudSetupHost": "Debian 13 x86_64",
-  "cloudSetupKiCad": "10.0.6+dfsg-1 (isolated official Debian tool image)"
+  "cloudSetupKiCad": "10.0.6+dfsg-1 (isolated official Debian tool image)",
+  "cloudEnvironmentName": "G350 AM3352 handheld",
+  "cloudSetupVerifiedCommit": "e7bccb3dd8752c9d402af6af562f9ff3a56cb249",
+  "publicationVerifiedAt": "2026-10-06",
+  "publicationScreenshot": "cloud/screenshots/g350-cloud-published.jpg"
 }
