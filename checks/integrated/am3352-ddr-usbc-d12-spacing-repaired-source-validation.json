@@ -1,0 +1,246 @@
+{
+  "status": "D12_SPACING_SHORTCUT_EXACT_SOURCE_REPLAY_AND_PARTIAL_CLASS_EXPOSURE_VERIFIED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-d12-spacing-repaired-candidate/circuit.json",
+    "sha256": "44da06639cf3249c5ff4821e02056e0bb989238213edb2111eca08b7cd988a17"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.json",
+    "sha256": "a65e50e01b5519921b4e00e3e6d87e7dd2fd39d1ae808e9afb30c4117ee5fd12"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.provenance.json",
+    "sha256": "ebf5e8316e9111b931c6c657b6485d828103dc2cae5658908f45390174c04e62"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-candidate/circuit.json",
+    "sha256": "5c8aeb2a452df32905653abb4f747d47893af667d90949df230eea4e140f5f07"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-check-summary.json",
+    "sha256": "e7a7baca61666644dab08f344aadbdf342f24be52a530e357779e2e11bfe0e98"
+  },
+  "spacingGeometryHelper": {
+    "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+    "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "changedSignals": [
+    "DDR_D12"
+  ],
+  "allOther32DdrPathsPreserved": true,
+  "allOther134TracePiecesPreserved": true,
+  "all169PhysicalHolesPreserved": true,
+  "allFixedRecordsAndPlanesPreserved": true,
+  "d12PlanarMm": 50.983197059653314,
+  "d12ReducedSpacingExposureMm": 28.195190085725052,
+  "partialSpacingResults": [
+    {
+      "name": "DDR_ODT",
+      "planarMm": 43.01828108257736,
+      "exposureMm": 12.976168204463358,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D8",
+      "planarMm": 50.53587956533585,
+      "exposureMm": 5.741013135988211,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D9",
+      "planarMm": 50.535879564900114,
+      "exposureMm": 1.4669858323416134,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D2",
+      "planarMm": 30.727783540224546,
+      "exposureMm": 2.5911183903757014,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D6",
+      "planarMm": 30.7277835402313,
+      "exposureMm": 1.8731811768831377,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_CSn0",
+      "planarMm": 43.66277078344939,
+      "exposureMm": 10.964423733293625,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_A3",
+      "planarMm": 45.4115827317725,
+      "exposureMm": 9.272824752113824,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_A5",
+      "planarMm": 43.020000000000024,
+      "exposureMm": 16.539301422101452,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_RESETn",
+      "planarMm": 52.64654254594159,
+      "exposureMm": 7.941062132014862,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D10",
+      "planarMm": 50.53587956337854,
+      "exposureMm": 6.938836768532388,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D11",
+      "planarMm": 50.53587956490522,
+      "exposureMm": 8.185359965860634,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_DQM1",
+      "planarMm": 50.53587956482551,
+      "exposureMm": 7.896209948461711,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D0",
+      "planarMm": 30.727783540320264,
+      "exposureMm": 5.680348215828368,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_DQS0",
+      "planarMm": 30.727783540546866,
+      "exposureMm": 6.6150461359085275,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_DQSn0",
+      "planarMm": 30.727783540546877,
+      "exposureMm": 6.262679889858826,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D4",
+      "planarMm": 30.72778354052423,
+      "exposureMm": 5.329242737097062,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_CASn",
+      "planarMm": 43.02000000000001,
+      "exposureMm": 17.70181953549703,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_WEn",
+      "planarMm": 43.22864064032822,
+      "exposureMm": 19.862666818715088,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D12",
+      "planarMm": 50.983197059653314,
+      "exposureMm": 28.195190085725052,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_DQSn1",
+      "planarMm": 51.03254838299123,
+      "exposureMm": 7.169867052167162,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_DQS1",
+      "planarMm": 50.95313905432341,
+      "exposureMm": 20.031275854784695,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D13",
+      "planarMm": 50.535879565400165,
+      "exposureMm": 5.0446279009503785,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_DQM0",
+      "planarMm": 30.727783540455054,
+      "exposureMm": 9.098550110969748,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D1",
+      "planarMm": 30.7277835406695,
+      "exposureMm": 12.682956312136277,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D7",
+      "planarMm": 30.570362432353047,
+      "exposureMm": 10.7347337910531,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_CK",
+      "planarMm": 34.49909962830806,
+      "exposureMm": 2.3813686694315677,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_CKn",
+      "planarMm": 34.42248328065238,
+      "exposureMm": 0.6030206615816742,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D14",
+      "planarMm": 50.91910899782122,
+      "exposureMm": 4.05389602125505,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D15",
+      "planarMm": 50.53587956379684,
+      "exposureMm": 10.539076038683467,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D3",
+      "planarMm": 30.72778354054686,
+      "exposureMm": 10.286398840150678,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_D5",
+      "planarMm": 30.727783540626,
+      "exposureMm": 19.82239974123386,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_A6",
+      "planarMm": 51.715839552841416,
+      "exposureMm": 13.529887738342426,
+      "partialExposurePass": true
+    },
+    {
+      "name": "DDR_CKE",
+      "planarMm": 49.90747867980896,
+      "exposureMm": 10.531005225164156,
+      "partialExposurePass": true
+    }
+  ],
+  "completeSpacingQualified": false,
+  "nativeBusLanesBootstrapRetained": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

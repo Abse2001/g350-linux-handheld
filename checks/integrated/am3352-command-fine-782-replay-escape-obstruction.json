@@ -1,0 +1,848 @@
+{
+  "status": "DDR42_IMMEDIATE_FANOUT_BLOCKING_PATHS_IDENTIFIED_REPLAN_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-command-fine-782-replay-candidate/circuit.json",
+    "sha256": "5d26b45a9b1b5e499fe224f63bbdc4b5de8289a139f6c904fdc7674075bfd33a"
+  },
+  "phaseInput": {
+    "path": "dist/am3352-command-fine-782-native-phase-attempt-783/phase-3.input.simple-route.json",
+    "sha256": "160e0b02b38cc468a8faa080c35fdf2922b7b8b212f9c284ec372e157a4a5ea8"
+  },
+  "executionHelper": {
+    "path": "scripts/diagnose-am3352-ddr42-command-escapes.mjs",
+    "sha256": "df70ffd605979593ccac8ec8744eb99ec0b110c06168076d4ccce57c3b575038"
+  },
+  "copperLayers": 4,
+  "traceWidthMm": 0.1016,
+  "clearanceMm": 0.1016,
+  "throughViaLandMm": 0.4572,
+  "throughDrillMm": 0.254,
+  "minimumDrillToPadMm": 0.2,
+  "minimumDrillToDrillMm": 0.254,
+  "hardSourcePadsAndDataClockReferenceCopperRetained": true,
+  "diagnostics": [
+    {
+      "name": "DDR_A3",
+      "sourceTraceId": "source_trace_7",
+      "side": "cpu",
+      "endpoint": {
+        "x": -5.2,
+        "y": -5.2,
+        "layer": "top",
+        "pointId": "pcb_port_38",
+        "pcb_port_id": "pcb_port_38"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 157,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -4.8,
+            "y": -4.76
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7"
+          ],
+          "pathLengthMm": 0.6056854249492386
+        },
+        {
+          "via": {
+            "x": -5.64,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4",
+            "DDR_A7"
+          ],
+          "pathLengthMm": 0.6056854249492377
+        },
+        {
+          "via": {
+            "x": -5.64,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A6",
+            "DDR_BA2"
+          ],
+          "pathLengthMm": 0.6056854249492377
+        },
+        {
+          "via": {
+            "x": -4.76,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7",
+            "DDR_A9"
+          ],
+          "pathLengthMm": 0.6056854249492386
+        },
+        {
+          "via": {
+            "x": -5.6,
+            "y": -4.76
+          },
+          "stagedPathsToReplan": [
+            "DDR_A6",
+            "DDR_A9",
+            "DDR_BA2"
+          ],
+          "pathLengthMm": 0.6056854249492386
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A3",
+      "sourceTraceId": "source_trace_7",
+      "side": "ram",
+      "endpoint": {
+        "x": -2.4,
+        "y": -30.6,
+        "layer": "top",
+        "pointId": "pcb_port_352",
+        "pcb_port_id": "pcb_port_352"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 184,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -1.98,
+            "y": -31
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA0"
+          ],
+          "pathLengthMm": 0.5856854249492369
+        },
+        {
+          "via": {
+            "x": -2,
+            "y": -30.18
+          },
+          "stagedPathsToReplan": [
+            "DDR_A1",
+            "DDR_BA0"
+          ],
+          "pathLengthMm": 0.58568542494924
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_RASn",
+      "sourceTraceId": "source_trace_18",
+      "side": "cpu",
+      "endpoint": {
+        "x": -2,
+        "y": -4.4,
+        "layer": "top",
+        "pointId": "pcb_port_60",
+        "pcb_port_id": "pcb_port_60"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 144,
+      "minimumStagedPathsToReplan": 0,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -1.58,
+            "y": -3.98
+          },
+          "stagedPathsToReplan": [],
+          "pathLengthMm": 0.5939696961967001
+        },
+        {
+          "via": {
+            "x": -2.42,
+            "y": -4.82
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0"
+          ],
+          "pathLengthMm": 0.5939696961966998
+        },
+        {
+          "via": {
+            "x": -1.56,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_CSn0"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -1.6,
+            "y": -3.96
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA1"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -1.56,
+            "y": -4
+          },
+          "stagedPathsToReplan": [
+            "DDR_A14"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -2.4,
+            "y": -4.84
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0",
+            "DDR_CSn0"
+          ],
+          "pathLengthMm": 0.6056854249492374
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_RASn",
+      "sourceTraceId": "source_trace_18",
+      "side": "ram",
+      "endpoint": {
+        "x": -1.6,
+        "y": -27.4,
+        "layer": "top",
+        "pointId": "pcb_port_364",
+        "pcb_port_id": "pcb_port_364"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 179,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -1.12,
+            "y": -27
+          },
+          "stagedPathsToReplan": [
+            "DDR_CASn"
+          ],
+          "pathLengthMm": 0.645685424949237
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_WEn",
+      "sourceTraceId": "source_trace_20",
+      "side": "cpu",
+      "endpoint": {
+        "x": -6,
+        "y": -6,
+        "layer": "top",
+        "pointId": "pcb_port_19",
+        "pcb_port_id": "pcb_port_19"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 148,
+      "minimumStagedPathsToReplan": 0,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -5.6,
+            "y": -6.44
+          },
+          "stagedPathsToReplan": [],
+          "pathLengthMm": 0.6056854249492386
+        },
+        {
+          "via": {
+            "x": -5.6,
+            "y": -6.36
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4"
+          ],
+          "pathLengthMm": 0.5491168824543148
+        },
+        {
+          "via": {
+            "x": -6.44,
+            "y": -6.4
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7"
+          ],
+          "pathLengthMm": 0.6056854249492386
+        },
+        {
+          "via": {
+            "x": -6.44,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4",
+            "DDR_A6"
+          ],
+          "pathLengthMm": 0.6056854249492386
+        },
+        {
+          "via": {
+            "x": -5.56,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4",
+            "DDR_A7"
+          ],
+          "pathLengthMm": 0.6056854249492386
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_WEn",
+      "sourceTraceId": "source_trace_20",
+      "side": "ram",
+      "endpoint": {
+        "x": -1.6,
+        "y": -29,
+        "layer": "top",
+        "pointId": "pcb_port_366",
+        "pcb_port_id": "pcb_port_366"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 175,
+      "minimumStagedPathsToReplan": 0,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -1.12,
+            "y": -28.58
+          },
+          "stagedPathsToReplan": [],
+          "pathLengthMm": 0.6539696961967011
+        },
+        {
+          "via": {
+            "x": -2,
+            "y": -29.42
+          },
+          "stagedPathsToReplan": [
+            "DDR_A1",
+            "DDR_BA2"
+          ],
+          "pathLengthMm": 0.58568542494924
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A2",
+      "sourceTraceId": "source_trace_23",
+      "side": "cpu",
+      "endpoint": {
+        "x": -3.6,
+        "y": -4.4,
+        "layer": "top",
+        "pointId": "pcb_port_58",
+        "pcb_port_id": "pcb_port_58"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 144,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -4,
+            "y": -4.84
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7"
+          ],
+          "pathLengthMm": 0.6056854249492374
+        },
+        {
+          "via": {
+            "x": -3.16,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA1"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -4,
+            "y": -3.96
+          },
+          "stagedPathsToReplan": [
+            "DDR_A8"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -3.16,
+            "y": -4
+          },
+          "stagedPathsToReplan": [
+            "DDR_A10"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -4.04,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7",
+            "DDR_A9"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -4.04,
+            "y": -4
+          },
+          "stagedPathsToReplan": [
+            "DDR_A8",
+            "DDR_A9"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A2",
+      "sourceTraceId": "source_trace_23",
+      "side": "ram",
+      "endpoint": {
+        "x": -1.6,
+        "y": -31.4,
+        "layer": "top",
+        "pointId": "pcb_port_369",
+        "pcb_port_id": "pcb_port_369"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 118,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -2.02,
+            "y": -31
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA0"
+          ],
+          "pathLengthMm": 0.5856854249492369
+        },
+        {
+          "via": {
+            "x": -1.12,
+            "y": -31.04
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0"
+          ],
+          "pathLengthMm": 0.6291168824543139
+        },
+        {
+          "via": {
+            "x": -2.02,
+            "y": -31.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A5",
+            "DDR_A6"
+          ],
+          "pathLengthMm": 0.5856854249492369
+        },
+        {
+          "via": {
+            "x": -1.12,
+            "y": -30.92
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0",
+            "DDR_A1"
+          ],
+          "pathLengthMm": 0.6788225099390834
+        },
+        {
+          "via": {
+            "x": -2,
+            "y": -31.82
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4",
+            "DDR_A5",
+            "DDR_A6"
+          ],
+          "pathLengthMm": 0.58568542494924
+        },
+        {
+          "via": {
+            "x": -1.12,
+            "y": -31.78
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0",
+            "DDR_A5",
+            "DDR_A6"
+          ],
+          "pathLengthMm": 0.6374011537017754
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A12",
+      "sourceTraceId": "source_trace_36",
+      "side": "cpu",
+      "endpoint": {
+        "x": -3.6,
+        "y": -5.2,
+        "layer": "top",
+        "pointId": "pcb_port_40",
+        "pcb_port_id": "pcb_port_40"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 144,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -4,
+            "y": -4.76
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -3.16,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA1"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -3.16,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA1",
+            "DDR_CSn0"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -4.04,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A7",
+            "DDR_A9"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A12",
+      "sourceTraceId": "source_trace_36",
+      "side": "ram",
+      "endpoint": {
+        "x": 1.6,
+        "y": -30.6,
+        "layer": "top",
+        "pointId": "pcb_port_384",
+        "pcb_port_id": "pcb_port_384"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 157,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": 2,
+            "y": -31.02
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4"
+          ],
+          "pathLengthMm": 0.5856854249492365
+        },
+        {
+          "via": {
+            "x": 2.02,
+            "y": -31
+          },
+          "stagedPathsToReplan": [
+            "DDR_A10",
+            "DDR_A4"
+          ],
+          "pathLengthMm": 0.5856854249492369
+        },
+        {
+          "via": {
+            "x": 1.12,
+            "y": -31.08
+          },
+          "stagedPathsToReplan": [
+            "DDR_A1",
+            "DDR_A10"
+          ],
+          "pathLengthMm": 0.6788225099390834
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A11",
+      "sourceTraceId": "source_trace_38",
+      "side": "cpu",
+      "endpoint": {
+        "x": -2.8,
+        "y": -6,
+        "layer": "top",
+        "pointId": "pcb_port_23",
+        "pcb_port_id": "pcb_port_23"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 171,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -2.38,
+            "y": -5.62
+          },
+          "stagedPathsToReplan": [
+            "DDR_ODT"
+          ],
+          "pathLengthMm": 0.577401153701776
+        },
+        {
+          "via": {
+            "x": -2.36,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_CSn0",
+            "DDR_ODT"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -3.24,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_BA1",
+            "DDR_CSn0"
+          ],
+          "pathLengthMm": 0.6056854249492387
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_A11",
+      "sourceTraceId": "source_trace_38",
+      "side": "ram",
+      "endpoint": {
+        "x": 1.6,
+        "y": -32.2,
+        "layer": "top",
+        "pointId": "pcb_port_386",
+        "pcb_port_id": "pcb_port_386"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 118,
+      "minimumStagedPathsToReplan": 0,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": 1.12,
+            "y": -32.6
+          },
+          "stagedPathsToReplan": [],
+          "pathLengthMm": 0.645685424949237
+        },
+        {
+          "via": {
+            "x": 1.12,
+            "y": -32.56
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4"
+          ],
+          "pathLengthMm": 0.6291168824543139
+        },
+        {
+          "via": {
+            "x": 1.12,
+            "y": -32.68
+          },
+          "stagedPathsToReplan": [
+            "DDR_A13"
+          ],
+          "pathLengthMm": 0.6788225099390834
+        },
+        {
+          "via": {
+            "x": 1.12,
+            "y": -31.72
+          },
+          "stagedPathsToReplan": [
+            "DDR_A6"
+          ],
+          "pathLengthMm": 0.6788225099390884
+        },
+        {
+          "via": {
+            "x": 1.12,
+            "y": -31.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A4",
+            "DDR_A6"
+          ],
+          "pathLengthMm": 0.645685424949237
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_CKE",
+      "sourceTraceId": "source_trace_48",
+      "side": "cpu",
+      "endpoint": {
+        "x": -2,
+        "y": -5.2,
+        "layer": "top",
+        "pointId": "pcb_port_42",
+        "pcb_port_id": "pcb_port_42"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 145,
+      "minimumStagedPathsToReplan": 1,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": -2.38,
+            "y": -5.62
+          },
+          "stagedPathsToReplan": [
+            "DDR_ODT"
+          ],
+          "pathLengthMm": 0.577401153701776
+        },
+        {
+          "via": {
+            "x": -2.42,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0"
+          ],
+          "pathLengthMm": 0.5856854249492383
+        },
+        {
+          "via": {
+            "x": -1.56,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_CSn0"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -2.4,
+            "y": -4.84
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0",
+            "DDR_CSn0"
+          ],
+          "pathLengthMm": 0.5491168824543144
+        },
+        {
+          "via": {
+            "x": -1.56,
+            "y": -5.6
+          },
+          "stagedPathsToReplan": [
+            "DDR_CSn0",
+            "DDR_ODT"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        },
+        {
+          "via": {
+            "x": -2.44,
+            "y": -4.8
+          },
+          "stagedPathsToReplan": [
+            "DDR_A0",
+            "DDR_BA1"
+          ],
+          "pathLengthMm": 0.6056854249492383
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    },
+    {
+      "name": "DDR_CKE",
+      "sourceTraceId": "source_trace_48",
+      "side": "ram",
+      "endpoint": {
+        "x": 3.2,
+        "y": -28.2,
+        "layer": "top",
+        "pointId": "pcb_port_413",
+        "pcb_port_id": "pcb_port_413"
+      },
+      "checkedImmediateSites": 196,
+      "hardBlockedSites": 191,
+      "minimumStagedPathsToReplan": 0,
+      "bestReplanOptions": [
+        {
+          "via": {
+            "x": 3.6,
+            "y": -27.8
+          },
+          "stagedPathsToReplan": [],
+          "pathLengthMm": 0.5656854249492369
+        }
+      ],
+      "exactDistanceDiagnosticOnly": true
+    }
+  ],
+  "scope": "Exact local capsule/rectangle and through-hole clearance. Only already staged, unqualified command paths may be opened; data/reset/clock/reference/USB and all physical pads remain hard. Farther escapes and global routability are not proved.",
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false
+}

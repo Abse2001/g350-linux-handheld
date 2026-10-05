@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110mm" height="176mm" viewBox="0 0 110 176">
+<defs><marker id="arrow" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M4 0 L0 2 L4 4" fill="none" stroke="#26394e" stroke-width=".35"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#182b40;text-anchor:middle}.title{font-size:4.2;font-weight:bold}.small{font-size:2.65}.dimension{font-size:3.1;font-weight:bold;paint-order:stroke;stroke:#fff;stroke-width:1.6;stroke-linejoin:round}.dim{fill:none;stroke:#26394e;stroke-width:.25}.extension{fill:none;stroke:#718499;stroke-width:.18}</style>
+<rect width="110" height="176" fill="#fff"/>
+<text x="55" y="7" class="title">G350 provisional PCB outline</text>
+<text x="55" y="12" class="small">Engineering dimensions — original shell fit unverified</text>
+<rect x="14.5" y="21" width="81" height="128" fill="#f5f7fa" stroke="#8697aa" stroke-width=".25" stroke-dasharray="1.5 1.5"/>
+<path d="M 21 26 L 89 26 L 93 30 L 93 121 L 91 125 L 69 125 L 66 128 L 66 144 L 44 144 L 44 128 L 41 125 L 19 125 L 17 121 L 17 30 Z" fill="#dcefe8" stroke="#12664a" stroke-width=".5"/>
+<path d="M17 18 V121 M93 18 V121 M93 26 H106 M66 144 H106 M17 26 H8 M19 125 H8 M44 144 V152 M66 144 V152 M69 125 H34 M44 144 H34" class="extension"/>
+<path d="M17 18 L93 18" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="55" y="17" transform="rotate(0 55 17)" class="dimension">76 mm</text>
+<path d="M104 26 L104 144" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="102" y="85" transform="rotate(-90 102 85)" class="dimension">118 mm</text>
+<path d="M9 26 L9 125" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="6" y="75" transform="rotate(-90 6 75)" class="dimension">99 mm body</text>
+<path d="M44 152 L66 152" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="55" y="151" transform="rotate(0 55 151)" class="dimension">22 mm</text>
+<path d="M35 125 L35 144" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="32" y="135" transform="rotate(-90 32 135)" class="dimension">19 mm</text>
+<text x="55" y="58" class="title">76 × 118 mm</text>
+<text x="55" y="65" class="small">4 copper layers · provisional 1.6 mm thickness</text>
+<text x="55" y="74" class="small">Mounting holes and case openings</text>
+<text x="55" y="79" class="small">require measured alignment</text>
+<text x="55" y="88" class="dimension">Nominal outer-case margins</text>
+<text x="55" y="94" class="small">2.5 mm each side · 5 mm each end</text>
+<text x="55" y="100" class="small">These are not measured internal clearances</text>
+<text x="55" y="111" class="small">Lower corners left open for enclosure contents</text>
+<text x="55" y="134" class="small">Speaker tab</text>
+<text x="55" y="159" class="small">Dashed: published 81 × 128 mm outside case envelope.</text>
+<text x="55" y="164" class="small">USB-C assembly space projects 0.651 mm past the top edge.</text>
+<text x="55" y="170" class="small">Print at 100% / actual size. Do not order from this drawing.</text>
+</svg>

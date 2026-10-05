@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "check:ddr-wen-evidence",
+      "path": "checks/integrated/am3352-ddr-usbc-wen-nominal-check-summary.json",
+      "sha256": "75acef5197ef4e1deb2a64fb867d55b294d844d5a0aaa04512924d63dae207f8",
+      "status": "UNCHANGED_PASS"
+    },
+    {
+      "name": "check:ddr-a3-bootstrap-evidence",
+      "path": "checks/integrated/am3352-ddr-usbc-a3-bootstrap-check-summary.json",
+      "sha256": "19e3669d39fa028228aa640f76e2289c38ea1d7e411872e9ea05a51140ef14cb",
+      "status": "UNCHANGED_PASS"
+    },
+    {
+      "name": "check:ddr-a6-bootstrap-evidence",
+      "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+      "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606",
+      "status": "UNCHANGED_PASS"
+    }
+  ],
+  "fabricationReady": false
+}

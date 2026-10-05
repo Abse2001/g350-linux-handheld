@@ -1,0 +1,97 @@
+{
+  "status": "ROTATED_RAM_ALL_96_FULL_DEPTH_BREAKOUTS_AND_EXPLICIT_POWER_BRIDGE_CHECKED_CHANNELS_OPEN",
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-power-bridge-host/circuit.json",
+    "sha256": "f1c55ab13c9c41524d02a0bc22081ab6876f06c66f059aa22e5b0918293f0bb7",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-power-bridge-host/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-ram-rotated-180-power-bridge-breakout-diagnostic/circuit.json",
+    "sha256": "6c1f7e123b72291786fd4616cc773456ec0a8bfc3bdb27076c6e12ecc013fadb"
+  },
+  "board": {
+    "path": "dist/am3352-ram-rotated-180-power-bridge-breakout-diagnostic/board.kicad_pcb",
+    "sha256": "26c5e78cc19b409b767bd150ae84688a595e8327dd77c2bc330762357866ea2e"
+  },
+  "nativeTerminals": {
+    "path": "dist/am3352-ram-rotated-180-power-bridge-bootstrap-attempt-269/signal-escapes.native.json",
+    "sha256": "b97aed7f9e8e142fd48ca4a36a01cbca4a1b61de8386a7a792fbb6d5b371355a"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotationDeg": 180,
+  "coreVersion": "0.0.2056",
+  "nativePreparation": {
+    "path": "dist/am3352-ram-rotated-180-power-bridge-bootstrap-attempt-269/result.json",
+    "sha256": "1ae99423d60d7f2b225d1b4efc49f5df797b47f2dfa2574278a13ba0edf920d4"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "cpuSynchronousTerminalsConnected": 48,
+  "ramSynchronousTerminalsConnected": 48,
+  "sourcePowerTracePiecesPreserved": 70,
+  "sourcePowerThroughViasPreserved": 69,
+  "addedReservedSignalVias": 96,
+  "totalThroughVias": 165,
+  "explicitInnerPowerBridge": {
+    "ball": "D2",
+    "connectedNativeSegments": 3,
+    "newHoles": 0
+  },
+  "completedEndToEndDdrChannels": 0,
+  "requiredDdrChannels": 49,
+  "minimumHoleEdgeClearanceMm": 0.44600000000000284,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolations": 0,
+  "unfinishedViaWarnings": 96,
+  "unfinishedTrackWarnings": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "physicalLibraryRecordsPreserved": 623,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-power-bridge-breakout-native-connectivity.json",
+      "sha256": "d32d0c8e54c3315b6528dd87270b02e212aea090b10504d1a9a8132a273fe3f0"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-power-bridge-breakout-reference-connectivity.json",
+      "sha256": "df61f218999f4a22faff481ad1f7cae2212a27876703e1c70ac0890bcb967712"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-power-bridge-breakout-native-ddr-connectivity.json",
+      "sha256": "04de75ea7e8f16bb1d68e2affe0694f056e84d090261347eab9a7bbe390f9b98"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-power-bridge-breakout-canonical-drc.json",
+      "sha256": "37972a5aaaae4498979198b942f43bc2672a5af31ed2be64bb451a4c17664fd8"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-power-bridge-breakout-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-power-bridge-breakout-library.log",
+      "sha256": "aef5dcf87134136255d1cffef5b07e4738038a57e76846feb6f8b3e030535f66"
+    }
+  ],
+  "fullPhysicalDrcPass": false,
+  "timingQualified": false,
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "scope": "Separate rotated RAM diagnostic. All 96 full-depth native pad-to-via escapes and all RAM references pass; D2 reaches the continuous inner2 plane through three explicitly authored power segments. No signal routes use the inner layers. All 96 dangling warnings remain. Complete DDR channels, timing, powered-host routing and measured original-shell fit are still required."
+}

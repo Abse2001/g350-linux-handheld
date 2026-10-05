@@ -1,0 +1,183 @@
+(footprint "g350_R_LCD_DATA20_10270f40059a033f1b5b15be311c283d"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "R_LCD_DATA20"
+		(at 0 1.508 180)
+		(layer "F.SilkS")
+		(uuid "23052a32-2417-4562-93ac-dc5c3b5a6112")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "33Ω"
+		(at 0 -3 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "b3e03af0-1aa7-479b-8d45-db82076eb33b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "4b78cbc9-eb71-4ec1-bd03-94dc811ca184")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "fdbb63db-bc58-4b4b-993e-de60f70ab2e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Supplier Part Number" "C25105"
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "723b3334-149c-70b4-4902-51cc595eebb4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "MPN" "0402WGF330JTCE"
+		(at 0 0 0)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "0633c9e0-0cd3-3841-1372-a6a21a121503")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.944245 -0.498602)
+		(end -0.944245 0.498602)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ca0ed557-f52c-4a70-95e1-74d5eff45b44")
+	)
+	(fp_line
+		(start -0.944245 0.498602)
+		(end -0.226212 0.498602)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8413094f-bfa0-4afd-958c-b9ecb48cdb17")
+	)
+	(fp_line
+		(start -0.226212 -0.498602)
+		(end -0.944245 -0.498602)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "006e50a5-72ce-4918-ac4c-11f75ffdc56e")
+	)
+	(fp_line
+		(start 0.226212 -0.498602)
+		(end 0.944245 -0.498602)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "759d65ab-579b-47a7-936d-d5992eb2ef44")
+	)
+	(fp_line
+		(start 0.944245 -0.498602)
+		(end 0.944245 0.498602)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "22ac761b-1852-4a66-bb49-7a527c921f8c")
+	)
+	(fp_line
+		(start 0.944245 0.498602)
+		(end 0.226212 0.498602)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4e67e779-7571-440e-9e1c-d5fe6707c4ad")
+	)
+	(fp_poly
+		(pts
+			(xy 1.1898 0.758) (xy -1.1898 0.758) (xy -1.1898 -0.7326) (xy 1.1898 -0.7326) (xy 1.1898 0.758)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "06cb4580-002b-d71f-0673-97420d1305a3")
+	)
+	(pad "1" smd rect
+		(at 0.432816 0 180)
+		(size 0.565658 0.540004)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "043ef400-5e32-5921-47da-41be12192363")
+	)
+	(pad "2" smd rect
+		(at -0.432816 0 180)
+		(size 0.565658 0.540004)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "2a5826d0-45de-e7f0-6165-a9107cec6a30")
+	)
+	(embedded_fonts no)
+	(model "https://modelcdn.tscircuit.com/easyeda_models/assets/C25105.step?uuid=026a4a15ab5c4a92ac0e421d6d013717&cachebust_origin="
+		(offset
+			(xyz -0 -0.0000127000000703 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -180)
+		)
+	)
+)

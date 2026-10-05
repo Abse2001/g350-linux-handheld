@@ -1,0 +1,148 @@
+{
+  "status": "SIX_LOCAL_MANUAL_VIA_REPAIRS_REQUIRE_FRESH_BUILD_AND_DRC",
+  "fabricationReady": false,
+  "unmodifiedNativeConnections": 53,
+  "repairedConnections": 9,
+  "relocatedPhysicalVias": 6,
+  "componentPlacementUnchanged": true,
+  "endpointsAndNetsUnchanged": true,
+  "viaLandMm": 0.4572,
+  "viaDrillMm": 0.254,
+  "distinctDrillEdgeSpacingMm": 0.254,
+  "allMovedViasClearSolderablePads": true,
+  "allRepairedRoutesWithin70Mil": true,
+  "changes": [
+    {
+      "connection": "U_SOC.pin146",
+      "oldVia": {
+        "x": -6.4,
+        "y": 20
+      },
+      "newVia": {
+        "x": -4.8,
+        "y": 20
+      },
+      "lengthMm": 1.3656854249492376,
+      "sharedExistingVia": false
+    },
+    {
+      "connection": "U_SOC.pin147",
+      "oldVia": {
+        "x": -6.4,
+        "y": 20
+      },
+      "newVia": {
+        "x": -4.8,
+        "y": 20
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": true
+    },
+    {
+      "connection": "U_SOC.pin193",
+      "oldVia": {
+        "x": 3.2,
+        "y": 21.6
+      },
+      "newVia": {
+        "x": 3.1999999999999997,
+        "y": 22.4
+      },
+      "lengthMm": 1.3656854249492376,
+      "sharedExistingVia": false
+    },
+    {
+      "connection": "U_SOC.pin110",
+      "oldVia": {
+        "x": -6.4,
+        "y": 18.4
+      },
+      "newVia": {
+        "x": -5.6,
+        "y": 17.6
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": false
+    },
+    {
+      "connection": "U_SOC.pin111",
+      "oldVia": {
+        "x": -6.4,
+        "y": 18.4
+      },
+      "newVia": {
+        "x": -5.6,
+        "y": 17.6
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": true
+    },
+    {
+      "connection": "U_SOC.pin152",
+      "oldVia": {
+        "x": -1.6,
+        "y": 20
+      },
+      "newVia": {
+        "x": -0.7999999999999999,
+        "y": 19.200000000000003
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": false
+    },
+    {
+      "connection": "U_SOC.pin153",
+      "oldVia": {
+        "x": -1.6,
+        "y": 20
+      },
+      "newVia": {
+        "x": -0.7999999999999999,
+        "y": 19.200000000000003
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": true
+    },
+    {
+      "connection": "U_SOC.pin190",
+      "oldVia": {
+        "x": 0.8,
+        "y": 21.6
+      },
+      "newVia": {
+        "x": 0,
+        "y": 20.8
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": false
+    },
+    {
+      "connection": "U_SOC.pin154",
+      "oldVia": {
+        "x": 0.8,
+        "y": 20
+      },
+      "newVia": {
+        "x": 0,
+        "y": 19.200000000000003
+      },
+      "lengthMm": 0.565685424949236,
+      "sharedExistingVia": false
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "dist/g350-ddr-power-replay-native/compiled.circuit.json",
+      "sha256": "28791c3b0de0dd5488602c260d48f7dc6fa422ebd545c53ffec0b9dd47518561"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-cpu-power-fanout.json",
+      "sha256": "fedc334e13ec0fe6a3b086c9c3b6daf49ea01ebde0a4d053fdfac59d7342d04f"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-cpu-power-fanout-repaired.json",
+      "sha256": "e991ba347533176bd7d001de9798daf314eda1367c05cfedaef6e6d78a9c0472"
+    }
+  ],
+  "scope": "Manual repair of native CPU plane-fanout bootstrap, limited to six via sites that collided with bottom-side capacitor pads. Full reconstructed copper and refill checks remain required."
+}

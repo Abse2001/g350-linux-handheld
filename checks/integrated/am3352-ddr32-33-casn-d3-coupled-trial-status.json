@@ -1,0 +1,735 @@
+{
+  "status": "DDR33_CASN_NOMINAL_NATIVE_COUPLED_REPLAY_COPPER_AND_BYTE_MATCHING_CHECKED_HOST_INCOMPLETE",
+  "initialCheckedSource": {
+    "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+    "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606"
+  },
+  "priorRegisteredCheckpointSignals": 32,
+  "newCopperCheckpointEvidence": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-nominal-d3-matched-check-summary.json",
+    "sha256": "7283fee7d498123eee094fa92ec68f211a03e799fb1bd857d485cf9a64a3fe05"
+  },
+  "checkedCopperSignals": 33,
+  "remainingDdrSignals": 16,
+  "activeDefaultSignals": 30,
+  "trials": [
+    {
+      "path": "dist/am3352-ddr32-casn-data-joint-native-both-attempt-663/result.json",
+      "sha256": "6b4580e81b2bf2ee2d7db4fcf1540fdbcf28fa1e021446dd227a4c9ba3b5a6d8",
+      "attempt": 663,
+      "status": "STAGED_CASN_DATA_JOINT_NATIVE_FAILED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 0.170840958,
+      "failureCode": "local_dogbone_failed",
+      "stats": {},
+      "stagedDdrSignalsAfterPhase": 29,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-data-joint-native-top-attempt-664/result.json",
+      "sha256": "7c40d99d144f0030b1608bba975b04270a92a7051c42fa8e45d02e33597df428",
+      "attempt": 664,
+      "status": "STAGED_CASN_DATA_JOINT_NATIVE_TIMEOUT",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 120.24241062499999,
+      "failureCode": null,
+      "stats": {
+        "busLengths": [
+          {
+            "busId": "DDR_BYTE1",
+            "toleranceMm": 0.635,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_13",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 6.697056274847709,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_11",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 5.897056274847712,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": 0.635,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [],
+        "phase": "route",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 0,
+        "totalLanes": 3,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 10708,
+        "expandedVertices": 323,
+        "frontier": 4236,
+        "failureCode": null,
+        "layerAttempt": 0,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "stagedDdrSignalsAfterPhase": 29,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d8-hole-topology-attempt-665/result.json",
+      "sha256": "da50bf40e605882646091bf1d0a35e584e215f768ff50c3dbc128cf38a3fb557",
+      "attempt": 665,
+      "status": "CASN_HYPOTHETICAL_NEIGHBOR_WIRE_AND_HOLE_REPLAN_TOPOLOGY_DIAGNOSTIC",
+      "hypotheticalOpenedWireNames": [
+        "DDR_D8"
+      ],
+      "cpuReachableFromRam": false,
+      "minimumLayerTransitions": null,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d0-hole-topology-attempt-666/result.json",
+      "sha256": "9c669f85024331a21e565f524c4124c3ecfce78b2d4ae2c06bba9223f4594551",
+      "attempt": 666,
+      "status": "CASN_HYPOTHETICAL_NEIGHBOR_WIRE_AND_HOLE_REPLAN_TOPOLOGY_DIAGNOSTIC",
+      "hypotheticalOpenedWireNames": [
+        "DDR_D0"
+      ],
+      "cpuReachableFromRam": false,
+      "minimumLayerTransitions": null,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d3-hole-topology-attempt-667/result.json",
+      "sha256": "eb3da752e9eaa10e46749aecd00f97f1845bee5cf04b5c68843c9967f3066f2d",
+      "attempt": 667,
+      "status": "CASN_HYPOTHETICAL_NEIGHBOR_WIRE_AND_HOLE_REPLAN_TOPOLOGY_DIAGNOSTIC",
+      "hypotheticalOpenedWireNames": [
+        "DDR_D3"
+      ],
+      "cpuReachableFromRam": true,
+      "minimumLayerTransitions": 2,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-dqm1-d8-hole-topology-attempt-668/result.json",
+      "sha256": "a7d52dc509df4e8133b8c66e0146d817916d9183dd2bf085c1fb5ad651d57d83",
+      "attempt": 668,
+      "status": "CASN_HYPOTHETICAL_NEIGHBOR_WIRE_AND_HOLE_REPLAN_TOPOLOGY_DIAGNOSTIC",
+      "hypotheticalOpenedWireNames": [
+        "DDR_DQM1",
+        "DDR_D8"
+      ],
+      "cpuReachableFromRam": false,
+      "minimumLayerTransitions": null,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-dqm1-d2-hole-topology-attempt-669/result.json",
+      "sha256": "9d260c6be65c7583e6b8408b2cbbf7b5d6b4e6c024a1de495e82ac9900804c57",
+      "attempt": 669,
+      "status": "CASN_HYPOTHETICAL_NEIGHBOR_WIRE_AND_HOLE_REPLAN_TOPOLOGY_DIAGNOSTIC",
+      "hypotheticalOpenedWireNames": [
+        "DDR_DQM1",
+        "DDR_D2"
+      ],
+      "cpuReachableFromRam": false,
+      "minimumLayerTransitions": null,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d3-signal-open-attempt-670/result.json",
+      "sha256": "f1a8aa8f69c3e5357af3244f01032e639fad5dd1493722ff57d586bd1c562407",
+      "attempt": 670,
+      "status": "STAGED_CASN_D3_WIRES_AND_SIGNAL_HOLES_OPEN_NOT_EXPORTABLE",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d3-open-manual-plan-attempt-671/result.json",
+      "sha256": "783daf87a1190a0f9823d20474e2002a9553255ccc344da0187e8e2f7fc847cc",
+      "attempt": 671,
+      "status": "STAGED_CASN_D3_OPEN_ACTUAL_PAD_PLAN_FOUND_NATIVE_LEGS_AND_REPAIRS_REQUIRED",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d3-joint-native-both-attempt-672/result.json",
+      "sha256": "ac7eb89914ddc64028ffd44a01c20933b0bddc4d40e3085ae20a4a2c444e9ee1",
+      "attempt": 672,
+      "status": "STAGED_CASN_D3_JOINT_NATIVE_FAILED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 0.19647170800000002,
+      "failureCode": "local_dogbone_failed",
+      "stats": {},
+      "stagedDdrSignalsAfterPhase": 30,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-d3-open-native-bottom-leg-attempt-673/result.json",
+      "sha256": "bb3dc71904a357f38cd5ae34d6af4ab14b63786831516afe095d6db9267c72ac",
+      "attempt": 673,
+      "status": "STAGED_CASN_D3_OPEN_NATIVE_LEG_ROUTED_D3_AND_CSN0_REPAIRS_REQUIRED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 62.42234658300001,
+      "failureCode": null,
+      "stats": {
+        "busLengths": [
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": 0.635,
+            "skewMm": 0,
+            "matched": true,
+            "lengths": [
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": 24.83927512124065,
+                "fixedLengthMm": 3.319066376115477,
+                "totalLengthMm": 28.158341497356126
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_19",
+            "length": 24.83927512124065
+          }
+        ],
+        "phase": "solved",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 1,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 7737,
+        "expandedVertices": 279,
+        "frontier": 1531,
+        "failureCode": null,
+        "layerAttempt": 0,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "stagedDdrSignalsAfterPhase": 31,
+      "fullCasnPlanarMm": 28.158341497356133,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-d3-after-casn-native-bottom-attempt-674/result.json",
+      "sha256": "e9e4c2765b7bb6e8513fdbdff66e395d31783fa40a025e967b295d5716519566",
+      "attempt": 674,
+      "status": "STAGED_D3_NATIVE_REPAIR_FAILED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 0.19165929199999993,
+      "failureCode": "local_dogbone_failed",
+      "stats": {},
+      "stagedDdrSignalsAfterPhase": 31,
+      "fullCasnPlanarMm": 28.158341497356133,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-d3-after-casn-manual-plan-attempt-675/result.json",
+      "sha256": "9d8a2502f6daccc821c954d5043acc793db31e23d6eb50f58f63bc6fee3364ee",
+      "attempt": 675,
+      "status": "STAGED_D3_ACTUAL_PAD_PLAN_FOUND_NATIVE_LEGS_AND_WHOLE_BYTE_MATCHING_REQUIRED",
+      "signal": "DDR_D3",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-d3-guarded-native-bottom-carrier-attempt-676/result.json",
+      "sha256": "7510ed13eeb4e2a8c0c4588a3a4828b45ccde69f088b9c7d729af03d946c2898",
+      "attempt": 676,
+      "status": "STAGED_D3_NATIVE_CARRIER_RESTORED_CSN0_AND_WHOLE_BYTE_CHECKS_REQUIRED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 50.05118912500001,
+      "failureCode": null,
+      "stats": {
+        "busLengths": [
+          {
+            "busId": "DDR_BYTE0",
+            "toleranceMm": 0.635,
+            "skewMm": 0,
+            "matched": true,
+            "lengths": [
+              {
+                "name": "source_trace_42",
+                "carrierLengthMm": 13.217300141024108,
+                "fixedLengthMm": 9.848082245892126,
+                "totalLengthMm": 23.065382386916234
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_42",
+            "length": 13.217300141024108
+          }
+        ],
+        "phase": "solved",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 1,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 8292,
+        "expandedVertices": 262,
+        "frontier": 2228,
+        "failureCode": null,
+        "layerAttempt": 0,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "signal": "DDR_D3",
+      "stagedDdrSignalsAfterPhase": 32,
+      "fullD3PlanarMm": 23.065382386916234,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-csn0-after-d3-manual-prefix-attempt-677/result.json",
+      "sha256": "abb90f63ee5763c1adea0ca95c0d28a5c060b3b43c43edce31f53f4824fe0e9a",
+      "attempt": 677,
+      "status": "STAGED_CSN0_AFTER_D3_MANUAL_PREFIX_PLAN_FAILED",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-csn0-after-d3-prefix32-attempt-678/result.json",
+      "sha256": "63a701bc04c9dd285b3ae9078212abf308468f1479a1253ce69c4bf56057b82c",
+      "attempt": 678,
+      "status": "STAGED_CSN0_AFTER_D3_MANUAL_PREFIX_PLAN_FAILED",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-csn0-after-d3-prefix32-cpu-attempt-679/result.json",
+      "sha256": "2e14b79c7b186f9164bc5f86ccaf24f8d8406c61232a8e78eeee31e36e1fed55",
+      "attempt": 679,
+      "status": "STAGED_CSN0_AFTER_D3_MANUAL_PREFIX_PLAN_FOUND",
+      "fullCsn0PlanarMm": 74.17314426374023,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-csn0-after-d3-reset-prefix10-attempt-680/result.json",
+      "sha256": "6dc2d28cccae3660b7617e0bc8da4eb415fcae62eec01e53230b877f447cb403",
+      "attempt": 680,
+      "status": "STAGED_CSN0_AFTER_D3_MANUAL_PREFIX_PLAN_FOUND",
+      "fullCsn0PlanarMm": 45.14747616982627,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-csn0-after-reset-open-native-top-attempt-681/result.json",
+      "sha256": "f0014a8a2642da90714cdf09e6e07a2d632ed5365a426167643ad64961b0010c",
+      "attempt": 681,
+      "status": "STAGED_CSN0_NATIVE_PREFIX_RESTORED_RESET_PREFIX_AND_TIMING_REQUIRED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 31.595765084000003,
+      "failureCode": null,
+      "stats": {
+        "busLengths": [
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": 0.635,
+            "skewMm": 0,
+            "matched": true,
+            "lengths": [
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": 8.2357391266771,
+                "fixedLengthMm": 36.77738382266627,
+                "totalLengthMm": 45.01312294934337
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_5",
+            "length": 8.2357391266771
+          }
+        ],
+        "phase": "solved",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 1,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 8612,
+        "expandedVertices": 115,
+        "frontier": 4905,
+        "failureCode": null,
+        "layerAttempt": 0,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "stagedDdrSignalsAfterPhase": 32,
+      "fullCsn0PlanarMm": 45.013122949343476,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-reset-after-csn0-manual-prefix-attempt-682/result.json",
+      "sha256": "3fe888c85a83d8ab7aa645e54ff04b0a56be380fe3a0147d49881ff4564dd3ec",
+      "attempt": 682,
+      "status": "STAGED_RESET_PREFIX_REPAIR_FOUND_COMPLETE_REPLAY_AND_TIMING_CHECKS_REQUIRED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 31.595765084000003,
+      "failureCode": null,
+      "stats": {
+        "busLengths": [
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": 0.635,
+            "skewMm": 0,
+            "matched": true,
+            "lengths": [
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": 8.2357391266771,
+                "fixedLengthMm": 36.77738382266627,
+                "totalLengthMm": 45.01312294934337
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_5",
+            "length": 8.2357391266771
+          }
+        ],
+        "phase": "solved",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 1,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 8612,
+        "expandedVertices": 115,
+        "frontier": 4905,
+        "failureCode": null,
+        "layerAttempt": 0,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "stagedDdrSignalsAfterPhase": 33,
+      "fullCsn0PlanarMm": 45.013122949343476,
+      "fullResetPlanarMm": 52.64654254594159,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/result.json",
+      "sha256": "7f048ed95253190d01719caea9767582e47a42cda9b354d68baa73ae84a8ec9a",
+      "attempt": 683,
+      "status": "STAGED_ALL_CASN_NEIGHBORS_REPAIRED_COMPLETE_REPLAY_AND_TIMING_CHECKS_REQUIRED",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "elapsedSeconds": 0.13458783300000005,
+      "failureCode": null,
+      "stats": {
+        "busLengths": [
+          {
+            "busId": "DDR_RESET_RECOVERY",
+            "toleranceMm": null,
+            "skewMm": 0,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_10",
+                "carrierLengthMm": 1.2727922061357848,
+                "fixedLengthMm": 51.37375033980582,
+                "totalLengthMm": 52.6465425459416
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_10",
+            "length": 1.2727922061357848
+          }
+        ],
+        "phase": "solved",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 1,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 2,
+        "expandedVertices": 1,
+        "frontier": 1,
+        "failureCode": null,
+        "layerAttempt": 0,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "stagedDdrSignalsAfterPhase": 33,
+      "fullCsn0PlanarMm": 45.013122949343476,
+      "fullResetPlanarMm": 52.64654254594159,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-d3-byte-length-tuning-attempt-684/result.json",
+      "sha256": "484a081aa3ee520eab10e25d7becd54db3bc5ec2faab20a4ec597373f1727a56",
+      "attempt": 684,
+      "status": "GUARDED_REPLAY_WIRE_LENGTH_NO_CANDIDATE",
+      "signal": "DDR_D3",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-d3-retained-meander-head70-attempt-685/result.json",
+      "sha256": "4eedbcd8cada0a84f019666b35687ed735e10a524511f085a4b7402aaf28bd5b",
+      "attempt": 685,
+      "status": "D3_RETAINED_NATIVE_MEANDER_PACKAGE_REPAIR_FAILED",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-casn-nominal-tuning-attempt-686/result.json",
+      "sha256": "f97c4b6db6e83bdd13e5f63361192fb924a5cc0bd22fe0448b28f4a43b7d57ae",
+      "attempt": 686,
+      "status": "GUARDED_REPLAY_WIRE_LENGTH_NO_CANDIDATE",
+      "signal": "DDR_CASn",
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-d3-byte-exact-tuning-attempt-687/result.json",
+      "sha256": "963bbe5578c485aa7b20f648ce9872db9433b5b030d72be9972cea7ff6622643",
+      "attempt": 687,
+      "status": "GUARDED_REPLAY_WIRE_LENGTH_ADDED_INDEPENDENT_CHECKS_REQUIRED",
+      "signal": "DDR_D3",
+      "afterPlanarMm": 30.72778354054686,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-casn-matched-source-exact-tuning-attempt-688/result.json",
+      "sha256": "b48d9346d4456ce06c449359a9427a6e3a3af35dc85e49e7f392449ea9878aef",
+      "attempt": 688,
+      "status": "GUARDED_REPLAY_WIRE_LENGTH_ADDED_INDEPENDENT_CHECKS_REQUIRED",
+      "signal": "DDR_CASn",
+      "afterPlanarMm": 43.02000000000001,
+      "fabricationReady": false
+    }
+  ],
+  "nativeProofs": [
+    {
+      "attempt": 673,
+      "run": {
+        "path": "dist/am3352-ddr32-casn-d3-open-native-bottom-leg-attempt-673/result.json",
+        "sha256": "bb3dc71904a357f38cd5ae34d6af4ab14b63786831516afe095d6db9267c72ac"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-casn-d3-open-native-bottom-leg-attempt-673/input.simple-route.json",
+        "sha256": "92307bbaad3dc63e814ce3d1a315f079a28bc6e43405d1e955b838d990c6d2b8"
+      },
+      "output": {
+        "path": "dist/am3352-ddr32-casn-d3-open-native-bottom-leg-attempt-673/output.simple-route.json",
+        "sha256": "12c73e9f15f48d683f83bdecc666ad26503e3ae4819341b3edd9ca18dd163207"
+      },
+      "fullJoinedRoute": {
+        "path": "dist/am3352-ddr32-casn-d3-open-native-bottom-leg-attempt-673/native-and-manual-casn.json",
+        "sha256": "7fbbaf43080675f8c5103c8925a1c69cc872f7f2f0d58331094eaddb3b37826a"
+      },
+      "nativeLayer": "bottom",
+      "throughVias": 2,
+      "fullyReconstructedBySourceAuditor": true
+    },
+    {
+      "attempt": 676,
+      "run": {
+        "path": "dist/am3352-ddr32-d3-guarded-native-bottom-carrier-attempt-676/result.json",
+        "sha256": "7510ed13eeb4e2a8c0c4588a3a4828b45ccde69f088b9c7d729af03d946c2898"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-d3-guarded-native-bottom-carrier-attempt-676/input.simple-route.json",
+        "sha256": "b18e04153bf98aeedbcc9c44142cabb8a3686437c8757aab5df8eb1488cbd1fe"
+      },
+      "output": {
+        "path": "dist/am3352-ddr32-d3-guarded-native-bottom-carrier-attempt-676/output.simple-route.json",
+        "sha256": "6675aa6e836049f9d6c34253089d332febb339c3aafaf4e2c7e41ddf70380eb6"
+      },
+      "fullJoinedRoute": {
+        "path": "dist/am3352-ddr32-d3-guarded-native-bottom-carrier-attempt-676/native-and-manual-d3.json",
+        "sha256": "24da75c7c1dc999afe3677361a4862d5d9a6fd0a3dd0e153af27947d4b257f5e"
+      },
+      "nativeLayer": "bottom",
+      "throughVias": 4,
+      "fullyReconstructedBySourceAuditor": true
+    },
+    {
+      "attempt": 681,
+      "run": {
+        "path": "dist/am3352-ddr32-csn0-after-reset-open-native-top-attempt-681/result.json",
+        "sha256": "f0014a8a2642da90714cdf09e6e07a2d632ed5365a426167643ad64961b0010c"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-csn0-after-reset-open-native-top-attempt-681/input.simple-route.json",
+        "sha256": "5078d51b00bd10b4c711ba115e863f4edf4a6163b6f09dcaa2d2d458dcce2698"
+      },
+      "output": {
+        "path": "dist/am3352-ddr32-csn0-after-reset-open-native-top-attempt-681/output.simple-route.json",
+        "sha256": "445e6acd062cb154fe421f0a14ae26221e0daaa5f1e010d2e720caf541733b38"
+      },
+      "fullJoinedRoute": {
+        "path": "dist/am3352-ddr32-csn0-after-reset-open-native-top-attempt-681/native-and-manual-csn0.json",
+        "sha256": "ddabd0a84ae1b627f69f8988770700e18c128ebbd626584b2fd010e3856774c8"
+      },
+      "nativeLayer": "top",
+      "throughVias": 0,
+      "fullyReconstructedBySourceAuditor": true
+    },
+    {
+      "attempt": 683,
+      "run": {
+        "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/result.json",
+        "sha256": "7f048ed95253190d01719caea9767582e47a42cda9b354d68baa73ae84a8ec9a"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/input.simple-route.json",
+        "sha256": "1ae74978944de00233ab0a0406af44ec9cfefb5f9fba4cd96733efa4a7ea29cd"
+      },
+      "output": {
+        "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/output.simple-route.json",
+        "sha256": "a973c6c9a2bcb64413ab8a298d74eff826141d6fe966400893debae9fdb8743b"
+      },
+      "fullJoinedRoute": {
+        "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/native-and-manual-reset.json",
+        "sha256": "74e1ec593fb5f943bb69cda1e3ac70c8b412a172fa21ecea47d095f34692e40a"
+      },
+      "nativeLayer": "bottom",
+      "throughVias": 2,
+      "fullyReconstructedBySourceAuditor": true
+    }
+  ],
+  "initialUnmatchedReplay": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-d3-coupled-check-summary.json",
+    "sha256": "4bc4b783adb6da11b1f371532a6bc6e0ce193f936b8c7cf5e66b91c6cbe51ce2"
+  },
+  "d3MatchedReplay": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-d3-matched-check-summary.json",
+    "sha256": "104f46ef834d1394a5f3573ca86c71ad85113cf6305409893a9ef9a94772fcf5"
+  },
+  "casnNominalAndD3MatchedReplay": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-nominal-d3-matched-check-summary.json",
+    "sha256": "7283fee7d498123eee094fa92ec68f211a03e799fb1bd857d485cf9a64a3fe05"
+  },
+  "topologyFinding": {
+    "testedD3WireAndItsTwoSignalHolesOpeningConnected": true,
+    "minimumLayerTransitionsInCounterfactualModel": 2,
+    "powerAndGroundHolesAlwaysFixed": true,
+    "otherTestedProfilesConnected": false,
+    "globalMinimalityOrImpossibilityClaimed": false
+  },
+  "replannedOriginalD3SignalHoles": [
+    "pcb_via_145",
+    "pcb_via_146"
+  ],
+  "originalOtherHolesPreserved": 161,
+  "newSignalHoles": 8,
+  "completeReplayedHoles": 169,
+  "allOpenedSignalsRestored": true,
+  "remainingOpenedSignalRepairs": [],
+  "nativeBusLanesBootstrap": true,
+  "manualRepairs": true,
+  "guardedExactWireTunings": [
+    {
+      "attempt": 687,
+      "signal": "DDR_D3",
+      "teeth": 11,
+      "planarMm": 30.72778354054686,
+      "newHoles": 0
+    },
+    {
+      "attempt": 688,
+      "signal": "DDR_CASn",
+      "teeth": 4,
+      "planarMm": 43.02000000000001,
+      "newHoles": 0
+    }
+  ],
+  "bothCompleteBytePlanarTimingPass": true,
+  "allThreeDifferentialPairPlanarTimingPass": true,
+  "casnNominalLengthPass": true,
+  "csnNominalLengthPass": false,
+  "pendingNominalRepairSignals": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_CKE",
+    "DDR_A3",
+    "DDR_A6",
+    "DDR_CSn0"
+  ],
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "guardValidation": {
+    "path": "checks/integrated/am3352-ddr32-d3-signal-guard-validation.json",
+    "sha256": "e02730cd6424e8e0119080e09c2bec5b321830d9f9295c6b6e625e78f469dd5d"
+  },
+  "nextAction": "Use the checked 33-signal native/manual bootstrap to route the remaining 16 address/control signals; shorten CSn0 and repair CK/CKn/CKE/A3/A6 nominal lengths while preserving both whole byte groups and physical checks. Complete electrical DDR qualification, power/storage/display/controls/audio/Linux and measured original G350 shell integration before release.",
+  "helpers": [
+    {
+      "path": "scripts/summarize-am3352-casn-d3-coupled-trials.mjs",
+      "sha256": "07ebf64a38bb1f4c30c86e5b7c112d1f5ae0b015adffe5afa4ac686157316caf"
+    },
+    {
+      "path": "scripts/check-am3352-casn-d3-coupled-source.mjs",
+      "sha256": "e658f95a467045d5b88c3d1f079baf73d9fd2dd25bd6acd20f3ba69ecca1e464"
+    },
+    {
+      "path": "scripts/summarize-am3352-casn-d3-coupled-checks.mjs",
+      "sha256": "53da66277e4ddbab785a5b29b1f54e5746d2318693ab7f8f9274cf78356ed4f7"
+    },
+    {
+      "path": "scripts/lib/am3352-open-d3-signal.mjs",
+      "sha256": "46e972f880af5007ffb112664f67e6f120978377865a336b86dfead774f0c0d8"
+    },
+    {
+      "path": "scripts/lib/am3352-staged-casn-d3-open.mjs",
+      "sha256": "9874ef7ff82c7af4a7dbc4ee0f43b0f767e7c9745c1ed90c21670732e20a7241"
+    },
+    {
+      "path": "scripts/lib/am3352-staged-casn-d3-restored.mjs",
+      "sha256": "3ee205559264aa72a6ccecf8e23ec9fee1bf6e1c212fcb4b41254701449c2209"
+    },
+    {
+      "path": "scripts/lib/am3352-staged-casn-d3-csn0.mjs",
+      "sha256": "d3bf24bf238b21166a81e76096372c0cf1994e2f4c034cdff51ff654d244bed4"
+    },
+    {
+      "path": "scripts/save-am3352-casn-d3-coupled-replay.mjs",
+      "sha256": "2afa3bcc9dba6a7409947c7bd7d5d025937b9987ddebf9f56d4cdb76812911d0"
+    },
+    {
+      "path": "scripts/tune-am3352-replayed-path.mjs",
+      "sha256": "2cdfdb5f63b4ada1e3e77f492c7d5e475f241a3a31b1d2f6098af773fd9e8d31"
+    },
+    {
+      "path": "scripts/repair-am3352-d3-retained-meander.mjs",
+      "sha256": "257288b05850bc8dc621006b4112c929cfa0a0e783e5fc2e91287ab84281bb40"
+    }
+  ],
+  "activeSolverHandles": [],
+  "defaultChanged": false,
+  "copperLayers": 4,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

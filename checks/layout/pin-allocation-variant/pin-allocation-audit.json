@@ -1,0 +1,139 @@
+{
+  "status": "PASS_PIN_ALLOCATION_AND_PLACEMENT_ONLY",
+  "fabricationReady": false,
+  "routingPermitted": false,
+  "originalShellFitVerified": false,
+  "logicalComponents": 280,
+  "preservedPriorComponents": 277,
+  "addedComponents": 3,
+  "copperLayers": 4,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "priorPhysicalGeometryPreserved": true,
+  "onlyReviewedTerminalSplitApplied": true,
+  "priorNativeAperturesPreserved": true,
+  "newPadEdgeClearanceLowerBoundMm": 6.734355000000002,
+  "allExplicitNetNamesDistinct": true,
+  "historicalNegativeControlDetected": true,
+  "independentlyCheckedCpuAllocations": [
+    [
+      "C18",
+      "SD_CD"
+    ],
+    [
+      "U14",
+      "LCD_BL_PWM"
+    ],
+    [
+      "A17",
+      "LCD_SPI_CLK"
+    ],
+    [
+      "B16",
+      "LCD_SPI_MOSI"
+    ],
+    [
+      "C15",
+      "LCD_CS1n"
+    ],
+    [
+      "D13",
+      "LCD_RESETn"
+    ],
+    [
+      "D12",
+      "AUDIO_DIN"
+    ],
+    [
+      "A13",
+      "AUDIO_BCLK"
+    ],
+    [
+      "B13",
+      "AUDIO_LRCLK"
+    ],
+    [
+      "A14",
+      "AUDIO_ENABLE"
+    ],
+    [
+      "E15",
+      "UART0_RX"
+    ],
+    [
+      "E16",
+      "UART0_TX"
+    ],
+    [
+      "C17",
+      "I2C0_SDA"
+    ],
+    [
+      "C16",
+      "I2C0_SCL"
+    ],
+    [
+      "G18",
+      "SD_CMD"
+    ],
+    [
+      "G17",
+      "SD_CLK_CPU"
+    ],
+    [
+      "G16",
+      "SD_DAT0"
+    ],
+    [
+      "G15",
+      "SD_DAT1"
+    ],
+    [
+      "F18",
+      "SD_DAT2"
+    ],
+    [
+      "F17",
+      "SD_DAT3"
+    ]
+  ],
+  "bufferPinoutAndManufacturerLandPatternVerified": true,
+  "bufferBypassSupplyPadDistanceMm": 1.8483769781773414,
+  "newBottomCourtyardsClear": true,
+  "nativeErrors": 0,
+  "physicalPadsAndPlatedHoles": 1165,
+  "logicCalculations": {
+    "supplyRangeV": [
+      1.71,
+      1.89
+    ],
+    "cpuToBufferHighMarginV": 0.1484999999999999,
+    "cpuToBufferLowMarginV": 0.1484999999999999,
+    "bufferToDriverHighMarginV": 0.4099999999999999,
+    "bufferToDriverLowMarginV": 0.30000000000000004,
+    "driverDcLoadWorstA": 0.0000625762396694215,
+    "driverPowerOffVoltageWorstV": 0.326498625507399,
+    "bufferInputResetVoltageWorstV": 0.43328999999999995,
+    "bufferInputResetLowMarginV": 0.16520999999999997,
+    "loadBasis": "33k +/-1%, CTRL internal pulldown minimum400k; <100uA DC output load.",
+    "powerOffBasis": "10uA buffer Ioff, 33k +1% and CTRL maximum1600k; CTRL <0.4V."
+  },
+  "scope": "Unrouted source/PCB terminal mapping and placement. Schematic rendering, copper continuity, return loops, power sequencing, firmware, shell fit and fabrication release are not verified.",
+  "hashes": {
+    "dist/experiments/am3352-g350-pin-allocation/circuit.json": "5ce4c3e9a65c1ebb8d25cabe6d45324f409638ecd6f00ecdbe7656d26da6eca4",
+    "dist/experiments/am3352-g350-critical-placement/circuit.json": "33739a014220d74530c13d2ded00666e2042bd4868cd4a0a8d95d3877d51c420",
+    "experiments/am3352-g350-pin-allocation.circuit.tsx": "46a8198016c2a23804a9ffee5b6f84b4caa5d419c5e69c2366947c9a85f66b06",
+    "lib/am3352/placement/BacklightPinAllocation.tsx": "92bbae935e03ab6821e18529c17aa14865207c19026c25c8f4865c77659af710",
+    "imports/SN74LVC1G125DBVR.tsx": "9504e39da8c867e0683eba60365ba3dc10f51f7f4e1e66a13a3b115cc750276d",
+    "imports/A_0402WGF3302TCE.tsx": "e119fb572088fa8dc918111a86a9e4078ff1ec6e17f64f22ff73456925316e1c",
+    "imports/CL05B104KO5NNNC.tsx": "16de55bd3373178d95e49d7c212e255b4a0c864a75f287b942abe49007e83110",
+    "reference/am3352/am3352.pdf": "ec145b6b19a7ff35118bb0ec06b5ae9c51aa97ccdf4da935f2176d9168af0205",
+    "reference/am3352/display/TPS61165-datasheet.pdf": "bb0e9f995c5f8e0b73044d08ded5b0999cc1cad1bf2c532e0de257d2bb91aa35",
+    "reference/am3352/display/SN74LVC1G125-datasheet.pdf": "1098d46e4565695e9823a08309bc581e2c9ead26b19e99a43a011a38642b27ca",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "scripts/check-g350-pin-allocation.mjs": "bfc441cddaa8ab4af8c9ae252c23a87f5e2f1ec43140f0e2f804923bc4892391"
+  }
+}

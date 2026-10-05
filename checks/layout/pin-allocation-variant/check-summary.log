@@ -1,0 +1,88 @@
+{
+  "status": "CHECKED_BACKLIGHT_AND_SD_PIN_ALLOCATION",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "fullHandheldPlacementComplete": false,
+  "entry": "experiments/am3352-g350-pin-allocation.circuit.tsx",
+  "defaultEntryRemainsHistoricalDdrFixture": true,
+  "logicalComponents": 280,
+  "preservedPriorPlacements": 277,
+  "addedComponents": 3,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "nativeErrors": 0,
+  "buildExitCode": 0,
+  "typecheckExitCode": 0,
+  "allLayerGerberShorts": 0,
+  "allExplicitNetNamesDistinct": true,
+  "historicalCollisionDetectedByNegativeControl": true,
+  "cardDetectBall": "C18 / GPIO0_7 mode7",
+  "backlightPwmBall": "U14 / eHRPWM1A mode6, VDDSHV3=1.8V",
+  "buffer": "SN74LVC1G125DBVR C23654, 1.8V, always enabled",
+  "inputPulldownValueChange": "R_LCD_BL_PD: 100k -> 33k C25779 on unchanged lands",
+  "priorPhysicalGeometryAndNativeAperturesPreserved": true,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "logicCalculations": {
+    "supplyRangeV": [
+      1.71,
+      1.89
+    ],
+    "cpuToBufferHighMarginV": 0.1484999999999999,
+    "cpuToBufferLowMarginV": 0.1484999999999999,
+    "bufferToDriverHighMarginV": 0.4099999999999999,
+    "bufferToDriverLowMarginV": 0.30000000000000004,
+    "driverDcLoadWorstA": 0.0000625762396694215,
+    "driverPowerOffVoltageWorstV": 0.326498625507399,
+    "bufferInputResetVoltageWorstV": 0.43328999999999995,
+    "bufferInputResetLowMarginV": 0.16520999999999997,
+    "loadBasis": "33k +/-1%, CTRL internal pulldown minimum400k; <100uA DC output load.",
+    "powerOffBasis": "10uA buffer Ioff, 33k +1% and CTRL maximum1600k; CTRL <0.4V."
+  },
+  "bufferBypassSupplyPadDistanceMm": 1.8483769781773414,
+  "parentCpuBypassMetrics": "59 preserved, stored in summary",
+  "parentDdrBypassPlacement": "32 preserved, stored in summary",
+  "previousVariantElectricalLimitation": "The parent remains useful placement evidence, but its C18 SD_CD/PWM net merge is corrected only in this new entry.",
+  "smtStencil": {
+    "matchedPads": 1165,
+    "matchedNonplatedHoles": 2,
+    "scaledApertures": 1104,
+    "fullSizeApertures": 9,
+    "noPastePads": 48,
+    "geometryPreserved": true,
+    "nativeThroughHoleAperturesUnqualified": 8,
+    "fullStencilQualification": false
+  },
+  "independentKicad": {
+    "processExitCode": 5,
+    "errors": 0,
+    "warningCount": 404,
+    "warningTypes": {
+      "silk_edge_clearance": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199
+    },
+    "unconnectedItemsReported": 499,
+    "unconnectedCountIsComplete": false,
+    "perItemExclusions": 0,
+    "ignoredRuleSeverities": 0,
+    "exactLocalFootprints": 280,
+    "physicalRecordSha256": "1d595deb19aac6119beecd5831a481b7b5df5ffb0a7e29e4b3457e251f2e2474",
+    "fullDrcPass": false,
+    "scope": "Unrouted placement. Full DRC fails because silkscreen warnings and open connections remain."
+  },
+  "remaining": [
+    "PMIC, boost, SD regulator and backlight high-current loops, feedback, thermal and ground returns",
+    "Move LCD source resistors clear of the DDR corridor and finish critical placement review before routing",
+    "Dedicated bypass vias, effective capacitance and continuous reference planes",
+    "Complete native bus_lanes DDR phases and remaining host routing; independent timing, continuity, shorts and manufacturing checks",
+    "Linux panel, pinmux, audio and USB-C install/recovery software and validation",
+    "Measured original-shell mounting, ports, controls and assembled clearances; battery/speaker qualification"
+  ],
+  "scope": "Pin allocation and unrouted placement; actual power sequencing, routed returns, firmware, shell fit and fabrication are incomplete.",
+  "hashes": "stored in source-bound summary"
+}

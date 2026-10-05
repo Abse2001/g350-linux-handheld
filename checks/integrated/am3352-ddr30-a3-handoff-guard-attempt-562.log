@@ -1,0 +1,36 @@
+18 | const localFanouts=read(`${localDirectory}/local-escapes.json`)
+19 | for(const c of input.connections){
+20 |   const cpu=localFanouts.filter(t=>t.source_trace_id===c.name&&t.route[0].y>-15)
+21 |   const ram=localFanouts.filter(t=>t.source_trace_id===c.name&&t.route[0].y<-15)
+22 |   assert.equal(cpu.length,1);assert.equal(ram.length,1)
+23 |   assert.deepEqual(c.pointsToConnect,[cpu[0],ram[0]].map(t=>{const p=t.route.at(-1);return{x:p.x,y:p.y,layer:p.layer}}),'Every native carrier terminal must be an actual saved package fanout endpoint')
+              ^
+AssertionError: Every native carrier terminal must be an actual saved package fanout endpoint
++ actual - expected
+
+  [
+    {
+      layer: 'bottom',
++     x: -13,
++     y: -7.159999999999997
+-     x: -10.5,
+-     y: -10.5
+    },
+    {
+      layer: 'bottom',
+      x: -9,
+      y: -33.16
+
+ generatedMessage: false,
+     actual: [
+  [Object ...], [Object ...]
+],
+   expected: [
+  [Object ...], [Object ...]
+],
+   operator: "deepStrictEqual",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-channel.mjs:23:10
+
+Bun v1.3.14 (macOS arm64)

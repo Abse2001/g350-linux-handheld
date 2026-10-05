@@ -1,0 +1,210 @@
+{
+  "status": "BOTTOM_RAM_NATIVE_AND_MANUAL_PARTIAL_COPPER_CHECKED_DDR_AND_HOST_INCOMPLETE",
+  "entry": {
+    "path": "experiments/am3352-ram-bottom-flexible-fanout-747-replay.circuit.tsx",
+    "sha256": "d5dd3d65939626708ff343104aaa881ea55d57ca00e44514ee956709b3c4f64a"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bottom-flexible-fanout-747-replay-candidate/circuit.json",
+    "sha256": "aff5fb56cccf7eb917474972fd5e608748ec9d077601ef0d556d7a7a6e75432c"
+  },
+  "paths": {
+    "path": "routing/am3352-ram-bottom-flexible-fanout-747-replay-paths.json",
+    "sha256": "b65a10cd327d9487abcc4c2f896152fca64066ec67b0abda7b044ed73f54fce1"
+  },
+  "provenance": {
+    "path": "routing/am3352-ram-bottom-flexible-fanout-747-replay-paths.provenance.json",
+    "sha256": "50ea3b581357162c185f6ecffb47f2daee8c8ad6cf0815923834214330c66f37"
+  },
+  "board": {
+    "path": "dist/am3352-ram-bottom-flexible-fanout-747-replay-diagnostic/board.kicad_pcb",
+    "sha256": "8f6c6e98c6bc7155cd3616f813462aab580b8c66febee2248a9da96971719c72"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-source-validation.json",
+    "sha256": "c1a1d14dec4014bab144ce39717f2e95d3f4ceb7bfaa280f572cdb460ac5cec3"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-native-ddr-connectivity.json",
+    "sha256": "b09dcbdc8a5ed67f5e6dbb1cc95eb8bc5e3c838155c48aae17592953e535e6ea"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-native-usb-connectivity-routed.json",
+    "sha256": "8d723666ac7bb0b3214b014b2b3092a70e0e00eb29ad40f330aab6c73d1da623"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-reference-connectivity.json",
+    "sha256": "7b3514d8f90d2c6fa7bcc7926453174da2fe4dd750ef086d56f6242a8f9b3abb"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-kicad-drc.json",
+    "sha256": "04e769ad0e85183f50ef29868642998258861e761e7c9102f6c9140246cfd80f"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "libraryAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-library.log",
+    "sha256": "8d71435d34ca58586a1d8ab0842c220eaf898bee90bb71e64c44e4e1e4178041"
+  },
+  "ddrContinuityAndTimingAudit": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-ddr-routing.json",
+    "sha256": "e376c054532df50e5f014ea85593444b781a7d39bdaa2e57b2ef50d3cb877eba"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-bottom-mirrored.json",
+    "sha256": "10b9ea9bef9f9f3249e430a46ba2c40b89161d903742ed4fffe250bd07d28300"
+  },
+  "sourceHelpers": [
+    {
+      "path": "experiments/am3352-powered-host.circuit.tsx",
+      "sha256": "04fbd787ff87d6b56d80eee4b8ccd74a64b6daaf67d4f730bcfc36c04be347cf"
+    },
+    {
+      "path": "lib/am3352/FourLayerDdrConstraints.tsx",
+      "sha256": "024b0b71b126efe6cd57a35a1eaa3bd0a79fe7c6dabf713b40c1350548ba640f"
+    },
+    {
+      "path": "lib/am3352/Power.tsx",
+      "sha256": "18b6d987ac276b9e5098ff2e1ea28b5406e3135bc77f4aee10647820cbfd4cf5"
+    },
+    {
+      "path": "lib/am3352/RamReferenceEscapes.tsx",
+      "sha256": "944912d0300f3ec5650623e23c9bda1e4ef4fe92e24905ee97ea500da0503216"
+    },
+    {
+      "path": "lib/am3352/RamBypassLoops.tsx",
+      "sha256": "5d40c91bab78e99999458127d16611ec937f470642af879479c2c6611151e7cb"
+    },
+    {
+      "path": "scripts/replay-am3352-bottom-flexible-fanout-routes.mjs",
+      "sha256": "eddb376c60a76ab4705bbb4d5f21ea9147374ab92766c66395aac1565544365d"
+    },
+    {
+      "path": "scripts/check-am3352-bottom-negotiated-replay.mjs",
+      "sha256": "e3226b8ea94dc18b2fa0477d1a0628fedb9ec3f5083be615c1d2d7f39ef6b091"
+    },
+    {
+      "path": "scripts/lib/am3352-flexible-fanout-terminal-bridge.mjs",
+      "sha256": "e4f07f40b5c5bb28ef3d2a76949d4a6fcf1706e9ffe9f85a7ca67eb60958858b"
+    }
+  ],
+  "topSnapshot": {
+    "path": "images/am3352-ram-bottom-flexible-fanout-747-replay-top.png",
+    "sha256": "2484c5feecf7ada26d203a4b5436e07bcf4f5cd358cc4a2014709d2e544c041b",
+    "visuallyInspected": true
+  },
+  "bottomSnapshot": {
+    "path": "images/am3352-ram-bottom-flexible-fanout-747-replay-bottom.png",
+    "sha256": "c162a9c5e319d17042a2be1c8c560345fece8f78141642ea999b77121e57e64e",
+    "visuallyInspected": true
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "tracePieces": 130,
+  "physicalVias": 129,
+  "connectedDdrSignals": 28,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignals": 21,
+  "nativeBusLanesCarriersRetained": 19,
+  "manualRoutes": 9,
+  "original89SourceHolesPreserved": true,
+  "original102SourcePiecesPreserved": true,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "allHostUnconnectedItems": 499,
+  "unconnectedItemsCapped": true,
+  "ignoredChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "ramSupplyBallsConnectedToDdrPlane": 18,
+  "ramGroundBallsConnectedToGroundPlane": 21,
+  "ramBypassTerminalsConnectedToPlanes": 28,
+  "usbNumericPadAssignmentsVerified": 38,
+  "usbContinuityRecordsVerified": 40,
+  "physicalLibraryRecordsPreserved": 2856,
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 0.1270000000000202,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0.12699999999997047,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 0.12699999999968625,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "completeHostRouting": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "defaultChanged": false,
+  "fabricationReady": false,
+  "scope": "Exact source replay and independent physical copper/connectivity checks for a partial bottom-RAM DDR bootstrap. Native bus_lanes output was unsolved; retained carriers and manual additions were individually replayed and checked. Complete DDR routing, timing, return paths, impedance, host peripherals and original-shell fit remain required."
+}

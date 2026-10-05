@@ -1,0 +1,6 @@
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:shorts
+> node scripts/check-am3352-ddr-active-source.mjs dist/index/circuit.json checks/integrated/am3352-ddr-active-source-equivalence.json && tsci check shorts dist/index/circuit.json --mode gerber --layer all
+
+{"status":"CURRENT_SHAPED_G350_SCOPED_SOURCE_EQUIVALENCE_PASS","checkedConnectedDdrSignals":11,"remainingDdrSignals":38,"fabricationReady":false}
+No shorts detected in circuit.json

@@ -1,0 +1,82 @@
+{
+  "status": "JOINT_NATIVE_BREAKOUT_CONNECTIVITY_VERIFIED_CHANNELS_UNFINISHED",
+  "source": {
+    "path": "dist/experiments/am3352-joint-ddr-breakout-host/circuit.json",
+    "sha256": "fe69070a7bc659551dacbb0774ac3d633de80bfd3925e3ba5bf2b562c34e6b13",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-joint-ddr-breakout-host/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-joint-native-breakout-physical-diagnostic/circuit.json",
+    "sha256": "2bc65d7a379cf3cad871bb26e50acc012416ac33f8d54f66f13e3801747ab852"
+  },
+  "board": {
+    "path": "dist/am3352-joint-native-breakout-physical-diagnostic/board.kicad_pcb",
+    "sha256": "3f7059cf592653f99106b26a6742d4e63d0e852cf486b22ae0ed39cd2908fee9"
+  },
+  "nativeEscapes": {
+    "path": "dist/am3352-joint-ddr-channel-layer-selection-attempt-133/signal-escapes.native.json",
+    "sha256": "262b7d3440635c61e20f2879bf0d5d2267ceaf5ed4de3553987d0d320961ef4f"
+  },
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayerCount": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "synchronousSignals": 48,
+  "cpuBreakoutsConnected": 48,
+  "ramBreakoutsConnected": 48,
+  "sourcePowerTracePiecesPreserved": 69,
+  "sourcePowerViasPreserved": 69,
+  "reservedSignalVias": 96,
+  "totalThroughVias": 165,
+  "minimumHoleEdgeClearanceMm": 0.44600000000000284,
+  "gerberShortsAllLayers": 0,
+  "expectedUnfinishedViaWarnings": 96,
+  "otherPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "completedDdrChannels": 0,
+  "requiredDdrChannels": 49,
+  "physicalLibraryRecordsPreserved": 620,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-joint-native-breakout-kicad-connectivity.json",
+      "sha256": "1383829acf6990256b8875cd2e25759b75468e1bcae2706c1ec48c84e496bedc"
+    },
+    {
+      "path": "checks/integrated/am3352-joint-native-breakout-reference-connectivity.json",
+      "sha256": "532695c039a89dec772da17b304461412cb231a55635bb214e2cba1c0be793f0"
+    },
+    {
+      "path": "checks/integrated/am3352-joint-native-breakout-native-ddr-connectivity.json",
+      "sha256": "0f36f987d7a94d2b03cde674c90d26870e997da0a82df0635118eeca2231499d"
+    },
+    {
+      "path": "checks/integrated/am3352-joint-native-breakout-kicad-drc.json",
+      "sha256": "d692bf8d87f8d9ed9794f3f38eebc6670895be2a7965d7c148ed7f7b1a8239bf"
+    },
+    {
+      "path": "checks/integrated/am3352-joint-native-breakout-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "dist/am3352-joint-native-breakout-physical-diagnostic/export.json",
+      "sha256": "aa8fee97c3d9dfa7f62d1be0755d94e4d8e8660bfea434924576b35484f4e906"
+    }
+  ],
+  "snapshot": {
+    "path": "images/am3352-joint-native-breakout-top.png",
+    "sha256": "23f832606b42d4604030721234b0e67b3e2df82f6365b46b8127723e393d3091",
+    "visuallyInspected": true
+  },
+  "fabricationReady": false,
+  "fullPhysicalDrcPass": false,
+  "timingQualified": false,
+  "scope": "Joint pad-to-via bootstrap only. All 96 dangling-via warnings are retained; no complete DDR channel or fabrication pass is claimed. The active 23-signal checked replay is a separate candidate."
+}

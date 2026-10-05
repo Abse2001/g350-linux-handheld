@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE_BYTE0_CANDIDATE_REQUIRES_PHYSICAL_AND_TIMING_CHECKS",
+  "nativeFullNineLaneSolve": false,
+  "nativeCarrierPathsRetainedExactly": 7,
+  "manualCarrierPaths": 2,
+  "twoThroughViasPerDataPath": true,
+  "manualStrobeTuningRelocation": true,
+  "strobePlanarLengthsMm": [
+    19.086260839907588,
+    19.086260839907585
+  ],
+  "dataPlanarLengthsMm": [
+    {
+      "connection": "U_SOC.pin13",
+      "length": 12.538178693241164
+    },
+    {
+      "connection": "U_SOC.pin30",
+      "length": 15.706715031043306
+    },
+    {
+      "connection": "U_SOC.pin50",
+      "length": 14.927765364283108
+    },
+    {
+      "connection": "U_SOC.pin49",
+      "length": 18.41194072088479
+    },
+    {
+      "connection": "U_SOC.pin48",
+      "length": 16.06954954313964
+    },
+    {
+      "connection": "U_SOC.pin67",
+      "length": 19.294940130434156
+    },
+    {
+      "connection": "U_SOC.pin66",
+      "length": 20.196017228003388
+    },
+    {
+      "connection": "U_SOC.pin31",
+      "length": 16.86954954313964
+    },
+    {
+      "connection": "U_SOC.pin68",
+      "length": 27.794112549695424
+    }
+  ],
+  "nativePaths": {
+    "path": "lib/am3352/placement/ddr-byte0-seven-native-paths.json",
+    "sha256": "5e22130172cb758eb5cb595f9b100b3b010578616100f7618aa5ac69c8905c91"
+  },
+  "nativeEscapes": {
+    "path": "checks/integrated/g350-ddr-bootstrap/byte0-native-escapes.traces.json",
+    "sha256": "674a425d036ef6e6a686a10ac654de460cccd052ac6069c18ac2dc1cf67414ee"
+  },
+  "originalStrobes": {
+    "path": "lib/am3352/placement/ddr-dqs0-center-approach-paths.json",
+    "sha256": "659e85bcace0a8057b5a3c348ba43d34f48d06df4584fc75c9e6bc5d818a85d1"
+  },
+  "paths": {
+    "path": "lib/am3352/placement/ddr-byte0-repaired-paths.json",
+    "sha256": "23e26322d3f6f09c8f2309b0f17f3cf173a64d1d435540d516abf0613e1ef1f1"
+  },
+  "strobes": {
+    "path": "lib/am3352/placement/ddr-dqs0-byte0-tuning-paths.json",
+    "sha256": "2c71835b88ee0cc5f744cc6d08b06c0c8b820061fb24d6ef705aa2ada36b22ea"
+  },
+  "qualifiedNewDdrSignals": 0,
+  "ddrTimingQualified": false,
+  "fabricationReady": false
+}

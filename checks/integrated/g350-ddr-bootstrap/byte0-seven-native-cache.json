@@ -1,0 +1,44 @@
+{
+  "status": "SEVEN_NATIVE_LANES_REQUIRE_ACTUAL_SOURCE_REPLAY",
+  "completeNineSignalSolverResult": false,
+  "singleNativeSnapshotUsed": true,
+  "nativeCarrierGeometryUnmodified": true,
+  "nativeEscapesUnmodified": true,
+  "completePaths": 7,
+  "sourceTraceIds": [
+    "source_trace_3",
+    "source_trace_30",
+    "source_trace_4",
+    "source_trace_17",
+    "source_trace_14",
+    "source_trace_43",
+    "source_trace_31"
+  ],
+  "signals": [
+    "DDR_D2",
+    "DDR_DQM0",
+    "DDR_D6",
+    "DDR_D4",
+    "DDR_D0",
+    "DDR_D5",
+    "DDR_D1"
+  ],
+  "source": {
+    "path": "dist/g350-dqs0-center-approach/compiled.circuit.json",
+    "sha256": "7b95a9eff86b5d156d0c701ef437f51076207ad55e940ccde475920a6f7dfbc7"
+  },
+  "checkpoint": {
+    "path": "dist/g350-byte0-native-lanes-from-escapes/partial-carrier-snapshots.json",
+    "sha256": "84ce787ba48435047cf5821f4713d521758c56fe20d9b98bfd9d4fdcfd0bd7a3"
+  },
+  "escapes": {
+    "path": "checks/integrated/g350-ddr-bootstrap/byte0-native-escapes.traces.json",
+    "sha256": "674a425d036ef6e6a686a10ac654de460cccd052ac6069c18ac2dc1cf67414ee"
+  },
+  "paths": {
+    "path": "lib/am3352/placement/ddr-byte0-seven-native-paths.json",
+    "sha256": "5e22130172cb758eb5cb595f9b100b3b010578616100f7618aa5ac69c8905c91"
+  },
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false
+}

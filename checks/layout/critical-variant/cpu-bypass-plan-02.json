@@ -1,0 +1,370 @@
+{
+  "status": "NO_COMPLETE_ASSIGNMENT",
+  "attempts": 400,
+  "parts": 59,
+  "input": "dist/experiments/am3352-g350-harness-placement/circuit.json",
+  "inputSha256": "f131e82c2793ddb4d91fee2bc901259e8aa364f8ccd892f72211e2e34f7d98ef",
+  "manufacturer": "SPRS717L sections 5.9 and 7.7.2.3.3.7. General proximity search bounds are engineering choices, not TI limits.",
+  "unchangedDdrComponents": true,
+  "reservedBottomCourtyardMinY": 19.3,
+  "conservativeCourtyardExtraMarginMm": 0.04,
+  "routingPermitted": false,
+  "plannerSha256": "67a6223e7258b40d129f6ff5b08f139dfe0b3967d9e001545244099cebcf218e",
+  "measurements": [
+    {
+      "name": "C_CORE_BULK",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 18.104143172213373,
+      "candidateCount": 1055
+    },
+    {
+      "name": "C_CORE_1",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 5.635601121442148,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_2",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 3.676955262170048,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_3",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 2.0591260281974004,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_4",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 1.019803902718557,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_5",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 0.2828427124746186,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_6",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 2.2090722034374526,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_7",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 4.604345773288534,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_CORE_8",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 6.6603303221386865,
+      "candidateCount": 1803
+    },
+    {
+      "name": "C_MPU_BULK",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 20.280039447693387,
+      "candidateCount": 1145
+    },
+    {
+      "name": "C_MPU_1",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.690724809414742,
+      "candidateCount": 1628
+    },
+    {
+      "name": "C_MPU_2",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.009975124224178,
+      "candidateCount": 1628
+    },
+    {
+      "name": "C_MPU_3",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.0880613017821097,
+      "candidateCount": 1628
+    },
+    {
+      "name": "C_MPU_4",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 3.6055512754639887,
+      "candidateCount": 1628
+    },
+    {
+      "name": "C_MPU_5",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 5.758472019555187,
+      "candidateCount": 1628
+    },
+    {
+      "name": "C_VDDS_BULK",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 24.247061677654877,
+      "candidateCount": 1297
+    },
+    {
+      "name": "C_VDDS_1",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.9849717690342534,
+      "candidateCount": 2247
+    },
+    {
+      "name": "C_VDDS_2",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 4.534313619501853,
+      "candidateCount": 2247
+    },
+    {
+      "name": "C_VDDS_3",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.162277660168379,
+      "candidateCount": 2247
+    },
+    {
+      "name": "C_VDDS_4",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.3105890714493693,
+      "candidateCount": 2247
+    },
+    {
+      "name": "C_SRAM_CORE_BULK",
+      "function": "VDDS_SRAM_CORE_BG",
+      "oldNearestSupplyDistanceMm": 15.56020565416794,
+      "candidateCount": 588
+    },
+    {
+      "name": "C_SRAM_CORE_1",
+      "function": "VDDS_SRAM_CORE_BG",
+      "oldNearestSupplyDistanceMm": 7.964923100695951,
+      "candidateCount": 492
+    },
+    {
+      "name": "C_SRAM_MPU_BULK",
+      "function": "VDDS_SRAM_MPU_BB",
+      "oldNearestSupplyDistanceMm": 18.647251808242416,
+      "candidateCount": 690
+    },
+    {
+      "name": "C_SRAM_MPU_1",
+      "function": "VDDS_SRAM_MPU_BB",
+      "oldNearestSupplyDistanceMm": 9.35093578204877,
+      "candidateCount": 566
+    },
+    {
+      "name": "C_HV1_BULK",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 31.499206339207976,
+      "candidateCount": 260
+    },
+    {
+      "name": "C_HV1_1",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 7.924645102463581,
+      "candidateCount": 726
+    },
+    {
+      "name": "C_HV1_2",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 8.676404785393544,
+      "candidateCount": 726
+    },
+    {
+      "name": "C_HV2_BULK",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 18.341210428976602,
+      "candidateCount": 585
+    },
+    {
+      "name": "C_HV2_1",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 12.814054783713075,
+      "candidateCount": 1121
+    },
+    {
+      "name": "C_HV2_2",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 10.912378292562991,
+      "candidateCount": 1121
+    },
+    {
+      "name": "C_HV3_BULK",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 23.435016535091247,
+      "candidateCount": 798
+    },
+    {
+      "name": "C_HV3_1",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 8.06225774829855,
+      "candidateCount": 1382
+    },
+    {
+      "name": "C_HV3_2",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 6.551335741663678,
+      "candidateCount": 1383
+    },
+    {
+      "name": "C_HV4_BULK",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 24.40491753725056,
+      "candidateCount": 1178
+    },
+    {
+      "name": "C_HV4_1",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 5.66038867923396,
+      "candidateCount": 1646
+    },
+    {
+      "name": "C_HV4_2",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 7.224956747275376,
+      "candidateCount": 1645
+    },
+    {
+      "name": "C_HV5_BULK",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 13.613228860193308,
+      "candidateCount": 1131
+    },
+    {
+      "name": "C_HV5_1",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 7.840918313565061,
+      "candidateCount": 1656
+    },
+    {
+      "name": "C_HV5_2",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 9.91564420499243,
+      "candidateCount": 1656
+    },
+    {
+      "name": "C_HV6_BULK",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 15.72895419282541,
+      "candidateCount": 1202
+    },
+    {
+      "name": "C_HV6_1",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.841052550594825,
+      "candidateCount": 1739
+    },
+    {
+      "name": "C_HV6_2",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.603029607687669,
+      "candidateCount": 1739
+    },
+    {
+      "name": "C_HV6_3",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.957010852370432,
+      "candidateCount": 1739
+    },
+    {
+      "name": "C_HV6_4",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 8.044874144447505,
+      "candidateCount": 1738
+    },
+    {
+      "name": "C_HV6_5",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 9.620810776644552,
+      "candidateCount": 1738
+    },
+    {
+      "name": "C_HV6_6",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 11.48564321228898,
+      "candidateCount": 1738
+    },
+    {
+      "name": "C_VDDS_RTC",
+      "function": "VDDS_RTC",
+      "oldNearestSupplyDistanceMm": 14.239382009062052,
+      "candidateCount": 279
+    },
+    {
+      "name": "C_VDDS_PLL_DDR",
+      "function": "VDDS_PLL_DDR",
+      "oldNearestSupplyDistanceMm": 14.0356688476182,
+      "candidateCount": 288
+    },
+    {
+      "name": "C_VDDS_PLL_CORE_LCD",
+      "function": "VDDS_PLL_CORE_LCD",
+      "oldNearestSupplyDistanceMm": 13.3461604965623,
+      "candidateCount": 629
+    },
+    {
+      "name": "C_VDDS_OSC",
+      "function": "VDDS_OSC",
+      "oldNearestSupplyDistanceMm": 11.58792474949678,
+      "candidateCount": 737
+    },
+    {
+      "name": "C_VDDS_PLL_MPU",
+      "function": "VDDS_PLL_MPU",
+      "oldNearestSupplyDistanceMm": 8.497058314499203,
+      "candidateCount": 1109
+    },
+    {
+      "name": "C_VDDA3P3V_USB0",
+      "function": "VDDA3P3V_USB0",
+      "oldNearestSupplyDistanceMm": 7.912016177940995,
+      "candidateCount": 1109
+    },
+    {
+      "name": "C_VDDA3P3V_USB1",
+      "function": "VDDA3P3V_USB1",
+      "oldNearestSupplyDistanceMm": 8.1706792863262,
+      "candidateCount": 1109
+    },
+    {
+      "name": "C_VDDA1P8V_USB0",
+      "function": "VDDA1P8V_USB0",
+      "oldNearestSupplyDistanceMm": 13.038404810405297,
+      "candidateCount": 1164
+    },
+    {
+      "name": "C_VDDA1P8V_USB1",
+      "function": "VDDA1P8V_USB1",
+      "oldNearestSupplyDistanceMm": 12.448293055676347,
+      "candidateCount": 1164
+    },
+    {
+      "name": "C_CAP_VDD_SRAM_CORE",
+      "function": "CAP_VDD_SRAM_CORE",
+      "oldNearestSupplyDistanceMm": 1.52315462117278,
+      "candidateCount": 245
+    },
+    {
+      "name": "C_CAP_VDD_SRAM_MPU",
+      "function": "CAP_VDD_SRAM_MPU",
+      "oldNearestSupplyDistanceMm": 1.8110770276274837,
+      "candidateCount": 404
+    },
+    {
+      "name": "C_CAP_VBB_MPU",
+      "function": "CAP_VBB_MPU",
+      "oldNearestSupplyDistanceMm": 5.035871324805669,
+      "candidateCount": 311
+    },
+    {
+      "name": "C_CAP_VDD_RTC",
+      "function": "CAP_VDD_RTC",
+      "oldNearestSupplyDistanceMm": 7.615773105863909,
+      "candidateCount": 48
+    }
+  ],
+  "fabricationReady": false
+}

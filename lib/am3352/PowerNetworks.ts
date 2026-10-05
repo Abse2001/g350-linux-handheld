@@ -16,7 +16,7 @@ export const allPinAttributes=<L extends Record<string,readonly string[]>>(
 // Unused GPMC-only HV1..3 domains use 1.8V; LCD/MMC/control HV4..6 use
 // 3.3V. A separate SD supply is required: no storage load on PMIC LDO4.
 export const supplyRails=["VSYS","USB_5V","VBAT","VIO_BOOST5V","DDR_1V5",
-  "VDD_MPU","VDD_CORE","VDDS_1V8","ANALOG_1V8","IO_3V3","LDO2_3V3"]
+  "VDD_MPU","VDD_CORE","VDDS_1V8","ANALOG_1V8","IO_3V3","PERIPH_3V3","LDO2_3V3"]
 export const cpuNetForFunction=(fn:string):string|undefined=>{
   if(fn.startsWith("VSS")||fn==="RTC_KALDO_ENn"||
     /^(VDDA_ADC|VREFP|VREFN|AIN[0-7])$/.test(fn))return "GND"
@@ -26,7 +26,8 @@ export const cpuNetForFunction=(fn:string):string|undefined=>{
   if(fn==="VDD_CORE")return "VDD_CORE"
   if(fn==="VDDS"||fn==="VDDS_RTC")return "VDDS_1V8"
   if(/^VDDSHV[1-3]$/.test(fn))return "ANALOG_1V8"
-  if(/^VDDSHV[4-6]$/.test(fn)||/^VDDA3P3V_USB[01]$/.test(fn))return "IO_3V3"
+  if(fn==="VDDSHV4")return "PERIPH_3V3" // MMC0 I/O and card share one switched rail.
+  if(/^VDDSHV[5-6]$/.test(fn)||/^VDDA3P3V_USB[01]$/.test(fn))return "IO_3V3"
   if(/^VDDS_(OSC|PLL_DDR|PLL_CORE_LCD|PLL_MPU|SRAM_CORE_BG|SRAM_MPU_BB)$/.test(fn)||
     /^VDDA1P8V_USB[01]$/.test(fn))return "ANALOG_1V8"
   if(fn.startsWith("CAP_"))return fn // Internal outputs: local capacitor only.
@@ -51,7 +52,7 @@ export const cpuPowerPinAttributes=allPinAttributes(cpuLabels,Object.fromEntries
 export const ramPowerPinAttributes=allPinAttributes(ramLabels,Object.fromEntries(ramPowerConnections.filter(c=>
   /^VSS|^VDD/.test(c.function)).map(c=>[c.pin,c.net==="GND"?{requiresGround:true}:{requiresPower:true}])))
 export const cpuNoConnect=Object.entries(cpuLabels).filter(([,labels])=>
-  (cpu.pins as Record<string,string>)[labels[0]]==="VPP").map(([pin])=>pin as keyof typeof cpuLabels)
+  ["VPP","RTC_XTALIN","RTC_XTALOUT"].includes((cpu.pins as Record<string,string>)[labels[0]])).map(([pin])=>pin as keyof typeof cpuLabels)
 export const ramNoConnect=Object.entries(ramLabels).filter(([,labels])=>
   (ram.pins as Record<string,string>)[labels[0]]==="NC").map(([pin])=>pin as keyof typeof ramLabels)
 
@@ -62,7 +63,7 @@ export const pmicConnections:Record<string,string>={
   pin1:"LDO2_3V3",pin2:"VIO_BOOST5V",pin3:"VDDS_1V8",pin4:"VBAT",pin5:"VBAT",
   pin7:"VSYS",pin8:"VSYS",pin9:"PMIC_ENABLE",pin11:"BAT_NTC",pin12:"USB_5V",pin13:"PMIC_WAKEUPn",
   pin18:"VDDS_1V8",pin19:"DDR_1V5",pin20:"SW_DDR",pin21:"VSYS",pin22:"VSYS",pin23:"SW_MPU",pin24:"VDD_MPU",
-  pin25:"PMIC_BUTTONn",pin26:"CPU_PORn",pin27:"I2C0_SDA",pin28:"I2C0_SCL",pin29:"VDD_CORE",pin30:"GND",pin31:"SW_CORE",
+  pin25:"PMIC_BUTTONn",pin26:"PMIC_MAIN_PGOOD",pin27:"I2C0_SDA",pin28:"I2C0_SCL",pin29:"VDD_CORE",pin30:"GND",pin31:"SW_CORE",
   pin32:"VSYS",pin39:"VSYS",pin40:"ANALOG_1V8",pin41:"GND",pin42:"VIO_BOOST5V",pin43:"IO_3V3",pin44:"PMIC_RESETn",
   pin45:"PMIC_INTn",pin46:"RTC_PORn",pin47:"PMIC_BYPASS",pin48:"PMIC_INT_LDO",pin49:"GND",
 }
@@ -74,7 +75,7 @@ const add=(name:string,net:string,value:Bypass["value"],x:number,y:number,side:B
 const banks=[
   ["CORE","VDD_CORE",8],["MPU","VDD_MPU",5],["VDDS","VDDS_1V8",4],
   ["SRAM_CORE","ANALOG_1V8",1],["SRAM_MPU","ANALOG_1V8",1],
-  ...Array.from({length:6},(_,i)=>[`HV${i+1}`,i<3?"ANALOG_1V8":"IO_3V3",i===5?6:2]),
+  ...Array.from({length:6},(_,i)=>[`HV${i+1}`,i<3?"ANALOG_1V8":i===3?"PERIPH_3V3":"IO_3V3",i===5?6:2]),
 ] as [string,string,number][]
 let smallIndex=0
 banks.forEach(([name,net,count],i)=>{
@@ -109,7 +110,8 @@ for(const [i,location] of ["CPU","RAM_CA","RAM_DQ"].entries())
 export const cpuRailBudget=[
   {rail:"VDDS_1V8",domains:{VDDS:50,VDDS_RTC:5},cpuMaxMa:55,pmicLimitMa:100},
   {rail:"ANALOG_1V8",domains:{VDDSHV1:50,VDDSHV2:50,VDDSHV3:50,SRAM_CORE:10,SRAM_MPU:10,PLL_DDR:10,PLL_CORE_LCD:20,PLL_MPU:10,OSC:5,USB0_1V8:25,USB1_1V8:25},cpuMaxMa:265,pmicLimitMa:400},
-  {rail:"IO_3V3",domains:{VDDSHV4:50,VDDSHV5:50,VDDSHV6:100,USB0_3V3:40,USB1_3V3:40},cpuMaxMa:280,pmicLimitMa:400},
+  {rail:"IO_3V3",domains:{VDDSHV5:50,VDDSHV6:100,USB0_3V3:40,USB1_3V3:40},cpuMaxMa:230,pmicLimitMa:400},
+  {rail:"PERIPH_3V3",domains:{VDDSHV4:50},cpuMaxMa:50,pmicLimitMa:1000},
   {rail:"VDD_CORE",domains:{VDD_CORE:400},cpuMaxMa:400,pmicLimitMa:1200},
   {rail:"VDD_MPU",domains:{VDD_MPU_NITRO_1GHZ:1000},cpuMaxMa:1000,pmicLimitMa:1200},
   {rail:"DDR_1V5",domains:{VDDS_DDR:250},cpuMaxMa:250,pmicLimitMa:1200},

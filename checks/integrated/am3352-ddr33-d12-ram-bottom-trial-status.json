@@ -1,0 +1,195 @@
+{
+  "status": "DDR33_D12_SPACING_REPAIRED_BOTTOM_RAM_PLACEMENT_CHECKED_FULL_DDR_ROUTING_INCOMPLETE",
+  "trials": [
+    {
+      "path": "dist/am3352-ddr33-d12-spacing-shortcuts-attempt-703/result.json",
+      "sha256": "c74ecc5214b7522b71acc4a41d4321f0df56e20308bf5d43c4d02d3e4e309426",
+      "attempt": 703,
+      "status": "D12_GUARDED_SPACING_SHORTCUT_FOUND_REPLAY_AND_PHYSICAL_CHECKS_REQUIRED",
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-all49-native-command-top-attempt-704/result.json",
+      "sha256": "9ccc444b235416d572ac3c4254b285055acfaca9f80769c368b1d3aef5eeb533",
+      "attempt": 704,
+      "status": "BOTTOM_RAM_NATIVE_DDR_FAILED",
+      "elapsedSeconds": 47.887788834,
+      "failureCode": "no_planar_route",
+      "terminalNativeStats": {
+        "phase": "failed",
+        "lane": 10,
+        "totalLanes": 49,
+        "congestionPass": 10,
+        "conflictingLanes": 39,
+        "layerAttempt": 3,
+        "dogbones": 49
+      },
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-all49-native-command-bottom-attempt-705/result.json",
+      "sha256": "b88466bcdad7e46f62cb45ecabe771ba8250a989912abd0932cd0628d995f6cf",
+      "attempt": 705,
+      "status": "BOTTOM_RAM_NATIVE_DDR_FAILED",
+      "elapsedSeconds": 20.317287792000002,
+      "failureCode": "no_planar_route",
+      "terminalNativeStats": {
+        "phase": "failed",
+        "lane": 8,
+        "totalLanes": 49,
+        "congestionPass": 10,
+        "conflictingLanes": 41,
+        "layerAttempt": 3,
+        "dogbones": 49
+      },
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-ordered-command-top-attempt-706/result.json",
+      "sha256": "83985065fa6b00b20a8a9f88a5a2e2bfe28bc242e9615fbfea2d930f92649c50",
+      "attempt": 706,
+      "status": "BOTTOM_RAM_CPU_ORDERED_FANOUT_FAILED_OR_TIMEOUT",
+      "stages": [
+        {
+          "name": "CPU_ORDERED_FANOUT",
+          "status": "FAILED",
+          "steps": 31,
+          "elapsedSeconds": 55.183096250000006,
+          "error": "FanoutSolver: best layer assignment routed 0/49 connections",
+          "terminalStats": {
+            "phase": "prepare-grouped-beam",
+            "assignment": 1,
+            "assignmentCount": 4,
+            "routedBuses": "0/5",
+            "routedConnections": "0/49",
+            "failedBuses": "DDR_BYTE0, DDR_ADDR_CTRL, DDR_BYTE1, DDR_CK, DDR_RESET",
+            "bestScore": 49500000.17
+          }
+        }
+      ],
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-attempt-707/result.json",
+      "sha256": "05e50d49082247b5a7e499be98bdc826a30a799fd63727494db20f5691dcb2ac",
+      "attempt": 707,
+      "status": "BOTTOM_RAM_NATIVE_DDR_TIMEOUT",
+      "elapsedSeconds": 60.017136834000006,
+      "terminalNativeStats": {
+        "phase": "route",
+        "lane": 15,
+        "totalLanes": 49,
+        "congestionPass": 407,
+        "conflictingLanes": 34,
+        "layerAttempt": 1,
+        "dogbones": 49
+      },
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-extended-attempt-708/result.json",
+      "sha256": "ba83368ef6bd69277265177e982ee1c04b66eb357080a0ef7149e4c2b54426cc",
+      "attempt": 708,
+      "status": "BOTTOM_RAM_NATIVE_DDR_TIMEOUT",
+      "elapsedSeconds": 180.045817875,
+      "terminalNativeStats": {
+        "phase": "route",
+        "lane": 14,
+        "totalLanes": 49,
+        "congestionPass": 1142,
+        "conflictingLanes": 33,
+        "layerAttempt": 1,
+        "dogbones": 49
+      },
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-ordered-swapped-local-both-attempt-709/result.json",
+      "sha256": "e1e0b918d332c113cdf7f90081e82b31764d3de8138fd498c26e0e8f1d7ff8f2",
+      "attempt": 709,
+      "status": "BOTTOM_RAM_CPU_ORDERED_FANOUT_FAILED_OR_TIMEOUT",
+      "stages": [
+        {
+          "name": "CPU_ORDERED_FANOUT",
+          "status": "TIMEOUT",
+          "steps": 77,
+          "elapsedSeconds": 67.79879041599999,
+          "error": null,
+          "terminalStats": {
+            "phase": "route-assignment",
+            "assignment": 4,
+            "assignmentCount": 4,
+            "routedBuses": "2/5",
+            "routedConnections": "0/49",
+            "failedBuses": "DDR_BYTE1, DDR_ADDR_CTRL, DDR_BYTE0",
+            "bestScore": 46300034.048526555,
+            "routingStrategy": "default",
+            "workUnit": 2,
+            "workUnitCount": 5,
+            "bus": "DDR_BYTE0"
+          }
+        }
+      ],
+      "newQualifiedDdrSignals": 0,
+      "fabricationReady": false
+    }
+  ],
+  "currentCopperEvidence": {
+    "path": "checks/integrated/am3352-ddr-usbc-d12-spacing-repaired-check-summary.json",
+    "sha256": "08dbd575d14495cb6c1e0c4e85617dcc9d2d3e7cb8d2702c3c3fc28eb6053c00"
+  },
+  "currentCopperSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-d12-spacing-repaired-candidate/circuit.json",
+    "sha256": "44da06639cf3249c5ff4821e02056e0bb989238213edb2111eca08b7cd988a17"
+  },
+  "connectedDdrSignals": 33,
+  "remainingDdrSignals": 16,
+  "d12PlanarMm": 50.983197059653314,
+  "d12ReducedSpacingExposureMm": 28.195190085725052,
+  "classSpacingAllowanceMm": 31.75,
+  "partialClassSpacingAudit": {
+    "path": "checks/integrated/am3352-ddr33-d12-repaired-class-spacing.json",
+    "sha256": "c700a8997d1ffb0e6c29a7e3f817f16b1be181fad27c17a16e21b3a06bdda110"
+  },
+  "connectedSubsetClassSpacingExposurePass": true,
+  "pendingSpacingRepairSignals": [],
+  "pendingNominalRepairSignals": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_CKE",
+    "DDR_A3",
+    "DDR_A6"
+  ],
+  "bothByteRelativePlanarTimingPass": true,
+  "allThreePairRelativePlanarTimingPass": true,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "bottomRamPlacement": {
+    "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+    "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+  },
+  "bottomRamConnectedDdrSignals": 0,
+  "bottomRamQualifiedNewDdrSignals": 0,
+  "rejectedSmallerUsbViaPlacement": {
+    "path": "checks/integrated/am3352-ram-bottom-source-via-style-rejection.json",
+    "sha256": "3b45ccab3fd5799371ef860caef2fe0fb341db137b8429bd191054972b3f5d01"
+  },
+  "bottomRamFullNativeOutputs": 0,
+  "activeSolverHandles": [],
+  "copperLayers": 4,
+  "defaultDdrSignals": 30,
+  "defaultChanged": false,
+  "newQualifiedDdrSignals": 0,
+  "completeHostRouting": false,
+  "completeSpacingQualified": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "nextAction": "Develop compatible package exit corridors for all five DDR buses using real pad/hole constraints and native bus_lanes; reconstruct every net before fresh combined checks. Finish nominal lengths, supplier stackup/pair/return/termination/timing qualification, full host power, storage, FPC display, controls, audio, Linux provisioning and measured original G350 shell integration."
+}

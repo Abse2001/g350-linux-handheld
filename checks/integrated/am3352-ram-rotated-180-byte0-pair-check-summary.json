@@ -1,0 +1,108 @@
+{
+  "status": "ROTATED_RAM_BYTE0_CONTINUITY_AND_PHYSICAL_CHECKS_PASS_WHOLE_BYTE_TIMING_FAIL",
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-pair-replay/circuit.json",
+    "sha256": "36cb1b7e99db09fb818299fc2f0aae61a9659a863b17c0f29f6d1112095f8731"
+  },
+  "board": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-pair-replay/board.kicad_pcb",
+    "sha256": "edf60197598fd0a6a769e0b39bd798a1d9c6a529169150caf3280899bf5a3461"
+  },
+  "baseSource": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-rebound-host/circuit.json",
+    "sha256": "792efd7656dd6c701a99fa74b5cffda877bda2f97212c11616a8caa90d76d2ac",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-byte0-rebound-host/circuit.json"
+  },
+  "editablePaths": {
+    "path": "routing/am3352-ram-rotated-180-byte0-pair-paths.json",
+    "sha256": "8e568505a959dd97082c0acd83efc768e8e5f5a15a64d98c9aa2e12057d8d1ac"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotationDeg": 180,
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "nativeRun": {
+    "path": "dist/am3352-ram-rotated-180-byte0-pair-channel-attempt-247/result.json",
+    "sha256": "c5c2e1bc108cc9cd1faf273420cb8dc1c8f944f886763347207b925195365c63"
+  },
+  "nativeBootstrapChannels": 11,
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "ddrSignalsConnected": 11,
+  "requiredDdrSignals": 49,
+  "openDdrSignals": 38,
+  "existingPowerTracePieces": 69,
+  "existingPowerVias": 69,
+  "ddrThroughVias": 30,
+  "totalThroughVias": 99,
+  "minimumHoleEdgeClearanceMm": 0.3060000000000005,
+  "dqs0PlanarSkewMm": 0,
+  "dqs0PlanarSkewLimitMm": 0.127,
+  "dqs0PlanarMatchPass": true,
+  "byte0PlanarSkewMm": 16.1054563835856,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarMatchPass": false,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "exactFootprintsPreserved": 273,
+  "physicalLibraryRecordsPreserved": 2147,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-pair-source-validation.json",
+      "sha256": "2874ed7609ef44566c50cb05044b643eac585c26e84cd4ddfa5e3d16911085bb"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-pair-ddr-connectivity.json",
+      "sha256": "f0d18b8302e8de96dc46a3789aa6c59ef2569ae8da4fd265a972d60cec6ef628"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-pair-native-ddr-connectivity.json",
+      "sha256": "24ed9876b415adc6bbb7ad1c13491b9e376e3ae3e91490b2c8f2ae5cb83a3573"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-pair-reference-connectivity.json",
+      "sha256": "271a5dd3ea3228dea335f038d9cdbe1887c6cb614fcf2d35c1f581ca1b8d3829"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-pair-kicad-drc.json",
+      "sha256": "08980ffa5a16c29fcc27b5e15e635d7b5b2993e67bbe08953eb4dac71758c134"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-pair-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    }
+  ],
+  "snapshot": {
+    "path": "images/am3352-ram-rotated-180-byte0-pair-bottom.png",
+    "sha256": "2a556fb616dd32487681a444fd11c07892c34a66c635fb35312ff3539d9424b0"
+  },
+  "activeDefaultChanged": false,
+  "combinedWithOtherCandidates": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "timingQualified": false,
+  "fullElectricalTimingQualified": false,
+  "pairGeometryQualified": false,
+  "scope": "Separate 180 degree RAM placement. Eleven native end-to-end byte0 paths plus manual fanouts pass copper continuity and physical clearance. Original whole-byte skew fails, and 38 DDR signals and full host/mechanical qualification remain unfinished."
+}

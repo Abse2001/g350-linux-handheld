@@ -1,0 +1,17 @@
+{"iterations":18421,"phase":"portPointPathingSolver","progress":0.44}
+{"iterations":780961,"phase":"highDensityRouteSolver","progress":0.5241935483870968}
+Pipeline9HighDensitySolver error: Error: Pipeline9 could not promote fixed route "source_trace_39_fixed_145_2" into the active regional fallback
+AutoroutingPipelineSolver9_PreloadedTraceGraph error: Error: Pipeline9 could not promote fixed route "source_trace_39_fixed_145_2" into the active regional fallback
+1 | var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,o=Object.getOwnPropertyNames,i=Object.getPrototypeOf,r=Object.prototype.hasOwnProperty,s=(e,t)=>function(){return t||(0,e[o(e)[0]])((t={exports:{}}).exports,t),t.exports},a=(e,n)=>{for(var o in n)t(e,o,{get:n[o],enumerable:!0})},c=(s,a,c)=>(c=null!=s?e(i(s)):{},((e,i,s,a)=>{if(i&&"object"==typeof i||"function"==typeof i)for(let c of o(i))r.call(e,c)||c===s||t(e,c,{get:()=>i[c],enumerable:!(a=n(i,c))||a.enumerable});return e})(!a&&s&&s.__esModule?c:t(c,"default",{value:s,enumerable:!0}),s)),l=s({"node_modules/is-buffer/index.js"(e,t){function n(e){return!!e.constructor&&"function"==typeof e.constructor.isBuffer&&e.constructor.isBuffer(e)}t.exports=function(e){return null!=e&&(n(e)||function(e){return"function"==typeof e.readFloatLE&&"function"==typeof e.slice&&n(e.slice(0,0))}(e)||!!e._isBuffer)}}}),h=s({"node_modules/kind-of/index.js"(e,t){var n=l(),o=Object.prototype.toString;t.exports=function(e){if(void 0===e)return"undefined";if
+
+error: Pipeline9 could not promote fixed route "source_trace_39_fixed_145_2" into the active regional fallback
+      at startRegionalFallback (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:2727073)
+      at finishRegionalFallback (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:2730376)
+      at stepNodeRouting (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:2734703)
+      at _step (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:2733708)
+      at step (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:177864)
+      at _step (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:2849848)
+      at step (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/capacity-autorouter/dist/index.js:1:177864)
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/repair-am3352-command-capacity.mjs:30:9
+
+Bun v1.3.14 (macOS arm64)

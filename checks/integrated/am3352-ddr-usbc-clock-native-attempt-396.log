@@ -1,0 +1,47 @@
+38 |   minPadEdgeToPadEdgeClearance:board.min_pad_edge_to_pad_edge_clearance,
+39 |   minBoardEdgeClearance:board.min_board_edge_clearance,
+40 |   minViaPadDiameter:board.min_via_pad_diameter,minViaHoleDiameter:board.min_via_hole_diameter})
+41 | assert.equal(input.traces.length,type('pcb_trace').length)
+42 | assert.equal(input.obstacles.filter(o=>o.circuitJsonMetadata?.pcb_smtpad_id).length,type('pcb_smtpad').length)
+43 | for(const t of type('pcb_trace'))assert.deepEqual(input.traces.find(n=>n.pcb_trace_id===t.pcb_trace_id).route,t.route)
+                                             ^
+AssertionError: Expected values to be strictly deep-equal:
++ actual - expected
+... Skipped lines
+
+  [
+    {
+      layer: 'top',
+      route_type: 'wire',
+-     start_pcb_port_id: 'pcb_port_8',
+      width: 0.1016,
+      x: -0.4,
+      y: -6.8
+    },
+    {
+...
+    {
+-     end_pcb_port_id: 'pcb_port_390',
+      layer: 'top',
+      route_type: 'wire',
+      width: 0.1016,
+      x: 2.4,
+      y: -22.6
+
+ generatedMessage: true,
+     actual: [
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  ... 476 more items
+],
+   expected: [
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...], [Object ...],
+  ... 476 more items
+],
+   operator: "deepStrictEqual",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-ddr-on-checked-source.mjs:43:41
+
+Bun v1.3.14 (macOS arm64)

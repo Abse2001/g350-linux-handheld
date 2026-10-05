@@ -1,0 +1,360 @@
+{
+  "status": "DDR42_REAL_PAD_CONNECTIVITY_AND_PHYSICAL_COPPER_CHECKED_TIMING_SPACING_AND_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/diagnostics/am3352-command-fine-782-replay-candidate/circuit.json",
+    "sha256": "5d26b45a9b1b5e499fe224f63bbdc4b5de8289a139f6c904fdc7674075bfd33a"
+  },
+  "board": {
+    "path": "dist/am3352-command-fine-782-replay-diagnostic/board.kicad_pcb",
+    "sha256": "715ffe1041fa37b2919bc530236c1c24be8f1d746504b48f0c6168d0a23a9c62"
+  },
+  "entry": {
+    "path": "experiments/am3352-command-fine-782-replay.circuit.tsx",
+    "sha256": "361384e8638b3f68a85b185ad786e160ab5411468ea663b207f6e53f62d25696"
+  },
+  "nativeEntry": {
+    "path": "experiments/am3352-command-fine-782-replay-native-phase.circuit.tsx",
+    "sha256": "c980d8e8c027b6be14645b4755f0b666ef6141499fab17a7a66966951fbcfeda"
+  },
+  "paths": {
+    "path": "routing/am3352-command-fine-782-replay-paths.json",
+    "sha256": "d709d0005338361a704c70cccedf21ec8b8c21ca5dd14211fb3e57e889d0e1a2"
+  },
+  "replayProvenance": {
+    "path": "routing/am3352-command-fine-782-replay-paths.provenance.json",
+    "sha256": "4ba936322f9003b6f08b14bd2929da50305b27c134ff99f4152c2ab6e724b098"
+  },
+  "latestToolchainEvidence": {
+    "path": "checks/integrated/tscircuit-update-2744/final-summary.json",
+    "sha256": "eedcaced08e842ada4d9b1c1a816b2fc399a373bc1f5c64cf47d43e0e309c773"
+  },
+  "versions": {
+    "tscircuit": "0.0.2744",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2080",
+    "@tscircuit/capacity-autorouter": "0.0.958"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-source-validation.json",
+    "sha256": "edc3c2823b010c6d4dde57e69bf46b474b7aa892729927a59ec3b2bf4a3bbc1f"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-native-ddr.json",
+    "sha256": "3be4bc7e6b51423f73147be473d94c95903a08b76a5486b14ba96d028332dc75"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-ddr-connectivity.json",
+    "sha256": "c99fb009e5a1c46325f07aca56cddd5dac24db8d8844e8041696a22f107e6ef6"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-native-references.json",
+    "sha256": "082085088ee1d76bf63c6f2a17c7a959d0064639d6eac36bd9d3928ec7fdcd34"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-native-usb.json",
+    "sha256": "8f4beac32322777608eda3a18c00ce14e272c37a29ce4080f7a902413fe5c735"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-final-drc.json",
+    "sha256": "7c8dce857fa07e2b9eee92e6c64405866330cdf3bb3c0506c34cf6ca80a517a6"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "nativeLibraryAudit": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-library.log",
+    "sha256": "c70d86821c538c590944e91cdaa1073cd59be7ae152f7a7c6cfbbc2b398568a6"
+  },
+  "spacingAndNominalReview": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-spacing-and-nominal-review.json",
+    "sha256": "d9c4a5fd6e65f3d0ea579df1223479ab852ebe4a4d00cc1a764cb114b8f3d63f"
+  },
+  "latestNativePhase": {
+    "path": "dist/am3352-command-fine-782-native-phase-attempt-783/result.json",
+    "sha256": "5aa04efc6d86741b0f790225a31c80b691d3355e46dc4128d15d9f66a221204c"
+  },
+  "nativePhaseInputPreservation": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-native-phase-input-validation.json",
+    "sha256": "62a39fe1f154aca7cfce089904a489c98de60474e9f8b65ca42621318d3f8490"
+  },
+  "latestNativePhaseFailure": "No collision-free local dogbone assignment",
+  "latestNativePhaseNewCompleteOutput": false,
+  "latestNativePhaseOpenConnections": 7,
+  "topSnapshot": {
+    "path": "dist/am3352-command-fine-782-replay-diagnostic/top.png",
+    "sha256": "e12fd5d4454d0d35ca35fbb144d84b21287aca24c004fe397cb2a701f7b00d7f"
+  },
+  "bottomSnapshot": {
+    "path": "dist/am3352-command-fine-782-replay-diagnostic/bottom.png",
+    "sha256": "4646b03be462dce442223fc5027ed45920955713dedf9a90c9ee92b13b8ae2d8"
+  },
+  "bothSurfaceSnapshotsInspected": true,
+  "components": 212,
+  "physicalPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 144,
+  "throughVias": 187,
+  "retainedDataResetSignals": 23,
+  "retainedCheckedClockSignals": 2,
+  "manualCommandSignals": 17,
+  "connectedDdrSignals": 42,
+  "openDdrSignals": 7,
+  "missingDdrSignals": [
+    "DDR_A3",
+    "DDR_RASn",
+    "DDR_WEn",
+    "DDR_A2",
+    "DDR_A12",
+    "DDR_A11",
+    "DDR_CKE"
+  ],
+  "bothBytePlanarTimingPass": true,
+  "allThreeDifferentialPairPlanarTimingPass": true,
+  "planarTiming": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.15742110831645206,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 0.4966688196126867,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0.07940932866782191,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 0.07661634765567982,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "fullCommandClassMatchingPass": false,
+  "commandNominalRangeMm": [
+    41.75,
+    44.290000000000006
+  ],
+  "pendingNominalRepairSignals": [
+    "DDR_ODT",
+    "DDR_CSn0",
+    "DDR_BA0",
+    "DDR_A5",
+    "DDR_A7",
+    "DDR_CASn",
+    "DDR_BA2",
+    "DDR_A0",
+    "DDR_A9",
+    "DDR_A13",
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_A10",
+    "DDR_A1",
+    "DDR_BA1",
+    "DDR_A6",
+    "DDR_A8"
+  ],
+  "pendingSpacingRepairSignals": [
+    "DDR_A9",
+    "DDR_A13",
+    "DDR_D12",
+    "DDR_A10",
+    "DDR_A14",
+    "DDR_A4",
+    "DDR_A8"
+  ],
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "reportedAndCappedHostOpens": 499,
+  "ignoredChecks": [
+    "footprint_filters_mismatch",
+    "footprint_type_mismatch",
+    "missing_courtyard",
+    "track_not_centered_on_via",
+    "tuning_profile_track_geometries"
+  ],
+  "ramSupplyBallsConnectedToDdrPlane": 18,
+  "ramGroundBallsConnectedToGroundPlane": 21,
+  "ramBypassTerminalsConnectedToPlanes": 28,
+  "usbNumericPadAssignmentsVerified": 38,
+  "usbContinuityRecordsVerified": 40,
+  "trials": [
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr38-adaptive-carriers-attempt-778/result.json",
+        "sha256": "c7282e422006bef89ab2f2c8d2b52d62a28b63cb28c6adca1b1d50b000195696"
+      },
+      "status": "PARTIAL_COMMAND_MANUAL_CARRIERS_PLANNED_REPLAY_AND_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-two-face-native-attempt-779/result.json",
+        "sha256": "67a2a23108d800c5cdfe5b925355b74138b05de5e4670049cb9c5328efbab389"
+      },
+      "status": "TWO_FACE_NATIVE_COMMAND_CARRIERS_TIMEOUT",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-two-face-native-attempt-780/result.json",
+        "sha256": "86a8253c7b79f9e870a9642797cfcf162f3b05a1bb3c05de1aef86f17ada11d7"
+      },
+      "status": "TWO_FACE_NATIVE_COMMAND_CARRIERS_TIMEOUT",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-adaptive-778-native-phase-attempt-781/result.json",
+        "sha256": "4629710523ae961911c1bfb9d7da6d01b90335de94b367b058236d4a3256b3ff"
+      },
+      "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr40-fine-carriers-attempt-782/result.json",
+        "sha256": "2a3f5ca1a29b0ae1e7fd5e8a35026d4711c5f5035a71e3bd5c945146584894f1"
+      },
+      "status": "PARTIAL_COMMAND_MANUAL_CARRIERS_PLANNED_REPLAY_AND_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-fine-782-native-phase-attempt-783/result.json",
+        "sha256": "5aa04efc6d86741b0f790225a31c80b691d3355e46dc4128d15d9f66a221204c"
+      },
+      "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr42-longer-carriers-attempt-784/result.json",
+        "sha256": "1f14a053ea49e25e7270912ffde20ce449654b6cf5408e669c5f99db16832063"
+      },
+      "status": "PARTIAL_COMMAND_MANUAL_CARRIERS_PLANNED_REPLAY_AND_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr42-remaining-fanouts-attempt-785/result.json",
+        "sha256": "3e43b09edad0016e2c71ebd52041d8d6583b735aa71b35b0e1e91b66c18ab250"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr42-wen-fanouts-attempt-787/result.json",
+        "sha256": "fa3642d2ddd3f5199c9043914a799ebcbe85f9b688c7aedf150ef3816364a5a3"
+      },
+      "status": "ALL_MANUAL_FANOUTS_PLANNED_NATIVE_ROUTE_AND_ALL_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr42-wen-native-attempt-788/result.json",
+        "sha256": "0adec6f0823e7a56fa8c3979a100d2807d67e5976efe31b7290c68dca24f66bc"
+      },
+      "status": "MANUAL_FANOUT_NATIVE_CARRIERS_FAILED",
+      "qualifiedNewDdrSignals": 0
+    }
+  ],
+  "escapeObstructionReview": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-escape-obstruction.json",
+    "sha256": "24a96cbdb0fc349548fba917000f7b9a2f00d319246a1e97ca91652c9af41cbc"
+  },
+  "singleWenSubsetMatchingIsNotWholeCommandClassMatching": true,
+  "sourceHelpers": [
+    {
+      "path": "scripts/replay-am3352-command-manual-carriers.mjs",
+      "sha256": "6bf4917b59e2fffad384c63996f9358f1d1dc6791c3e8f267ca2e9d2b4421460"
+    },
+    {
+      "path": "scripts/check-am3352-command-replay-source.mjs",
+      "sha256": "127dff65efe60d85a0cdd5e5a3fe96f0069bd42b36163b01b8bbe9a071e3f688"
+    },
+    {
+      "path": "scripts/check-am3352-command-replay-native-input.mjs",
+      "sha256": "53460e7e41797993252b931044f1949f97514b9865c55c615f14e101b98a812e"
+    },
+    {
+      "path": "scripts/check-am3352-command-replay-electrical.mjs",
+      "sha256": "fc3019883e38853ddb21f88b9c582adb17807c1b5b397df7bd133e507f6a1206"
+    },
+    {
+      "path": "scripts/prepare-am3352-ddr38-adaptive-state.mjs",
+      "sha256": "bce7648b2a3d199762f8d02ab19dd941cd9f6becb8c9afc9772df92472a84554"
+    },
+    {
+      "path": "scripts/route-am3352-command-adaptive-carriers.mjs",
+      "sha256": "957f50f8be9e73bf575ff36f5f8db036717c9cc2e0e3eee385ba2f6f7ca03a3f"
+    },
+    {
+      "path": "scripts/route-am3352-command-two-face-native.mjs",
+      "sha256": "34bedd6a8a23e46c488bc1846fbda273e96f9e34b219b96da14301eb8decce84"
+    },
+    {
+      "path": "scripts/diagnose-am3352-ddr42-command-escapes.mjs",
+      "sha256": "df70ffd605979593ccac8ec8744eb99ec0b110c06168076d4ccce57c3b575038"
+    },
+    {
+      "path": "scripts/route-am3352-command-escape-priority-carriers.mjs",
+      "sha256": "e298dd28d2e56d87d2ce17d97e7315b460af54efcd547a0efcf9136a0ceb6345"
+    },
+    {
+      "path": "scripts/lib/am3352-command-terminal-bridge.mjs",
+      "sha256": "90586e8ad457f3c3315aa4f9ef83825d3e0b98a3dab7db5634e3390556925c71"
+    },
+    {
+      "path": "scripts/summarize-am3352-advanced-command-replay.mjs",
+      "sha256": "3cdd3b94bd6039dc06394aa4deb4eba8310c49e575c1a1bd441c81ca808b253e"
+    }
+  ],
+  "typecheck": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-typecheck-status.json",
+    "sha256": "dfc2daeba061ebffb48a21fccf15afe10e010ca8f4a65e6130bc4a0a24c9da7a"
+  },
+  "fabricationGuard": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-fabrication-guard.json",
+    "sha256": "06148885efe2eb1b16f9f5a754add1c17b6566b24370ca32ab37b7e9559022f8"
+  },
+  "activeSolverHandles": [],
+  "solverHandleScope": "Bound trials 777–788 are terminal. Forward planning trial 790 is tracked separately.",
+  "bootstrapOnly": true,
+  "defaultChanged": false,
+  "fullDdrRouting": false,
+  "fullElectricalTimingQualified": false,
+  "fullHostRouting": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "githubPushed": false,
+  "tscircuitPushed": false,
+  "nextAction": "Open the five identified unqualified command carriers and coordinate all remaining package exits; use native bus_lanes on compatible exits and manual repairs where required. Restore all 49 channels, nominal matching and class spacing, then complete host and measured original-shell integration."
+}

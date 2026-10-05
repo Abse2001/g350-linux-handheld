@@ -1,0 +1,147 @@
+{
+  "status": "LATEST_TOOLCHAIN_PHASE_EXERCISED_DDR42_RETAINED_FORWARD_TRIALS_TERMINAL",
+  "checkpoint": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-check-summary.json",
+    "sha256": "01ec644e540157ca5dc34949f5c0da11d1790807cf64a96c8abfda0b349fcad4"
+  },
+  "registryVerification": {
+    "path": "checks/integrated/am3352-command-fine-782-replay-latest-registry-verification.json",
+    "sha256": "de5e5dda4899b777fcb275a22f985113d3d15dc5c4b74db9a3fc5aebb67677f2"
+  },
+  "forwardPlanningStage": {
+    "source": {
+      "path": "dist/diagnostics/am3352-command-open-corridors-789-replay-candidate/circuit.json",
+      "sha256": "98eafba3ff11e2913c6d449041af35b52d871b4c3574fe71764a1b9754ef4df2"
+    },
+    "sourceAudit": {
+      "path": "checks/integrated/am3352-command-open-corridors-789-replay-source-validation.json",
+      "sha256": "44b69ea3267c86cc94dad2f0ef0be8056e93dced25748bdb0c5dac4e787557a0"
+    },
+    "nativeInputAudit": {
+      "path": "checks/integrated/am3352-command-open-corridors-789-replay-native-phase-input-validation.json",
+      "sha256": "c82fbeb1a9513d33d2e1ff45daa0da90273460929984ad1d5f2203893e2320ec"
+    },
+    "temporaryConnectedSignalGuides": 37,
+    "openedUnqualifiedCommandSignals": [
+      "DDR_A7",
+      "DDR_BA0",
+      "DDR_CASn",
+      "DDR_A4",
+      "DDR_ODT"
+    ],
+    "full49SignalGoalRetained": true
+  },
+  "trials": [
+    {
+      "result": {
+        "path": "dist/am3352-command-ddr42-escape-priority-carriers-attempt-790/result.json",
+        "sha256": "1ab95d618a579a7dc295a23a5b7ead20cc5e2dc1f2ac58867fff1e7583d8576e"
+      },
+      "status": "PARTIAL_COMMAND_MANUAL_CARRIERS_PLANNED_REPLAY_AND_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-open-corridors-789-native-phase-attempt-791/result.json",
+        "sha256": "ad86a9c353f93831420051ef94423aa9317e028932e859a804cb6032af5de510"
+      },
+      "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-open-corridors-remaining-fanouts-attempt-792/result.json",
+        "sha256": "dfffc66df86f3086f43b8597cafeb07a5f1d68b59987ce67602b660fc9e495f0"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-open-corridors-expanded-fanouts-attempt-793/result.json",
+        "sha256": "38f8f3e960af3c0b2d5f9a818f1109fcd7861bab064005ccbd0ca27f4dfaef1f"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "qualifiedNewDdrSignals": 0
+    }
+  ],
+  "latestNativePhaseFailure": "bus_lanes routing timeout; no complete new output",
+  "latestNativePhaseElapsedMs": 65895,
+  "latestNativePhaseBuildWallSeconds": 76.64967175000001,
+  "individuallyLegalPackageEndpoints": 24,
+  "simultaneousPackageFanoutAssignment": false,
+  "remainingPackageConflict": "DDR_BA0:ram/DDR_A3:ram",
+  "connectedDdrSignals": 42,
+  "openDdrSignals": 7,
+  "nominalRepairs": 17,
+  "spacingRepairs": 7,
+  "gerberShortsAllLayers": 0,
+  "reportedPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "reportedAndCappedHostOpens": 499,
+  "ignoredChecks": [
+    "footprint_filters_mismatch",
+    "footprint_type_mismatch",
+    "missing_courtyard",
+    "track_not_centered_on_via",
+    "tuning_profile_track_geometries"
+  ],
+  "typecheck": {
+    "path": "checks/integrated/am3352-command-open-corridors-789-replay-typecheck-status.json",
+    "sha256": "d772a0de77c4c6a6a3c6c50a8393f595ab68f81d075797fdc7163eb309dec02a"
+  },
+  "fabricationGuard": {
+    "exitCode": 1,
+    "log": {
+      "path": "checks/integrated/am3352-command-fine-782-replay-latest-fabrication-guard.log",
+      "sha256": "69cb4caf57d2b1ca7a6deb2d440845f46df62adc78fc0630a15e1049b6c4f248"
+    },
+    "previousFileManifest": {
+      "path": "checks/integrated/tscircuit-update-2744/fabrication-guard.json",
+      "sha256": "8d76b494c18ffbe8a46e966331c90a8ffdfda9cb1b0f8dcf70d760424d68d6cb"
+    },
+    "historicalFilesUnchanged": 205,
+    "noOrderingFilesAdded": true
+  },
+  "verifiedBindings": 524,
+  "activeSolverHandles": [],
+  "head": "b29d0bb94c963bf6c15bfa3a553768668c26369f",
+  "defaultSourceUnchanged": true,
+  "fullDdrRouting": false,
+  "fullElectricalTimingQualified": false,
+  "fullHostRouting": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "githubPushed": false,
+  "tscircuitPushed": false,
+  "executionHelper": {
+    "path": "scripts/finalize-am3352-ddr42-latest-phase-status.mjs",
+    "sha256": "fcc18d25b433a8844994916ae78e2e1ff27e215ce29e49844603eb3989461fba"
+  },
+  "overwrittenPlanningHistory": [
+    {
+      "path": "dist/am3352-command-ddr42-escape-priority-carriers-attempt-790/ddr_a12.route.json",
+      "supersededAttemptSha256": "d3c1c3190c9032f0ce499a0e1d54e2ab6140597a31e3d8b831b924592951106b",
+      "terminalFileSha256": "2f7eb9072a215e6a69d2bec0ae8f786a1aaebfcabc7a043814d712ef2bc8ba42",
+      "qualifiedCopperEvidence": false
+    },
+    {
+      "path": "dist/am3352-command-ddr42-escape-priority-carriers-attempt-790/ddr_a11.route.json",
+      "supersededAttemptSha256": "cbc98c1470b17451d8714400782c363b5793c2b8fe3a381ba04e4b74029265f5",
+      "terminalFileSha256": "5048ff3a5eb278bf015ca32f6bff9aa093167b1e3546d1a49ae15af61751c8d4",
+      "qualifiedCopperEvidence": false
+    },
+    {
+      "path": "dist/am3352-command-ddr42-escape-priority-carriers-attempt-790/ddr_casn.route.json",
+      "supersededAttemptSha256": "c577c46ea6b2240da20dbccc9b858ac297baac18161f84c452e4f6f61ae33dd6",
+      "terminalFileSha256": "520860875c9c38d1af1d742fc26027f0dbe02a7072503c8317880e6710190113",
+      "qualifiedCopperEvidence": false
+    },
+    {
+      "path": "dist/am3352-command-ddr42-escape-priority-carriers-attempt-790/ddr_odt.route.json",
+      "supersededAttemptSha256": "7871cc898379f982d4c45d1c2b5bdacc75dfcd1f5a9e20defc650f556d88230c",
+      "terminalFileSha256": "93e80d826acf3338bc185c171e6954cb9b26938673dc9c3a03b739e89d428f51",
+      "qualifiedCopperEvidence": false
+    }
+  ]
+}

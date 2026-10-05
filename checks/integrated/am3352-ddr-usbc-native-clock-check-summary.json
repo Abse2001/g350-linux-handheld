@@ -1,0 +1,195 @@
+{
+  "status": "NATIVE_DDR_CLOCK_PAIR_AND_PRESERVED_USBC_COPPER_CHECKED_TWO_STROBES_OPEN",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-native-clock-candidate/circuit.json",
+    "sha256": "8fd18065e5761b51b1ae10e9ff0bb5c08513f23ae06880642be76c50a78bba5c"
+  },
+  "board": {
+    "path": "dist/am3352-ddr-usbc-native-clock-diagnostic/board.kicad_pcb",
+    "sha256": "92c6cb9dab9dc8ac1c03204ed52a0a4e3646c335efa5555c2e79f991ba12f61d"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-command-access-clock-paths.json",
+    "sha256": "b4e8a4377f6750728f9e87fec805d2818537eb2cb792b3d19005d46389ec2965"
+  },
+  "nativeRun": {
+    "path": "dist/am3352-ddr-usbc-clock-both-open-attempt-412/result.json",
+    "sha256": "6ceeac1270d08934942a0402191c3561cd926f2484b051abf487b21b5eb72339"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-source-validation.json",
+    "sha256": "cb8a35ee50e5c1facf0cd883e855663fd85d9029930cee1f2da9197443ac3da0"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-native-ddr-connectivity.json",
+    "sha256": "063b99543692738534788335c0ff73093df1ba667324aa46fcfcd066e33532fd"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-ddr-connectivity.json",
+    "sha256": "c4641d9b8599baa9a12856322352fd571610653808b2aba4bbf15054b717f5ae"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-native-usb-connectivity.json",
+    "sha256": "cd8af1a4f04492cc1d6555bbd3851ecf822c426a9584523f783d15d5b462782c"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-reference-connectivity.json",
+    "sha256": "cd9636f57ce697a06cdd54720f08d2deea1b04f6b9d6eb947a8920035a14f509"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-kicad-drc.json",
+    "sha256": "b513a894c7a3d252c8fb9b82a30020a0383541b31c851041d101c7a994756f9f"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "fabricationGuard": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-fabrication-guard.log",
+    "sha256": "02d0feab1f35f2cd0e0997385d54d0d8fec67f4832020cc3b032f1e8692390a1"
+  },
+  "latestProjectCliEquivalence": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-project-cli-equivalence.json",
+    "sha256": "18423bc5d3d6d8af430eda5073762906cac19b5a1d00a8af1a8e3516e0dfbfdd"
+  },
+  "cliPackageVersion": "0.1.2237",
+  "tscircuitVersion": "0.0.2742",
+  "originalCheckedDefault": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-control-candidate/circuit.json",
+    "sha256": "d4148ead1f242d69336d335d4b067b1f1c5cb6c3e23fa0534f308cc0068ad9c1"
+  },
+  "openedSignals": [
+    "DDR_DQS1",
+    "DDR_DQSn1"
+  ],
+  "retainedOriginalDdrSignals": 21,
+  "addedClockSignals": 2,
+  "connectedDdrSignals": 23,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignalNames": [
+    "DDR_A0",
+    "DDR_A1",
+    "DDR_A10",
+    "DDR_A11",
+    "DDR_A12",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_A2",
+    "DDR_A3",
+    "DDR_A4",
+    "DDR_A5",
+    "DDR_A6",
+    "DDR_A7",
+    "DDR_A8",
+    "DDR_A9",
+    "DDR_BA0",
+    "DDR_BA1",
+    "DDR_BA2",
+    "DDR_CASn",
+    "DDR_CKE",
+    "DDR_CSn0",
+    "DDR_DQS1",
+    "DDR_DQSn1",
+    "DDR_ODT",
+    "DDR_RASn",
+    "DDR_WEn"
+  ],
+  "components": 212,
+  "copperLayers": 4,
+  "actualPads": 912,
+  "tracePieces": 125,
+  "throughVias": 129,
+  "nativeClockEscapes": 4,
+  "clockLengths": [
+    {
+      "name": "DDR_CK",
+      "planarMm": 34.49909962830806,
+      "throughVias": 2
+    },
+    {
+      "name": "DDR_CKn",
+      "planarMm": 34.42248328065238,
+      "throughVias": 2
+    }
+  ],
+  "clockPlanarSkewMm": 0.07661634765567982,
+  "clockPlanarLimitMm": 0.127,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "planarTimingVerified": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000003934717,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 0.07661634765567982,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "bothCableOrientationsDataConnected": true,
+  "chargingAndDataShareOneSocket": true,
+  "usbNumericPadNetAssignmentsVerified": 38,
+  "usbConnectedPadChecks": 40,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItemsReported": 499,
+  "ignoredNativeChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "physicalLibraryRecordsPreserved": 13310,
+  "nativeBusLanesBootstrap": true,
+  "topSnapshot": {
+    "path": "images/am3352-ddr-usbc-native-clock-top.png",
+    "sha256": "98b8a704d0e2c02e404f932f5f9bd2cd31a7c90270b66a3dd14660bdb2e5d9f8",
+    "visuallyInspected": true
+  },
+  "bottomSnapshot": {
+    "path": "images/am3352-ddr-usbc-native-clock-bottom.png",
+    "sha256": "7dc1b766b6cf138e4d503f28c968cfb9bf7c597bbc9eff784a8e70b70ac9681d",
+    "visuallyInspected": true
+  },
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "wholeByte1PlanarTimingPass": false,
+  "controlledImpedanceQualified": false,
+  "completePowerRouting": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "Separate clock-access diagnostic; both byte1 strobes were opened before native routing. The 23 channels include the clock pair and do not add to the default 23. Restore both strobes and pass whole-byte matching before promotion; address/control, full host, stackup and measured original-shell geometry remain incomplete."
+}

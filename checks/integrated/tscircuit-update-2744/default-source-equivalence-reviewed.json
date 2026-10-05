@@ -1,0 +1,39 @@
+{
+  "status": "ACTIVE_DDR30_CHECKED_SOURCE_EQUIVALENCE_PASS",
+  "active": {
+    "path": "dist/index/circuit.json",
+    "sha256": "59d052cdaff6c778fa313c3f9c3403dbbd06e391d54d46f58de7f70a2db26582"
+  },
+  "checked": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-wen-nominal-candidate/circuit.json",
+    "sha256": "ac758f1c2e20b4d4132f5240797418d90d04a209bd713e956b8141a4392a8f1b"
+  },
+  "checkedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-wen-nominal-check-summary.json",
+    "sha256": "75acef5197ef4e1deb2a64fb867d55b294d844d5a0aaa04512924d63dae207f8"
+  },
+  "equalNonMetadataRecords": 7975,
+  "upgradeEquivalence": {
+    "equalElectricalAndPhysicalRecords": 7957,
+    "voltageRepresentationChanges": [
+      {
+        "portId": "source_port_1038",
+        "from": "5V",
+        "to": 5
+      },
+      {
+        "portId": "source_port_1039",
+        "from": "5V",
+        "to": 5
+      }
+    ],
+    "newBareTestpointWarnings": 18,
+    "allPcbRecordsExact": true,
+    "allNetConnectivityExact": true
+  },
+  "connectedDdrSignals": 30,
+  "remainingDdrSignals": 19,
+  "copperLayers": 4,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

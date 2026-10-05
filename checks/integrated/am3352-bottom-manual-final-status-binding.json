@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "head": "b29d0bb94c963bf6c15bfa3a553768668c26369f",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "8be4dd1b2e8af0a7bee3205bb5415102ba2191548a2a708d5621e97be32b0a26"
+    },
+    {
+      "path": "docs/AM3352_DDR_ROUTING.md",
+      "sha256": "dab42ccb90d15e5900f40cae83e219a298f7a9659485bcec092eda070b536901"
+    },
+    {
+      "path": "docs/INTEGRATED_HOST.md",
+      "sha256": "3d4b37b169b9d9adc1a55bd6243597b2e98c8c8ece1901ea50ebe8309e51df99"
+    },
+    {
+      "path": "docs/G350_SHELL_FIT.md",
+      "sha256": "f66619a29f09377cd1118256a85455eb528cbab4f77580913ff9007ccef7d2fd"
+    },
+    {
+      "path": "design-status.json",
+      "sha256": "eb59980089756bca69c665a9e8f692104f92283cb692330c0471e129ed81cfaf"
+    },
+    {
+      "path": "package.json",
+      "sha256": "4cd14d200b86d50c41eb8ab7269c7a51202e462c059da0962a8e185a2f5ead0a"
+    },
+    {
+      "path": "experiments/am3352-powered-host.circuit.tsx",
+      "sha256": "04fbd787ff87d6b56d80eee4b8ccd74a64b6daaf67d4f730bcfc36c04be347cf"
+    },
+    {
+      "path": "lib/am3352/FourLayerDdrConstraints.tsx",
+      "sha256": "024b0b71b126efe6cd57a35a1eaa3bd0a79fe7c6dabf713b40c1350548ba640f"
+    },
+    {
+      "path": "experiments/am3352-ram-bottom-flexible-fanout-747-replay.circuit.tsx",
+      "sha256": "d5dd3d65939626708ff343104aaa881ea55d57ca00e44514ee956709b3c4f64a"
+    },
+    {
+      "path": "checks/integrated/am3352-bottom-manual-trial-status.json",
+      "sha256": "71b1db26e6cbe492a65efe2b01750a416e46f258c55d88f858fefd25be251bae"
+    },
+    {
+      "path": "checks/integrated/am3352-bottom-manual-fabrication-guard.json",
+      "sha256": "d5354e2de78b8fdf720e1cb0c035982683989444e936c3109b45b4e1ef63d170"
+    },
+    {
+      "path": "checks/integrated/am3352-bottom-manual-helper-syntax.json",
+      "sha256": "e5deb73b3272b34926cea764a9762eb0498f0500a0b1619ebc10268c75126fdf"
+    },
+    {
+      "path": "checks/integrated/am3352-bottom-manual-final-typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-bottom-native19-manual7-replay-check-summary.json",
+      "sha256": "5f8e610f5af0bf84f6d6409073e84b48aedb1c3e621acb7f3f93ed373d19a549"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-check-summary.json",
+      "sha256": "1b39fd5fe2ebda5951ac5c69620f662f33a4fffd773696970db2ad7423bbe190"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-spacing-and-nominal-review.json",
+      "sha256": "440eb7553a7a4b256fcbcb6d1a70e8eb96cc7d0e1ecc54370270b2c4cfc5b224"
+    },
+    {
+      "path": "checks/integrated/am3352-bottom-terminal-via-guard-regression.json",
+      "sha256": "e4258e9966962232c542f8c7bcab21819d6c0f81ad2eed0670c9c6906a59e6f8"
+    },
+    {
+      "path": "dist/diagnostics/am3352-ddr30-active-bottom-manual-replay-checked/circuit.json",
+      "sha256": "03161a9238d4b29daeb59bd5b13deebd6940cd077c28be7b7470970cc4f06c7d"
+    }
+  ],
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bottom-flexible-fanout-747-replay-candidate/circuit.json",
+    "sha256": "aff5fb56cccf7eb917474972fd5e608748ec9d077601ef0d556d7a7a6e75432c"
+  },
+  "board": {
+    "path": "dist/am3352-ram-bottom-flexible-fanout-747-replay-diagnostic/board.kicad_pcb",
+    "sha256": "8f6c6e98c6bc7155cd3616f813462aab580b8c66febee2248a9da96971719c72"
+  },
+  "terminalTrials": 38,
+  "terminalContinuations": 3,
+  "activeSolverHandles": [],
+  "bottomRamCheckedConnectedDdrSignals": 28,
+  "bottomRamMissingDdrSignals": 21,
+  "defaultConnectedDdrSignals": 30,
+  "priorDdr33CheckpointIndependent": true,
+  "defaultNonMetadataRecordsEqual": 7957,
+  "shortsAllLayers": 0,
+  "physicalViolations": 0,
+  "completeDdrTiming": false,
+  "completeHost": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "all205HistoricalFabricationFilesUnchanged": true,
+  "noPushOrOrderMade": true
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "status": "UNROUTED_CRITICAL_PLACEMENT_VARIANT",
+  "fabricationReady": false,
+  "entry": "experiments/am3352-g350-critical-placement.circuit.tsx",
+  "inheritedEngineeringNotes": "checks/layout/harness-variant/engineering-notes.json",
+  "inheritedPlacement": "checks/layout/harness-variant/g350-harness-placement-check-summary.json",
+  "changes": {
+    "cpuBypassParts": 59,
+    "smallBypassAndInternalLdoOutputCapacitors": 48,
+    "bulkBypassCapacitors": 11,
+    "method": "Exact minimum-cost assignment to disjoint courtyard slots by independently mapped CPU supply function. Apply the explicit coordinates in editable tscircuit source.",
+    "sourceTable": "lib/am3352/placement/cpu-bypass-placements.json",
+    "planner": "scripts/plan-g350-cpu-bypass-placement.mjs",
+    "smallPartCourtyardsStayAboveYmm": 19.3,
+    "ddrComponentsAndAllOtherPhysicalPartsUnchanged": true
+  },
+  "constraints": {
+    "primaryReference": "reference/am3352/am3352.pdf",
+    "revision": "SPRS717L, March 2020",
+    "sections": [
+      "5.9 external capacitors",
+      "7.7.2.3.3.7 DDR3 high-speed bypass"
+    ],
+    "qualitativeRequirements": [
+      "CPU bypass capacitors close to the corresponding supply terminal, with short low-inductance returns",
+      "SRAM supply bulk capacitors near the input terminals with wide connections",
+      "Internal LDO capacitors close to their own terminals, without external loads"
+    ],
+    "actualDdrDistanceLimitsMm": {
+      "cpuToNearestSupplyAndGround": 10.16,
+      "ramToNearestSupplyAndGround": 3.81
+    },
+    "generalSearchLimitsAreEngineeringChoices": true,
+    "measurementScope": "Package-center to supply-ball geometric distance. It is a lower bound on a routed connection and does not prove loop inductance, impedance, capacitance or transient performance."
+  },
+  "remaining": [
+    "Critical PMIC/boost/regulator and feedback placement/copper review",
+    "LCD source resistors and other circuitry in the DDR routing region",
+    "Complete routed bypass loops, dedicated vias, reference planes and effective capacitance",
+    "Measured original shell fit and all inherited power, panel, Linux and manufacturing qualification gates"
+  ],
+  "routingPermitted": false,
+  "publication": "Local only; no push.",
+  "proximityTradeoff": {
+    "partsWithShorterGeometricDistance": 49,
+    "partsWithLongerGeometricDistance": 10,
+    "meanDistanceBeforeMm": 9.370626743779273,
+    "meanDistanceAfterMm": 4.664967736054339,
+    "note": "Exact courtyard spacing improves the group overall while ten individual distances increase. SRAM internal-output capacitors move from 1.52/1.81 mm to 2.26/2.78 mm. The current distances do not qualify the actual copper loops; those four outputs need explicit short, wide routing and local return review."
+  }
+}

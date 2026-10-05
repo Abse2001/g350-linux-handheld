@@ -1,0 +1,240 @@
+{
+  "status": "LATEST_TSCIRCUIT_INSTALLED_NATIVE_DDR_PHASES_TESTED_NO_NEW_QUALIFIED_CHANNEL",
+  "verifiedAt": "2026-10-04T12:07:32.962Z",
+  "registryVerification": {
+    "path": "checks/integrated/tscircuit-update-2744/registry-verification.json",
+    "sha256": "69fc786b5d45d534f18c976985f725bcf9733cb10b8d8516cc8255f63a8bfb5a"
+  },
+  "versions": {
+    "tscircuit": "0.0.2744",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2080",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "circuit-json": "0.0.515",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "latestRegistryVersions": {
+    "tscircuit": "0.0.2744",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2080",
+    "@tscircuit/capacity-autorouter": "0.0.958"
+  },
+  "sameCoreExports": true,
+  "bothLockfilesAgree": true,
+  "packages": [
+    {
+      "path": "package.json",
+      "sha256": "3153f82eaa0593ab37349d65aef7ad98bbc4139b61c6abf20d277b458a2dab85"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f15cd713fa2268980d69855d8aa50dad251e129c24501e754a67269562416c71"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "04d4da6bc7e052eddeb05f46232a6fc7d29cf4245134517562236fc43dfb4149"
+    }
+  ],
+  "nativeCoreBundle": {
+    "path": "node_modules/@tscircuit/core/dist/index.js",
+    "sha256": "5204eace20ec35f0b9aca2beec27ab303d59fd4244c020867d2cb39ae54ee6d4"
+  },
+  "defaultBuild": {
+    "path": "checks/integrated/tscircuit-update-2744/default-build-release.log",
+    "sha256": "f49d292b2b1970f4f7813d0505fefa5d00c0905904c2a837951719844ec1bcbf"
+  },
+  "defaultSource": {
+    "path": "dist/diagnostics/am3352-tscircuit-2744-core2080-release-default/circuit.json",
+    "sha256": "6bfa9900d405e4b2bb9aa7ed8d6c68ff6df07d9727aa10bcd3462c7a77707641"
+  },
+  "defaultEquivalence": {
+    "path": "checks/integrated/tscircuit-update-2744/default-source-equivalence-release.json",
+    "sha256": "4765fe4fb3806db5b76dfe13eb84a75fcea5467250eeeac65afb48a98fc0323d"
+  },
+  "defaultGerberShorts": {
+    "path": "checks/integrated/tscircuit-update-2744/default-shorts-release.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "defaultGerberShortsAllLayers": 0,
+  "typecheck": {
+    "path": "checks/integrated/tscircuit-update-2744/typecheck-release.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "migrationRegression": {
+    "path": "checks/integrated/tscircuit-update-2744/schema-migration-regression.json",
+    "sha256": "4693c19ecf249790100d149b2e95c6090f9fee9905f067b4321e0ed4bcebbf1e"
+  },
+  "phaseSourceAudit": {
+    "path": "checks/integrated/tscircuit-update-2744/phase-754-source-preservation.json",
+    "sha256": "4c3d0c8af52b6584f1eec5f991945a321acad0d4e9da55860a6c6c56ce5cd548"
+  },
+  "unchangedCheckedCandidates": [
+    {
+      "summary": {
+        "path": "checks/integrated/am3352-ddr-usbc-wen-nominal-check-summary.json",
+        "sha256": "75acef5197ef4e1deb2a64fb867d55b294d844d5a0aaa04512924d63dae207f8"
+      },
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-wen-nominal-candidate/circuit.json",
+        "sha256": "ac758f1c2e20b4d4132f5240797418d90d04a209bd713e956b8141a4392a8f1b"
+      },
+      "board": {
+        "path": "dist/am3352-ddr-usbc-wen-nominal-diagnostic/board.kicad_pcb",
+        "sha256": "0dca08d567b698b05049c70169d27a4957d0824750f3a308e52fa3fdf4e4d9a9"
+      },
+      "signals": 30,
+      "separateCandidate": true
+    },
+    {
+      "summary": {
+        "path": "checks/integrated/am3352-ddr-usbc-d12-spacing-repaired-check-summary.json",
+        "sha256": "08dbd575d14495cb6c1e0c4e85617dcc9d2d3e7cb8d2702c3c3fc28eb6053c00"
+      },
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-d12-spacing-repaired-candidate/circuit.json",
+        "sha256": "44da06639cf3249c5ff4821e02056e0bb989238213edb2111eca08b7cd988a17"
+      },
+      "board": {
+        "path": "dist/am3352-ddr-usbc-d12-spacing-repaired-diagnostic/board.kicad_pcb",
+        "sha256": "10ea2c4ee2eda7e0d6e6b8ed733865db3a560874ba5722046079cd01cbaeb517"
+      },
+      "signals": 33,
+      "separateCandidate": true
+    },
+    {
+      "summary": {
+        "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-check-summary.json",
+        "sha256": "1b39fd5fe2ebda5951ac5c69620f662f33a4fffd773696970db2ad7423bbe190"
+      },
+      "source": {
+        "path": "dist/diagnostics/am3352-ram-bottom-flexible-fanout-747-replay-candidate/circuit.json",
+        "sha256": "aff5fb56cccf7eb917474972fd5e608748ec9d077601ef0d556d7a7a6e75432c"
+      },
+      "board": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-747-replay-diagnostic/board.kicad_pcb",
+        "sha256": "8f6c6e98c6bc7155cd3616f813462aab580b8c66febee2248a9da96971719c72"
+      },
+      "signals": 28,
+      "separateCandidate": true
+    }
+  ],
+  "directTrials": [
+    {
+      "result": {
+        "path": "dist/am3352-latest-bus-lanes-bottom-matching-attempt-748/result.json",
+        "sha256": "7c7c818013d3c57d933f5d92c4a033a0c847b2fb3f310eb19f02e8786489c586"
+      },
+      "core": "0.0.2080",
+      "status": "BOTTOM_RAM_NATIVE_DDR_TIMEOUT",
+      "seconds": 60.077758875,
+      "mode": "matching",
+      "input": {
+        "path": "dist/am3352-latest-bus-lanes-bottom-matching-attempt-748/input.simple-route.json",
+        "sha256": "edf40e3102783edada25aa33f65d24917b8f69809884b1110961d1f3c6a71a7c"
+      },
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-latest-bus-lanes-bottom-matching-attempt-751/result.json",
+        "sha256": "7217991ee53bebe2a2311f0992eb7ea70e4712bc13deae71cc133d10126ded81"
+      },
+      "core": "0.0.2080",
+      "status": "BOTTOM_RAM_NATIVE_DDR_TIMEOUT",
+      "seconds": 180.011238917,
+      "mode": "matching",
+      "input": {
+        "path": "dist/am3352-latest-bus-lanes-bottom-matching-attempt-751/input.simple-route.json",
+        "sha256": "edf40e3102783edada25aa33f65d24917b8f69809884b1110961d1f3c6a71a7c"
+      },
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-latest-bus-lanes-bottom-bootstrap-attempt-753/result.json",
+        "sha256": "14f9ec39b74a793f2c96e6a52b0ded5e3810d4b140ea30c1c688b98d944d5830"
+      },
+      "core": "0.0.2080",
+      "status": "BOTTOM_RAM_NATIVE_DDR_TIMEOUT",
+      "seconds": 180.010926083,
+      "mode": "bootstrap",
+      "input": {
+        "path": "dist/am3352-latest-bus-lanes-bottom-bootstrap-attempt-753/input.simple-route.json",
+        "sha256": "ce5abb50cd8fea53c2426dc28437907ab05ff2b454d0612f831bd9c04f0aa702"
+      },
+      "qualifiedNewDdrSignals": 0
+    }
+  ],
+  "sameInputBaseline": {
+    "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-attempt-707/result.json",
+    "sha256": "05e50d49082247b5a7e499be98bdc826a30a799fd63727494db20f5691dcb2ac"
+  },
+  "nativePhase750": {
+    "error": {
+      "path": "dist/am3352-latest-bus-lanes-native-phases-attempt-750/phase-1.error.json",
+      "sha256": "203c9386ffba9e8c8b83b4bc17fb3f8190c57e9c102b531741dd892526b30d89"
+    },
+    "cliExitCode": 1,
+    "qualifiedNewDdrSignals": 0
+  },
+  "nativePhase752": {
+    "result": {
+      "path": "dist/am3352-latest-bus-lanes-ddr33-continuation-attempt-752/result.json",
+      "sha256": "a5bc9f9ff12a04caa9bd4d3683c45b01886b205b550062364beddb9122e61803"
+    },
+    "status": "PRE_PHASE_SRJ_IMPORT_ERROR_FOR_ALREADY_ROUTED_PAIRS",
+    "qualifiedNewDdrSignals": 0
+  },
+  "nativePhase754": {
+    "result": {
+      "path": "dist/am3352-latest-bus-lanes-ddr33-fixed-pairs-attempt-754/result.json",
+      "sha256": "a6426fdfbf208d50de6880ae481878a3decc969db7e2b90201916d976ac5e5b0"
+    },
+    "error": {
+      "path": "dist/am3352-latest-bus-lanes-ddr33-fixed-pairs-attempt-754/phase-3.error.json",
+      "sha256": "e1ec4bb54883f8df81ceec9fc52aaa4032403f070bc436f13ab5eaeb3146c30c"
+    },
+    "signalsSelected": 16,
+    "existingTracePiecesPreserved": 135,
+    "fullyGuidedPairDefinitionsOmittedForDiagnosticOnly": true,
+    "restoreAllPairDefinitionsBeforeReplayChecks": true,
+    "qualifiedNewDdrSignals": 0
+  },
+  "helpers": [
+    {
+      "path": "scripts/check-am3352-ddr-active-source.mjs",
+      "sha256": "d0540305883f4607e9b44ec6ad6a5996c00822497824b07aeaed78b6c39a59ef"
+    },
+    {
+      "path": "scripts/lib/am3352-upgrade-source-equivalence.mjs",
+      "sha256": "370b89c93f16586410b3665123a45fb33de22ba38b2e5fdc55401de6980f961d"
+    },
+    {
+      "path": "scripts/run-am3352-latest-ddr-phase.mjs",
+      "sha256": "c881de48c25ae0b1b59bc61e743318aaba8d08567546f09a38e8f3a6f1f180c4"
+    },
+    {
+      "path": "scripts/check-am3352-latest-phase-source.mjs",
+      "sha256": "11726e770d9302e53d6892f3b3178c290cc48dab067e4d4be9b46219c93781af"
+    },
+    {
+      "path": "scripts/summarize-am3352-latest-tscircuit-update.mjs",
+      "sha256": "d582c592a6adcd6247fc4a96dcd184f7bf0bcbc77c60a6f2d101858229167723"
+    }
+  ],
+  "fabricationGuard": {
+    "path": "checks/integrated/tscircuit-update-2744/fabrication-guard.json",
+    "sha256": "8d76b494c18ffbe8a46e966331c90a8ffdfda9cb1b0f8dcf70d760424d68d6cb"
+  },
+  "activeSolverHandles": [],
+  "qualifiedNewDdrSignals": 0,
+  "defaultCopperChanged": false,
+  "fullDdrRouting": false,
+  "fullDdrElectricalQualification": false,
+  "fullHostRouting": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "githubPushed": false,
+  "tscircuitPushed": false
+}

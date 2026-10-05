@@ -1,0 +1,125 @@
+{
+  "status": "FIXED_BYTE0_AND_74_REMAINING_NATIVE_TERMINALS_PHYSICALLY_CHECKED_TIMING_AND_CHANNELS_INCOMPLETE",
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-early-power-bridge-replay/circuit.json",
+    "sha256": "75a2b6990f74f12c60b8b58e55049b3201a43d3936e1206f5aa94a4201e8b15a",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-byte0-early-power-bridge-replay/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-diagnostic/circuit.json",
+    "sha256": "1c346099fa9651fdd96b9d0438675baa06024ac6181c830fab1d99a2333f877f"
+  },
+  "board": {
+    "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-diagnostic/board.kicad_pcb",
+    "sha256": "ed10e711fa3db65c17daa398f2af60d2459595c2fa74ff445912e3e534fdcedc"
+  },
+  "savedByte0": {
+    "path": "routing/am3352-ram-rotated-180-byte0-early-pair-paths.json",
+    "sha256": "f754d9f93752a872a12d4e8defb64d86d520c0bd5b64d4696ede457d8aad00ac",
+    "signals": 11
+  },
+  "nativeTerminals": {
+    "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-attempt-344/signal-escapes.native.json",
+    "sha256": "b9a8edee8cf0b2cad2db8f5eafd62a279961d974d0fce82d507b00e1ecc99439"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "components": 204,
+  "actualPads": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "fixedEndToEndByte0Channels": 11,
+  "newEndToEndChannelsFromReservations": 0,
+  "requiredDdrChannels": 49,
+  "openDdrChannels": 38,
+  "cpuRemainingSynchronousTerminalsConnected": 37,
+  "ramRemainingSynchronousTerminalsConnected": 37,
+  "sourcePowerTracePieces": 70,
+  "sourcePowerVias": 69,
+  "savedByte0Vias": 28,
+  "addedReservedSignalVias": 63,
+  "totalThroughVias": 160,
+  "totalTracePieces": 155,
+  "minimumHoleEdgeClearanceMm": 0.3059999999999996,
+  "explicitInnerPowerBridge": {
+    "ball": "D2",
+    "connectedNativeSegments": 3,
+    "newHoles": 0
+  },
+  "byte0PlanarSkewMm": 15.486045128616059,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarMatchPass": false,
+  "dqs0PlanarSkewMm": 0,
+  "dqs0PlanarSkewLimitMm": 0.127,
+  "dqs0PlanarMatchPass": true,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolationsAllSeverities": 0,
+  "unfinishedViaWarnings": 63,
+  "unfinishedTrackWarnings": 11,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "exactFootprintsPreserved": 273,
+  "physicalLibraryRecordsPreserved": 2466,
+  "evidence": [
+    {
+      "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-diagnostic/export.json",
+      "sha256": "8ca4f74c1af5ca5faeaa8b4228420d14c1f88b02f5b59b0841b2fffdb4b17fca"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-native-terminals.json",
+      "sha256": "12c3e005d4c101135a96d9b46962cfe1dcbeadf7f7818e039451e581fac9f6fd"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-native-ddr-connectivity.json",
+      "sha256": "5efd58acf125782fa6b7b0b9abcc4a78dafce39aab4c1648226a163458e9ecfa"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-ddr-connectivity.json",
+      "sha256": "fffeeae30d4f14c0fdc87f66ce6990825cda14b424e3eb77257687f5ba2d23bb"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-reference-connectivity.json",
+      "sha256": "fc7d9097f5b733a9f06f5c7600568d12557b1cc71bd7b5f4e0072cdb3048ce1e"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-kicad-drc.json",
+      "sha256": "614d20d292440aa4d11af8c3189654e56e9967d37b21e359b2b327fc06409fbf"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte0-fixed-reused-reservations-library.log",
+      "sha256": "af22ff5fb8f5094bf52d2788c4ee64fc80bd2e4fd4347b59e4e163ac6bc1c248"
+    }
+  ],
+  "snapshot": {
+    "path": "images/am3352-ram-rotated-180-byte0-fixed-reused-reservations-top.png",
+    "sha256": "4596d34083de109aac525a11cefb009a30fd9f2e7f3f2b5e85b7fb32f9db230b"
+  },
+  "activeDefaultChanged": false,
+  "combinedWithSeparateByte1Candidate": false,
+  "fullPhysicalDrcPass": false,
+  "timingQualified": false,
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "scope": "One diagnostic preserves eleven fixed byte0 channels while checking all 74 remaining byte1/command pad-to-terminal reservations. The reservations have dangling copper and add no end-to-end channels. Byte0 whole-byte skew fails; 38 DDR signals, powered host, peripherals, electrical timing and original-shell measurements remain unfinished."
+}

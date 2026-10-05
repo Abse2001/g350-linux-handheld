@@ -1,0 +1,50 @@
+{
+  "status": "CKE_ACCESS_REPAIR_EXACT_GEOMETRY_AND_ALL_OTHER_RECORDS_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-access-candidate/circuit.json",
+    "sha256": "6b84710aae3e3cc99dfcae64c30dd90fe336ef55c6d02a90ab93bb64a3529bb3"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-repaired-strobes-candidate/circuit.json",
+    "sha256": "aa7dce6e20cf0173895ecee9ed5e7dbfd8f815fba47bfc64b8dc8eed3f536ae3"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-cke-access-paths.json",
+    "sha256": "8b54cc2aedcc98d301a97a4c1bf3148fb2fe239f0db1ece19373753af78db079"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-cke-access-paths.provenance.json",
+    "sha256": "f3a9c347e9c3d335042ee0cf6f77a4eb46b228c5053ff25b4f3284631007c81a"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-check-summary.json",
+    "sha256": "f744f6497cc8fa3f02ea273bea055eb64871b878a6b6f71e827e56f309bc7efa"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 127,
+  "throughVias": 135,
+  "changedSignals": [
+    "DDR_DQSn1",
+    "DDR_D7"
+  ],
+  "preservedTracePieces": 125,
+  "preservedThroughVias": 135,
+  "lengths": [
+    {
+      "name": "DDR_DQSn1",
+      "planarMm": 51.001321123576794,
+      "throughVias": 2
+    },
+    {
+      "name": "DDR_D7",
+      "planarMm": 31.16063425349664,
+      "throughVias": 2
+    }
+  ],
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "futureCkeEscapeExported": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

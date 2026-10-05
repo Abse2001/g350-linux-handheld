@@ -1,0 +1,46 @@
+Building 1 file(s)...
+Building experiments/am3352-g350-placement-study.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/experiments/am3352-g350-placement-study/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+Differential pair "USB0_PAIR" positiveConnection uses the ambiguous trace name "USB0_DP": its connection has more than 2 terminal pins: .J_USB > .A6, .J_USB > .B6, .U_SOC > .N17, .U_USB_ESD > .pin3, and .U_USB_ESD > .pin4.
+Differential pair "USB0_PAIR" negativeConnection uses the ambiguous trace name "USB0_DM": its connection has more than 2 terminal pins: .J_USB > .A7, .J_USB > .B7, .U_SOC > .N18, .U_USB_ESD > .pin1, and .U_USB_ESD > .pin6.
+TP_BAT_INPUT has no courtyard
+TP_BAT_NTC has no courtyard
+TP_BAT_GND has no courtyard
+TP_USB_INPUT has no courtyard
+TP_JTAG_TMS has no courtyard
+TP_JTAG_TDI has no courtyard
+TP_JTAG_TDO has no courtyard
+TP_JTAG_TCK has no courtyard
+TP_JTAG_TRSTn has no courtyard
+TP_JTAG_EMU0 has no courtyard
+TP_JTAG_EMU1 has no courtyard
+TP_WARM_RESETn has no courtyard
+TP_GND has no courtyard
+TP_IO_3V3 has no courtyard
+TP_UART_GND has no courtyard
+TP_UART_UART0_RX has no courtyard
+TP_UART_UART0_TX has no courtyard
+TP_UART_IO_3V3 has no courtyard
+TP_SPK_P has no courtyard
+TP_SPK_N has no courtyard
+KEY_UP has no pin with requires_power=true
+KEY_DOWN has no pin with requires_power=true
+KEY_LEFT has no pin with requires_power=true
+KEY_RIGHT has no pin with requires_power=true
+KEY_A has no pin with requires_power=true
+KEY_B has no pin with requires_power=true
+KEY_X has no pin with requires_power=true
+KEY_Y has no pin with requires_power=true
+KEY_SELECT has no pin with requires_power=true
+KEY_START has no pin with requires_power=true
+KEY_MENU has no pin with requires_power=true
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

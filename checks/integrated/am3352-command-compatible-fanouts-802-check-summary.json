@@ -1,0 +1,288 @@
+{
+  "status": "ALL_48_COMMAND_PACKAGE_PAD_TO_VIA_PREFIXES_CHECKED_CARRIERS_AND_FULL_HANDHELD_INCOMPLETE",
+  "source": {
+    "path": "dist/diagnostics/am3352-command-compatible-fanouts-802-refilled-candidate/circuit.json",
+    "sha256": "af5abf1579cc2c4d36396770ce6a74e2875c8ba4056a0bc18bc1aeed1dcc3887"
+  },
+  "board": {
+    "path": "dist/am3352-command-compatible-fanouts-802-diagnostic/board.kicad_pcb",
+    "sha256": "9bf1ec229664daae97d1d04a251be278f05f37cacd2e8dae0e2d1ec6c5cd338d"
+  },
+  "manifest": {
+    "path": "dist/diagnostics/am3352-command-compatible-fanouts-802-refilled-candidate/manifest.json",
+    "sha256": "fa54a67ab8d8b400d135835df4c9872c7cb4ba45fa7f8d9872eaf03668ad5b4c"
+  },
+  "plan": {
+    "path": "dist/am3352-command-all-control-corridors-component-fanouts-attempt-802/result.json",
+    "sha256": "435bb0ce0bc4baf477e62fd3d2289116b4d70c43f5d834f844ebdc3d5ea1a89d"
+  },
+  "versions": {
+    "tscircuit": "0.0.2744",
+    "@tscircuit/core": "0.0.2080",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "@tscircuit/cli": "0.1.2237"
+  },
+  "latestRegistry": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-registry-verification.json",
+    "sha256": "32f91c9210ec8b85f993088dd18acf6fd9e0a31096274c233b08ea49f7a3ce29"
+  },
+  "actualLocalFanoutsConnected": 48,
+  "cpuFanoutsConnected": 24,
+  "ramFanoutsConnected": 24,
+  "retainedCompleteDdrSignals": 25,
+  "openDdrSignalsInPrefixDiagnostic": 24,
+  "tracePieces": 175,
+  "throughVias": 193,
+  "components": 212,
+  "physicalPads": 912,
+  "copperLayers": 4,
+  "bothBytePlanarRelativeSkewPass": true,
+  "allThreePairPlanarRelativeSkewPass": true,
+  "fullCommandClassMatchingPass": false,
+  "independentFanoutAudit": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-native-fanouts.json",
+    "sha256": "51127b76aacc43d3c5ebb6c079065583436188a5d114925a85bfcfe7d406d5c9"
+  },
+  "independentDdrAudit": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-native-ddr.json",
+    "sha256": "c22e892f237fd58695e87084046b45520aa946c698cbb79de8d142006f02d175"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-ddr-connectivity.json",
+    "sha256": "94267e2a6ec6a77ca28d2021b616afacd5442c48a8f72bbdb056314772c4bfe1"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-native-references.json",
+    "sha256": "aa72d215342750c5de6a91bbc03d785ef207dfc4f21fa23e89be4b016b7adefd"
+  },
+  "usbAudit": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-native-usb.json",
+    "sha256": "bfc7827fe9ccbb16aaf2ee286dea1d28afdb06ca5cbf1c400910c452290a57df"
+  },
+  "finalDrc": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-final-drc.json",
+    "sha256": "e71aaaca0fab65a2a75dcb03d8d14896ed287bea8142769658594f8c5a551c07"
+  },
+  "shorts": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "library": {
+    "path": "checks/integrated/am3352-command-compatible-fanouts-802-library.log",
+    "sha256": "1a6fbe6965e965b683e6c8a34adfe40ff6f0b7b1b86e29ec03799532032223ad"
+  },
+  "gerberShortsAllLayers": 0,
+  "physicalClearanceAndDrillViolationsAllSeverities": 0,
+  "danglingLocalTerminalViaWarnings": 48,
+  "presentationWarnings": 418,
+  "reportedAndCappedHostOpens": 499,
+  "ignoredChecks": [
+    "footprint_filters_mismatch",
+    "footprint_type_mismatch",
+    "missing_courtyard",
+    "track_not_centered_on_via",
+    "tuning_profile_track_geometries"
+  ],
+  "ramSupplyGroundBypassConnected": [
+    18,
+    21,
+    28
+  ],
+  "usbNumericPadAssignments": 38,
+  "usbContinuityRecords": 40,
+  "topSnapshot": {
+    "path": "dist/am3352-command-compatible-fanouts-802-diagnostic/top.png",
+    "sha256": "9ed969327c61e295f32d01d264bf8db83395b936215e9e9c9631f8bad0172b14"
+  },
+  "bottomSnapshot": {
+    "path": "dist/am3352-command-compatible-fanouts-802-diagnostic/bottom.png",
+    "sha256": "2250546d2f2ad1b22fe608a6a703b63e7cc07eca12ee9d5c5a4a657c46254db5"
+  },
+  "bothSnapshotsInspected": true,
+  "trials": [
+    {
+      "result": {
+        "path": "dist/am3352-command-nine-corridors-795-native-phase-attempt-796/result.json",
+        "sha256": "200d7b3c130d70fbfac12332f8589ac3f508e218f7708a9e8f3a19e9bd979b25"
+      },
+      "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-nine-corridors-expanded-fanouts-attempt-797/result.json",
+        "sha256": "acbcd4d925afcc7ac832beaf29a6acc8a04b2b2daf505e82cde660f6817508a0"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-nine-corridors-component-fanouts-attempt-798/result.json",
+        "sha256": "babf373a8f5f14680e6c62c4f0db1b14f8fe29d6031a06aa2ffdfe3f6331ced9"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-all-control-corridors-800-native-phase-attempt-801/result.json",
+        "sha256": "80c50c1b8ed6144890a9f032c457a7fd32362f62d3f2469490933359c94adb2d"
+      },
+      "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-all-control-corridors-component-fanouts-attempt-802/result.json",
+        "sha256": "435bb0ce0bc4baf477e62fd3d2289116b4d70c43f5d834f844ebdc3d5ea1a89d"
+      },
+      "status": "ALL_MANUAL_FANOUTS_PLANNED_NATIVE_ROUTE_AND_ALL_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-compatible-fanouts-two-face-native-attempt-803/result.json",
+        "sha256": "54d614a0e363a6cf46c931f3b879cb4fed91135e3a238b30f702fad37380cb5c"
+      },
+      "status": "COMPATIBLE_FANOUTS_TWO_FACE_NATIVE_FAILED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-compatible-fanouts-phased-native-attempt-804/result.json",
+        "sha256": "44a990f960ce164c8d8a0b99ee89dbf391f8a7fed086adf1ada07b77a0e8dcc3"
+      },
+      "status": "PARTIAL_PHASED_NATIVE_COMMAND_CARRIERS_PLANNED_REPLAY_AND_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-command-compatible-fanouts-manual-repairs-attempt-808/result.json",
+        "sha256": "474bc224cd2ab30555653277f91326c4c50aef7a53fa0294075eda685e2f5619"
+      },
+      "status": "PARTIAL_COMPATIBLE_FANOUT_COMMAND_CARRIERS_PLANNED_REPLAY_AND_CHECKS_REQUIRED",
+      "qualifiedNewDdrSignals": 0
+    }
+  ],
+  "rejectedExecutions": [
+    {
+      "evidence": {
+        "path": "dist/am3352-command-compatible-fanouts-manual-repairs-attempt-805/execution-failure.json",
+        "sha256": "113ea7367c0cb83aa834b9552a7cff8cbc095f9683f02541e3a4be78212d67ae"
+      },
+      "status": "MANUAL_REPAIR_ABORTED_BY_OFF_GRID_TERMINAL_GUARD",
+      "runtimeHelperSnapshotReproducible": true
+    },
+    {
+      "evidence": {
+        "path": "dist/am3352-command-compatible-fanouts-manual-repairs-attempt-806/execution-failure.json",
+        "sha256": "6d5088abba8e3ada51ecf3e746e8d1ca543ffb8582aa9293a4f66cad7eed8aa2"
+      },
+      "status": "MANUAL_REPAIR_OUTPUT_REJECTED_BY_SINGLE_FACE_WRAPPER_ASSUMPTION",
+      "runtimeHelperSnapshotReproducible": true
+    },
+    {
+      "evidence": {
+        "path": "dist/am3352-command-compatible-fanouts-manual-repairs-attempt-807/execution-failure.json",
+        "sha256": "406a1fca61957119309ae4d203c5a9351c6a93a9c640b8f120e3edcb064cfa84"
+      },
+      "status": "MANUAL_REPAIR_RETRY_REJECTED_OLD_ASSERTION_LOADED_BEFORE_EDIT_COMPLETED",
+      "runtimeHelperSnapshotReproducible": false
+    }
+  ],
+  "nativePhaseInputAudits": [
+    {
+      "path": "checks/integrated/am3352-command-nine-corridors-795-replay-native-phase-input-validation.json",
+      "sha256": "04389e0ea0c0be6ef5b5477d6afd803c8e223eea36a52f5f3dd91b38b935e005"
+    },
+    {
+      "path": "checks/integrated/am3352-command-all-control-corridors-800-replay-native-phase-input-validation.json",
+      "sha256": "73703e4bc10b97324df612c65303188d43712d077205b4a55b5f29250f7c9db4"
+    }
+  ],
+  "nativePlannedCarriers": 6,
+  "manualPlannedCarriers": 5,
+  "remainingPlannedCarriers": 13,
+  "combinedCarriersReplayedAndIndependentlyChecked": false,
+  "bestCheckedCompleteSignalSubset": {
+    "evidence": {
+      "path": "checks/integrated/am3352-command-fine-782-replay-check-summary.json",
+      "sha256": "01ec644e540157ca5dc34949f5c0da11d1790807cf64a96c8abfda0b349fcad4"
+    },
+    "connected": 42,
+    "open": 7,
+    "notTimingQualified": true
+  },
+  "typecheck": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": {
+      "path": "checks/integrated/am3352-command-all-control-corridors-800-replay-typecheck.log",
+      "sha256": "2a0a25f29122fc1809859614a598d9423a1113041ad373307c7e5b408bb2031e"
+    },
+    "verifiedProcess": 83525
+  },
+  "currentHelpers": [
+    {
+      "path": "scripts/diagnose-am3352-command-stage-escapes.mjs",
+      "sha256": "999b9c222cd071772c9629b50752f96c6313d0b89cafde2d14893c74ab0b11bc"
+    },
+    {
+      "path": "scripts/prepare-am3352-command-corridor-stage.mjs",
+      "sha256": "8c87227b176ce3aa7537423cf8a0cb0c493b6279292c329651df10643a2cbcc5"
+    },
+    {
+      "path": "scripts/prepare-am3352-command-component-fanouts.mjs",
+      "sha256": "72f85f6afb16410a243c4809b3c5457cbec131491ddd2cefa934867cacbf18d7"
+    },
+    {
+      "path": "scripts/route-am3352-compatible-fanouts-two-face-native.mjs",
+      "sha256": "2c315162de0c0c6f985d013d2a9621f2c5aa39958c3e24ae27780b76d91a2d6c"
+    },
+    {
+      "path": "scripts/route-am3352-compatible-fanouts-phased-native.mjs",
+      "sha256": "56ab598694f0c701f4ea541498216aaf45f73f5bbab6253eee6686ae6bd05d78"
+    },
+    {
+      "path": "scripts/freeze-am3352-compatible-command-fanouts.mjs",
+      "sha256": "6d6f8a2e43f40fbaa1e27e23f5b24384da399f39dfe8a8dba7dcb72fca794ae3"
+    },
+    {
+      "path": "scripts/route-am3352-compatible-fanouts-manual-repairs.mjs",
+      "sha256": "8fd8ed5ad4858ee1e131058967bef18b86cfa379003ac14796cfb9293f116160"
+    },
+    {
+      "path": "scripts/check-am3352-kicad-compatible-command-fanouts.py",
+      "sha256": "9240ca2683330b26914404528784d532251f3b93999f3c87569327ea546dd5bc"
+    },
+    {
+      "path": "scripts/summarize-am3352-compatible-command-fanouts.mjs",
+      "sha256": "47db29b907321046bd037ec8d239c57f26fb78eaddeb4dd4a35226f5be4ae659"
+    }
+  ],
+  "fabricationGuard": {
+    "exitCode": 1,
+    "log": {
+      "path": "checks/integrated/am3352-command-compatible-fanouts-802-fabrication-guard.log",
+      "sha256": "69cb4caf57d2b1ca7a6deb2d440845f46df62adc78fc0630a15e1049b6c4f248"
+    },
+    "historicalFileManifest": {
+      "path": "checks/integrated/tscircuit-update-2744/fabrication-guard.json",
+      "sha256": "8d76b494c18ffbe8a46e966331c90a8ffdfda9cb1b0f8dcf70d760424d68d6cb"
+    },
+    "historicalFilesUnchanged": 205
+  },
+  "head": "b29d0bb94c963bf6c15bfa3a553768668c26369f",
+  "activeSolverHandles": [],
+  "defaultChanged": false,
+  "qualifiedNewDdrSignals": 0,
+  "fullDdrRouting": false,
+  "fullElectricalTimingQualified": false,
+  "fullHostRouting": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "githubPushed": false,
+  "tscircuitPushed": false,
+  "nextAction": "Complete all 24 command/control carriers from legal package exits, using native bus_lanes and guarded repairs. Investigate whether conservative raster padding seals physically legal thin corridors and optimize exit choices with carrier routing. Qualify a complete editable replay, command nominal and relative timing, spacing, coupling, impedance, returns and termination; complete host/Linux and measured original-shell integration."
+}

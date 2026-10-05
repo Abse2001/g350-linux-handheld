@@ -1,0 +1,298 @@
+{
+  "status": "DDR23_AND_SHARED_USBC_DATA_CHARGING_FEED_SENSE_COPPER_CHECKED_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-control-candidate/circuit.json",
+    "sha256": "d4148ead1f242d69336d335d4b067b1f1c5cb6c3e23fa0534f308cc0068ad9c1"
+  },
+  "board": {
+    "path": "dist/am3352-ddr-usbc-control-diagnostic/board.kicad_pcb",
+    "sha256": "e92f5ab596e47b9e105440f678698e9df100c7e882e517f1b95d0e59ad162e99"
+  },
+  "layout": {
+    "path": "routing/am3352-ddr-usbc-final-routes.json",
+    "sha256": "6e66c2f445a36198902a3f380e4ac97f30f9d9510d6f2525ce5b6c3cee49c127"
+  },
+  "logicalAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-logical-validation.json",
+    "sha256": "2a9db3873914d956c1bc2d37e1ca033be41968bbaaedd2b4d2d066341f2ca397"
+  },
+  "sourceGeometryAndPlanarAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-source-validation.json",
+    "sha256": "d0191d81e843b27b0b2e82b0b465593bbcc983b958b95721516ac784e29642e9"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-native-usb-connectivity.json",
+    "sha256": "dc652bc1640b6c4f97522304302730a69990d0bdacd1f91f17d238aaf90660f3"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-native-ddr-connectivity.json",
+    "sha256": "55a04ff53033487c04a6a722e27b2ae883c706c1e5a4b98078ee5ed1172b6857"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-ddr-connectivity.json",
+    "sha256": "3d4eb0a64166783cec86e2dbc06f74aa9fb8932352a933379d086dc4fb49da49"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-reference-connectivity.json",
+    "sha256": "0a3e8b10b6dfa1b3976608455ddff24ec95c64d5ec33f26117a0944da7f2a087"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-kicad-drc.json",
+    "sha256": "15129b2f8659b44144d1837e9d66da3693e39c26ea343c1317a80adc8d33a585"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "fabricationGuard": {
+    "path": "checks/integrated/am3352-ddr-usbc-control-fabrication-guard.log",
+    "sha256": "69cb4caf57d2b1ca7a6deb2d440845f46df62adc78fc0630a15e1049b6c4f248"
+  },
+  "fabricationGuardStatus": "EXPECTED_BLOCK_BEFORE_ORDERING_FILES",
+  "components": 212,
+  "copperLayers": 4,
+  "actualPads": 912,
+  "sourceTracePieces": 125,
+  "sourceThroughVias": 129,
+  "existingTracePiecesPreserved": 92,
+  "existingThroughViasPreserved": 109,
+  "usbTracePiecesAdded": 33,
+  "usbThroughViasAdded": 20,
+  "bothCableOrientationsDataConnected": true,
+  "ccRdReturnsConnected": true,
+  "chargingAndDataShareOneSocket": true,
+  "localVbusAndEsdBypassConnected": true,
+  "vbusPmicFeedConnected": true,
+  "vbusSenseRouted": true,
+  "pmicInputBypassConnected": true,
+  "senseFilterClampAndGroundConnected": true,
+  "usbNumericPadNetAssignmentsVerified": 38,
+  "usbConnectedPadChecks": 40,
+  "usbNativeTrackAndViaRecords": 162,
+  "cpuToEsdPlanar": {
+    "dpMm": 44.528963531886994,
+    "dmMm": 44.465463531886975,
+    "skewMm": 0.06350000000001899
+  },
+  "connectorOrientations": [
+    {
+      "dpPin": 8,
+      "dmPin": 9,
+      "dpPlanarMm": 50.793975766673526,
+      "dmPlanarMm": 50.730475766673514,
+      "skewMm": 0.06350000000001188,
+      "viasPerDataNet": 0
+    },
+    {
+      "dpPin": 10,
+      "dmPin": 7,
+      "dpPlanarMm": 53.94206016667352,
+      "dmPlanarMm": 53.87856016667351,
+      "skewMm": 0.06350000000001188,
+      "viasPerDataNet": 2
+    }
+  ],
+  "planarLimitMm": 0.127,
+  "nativeControlRuns": [
+    {
+      "path": "dist/am3352-usbc-pmic-cap-attempt-395/result.json",
+      "sha256": "0bb079cf38cf46a866371738dbdbb4e6535bebd00f5ed80c2ae496a86373ddea",
+      "phase": "pmic-cap",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "steps": 4,
+      "preservedTracePieces": 124,
+      "sameNetOwnerAliases": 10
+    },
+    {
+      "path": "dist/am3352-usbc-sense-clamp-attempt-394/result.json",
+      "sha256": "3df85706e64e144f3a79666227abbe73ca0bc48d9f17f8a4edf61978d1f59055",
+      "phase": "sense-clamp",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "steps": 4,
+      "preservedTracePieces": 123,
+      "sameNetOwnerAliases": 2
+    },
+    {
+      "path": "dist/am3352-usbc-sense-cap-attempt-393/result.json",
+      "sha256": "4b02d7fdde70b52c1fdf23d0862e6ccc36287386d0f976c295b76fa7335e03d6",
+      "phase": "sense-cap",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "steps": 4,
+      "preservedTracePieces": 122,
+      "sameNetOwnerAliases": 1
+    },
+    {
+      "path": "dist/am3352-usbc-sense-input-attempt-392/result.json",
+      "sha256": "177176e36d4542da6c2d0abbae4cbf886fd48ff748a8106d0c62effb09dc88d9",
+      "phase": "sense-input",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "steps": 4,
+      "preservedTracePieces": 121,
+      "sameNetOwnerAliases": 9
+    },
+    {
+      "path": "dist/am3352-usbc-pmic-feed-attempt-391/result.json",
+      "sha256": "7d7c3a22feae460a61e540267fa0e605a0785e120c9ae8c3bc437e8cd1619b4d",
+      "phase": "pmic-feed",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "steps": 138,
+      "preservedTracePieces": 120,
+      "sameNetOwnerAliases": 8
+    },
+    {
+      "path": "dist/am3352-usbc-sense-attempt-386/result.json",
+      "sha256": "8ef9c8c00c3f42733ffb4976e88374a20562716afe0ff3d9420eeefbe668208d",
+      "phase": "sense",
+      "solver": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+      "steps": 33,
+      "preservedTracePieces": 115,
+      "sameNetOwnerAliases": 0
+    }
+  ],
+  "provenanceArtifacts": [
+    {
+      "path": "routing/am3352-ddr-usbc-final-routes.provenance.json",
+      "sha256": "999f605b325c3cdc593ecd0deb0b68b5a32bc7b0c35062ed6baaec128345a4b3"
+    },
+    {
+      "path": "routing/am3352-ddr-usbc-sense-clamp-routes.provenance.json",
+      "sha256": "3a691757e6e40b104499494b94b0aab3214371357230018f6bdf0c22e49abe1e"
+    },
+    {
+      "path": "routing/am3352-ddr-usbc-sense-filter-routes.provenance.json",
+      "sha256": "fce09189615034ecb2880048cfd80a3deb9b7eca7919db24ee018bee49482bcc"
+    },
+    {
+      "path": "routing/am3352-ddr-usbc-sense-input-routes.provenance.json",
+      "sha256": "4c0dc315d20bf33e97531cfc6a8202a90d8d02d3050f34febf8e1b1d4b5d997a"
+    },
+    {
+      "path": "routing/am3352-ddr-usbc-pmic-feed-routes.provenance.json",
+      "sha256": "4df35d51c0a80f5d51c3867262bd3a7a670556f6b1c07b0ba637508a566c4cbc"
+    },
+    {
+      "path": "routing/am3352-ddr-usbc-control-routes.provenance.json",
+      "sha256": "da25a502b39e6c8bd8f1659fdf77c799e64501b94100794e05e8c991117217b4"
+    },
+    {
+      "path": "routing/am3352-ddr-usbc-routes.provenance.json",
+      "sha256": "4076368f38316828b22f80a7601d8e71efb99e1b803c17545d0cadc9153d7263"
+    },
+    {
+      "path": "routing/am3352-usbc-routes.provenance.json",
+      "sha256": "07af6e005c8935260c8bc5953cf80dcaae5a85e8a8a0164c4cfc1ad9052a1da3"
+    }
+  ],
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "manualCpuDmLoopAdditionMm": 0.0635,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "gerberShortsAllLayers": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItemsReported": 499,
+  "ignoredNativeChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "physicalLibraryRecordsPreserved": 13619,
+  "preservedDdrChannelsConnected": 23,
+  "remainingDdrSignals": 26,
+  "remainingDdrSignalNames": [
+    "DDR_A0",
+    "DDR_A1",
+    "DDR_A10",
+    "DDR_A11",
+    "DDR_A12",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_A2",
+    "DDR_A3",
+    "DDR_A4",
+    "DDR_A5",
+    "DDR_A6",
+    "DDR_A7",
+    "DDR_A8",
+    "DDR_A9",
+    "DDR_BA0",
+    "DDR_BA1",
+    "DDR_BA2",
+    "DDR_CASn",
+    "DDR_CK",
+    "DDR_CKE",
+    "DDR_CKn",
+    "DDR_CSn0",
+    "DDR_ODT",
+    "DDR_RASn",
+    "DDR_WEn"
+  ],
+  "ddrPlanarTiming": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000003934717,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 0.6350000014649382,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "usbCurrentPolicyQualified": false,
+  "usbVbusAllTemperatureAndTransientQualified": false,
+  "controlledImpedanceQualified": false,
+  "fullElectricalTimingQualified": false,
+  "completePowerRouting": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "snapshot": {
+    "path": "images/am3352-ddr-usbc-control-top.png",
+    "sha256": "bdea6d788442d47aff5a323f7278dd8c1b7a2a5425435d27c3d663f9505e6e49",
+    "visuallyInspected": true
+  },
+  "bottomSnapshot": {
+    "path": "images/am3352-ddr-usbc-control-bottom.png",
+    "sha256": "67a301f3890abac5b33c0f5cfea6e8dd1dbc93d9de2445e1e893685f5c554af7",
+    "visuallyInspected": true
+  },
+  "scope": "One combined four-layer board retains both DDR bytes/reset and adds shared USB-C data, CC, charging input, CPU VBUS filter/clamp and ground returns. Native bus_lanes routes with manual local escapes pass independent copper connectivity, physical DRC and all-layer shorts. Remaining DDR command/clock, full host power/peripherals, USB current and transient qualification, stackup/timing, Linux provisioning and measured original-shell geometry remain unfinished."
+}

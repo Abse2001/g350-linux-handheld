@@ -1,0 +1,617 @@
+{
+  "status": "PASS_NUMERIC_PAD_VIA_FILLED_PLANE_CONNECTIVITY",
+  "board": {
+    "path": "checks/integrated/g350-ddr-bootstrap/ram-39-checked-rules.kicad_pcb",
+    "sha256": "743c76bdcf1786a01d593fa898cfb2b949a1ec5596312330f96bc052b59cb918"
+  },
+  "circuit": {
+    "path": "dist/g350-ddr-ram-power-checked-rules/compiled.circuit.json",
+    "sha256": "d79b07d5c97a2d1063b48ccc49e4d6d3b807b2ec25a214dc95d7f4297a93a616"
+  },
+  "referenceSources": [
+    {
+      "path": "lib/am3352/ram-ball-map.json",
+      "sha256": "7998a87e977af7f9b8bbc69cc6879e9df4820778434401bc9ed4ac5c0ef6f752"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-ram-power-fanout.json",
+      "sha256": "72ed5ee02dd217714d2e09779f0647479fd705b617d82e0e09b3e3f96575607b"
+    }
+  ],
+  "checkedPackageTerminals": 39,
+  "physicalThroughVias": 39,
+  "copperLayers": 4,
+  "bothReferencePlanesContinuous": true,
+  "padToViaLengthsWithinTiLimits": true,
+  "records": [
+    {
+      "package": "U_RAM",
+      "ball": "T1",
+      "function": "VSS",
+      "numericPin": 16,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -6.5412
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.7068854249492378,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "T9",
+      "function": "VSS",
+      "numericPin": 96,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": -6.5412
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.7068854249492378,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "R1",
+      "function": "VDD",
+      "numericPin": 15,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "R9",
+      "function": "VDD",
+      "numericPin": 95,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": -5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "P1",
+      "function": "VSS",
+      "numericPin": 14,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "P9",
+      "function": "VSS",
+      "numericPin": 94,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": -4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "N1",
+      "function": "VDD",
+      "numericPin": 13,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "N9",
+      "function": "VDD",
+      "numericPin": 93,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": -4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "M1",
+      "function": "VSS",
+      "numericPin": 12,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -3.1999999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "M9",
+      "function": "VSS",
+      "numericPin": 92,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": -3.1999999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "K2",
+      "function": "VDD",
+      "numericPin": 26,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": -1.5999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "K8",
+      "function": "VDD",
+      "numericPin": 74,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 2.8,
+        "y": -1.5999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "J2",
+      "function": "VSS",
+      "numericPin": 25,
+      "net": "GND",
+      "via": {
+        "x": -2,
+        "y": -0.7999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "J8",
+      "function": "VSS",
+      "numericPin": 73,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": -0.7999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "H2",
+      "function": "VDDQ",
+      "numericPin": 24,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": 1.1102230246251565e-16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "H9",
+      "function": "VDDQ",
+      "numericPin": 88,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 1.1102230246251565e-16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G1",
+      "function": "VSSQ",
+      "numericPin": 7,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G7",
+      "function": "VDD",
+      "numericPin": 55,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 2,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G8",
+      "function": "VSS",
+      "numericPin": 71,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G9",
+      "function": "VSSQ",
+      "numericPin": 87,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "F1",
+      "function": "VDDQ",
+      "numericPin": 6,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 1.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "F9",
+      "function": "VSSQ",
+      "numericPin": 86,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 1.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E1",
+      "function": "VSS",
+      "numericPin": 5,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E2",
+      "function": "VSSQ",
+      "numericPin": 21,
+      "net": "GND",
+      "via": {
+        "x": -2,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E8",
+      "function": "VSSQ",
+      "numericPin": 69,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E9",
+      "function": "VDDQ",
+      "numericPin": 85,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D1",
+      "function": "VSSQ",
+      "numericPin": 4,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D2",
+      "function": "VDDQ",
+      "numericPin": 20,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D8",
+      "function": "VSSQ",
+      "numericPin": 68,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D9",
+      "function": "VDD",
+      "numericPin": 84,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "C1",
+      "function": "VDDQ",
+      "numericPin": 3,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "C9",
+      "function": "VDDQ",
+      "numericPin": 83,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B1",
+      "function": "VSSQ",
+      "numericPin": 2,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B2",
+      "function": "VDD",
+      "numericPin": 18,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B3",
+      "function": "VSS",
+      "numericPin": 34,
+      "net": "GND",
+      "via": {
+        "x": -1.2000000000000002,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B9",
+      "function": "VSSQ",
+      "numericPin": 82,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "A1",
+      "function": "VDDQ",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "A8",
+      "function": "VDDQ",
+      "numericPin": 65,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 2.8,
+        "y": 5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "A9",
+      "function": "VSS",
+      "numericPin": 81,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    }
+  ],
+  "fabricationReady": false,
+  "ddrSignalsQualified": 0,
+  "bypassCapacitorsRouted": false,
+  "scope": "Only the selected CPU/RAM ground and DDR supply escapes into their filled planes. Bypass loops, other voltage domains, signal routing, timing and complete handheld qualification remain unfinished."
+}

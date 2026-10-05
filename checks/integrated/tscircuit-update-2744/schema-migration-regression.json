@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "realUpgrade": {
+    "equalElectricalAndPhysicalRecords": 7957,
+    "voltageRepresentationChanges": [
+      {
+        "portId": "source_port_1038",
+        "from": "5V",
+        "to": 5
+      },
+      {
+        "portId": "source_port_1039",
+        "from": "5V",
+        "to": 5
+      }
+    ],
+    "newBareTestpointWarnings": 18,
+    "allPcbRecordsExact": true,
+    "allNetConnectivityExact": true
+  },
+  "changedCopperRejected": true,
+  "changedConnectivityRejected": true,
+  "unexpectedWarningRejected": true
+}

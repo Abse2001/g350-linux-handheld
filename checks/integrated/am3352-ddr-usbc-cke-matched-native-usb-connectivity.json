@@ -1,0 +1,494 @@
+{
+  "status": "KICAD_USBC_DATA_CC_PMIC_VBUS_SENSE_AND_GROUND_CONNECTED_HOST_INCOMPLETE",
+  "board": {
+    "path": "dist/am3352-ddr-usbc-cke-matched-diagnostic/board.kicad_pcb",
+    "sha256": "a5056014dbba278425bcc1521d571a67d66062d30a3c2cf73218357fad913aff"
+  },
+  "circuit": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-matched-candidate/circuit.json",
+    "sha256": "37cce5810c43cc3f70485d5e2990512f6a2a7d8a2f35d316e02bbea0fbbf4997"
+  },
+  "numericPadNetAssignmentsVerified": 38,
+  "results": [
+    {
+      "component": "J_USB",
+      "pin": 1,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 3,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 4,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 6,
+      "net": "USB_CC1",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 7,
+      "net": "USB0_DM",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 8,
+      "net": "USB0_DP",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 9,
+      "net": "USB0_DM",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 10,
+      "net": "USB0_DP",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 12,
+      "net": "USB_CC2",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 13,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 14,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 15,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "J_USB",
+      "pin": 16,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_USB_ESD",
+      "pin": 1,
+      "net": "USB0_DM",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_USB_ESD",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_USB_ESD",
+      "pin": 3,
+      "net": "USB0_DP",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_USB_ESD",
+      "pin": 4,
+      "net": "USB0_DP",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_USB_ESD",
+      "pin": 5,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_USB_ESD",
+      "pin": 6,
+      "net": "USB0_DM",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "R_USB_CC1",
+      "pin": 1,
+      "net": "USB_CC1",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "R_USB_CC1",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "R_USB_CC2",
+      "pin": 1,
+      "net": "USB_CC2",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "R_USB_CC2",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "C_USB_ESD",
+      "pin": 1,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "C_USB_ESD",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "R_USB_VBUS_SENSE",
+      "pin": 1,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "R_USB_VBUS_SENSE",
+      "pin": 2,
+      "net": "USB0_VBUS_SENSE",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "C_USB_VBUS_SENSE",
+      "pin": 1,
+      "net": "USB0_VBUS_SENSE",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "C_USB_VBUS_SENSE",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "D_USB_VBUS_SENSE",
+      "pin": 1,
+      "net": "USB0_VBUS_SENSE",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "D_USB_VBUS_SENSE",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_SOC",
+      "pin": 301,
+      "net": "USB0_DP",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_SOC",
+      "pin": 319,
+      "net": "USB0_DM",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_SOC",
+      "pin": 266,
+      "net": "USB0_VBUS_SENSE",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "U_PMIC",
+      "pin": 12,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "C_PMIC_USB",
+      "pin": 1,
+      "net": "USB_5V",
+      "sourcePositionVerified": true
+    },
+    {
+      "component": "C_PMIC_USB",
+      "pin": 2,
+      "net": "GND",
+      "sourcePositionVerified": true
+    }
+  ],
+  "usbCopperTrackCount": 162,
+  "connectivityRecords": [
+    {
+      "net": "USB0_DP",
+      "component": "U_SOC",
+      "pin": 301,
+      "connected": true
+    },
+    {
+      "net": "USB0_DP",
+      "component": "U_USB_ESD",
+      "pin": 3,
+      "connected": true
+    },
+    {
+      "net": "USB0_DP",
+      "component": "U_USB_ESD",
+      "pin": 4,
+      "connected": true
+    },
+    {
+      "net": "USB0_DP",
+      "component": "J_USB",
+      "pin": 8,
+      "connected": true
+    },
+    {
+      "net": "USB0_DP",
+      "component": "J_USB",
+      "pin": 10,
+      "connected": true
+    },
+    {
+      "net": "USB0_DM",
+      "component": "U_SOC",
+      "pin": 319,
+      "connected": true
+    },
+    {
+      "net": "USB0_DM",
+      "component": "U_USB_ESD",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB0_DM",
+      "component": "U_USB_ESD",
+      "pin": 6,
+      "connected": true
+    },
+    {
+      "net": "USB0_DM",
+      "component": "J_USB",
+      "pin": 7,
+      "connected": true
+    },
+    {
+      "net": "USB0_DM",
+      "component": "J_USB",
+      "pin": 9,
+      "connected": true
+    },
+    {
+      "net": "USB_CC1",
+      "component": "J_USB",
+      "pin": 6,
+      "connected": true
+    },
+    {
+      "net": "USB_CC1",
+      "component": "R_USB_CC1",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB_CC2",
+      "component": "J_USB",
+      "pin": 12,
+      "connected": true
+    },
+    {
+      "net": "USB_CC2",
+      "component": "R_USB_CC2",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "J_USB",
+      "pin": 15,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "J_USB",
+      "pin": 16,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "U_USB_ESD",
+      "pin": 5,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "C_USB_ESD",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "J_USB",
+      "pin": 15,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "J_USB",
+      "pin": 16,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "U_PMIC",
+      "pin": 12,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "C_PMIC_USB",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB_5V",
+      "component": "R_USB_VBUS_SENSE",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB0_VBUS_SENSE",
+      "component": "U_SOC",
+      "pin": 266,
+      "connected": true
+    },
+    {
+      "net": "USB0_VBUS_SENSE",
+      "component": "R_USB_VBUS_SENSE",
+      "pin": 2,
+      "connected": true
+    },
+    {
+      "net": "USB0_VBUS_SENSE",
+      "component": "C_USB_VBUS_SENSE",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "USB0_VBUS_SENSE",
+      "component": "D_USB_VBUS_SENSE",
+      "pin": 1,
+      "connected": true
+    },
+    {
+      "net": "GND",
+      "component": "J_USB",
+      "pin": 1,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "J_USB",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "J_USB",
+      "pin": 3,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "J_USB",
+      "pin": 4,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "J_USB",
+      "pin": 13,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "J_USB",
+      "pin": 14,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "U_USB_ESD",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "C_USB_ESD",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "R_USB_CC1",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "R_USB_CC2",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "C_USB_VBUS_SENSE",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "D_USB_VBUS_SENSE",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    },
+    {
+      "net": "GND",
+      "component": "C_PMIC_USB",
+      "pin": 2,
+      "connectedToFilledPlane": true
+    }
+  ],
+  "bothCableOrientationsDataConnected": true,
+  "ccRdReturnsConnected": true,
+  "localVbusAndEsdBypassConnected": true,
+  "vbusPmicFeedConnected": true,
+  "vbusSenseRouted": true,
+  "pmicInputBypassConnected": true,
+  "senseFilterClampAndGroundConnected": true,
+  "usbElectricalQualification": false,
+  "fabricationReady": false
+}

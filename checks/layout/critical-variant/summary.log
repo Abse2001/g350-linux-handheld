@@ -1,0 +1,807 @@
+{
+  "date": "2026-10-04",
+  "status": "CHECKED_CPU_BYPASS_PLACEMENT",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "fullHandheldPlacementComplete": false,
+  "routingPermitted": false,
+  "entry": "experiments/am3352-g350-critical-placement.circuit.tsx",
+  "defaultEntryRemainsHistoricalDdrFixture": true,
+  "cpuBypassMetrics": [
+    {
+      "name": "C_CORE_BULK",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 18.104143172213373,
+      "newNearestSupplyDistanceMm": 12.44025723206719,
+      "targetBall": "M13",
+      "candidateCount": 12,
+      "measuredNearestSupplyDistanceMm": 12.44025723206719
+    },
+    {
+      "name": "C_CORE_1",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 5.635601121442148,
+      "newNearestSupplyDistanceMm": 0.5099019513592784,
+      "targetBall": "L9",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.5099019513592784
+    },
+    {
+      "name": "C_CORE_2",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 3.676955262170048,
+      "newNearestSupplyDistanceMm": 0.5590169943749481,
+      "targetBall": "H11",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.5590169943749481
+    },
+    {
+      "name": "C_CORE_3",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 2.0591260281974004,
+      "newNearestSupplyDistanceMm": 0.7433034373659253,
+      "targetBall": "K12",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.7433034373659253
+    },
+    {
+      "name": "C_CORE_4",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 1.019803902718557,
+      "newNearestSupplyDistanceMm": 1.0816653826391955,
+      "targetBall": "M13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 1.0816653826391955
+    },
+    {
+      "name": "C_CORE_5",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 0.2828427124746186,
+      "newNearestSupplyDistanceMm": 0.9219544457292875,
+      "targetBall": "N13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.9219544457292875
+    },
+    {
+      "name": "C_CORE_6",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 2.2090722034374526,
+      "newNearestSupplyDistanceMm": 0.7433034373659254,
+      "targetBall": "N12",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.7433034373659254
+    },
+    {
+      "name": "C_CORE_7",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 4.604345773288534,
+      "newNearestSupplyDistanceMm": 2.3563743335896357,
+      "targetBall": "N13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 2.3563743335896357
+    },
+    {
+      "name": "C_CORE_8",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 6.6603303221386865,
+      "newNearestSupplyDistanceMm": 3.9623225512317886,
+      "targetBall": "N13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 3.9623225512317886
+    },
+    {
+      "name": "C_MPU_BULK",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 20.280039447693387,
+      "newNearestSupplyDistanceMm": 9.451454914456292,
+      "targetBall": "F13",
+      "candidateCount": 14,
+      "measuredNearestSupplyDistanceMm": 9.451454914456292
+    },
+    {
+      "name": "C_MPU_1",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.690724809414742,
+      "newNearestSupplyDistanceMm": 3.994058086708304,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 3.994058086708304
+    },
+    {
+      "name": "C_MPU_2",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.009975124224178,
+      "newNearestSupplyDistanceMm": 2.4233241632105273,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 2.4233241632105273
+    },
+    {
+      "name": "C_MPU_3",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.0880613017821097,
+      "newNearestSupplyDistanceMm": 1.081665382639196,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 1.081665382639196
+    },
+    {
+      "name": "C_MPU_4",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 3.6055512754639887,
+      "newNearestSupplyDistanceMm": 0.6082762530298199,
+      "targetBall": "H13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 0.6082762530298199
+    },
+    {
+      "name": "C_MPU_5",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 5.758472019555187,
+      "newNearestSupplyDistanceMm": 6.456972975009266,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 6.456972975009266
+    },
+    {
+      "name": "C_VDDS_BULK",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 24.247061677654877,
+      "newNearestSupplyDistanceMm": 11.194641575325223,
+      "targetBall": "E14",
+      "candidateCount": 16,
+      "measuredNearestSupplyDistanceMm": 11.194641575325223
+    },
+    {
+      "name": "C_VDDS_1",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.9849717690342534,
+      "newNearestSupplyDistanceMm": 2.7189152248645048,
+      "targetBall": "P14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 2.7189152248645048
+    },
+    {
+      "name": "C_VDDS_2",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 4.534313619501853,
+      "newNearestSupplyDistanceMm": 5.798275605729688,
+      "targetBall": "E14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 5.798275605729688
+    },
+    {
+      "name": "C_VDDS_3",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.162277660168379,
+      "newNearestSupplyDistanceMm": 3.9824615503479737,
+      "targetBall": "E14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 3.9824615503479737
+    },
+    {
+      "name": "C_VDDS_4",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.3105890714493693,
+      "newNearestSupplyDistanceMm": 3.860051813123755,
+      "targetBall": "P14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 3.860051813123755
+    },
+    {
+      "name": "C_SRAM_CORE_BULK",
+      "function": "VDDS_SRAM_CORE_BG",
+      "oldNearestSupplyDistanceMm": 15.56020565416794,
+      "newNearestSupplyDistanceMm": 7.454528824815155,
+      "targetBall": "E9",
+      "candidateCount": 6,
+      "measuredNearestSupplyDistanceMm": 7.454528824815155
+    },
+    {
+      "name": "C_SRAM_CORE_1",
+      "function": "VDDS_SRAM_CORE_BG",
+      "oldNearestSupplyDistanceMm": 7.964923100695951,
+      "newNearestSupplyDistanceMm": 0.5099019513592785,
+      "targetBall": "E9",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 0.5099019513592785
+    },
+    {
+      "name": "C_SRAM_MPU_BULK",
+      "function": "VDDS_SRAM_MPU_BB",
+      "oldNearestSupplyDistanceMm": 18.647251808242416,
+      "newNearestSupplyDistanceMm": 7.517978451685002,
+      "targetBall": "D10",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 7.517978451685002
+    },
+    {
+      "name": "C_SRAM_MPU_1",
+      "function": "VDDS_SRAM_MPU_BB",
+      "oldNearestSupplyDistanceMm": 9.35093578204877,
+      "newNearestSupplyDistanceMm": 5.0803543183522155,
+      "targetBall": "D10",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 5.0803543183522155
+    },
+    {
+      "name": "C_HV1_BULK",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 31.499206339207976,
+      "newNearestSupplyDistanceMm": 13.453624047073712,
+      "targetBall": "P8",
+      "candidateCount": 2,
+      "measuredNearestSupplyDistanceMm": 13.453624047073712
+    },
+    {
+      "name": "C_HV1_1",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 7.924645102463581,
+      "newNearestSupplyDistanceMm": 2.641968962724582,
+      "targetBall": "P8",
+      "candidateCount": 18,
+      "measuredNearestSupplyDistanceMm": 2.641968962724582
+    },
+    {
+      "name": "C_HV1_2",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 8.676404785393544,
+      "newNearestSupplyDistanceMm": 4.876474136094645,
+      "targetBall": "P8",
+      "candidateCount": 18,
+      "measuredNearestSupplyDistanceMm": 4.876474136094645
+    },
+    {
+      "name": "C_HV2_BULK",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 18.341210428976602,
+      "newNearestSupplyDistanceMm": 14.30978686074674,
+      "targetBall": "P11",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 14.30978686074674
+    },
+    {
+      "name": "C_HV2_1",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 12.814054783713075,
+      "newNearestSupplyDistanceMm": 0.3162277660168353,
+      "targetBall": "P10",
+      "candidateCount": 23,
+      "measuredNearestSupplyDistanceMm": 0.3162277660168353
+    },
+    {
+      "name": "C_HV2_2",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 10.912378292562991,
+      "newNearestSupplyDistanceMm": 5.189412298131649,
+      "targetBall": "P11",
+      "candidateCount": 23,
+      "measuredNearestSupplyDistanceMm": 5.189412298131649
+    },
+    {
+      "name": "C_HV3_BULK",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 23.435016535091247,
+      "newNearestSupplyDistanceMm": 12.857682528356346,
+      "targetBall": "P13",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 12.857682528356346
+    },
+    {
+      "name": "C_HV3_1",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 8.06225774829855,
+      "newNearestSupplyDistanceMm": 2.3769728648009423,
+      "targetBall": "P13",
+      "candidateCount": 28,
+      "measuredNearestSupplyDistanceMm": 2.3769728648009423
+    },
+    {
+      "name": "C_HV3_2",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 6.551335741663678,
+      "newNearestSupplyDistanceMm": 5.210806079677117,
+      "targetBall": "P13",
+      "candidateCount": 28,
+      "measuredNearestSupplyDistanceMm": 5.210806079677117
+    },
+    {
+      "name": "C_HV4_BULK",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 24.40491753725056,
+      "newNearestSupplyDistanceMm": 12.11156472137271,
+      "targetBall": "H14",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 12.11156472137271
+    },
+    {
+      "name": "C_HV4_1",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 5.66038867923396,
+      "newNearestSupplyDistanceMm": 4.981214711292819,
+      "targetBall": "J14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 4.981214711292819
+    },
+    {
+      "name": "C_HV4_2",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 7.224956747275376,
+      "newNearestSupplyDistanceMm": 1.4534441853748623,
+      "targetBall": "H14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 1.4534441853748623
+    },
+    {
+      "name": "C_HV5_BULK",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 13.613228860193308,
+      "newNearestSupplyDistanceMm": 11.50173899895142,
+      "targetBall": "L14",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 11.50173899895142
+    },
+    {
+      "name": "C_HV5_1",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 7.840918313565061,
+      "newNearestSupplyDistanceMm": 1.4534441853748623,
+      "targetBall": "L14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 1.4534441853748623
+    },
+    {
+      "name": "C_HV5_2",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 9.91564420499243,
+      "newNearestSupplyDistanceMm": 3.1016124838541623,
+      "targetBall": "L14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 3.1016124838541623
+    },
+    {
+      "name": "C_HV6_BULK",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 15.72895419282541,
+      "newNearestSupplyDistanceMm": 8.683317338436963,
+      "targetBall": "F14",
+      "candidateCount": 15,
+      "measuredNearestSupplyDistanceMm": 8.683317338436963
+    },
+    {
+      "name": "C_HV6_1",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.841052550594825,
+      "newNearestSupplyDistanceMm": 5.391892061234165,
+      "targetBall": "E13",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 5.391892061234165
+    },
+    {
+      "name": "C_HV6_2",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.603029607687669,
+      "newNearestSupplyDistanceMm": 6.462971452822609,
+      "targetBall": "F14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 6.462971452822609
+    },
+    {
+      "name": "C_HV6_3",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.957010852370432,
+      "newNearestSupplyDistanceMm": 6.4381674411279475,
+      "targetBall": "G14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 6.4381674411279475
+    },
+    {
+      "name": "C_HV6_4",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 8.044874144447505,
+      "newNearestSupplyDistanceMm": 4.834511350695125,
+      "targetBall": "F14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 4.834511350695125
+    },
+    {
+      "name": "C_HV6_5",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 9.620810776644552,
+      "newNearestSupplyDistanceMm": 4.80130190677487,
+      "targetBall": "G14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 4.80130190677487
+    },
+    {
+      "name": "C_HV6_6",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 11.48564321228898,
+      "newNearestSupplyDistanceMm": 3.2280024783137926,
+      "targetBall": "F14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 3.2280024783137926
+    },
+    {
+      "name": "C_VDDS_RTC",
+      "function": "VDDS_RTC",
+      "oldNearestSupplyDistanceMm": 14.239382009062052,
+      "newNearestSupplyDistanceMm": 4.117341375208035,
+      "targetBall": "D7",
+      "candidateCount": 7,
+      "measuredNearestSupplyDistanceMm": 4.117341375208035
+    },
+    {
+      "name": "C_VDDS_PLL_DDR",
+      "function": "VDDS_PLL_DDR",
+      "oldNearestSupplyDistanceMm": 14.0356688476182,
+      "newNearestSupplyDistanceMm": 3.1144823004794886,
+      "targetBall": "E7",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 3.1144823004794886
+    },
+    {
+      "name": "C_VDDS_PLL_CORE_LCD",
+      "function": "VDDS_PLL_CORE_LCD",
+      "oldNearestSupplyDistanceMm": 13.3461604965623,
+      "newNearestSupplyDistanceMm": 4.127044947659281,
+      "targetBall": "R10",
+      "candidateCount": 14,
+      "measuredNearestSupplyDistanceMm": 4.127044947659281
+    },
+    {
+      "name": "C_VDDS_OSC",
+      "function": "VDDS_OSC",
+      "oldNearestSupplyDistanceMm": 11.58792474949678,
+      "newNearestSupplyDistanceMm": 1.5976545308670462,
+      "targetBall": "R11",
+      "candidateCount": 16,
+      "measuredNearestSupplyDistanceMm": 1.5976545308670462
+    },
+    {
+      "name": "C_VDDS_PLL_MPU",
+      "function": "VDDS_PLL_MPU",
+      "oldNearestSupplyDistanceMm": 8.497058314499203,
+      "newNearestSupplyDistanceMm": 2.3021728866442683,
+      "targetBall": "H15",
+      "candidateCount": 25,
+      "measuredNearestSupplyDistanceMm": 2.3021728866442683
+    },
+    {
+      "name": "C_VDDA3P3V_USB0",
+      "function": "VDDA3P3V_USB0",
+      "oldNearestSupplyDistanceMm": 7.912016177940995,
+      "newNearestSupplyDistanceMm": 4.011545836706845,
+      "targetBall": "N15",
+      "candidateCount": 22,
+      "measuredNearestSupplyDistanceMm": 4.011545836706845
+    },
+    {
+      "name": "C_VDDA3P3V_USB1",
+      "function": "VDDA3P3V_USB1",
+      "oldNearestSupplyDistanceMm": 8.1706792863262,
+      "newNearestSupplyDistanceMm": 4.527692569068709,
+      "targetBall": "R15",
+      "candidateCount": 22,
+      "measuredNearestSupplyDistanceMm": 4.527692569068709
+    },
+    {
+      "name": "C_VDDA1P8V_USB0",
+      "function": "VDDA1P8V_USB0",
+      "oldNearestSupplyDistanceMm": 13.038404810405297,
+      "newNearestSupplyDistanceMm": 4.850773134253963,
+      "targetBall": "N16",
+      "candidateCount": 24,
+      "measuredNearestSupplyDistanceMm": 4.850773134253963
+    },
+    {
+      "name": "C_VDDA1P8V_USB1",
+      "function": "VDDA1P8V_USB1",
+      "oldNearestSupplyDistanceMm": 12.448293055676347,
+      "newNearestSupplyDistanceMm": 3.4889110048839043,
+      "targetBall": "R16",
+      "candidateCount": 24,
+      "measuredNearestSupplyDistanceMm": 3.4889110048839043
+    },
+    {
+      "name": "C_CAP_VDD_SRAM_CORE",
+      "function": "CAP_VDD_SRAM_CORE",
+      "oldNearestSupplyDistanceMm": 1.52315462117278,
+      "newNearestSupplyDistanceMm": 2.2610838109190015,
+      "targetBall": "D9",
+      "candidateCount": 7,
+      "measuredNearestSupplyDistanceMm": 2.2610838109190015
+    },
+    {
+      "name": "C_CAP_VDD_SRAM_MPU",
+      "function": "CAP_VDD_SRAM_MPU",
+      "oldNearestSupplyDistanceMm": 1.8110770276274837,
+      "newNearestSupplyDistanceMm": 2.780287754891568,
+      "targetBall": "D11",
+      "candidateCount": 10,
+      "measuredNearestSupplyDistanceMm": 2.780287754891568
+    },
+    {
+      "name": "C_CAP_VBB_MPU",
+      "function": "CAP_VBB_MPU",
+      "oldNearestSupplyDistanceMm": 5.035871324805669,
+      "newNearestSupplyDistanceMm": 3.565459297201414,
+      "targetBall": "C10",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 3.565459297201414
+    },
+    {
+      "name": "C_CAP_VDD_RTC",
+      "function": "CAP_VDD_RTC",
+      "oldNearestSupplyDistanceMm": 7.615773105863909,
+      "newNearestSupplyDistanceMm": 3.3615472627943235,
+      "targetBall": "D6",
+      "candidateCount": 2,
+      "measuredNearestSupplyDistanceMm": 3.3615472627943235
+    }
+  ],
+  "ddrBypassPlacement": [
+    {
+      "capacitor": "C_DDR_CPU_1",
+      "powerDistanceMm": 2.9698484809835004,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_2",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_3",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.42426406871192884,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_4",
+      "powerDistanceMm": 5.507267925205748,
+      "groundDistanceMm": 1.6278820596099715,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_5",
+      "powerDistanceMm": 7.68960337078578,
+      "groundDistanceMm": 4.011234224026317,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_6",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.407027391856539,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_7",
+      "powerDistanceMm": 4.883646178829913,
+      "groundDistanceMm": 1.7464249196572985,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_8",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.060788100849392,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_9",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.438167441127948,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_10",
+      "powerDistanceMm": 4.883646178829912,
+      "groundDistanceMm": 1.8357559750685815,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_11",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.1000000000000005,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_12",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.46297145282261,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_13",
+      "powerDistanceMm": 5.507267925205746,
+      "groundDistanceMm": 1.6763054614240216,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_14",
+      "powerDistanceMm": 7.689603370785778,
+      "groundDistanceMm": 4.0311288741492755,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_15",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.419501538281613,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_16",
+      "powerDistanceMm": 6.579513659838392,
+      "groundDistanceMm": 2.06155281280883,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_17",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.205948168962618,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_18",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.2059481689626175,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_19",
+      "powerDistanceMm": 7.920227269466451,
+      "groundDistanceMm": 3.4885527085024814,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_20",
+      "powerDistanceMm": 9.567131231461184,
+      "groundDistanceMm": 5.060632371551998,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_RAM_1",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_2",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_3",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_4",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.325940669922601,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_5",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_6",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_7",
+      "powerDistanceMm": 2.906888370749726,
+      "groundDistanceMm": 2.7658633371878665,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_8",
+      "powerDistanceMm": 2.5238858928247927,
+      "groundDistanceMm": 2.7658633371878665,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_9",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_10",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_11",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_12",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    }
+  ],
+  "proximityScope": "General CPU proximity bounds are engineering search choices, not datasheet limits. These are geometric distances, not routed loop lengths, impedance, DC-biased capacitance or PDN signoff.",
+  "proximityTradeoff": {
+    "partsWithShorterGeometricDistance": 49,
+    "partsWithLongerGeometricDistance": 10,
+    "meanDistanceBeforeMm": 9.370626743779273,
+    "meanDistanceAfterMm": 4.664967736054339,
+    "note": "Exact courtyard spacing improves the group overall while ten individual distances increase. SRAM internal-output capacitors move from 1.52/1.81 mm to 2.26/2.78 mm. The current distances do not qualify the actual copper loops; those four outputs need explicit short, wide routing and local return review."
+  },
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "mainBodyHeight": 99,
+    "speakerTongueWidth": 22,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "logicalComponents": 277,
+  "cpuBypassComponentsRepositioned": 59,
+  "buildExitCode": 0,
+  "typecheckExitCode": 0,
+  "nativeErrors": 0,
+  "allLayerGerberShorts": 0,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "originalTerminalConnectivityPreserved": true,
+  "displayAndHarnessPinMappingsVerified": true,
+  "bareComponentsWithNoPaste": 31,
+  "exposedBarePads": 42,
+  "unintendedProbeThroughHolesCorrected": 4,
+  "capsuleCopperPreserved": true,
+  "capsulePadRepresentationConverted": 28,
+  "inductorAuxiliaryPadCount": 4,
+  "auxiliaryCopperContainedInPrimaryLands": true,
+  "smtStencil": {
+    "status": "PASS_SMT_STENCIL_METADATA_ONLY",
+    "matchedPads": 1156,
+    "matchedNonplatedHoles": 2,
+    "noPasteSmtPads": 48,
+    "scaledApertures": 1095,
+    "fullSizeApertures": 9,
+    "copperMaskDrillPlacementAndNetsUnchanged": true,
+    "nativePadShapeCornerRadiusAndPolygonVerticesVerified": true,
+    "nativeThroughHoleAperturesUnqualified": 8,
+    "fullStencilQualification": false
+  },
+  "independentKicad": {
+    "processExitCode": 5,
+    "errors": 0,
+    "warningCount": 404,
+    "warningTypes": {
+      "silk_edge_clearance": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199
+    },
+    "unconnectedItemsReported": 499,
+    "unconnectedCountIsComplete": false,
+    "perItemExclusions": 0,
+    "ignoredRuleSeverities": 0,
+    "exactLocalFootprints": 277,
+    "physicalRecordSha256": "1968721b4951d12f0ea9c2b5b3bc5524128701a0cc6e23afc5aa953dddc73855",
+    "note": "Full DRC does not pass. Presentation/courtyard warnings and unrouted connections remain. Placement geometry only."
+  },
+  "remaining": [
+    "Measured original shell perimeter, mounting, ports, membrane registration and assembled clearances",
+    "Battery protection, NTC, current rating and dimensions; speaker load and mating cable qualification",
+    "Current exact connector assembly drawings, backlight biased capacitance and full stencil qualification",
+    "Panel supply budget and startup, Linux driver/pinmux/timings/color format",
+    "Complete critical placement review before four-layer native bus_lanes DDR and host routing",
+    "Routing continuity, shorts, reference planes, DDR timing and fabrication release checks"
+  ],
+  "hashes": "stored in source-bound summary"
+}

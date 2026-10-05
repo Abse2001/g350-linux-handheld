@@ -1,0 +1,35 @@
+{
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-command-access-paths.json",
+    "sha256": "1f481ee9c6c16205ba8794a526253a5f7442af7415593a5f71219f53fd55993e"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-command-access-source/circuit.json",
+    "sha256": "6e58a581c597e5286f44fe2f5141f8ac80617a32ba57ce13f847fa0c971ce2f6"
+  },
+  "nativeRun": {
+    "path": "dist/am3352-ddr-usbc-clock-both-open-attempt-412/result.json",
+    "sha256": "6ceeac1270d08934942a0402191c3561cd926f2484b051abf487b21b5eb72339"
+  },
+  "nativeOutput": {
+    "path": "dist/am3352-ddr-usbc-clock-both-open-attempt-412/output.simple-route.json",
+    "sha256": "19f1c4697ec25c363edeb5db0b2abd883a0eba5470804d3944946ee362fa952f"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-command-access-clock-paths.json",
+    "sha256": "b4e8a4377f6750728f9e87fec805d2818537eb2cb792b3d19005d46389ec2965"
+  },
+  "newSignals": [
+    "DDR_CK",
+    "DDR_CKn"
+  ],
+  "priorSignalsPreserved": 21,
+  "originalTimingRequirements": {
+    "busMaxLengthSkewMm": 0.635,
+    "clockMaxLengthSkewMm": 0.127,
+    "clockTraceGapMm": 0.12
+  },
+  "copperLayers": 4,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

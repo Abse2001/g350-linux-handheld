@@ -1,0 +1,78 @@
+Building 1 file(s)...
+Building experiments/am3352-g350-harness-placement.circuit.tsx...
+Generating circuit JSON...
+Error in createContainer
+8803 |       if (Object.keys(catalogue).length === 0) {
+8804 |         throw new Error(
+8805 |           "No components registered in catalogue, did you forget to import lib/register-catalogue in your test file?"
+8806 |         );
+8807 |       }
+8808 |       throw new Error(
+                       ^
+error: Unsupported component type "solderpaste". No element with this name is registered in the @tscircuit/core catalogue. Check for typos or see https://docs.tscircuit.com/category/built-in-elements for a list of valid components. To add your own component, see docs/CREATING_NEW_COMPONENTS.md
+      at createInstance (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:8808:17)
+      at completeWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:8985:33)
+      at runWithFiberInDEV (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at completeUnitOfWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12962:19)
+      at performUnitOfWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12843:11)
+      at workLoopSync (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at performWorkOnRoot (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12135:44)
+      at performSyncWorkOnRoot (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:2446:7)
+      at flushSyncWorkAcrossRoots_impl (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:2294:21)
+      at flushSyncWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12394:12)
+      at createInstanceFromReactElement (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:8941:14)
+      at _renderReactSubtree (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:17620:23)
+      at add (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:17831:28)
+      at doInitialReactSubtreesRender (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:17746:14)
+      at runRenderPhase (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:1367:24)
+      at runRenderPhaseForChildren (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:1377:13)
+      at runRenderPhaseForChildren (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:120943:11)
+      at runRenderCycle (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:1315:12)
+      at render (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:119593:16)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167864:10)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+8803 |       if (Object.keys(catalogue).length === 0) {
+8804 |         throw new Error(
+8805 |           "No components registered in catalogue, did you forget to import lib/register-catalogue in your test file?"
+8806 |         );
+8807 |       }
+8808 |       throw new Error(
+                       ^
+error: Unsupported component type "solderpaste". No element with this name is registered in the @tscircuit/core catalogue. Check for typos or see https://docs.tscircuit.com/category/built-in-elements for a list of valid components. To add your own component, see docs/CREATING_NEW_COMPONENTS.md
+      at createInstance (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:8808:17)
+      at completeWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:8985:33)
+      at runWithFiberInDEV (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:1738:13)
+      at completeUnitOfWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12962:19)
+      at performUnitOfWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12843:11)
+      at workLoopSync (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12644:41)
+      at renderRootSync (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12624:11)
+      at performWorkOnRoot (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12135:44)
+      at performSyncWorkOnRoot (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:2446:7)
+      at flushSyncWorkAcrossRoots_impl (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:2294:21)
+      at flushSyncWork (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/react-reconciler/cjs/react-reconciler.development.js:12394:12)
+      at createInstanceFromReactElement (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:8941:14)
+      at _renderReactSubtree (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:17620:23)
+      at add (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:17831:28)
+      at doInitialReactSubtreesRender (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:17746:14)
+      at runRenderPhase (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:1367:24)
+      at runRenderPhaseForChildren (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:1377:13)
+      at runRenderPhaseForChildren (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:120943:11)
+      at runRenderCycle (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:1315:12)
+      at render (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:119593:16)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167864:10)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+Fatal error [circuit_generation_failed]: Unsupported component type "solderpaste". No element with this name is registered in the @tscircuit/core catalogue. Check for typos or see https://docs.tscircuit.com/category/built-in-elements for a list of valid components. To add your own component, see docs/CREATING_NEW_COMPONENTS.md
+
+Build complete
+  Circuits  0 passed 1 failed
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

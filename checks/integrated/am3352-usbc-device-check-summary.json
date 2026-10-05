@@ -1,0 +1,96 @@
+{
+  "status": "SHARED_USBC_SOURCE_AND_EXPORTED_PAD_CHECKS_PASS_USB_ROUTING_AND_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/experiments/am3352-usbc-device-source/circuit.json",
+    "sha256": "fb84f731cd9d4917d03fa764497228505935c960d9ca08730e0e625d26121721"
+  },
+  "board": {
+    "path": "dist/am3352-usbc-device-diagnostic/board.kicad_pcb",
+    "sha256": "090a09a7b049e9fcc9a11e46e78c56238211e099d1632f88aeeb2d6729462a51"
+  },
+  "logicalAudit": {
+    "path": "checks/integrated/am3352-usbc-device-validation.json",
+    "sha256": "e2aeaf937426963b7bf0eacb4d2782d8fb71fb670c14ea5ef08768f5b2766bc3"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-usbc-device-native-usb-netlist.json",
+    "sha256": "5d904672fc8ea1a0b93de80bcd79456ef128ea5a22eafe7872446ea240badbe4"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-usbc-device-native-ddr-connectivity.json",
+    "sha256": "3c153077208036bc3ae428034e73a91d13a04e8da01da7dc0e99d866fac4006d"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-usbc-device-reference-connectivity.json",
+    "sha256": "dce144f94398e0e8974b64c9e2fdc432219e4cb8f968b04cfa903480a43366cb"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-usbc-device-kicad-drc.json",
+    "sha256": "a7a8ffe057a4f699fc7c7ee167c9682152366371574baebc52ca881cd59e4e3e"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-usbc-device-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "fabricationGuard": {
+    "path": "checks/integrated/am3352-usbc-device-fabrication-guard.log",
+    "sha256": "f462b55c0e2f637e1ec1a7f3ae9fb6e72fdab7ed717550431d9f4294c5804728"
+  },
+  "fabricationGuardStatus": "EXPECTED_BLOCK_BEFORE_ORDERING_FILES",
+  "components": 212,
+  "individualJlcPartsAdded": 8,
+  "copperLayers": 4,
+  "actualPads": 912,
+  "sourceTracePieces": 81,
+  "sourceThroughVias": 93,
+  "usbNumericPadNetAssignmentsVerified": 36,
+  "usbCopperTrackCount": 0,
+  "chargingAndDataShareOneSocket": true,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "gerberShortsAllLayers": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ignoredNativeChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "preservedDdrChannelsConnected": 11,
+  "remainingDdrSignals": 38,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "existingPlanarByteSkewMm": 13.888611819066004,
+  "existingPlanarByteLimitMm": 0.635,
+  "existingPlanarByteMatchPass": false,
+  "usbCurrentPolicyQualified": false,
+  "usbVbusAllTemperatureAndTransientQualified": false,
+  "controlledImpedanceQualified": false,
+  "completePowerRouting": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "snapshot": {
+    "path": "images/am3352-usbc-device-source-top.png",
+    "sha256": "140f355162c96ecd2172931158bf357ada50de9c3fe56ff622184e76755df15d",
+    "visuallyInspected": true
+  },
+  "scope": "Four-layer USB-C hardware source draft with fresh exported numeric-pad, existing DDR/reference copper and clearance checks. USB data/power/CC/sense traces, charger current policy, full powered host, timing and measured original-shell placement remain unfinished."
+}

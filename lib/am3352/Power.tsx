@@ -17,6 +17,7 @@ import {RC0402FR_0749R9L} from "../../imports/RC0402FR_0749R9L"
 import {RC0402FR_07240RL} from "../../imports/RC0402FR_07240RL"
 import {TS_1187A_B_A_B} from "../../imports/TS_1187A_B_A_B"
 import {decouplers,pmicConnections,allPinAttributes} from "./PowerNetworks"
+import {ddrVia} from "./FourLayerDdrConstraints"
 
 const Wire=({from,net}:{from:string,net:string})=>
   <trace from={from} to={`net.${net}`} thickness={.2} routingPhaseIndex={5}/>
@@ -29,7 +30,7 @@ const partByValue={"100nF":CL05B104KO5NNNC,"10nF":CL05B103KB5NNNC,"1uF":CL05A105
 // voltage cannot directly remove the 3.3V LDO's input headroom. CPU bucks
 // and the 1.8V analog LDO remain on SYS. This architecture still requires
 // startup, inrush, battery, USB-current, thermal and layout qualification.
-export const Power=()=> <>
+export const Power=({ramLayer="top"}:{ramLayer?:"top"|"bottom"}={})=> <>
   <TPS65217CRSLR name="U_PMIC" pcbX={-25} pcbY={0} layer="top"
     pinAttributes={allPinAttributes(pmicLabels,{pin2:{requiresPower:true},pin4:{requiresPower:true},pin5:{requiresPower:true},pin12:{requiresPower:true},pin18:{requiresPower:true},
       pin21:{requiresPower:true},pin22:{requiresPower:true},pin32:{requiresPower:true},pin39:{requiresPower:true},pin42:{requiresPower:true},
@@ -116,12 +117,28 @@ export const Power=()=> <>
   })}
   <RC0402FR_0749R9L name="R_DDR_VTP" pcbX={-2.3} pcbY={-7.7} layer="bottom" schX={18} schY={-15}/>
   <Pins name="R_DDR_VTP" pins={{pin1:"DDR_VTP",pin2:"GND"}}/>
-  <RC0402FR_07240RL name="R_DDR_ZQ" pcbX={6.3} pcbY={-29} layer="top" schX={18} schY={-20}/>
+  <RC0402FR_07240RL name="R_DDR_ZQ" pcbX={ramLayer==="bottom"?-7.5:6.3} pcbY={ramLayer==="bottom"?-29.4:-29} layer={ramLayer==="bottom"?"bottom":"top"} schX={18} schY={-20}/>
   <Pins name="R_DDR_ZQ" pins={{pin1:"DDR_ZQ",pin2:"GND"}}/>
   {decouplers.map((c,i)=>{
     const Part=partByValue[c.value]
-    return <Fragment key={c.name}><Part name={c.name} pcbX={c.x} pcbY={c.y} layer={c.side}
+    // Preserve the numeric pad locations when moving small RAM capacitors to
+    // the opposite assembly side; bottom-side footprints mirror their X axis.
+    const moved=ramLayer==="bottom"&&c.side==="bottom"&&/^C_DDR_RAM_\d+$|^C_VREF_RAM_/.test(c.name)
+    return <Fragment key={c.name}><Part name={c.name} pcbX={c.x} pcbY={c.y} layer={moved?"top":c.side} pcbRotation={moved?180:0}
       schX={30+(i%8)*4} schY={45-Math.floor(i/8)*5}/>
       <Pins name={c.name} pins={{pin1:c.net,pin2:"GND"}}/></Fragment>
   })}
+  {/* First explicit DDR bypass loop. Both holes lie at interstitial BGA
+      sites; no via in a CPU/capacitor pad. The remaining bypass loops and
+      package supply escapes still need routing and physical checks. */}
+  <via name="V_DDR_CPU1_POWER" pcbX={-4.8} pcbY={-2.4}
+    fromLayer="top" toLayer="bottom" outerDiameter={ddrVia.land} holeDiameter={ddrVia.drill}
+    connectsTo="net.DDR_1V5" tented="top_and_bottom_tented"/>
+  <via name="V_DDR_CPU1_GROUND" pcbX={-6.4} pcbY={-2.4}
+    fromLayer="top" toLayer="bottom" outerDiameter={ddrVia.land} holeDiameter={ddrVia.drill}
+    connectsTo="net.GND" tented="top_and_bottom_tented"/>
+  <trace name="DDR_CPU1_POWER_LOOP" from="C_DDR_CPU_1.pin1" to=".V_DDR_CPU1_POWER > port.bottom"
+    pcbPath={[]} thickness={.2} routingPhaseIndex={5}/>
+  <trace name="DDR_CPU1_GROUND_LOOP" from="C_DDR_CPU_1.pin2" to=".V_DDR_CPU1_GROUND > port.bottom"
+    pcbPath={[]} thickness={.2} routingPhaseIndex={5}/>
 </>

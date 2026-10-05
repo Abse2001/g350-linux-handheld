@@ -1,0 +1,66 @@
+{
+  "status": "PASS_PLACEMENT_ONLY",
+  "fabricationReady": false,
+  "verifiedOriginalShellFit": false,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "mainBodyHeight": 99,
+    "speakerTongueWidth": 22,
+    "thickness": 1.6
+  },
+  "numCopperLayers": 4,
+  "logicalComponents": 233,
+  "preservedHostComponents": 212,
+  "newControlsAndAudioComponents": 21,
+  "nativeErrors": 0,
+  "placedPadsAndPlatedHoles": 1001,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "closestPads": [
+    {
+      "name": "SW_POWER",
+      "pad": "pcb_smtpad_469",
+      "clearanceLowerBoundMm": 0.45000699999999655
+    },
+    {
+      "name": "SW_POWER",
+      "pad": "pcb_smtpad_471",
+      "clearanceLowerBoundMm": 0.45000699999999655
+    },
+    {
+      "name": "SW_RESET",
+      "pad": "pcb_smtpad_817",
+      "clearanceLowerBoundMm": 0.45000699999999655
+    },
+    {
+      "name": "SW_RESET",
+      "pad": "pcb_smtpad_819",
+      "clearanceLowerBoundMm": 0.45000699999999655
+    },
+    {
+      "name": "J_SD",
+      "pad": "pcb_smtpad_860",
+      "clearanceLowerBoundMm": 0.5749047999999959
+    }
+  ],
+  "courtyardOutsideOutline": [
+    {
+      "name": "J_USB",
+      "clearanceLowerBoundMm": -0.7009988000000249
+    }
+  ],
+  "staleTraces": 0,
+  "staleVias": 0,
+  "originalHostTerminalConnectivityPreserved": true,
+  "hostPhysicalPadIdentityPreserved": true,
+  "scope": "Placement of existing host plus controls/audio. Missing final display/FPC/backlight and harness selection; no routing, DDR timing, shell-fit or fabrication qualification.",
+  "hashes": {
+    "dist/experiments/am3352-g350-placement-study/circuit.json": "d82e8e7009f2d846e324f37c28d26f9fb9b0b2cfec26b66e941ac0b870b15658",
+    "dist/diagnostics/am3352-command-fine-782-replay-candidate/circuit.json": "5d26b45a9b1b5e499fe224f63bbdc4b5de8289a139f6c904fdc7674075bfd33a",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "lib/am3352/placement/host-placements.json": "21a508c6cd218a40931b493da6b3347234c99305a831580469764a5c92c2b92d",
+    "lib/am3352/placement/LayoutOnly.tsx": "5c89af36fe0f1e6a147a564287d3420e543e07a70bfcc04a67a8cc22d9839655",
+    "lib/am3352/placement/ControlsAndAudio.tsx": "6a88cdf3456e018e4f5d3d4051be04826f390dd6ecbc4819b55e8ea5dc8eb47e",
+    "experiments/am3352-g350-placement-study.circuit.tsx": "33c6e9b0169c0887e794a72d01a7e52518022e6e8537d67d09e89ba07b45f8ff"
+  }
+}

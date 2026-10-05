@@ -1,0 +1,46 @@
+{
+  "status": "ALL_52_COMMAND_TERMINALS_PHYSICALLY_CONNECTED_CHANNELS_INCOMPLETE",
+  "circuit": {
+    "path": "dist/am3352-dual-layer-command-terminal-physical-diagnostic/circuit.json",
+    "sha256": "8c78608ccc174ec58b5bfddabddc6a5dc42d006ebd73fd35a8704189bc51eed3"
+  },
+  "board": {
+    "path": "dist/am3352-dual-layer-command-terminal-physical-diagnostic/board.kicad_pcb",
+    "sha256": "73064524726062b7355b05fd617fe08d9e89385dda2d40295eecff136bd8f422"
+  },
+  "routingRun": {
+    "path": "dist/am3352-dual-layer-command-terminals-attempt-157/result.json",
+    "sha256": "e6af6a0133fc9f4964b776be674df21a50b82f01ce71bb3bdeda97088b553b72"
+  },
+  "cpuCommandTerminalsConnected": 26,
+  "ramCommandTerminalsConnected": 26,
+  "completeDdrChannels": 0,
+  "physicalCopperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "reservedReferenceLayers": [
+    "inner1",
+    "inner2"
+  ],
+  "physicalThroughVias": 226,
+  "newTerminalVias": 51,
+  "reusedTerminalVias": 1,
+  "minimumHoleEdgeClearanceMm": 0.3116854249492348,
+  "sourcePowerPiecesPreserved": 69,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolationsAllSeverities": 0,
+  "retainedDanglingVias": 96,
+  "presentationWarnings": 418,
+  "wholeHostUnconnectedItems": 499,
+  "exactFootprints": 273,
+  "physicalLibraryRecordsPreserved": 4808,
+  "independentFullDrcPass": false,
+  "timingQualified": false,
+  "fabricationReady": false,
+  "scope": "Independent pad-to-terminal diagnostic only. Terminal vias restrict channel routing; the next repair uses clock-only terminal vias. The checked 23-channel layout remains the active default."
+}

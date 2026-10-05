@@ -1,0 +1,130 @@
+{
+  "status": "PASS_SCOPED_SHAPED_BYTE0_PHYSICAL_CONNECTIVITY_AND_PLANAR_SKEW",
+  "entry": "experiments/am3352-g350-byte0-complete-bus.circuit.tsx",
+  "source": {
+    "path": "dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json",
+    "sha256": "01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555"
+  },
+  "board": {
+    "path": "checks/integrated/g350-byte0-complete-bus/g350-byte0.kicad_pcb",
+    "sha256": "1b61379e0f651fa99527abd1721de2819ced06adbf4c4fc6269ab6ca8e2c6cfd"
+  },
+  "sourceFunctionalRecordsAndPhysicalPlacementPreserved": true,
+  "all101PowerTracesAnd97PowerViasPreserved": true,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "placedComponents": 280,
+  "checkedConnectedDdrSignals": 11,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignals": 38,
+  "completeByte0SourceBus": true,
+  "byte0SourceBusSignals": [
+    "DDR_D0",
+    "DDR_D1",
+    "DDR_D2",
+    "DDR_D3",
+    "DDR_D4",
+    "DDR_D5",
+    "DDR_D6",
+    "DDR_D7",
+    "DDR_DQM0",
+    "DDR_DQS0",
+    "DDR_DQSn0"
+  ],
+  "nativeBusLanesBootstrapUsed": true,
+  "nativeFullNineLaneSolve": false,
+  "nativeSevenCarrierWaypointsRetained": true,
+  "manualLastTwoCarriers": true,
+  "manualStrobeAndDataLengthRepairs": true,
+  "byte0PlanarSkewMm": 0.20779212861254237,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarSkewPass": true,
+  "strobePairPlanarSkewMm": 3.552713678800501e-15,
+  "strobePairPlanarSkewPass": true,
+  "bothReferencePlanesContinuous": true,
+  "checkedPackagePowerTerminals": 101,
+  "traces": 112,
+  "physicalThroughVias": 119,
+  "nativeErrors": {
+    "pcb_port_not_connected_error": 818,
+    "pcb_trace_missing_error": 108
+  },
+  "independentPhysicalErrors": 0,
+  "presentationWarnings": 403,
+  "reportedUnconnectedItems": 499,
+  "unconnectedItemsMayBeCapped": true,
+  "allLayerGerberShorts": 0,
+  "noIgnoredKiCadRulesOrExclusions": true,
+  "ddrElectricalTimingQualified": false,
+  "stackupImpedanceQualified": false,
+  "bypassCapacitorsRouted": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "evidence": [
+    {
+      "path": "dist/g350-current-index-byte0-handoff-fixed/execution.json",
+      "sha256": "994b0183fac80c5c9fdc9fe32465d8baf43484f2cd78dcc560eaf48949a0b70a"
+    },
+    {
+      "path": "dist/g350-current-index-byte0-handoff-fixed/result.json",
+      "sha256": "30a888d65a5c8a3fd0802230fe5a7e1a706b9875b24bbed8c8694cc53fe52155"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/final-drc.json",
+      "sha256": "19efe82bb72d4c2957d60c1bda54987cca517054b679653b668d16a3ea43d6d5"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/plane-connectivity.json",
+      "sha256": "43f120892c03caa70b0d1dd222280b8f0d82194a34b704a40455d07bd2fd9e4c"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/stencil-verified.json",
+      "sha256": "fda0a86f2f04bc9c44afc993dc8f0ea8162c7d6134a792dccc1120469e23634f"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/ddr-connectivity.json",
+      "sha256": "78c0167e7f8c8745f214687d7883309c9ce1d4a6276f63522f2df658cccac3d7"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/full-ddr-timing.json",
+      "sha256": "ece72ff3e0f55cb9b0f34f47c1b0da38476b2d2b1003f38fd39b4900be6fd7fa"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/shorts.log",
+      "sha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/library.log",
+      "sha256": "641d1a48eb373fb87486d458b7708b6cab439d8ceef95c2a96341fec7476fc4a"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/byte0-seven-native-cache.json",
+      "sha256": "82013539b189e14afb628468c42621926a18afa022713efe10a056c5fb5855c5"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/check-summary.json",
+      "sha256": "3b7051a48b0c89fc2965276ddb205ffd18a27b9e48eeb14039f8700c3544fdf5"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/core-upgrade-and-bus-check.json",
+      "sha256": "b3dbde9c917bbb0b9f75185ebe83f6aacb9681c780aa0e1f940e787113ae01ec"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/plane-checker.executed.py",
+      "sha256": "906e867eb1b1db29c67251e0c71aaf857589fbe1d7bf7f40432c91fa8a514b27"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/ddr-checker.executed.py",
+      "sha256": "1610638f37449c43e2a69e6b4023df916031176d102513f407d58234b44d77da"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-complete-bus/stencil-checker.executed.py",
+      "sha256": "44787a7a3ad78d9d0ebac3dbc9e6f24988ac4dab1dcc369e338fdb3c49eced4e"
+    }
+  ],
+  "scope": "Only byte0 numeric-pad continuity, physical copper/drill clearance, and the existing 101 package-to-plane connections. Planar skew is reported separately. Complete DDR timing/impedance, 38 signals, bypass and converter loops, remaining host connectivity, Linux and original-shell fit remain unfinished."
+}

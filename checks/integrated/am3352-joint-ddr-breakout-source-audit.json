@@ -1,0 +1,33 @@
+{
+  "status": "JOINT_NATIVE_SYNCHRONOUS_DDR_BREAKOUT_RESERVATIONS_PASS_SOURCE_AUDIT",
+  "source": {
+    "path": "dist/experiments/am3352-joint-ddr-breakout-host/circuit.json",
+    "sha256": "fe69070a7bc659551dacbb0774ac3d633de80bfd3925e3ba5bf2b562c34e6b13",
+    "components": 204
+  },
+  "bootstrap": {
+    "path": "dist/am3352-joint-ddr-breakout-attempt-132/result.json",
+    "sha256": "19d41cda31dc42385c5f15c35953a5410e2ac765015ea93097a2d11c9bacaa68"
+  },
+  "nativeEscapes": {
+    "path": "dist/am3352-joint-ddr-breakout-attempt-132/signal-escapes.native.json",
+    "sha256": "262b7d3440635c61e20f2879bf0d5d2267ceaf5ed4de3553987d0d320961ef4f"
+  },
+  "synchronousSignals": 48,
+  "cpuBreakouts": 48,
+  "ramBreakouts": 48,
+  "sourcePowerTraces": 69,
+  "sourcePowerVias": 69,
+  "reservedSignalVias": 96,
+  "totalReservedThroughVias": 165,
+  "minimumReservedHoleEdgeClearanceMm": 0.44600000000000284,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "newCompletedSignalChannels": 0,
+  "manufacturedCandidate": false,
+  "fabricationReady": false,
+  "scope": "All native pad-to-through-via reservations were prepared jointly from the fresh actual source before individual byte routing. No complete channel is claimed; the active checked board remains the separate 23-signal replay."
+}

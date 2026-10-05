@@ -1,0 +1,127 @@
+{
+  "status": "ADDRESS_CONTROL_INCOMPLETE_CKE_RAM_ACCESS_REPAIR_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-repaired-strobes-candidate/circuit.json",
+    "sha256": "aa7dce6e20cf0173895ecee9ed5e7dbfd8f815fba47bfc64b8dc8eed3f536ae3"
+  },
+  "checkedDefaultSignals": 25,
+  "remainingAddressControlSignals": 24,
+  "newAcceptedAddressControlSignals": 0,
+  "nativeFullBusTrials": [
+    {
+      "run": {
+        "path": "dist/am3352-ddr25-address-control-bottom-attempt-447/result.json",
+        "sha256": "77409cb24dbd865602b1beda3baf18c4eb015ac10131dcb6676ef1f3ba0b2a3b"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "failureCode": "local_dogbone_failed",
+      "newConnectedSignals": 0
+    },
+    {
+      "run": {
+        "path": "dist/am3352-ddr25-address-control-top-attempt-448/result.json",
+        "sha256": "14d66e6a1c115f09e882460628e0d3d189d7056ebd6c324c429b3fefa574037d"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "failureCode": "no_planar_route",
+      "newConnectedSignals": 0
+    }
+  ],
+  "latestManualLocalTrial": {
+    "path": "dist/am3352-ddr25-address-control-wide-local-attempt-453/result.json",
+    "sha256": "4d10f6f5b245f330d4e21eb3e88980bf890dea282ce816abd20884d784a26039"
+  },
+  "latestLocalStatus": "LOCAL_MODIFICATION_ORDER_CYCLE",
+  "localReplans": 7,
+  "failure": {
+    "name": "source_trace_48",
+    "package": "U_RAM",
+    "error": "no clearance-preserving local path",
+    "expanded": 562,
+    "reachableLayers": [
+      "top"
+    ],
+    "reachableBounds": {
+      "minX": 2.780000000000001,
+      "maxX": 3.3599999999999994,
+      "minY": -28.64,
+      "maxY": -27.759999999999998
+    },
+    "boundaryBlockers": [
+      {
+        "origin": {
+          "kind": "obstacle",
+          "pcb_via_id": "pcb_via_27"
+        },
+        "boundarySamples": 22,
+        "layers": [
+          "top"
+        ]
+      },
+      {
+        "origin": {
+          "kind": "obstacle",
+          "pcb_via_id": "pcb_via_26"
+        },
+        "boundarySamples": 18,
+        "layers": [
+          "top"
+        ]
+      },
+      {
+        "origin": {
+          "kind": "route",
+          "pcb_trace_id": "pcb_trace_13",
+          "source_trace_id": "source_trace_27",
+          "name": "DDR_DQSn1"
+        },
+        "boundarySamples": 11,
+        "layers": [
+          "top"
+        ]
+      },
+      {
+        "origin": {
+          "kind": "obstacle",
+          "pcb_smtpad_id": "pcb_smtpad_414",
+          "pcb_port_id": "pcb_port_414"
+        },
+        "boundarySamples": 2,
+        "layers": [
+          "top"
+        ]
+      },
+      {
+        "origin": {
+          "kind": "obstacle",
+          "pcb_smtpad_id": "pcb_smtpad_397",
+          "pcb_port_id": "pcb_port_397"
+        },
+        "boundarySamples": 1,
+        "layers": [
+          "top"
+        ]
+      },
+      {
+        "origin": {
+          "kind": "obstacle",
+          "pcb_smtpad_id": "pcb_smtpad_412",
+          "pcb_port_id": "pcb_port_412"
+        },
+        "boundarySamples": 1,
+        "layers": [
+          "top"
+        ]
+      }
+    ],
+    "blockerScope": "Diagnostic reachable-boundary contacts only; fixed copper and all clearance rules are unchanged."
+  },
+  "clockRetuningReview": {
+    "path": "checks/integrated/am3352-ddr25-ti-nominal-length-review.json",
+    "sha256": "58d12363dd266710b21b090194cd82e9c320f4a6be6a40b77dca9183656fce8e"
+  },
+  "activeSolverHandles": [],
+  "defaultCopperChanged": false,
+  "fabricationReady": false,
+  "nextAction": "Create legal CKE access around the RAM negative-strobe tail while preserving or freshly rechecking its byte/pair matching. Then continue the 24 address/control fanouts and native bus_lanes channels. Retune clocks to the reviewed class nominal range and recheck complete DDR electrical requirements."
+}

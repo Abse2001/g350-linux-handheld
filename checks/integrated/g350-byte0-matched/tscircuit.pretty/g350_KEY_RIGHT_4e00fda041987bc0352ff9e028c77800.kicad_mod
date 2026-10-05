@@ -1,0 +1,97 @@
+(footprint "g350_KEY_RIGHT_4e00fda041987bc0352ff9e028c77800"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "KEY_RIGHT"
+		(at 0 3 180)
+		(layer "B.SilkS")
+		(hide yes)
+		(uuid "e0d19cca-b210-40ab-8811-a085f1e228d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Value" ""
+		(at 0 -3 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "79217c3f-85da-4650-9576-e446f449bfaa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "41ea1902-739c-41f8-b322-05f77dc43ebd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "37d80922-c297-4689-a44a-3fd4a0a0b7ea")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Supplier Part Number" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "77aba560-6d4d-cfbf-62ef-fa1e5892247d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr dnp)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3 3)
+		(end 3 -3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2fc0b653-c074-49fd-b37e-b5fd6d4e6baa")
+	)
+	(pad "1" smd rect
+		(at 1.35 0)
+		(size 2.3 5)
+		(layers "F.Cu" "F.Mask")
+		(uuid "214d61c2-0de2-6f02-0588-83be18f3767e")
+	)
+	(pad "2" smd rect
+		(at -1.35 0)
+		(size 2.3 5)
+		(layers "F.Cu" "F.Mask")
+		(uuid "3e836ac0-6789-301f-0d95-cafe4c5d9a23")
+	)
+	(embedded_fonts no)
+)

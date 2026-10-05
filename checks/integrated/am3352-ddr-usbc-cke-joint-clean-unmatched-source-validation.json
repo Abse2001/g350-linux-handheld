@@ -1,0 +1,69 @@
+{
+  "status": "CKE_JOINT_DDR26_EXACT_REPLAY_AND_FIXED_COPPER_PASS_TIMING_AND_INDEPENDENT_PHYSICAL_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-joint-clean-unmatched-candidate/circuit.json",
+    "sha256": "e5383bda5b6da9acf5c268aee4e086bc149bddf46b2238e86d03741b347dcf18"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-access-candidate/circuit.json",
+    "sha256": "6b84710aae3e3cc99dfcae64c30dd90fe336ef55c6d02a90ab93bb64a3529bb3"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-cke-joint-clean-unmatched-paths.json",
+    "sha256": "9676816aa13a32eb7a812dd7fbddabb52b2d5037d9e6d7149e3bacbcf9bdcf7b"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-cke-joint-clean-unmatched-paths.provenance.json",
+    "sha256": "0510754ceb4bf105c2e90035dc055bdc92930813ec1737df8666d1be6ccc484b"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-access-check-summary.json",
+    "sha256": "df57ba9abd16d4f9aa8432dd8281dc73e2b498a0eb88054e2ead8a01424f2e68"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 128,
+  "throughVias": 143,
+  "preservedFixedTracePieces": 124,
+  "changedExistingSignals": [
+    "DDR_DQSn1",
+    "DDR_D1",
+    "DDR_D7"
+  ],
+  "addedSignals": [
+    "DDR_CKE"
+  ],
+  "preservedThroughVias": 135,
+  "addedThroughVias": 8,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "lengths": [
+    {
+      "name": "DDR_DQSn1",
+      "planarMm": 61.12072643349098,
+      "throughVias": 4
+    },
+    {
+      "name": "DDR_D1",
+      "planarMm": 30.7277835406695,
+      "throughVias": 2
+    },
+    {
+      "name": "DDR_D7",
+      "planarMm": 30.570362432353047,
+      "throughVias": 4
+    },
+    {
+      "name": "DDR_CKE",
+      "planarMm": 49.90747867980896,
+      "throughVias": 4
+    }
+  ],
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForEightAddedSignalHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "byteAndStrobePlanarMatchingQualified": false,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

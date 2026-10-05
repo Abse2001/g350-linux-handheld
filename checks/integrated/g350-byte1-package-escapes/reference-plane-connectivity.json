@@ -1,0 +1,1559 @@
+{
+  "status": "PASS_NUMERIC_PAD_VIA_FILLED_PLANE_CONNECTIVITY",
+  "board": {
+    "path": "checks/integrated/g350-byte1-package-escapes/g350-byte1-escapes.kicad_pcb",
+    "sha256": "2ecc8e6ccab6dabe3a7a2fc5877a579c531fe792a9d4f670dc377cf1214b913e"
+  },
+  "circuit": {
+    "path": "dist/g350-byte1-explicit-fanout-replay/compiled.circuit.json",
+    "sha256": "0aead32d237ba63631d9c6cb8080d5f1c89cf98c5ec229a45bbe98d422e6bae7"
+  },
+  "referenceSources": [
+    {
+      "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+      "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+    },
+    {
+      "path": "lib/am3352/ram-ball-map.json",
+      "sha256": "7998a87e977af7f9b8bbc69cc6879e9df4820778434401bc9ed4ac5c0ef6f752"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-ram-power-fanout.json",
+      "sha256": "72ed5ee02dd217714d2e09779f0647479fd705b617d82e0e09b3e3f96575607b"
+    },
+    {
+      "path": "lib/am3352/cpu-ball-map.json",
+      "sha256": "f936e408a702a5eb42d68d2cd834d7ccefb98930eda205ac234144c0c10213df"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-cpu-power-fanout-repaired.json",
+      "sha256": "e991ba347533176bd7d001de9798daf314eda1367c05cfedaef6e6d78a9c0472"
+    }
+  ],
+  "checkedPackageTerminals": 101,
+  "physicalThroughVias": 141,
+  "copperLayers": 4,
+  "bothReferencePlanesContinuous": true,
+  "padToViaLengthsWithinTiLimits": true,
+  "records": [
+    {
+      "package": "U_RAM",
+      "ball": "T1",
+      "function": "VSS",
+      "numericPin": 16,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -6.5412
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.7068854249492378,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "T9",
+      "function": "VSS",
+      "numericPin": 96,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": -6.5412
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.7068854249492378,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "R1",
+      "function": "VDD",
+      "numericPin": 15,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "R9",
+      "function": "VDD",
+      "numericPin": 95,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": -5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "P1",
+      "function": "VSS",
+      "numericPin": 14,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "P9",
+      "function": "VSS",
+      "numericPin": 94,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": -4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "N1",
+      "function": "VDD",
+      "numericPin": 13,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "N9",
+      "function": "VDD",
+      "numericPin": 93,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": -4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "M1",
+      "function": "VSS",
+      "numericPin": 12,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": -3.1999999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "M9",
+      "function": "VSS",
+      "numericPin": 92,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": -3.1999999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "K2",
+      "function": "VDD",
+      "numericPin": 26,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": -1.5999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "K8",
+      "function": "VDD",
+      "numericPin": 74,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 2.8,
+        "y": -1.5999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "J2",
+      "function": "VSS",
+      "numericPin": 25,
+      "net": "GND",
+      "via": {
+        "x": -2,
+        "y": -0.7999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "J8",
+      "function": "VSS",
+      "numericPin": 73,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": -0.7999999999999999
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "H2",
+      "function": "VDDQ",
+      "numericPin": 24,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": 1.1102230246251565e-16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "H9",
+      "function": "VDDQ",
+      "numericPin": 88,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 1.1102230246251565e-16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G1",
+      "function": "VSSQ",
+      "numericPin": 7,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G7",
+      "function": "VDD",
+      "numericPin": 55,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 2,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G8",
+      "function": "VSS",
+      "numericPin": 71,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "G9",
+      "function": "VSSQ",
+      "numericPin": 87,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 0.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "F1",
+      "function": "VDDQ",
+      "numericPin": 6,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 1.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "F9",
+      "function": "VSSQ",
+      "numericPin": 86,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 1.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E1",
+      "function": "VSS",
+      "numericPin": 5,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E2",
+      "function": "VSSQ",
+      "numericPin": 21,
+      "net": "GND",
+      "via": {
+        "x": -2,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E8",
+      "function": "VSSQ",
+      "numericPin": 69,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "E9",
+      "function": "VDDQ",
+      "numericPin": 85,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 2.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D1",
+      "function": "VSSQ",
+      "numericPin": 4,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D2",
+      "function": "VDDQ",
+      "numericPin": 20,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D8",
+      "function": "VSSQ",
+      "numericPin": 68,
+      "net": "GND",
+      "via": {
+        "x": 2.8,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "D9",
+      "function": "VDD",
+      "numericPin": 84,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 3.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492379,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "C1",
+      "function": "VDDQ",
+      "numericPin": 3,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "C9",
+      "function": "VDDQ",
+      "numericPin": 83,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 3.6,
+        "y": 4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B1",
+      "function": "VSSQ",
+      "numericPin": 2,
+      "net": "GND",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B2",
+      "function": "VDD",
+      "numericPin": 18,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B3",
+      "function": "VSS",
+      "numericPin": 34,
+      "net": "GND",
+      "via": {
+        "x": -1.2000000000000002,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "B9",
+      "function": "VSSQ",
+      "numericPin": 82,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 4.800000000000001
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492376,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "A1",
+      "function": "VDDQ",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.8000000000000003,
+        "y": 5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "A8",
+      "function": "VDDQ",
+      "numericPin": 65,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 2.8,
+        "y": 5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_RAM",
+      "ball": "A9",
+      "function": "VSS",
+      "numericPin": 81,
+      "net": "GND",
+      "via": {
+        "x": 3.6,
+        "y": 5.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492382,
+      "limitMm": 1.524
+    },
+    {
+      "package": "U_SOC",
+      "ball": "A1",
+      "function": "VSS",
+      "numericPin": 1,
+      "net": "GND",
+      "via": {
+        "x": -6.4,
+        "y": 12.6688
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492381,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "V1",
+      "function": "VSS",
+      "numericPin": 18,
+      "net": "GND",
+      "via": {
+        "x": 7.199999999999999,
+        "y": 12.6688
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492381,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "A18",
+      "function": "VSS",
+      "numericPin": 307,
+      "net": "GND",
+      "via": {
+        "x": -6.4,
+        "y": 27.3312
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492363,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "V18",
+      "function": "VSS",
+      "numericPin": 324,
+      "net": "GND",
+      "via": {
+        "x": 7.199999999999999,
+        "y": 27.3312
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492363,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "A5",
+      "function": "VSS_RTC",
+      "numericPin": 73,
+      "net": "GND",
+      "via": {
+        "x": -7.3312,
+        "y": 16.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "A7",
+      "function": "AIN3",
+      "numericPin": 109,
+      "net": "GND",
+      "via": {
+        "x": -7.3312,
+        "y": 18.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "A8",
+      "function": "AIN6",
+      "numericPin": 127,
+      "net": "GND",
+      "via": {
+        "x": -7.3312,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "A9",
+      "function": "VREFN",
+      "numericPin": 145,
+      "net": "GND",
+      "via": {
+        "x": -7.3312,
+        "y": 20
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "V11",
+      "function": "VSS_OSC",
+      "numericPin": 198,
+      "net": "GND",
+      "via": {
+        "x": 7.3312,
+        "y": 21.599999999999998
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.6968854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "B4",
+      "function": "RTC_KALDO_ENn",
+      "numericPin": 56,
+      "net": "GND",
+      "via": {
+        "x": -6.4,
+        "y": 15.999999999999998
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492372,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "B6",
+      "function": "AIN0",
+      "numericPin": 92,
+      "net": "GND",
+      "via": {
+        "x": -6.4,
+        "y": 17.599999999999998
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492372,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "B7",
+      "function": "AIN2",
+      "numericPin": 110,
+      "net": "GND",
+      "via": {
+        "x": -5.6,
+        "y": 17.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "B8",
+      "function": "AIN5",
+      "numericPin": 128,
+      "net": "GND",
+      "via": {
+        "x": -6.4,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492372,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "B9",
+      "function": "VREFP",
+      "numericPin": 146,
+      "net": "GND",
+      "via": {
+        "x": -4.8,
+        "y": 20
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 1.3656854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "C7",
+      "function": "AIN1",
+      "numericPin": 111,
+      "net": "GND",
+      "via": {
+        "x": -5.599999999999999,
+        "y": 17.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": true,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "C8",
+      "function": "AIN4",
+      "numericPin": 129,
+      "net": "GND",
+      "via": {
+        "x": -5.6,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492366,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "C9",
+      "function": "AIN7",
+      "numericPin": 147,
+      "net": "GND",
+      "via": {
+        "x": -4.800000000000002,
+        "y": 20
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": true,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "D8",
+      "function": "VDDA_ADC",
+      "numericPin": 130,
+      "net": "GND",
+      "via": {
+        "x": -4.800000000000001,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492372,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "E5",
+      "function": "VDDS_DDR",
+      "numericPin": 77,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -3.2,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "F5",
+      "function": "VDDS_DDR",
+      "numericPin": 78,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -2.4,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "G5",
+      "function": "VDDS_DDR",
+      "numericPin": 79,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -1.6,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H5",
+      "function": "VDDS_DDR",
+      "numericPin": 80,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -0.8,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J5",
+      "function": "VDDS_DDR",
+      "numericPin": 81,
+      "net": "DDR_1V5",
+      "via": {
+        "x": -1.1102230246251565e-16,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "K5",
+      "function": "VDDS_DDR",
+      "numericPin": 82,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 0.7999999999999999,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "L5",
+      "function": "VDDS_DDR",
+      "numericPin": 83,
+      "net": "DDR_1V5",
+      "via": {
+        "x": 1.5999999999999999,
+        "y": 16
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M14",
+      "function": "VSSA_USB",
+      "numericPin": 246,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 24
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "N14",
+      "function": "VSSA_USB",
+      "numericPin": 247,
+      "net": "GND",
+      "via": {
+        "x": 3.1999999999999997,
+        "y": 24
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "E8",
+      "function": "VSSA_ADC",
+      "numericPin": 131,
+      "net": "GND",
+      "via": {
+        "x": -4,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H6",
+      "function": "VSS",
+      "numericPin": 98,
+      "net": "GND",
+      "via": {
+        "x": -0.8,
+        "y": 16.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J6",
+      "function": "VSS",
+      "numericPin": 99,
+      "net": "GND",
+      "via": {
+        "x": -1.1102230246251565e-16,
+        "y": 16.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M6",
+      "function": "VSS",
+      "numericPin": 102,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 16.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "N7",
+      "function": "VSS",
+      "numericPin": 121,
+      "net": "GND",
+      "via": {
+        "x": 3.1999999999999997,
+        "y": 18.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "F8",
+      "function": "VSS",
+      "numericPin": 132,
+      "net": "GND",
+      "via": {
+        "x": -3.1999999999999997,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "N10",
+      "function": "VSS",
+      "numericPin": 175,
+      "net": "GND",
+      "via": {
+        "x": 3.1999999999999997,
+        "y": 20.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "N11",
+      "function": "VSS",
+      "numericPin": 193,
+      "net": "GND",
+      "via": {
+        "x": 3.1999999999999997,
+        "y": 22.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 1.3656854249492376,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "L13",
+      "function": "VSS",
+      "numericPin": 227,
+      "net": "GND",
+      "via": {
+        "x": 0.8,
+        "y": 23.999999999999996
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 1.365685424949234,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H7",
+      "function": "VSS",
+      "numericPin": 116,
+      "net": "GND",
+      "via": {
+        "x": -0.8,
+        "y": 17.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J7",
+      "function": "VSS",
+      "numericPin": 117,
+      "net": "GND",
+      "via": {
+        "x": -1.1102230246251565e-16,
+        "y": 17.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "K7",
+      "function": "VSS",
+      "numericPin": 118,
+      "net": "GND",
+      "via": {
+        "x": 0.7999999999999999,
+        "y": 17.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M7",
+      "function": "VSS",
+      "numericPin": 120,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 17.6
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "G8",
+      "function": "VSS",
+      "numericPin": 133,
+      "net": "GND",
+      "via": {
+        "x": -2.4,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M8",
+      "function": "VSS",
+      "numericPin": 138,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "G9",
+      "function": "VSS",
+      "numericPin": 151,
+      "net": "GND",
+      "via": {
+        "x": -2.4,
+        "y": 20
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M9",
+      "function": "VSS",
+      "numericPin": 156,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 20
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M10",
+      "function": "VSS",
+      "numericPin": 174,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 20.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "G11",
+      "function": "VSS",
+      "numericPin": 187,
+      "net": "GND",
+      "via": {
+        "x": -2.4,
+        "y": 21.599999999999998
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "G12",
+      "function": "VSS",
+      "numericPin": 205,
+      "net": "GND",
+      "via": {
+        "x": -1.6,
+        "y": 22.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H12",
+      "function": "VSS",
+      "numericPin": 206,
+      "net": "GND",
+      "via": {
+        "x": -0.8,
+        "y": 22.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "L12",
+      "function": "VSS",
+      "numericPin": 209,
+      "net": "GND",
+      "via": {
+        "x": 1.5999999999999999,
+        "y": 22.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "M12",
+      "function": "VSS",
+      "numericPin": 210,
+      "net": "GND",
+      "via": {
+        "x": 2.4,
+        "y": 22.4
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H8",
+      "function": "VSS",
+      "numericPin": 134,
+      "net": "GND",
+      "via": {
+        "x": -1.5999999999999999,
+        "y": 19.2
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J8",
+      "function": "VSS",
+      "numericPin": 135,
+      "net": "GND",
+      "via": {
+        "x": -1.1102230246251565e-16,
+        "y": 17.600000000000005
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": true,
+      "padToViaLengthMm": 1.365685424949234,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H9",
+      "function": "VSS",
+      "numericPin": 152,
+      "net": "GND",
+      "via": {
+        "x": -0.7999999999999999,
+        "y": 19.200000000000003
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "H10",
+      "function": "VSS",
+      "numericPin": 170,
+      "net": "GND",
+      "via": {
+        "x": -1.5999999999999999,
+        "y": 20.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "L10",
+      "function": "VSS",
+      "numericPin": 173,
+      "net": "GND",
+      "via": {
+        "x": 1.5999999999999999,
+        "y": 20.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J11",
+      "function": "VSS",
+      "numericPin": 189,
+      "net": "GND",
+      "via": {
+        "x": -1.1102230246251565e-16,
+        "y": 21.599999999999998
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "K11",
+      "function": "VSS",
+      "numericPin": 190,
+      "net": "GND",
+      "via": {
+        "x": 0,
+        "y": 20.8
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "L11",
+      "function": "VSS",
+      "numericPin": 191,
+      "net": "GND",
+      "via": {
+        "x": 2.3999999999999995,
+        "y": 21.599999999999998
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 1.365685424949237,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J9",
+      "function": "VSS",
+      "numericPin": 153,
+      "net": "GND",
+      "via": {
+        "x": -0.7999999999999986,
+        "y": 19.200000000000003
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": true,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "K9",
+      "function": "VSS",
+      "numericPin": 154,
+      "net": "GND",
+      "via": {
+        "x": 0,
+        "y": 19.200000000000003
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.565685424949236,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "J10",
+      "function": "VSS",
+      "numericPin": 171,
+      "net": "GND",
+      "via": {
+        "x": -0.7999999999999999,
+        "y": 20.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    },
+    {
+      "package": "U_SOC",
+      "ball": "K10",
+      "function": "VSS",
+      "numericPin": 172,
+      "net": "GND",
+      "via": {
+        "x": 0.7999999999999999,
+        "y": 20.799999999999997
+      },
+      "connectedToFilledPlane": true,
+      "sharedExistingVia": false,
+      "padToViaLengthMm": 0.5656854249492369,
+      "limitMm": 1.778
+    }
+  ],
+  "fabricationReady": false,
+  "ddrSignalsQualified": 0,
+  "bypassCapacitorsRouted": false,
+  "scope": "Only the selected CPU/RAM ground and DDR supply escapes into their filled planes. Bypass loops, other voltage domains, signal routing, timing and complete handheld qualification remain unfinished."
+}

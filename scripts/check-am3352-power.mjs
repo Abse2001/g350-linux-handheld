@@ -1,10 +1,15 @@
 import {readFileSync,writeFileSync} from 'node:fs'
 import {createHash} from 'node:crypto'
 import assert from 'node:assert/strict'
+import {assertSourceCopper} from './lib/am3352-source-copper.mjs'
 
 // Audit actual generated source-port/net connectivity against primary
 // requirements. This is a logical power check, never a routed-PCB release.
 const path=process.argv[2]??'dist/experiments/am3352-powered-host/circuit.json'
+const mapPath=process.argv[3]??'lib/am3352/memory-byte1-swizzled-connections.json'
+const reportPath=process.argv[4]??'checks/integrated/am3352-power-validation.json'
+const referencePath=process.argv[5]
+const ramRotation=Number(process.argv[6]??0);assert([0,180].includes(ramRotation))
 const raw=readFileSync(path),circuit=JSON.parse(raw),type=t=>circuit.filter(e=>e.type===t)
 const components=type('source_component'),ports=type('source_port'),nets=type('source_net'),traces=type('source_trace')
 const board=type('pcb_board')[0],pcbComponents=type('pcb_component'),pcbPorts=type('pcb_port')
@@ -26,7 +31,7 @@ const open=(name,pin)=>{
   assert(!traces.some(t=>t.connected_source_port_ids.includes(p.source_port_id)),`Unexpected external connection ${name}.${pin}`)
   assert.equal(p.do_not_connect,true,`Missing explicit no-connect ${name}.${pin}`)
 }
-assert.equal(board.num_layers,8)
+assert.equal(board.num_layers,4,'Active handheld must respect the four-copper-layer maximum')
 assert.equal(component('U_SOC').manufacturer_part_number,'AM3352BZCZ100')
 assert.equal(component('U_RAM').manufacturer_part_number,'MT41K256M16TW-107:P')
 assert.equal(component('U_PMIC').manufacturer_part_number,'TPS65217CRSLR')
@@ -36,7 +41,7 @@ const fixedCpu={VDDS:'VDDS_1V8',VDDS_RTC:'VDDS_1V8',VDDS_DDR:'DDR_1V5',VDD_CORE:
   VDDS_OSC:'ANALOG_1V8',VDDS_PLL_DDR:'ANALOG_1V8',VDDS_PLL_CORE_LCD:'ANALOG_1V8',VDDS_PLL_MPU:'ANALOG_1V8',
   VDDS_SRAM_CORE_BG:'ANALOG_1V8',VDDS_SRAM_MPU_BB:'ANALOG_1V8',VDDA1P8V_USB0:'ANALOG_1V8',VDDA1P8V_USB1:'ANALOG_1V8',
   VDDA3P3V_USB0:'IO_3V3',VDDA3P3V_USB1:'IO_3V3',VDDSHV1:'ANALOG_1V8',VDDSHV2:'ANALOG_1V8',VDDSHV3:'ANALOG_1V8',
-  VDDSHV4:'IO_3V3',VDDSHV5:'IO_3V3',VDDSHV6:'IO_3V3',VDDA_ADC:'GND',VREFP:'GND',VREFN:'GND',RTC_KALDO_ENn:'GND'}
+  VDDSHV4:'PERIPH_3V3',VDDSHV5:'IO_3V3',VDDSHV6:'IO_3V3',VDDA_ADC:'GND',VREFP:'GND',VREFN:'GND',RTC_KALDO_ENn:'GND'}
 for(const [ball,fn] of Object.entries(cpu)) {
   if(fn==='VPP'){open('U_SOC',ball);continue}
   const expected=fn.startsWith('VSS')||/^AIN[0-7]$/.test(fn)?'GND':fixedCpu[fn]
@@ -51,13 +56,13 @@ for(const [ball,fn] of Object.entries(ram)) {
 assert.equal(counts.ramSupply,18)
 assert.equal(counts.ramGround,21)
 const pmicPins={1:'LDO2_3V3',2:'VIO_BOOST5V',3:'VDDS_1V8',4:'VBAT',5:'VBAT',6:'VBAT',7:'VSYS',8:'VSYS',9:'PMIC_ENABLE',11:'BAT_NTC',12:'USB_5V',13:'PMIC_WAKEUPn',
-  18:'VDDS_1V8',19:'DDR_1V5',20:'SW_DDR',21:'VSYS',22:'VSYS',23:'SW_MPU',24:'VDD_MPU',25:'PMIC_BUTTONn',26:'CPU_PORn',27:'I2C0_SDA',28:'I2C0_SCL',
+  18:'VDDS_1V8',19:'DDR_1V5',20:'SW_DDR',21:'VSYS',22:'VSYS',23:'SW_MPU',24:'VDD_MPU',25:'PMIC_BUTTONn',26:'PMIC_MAIN_PGOOD',27:'I2C0_SDA',28:'I2C0_SCL',
   29:'VDD_CORE',30:'GND',31:'SW_CORE',32:'VSYS',33:'GND',34:'GND',39:'VSYS',40:'ANALOG_1V8',41:'GND',42:'VIO_BOOST5V',43:'IO_3V3',44:'PMIC_RESETn',45:'PMIC_INTn',46:'RTC_PORn',47:'PMIC_BYPASS',48:'PMIC_INT_LDO',49:'GND'}
 for(const [pin,net] of Object.entries(pmicPins))wired('U_PMIC',Number(pin),net)
 for(const pin of [10,14,15,16,17,35,36,37,38])open('U_PMIC',pin)
 for(const [fn,net] of Object.entries({PMIC_POWER_EN:'PMIC_ENABLE',PWRONRSTn:'CPU_PORn',RTC_PWRONRSTn:'RTC_PORn',EXT_WAKEUP:'PMIC_WAKEUPn',EXTINTn:'PMIC_INTn',I2C0_SDA:'I2C0_SDA',I2C0_SCL:'I2C0_SCL',DDR_VREF:'DDR_VREF',DDR_VTP:'DDR_VTP'}))
   wired('U_SOC',Object.entries(cpu).find(([,f])=>f===fn)[0],net)
-const signalMap=JSON.parse(readFileSync('lib/am3352/memory-byte1-swizzled-connections.json'))
+const signalMap=JSON.parse(readFileSync(mapPath))
 for(const m of signalMap) {
   const s=traces.find(t=>t.name===m.name)
   assert(s&&s.connected_source_port_ids.length===2)
@@ -80,7 +85,7 @@ for(const [name,net,value] of [['C_PMIC_INT_LDO','PMIC_INT_LDO',1e-7],['C_PMIC_B
   assert.equal(members.length,2,`${net} internal bias cannot supply an external load`)
 }
 const railCaps=[['CORE','VDD_CORE',8],['MPU','VDD_MPU',5],['VDDS','VDDS_1V8',4],['SRAM_CORE','ANALOG_1V8',1],['SRAM_MPU','ANALOG_1V8',1],
-  ...Array.from({length:6},(_,i)=>[`HV${i+1}`,i<3?'ANALOG_1V8':'IO_3V3',i===5?6:2])]
+  ...Array.from({length:6},(_,i)=>[`HV${i+1}`,i<3?'ANALOG_1V8':i===3?'PERIPH_3V3':'IO_3V3',i===5?6:2])]
 for(const [prefix,net,count] of railCaps){cap(`C_${prefix}_BULK`,net,22e-6);for(let n=1;n<=count;n++)cap(`C_${prefix}_${n}`,net,1e-8)}
 for(const [fn,net] of Object.entries(fixedCpu).filter(([fn])=>/^VDDS_(OSC|PLL_DDR|PLL_CORE_LCD|PLL_MPU|RTC)$|^VDDA[13]P[83]V_USB[01]$/.test(fn)))cap(`C_${fn}`,net,1e-8)
 const bypass=[]
@@ -119,12 +124,14 @@ assert.equal(component('R_IO_BOOST_HI').resistance,732000)
 assert.equal(component('R_IO_BOOST_LO').resistance,100000)
 const nativeErrors=circuit.filter(e=>e.type.endsWith('_error'))
 assert.equal(nativeErrors.length,0,`Source/placement errors: ${nativeErrors.map(e=>e.message).join('; ')}`)
-assert.equal(type('pcb_trace').length,0,'This verifier covers an explicitly unrouted source draft only')
+const sourceCopper=assertSourceCopper(circuit,{...(referencePath?{ramReferenceEscapes:JSON.parse(readFileSync(referencePath))}:{}),ramRotation})
 const report={status:'AM3352_LOGICAL_POWER_AND_BYPASS_PASS_ROUTING_INCOMPLETE',circuit:{path,sha256:createHash('sha256').update(raw).digest('hex')},
+  memoryMap:{path:mapPath,sha256:createHash('sha256').update(readFileSync(mapPath)).digest('hex')},
+  ...(referencePath?{ramReferenceLayout:{path:referencePath,sha256:createHash('sha256').update(readFileSync(referencePath)).digest('hex')},ramRotation}:{}),
   toolchain:Object.fromEntries(['tscircuit','@tscircuit/cli','@tscircuit/core','@tscircuit/capacity-autorouter'].map(name=>[name,JSON.parse(readFileSync(`node_modules/${name}/package.json`)).version])),
   components:components.length,memorySignalsDeclared:49,actualConnectedMemoryChannels:0,counts,bypass,explicitNoConnectVpp:true,
-  nativeSourcePlacementErrors:0,routedPower:false,completeHost:false,fabricationReady:false,
-  scope:'Actual generated logical connections, package supply domains, reset/control connections, bypass values/counts and nominal placement distances. No powered PCB, via topology, impedance, SI, effective-capacitance, startup, USB/battery, peripheral-load or thermal approval.',
+  nativeSourcePlacementErrors:0,routedPower:false,sourceCopper,completeHost:false,fabricationReady:false,
+  scope:'Generated logical connections, package supply domains, reset/control, bypass counts/placement, documented RAM reference escapes and bypass loops. Remaining supply escapes/copper, impedance, SI, effective capacitance, startup, USB/battery, full load and thermal qualification are incomplete.',
   primarySources:['https://www.ti.com/lit/ds/symlink/am3352.pdf','https://www.ti.com/lit/ug/slvu551i/slvu551i.pdf','https://www.ti.com/lit/an/slva686c/slva686c.pdf','https://www.ti.com/lit/an/sprabn2a/sprabn2a.pdf','https://e2e.ti.com/support/processors-group/processors/f/processors-forum/649479/am3352-vpp-pin-connection']}
-writeFileSync('checks/integrated/am3352-power-validation.json',JSON.stringify(report,null,2)+'\n')
+writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n')
 console.log(JSON.stringify({status:report.status,components:components.length,counts,bypass,fabricationReady:false}))

@@ -1,0 +1,13 @@
+file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:45332
+      throw new Error(
+            ^
+
+Error: FanoutSolver: minimum band on the bottom edge cannot fit 27 via-safe exits
+    at validateCornerBandCapacities (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:45332:13)
+    at new FanoutSolver (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:45738:5)
+    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-four-layer-fanouts.mjs:57:17
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v25.6.1

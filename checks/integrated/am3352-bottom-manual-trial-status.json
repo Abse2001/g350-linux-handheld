@@ -1,0 +1,2266 @@
+{
+  "status": "BOTTOM_RAM_NATIVE_BOOTSTRAP_MANUAL_REPLAY_AND_TERMINAL_TRIALS_BOUND_HOST_INCOMPLETE",
+  "date": "2026-10-04",
+  "trials": [
+    {
+      "path": "dist/am3352-ram-bottom-all49-ram-column-partition-attempt-710/result.json",
+      "sha256": "2633f9a924299ec38dfa3b62790f1042dd53593d6bb2389d698b81cd020340e5",
+      "attempt": 710,
+      "status": "BOTTOM_RAM_PARTITIONED_NATIVE_DDR_FAILED",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 0,
+      "preparedNativeEscapes": 49,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "sourceValidation",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-source-validation.json",
+          "sha256": "69ae8ebcbe951ba4f932b02294b9025c6cc928e452ae42d520d071e52a2161ac"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-attempt-707/result.json",
+          "sha256": "05e50d49082247b5a7e499be98bdc826a30a799fd63727494db20f5691dcb2ac"
+        },
+        {
+          "key": "priorInput",
+          "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-attempt-707/input.simple-route.json",
+          "sha256": "edf40e3102783edada25aa33f65d24917b8f69809884b1110961d1f3c6a71a7c"
+        },
+        {
+          "key": "input",
+          "path": "dist/am3352-ram-bottom-all49-ram-column-partition-attempt-710/input.simple-route.json",
+          "sha256": "b35bff47fccc82d12bfd4bde8d6595081402affbbdf3221ecef94f52d9e9f88e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-all49-ram-column-partition-attempt-710/partitioned-helper.executed.mjs",
+          "sha256": "e781a08da5253a1ba2d767b763f776d6253e2afe9d6d9d11ab5a9f7be462c896"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+      "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816",
+      "attempt": 711,
+      "status": "BOTTOM_RAM_PARTITIONED_NATIVE_DDR_FAILED",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 49,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "sourceValidation",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-source-validation.json",
+          "sha256": "69ae8ebcbe951ba4f932b02294b9025c6cc928e452ae42d520d071e52a2161ac"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-attempt-707/result.json",
+          "sha256": "05e50d49082247b5a7e499be98bdc826a30a799fd63727494db20f5691dcb2ac"
+        },
+        {
+          "key": "priorInput",
+          "path": "dist/am3352-ram-bottom-all49-native-swapped-command-top-attempt-707/input.simple-route.json",
+          "sha256": "edf40e3102783edada25aa33f65d24917b8f69809884b1110961d1f3c6a71a7c"
+        },
+        {
+          "key": "input",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/input.simple-route.json",
+          "sha256": "9385d2a8ee480a2d56745e6326c2c75ecf0b0ac678fa0be59edd3eddc99750f4"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partitioned-helper.executed.mjs",
+          "sha256": "07167dad02451ae06180ef01c495e63ffd4cc4bf6675cd0d7f604685a6453a28"
+        },
+        {
+          "key": "partialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-odt-manual-attempt-712/result.json",
+      "sha256": "fed1099532acc97084428dd0fad31bcf69556c19715df4691d38258a0f9a7134",
+      "attempt": 712,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_ODT",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-odt-manual-attempt-712/manual-helper.executed.mjs",
+          "sha256": "3aa40570a59ee07bb5c0dceb7c46462abd7080777f1a076cea6939ca5dfd1b64"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-a0-open-reservations-attempt-713/result.json",
+      "sha256": "628de3aa139c21345c2ab20768b3058acb427eec707284880b9c8a8d81a6e812",
+      "attempt": 713,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A0",
+      "stagedFullRoutes": 20,
+      "remainingDdrSignals": 29,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-a0-open-reservations-attempt-713/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-a0-open-reservations-attempt-713/manual-carrier-plan.json",
+          "sha256": "fb03492a033cedcd430ab767ad331b27c2e0d79beefb6db47e32de2f19b373e3"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-a0-open-reservations-attempt-713/staged-state.nonexportable.json",
+          "sha256": "5479fd204de6b7e2169d1460642810debdd96263e53cc5120edcc4f577d97743"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-d0-open-reservations-attempt-714/result.json",
+      "sha256": "bcc198ad590f2ace25ba6e4c81e76a2ac435bbbdd0bd252e2903268dea9ef8d5",
+      "attempt": 714,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_D0",
+      "stagedFullRoutes": 21,
+      "remainingDdrSignals": 28,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-a0-open-reservations-attempt-713/result.json",
+          "sha256": "628de3aa139c21345c2ab20768b3058acb427eec707284880b9c8a8d81a6e812"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-d0-open-reservations-attempt-714/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-d0-open-reservations-attempt-714/manual-carrier-plan.json",
+          "sha256": "93c330e88fe523211435f4602ec004906d29122ecc4362bb5c87c0fb354a5bd2"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-d0-open-reservations-attempt-714/staged-state.nonexportable.json",
+          "sha256": "67746e62a2dc2ac3c6f915dbf8feaec372b28913ac1c8b28fc6fdcb37bd11c3a"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d3-manual-attempt-715/result.json",
+      "sha256": "8136c30f0047b2aeb6ecbb6e5a8d5cabfd63102c2d19bc5057b9ef158ea27481",
+      "attempt": 715,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_D3",
+      "stagedFullRoutes": 22,
+      "remainingDdrSignals": 27,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-d0-open-reservations-attempt-714/result.json",
+          "sha256": "bcc198ad590f2ace25ba6e4c81e76a2ac435bbbdd0bd252e2903268dea9ef8d5"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d3-manual-attempt-715/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d3-manual-attempt-715/manual-carrier-plan.json",
+          "sha256": "fc2cbceeaef3950be81d43771518125cb087296175d6f4859a0902075a05bbcd"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d3-manual-attempt-715/staged-state.nonexportable.json",
+          "sha256": "4db00c5fd9643b21de7e74c019a1aea631b72a859fc1b39db0d70a7d0dccecc0"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d1-manual-attempt-716/result.json",
+      "sha256": "5f89bd5ab86a22ff1575b7691421845bf4952bca90c251663abbdc87eeaaaba1",
+      "attempt": 716,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_D1",
+      "stagedFullRoutes": 23,
+      "remainingDdrSignals": 26,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d3-manual-attempt-715/result.json",
+          "sha256": "8136c30f0047b2aeb6ecbb6e5a8d5cabfd63102c2d19bc5057b9ef158ea27481"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d1-manual-attempt-716/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d1-manual-attempt-716/manual-carrier-plan.json",
+          "sha256": "3ac5d278e8a42625cff9128281a41e976169b903477b929e5c373e4ec8e723b9"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d1-manual-attempt-716/staged-state.nonexportable.json",
+          "sha256": "3aa1aabddb2b38ed659e7891a612a03816e151d67934006d2dcae60a8c9806ff"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d7-manual-attempt-717/result.json",
+      "sha256": "5de47ab208e111ed884212d41f92a45a714ba5e12ff80c9a842aca0f28e2d51e",
+      "attempt": 717,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_D7",
+      "stagedFullRoutes": 24,
+      "remainingDdrSignals": 25,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d1-manual-attempt-716/result.json",
+          "sha256": "5f89bd5ab86a22ff1575b7691421845bf4952bca90c251663abbdc87eeaaaba1"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d7-manual-attempt-717/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d7-manual-attempt-717/manual-carrier-plan.json",
+          "sha256": "d7188b7d3705c359621f381ab08e038c011f2a73efc8bd12ae033cdd9c9cad63"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d7-manual-attempt-717/staged-state.nonexportable.json",
+          "sha256": "b19c18bdf31ab31bcc9426f390c8309f3d07443c80fdfb9e96d87841338185c1"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/result.json",
+      "sha256": "66c700f94c1c5540b70ca8191b126c623a4b44013954dff2a9ca9ea151647a53",
+      "attempt": 718,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_D4",
+      "stagedFullRoutes": 25,
+      "remainingDdrSignals": 24,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d7-manual-attempt-717/result.json",
+          "sha256": "5de47ab208e111ed884212d41f92a45a714ba5e12ff80c9a842aca0f28e2d51e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/manual-carrier-plan.json",
+          "sha256": "67c2802f0ffd83b0da6125232fd359d7975a84a997d394cf9aa7ec94eb02b2a7"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/staged-state.nonexportable.json",
+          "sha256": "40066090201442d37d71348b7202f8ee78e305c00749a460587b1af0ba3fcab3"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d6-manual-attempt-719/result.json",
+      "sha256": "724912b5298f9f8719ea07b6be044789e7b8bbf2782afef84fcb6e58fb4b863d",
+      "attempt": 719,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_D6",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/result.json",
+          "sha256": "66c700f94c1c5540b70ca8191b126c623a4b44013954dff2a9ca9ea151647a53"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d6-manual-attempt-719/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+      "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827",
+      "attempt": 720,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_DQM0",
+      "stagedFullRoutes": 26,
+      "remainingDdrSignals": 23,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/result.json",
+          "sha256": "66c700f94c1c5540b70ca8191b126c623a4b44013954dff2a9ca9ea151647a53"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/manual-carrier-plan.json",
+          "sha256": "337663615c5972e3e449b18da7d8a31e13b48841bcda6f7a9c53c4e6b1d1880a"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d2-manual-attempt-721/result.json",
+      "sha256": "5eed18103f740c92a9da0321a31f472f702d1974fb01bbef17f9be653e0e6568",
+      "attempt": 721,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_D2",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d2-manual-attempt-721/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_dqm1-manual-attempt-722/result.json",
+      "sha256": "3c06cb03bba08154fbecd6aa8d4992d91fc06f2b920c3210c98848af84a6c368",
+      "attempt": 722,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_DQM1",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm1-manual-attempt-722/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d10-manual-attempt-723/result.json",
+      "sha256": "a506e25d5e698b0923a62544c99ffd1b686313d56744af5ef8746e10c02ccbaa",
+      "attempt": 723,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_D10",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d10-manual-attempt-723/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a9-manual-attempt-724/result.json",
+      "sha256": "d92c882e9fe9388b9c4b30c015c4c9d8e765df1b593c78b42f85ef123ba68b0a",
+      "attempt": 724,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A9",
+      "stagedFullRoutes": 27,
+      "remainingDdrSignals": 22,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a9-manual-attempt-724/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a9-manual-attempt-724/manual-carrier-plan.json",
+          "sha256": "67b01dc69582355ee40c36befa2ef3fe65c0b221e1b4bb66fed3db934e0d4f4a"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a9-manual-attempt-724/staged-state.nonexportable.json",
+          "sha256": "c1489d3dc9dc43cc56ad2fbc0e523818e9985d8e37cf409dca84861f31e77945"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a4-manual-attempt-725/result.json",
+      "sha256": "98e89e53b8b656c6e30001f7969d44fbb3eb28f3439d28a7896fe562216a865f",
+      "attempt": 725,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A4",
+      "stagedFullRoutes": 28,
+      "remainingDdrSignals": 21,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a9-manual-attempt-724/result.json",
+          "sha256": "d92c882e9fe9388b9c4b30c015c4c9d8e765df1b593c78b42f85ef123ba68b0a"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a4-manual-attempt-725/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a4-manual-attempt-725/manual-carrier-plan.json",
+          "sha256": "52067e5bb0e7aa4682687961a51218a9505a1cba1328ff1524f004b7b8f4cfaf"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a4-manual-attempt-725/staged-state.nonexportable.json",
+          "sha256": "91989114d2ccf96fb44526a684f83d29ae4cca4d421fc29bb86e73f17ac7aae8"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/result.json",
+      "sha256": "35e18cac1ed040f1a8908ded8fd476571b2fb676b0ea4841270634428a8d998e",
+      "attempt": 726,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A7",
+      "stagedFullRoutes": 29,
+      "remainingDdrSignals": 20,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a4-manual-attempt-725/result.json",
+          "sha256": "98e89e53b8b656c6e30001f7969d44fbb3eb28f3439d28a7896fe562216a865f"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/manual-carrier-plan.json",
+          "sha256": "803042cd2f1fe4a6d2b089f10d062f8bcf6b0a8f6bf46e0e044df85d810c4ff8"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/staged-state.nonexportable.json",
+          "sha256": "f09cba6a33c3e9ebe6be72fdb333c902936748a32d2b2beb621efd37a80a1364"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-727/result.json",
+      "sha256": "c89d9dcb9b664cacb7c512f7d791fb587487766f5325fa0b8b704e3726be59f8",
+      "attempt": 727,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_A2",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/result.json",
+          "sha256": "35e18cac1ed040f1a8908ded8fd476571b2fb676b0ea4841270634428a8d998e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-727/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a6-manual-attempt-728/result.json",
+      "sha256": "300d9e7c042bfc43e986bb3647bc4e9e34210c772eff31d446024c79a86d47fc",
+      "attempt": 728,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_A6",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/result.json",
+          "sha256": "35e18cac1ed040f1a8908ded8fd476571b2fb676b0ea4841270634428a8d998e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a6-manual-attempt-728/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a8-manual-attempt-729/result.json",
+      "sha256": "2a135d0da4877f2191808d29c4ab78f8cd3e49fb4b55b886009b5853637f4692",
+      "attempt": 729,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_A8",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a7-manual-attempt-726/result.json",
+          "sha256": "35e18cac1ed040f1a8908ded8fd476571b2fb676b0ea4841270634428a8d998e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a8-manual-attempt-729/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/result.json",
+      "sha256": "59f75a1849ce30c1a443427f34f9457b77db42f8446eb2373522ab845673c7e9",
+      "attempt": 730,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_D6",
+      "stagedFullRoutes": 20,
+      "remainingDdrSignals": 29,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/manual-carrier-plan.json",
+          "sha256": "c58f49af98a6983d8992ed545c207c6c554a2af7f93d055bd50afe7d6e997c01"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/staged-state.nonexportable.json",
+          "sha256": "8949e32ee60f75bdd49a4feacdeb1b5b0015c0d47645517d387d13854bd1e286"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a6-manual-attempt-731/result.json",
+      "sha256": "98055addcdc7047d030a108f1f162b2c645ccfa3e6313045a6c193e735698526",
+      "attempt": 731,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_A6",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/result.json",
+          "sha256": "59f75a1849ce30c1a443427f34f9457b77db42f8446eb2373522ab845673c7e9"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a6-manual-attempt-731/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a8-manual-attempt-732/result.json",
+      "sha256": "b88e4e8152a8c8acd1c64a23887d4450f1169385b18afbda93401e920cd30f78",
+      "attempt": 732,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_A8",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/result.json",
+          "sha256": "59f75a1849ce30c1a443427f34f9457b77db42f8446eb2373522ab845673c7e9"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a8-manual-attempt-732/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-733/result.json",
+      "sha256": "7e46da7f0b1c7e2b164111fd84b9b8b5abf6e60e02af795a8d74173f6418b8d1",
+      "attempt": 733,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A2",
+      "stagedFullRoutes": 21,
+      "remainingDdrSignals": 28,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-d6-first-open-reservations-attempt-730/result.json",
+          "sha256": "59f75a1849ce30c1a443427f34f9457b77db42f8446eb2373522ab845673c7e9"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-733/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-733/manual-carrier-plan.json",
+          "sha256": "6e8894e385cf4831dba013be02caaa9a058bcd810c9ae226c3801688db7aa1c2"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-733/staged-state.nonexportable.json",
+          "sha256": "824207d51b66d102c4efbba06831f871ff3c2e2bad5abf13ec6430cd1ad5ae4c"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a10-manual-attempt-734/result.json",
+      "sha256": "78202df2e98fc075ab897292146145c17273d78b8fdcace3cc5d9e7eb0b39e1d",
+      "attempt": 734,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A10",
+      "stagedFullRoutes": 22,
+      "remainingDdrSignals": 27,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a2-manual-attempt-733/result.json",
+          "sha256": "7e46da7f0b1c7e2b164111fd84b9b8b5abf6e60e02af795a8d74173f6418b8d1"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a10-manual-attempt-734/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a10-manual-attempt-734/manual-carrier-plan.json",
+          "sha256": "d8ed1ef947b5cdfbbe4a826c4f3782eaa0dd6d0d95d0c87e676234d2146bafe0"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a10-manual-attempt-734/staged-state.nonexportable.json",
+          "sha256": "3c0c4b6546aa40a68b9d7a001893ba736a2a693a68707a84d58bcf476a02b8b3"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a14-manual-attempt-735/result.json",
+      "sha256": "74596f61bb38bc012263fa9739384bb30945aba12013f524a5de8195cd56939b",
+      "attempt": 735,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A14",
+      "stagedFullRoutes": 23,
+      "remainingDdrSignals": 26,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a10-manual-attempt-734/result.json",
+          "sha256": "78202df2e98fc075ab897292146145c17273d78b8fdcace3cc5d9e7eb0b39e1d"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a14-manual-attempt-735/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a14-manual-attempt-735/manual-carrier-plan.json",
+          "sha256": "7ba1d2787b5e4a47d78db1499367e2421c18133bdff37bd72b9770219d016841"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a14-manual-attempt-735/staged-state.nonexportable.json",
+          "sha256": "5af9e95eafc812618868454116368e45fc15b4cd590e8c72d7b09586a02fafd1"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_rasn-manual-attempt-736/result.json",
+      "sha256": "3ee21bbd070381864c9e7e9ff198f2fd70a36f015ac98a39c75a40edf3b66436",
+      "attempt": 736,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_RASn",
+      "stagedFullRoutes": 24,
+      "remainingDdrSignals": 25,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a14-manual-attempt-735/result.json",
+          "sha256": "74596f61bb38bc012263fa9739384bb30945aba12013f524a5de8195cd56939b"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_rasn-manual-attempt-736/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_rasn-manual-attempt-736/manual-carrier-plan.json",
+          "sha256": "6ca257133619aa85c443b221d006a2bd914036848814b0ba39071da51962226c"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_rasn-manual-attempt-736/staged-state.nonexportable.json",
+          "sha256": "64f76d20635cf687a1611e7dcaab8fa1ab6821735aef9b6814e9f8499d1d4785"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d14-manual-attempt-737/result.json",
+      "sha256": "a58babba8518c17fdb23132b03f42180e8883a67f3cfdd6e2f4d4f0f4d15e52d",
+      "attempt": 737,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_D14",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_rasn-manual-attempt-736/result.json",
+          "sha256": "3ee21bbd070381864c9e7e9ff198f2fd70a36f015ac98a39c75a40edf3b66436"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d14-manual-attempt-737/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/result.json",
+      "sha256": "2ca8629ce8d11e62834eaf68211de91fa48a8b013920d11e706d130ec840de3e",
+      "attempt": 738,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FOUND_REPLAY_AND_ALL_CHECKS_REQUIRED",
+      "signal": "DDR_A13",
+      "stagedFullRoutes": 25,
+      "remainingDdrSignals": 24,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_rasn-manual-attempt-736/result.json",
+          "sha256": "3ee21bbd070381864c9e7e9ff198f2fd70a36f015ac98a39c75a40edf3b66436"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        },
+        {
+          "key": "manualCarrierPlan",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/manual-carrier-plan.json",
+          "sha256": "0c55807c0912ad496e76b2a07d905754990b30c2406ac41ab96076bf39ece88c"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/staged-state.nonexportable.json",
+          "sha256": "53ce1e9b2b1f734670845cee860eefbc59917e37d55000d4b556cebdb88ddc3e"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_cke-manual-attempt-739/result.json",
+      "sha256": "cea9861acd8a66254fb642516fec9e7cfb719a4aee523b71e4b7046b3b9aee55",
+      "attempt": 739,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_CKE",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/result.json",
+          "sha256": "2ca8629ce8d11e62834eaf68211de91fa48a8b013920d11e706d130ec840de3e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_cke-manual-attempt-739/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d11-manual-attempt-740/result.json",
+      "sha256": "1712f85ba53f1eb6df5646bb30f29484666160814b832c13370237d71a8dc2b9",
+      "attempt": 740,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_D11",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/result.json",
+          "sha256": "2ca8629ce8d11e62834eaf68211de91fa48a8b013920d11e706d130ec840de3e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d11-manual-attempt-740/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d13-manual-attempt-741/result.json",
+      "sha256": "ab2c111e2aba93660cb2b47f17fa9bcd9c034cc4998cb3aae16dd23b2414d212",
+      "attempt": 741,
+      "status": "BOTTOM_RAM_MANUAL_ROUTE_PLAN_FAILED",
+      "signal": "DDR_D13",
+      "stagedFullRoutes": 0,
+      "remainingDdrSignals": 49,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "checkedPlacementSummary",
+          "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+          "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "priorStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_a13-manual-attempt-738/result.json",
+          "sha256": "2ca8629ce8d11e62834eaf68211de91fa48a8b013920d11e706d130ec840de3e"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-partial-ddr_d13-manual-attempt-741/manual-helper.executed.mjs",
+          "sha256": "0aebda63bd14159983a713a017a430889c3f9c2b074e8bbe8381b15c69a6d3b1"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+          "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-negotiated-route-repair-attempt-742/result.json",
+      "sha256": "17a672dbe79818a77db5838a9426cc97b85bf992de70ec7b93c919b45e5b26ad",
+      "attempt": 742,
+      "status": "BOTTOM_RAM_NEGOTIATED_PLANNING_STOPPED_AFTER_FIVE_UNFINISHED_ROUTES",
+      "stagedFullRoutes": 26,
+      "remainingDdrSignals": 23,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "initialStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "initialState",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        },
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-negotiated-route-repair-attempt-742/negotiated-helper.executed.mjs",
+          "sha256": "f919f22ed70bc03bb59044d28924428743a4c9e6132e413c8026e777169ab335"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-negotiated-outer-bridge.mjs",
+          "sha256": "8c72aa04c642c406fa8197da39e1f7eaf3bd06a7ea01d1cd274af6db73dd9035"
+        },
+        {
+          "key": "geometryHelper",
+          "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+          "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-negotiated-route-repair-attempt-742/staged-state.nonexportable.json",
+          "sha256": "4ab532215d8177c3064e0a6962ac36541945335c729a92e04f62638c9fec170e"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-negotiated-weighted-route-repair-attempt-743/result.json",
+      "sha256": "f6c181c3688ff4a5c979e9edf5731aeb4d22d556214606e8c39415d39a63b2ab",
+      "attempt": 743,
+      "status": "BOTTOM_RAM_NEGOTIATED_PLANNING_STEP_LIMIT_DDR_INCOMPLETE",
+      "stagedFullRoutes": 16,
+      "remainingDdrSignals": 33,
+      "nativeCarriersRetained": 6,
+      "preparedNativeEscapes": 0,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "initialStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "initialState",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        },
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-negotiated-weighted-route-repair-attempt-743/negotiated-helper.executed.mjs",
+          "sha256": "6b2ffe1b093ad7e30036e7a78aebd9a309c7d952ee9c40907097ded57cc7b4be"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-negotiated-weighted-outer-bridge.mjs",
+          "sha256": "f91b0d1ad7e36ce88a4e3ac2f447ce0290445c1046c0bfb5a8aa216effe23315"
+        },
+        {
+          "key": "geometryHelper",
+          "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+          "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-negotiated-weighted-route-repair-attempt-743/staged-state.nonexportable.json",
+          "sha256": "41f76903d057a27b3b8dc7d41368b820e16170059cdb1d9d557e1ed4665abe1d"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-fixed-fanout-repair-attempt-744/result.json",
+      "sha256": "4136f06a789bfa271a88fde5a5ee14f5b24c0da8ed9403f843dc1c5a5c720c2f",
+      "attempt": 744,
+      "status": "BOTTOM_RAM_NEGOTIATED_PLANNING_STOPPED_AFTER_FIVE_UNFINISHED_ROUTES",
+      "stagedFullRoutes": 19,
+      "remainingDdrSignals": 30,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 49,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "initialStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "initialState",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        },
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-fixed-fanout-repair-attempt-744/negotiated-helper.executed.mjs",
+          "sha256": "a0f8c2ec2d875579b80d18100cda9a39075e676bf95d6b110a486d9cb9d58ede"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-fixed-fanout-outer-bridge.mjs",
+          "sha256": "a8682a5d1737334b38785c923118b7869d7291b4f3c1cc0b48d92a50e0b21eea"
+        },
+        {
+          "key": "geometryHelper",
+          "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+          "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-fixed-fanout-repair-attempt-744/staged-state.nonexportable.json",
+          "sha256": "560bed45e81ed20982b9203a2207e9163b8b9eeb3efc4c18ec1a861710136887"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-fixed-fanout-terminal-repair-attempt-745/result.json",
+      "sha256": "2952d672c5f095b398041eca2966cde5796320a82715084519a3c9d05083c1f3",
+      "attempt": 745,
+      "status": "BOTTOM_RAM_NEGOTIATED_PLANNING_STEP_LIMIT_DDR_INCOMPLETE",
+      "stagedFullRoutes": 15,
+      "remainingDdrSignals": 34,
+      "nativeCarriersRetained": 8,
+      "preparedNativeEscapes": 49,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "initialStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "initialState",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        },
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-fixed-fanout-terminal-repair-attempt-745/negotiated-helper.executed.mjs",
+          "sha256": "accbd3ce3842f7b610e8a20fd5c53dec3f4be9fdb65d160d40f9288cee41df07"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-fixed-fanout-terminal-bridge.mjs",
+          "sha256": "e56b1221728d164169bc6858ddad842a04dcd15b6be3048cb74751dcb1dcbbed"
+        },
+        {
+          "key": "geometryHelper",
+          "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+          "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-fixed-fanout-terminal-repair-attempt-745/staged-state.nonexportable.json",
+          "sha256": "e68b50d2a2e200700db66e6feb01340353e34ce20edaef85f3040114c699c2ea"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-fixed-fanout-preserved-repair-attempt-746/result.json",
+      "sha256": "49d53fd975945c3bfd42375750422b7c05fdf3c4ecf19f1d6553ada94a902d54",
+      "attempt": 746,
+      "status": "BOTTOM_RAM_NEGOTIATED_PLANNING_STOPPED_AFTER_ALL_PENDING_ROUTES_UNFINISHED",
+      "stagedFullRoutes": 27,
+      "remainingDdrSignals": 22,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 49,
+      "prunedUncommittedNativeFanouts": [],
+      "dependencies": [
+        {
+          "key": "initialStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "initialState",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        },
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-fixed-fanout-preserved-repair-attempt-746/negotiated-helper.executed.mjs",
+          "sha256": "c21530993fba3b7b19b4784cd1f6554b392942b8becd3359353a3bebbbafd464"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-fixed-fanout-terminal-bridge.mjs",
+          "sha256": "e56b1221728d164169bc6858ddad842a04dcd15b6be3048cb74751dcb1dcbbed"
+        },
+        {
+          "key": "geometryHelper",
+          "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+          "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-fixed-fanout-preserved-repair-attempt-746/staged-state.nonexportable.json",
+          "sha256": "d80a7755ab424a1b7a4e45f02fd9381e870e8f99668fcafa4399ab4a4ca53fc4"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/result.json",
+      "sha256": "a23a851de7d86ea522a37b3aa650dd8c8453b355f25233ae33076d30509d3e42",
+      "attempt": 747,
+      "status": "BOTTOM_RAM_NEGOTIATED_PLANNING_STOPPED_AFTER_ALL_PENDING_ROUTES_UNFINISHED",
+      "stagedFullRoutes": 28,
+      "remainingDdrSignals": 21,
+      "nativeCarriersRetained": 19,
+      "preparedNativeEscapes": 49,
+      "prunedUncommittedNativeFanouts": [
+        "local_dogbone_source_trace_40_0",
+        "local_dogbone_source_trace_12_0",
+        "local_dogbone_source_trace_48_0",
+        "local_dogbone_source_trace_18_0"
+      ],
+      "dependencies": [
+        {
+          "key": "initialStage",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+          "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+        },
+        {
+          "key": "initialState",
+          "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/staged-state.nonexportable.json",
+          "sha256": "05a31a59be7761ddb29a04d865f5b62c13103aa25e96ad2a0853750c224b9174"
+        },
+        {
+          "key": "source",
+          "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+          "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+        },
+        {
+          "key": "nativeBootstrapRun",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+          "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+        },
+        {
+          "key": "nativePartialSeed",
+          "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+          "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+        },
+        {
+          "key": "executionHelper",
+          "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/negotiated-helper.executed.mjs",
+          "sha256": "675141fd3126f25f97c3e4f1bedee195c71b5a1b7a87a1492f877d27ab609a0a"
+        },
+        {
+          "key": "guardHelper",
+          "path": "scripts/lib/am3352-flexible-fanout-terminal-bridge.mjs",
+          "sha256": "e4f07f40b5c5bb28ef3d2a76949d4a6fcf1706e9ffe9f85a7ca67eb60958858b"
+        },
+        {
+          "key": "geometryHelper",
+          "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+          "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+        },
+        {
+          "key": "state",
+          "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/staged-state.nonexportable.json",
+          "sha256": "26d907baf1c87957aad2ecba7d0f122ebd80539be1026634c82a66b88ac2f568"
+        }
+      ],
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false,
+      "fabricationReady": false
+    }
+  ],
+  "continuations": [
+    {
+      "path": "dist/am3352-ram-bottom-manual-data-continuation-attempts-715-727/result.json",
+      "sha256": "2ab0fde530569d769c3dc65a1c9418ecbb957c1edc046c461cf26f673d6a5b5f",
+      "status": "BOTTOM_RAM_MANUAL_CONTINUATION_STOPPED_AFTER_THREE_UNFINISHED_ROUTES",
+      "executedSteps": 9,
+      "requestedSteps": 13,
+      "stagedFullRoutes": 26,
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-manual-command-continuation-attempts-724-738/result.json",
+      "sha256": "5d6f49d0d9c3b0d9f4c7627c8d86635cd3734c3a3b65e084a0226a3df305144b",
+      "status": "BOTTOM_RAM_MANUAL_CONTINUATION_STOPPED_AFTER_THREE_UNFINISHED_ROUTES",
+      "executedSteps": 6,
+      "requestedSteps": 15,
+      "stagedFullRoutes": 29,
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false
+    },
+    {
+      "path": "dist/am3352-ram-bottom-manual-inner-first-continuation-attempts-731-759/result.json",
+      "sha256": "3110d59e33962b448e2ef955ea10ab223d92e848fef7fdf359cd229911ac56dc",
+      "status": "BOTTOM_RAM_MANUAL_CONTINUATION_STOPPED_AFTER_THREE_UNFINISHED_ROUTES",
+      "executedSteps": 11,
+      "requestedSteps": 29,
+      "stagedFullRoutes": 25,
+      "qualifiedNewDdrSignals": 0,
+      "exportable": false
+    }
+  ],
+  "activeSolverHandles": [],
+  "latestCheckedCopper": {
+    "path": "checks/integrated/am3352-ram-bottom-flexible-fanout-747-replay-check-summary.json",
+    "sha256": "1b39fd5fe2ebda5951ac5c69620f662f33a4fffd773696970db2ad7423bbe190"
+  },
+  "checkedConnectedDdrSignals": 28,
+  "checkedRemainingDdrSignals": 21,
+  "checkedNativeCarriersRetained": 19,
+  "checkedManualRoutes": 9,
+  "checkedGerberShortsAllLayers": 0,
+  "checkedIndependentPhysicalViolations": 0,
+  "checkedUsbNumericPadAssignments": 38,
+  "checkedRamSupplyGroundBypassTerminals": [
+    18,
+    21,
+    28
+  ],
+  "terminalViaGuardRegression": {
+    "path": "checks/integrated/am3352-bottom-terminal-via-guard-regression.json",
+    "sha256": "e4258e9966962232c542f8c7bcab21819d6c0f81ad2eed0670c9c6906a59e6f8"
+  },
+  "nativePartialSeedWasNotSolvedOutput": true,
+  "unsolvedNativeGetOutputNotCalled": true,
+  "trialReservationCountIsNotPhysicalRetainedHoleCount": true,
+  "newUnqualifiedStagesAreNotAddedToPriorDdr33": true,
+  "defaultChanged": false,
+  "completeHostRouting": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

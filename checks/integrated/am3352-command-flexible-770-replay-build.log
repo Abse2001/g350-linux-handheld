@@ -1,0 +1,52 @@
+Building 1 file(s)...
+Building experiments/am3352-command-flexible-770-replay.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Circuit JSON written to dist/experiments/am3352-command-flexible-770-replay/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+Differential pair "USB0_PAIR" positiveConnection uses the ambiguous trace name "USB0_DP": its connection has more than 2 terminal pins: .J_USB > .A6, .J_USB > .B6, .U_SOC > .N17, .U_USB_ESD > .pin3, and .U_USB_ESD > .pin4.
+Differential pair "USB0_PAIR" negativeConnection uses the ambiguous trace name "USB0_DM": its connection has more than 2 terminal pins: .J_USB > .A7, .J_USB > .B7, .U_SOC > .N18, .U_USB_ESD > .pin1, and .U_USB_ESD > .pin6.
+<testpoint#770 name=".TP_BAT_INPUT" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#778 name=".TP_BAT_NTC" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#785 name=".TP_BAT_GND" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#792 name=".TP_USB_INPUT" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1664 name=".TP_JTAG_TMS" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1671 name=".TP_JTAG_TDI" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1678 name=".TP_JTAG_TDO" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1685 name=".TP_JTAG_TCK" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1692 name=".TP_JTAG_TRSTn" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1699 name=".TP_JTAG_EMU0" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1706 name=".TP_JTAG_EMU1" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1713 name=".TP_WARM_RESETn" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1720 name=".TP_GND" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1727 name=".TP_IO_3V3" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1734 name=".TP_UART_GND" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1741 name=".TP_UART_UART0_RX" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1748 name=".TP_UART_UART0_TX" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+<testpoint#1755 name=".TP_UART_IO_3V3" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.
+TP_BAT_INPUT has no courtyard
+TP_BAT_NTC has no courtyard
+TP_BAT_GND has no courtyard
+TP_USB_INPUT has no courtyard
+TP_JTAG_TMS has no courtyard
+TP_JTAG_TDI has no courtyard
+TP_JTAG_TDO has no courtyard
+TP_JTAG_TCK has no courtyard
+TP_JTAG_TRSTn has no courtyard
+TP_JTAG_EMU0 has no courtyard
+TP_JTAG_EMU1 has no courtyard
+TP_WARM_RESETn has no courtyard
+TP_GND has no courtyard
+TP_IO_3V3 has no courtyard
+TP_UART_GND has no courtyard
+TP_UART_UART0_RX has no courtyard
+TP_UART_UART0_TX has no courtyard
+TP_UART_IO_3V3 has no courtyard
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

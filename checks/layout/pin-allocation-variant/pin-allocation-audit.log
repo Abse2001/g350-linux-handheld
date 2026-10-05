@@ -1,0 +1,126 @@
+{
+  "status": "PASS_PIN_ALLOCATION_AND_PLACEMENT_ONLY",
+  "fabricationReady": false,
+  "routingPermitted": false,
+  "originalShellFitVerified": false,
+  "logicalComponents": 280,
+  "preservedPriorComponents": 277,
+  "addedComponents": 3,
+  "copperLayers": 4,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "priorPhysicalGeometryPreserved": true,
+  "onlyReviewedTerminalSplitApplied": true,
+  "priorNativeAperturesPreserved": true,
+  "newPadEdgeClearanceLowerBoundMm": 6.734355000000002,
+  "allExplicitNetNamesDistinct": true,
+  "historicalNegativeControlDetected": true,
+  "independentlyCheckedCpuAllocations": [
+    [
+      "C18",
+      "SD_CD"
+    ],
+    [
+      "U14",
+      "LCD_BL_PWM"
+    ],
+    [
+      "A17",
+      "LCD_SPI_CLK"
+    ],
+    [
+      "B16",
+      "LCD_SPI_MOSI"
+    ],
+    [
+      "C15",
+      "LCD_CS1n"
+    ],
+    [
+      "D13",
+      "LCD_RESETn"
+    ],
+    [
+      "D12",
+      "AUDIO_DIN"
+    ],
+    [
+      "A13",
+      "AUDIO_BCLK"
+    ],
+    [
+      "B13",
+      "AUDIO_LRCLK"
+    ],
+    [
+      "A14",
+      "AUDIO_ENABLE"
+    ],
+    [
+      "E15",
+      "UART0_RX"
+    ],
+    [
+      "E16",
+      "UART0_TX"
+    ],
+    [
+      "C17",
+      "I2C0_SDA"
+    ],
+    [
+      "C16",
+      "I2C0_SCL"
+    ],
+    [
+      "G18",
+      "SD_CMD"
+    ],
+    [
+      "G17",
+      "SD_CLK_CPU"
+    ],
+    [
+      "G16",
+      "SD_DAT0"
+    ],
+    [
+      "G15",
+      "SD_DAT1"
+    ],
+    [
+      "F18",
+      "SD_DAT2"
+    ],
+    [
+      "F17",
+      "SD_DAT3"
+    ]
+  ],
+  "bufferPinoutAndManufacturerLandPatternVerified": true,
+  "bufferBypassSupplyPadDistanceMm": 1.8483769781773414,
+  "newBottomCourtyardsClear": true,
+  "nativeErrors": 0,
+  "physicalPadsAndPlatedHoles": 1165,
+  "logicCalculations": {
+    "supplyRangeV": [
+      1.71,
+      1.89
+    ],
+    "cpuToBufferHighMarginV": 0.1484999999999999,
+    "cpuToBufferLowMarginV": 0.1484999999999999,
+    "bufferToDriverHighMarginV": 0.4099999999999999,
+    "bufferToDriverLowMarginV": 0.30000000000000004,
+    "driverDcLoadWorstA": 0.0000625762396694215,
+    "driverPowerOffVoltageWorstV": 0.326498625507399,
+    "bufferInputResetVoltageWorstV": 0.43328999999999995,
+    "bufferInputResetLowMarginV": 0.16520999999999997,
+    "loadBasis": "33k +/-1%, CTRL internal pulldown minimum400k; <100uA DC output load.",
+    "powerOffBasis": "10uA buffer Ioff, 33k +1% and CTRL maximum1600k; CTRL <0.4V."
+  },
+  "scope": "Unrouted source/PCB terminal mapping and placement. Schematic rendering, copper continuity, return loops, power sequencing, firmware, shell fit and fabrication release are not verified.",
+  "hashes": "stored in source-bound audit"
+}

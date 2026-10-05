@@ -1,0 +1,17 @@
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'circuit-to-svg@0.0.438',
+npm warn EBADENGINE   required: { node: '24.x' },
+npm warn EBADENGINE   current: { node: 'v25.6.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'jscad-electronics@0.0.182',
+npm warn EBADENGINE   required: { node: '24.x' },
+npm warn EBADENGINE   current: { node: 'v25.6.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+
+> @tsci/abse.g350-linux-handheld@1.3.3 postinstall
+> node scripts/patch-tscircuit-via-pad-check.mjs
+
+Verified @tscircuit/checks 0.0.239 via-pad rule lookup (corrected); SHA256 c6aedbf40ad542c99962e1999a80b256a1c58d500026b6231b1e5efd401f4cad
+
+changed 1 package in 703ms

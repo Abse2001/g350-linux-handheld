@@ -1,0 +1,496 @@
+{
+  "status": "RAM_REFERENCE_AND_BYPASS_COPPER_CONNECTIVITY_PASS_HOST_INCOMPLETE",
+  "board": {
+    "path": "dist/am3352-ram-rotated-180-byte1-cpu-reserved-breakout-diagnostic/board.kicad_pcb",
+    "sha256": "101204bf655822886af6f350cc944eba6597ba7a76d54727a543159f17036232"
+  },
+  "source": {
+    "path": "dist/am3352-ram-rotated-180-byte1-cpu-reserved-breakout-diagnostic/circuit.json",
+    "sha256": "99545a58b3dbfd245350bc1d3a6111bdb6a32794ca10d8dd41e364fc96dec7ad"
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "copperLayerCount": 4,
+  "ramSupplyBallsConnectedToDdrPlane": 18,
+  "ramGroundBallsConnectedToGroundPlane": 21,
+  "ramBypassCapacitorsConnectedToPlanes": 14,
+  "ramBypassTerminalsConnectedToPlanes": 28,
+  "records": [
+    {
+      "ball": "A1",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "B1",
+      "numericPin": 2,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "C1",
+      "numericPin": 3,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "D1",
+      "numericPin": 4,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "E1",
+      "numericPin": 5,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "F1",
+      "numericPin": 6,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "G1",
+      "numericPin": 7,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "M1",
+      "numericPin": 12,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "N1",
+      "numericPin": 13,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "P1",
+      "numericPin": 14,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "R1",
+      "numericPin": 15,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "T1",
+      "numericPin": 16,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "B2",
+      "numericPin": 18,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "D2",
+      "numericPin": 20,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "E2",
+      "numericPin": 21,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "H2",
+      "numericPin": 24,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "J2",
+      "numericPin": 25,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "K2",
+      "numericPin": 26,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "B3",
+      "numericPin": 34,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "G7",
+      "numericPin": 55,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "A8",
+      "numericPin": 65,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "D8",
+      "numericPin": 68,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "E8",
+      "numericPin": 69,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "G8",
+      "numericPin": 71,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "J8",
+      "numericPin": 73,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "K8",
+      "numericPin": 74,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "A9",
+      "numericPin": 81,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "B9",
+      "numericPin": 82,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "C9",
+      "numericPin": 83,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "D9",
+      "numericPin": 84,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "E9",
+      "numericPin": 85,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "F9",
+      "numericPin": 86,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "G9",
+      "numericPin": 87,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "H9",
+      "numericPin": 88,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "M9",
+      "numericPin": 92,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "N9",
+      "numericPin": 93,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "P9",
+      "numericPin": 94,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    },
+    {
+      "ball": "R9",
+      "numericPin": 95,
+      "net": "DDR_1V5",
+      "referenceLayer": "inner2",
+      "connected": true
+    },
+    {
+      "ball": "T9",
+      "numericPin": 96,
+      "net": "GND",
+      "referenceLayer": "inner1",
+      "connected": true
+    }
+  ],
+  "bypassRecords": [
+    {
+      "capacitor": "C_DDR_RAM_1",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_1",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_2",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_2",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_3",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_3",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_4",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_4",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_5",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_5",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_6",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_6",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_7",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_7",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_8",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_8",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_9",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_9",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_10",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_10",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_11",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_11",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_12",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_12",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "bottom",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_BULK1",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "top",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_BULK1",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "top",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_BULK2",
+      "numericPin": 1,
+      "net": "DDR_1V5",
+      "side": "top",
+      "connected": true
+    },
+    {
+      "capacitor": "C_DDR_RAM_BULK2",
+      "numericPin": 2,
+      "net": "GND",
+      "side": "top",
+      "connected": true
+    }
+  ],
+  "fabricationReady": false,
+  "completeHostPowerRouting": false,
+  "scope": "All RAM supply/ground balls and 14 RAM bypass capacitors to filled reference planes through actual 18/10mil vias. Does not qualify effective capacitance, CPU supply routing, DDR signals or the complete handheld."
+}

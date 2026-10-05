@@ -1,0 +1,65 @@
+{
+  "status": "RAM_REFERENCE_AND_BYPASS_COPPER_CHECKED_DDR_AND_HOST_INCOMPLETE",
+  "fabricationReady": false,
+  "poweredHost": false,
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bypass/circuit.json",
+    "sha256": "867405f43fa5aa8840b1225b23740601d32778b0dc16ec24420d1166c983aabc",
+    "components": 204
+  },
+  "board": {
+    "path": "dist/diagnostics/am3352-ram-bypass/board.kicad_pcb",
+    "sha256": "314a5b36557fea73e40c35c00a7d579a6c445a8057d3f6bd80fbb7c9599044f3"
+  },
+  "copperLayerCount": 4,
+  "maxCopperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "sourceCopper": {
+    "manualBypassLoops": 15,
+    "ramBypassLoops": 14,
+    "packageReferenceEscapes": 39,
+    "ramReferenceEscapeCounts": {
+      "DDR_1V5": 18,
+      "GND": 21
+    },
+    "traces": 69,
+    "throughVias": 69,
+    "minimumDrillEdgeClearanceMm": 0.44600000000000284,
+    "generatedReferenceRegions": 2,
+    "completePowerRouting": false
+  },
+  "ramSupplyBallsConnectedToDdrPlane": 18,
+  "ramGroundBallsConnectedToGroundPlane": 21,
+  "ramBypassCapacitorsConnectedToPlanes": 14,
+  "ramBypassTerminalsConnectedToPlanes": 28,
+  "preparedLocalSignalEscapes": 44,
+  "ddrSignalsConnected": 0,
+  "requiredDdrSignals": 49,
+  "gerberShorts": 0,
+  "gerberShortsLayerScope": "all four layers",
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "allHostUnconnectedItems": 499,
+  "sourceAudits": {
+    "power": "AM3352_LOGICAL_POWER_AND_BYPASS_PASS_ROUTING_INCOMPLETE",
+    "boot": "AM3352_LOGICAL_CLOCK_BOOT_DEBUG_PASS_ROUTING_INCOMPLETE",
+    "storage": "AM3352_LOGICAL_MICROSD_POWER_RESET_PASS_ROUTING_INCOMPLETE"
+  },
+  "snapshot": {
+    "path": "images/am3352-ram-bypass-source.png",
+    "sha256": "94c56a7a844c76c532ae50b1dac8042323c41e1591be387827cbd5048f23f194",
+    "visuallyInspected": true
+  },
+  "referenceConnectivityEvidence": "checks/integrated/am3352-ram-bypass-copper-connectivity.json",
+  "completeReferencePlaneConnections": false,
+  "completePowerRouting": false,
+  "fullElectricalTimingQualified": false,
+  "scope": "Actual RAM supply/ground escapes and bypass loops connected to the filled planes. DDR signal channels, CPU/PMIC power routing, storage/peripherals, firmware and complete handheld fabrication remain incomplete."
+}

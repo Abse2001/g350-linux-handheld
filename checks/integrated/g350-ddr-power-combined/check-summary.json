@@ -1,0 +1,85 @@
+{
+  "status": "PASS_SCOPED_CPU_RAM_POWER_ESCAPE_PHYSICAL_CHECKS",
+  "entry": "experiments/am3352-g350-ddr-power-replay.circuit.tsx",
+  "source": {
+    "path": "dist/g350-ddr-power-replay-contact-fixed/compiled.circuit.json",
+    "sha256": "7850dbbc9fb8aada7f34bb0679733fc3ed47bd33ec8143792f0aeb47b53eacd4"
+  },
+  "board": {
+    "path": "checks/integrated/g350-ddr-power-combined/g350-ddr-power.kicad_pcb",
+    "sha256": "be57e18ca6fe627a38440d94198f0a744e7a0530b26e5a3b9950df1775e3d507"
+  },
+  "exportInput": {
+    "path": "dist/g350-ddr-power-replay-six-via-repairs/compiled.circuit.json",
+    "sha256": "f39b1621c7c78bfb807fbba0309ea94f4da4a77d9d0c598109513f0799221dce"
+  },
+  "exportInputPhysicalRecordsMatchFreshNative": true,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "placedComponents": 280,
+  "checkedPackageTerminals": 101,
+  "ramTerminals": 39,
+  "cpuTerminals": 62,
+  "physicalThroughVias": 97,
+  "maximumCpuPadToViaMm": 1.3656854249492376,
+  "maximumRamPadToViaMm": 0.7068854249492378,
+  "bothReferencePlanesContinuous": true,
+  "padToViaLengthsWithinTiLimits": true,
+  "nativeErrors": {
+    "pcb_port_not_connected_error": 829,
+    "pcb_trace_missing_error": 119
+  },
+  "independentPhysicalErrors": 0,
+  "presentationWarnings": 403,
+  "reportedUnconnectedItems": 499,
+  "unconnectedItemsMayBeCapped": true,
+  "allLayerGerberShorts": 0,
+  "noIgnoredKiCadRulesOrExclusions": true,
+  "evidence": [
+    {
+      "path": "dist/g350-ddr-power-replay-contact-fixed/execution.json",
+      "sha256": "ae380e49f818027d91cc5639273e56103f0257bfa2f4a6c76acc700a67ff8bc9"
+    },
+    {
+      "path": "dist/g350-ddr-power-replay-contact-fixed/result.json",
+      "sha256": "d4cf17e7beb81db35024f0344090029befa3136bbf0436ec74fa7fd5a8f196ec"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/final-drc.json",
+      "sha256": "4003ccb35d03d09c8d5d138ccdb7c21d5895c31316b9d5128ba036f93acee7a8"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/plane-connectivity.json",
+      "sha256": "3a714b5f14d04d831fc1738369f56dabefb18d3771b1ccdf2e0ed9e6b2805b6d"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/stencil-verified.json",
+      "sha256": "25e658d622f77160d0254aeac063bd693c2b3ca9cbf2eea7b8eb5e653716b9b1"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/shorts.log",
+      "sha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/library.log",
+      "sha256": "530a195b5c59fdf3bb83a5bd8e37bc70d690d80d98590b3bfce6a8c9043a6947"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/copper-contact-regression.json",
+      "sha256": "72bce9a9bf2c4c3c3d2d6e1d93f1255f866c67ad3a7b118502e151b998632da2"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/via-pad-rule-verification.json",
+      "sha256": "7bdfc9e4ee3e5c1c9df83b70b4c82cbb5afce7633e71249d2ac1c46b5b02ae0a"
+    }
+  ],
+  "ddrSignalsQualified": 0,
+  "bypassCapacitorsRouted": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "Only CPU/RAM ground and DDR supply package-to-plane escapes on the placed shaped board. Signal routing, bypass loops, other power domains, stackup, Linux startup and shell mounting remain unfinished."
+}

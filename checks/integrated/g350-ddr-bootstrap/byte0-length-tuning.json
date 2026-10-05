@@ -1,0 +1,146 @@
+{
+  "status": "MATCHED_BYTE0_CANDIDATE_REQUIRES_PHYSICAL_CHECKS",
+  "targetPlanarLengthMm": 20.196017228003388,
+  "planarSkewMm": 0.20779212861254237,
+  "planarSkewLimitMm": 0.635,
+  "nativeBusLanesBootstrapUsed": true,
+  "manualCarrierAndLengthRepairs": true,
+  "nativeSevenCarriersRetainedExactly": false,
+  "records": [
+    {
+      "connection": "U_SOC.pin13",
+      "originalPlanarLengthMm": 12.538178693241164,
+      "tunedPlanarLengthMm": 20.196017228003395,
+      "loops": 8,
+      "layer": "bottom",
+      "laneX": -1.58101,
+      "startY": 8.7,
+      "endY": 5.2299999999999995,
+      "direction": 1,
+      "amplitudeMm": 0.5020463659277152,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin30",
+      "originalPlanarLengthMm": 15.706715031043306,
+      "tunedPlanarLengthMm": 20.196017228003385,
+      "loops": 3,
+      "layer": "bottom",
+      "laneX": 4.38101,
+      "startY": 12.1,
+      "endY": 10.93,
+      "direction": -1,
+      "amplitudeMm": 0.7716484903317566,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin50",
+      "originalPlanarLengthMm": 14.927765364283108,
+      "tunedPlanarLengthMm": 20.19601722800338,
+      "loops": 3,
+      "layer": "bottom",
+      "laneX": 3.21899,
+      "startY": 5.19,
+      "endY": 4.0200000000000005,
+      "direction": -1,
+      "amplitudeMm": 0.9014734347917897,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin49",
+      "originalPlanarLengthMm": 18.41194072088479,
+      "tunedPlanarLengthMm": 20.196017228003388,
+      "loops": 4,
+      "layer": "bottom",
+      "laneX": 3.98101,
+      "startY": 5.3,
+      "endY": 3.67,
+      "direction": 1,
+      "amplitudeMm": 0.246441020894901,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin48",
+      "originalPlanarLengthMm": 16.06954954313964,
+      "tunedPlanarLengthMm": 20.19601722800338,
+      "loops": 4,
+      "layer": "bottom",
+      "laneX": -2.38101,
+      "startY": 9,
+      "endY": 7.37,
+      "direction": -1,
+      "amplitudeMm": 0.5392399181130447,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin67",
+      "originalPlanarLengthMm": 19.294940130434156,
+      "tunedPlanarLengthMm": 20.196017228003385,
+      "loops": 1,
+      "layer": "bottom",
+      "laneX": -3.18101,
+      "startY": 8.9,
+      "endY": 8.65,
+      "direction": -1,
+      "amplitudeMm": 0.47397000628969205,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin31",
+      "originalPlanarLengthMm": 16.86954954313964,
+      "tunedPlanarLengthMm": 20.196017228003374,
+      "loops": 11,
+      "layer": "bottom",
+      "laneX": -0.81899,
+      "startY": 8.85,
+      "endY": 3.9999999999999996,
+      "direction": 1,
+      "amplitudeMm": 0.17463453408979196,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin14",
+      "originalPlanarLengthMm": 19.086260839907588,
+      "tunedPlanarLengthMm": 20.19601722800338,
+      "loops": 2,
+      "layer": "bottom",
+      "laneX": 0.2,
+      "startY": 4,
+      "endY": 3.29,
+      "direction": 1,
+      "amplitudeMm": 0.30087055452902617,
+      "barCenterSpacingMm": 0.21
+    },
+    {
+      "connection": "U_SOC.pin32",
+      "originalPlanarLengthMm": 19.086260839907585,
+      "tunedPlanarLengthMm": 20.196017228003385,
+      "loops": 2,
+      "layer": "bottom",
+      "laneX": -0.0216,
+      "startY": 4,
+      "endY": 3.29,
+      "direction": -1,
+      "amplitudeMm": 0.30087055452902706,
+      "barCenterSpacingMm": 0.21
+    }
+  ],
+  "dataSource": {
+    "path": "lib/am3352/placement/ddr-byte0-top-corridor-paths.json",
+    "sha256": "0f72e8b5b5f52f040b144cb3852ca1723550c782f7c6fc5e5e95f191863b0fe7"
+  },
+  "strobeSource": {
+    "path": "lib/am3352/placement/ddr-dqs0-byte0-tuning-paths.json",
+    "sha256": "2c71835b88ee0cc5f744cc6d08b06c0c8b820061fb24d6ef705aa2ada36b22ea"
+  },
+  "data": {
+    "path": "lib/am3352/placement/ddr-byte0-matched-paths.json",
+    "sha256": "7c1c12051d5f0130410661d1cb2c9aece5071c2639de4674ce89186d9ded193c"
+  },
+  "strobes": {
+    "path": "lib/am3352/placement/ddr-dqs0-byte0-matched-paths.json",
+    "sha256": "d061b0fd38f2f1c1720a7048ec7bb3a6831467e0275e84ce0a13e324085288ee"
+  },
+  "electricalTimingQualified": false,
+  "fabricationReady": false
+}

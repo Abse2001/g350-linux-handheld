@@ -1,0 +1,107 @@
+{
+  "status": "DDR28_CSN_NATIVE_CHANNEL_AND_D14_CPU_REPAIR_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-odt-nominal-candidate/circuit.json",
+    "sha256": "3f2ef3f83fb4a1aaf427e24dacb24b189cbfc9a30a982d6387641c00b336d6ee"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-odt-nominal-check-summary.json",
+    "sha256": "b5fc4c469c1c0418859d7c931f8b5cb20576f076cca900e446c6a6faba218e99"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-odt-nominal-paths.json",
+    "sha256": "fd789c5a9f8d2d2eb6170f63090b8f98443b97ac6f2d6d89ef5029c983c56431",
+    "signals": 27
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-csn-joint-paths.json",
+    "sha256": "4a2ea02ce5c67975fb2ecb74b6e77293e2e506d46873d1b73d6c61e3405e564a"
+  },
+  "nativeChannelRun": {
+    "path": "dist/am3352-ddr27-csn-joint-cpu-native-channel-attempt-518/result.json",
+    "sha256": "2571ebffd06167fd4fc2edae3789b155d096002f69b7051ab9085ac3ad3e3f3c"
+  },
+  "nativeChannelInput": {
+    "path": "dist/am3352-ddr27-csn-joint-cpu-native-channel-attempt-518/channel.input.simple-route.json",
+    "sha256": "cacaa87c4b53774189a076e7d486f69b4ea80d28cf8fdfcf18542db1a69b7c21"
+  },
+  "nativeChannelOutput": {
+    "path": "dist/am3352-ddr27-csn-joint-cpu-native-channel-attempt-518/output.simple-route.json",
+    "sha256": "474710eebf8548bce97cd5e05a46002cbebaeaf24b2b49f1c762011b769cc805"
+  },
+  "manualLocalRun": {
+    "path": "dist/am3352-ddr27-csn-joint-cpu-local-attempt-517/result.json",
+    "sha256": "eba07e11fa038eafd2e75cc6040152e354a4750b8faee9d24e522e55d0a2df42"
+  },
+  "manualLocalCopper": {
+    "path": "dist/am3352-ddr27-csn-joint-cpu-local-attempt-517/local-escapes.json",
+    "sha256": "91066f90b90bdf6a10551f14883848c50a309c22ae6f7b82f8c08540d8ef700f"
+  },
+  "nativeBootstrap": {
+    "path": "dist/am3352-ddr27-csn-joint-cpu-prep-attempt-516/signal-escapes.native.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "dogbones": 0
+  },
+  "newSignals": [
+    "DDR_CSn0"
+  ],
+  "changedExistingSignals": [
+    "DDR_D14"
+  ],
+  "sourceTraceId": "source_trace_5",
+  "priorSignalsPreserved": 27,
+  "connectedCandidateSignals": 28,
+  "remainingUnroutedDdrSignals": 21,
+  "planarMm": 42.80071426749381,
+  "throughVias": 0,
+  "csnNominalLengthPass": true,
+  "cpuPrefixRepair": {
+    "signal": "DDR_D14",
+    "sourceTraceId": "source_trace_40",
+    "manualRun": {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-attempt-524/result.json",
+      "sha256": "bba5cf12e9b64754359c2e8614c3fcd950a3f9dd3c51772c3cdd33a2dfb51703"
+    },
+    "manualCopper": {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-attempt-524/local-escapes.json",
+      "sha256": "90c9f1a1ad8fd308bcad8cd81e630ed1d510b30bf2d563a64709565c7ac32a65"
+    },
+    "preparation": {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-prep-attempt-523/result.json",
+      "sha256": "a17f606c3f1c95621bdd147f2c7cc442cd85e57f2e11c6a2947e5761c739f877"
+    },
+    "originalTails": {
+      "path": "dist/am3352-ddr27-csn-joint-cpu-prep-attempt-516/temporarily-open-cpu-tails.json",
+      "sha256": "35737c30c244403c306063357243a3660cd1174fe18e002ef883cc77f75fdef8",
+      "originalSource": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-odt-nominal-candidate/circuit.json",
+        "sha256": "3f2ef3f83fb4a1aaf427e24dacb24b189cbfc9a30a982d6387641c00b336d6ee"
+      },
+      "stagedRepairOnly": true,
+      "exportable": false,
+      "names": [
+        "DDR_D10",
+        "DDR_D14"
+      ],
+      "physicalHolesRemoved": 0
+    },
+    "cutIndex": 66,
+    "newPhysicalVias": 2,
+    "planarMm": 50.91910899782122,
+    "restoredD10Preflight": {
+      "minimumCopperEdgeGapMm": 0.2660955262170044,
+      "wireGuardMm": 0.003
+    }
+  },
+  "preservedSourceTracePieces": 128,
+  "preservedSourceHoles": 147,
+  "newPhysicalVias": 2,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "fullCommandClassMatchingDeferred": true,
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

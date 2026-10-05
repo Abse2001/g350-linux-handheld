@@ -1,0 +1,94 @@
+{
+  "status": "COMMAND_CLOCK_CONNECTIVITY_AND_PHYSICAL_CHECKS_PASS_TIMING_AND_INTEGRATION_FAIL",
+  "source": {
+    "path": "dist/experiments/am3352-command-unmatched-pruned-replay/circuit.json",
+    "sha256": "dc5757cf33c468e5fb7da9d55ff0c26e49b4cc113c1d504bdc1f0cb9a364c523"
+  },
+  "board": {
+    "path": "dist/experiments/am3352-command-unmatched-pruned-replay/board.kicad_pcb",
+    "sha256": "dd5020c238054a6ffafd325deb55a0559b655e76e9e630abfccc3ab185912063"
+  },
+  "editablePaths": {
+    "path": "routing/am3352-command-unmatched-pruned-paths.json",
+    "sha256": "0becf9c883dc04f3223ca1dbbcef983ac4958902de5a7b8760490bc284abf5bd"
+  },
+  "routingRun": {
+    "path": "dist/am3352-fine-wire-command-bridges-attempt-203/result.json",
+    "sha256": "7c535a41106de9d8741dd9ec6e779bad64e0973968bcf4e2e40885a6ecbfce15"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayerCount": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "nativeBootstrapChannels": 2,
+  "manuallyRepairedChannels": 24,
+  "commandClockSignalsConnected": 26,
+  "ddrSignalsConnectedInThisCandidate": 26,
+  "requiredDdrSignals": 49,
+  "openByteAndResetSignals": 23,
+  "sourceTracePieces": 95,
+  "sourcePowerTracePiecesPreserved": 69,
+  "sourcePowerViasPreserved": 69,
+  "ddrThroughVias": 130,
+  "totalThroughVias": 199,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "wholeHostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "exactFootprintsPreserved": 273,
+  "physicalLibraryRecordsPreserved": 7005,
+  "timing": [
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": 53.18156540974414,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 2.897558675410835,
+      "limitMm": 0.127,
+      "pass": false
+    }
+  ],
+  "manualBacktrackCleanup": {
+    "original": {
+      "path": "routing/am3352-command-unmatched-paths.json",
+      "sha256": "5d0ad8649086f4f72efecab7b3c136d4f14c9336da279e4a42c417a80fb9001a"
+    },
+    "signal": "DDR_A2",
+    "removedReturnLengthMm": 5.461564209735997,
+    "removedPoints": 155,
+    "removedVias": 0,
+    "reason": "Independent KiCad flagged the overlapping channel/RAM fanout backtrack at (-9,-18.6)."
+  },
+  "activeDefault": "experiments/am3352-guided-both-bytes-and-reset-replay.circuit.tsx",
+  "activeDefaultConnectedSignals": 23,
+  "combinedWithDefault": false,
+  "originalShellFitVerified": false,
+  "fullElectricalTimingQualified": false,
+  "independentFullHostDrcPass": false,
+  "fabricationReady": false,
+  "scope": "Separate command/clock candidate only. Original command and clock skew limits fail; both bytes and reset are open here. The checked 23-signal default is preserved. Fresh byte routing, all-host power/peripherals, measured original-shell mechanics and release checks remain required."
+}

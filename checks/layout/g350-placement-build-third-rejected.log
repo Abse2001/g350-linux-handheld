@@ -1,0 +1,83 @@
+Building 1 file(s)...
+Building experiments/am3352-g350-placement-study.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/experiments/am3352-g350-placement-study/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+Differential pair "USB0_PAIR" positiveConnection uses the ambiguous trace name "USB0_DP": its connection has more than 2 terminal pins: .J_USB > .A6, .J_USB > .B6, .U_SOC > .N17, .U_USB_ESD > .pin3, and .U_USB_ESD > .pin4.
+Differential pair "USB0_PAIR" negativeConnection uses the ambiguous trace name "USB0_DM": its connection has more than 2 terminal pins: .J_USB > .A7, .J_USB > .B7, .U_SOC > .N18, .U_USB_ESD > .pin1, and .U_USB_ESD > .pin6.
+TP_BAT_INPUT has no courtyard
+TP_BAT_NTC has no courtyard
+TP_BAT_GND has no courtyard
+TP_USB_INPUT has no courtyard
+TP_JTAG_TMS has no courtyard
+TP_JTAG_TDI has no courtyard
+TP_JTAG_TDO has no courtyard
+TP_JTAG_TCK has no courtyard
+TP_JTAG_TRSTn has no courtyard
+TP_JTAG_EMU0 has no courtyard
+TP_JTAG_EMU1 has no courtyard
+TP_WARM_RESETn has no courtyard
+TP_GND has no courtyard
+TP_IO_3V3 has no courtyard
+TP_UART_GND has no courtyard
+TP_UART_UART0_RX has no courtyard
+TP_UART_UART0_TX has no courtyard
+TP_UART_IO_3V3 has no courtyard
+TP_SPK_P has no courtyard
+TP_SPK_N has no courtyard
+KEY_UP has no pin with requires_power=true
+KEY_DOWN has no pin with requires_power=true
+KEY_LEFT has no pin with requires_power=true
+KEY_RIGHT has no pin with requires_power=true
+KEY_A has no pin with requires_power=true
+KEY_B has no pin with requires_power=true
+KEY_X has no pin with requires_power=true
+KEY_Y has no pin with requires_power=true
+KEY_SELECT has no pin with requires_power=true
+KEY_START has no pin with requires_power=true
+KEY_MENU has no pin with requires_power=true
+Courtyard of C_PMIC_DCDC2_IN overlaps with courtyard of C_PMIC_USB
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C468247.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C253882.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C116081.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C318884.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C919459.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C122469.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C12891.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C19666.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C1607.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C1525.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C23239.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C25741.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C1603.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C25744.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C25900.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C87044.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C114755.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C15195.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C52923.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C7420736.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C17168.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C1549.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C40256.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C43698.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C719027.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C25105.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C165948.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C23186.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C22765.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C475656.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C47023.step
+Failed to load 3D model from https://modelcdn.tscircuit.com/easyeda_models/assets/C910544.step
+Generating preview images...
+[experiments/am3352-g350-placement-study] Generating PCB PNG...
+[experiments/am3352-g350-placement-study] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, kicad-project
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

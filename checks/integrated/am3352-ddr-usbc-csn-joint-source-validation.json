@@ -1,0 +1,94 @@
+{
+  "status": "DDR28_CSN_EXACT_REPLAY_D14_CPU_PREFIX_REPAIR_AND_ALL_OTHER_COPPER_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-csn-joint-candidate/circuit.json",
+    "sha256": "1d16373e7127691924b25e3af3387d6e8c53132abb227c7416532e2da9e4a984"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-odt-nominal-candidate/circuit.json",
+    "sha256": "3f2ef3f83fb4a1aaf427e24dacb24b189cbfc9a30a982d6387641c00b336d6ee"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-csn-joint-paths.json",
+    "sha256": "4a2ea02ce5c67975fb2ecb74b6e77293e2e506d46873d1b73d6c61e3405e564a"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-csn-joint-paths.provenance.json",
+    "sha256": "0540dee9861ee25727583b3d8532c43b2cd5427cb90317bb4dd07c8c4339f960"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-odt-nominal-check-summary.json",
+    "sha256": "b5fc4c469c1c0418859d7c931f8b5cb20576f076cca900e446c6a6faba218e99"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 130,
+  "throughVias": 149,
+  "preservedTracePieces": 128,
+  "preservedThroughVias": 147,
+  "addedThroughVias": 2,
+  "changedExistingSignals": [
+    "DDR_D14"
+  ],
+  "addedSignals": [
+    "DDR_CSn0"
+  ],
+  "csnPlanarMm": 42.80071426749381,
+  "csnNominalLengthPass": true,
+  "d14PlanarMm": 50.91910899782122,
+  "newCpuViaGeometry": [
+    {
+      "type": "pcb_via",
+      "pcb_via_id": "pcb_via_127",
+      "pcb_trace_id": "pcb_trace_23",
+      "x": 0.8000000000000007,
+      "y": -4.039999999999999,
+      "hole_diameter": 0.254,
+      "outer_diameter": 0.4572,
+      "layers": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ],
+      "from_layer": "top",
+      "to_layer": "bottom",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net40"
+    },
+    {
+      "type": "pcb_via",
+      "pcb_via_id": "pcb_via_128",
+      "pcb_trace_id": "pcb_trace_23",
+      "x": -3.8200000000000003,
+      "y": -7.58,
+      "hole_diameter": 0.254,
+      "outer_diameter": 0.4572,
+      "layers": [
+        "bottom",
+        "inner2",
+        "inner1",
+        "top"
+      ],
+      "from_layer": "bottom",
+      "to_layer": "top",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "subcircuit_connectivity_map_key": "unnamedsubcircuitsubcircuit_source_group_0_connectivity_net40"
+    }
+  ],
+  "restoredD10Unchanged": true,
+  "originalD14RamAndChannelTailPreserved": true,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForAddedHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "fullCommandClassMatchingDeferred": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

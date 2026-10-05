@@ -1,0 +1,31 @@
+277 |     const a=t.route[0],b=nativeStart.route.at(-1),end=t.route.at(-1)
+278 |     assert(Math.hypot(a.x-b.x,a.y-b.y)<1e-6)
+279 |     assert.equal(end.layer,channelLayer)
+280 |     if(sideHandoffs){assert.equal(end.x,ramFirst?-9:sideCpuX);assert(end.y-(ramFirst?0:26)>=ramLocalMinY&&end.y-(ramFirst?0:26)<=-18)}
+281 |     else assert(Math.abs(end.y-(ramFirst?ramExitY:-10.5))<1e-6)
+282 |     const result=results.find(r=>r.name===t.source_trace_id);assert.deepEqual(result.end,{x:end.x,y:end.y})
+                                                                          ^
+AssertionError: Expected values to be strictly deep-equal:
++ actual - expected
+
+  {
++   x: 7.600000000000001,
+-   x: 3.120000000000001,
+    y: -18
+  }
+
+ generatedMessage: true,
+     actual: {
+  x: 7.600000000000001,
+  y: -18,
+},
+   expected: {
+  x: 3.120000000000001,
+  y: -18,
+},
+   operator: "deepStrictEqual",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-local-fanouts.mjs:282:69
+
+Bun v1.3.14 (macOS arm64)

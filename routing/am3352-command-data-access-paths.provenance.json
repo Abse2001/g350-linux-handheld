@@ -1,0 +1,28 @@
+{
+  "status": "DIAGNOSTIC_DATA_ACCESS_OPENINGS",
+  "source": {
+    "path": "routing/am3352-command-unmatched-pruned-paths.json",
+    "sha256": "0becf9c883dc04f3223ca1dbbcef983ac4958902de5a7b8760490bc284abf5bd"
+  },
+  "output": {
+    "path": "routing/am3352-command-data-access-paths.json",
+    "sha256": "0995a398877eb5d6afefae392b68f4d6746fc191d6b33dbc11e67e0337afc3a4"
+  },
+  "temporarilyOpenSignals": [
+    "DDR_WEn",
+    "DDR_RASn",
+    "DDR_ODT",
+    "DDR_A7",
+    "DDR_CKE",
+    "DDR_CASn"
+  ],
+  "preservedCommandChannels": 20,
+  "allOtherPathGeometryUnchanged": true,
+  "removedPhysicalSignalVias": 34,
+  "barrierEvidence": {
+    "path": "dist/am3352-command-local-access-byte0-spaced-fanouts-attempt-222/result.json",
+    "sha256": "e439eaa7a862e446839605e483628216ea605101a3b435908af9ad0510e024ad"
+  },
+  "fabricationReady": false,
+  "scope": "Separate source opens six complete command paths; logical endpoints and all original power copper remain. Each opened signal needs full rerouting and original timing checks."
+}

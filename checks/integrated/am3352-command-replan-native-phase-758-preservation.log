@@ -1,0 +1,93 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
+  [
++   'source_trace_18',
++   'source_trace_33',
+    'source_trace_0',
++   'source_trace_19',
++   'source_trace_34',
++   'source_trace_48',
+    'source_trace_5',
++   'source_trace_20',
++   'source_trace_35',
+    'source_trace_6',
++   'source_trace_21',
+    'source_trace_7',
++   'source_trace_22',
++   'source_trace_36',
++   'source_trace_44',
+    'source_trace_8',
++   'source_trace_23',
++   'source_trace_37',
++   'source_trace_45',
+    'source_trace_9',
+-   'source_trace_18',
+-   'source_trace_19',
+-   'source_trace_20',
+-   'source_trace_21',
+-   'source_trace_22',
+-   'source_trace_23',
+    'source_trace_24',
++   'source_trace_38',
++   'source_trace_46',
+    'source_trace_25',
+-   'source_trace_33',
+-   'source_trace_34',
+-   'source_trace_35',
+-   'source_trace_36',
+-   'source_trace_37',
+-   'source_trace_38',
+    'source_trace_39',
+-   'source_trace_44',
+-   'source_trace_45',
+-   'source_trace_46',
+    'source_trace_47',
+-   'source_trace_48'
+  ]
+
+    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/check-am3352-command-replan-input.mjs:67:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'source_trace_18', 'source_trace_33',
+    'source_trace_0',  'source_trace_19',
+    'source_trace_34', 'source_trace_48',
+    'source_trace_5',  'source_trace_20',
+    'source_trace_35', 'source_trace_6',
+    'source_trace_21', 'source_trace_7',
+    'source_trace_22', 'source_trace_36',
+    'source_trace_44', 'source_trace_8',
+    'source_trace_23', 'source_trace_37',
+    'source_trace_45', 'source_trace_9',
+    'source_trace_24', 'source_trace_38',
+    'source_trace_46', 'source_trace_25',
+    'source_trace_39', 'source_trace_47'
+  ],
+  expected: [
+    'source_trace_0',  'source_trace_5',
+    'source_trace_6',  'source_trace_7',
+    'source_trace_8',  'source_trace_9',
+    'source_trace_18', 'source_trace_19',
+    'source_trace_20', 'source_trace_21',
+    'source_trace_22', 'source_trace_23',
+    'source_trace_24', 'source_trace_25',
+    'source_trace_33', 'source_trace_34',
+    'source_trace_35', 'source_trace_36',
+    'source_trace_37', 'source_trace_38',
+    'source_trace_39', 'source_trace_44',
+    'source_trace_45', 'source_trace_46',
+    'source_trace_47', 'source_trace_48'
+  ],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.6.1

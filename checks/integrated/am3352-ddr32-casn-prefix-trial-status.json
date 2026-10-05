@@ -1,0 +1,549 @@
+{
+  "status": "DDR32_CASN_CPU_ACCESS_RECOVERED_STAGED_CSN0_PREFIX_OPEN_NO_NEW_COMPLETE_SIGNAL",
+  "checkedCopperCheckpoint": {
+    "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+    "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606"
+  },
+  "activeDefaultSignals": 30,
+  "activeDefaultOpenSignals": 19,
+  "copperCheckpointSignals": 32,
+  "copperCheckpointOpenSignals": 17,
+  "pendingNominalRepairSignals": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_CKE",
+    "DDR_A3",
+    "DDR_A6"
+  ],
+  "trials": [
+    {
+      "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/result.json",
+      "sha256": "b273d95e899559c1784633c7acdc09c0bac9d9201ef322cd043c60d14eadb734",
+      "attempt": 614,
+      "status": "STAGED_COMMAND_CPU_PREFIXES_OPEN_NOT_EXPORTABLE",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+        "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-csn-prefix-open-local-attempt-615/result.json",
+      "sha256": "485cc68654789578a9132cdd57882bf33cb9f5876600884b6c0797c6e999cf90",
+      "attempt": 615,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-local-attempt-615/channel.input.simple-route.json",
+        "sha256": "fe8d95826f82c3daec96f3658c509d98f36d4d2ed4976949780c0766f4b880ca"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.912446975708008,
+          "newVias": 1
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.874743461608887,
+          "newVias": 3
+        }
+      ],
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-staged-native-bottom-attempt-616/result.json",
+      "sha256": "b0a3d44925a8ac2fb70878a14d461be0743a4453a2f6d07394832990063c0955",
+      "attempt": 616,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-staged-native-bottom-attempt-616/channel.input.simple-route.json",
+        "sha256": "c9ff4cca4d6842b7f29dc146ca15fbc6b5f9cf605e6ebdde4b398eabdb48af5e"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-casn-staged-native-bottom-attempt-616/channel.input.simple-route.json",
+        "sha256": "c9ff4cca4d6842b7f29dc146ca15fbc6b5f9cf605e6ebdde4b398eabdb48af5e"
+      },
+      "nativeElapsedSeconds": 2.21988825,
+      "nativeFailureCode": "no_planar_route",
+      "totalDdrSignalsAfterPhase": 31,
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.912446975708008,
+          "newVias": 1
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.874743461608887,
+          "newVias": 3
+        }
+      ],
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-central-cpu-local-attempt-617/result.json",
+      "sha256": "b16c44d3bf0ba6928f8be9d8ec525ef7fcb67d2a385a89fc946eee493b0f86f7",
+      "attempt": 617,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+        "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.912446975708008,
+          "newVias": 1
+        },
+        {
+          "package": "U_SOC",
+          "error": "all handoffs obstructed"
+        }
+      ],
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-outer-carrier-plan-attempt-618/result.json",
+      "sha256": "cb218b6e68da13bb4cd2ff0b1c8c041a598ec3c49f28a23dfe2f4890e2d5bac6",
+      "attempt": 618,
+      "status": "SINGLE_COMMAND_MANUAL_CARRIER_HANDOFF_PLAN_FAILED",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-staged-native-bottom-attempt-616/channel.input.simple-route.json",
+        "sha256": "c9ff4cca4d6842b7f29dc146ca15fbc6b5f9cf605e6ebdde4b398eabdb48af5e"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "searchBounds": {
+        "minX": -13,
+        "maxX": 3,
+        "minY": -22,
+        "maxY": -9.5
+      },
+      "manualSearchResult": {
+        "error": "no clearance-preserving bridge",
+        "expanded": 874002,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ]
+      },
+      "maximumNewVias": 4,
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-expanded-carrier-plan-attempt-619/result.json",
+      "sha256": "96a6b5b6b3f7c94e8742f1476d11046c657e392a1965eacb2b6fc5c339a6136a",
+      "attempt": 619,
+      "status": "SINGLE_COMMAND_MANUAL_CARRIER_HANDOFF_PLAN_FAILED",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-staged-native-bottom-attempt-616/channel.input.simple-route.json",
+        "sha256": "c9ff4cca4d6842b7f29dc146ca15fbc6b5f9cf605e6ebdde4b398eabdb48af5e"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "searchBounds": {
+        "minX": -17.5,
+        "maxX": 17.5,
+        "minY": -38.5,
+        "maxY": -3
+      },
+      "manualSearchResult": {
+        "error": "no clearance-preserving bridge",
+        "expanded": 6780681,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ]
+      },
+      "maximumNewVias": 4,
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-attempt-620/result.json",
+      "sha256": "7df7432dcb6a04f38d39d5d3d50b1db80349ffb0cb5a1e2912e78181ea821c6a",
+      "attempt": 620,
+      "status": "STAGED_COMMAND_CPU_PREFIXES_OPEN_NOT_EXPORTABLE",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-attempt-620/input.simple-route.json",
+        "sha256": "310f009146430eb1b89693888c52bcf03f836edfe85c66330c5c31fe8f44755c"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-local-attempt-621/result.json",
+      "sha256": "ce6e73310d4ac9f98c473666ca55f4c2eb84fdd1d99057a47b2f89f66b70091d",
+      "attempt": 621,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-local-attempt-621/channel.input.simple-route.json",
+        "sha256": "88341daedac5f342ad3054736dd7ffa88bb0c661147568a7b06824d540bb1756"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.912446975708008,
+          "newVias": 2
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.874743461608887,
+          "newVias": 2
+        }
+      ],
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-staged-native-top-attempt-622/result.json",
+      "sha256": "2b1bf0a161414bac213088ffb63c9ab28e9d9d423816a0cbdacf63e7ff933558",
+      "attempt": 622,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-staged-native-top-attempt-622/channel.input.simple-route.json",
+        "sha256": "1ae12d7ca613522f8d65c673c308e9b2081785af6c7b17b27df28538b28aed1d"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-casn-staged-native-top-attempt-622/channel.input.simple-route.json",
+        "sha256": "1ae12d7ca613522f8d65c673c308e9b2081785af6c7b17b27df28538b28aed1d"
+      },
+      "nativeElapsedSeconds": 65.6554415,
+      "nativeFailureCode": "no_planar_route",
+      "totalDdrSignalsAfterPhase": 31,
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.912446975708008,
+          "newVias": 2
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.874743461608887,
+          "newVias": 2
+        }
+      ],
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-actual-pad-plan-attempt-623/result.json",
+      "sha256": "6c00472fcc587cb13ed0ac9a53ad460a2970d8e88b3834555c752b3f845afc78",
+      "attempt": 623,
+      "status": "COMMAND_ACTUAL_PAD_HANDOFF_PLAN_FAILED",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+        "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "searchBounds": {
+        "minX": -17.5,
+        "maxX": 17.5,
+        "minY": -38.5,
+        "maxY": 9.5
+      },
+      "manualSearchResult": {
+        "error": "no clearance-preserving bridge",
+        "expanded": 710,
+        "startBlocked": [
+          false,
+          true
+        ],
+        "goalBlocked": [
+          false,
+          true
+        ]
+      },
+      "maximumNewVias": 6,
+      "superseded": true,
+      "supersededBy": 624,
+      "reason": "Own terminal pad clearance band incorrectly blocked escape; not routing failure evidence",
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-actual-pad-plan-attempt-624/result.json",
+      "sha256": "995491f9d433f35a3f46d7ca76bff88e8a0f4b4adfa510c849ac51c00cedd984",
+      "attempt": 624,
+      "status": "COMMAND_ACTUAL_PAD_HANDOFF_PLAN_FAILED",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+        "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "searchBounds": {
+        "minX": -17.5,
+        "maxX": 17.5,
+        "minY": -38.5,
+        "maxY": 9.5
+      },
+      "manualSearchResult": {
+        "error": "manual bridge timeout",
+        "expanded": 14550000
+      },
+      "maximumNewVias": 6,
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-actual-pad-plan-attempt-625/result.json",
+      "sha256": "5620067d773abbde6e3357aed0e8a68e60a9adae40758db9ca6ef0e38a415325",
+      "attempt": 625,
+      "status": "COMMAND_ACTUAL_PAD_HANDOFF_PLAN_FAILED",
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+        "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+      },
+      "sourceSignals": 32,
+      "stagedPreviouslyConnectedSignals": 31,
+      "pendingCommandPrefixRepairs": 1,
+      "searchBounds": {
+        "minX": -17.5,
+        "maxX": 17.5,
+        "minY": -38.5,
+        "maxY": 9.5
+      },
+      "manualSearchResult": {
+        "error": "no clearance-preserving bridge",
+        "expanded": 19037563,
+        "startBlocked": [
+          false,
+          true
+        ],
+        "goalBlocked": [
+          false,
+          true
+        ]
+      },
+      "maximumNewVias": 6,
+      "exportable": false,
+      "acceptedIntoActiveDefault": false,
+      "qualifiedNewDdrSignals": 0
+    }
+  ],
+  "actualHandoffProofs": [
+    {
+      "attempt": 615,
+      "fanouts": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-local-attempt-615/local-escapes.json",
+        "sha256": "0d3417bf70175bb47609a9546b56c7a6989def5892f51d60ae99e2c1a01ed6ef"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-local-attempt-615/channel.input.simple-route.json",
+        "sha256": "fe8d95826f82c3daec96f3658c509d98f36d4d2ed4976949780c0766f4b880ca"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "bottom"
+        },
+        {
+          "x": 0.120000000000001,
+          "y": -18,
+          "layer": "bottom"
+        }
+      ],
+      "actualPadStartsMatch": true,
+      "actualHandoffsMatch": true
+    },
+    {
+      "attempt": 621,
+      "fanouts": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-local-attempt-621/local-escapes.json",
+        "sha256": "ef1f94f67a944c0d59c08a67577368407d7a3d19cbf6daf6be1b4a5f90e18e63"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-local-attempt-621/channel.input.simple-route.json",
+        "sha256": "88341daedac5f342ad3054736dd7ffa88bb0c661147568a7b06824d540bb1756"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "top"
+        },
+        {
+          "x": 0.120000000000001,
+          "y": -18,
+          "layer": "top"
+        }
+      ],
+      "actualPadStartsMatch": true,
+      "actualHandoffsMatch": true
+    }
+  ],
+  "nativeTerminalProofs": [
+    {
+      "attempt": 616,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-casn-staged-native-bottom-attempt-616/channel.input.simple-route.json",
+        "sha256": "c9ff4cca4d6842b7f29dc146ca15fbc6b5f9cf605e6ebdde4b398eabdb48af5e"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-local-attempt-615/result.json",
+        "sha256": "485cc68654789578a9132cdd57882bf33cb9f5876600884b6c0797c6e999cf90"
+      },
+      "actualHandoffsMatch": true,
+      "completeNewSignalCount": 0
+    },
+    {
+      "attempt": 622,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-casn-staged-native-top-attempt-622/channel.input.simple-route.json",
+        "sha256": "1ae12d7ca613522f8d65c673c308e9b2081785af6c7b17b27df28538b28aed1d"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr32-casn-csn-prefix-open-top-local-attempt-621/result.json",
+        "sha256": "ce6e73310d4ac9f98c473666ca55f4c2eb84fdd1d99057a47b2f89f66b70091d"
+      },
+      "actualHandoffsMatch": true,
+      "completeNewSignalCount": 0
+    }
+  ],
+  "openedPrefix": {
+    "signal": "DDR_CSn0",
+    "cutIndex": 26,
+    "retainedTailStart": {
+      "x": -4.22,
+      "y": -7.18
+    },
+    "physicalHolesRemoved": 0,
+    "pendingRepairs": 1,
+    "exportable": false
+  },
+  "guardValidation": {
+    "path": "checks/integrated/am3352-ddr32-command-prefix-guard-validation.json",
+    "sha256": "b641be40153fc5b9f6c1c5701e71ce58af90f677c5070754fb432c672445f9e4"
+  },
+  "stagedPreviouslyConnectedSignals": 31,
+  "qualifiedNewDdrSignals": 0,
+  "manualSearchFailuresAreNotGlobalImpossibilityProofs": true,
+  "helpers": [
+    {
+      "path": "scripts/prepare-am3352-open-command-prefixes.mjs",
+      "sha256": "8f69580b390b835ff645c0c6a2d37073c7a70cd688906b371359192d69f9728a"
+    },
+    {
+      "path": "scripts/lib/am3352-open-command-prefixes.mjs",
+      "sha256": "acc076b13cad647a7867aa064613c7a39e810973b85757d02821fa63b2fd12a5"
+    },
+    {
+      "path": "scripts/route-am3352-guided-local-fanouts.mjs",
+      "sha256": "6bf4dff4a561384c4beaf2221001deb91fc81686092cb2a8931a6b27cc58ba54"
+    },
+    {
+      "path": "scripts/route-am3352-guided-channel.mjs",
+      "sha256": "0ae51a261c6c0945b586b4f19e283689e5becb70e1a944b2f9fdddb69d33cd21"
+    },
+    {
+      "path": "scripts/lib/am3352-guarded-outer-bridge.mjs",
+      "sha256": "f11a9b56c945a6b612cd6159428b3dbd46698346b1429618761703ca79984493"
+    },
+    {
+      "path": "scripts/repair-am3352-single-command-carrier.mjs",
+      "sha256": "6271edf69e85d392b311a33f3103c1f9d723f3de65e6062a2ce006c5f9329b99"
+    },
+    {
+      "path": "scripts/repair-am3352-command-pad-path.mjs",
+      "sha256": "43deb4b8cfa03b40887b0f768c763c29ba9a9514669cb22e3604688a40d573b2"
+    }
+  ],
+  "referenceLayersReserved": [
+    "inner1",
+    "inner2"
+  ],
+  "copperLayers": 4,
+  "activeSolverHandles": [],
+  "defaultChanged": false,
+  "originalShellFitVerified": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

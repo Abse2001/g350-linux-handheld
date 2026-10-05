@@ -1,0 +1,415 @@
+{
+  "status": "PASS_PMIC_PLACEMENT_ONLY",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "logicalComponents": 280,
+  "movedComponents": 18,
+  "pmicSupportParts": 18,
+  "copperLayers": 4,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "cpuToRamCenterDistanceMm": 20,
+  "exactSourceConnectivityPreserved": true,
+  "allExplicitNetNamesDistinct": true,
+  "physicalPadAndNativePasteTransformVerified": true,
+  "unchangedComponentPlacements": 262,
+  "movedCourtyardsClear": true,
+  "ddrBypassPlacement": [
+    {
+      "capacitor": "C_DDR_CPU_1",
+      "powerDistanceMm": 2.9698484809835004,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_2",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_3",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.42426406871192884,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_4",
+      "powerDistanceMm": 5.507267925205748,
+      "groundDistanceMm": 1.6278820596099715,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_5",
+      "powerDistanceMm": 7.68960337078578,
+      "groundDistanceMm": 4.011234224026317,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_6",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.407027391856539,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_7",
+      "powerDistanceMm": 4.883646178829913,
+      "groundDistanceMm": 1.7464249196572985,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_8",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.060788100849392,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_9",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.438167441127948,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_10",
+      "powerDistanceMm": 4.883646178829912,
+      "groundDistanceMm": 1.8357559750685815,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_11",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.1000000000000005,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_12",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.46297145282261,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_13",
+      "powerDistanceMm": 5.507267925205746,
+      "groundDistanceMm": 1.6763054614240216,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_14",
+      "powerDistanceMm": 7.689603370785778,
+      "groundDistanceMm": 4.0311288741492755,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_15",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.419501538281613,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_16",
+      "powerDistanceMm": 6.579513659838392,
+      "groundDistanceMm": 2.06155281280883,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_17",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.205948168962618,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_18",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.2059481689626175,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_19",
+      "powerDistanceMm": 7.920227269466451,
+      "groundDistanceMm": 3.4885527085024814,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_20",
+      "powerDistanceMm": 9.567131231461184,
+      "groundDistanceMm": 5.060632371551998,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_RAM_1",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_2",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_3",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_4",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.325940669922601,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_5",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_6",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_7",
+      "powerDistanceMm": 2.906888370749726,
+      "groundDistanceMm": 2.765863337187866,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_8",
+      "powerDistanceMm": 2.5238858928247923,
+      "groundDistanceMm": 2.765863337187866,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_9",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_10",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_11",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_12",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    }
+  ],
+  "pmicDistances": [
+    {
+      "from": "U_PMIC.20",
+      "to": "L_DDR.1",
+      "oldStraightPadDistanceMm": 11.505757394402595,
+      "newStraightPadDistanceMm": 4.2786368411972076,
+      "category": "switches",
+      "measuredDistanceMm": 4.2786368411972076
+    },
+    {
+      "from": "U_PMIC.23",
+      "to": "L_MPU.1",
+      "oldStraightPadDistanceMm": 11.23668032890791,
+      "newStraightPadDistanceMm": 2.8681486039021764,
+      "category": "switches",
+      "measuredDistanceMm": 2.8681486039021764
+    },
+    {
+      "from": "U_PMIC.31",
+      "to": "L_CORE.1",
+      "oldStraightPadDistanceMm": 7.093727843232356,
+      "newStraightPadDistanceMm": 3.2401150000964467,
+      "category": "switches",
+      "measuredDistanceMm": 3.2401150000964467
+    },
+    {
+      "from": "L_DDR.2",
+      "to": "C_PMIC_DDR_OUT.1",
+      "oldStraightPadDistanceMm": 6.386659750174577,
+      "newStraightPadDistanceMm": 5.808434966882211,
+      "category": "outputs",
+      "measuredDistanceMm": 5.8084349668822135
+    },
+    {
+      "from": "L_MPU.2",
+      "to": "C_PMIC_MPU_OUT.1",
+      "oldStraightPadDistanceMm": 6.386659750174576,
+      "newStraightPadDistanceMm": 3.797037103387325,
+      "category": "outputs",
+      "measuredDistanceMm": 3.7970371033873223
+    },
+    {
+      "from": "L_CORE.2",
+      "to": "C_PMIC_CORE_OUT.1",
+      "oldStraightPadDistanceMm": 6.161529899310722,
+      "newStraightPadDistanceMm": 3.7970371033873214,
+      "category": "outputs",
+      "measuredDistanceMm": 3.7970371033873214
+    },
+    {
+      "from": "U_PMIC.19",
+      "to": "C_PMIC_DDR_OUT.1",
+      "oldStraightPadDistanceMm": 14.594591427534036,
+      "newStraightPadDistanceMm": 5.608838621198687,
+      "category": "feedback",
+      "measuredDistanceMm": 5.6088386211986885
+    },
+    {
+      "from": "U_PMIC.24",
+      "to": "C_PMIC_MPU_OUT.1",
+      "oldStraightPadDistanceMm": 15.53831891151118,
+      "newStraightPadDistanceMm": 5.405011914494361,
+      "category": "feedback",
+      "measuredDistanceMm": 5.4050119144943585
+    },
+    {
+      "from": "U_PMIC.29",
+      "to": "C_PMIC_CORE_OUT.1",
+      "oldStraightPadDistanceMm": 12.715501846158096,
+      "newStraightPadDistanceMm": 6.245547087777816,
+      "category": "feedback",
+      "measuredDistanceMm": 6.245547087777816
+    },
+    {
+      "from": "U_PMIC.21",
+      "to": "C_PMIC_DCDC1_IN.1",
+      "oldStraightPadDistanceMm": 6.273076094999169,
+      "newStraightPadDistanceMm": 0.4823950161952343,
+      "category": "inputs",
+      "measuredDistanceMm": 0.4823950161952343
+    },
+    {
+      "from": "U_PMIC.22",
+      "to": "C_PMIC_DCDC2_IN.1",
+      "oldStraightPadDistanceMm": 8.35852909958744,
+      "newStraightPadDistanceMm": 2.644200250860361,
+      "category": "inputs",
+      "measuredDistanceMm": 2.644200250860361
+    },
+    {
+      "from": "U_PMIC.32",
+      "to": "C_PMIC_DCDC3_IN.1",
+      "oldStraightPadDistanceMm": 9.243428607700174,
+      "newStraightPadDistanceMm": 2.8948908787120082,
+      "category": "inputs",
+      "measuredDistanceMm": 2.8948908787120082
+    },
+    {
+      "from": "U_PMIC.2",
+      "to": "C_PMIC_VINLDO.1",
+      "oldStraightPadDistanceMm": 2.5545305342958797,
+      "newStraightPadDistanceMm": 0.5154165799060035,
+      "category": "inputs",
+      "measuredDistanceMm": 0.5154165799060035
+    },
+    {
+      "from": "U_PMIC.7",
+      "to": "C_PMIC_SYS.1",
+      "oldStraightPadDistanceMm": 13.242600157697503,
+      "newStraightPadDistanceMm": 3.147373774855792,
+      "category": "support",
+      "measuredDistanceMm": 3.147373774855795
+    },
+    {
+      "from": "U_PMIC.8",
+      "to": "C_PMIC_SYS.1",
+      "oldStraightPadDistanceMm": 13.600064786597526,
+      "newStraightPadDistanceMm": 2.7697758800397545,
+      "category": "support",
+      "measuredDistanceMm": 2.7697758800397576
+    },
+    {
+      "from": "U_PMIC.12",
+      "to": "C_PMIC_USB.1",
+      "oldStraightPadDistanceMm": 4.539893969318006,
+      "newStraightPadDistanceMm": 2.5720890833425663,
+      "category": "support",
+      "measuredDistanceMm": 2.5720890833425663
+    },
+    {
+      "from": "U_PMIC.3",
+      "to": "C_PMIC_LDO1.1",
+      "oldStraightPadDistanceMm": 7.059803967620771,
+      "newStraightPadDistanceMm": 3.4410665866341508,
+      "category": "support",
+      "measuredDistanceMm": 3.4410665866341508
+    },
+    {
+      "from": "U_PMIC.1",
+      "to": "C_PMIC_LDO2.1",
+      "oldStraightPadDistanceMm": 8.92193607075471,
+      "newStraightPadDistanceMm": 2.783965023603924,
+      "category": "support",
+      "measuredDistanceMm": 2.783965023603924
+    },
+    {
+      "from": "U_PMIC.40",
+      "to": "C_PMIC_ANALOG_OUT.1",
+      "oldStraightPadDistanceMm": 8.617658960045354,
+      "newStraightPadDistanceMm": 4.276447204590511,
+      "category": "support",
+      "measuredDistanceMm": 4.276447204590511
+    },
+    {
+      "from": "U_PMIC.43",
+      "to": "C_PMIC_IO_OUT.1",
+      "oldStraightPadDistanceMm": 8.837669711900867,
+      "newStraightPadDistanceMm": 5.986145978728719,
+      "category": "support",
+      "measuredDistanceMm": 5.986145978728719
+    },
+    {
+      "from": "U_PMIC.47",
+      "to": "C_PMIC_BYPASS.1",
+      "oldStraightPadDistanceMm": 4.90942504565107,
+      "newStraightPadDistanceMm": 3.7299982759012082,
+      "category": "support",
+      "measuredDistanceMm": 3.7299982759012082
+    },
+    {
+      "from": "U_PMIC.48",
+      "to": "C_PMIC_INT_LDO.1",
+      "oldStraightPadDistanceMm": 4.027263203507066,
+      "newStraightPadDistanceMm": 2.9765336380968366,
+      "category": "support",
+      "measuredDistanceMm": 2.9765336380968366
+    }
+  ],
+  "newCorePolygonPasteIntentPreserved": true,
+  "polygonPasteNegativeControlDetected": true,
+  "all280CourtyardsNonoverlapping": true,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "scope": "Placement only. PMIC pad-distance limits are engineering bounds, not manufacturer trace-length limits. Actual copper loops, dedicated input vias, thermal grounding, effective capacitance, original shell fit and routing remain incomplete.",
+  "hashes": {
+    "dist/experiments/am3352-g350-pmic-placement/circuit.json": "a76581781024de52d555b7c6f37dd5708ad7293c2b4a902414b721adccafdc2d",
+    "dist/experiments/am3352-g350-ddr-corridor/circuit.json": "a9427ee89a309ba5be281575d5dd7ee4116034432209eee02adf97c0786de583",
+    "checks/layout/ddr-corridor-variant/g350-ddr-corridor-check-summary.json": "a13d71ea32d171b4340f74ebf4844c30d637f023974c78461441671af8a2b214",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "experiments/am3352-g350-pmic-placement.circuit.tsx": "15d4d3f596bc2df7f1ec9cea0e62ca726c1c197cfc2485227dc53afd5884aa69",
+    "lib/am3352/placement/PmicPlacement.tsx": "f4ef0fd3f67e77f29afdfe8b262459ac2bb24a272351b3c3c55cd0120bbe1a5c",
+    "lib/am3352/placement/pmic-placements.json": "fd6ab78d417c8c38c3d0f4574085e339c8ff5011fd29fe46dec43510567a2659",
+    "scripts/plan-g350-pmic-placement.mjs": "c89b54eb46e91cc5555f935bc9de85b036946ee14fed6c94769f14975ac886dd",
+    "scripts/check-g350-pmic-placement.mjs": "d15008eb15da0dc8b271727986f5fa7b11fb4170c1ab0c65242f5262e8045967",
+    "checks/layout/pmic-placement-variant/pmic-plan.json": "fd9e898bc83a2eb3eea6b58e11dcab082c9a5d6fec58e89e33eb57647ea04142",
+    "reference/am3352/am3352.pdf": "ec145b6b19a7ff35118bb0ec06b5ae9c51aa97ccdf4da935f2176d9168af0205",
+    "reference/am3352/tps65217.pdf": "2de40c068b123c9dd77bee69d41164725df89c13e2b3c15719412d98f531d5e3",
+    "package.json": "7ec924f6947e4c7409c3be3ea9d5c6060166acea2d5219a19f930d5b6b3364c1",
+    "package-lock.json": "99c1153b48c7de80bffcd24444aa34f29c11f5e1664d96e7c554678411170795",
+    "checks/integrated/tscircuit-core-2085/native-before-paste-policy.circuit.json": "d3f7547bd673009f43abc35f45f010b6514ad9b235a6bd4571f6562b3d73bcbb"
+  }
+}

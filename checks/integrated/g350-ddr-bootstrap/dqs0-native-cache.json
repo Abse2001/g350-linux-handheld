@@ -1,0 +1,47 @@
+{
+  "status": "NATIVE_BUS_LANES_STROBE_CACHE_REQUIRES_SHAPED_REPLAY_CHECKS",
+  "sourceDomain": "76 × 118 mm computational rectangle; not a manufacturing outline",
+  "fixedPowerTraces": 101,
+  "signalTraces": [
+    {
+      "name": "DDR_DQS0",
+      "cpuPin": 14,
+      "ramPin": 38,
+      "lengthMm": 16.513775783060332,
+      "throughVias": 2,
+      "nativeTraceId": "bus_lane_source_trace_15"
+    },
+    {
+      "name": "DDR_DQSn0",
+      "cpuPin": 32,
+      "ramPin": 39,
+      "lengthMm": 16.640775783060366,
+      "throughVias": 2,
+      "nativeTraceId": "bus_lane_source_trace_16"
+    }
+  ],
+  "pairPlanarSkewMm": 0.12700000000003442,
+  "pairPlanarSkewLimitMm": 0.127,
+  "nativeWireCoordinatesRetained": true,
+  "artifacts": [
+    {
+      "path": "dist/g350-dqs0-native-bootstrap/result.json",
+      "sha256": "74c8e142ea7a7335ed76b73e5fb0a48156488b867848b141a65c269e8c4e4dde"
+    },
+    {
+      "path": "dist/g350-dqs0-native-bootstrap/phase-1.input.simple-route.json",
+      "sha256": "759f60938050c5481a34be48d03db44633a154f304773a1d14d8a24677ba2ebe"
+    },
+    {
+      "path": "dist/g350-dqs0-native-bootstrap/phase-1.output.traces.json",
+      "sha256": "5f85e1fdb6db8bc9d83883b2c29c40fa37406b7f7362ad7d4ca1382c6b841995"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-dqs0-native-paths.json",
+      "sha256": "ae762967385041e035be2251505b2994045a0e8aa066036e4d812a07ae60eb2b"
+    }
+  ],
+  "qualifiedDdrSignals": 0,
+  "fabricationReady": false,
+  "scope": "First native bus_lanes strobe pair around all placed obstacles and 101 power escapes. Requires fresh actual-outline native and independent physical/connectivity checks; planar lengths alone do not qualify DDR timing or impedance."
+}

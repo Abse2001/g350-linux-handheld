@@ -1,0 +1,1096 @@
+{
+  "status": "DDR33_CASN_CSN0_NOMINAL_COUPLED_COPPER_BYTE_MATCHING_CHECKED_HOST_INCOMPLETE",
+  "entry": {
+    "path": "experiments/am3352-ddr-usbc-casn-csn0-nominal-d3-matched.circuit.tsx",
+    "sha256": "0b772e5d7d99b156aab1f33f73b0dda78f4b7d987daf5ab7aa340f739ae4585d"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-candidate/circuit.json",
+    "sha256": "5c8aeb2a452df32905653abb4f747d47893af667d90949df230eea4e140f5f07"
+  },
+  "board": {
+    "path": "dist/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-diagnostic/board.kicad_pcb",
+    "sha256": "ac0dc0b774faad4e29b89f17bce1aca0601ce3af2308a6a2c05996273774c021"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-paths.json",
+    "sha256": "5a5a03a6478bce245d98a5d5c6c6e6aa74f607542c6d4e1f5501c196784aeafc"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+    "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-source-validation.json",
+    "sha256": "22648a9093f561d49fd465eb1219e3af22c64f5e906671c9988d1464b7f3f46e"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-ddr-connectivity.json",
+    "sha256": "a383634d3572bcae18e286c307e4621d3aa0e332fa8c0346922e85a03caf941b"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-native-ddr-connectivity.json",
+    "sha256": "de20f43d3a1fb083c4e9a5c644147246758f2fca2a568ec29ef77f06c6e5bf47"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-native-usb-connectivity-routed.json",
+    "sha256": "4c133c13800f762b92bfdb9c24da531638b17224e3bee40c8ec88888891d2f77"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-reference-connectivity.json",
+    "sha256": "44001ec7b2348564c4be52a70bfcde6f561135cd27d4d06a6977fa757a5064ec"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-kicad-drc.json",
+    "sha256": "75098bd787274203a95f5369dccb5355400586e59d1ae817aeb7fa624c05b0a6"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "libraryAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-library.log",
+    "sha256": "1261d8d1b58ba370de8ff26728338cb0031322fd85526634dd522ac0fceecdde"
+  },
+  "routingProvenance": {
+    "path": "routing/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-paths.provenance.json",
+    "sha256": "2ed70988c2057d0f1b1dd9c226b3edb4e5e256b237462538abece6f41ca6f9ec"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 135,
+  "throughVias": 169,
+  "preservedThroughVias": 161,
+  "replannedOldSignalHoles": [
+    "pcb_via_145",
+    "pcb_via_146"
+  ],
+  "newThroughVias": 8,
+  "connectedDdrSignals": 33,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignalNames": [
+    "DDR_A0",
+    "DDR_A1",
+    "DDR_A10",
+    "DDR_A11",
+    "DDR_A12",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_A2",
+    "DDR_A4",
+    "DDR_A7",
+    "DDR_A8",
+    "DDR_A9",
+    "DDR_BA0",
+    "DDR_BA1",
+    "DDR_BA2",
+    "DDR_RASn"
+  ],
+  "addedSignals": [
+    "DDR_CASn"
+  ],
+  "changedExistingSignals": [
+    "DDR_D3",
+    "DDR_CSn0",
+    "DDR_RESETn"
+  ],
+  "routes": {
+    "DDR_D3": {
+      "planarMm": 30.72778354054686,
+      "physicalVias": 4,
+      "actualEndpointsMatch": true,
+      "commandNominalLengthPass": null
+    },
+    "DDR_RESETn": {
+      "planarMm": 52.64654254594159,
+      "physicalVias": 2,
+      "actualEndpointsMatch": true,
+      "commandNominalLengthPass": null
+    },
+    "DDR_CSn0": {
+      "planarMm": 43.66277078344939,
+      "physicalVias": 0,
+      "actualEndpointsMatch": true,
+      "commandNominalLengthPass": true
+    },
+    "DDR_CASn": {
+      "planarMm": 43.02000000000001,
+      "physicalVias": 2,
+      "actualEndpointsMatch": true,
+      "commandNominalLengthPass": true
+    }
+  },
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "ddrTiming": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.15742110831645206,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 0.6350000014649382,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0.07940932866782191,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 0.07661634765567982,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "byte0SkewMm": 0.15742110831645206,
+  "byte0LimitMm": 0.635,
+  "bothBytePlanarTimingPass": true,
+  "allThreeDifferentialPairPlanarTimingPass": true,
+  "fullCommandClassMatchingPass": false,
+  "commandNominalRangeMm": [
+    41.75,
+    44.290000000000006
+  ],
+  "pendingNominalRepairSignals": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_CKE",
+    "DDR_A3",
+    "DDR_A6"
+  ],
+  "pendingOpenedSignalRepairs": [],
+  "addedSignalNominalLengthPass": true,
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "placementNominalReview": {
+    "primarySourceReview": {
+      "path": "checks/integrated/am3352-ddr25-ti-nominal-length-review.json",
+      "sha256": "58d12363dd266710b21b090194cd82e9c320f4a6be6a40b77dca9183656fce8e"
+    },
+    "commandRows": [
+      {
+        "name": "DDR_ODT",
+        "manhattanMm": 22.599999999999998
+      },
+      {
+        "name": "DDR_CSn0",
+        "manhattanMm": 24.2
+      },
+      {
+        "name": "DDR_BA0",
+        "manhattanMm": 28.2
+      },
+      {
+        "name": "DDR_A3",
+        "manhattanMm": 28.200000000000003
+      },
+      {
+        "name": "DDR_A5",
+        "manhattanMm": 28.2
+      },
+      {
+        "name": "DDR_A7",
+        "manhattanMm": 27.400000000000002
+      },
+      {
+        "name": "DDR_RASn",
+        "manhattanMm": 23.4
+      },
+      {
+        "name": "DDR_CASn",
+        "manhattanMm": 22.599999999999998
+      },
+      {
+        "name": "DDR_WEn",
+        "manhattanMm": 27.4
+      },
+      {
+        "name": "DDR_BA2",
+        "manhattanMm": 29
+      },
+      {
+        "name": "DDR_A0",
+        "manhattanMm": 26.6
+      },
+      {
+        "name": "DDR_A2",
+        "manhattanMm": 29
+      },
+      {
+        "name": "DDR_A9",
+        "manhattanMm": 29.000000000000004
+      },
+      {
+        "name": "DDR_A13",
+        "manhattanMm": 28.2
+      },
+      {
+        "name": "DDR_CK",
+        "manhattanMm": 27.4
+      },
+      {
+        "name": "DDR_CKn",
+        "manhattanMm": 27.4
+      },
+      {
+        "name": "DDR_A10",
+        "manhattanMm": 29
+      },
+      {
+        "name": "DDR_A12",
+        "manhattanMm": 30.6
+      },
+      {
+        "name": "DDR_A1",
+        "manhattanMm": 27.4
+      },
+      {
+        "name": "DDR_A11",
+        "manhattanMm": 30.6
+      },
+      {
+        "name": "DDR_A14",
+        "manhattanMm": 31.400000000000002
+      },
+      {
+        "name": "DDR_BA1",
+        "manhattanMm": 29.8
+      },
+      {
+        "name": "DDR_A4",
+        "manhattanMm": 33
+      },
+      {
+        "name": "DDR_A6",
+        "manhattanMm": 35.400000000000006
+      },
+      {
+        "name": "DDR_A8",
+        "manhattanMm": 35.400000000000006
+      },
+      {
+        "name": "DDR_CKE",
+        "manhattanMm": 28.2
+      }
+    ],
+    "longestManhattanMm": 35.400000000000006,
+    "additionalRoutingAllowanceMm": 7.62,
+    "nominalMm": 43.02,
+    "rangeMm": [
+      41.75,
+      44.290000000000006
+    ],
+    "clocks": [
+      {
+        "name": "DDR_CK",
+        "planarMm": 34.49909962830806,
+        "nominalLengthPass": false
+      },
+      {
+        "name": "DDR_CKn",
+        "planarMm": 34.42248328065238,
+        "nominalLengthPass": false
+      }
+    ],
+    "recomputeAfterPlacementChanges": true
+  },
+  "csnConnected": true,
+  "csnPlanarMm": 43.66277078344939,
+  "csnThroughVias": 0,
+  "csnNominalLengthPass": true,
+  "casnConnected": true,
+  "casnPlanarMm": 43.02000000000001,
+  "casnThroughVias": 2,
+  "casnNominalLengthPass": true,
+  "d14CpuPrefixRepairChecked": true,
+  "d14PlanarMm": 50.91910899782122,
+  "d14ThroughVias": 2,
+  "retainedCpuPrefixRepair": {
+    "signal": "DDR_D14",
+    "sourceTraceId": "source_trace_40",
+    "manualRun": {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-attempt-524/result.json",
+      "sha256": "bba5cf12e9b64754359c2e8614c3fcd950a3f9dd3c51772c3cdd33a2dfb51703"
+    },
+    "manualCopper": {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-attempt-524/local-escapes.json",
+      "sha256": "90c9f1a1ad8fd308bcad8cd81e630ed1d510b30bf2d563a64709565c7ac32a65"
+    },
+    "preparation": {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-prep-attempt-523/result.json",
+      "sha256": "a17f606c3f1c95621bdd147f2c7cc442cd85e57f2e11c6a2947e5761c739f877"
+    },
+    "originalTails": {
+      "path": "dist/am3352-ddr27-csn-joint-cpu-prep-attempt-516/temporarily-open-cpu-tails.json",
+      "sha256": "35737c30c244403c306063357243a3660cd1174fe18e002ef883cc77f75fdef8",
+      "originalSource": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-odt-nominal-candidate/circuit.json",
+        "sha256": "3f2ef3f83fb4a1aaf427e24dacb24b189cbfc9a30a982d6387641c00b336d6ee"
+      },
+      "stagedRepairOnly": true,
+      "exportable": false,
+      "names": [
+        "DDR_D10",
+        "DDR_D14"
+      ],
+      "physicalHolesRemoved": 0
+    },
+    "cutIndex": 66,
+    "newPhysicalVias": 2,
+    "planarMm": 50.91910899782122,
+    "restoredD10Preflight": {
+      "minimumCopperEdgeGapMm": 0.2660955262170044,
+      "wireGuardMm": 0.003
+    }
+  },
+  "odtConnected": true,
+  "odtPlanarMm": 43.01828108257736,
+  "odtThroughVias": 4,
+  "odtNominalLengthPass": true,
+  "ckeConnected": true,
+  "ckePlanarMm": 49.90747867980896,
+  "ckeThroughVias": 4,
+  "ckeNominalLengthPass": false,
+  "clockNominalLengthPass": false,
+  "negativeStrobePlanarMm": 51.03254838299123,
+  "positiveStrobePlanarMm": 50.95313905432341,
+  "negativeStrobeThroughVias": 4,
+  "positiveStrobeThroughVias": 4,
+  "retainedDdrPowerPlaneRepair": {
+    "entry": {
+      "path": "experiments/am3352-ddr-usbc-cke-joint-power-plane.circuit.tsx",
+      "sha256": "3ca0141e9b4b3fc302af1bdb2b7a7eabdf7233ee99e7ba8d14e00630ae6e578a"
+    },
+    "priorPlaneCopperClearanceMm": 0.2,
+    "planeCopperClearanceMm": 0.12,
+    "viaLandMm": 0.4572,
+    "viaDrillMm": 0.254,
+    "nominalPlaneToOtherNetDrillGapMm": 0.2216,
+    "nominalPlaneNeckAtPointEightPitchMm": 0.1028,
+    "sourceManufacturingMinimumsUnchanged": true,
+    "groundPlaneClearanceUnchanged": true,
+    "filledReferenceContinuityCheckRequired": true,
+    "independentFilledReferenceConnectivityPass": true,
+    "nativeZoneMinimumThicknessMm": 0.25
+  },
+  "nativeBusLanesBootstrap": true,
+  "manualRepairs": true,
+  "chargingAndDataShareOneSocket": true,
+  "usbNumericPadNetAssignmentsVerified": 38,
+  "usbConnectedPadChecks": 40,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItemsReported": 499,
+  "hostUnconnectedItemsCountIsReportedAndCapped": true,
+  "ignoredNativeChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "physicalLibraryRecordsPreserved": 14860,
+  "topSnapshot": {
+    "path": "images/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-top.png",
+    "sha256": "33a53741820948298299be8f2bdc7f9884733d08575b17e9975f26594cefa7fc",
+    "visuallyInspected": true
+  },
+  "bottomSnapshot": {
+    "path": "images/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-bottom.png",
+    "sha256": "2b98a47b8b49b9aa9d8536752df97a406bebfcac111e99ee4d9595bc618a043a",
+    "visuallyInspected": true
+  },
+  "diagnosticOnly": false,
+  "bootstrapOnly": true,
+  "sourceEligibleForCheckedRoutingPhase": true,
+  "priorQualifiedCopperCheckpointSignals": 32,
+  "qualifiedNewDdrSignals": 1,
+  "defaultSignals": 30,
+  "defaultChanged": false,
+  "manualWireTuning": {
+    "run": {
+      "path": "dist/am3352-ddr33-d3-byte-exact-tuning-attempt-687/result.json",
+      "sha256": "963bbe5578c485aa7b20f648ce9872db9433b5b030d72be9972cea7ff6622643"
+    },
+    "priorReplayPaths": {
+      "path": "routing/am3352-ddr-usbc-casn-d3-coupled-paths.json",
+      "sha256": "2fca504890ed38bb870fccfe7c7ddb1064d4bc8b7442bc149af68c2927f9a91e"
+    },
+    "priorReplayProvenance": {
+      "path": "routing/am3352-ddr-usbc-casn-d3-coupled-paths.provenance.json",
+      "sha256": "8b4e60ac589c63f60c2e5187518754be45408782002876eb0f77ee2c96be72a3"
+    },
+    "signal": "DDR_D3",
+    "index": 14,
+    "insertedPoints": [
+      {
+        "x": 0.2283963001235012,
+        "y": -12.340749690404914
+      },
+      {
+        "x": 0.1883963001235012,
+        "y": -12.380749690404913
+      },
+      {
+        "x": -0.12675757641531632,
+        "y": -12.380749690404913
+      },
+      {
+        "x": -0.1667575764153163,
+        "y": -12.420749690404914
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -12.580749690404915
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -12.620749690404914
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -12.620749690404914
+      },
+      {
+        "x": 0.22839630012350118,
+        "y": -12.660749690404915
+      },
+      {
+        "x": 0.22839630012350118,
+        "y": -12.820749690404913
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -12.860749690404914
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -12.860749690404914
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -12.900749690404915
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -13.060749690404913
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -13.100749690404914
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -13.100749690404914
+      },
+      {
+        "x": 0.22839630012350118,
+        "y": -13.140749690404913
+      },
+      {
+        "x": 0.22839630012350118,
+        "y": -13.300749690404913
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -13.340749690404914
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -13.340749690404914
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -13.380749690404913
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -13.540749690404914
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -13.580749690404915
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -13.580749690404915
+      },
+      {
+        "x": 0.22839630012350118,
+        "y": -13.620749690404914
+      },
+      {
+        "x": 0.22839630012350118,
+        "y": -13.780749690404914
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -13.820749690404913
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -13.820749690404913
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -13.860749690404914
+      },
+      {
+        "x": -0.16675757641531633,
+        "y": -14.020749690404914
+      },
+      {
+        "x": -0.12675757641531635,
+        "y": -14.060749690404915
+      },
+      {
+        "x": 0.18839630012350117,
+        "y": -14.060749690404915
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -14.100749690404914
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -14.260749690404914
+      },
+      {
+        "x": 0.18839630012350114,
+        "y": -14.300749690404913
+      },
+      {
+        "x": -0.12675757641531638,
+        "y": -14.300749690404913
+      },
+      {
+        "x": -0.16675757641531636,
+        "y": -14.340749690404914
+      },
+      {
+        "x": -0.16675757641531636,
+        "y": -14.500749690404913
+      },
+      {
+        "x": -0.12675757641531638,
+        "y": -14.540749690404914
+      },
+      {
+        "x": 0.18839630012350114,
+        "y": -14.540749690404914
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -14.580749690404915
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -14.740749690404915
+      },
+      {
+        "x": 0.18839630012350114,
+        "y": -14.780749690404914
+      },
+      {
+        "x": -0.12675757641531638,
+        "y": -14.780749690404914
+      },
+      {
+        "x": -0.16675757641531636,
+        "y": -14.820749690404913
+      },
+      {
+        "x": -0.16675757641531636,
+        "y": -14.980749690404913
+      },
+      {
+        "x": -0.12675757641531638,
+        "y": -15.020749690404914
+      },
+      {
+        "x": 0.18839630012350114,
+        "y": -15.020749690404914
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -15.060749690404915
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -15.220749690404913
+      },
+      {
+        "x": 0.18839630012350114,
+        "y": -15.260749690404914
+      },
+      {
+        "x": -0.12675757641531638,
+        "y": -15.260749690404914
+      },
+      {
+        "x": -0.16675757641531636,
+        "y": -15.300749690404913
+      },
+      {
+        "x": -0.16675757641531636,
+        "y": -15.460749690404914
+      },
+      {
+        "x": -0.12675757641531638,
+        "y": -15.500749690404913
+      },
+      {
+        "x": 0.18839630012350114,
+        "y": -15.500749690404913
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -15.540749690404914
+      },
+      {
+        "x": 0.22839630012350115,
+        "y": -15.700749690404914
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -15.740749690404915
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -15.740749690404915
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -15.780749690404914
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -15.940749690404914
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -15.980749690404913
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -15.980749690404913
+      },
+      {
+        "x": 0.22839630012350112,
+        "y": -16.020749690404912
+      },
+      {
+        "x": 0.22839630012350112,
+        "y": -16.180749690404912
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -16.220749690404915
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -16.220749690404915
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -16.260749690404914
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -16.420749690404914
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -16.460749690404914
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -16.460749690404914
+      },
+      {
+        "x": 0.22839630012350112,
+        "y": -16.500749690404913
+      },
+      {
+        "x": 0.22839630012350112,
+        "y": -16.660749690404913
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -16.700749690404912
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -16.700749690404912
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -16.740749690404915
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -16.900749690404915
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -16.940749690404914
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -16.940749690404914
+      },
+      {
+        "x": 0.22839630012350112,
+        "y": -16.980749690404913
+      },
+      {
+        "x": 0.22839630012350112,
+        "y": -17.140749690404913
+      },
+      {
+        "x": 0.18839630012350111,
+        "y": -17.180749690404916
+      },
+      {
+        "x": -0.1267575764153164,
+        "y": -17.180749690404916
+      },
+      {
+        "x": -0.16675757641531638,
+        "y": -17.220749690404915
+      },
+      {
+        "x": -0.1667575764153164,
+        "y": -17.380749690404915
+      },
+      {
+        "x": -0.12675757641531643,
+        "y": -17.420749690404914
+      },
+      {
+        "x": 0.1883963001235011,
+        "y": -17.420749690404914
+      },
+      {
+        "x": 0.2283963001235011,
+        "y": -17.460749690404914
+      }
+    ],
+    "layer": "bottom",
+    "targetPlanarMm": 30.727783540546866,
+    "addedPlanarMm": 7.662401153630633,
+    "newPhysicalHoles": 0,
+    "clearanceMethod": "exact segment-to-circle/rectangle/segment geometry"
+  },
+  "additionalManualWireTunings": [
+    {
+      "run": {
+        "path": "dist/am3352-ddr33-casn-matched-source-exact-tuning-attempt-688/result.json",
+        "sha256": "b48d9346d4456ce06c449359a9427a6e3a3af35dc85e49e7f392449ea9878aef"
+      },
+      "priorReplayPaths": {
+        "path": "routing/am3352-ddr-usbc-casn-d3-matched-paths.json",
+        "sha256": "86fc4442dbd4d68bde5ef7b64203dd16f37d99c893751e1804e939e60540292f"
+      },
+      "priorReplayProvenance": {
+        "path": "routing/am3352-ddr-usbc-casn-d3-matched-paths.provenance.json",
+        "sha256": "3987b1563b169e10e195e6e6185ae247729f1470fd7f56537bc808db35765b46"
+      },
+      "signal": "DDR_CASn",
+      "index": 23,
+      "insertedPoints": [
+        {
+          "x": -4.467654254303977,
+          "y": -11.904276414305032
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -11.944276414305033
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -11.944276414305033
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -11.984276414305032
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -12.144276414305033
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -12.184276414305032
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -12.184276414305032
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -12.224276414305033
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -12.384276414305033
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -12.424276414305034
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -12.424276414305034
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -12.464276414305033
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -12.624276414305033
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -12.664276414305032
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -12.664276414305032
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -12.704276414305033
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -12.864276414305031
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -12.904276414305032
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -12.904276414305032
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -12.944276414305033
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -13.104276414305033
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -13.144276414305033
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -13.144276414305033
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -13.184276414305032
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -13.344276414305032
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -13.384276414305031
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -13.384276414305031
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -13.424276414305032
+        },
+        {
+          "x": -6.372224482144613,
+          "y": -13.584276414305032
+        },
+        {
+          "x": -6.332224482144612,
+          "y": -13.624276414305033
+        },
+        {
+          "x": -4.507654254303977,
+          "y": -13.624276414305033
+        },
+        {
+          "x": -4.467654254303977,
+          "y": -13.664276414305032
+        }
+      ],
+      "layer": "bottom",
+      "targetPlanarMm": 43.02,
+      "addedPlanarMm": 14.86165850264387,
+      "newPhysicalHoles": 0,
+      "clearanceMethod": "exact segment-to-circle/rectangle/segment geometry"
+    }
+  ],
+  "manualWireShortcuts": [
+    {
+      "signal": "DDR_CSn0",
+      "run": {
+        "path": "dist/am3352-ddr33-csn0-nominal-target-shortcut-attempt-695/result.json",
+        "sha256": "43c6de84ec8f493ff7b8f9653e7d5b3e3889c62297462e9c8482c3424cb3cb9b"
+      },
+      "priorReplayPaths": {
+        "path": "routing/am3352-ddr-usbc-casn-nominal-d3-matched-paths.json",
+        "sha256": "bef0206676ebdc05d2615b62bd1161805aeb6e3383f18c7b45b13b1eb9423315"
+      },
+      "priorReplayProvenance": {
+        "path": "routing/am3352-ddr-usbc-casn-nominal-d3-matched-paths.provenance.json",
+        "sha256": "332c43e5a5e27163ab1951c6214f5af0e88213ad2237dec7f61d12d63644bb7b"
+      },
+      "priorCheckedSummary": {
+        "path": "checks/integrated/am3352-ddr-usbc-casn-nominal-d3-matched-check-summary.json",
+        "sha256": "7283fee7d498123eee094fa92ec68f211a03e799fb1bd857d485cf9a64a3fe05"
+      },
+      "cuts": [
+        {
+          "from": 276,
+          "to": 283,
+          "savingMm": 0.4497257113253301,
+          "planarMm": 44.56339723801815,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.33014066289846,
+            "nearest": "pcb_trace_0"
+          }
+        },
+        {
+          "from": 116,
+          "to": 275,
+          "savingMm": 0.3125730765576682,
+          "planarMm": 44.25082416146048,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.11108800605968581,
+            "nearest": "pcb_via_95"
+          }
+        },
+        {
+          "from": 121,
+          "to": 208,
+          "savingMm": 0.2102305707875045,
+          "planarMm": 44.04059359067298,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.10500070108262417,
+            "nearest": "pcb_trace_0"
+          }
+        },
+        {
+          "from": 17,
+          "to": 114,
+          "savingMm": 0.19037796435071552,
+          "planarMm": 43.85021562632226,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.11159975647335145,
+            "nearest": "pcb_via_97"
+          }
+        },
+        {
+          "from": 26,
+          "to": 61,
+          "savingMm": 0.0700476186577701,
+          "planarMm": 43.78016800766449,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.12189769464626428,
+            "nearest": "pcb_trace_0"
+          }
+        },
+        {
+          "from": 28,
+          "to": 34,
+          "savingMm": 0.06090884363218563,
+          "planarMm": 43.71925916403231,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.12087349032338672,
+            "nearest": "pcb_smtpad_334"
+          }
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "savingMm": 0.05648838058291872,
+          "planarMm": 43.66277078344939,
+          "layer": "top",
+          "preflight": {
+            "minimumCopperEdgeGapMm": 0.13086659476500573,
+            "nearest": "pcb_smtpad_43"
+          }
+        }
+      ],
+      "newPhysicalHoles": 0,
+      "fullElectricalTimingQualified": false
+    }
+  ],
+  "fullElectricalTimingQualified": false,
+  "controlledImpedanceQualified": false,
+  "completePowerRouting": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "A complete 33-signal replay replaces only D3, CSn0 and RESETn while adding genuine native bus_lanes CASn. Actual source geometry, independent DDR/USB/filled-reference connectivity, all-layer shorts and physical DRC pass. Via-free guarded D3 tuning restores both complete byte-group passes and all three pair passes, making this a copper-only bootstrap for further routing. CASn and the shortened CSn0 pass the individual nominal range; the complete command/clock class remains unmatched and incomplete. Sixteen DDR signals remain open. The 30-signal working default, fabrication gate and electrical/mechanical qualification remain unchanged."
+}

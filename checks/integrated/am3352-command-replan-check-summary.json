@@ -1,0 +1,275 @@
+{
+  "status": "ALL_52_COMMAND_MANUAL_FANOUTS_INDEPENDENTLY_CONNECTED_AND_CLEARANCE_CHECKED_CARRIERS_INCOMPLETE",
+  "latestToolchainEvidence": {
+    "path": "checks/integrated/tscircuit-update-2744/final-summary.json",
+    "sha256": "eedcaced08e842ada4d9b1c1a816b2fc399a373bc1f5c64cf47d43e0e309c773"
+  },
+  "registryReverification": {
+    "path": "checks/integrated/am3352-command-replan-registry-verification.json",
+    "sha256": "eaefa926c9afb4cf59c906ab15ae138ebe59ce272a0aeeb1662aa08da40e6946"
+  },
+  "versions": {
+    "tscircuit": "0.0.2744",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2080",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "circuit-json": "0.0.515",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "nativePhaseEntry": {
+    "path": "experiments/am3352-ddr23-command-replan.circuit.tsx",
+    "sha256": "82d5c53833327e9c586886c82b490d90e31b52903399274e7847b4fb565408b3"
+  },
+  "nativePhaseExecution": {
+    "path": "dist/am3352-ddr23-command-replan-native-attempt-758/execution.json",
+    "sha256": "97eb1df3951dde16a29332fdaa6e5503bb721a91e72254a8b6caa23f250fa1c0"
+  },
+  "nativePhasePreservation": {
+    "path": "checks/integrated/am3352-command-replan-native-phase-758-preservation.json",
+    "sha256": "8b5d215ed55d1acb24cc8c94046f95199eb308d046b3bddba0eb734595ea5fc9"
+  },
+  "bootstrapInputPreservation": {
+    "path": "checks/integrated/am3352-command-replan-input-preservation.json",
+    "sha256": "ea69670383cd62d62cef7b0ba5bd0089ffe90e9878281fb995c0c529cbbfc698"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-command-manual-fanouts-763-refilled-candidate/circuit.json",
+    "sha256": "9629a5d15e997d1cd4cacc580d0dd80d36a9a1762f54b9ca37937783b2e8dafb"
+  },
+  "board": {
+    "path": "dist/am3352-command-manual-fanouts-763-diagnostic/board.kicad_pcb",
+    "sha256": "9e4713f08784c0142094d7b989dc386f57d748ba63de1587cf3372f2546e825e"
+  },
+  "manualFanoutPlan": {
+    "path": "dist/am3352-ddr23-command-replan-manual-fanouts-attempt-763/manual-fanouts.nonexportable.json",
+    "sha256": "8edd81335d1d8178578777e3660756902805dc0d55299829441574bb387aae24"
+  },
+  "manualFanoutAssignment": {
+    "path": "dist/am3352-ddr23-command-replan-manual-fanouts-attempt-763/result.json",
+    "sha256": "851b89f1fd35d2783e40cb610f25d5365cf8f224587686f099f72e9f6803216b"
+  },
+  "freeze": {
+    "path": "dist/diagnostics/am3352-command-manual-fanouts-763-refilled-candidate/manifest.json",
+    "sha256": "6659777f37f0ac5ac9367ae138add36d15dd3915cb4519a5736bc21e8701de7c"
+  },
+  "fanoutConnectivity": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-native-fanouts.json",
+    "sha256": "1d79ca751648d3dab3ce4c79ac80573400db56883d1730008903b3a075652b18"
+  },
+  "ddrConnectivity": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-native-ddr.json",
+    "sha256": "8225cfea3599ce6d7f997cf95ffa7e5d25d975e723715e8c76078717a4f9732a"
+  },
+  "ramReferences": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-native-references.json",
+    "sha256": "dc380b08be9558e12bd1677e3e772baf3ad127b36e9070b223081f5c89e04e17"
+  },
+  "usbConnectivity": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-native-usb.json",
+    "sha256": "26c8322ba01e4dbc69202474d14e8eee96f132ab3631af754126fc4841489351"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-final-drc.json",
+    "sha256": "58bd34a46e1446f880466bb2e7ea4556fc9105d22111040aa4c33dfc0f0a623f"
+  },
+  "gerberShorts": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-refilled-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "library": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-library.log",
+    "sha256": "6b44a66af653176caccc267b3a55d1b95c1d890a8928ca69938e70b6c88b581e"
+  },
+  "topSnapshot": {
+    "path": "dist/am3352-command-manual-fanouts-763-diagnostic/top.png",
+    "sha256": "b31d17a0ffd17888e1486990ebc77b11ef761c7b8e5d71196106f98ca98110e9"
+  },
+  "bottomSnapshot": {
+    "path": "dist/am3352-command-manual-fanouts-763-diagnostic/bottom.png",
+    "sha256": "f79ce73bed8a05aaeb33f3c51d32c4d21f57239a4a78ae4840d76d30a6b227ce"
+  },
+  "bothSurfaceSnapshotsInspected": true,
+  "components": 212,
+  "physicalPads": 912,
+  "copperLayers": 4,
+  "fixedTracePiecesRetained": 125,
+  "fixedViasRetained": 141,
+  "newManualEscapePieces": 52,
+  "newThroughVias": 52,
+  "tracePieces": 177,
+  "physicalThroughVias": 193,
+  "cpuManualFanoutsConnected": 26,
+  "ramManualFanoutsConnected": 26,
+  "connectedDdrSignals": 23,
+  "openDdrSignals": 26,
+  "completeCommandClockCarriers": 0,
+  "qualifiedNewDdrSignals": 0,
+  "gerberShortsAllLayers": 0,
+  "independentClearanceViolationsAllSeverities": 0,
+  "diagnosticDanglingViaWarnings": 52,
+  "presentationWarnings": 418,
+  "reportedAndCappedHostOpens": 499,
+  "ignoredChecks": [
+    "footprint_filters_mismatch",
+    "footprint_type_mismatch",
+    "missing_courtyard",
+    "track_not_centered_on_via",
+    "tuning_profile_track_geometries"
+  ],
+  "ramSupplyBallsConnectedToDdrPlane": 18,
+  "ramGroundBallsConnectedToGroundPlane": 21,
+  "ramBypassTerminalsConnectedToPlanes": 28,
+  "usbNumericPadAssignmentsVerified": 38,
+  "usbContinuityRecordsVerified": 40,
+  "trials": [
+    {
+      "result": {
+        "path": "dist/am3352-ddr33-direct-planar-native-attempt-755/result.json",
+        "sha256": "7ce5bbcacb74848ef8167a60138603c8498801c231fc2348080036338dcea84a"
+      },
+      "status": "MANUAL_FANOUT_NATIVE_CARRIERS_FAILED",
+      "elapsedSeconds": 12.515979791,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr33-manual-fanout-assignment-attempt-756/result.json",
+        "sha256": "d2c581642bf504b348f23460cd2f3b0a50afd170eff120108430b718bf08f310"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "elapsedSeconds": null,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr33-distant-manual-fanout-assignment-attempt-757/result.json",
+        "sha256": "2acbdd59e93358039bb03b5c49bc409093f31dfdc0adfebfd7e3e80b04a44caf"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "elapsedSeconds": null,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-native-attempt-758/result.json",
+        "sha256": "cfbda0d5343bd74bb8b02b5d8892da0b007c4b58a02300d15485718504ef17db"
+      },
+      "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+      "elapsedSeconds": 157.994903,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-manual-fanouts-attempt-759/result.json",
+        "sha256": "42099dc841fc98f5823b4b22fb601a41f95580132eb06be22d9fd6d0be7b728f"
+      },
+      "status": "MANUAL_FANOUT_ASSIGNMENT_INCOMPLETE",
+      "elapsedSeconds": null,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-manual-fanouts-attempt-761/result.json",
+        "sha256": "01ff5b38cb2fcd60b7425d60ab76cd6b09c9bcef3d05ffdd8cc61d34494b889b"
+      },
+      "status": "ALL_MANUAL_FANOUTS_PLANNED_NATIVE_ROUTE_AND_ALL_CHECKS_REQUIRED",
+      "elapsedSeconds": null,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-manual-carriers-attempt-762/result.json",
+        "sha256": "aac1fecca57054ae99bc397c3407999ce0381a79f9eead7ecb065b894b1253a9"
+      },
+      "status": "MANUAL_FANOUT_NATIVE_CARRIERS_TIMEOUT",
+      "elapsedSeconds": 120.19305075000001,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-manual-fanouts-attempt-763/result.json",
+        "sha256": "851b89f1fd35d2783e40cb610f25d5365cf8f224587686f099f72e9f6803216b"
+      },
+      "status": "ALL_MANUAL_FANOUTS_PLANNED_NATIVE_ROUTE_AND_ALL_CHECKS_REQUIRED",
+      "elapsedSeconds": null,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-manual-carriers-bootstrap-attempt-764/result.json",
+        "sha256": "06f553593995a85f3f4659a0dfc9c6adb2915d395c42dbef6cf8f548c38a6b9c"
+      },
+      "status": "MANUAL_FANOUT_NATIVE_CARRIERS_TIMEOUT",
+      "elapsedSeconds": 60.087662459,
+      "qualifiedNewDdrSignals": 0
+    },
+    {
+      "result": {
+        "path": "dist/am3352-ddr23-command-replan-manual-clock-carriers-attempt-765/result.json",
+        "sha256": "36c913fa48beafe2f486db2d13374630faecfbba97b19034e1f31383e385162d"
+      },
+      "status": "MANUAL_FANOUT_NATIVE_CARRIERS_TIMEOUT",
+      "elapsedSeconds": 60.22698970799999,
+      "qualifiedNewDdrSignals": 0
+    }
+  ],
+  "helperSyntaxRepair760": {
+    "path": "checks/integrated/am3352-ddr23-command-replan-manual-fanouts-760.log",
+    "sha256": "94b0a5aeca3719431b382c706c02a09c5e8954a1ef85f1f8489bae5b99e3860a"
+  },
+  "rejectedStalePlaneFill": {
+    "path": "dist/diagnostics/am3352-command-manual-fanouts-763-candidate/manifest.json",
+    "sha256": "bf72369fc290adf5250e9d6136e3b737c07e2f4d14374e72ed69bd7503be9a9b"
+  },
+  "rejectedStalePlaneShorts": {
+    "path": "checks/integrated/am3352-command-manual-fanouts-763-shorts.log",
+    "sha256": "9e315bb1f5149ab5371e04ed37b0e7dedbd3d41130c6d2a94d11286f8caf3177"
+  },
+  "sourceHelpers": [
+    {
+      "path": "scripts/check-am3352-command-replan-input.mjs",
+      "sha256": "63e29e7af6dba63eb4fbf230b98035591f77d8bda11ca43637047818ecb7dba5"
+    },
+    {
+      "path": "scripts/prepare-am3352-ddr33-manual-fanouts.mjs",
+      "sha256": "02878d376dbdc69106c636e4450a815c620baf81770a5a98197ae6ae3b3f030b"
+    },
+    {
+      "path": "scripts/freeze-am3352-command-manual-fanouts.mjs",
+      "sha256": "2bd5bc1d492023805ae3c601cebf38552a8100b41cb508d696adc7f66bf35c1d"
+    },
+    {
+      "path": "scripts/route-am3352-ddr33-manual-fanout-native.mjs",
+      "sha256": "80dbe717f4ff5eec26c73c4f94dd338c5822e488dce4922244d846bfebbb8e0d"
+    },
+    {
+      "path": "scripts/summarize-am3352-command-replan.mjs",
+      "sha256": "3a65c095e6b078cc4ba716c725b1cf3d23625cfa1dbcb9593a89d6f85a1333fe"
+    }
+  ],
+  "nativeFanoutCheckHelper": {
+    "path": "scripts/check-am3352-kicad-manual-command-fanouts.py",
+    "sha256": "9da4f748d0134e51689b305350689d4104753dde2a7483c9a293375dab54684e"
+  },
+  "typecheck": {
+    "path": "checks/integrated/am3352-command-replan-typecheck-status.json",
+    "sha256": "8d75b29c501812def95360e9859e4abff26a0b43f999a458aac07ea4ca62e8a0"
+  },
+  "fabricationGuard": {
+    "path": "checks/integrated/am3352-command-replan-fabrication-guard.json",
+    "sha256": "eb10a9bb0e4e696dd9d46a9d9c4e43fea5f8e59c1ad2c985df596bd3bfebd515"
+  },
+  "activeSolverHandles": [],
+  "defaultCopperChanged": false,
+  "bestSeparateCheckedDdrSignals": 33,
+  "fullDdrRouting": false,
+  "fullDdrElectricalQualification": false,
+  "fullHostRouting": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "githubPushed": false,
+  "tscircuitPushed": false,
+  "nextAction": "Route command carriers from the verified physical fanout exits, retaining all checked byte/reset/reference/USB copper. Restore every native differential-pair declaration in the editable complete replay, then recheck all 49 connections, timing, spacing and return paths. Apply measured original-shell geometry and finish the powered host and Linux provisioning before fabrication.",
+  "scope": "Separate command-replan bootstrap on the existing oversized fixture. Byte/reset paths and fixed host copper are retained; 26 old/open command connections remain incomplete. Dangling-via warnings are reported, not suppressed. No new complete DDR channel is qualified or promoted to the default."
+}

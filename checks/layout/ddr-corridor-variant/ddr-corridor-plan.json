@@ -1,0 +1,212 @@
+{
+  "status": "PLANNED_REQUIRES_NATIVE_BUILD_AND_DRC",
+  "fabricationReady": false,
+  "routingPermitted": false,
+  "algorithm": "min-cost disjoint-slot assignment",
+  "input": "dist/experiments/am3352-g350-pin-allocation/circuit.json",
+  "inputSha256": "5ce4c3e9a65c1ebb8d25cabe6d45324f409638ecd6f00ecdbe7656d26da6eca4",
+  "plannerSha256": "cbd7bb5999f4411754dac492e4c4d23bcaea6a39d72d58685dbbc571c1cf64c1",
+  "sourceResistors": 28,
+  "assigned": 28,
+  "ramGroupTranslatedMm": 7,
+  "ramGroupParts": [
+    "U_RAM",
+    "R_DDR_ZQ",
+    "C_DDR_RAM_1",
+    "C_DDR_RAM_2",
+    "C_DDR_RAM_3",
+    "C_DDR_RAM_4",
+    "C_DDR_RAM_5",
+    "C_DDR_RAM_6",
+    "C_DDR_RAM_7",
+    "C_DDR_RAM_8",
+    "C_DDR_RAM_9",
+    "C_DDR_RAM_10",
+    "C_DDR_RAM_11",
+    "C_DDR_RAM_12",
+    "C_DDR_RAM_BULK1",
+    "C_DDR_RAM_BULK2",
+    "C_VREF_RAM_CA",
+    "C_VREF_RAM_DQ"
+  ],
+  "cpuToRamCenterDistanceMm": 20,
+  "reservation": {
+    "minX": -14.5,
+    "maxX": 8.5,
+    "minY": -8.5,
+    "maxY": 19.3
+  },
+  "nonDdrClearanceMm": 0.4064,
+  "conservativeCourtyardInflationEachSideMm": 0.04,
+  "sourcePadDistances": [
+    {
+      "name": "R_LCD_DATA0",
+      "ball": "R1",
+      "oldDistanceMm": 6.757319356805329,
+      "newDistanceMm": 8.110724264198357
+    },
+    {
+      "name": "R_LCD_DATA1",
+      "ball": "R2",
+      "oldDistanceMm": 5.917673469350603,
+      "newDistanceMm": 10.613821408421003
+    },
+    {
+      "name": "R_LCD_DATA2",
+      "ball": "R3",
+      "oldDistanceMm": 5.60681314918341,
+      "newDistanceMm": 8.761033323179179
+    },
+    {
+      "name": "R_LCD_DATA3",
+      "ball": "R4",
+      "oldDistanceMm": 5.908794131619071,
+      "newDistanceMm": 6.857575963112327
+    },
+    {
+      "name": "R_LCD_DATA4",
+      "ball": "T1",
+      "oldDistanceMm": 3.472947579485758,
+      "newDistanceMm": 6.424862153373875
+    },
+    {
+      "name": "R_LCD_DATA5",
+      "ball": "T2",
+      "oldDistanceMm": 4.671066183416372,
+      "newDistanceMm": 5.940231787553073
+    },
+    {
+      "name": "R_LCD_DATA6",
+      "ball": "T3",
+      "oldDistanceMm": 6.215814804983815,
+      "newDistanceMm": 7.738747346299399
+    },
+    {
+      "name": "R_LCD_DATA7",
+      "ball": "T4",
+      "oldDistanceMm": 7.906569932015777,
+      "newDistanceMm": 5.411686769377546
+    },
+    {
+      "name": "R_LCD_DATA8",
+      "ball": "U1",
+      "oldDistanceMm": 9.632972463879257,
+      "newDistanceMm": 7.922166123596249
+    },
+    {
+      "name": "R_LCD_DATA9",
+      "ball": "U2",
+      "oldDistanceMm": 9.001758322119963,
+      "newDistanceMm": 7.534468534001321
+    },
+    {
+      "name": "R_LCD_DATA10",
+      "ball": "U3",
+      "oldDistanceMm": 8.736655383489495,
+      "newDistanceMm": 4.309159928554057
+    },
+    {
+      "name": "R_LCD_DATA11",
+      "ball": "U4",
+      "oldDistanceMm": 8.870549119973125,
+      "newDistanceMm": 7.1251818285469755
+    },
+    {
+      "name": "R_LCD_DATA12",
+      "ball": "V2",
+      "oldDistanceMm": 7.106451497748789,
+      "newDistanceMm": 3.7581730787519625
+    },
+    {
+      "name": "R_LCD_DATA13",
+      "ball": "V3",
+      "oldDistanceMm": 7.772975446369041,
+      "newDistanceMm": 6.09677961631024
+    },
+    {
+      "name": "R_LCD_DATA14",
+      "ball": "V4",
+      "oldDistanceMm": 8.797536114723028,
+      "newDistanceMm": 3.4761853934817686
+    },
+    {
+      "name": "R_LCD_DATA15",
+      "ball": "T5",
+      "oldDistanceMm": 10.76262682108118,
+      "newDistanceMm": 8.840006249424038
+    },
+    {
+      "name": "R_LCD_DATA16",
+      "ball": "U13",
+      "oldDistanceMm": 5.987784238752764,
+      "newDistanceMm": 6.274460876430418
+    },
+    {
+      "name": "R_LCD_DATA17",
+      "ball": "V13",
+      "oldDistanceMm": 7.769398952934262,
+      "newDistanceMm": 7.61385064798726
+    },
+    {
+      "name": "R_LCD_DATA18",
+      "ball": "R12",
+      "oldDistanceMm": 7.189803341528612,
+      "newDistanceMm": 9.172041653299226
+    },
+    {
+      "name": "R_LCD_DATA19",
+      "ball": "T12",
+      "oldDistanceMm": 9.071012737829001,
+      "newDistanceMm": 6.303876084589226
+    },
+    {
+      "name": "R_LCD_DATA20",
+      "ball": "U12",
+      "oldDistanceMm": 6.703765993071057,
+      "newDistanceMm": 7.82436681718438
+    },
+    {
+      "name": "R_LCD_DATA21",
+      "ball": "T11",
+      "oldDistanceMm": 10.122400115084169,
+      "newDistanceMm": 5.838351966938617
+    },
+    {
+      "name": "R_LCD_DATA22",
+      "ball": "T10",
+      "oldDistanceMm": 10.287501936323318,
+      "newDistanceMm": 8.513266734330367
+    },
+    {
+      "name": "R_LCD_DATA23",
+      "ball": "U10",
+      "oldDistanceMm": 11.5491426560527,
+      "newDistanceMm": 4.734063718398391
+    },
+    {
+      "name": "R_LCD_HSYNC",
+      "ball": "R5",
+      "oldDistanceMm": 12.922487256323992,
+      "newDistanceMm": 10.406522228384276
+    },
+    {
+      "name": "R_LCD_VSYNC",
+      "ball": "U5",
+      "oldDistanceMm": 12.82305255740052,
+      "newDistanceMm": 10.439711341309012
+    },
+    {
+      "name": "R_LCD_PCLK",
+      "ball": "V5",
+      "oldDistanceMm": 12.596454933426944,
+      "newDistanceMm": 6.661322818318897
+    },
+    {
+      "name": "R_LCD_DE",
+      "ball": "R6",
+      "oldDistanceMm": 13.519547747238294,
+      "newDistanceMm": 6.883592673150846
+    }
+  ],
+  "scope": "Geometric placement assistance. Reservation is an engineering routing plan; copper routing, exact TI keepout, reference returns, signal integrity, shell fit and manufacturing remain unverified."
+}

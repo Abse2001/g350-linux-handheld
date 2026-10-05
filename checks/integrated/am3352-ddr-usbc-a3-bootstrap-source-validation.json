@@ -1,0 +1,55 @@
+{
+  "status": "DDR31_DDR_A3_EXACT_REPLAY_AND_PRIOR_COPPER_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a3-bootstrap-candidate/circuit.json",
+    "sha256": "2a3f7fb2671d07a9115db7334681715306848576324c07bb0655ae767d3e2a43"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-wen-nominal-candidate/circuit.json",
+    "sha256": "ac758f1c2e20b4d4132f5240797418d90d04a209bd713e956b8141a4392a8f1b"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-a3-bootstrap-paths.json",
+    "sha256": "57db9d48574662eb138ca206c27d9b20248ba34dd0491c98ad912f7847825e06"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-a3-bootstrap-paths.provenance.json",
+    "sha256": "96515b0ee5b7808af677aeff2151ab12f36ab07714b0fec3ff0b991d463f6753"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-wen-nominal-check-summary.json",
+    "sha256": "75acef5197ef4e1deb2a64fb867d55b294d844d5a0aaa04512924d63dae207f8"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 133,
+  "throughVias": 161,
+  "preservedTracePieces": 132,
+  "preservedThroughVias": 157,
+  "addedThroughVias": 4,
+  "changedExistingSignals": [],
+  "addedSignals": [
+    "DDR_A3"
+  ],
+  "addedSignalPlanarMm": 45.4115827317725,
+  "addedSignalNominalLengthPass": false,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "carrierReferenceSearchBounds": {
+    "minX": -17.5,
+    "maxX": 17.5,
+    "minY": -38.5,
+    "maxY": 9.5
+  },
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForAddedHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "fullCommandClassMatchingDeferred": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

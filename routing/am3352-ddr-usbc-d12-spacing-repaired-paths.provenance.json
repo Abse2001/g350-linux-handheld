@@ -1,0 +1,45 @@
+{
+  "status": "D12_SPACING_REPLAY_FRESH_SOURCE_AND_PHYSICAL_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-candidate/circuit.json",
+    "sha256": "5c8aeb2a452df32905653abb4f747d47893af667d90949df230eea4e140f5f07"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-check-summary.json",
+    "sha256": "e7a7baca61666644dab08f344aadbdf342f24be52a530e357779e2e11bfe0e98"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-paths.json",
+    "sha256": "5a5a03a6478bce245d98a5d5c6c6e6aa74f607542c6d4e1f5501c196784aeafc"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.json",
+    "sha256": "a65e50e01b5519921b4e00e3e6d87e7dd2fd39d1ae808e9afb30c4117ee5fd12"
+  },
+  "spacingShortcutRun": {
+    "path": "dist/am3352-ddr33-d12-spacing-shortcuts-attempt-703/result.json",
+    "sha256": "c74ecc5214b7522b71acc4a41d4321f0df56e20308bf5d43c4d02d3e4e309426"
+  },
+  "signal": "DDR_D12",
+  "cuts": [
+    {
+      "from": 181,
+      "to": 184,
+      "savingMm": 0.18768250519017382,
+      "planarMm": 50.98319705965331,
+      "layer": "top",
+      "exposureMm": 28.19519008572504,
+      "reducedExposureMm": 3.98092213797975
+    }
+  ],
+  "beforePlanarMm": 51.17087956484348,
+  "afterPlanarMm": 50.983197059653314,
+  "beforeExposureMm": 32.17611222370479,
+  "afterExposureMm": 28.195190085725052,
+  "newPhysicalHoles": 0,
+  "nativeBusLanesBootstrapRetained": true,
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,1582 @@
+{
+  "status": "DDR31_32_COMMAND_BOOTSTRAP_TRIALS_BOUND_NOMINAL_FAILURES_RETAINED_ACTIVE_DDR30_UNCHANGED",
+  "priorCopperCheckpoint": {
+    "path": "checks/integrated/am3352-ddr-usbc-a3-bootstrap-check-summary.json",
+    "sha256": "19e3669d39fa028228aa640f76e2289c38ea1d7e411872e9ea05a51140ef14cb"
+  },
+  "newCopperCheckpoint": {
+    "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+    "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606"
+  },
+  "activeDefaultSignals": 30,
+  "activeDefaultOpenSignals": 19,
+  "copperCheckpointSignals": 32,
+  "copperCheckpointOpenSignals": 17,
+  "pendingNominalRepairSignals": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_CKE",
+    "DDR_A3",
+    "DDR_A6"
+  ],
+  "trials": [
+    {
+      "path": "dist/am3352-ddr31-ddr_ba0-native-top-attempt-575/result.json",
+      "sha256": "10a10d358d2197a5179eb60b9be8b8f5c85a28e4f5d9f930bb4f1bd1067ac7c6",
+      "attempt": 575,
+      "sourceSignals": 31,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-ddr_a6-native-top-attempt-576/result.json",
+      "sha256": "b7eb4ceb7f7e60df2c861bb801384dd0c9f86865af7f53cad3b0cf0806591955",
+      "attempt": 576,
+      "sourceSignals": 31,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-ba0-top-local-prep-attempt-577/result.json",
+      "sha256": "b209d007e06eb251044a81023986fa9d7121b11248b8ed6f88002ce2d14f12b7",
+      "attempt": 577,
+      "sourceSignals": 31,
+      "status": "DDR31_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-ba0-bottom-local-prep-attempt-578/result.json",
+      "sha256": "870177c79e5245614b5dbbf815052c2a402145e1abc124e91faedf4c5e8623ee",
+      "attempt": 578,
+      "sourceSignals": 31,
+      "status": "DDR31_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-top-local-prep-attempt-579/result.json",
+      "sha256": "e3adbe93ac92dc416960bc09dac2820d1004c3de62b8f6b8f8785ae9ea0edc00",
+      "attempt": 579,
+      "sourceSignals": 31,
+      "status": "DDR31_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-ba0-top-local-attempt-580/result.json",
+      "sha256": "cb63daf057c047385f930b1f2b6748b5cc9e7046809017349a83f2a65c7bc1d4",
+      "attempt": 580,
+      "sourceSignals": 31,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableBounds": {
+            "minX": -2.9000000000000004,
+            "maxX": -1.9800000000000004,
+            "minY": -30.22,
+            "maxY": -29.299999999999997
+          },
+          "reachableLayers": [
+            "top"
+          ],
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_30",
+                "source_trace_id": "source_trace_48",
+                "name": "DDR_CKE"
+              },
+              "boundarySamples": 22,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_16",
+                "source_trace_id": "source_trace_20",
+                "name": "DDR_WEn"
+              },
+              "boundarySamples": 20,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_9"
+              },
+              "boundarySamples": 16,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_335",
+                "pcb_port_id": "pcb_port_335"
+              },
+              "boundarySamples": 5,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_5",
+                "source_trace_id": "source_trace_5",
+                "name": "DDR_CSn0"
+              },
+              "boundarySamples": 4,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_350",
+                "pcb_port_id": "pcb_port_350"
+              },
+              "boundarySamples": 3,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-ba0-bottom-local-attempt-581/result.json",
+      "sha256": "eae6a89dbc8517bff1934107f8657fc8d66f9164011fc3c3cadc341a863c19f5",
+      "attempt": 581,
+      "sourceSignals": 31,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableBounds": {
+            "minX": -2.9000000000000004,
+            "maxX": -1.9800000000000004,
+            "minY": -30.22,
+            "maxY": -29.299999999999997
+          },
+          "reachableLayers": [
+            "top"
+          ],
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_30",
+                "source_trace_id": "source_trace_48",
+                "name": "DDR_CKE"
+              },
+              "boundarySamples": 22,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_16",
+                "source_trace_id": "source_trace_20",
+                "name": "DDR_WEn"
+              },
+              "boundarySamples": 20,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_9"
+              },
+              "boundarySamples": 16,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_335",
+                "pcb_port_id": "pcb_port_335"
+              },
+              "boundarySamples": 5,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_5",
+                "source_trace_id": "source_trace_5",
+                "name": "DDR_CSn0"
+              },
+              "boundarySamples": 4,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_350",
+                "pcb_port_id": "pcb_port_350"
+              },
+              "boundarySamples": 3,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-top-local-attempt-582/result.json",
+      "sha256": "3d6aad5950fd5b322c577f811378dedb8227d17e1bf16c3d0f74c31466d4765e",
+      "attempt": 582,
+      "sourceSignals": 31,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-top-local-attempt-582/channel.input.simple-route.json",
+        "sha256": "f9a7b9da636903d333b03a77cc5413b78e356c932f35b783fb71ff8029e5a22d"
+      },
+      "joinedCarrierLengths": [],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -9,
+            "y": -34.44
+          },
+          "lengthMm": 12.327837944030762,
+          "newVias": 0
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -13,
+            "y": -8.8
+          },
+          "lengthMm": 11.15224552154541,
+          "newVias": 2
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-bottom-local-prep-attempt-583/result.json",
+      "sha256": "e6bcc9952e5a01aabf154d10b5e4cb65b987c415cc0247af5c2d0d93f30db5eb",
+      "attempt": 583,
+      "sourceSignals": 31,
+      "status": "DDR31_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/result.json",
+      "sha256": "c54d49dc62d230f517b2a531e8b9ce9e3aaf5626bd414ab02760aabf6905a606",
+      "attempt": 584,
+      "sourceSignals": 31,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/channel.input.simple-route.json",
+        "sha256": "afc396c3b6b96a9aa577334845b47ec0608b8c81977df83dce30a89c5846b7d7"
+      },
+      "joinedCarrierLengths": [],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -3,
+            "y": -34.44
+          },
+          "lengthMm": 6.32783842086792,
+          "newVias": 0
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -9.42,
+            "y": -4.799999999999999
+          },
+          "lengthMm": 5.517056465148926,
+          "newVias": 0
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/result.json",
+      "sha256": "605d649690ee3c450b5f3a83d07b39a652a115cc11f6bdea39018b0f2e7cc35c",
+      "attempt": 585,
+      "sourceSignals": 31,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/channel.input.simple-route.json",
+        "sha256": "2d45d25cc7ceb973659f0c67eb035bf856fa25c4e49f3411aed57a6077f0b20f"
+      },
+      "joinedCarrierLengths": [],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -3,
+            "y": -34.44
+          },
+          "lengthMm": 6.32783842086792,
+          "newVias": 1
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -9.42,
+            "y": -4.799999999999999
+          },
+          "lengthMm": 5.517056465148926,
+          "newVias": 1
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-independent-native-top-attempt-586/result.json",
+      "sha256": "2ce8aa7629f8b44420b476442a46659a437cadbac2a16ead821407cc34850c1a",
+      "attempt": 586,
+      "sourceSignals": 31,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "nativeElapsedSeconds": 45.033282459,
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-native-top-attempt-586/channel.input.simple-route.json",
+        "sha256": "51740c12b1cfa3d0e3d8f71cff50224c1c7721575dacc6b67248f4382d88ab14"
+      },
+      "joinedCarrierLengths": [
+        {
+          "name": "source_trace_46",
+          "carrierLengthMm": null,
+          "fixedLengthMm": 11.844894654563442,
+          "totalLengthMm": null
+        }
+      ],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -3,
+            "y": -34.44
+          },
+          "lengthMm": 6.32783842086792,
+          "newVias": 0
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -9.42,
+            "y": -4.799999999999999
+          },
+          "lengthMm": 5.517056465148926,
+          "newVias": 0
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-independent-native-bottom-attempt-587/result.json",
+      "sha256": "7e0533e6b51c300639c44b75000057a9afe8db2fdc9ea8417365728f56069c28",
+      "attempt": 587,
+      "sourceSignals": 31,
+      "status": "GUIDED_NATIVE_CHANNEL_ROUTED_UNQUALIFIED",
+      "nativeElapsedSeconds": 37.892989334,
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-native-bottom-attempt-587/channel.input.simple-route.json",
+        "sha256": "772e5b397447502e52ca4179b7df882717911f8aaaea08626f79a83e635443da"
+      },
+      "joinedCarrierLengths": [
+        {
+          "name": "source_trace_46",
+          "carrierLengthMm": 39.870944898278,
+          "fixedLengthMm": 11.844894654563442,
+          "totalLengthMm": 51.71583955284144
+        }
+      ],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -3,
+            "y": -34.44
+          },
+          "lengthMm": 6.32783842086792,
+          "newVias": 1
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -9.42,
+            "y": -4.799999999999999
+          },
+          "lengthMm": 5.517056465148926,
+          "newVias": 1
+        }
+      ],
+      "independentlyCopperCheckedReplay": {
+        "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+        "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606"
+      },
+      "nominalLengthPass": false,
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-wire-shortcuts-attempt-588/result.json",
+      "sha256": "508513f258013bfa5b9b7f034d8b05428103214e2b39aff96aa90fa290f41409",
+      "attempt": 588,
+      "sourceSignals": 32,
+      "status": "COMMAND_NOMINAL_WIRE_SHORTCUT_NOT_FOUND",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-two-via-carrier-attempt-589/result.json",
+      "sha256": "9e41a975b9cad02eaac14558f2a1f744a6113de1251690d6a1fd59a2f6fa8135",
+      "attempt": 589,
+      "sourceSignals": 32,
+      "status": "COMMAND_TWO_VIA_CARRIER_BRIDGE_NOT_FOUND",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-carrier-bound-review-attempt-590/result.json",
+      "sha256": "7cd33aa88ed1c475040e1da5685fcfd7a09494a20efd0ad04faac14981be9c51",
+      "attempt": 590,
+      "sourceSignals": 32,
+      "status": "COMMAND_TWO_VIA_CARRIER_BRIDGE_NOT_FOUND",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr31-a6-independent-native-top-extended-attempt-591/result.json",
+      "sha256": "cd3334eb04e3cec3ef41c6e37b809b8113454e462201ae43496baa501a310527",
+      "attempt": 591,
+      "sourceSignals": 31,
+      "status": "GUIDED_NATIVE_CHANNEL_ROUTED_UNQUALIFIED",
+      "nativeElapsedSeconds": 42.668057125,
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-native-top-extended-attempt-591/channel.input.simple-route.json",
+        "sha256": "51740c12b1cfa3d0e3d8f71cff50224c1c7721575dacc6b67248f4382d88ab14"
+      },
+      "joinedCarrierLengths": [
+        {
+          "name": "source_trace_46",
+          "carrierLengthMm": 43.59566751547504,
+          "fixedLengthMm": 11.844894654563442,
+          "totalLengthMm": 55.44056217003848
+        }
+      ],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -3,
+            "y": -34.44
+          },
+          "lengthMm": 6.32783842086792,
+          "newVias": 0
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -9.42,
+            "y": -4.799999999999999
+          },
+          "lengthMm": 5.517056465148926,
+          "newVias": 0
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-a7-native-top-attempt-592/result.json",
+      "sha256": "89771d96c8476745a765ae2ddcc2d2bb77d9f0baffa97d2e421f86a62fb72538",
+      "attempt": 592,
+      "sourceSignals": 32,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-native-top-attempt-593/result.json",
+      "sha256": "b9c6d81fe667b01f23aa3bf6aa5580ccb4c354ee77beecb576eca13d5ef2a440",
+      "attempt": 593,
+      "sourceSignals": 32,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-native-top-attempt-594/result.json",
+      "sha256": "95b07a3600aca7161ef789d0e0e4bbbe15d48f494e052fce7da07dbd702f90ad",
+      "attempt": 594,
+      "sourceSignals": 32,
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-a7-bottom-local-prep-attempt-595/result.json",
+      "sha256": "26d0b2e56b991007fe673790ea24445f0f2a0351a87c147a95f6f277df40adc2",
+      "attempt": 595,
+      "sourceSignals": 32,
+      "status": "DDR32_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-top-local-prep-attempt-596/result.json",
+      "sha256": "d9a887fd5ebed60c9ee10fe799de742febb523d5d902745ee3c46aef59163fbd",
+      "attempt": 596,
+      "sourceSignals": 32,
+      "status": "DDR32_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-top-local-prep-attempt-597/result.json",
+      "sha256": "2ca1cf6fd4ce7f55e41ca2d94408a4c73c4a677ba6181bbc9b6c42b4795f5e45",
+      "attempt": 597,
+      "sourceSignals": 32,
+      "status": "DDR32_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-a7-bottom-local-attempt-598/result.json",
+      "sha256": "8671c531b3d2f7cd41ee57a22e497bfa526003c307e7a34cc290f417ea93c868",
+      "attempt": 598,
+      "sourceSignals": 32,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-a7-bottom-local-attempt-598/channel.input.simple-route.json",
+        "sha256": "0e00d386163a5a31f5367e6acaa205f0447e8b80361d6818cf9b66933846d41a"
+      },
+      "joinedCarrierLengths": [],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -9,
+            "y": -33.16
+          },
+          "lengthMm": 7.873624801635742,
+          "newVias": 3
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -13,
+            "y": -9.399999999999999
+          },
+          "lengthMm": 13.21165657043457,
+          "newVias": 5
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-top-local-attempt-599/result.json",
+      "sha256": "a813b16a102260fef2f54d6ca0579517136631c14713c48b1c563def19b8f94c",
+      "attempt": 599,
+      "sourceSignals": 32,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableBounds": {
+            "minX": -2.0199999999999996,
+            "maxX": 2.1400000000000006,
+            "minY": -29.2,
+            "maxY": -18
+          },
+          "reachableLayers": [
+            "top",
+            "bottom"
+          ],
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_13",
+                "source_trace_id": "source_trace_15",
+                "name": "DDR_DQS0"
+              },
+              "boundarySamples": 562,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_25",
+                "source_trace_id": "source_trace_34",
+                "name": "DDR_CKn"
+              },
+              "boundarySamples": 483,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_1",
+                "source_trace_id": "source_trace_1",
+                "name": "DDR_D8"
+              },
+              "boundarySamples": 248,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_3",
+                "source_trace_id": "source_trace_3",
+                "name": "DDR_D2"
+              },
+              "boundarySamples": 183,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_19",
+                "source_trace_id": "source_trace_28",
+                "name": "DDR_DQS1"
+              },
+              "boundarySamples": 162,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_14",
+                "source_trace_id": "source_trace_16",
+                "name": "DDR_DQSn0"
+              },
+              "boundarySamples": 155,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-top-local-attempt-600/result.json",
+      "sha256": "49685b69e82acc3b625a93797b1baa441a777ad4f9919777fc6710424d215c4e",
+      "attempt": 600,
+      "sourceSignals": 32,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableBounds": {
+            "minX": -2.0199999999999996,
+            "maxX": 2.1400000000000006,
+            "minY": -29.2,
+            "maxY": -18
+          },
+          "reachableLayers": [
+            "top",
+            "bottom"
+          ],
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_13",
+                "source_trace_id": "source_trace_15",
+                "name": "DDR_DQS0"
+              },
+              "boundarySamples": 562,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_25",
+                "source_trace_id": "source_trace_34",
+                "name": "DDR_CKn"
+              },
+              "boundarySamples": 483,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_1",
+                "source_trace_id": "source_trace_1",
+                "name": "DDR_D8"
+              },
+              "boundarySamples": 248,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_3",
+                "source_trace_id": "source_trace_3",
+                "name": "DDR_D2"
+              },
+              "boundarySamples": 183,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_19",
+                "source_trace_id": "source_trace_28",
+                "name": "DDR_DQS1"
+              },
+              "boundarySamples": 162,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_14",
+                "source_trace_id": "source_trace_16",
+                "name": "DDR_DQSn0"
+              },
+              "boundarySamples": 155,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/result.json",
+      "sha256": "b8c45a96da1d64933a56c4f67b113f63853c314d39771885ba63f3b4543ca6b9",
+      "attempt": 603,
+      "sourceSignals": 32,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/channel.input.simple-route.json",
+        "sha256": "4f340f5cd5da711003fc0e42976ea1edfc44d954563bb04659c23612df02cb67"
+      },
+      "joinedCarrierLengths": [],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -9,
+            "y": -33.16
+          },
+          "lengthMm": 7.873624801635742,
+          "newVias": 3
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 13.5507230758667,
+          "newVias": 3
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-top-independent-local-attempt-604/result.json",
+      "sha256": "345e986daaaddcc433a743c45a88ec3a41f77a7b6df5405a4f3b02996d3faf62",
+      "attempt": 604,
+      "sourceSignals": 32,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "error": "all handoffs obstructed"
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-top-independent-local-attempt-605/result.json",
+      "sha256": "9a48fbd7735b3170eb6b8b56430c7e7e56a5f567704bc99c74fd53bbd50d489e",
+      "attempt": 605,
+      "sourceSignals": 32,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableBounds": {
+            "minX": -2.0199999999999996,
+            "maxX": 2.1400000000000006,
+            "minY": -29.2,
+            "maxY": -18
+          },
+          "reachableLayers": [
+            "top",
+            "bottom"
+          ],
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_13",
+                "source_trace_id": "source_trace_15",
+                "name": "DDR_DQS0"
+              },
+              "boundarySamples": 562,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_25",
+                "source_trace_id": "source_trace_34",
+                "name": "DDR_CKn"
+              },
+              "boundarySamples": 483,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_1",
+                "source_trace_id": "source_trace_1",
+                "name": "DDR_D8"
+              },
+              "boundarySamples": 248,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_3",
+                "source_trace_id": "source_trace_3",
+                "name": "DDR_D2"
+              },
+              "boundarySamples": 183,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_19",
+                "source_trace_id": "source_trace_28",
+                "name": "DDR_DQS1"
+              },
+              "boundarySamples": 162,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_14",
+                "source_trace_id": "source_trace_16",
+                "name": "DDR_DQSn0"
+              },
+              "boundarySamples": 155,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-a7-native-bottom-attempt-606/result.json",
+      "sha256": "fa34c6db571a1ca14d40a0ee158388a4bc5e984f7f750ec063f87ff503c40b8c",
+      "attempt": 606,
+      "sourceSignals": 32,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "nativeElapsedSeconds": 2.1656025420000002,
+      "nativeFailureCode": "no_planar_route",
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-a7-native-bottom-attempt-606/channel.input.simple-route.json",
+        "sha256": "6ac179df1476d031ccbe351d82c43e2d1d5ba15f8e9e07040cf58ade6e943b7c"
+      },
+      "joinedCarrierLengths": [
+        {
+          "name": "source_trace_9",
+          "carrierLengthMm": null,
+          "fixedLengthMm": 21.42434775035405,
+          "totalLengthMm": null
+        }
+      ],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": -9,
+            "y": -33.16
+          },
+          "lengthMm": 7.873624801635742,
+          "newVias": 3
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 13.5507230758667,
+          "newVias": 3
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-bottom-local-prep-attempt-607/result.json",
+      "sha256": "2b79d4d2dc81e580dec8dc111897da86849e7269a9adc546b4ec1690fbbe6146",
+      "attempt": 607,
+      "sourceSignals": 32,
+      "status": "DDR32_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-bottom-local-prep-attempt-608/result.json",
+      "sha256": "634c0002ede93e2d113ba074895be1be51f695523f5a4f6bf7184b1304f5d3ec",
+      "attempt": 608,
+      "sourceSignals": 32,
+      "status": "DDR32_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS",
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-top-front-search-attempt-609/result.json",
+      "sha256": "e566c9938614b0ad61cd0078692739dca4d16ed91a0b628efa9ff19fa24abfed",
+      "attempt": 609,
+      "sourceSignals": 32,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.4404878616333,
+          "newVias": 2
+        },
+        {
+          "package": "U_SOC",
+          "error": "all handoffs obstructed"
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-casn-bottom-front-search-attempt-610/result.json",
+      "sha256": "eaef91de56f8695dda0057ef67f8e75b99efcbc033921e3b991a9745c87f89c8",
+      "attempt": 610,
+      "sourceSignals": 32,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.912446975708008,
+          "newVias": 1
+        },
+        {
+          "package": "U_SOC",
+          "error": "no clearance-preserving local path",
+          "reachableBounds": {
+            "minX": -3.2799999999999994,
+            "maxX": -2.619999999999999,
+            "minY": -6.959999999999999,
+            "maxY": -6.58
+          },
+          "reachableLayers": [
+            "top"
+          ],
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_5",
+                "source_trace_id": "source_trace_5",
+                "name": "DDR_CSn0"
+              },
+              "boundarySamples": 32,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_8",
+                "source_trace_id": "source_trace_10",
+                "name": "DDR_RESETn"
+              },
+              "boundarySamples": 10,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_4",
+                "pcb_port_id": "pcb_port_4"
+              },
+              "boundarySamples": 8,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/result.json",
+      "sha256": "c0f0fe0511a9cd8050931f74643e0ce632bfe4011e1765894c5a00ea758adfa0",
+      "attempt": 611,
+      "sourceSignals": 32,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/channel.input.simple-route.json",
+        "sha256": "98574f5c7760a5fcfadc6a5965dfddf11999030504e2fdf450064419acc5dbe1"
+      },
+      "joinedCarrierLengths": [],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.4404878616333,
+          "newVias": 2
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.12160587310791,
+          "newVias": 2
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-native-top-attempt-612/result.json",
+      "sha256": "43b7eecbd9083a09718eb68095cf3119a2e084fed67e4960a29fb54595f89140",
+      "attempt": 612,
+      "sourceSignals": 32,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "nativeElapsedSeconds": 45.064149666999995,
+      "nativeFailureCode": null,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-rasn-native-top-attempt-612/channel.input.simple-route.json",
+        "sha256": "98d4c043a9a7296124024df22195d4b256b065cf088973cebcfcfdb1294c2dc1"
+      },
+      "joinedCarrierLengths": [
+        {
+          "name": "source_trace_18",
+          "carrierLengthMm": null,
+          "fixedLengthMm": 22.56209378290989,
+          "totalLengthMm": null
+        }
+      ],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.4404878616333,
+          "newVias": 2
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.12160587310791,
+          "newVias": 2
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    },
+    {
+      "path": "dist/am3352-ddr32-rasn-native-top-extended-attempt-613/result.json",
+      "sha256": "4ffc9730aae8d3fe5ae923a7a3fed6d36aa7f7d1c07f162d1b82d26acf21fb9b",
+      "attempt": 613,
+      "sourceSignals": 32,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "nativeElapsedSeconds": 64.64023191599999,
+      "nativeFailureCode": "no_planar_route",
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-rasn-native-top-extended-attempt-613/channel.input.simple-route.json",
+        "sha256": "98d4c043a9a7296124024df22195d4b256b065cf088973cebcfcfdb1294c2dc1"
+      },
+      "joinedCarrierLengths": [
+        {
+          "name": "source_trace_18",
+          "carrierLengthMm": null,
+          "fixedLengthMm": 22.56209378290989,
+          "totalLengthMm": null
+        }
+      ],
+      "packageFanouts": [
+        {
+          "package": "U_RAM",
+          "end": {
+            "x": 0.120000000000001,
+            "y": -18
+          },
+          "lengthMm": 10.4404878616333,
+          "newVias": 2
+        },
+        {
+          "package": "U_SOC",
+          "end": {
+            "x": -10.5,
+            "y": -10.5
+          },
+          "lengthMm": 12.12160587310791,
+          "newVias": 2
+        }
+      ],
+      "acceptedIntoActiveDefault": false,
+      "fullElectricalTimingQualified": false
+    }
+  ],
+  "unusedAttemptNumbers": [
+    601,
+    602
+  ],
+  "actualHandoffProofs": [
+    {
+      "fanouts": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/local-escapes.json",
+        "sha256": "ba8a1d7e3cb67ab0c9ccb0435236b14447f849594c233262fe2dcf2205d7cd87"
+      },
+      "input": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/channel.input.simple-route.json",
+        "sha256": "afc396c3b6b96a9aa577334845b47ec0608b8c81977df83dce30a89c5846b7d7"
+      },
+      "actualEndpoints": [
+        {
+          "x": -9.42,
+          "y": -4.799999999999999,
+          "layer": "top"
+        },
+        {
+          "x": -3,
+          "y": -34.44,
+          "layer": "top"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "fanouts": {
+        "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/local-escapes.json",
+        "sha256": "5a9ecd5d78843d5424dad29548046ca96138d7923e96733ca1792c13479450a7"
+      },
+      "input": {
+        "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/channel.input.simple-route.json",
+        "sha256": "2d45d25cc7ceb973659f0c67eb035bf856fa25c4e49f3411aed57a6077f0b20f"
+      },
+      "actualEndpoints": [
+        {
+          "x": -9.42,
+          "y": -4.799999999999999,
+          "layer": "bottom"
+        },
+        {
+          "x": -3,
+          "y": -34.44,
+          "layer": "bottom"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "fanouts": {
+        "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/local-escapes.json",
+        "sha256": "cd8ef956c0482d499ebd78e49e59e10ad63ffd98b485b7f68111d505fe3e4239"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/channel.input.simple-route.json",
+        "sha256": "4f340f5cd5da711003fc0e42976ea1edfc44d954563bb04659c23612df02cb67"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "bottom"
+        },
+        {
+          "x": -9,
+          "y": -33.16,
+          "layer": "bottom"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "fanouts": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/local-escapes.json",
+        "sha256": "89cc3ac015c3475b3f64f512b39e13713ed643cc28717232b365ac184c3336c5"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/channel.input.simple-route.json",
+        "sha256": "98574f5c7760a5fcfadc6a5965dfddf11999030504e2fdf450064419acc5dbe1"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "top"
+        },
+        {
+          "x": 0.120000000000001,
+          "y": -18,
+          "layer": "top"
+        }
+      ],
+      "allTerminalsMatch": true
+    }
+  ],
+  "nativeTerminalProofs": [
+    {
+      "attempt": 586,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-native-top-attempt-586/channel.input.simple-route.json",
+        "sha256": "51740c12b1cfa3d0e3d8f71cff50224c1c7721575dacc6b67248f4382d88ab14"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/result.json",
+        "sha256": "c54d49dc62d230f517b2a531e8b9ce9e3aaf5626bd414ab02760aabf6905a606"
+      },
+      "fanouts": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/local-escapes.json",
+        "sha256": "ba8a1d7e3cb67ab0c9ccb0435236b14447f849594c233262fe2dcf2205d7cd87"
+      },
+      "input": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/channel.input.simple-route.json",
+        "sha256": "afc396c3b6b96a9aa577334845b47ec0608b8c81977df83dce30a89c5846b7d7"
+      },
+      "actualEndpoints": [
+        {
+          "x": -9.42,
+          "y": -4.799999999999999,
+          "layer": "top"
+        },
+        {
+          "x": -3,
+          "y": -34.44,
+          "layer": "top"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "attempt": 587,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-native-bottom-attempt-587/channel.input.simple-route.json",
+        "sha256": "772e5b397447502e52ca4179b7df882717911f8aaaea08626f79a83e635443da"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/result.json",
+        "sha256": "605d649690ee3c450b5f3a83d07b39a652a115cc11f6bdea39018b0f2e7cc35c"
+      },
+      "fanouts": {
+        "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/local-escapes.json",
+        "sha256": "5a9ecd5d78843d5424dad29548046ca96138d7923e96733ca1792c13479450a7"
+      },
+      "input": {
+        "path": "dist/am3352-ddr31-a6-independent-bottom-local-attempt-585/channel.input.simple-route.json",
+        "sha256": "2d45d25cc7ceb973659f0c67eb035bf856fa25c4e49f3411aed57a6077f0b20f"
+      },
+      "actualEndpoints": [
+        {
+          "x": -9.42,
+          "y": -4.799999999999999,
+          "layer": "bottom"
+        },
+        {
+          "x": -3,
+          "y": -34.44,
+          "layer": "bottom"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "attempt": 591,
+      "nativeInput": {
+        "path": "dist/am3352-ddr31-a6-independent-native-top-extended-attempt-591/channel.input.simple-route.json",
+        "sha256": "51740c12b1cfa3d0e3d8f71cff50224c1c7721575dacc6b67248f4382d88ab14"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/result.json",
+        "sha256": "c54d49dc62d230f517b2a531e8b9ce9e3aaf5626bd414ab02760aabf6905a606"
+      },
+      "fanouts": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/local-escapes.json",
+        "sha256": "ba8a1d7e3cb67ab0c9ccb0435236b14447f849594c233262fe2dcf2205d7cd87"
+      },
+      "input": {
+        "path": "dist/am3352-ddr31-a6-independent-top-local-attempt-584/channel.input.simple-route.json",
+        "sha256": "afc396c3b6b96a9aa577334845b47ec0608b8c81977df83dce30a89c5846b7d7"
+      },
+      "actualEndpoints": [
+        {
+          "x": -9.42,
+          "y": -4.799999999999999,
+          "layer": "top"
+        },
+        {
+          "x": -3,
+          "y": -34.44,
+          "layer": "top"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "attempt": 606,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-a7-native-bottom-attempt-606/channel.input.simple-route.json",
+        "sha256": "6ac179df1476d031ccbe351d82c43e2d1d5ba15f8e9e07040cf58ade6e943b7c"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/result.json",
+        "sha256": "b8c45a96da1d64933a56c4f67b113f63853c314d39771885ba63f3b4543ca6b9"
+      },
+      "fanouts": {
+        "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/local-escapes.json",
+        "sha256": "cd8ef956c0482d499ebd78e49e59e10ad63ffd98b485b7f68111d505fe3e4239"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-a7-bottom-independent-local-attempt-603/channel.input.simple-route.json",
+        "sha256": "4f340f5cd5da711003fc0e42976ea1edfc44d954563bb04659c23612df02cb67"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "bottom"
+        },
+        {
+          "x": -9,
+          "y": -33.16,
+          "layer": "bottom"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "attempt": 612,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-rasn-native-top-attempt-612/channel.input.simple-route.json",
+        "sha256": "98d4c043a9a7296124024df22195d4b256b065cf088973cebcfcfdb1294c2dc1"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/result.json",
+        "sha256": "c0f0fe0511a9cd8050931f74643e0ce632bfe4011e1765894c5a00ea758adfa0"
+      },
+      "fanouts": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/local-escapes.json",
+        "sha256": "89cc3ac015c3475b3f64f512b39e13713ed643cc28717232b365ac184c3336c5"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/channel.input.simple-route.json",
+        "sha256": "98574f5c7760a5fcfadc6a5965dfddf11999030504e2fdf450064419acc5dbe1"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "top"
+        },
+        {
+          "x": 0.120000000000001,
+          "y": -18,
+          "layer": "top"
+        }
+      ],
+      "allTerminalsMatch": true
+    },
+    {
+      "attempt": 613,
+      "nativeInput": {
+        "path": "dist/am3352-ddr32-rasn-native-top-extended-attempt-613/channel.input.simple-route.json",
+        "sha256": "98d4c043a9a7296124024df22195d4b256b065cf088973cebcfcfdb1294c2dc1"
+      },
+      "localRun": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/result.json",
+        "sha256": "c0f0fe0511a9cd8050931f74643e0ce632bfe4011e1765894c5a00ea758adfa0"
+      },
+      "fanouts": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/local-escapes.json",
+        "sha256": "89cc3ac015c3475b3f64f512b39e13713ed643cc28717232b365ac184c3336c5"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-rasn-top-cpu-retry-attempt-611/channel.input.simple-route.json",
+        "sha256": "98574f5c7760a5fcfadc6a5965dfddf11999030504e2fdf450064419acc5dbe1"
+      },
+      "actualEndpoints": [
+        {
+          "x": -10.5,
+          "y": -10.5,
+          "layer": "top"
+        },
+        {
+          "x": 0.120000000000001,
+          "y": -18,
+          "layer": "top"
+        }
+      ],
+      "allTerminalsMatch": true
+    }
+  ],
+  "nativeBottomA6PlanarMm": 51.715839552841416,
+  "nativeTopA6PlanarMm": 55.44056217003848,
+  "sampledCarrierBridgeMinimumUncheckedMm": 46.49695100293784,
+  "sampledBridgeIsNotAGlobalRoutingImpossibilityProof": true,
+  "helpers": [
+    {
+      "path": "scripts/route-am3352-guided-local-fanouts.mjs",
+      "sha256": "6bf4dff4a561384c4beaf2221001deb91fc81686092cb2a8931a6b27cc58ba54"
+    },
+    {
+      "path": "scripts/route-am3352-guided-channel.mjs",
+      "sha256": "0ae51a261c6c0945b586b4f19e283689e5becb70e1a944b2f9fdddb69d33cd21"
+    },
+    {
+      "path": "scripts/repair-am3352-command-carrier-layer.mjs",
+      "sha256": "30ca80315baff05f04bd74839c89be0e1b31cf93f6a7b43c513ac54998b51865"
+    }
+  ],
+  "referenceLayersReserved": [
+    "inner1",
+    "inner2"
+  ],
+  "copperLayers": 4,
+  "activeSolverHandles": [],
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

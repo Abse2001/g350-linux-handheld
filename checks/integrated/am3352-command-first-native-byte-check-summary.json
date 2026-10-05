@@ -1,0 +1,82 @@
+{
+  "status": "COMMAND_COPPER_AND_ALL_44_BYTE_BREAKOUTS_PHYSICALLY_COMPATIBLE_CHANNELS_UNFINISHED",
+  "source": {
+    "path": "dist/experiments/am3352-command-unmatched-pruned-replay/circuit.json",
+    "sha256": "dc5757cf33c468e5fb7da9d55ff0c26e49b4cc113c1d504bdc1f0cb9a364c523",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-command-unmatched-pruned-replay/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-command-first-native-byte-physical-diagnostic/circuit.json",
+    "sha256": "6f0d1409d448a7c3382a208e085f5e1da9527619b657c3b12ceb1ed78f612085"
+  },
+  "board": {
+    "path": "dist/am3352-command-first-native-byte-physical-diagnostic/board.kicad_pcb",
+    "sha256": "f280afeb610290fc6027091977f4e1b336a01b93d6e7abd7e027cc5385462554"
+  },
+  "fixedFanouts": {
+    "path": "dist/am3352-command-first-byte1-pruned-bootstrap-attempt-210/signal-escapes.native.json",
+    "sha256": "30c638922817104296c8b9ba2fb74d0977a92cd77c277f0fd325f5e3ce6807a0"
+  },
+  "nativeBootstrap": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "coreVersion": "0.0.2056",
+  "nativePreparation": {
+    "path": "dist/am3352-command-first-byte-bootstrap-attempt-208/result.json",
+    "sha256": "11d34a2be4c29f8ed3d605bf20a27595f0aba2f42512e3b75bf598a13001db90"
+  },
+  "nativeGeometryUnchangedAfterToolchainUpdate": true,
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "cpuByteBreakoutsConnected": 22,
+  "ramByteBreakoutsConnected": 22,
+  "sourceTracePiecesPreserved": 95,
+  "sourceThroughViasPreserved": 199,
+  "addedByteBreakoutVias": 22,
+  "totalThroughVias": 221,
+  "commandClockEndToEndChannelsPreserved": 26,
+  "newByteEndToEndChannels": 0,
+  "requiredDdrChannels": 49,
+  "minimumHoleEdgeClearanceMm": 0.31168542494923346,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolations": 0,
+  "unfinishedViaWarnings": 22,
+  "unfinishedTrackWarnings": 22,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "physicalLibraryRecordsPreserved": 7071,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-command-first-native-byte-native-connectivity.json",
+      "sha256": "7b6a576effebf8d317ecfb717cd95a66fc584e298725e17f5d0f78ecf05c42e0"
+    },
+    {
+      "path": "checks/integrated/am3352-command-first-native-byte-reference-connectivity.json",
+      "sha256": "8492f59051d849e013661b73408091324184cc8c17aa218f8cd72048cc291982"
+    },
+    {
+      "path": "checks/integrated/am3352-command-first-native-byte-native-ddr-connectivity.json",
+      "sha256": "84b50000c4b7fe9a976f86155799ff8d2ad20e505ddcb6fde7d1a3b1f1bb1d0d"
+    },
+    {
+      "path": "checks/integrated/am3352-command-first-native-byte-kicad-drc.json",
+      "sha256": "b105faaea64ba7da841760c7f8cd1e898fc551dc6a07011b390bdcadf6ad4773"
+    },
+    {
+      "path": "checks/integrated/am3352-command-first-native-byte-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    }
+  ],
+  "fullPhysicalDrcPass": false,
+  "fabricationReady": false,
+  "timingQualified": false,
+  "originalShellFitVerified": false,
+  "scope": "Separate command-first diagnostic. Native byte terminals are physically compatible with retained command copper; no new full byte channel is connected. Existing command/clock matching still fails. The checked 23-signal default is separate and unchanged."
+}

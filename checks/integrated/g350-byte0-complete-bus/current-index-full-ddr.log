@@ -1,0 +1,5 @@
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:memory-connectivity
+> node scripts/check-am3352-routing.mjs dist/index/circuit.json checks/integrated/am3352-active-memory-connectivity.json lib/am3352/memory-byte1-top-centered-swizzled-connections.json
+
+{"status":"AM3352_MEMORY_FAIL","connectedSignals":11,"tracePieces":112,"physicalVias":119,"problems":43}

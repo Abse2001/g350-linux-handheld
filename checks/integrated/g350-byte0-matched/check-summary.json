@@ -1,0 +1,100 @@
+{
+  "status": "PASS_SCOPED_SHAPED_BYTE0_PHYSICAL_CONNECTIVITY_AND_PLANAR_SKEW",
+  "entry": "experiments/am3352-g350-byte0-matched-replay.circuit.tsx",
+  "source": {
+    "path": "dist/g350-byte0-matched-replay/compiled.circuit.json",
+    "sha256": "e6be9cc6468c63f6da283f0240832757b3477eca74e039eff96c4152e5b739b5"
+  },
+  "board": {
+    "path": "checks/integrated/g350-byte0-matched/g350-byte0.kicad_pcb",
+    "sha256": "916cd5c1e6c202346161db5c800db52051bcd4198b5e4ca4dac1136165e5e01e"
+  },
+  "sourceFunctionalRecordsAndPhysicalPlacementPreserved": true,
+  "all101PowerTracesAnd97PowerViasPreserved": true,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "placedComponents": 280,
+  "checkedConnectedDdrSignals": 11,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignals": 38,
+  "nativeBusLanesBootstrapUsed": true,
+  "nativeFullNineLaneSolve": false,
+  "nativeSevenCarrierWaypointsRetained": true,
+  "manualLastTwoCarriers": true,
+  "manualStrobeAndDataLengthRepairs": true,
+  "byte0PlanarSkewMm": 0.20779212861254237,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarSkewPass": true,
+  "strobePairPlanarSkewMm": 3.552713678800501e-15,
+  "strobePairPlanarSkewPass": true,
+  "bothReferencePlanesContinuous": true,
+  "checkedPackagePowerTerminals": 101,
+  "traces": 112,
+  "physicalThroughVias": 119,
+  "nativeErrors": {
+    "pcb_port_not_connected_error": 818,
+    "pcb_trace_missing_error": 108
+  },
+  "independentPhysicalErrors": 0,
+  "presentationWarnings": 403,
+  "reportedUnconnectedItems": 499,
+  "unconnectedItemsMayBeCapped": true,
+  "allLayerGerberShorts": 0,
+  "noIgnoredKiCadRulesOrExclusions": true,
+  "ddrElectricalTimingQualified": false,
+  "stackupImpedanceQualified": false,
+  "bypassCapacitorsRouted": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "evidence": [
+    {
+      "path": "dist/g350-byte0-matched-replay/execution.json",
+      "sha256": "eb0c2975dead0f1399b108d06cdf34ccb103a026ee7b44f8b48c09bb72d447ad"
+    },
+    {
+      "path": "dist/g350-byte0-matched-replay/result.json",
+      "sha256": "f6680bc89aab011e107ed8e50ca27e899dcadf3f4a2aa51c63175469970af8b9"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/final-drc.json",
+      "sha256": "846c894484be4f29d60b75892f1c6bff901aabb7c429c42b14211376517e8417"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/plane-connectivity.json",
+      "sha256": "ee85829dd6cfcd5fcbd8df4e20908402afddd8919dbb481ff0f5dadb5658f6e3"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/stencil-verified.json",
+      "sha256": "e39f5147bd7f8633a4cf8732cb43e122dbfb81c896070d2263e60cf1844802d2"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/ddr-connectivity.json",
+      "sha256": "11efd1e9af6d1c709e1dd766126798f92a4abbf4121ffa52f8b9556ef8d54aa5"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/full-ddr-timing.json",
+      "sha256": "cabe0f9ddf76d233d06c434c6a553a8a45bb2e8ad1f206bf349fccdf572787d8"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/shorts.log",
+      "sha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-matched/library.log",
+      "sha256": "947c6a38313f228ff74e08ebd220311110c2026af7d1003d4454ed2f6f093ff2"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/byte0-seven-native-cache.json",
+      "sha256": "82013539b189e14afb628468c42621926a18afa022713efe10a056c5fb5855c5"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/check-summary.json",
+      "sha256": "3b7051a48b0c89fc2965276ddb205ffd18a27b9e48eeb14039f8700c3544fdf5"
+    }
+  ],
+  "scope": "Only byte0 numeric-pad continuity, physical copper/drill clearance, and the existing 101 package-to-plane connections. Planar skew is reported separately. Complete DDR timing/impedance, 38 signals, bypass and converter loops, remaining host connectivity, Linux and original-shell fit remain unfinished."
+}

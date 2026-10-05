@@ -1,0 +1,16 @@
+60 | assert(process.argv[36]===undefined||cpuPairViaHandoffCorridor)
+61 | assert(!cpuPairViaHandoffCorridor||forceNativeCpuPairVias&&busName==='DDR_BYTE1')
+62 | assert([.01,.02].includes(localGridStep))
+63 | assert(handoffBaseX>=-17&&handoffBaseX<=16)
+64 | assert(lanePitch>=.32&&lanePitch<=1.6&&localMaxX>=9&&localMaxX<=17.5)
+65 | const original=JSON.parse(readFileSync(`${bootstrap}/input.simple-route.json`))
+                               ^
+ENOENT: no such file or directory, open 'dist/am3352-ram-rotated-180-byte-swapped-byte1-native-ram-bootstrap-attempt-367/input.simple-route.json'
+    path: "dist/am3352-ram-rotated-180-byte-swapped-byte1-native-ram-bootstrap-attempt-367/input.simple-route.json",
+ syscall: "open",
+   errno: -2,
+    code: "ENOENT"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-local-fanouts.mjs:65:27
+
+Bun v1.3.14 (macOS arm64)

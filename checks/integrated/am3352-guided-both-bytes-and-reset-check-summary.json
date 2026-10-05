@@ -1,0 +1,135 @@
+{
+  "status": "DDR_BYTES_AND_RESET_PHYSICAL_CHECKS_PASS_COMMAND_CLOCK_AND_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/experiments/am3352-guided-both-bytes-and-reset-replay/circuit.json",
+    "sha256": "2c72f2f082db98ec4b816ac334bd0502b2f1f926abdedd5a995b0ed6bafcab04"
+  },
+  "board": {
+    "path": "dist/experiments/am3352-guided-both-bytes-and-reset-replay/board.kicad_pcb",
+    "sha256": "242068fb4237b632a9a545cc65f1aa451c029de279e4ffae07ee778152ab37a1"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayerCount": 4,
+  "maxCopperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "byte0ChannelLayer": "bottom",
+  "byte1ChannelLayer": "top",
+  "resetChannelLayer": "top",
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "nativeResetRun": {
+    "path": "dist/am3352-guided-reset-channel-attempt-131/result.json",
+    "sha256": "00bd0cb2755294cf500c9231dbcd4d671c53f6852c06d06851cfa1e9cf9d6d89"
+  },
+  "previousBothByteEvidence": {
+    "path": "checks/integrated/am3352-guided-both-bytes-matched-check-summary.json",
+    "sha256": "24b997f976487b05fcd57722c5f268b7239436eb7e2f7dac4f63d8a32653f65b"
+  },
+  "editablePaths": {
+    "path": "routing/am3352-guided-both-bytes-and-reset-paths.json",
+    "sha256": "a356d0cffb8e29477d0c843b99efc91c91b1d63ff675747c72107a9fd62e2d48"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "ddrSignalsConnected": 23,
+  "requiredDdrSignals": 49,
+  "unroutedDdrSignals": 26,
+  "remainingSignalNames": [
+    "DDR_A0",
+    "DDR_A1",
+    "DDR_A10",
+    "DDR_A11",
+    "DDR_A12",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_A2",
+    "DDR_A3",
+    "DDR_A4",
+    "DDR_A5",
+    "DDR_A6",
+    "DDR_A7",
+    "DDR_A8",
+    "DDR_A9",
+    "DDR_BA0",
+    "DDR_BA1",
+    "DDR_BA2",
+    "DDR_CASn",
+    "DDR_CK",
+    "DDR_CKE",
+    "DDR_CKn",
+    "DDR_CSn0",
+    "DDR_ODT",
+    "DDR_RASn",
+    "DDR_WEn"
+  ],
+  "ddrThroughVias": 40,
+  "physicalThroughVias": 109,
+  "existingPowerTracePieces": 69,
+  "existingPowerVias": 69,
+  "sourceTracePieces": 92,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000003934717,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 0.6350000014649382,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "bothByteGeometriesPreserved": true,
+  "resetPlanarLengthMm": 51.037038943812156,
+  "resetAdditionalVias": 0,
+  "gerberShorts": 0,
+  "gerberShortsLayerScope": "all four layers",
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "allHostUnconnectedItems": 499,
+  "physicalLibraryRecordsPreserved": 13419,
+  "snapshot": {
+    "path": "images/am3352-guided-both-bytes-and-reset-top.png",
+    "sha256": "950f2f485beee56d2d97974ed3d5c1dac6e11d9df0d4f5e9bd2e2c8f04a52804",
+    "visuallyInspected": true
+  },
+  "fabricationReady": false,
+  "completePowerRouting": false,
+  "fullElectricalTimingQualified": false,
+  "pairGeometryQualified": false,
+  "scope": "Both checked native byte channels plus a native bus_lanes reset channel with manual pad escapes. All 26 command/clock signals, full host power, impedance/package/via timing, handheld integration and Linux bring-up remain unfinished."
+}

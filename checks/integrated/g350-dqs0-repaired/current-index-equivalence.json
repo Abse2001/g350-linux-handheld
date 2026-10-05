@@ -1,0 +1,29 @@
+{
+  "status": "CURRENT_SHAPED_G350_SCOPED_SOURCE_EQUIVALENCE_PASS",
+  "active": {
+    "path": "dist/index/circuit.json",
+    "sha256": "6ef3fe8d5f558393788d6b3891c685d32ad92d5bb85c3607b152f55ba28000a8"
+  },
+  "checked": {
+    "path": "dist/g350-dqs0-shaped-corridor-repair/compiled.circuit.json",
+    "sha256": "ffc19638cb059ce64785dd848eeeb1ae5a7191991b01fa54c52f786f63063086"
+  },
+  "checkedSummary": {
+    "path": "checks/integrated/g350-dqs0-repaired/check-summary.json",
+    "sha256": "3eefe6fe386102a68cd2c24791b6adeae4c795ae22602ee6bc8e65b56efb775b"
+  },
+  "equalNonMetadataRecords": true,
+  "placedComponents": 280,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "checkedConnectedDdrSignals": 2,
+  "remainingDdrSignals": 47,
+  "sourceContainsUnfinishedConnections": true,
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "scope": "Matches only the current checked power/strobe subset. This is a source-freshness gate for shorts checks, not complete-board approval."
+}

@@ -1,0 +1,76 @@
+(footprint "g350_TP_BAT_INPUT_56e5ca2e40aa37d227c5c62e6fca3bd2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "TP_BAT_INPUT"
+		(at 0 -0.875 0)
+		(layer "F.SilkS")
+		(uuid "e9de58bf-c1d8-4f4e-ae6a-a1275d8b2097")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TP_BAT_INPUT"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5846c915-afc6-4cc6-880e-3f8b4f148fba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "77381b8c-fc3c-471d-baaa-0d58afb4cc64")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fd50a09-804c-4dc2-a879-bcd5da24a540")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d8ec460-300f-fe20-7251-3f6014b27ce0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr dnp)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 0.75 0.75)
+		(drill 0.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3765c79e-6632-3642-03ca-34225e9dcdfe")
+	)
+	(embedded_fonts no)
+)

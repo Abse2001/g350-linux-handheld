@@ -1,0 +1,59 @@
+{
+  "status": "GUIDED_REPLAY_SOURCE_GEOMETRY_PASS_HOST_INCOMPLETE",
+  "circuit": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte1-pair-replay/circuit.json",
+    "sha256": "4a35c15df0a204c47621692eebb616e4cf6efde3a988a9561183a6ab14e80907"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "ddrSignalTraces": 11,
+  "ddrThroughVias": 42,
+  "physicalThroughVias": 111,
+  "existingPowerCopper": {
+    "manualBypassLoops": 15,
+    "ramBypassLoops": 14,
+    "packageReferenceEscapes": 39,
+    "ramReferenceEscapeCounts": {
+      "DDR_1V5": 18,
+      "GND": 21
+    },
+    "traces": 70,
+    "throughVias": 69,
+    "minimumDrillEdgeClearanceMm": 0.44600000000000284,
+    "rotatedD2PowerBridge": {
+      "traceName": "RAM_D2_B2_INNER2_POWER_BRIDGE",
+      "layer": "inner2",
+      "newHoles": 0,
+      "physicalChecksPending": true
+    },
+    "generatedReferenceRegions": 2,
+    "completePowerRouting": false,
+    "savedDdrNames": [
+      "DDR_D10",
+      "DDR_D11",
+      "DDR_D12",
+      "DDR_D13",
+      "DDR_D14",
+      "DDR_D15",
+      "DDR_D8",
+      "DDR_D9",
+      "DDR_DQM1",
+      "DDR_DQS1",
+      "DDR_DQSn1"
+    ],
+    "totalSourceTraces": 81
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotation": 180,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,152 @@
+{
+  "status": "BOTTOM_RAM_STAGED_ROUTE_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "entry": {
+    "path": "experiments/am3352-ram-bottom-flexible-fanout-747-replay.circuit.tsx",
+    "sha256": "d5dd3d65939626708ff343104aaa881ea55d57ca00e44514ee956709b3c4f64a"
+  },
+  "paths": {
+    "path": "routing/am3352-ram-bottom-flexible-fanout-747-replay-paths.json",
+    "sha256": "b65a10cd327d9487abcc4c2f896152fca64066ec67b0abda7b044ed73f54fce1"
+  },
+  "stageRun": {
+    "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/result.json",
+    "sha256": "a23a851de7d86ea522a37b3aa650dd8c8453b355f25233ae33076d30509d3e42"
+  },
+  "stageState": {
+    "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/staged-state.nonexportable.json",
+    "sha256": "26d907baf1c87957aad2ecba7d0f122ebd80539be1026634c82a66b88ac2f568"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+    "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+  },
+  "checkedPlacementSummary": {
+    "path": "checks/integrated/am3352-ram-bottom-via-style-corrected-check-summary.json",
+    "sha256": "72faa6aee3d587a3d28d0ab7dfadaeb3e3922d3b06bb1c06934a72a4e6764488"
+  },
+  "nativeBootstrapRun": {
+    "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/result.json",
+    "sha256": "54e98154f1d2db66b8831d7fd6e1785c679a1e04ff185ca5b88af6ace9f4f816"
+  },
+  "nativePartialSeed": {
+    "path": "dist/am3352-ram-bottom-all49-cpu-row-partition-attempt-711/partial-seed.nonexportable.json",
+    "sha256": "f2f46739d5337fa9d7fc1cef7d31c5a500d13b6e925d4f2fb9f5b984c1dbb223"
+  },
+  "manualRuns": [
+    {
+      "path": "dist/am3352-ram-bottom-partial-a0-open-reservations-attempt-713/result.json",
+      "sha256": "628de3aa139c21345c2ab20768b3058acb427eec707284880b9c8a8d81a6e812"
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-d0-open-reservations-attempt-714/result.json",
+      "sha256": "bcc198ad590f2ace25ba6e4c81e76a2ac435bbbdd0bd252e2903268dea9ef8d5"
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d3-manual-attempt-715/result.json",
+      "sha256": "8136c30f0047b2aeb6ecbb6e5a8d5cabfd63102c2d19bc5057b9ef158ea27481"
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d1-manual-attempt-716/result.json",
+      "sha256": "5f89bd5ab86a22ff1575b7691421845bf4952bca90c251663abbdc87eeaaaba1"
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d7-manual-attempt-717/result.json",
+      "sha256": "5de47ab208e111ed884212d41f92a45a714ba5e12ff80c9a842aca0f28e2d51e"
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_d4-manual-attempt-718/result.json",
+      "sha256": "66c700f94c1c5540b70ca8191b126c623a4b44013954dff2a9ca9ea151647a53"
+    },
+    {
+      "path": "dist/am3352-ram-bottom-partial-ddr_dqm0-manual-attempt-720/result.json",
+      "sha256": "5973c17aa352620c4d7a54d5a6ff6bb6abcab5bb1968383d26d8aca58454c827"
+    }
+  ],
+  "initialNativeCarrierCount": 19,
+  "nativeCarrierCount": 19,
+  "negotiatedRepairRun": {
+    "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/result.json",
+    "sha256": "a23a851de7d86ea522a37b3aa650dd8c8453b355f25233ae33076d30509d3e42"
+  },
+  "negotiatedRepairSteps": 9,
+  "nativeFanoutInputCount": 49,
+  "prunedUncommittedNativeDogbones": [
+    "local_dogbone_source_trace_40_0",
+    "local_dogbone_source_trace_12_0",
+    "local_dogbone_source_trace_48_0",
+    "local_dogbone_source_trace_18_0"
+  ],
+  "openedInitialStagedPaths": [
+    {
+      "sourceTraceId": "source_trace_22",
+      "name": "DDR_A0",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_22.json",
+        "sha256": "086f66470ab8b323452a9c4f88f4110d10530f2abbac3c20c6728e306b8ca02f"
+      },
+      "wasRetainedNativeCarrier": false
+    },
+    {
+      "sourceTraceId": "source_trace_14",
+      "name": "DDR_D0",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_14.json",
+        "sha256": "b815c83a4b83ea2d58b034deabd0a7026f99817b05237a5a936126736cda1b6c"
+      },
+      "wasRetainedNativeCarrier": false
+    },
+    {
+      "sourceTraceId": "source_trace_42",
+      "name": "DDR_D3",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_42.json",
+        "sha256": "5d055d4bc3cfc88d19b8a015f14589617b7584c0e36222cfd3e6fac94080d5fb"
+      },
+      "wasRetainedNativeCarrier": false
+    },
+    {
+      "sourceTraceId": "source_trace_31",
+      "name": "DDR_D1",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_31.json",
+        "sha256": "3b8e2d15192ca09741661af95450e6bbdd0f46f6deee31a57594412f51a2e4f6"
+      },
+      "wasRetainedNativeCarrier": false
+    },
+    {
+      "sourceTraceId": "source_trace_32",
+      "name": "DDR_D7",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_32.json",
+        "sha256": "66245ecfbeb78979cca3617951f5571075d95ba3158be2062a8793d790f7f8f1"
+      },
+      "wasRetainedNativeCarrier": false
+    },
+    {
+      "sourceTraceId": "source_trace_17",
+      "name": "DDR_D4",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_17.json",
+        "sha256": "4b1244dead2c68d90ca32909414af4691f3cd6afa7a0a7f7a6cb073906362d4b"
+      },
+      "wasRetainedNativeCarrier": false
+    },
+    {
+      "sourceTraceId": "source_trace_30",
+      "name": "DDR_DQM0",
+      "route": {
+        "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/initial-opened-source_trace_30.json",
+        "sha256": "00628f83a777754161f28542d8bc705a3408706eed0d80fdd150540399481f2a"
+      },
+      "wasRetainedNativeCarrier": false
+    }
+  ],
+  "stagedDdrRoutes": 28,
+  "remainingDdrSignals": 21,
+  "original89SourceHolesPreserved": true,
+  "original102SourcePiecesPreserved": true,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

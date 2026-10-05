@@ -1,0 +1,41 @@
+{
+  "status": "ACTIVE_DDR30_CHECKED_SOURCE_EQUIVALENCE_PASS",
+  "active": {
+    "path": "dist/diagnostics/am3352-tscircuit-2744-core2080-default/circuit.json",
+    "sha256": "029b8c21bf786d14d052c1b52a374e2ea8a3e2fb1bf525345076ab139e22ebfd"
+  },
+  "checked": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-wen-nominal-candidate/circuit.json",
+    "sha256": "ac758f1c2e20b4d4132f5240797418d90d04a209bd713e956b8141a4392a8f1b"
+  },
+  "checkedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-wen-nominal-check-summary.json",
+    "sha256": "75acef5197ef4e1deb2a64fb867d55b294d844d5a0aaa04512924d63dae207f8"
+  },
+  "equalNonMetadataRecords": 7957,
+  "rawNonMetadataRecordCount": 7975,
+  "comparison": "STRICT_EQUIVALENCE_WITH_REVIEWED_CORE_SCHEMA_MIGRATION",
+  "upgradeEquivalence": {
+    "equalElectricalAndPhysicalRecords": 7957,
+    "voltageRepresentationChanges": [
+      {
+        "portId": "source_port_1038",
+        "from": "5V",
+        "to": 5
+      },
+      {
+        "portId": "source_port_1039",
+        "from": "5V",
+        "to": 5
+      }
+    ],
+    "newBareTestpointWarnings": 18,
+    "allPcbRecordsExact": true,
+    "allNetConnectivityExact": true
+  },
+  "connectedDdrSignals": 30,
+  "remainingDdrSignals": 19,
+  "copperLayers": 4,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

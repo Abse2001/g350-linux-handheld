@@ -1,0 +1,44 @@
+{
+  "status": "NATIVE_PHASE_INPUT_PRESERVATION_PASS",
+  "input": {
+    "path": "dist/am3352-latest-bus-lanes-ddr33-fixed-pairs-attempt-754/phase-3.input.simple-route.json",
+    "sha256": "d76536f1c6afbb60d08364917d7242a459ec6650b0654ac0f733c325ea11c115"
+  },
+  "checkedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-d12-spacing-repaired-check-summary.json",
+    "sha256": "08dbd575d14495cb6c1e0c4e85617dcc9d2d3e7cb8d2702c3c3fc28eb6053c00"
+  },
+  "fixedTracePieces": 135,
+  "allFixedTraceGeometryExact": true,
+  "all912PhysicalPadCentersAndLayersExact": true,
+  "all169FixedViasRepresented": true,
+  "actualOpenConnections": 16,
+  "actualPhysicalEndpoints": 32,
+  "selectedNames": [
+    "DDR_BA0",
+    "DDR_A7",
+    "DDR_RASn",
+    "DDR_BA2",
+    "DDR_A0",
+    "DDR_A2",
+    "DDR_A9",
+    "DDR_A13",
+    "DDR_A10",
+    "DDR_A12",
+    "DDR_A1",
+    "DDR_A11",
+    "DDR_A14",
+    "DDR_BA1",
+    "DDR_A4",
+    "DDR_A8"
+  ],
+  "innerPlanesReserved": true,
+  "fullyGuidedPairsOmittedForDiagnosticOnly": [
+    "DDR_DQS0_PAIR",
+    "DDR_DQS1_PAIR",
+    "DDR_CK_PAIR"
+  ],
+  "pairDefinitionsMustBeRestoredForReplay": true,
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false
+}

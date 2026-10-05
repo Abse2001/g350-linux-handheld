@@ -1,0 +1,189 @@
+{
+  "reviewDate": "2026-10-05",
+  "fabricationReady": false,
+  "routingPermitted": false,
+  "originalShellFitVerified": false,
+  "entry": "experiments/am3352-g350-pmic-placement.circuit.tsx",
+  "manufacturerReferences": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps65217.pdf",
+      "local": "reference/am3352/tps65217.pdf",
+      "revision": "SLVSB64I, March2018",
+      "sections": [
+        "Pin functions",
+        "11.1 Layout guidelines",
+        "Fig78"
+      ]
+    }
+  ],
+  "changes": [
+    "18 PMIC support parts repositioned; processor/RAM/display/control placements and functional sources preserved.",
+    "Buck inductors and output capacitors remain on the top side. Input, SYS and USB capacitors move to bottom, requiring dedicated short power/ground vias.",
+    "Core0.0.2085 polygon-paste support required explicit suppression for the two inductor primaries and four USB anchor polygons; native stencil geometry is otherwise preserved."
+  ],
+  "pmicGeometry": {
+    "status": "PLANNED_REQUIRES_NATIVE_BUILD_AND_DRC",
+    "fabricationReady": false,
+    "routingPermitted": false,
+    "originalShellFitVerified": false,
+    "input": "dist/experiments/am3352-g350-ddr-corridor/circuit.json",
+    "inputSha256": "a9427ee89a309ba5be281575d5dd7ee4116034432209eee02adf97c0786de583",
+    "plannerSha256": "c89b54eb46e91cc5555f935bc9de85b036946ee14fed6c94769f14975ac886dd",
+    "movedComponents": 18,
+    "placementMethod": "Manufacturer-guided explicit positions with independent pad-distance and same-side courtyard checks.",
+    "switches": [
+      {
+        "from": "U_PMIC.20",
+        "to": "L_DDR.1",
+        "oldStraightPadDistanceMm": 11.505757394402595,
+        "newStraightPadDistanceMm": 4.2786368411972076
+      },
+      {
+        "from": "U_PMIC.23",
+        "to": "L_MPU.1",
+        "oldStraightPadDistanceMm": 11.23668032890791,
+        "newStraightPadDistanceMm": 2.8681486039021764
+      },
+      {
+        "from": "U_PMIC.31",
+        "to": "L_CORE.1",
+        "oldStraightPadDistanceMm": 7.093727843232356,
+        "newStraightPadDistanceMm": 3.2401150000964467
+      }
+    ],
+    "outputs": [
+      {
+        "from": "L_DDR.2",
+        "to": "C_PMIC_DDR_OUT.1",
+        "oldStraightPadDistanceMm": 6.386659750174577,
+        "newStraightPadDistanceMm": 5.808434966882211
+      },
+      {
+        "from": "L_MPU.2",
+        "to": "C_PMIC_MPU_OUT.1",
+        "oldStraightPadDistanceMm": 6.386659750174576,
+        "newStraightPadDistanceMm": 3.797037103387325
+      },
+      {
+        "from": "L_CORE.2",
+        "to": "C_PMIC_CORE_OUT.1",
+        "oldStraightPadDistanceMm": 6.161529899310722,
+        "newStraightPadDistanceMm": 3.7970371033873214
+      }
+    ],
+    "feedback": [
+      {
+        "from": "U_PMIC.19",
+        "to": "C_PMIC_DDR_OUT.1",
+        "oldStraightPadDistanceMm": 14.594591427534036,
+        "newStraightPadDistanceMm": 5.608838621198687
+      },
+      {
+        "from": "U_PMIC.24",
+        "to": "C_PMIC_MPU_OUT.1",
+        "oldStraightPadDistanceMm": 15.53831891151118,
+        "newStraightPadDistanceMm": 5.405011914494361
+      },
+      {
+        "from": "U_PMIC.29",
+        "to": "C_PMIC_CORE_OUT.1",
+        "oldStraightPadDistanceMm": 12.715501846158096,
+        "newStraightPadDistanceMm": 6.245547087777816
+      }
+    ],
+    "inputs": [
+      {
+        "from": "U_PMIC.21",
+        "to": "C_PMIC_DCDC1_IN.1",
+        "oldStraightPadDistanceMm": 6.273076094999169,
+        "newStraightPadDistanceMm": 0.4823950161952343
+      },
+      {
+        "from": "U_PMIC.22",
+        "to": "C_PMIC_DCDC2_IN.1",
+        "oldStraightPadDistanceMm": 8.35852909958744,
+        "newStraightPadDistanceMm": 2.644200250860361
+      },
+      {
+        "from": "U_PMIC.32",
+        "to": "C_PMIC_DCDC3_IN.1",
+        "oldStraightPadDistanceMm": 9.243428607700174,
+        "newStraightPadDistanceMm": 2.8948908787120082
+      },
+      {
+        "from": "U_PMIC.2",
+        "to": "C_PMIC_VINLDO.1",
+        "oldStraightPadDistanceMm": 2.5545305342958797,
+        "newStraightPadDistanceMm": 0.5154165799060035
+      }
+    ],
+    "support": [
+      {
+        "from": "U_PMIC.7",
+        "to": "C_PMIC_SYS.1",
+        "oldStraightPadDistanceMm": 13.242600157697503,
+        "newStraightPadDistanceMm": 3.147373774855792
+      },
+      {
+        "from": "U_PMIC.8",
+        "to": "C_PMIC_SYS.1",
+        "oldStraightPadDistanceMm": 13.600064786597526,
+        "newStraightPadDistanceMm": 2.7697758800397545
+      },
+      {
+        "from": "U_PMIC.12",
+        "to": "C_PMIC_USB.1",
+        "oldStraightPadDistanceMm": 4.539893969318006,
+        "newStraightPadDistanceMm": 2.5720890833425663
+      },
+      {
+        "from": "U_PMIC.3",
+        "to": "C_PMIC_LDO1.1",
+        "oldStraightPadDistanceMm": 7.059803967620771,
+        "newStraightPadDistanceMm": 3.4410665866341508
+      },
+      {
+        "from": "U_PMIC.1",
+        "to": "C_PMIC_LDO2.1",
+        "oldStraightPadDistanceMm": 8.92193607075471,
+        "newStraightPadDistanceMm": 2.783965023603924
+      },
+      {
+        "from": "U_PMIC.40",
+        "to": "C_PMIC_ANALOG_OUT.1",
+        "oldStraightPadDistanceMm": 8.617658960045354,
+        "newStraightPadDistanceMm": 4.276447204590511
+      },
+      {
+        "from": "U_PMIC.43",
+        "to": "C_PMIC_IO_OUT.1",
+        "oldStraightPadDistanceMm": 8.837669711900867,
+        "newStraightPadDistanceMm": 5.986145978728719
+      },
+      {
+        "from": "U_PMIC.47",
+        "to": "C_PMIC_BYPASS.1",
+        "oldStraightPadDistanceMm": 4.90942504565107,
+        "newStraightPadDistanceMm": 3.7299982759012082
+      },
+      {
+        "from": "U_PMIC.48",
+        "to": "C_PMIC_INT_LDO.1",
+        "oldStraightPadDistanceMm": 4.027263203507066,
+        "newStraightPadDistanceMm": 2.9765336380968366
+      }
+    ],
+    "topLayerInductorsAndOutputCapacitors": true,
+    "inputAndSysBypassBottomSide": true,
+    "scope": "Distances are straight-line geometric placement measurements and engineering search bounds, not manufacturer trace-length limits or power-loop signoff. Bottom input capacitors require short dedicated power and GND vias; all three Lx/inductor/output paths must remain top-side without vias. Reference planes, current capacity, effective capacitance and thermal paths remain unfinished."
+  },
+  "remaining": [
+    "Route and inspect PMIC current loops, top-only Lx/inductor/output paths, quiet feedback and thermal-pad ground vias; review remaining boost, SD regulator and backlight placement.",
+    "Dedicated bypass vias, actual short and wide copper paths, effective capacitance and continuous reference planes.",
+    "Complete four-layer native bus_lanes DDR and host routing; independent timing, connectivity, shorts and manufacturing checks.",
+    "Linux panel, pinmux, audio and shared USB-C installation/recovery implementation and validation.",
+    "Battery protection, NTC, load current, dimensions and speaker load/mating qualification.",
+    "Measured original shell outline, holes, button/port registration and assembled clearances; the 1:1 PDF permits a perimeter check only."
+  ],
+  "qualification": "Distances are geometric endpoint measurements, not routed path lengths. Placement improvements do not establish current capacity, loop inductance, stability, effective capacitance, power sequencing or thermal performance."
+}

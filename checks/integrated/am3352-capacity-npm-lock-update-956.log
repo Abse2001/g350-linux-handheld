@@ -1,0 +1,69 @@
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: @tscircuit/cli@0.1.2237
+npm error Found: circuit-json@0.0.510
+npm error node_modules/circuit-json
+npm error   peer circuit-json@"*" from @tscircuit/checks@0.0.233
+npm error   node_modules/@tscircuit/checks
+npm error     peer @tscircuit/checks@"*" from @tscircuit/core@0.0.2056
+npm error     node_modules/@tscircuit/core
+npm error       peer @tscircuit/core@">=0.0.1906" from @tscircuit/eval@0.0.1522
+npm error       node_modules/@tscircuit/eval
+npm error         @tscircuit/eval@"^0.0.1522" from tscircuit@0.0.2742
+npm error         node_modules/tscircuit
+npm error       1 more (tscircuit)
+npm error     peer @tscircuit/checks@"*" from @tscircuit/core@0.0.1974
+npm error     node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core
+npm error       @tscircuit/core@"0.0.1974" from @tscircuit/pcb-trace-linter@0.0.1
+npm error       node_modules/@tscircuit/pcb-trace-linter
+npm error         @tscircuit/pcb-trace-linter@"github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123" from @tscircuit/capacity-autorouter@0.0.953
+npm error         node_modules/tscircuit/node_modules/@tscircuit/capacity-autorouter
+npm error         1 more (@tscircuit/capacity-autorouter)
+npm error     2 more (@tscircuit/core, tscircuit)
+npm error   peer circuit-json@"*" from @tscircuit/circuit-json-util@0.0.118
+npm error   node_modules/@tscircuit/circuit-json-util
+npm error     peer @tscircuit/circuit-json-util@"*" from @tscircuit/core@0.0.2056
+npm error     node_modules/@tscircuit/core
+npm error       peer @tscircuit/core@">=0.0.1906" from @tscircuit/eval@0.0.1522
+npm error       node_modules/@tscircuit/eval
+npm error         @tscircuit/eval@"^0.0.1522" from tscircuit@0.0.2742
+npm error         node_modules/tscircuit
+npm error       1 more (tscircuit)
+npm error     peer @tscircuit/circuit-json-util@"*" from @tscircuit/core@0.0.1974
+npm error     node_modules/@tscircuit/pcb-trace-linter/node_modules/@tscircuit/core
+npm error       @tscircuit/core@"0.0.1974" from @tscircuit/pcb-trace-linter@0.0.1
+npm error       node_modules/@tscircuit/pcb-trace-linter
+npm error         @tscircuit/pcb-trace-linter@"github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123" from @tscircuit/capacity-autorouter@0.0.953
+npm error         node_modules/tscircuit/node_modules/@tscircuit/capacity-autorouter
+npm error         1 more (@tscircuit/capacity-autorouter)
+npm error     8 more (calculate-packing, @tscircuit/core, calculate-packing, ...)
+npm error   14 more (@tscircuit/core, @tscircuit/eval, ...)
+npm error
+npm error Could not resolve dependency:
+npm error peer circuit-json@"^0.0.489" from @tscircuit/cli@0.1.2237
+npm error node_modules/@tscircuit/cli
+npm error   dev @tscircuit/cli@"0.1.2237" from the root project
+npm error   @tscircuit/cli@"^0.1.2235" from tscircuit@0.0.2742
+npm error   node_modules/tscircuit
+npm error     dev tscircuit@"0.0.2742" from the root project
+npm error     2 more (@tscircuit/cli, @tscircuit/krt-wasm)
+npm error
+npm error Conflicting peer dependency: circuit-json@0.0.489
+npm error node_modules/circuit-json
+npm error   peer circuit-json@"^0.0.489" from @tscircuit/cli@0.1.2237
+npm error   node_modules/@tscircuit/cli
+npm error     dev @tscircuit/cli@"0.1.2237" from the root project
+npm error     @tscircuit/cli@"^0.1.2235" from tscircuit@0.0.2742
+npm error     node_modules/tscircuit
+npm error       dev tscircuit@"0.0.2742" from the root project
+npm error       2 more (@tscircuit/cli, @tscircuit/krt-wasm)
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /Users/abdolsalamallawlabi/.npm/_logs/2026-10-03T18_10_29_250Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /Users/abdolsalamallawlabi/.npm/_logs/2026-10-03T18_10_29_250Z-debug-0.log

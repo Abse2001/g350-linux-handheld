@@ -1,0 +1,21 @@
+{
+  "status": "DIAGNOSTIC_COMMAND_ACCESS_OPENINGS",
+  "source": {
+    "path": "routing/am3352-command-unmatched-pruned-paths.json",
+    "sha256": "0becf9c883dc04f3223ca1dbbcef983ac4958902de5a7b8760490bc284abf5bd"
+  },
+  "output": {
+    "path": "routing/am3352-command-local-access-paths.json",
+    "sha256": "e6caf83d220e0c704a9335fe2ea1fc141c25547fa79d8dfbe1360936830dbd81"
+  },
+  "temporarilyOpenSignals": [
+    "DDR_WEn",
+    "DDR_RASn",
+    "DDR_ODT"
+  ],
+  "preservedCommandChannels": 23,
+  "allOtherPathGeometryUnchanged": true,
+  "removedPhysicalSignalVias": 12,
+  "fabricationReady": false,
+  "scope": "Only this diagnostic source opens three complete command paths. Logical endpoints and all original 69 power/reference pieces remain. All three signals require complete rerouting and matching."
+}

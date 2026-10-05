@@ -1,0 +1,36 @@
+{
+  "status": "PASS_DEGENERATE_COPPER_CONTACT_AND_DISCONNECTION_CONTROL",
+  "circuit": {
+    "path": "dist/g350-ddr-power-replay-six-via-repairs/compiled.circuit.json",
+    "sha256": "f39b1621c7c78bfb807fbba0309ea94f4da4a77d9d0c598109513f0799221dce"
+  },
+  "checker": {
+    "path": "node_modules/@tscircuit/checks/dist/index.js",
+    "sha256": "50b27442a32befe1fe3f4e83fa082c6efe3e00e6af71e64869778bb68b479805"
+  },
+  "patch": {
+    "path": "scripts/patch-tscircuit-via-pad-check.mjs",
+    "sha256": "37819a2ee0c0893fcc6886de68a566c5b0b6c30e0d4d57763a44e3a80db7c92a"
+  },
+  "nativeRoutingErrorTypes": {
+    "pcb_port_not_connected_error": 829,
+    "pcb_trace_missing_error": 119
+  },
+  "zeroLengthEdgesHandled": true,
+  "removedTraceId": "saved_phase_null_0_0",
+  "newlyDisconnectedPort": "pcb_port_0",
+  "negativeControlError": {
+    "type": "pcb_port_not_connected_error",
+    "message": "Port [U_SOC.A1] is not connected to net [GND] by a PCB trace.",
+    "error_type": "pcb_port_not_connected_error",
+    "pcb_port_ids": [
+      "pcb_port_0"
+    ],
+    "pcb_component_ids": [
+      "pcb_component_0"
+    ],
+    "pcb_port_not_connected_error_id": "pcb_port_not_connected_error_trace_source_trace_49"
+  },
+  "fabricationReady": false,
+  "scope": "Direct routing-check regression on real saved copper; expected unfinished-board opens remain. A removed CPU ground trace must still fail connectivity."
+}

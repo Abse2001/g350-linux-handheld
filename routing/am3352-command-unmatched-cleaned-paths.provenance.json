@@ -1,0 +1,713 @@
+{
+  "source": {
+    "path": "dist/experiments/am3352-joint-ddr-dual-layer-command-host/circuit.json",
+    "sha256": "2b4ec479b94146e83ae3a074333044936cb4eda58c1c63ec8f11dfc2d5fb521f",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-joint-ddr-dual-layer-command-host/circuit.json"
+  },
+  "repairedRouting": {
+    "path": "dist/am3352-fine-wire-command-bridges-attempt-203/output.simple-route.json",
+    "sha256": "ae1325529352e05e6b573ff0e8328ba062a64d4d6007543ec8bf1970c41d648b"
+  },
+  "nativeRoutingBootstrap": {
+    "path": "dist/am3352-targeted-command-bootstrap-attempt-201/partial-bootstrap.simple-route.json",
+    "sha256": "6aaa29baa3223e1859ad70369c3098a82e2c432aca341f700ac722e8a61317b0",
+    "nativeChannels": 2,
+    "accepted": false,
+    "timingQualified": false
+  },
+  "nativeBootstrapRun": {
+    "path": "dist/am3352-targeted-command-bootstrap-attempt-201/result.json",
+    "sha256": "3038cb5f794bb44b82be44169c1bc8d133cffdc63dbd8a08b44e52de7cccc094"
+  },
+  "manualModification": {
+    "gridMm": 0.04,
+    "viaPlacementGridMm": 0.2,
+    "maximumNegotiationPasses": 4,
+    "wireSamplingGuardMm": 0.028384271247461904,
+    "maxNewViasPerChannel": 6,
+    "viaSearchPenaltyMm": 2,
+    "retainedNativeChannels": 2,
+    "channels": [
+      {
+        "name": "source_trace_35",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 4245562,
+        "newVias": 4,
+        "lengthMm": 28.71281671592127,
+        "overlapCost": 3.126388037344441e-13,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 18.029999749999995,
+        "coarseGridTrial": {
+          "expanded": 5464809,
+          "newVias": 2,
+          "lengthMm": 22.290075016124344,
+          "overlapCost": 204.80000305175713,
+          "startBlocked": [
+            false,
+            false
+          ],
+          "goalBlocked": [
+            false,
+            false
+          ],
+          "elapsedSeconds": 24.063136542
+        },
+        "gridMm": 0.02
+      },
+      {
+        "name": "source_trace_6",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 11965,
+        "newVias": 0,
+        "lengthMm": 11.259209229614203,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.04562241699999868,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_7",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 400511,
+        "newVias": 4,
+        "lengthMm": 50.425953800911095,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 1.3756825420000023,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_48",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 1497152,
+        "newVias": 2,
+        "lengthMm": 65.1207387772791,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 4.678332416999998,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_8",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 207304,
+        "newVias": 2,
+        "lengthMm": 23.568813844421317,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.6609619999999995,
+        "coarseGridTrial": {
+          "error": "no clearance-preserving bridge",
+          "expanded": 0,
+          "startBlocked": [
+            true,
+            true
+          ],
+          "goalBlocked": [
+            false,
+            false
+          ]
+        },
+        "gridMm": 0.02
+      },
+      {
+        "name": "source_trace_25",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 634184,
+        "newVias": 2,
+        "lengthMm": 41.57145453154054,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 2.1184849170000017,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_38",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 241474,
+        "newVias": 2,
+        "lengthMm": 40.787821048680144,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.5222107079999987,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_37",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 420882,
+        "newVias": 4,
+        "lengthMm": 43.2434141264695,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.9949680829999997,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_24",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 332673,
+        "newVias": 4,
+        "lengthMm": 51.40703027829436,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.7700658750000002,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_44",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 530716,
+        "newVias": 2,
+        "lengthMm": 30.020268375961905,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 1.4008809170000023,
+        "coarseGridTrial": {
+          "expanded": 1758501,
+          "newVias": 2,
+          "lengthMm": 30.090562748477126,
+          "overlapCost": 76.8000011444092,
+          "startBlocked": [
+            false,
+            false
+          ],
+          "goalBlocked": [
+            false,
+            false
+          ],
+          "elapsedSeconds": 4.829698250000009
+        },
+        "gridMm": 0.02
+      },
+      {
+        "name": "source_trace_45",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 4484857,
+        "newVias": 3,
+        "lengthMm": 62.73231165253307,
+        "overlapCost": 3.083755473198835e-12,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 15.167098375000002,
+        "coarseGridTrial": {
+          "expanded": 1723299,
+          "newVias": 3,
+          "lengthMm": 63.02201728001769,
+          "overlapCost": 51.20000076293903,
+          "startBlocked": [
+            false,
+            false
+          ],
+          "goalBlocked": [
+            false,
+            false
+          ],
+          "elapsedSeconds": 4.5880667499999985
+        },
+        "gridMm": 0.02
+      },
+      {
+        "name": "source_trace_22",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 171417,
+        "newVias": 2,
+        "lengthMm": 24.197442994522827,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.521101834000001,
+        "coarseGridTrial": {
+          "error": "no clearance-preserving bridge",
+          "expanded": 0,
+          "startBlocked": [
+            true,
+            true
+          ],
+          "goalBlocked": [
+            false,
+            false
+          ]
+        },
+        "gridMm": 0.02
+      },
+      {
+        "name": "source_trace_5",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 3223173,
+        "newVias": 2,
+        "lengthMm": 48.06345596729059,
+        "overlapCost": 1.9539925233402755e-12,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 5.072773375000004,
+        "coarseGridTrial": {
+          "error": "no clearance-preserving bridge",
+          "expanded": 3461969,
+          "startBlocked": [
+            false,
+            false
+          ],
+          "goalBlocked": [
+            false,
+            false
+          ]
+        },
+        "gridMm": 0.02
+      },
+      {
+        "name": "source_trace_18",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 1874121,
+        "newVias": 2,
+        "lengthMm": 56.35565942839587,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 3.654606375000003,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_20",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 26865,
+        "newVias": 2,
+        "lengthMm": 16.952245301926375,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.03347112499999639,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_9",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 464078,
+        "newVias": 6,
+        "lengthMm": 25.17713995648982,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.5759282499999973,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_0",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 1228288,
+        "newVias": 4,
+        "lengthMm": 66.5554574030407,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 1.6593316249999917,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_47",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 27379,
+        "newVias": 2,
+        "lengthMm": 13.652834046956851,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.03150012500000594,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_39",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 30976,
+        "newVias": 1,
+        "lengthMm": 16.98899853874109,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.040752542000001994,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_19",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 47073,
+        "newVias": 4,
+        "lengthMm": 13.497829714197962,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.05887020800000755,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_21",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 5016,
+        "newVias": 2,
+        "lengthMm": 12.405971131946695,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.00575291599999764,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_36",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 38691,
+        "newVias": 2,
+        "lengthMm": 13.641059146347708,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.04859554099998786,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_23",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 246018,
+        "newVias": 4,
+        "lengthMm": 15.54038671967512,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.31516129099999673,
+        "gridMm": 0.04
+      },
+      {
+        "name": "source_trace_46",
+        "pass": 0,
+        "penalty": 25.6,
+        "expanded": 92933,
+        "newVias": 4,
+        "lengthMm": 8.063919189857868,
+        "overlapCost": 0,
+        "startBlocked": [
+          false,
+          false
+        ],
+        "goalBlocked": [
+          false,
+          false
+        ],
+        "elapsedSeconds": 0.11915341699999407,
+        "gridMm": 0.04
+      }
+    ],
+    "originalCommandSkewLimitMm": 0.635,
+    "clockSkewLimitMm": 0.127,
+    "resumedUnqualifiedCandidate": {
+      "path": "dist/am3352-targeted-command-bridges-attempt-202/latest-unqualified-repair.simple-route.json",
+      "sha256": "5087954e2bb677b72153c92312b377c70cf2f8eaef3369d5ead783948b87bf28",
+      "accepted": false
+    },
+    "mode": "negotiated",
+    "negotiationRounds": [
+      {
+        "pass": 0,
+        "penalty": 25.6,
+        "conflictingChannels": 0,
+        "conflictNames": []
+      }
+    ]
+  },
+  "manualNativeEscapeCorrection": {
+    "original": {
+      "path": "dist/am3352-joint-ddr-channel-layer-selection-attempt-133/signal-escapes.native.json",
+      "sha256": "262b7d3440635c61e20f2879bf0d5d2267ceaf5ed4de3553987d0d320961ef4f"
+    },
+    "naturalFanouts": [
+      {
+        "package": "U_SOC",
+        "paths": {
+          "path": "dist/am3352-joint-command-facing-local-attempt-145/local-escapes.json",
+          "sha256": "5486a50ac610548b92a7b67f1672908c61b28aa77990c5eaf54511165e60af72"
+        },
+        "report": {
+          "path": "dist/am3352-joint-command-facing-local-attempt-145/result.json",
+          "sha256": "86dcac3190c088b00ecc26c75a96d88da48bedc1357aed8342c1844a47129af1"
+        },
+        "completedNaturalFanouts": 26
+      },
+      {
+        "package": "U_RAM",
+        "paths": {
+          "path": "dist/am3352-joint-command-first-local-attempt-135/local-escapes.json",
+          "sha256": "0f7de0abb2cb828b2336f10e4d4027dd062a3cd07a7838471a5cfad35a9e34b9"
+        },
+        "report": {
+          "path": "dist/am3352-joint-command-first-local-attempt-135/result.json",
+          "sha256": "95e4623f7aabb4ccf23b623cb6db76758ace0192957ec52fccc11ce3b2f1e810"
+        },
+        "completedNaturalFanouts": 26
+      }
+    ],
+    "modifiedCommandEscapeDescriptors": 52,
+    "otherNativeDogbonesUnchanged": 44,
+    "signalViasReserved": 106,
+    "actualSourceCopperUnchanged": true,
+    "completedSignalChannels": 0,
+    "scope": "All 52 natural CPU/RAM fanouts retained as fixed copper. Outboard alignment and native channel routing are still required; no complete DDR signal is claimed.",
+    "clockOnlyTerminalVias": {
+      "path": "dist/am3352-dual-layer-command-terminals-attempt-157/signal-escapes.native.json",
+      "sha256": "0c0d020f91414796d85f2470c14a0d0641d4277df86e5a995420860d3e8c1fc1",
+      "selectedSignals": [
+        "source_trace_33",
+        "source_trace_34"
+      ],
+      "addedFullDepthVias": 4
+    }
+  },
+  "localFanoutRun": {
+    "path": "dist/am3352-clock-via-command-terminals-attempt-183/result.json",
+    "sha256": "03b58b44b087df54238be38a7b7f268098823ac60efdf3ac1ca9e0cd65637129"
+  },
+  "manualChannelLayerAllocation": {
+    "bootstrapInput": {
+      "path": "dist/am3352-joint-ddr-breakout-attempt-132/input.simple-route.json",
+      "sha256": "4e54f4f330b6a430d1b7acbe43403f05da5b56afec6d4f6b948c4bb9fdfb9b30"
+    },
+    "nativeEscapes": {
+      "path": "dist/am3352-joint-ddr-breakout-attempt-132/signal-escapes.native.json",
+      "sha256": "262b7d3440635c61e20f2879bf0d5d2267ceaf5ed4de3553987d0d320961ef4f"
+    },
+    "nativeEscapesRetained": 96,
+    "finalLayers": {
+      "DDR_BYTE0": "bottom",
+      "DDR_BYTE1": "top",
+      "DDR_COMMAND_CLOCK": "top",
+      "DDR_RESET": "top"
+    },
+    "sourcePowerAndObstaclesUnchanged": true,
+    "newCompletedChannels": 0,
+    "scope": "Channel layers match the actual source constraints. Full-depth native dogbones remain available on both outer layers; saved paths must record every real layer change."
+  },
+  "additionalCommandTerminalVias": {
+    "source": {
+      "path": "dist/am3352-dual-layer-command-terminals-attempt-157/signal-escapes.native.json",
+      "sha256": "0c0d020f91414796d85f2470c14a0d0641d4277df86e5a995420860d3e8c1fc1"
+    },
+    "selectedSignals": [
+      "source_trace_35",
+      "source_trace_6"
+    ],
+    "packages": [
+      "U_SOC",
+      "U_RAM"
+    ],
+    "changedTraceIds": [
+      "local_dogbone_source_trace_35_0",
+      "guided_local_dogbone_source_trace_35_0",
+      "local_dogbone_source_trace_35_1",
+      "guided_local_dogbone_source_trace_35_1",
+      "local_dogbone_source_trace_6_0",
+      "guided_local_dogbone_source_trace_6_0",
+      "local_dogbone_source_trace_6_1",
+      "guided_local_dogbone_source_trace_6_1"
+    ],
+    "addedFullDepthVias": 4,
+    "accepted": false
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "paths": {
+    "path": "routing/am3352-command-unmatched-cleaned-paths.json",
+    "sha256": "ae31bd58778b636b01f8ff959f44a960dda9a726ce52197e40dab3b44067f8c7"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "signals": 26,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes bootstrap with authored channel repairs and edited package fanouts; independent planar timing/physical checks and complete host qualification required.",
+  "manualBacktrackCleanup": {
+    "original": {
+      "path": "routing/am3352-command-unmatched-paths.json",
+      "sha256": "5d0ad8649086f4f72efecab7b3c136d4f14c9336da279e4a42c417a80fb9001a"
+    },
+    "signal": "DDR_A2",
+    "removedReturnLengthMm": 0.08,
+    "removedPoints": 2,
+    "removedVias": 0,
+    "reason": "Independent KiCad flagged the 0.04 mm dangling backtrack at (-9,-18.6)."
+  }
+}

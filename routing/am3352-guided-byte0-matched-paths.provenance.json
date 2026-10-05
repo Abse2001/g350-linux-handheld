@@ -1,0 +1,53 @@
+{
+  "source": {
+    "path": "dist/experiments/am3352-centered-dq-swizzled-host/circuit.json",
+    "sha256": "bc0ddba0c5bf698440ed2e5455ce6e4dd7a4370676e4affbc0a26cf533082988",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-centered-dq-swizzled-host/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-guided-byte0-centered-channel-attempt-74/output.simple-route.json",
+    "sha256": "256e070cfd2901b2ac53207884d3559ad01c4b6735c474c211fa6ef50c6ab969"
+  },
+  "paths": {
+    "path": "routing/am3352-guided-byte0-matched-paths.json",
+    "sha256": "14590903a42346c473a6b79f8880415b4ffc65b8d70c53a1a80718bf15f6a20b"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte0-centered-swizzled-connections.json",
+    "sha256": "2de2d50d7bf55589fe68ea090d2fe36f5cb02313c7e4728bbd6ff9ff5b06aa14"
+  },
+  "signals": 11,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes channel with edited local escapes; independent planar timing/physical checks and complete host qualification required.",
+  "manualModification": {
+    "trace": "guided_local_dogbone_source_trace_15_0",
+    "addedLengthMm": 1.931370849898471,
+    "beforeFixedLengthsMm": [
+      13.985281374238571,
+      15.916652224137042
+    ],
+    "afterFixedLengthsMm": [
+      15.916652224137042,
+      15.916652224137042
+    ],
+    "tested": 20,
+    "index": 42,
+    "teeth": 2,
+    "height": 0.24,
+    "pitch": 0.48,
+    "side": -1,
+    "amplitude": 0.5297056274847701,
+    "layer": "bottom",
+    "span": 1.2727922061357853,
+    "offset": 0.27639610306789264
+  },
+  "completedNativeBusPlanarMatching": true,
+  "nativeRoutingResult": {
+    "path": "dist/am3352-guided-byte0-centered-channel-attempt-74/result.json",
+    "sha256": "ce4fcd76d262cd0ce1a8194655ba6cca86478135afc8c061eda4b470b62b3247"
+  }
+}

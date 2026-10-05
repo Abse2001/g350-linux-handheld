@@ -1,0 +1,204 @@
+(footprint "g350_X_MAIN_68bf15ec5c56940c4fee122c4385904c"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "X_MAIN"
+		(at -0.1143 -2.676527 0)
+		(layer "F.SilkS")
+		(uuid "94c2bb4f-ace2-4062-a298-e8cc647525c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "X_MAIN"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d64e1d66-44e0-4150-84fb-a5c0e5635ef0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e9ca7424-7b0a-439c-b57c-96e9e81e612d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13cf7609-cf49-449e-bde1-4280adfa726a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C7420736"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c179c9a-1faf-1aba-1346-98da06de16fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "SX32Y024000BC1T001"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10aaf000-554f-f6c1-44b5-227e2145c443")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.257196 0.249885)
+		(end -2.257196 1.907083)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "717c820c-abb4-4cff-a778-0757b556bb56")
+	)
+	(fp_line
+		(start -2.257196 1.907083)
+		(end -0.399999 1.907083)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fb3aff0c-bbf9-4809-8f26-e754530b38d8")
+	)
+	(fp_line
+		(start -2.028596 -1.678737)
+		(end 2.028596 -1.678737)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1e40aaac-945a-40a5-b05b-2cb1b5ebd3da")
+	)
+	(fp_line
+		(start -2.028596 1.678483)
+		(end -2.028596 -1.678737)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cbc2bdee-c86c-47a4-85d8-d2f05c046d87")
+	)
+	(fp_line
+		(start 2.028596 -1.678737)
+		(end 2.028596 1.678483)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e3fd83b3-d661-421e-96ab-2ed2eb9bf21d")
+	)
+	(fp_line
+		(start 2.028596 1.678483)
+		(end -2.028596 1.678483)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f1aeea1d-9093-4b0a-b98c-51e0bb5eb19f")
+	)
+	(fp_poly
+		(pts
+			(xy -2.5106 -1.926527) (xy 2.282 -1.926527) (xy 2.282 2.154873) (xy -2.5106 2.154873) (xy -2.5106 -1.926527)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5889eae0-51ea-7c7f-4b4b-0e1e44ab9fbd")
+	)
+	(fp_line
+		(start -1.100074 -0.850011)
+		(end 1.100074 0.850011)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b177c86b-c1ee-4a84-a518-a958415457cc")
+	)
+	(pad "1" smd rect
+		(at -1.100074 0.850011)
+		(size 1.399997 1.199998)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "25f9fb1e-6f4d-8502-0495-052266237abe")
+	)
+	(pad "2" smd rect
+		(at 1.100074 0.850011)
+		(size 1.399997 1.199998)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "69ddca20-0b95-c5ff-52b2-3e224f05bdbd")
+	)
+	(pad "3" smd rect
+		(at 1.100074 -0.850011)
+		(size 1.399997 1.199998)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "5aa72bea-1011-53f6-7ac9-d3d61a7dac4a")
+	)
+	(pad "4" smd rect
+		(at -1.100074 -0.850011)
+		(size 1.399997 1.199998)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "5f64ada0-4bbc-29a1-3813-a5a2246b21a3")
+	)
+	(embedded_fonts no)
+	(model "https://modelcdn.tscircuit.com/easyeda_models/assets/C7420736.step?uuid=02485e56ba8d4732a26526d2983fc729&cachebust_origin="
+		(offset
+			(xyz 0 0.0000127000000703 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

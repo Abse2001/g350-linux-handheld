@@ -1,0 +1,2043 @@
+{
+  "status": "DDR33_CSN0_NOMINAL_COPPER_REPAIR_CHECKED_COORDINATED_REPLANS_INCOMPLETE_D12_CLASS_SPACING_FAIL",
+  "trials": [
+    {
+      "path": "dist/am3352-ddr33-remaining-native-top-bootstrap-attempt-689/result.json",
+      "sha256": "4307716c8df14e44dc413967ab4c8d98542443797c591ee7523fd93a251812d0",
+      "attempt": 689,
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 1.4323591249999996,
+      "failureCode": "no_planar_route",
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_22",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_37",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_35",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_38",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_36",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_25",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_39",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_23",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_45",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_9",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_47",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_6",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_44",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_18",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [],
+        "phase": "failed",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 0,
+        "totalLanes": 16,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 0,
+        "expandedVertices": 0,
+        "frontier": 0,
+        "failureCode": "no_planar_route",
+        "layerAttempt": 3,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-ba2-native-top-attempt-690/result.json",
+      "sha256": "5cc626e6a17f6d312110799dd1c008e9046bddc8b82afc14983585493c99a074",
+      "attempt": 690,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 45.399074332999994,
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": 0.635,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [],
+        "phase": "route",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 0,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 11608,
+        "expandedVertices": 73,
+        "frontier": 236,
+        "failureCode": null,
+        "layerAttempt": 1,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-ba2-native-bottom-attempt-691/result.json",
+      "sha256": "35eb746a1dfa0bec80fcae5c17bd3254e0761b69f0337845da4b055be2a0a101",
+      "attempt": 691,
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 0.1893271249999998,
+      "failureCode": "local_dogbone_failed",
+      "terminalNativeStats": {},
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-csn0-nominal-shortcut-attempt-692/result.json",
+      "sha256": "59fda9f37f4a3024be7f64ddba5f85b74993b7b798dd259bc47c6b09b50402e7",
+      "attempt": 692,
+      "status": "PRE_SEARCH_HELPER_SYNTAX_REJECTED_NOT_A_ROUTING_FAILURE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-csn0-nominal-shortcut-attempt-693/result.json",
+      "sha256": "963905dbcee97f6e666156999319583fdaa00407401f5a4be36d065a8bc7d9cc",
+      "attempt": 693,
+      "status": "COMMAND_NOMINAL_WIRE_SHORTCUT_FOUND_INDEPENDENT_REPLAY_CHECKS_REQUIRED",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "csnPlanarMm": 44.25082416146048,
+      "shortcuts": 2,
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-ba2-actual-pad-plan-attempt-694/result.json",
+      "sha256": "2c711543076b122bd7aa478301fcfb27bf1123c99b71486c923a32a031b7a2e6",
+      "attempt": 694,
+      "status": "COMMAND_ACTUAL_PAD_HANDOFF_PLAN_FAILED",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-csn0-nominal-target-shortcut-attempt-695/result.json",
+      "sha256": "43c6de84ec8f493ff7b8f9653e7d5b3e3889c62297462e9c8482c3424cb3cb9b",
+      "attempt": 695,
+      "status": "COMMAND_NOMINAL_WIRE_SHORTCUT_FOUND_INDEPENDENT_REPLAY_CHECKS_REQUIRED",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "csnPlanarMm": 43.66277078344939,
+      "shortcuts": 7,
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-a9-native-top-attempt-696/result.json",
+      "sha256": "f3d701007dfe0d37a2d1b75fe66c5c476d898f88de1aac545809c2713ee2ea0f",
+      "attempt": 696,
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 20.92618075,
+      "failureCode": "no_planar_route",
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_COMMAND_CLOCK",
+            "toleranceMm": 0.635,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [],
+        "phase": "failed",
+        "algorithm": "octilinear_visibility",
+        "attempt": 1,
+        "lane": 0,
+        "totalLanes": 1,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 11606,
+        "expandedVertices": 10,
+        "frontier": 0,
+        "failureCode": "no_planar_route",
+        "layerAttempt": 3,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-command-coordinated-top-bootstrap-attempt-697/result.json",
+      "sha256": "63a15e158f731d562c3606d620e83d19013dad3f5a5f0df47d2f85db879708ef",
+      "attempt": 697,
+      "status": "COORDINATED_COMMAND_NATIVE_FAILED_NONEXPORTABLE_STAGE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 1.601519417,
+      "failureCode": "no_planar_route",
+      "openedCopper": {
+        "path": "dist/am3352-ddr33-command-coordinated-top-bootstrap-attempt-697/explicit-opened-command-copper.json",
+        "sha256": "d5dfdf932be6b1e3b97d12ba1f51e35b6cab675598c8887a7427ead1e1f3f2bd"
+      },
+      "openedTracePieces": 10,
+      "openedThroughVias": 28,
+      "exportable": false,
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_ADDR_CTRL",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_0",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_6",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_7",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_8",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_9",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_18",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_20",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_22",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_23",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_25",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_35",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_36",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_37",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_38",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_39",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_44",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_45",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_46",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_47",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_48",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_CK",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_33",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_34",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [],
+        "phase": "failed",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 0,
+        "totalLanes": 26,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 0,
+        "expandedVertices": 0,
+        "frontier": 0,
+        "failureCode": "no_planar_route",
+        "layerAttempt": 3,
+        "dogbones": 0,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-command-coordinated-bottom-bootstrap-attempt-698/result.json",
+      "sha256": "13ec94456551266429904e1ecd30c694fd2242c0b66bcc30bec56138f3cc677f",
+      "attempt": 698,
+      "status": "COORDINATED_COMMAND_NATIVE_FAILED_NONEXPORTABLE_STAGE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 2.6520962080000006,
+      "failureCode": "local_dogbone_failed",
+      "openedCopper": {
+        "path": "dist/am3352-ddr33-command-coordinated-bottom-bootstrap-attempt-698/explicit-opened-command-copper.json",
+        "sha256": "d5dfdf932be6b1e3b97d12ba1f51e35b6cab675598c8887a7427ead1e1f3f2bd"
+      },
+      "openedTracePieces": 10,
+      "openedThroughVias": 28,
+      "exportable": false,
+      "terminalNativeStats": {},
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-command-coordinated-both-bootstrap-attempt-699/result.json",
+      "sha256": "137dda1d212f04f12f8ae7565945ad9132d6c67242de2f3bc35be3ab1821f19b",
+      "attempt": 699,
+      "status": "COORDINATED_COMMAND_NATIVE_FAILED_NONEXPORTABLE_STAGE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 8.612926958,
+      "failureCode": "no_planar_route",
+      "openedCopper": {
+        "path": "dist/am3352-ddr33-command-coordinated-both-bootstrap-attempt-699/explicit-opened-command-copper.json",
+        "sha256": "d5dfdf932be6b1e3b97d12ba1f51e35b6cab675598c8887a7427ead1e1f3f2bd"
+      },
+      "openedTracePieces": 10,
+      "openedThroughVias": 28,
+      "exportable": false,
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_ADDR_CTRL",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_0",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_6",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_7",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_8",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_9",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_18",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_20",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_22",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_23",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_25",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_35",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_36",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_37",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_38",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_39",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_44",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_45",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_46",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_47",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_48",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_CK",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_33",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_34",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984767,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [],
+        "phase": "failed",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 0,
+        "totalLanes": 26,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 0,
+        "expandedVertices": 0,
+        "frontier": 0,
+        "failureCode": "no_planar_route",
+        "layerAttempt": 3,
+        "dogbones": 4,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-all-ddr-coordinated-both-bootstrap-attempt-700/result.json",
+      "sha256": "9afb1200921311084428114757df68e59c77288ae5390768fe78e954e410054e",
+      "attempt": 700,
+      "status": "COORDINATED_COMMAND_NATIVE_TIMEOUT_NONEXPORTABLE_STAGE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 45.023180083,
+      "openedCopper": {
+        "path": "dist/am3352-ddr33-all-ddr-coordinated-both-bootstrap-attempt-700/explicit-opened-command-copper.json",
+        "sha256": "4fd442015fe9662dee65f5312d1a70cc5286914383e9e0cbd71e68b5ae8dbee6"
+      },
+      "openedTracePieces": 33,
+      "openedThroughVias": 80,
+      "exportable": false,
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_ADDR_CTRL",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_0",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_6",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_7",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_8",
+                "carrierLengthMm": 31.480349949019736,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 31.480349949019736
+              },
+              {
+                "name": "source_trace_9",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_18",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_20",
+                "carrierLengthMm": 27.071121724940706,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 27.071121724940706
+              },
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": 28.487260944023745,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 28.487260944023745
+              },
+              {
+                "name": "source_trace_22",
+                "carrierLengthMm": 39.42219067097614,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 39.42219067097614
+              },
+              {
+                "name": "source_trace_23",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_25",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_35",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_36",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_37",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_38",
+                "carrierLengthMm": 42.996702552063745,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 42.996702552063745
+              },
+              {
+                "name": "source_trace_39",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_44",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_45",
+                "carrierLengthMm": 39.01224477689351,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 39.01224477689351
+              },
+              {
+                "name": "source_trace_46",
+                "carrierLengthMm": 42.863930548463486,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 42.863930548463486
+              },
+              {
+                "name": "source_trace_47",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_48",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_CK",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_33",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_34",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898478,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_BYTE0",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_3",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984782,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_4",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984743,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_14",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_15",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898476,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_16",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984778,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_17",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984743,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_30",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898478,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_31",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_32",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984745,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_42",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_43",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984767,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_BYTE1",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_1",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_2",
+                "carrierLengthMm": 14.772871916945075,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 14.772871916945075
+              },
+              {
+                "name": "source_trace_11",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_12",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_13",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_26",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_27",
+                "carrierLengthMm": 16.92083751316396,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 16.92083751316396
+              },
+              {
+                "name": "source_trace_28",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_29",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_40",
+                "carrierLengthMm": 20.165744611235862,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 20.165744611235862
+              },
+              {
+                "name": "source_trace_41",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_RESET",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_10",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_2",
+            "length": 14.772871916945075
+          },
+          {
+            "name": "source_trace_45",
+            "length": 39.01224477689351
+          },
+          {
+            "name": "source_trace_38",
+            "length": 42.996702552063745
+          },
+          {
+            "name": "source_trace_46",
+            "length": 42.863930548463486
+          },
+          {
+            "name": "source_trace_27",
+            "length": 16.92083751316396
+          },
+          {
+            "name": "source_trace_40",
+            "length": 20.165744611235862
+          },
+          {
+            "name": "source_trace_20",
+            "length": 27.071121724940706
+          },
+          {
+            "name": "source_trace_21",
+            "length": 28.487260944023745
+          },
+          {
+            "name": "source_trace_8",
+            "length": 31.480349949019736
+          },
+          {
+            "name": "source_trace_22",
+            "length": 39.42219067097614
+          }
+        ],
+        "phase": "route",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 10,
+        "totalLanes": 49,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 0,
+        "expandedVertices": 0,
+        "frontier": 0,
+        "failureCode": null,
+        "layerAttempt": 1,
+        "dogbones": 26,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-all-ddr-coordinated-both-extended-bootstrap-attempt-701/result.json",
+      "sha256": "fb61d37a8200e8ffd0c7cdaccbc984e59e6cae58449755415951f7fbb6a586c3",
+      "attempt": 701,
+      "status": "COORDINATED_COMMAND_NATIVE_TIMEOUT_NONEXPORTABLE_STAGE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "3586d0bda894376291f99bd17612868a3b79334d319eed66a36c3f4fbb22ef1e"
+      },
+      "elapsedSeconds": 180.011036542,
+      "openedCopper": {
+        "path": "dist/am3352-ddr33-all-ddr-coordinated-both-extended-bootstrap-attempt-701/explicit-opened-command-copper.json",
+        "sha256": "4fd442015fe9662dee65f5312d1a70cc5286914383e9e0cbd71e68b5ae8dbee6"
+      },
+      "openedTracePieces": 33,
+      "openedThroughVias": 80,
+      "exportable": false,
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_ADDR_CTRL",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_0",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_6",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_7",
+                "carrierLengthMm": 42.754508632356185,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 42.754508632356185
+              },
+              {
+                "name": "source_trace_8",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_9",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_18",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_20",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_22",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_23",
+                "carrierLengthMm": 45.784326126498534,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 45.784326126498534
+              },
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_25",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_35",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_36",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_37",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_38",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_39",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_44",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_45",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_46",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_47",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_48",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_CK",
+            "toleranceMm": null,
+            "skewMm": 4.349366056679237,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_33",
+                "carrierLengthMm": 30.425648500515297,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": 31.55701935041377
+              },
+              {
+                "name": "source_trace_34",
+                "carrierLengthMm": 26.076282443836057,
+                "fixedLengthMm": 1.131370849898478,
+                "totalLengthMm": 27.207653293734534
+              }
+            ]
+          },
+          {
+            "busId": "DDR_BYTE0",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_3",
+                "carrierLengthMm": 21.846602817131053,
+                "fixedLengthMm": 1.1313708498984782,
+                "totalLengthMm": 22.97797366702953
+              },
+              {
+                "name": "source_trace_4",
+                "carrierLengthMm": 30.65632754781853,
+                "fixedLengthMm": 1.1313708498984743,
+                "totalLengthMm": 31.787698397717005
+              },
+              {
+                "name": "source_trace_14",
+                "carrierLengthMm": 23.128777360915915,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": 24.26014821081439
+              },
+              {
+                "name": "source_trace_15",
+                "carrierLengthMm": 20.241155172963975,
+                "fixedLengthMm": 1.131370849898476,
+                "totalLengthMm": 21.372526022862452
+              },
+              {
+                "name": "source_trace_16",
+                "carrierLengthMm": 22.737532341037756,
+                "fixedLengthMm": 1.1313708498984778,
+                "totalLengthMm": 23.868903190936233
+              },
+              {
+                "name": "source_trace_17",
+                "carrierLengthMm": 22.91776804209566,
+                "fixedLengthMm": 1.1313708498984743,
+                "totalLengthMm": 24.049138891994133
+              },
+              {
+                "name": "source_trace_30",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898478,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_31",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_32",
+                "carrierLengthMm": 31.54018971521833,
+                "fixedLengthMm": 1.1313708498984745,
+                "totalLengthMm": 32.671560565116806
+              },
+              {
+                "name": "source_trace_42",
+                "carrierLengthMm": 23.91579450843755,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": 25.047165358336024
+              },
+              {
+                "name": "source_trace_43",
+                "carrierLengthMm": 29.69482379191053,
+                "fixedLengthMm": 1.1313708498984767,
+                "totalLengthMm": 30.826194641809007
+              }
+            ]
+          },
+          {
+            "busId": "DDR_BYTE1",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_1",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_2",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_11",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_12",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_13",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_26",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_27",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_28",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_29",
+                "carrierLengthMm": 28.350708528720116,
+                "fixedLengthMm": 0,
+                "totalLengthMm": 28.350708528720116
+              },
+              {
+                "name": "source_trace_40",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_41",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_RESET",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_10",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_34",
+            "length": 26.076282443836057
+          },
+          {
+            "name": "source_trace_33",
+            "length": 30.425648500515297
+          },
+          {
+            "name": "source_trace_14",
+            "length": 23.128777360915915
+          },
+          {
+            "name": "source_trace_42",
+            "length": 23.91579450843755
+          },
+          {
+            "name": "source_trace_17",
+            "length": 22.91776804209566
+          },
+          {
+            "name": "source_trace_29",
+            "length": 28.350708528720116
+          },
+          {
+            "name": "source_trace_7",
+            "length": 42.754508632356185
+          },
+          {
+            "name": "source_trace_23",
+            "length": 45.784326126498534
+          },
+          {
+            "name": "source_trace_4",
+            "length": 30.65632754781853
+          },
+          {
+            "name": "source_trace_16",
+            "length": 22.737532341037756
+          },
+          {
+            "name": "source_trace_43",
+            "length": 29.69482379191053
+          },
+          {
+            "name": "source_trace_32",
+            "length": 31.54018971521833
+          },
+          {
+            "name": "source_trace_3",
+            "length": 21.846602817131053
+          },
+          {
+            "name": "source_trace_15",
+            "length": 20.241155172963975
+          }
+        ],
+        "phase": "route",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 14,
+        "totalLanes": 49,
+        "congestionPass": 1480,
+        "conflictingLanes": 35,
+        "vertices": 0,
+        "expandedVertices": 0,
+        "frontier": 0,
+        "failureCode": null,
+        "layerAttempt": 1,
+        "dogbones": 26,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    },
+    {
+      "path": "dist/am3352-ddr33-all-ddr-coordinated-bottom-bootstrap-attempt-702/result.json",
+      "sha256": "3e9c2fc58fa9573382b091ee489d7cb78c8014ccfbb25af11fda7a9803231cc6",
+      "attempt": 702,
+      "status": "COORDINATED_COMMAND_NATIVE_TIMEOUT_NONEXPORTABLE_STAGE",
+      "source": {
+        "path": "dist/diagnostics/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-candidate/circuit.json",
+        "sha256": "5c8aeb2a452df32905653abb4f747d47893af667d90949df230eea4e140f5f07"
+      },
+      "elapsedSeconds": 45.01721575,
+      "openedCopper": {
+        "path": "dist/am3352-ddr33-all-ddr-coordinated-bottom-bootstrap-attempt-702/explicit-opened-command-copper.json",
+        "sha256": "25e4ac7d7271cc1021195e359e7db93336d62de2d6675e0a1686cf2536a459fb"
+      },
+      "openedTracePieces": 33,
+      "openedThroughVias": 80,
+      "exportable": false,
+      "terminalNativeStats": {
+        "busLengths": [
+          {
+            "busId": "DDR_ADDR_CTRL",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_0",
+                "carrierLengthMm": 21.912473937198616,
+                "fixedLengthMm": 1.1313708498984774,
+                "totalLengthMm": 23.043844787097093
+              },
+              {
+                "name": "source_trace_5",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984754,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_6",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984778,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_7",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_8",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_9",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984774,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_18",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984756,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_19",
+                "carrierLengthMm": 25.16960796207278,
+                "fixedLengthMm": 1.1313708498984774,
+                "totalLengthMm": 26.30097881197126
+              },
+              {
+                "name": "source_trace_20",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984756,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_21",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984782,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_22",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984756,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_23",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_24",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984767,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_25",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984754,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_35",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984756,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_36",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984754,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_37",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_38",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984782,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_39",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_44",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984745,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_45",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_46",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898477,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_47",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_48",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898478,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_CK",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_33",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_34",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898477,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_BYTE0",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_3",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984767,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_4",
+                "carrierLengthMm": 20.804877224993604,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": 21.936248074892077
+              },
+              {
+                "name": "source_trace_14",
+                "carrierLengthMm": 23.434157940827884,
+                "fixedLengthMm": 1.131370849898475,
+                "totalLengthMm": 24.565528790726358
+              },
+              {
+                "name": "source_trace_15",
+                "carrierLengthMm": 20.99102524296585,
+                "fixedLengthMm": 1.1313708498984743,
+                "totalLengthMm": 22.122396092864324
+              },
+              {
+                "name": "source_trace_16",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984774,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_17",
+                "carrierLengthMm": 24.850098467391263,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": 25.981469317289736
+              },
+              {
+                "name": "source_trace_30",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984778,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_31",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_32",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.1313708498984751,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_42",
+                "carrierLengthMm": 23.41778351088265,
+                "fixedLengthMm": 1.1313708498984747,
+                "totalLengthMm": 24.549154360781124
+              },
+              {
+                "name": "source_trace_43",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 1.131370849898477,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_BYTE1",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_1",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_2",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_11",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_12",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_13",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_26",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_27",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_28",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_29",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_40",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              },
+              {
+                "name": "source_trace_41",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          },
+          {
+            "busId": "DDR_RESET",
+            "toleranceMm": null,
+            "skewMm": null,
+            "matched": false,
+            "lengths": [
+              {
+                "name": "source_trace_10",
+                "carrierLengthMm": null,
+                "fixedLengthMm": 0,
+                "totalLengthMm": null
+              }
+            ]
+          }
+        ],
+        "pairLengths": [],
+        "traceLengthsMm": [
+          {
+            "name": "source_trace_15",
+            "length": 20.99102524296585
+          },
+          {
+            "name": "source_trace_4",
+            "length": 20.804877224993604
+          },
+          {
+            "name": "source_trace_17",
+            "length": 24.850098467391263
+          },
+          {
+            "name": "source_trace_14",
+            "length": 23.434157940827884
+          },
+          {
+            "name": "source_trace_42",
+            "length": 23.41778351088265
+          },
+          {
+            "name": "source_trace_0",
+            "length": 21.912473937198616
+          },
+          {
+            "name": "source_trace_19",
+            "length": 25.16960796207278
+          }
+        ],
+        "phase": "route",
+        "algorithm": "octilinear_visibility",
+        "attempt": 0,
+        "lane": 7,
+        "totalLanes": 49,
+        "congestionPass": 0,
+        "conflictingLanes": 0,
+        "vertices": 0,
+        "expandedVertices": 0,
+        "frontier": 0,
+        "failureCode": null,
+        "layerAttempt": 2,
+        "dogbones": 74,
+        "routingStage": "all_signals"
+      },
+      "newQualifiedSignals": 0,
+      "fabricationReady": false
+    }
+  ],
+  "currentCopperEvidence": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-check-summary.json",
+    "sha256": "e7a7baca61666644dab08f344aadbdf342f24be52a530e357779e2e11bfe0e98"
+  },
+  "currentCopperSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-candidate/circuit.json",
+    "sha256": "5c8aeb2a452df32905653abb4f747d47893af667d90949df230eea4e140f5f07"
+  },
+  "csnPlanarMm": 43.66277078344939,
+  "csnNominalLengthPass": true,
+  "casnNominalLengthPass": true,
+  "holesAddedByCsnRepair": 0,
+  "connectedDdrSignals": 33,
+  "remainingDdrSignals": 16,
+  "pendingNominalRepairSignals": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_CKE",
+    "DDR_A3",
+    "DDR_A6"
+  ],
+  "spacingAudit": {
+    "path": "checks/integrated/am3352-ddr33-casn-csn0-class-spacing.json",
+    "sha256": "890636ce4c6b967dcaa3187b671b54acd3347be458282949460ef1b3f46788d7"
+  },
+  "pendingSpacingRepairSignals": [
+    "DDR_D12"
+  ],
+  "defaultDdrSignals": 30,
+  "defaultChanged": false,
+  "activeSolverHandles": [],
+  "copperLayers": 4,
+  "allOpenedReplanStagesNonexportable": true,
+  "newQualifiedDdrSignals": 0,
+  "bothByteRelativePlanarTimingPass": true,
+  "independentPhysicalDrcViolations": 0,
+  "gerberShortsAllLayers": 0,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "nextAction": "Repair D12 class spacing; design coordinated command and byte fanouts with clear escape corridors. Restore all opened nets before replay and independent checks, then finish nominal lengths, stackup/pair/return/termination qualification, power, storage, display, controls, audio and Linux with measured original G350 shell integration."
+}

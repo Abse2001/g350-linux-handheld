@@ -1,0 +1,67 @@
+{
+  "status": "GUIDED_REPLAY_SOURCE_GEOMETRY_PASS_HOST_INCOMPLETE",
+  "circuit": {
+    "path": "dist/experiments/am3352-command-unmatched-cleaned-replay/circuit.json",
+    "sha256": "0f1b547a79a93d92bd67ae396ffa3b2266b1422f7a3d6d2b80be905ac8fcfea7"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "ddrSignalTraces": 26,
+  "ddrThroughVias": 130,
+  "physicalThroughVias": 199,
+  "existingPowerCopper": {
+    "manualBypassLoops": 15,
+    "ramBypassLoops": 14,
+    "packageReferenceEscapes": 39,
+    "ramReferenceEscapeCounts": {
+      "DDR_1V5": 18,
+      "GND": 21
+    },
+    "traces": 69,
+    "throughVias": 69,
+    "minimumDrillEdgeClearanceMm": 0.44600000000000284,
+    "generatedReferenceRegions": 2,
+    "completePowerRouting": false,
+    "savedDdrNames": [
+      "DDR_A0",
+      "DDR_A1",
+      "DDR_A10",
+      "DDR_A11",
+      "DDR_A12",
+      "DDR_A13",
+      "DDR_A14",
+      "DDR_A2",
+      "DDR_A3",
+      "DDR_A4",
+      "DDR_A5",
+      "DDR_A6",
+      "DDR_A7",
+      "DDR_A8",
+      "DDR_A9",
+      "DDR_BA0",
+      "DDR_BA1",
+      "DDR_BA2",
+      "DDR_CASn",
+      "DDR_CK",
+      "DDR_CKE",
+      "DDR_CKn",
+      "DDR_CSn0",
+      "DDR_ODT",
+      "DDR_RASn",
+      "DDR_WEn"
+    ],
+    "totalSourceTraces": 95
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false
+}

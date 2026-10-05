@@ -1,0 +1,26 @@
+{
+  "status": "MANUAL_NATIVE_BOOTSTRAP_CORRIDOR_REPAIR_REQUIRES_CHECKS",
+  "nativeCpuDogbonesAndViaSitesRetained": true,
+  "nativeRamDogbonesAndViaSitesRetained": true,
+  "fixedPowerCopperUnchanged": true,
+  "ramCorridorShiftMm": 1.7,
+  "lengthsMm": [
+    19.086260839907585,
+    19.086260839907585
+  ],
+  "planarSkewMm": 0,
+  "matchedExcursionOffsetMm": 0.6216217746455199,
+  "artifacts": [
+    {
+      "path": "lib/am3352/placement/ddr-dqs0-native-paths.json",
+      "sha256": "ae762967385041e035be2251505b2994045a0e8aa066036e4d812a07ae60eb2b"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-dqs0-repaired-paths.json",
+      "sha256": "bbfed7315979776d7a46a58836b770ae176e77b2c99a3fd1e0af0a6a137dd183"
+    }
+  ],
+  "qualifiedDdrSignals": 0,
+  "fabricationReady": false,
+  "reason": "Native fixed fanout traces describe top-to-plane connectivity, but their actual drills span all four layers. The bootstrap pair crossed three full-depth RAM power vias. Move the pair past these rows and approach the RAM signal vias through separate row gaps."
+}

@@ -1,0 +1,661 @@
+{
+  "status": "COMMAND_REPLAY_PARTIAL_NOMINAL_AND_SPACING_REVIEW_DDR_UNQUALIFIED",
+  "source": {
+    "path": "dist/diagnostics/am3352-command-clock-seeded-775-replay-candidate/circuit.json",
+    "sha256": "ce58f741c3a35dbdae4693fc0aa7c6214c0d7c464a29741da27d6c423fbe06a2"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-command-clock-seeded-775-replay-source-validation.json",
+    "sha256": "a2ce7257732affdc0a13cd499df076f1c7d6486d373c82cd6b96ca87a3663c16"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-command-clock-seeded-775-replay-ddr-connectivity.json",
+    "sha256": "19b8f6f38f0abca2148f2b10b636d6a5a958e538d238480dbb6b4c166a759a57"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "executionHelper": {
+    "path": "scripts/check-am3352-command-replay-electrical.mjs",
+    "sha256": "fc3019883e38853ddb21f88b9c582adb17807c1b5b397df7bd133e507f6a1206"
+  },
+  "geometryHelper": {
+    "path": "scripts/lib/am3352-ddr-spacing-geometry.mjs",
+    "sha256": "89fb9fc6585291859c78ec8d806e813801ec00581699a8798061c08558e7c6d6"
+  },
+  "primarySource": "https://www.ti.com/lit/ds/sprs717l/sprs717l.pdf",
+  "revision": "SPRS717L",
+  "reviewedAt": "2026-10-04",
+  "sections": [
+    "7.7.2.3.6.1",
+    "Tables 7-61/62/68/69"
+  ],
+  "commandClock": {
+    "longestManhattanMm": 35.400000000000006,
+    "additionalRoutingAllowanceMm": 7.62,
+    "nominalMm": 43.02,
+    "rangeMm": [
+      41.75,
+      44.290000000000006
+    ],
+    "allClassSignalsConnected": false,
+    "nominalLengthPass": false,
+    "rows": [
+      {
+        "name": "DDR_ODT",
+        "manhattanMm": 22.599999999999998,
+        "planarMm": 26.035432893255077,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_CSn0",
+        "manhattanMm": 24.2,
+        "planarMm": 28.532489168102785,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_BA0",
+        "manhattanMm": 28.2,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A3",
+        "manhattanMm": 28.200000000000003,
+        "planarMm": 32.22739248818401,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A5",
+        "manhattanMm": 28.2,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A7",
+        "manhattanMm": 27.400000000000002,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_RASn",
+        "manhattanMm": 23.4,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_CASn",
+        "manhattanMm": 22.599999999999998,
+        "planarMm": 22.26156420973604,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_WEn",
+        "manhattanMm": 27.4,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_BA2",
+        "manhattanMm": 29,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A0",
+        "manhattanMm": 26.6,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A2",
+        "manhattanMm": 29,
+        "planarMm": 40.005769106591394,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A9",
+        "manhattanMm": 29.000000000000004,
+        "planarMm": 44.684246737676396,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A13",
+        "manhattanMm": 28.2,
+        "planarMm": 45.71620633260534,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_CK",
+        "manhattanMm": 27.4,
+        "planarMm": 34.49909962830806,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_CKn",
+        "manhattanMm": 27.4,
+        "planarMm": 34.42248328065238,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A10",
+        "manhattanMm": 29,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A12",
+        "manhattanMm": 30.6,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A1",
+        "manhattanMm": 27.4,
+        "planarMm": 35.22400287150001,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A11",
+        "manhattanMm": 30.6,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A14",
+        "manhattanMm": 31.400000000000002,
+        "planarMm": 44.28542422773731,
+        "connected": true,
+        "withinNominalRange": true
+      },
+      {
+        "name": "DDR_BA1",
+        "manhattanMm": 29.8,
+        "planarMm": 45.207577182503854,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A4",
+        "manhattanMm": 33,
+        "planarMm": 33.53866232540481,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A6",
+        "manhattanMm": 35.400000000000006,
+        "planarMm": 40.89297690045562,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_A8",
+        "manhattanMm": 35.400000000000006,
+        "planarMm": 46.61630734528299,
+        "connected": true,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_CKE",
+        "manhattanMm": 28.2,
+        "planarMm": null,
+        "connected": false,
+        "withinNominalRange": false
+      }
+    ]
+  },
+  "byteNominalReferences": [
+    {
+      "name": "DDR_BYTE0",
+      "longestManhattanMm": 26.599999999999998,
+      "rows": [
+        {
+          "name": "DDR_D2",
+          "manhattanMm": 21.799999999999997,
+          "planarMm": 30.727783540224546
+        },
+        {
+          "name": "DDR_D6",
+          "manhattanMm": 21,
+          "planarMm": 30.7277835402313
+        },
+        {
+          "name": "DDR_D0",
+          "manhattanMm": 24.200000000000003,
+          "planarMm": 30.727783540320264
+        },
+        {
+          "name": "DDR_DQS0",
+          "manhattanMm": 23.4,
+          "planarMm": 30.727783540546866
+        },
+        {
+          "name": "DDR_DQSn0",
+          "manhattanMm": 25,
+          "planarMm": 30.727783540546877
+        },
+        {
+          "name": "DDR_D4",
+          "manhattanMm": 21,
+          "planarMm": 30.72778354052423
+        },
+        {
+          "name": "DDR_DQM0",
+          "manhattanMm": 18.599999999999998,
+          "planarMm": 30.727783540455054
+        },
+        {
+          "name": "DDR_D1",
+          "manhattanMm": 22.6,
+          "planarMm": 30.7277835406695
+        },
+        {
+          "name": "DDR_D7",
+          "manhattanMm": 24.200000000000003,
+          "planarMm": 30.570362432353047
+        },
+        {
+          "name": "DDR_D3",
+          "manhattanMm": 25,
+          "planarMm": 30.72778354054686
+        },
+        {
+          "name": "DDR_D5",
+          "manhattanMm": 26.599999999999998,
+          "planarMm": 30.727783540626
+        }
+      ]
+    },
+    {
+      "name": "DDR_BYTE1",
+      "longestManhattanMm": 21,
+      "rows": [
+        {
+          "name": "DDR_D8",
+          "manhattanMm": 18.6,
+          "planarMm": 50.53587956533585
+        },
+        {
+          "name": "DDR_D9",
+          "manhattanMm": 15.399999999999999,
+          "planarMm": 50.535879564900114
+        },
+        {
+          "name": "DDR_D10",
+          "manhattanMm": 18.6,
+          "planarMm": 50.53587956337854
+        },
+        {
+          "name": "DDR_D11",
+          "manhattanMm": 18.6,
+          "planarMm": 50.53587956490522
+        },
+        {
+          "name": "DDR_DQM1",
+          "manhattanMm": 18.599999999999998,
+          "planarMm": 50.53587956482551
+        },
+        {
+          "name": "DDR_D12",
+          "manhattanMm": 20.2,
+          "planarMm": 50.983197059653314
+        },
+        {
+          "name": "DDR_DQSn1",
+          "manhattanMm": 16.2,
+          "planarMm": 51.03254838299123
+        },
+        {
+          "name": "DDR_DQS1",
+          "manhattanMm": 16.2,
+          "planarMm": 50.95313905432341
+        },
+        {
+          "name": "DDR_D13",
+          "manhattanMm": 21,
+          "planarMm": 50.535879565400165
+        },
+        {
+          "name": "DDR_D14",
+          "manhattanMm": 19.400000000000002,
+          "planarMm": 50.91910899782122
+        },
+        {
+          "name": "DDR_D15",
+          "manhattanMm": 15.4,
+          "planarMm": 50.53587956379684
+        }
+      ]
+    }
+  ],
+  "dataByteNominalHardToleranceInvented": false,
+  "spacing": {
+    "connectedSignals": 38,
+    "expectedSignals": 49,
+    "missingSignals": [
+      "DDR_BA0",
+      "DDR_A5",
+      "DDR_A7",
+      "DDR_RASn",
+      "DDR_WEn",
+      "DDR_BA2",
+      "DDR_A0",
+      "DDR_A10",
+      "DDR_A12",
+      "DDR_A11",
+      "DDR_CKE"
+    ],
+    "sameClassCenterSpacingW": 3,
+    "otherDdrClassCenterSpacingW": 4,
+    "traceWidthMm": 0.1016,
+    "reducedSpacingLengthAllowanceMm": 31.75,
+    "results": [
+      {
+        "name": "DDR_ODT",
+        "planarMm": 26.035432893255077,
+        "reducedSpacingExposureMm": 17.959354939567785,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D8",
+        "planarMm": 50.53587956533585,
+        "reducedSpacingExposureMm": 5.741013135988211,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D9",
+        "planarMm": 50.535879564900114,
+        "reducedSpacingExposureMm": 1.4669858323416134,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D2",
+        "planarMm": 30.727783540224546,
+        "reducedSpacingExposureMm": 2.840169355760678,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D6",
+        "planarMm": 30.7277835402313,
+        "reducedSpacingExposureMm": 1.8731811768831377,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_CSn0",
+        "planarMm": 28.532489168102785,
+        "reducedSpacingExposureMm": 18.01246282996931,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A3",
+        "planarMm": 32.22739248818401,
+        "reducedSpacingExposureMm": 20.145989359639064,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_RESETn",
+        "planarMm": 52.64654254594159,
+        "reducedSpacingExposureMm": 2.4937919293756963,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D10",
+        "planarMm": 50.53587956337854,
+        "reducedSpacingExposureMm": 8.780502771720627,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D11",
+        "planarMm": 50.53587956490522,
+        "reducedSpacingExposureMm": 6.837668748300215,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_DQM1",
+        "planarMm": 50.53587956482551,
+        "reducedSpacingExposureMm": 6.816209948461714,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D0",
+        "planarMm": 30.727783540320264,
+        "reducedSpacingExposureMm": 4.981897301243016,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_DQS0",
+        "planarMm": 30.727783540546866,
+        "reducedSpacingExposureMm": 6.624097101293502,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_DQSn0",
+        "planarMm": 30.727783540546877,
+        "reducedSpacingExposureMm": 6.271730855243801,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D4",
+        "planarMm": 30.72778354052423,
+        "reducedSpacingExposureMm": 5.329242737097062,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_CASn",
+        "planarMm": 22.26156420973604,
+        "reducedSpacingExposureMm": 5.398334646667865,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A2",
+        "planarMm": 40.005769106591394,
+        "reducedSpacingExposureMm": 33.534349886720605,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": false
+      },
+      {
+        "name": "DDR_A9",
+        "planarMm": 44.684246737676396,
+        "reducedSpacingExposureMm": 38.756966271476074,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": false
+      },
+      {
+        "name": "DDR_A13",
+        "planarMm": 45.71620633260534,
+        "reducedSpacingExposureMm": 36.23869648717344,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": false
+      },
+      {
+        "name": "DDR_D12",
+        "planarMm": 50.983197059653314,
+        "reducedSpacingExposureMm": 28.928952575026273,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_DQSn1",
+        "planarMm": 51.03254838299123,
+        "reducedSpacingExposureMm": 17.783206438506213,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_DQS1",
+        "planarMm": 50.95313905432341,
+        "reducedSpacingExposureMm": 20.031275854784695,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D13",
+        "planarMm": 50.535879565400165,
+        "reducedSpacingExposureMm": 5.378268951088128,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_DQM0",
+        "planarMm": 30.727783540455054,
+        "reducedSpacingExposureMm": 9.098550110969748,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D1",
+        "planarMm": 30.7277835406695,
+        "reducedSpacingExposureMm": 12.720291548768706,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D7",
+        "planarMm": 30.570362432353047,
+        "reducedSpacingExposureMm": 11.337394606608683,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_CK",
+        "planarMm": 34.49909962830806,
+        "reducedSpacingExposureMm": 17.04447104433889,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_CKn",
+        "planarMm": 34.42248328065238,
+        "reducedSpacingExposureMm": 0.7615788377913064,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A1",
+        "planarMm": 35.22400287150001,
+        "reducedSpacingExposureMm": 22.31445884745922,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A14",
+        "planarMm": 44.28542422773731,
+        "reducedSpacingExposureMm": 34.60505482055917,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": false
+      },
+      {
+        "name": "DDR_D14",
+        "planarMm": 50.91910899782122,
+        "reducedSpacingExposureMm": 8.164491827282164,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D15",
+        "planarMm": 50.53587956379684,
+        "reducedSpacingExposureMm": 10.539076038683467,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D3",
+        "planarMm": 30.72778354054686,
+        "reducedSpacingExposureMm": 10.286398840150678,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_D5",
+        "planarMm": 30.727783540626,
+        "reducedSpacingExposureMm": 12.335440583817908,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_BA1",
+        "planarMm": 45.207577182503854,
+        "reducedSpacingExposureMm": 23.79555177502382,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A4",
+        "planarMm": 33.53866232540481,
+        "reducedSpacingExposureMm": 8.14317447527497,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A6",
+        "planarMm": 40.89297690045562,
+        "reducedSpacingExposureMm": 29.950381953040218,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": true
+      },
+      {
+        "name": "DDR_A8",
+        "planarMm": 46.61630734528299,
+        "reducedSpacingExposureMm": 38.40674275159492,
+        "exceptionLengthLimitMm": 31.75,
+        "reducedSpacingLengthPass": false
+      }
+    ],
+    "failures": [
+      "DDR_A2",
+      "DDR_A9",
+      "DDR_A13",
+      "DDR_A14",
+      "DDR_A8"
+    ],
+    "differentialPairPartnersExcludedForSeparateCouplingReview": true,
+    "otherHostNetsAndSameNetMeandersNotCovered": true
+  },
+  "completeSpacingQualified": false,
+  "differentialImpedanceAndCouplingQualified": false,
+  "stackupSupplierConfirmed": false,
+  "viaAndPackageDelaysQualified": false,
+  "referencePlaneReturnPathsQualified": false,
+  "terminationAndOdtQualified": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

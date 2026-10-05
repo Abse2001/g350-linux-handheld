@@ -1,0 +1,55 @@
+{
+  "status": "DDR32_DDR_A6_EXACT_REPLAY_AND_PRIOR_COPPER_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+    "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a3-bootstrap-candidate/circuit.json",
+    "sha256": "2a3f7fb2671d07a9115db7334681715306848576324c07bb0655ae767d3e2a43"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-a6-bootstrap-paths.json",
+    "sha256": "1063d2552baaf86b644d8778ebbf90ef545a3e31512b17a351100d071ce04fc5"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-a6-bootstrap-paths.provenance.json",
+    "sha256": "0ead63ee6038dbc81b79c3befe6f28dfd1f061a0ba29e1983da327dd3d0e0968"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-a3-bootstrap-check-summary.json",
+    "sha256": "19e3669d39fa028228aa640f76e2289c38ea1d7e411872e9ea05a51140ef14cb"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 134,
+  "throughVias": 163,
+  "preservedTracePieces": 133,
+  "preservedThroughVias": 161,
+  "addedThroughVias": 2,
+  "changedExistingSignals": [],
+  "addedSignals": [
+    "DDR_A6"
+  ],
+  "addedSignalPlanarMm": 51.715839552841416,
+  "addedSignalNominalLengthPass": false,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "carrierReferenceSearchBounds": {
+    "minX": -17.5,
+    "maxX": 17.5,
+    "minY": -38.5,
+    "maxY": 9.5
+  },
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForAddedHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "fullCommandClassMatchingDeferred": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,122 @@
+{
+  "main": {
+    "repository": "https://github.com/Abse2001/g350-linux-handheld",
+    "branch": "codex/cloud-handoff",
+    "purpose": "Authoritative board, full chat and evidence"
+  },
+  "runtime": "Pinned package.json + package-lock.json. Native bus_lanes ships inside core. Source clones are for inspection and deliberate fixes, not runtime replacements.",
+  "upstreams": [
+    {
+      "name": "core",
+      "repository": "https://github.com/tscircuit/core",
+      "ref": "efdc037363a4ec95a619a8f48e53d8540b4dca76",
+      "publishedVersion": "0.0.2088",
+      "refBasis": "npm published gitHead",
+      "purpose": "Circuit, phased routing and SOLVERS API"
+    },
+    {
+      "name": "tscircuit-autorouter",
+      "repository": "https://github.com/tscircuit/tscircuit-autorouter",
+      "ref": "8e66b6388d1b2adc2e31eb3568a7e86648f92c7a",
+      "publishedVersion": "0.0.958",
+      "refBasis": "npm published gitHead",
+      "purpose": "Capacity routing and obstacles"
+    },
+    {
+      "name": "checks",
+      "repository": "https://github.com/tscircuit/checks",
+      "ref": "ec5e6f6fba26561ab9cad3789cbeb5bcb330091b",
+      "publishedVersion": "0.0.239",
+      "refBasis": "npm published gitHead",
+      "purpose": "Native checks and reviewed patch"
+    },
+    {
+      "name": "cli",
+      "repository": "https://github.com/tscircuit/cli",
+      "ref": "7b9cdd526be249e48c5e24afae8aa3bfde4b2175",
+      "publishedVersion": "0.1.2237",
+      "refBasis": "npm published gitHead",
+      "purpose": "tsci builds, phases, exports and shorts"
+    },
+    {
+      "name": "bus-lanes-solver",
+      "repository": "https://github.com/tscircuit/bus-lanes-solver",
+      "ref": "2417031d063f208050c966ee9d997fc8d6e26a59",
+      "publishedVersion": "0.0.21 bundled by core",
+      "refBasis": "GitHub main 2026-10-06 (inspection only)",
+      "purpose": "Native DDR lanes, fixed lengths and pipeline"
+    },
+    {
+      "name": "bga-fanout-solver",
+      "repository": "https://github.com/tscircuit/bga-fanout-solver",
+      "ref": "247c835cb8d69b65e53891dcf869731079415b39",
+      "publishedVersion": null,
+      "refBasis": "core package source dependency pin",
+      "purpose": "Package access and escape inspection"
+    },
+    {
+      "name": "fanout-solver",
+      "repository": "https://github.com/tscircuit/fanout-solver",
+      "ref": "39adfeb68c9ade6ea30ce5bd9f06ac5f208146d7",
+      "publishedVersion": "0.0.78",
+      "refBasis": "GitHub main 2026-10-06 (inspection only)",
+      "purpose": "Saved fanouts"
+    },
+    {
+      "name": "tscircuit",
+      "repository": "https://github.com/tscircuit/tscircuit",
+      "ref": "0b14142ae106a83f591c354df35a3e9aeaa4f325",
+      "publishedVersion": "0.0.2744",
+      "refBasis": "GitHub main 2026-10-06 (inspection only)",
+      "purpose": "Aggregate runtime and exports"
+    },
+    {
+      "name": "props",
+      "repository": "https://github.com/tscircuit/props",
+      "ref": "62a9d617f2b31d5f90a03713030a982d8a59ba5c",
+      "publishedVersion": "0.0.687",
+      "refBasis": "GitHub main 2026-10-06 (inspection only)",
+      "purpose": "Board, bus and routing schemas"
+    },
+    {
+      "name": "circuit-json",
+      "repository": "https://github.com/tscircuit/circuit-json",
+      "ref": "caa04881bc8015d2bc746180f9e48b325fe7e625",
+      "publishedVersion": "0.0.515",
+      "refBasis": "GitHub main 2026-10-06 (inspection only)",
+      "purpose": "Source/copper/check records"
+    },
+    {
+      "name": "pcb-trace-linter",
+      "repository": "https://github.com/tscircuit/pcb-trace-linter",
+      "ref": "4c035f9d40ffb03ba547a08975b5e64b20371123",
+      "publishedVersion": "0.0.1",
+      "refBasis": "package-lock git dependency pin",
+      "purpose": "Trace lint dependency"
+    }
+  ],
+  "externalTools": {
+    "node": "25.6.1",
+    "bun": "1.3.14",
+    "kicad": "10.x official Ubuntu PPA; local frozen evidence used 10.0.5",
+    "python": "Ubuntu system Python with pcbnew/wx and xvfb-run",
+    "pdf": "reportlab/pypdf/poppler-utils"
+  },
+  "network": {
+    "preset": "Package managers",
+    "additionalRequiredDomains": [
+      "nodejs.org",
+      "jscdn.tscircuit.com",
+      "registry.tscircuit.com"
+    ],
+    "researchDomains": [
+      "docs.tscircuit.com",
+      "tscircuit.com",
+      "ti.com",
+      "micron.com",
+      "jlcpcb.com",
+      "lcsc.com",
+      "buydisplay.com"
+    ]
+  }
+}

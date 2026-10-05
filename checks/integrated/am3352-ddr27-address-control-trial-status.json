@@ -1,0 +1,1178 @@
+{
+  "status": "DDR27_ADDRESS_CONTROL_NATIVE_AND_MANUAL_TRIALS_NO_NEW_COMPLETE_CHANNEL",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-odt-nominal-candidate/circuit.json",
+    "sha256": "3f2ef3f83fb4a1aaf427e24dacb24b189cbfc9a30a982d6387641c00b336d6ee"
+  },
+  "checkedDefault": {
+    "path": "checks/integrated/am3352-ddr-usbc-odt-nominal-check-summary.json",
+    "sha256": "b5fc4c469c1c0418859d7c931f8b5cb20576f076cca900e446c6a6faba218e99"
+  },
+  "connectedDdrSignals": 27,
+  "remainingDdrSignals": 22,
+  "sourceTracesRetained": 129,
+  "sourceThroughViasRetained": 147,
+  "actualPadObstacles": 912,
+  "copperLayers": 4,
+  "nativeTrials": [
+    {
+      "path": "dist/am3352-ddr27-address-control-bottom-attempt-491/result.json",
+      "sha256": "603260d25fa4d24b66d5214697447626ebd0c51322220c6d6e3364373d06362a",
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_A0,DDR_A1,DDR_A10,DDR_A11,DDR_A12,DDR_A13,DDR_A14,DDR_A2,DDR_A3,DDR_A4,DDR_A5,DDR_A6,DDR_A7,DDR_A8,DDR_A9,DDR_BA0,DDR_BA1,DDR_BA2,DDR_CASn,DDR_CSn0,DDR_RASn,DDR_WEn",
+      "layer": "bottom",
+      "error": "No collision-free local dogbone assignment",
+      "preparedEscapes": 0,
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-address-control-top-attempt-492/result.json",
+      "sha256": "f5bd5753a24aee76b3a25adffca894c1d548a9d8ba341589ccddb6418d77c2c2",
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_A0,DDR_A1,DDR_A10,DDR_A11,DDR_A12,DDR_A13,DDR_A14,DDR_A2,DDR_A3,DDR_A4,DDR_A5,DDR_A6,DDR_A7,DDR_A8,DDR_A9,DDR_BA0,DDR_BA1,DDR_BA2,DDR_CASn,DDR_CSn0,DDR_RASn,DDR_WEn",
+      "layer": "top",
+      "error": "Negotiated lane search exhausted without a complete route",
+      "preparedEscapes": 0,
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-ddr_csn0-top-attempt-493/result.json",
+      "sha256": "4b58be516886fd479cc237d2ae43c700862620d2168c72698c7b60f36d0e5d15",
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_CSn0",
+      "layer": "top",
+      "error": "No collision-free routing found in the vector visibility graph",
+      "preparedEscapes": 0,
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-ddr_rasn-top-attempt-494/result.json",
+      "sha256": "110d3acb8aee2f052185b16c24e51b124389b8cb312a33ae1b9cc699863bfeb3",
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "selection": "DDR_RASn",
+      "layer": "top",
+      "error": null,
+      "preparedEscapes": 0,
+      "newConnectedSignals": 0
+    }
+  ],
+  "manualTrials": [
+    {
+      "path": "dist/am3352-ddr27-csn-top-local-attempt-497/result.json",
+      "sha256": "06c535de1ebf827fe441c7cdfc21e93fdd999646799901f14ff2ae9da109bfd7",
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "selection": [
+        "DDR_CSn0"
+      ],
+      "channelLayer": "top",
+      "successfulLocalEscapes": [
+        {
+          "name": "source_trace_5",
+          "package": "U_RAM",
+          "end": {
+            "x": -9,
+            "y": -30.6
+          },
+          "expanded": 16078,
+          "newVias": 0,
+          "reusedBootstrapLayer": "top",
+          "length": 7.262741565704346
+        }
+      ],
+      "failedLocalEscapes": [
+        {
+          "name": "source_trace_5",
+          "package": "U_SOC",
+          "error": "no clearance-preserving local path",
+          "reachableLayers": [
+            "top"
+          ],
+          "reachableBounds": {
+            "minX": -1.379999999999999,
+            "maxX": -0.9800000000000004,
+            "minY": -6.220000000000001,
+            "maxY": -5.82
+          },
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_22",
+                "source_trace_id": "source_trace_40",
+                "name": "DDR_D14"
+              },
+              "boundarySamples": 31,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_6",
+                "source_trace_id": "source_trace_11",
+                "name": "DDR_D10"
+              },
+              "boundarySamples": 18,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-top-local-attempt-498/result.json",
+      "sha256": "3eebd05319c7c759b0c93b1949cdc0be82ca9a1f1cca43da3801ae120eab18a5",
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "selection": [
+        "DDR_RASn"
+      ],
+      "channelLayer": "top",
+      "successfulLocalEscapes": [],
+      "failedLocalEscapes": [
+        {
+          "name": "source_trace_18",
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableLayers": [
+            "top",
+            "bottom"
+          ],
+          "reachableBounds": {
+            "minX": -2.0199999999999996,
+            "maxX": 2.1400000000000006,
+            "minY": -29.2,
+            "maxY": -18
+          },
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_10",
+                "source_trace_id": "source_trace_15",
+                "name": "DDR_DQS0"
+              },
+              "boundarySamples": 562,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_21",
+                "source_trace_id": "source_trace_34",
+                "name": "DDR_CKn"
+              },
+              "boundarySamples": 483,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_1",
+                "source_trace_id": "source_trace_1",
+                "name": "DDR_D8"
+              },
+              "boundarySamples": 248,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_3",
+                "source_trace_id": "source_trace_3",
+                "name": "DDR_D2"
+              },
+              "boundarySamples": 183,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_15",
+                "source_trace_id": "source_trace_28",
+                "name": "DDR_DQS1"
+              },
+              "boundarySamples": 162,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_11",
+                "source_trace_id": "source_trace_16",
+                "name": "DDR_DQSn0"
+              },
+              "boundarySamples": 155,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_14",
+                "source_trace_id": "source_trace_27",
+                "name": "DDR_DQSn1"
+              },
+              "boundarySamples": 149,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_2",
+                "source_trace_id": "source_trace_2",
+                "name": "DDR_D9"
+              },
+              "boundarySamples": 112,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_20",
+                "source_trace_id": "source_trace_33",
+                "name": "DDR_CK"
+              },
+              "boundarySamples": 95,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_8",
+                "source_trace_id": "source_trace_13",
+                "name": "DDR_DQM1"
+              },
+              "boundarySamples": 90,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_24",
+                "source_trace_id": "source_trace_42",
+                "name": "DDR_D3"
+              },
+              "boundarySamples": 60,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_744",
+                "pcb_port_id": "pcb_port_747"
+              },
+              "boundarySamples": 33,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_13",
+                "source_trace_id": "source_trace_26",
+                "name": "DDR_D12"
+              },
+              "boundarySamples": 28,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_743",
+                "pcb_port_id": "pcb_port_748"
+              },
+              "boundarySamples": 23,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_18"
+              },
+              "boundarySamples": 22,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_19"
+              },
+              "boundarySamples": 18,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_365",
+                "pcb_port_id": "pcb_port_365"
+              },
+              "boundarySamples": 16,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_379",
+                "pcb_port_id": "pcb_port_379"
+              },
+              "boundarySamples": 16,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_17"
+              },
+              "boundarySamples": 14,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_373",
+                "pcb_port_id": "pcb_port_373"
+              },
+              "boundarySamples": 13,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_372",
+                "pcb_port_id": "pcb_port_372"
+              },
+              "boundarySamples": 13,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_366",
+                "pcb_port_id": "pcb_port_366"
+              },
+              "boundarySamples": 9,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_378",
+                "pcb_port_id": "pcb_port_378"
+              },
+              "boundarySamples": 9,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_380",
+                "pcb_port_id": "pcb_port_380"
+              },
+              "boundarySamples": 8,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-bottom-local-attempt-501/result.json",
+      "sha256": "0f4cd68699eb2aa2a13720609967a6acaa98201aefef68f0332572ec7270472a",
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "selection": [
+        "DDR_CSn0"
+      ],
+      "channelLayer": "bottom",
+      "successfulLocalEscapes": [
+        {
+          "name": "source_trace_5",
+          "package": "U_RAM",
+          "end": {
+            "x": -9,
+            "y": -31.56
+          },
+          "expanded": 63610,
+          "newVias": 1,
+          "reusedBootstrapLayer": "top",
+          "length": 7.776366233825684
+        }
+      ],
+      "failedLocalEscapes": [
+        {
+          "name": "source_trace_5",
+          "package": "U_SOC",
+          "error": "no clearance-preserving local path",
+          "reachableLayers": [
+            "top"
+          ],
+          "reachableBounds": {
+            "minX": -1.379999999999999,
+            "maxX": -0.9800000000000004,
+            "minY": -6.220000000000001,
+            "maxY": -5.82
+          },
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_22",
+                "source_trace_id": "source_trace_40",
+                "name": "DDR_D14"
+              },
+              "boundarySamples": 31,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_6",
+                "source_trace_id": "source_trace_11",
+                "name": "DDR_D10"
+              },
+              "boundarySamples": 18,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-bottom-local-attempt-502/result.json",
+      "sha256": "b222808c3ea3651507ab419f11ab9a56c4bead39ace722d555ea827277f38dfd",
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "selection": [
+        "DDR_RASn"
+      ],
+      "channelLayer": "bottom",
+      "successfulLocalEscapes": [],
+      "failedLocalEscapes": [
+        {
+          "name": "source_trace_18",
+          "package": "U_RAM",
+          "error": "no clearance-preserving local path",
+          "reachableLayers": [
+            "top",
+            "bottom"
+          ],
+          "reachableBounds": {
+            "minX": -2.0199999999999996,
+            "maxX": 2.1400000000000006,
+            "minY": -29.2,
+            "maxY": -18
+          },
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_10",
+                "source_trace_id": "source_trace_15",
+                "name": "DDR_DQS0"
+              },
+              "boundarySamples": 562,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_21",
+                "source_trace_id": "source_trace_34",
+                "name": "DDR_CKn"
+              },
+              "boundarySamples": 483,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_1",
+                "source_trace_id": "source_trace_1",
+                "name": "DDR_D8"
+              },
+              "boundarySamples": 248,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_3",
+                "source_trace_id": "source_trace_3",
+                "name": "DDR_D2"
+              },
+              "boundarySamples": 183,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_15",
+                "source_trace_id": "source_trace_28",
+                "name": "DDR_DQS1"
+              },
+              "boundarySamples": 162,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_11",
+                "source_trace_id": "source_trace_16",
+                "name": "DDR_DQSn0"
+              },
+              "boundarySamples": 155,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_14",
+                "source_trace_id": "source_trace_27",
+                "name": "DDR_DQSn1"
+              },
+              "boundarySamples": 149,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_2",
+                "source_trace_id": "source_trace_2",
+                "name": "DDR_D9"
+              },
+              "boundarySamples": 112,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_20",
+                "source_trace_id": "source_trace_33",
+                "name": "DDR_CK"
+              },
+              "boundarySamples": 95,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_8",
+                "source_trace_id": "source_trace_13",
+                "name": "DDR_DQM1"
+              },
+              "boundarySamples": 90,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_24",
+                "source_trace_id": "source_trace_42",
+                "name": "DDR_D3"
+              },
+              "boundarySamples": 60,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_744",
+                "pcb_port_id": "pcb_port_747"
+              },
+              "boundarySamples": 33,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_13",
+                "source_trace_id": "source_trace_26",
+                "name": "DDR_D12"
+              },
+              "boundarySamples": 28,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_743",
+                "pcb_port_id": "pcb_port_748"
+              },
+              "boundarySamples": 23,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_18"
+              },
+              "boundarySamples": 22,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_19"
+              },
+              "boundarySamples": 18,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_365",
+                "pcb_port_id": "pcb_port_365"
+              },
+              "boundarySamples": 16,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_379",
+                "pcb_port_id": "pcb_port_379"
+              },
+              "boundarySamples": 16,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_17"
+              },
+              "boundarySamples": 14,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_373",
+                "pcb_port_id": "pcb_port_373"
+              },
+              "boundarySamples": 13,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_372",
+                "pcb_port_id": "pcb_port_372"
+              },
+              "boundarySamples": 13,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_366",
+                "pcb_port_id": "pcb_port_366"
+              },
+              "boundarySamples": 9,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_378",
+                "pcb_port_id": "pcb_port_378"
+              },
+              "boundarySamples": 9,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_380",
+                "pcb_port_id": "pcb_port_380"
+              },
+              "boundarySamples": 8,
+              "layers": [
+                "top"
+              ]
+            }
+          ]
+        }
+      ],
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-facing-bottom-local-attempt-503/result.json",
+      "sha256": "f7ae63b11bd0da5219393412771bd34b95ce5c7b04063a9db1aa26345e9938ac",
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "selection": [
+        "DDR_RASn"
+      ],
+      "channelLayer": "bottom",
+      "successfulLocalEscapes": [
+        {
+          "name": "source_trace_18",
+          "package": "U_RAM",
+          "end": {
+            "x": -0.0799999999999983,
+            "y": -18
+          },
+          "expanded": 20063,
+          "newVias": 1,
+          "reusedBootstrapLayer": "top",
+          "length": 10.357645034790039
+        }
+      ],
+      "failedLocalEscapes": [
+        {
+          "name": "source_trace_18",
+          "package": "U_SOC",
+          "error": "all handoffs obstructed"
+        }
+      ],
+      "newConnectedSignals": 0
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-facing-top-local-attempt-504/result.json",
+      "sha256": "d060c4ebaf1c3aaac4fc7f86403da67a6d6b10efc58d254968c64839cdc03d68",
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "selection": [
+        "DDR_RASn"
+      ],
+      "channelLayer": "top",
+      "successfulLocalEscapes": [
+        {
+          "name": "source_trace_18",
+          "package": "U_RAM",
+          "end": {
+            "x": -0.0799999999999983,
+            "y": -18
+          },
+          "expanded": 40674,
+          "newVias": 2,
+          "reusedBootstrapLayer": "top",
+          "length": 10.357645034790039
+        }
+      ],
+      "failedLocalEscapes": [
+        {
+          "name": "source_trace_18",
+          "package": "U_SOC",
+          "error": "no clearance-preserving local path",
+          "reachableLayers": [
+            "top",
+            "bottom"
+          ],
+          "reachableBounds": {
+            "minX": -3,
+            "maxX": 17.5,
+            "minY": -17,
+            "maxY": 9.5
+          },
+          "boundaryBlockers": [
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_13",
+                "source_trace_id": "source_trace_26",
+                "name": "DDR_D12"
+              },
+              "boundarySamples": 716,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_23",
+                "source_trace_id": "source_trace_41",
+                "name": "DDR_D15"
+              },
+              "boundarySamples": 571,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_14",
+                "source_trace_id": "source_trace_27",
+                "name": "DDR_DQSn1"
+              },
+              "boundarySamples": 313,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_119",
+                "source_trace_id": "source_trace_842",
+                "name": "USB_VBUS_SENSE_CPU"
+              },
+              "boundarySamples": 294,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_18",
+                "source_trace_id": "source_trace_31",
+                "name": "DDR_D1"
+              },
+              "boundarySamples": 205,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_19",
+                "source_trace_id": "source_trace_32",
+                "name": "DDR_D7"
+              },
+              "boundarySamples": 197,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_15",
+                "source_trace_id": "source_trace_28",
+                "name": "DDR_DQS1"
+              },
+              "boundarySamples": 186,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_73"
+              },
+              "boundarySamples": 126,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_via_id": "pcb_via_74"
+              },
+              "boundarySamples": 126,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_126",
+                "source_trace_id": "source_trace_849",
+                "name": "USB_VBUS_SENSE_FILTER"
+              },
+              "boundarySamples": 117,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_22",
+                "source_trace_id": "source_trace_40",
+                "name": "DDR_D14"
+              },
+              "boundarySamples": 82,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_747",
+                "pcb_port_id": "pcb_port_756"
+              },
+              "boundarySamples": 81,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_745",
+                "pcb_port_id": "pcb_port_755"
+              },
+              "boundarySamples": 80,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_746",
+                "pcb_port_id": "pcb_port_754"
+              },
+              "boundarySamples": 80,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_748",
+                "pcb_port_id": "pcb_port_753"
+              },
+              "boundarySamples": 79,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_96",
+                "source_trace_id": "source_trace_804",
+                "name": "USB0_DP"
+              },
+              "boundarySamples": 76,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_26",
+                "source_trace_id": "source_trace_48",
+                "name": "DDR_CKE"
+              },
+              "boundarySamples": 72,
+              "layers": [
+                "bottom",
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_16",
+                "source_trace_id": "source_trace_29",
+                "name": "DDR_D13"
+              },
+              "boundarySamples": 61,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_910",
+                "pcb_port_id": "pcb_port_1057"
+              },
+              "boundarySamples": 61,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_97",
+                "source_trace_id": "source_trace_805",
+                "name": "USB0_DM"
+              },
+              "boundarySamples": 60,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_911",
+                "pcb_port_id": "pcb_port_1056"
+              },
+              "boundarySamples": 57,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "route",
+                "pcb_trace_id": "pcb_trace_127",
+                "source_trace_id": "source_trace_850",
+                "name": "USB_VBUS_SENSE_CLAMP"
+              },
+              "boundarySamples": 45,
+              "layers": [
+                "top"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_672",
+                "pcb_port_id": "pcb_port_675"
+              },
+              "boundarySamples": 42,
+              "layers": [
+                "bottom"
+              ]
+            },
+            {
+              "origin": {
+                "kind": "obstacle",
+                "pcb_smtpad_id": "pcb_smtpad_591",
+                "pcb_port_id": "pcb_port_596"
+              },
+              "boundarySamples": 42,
+              "layers": [
+                "bottom"
+              ]
+            }
+          ]
+        }
+      ],
+      "newConnectedSignals": 0
+    }
+  ],
+  "activeSolverHandles": [],
+  "defaultChangedByTheseTrials": false,
+  "fabricationReady": false,
+  "nextAction": "Repair the boxed CPU CSn0/RASn fanouts by a guarded change to neighbouring data copper, then route the carrier using native bus_lanes. Recheck every affected byte/pair, reference plane and existing endpoint. The central RASn RAM fanout reaches its handoff but is not a complete signal."
+}

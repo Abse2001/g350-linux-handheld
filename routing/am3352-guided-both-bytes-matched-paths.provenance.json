@@ -1,0 +1,269 @@
+{
+  "source": {
+    "path": "dist/experiments/am3352-guided-byte1-rebound-top-host/circuit.json",
+    "sha256": "3afb1f5a4fdfbeb99707521685b871720354eab71c91dd19d29a08488f411384",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-guided-byte1-rebound-top-host/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-guided-byte1-data-tuned-full-channel-attempt-110/output.simple-route.json",
+    "sha256": "708f771a328c85a041e88bb9eed6dcb24a5490a8fd4fe336e3e7559fda4efbf1"
+  },
+  "manualPairTuning": {
+    "trace": "guided_local_dogbone_source_trace_28_0",
+    "addedLengthMm": 2.6828427124746277,
+    "beforeFixedLengthsMm": [
+      24.596164491784243,
+      27.27900720425887
+    ],
+    "afterFixedLengthsMm": [
+      27.279007204258875,
+      27.27900720425887
+    ],
+    "tested": 475,
+    "index": 0,
+    "teeth": 5,
+    "height": 0.24,
+    "pitch": 0.48,
+    "side": 1,
+    "amplitude": 0.3151471862576152,
+    "layer": "top",
+    "span": 2.658721497261419,
+    "offset": 0.24936074863070945
+  },
+  "manualLocalDataTuning": [
+    {
+      "signal": "DDR_D8",
+      "trace": "guided_local_dogbone_source_trace_1_1",
+      "addedLengthMm": 3,
+      "beforeFixedLengthMm": 12.894112549695425,
+      "afterFixedLengthMm": 15.894112549695425,
+      "tested": 23,
+      "index": 3,
+      "teeth": 2,
+      "height": 0.24,
+      "pitch": 0.48,
+      "side": 1,
+      "amplitude": 0.7968629150101524,
+      "layer": "bottom",
+      "span": 1.6970562748477132,
+      "offset": 0.8770562748477132
+    },
+    {
+      "signal": "DDR_D9",
+      "trace": "guided_local_dogbone_source_trace_2_1",
+      "addedLengthMm": 3,
+      "beforeFixedLengthMm": 8.328427124746185,
+      "afterFixedLengthMm": 11.328427124746185,
+      "tested": 19,
+      "index": 6,
+      "teeth": 2,
+      "height": 0.24,
+      "pitch": 0.48,
+      "side": 1,
+      "amplitude": 0.7968629150101524,
+      "layer": "top",
+      "span": 1.8399999999999999,
+      "offset": 0.5599999999999999
+    },
+    {
+      "signal": "DDR_D9",
+      "trace": "guided_local_dogbone_source_trace_2_0",
+      "addedLengthMm": 4,
+      "beforeFixedLengthMm": 11.328427124746185,
+      "afterFixedLengthMm": 15.328427124746181,
+      "tested": 56,
+      "index": 0,
+      "teeth": 4,
+      "height": 0.24,
+      "pitch": 0.48,
+      "side": -1,
+      "amplitude": 0.5468629150101524,
+      "layer": "top",
+      "span": 2.4400000000000013,
+      "offset": 0.38000000000000067
+    },
+    {
+      "signal": "DDR_D8",
+      "trace": "guided_local_dogbone_source_trace_1_1",
+      "addedLengthMm": 8,
+      "beforeFixedLengthMm": 15.894112549695425,
+      "afterFixedLengthMm": 23.894112549695432,
+      "tested": 109,
+      "index": 22,
+      "teeth": 6,
+      "height": 0.24,
+      "pitch": 0.48,
+      "side": 1,
+      "amplitude": 0.713529581676819,
+      "layer": "top",
+      "span": 6.199999999999999,
+      "offset": 1.7799999999999998
+    }
+  ],
+  "manualNativeEscapeCorrection": {
+    "mode": "central-access",
+    "package": "U_RAM",
+    "moves": [
+      {
+        "signal": "DDR_D9",
+        "ball": "C2",
+        "pad": {
+          "x": -2.4,
+          "y": -22.6
+        },
+        "old": {
+          "x": -2,
+          "y": -23
+        },
+        "next": {
+          "x": -2.8,
+          "y": -23
+        }
+      },
+      {
+        "signal": "DDR_DQS1",
+        "ball": "C7",
+        "pad": {
+          "x": 1.6,
+          "y": -22.6
+        },
+        "old": {
+          "x": 2,
+          "y": -23
+        },
+        "next": {
+          "x": 1.2,
+          "y": -23
+        }
+      },
+      {
+        "signal": "DDR_DQSn1",
+        "ball": "B7",
+        "pad": {
+          "x": 1.6,
+          "y": -21.8
+        },
+        "old": {
+          "x": 2,
+          "y": -22.2
+        },
+        "next": {
+          "x": 1.2,
+          "y": -22.2
+        }
+      },
+      {
+        "signal": "DDR_D14",
+        "ball": "B8",
+        "pad": {
+          "x": 2.4,
+          "y": -21.8
+        },
+        "old": {
+          "x": 2.8,
+          "y": -22.2
+        },
+        "next": {
+          "x": 2,
+          "y": -22.2
+        }
+      },
+      {
+        "signal": "DDR_D15",
+        "ball": "C8",
+        "pad": {
+          "x": 2.4,
+          "y": -22.6
+        },
+        "old": {
+          "x": 2.8,
+          "y": -23
+        },
+        "next": {
+          "x": 2,
+          "y": -23
+        }
+      }
+    ],
+    "nativeOriginal": {
+      "path": "dist/am3352-guided-byte1-bootstrap-attempt-78/signal-escapes.native.json",
+      "sha256": "1538cdceb225e9613b82e949cca668bdc59f89a2caef58d9fbd806fa64b2fccd"
+    },
+    "minimumDrillEdgeGapMm": 0.44600000000000284,
+    "otherNativeEscapesUnchanged": 17,
+    "sourceCopperUnchanged": true,
+    "physicalChecksRequired": true
+  },
+  "manualCpuDogboneCorrection": {
+    "moves": [
+      {
+        "signal": "DDR_D13",
+        "old": {
+          "x": 1.6,
+          "y": -5.6
+        },
+        "next": {
+          "x": 1.6,
+          "y": -4.8
+        }
+      },
+      {
+        "signal": "DDR_D14",
+        "old": {
+          "x": 1.6,
+          "y": -4.8
+        },
+        "next": {
+          "x": 1.6,
+          "y": -4
+        }
+      }
+    ],
+    "package": "U_SOC",
+    "original": {
+      "path": "dist/am3352-guided-byte1-top-wire-bootstrap-attempt-88/signal-escapes.native.json",
+      "sha256": "f6979364abea309af2ea841dcf95d27cc48dce57d203b0c13705133a8ffa1914"
+    },
+    "actualSourceCopperUnchanged": true,
+    "otherNativeDogbonesUnchanged": 20,
+    "physicalChecksRequired": true
+  },
+  "manualUnusedBranchPruning": {
+    "nativeInput": {
+      "path": "dist/am3352-guided-byte1-top-reused-attempt-86/signal-escapes.native.json",
+      "sha256": "df9708808b55575521f76e73e87f8640f9c169cc44e63363eced1e6f69c6ce65"
+    },
+    "topPadDogboneWiresRetained": 22,
+    "unusedBootstrapHolesRemoved": 22,
+    "actualSourceCopperUnchanged": true,
+    "scope": "Manual intermediate fanout edit; no source or completed first-byte hole is removed. New local layer changes still require full-depth physical vias and independent checks."
+  },
+  "localFanoutRun": {
+    "path": "dist/am3352-guided-byte1-data8-large-tuned-attempt-109/result.json",
+    "sha256": "b9b0424ffecd2cd96eea6b0e36db7d4a8f65d6c780ccf1ff2ab7bd11b74896ac"
+  },
+  "preservedSavedDdr": {
+    "path": "routing/am3352-guided-byte0-matched-paths.json",
+    "sha256": "14590903a42346c473a6b79f8880415b4ffc65b8d70c53a1a80718bf15f6a20b",
+    "signals": 11
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "paths": {
+    "path": "routing/am3352-guided-both-bytes-matched-paths.json",
+    "sha256": "64dde5f37176f10ad462b1527b2f64267ee00bfe62f20caf102dad2403176f46"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "signals": 22,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes channel with edited local escapes; independent planar timing/physical checks and complete host qualification required."
+}

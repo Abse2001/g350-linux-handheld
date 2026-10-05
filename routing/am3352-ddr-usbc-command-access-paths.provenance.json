@@ -1,0 +1,19 @@
+{
+  "status": "TEMPORARY_STROBE_OPENING_FOR_COORDINATED_COMMAND_ESCAPE_RESERVATION",
+  "original": {
+    "path": "routing/am3352-guided-both-bytes-and-reset-paths.json",
+    "sha256": "a356d0cffb8e29477d0c843b99efc91c91b1d63ff675747c72107a9fd62e2d48"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-command-access-paths.json",
+    "sha256": "1f481ee9c6c16205ba8794a526253a5f7442af7415593a5f71219f53fd55993e"
+  },
+  "temporarilyOpenedSignals": [
+    "DDR_DQS1",
+    "DDR_DQSn1"
+  ],
+  "unchangedOtherDdrPaths": 21,
+  "reason": "Both clocks escape individually but their local paths compete with DQS1/DQSn1. Reserve all command/clock/strobe terminals jointly before channels.",
+  "defaultChanged": false,
+  "fabricationReady": false
+}

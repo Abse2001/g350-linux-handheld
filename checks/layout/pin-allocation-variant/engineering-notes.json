@@ -1,0 +1,66 @@
+{
+  "stage": "UNROUTED_PIN_ALLOCATION_REPAIR",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "entry": "experiments/am3352-g350-pin-allocation.circuit.tsx",
+  "previousEntry": "experiments/am3352-g350-critical-placement.circuit.tsx",
+  "previousGoalTurnClassification": "progress: exported and round-trip-checked the mechanical outline without claiming shell fit",
+  "problem": "The prior display/harness/critical placements connected C18 both to SD_CD and LCD_BL_PWM. Native source connectivity merged card detect, its pullup, the backlight CTRL and its pulldown. Physical shorts checks cannot flag an intentionally generated net merge.",
+  "correction": {
+    "cardDetect": "Preserve C18 / ECAP0_IN_PWM0_OUT as GPIO0_7, mode7 input, with the existing IO_3V3 card-detect pullup and J_SD pin9.",
+    "pwm": "Use previously unused U14 / GPMC_A2 in mode6 as eHRPWM1A, powered by VDDSHV3=ANALOG_1V8.",
+    "buffer": "Add individually imported TI SN74LVC1G125DBVR C23654. Pin1 OE and pin3 GND go to ground; pin2 A to LCD_BL_PWM; pin4 Y to LCD_BL_CTRL; pin5 VCC to ANALOG_1V8. Always enabled and non-inverting.",
+    "bypass": "Add C_LCD_PWM_BUF, CL05B104KO5NNNC C1525, 100nF on the same bottom assembly side near VCC. Dedicated ground return and actual copper loop remain to be routed.",
+    "inputPulldown": "Change R_LCD_BL_PD from 100k to 33k C25779 on its unchanged 0402 lands. This keeps A below the buffer VIL limit with a conservative sum of 8uA CPU leakage and 5uA buffer input leakage.",
+    "outputPulldown": "Add R_LCD_CTRL_PD, 33k +/-1% C25779, at the buffer output. This holds CTRL below 0.4V even using worst-case 10uA buffer power-off leakage and the driver's maximum internal pull resistance. Its driven DC load remains below the buffer's 100uA low-current output specification.",
+    "geometry": "Preserve all 277 preceding component positions, their physical pads/drills, CPU/RAM relation, 59 revised CPU capacitors and the 76x118mm provisional outline. Append three bottom components. Four copper layers maximum. No stale copper reused."
+  },
+  "voltageRationale": "A direct 1.8V CPU output has a guaranteed VOL limit of 0.45V at the rated current, exceeding the TPS61165 0.4V input-low limit. The buffer accepts the CPU's levels on their common 1.8V rail and provides <=0.1V VOL and >=VCC-0.1V VOH at <=100uA DC load. Calculations are in the independent audit; rail correlation, routed voltage drop, capacitive load and power sequencing must still be checked.",
+  "footprint": "Use TI's recommended DBV0005A PCB lands from drawing 4214839/K (08/2024): five 0.6x1.1mm pads, 0.95mm pitch and 2.6mm row spacing, rotated 90degrees CCW to preserve the imported pin1 convention and mirrored for bottom assembly. The exact supplier import remains available unchanged. Native stencil reduction still requires assembly qualification.",
+  "firmwareRequirements": [
+    "SD_CD stays GPIO0_7 input, active low, separate from both PWM and CTRL.",
+    "Configure U14 as eHRPWM1A mode6 and enable the Linux eHRPWM1 controller; verify AM3352 device-tree pinmux and clock setup.",
+    "Use 20kHz PWM (50,000ns period), inside the driver's optimum 6.5..100kHz range. No EasyScale commands or acknowledge are requested.",
+    "Keep PWM and CTRL low until display rails, 5V boost and reset/initialization are valid. Configure the hardware PWM before releasing the pad to avoid software-generated startup pulses.",
+    "For a controlled enable, hold CTRL high through the 1 ms EasyScale detection window before changing duty, or prove that hardware PWM low intervals remain below 260 us throughout that window.",
+    "To disable, force CTRL low for longer than 2.5 ms; prove the PWM driver's disabled state is low. Do not assume stopping the clock forces the pad low.",
+    "Validate startup, shutdown, brownout, reset and low duty on a prototype; transient output and power sequencing have not been measured."
+  ],
+  "referenceDocuments": [
+    {
+      "path": "reference/am3352/am3352.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/am3352.pdf",
+      "revision": "SPRS717L, March 2020",
+      "sections": "Tables4-2/4-5, recommended operating range and DC electrical characteristics"
+    },
+    {
+      "path": "reference/am3352/display/TPS61165-datasheet.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps61165.pdf",
+      "revision": "SLVS790E, April 2019 with later package appendices",
+      "sections": "7.4 CTRL thresholds/pulldown,9.2.1.2.2 PWM,11 layout"
+    },
+    {
+      "path": "reference/am3352/display/SN74LVC1G125-datasheet.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf",
+      "revision": "SCES223U, August 2026",
+      "sections": "Pin functions,5.3/5.5 electrical limits,8.3/8.4 bypass/layout,DBV0005A recommended land pattern"
+    }
+  ],
+  "procurement": {
+    "buffer": "https://www.lcsc.com/product-detail/C23654.html",
+    "pulldowns": "https://www.lcsc.com/product-detail/C25779.html",
+    "importMethod": "Project-local tsci import C23654 and C25779 with --use-exact-footprint; buffer placement explicitly uses the verified TI recommendation.",
+    "inventoryReserved": false,
+    "substitutionsApproved": false
+  },
+  "remaining": [
+    "PMIC, boost, SD regulator and backlight high-current loops, feedback, thermal and ground returns",
+    "Move LCD source resistors clear of the DDR corridor and finish critical placement review before routing",
+    "Dedicated bypass vias, effective capacitance and continuous reference planes",
+    "Complete native bus_lanes DDR phases and remaining host routing; independent timing, continuity, shorts and manufacturing checks",
+    "Linux panel, pinmux, audio and USB-C install/recovery software and validation",
+    "Measured original-shell mounting, ports, controls and assembled clearances; battery/speaker qualification"
+  ],
+  "publication": "Local only; this repair does not authorize a fabrication order or qualify as the requested publication breakthrough."
+}

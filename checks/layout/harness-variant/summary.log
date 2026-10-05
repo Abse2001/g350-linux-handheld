@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-04",
+  "status": "CHECKED_PARTIAL_PLACEMENT_WITH_HARNESSES",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "fullHandheldPlacementComplete": false,
+  "routingPermitted": false,
+  "entry": "experiments/am3352-g350-harness-placement.circuit.tsx",
+  "defaultEntryRemainsHistoricalDdrFixture": true,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "mainBodyHeight": 99,
+    "speakerTongueWidth": 22,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "logicalComponents": 277,
+  "newHarnessComponents": 2,
+  "buildExitCode": 0,
+  "typecheckExitCode": 0,
+  "nativeErrors": 0,
+  "allLayerGerberShorts": 0,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "originalTerminalConnectivityPreserved": true,
+  "displayAndHarnessPinMappingsVerified": true,
+  "bareComponentsWithNoPaste": 31,
+  "exposedBarePads": 42,
+  "unintendedProbeThroughHolesCorrected": 4,
+  "capsuleCopperPreserved": true,
+  "capsulePadRepresentationConverted": 28,
+  "inductorAuxiliaryPadCount": 4,
+  "auxiliaryCopperContainedInPrimaryLands": true,
+  "smtStencil": {
+    "status": "PASS_SMT_STENCIL_METADATA_ONLY",
+    "matchedPads": 1156,
+    "matchedNonplatedHoles": 2,
+    "noPasteSmtPads": 48,
+    "scaledApertures": 1095,
+    "fullSizeApertures": 9,
+    "copperMaskDrillPlacementAndNetsUnchanged": true,
+    "nativePadShapeCornerRadiusAndPolygonVerticesVerified": true,
+    "nativeThroughHoleAperturesUnqualified": 8,
+    "fullStencilQualification": false
+  },
+  "independentKicad": {
+    "processExitCode": 5,
+    "errors": 0,
+    "warningCount": 404,
+    "warningTypes": {
+      "silk_edge_clearance": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199
+    },
+    "unconnectedItemsReported": 499,
+    "unconnectedCountIsComplete": false,
+    "perItemExclusions": 0,
+    "ignoredRuleSeverities": 0,
+    "exactLocalFootprints": 277,
+    "physicalRecordSha256": "0209c4f2c53f57456ea6672d86361ece21b47128a5d5f1abede7072c78dac36c",
+    "note": "Full DRC does not pass. Presentation/courtyard warnings and unrouted connections remain. Placement geometry only."
+  },
+  "remaining": [
+    "Measured original shell perimeter, mounting, ports, membrane registration and assembled clearances",
+    "Battery protection, NTC, current rating and dimensions; speaker load and mating cable qualification",
+    "Current exact connector assembly drawings, backlight biased capacitance and full stencil qualification",
+    "Panel supply budget and startup, Linux driver/pinmux/timings/color format",
+    "Complete critical placement review before four-layer native bus_lanes DDR and host routing",
+    "Routing continuity, shorts, reference planes, DDR timing and fabrication release checks"
+  ],
+  "hashes": "stored in source-bound summary"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS_COMPUTATIONAL_DOMAIN_SOURCE_EQUIVALENCE_ONLY",
+  "fabricationReady": false,
+  "physicalBoardSource": "dist/experiments/am3352-g350-converter-placement/circuit.json",
+  "solverDomainSource": "checks/integrated/g350-ddr-bootstrap/solver-domain-baseline.circuit.json",
+  "logicalComponents": 280,
+  "physicalPads": 1165,
+  "copperLayers": 4,
+  "everyComponentPortPadAndPastePreserved": true,
+  "everyFunctionalConnectionPreserved": true,
+  "renamedTraceLabels": [
+    {
+      "id": "source_trace_735",
+      "old": "USB0_DP",
+      "new": "USB0_CPU_DP"
+    },
+    {
+      "id": "source_trace_736",
+      "old": "USB0_DM",
+      "new": "USB0_CPU_DM"
+    }
+  ],
+  "deferredConstraints": [
+    "USB0_DATA",
+    "USB0_PAIR"
+  ],
+  "physicalOutlineUnchangedInAuthoritativeSource": true,
+  "diagnosticOutlineDiffers": true,
+  "requiredBeforeAdoption": [
+    "Replay accepted traces on the shaped-board source",
+    "Recheck actual copper edge clearance and via/drill geometry",
+    "Check both reference plane fills and all routed connections",
+    "Restore USB differential routing constraints in the USB routing pass"
+  ],
+  "hashes": {
+    "dist/experiments/am3352-g350-converter-placement/circuit.json": "3472fae419a96959403bba98227d761b92483269dbad128edaebe728be731bac",
+    "experiments/am3352-g350-ddr-solver-domain.circuit.tsx": "eabf0b294b4bc7bf24edc5bbdc76f173d2497df62bcfb730846aeb5fee32063d",
+    "checks/integrated/g350-ddr-bootstrap/solver-domain-baseline.circuit.json": "266ef9a49113d93e78be44275952ab42c88b448648b8d3235714e0634c8913b0"
+  }
+}

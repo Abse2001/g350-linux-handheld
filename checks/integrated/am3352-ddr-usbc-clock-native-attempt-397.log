@@ -1,0 +1,22 @@
+44 | for(const t of type('pcb_trace')){
+45 |   const converted=input.traces.find(n=>n.pcb_trace_id===t.pcb_trace_id);assert(converted)
+46 |   assert.deepEqual(geometry(converted),geometry(t))
+47 |   for(const p of converted.route.filter(p=>p.route_type==='via')){
+48 |     const v=type('pcb_via').find(v=>Math.hypot(v.x-p.x,v.y-p.y)<1e-8);assert(v)
+49 |     assert.equal(p.via_diameter,v.outer_diameter);assert.equal(p.via_hole_diameter,v.hole_diameter)
+                ^
+AssertionError: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- 0.4572
+
+ generatedMessage: true,
+     actual: undefined,
+   expected: 0.4572,
+   operator: "strictEqual",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-ddr-on-checked-source.mjs:49:12
+
+Bun v1.3.14 (macOS arm64)

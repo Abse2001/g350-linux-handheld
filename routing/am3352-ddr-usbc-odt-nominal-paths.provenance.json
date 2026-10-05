@@ -1,0 +1,103 @@
+{
+  "status": "DDR27_ODT_NOMINAL_SHORTCUT_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-matched-candidate/circuit.json",
+    "sha256": "37cce5810c43cc3f70485d5e2990512f6a2a7d8a2f35d316e02bbea0fbbf4997"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-cke-matched-paths.json",
+    "sha256": "421994ad47feaafc931944bccf6e1cf5b79215051b65d9fa545a8395c976b270",
+    "signals": 26
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-matched-check-summary.json",
+    "sha256": "7e0cac94ee9eeeea9b264efaf205a498afb94502a46009391cb2effa38677f60"
+  },
+  "nativeChannelRun": {
+    "path": "dist/am3352-ddr26-odt-top-native-channel-attempt-488/result.json",
+    "sha256": "e80578d4e42c1f4521691225cddc800411764b4730efd8c73f7fa2142c494937"
+  },
+  "nativeChannelInput": {
+    "path": "dist/am3352-ddr26-odt-top-native-channel-attempt-488/channel.input.simple-route.json",
+    "sha256": "f5ef53ed3d01ea5271c503e05e7165eddff13863024efe702fbd686803775fca"
+  },
+  "nativeChannelOutput": {
+    "path": "dist/am3352-ddr26-odt-top-native-channel-attempt-488/output.simple-route.json",
+    "sha256": "44b4148f0512db7cbbc91148142b009172a14dbbbec5d1da3e3797d7b776012a"
+  },
+  "manualLocalRun": {
+    "path": "dist/am3352-ddr26-odt-top-local-attempt-487/result.json",
+    "sha256": "3bd4eb1cdc21a810614db327ad825c9314956b3b083c3917b49413cb9e8a9a7b"
+  },
+  "manualLocalCopper": {
+    "path": "dist/am3352-ddr26-odt-top-local-attempt-487/local-escapes.json",
+    "sha256": "d4aaf27ae9ada70519df4aa59b966021312d9711ffede6563d292dfcc296a577"
+  },
+  "nativeBootstrap": {
+    "path": "dist/am3352-ddr26-odt-top-guided-prep-attempt-486/signal-escapes.native.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "dogbones": 0
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-odt-nominal-paths.json",
+    "sha256": "fd789c5a9f8d2d2eb6170f63090b8f98443b97ac6f2d6d89ef5029c983c56431"
+  },
+  "newSignals": [
+    "DDR_ODT"
+  ],
+  "priorSignalsPreserved": 26,
+  "connectedCandidateSignals": 27,
+  "remainingUnroutedDdrSignals": 22,
+  "planarMm": 43.01828108257736,
+  "throughVias": 4,
+  "preservedSourceHoles": 143,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "removedCoincidentWirePoints": 2,
+  "originalTimingRequirements": {
+    "buses": [
+      {
+        "name": "DDR_COMMAND_CLOCK",
+        "busId": "DDR_COMMAND_CLOCK",
+        "connectionNames": [
+          "source_trace_0"
+        ],
+        "traceWidth": 0.1016,
+        "allowedLayers": [
+          "top"
+        ],
+        "maxLengthSkew": 0.635
+      }
+    ],
+    "differentialPairs": []
+  },
+  "fullCommandClassMatchingDeferred": true,
+  "nominalLengthRangeMm": [
+    41.75,
+    44.29
+  ],
+  "nominalLengthPass": true,
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false,
+  "manualNominalShortcut": {
+    "run": {
+      "path": "dist/am3352-ddr27-odt-nominal-shortcut-attempt-490/result.json",
+      "sha256": "fce8931772962705fff8ed950b54f21b6a18f49bf3ef2ea85eb3b160d4fc07ea"
+    },
+    "priorPaths": {
+      "path": "routing/am3352-ddr-usbc-odt-bootstrap-paths.json",
+      "sha256": "01751da697c96a499319e57da612ba91469bc1f825474076586c24b6f11e77e3"
+    },
+    "from": 209,
+    "to": 329,
+    "savingMm": 4.662088306062497,
+    "preflight": {
+      "minimumCopperEdgeGapMm": 0.10821821485564047,
+      "nearest": "pcb_smtpad_735"
+    },
+    "newVias": 0
+  }
+}

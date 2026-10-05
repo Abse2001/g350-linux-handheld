@@ -1,0 +1,103 @@
+[
+  {
+    "name": "checkCopperPourShorts",
+    "count": 0
+  },
+  {
+    "name": "checkCopperToBoardEdgeClearance",
+    "count": 0
+  },
+  {
+    "name": "checkDanglingTraces",
+    "count": 0
+  },
+  {
+    "name": "checkDifferentNetViaSpacing",
+    "count": 0
+  },
+  {
+    "name": "checkEachPcbPortConnectedToPcbTraces",
+    "error": "ReferenceError: Illegal Parameters",
+    "stack": "ReferenceError: Illegal Parameters\n    at get ILLEGAL_PARAMETERS (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@flatten-js/core/dist/main.mjs:194:16)\n    at Line.points2norm (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@flatten-js/core/dist/main.mjs:5632:26)\n    at new Line (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@flatten-js/core/dist/main.mjs:5319:34)\n    at Distance.segment2arc (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@flatten-js/core/dist/main.mjs:8816:20)\n    at Arc.distanceTo (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@flatten-js/core/dist/main.mjs:6198:61)\n    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/checks/dist/index.js:577:18\n    at getCopperPourConnectivity (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/checks/dist/index.js:2978:11)\n    at getPourConnectivity (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/checks/dist/index.js:3053:58)\n    at Module.checkEachPcbPortConnectedToPcbTraces (file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/checks/dist/index.js:3115:38)\n    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/[eval1]:1:411"
+  },
+  {
+    "name": "checkEachPcbTraceNonOverlapping",
+    "count": 0
+  },
+  {
+    "name": "checkHoleTraceClearance",
+    "count": 0
+  },
+  {
+    "name": "checkPadPadClearance",
+    "count": 0
+  },
+  {
+    "name": "checkPadTraceClearance",
+    "count": 0
+  },
+  {
+    "name": "checkPcbBusLengthSkew",
+    "count": 0
+  },
+  {
+    "name": "checkPcbCopperOverKeepout",
+    "count": 0
+  },
+  {
+    "name": "checkPcbCourtyardOverKeepout",
+    "count": 0
+  },
+  {
+    "name": "checkPcbRoutingConstraints",
+    "count": 0
+  },
+  {
+    "name": "checkPcbTraceLengths",
+    "count": 0
+  },
+  {
+    "name": "checkPcbTraceSelfShorts",
+    "count": 0
+  },
+  {
+    "name": "checkPcbTraceViaCounts",
+    "count": 0
+  },
+  {
+    "name": "checkPcbTracesOutOfBoard",
+    "count": 0
+  },
+  {
+    "name": "checkSameNameNetsAreConnected",
+    "count": 0
+  },
+  {
+    "name": "checkSameNetViaSpacing",
+    "count": 0
+  },
+  {
+    "name": "checkTracesAreContiguous",
+    "count": 0
+  },
+  {
+    "name": "checkTwoTerminalSwitchContactsOnDifferentNets",
+    "count": 0
+  },
+  {
+    "name": "checkViaPadClearance",
+    "count": 0
+  },
+  {
+    "name": "checkViaTraceClearance",
+    "count": 0
+  },
+  {
+    "name": "checkViasInPads",
+    "count": 0
+  },
+  {
+    "name": "checkViasOffBoard",
+    "count": 0
+  }
+]

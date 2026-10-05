@@ -1,0 +1,2242 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Active electrical or physical source changed: re-run the independent checks
++ actual - expected
+... Skipped lines
+
+  [
+    {
+      is_subcircuit: true,
+      source_group_id: 'source_group_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+...
+      requires_power: true,
++     requires_voltage: 5,
+-     requires_voltage: '5V',
+      source_component_id: 'source_component_204',
+      source_port_id: 'source_port_1038',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net76',
+      subcircuit_id: 'subcircuit_source_group_0',
+      type: 'source_port'
+...
+      requires_power: true,
++     requires_voltage: 5,
+-     requires_voltage: '5V',
+      source_component_id: 'source_component_204',
+      source_port_id: 'source_port_1039',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net76',
+      subcircuit_id: 'subcircuit_source_group_0',
+      type: 'source_port'
+...
+    {
++     message: '<testpoint#770 name=".TP_BAT_INPUT" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_3',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_0',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#778 name=".TP_BAT_NTC" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_4',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_1',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#785 name=".TP_BAT_GND" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_5',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_2',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#792 name=".TP_USB_INPUT" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_6',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_3',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1664 name=".TP_JTAG_TMS" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_170',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_4',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1671 name=".TP_JTAG_TDI" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_171',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_5',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1678 name=".TP_JTAG_TDO" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_172',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_6',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1685 name=".TP_JTAG_TCK" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_173',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_7',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1692 name=".TP_JTAG_TRSTn" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_174',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_8',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1699 name=".TP_JTAG_EMU0" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_175',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_9',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1706 name=".TP_JTAG_EMU1" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_176',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_10',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1713 name=".TP_WARM_RESETn" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_177',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_11',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1720 name=".TP_GND" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_178',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_12',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1727 name=".TP_IO_3V3" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_179',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_13',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1734 name=".TP_UART_GND" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_180',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_14',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1741 name=".TP_UART_UART0_RX" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_181',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_15',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1748 name=".TP_UART_UART0_TX" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_182',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_16',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
++     message: '<testpoint#1755 name=".TP_UART_IO_3V3" /> is missing a manufacturer part number and could not be resolved to a supplier part. Specify mpn, manufacturerPartNumber, or mfn, provide supplierPartNumbers, or configure a parts engine to select a part. If this part will not be assembled, mark it doNotPlace.',
++     source_component_id: 'source_component_183',
++     source_missing_manufacturer_part_number_warning_id: 'source_missing_manufacturer_part_number_warning_17',
++     subcircuit_id: 'subcircuit_source_group_0',
++     type: 'source_missing_manufacturer_part_number_warning',
++     warning_type: 'source_missing_manufacturer_part_number_warning'
++   },
++   {
+      message: 'TP_BAT_INPUT has no courtyard',
+      pcb_component_id: 'pcb_component_3',
+      pcb_component_missing_courtyard_warning_id: 'pcb_component_missing_courtyard_warning_0',
+      source_component_id: 'source_component_3',
+      subcircuit_id: 'subcircuit_source_group_0',
+
+    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/check-am3352-ddr-active-source.mjs:27:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    {
+      type: 'source_group',
+      source_group_id: 'source_group_0',
+      is_subcircuit: true,
+      was_automatically_named: true,
+      subcircuit_id: 'subcircuit_source_group_0'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_0',
+      name: 'GND',
+      member_source_group_ids: [],
+      is_ground: true,
+      is_power: false,
+      is_positive_voltage_source: false,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_1',
+      name: 'VSYS',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net74'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_2',
+      name: 'USB_5V',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net76'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_3',
+      name: 'VBAT',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net73'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_4',
+      name: 'VIO_BOOST5V',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net72'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_5',
+      name: 'DDR_1V5',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_6',
+      name: 'VDD_MPU',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net50'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_7',
+      name: 'VDD_CORE',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net60'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_8',
+      name: 'VDDS_1V8',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net59'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_9',
+      name: 'ANALOG_1V8',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net61'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_10',
+      name: 'IO_3V3',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net56'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_11',
+      name: 'PERIPH_3V3',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net65'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_12',
+      name: 'LDO2_3V3',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net71'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_0',
+      name: 'A1',
+      pin_number: 1,
+      port_hints: [ 'A1', 'VSS1', 'pin1', '1' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_ground: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_1',
+      name: 'B1',
+      pin_number: 2,
+      port_hints: [ 'B1', 'DDR_A5', 'pin2', '2' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net8'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_2',
+      name: 'C1',
+      pin_number: 3,
+      port_hints: [ 'C1', 'DDR_A9', 'pin3', '3' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net24'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_3',
+      name: 'D1',
+      pin_number: 4,
+      port_hints: [ 'D1', 'DDR_CKn', 'pin4', '4' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net34'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_4',
+      name: 'E1',
+      pin_number: 5,
+      port_hints: [ 'E1', 'DDR_BA1', 'pin5', '5' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net44'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_5',
+      name: 'F1',
+      pin_number: 6,
+      port_hints: [ 'F1', 'DDR_CASn', 'pin6', '6' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net19'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_6',
+      name: 'G1',
+      pin_number: 7,
+      port_hints: [ 'G1', 'DDR_ODT', 'pin7', '7' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_7',
+      name: 'H1',
+      pin_number: 8,
+      port_hints: [ 'H1', 'DDR_A1', 'pin8', '8' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net37'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_8',
+      name: 'J1',
+      pin_number: 9,
+      port_hints: [ 'J1', 'DDR_D8', 'pin9', '9' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net1'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_9',
+      name: 'K1',
+      pin_number: 10,
+      port_hints: [ 'K1', 'DDR_D9', 'pin10', '10' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net2'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_10',
+      name: 'L1',
+      pin_number: 11,
+      port_hints: [ 'L1', 'DDR_DQS1', 'pin11', '11' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net28'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_11',
+      name: 'M1',
+      pin_number: 12,
+      port_hints: [ 'M1', 'DDR_D15', 'pin12', '12' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net41'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_12',
+      name: 'N1',
+      pin_number: 13,
+      port_hints: [ 'N1', 'DDR_D2', 'pin13', '13' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net3'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_13',
+      name: 'P1',
+      pin_number: 14,
+      port_hints: [ 'P1', 'DDR_DQS0', 'pin14', '14' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net15'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_14',
+      name: 'R1',
+      pin_number: 15,
+      port_hints: [ 'R1', 'LCD_DATA0', 'pin15', '15' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net90'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_15',
+      name: 'T1',
+      pin_number: 16,
+      port_hints: [ 'T1', 'LCD_DATA4', 'pin16', '16' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net94'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_16',
+      name: 'U1',
+      pin_number: 17,
+      port_hints: [ 'U1', 'LCD_DATA8', 'pin17', '17' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net98'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_17',
+      name: 'V1',
+      pin_number: 18,
+      port_hints: [ 'V1', 'VSS2', 'pin18', '18' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_ground: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_18',
+      name: 'A2',
+      pin_number: 19,
+      port_hints: [ 'A2', 'VDD_MPU_MON', 'pin19', '19' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net50'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_19',
+      name: 'B2',
+      pin_number: 20,
+      port_hints: [ 'B2', 'DDR_WEn', 'pin20', '20' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net20'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_20',
+      name: 'C2',
+      pin_number: 21,
+      port_hints: [ 'C2', 'DDR_A4', 'pin21', '21' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net45'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_21',
+      name: 'D2',
+      pin_number: 22,
+      port_hints: [ 'D2', 'DDR_CK', 'pin22', '22' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net33'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_22',
+      name: 'E2',
+      pin_number: 23,
+      port_hints: [ 'E2', 'DDR_A7', 'pin23', '23' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net9'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_23',
+      name: 'F2',
+      pin_number: 24,
+      port_hints: [ 'F2', 'DDR_A11', 'pin24', '24' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net38'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_24',
+      name: 'G2',
+      pin_number: 25,
+      port_hints: [ 'G2', 'DDR_RESETn', 'pin25', '25' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net10'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_25',
+      name: 'H2',
+      pin_number: 26,
+      port_hints: [ 'H2', 'DDR_CSn0', 'pin26', '26' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net5'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_26',
+      name: 'J2',
+      pin_number: 27,
+      port_hints: [ 'J2', 'DDR_DQM1', 'pin27', '27' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net13'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_27',
+      name: 'K2',
+      pin_number: 28,
+      port_hints: [ 'K2', 'DDR_D10', 'pin28', '28' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net11'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_28',
+      name: 'L2',
+      pin_number: 29,
+      port_hints: [ 'L2', 'DDR_DQSn1', 'pin29', '29' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net27'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_29',
+      name: 'M2',
+      pin_number: 30,
+      port_hints: [ 'M2', 'DDR_DQM0', 'pin30', '30' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net30'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_30',
+      name: 'N2',
+      pin_number: 31,
+      port_hints: [ 'N2', 'DDR_D3', 'pin31', '31' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net42'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_31',
+      name: 'P2',
+      pin_number: 32,
+      port_hints: [ 'P2', 'DDR_DQSn0', 'pin32', '32' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net16'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_32',
+      name: 'R2',
+      pin_number: 33,
+      port_hints: [ 'R2', 'LCD_DATA1', 'pin33', '33' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net91'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_33',
+      name: 'T2',
+      pin_number: 34,
+      port_hints: [ 'T2', 'LCD_DATA5', 'pin34', '34' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net95'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_34',
+      name: 'U2',
+      pin_number: 35,
+      port_hints: [ 'U2', 'LCD_DATA9', 'pin35', '35' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net99'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_35',
+      name: 'V2',
+      pin_number: 36,
+      port_hints: [ 'V2', 'LCD_DATA12', 'pin36', '36' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net102'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_36',
+      name: 'A3',
+      pin_number: 37,
+      port_hints: [ 'A3', 'RESERVED', 'pin37', '37' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_37',
+      name: 'B3',
+      pin_number: 38,
+      port_hints: [ 'B3', 'DDR_BA2', 'pin38', '38' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net21'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_38',
+      name: 'C3',
+      pin_number: 39,
+      port_hints: [ 'C3', 'DDR_A3', 'pin39', '39' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net7'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_39',
+      name: 'D3',
+      pin_number: 40,
+      port_hints: [ 'D3', 'DDR_A15', 'pin40', '40' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_40',
+      name: 'E3',
+      pin_number: 41,
+      port_hints: [ 'E3', 'DDR_A12', 'pin41', '41' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net36'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_41',
+      name: 'F3',
+      pin_number: 42,
+      port_hints: [ 'F3', 'DDR_A0', 'pin42', '42' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net22'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_42',
+      name: 'G3',
+      pin_number: 43,
+      port_hints: [ 'G3', 'DDR_CKE', 'pin43', '43' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net48'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_43',
+      name: 'H3',
+      pin_number: 44,
+      port_hints: [ 'H3', 'DDR_A13', 'pin44', '44' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net25'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_44',
+      name: 'J3',
+      pin_number: 45,
+      port_hints: [ 'J3', 'DDR_VTP', 'pin45', '45' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net51'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_45',
+      name: 'K3',
+      pin_number: 46,
+      port_hints: [ 'K3', 'DDR_D11', 'pin46', '46' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net12'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_46',
+      name: 'L3',
+      pin_number: 47,
+      port_hints: [ 'L3', 'DDR_D13', 'pin47', '47' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net29'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_47',
+      name: 'M3',
+      pin_number: 48,
+      port_hints: [ 'M3', 'DDR_D0', 'pin48', '48' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net14'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_48',
+      name: 'N3',
+      pin_number: 49,
+      port_hints: [ 'N3', 'DDR_D4', 'pin49', '49' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net17'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_49',
+      name: 'P3',
+      pin_number: 50,
+      port_hints: [ 'P3', 'DDR_D6', 'pin50', '50' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net4'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_50',
+      name: 'R3',
+      pin_number: 51,
+      port_hints: [ 'R3', 'LCD_DATA2', 'pin51', '51' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net92'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_51',
+      name: 'T3',
+      pin_number: 52,
+      port_hints: [ 'T3', 'LCD_DATA6', 'pin52', '52' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net96'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_52',
+      name: 'U3',
+      pin_number: 53,
+      port_hints: [ 'U3', 'LCD_DATA10', 'pin53', '53' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net100'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_53',
+      name: 'V3',
+      pin_number: 54,
+      port_hints: [ 'V3', 'LCD_DATA13', 'pin54', '54' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net103'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_54',
+      name: 'A4',
+      pin_number: 55,
+      port_hints: [ 'A4', 'RTC_XTALOUT', 'pin55', '55' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      do_not_connect: true
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_55',
+      name: 'B4',
+      pin_number: 56,
+      port_hints: [ 'B4', 'RTC_KALDO_ENn', 'pin56', '56' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_56',
+      name: 'C4',
+      pin_number: 57,
+      port_hints: [ 'C4', 'DDR_BA0', 'pin57', '57' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net6'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_57',
+      name: 'D4',
+      pin_number: 58,
+      port_hints: [ 'D4', 'DDR_A8', 'pin58', '58' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net47'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_58',
+      name: 'E4',
+      pin_number: 59,
+      port_hints: [ 'E4', 'DDR_A2', 'pin59', '59' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net23'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_59',
+      name: 'F4',
+      pin_number: 60,
+      port_hints: [ 'F4', 'DDR_A10', 'pin60', '60' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net35'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_60',
+      name: 'G4',
+      pin_number: 61,
+      port_hints: [ 'G4', 'DDR_RASn', 'pin61', '61' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net18'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_61',
+      name: 'H4',
+      pin_number: 62,
+      port_hints: [ 'H4', 'DDR_A14', 'pin62', '62' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net39'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_62',
+      name: 'J4',
+      pin_number: 63,
+      port_hints: [ 'J4', 'DDR_VREF', 'pin63', '63' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net52'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_63',
+      name: 'K4',
+      pin_number: 64,
+      port_hints: [ 'K4', 'DDR_D12', 'pin64', '64' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net26'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_64',
+      name: 'L4',
+      pin_number: 65,
+      port_hints: [ 'L4', 'DDR_D14', 'pin65', '65' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net40'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_65',
+      name: 'M4',
+      pin_number: 66,
+      port_hints: [ 'M4', 'DDR_D1', 'pin66', '66' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net31'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_66',
+      name: 'N4',
+      pin_number: 67,
+      port_hints: [ 'N4', 'DDR_D5', 'pin67', '67' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net43'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_67',
+      name: 'P4',
+      pin_number: 68,
+      port_hints: [ 'P4', 'DDR_D7', 'pin68', '68' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net32'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_68',
+      name: 'R4',
+      pin_number: 69,
+      port_hints: [ 'R4', 'LCD_DATA3', 'pin69', '69' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net93'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_69',
+      name: 'T4',
+      pin_number: 70,
+      port_hints: [ 'T4', 'LCD_DATA7', 'pin70', '70' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net97'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_70',
+      name: 'U4',
+      pin_number: 71,
+      port_hints: [ 'U4', 'LCD_DATA11', 'pin71', '71' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net101'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_71',
+      name: 'V4',
+      pin_number: 72,
+      port_hints: [ 'V4', 'LCD_DATA14', 'pin72', '72' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net104'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_72',
+      name: 'A5',
+      pin_number: 73,
+      port_hints: [ 'A5', 'VSS_RTC', 'pin73', '73' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_ground: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_73',
+      name: 'B5',
+      pin_number: 74,
+      port_hints: [ 'B5', 'RTC_PWRONRSTn', 'pin74', '74' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net53'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_74',
+      name: 'C5',
+      pin_number: 75,
+      port_hints: [ 'C5', 'EXT_WAKEUP', 'pin75', '75' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net54'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_75',
+      name: 'D5',
+      pin_number: 76,
+      port_hints: [ 'D5', 'DDR_A6', 'pin76', '76' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net46'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_76',
+      name: 'E5',
+      pin_number: 77,
+      port_hints: [ 'E5', 'VDDS_DDR1', 'pin77', '77' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_77',
+      name: 'F5',
+      pin_number: 78,
+      port_hints: [ 'F5', 'VDDS_DDR2', 'pin78', '78' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_78',
+      name: 'G5',
+      pin_number: 79,
+      port_hints: [ 'G5', 'VDDS_DDR3', 'pin79', '79' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_79',
+      name: 'H5',
+      pin_number: 80,
+      port_hints: [ 'H5', 'VDDS_DDR4', 'pin80', '80' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_80',
+      name: 'J5',
+      pin_number: 81,
+      port_hints: [ 'J5', 'VDDS_DDR5', 'pin81', '81' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_81',
+      name: 'K5',
+      pin_number: 82,
+      port_hints: [ 'K5', 'VDDS_DDR6', 'pin82', '82' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_82',
+      name: 'L5',
+      pin_number: 83,
+      port_hints: [ 'L5', 'VDDS_DDR7', 'pin83', '83' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_83',
+      name: 'M5',
+      pin_number: 84,
+      port_hints: [ 'M5', 'VPP', 'pin84', '84' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      do_not_connect: true
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_84',
+      name: 'N5',
+      pin_number: 85,
+      port_hints: [ 'N5', 'VDDSHV61', 'pin85', '85' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net56'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_85',
+      name: 'P5',
+      pin_number: 86,
+      port_hints: [ 'P5', 'VDDSHV62', 'pin86', '86' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net56'
+    },
+    ... 7875 more items
+  ],
+  expected: [
+    {
+      type: 'source_group',
+      source_group_id: 'source_group_0',
+      is_subcircuit: true,
+      was_automatically_named: true,
+      subcircuit_id: 'subcircuit_source_group_0'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_0',
+      name: 'GND',
+      member_source_group_ids: [],
+      is_ground: true,
+      is_power: false,
+      is_positive_voltage_source: false,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_1',
+      name: 'VSYS',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net74'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_2',
+      name: 'USB_5V',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net76'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_3',
+      name: 'VBAT',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net73'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_4',
+      name: 'VIO_BOOST5V',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net72'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_5',
+      name: 'DDR_1V5',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_6',
+      name: 'VDD_MPU',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net50'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_7',
+      name: 'VDD_CORE',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net60'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_8',
+      name: 'VDDS_1V8',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net59'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_9',
+      name: 'ANALOG_1V8',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net61'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_10',
+      name: 'IO_3V3',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net56'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_11',
+      name: 'PERIPH_3V3',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net65'
+    },
+    {
+      type: 'source_net',
+      source_net_id: 'source_net_12',
+      name: 'LDO2_3V3',
+      member_source_group_ids: [],
+      is_ground: false,
+      is_power: true,
+      is_positive_voltage_source: true,
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net71'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_0',
+      name: 'A1',
+      pin_number: 1,
+      port_hints: [ 'A1', 'VSS1', 'pin1', '1' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_ground: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_1',
+      name: 'B1',
+      pin_number: 2,
+      port_hints: [ 'B1', 'DDR_A5', 'pin2', '2' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net8'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_2',
+      name: 'C1',
+      pin_number: 3,
+      port_hints: [ 'C1', 'DDR_A9', 'pin3', '3' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net24'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_3',
+      name: 'D1',
+      pin_number: 4,
+      port_hints: [ 'D1', 'DDR_CKn', 'pin4', '4' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net34'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_4',
+      name: 'E1',
+      pin_number: 5,
+      port_hints: [ 'E1', 'DDR_BA1', 'pin5', '5' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net44'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_5',
+      name: 'F1',
+      pin_number: 6,
+      port_hints: [ 'F1', 'DDR_CASn', 'pin6', '6' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net19'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_6',
+      name: 'G1',
+      pin_number: 7,
+      port_hints: [ 'G1', 'DDR_ODT', 'pin7', '7' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net0'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_7',
+      name: 'H1',
+      pin_number: 8,
+      port_hints: [ 'H1', 'DDR_A1', 'pin8', '8' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net37'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_8',
+      name: 'J1',
+      pin_number: 9,
+      port_hints: [ 'J1', 'DDR_D8', 'pin9', '9' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net1'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_9',
+      name: 'K1',
+      pin_number: 10,
+      port_hints: [ 'K1', 'DDR_D9', 'pin10', '10' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net2'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_10',
+      name: 'L1',
+      pin_number: 11,
+      port_hints: [ 'L1', 'DDR_DQS1', 'pin11', '11' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net28'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_11',
+      name: 'M1',
+      pin_number: 12,
+      port_hints: [ 'M1', 'DDR_D15', 'pin12', '12' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net41'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_12',
+      name: 'N1',
+      pin_number: 13,
+      port_hints: [ 'N1', 'DDR_D2', 'pin13', '13' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net3'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_13',
+      name: 'P1',
+      pin_number: 14,
+      port_hints: [ 'P1', 'DDR_DQS0', 'pin14', '14' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net15'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_14',
+      name: 'R1',
+      pin_number: 15,
+      port_hints: [ 'R1', 'LCD_DATA0', 'pin15', '15' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net90'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_15',
+      name: 'T1',
+      pin_number: 16,
+      port_hints: [ 'T1', 'LCD_DATA4', 'pin16', '16' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net94'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_16',
+      name: 'U1',
+      pin_number: 17,
+      port_hints: [ 'U1', 'LCD_DATA8', 'pin17', '17' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net98'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_17',
+      name: 'V1',
+      pin_number: 18,
+      port_hints: [ 'V1', 'VSS2', 'pin18', '18' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_ground: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_18',
+      name: 'A2',
+      pin_number: 19,
+      port_hints: [ 'A2', 'VDD_MPU_MON', 'pin19', '19' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net50'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_19',
+      name: 'B2',
+      pin_number: 20,
+      port_hints: [ 'B2', 'DDR_WEn', 'pin20', '20' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net20'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_20',
+      name: 'C2',
+      pin_number: 21,
+      port_hints: [ 'C2', 'DDR_A4', 'pin21', '21' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net45'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_21',
+      name: 'D2',
+      pin_number: 22,
+      port_hints: [ 'D2', 'DDR_CK', 'pin22', '22' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net33'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_22',
+      name: 'E2',
+      pin_number: 23,
+      port_hints: [ 'E2', 'DDR_A7', 'pin23', '23' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net9'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_23',
+      name: 'F2',
+      pin_number: 24,
+      port_hints: [ 'F2', 'DDR_A11', 'pin24', '24' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net38'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_24',
+      name: 'G2',
+      pin_number: 25,
+      port_hints: [ 'G2', 'DDR_RESETn', 'pin25', '25' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net10'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_25',
+      name: 'H2',
+      pin_number: 26,
+      port_hints: [ 'H2', 'DDR_CSn0', 'pin26', '26' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net5'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_26',
+      name: 'J2',
+      pin_number: 27,
+      port_hints: [ 'J2', 'DDR_DQM1', 'pin27', '27' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net13'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_27',
+      name: 'K2',
+      pin_number: 28,
+      port_hints: [ 'K2', 'DDR_D10', 'pin28', '28' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net11'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_28',
+      name: 'L2',
+      pin_number: 29,
+      port_hints: [ 'L2', 'DDR_DQSn1', 'pin29', '29' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net27'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_29',
+      name: 'M2',
+      pin_number: 30,
+      port_hints: [ 'M2', 'DDR_DQM0', 'pin30', '30' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net30'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_30',
+      name: 'N2',
+      pin_number: 31,
+      port_hints: [ 'N2', 'DDR_D3', 'pin31', '31' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net42'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_31',
+      name: 'P2',
+      pin_number: 32,
+      port_hints: [ 'P2', 'DDR_DQSn0', 'pin32', '32' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net16'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_32',
+      name: 'R2',
+      pin_number: 33,
+      port_hints: [ 'R2', 'LCD_DATA1', 'pin33', '33' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net91'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_33',
+      name: 'T2',
+      pin_number: 34,
+      port_hints: [ 'T2', 'LCD_DATA5', 'pin34', '34' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net95'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_34',
+      name: 'U2',
+      pin_number: 35,
+      port_hints: [ 'U2', 'LCD_DATA9', 'pin35', '35' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net99'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_35',
+      name: 'V2',
+      pin_number: 36,
+      port_hints: [ 'V2', 'LCD_DATA12', 'pin36', '36' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net102'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_36',
+      name: 'A3',
+      pin_number: 37,
+      port_hints: [ 'A3', 'RESERVED', 'pin37', '37' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_37',
+      name: 'B3',
+      pin_number: 38,
+      port_hints: [ 'B3', 'DDR_BA2', 'pin38', '38' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net21'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_38',
+      name: 'C3',
+      pin_number: 39,
+      port_hints: [ 'C3', 'DDR_A3', 'pin39', '39' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net7'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_39',
+      name: 'D3',
+      pin_number: 40,
+      port_hints: [ 'D3', 'DDR_A15', 'pin40', '40' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_40',
+      name: 'E3',
+      pin_number: 41,
+      port_hints: [ 'E3', 'DDR_A12', 'pin41', '41' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net36'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_41',
+      name: 'F3',
+      pin_number: 42,
+      port_hints: [ 'F3', 'DDR_A0', 'pin42', '42' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net22'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_42',
+      name: 'G3',
+      pin_number: 43,
+      port_hints: [ 'G3', 'DDR_CKE', 'pin43', '43' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net48'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_43',
+      name: 'H3',
+      pin_number: 44,
+      port_hints: [ 'H3', 'DDR_A13', 'pin44', '44' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net25'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_44',
+      name: 'J3',
+      pin_number: 45,
+      port_hints: [ 'J3', 'DDR_VTP', 'pin45', '45' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net51'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_45',
+      name: 'K3',
+      pin_number: 46,
+      port_hints: [ 'K3', 'DDR_D11', 'pin46', '46' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net12'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_46',
+      name: 'L3',
+      pin_number: 47,
+      port_hints: [ 'L3', 'DDR_D13', 'pin47', '47' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net29'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_47',
+      name: 'M3',
+      pin_number: 48,
+      port_hints: [ 'M3', 'DDR_D0', 'pin48', '48' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net14'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_48',
+      name: 'N3',
+      pin_number: 49,
+      port_hints: [ 'N3', 'DDR_D4', 'pin49', '49' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net17'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_49',
+      name: 'P3',
+      pin_number: 50,
+      port_hints: [ 'P3', 'DDR_D6', 'pin50', '50' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net4'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_50',
+      name: 'R3',
+      pin_number: 51,
+      port_hints: [ 'R3', 'LCD_DATA2', 'pin51', '51' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net92'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_51',
+      name: 'T3',
+      pin_number: 52,
+      port_hints: [ 'T3', 'LCD_DATA6', 'pin52', '52' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net96'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_52',
+      name: 'U3',
+      pin_number: 53,
+      port_hints: [ 'U3', 'LCD_DATA10', 'pin53', '53' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net100'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_53',
+      name: 'V3',
+      pin_number: 54,
+      port_hints: [ 'V3', 'LCD_DATA13', 'pin54', '54' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net103'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_54',
+      name: 'A4',
+      pin_number: 55,
+      port_hints: [ 'A4', 'RTC_XTALOUT', 'pin55', '55' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      do_not_connect: true
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_55',
+      name: 'B4',
+      pin_number: 56,
+      port_hints: [ 'B4', 'RTC_KALDO_ENn', 'pin56', '56' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_56',
+      name: 'C4',
+      pin_number: 57,
+      port_hints: [ 'C4', 'DDR_BA0', 'pin57', '57' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net6'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_57',
+      name: 'D4',
+      pin_number: 58,
+      port_hints: [ 'D4', 'DDR_A8', 'pin58', '58' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net47'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_58',
+      name: 'E4',
+      pin_number: 59,
+      port_hints: [ 'E4', 'DDR_A2', 'pin59', '59' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net23'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_59',
+      name: 'F4',
+      pin_number: 60,
+      port_hints: [ 'F4', 'DDR_A10', 'pin60', '60' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net35'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_60',
+      name: 'G4',
+      pin_number: 61,
+      port_hints: [ 'G4', 'DDR_RASn', 'pin61', '61' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net18'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_61',
+      name: 'H4',
+      pin_number: 62,
+      port_hints: [ 'H4', 'DDR_A14', 'pin62', '62' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net39'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_62',
+      name: 'J4',
+      pin_number: 63,
+      port_hints: [ 'J4', 'DDR_VREF', 'pin63', '63' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net52'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_63',
+      name: 'K4',
+      pin_number: 64,
+      port_hints: [ 'K4', 'DDR_D12', 'pin64', '64' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net26'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_64',
+      name: 'L4',
+      pin_number: 65,
+      port_hints: [ 'L4', 'DDR_D14', 'pin65', '65' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net40'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_65',
+      name: 'M4',
+      pin_number: 66,
+      port_hints: [ 'M4', 'DDR_D1', 'pin66', '66' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net31'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_66',
+      name: 'N4',
+      pin_number: 67,
+      port_hints: [ 'N4', 'DDR_D5', 'pin67', '67' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net43'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_67',
+      name: 'P4',
+      pin_number: 68,
+      port_hints: [ 'P4', 'DDR_D7', 'pin68', '68' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net32'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_68',
+      name: 'R4',
+      pin_number: 69,
+      port_hints: [ 'R4', 'LCD_DATA3', 'pin69', '69' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net93'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_69',
+      name: 'T4',
+      pin_number: 70,
+      port_hints: [ 'T4', 'LCD_DATA7', 'pin70', '70' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net97'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_70',
+      name: 'U4',
+      pin_number: 71,
+      port_hints: [ 'U4', 'LCD_DATA11', 'pin71', '71' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net101'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_71',
+      name: 'V4',
+      pin_number: 72,
+      port_hints: [ 'V4', 'LCD_DATA14', 'pin72', '72' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net104'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_72',
+      name: 'A5',
+      pin_number: 73,
+      port_hints: [ 'A5', 'VSS_RTC', 'pin73', '73' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_ground: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net49'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_73',
+      name: 'B5',
+      pin_number: 74,
+      port_hints: [ 'B5', 'RTC_PWRONRSTn', 'pin74', '74' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net53'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_74',
+      name: 'C5',
+      pin_number: 75,
+      port_hints: [ 'C5', 'EXT_WAKEUP', 'pin75', '75' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net54'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_75',
+      name: 'D5',
+      pin_number: 76,
+      port_hints: [ 'D5', 'DDR_A6', 'pin76', '76' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net46'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_76',
+      name: 'E5',
+      pin_number: 77,
+      port_hints: [ 'E5', 'VDDS_DDR1', 'pin77', '77' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_77',
+      name: 'F5',
+      pin_number: 78,
+      port_hints: [ 'F5', 'VDDS_DDR2', 'pin78', '78' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_78',
+      name: 'G5',
+      pin_number: 79,
+      port_hints: [ 'G5', 'VDDS_DDR3', 'pin79', '79' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_79',
+      name: 'H5',
+      pin_number: 80,
+      port_hints: [ 'H5', 'VDDS_DDR4', 'pin80', '80' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_80',
+      name: 'J5',
+      pin_number: 81,
+      port_hints: [ 'J5', 'VDDS_DDR5', 'pin81', '81' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_81',
+      name: 'K5',
+      pin_number: 82,
+      port_hints: [ 'K5', 'VDDS_DDR6', 'pin82', '82' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_82',
+      name: 'L5',
+      pin_number: 83,
+      port_hints: [ 'L5', 'VDDS_DDR7', 'pin83', '83' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net55'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_83',
+      name: 'M5',
+      pin_number: 84,
+      port_hints: [ 'M5', 'VPP', 'pin84', '84' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      do_not_connect: true
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_84',
+      name: 'N5',
+      pin_number: 85,
+      port_hints: [ 'N5', 'VDDSHV61', 'pin85', '85' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net56'
+    },
+    {
+      type: 'source_port',
+      source_port_id: 'source_port_85',
+      name: 'P5',
+      pin_number: 86,
+      port_hints: [ 'P5', 'VDDSHV62', 'pin86', '86' ],
+      source_component_id: 'source_component_0',
+      subcircuit_id: 'subcircuit_source_group_0',
+      requires_power: true,
+      subcircuit_connectivity_map_key: 'unnamedsubcircuitsubcircuit_source_group_0_connectivity_net56'
+    },
+    ... 7857 more items
+  ],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.6.1

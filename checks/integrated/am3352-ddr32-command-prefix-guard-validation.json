@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "preparation": {
+    "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/result.json",
+    "sha256": "b273d95e899559c1784633c7acdc09c0bac9d9201ef322cd043c60d14eadb734"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+    "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+  },
+  "input": {
+    "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+    "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+  },
+  "tests": {
+    "declaredPrefixAccepted": true,
+    "undeclaredCopperMutationRejected": true,
+    "retainedHoleDeletionRejected": true,
+    "traceOwnerMutationRejected": true,
+    "stagedReplaySaveRejected": true,
+    "stagedReplayOutputAbsent": true
+  },
+  "helpers": [
+    {
+      "path": "scripts/lib/am3352-open-command-prefixes.mjs",
+      "sha256": "acc076b13cad647a7867aa064613c7a39e810973b85757d02821fa63b2fd12a5"
+    },
+    {
+      "path": "scripts/save-am3352-registered-command.mjs",
+      "sha256": "cda326464f1570361439ae1530c1c379a13dfaef2221c008b4b97b3bc173a1fa"
+    }
+  ],
+  "defaultChanged": false,
+  "fabricationReady": false
+}

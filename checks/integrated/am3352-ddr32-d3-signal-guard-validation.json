@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "preparation": {
+    "path": "dist/am3352-ddr32-casn-d3-signal-open-attempt-670/result.json",
+    "sha256": "f1a8aa8f69c3e5357af3244f01032e639fad5dd1493722ff57d586bd1c562407"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+    "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+  },
+  "input": {
+    "path": "dist/am3352-ddr32-casn-d3-signal-open-attempt-670/input.simple-route.json",
+    "sha256": "6d889dedb7b0a3fc7e1841d65108c3fe81432f14ab72bfd1b2e454c0c806fdfd"
+  },
+  "tests": {
+    "onlyDeclaredD3HolesAccepted": true,
+    "undeclaredCopperChangeRejected": true,
+    "padDeletionRejected": true,
+    "changedD3CpuPadMarkerRejected": true,
+    "changedCsn0TailRejected": true,
+    "changedViaDimensionsRejected": true,
+    "referenceHoleDeletionRejected": true,
+    "referenceHoleReplanRejected": true,
+    "actualNativeCasnJoinVerified": true,
+    "actualNativeD3JoinVerified": true,
+    "incompleteReplaySaveRejected": true
+  },
+  "helpers": [
+    {
+      "path": "scripts/validate-am3352-d3-signal-guards.mjs",
+      "sha256": "ab33ec6167e8872005672bbfd7358d1dba1ac9184081b2b8fe641568fb93de32"
+    },
+    {
+      "path": "scripts/lib/am3352-open-d3-signal.mjs",
+      "sha256": "46e972f880af5007ffb112664f67e6f120978377865a336b86dfead774f0c0d8"
+    },
+    {
+      "path": "scripts/lib/am3352-open-command-prefixes.mjs",
+      "sha256": "acc076b13cad647a7867aa064613c7a39e810973b85757d02821fa63b2fd12a5"
+    },
+    {
+      "path": "scripts/lib/am3352-staged-casn-d3-open.mjs",
+      "sha256": "9874ef7ff82c7af4a7dbc4ee0f43b0f767e7c9745c1ed90c21670732e20a7241"
+    },
+    {
+      "path": "scripts/lib/am3352-staged-casn-d3-restored.mjs",
+      "sha256": "3ee205559264aa72a6ccecf8e23ec9fee1bf6e1c212fcb4b41254701449c2209"
+    },
+    {
+      "path": "scripts/save-am3352-registered-command.mjs",
+      "sha256": "cda326464f1570361439ae1530c1c379a13dfaef2221c008b4b97b3bc173a1fa"
+    }
+  ],
+  "frozenSourceModified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

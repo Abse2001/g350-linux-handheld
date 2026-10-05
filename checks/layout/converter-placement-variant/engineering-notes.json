@@ -1,0 +1,276 @@
+{
+  "reviewDate": "2026-10-05",
+  "fabricationReady": false,
+  "routingPermitted": false,
+  "originalShellFitVerified": false,
+  "entry": "experiments/am3352-g350-converter-placement.circuit.tsx",
+  "manufacturerReferences": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+      "local": "reference/am3352/tps61023-datasheet.pdf",
+      "revision": "SLVSF14B, August2020",
+      "sections": [
+        "Pin functions",
+        "Layout guidelines and example"
+      ]
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps62162.pdf",
+      "local": "reference/am3352/tps62162-datasheet.pdf",
+      "revision": "SLVSAM2E, May2017",
+      "sections": [
+        "Pin functions: PGND1 / AGND4",
+        "Layout guidelines and example"
+      ]
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tps61165.pdf",
+      "local": "reference/am3352/display/TPS61165-datasheet.pdf",
+      "revision": "SLVS790E, April2019",
+      "sections": [
+        "Pin functions",
+        "Layout guidelines and example"
+      ]
+    }
+  ],
+  "changes": [
+    "17 converter/support parts repositioned at source level; all 280 parts, functional port/net mapping, procurement, outline and CPU/RAM placements retained.",
+    "Boost output capacitors moved toward VOUT/GND; SD input capacitor translated with its original orientation retained, high-frequency bypass on bottom with dedicated short vias still required.",
+    "Backlight output capacitor rotated toward the diode and GND; compensation, sense and input parts adjusted while retaining clear courtyards."
+  ],
+  "converterGeometry": {
+    "status": "PLANNED_REQUIRES_NATIVE_BUILD_AND_DRC",
+    "fabricationReady": false,
+    "routingPermitted": false,
+    "originalShellFitVerified": false,
+    "input": "dist/experiments/am3352-g350-pmic-placement/circuit.json",
+    "inputSha256": "a76581781024de52d555b7c6f37dd5708ad7293c2b4a902414b721adccafdc2d",
+    "plannerSha256": "8c65e6615362cd35c7e7967dac5428858273493d667e21c874bfaa6982cf51f8",
+    "movedComponents": 17,
+    "placementMethod": "Manufacturer-guided explicit positions with independent pad-distance and same-side courtyard checks.",
+    "metrics": [
+      {
+        "name": "boost_switch",
+        "from": "U_IO_BOOST.5",
+        "to": "L_IO_BOOST.2",
+        "oldStraightPadDistanceMm": 3.0651042026310726,
+        "newStraightPadDistanceMm": 2.913404444510001
+      },
+      {
+        "name": "boost_input",
+        "from": "U_IO_BOOST.3",
+        "to": "C_IO_BOOST_IN.1",
+        "oldStraightPadDistanceMm": 6.492500028501892,
+        "newStraightPadDistanceMm": 2.751384240837805
+      },
+      {
+        "name": "boost_input_ground",
+        "from": "U_IO_BOOST.4",
+        "to": "C_IO_BOOST_IN.2",
+        "oldStraightPadDistanceMm": 5.527429621451283,
+        "newStraightPadDistanceMm": 4.13036421648584
+      },
+      {
+        "name": "boost_output1",
+        "from": "U_IO_BOOST.6",
+        "to": "C_IO_BOOST_OUT1.1",
+        "oldStraightPadDistanceMm": 4.111496903303543,
+        "newStraightPadDistanceMm": 3.192775977384353
+      },
+      {
+        "name": "boost_output2",
+        "from": "U_IO_BOOST.6",
+        "to": "C_IO_BOOST_OUT2.1",
+        "oldStraightPadDistanceMm": 7.804128060576312,
+        "newStraightPadDistanceMm": 6.147878094250288
+      },
+      {
+        "name": "boost_output1_ground",
+        "from": "U_IO_BOOST.4",
+        "to": "C_IO_BOOST_OUT1.2",
+        "oldStraightPadDistanceMm": 6.985198660548653,
+        "newStraightPadDistanceMm": 3.192775977384353
+      },
+      {
+        "name": "boost_output2_ground",
+        "from": "U_IO_BOOST.4",
+        "to": "C_IO_BOOST_OUT2.2",
+        "oldStraightPadDistanceMm": 10.039571321890726,
+        "newStraightPadDistanceMm": 6.147878094250288
+      },
+      {
+        "name": "boost_feedback_high",
+        "from": "U_IO_BOOST.1",
+        "to": "R_IO_BOOST_HI.2",
+        "oldStraightPadDistanceMm": 3.044713387535228,
+        "newStraightPadDistanceMm": 1.9778537736573503
+      },
+      {
+        "name": "boost_feedback_low",
+        "from": "U_IO_BOOST.1",
+        "to": "R_IO_BOOST_LO.1",
+        "oldStraightPadDistanceMm": 3.0906640545494835,
+        "newStraightPadDistanceMm": 3.078573087599293
+      },
+      {
+        "name": "boost_feedback_ff",
+        "from": "U_IO_BOOST.1",
+        "to": "C_IO_BOOST_FF.2",
+        "oldStraightPadDistanceMm": 6.968000429209244,
+        "newStraightPadDistanceMm": 3.162669375816989
+      },
+      {
+        "name": "boost_divider",
+        "from": "R_IO_BOOST_HI.2",
+        "to": "R_IO_BOOST_LO.1",
+        "oldStraightPadDistanceMm": 2.3253006240914313,
+        "newStraightPadDistanceMm": 2.1802768155443033
+      },
+      {
+        "name": "boost_ff_feedback",
+        "from": "R_IO_BOOST_HI.2",
+        "to": "C_IO_BOOST_FF.2",
+        "oldStraightPadDistanceMm": 3.946659999999998,
+        "newStraightPadDistanceMm": 2.100677308774484
+      },
+      {
+        "name": "boost_ff_output",
+        "from": "R_IO_BOOST_HI.1",
+        "to": "C_IO_BOOST_FF.1",
+        "oldStraightPadDistanceMm": 4.053340000000002,
+        "newStraightPadDistanceMm": 2.100677308774484
+      },
+      {
+        "name": "sd_switch",
+        "from": "U_SD_REG.7",
+        "to": "L_SD_REG.1",
+        "oldStraightPadDistanceMm": 2.3782993758137354,
+        "newStraightPadDistanceMm": 1.8322567835857506
+      },
+      {
+        "name": "sd_output",
+        "from": "L_SD_REG.2",
+        "to": "C_SD_REG_OUT.1",
+        "oldStraightPadDistanceMm": 2.7225099999999998,
+        "newStraightPadDistanceMm": 2.5725099999999976
+      },
+      {
+        "name": "sd_input",
+        "from": "U_SD_REG.2",
+        "to": "C_SD_REG_IN.1",
+        "oldStraightPadDistanceMm": 3.5633704847876833,
+        "newStraightPadDistanceMm": 3.0655441950583593
+      },
+      {
+        "name": "sd_input_ground",
+        "from": "U_SD_REG.1",
+        "to": "C_SD_REG_IN.2",
+        "oldStraightPadDistanceMm": 3.1642661995988894,
+        "newStraightPadDistanceMm": 2.590855569483562
+      },
+      {
+        "name": "sd_hf",
+        "from": "U_SD_REG.2",
+        "to": "C_SD_REG_HF.1",
+        "oldStraightPadDistanceMm": 2.1278722396873317,
+        "newStraightPadDistanceMm": 0.30231415757784386
+      },
+      {
+        "name": "sd_hf_ground",
+        "from": "U_SD_REG.1",
+        "to": "C_SD_REG_HF.2",
+        "oldStraightPadDistanceMm": 1.5732923598683088,
+        "newStraightPadDistanceMm": 1.0058340162173864
+      },
+      {
+        "name": "sd_sense",
+        "from": "U_SD_REG.6",
+        "to": "C_SD_REG_OUT.1",
+        "oldStraightPadDistanceMm": 7.461647114122723,
+        "newStraightPadDistanceMm": 6.76208057151761
+      },
+      {
+        "name": "bl_switch",
+        "from": "U_LCD_BL.3",
+        "to": "D_LCD_BL.2",
+        "oldStraightPadDistanceMm": 2.5729236839175775,
+        "newStraightPadDistanceMm": 2.5729236839175775
+      },
+      {
+        "name": "bl_output",
+        "from": "D_LCD_BL.1",
+        "to": "C_LCD_BL_OUT.1",
+        "oldStraightPadDistanceMm": 2.715017999999997,
+        "newStraightPadDistanceMm": 2.709180316258773
+      },
+      {
+        "name": "bl_output_ground",
+        "from": "U_LCD_BL.4",
+        "to": "C_LCD_BL_OUT.2",
+        "oldStraightPadDistanceMm": 6.743321452110967,
+        "newStraightPadDistanceMm": 3.097868404516238
+      },
+      {
+        "name": "bl_input",
+        "from": "U_LCD_BL.1",
+        "to": "C_LCD_BL_IN.1",
+        "oldStraightPadDistanceMm": 5.838269932248421,
+        "newStraightPadDistanceMm": 2.7285882433588253
+      },
+      {
+        "name": "bl_input_ground",
+        "from": "U_LCD_BL.4",
+        "to": "C_LCD_BL_IN.2",
+        "oldStraightPadDistanceMm": 8.021497104767665,
+        "newStraightPadDistanceMm": 4.5961524998411445
+      },
+      {
+        "name": "bl_comp",
+        "from": "U_LCD_BL.5",
+        "to": "C_LCD_BL_COMP.1",
+        "oldStraightPadDistanceMm": 2.949966,
+        "newStraightPadDistanceMm": 2.22764328409106
+      },
+      {
+        "name": "bl_comp_ground",
+        "from": "U_LCD_BL.4",
+        "to": "C_LCD_BL_COMP.2",
+        "oldStraightPadDistanceMm": 4.45253251552372,
+        "newStraightPadDistanceMm": 3.899343355206873
+      },
+      {
+        "name": "bl_feedback",
+        "from": "U_LCD_BL.6",
+        "to": "R_LCD_BL_SENSE.1",
+        "oldStraightPadDistanceMm": 3.1780330686567737,
+        "newStraightPadDistanceMm": 2.7337249652216293
+      },
+      {
+        "name": "bl_sense_ground",
+        "from": "U_LCD_BL.4",
+        "to": "R_LCD_BL_SENSE.2",
+        "oldStraightPadDistanceMm": 5.6022283469094685,
+        "newStraightPadDistanceMm": 5.147001500963062
+      },
+      {
+        "name": "pwm_input_pulldown",
+        "from": "U_LCD_PWM_BUF.2",
+        "to": "R_LCD_BL_PD.1",
+        "oldStraightPadDistanceMm": 4.8194740055172,
+        "newStraightPadDistanceMm": 4.705263275296718
+      }
+    ],
+    "topLayerHighCurrentGroups": true,
+    "sdHighFrequencyBypassBottomSide": true,
+    "scope": "Geometric placement improvements only. The SD high-frequency bypass needs dedicated short supply/ground vias. Actual switching loops, feedback routing, planes, effective capacitance, stability, thermal performance and original-shell fit remain unverified."
+  },
+  "remaining": [
+    "Route and inspect PMIC and all three converter switching loops, quiet feedback, supply returns and thermal ground vias.",
+    "Build fresh DDR signal/ground/power escapes and continuous references for CPU(0,20) and RAM(0,0); use bus_lanes phases on the complete placed source and repair checked routes as needed.",
+    "Finish full connectivity, shorts, timing, stackup and independent manufacturing checks.",
+    "Implement and validate Linux panel, pinmux, audio and shared USB-C installation/recovery.",
+    "Qualify battery protection, NTC, load current, dimensions and speaker mating/load.",
+    "Verify original shell mounting, ribs, button/port alignment and assembled clearances."
+  ],
+  "qualification": "Geometric placement only. Distances do not establish routed loop inductance, current capacity, regulator stability, effective capacitance, sequencing, thermal behaviour or shell fit."
+}

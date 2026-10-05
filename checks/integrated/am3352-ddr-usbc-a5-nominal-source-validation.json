@@ -1,0 +1,105 @@
+{
+  "status": "DDR29_DDR_A5_EXACT_REPLAY_AND_PRIOR_COPPER_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a5-nominal-candidate/circuit.json",
+    "sha256": "10446725db144f0ab7fe27534f7a544db74cccae240288b3b9772917e1e3e09b"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-csn-joint-candidate/circuit.json",
+    "sha256": "1d16373e7127691924b25e3af3387d6e8c53132abb227c7416532e2da9e4a984"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-a5-nominal-paths.json",
+    "sha256": "37488bc704b74e3c9172994e7255f61e6d51a7b99a65c98e21012d7fc53aed26"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-a5-nominal-paths.provenance.json",
+    "sha256": "471f687344b08dabbadb7e1d06f3e9c2e9f490d960649c995d47768b12eb8102"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-csn-joint-check-summary.json",
+    "sha256": "3f63f2f618d5033b30a99ec9ac2b5fccc5cf0e7d952c7632ae83d37f9d1d6afc"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 131,
+  "throughVias": 151,
+  "preservedTracePieces": 130,
+  "preservedThroughVias": 149,
+  "addedThroughVias": 2,
+  "changedExistingSignals": [],
+  "addedSignals": [
+    "DDR_A5"
+  ],
+  "addedSignalPlanarMm": 43.020000000000024,
+  "addedSignalNominalLengthPass": true,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "manualNominalTuning": {
+    "status": "A5_BOTTOM_WIRE_NOMINAL_TUNING_REPLAY_REQUIRES_FULL_PHYSICAL_CHECKS",
+    "priorPaths": {
+      "path": "routing/am3352-ddr-usbc-a5-native-paths.json",
+      "sha256": "c8a2ae6656d5584cecc9e515b1d45c697985b6359ca60fdb405fc2f74537d69e"
+    },
+    "priorProvenance": {
+      "path": "routing/am3352-ddr-usbc-a5-native-paths.provenance.json",
+      "sha256": "95a13464a2062c630a6103b13ef08213b303f4849a8deb0ccc98b534f55b5600"
+    },
+    "signal": "DDR_A5",
+    "layer": "bottom",
+    "afterIndex": 153,
+    "insertedPoints": [
+      {
+        "x": -12.41899,
+        "y": -15.4
+      },
+      {
+        "x": -13.01899,
+        "y": -16
+      },
+      {
+        "x": -14.65968842322589,
+        "y": -16
+      },
+      {
+        "x": -15.25968842322589,
+        "y": -16.6
+      },
+      {
+        "x": -15.25968842322589,
+        "y": -19.4
+      },
+      {
+        "x": -14.65968842322589,
+        "y": -20
+      },
+      {
+        "x": -13.01899,
+        "y": -20
+      },
+      {
+        "x": -12.41899,
+        "y": -20.6
+      }
+    ],
+    "offsetMm": 2.840698423225889,
+    "chamferMm": 0.6,
+    "priorPlanarMm": 38.744490603852796,
+    "targetPlanarMm": 43.02,
+    "addedPlanarMm": 4.275509396147207,
+    "newVias": 0,
+    "retainedNativeBusLanesCarrier": true,
+    "allPreviouslyCheckedSignalsUnchanged": true
+  },
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForAddedHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "fullCommandClassMatchingDeferred": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

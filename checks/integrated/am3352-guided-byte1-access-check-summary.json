@@ -1,0 +1,73 @@
+{
+  "status": "DDR_BYTE0_PLANAR_MATCH_AND_PHYSICAL_CHECKS_PASS_DDR_AND_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/experiments/am3352-guided-byte1-access/circuit.json",
+    "sha256": "fe0b097a87e70d34be03f35ddd894da5ca4387f5defab40ae242b8c4541a14cd"
+  },
+  "board": {
+    "path": "dist/experiments/am3352-guided-byte1-access/board.kicad_pcb",
+    "sha256": "d7fe37642bd57388f4b9163c5ad797c2b84a74a2958e337e9d712ab3d3117a9e"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayerCount": 4,
+  "maxCopperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "nativeRun": "dist/am3352-guided-byte0-centered-channel-attempt-74/result.json",
+  "manualTuning": "dist/am3352-guided-byte1-manual-escape-attempt-79/result.json",
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "manualRamReferenceViaMove": {
+    "ball": "C1",
+    "from": {
+      "x": -2.8,
+      "y": -23
+    },
+    "to": {
+      "x": -3.8,
+      "y": -22.2
+    },
+    "lengthMm": 0.7211102550927978,
+    "all39ReferenceConnectionsChecked": true
+  },
+  "ddrSignalsConnected": 11,
+  "requiredDdrSignals": 49,
+  "ddrThroughVias": 22,
+  "physicalThroughVias": 91,
+  "existingPowerTracePieces": 69,
+  "existingPowerVias": 69,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "dqs0PlanarSkewMm": 1.0658141036401503e-14,
+  "dqs0PlanarSkewLimitMm": 0.127,
+  "dqs0PlanarMatchPass": true,
+  "byte0PlanarSkewMm": 0.6350000003934717,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarMatchPass": true,
+  "gerberShorts": 0,
+  "gerberShortsLayerScope": "all four layers",
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "allHostUnconnectedItems": 499,
+  "snapshot": {
+    "path": "images/am3352-guided-byte1-access-bottom.png",
+    "sha256": "cf12cbd2be4a2459ab4eafdfac13ebf46548e345266af13898588c0553ae0c24",
+    "visuallyInspected": true
+  },
+  "fabricationReady": false,
+  "completePowerRouting": false,
+  "fullElectricalTimingQualified": false,
+  "pairGeometryQualified": false,
+  "scope": "Editable source replay of the native bootstrap and manual fanouts. Byte0/DQS0 planar matching passes; 38 DDR signals, package/via delays, impedance, CPU/PMIC power, peripherals and firmware remain unfinished."
+}

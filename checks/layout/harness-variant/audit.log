@@ -1,0 +1,50 @@
+{
+  "status": "PASS_PLACEMENT_ONLY",
+  "fabricationReady": false,
+  "verifiedOriginalShellFit": false,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "mainBodyHeight": 99,
+    "speakerTongueWidth": 22,
+    "thickness": 1.6
+  },
+  "numCopperLayers": 4,
+  "logicalComponents": 277,
+  "preservedPriorComponents": 275,
+  "newHarnessComponents": 2,
+  "nativeErrors": 0,
+  "placedPadsAndPlatedHoles": 1156,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "courtyardOutsideOutline": [
+    {
+      "name": "J_USB",
+      "clearanceLowerBoundMm": -0.7009988000000249
+    }
+  ],
+  "staleTraces": 0,
+  "staleVias": 0,
+  "originalTerminalConnectivityPreserved": true,
+  "displayAndHarnessPinMappingsVerified": true,
+  "bareComponentsWithNoPaste": 31,
+  "exposedBareCopperPads": 42,
+  "unintendedProbeThroughHolesCorrected": 4,
+  "capsulePadRepresentationConverted": 28,
+  "capsuleCopperPreserved": true,
+  "inductorAuxiliaryPadCount": 4,
+  "auxiliaryCopperContainedInPrimaryLands": true,
+  "scope": "Unrouted provisional full-handheld component placement; mechanical fit, complete critical review, power/driver qualification, routing and manufacturing release remain incomplete.",
+  "hashes": {
+    "dist/experiments/am3352-g350-harness-placement/circuit.json": "f131e82c2793ddb4d91fee2bc901259e8aa364f8ccd892f72211e2e34f7d98ef",
+    "dist/experiments/am3352-g350-display-placement/circuit.json": "6fe69883cf8084bf7717b33fad309ad742fd4947b21b32503878d10551d0ecf8",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "lib/am3352/placement/HarnessPlacement.tsx": "6e6e97a0c23eb30e83fdc5514566279d2c9d097cf80f0c91255d5dbb806885f2",
+    "experiments/am3352-g350-harness-placement.circuit.tsx": "671a5ccb2ffbe75289d8fb33255d4274a019d6fd203b6dd0b478ee1a0bf156a0",
+    "imports/DF65_3P_1_7V_21_.tsx": "e352f1329fa869411d631bcb1b9861064a4639f725fdfe1014d7cbbe181b086c",
+    "imports/SM02B_SRSS_TB_LF__SN_.tsx": "2a9d1c9cc0ba56ec98245f1a056c77c61cc1b9f911ecb0db2d2002f5a236cdfc",
+    "reference/am3352/display/C30732-connector.pdf": "e539d364f69dc31fd66c3bc97b78674f4838a13917a255aa6738601d13e1eebd",
+    "reference/am3352/display/TDK-VLCF5020-datasheet.pdf": "0a5d592fe0987daf45f78696b75c94ddb998e533f5fbabc4068922b9e22a6e60",
+    "reference/am3352/harness/JST-SH.pdf": "ea3071ca5ee5a6069eba534fa39a10f34c9fb742ee42135a69ab4156bfa0f5de",
+    "reference/am3352/harness/DF65-3P-1.7V-21-drawing.pdf": "40ca71e425e082e3f3fc1c6aaa187ecbb35c564d10ee1bbbf64e6e2a0a9d2967"
+  }
+}

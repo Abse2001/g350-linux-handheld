@@ -1,0 +1,182 @@
+{
+  "status": "PASS_DESIGN_OUTLINE_ONLY",
+  "generatedAt": "2026-10-05T04:26:37.430Z",
+  "checkerSha256": "4e3697666debe7cf6e7eb7f420358af7a96591b23a9aacaf7943ea6afe43616b",
+  "geometry": "mechanical/g350-provisional-outline.json",
+  "geometrySha256": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "mainBodyHeightMm": 99,
+  "speakerTabMm": {
+    "width": 22,
+    "extension": 19
+  },
+  "simpleClosedPolygon": true,
+  "outlineVertices": 14,
+  "publishedExteriorMm": {
+    "width": 81,
+    "height": 128,
+    "depth": 22
+  },
+  "nominalExteriorMarginsMm": {
+    "left": 2.5,
+    "right": 2.5,
+    "top": 5,
+    "bottom": 5
+  },
+  "nominalExteriorMarginsAreShellInteriorClearances": false,
+  "originalShellFitVerified": false,
+  "mountingHolePositionsVerified": false,
+  "buttonAndConnectorAlignmentVerified": false,
+  "fabricationReady": false,
+  "limitation": "The 76 × 118 mm outline is an engineering allowance within published exterior dimensions. Shell walls, ribs, posts and opening locations are unmeasured; this check cannot establish original-enclosure fit.",
+  "circuits": [
+    {
+      "entry": "index.circuit.tsx",
+      "circuit": "dist/index/circuit.json",
+      "circuitSha256": "01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555",
+      "dimensionsMm": {
+        "width": 76,
+        "height": 118,
+        "thickness": 1.6
+      },
+      "copperLayers": 4,
+      "placedComponents": 280,
+      "outlineMatchesSharedGeometry": true,
+      "assemblyCourtyardsChecked": 280,
+      "assemblyCourtyardBoundsMm": {
+        "minX": -37.75520000000006,
+        "maxX": 35.96338610000009,
+        "minY": -56,
+        "maxY": 59.650998800000025
+      },
+      "assemblyCourtyardsWithinPublishedExterior": true,
+      "assemblyCourtyardsFullyWithinShapedPcb": 279,
+      "boardAndAssemblyBoundsMm": {
+        "minX": -38,
+        "maxX": 38,
+        "minY": -59,
+        "maxY": 59.650998800000025
+      },
+      "boardAndAssemblyEnvelopeMm": {
+        "width": 76,
+        "height": 118.65099880000002
+      },
+      "nominalCenteredExteriorSetbacksMm": {
+        "left": 2.5,
+        "right": 2.5,
+        "top": 4.349001199999975,
+        "bottom": 5
+      },
+      "nominalCenteredExteriorSetbacksAreShellClearances": false,
+      "projectingCourtyards": [
+        {
+          "name": "J_USB",
+          "layer": "top",
+          "minimumVertexClearanceMm": -0.6509988000000249,
+          "review": "Connector assembly space projects beyond the PCB; case-opening and mating clearance remain unverified."
+        }
+      ],
+      "shellInteriorAndComponentHeightsChecked": false
+    },
+    {
+      "entry": "experiments/am3352-g350-byte0-complete-bus.circuit.tsx",
+      "circuit": "dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json",
+      "circuitSha256": "01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555",
+      "dimensionsMm": {
+        "width": 76,
+        "height": 118,
+        "thickness": 1.6
+      },
+      "copperLayers": 4,
+      "placedComponents": 280,
+      "outlineMatchesSharedGeometry": true,
+      "assemblyCourtyardsChecked": 280,
+      "assemblyCourtyardBoundsMm": {
+        "minX": -37.75520000000006,
+        "maxX": 35.96338610000009,
+        "minY": -56,
+        "maxY": 59.650998800000025
+      },
+      "assemblyCourtyardsWithinPublishedExterior": true,
+      "assemblyCourtyardsFullyWithinShapedPcb": 279,
+      "boardAndAssemblyBoundsMm": {
+        "minX": -38,
+        "maxX": 38,
+        "minY": -59,
+        "maxY": 59.650998800000025
+      },
+      "boardAndAssemblyEnvelopeMm": {
+        "width": 76,
+        "height": 118.65099880000002
+      },
+      "nominalCenteredExteriorSetbacksMm": {
+        "left": 2.5,
+        "right": 2.5,
+        "top": 4.349001199999975,
+        "bottom": 5
+      },
+      "nominalCenteredExteriorSetbacksAreShellClearances": false,
+      "projectingCourtyards": [
+        {
+          "name": "J_USB",
+          "layer": "top",
+          "minimumVertexClearanceMm": -0.6509988000000249,
+          "review": "Connector assembly space projects beyond the PCB; case-opening and mating clearance remain unverified."
+        }
+      ],
+      "shellInteriorAndComponentHeightsChecked": false
+    },
+    {
+      "entry": "experiments/am3352-g350-ddr-power-replay.circuit.tsx",
+      "circuit": "dist/experiments/am3352-g350-ddr-power-replay/circuit.json",
+      "circuitSha256": "7850dbbc9fb8aada7f34bb0679733fc3ed47bd33ec8143792f0aeb47b53eacd4",
+      "dimensionsMm": {
+        "width": 76,
+        "height": 118,
+        "thickness": 1.6
+      },
+      "copperLayers": 4,
+      "placedComponents": 280,
+      "outlineMatchesSharedGeometry": true,
+      "assemblyCourtyardsChecked": 280,
+      "assemblyCourtyardBoundsMm": {
+        "minX": -37.75520000000006,
+        "maxX": 35.96338610000009,
+        "minY": -56,
+        "maxY": 59.650998800000025
+      },
+      "assemblyCourtyardsWithinPublishedExterior": true,
+      "assemblyCourtyardsFullyWithinShapedPcb": 279,
+      "boardAndAssemblyBoundsMm": {
+        "minX": -38,
+        "maxX": 38,
+        "minY": -59,
+        "maxY": 59.650998800000025
+      },
+      "boardAndAssemblyEnvelopeMm": {
+        "width": 76,
+        "height": 118.65099880000002
+      },
+      "nominalCenteredExteriorSetbacksMm": {
+        "left": 2.5,
+        "right": 2.5,
+        "top": 4.349001199999975,
+        "bottom": 5
+      },
+      "nominalCenteredExteriorSetbacksAreShellClearances": false,
+      "projectingCourtyards": [
+        {
+          "name": "J_USB",
+          "layer": "top",
+          "minimumVertexClearanceMm": -0.6509988000000249,
+          "review": "Connector assembly space projects beyond the PCB; case-opening and mating clearance remain unverified."
+        }
+      ],
+      "shellInteriorAndComponentHeightsChecked": false
+    }
+  ]
+}

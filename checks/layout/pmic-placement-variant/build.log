@@ -1,0 +1,37 @@
+Building 1 file(s)...
+Building experiments/am3352-g350-pmic-placement.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/experiments/am3352-g350-pmic-placement/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+Differential pair "USB0_PAIR" positiveConnection uses the ambiguous trace name "USB0_DP": its connection has more than 2 terminal pins: .J_USB > .A6, .J_USB > .B6, .U_SOC > .N17, .U_USB_ESD > .pin3, and .U_USB_ESD > .pin4.
+Differential pair "USB0_PAIR" negativeConnection uses the ambiguous trace name "USB0_DM": its connection has more than 2 terminal pins: .J_USB > .A7, .J_USB > .B7, .U_SOC > .N18, .U_USB_ESD > .pin1, and .U_USB_ESD > .pin6.
+J_LCD is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_BAT is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+KEY_UP has no pin with requires_power=true
+KEY_DOWN has no pin with requires_power=true
+KEY_LEFT has no pin with requires_power=true
+KEY_RIGHT has no pin with requires_power=true
+KEY_A has no pin with requires_power=true
+KEY_B has no pin with requires_power=true
+KEY_X has no pin with requires_power=true
+KEY_Y has no pin with requires_power=true
+KEY_SELECT has no pin with requires_power=true
+KEY_START has no pin with requires_power=true
+KEY_MENU has no pin with requires_power=true
+J_LCD has no pin with requires_power=true
+J_BAT has no pin with requires_power=true
+J_SPK has no pin with requires_power=true
+J_LCD has no pin with requires_ground=true
+J_BAT has no pin with requires_ground=true
+J_SPK has no pin with requires_ground=true
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

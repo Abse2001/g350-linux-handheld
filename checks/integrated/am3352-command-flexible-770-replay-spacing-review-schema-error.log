@@ -1,0 +1,11 @@
+file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/check-am3352-command-replay-electrical.mjs:10
+assert.equal(audit.source.sha256,validation.source.sha256);assert.equal(audit.source.path,validation.source.path)
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'sha256')
+    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/check-am3352-command-replay-electrical.mjs:10:27
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v25.6.1

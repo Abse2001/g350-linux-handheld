@@ -1,0 +1,47 @@
+{
+  "status": "SAVED_DDR_PHASE_EXACT_GEOMETRY_AND_FIXED_COPPER_PASS_PHYSICAL_AND_TIMING_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-repaired-strobes-candidate/circuit.json",
+    "sha256": "aa7dce6e20cf0173895ecee9ed5e7dbfd8f815fba47bfc64b8dc8eed3f536ae3"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-native-clock-candidate/circuit.json",
+    "sha256": "8fd18065e5761b51b1ae10e9ff0bb5c08513f23ae06880642be76c50a78bba5c"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-repaired-strobes-paths.json",
+    "sha256": "bbae477b28ab32d5a70d83e078dbe50d430d297490062a21cfbc97e82a811750"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-repaired-strobes-paths.provenance.json",
+    "sha256": "1f9639b15361ae4b562200c0b09a9568c09c36d487ca4c012038b8f2a8f14833"
+  },
+  "addedSignals": [
+    "DDR_DQS1",
+    "DDR_DQSn1"
+  ],
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 127,
+  "throughVias": 135,
+  "preservedTracePieces": 125,
+  "preservedThroughVias": 129,
+  "addedThroughVias": 6,
+  "lengths": [
+    {
+      "name": "DDR_DQS1",
+      "planarMm": 50.95313905432341,
+      "throughVias": 4
+    },
+    {
+      "name": "DDR_DQSn1",
+      "planarMm": 51.001321123576794,
+      "throughVias": 2
+    }
+  ],
+  "skewMm": 0.04818206925338586,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

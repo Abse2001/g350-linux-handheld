@@ -1,0 +1,69 @@
+{
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bypass/circuit.json",
+    "sha256": "867405f43fa5aa8840b1225b23740601d32778b0dc16ec24420d1166c983aabc",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-powered-host/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-guided-byte0-optimized-attempt-49/output.simple-route.json",
+    "sha256": "668543a55c08d2e6f15788686fee6cc6e57df675d789eef1a7755bb35aa19ef4"
+  },
+  "manualModification": {
+    "unusedThroughViasRemoved": 7,
+    "removed": [
+      {
+        "nativeTrace": "local_dogbone_source_trace_30_1",
+        "sourceTrace": "source_trace_30",
+        "x": 2.0000000000000004,
+        "y": -24.6
+      },
+      {
+        "nativeTrace": "local_dogbone_source_trace_14_1",
+        "sourceTrace": "source_trace_14",
+        "x": -1.2,
+        "y": -24.6
+      },
+      {
+        "nativeTrace": "local_dogbone_source_trace_31_1",
+        "sourceTrace": "source_trace_31",
+        "x": 2.0000000000000004,
+        "y": -25.4
+      },
+      {
+        "nativeTrace": "local_dogbone_source_trace_3_0",
+        "sourceTrace": "source_trace_3",
+        "x": 3.200000000000001,
+        "y": -7.2
+      },
+      {
+        "nativeTrace": "local_dogbone_source_trace_16_0",
+        "sourceTrace": "source_trace_16",
+        "x": 4.000000000000001,
+        "y": -6.4
+      },
+      {
+        "nativeTrace": "local_dogbone_source_trace_4_0",
+        "sourceTrace": "source_trace_4",
+        "x": 4.000000000000001,
+        "y": -5.6
+      },
+      {
+        "nativeTrace": "local_dogbone_source_trace_31_0",
+        "sourceTrace": "source_trace_31",
+        "x": 2.4000000000000012,
+        "y": -4.799999999999999
+      }
+    ]
+  },
+  "paths": {
+    "path": "routing/am3352-guided-byte0-paths.json",
+    "sha256": "fb0c75101be96fa43700808cf8bd76953a9acdfdc0f42647d6c411359f26c872"
+  },
+  "signals": 11,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes connectivity bootstrap with edited local escapes; untuned replay only."
+}

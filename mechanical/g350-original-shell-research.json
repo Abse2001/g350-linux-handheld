@@ -1,0 +1,74 @@
+{
+  "reviewDate": "2026-10-05",
+  "target": "Fit the original BATLEXP G350 shell",
+  "verifiedShellFit": false,
+  "outsideCaseMm": {
+    "width": 81,
+    "height": 128,
+    "depth": 22
+  },
+  "manufacturingPcbOutline": null,
+  "mountingHoleCoordinatesMm": null,
+  "buttonCentersMm": null,
+  "portCentersMm": null,
+  "assemblyClearancesMm": null,
+  "sources": [
+    {
+      "url": "https://handhelds.wiki/BATLEXP_G350_Overview",
+      "finding": "Lists outside-case dimensions; links six original teardown photographs. No dimensioned PCB or mounting drawing found."
+    },
+    {
+      "url": "https://handhelds.wiki/File:BATLEXP_G350_Internals_5.webp",
+      "finding": "Rear-facing component side visually inspected in browser. Shaped PCB perimeter, USB at upper right, microSD near lower sides and speaker tab visible; no ruler or coordinate datum. Board label reads G350 MB V2.0 / 20241210."
+    },
+    {
+      "url": "https://handhelds.wiki/File:BATLEXP_G350_Internals_6.webp",
+      "finding": "Front-facing side visually inspected. Flat exposed contacts for D-pad and seven face/menu/start/select buttons; membrane geometry and mounting diameters are not dimensioned."
+    },
+    {
+      "url": "https://handhelds.wiki/BATLEXP_G350_Hardware_Modifications",
+      "finding": "Links teardown/trigger modification content; no dimensioned mechanical drawing found."
+    },
+    {
+      "url": "https://anbernic.com/products/rg-35",
+      "finding": "Manufacturer lists 12.8 x 8.1 x 2.2 cm for RG35. Related model is linked from G350 wiki; shared exact internal PCB geometry is not established and is not substituted for G350 measurements."
+    },
+    {
+      "url": "https://www.reddit.com/user/Ok_Concentrate191/",
+      "finding": "Photographer's linked public profile inspected. No measured G350 PCB drawing found in inspected content. No message sent."
+    },
+    {
+      "url": "https://ianonuska.substack.com/p/i-took-apart-a-retro-handheld-game",
+      "finding": "Accessible first-person teardown article supplies no dimensioned PCB or shell drawing."
+    }
+  ],
+  "searchScope": [
+    "Original BATLEXP G350 PCB and motherboard dimensions",
+    "Mounting-hole and mechanical drawings",
+    "Shell CAD/STL and measured teardown references",
+    "Original teardown photographs and their linked photographer",
+    "Manufacturer page linked by the handheld wiki"
+  ],
+  "conclusion": "Exact original-board dimensions and hole coordinates were not found in inspected online sources. Unscaled photographs guide arrangement only; outside-case dimensions are not PCB dimensions.",
+  "developmentEnvelopeMm": {
+    "width": 76,
+    "height": 118,
+    "basis": "Explicit engineering reservation inside the known outside case. This rectangle is not measured from the original PCB, not its outline, and does not demonstrate shell fit."
+  },
+  "provisionalOutline": "mechanical/g350-provisional-outline.json",
+  "routingPolicy": "Continue development routing on the provisional shaped outline. It does not qualify original-shell fit or fabrication release.",
+  "fabricationReady": false,
+  "latestDimensionSearch": {
+    "date": "2026-10-05",
+    "queries": [
+      "BATLEXP G350 PCB motherboard dimensions screw holes shell CAD",
+      "G350 MB V2.0 20241210 board dimensions",
+      "G350 handheld shell STL internal dimensions PCB"
+    ],
+    "newlyInspectedSource": "https://ianonuska.substack.com/p/i-took-apart-a-retro-handheld-game",
+    "finding": "Accessible first-person teardown article supplies no dimensioned PCB or shell drawing.",
+    "wikiFetchDuringThisSearch": "Overview returned 403; PCB-photo pages returned cache misses. Earlier visually inspected observations are retained.",
+    "dimensionedOriginalPcbDrawingFound": false,
+    "conclusion": "No new measured internal perimeter or mounting coordinates obtained. The current 76 x 118 mm outline remains provisional."
+  }
+}

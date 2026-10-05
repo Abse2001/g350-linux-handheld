@@ -1,0 +1,59 @@
+# Original G350 shell fit
+
+The user confirmed on 2026-10-03, and reconfirmed on 2026-10-04 and 2026-10-05, that this board must fit the **original G350 shell**. A new enclosure with similar outside dimensions does not satisfy this requirement.
+
+The active `index.circuit.tsx` uses the 280-component AM3352 handheld with a **76 × 118 × 1.6 mm shaped PCB**, four copper layers, a 99 mm main body and a 22 mm wide lower speaker tab extending 19 mm. The dimensions come from `mechanical/g350-provisional-outline.json`, which is imported by the editable tscircuit placement source. These are provisional engineering dimensions; they are not measured from the original PCB.
+
+The listed 81 × 128 × 22 mm dimensions describe the assembled handheld, not its internal PCB. No dimensioned original-PCB outline, mounting drawing or shell CAD has been obtained. The historical 100 × 124 mm AM3352 boards are separate routing fixtures and do not fit that envelope.
+
+The 2026-10-05 envelope check confirms the exact shared outline in the default entry and the checked power replay and complete first-byte routing entry. It also checks every courtyard against the shaped PCB, including its concave speaker-tab shoulders: 279 of 280 assembly courtyards lie fully inside the PCB. The USB-C courtyard extends 0.651 mm beyond the PCB's top edge and requires original-port and mating clearance verification. All 280 courtyards lie within the published exterior rectangle. This does not establish clearance from internal walls, posts, ribs or the original port opening. The separate LCD panel, battery, speaker, flex and cable volumes also require assembled-height and registration checks. See `checks/mechanical/g350-current-envelope-check.json`.
+
+The dimensioned drawing now labels the nominal centered offsets from the published outside case: 2.5 mm at each side and 5 mm at each end. Including the USB-C assembly courtyard makes the combined PCB/courtyard envelope 76 × 118.651 mm, with a nominal 4.349 mm offset at the top. These offsets include unknown case-wall and rib thickness; they are not available internal clearances. The check derives them from the actual current CircuitJSON rather than from component-center coordinates. The editable outline and all checked copper remain unchanged.
+
+## Mechanical information required
+
+Use one measured original PCB or a dimensioned manufacturer drawing as the common reference. Record the shell/display revision. With the PCB viewed from the front, choose a reproducible datum and mark X/Y directions, units and measurement uncertainty.
+
+| Feature | Required information |
+|---|---|
+| PCB perimeter | Complete outline including corner radii, notches, tabs and thickness |
+| Mounts | Every mounting-hole center and diameter; post diameter, height and clearance |
+| Front controls | D-pad and all button centers; membrane/contact geometry or actuator heights |
+| USB-C and microSD | Case-opening centers and dimensions; socket insertion depth and card travel |
+| Display | Panel clearance, FPC exit location, cable length/contact orientation and connector height |
+| Battery and speaker | Actual occupied volumes, cable paths and attachment points |
+| Assembly space | Available height above and below the PCB, ribs, bosses and other keepouts |
+
+A scaled photograph can help locate features, but perspective and hidden case ribs prevent it from proving fit by itself. Measurements or CAD must establish the manufacturing outline and hole positions. The existing display and button mechanics also need to be checked against the selected electrical parts.
+
+A read-only lookup on 2026-10-04 found the [original PCB component-side photograph](https://handhelds.wiki/File:BATLEXP_G350_Internals_5.webp), [front contact-side photograph](https://handhelds.wiki/File:BATLEXP_G350_Internals_6.webp) and [teardown reference](https://handhelds.wiki/BATLEXP_G350_Hardware_Modifications). Both PCB photographs were visually inspected in the browser. The PCB is shaped, with notches and a lower speaker tab; the front buttons use flat exposed contacts beneath rubber membranes. Neither photograph has a ruler or a coordinate datum. The board marking visible in the component-side photograph reads G350 MB V2.0 / 20241210.
+
+The user asked us to search online for the PCB measurements. Searches covered motherboard dimensions, mounting drawings, shell CAD/STL, teardown references and the linked photographer's public profile. No dimensioned original PCB perimeter, mounting coordinates or shell CAD was found in the inspected sources. This is a bounded search result, not proof that no such drawing exists. No contact was sent to the photographer or manufacturer. The manufacturer page linked by the wiki lists the related [Anbernic RG35](https://anbernic.com/products/rg-35) as 12.8 × 8.1 × 2.2 cm; it supplies outside dimensions only and does not establish interchangeable internal geometry.
+
+A further 2026-10-05 search included the visible G350 MB V2.0 / 20241210 marking. The newly inspected [Ian Onuska G350 teardown account](https://ianonuska.substack.com/p/i-took-apart-a-retro-handheld-game) describes a teardown but supplies no dimensioned board or shell geometry in the accessible article. The wiki pages could not be fetched by the web reader during this additional search; their earlier visual observations remain separately recorded. No new measured geometry was obtained.
+
+The source/observation record is `mechanical/g350-original-shell-research.json`. Unknown PCB dimensions and hole/button/port coordinates remain explicitly null. The pending geometry request has been answered with an online-search instruction; there is no pending approval or unanswered text question.
+
+## Historical placement studies
+
+Following the user's instruction to place all components before routing, `experiments/am3352-g350-placement-study.circuit.tsx` started the full-handheld placement work. It preserves the existing individual host imports and applies an explicit table for all 212 host components. Subsequent variants added the controls, McASP audio, display, harnesses and power circuitry. The active default now uses the later 280-part source and its checked DDR power escapes and complete first byte.
+
+The outline in `mechanical/g350-provisional-outline.json` is an **engineering proposal**, smaller than the published outer case, not a measured G350 PCB or an assertion that the board fits. It is 76 × 118 mm overall, with a 99 mm main body and a 22 mm wide lower speaker tab extending another 19 mm. The corners are chamfered and the lower corners are left open for enclosure contents. The nominal 1.6 mm thickness also needs mechanical verification. No production mounting holes are invented. Component centers, button contacts, side-switch positions and connector positions remain provisional. Placement variants discard old fixed copper before moving parts; later routing variants generate and check fresh copper at the current positions. The earlier checked routing entries remain available independently.
+
+`mechanical/g350-provisional-outline.svg` is the dimensioned drawing. `mechanical/g350-paper-fit-template.svg` is an actual-size paper template with a 50 mm calibration line. Print at 100% / actual size and verify the calibration before cutting. A paper perimeter check helps find ribs and bosses, but does not verify mounting, control/port registration or the assembled component heights.
+
+The 2026-10-05 `output/pdf/g350-shell-registration-template.pdf` adds the actual default board's 11 contact centers, seven connectors/switches and separate assembly-space overlays for all 280 parts. It preserves the same provisional 76 × 118 × 1.6 mm outline; no placement or copper was changed to generate it. Both overlays use the source X/Y datum, with the bottom shown through the board rather than mirrored. Print at actual size, verify the 50 mm bar, cut out the perimeter and mark the original shell's ribs and posts. `mechanical/g350-current-registration.json` records the proposed source coordinates, not measured original coordinates. `checks/mechanical/g350-registration-template-check.json` binds the two-page vector template to the frozen current circuit, confirms it matches the default output, and verifies its saved outline to 0.001 mm. Both rendered pages were visually inspected. This supplies a practical physical comparison without claiming an established fit.
+
+The 2026-10-04 placement build contains 233 logical components: all 212 host parts plus 21 controls/audio/contact/harness-pad parts. The build and typecheck pass, the native placement has zero errors, and the all-layer Gerber shorts check passes. `checks/layout/g350-placement-audit.json` verifies preserved host terminal connectivity and physical pad identities, exactly four copper layers, no stale traces/vias, and a conservative minimum copper-to-edge clearance of 0.45 mm. The microSD socket and its keepouts were moved inward to clear the lower chamfer. The USB-C assembly courtyard extends approximately 0.65 mm past the PCB edge; its physical mounting and case opening require verification. These checks apply to this incomplete, unrouted placement only.
+
+Independent KiCad checking with 233 exact local footprints finds zero errors, but does **not** pass full DRC: 443 presentation/courtyard warnings remain, plus 499 reported unrouted connections (not a complete count). No per-item exclusions or ignored rule severities were used. The exact footprint-library conversion preserves all 259 normalized physical board records. The source-bound report is `checks/layout/g350-placement-check-summary.json`; both current assembly-side snapshots are under `checks/layout/g350-placement-top.png` and `checks/layout/g350-placement-bottom.png`.
+
+The new `experiments/am3352-g350-display-placement.circuit.tsx` variant adds the bare EastRising ER-TFT035-7 display interface, its individually imported 54-pin FPC connector and TI backlight circuit. It contains 275 components on the same provisional outline and preserves the earlier 233-part placement evidence. The native build, typecheck, all-layer Gerber shorts and independent pin/placement audit pass for this unrouted variant. Its conservative minimum copper-to-edge clearance remains 0.45 mm. Independent KiCad checking finds zero errors, but full DRC does not pass: 444 presentation/courtyard warnings and 499 reported unconnected items remain. No per-item exclusions or ignored severities are used.
+
+The proposed bare panel is 76.84 × 63.84 × 3.2 mm with its flex folded. It overhangs this PCB by 0.42 mm on each side; the shell's interior, folding path, front-side component heights and LCD window registration remain unverified. Its exact connector and support footprints, effective backlight capacitance, total power and Linux driver/pinmux also require qualification; see `docs/G350_DISPLAY.md`. Final battery/speaker harness qualification and front contact shape, finish and membrane registration remain open. The previous carrier's oversized display board and Pi-specific wiring are not used. These historical placement checks do not qualify later routing or original-shell fit.
+
+## Release requirement
+
+Apply the verified outline, holes and keepouts in editable tscircuit source. Reposition ports, storage, controls and other components to match that geometry. Check both assembly sides and the assembled display, battery, speaker and cable volumes. Any affected routing must receive fresh shorts, continuity and independent DRC checks.
+
+`design-status.json` records `originalShellFit.verified:false`. Fabrication remains incomplete until mechanical fit and the other electrical/manufacturing requirements pass. DDR routing continues in separate phases under the user's subsequent instruction. Any prior route reused after placement changes requires fresh physical, continuity, reference-plane and DDR timing checks.

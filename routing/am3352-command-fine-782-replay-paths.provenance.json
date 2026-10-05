@@ -1,0 +1,52 @@
+{
+  "status": "COMMAND_MANUAL_CARRIER_REPLAY_REQUIRES_ALL_INDEPENDENT_CHECKS",
+  "run": {
+    "path": "dist/am3352-command-ddr40-fine-carriers-attempt-782/result.json",
+    "sha256": "2a3f5ca1a29b0ae1e7fd5e8a35026d4711c5f5035a71e3bd5c945146584894f1"
+  },
+  "state": {
+    "path": "dist/am3352-command-ddr40-fine-carriers-attempt-782/best-carriers.nonexportable.json",
+    "sha256": "135c6d48c77c34f8629745ee1c4a099f012ac9c0cfda59b95bbdcd9594b6f168"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr23-command-replan-candidate/circuit.json",
+    "sha256": "aad4a9bb60a27ed7acb46130e7dcec8ce6622f15ec01d558769bbea1d9ee6058"
+  },
+  "fixedPaths": {
+    "path": "routing/am3352-ddr23-command-replan-fixed-paths.json",
+    "sha256": "7188248a85d19d25787ae5995117f14785b20885a3bdc3b39c11f7f895ea92b9"
+  },
+  "entry": {
+    "path": "experiments/am3352-command-fine-782-replay.circuit.tsx",
+    "sha256": "361384e8638b3f68a85b185ad786e160ab5411468ea663b207f6e53f62d25696"
+  },
+  "nativeEntry": {
+    "path": "experiments/am3352-command-fine-782-replay-native-phase.circuit.tsx",
+    "sha256": "c980d8e8c027b6be14645b4755f0b666ef6141499fab17a7a66966951fbcfeda"
+  },
+  "paths": {
+    "path": "routing/am3352-command-fine-782-replay-paths.json",
+    "sha256": "d709d0005338361a704c70cccedf21ec8b8c21ca5dd14211fb3e57e889d0e1a2"
+  },
+  "stagedDdrSignals": 42,
+  "retainedDataResetSignals": 23,
+  "manualCommandChannels": 17,
+  "retainedCheckedClockChannels": 2,
+  "retainedCheckedClockNames": [
+    "DDR_CK",
+    "DDR_CKn"
+  ],
+  "checkedClockPaths": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.json",
+    "sha256": "a65e50e01b5519921b4e00e3e6d87e7dd2fd39d1ae808e9afb30c4117ee5fd12"
+  },
+  "executionHelper": {
+    "path": "scripts/replay-am3352-command-manual-carriers.mjs",
+    "sha256": "6bf4917b59e2fffad384c63996f9358f1d1dc6791c3e8f267ca2e9d2b4421460"
+  },
+  "original125TracePiecesAnd141ViasRetained": true,
+  "uncommittedFanoutReservationsReplanned": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

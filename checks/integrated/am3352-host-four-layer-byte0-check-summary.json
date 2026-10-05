@@ -1,0 +1,70 @@
+{
+  "status": "PARTIAL_FOUR_LAYER_BYTE0_COPPER_CHECKED_HOST_INCOMPLETE",
+  "fabricationReady": false,
+  "copperLayerCount": 4,
+  "maxCopperLayers": 4,
+  "components": 185,
+  "checkedCircuit": "dist/diagnostics/am3352-host-four-layer-byte0/circuit.json",
+  "circuitSha256": "45bdaf17faf810102e8ad35576a109b9fad00c5ae6e0ac7272b8d29d809a3257",
+  "connectedSignals": 11,
+  "requiredSignals": 49,
+  "unconnectedMemorySignals": 38,
+  "physicalVias": 22,
+  "gerberShorts": 0,
+  "independentViolations": {
+    "warning:text_height": 18,
+    "warning:silk_overlap": 199,
+    "warning:silk_over_copper": 199
+  },
+  "independentCopperDrillErrors": 0,
+  "allHostUnconnectedItems": 499,
+  "timing": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000010189092,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 0.126999999998489,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": null,
+      "limitMm": 0.127,
+      "pass": false
+    }
+  ],
+  "nativeFailuresRetained": true,
+  "completeConnectivityCheck": "FAIL",
+  "stackupAndReturnPathsQualified": false,
+  "poweredHost": false,
+  "scope": "185-component source with unmodified native bus_lanes byte0 copper. Full DDR, power, planes and peripherals are unfinished."
+}

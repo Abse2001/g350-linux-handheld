@@ -1,0 +1,47 @@
+{
+  "status": "LATEST_NATIVE_COMMAND_PHASE_REAL_PADS_AND_ALL_FIXED_COPPER_PRESERVED",
+  "input": {
+    "path": "dist/am3352-command-open-corridors-789-native-phase-attempt-791/phase-3.input.simple-route.json",
+    "sha256": "f4250e89d2b28d308f34f8b0ad9a7675572aabfc0b6d8a9f6efb27d414a56a6d"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-command-open-corridors-789-replay-candidate/circuit.json",
+    "sha256": "98eafba3ff11e2913c6d449041af35b52d871b4c3574fe71764a1b9754ef4df2"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "executionHelper": {
+    "path": "scripts/check-am3352-command-replay-native-input.mjs",
+    "sha256": "53460e7e41797993252b931044f1949f97514b9865c55c615f14e101b98a812e"
+  },
+  "components": 212,
+  "physicalPads": 912,
+  "fixedTraces": 139,
+  "fixedVias": 173,
+  "openConnections": 12,
+  "actualNumericPadEndpoints": 24,
+  "remainingSignals": [
+    "DDR_ODT",
+    "DDR_BA0",
+    "DDR_A3",
+    "DDR_A7",
+    "DDR_RASn",
+    "DDR_CASn",
+    "DDR_WEn",
+    "DDR_A2",
+    "DDR_A12",
+    "DDR_A11",
+    "DDR_A4",
+    "DDR_CKE"
+  ],
+  "completeReplayPairDeclarationsRestored": true,
+  "nativeOnlyAlreadyFixedPairsOmitted": true,
+  "referenceLayersReserved": [
+    "inner1",
+    "inner2"
+  ],
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false
+}

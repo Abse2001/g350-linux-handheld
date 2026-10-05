@@ -1,0 +1,209 @@
+{
+  "status": "NATIVE_PACKAGE_ESCAPE_BOOTSTRAP_REQUIRES_ACTUAL_SOURCE_CHECKS",
+  "completedPackageEscapeAssignment": 18,
+  "processorEscapes": 9,
+  "ramEscapes": 9,
+  "completeNineSignalBusSolved": false,
+  "nativeWireAndViaCoordinatesRetained": true,
+  "source": {
+    "path": "dist/g350-byte0-center-strobes-native/solver-result.json",
+    "sha256": "56b7ed7d0a2da0c3024f8a978e679f2ad90405300c9feb1e2253d46c8b0e7dc1"
+  },
+  "circuit": {
+    "path": "dist/g350-dqs0-center-approach/compiled.circuit.json",
+    "sha256": "7b95a9eff86b5d156d0c701ef437f51076207ad55e940ccde475920a6f7dfbc7"
+  },
+  "paths": {
+    "path": "lib/am3352/placement/ddr-byte0-native-escapes.json",
+    "sha256": "7309681cd72f4df90933dcdb0bd42f8dcf5b3d1944a118361c7f7ce9e3940bf0"
+  },
+  "normalizedNativeTraces": {
+    "path": "checks/integrated/g350-ddr-bootstrap/byte0-native-escapes.traces.json",
+    "sha256": "674a425d036ef6e6a686a10ac654de460cccd052ac6069c18ac2dc1cf67414ee"
+  },
+  "records": [
+    {
+      "signal": "DDR_D2",
+      "package": "U_SOC",
+      "pin": 13,
+      "ball": "N1",
+      "via": {
+        "x": 2.4000000000000012,
+        "y": 12.8
+      }
+    },
+    {
+      "signal": "DDR_D2",
+      "package": "U_RAM",
+      "pin": 37,
+      "ball": "E3",
+      "via": {
+        "x": -1.2,
+        "y": 3.200000000000001
+      }
+    },
+    {
+      "signal": "DDR_D6",
+      "package": "U_SOC",
+      "pin": 50,
+      "ball": "P3",
+      "via": {
+        "x": 4.000000000000001,
+        "y": 14.400000000000002
+      }
+    },
+    {
+      "signal": "DDR_D6",
+      "package": "U_RAM",
+      "pin": 70,
+      "ball": "F8",
+      "via": {
+        "x": 2.8000000000000003,
+        "y": 1.6
+      }
+    },
+    {
+      "signal": "DDR_D0",
+      "package": "U_SOC",
+      "pin": 48,
+      "ball": "M3",
+      "via": {
+        "x": 2.4000000000000012,
+        "y": 14.400000000000002
+      }
+    },
+    {
+      "signal": "DDR_D0",
+      "package": "U_RAM",
+      "pin": 22,
+      "ball": "F2",
+      "via": {
+        "x": -2,
+        "y": 1.6
+      }
+    },
+    {
+      "signal": "DDR_D4",
+      "package": "U_SOC",
+      "pin": 49,
+      "ball": "N3",
+      "via": {
+        "x": 3.200000000000001,
+        "y": 14.400000000000002
+      }
+    },
+    {
+      "signal": "DDR_D4",
+      "package": "U_RAM",
+      "pin": 54,
+      "ball": "F7",
+      "via": {
+        "x": 2.0000000000000004,
+        "y": 1.6
+      }
+    },
+    {
+      "signal": "DDR_DQM0",
+      "package": "U_SOC",
+      "pin": 30,
+      "ball": "M2",
+      "via": {
+        "x": 2.4000000000000012,
+        "y": 13.600000000000001
+      }
+    },
+    {
+      "signal": "DDR_DQM0",
+      "package": "U_RAM",
+      "pin": 53,
+      "ball": "E7",
+      "via": {
+        "x": 2.0000000000000004,
+        "y": 2.4000000000000004
+      }
+    },
+    {
+      "signal": "DDR_D1",
+      "package": "U_SOC",
+      "pin": 66,
+      "ball": "M4",
+      "via": {
+        "x": 2.4000000000000012,
+        "y": 15.200000000000001
+      }
+    },
+    {
+      "signal": "DDR_D1",
+      "package": "U_RAM",
+      "pin": 72,
+      "ball": "H8",
+      "via": {
+        "x": 2.8000000000000003,
+        "y": 4.440892098500626e-16
+      }
+    },
+    {
+      "signal": "DDR_D7",
+      "package": "U_SOC",
+      "pin": 68,
+      "ball": "P4",
+      "via": {
+        "x": 4.000000000000001,
+        "y": 15.200000000000001
+      }
+    },
+    {
+      "signal": "DDR_D7",
+      "package": "U_RAM",
+      "pin": 56,
+      "ball": "H7",
+      "via": {
+        "x": 2.0000000000000004,
+        "y": 4.440892098500626e-16
+      }
+    },
+    {
+      "signal": "DDR_D3",
+      "package": "U_SOC",
+      "pin": 31,
+      "ball": "N2",
+      "via": {
+        "x": 3.200000000000001,
+        "y": 13.600000000000001
+      }
+    },
+    {
+      "signal": "DDR_D3",
+      "package": "U_RAM",
+      "pin": 40,
+      "ball": "H3",
+      "via": {
+        "x": -1.2,
+        "y": 4.440892098500626e-16
+      }
+    },
+    {
+      "signal": "DDR_D5",
+      "package": "U_SOC",
+      "pin": 67,
+      "ball": "N4",
+      "via": {
+        "x": 3.200000000000001,
+        "y": 15.200000000000001
+      }
+    },
+    {
+      "signal": "DDR_D5",
+      "package": "U_RAM",
+      "pin": 23,
+      "ball": "G2",
+      "via": {
+        "x": -2,
+        "y": 0.8000000000000003
+      }
+    }
+  ],
+  "fabricationReady": false,
+  "qualifiedNewDdrSignals": 0,
+  "scope": "The native pipeline completed its package escape assignment before its lane search budget expired. Only those 18 escape geometries are cached as a bootstrap; full routes are not represented as solved."
+}

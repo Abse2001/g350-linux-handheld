@@ -1,0 +1,664 @@
+{
+  "status": "PARTIAL_DDR_CLASS_SPACING_FAIL",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-candidate/circuit.json",
+    "sha256": "5c8aeb2a452df32905653abb4f747d47893af667d90949df230eea4e140f5f07"
+  },
+  "checkedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-casn-csn0-nominal-d3-matched-check-summary.json",
+    "sha256": "e7a7baca61666644dab08f344aadbdf342f24be52a530e357779e2e11bfe0e98"
+  },
+  "executionHelper": {
+    "path": "scripts/check-am3352-ddr-class-spacing.mjs",
+    "sha256": "6d6741561cdd9252866c08678748baca97f267c9cba72cc6a0956b615109f1af"
+  },
+  "manufacturerRules": {
+    "sourceUrl": "https://www.ti.com/lit/ds/sprs717l/sprs717l.pdf",
+    "revision": "SPRS717L",
+    "reviewDate": "2026-10-04",
+    "tables": [
+      "7-61",
+      "7-62",
+      "7-68",
+      "7-69"
+    ],
+    "sameSignalClassCenterSpacingW": 3,
+    "otherDdrClassCenterSpacingW": 4,
+    "reducedSpacingLengthAllowanceMm": 31.75,
+    "singleEndedImpedanceRangeOhm": [
+      50,
+      75
+    ],
+    "impedanceToleranceOhm": 5
+  },
+  "copperLayers": 4,
+  "traceWidthMm": 0.1016,
+  "connectedSignals": 33,
+  "expectedSignals": 49,
+  "missingSignals": [
+    "DDR_BA0",
+    "DDR_A7",
+    "DDR_RASn",
+    "DDR_BA2",
+    "DDR_A0",
+    "DDR_A2",
+    "DDR_A9",
+    "DDR_A13",
+    "DDR_A10",
+    "DDR_A12",
+    "DDR_A1",
+    "DDR_A11",
+    "DDR_A14",
+    "DDR_BA1",
+    "DDR_A4",
+    "DDR_A8"
+  ],
+  "results": [
+    {
+      "name": "DDR_A3",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 45.4115827317725,
+      "reducedSpacingExposureMm": 9.272824752113824,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CKE",
+        "DDR_RESETn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_A5",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 43.020000000000024,
+      "reducedSpacingExposureMm": 16.539301422101452,
+      "normalSpacingMultipliers": [
+        3
+      ],
+      "neighbors": [
+        "DDR_CKE",
+        "DDR_CSn0",
+        "DDR_WEn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_A6",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 51.715839552841416,
+      "reducedSpacingExposureMm": 13.529887738342426,
+      "normalSpacingMultipliers": [
+        3
+      ],
+      "neighbors": [
+        "DDR_WEn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_CASn",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 43.02000000000001,
+      "reducedSpacingExposureMm": 17.70181953549703,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_D10",
+        "DDR_D14",
+        "DDR_D3",
+        "DDR_D5",
+        "DDR_RESETn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_CK",
+      "netClass": "CK",
+      "planarMm": 34.49909962830806,
+      "reducedSpacingExposureMm": 2.3813686694315677,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_CKE",
+        "DDR_CSn0",
+        "DDR_D12",
+        "DDR_RESETn",
+        "DDR_WEn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_CKE",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 49.90747867980896,
+      "reducedSpacingExposureMm": 10.531005225164156,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_A3",
+        "DDR_A5",
+        "DDR_CK",
+        "DDR_CKn",
+        "DDR_D12",
+        "DDR_D7"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_CKn",
+      "netClass": "CK",
+      "planarMm": 34.42248328065238,
+      "reducedSpacingExposureMm": 0.6030206615816742,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_CKE",
+        "DDR_CSn0",
+        "DDR_RESETn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_CSn0",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 43.66277078344939,
+      "reducedSpacingExposureMm": 10.964423733293625,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_A5",
+        "DDR_CK",
+        "DDR_CKn",
+        "DDR_D10",
+        "DDR_ODT",
+        "DDR_RESETn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D0",
+      "netClass": "DQ0",
+      "planarMm": 30.727783540320264,
+      "reducedSpacingExposureMm": 5.680348215828368,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D5",
+        "DDR_DQSn1",
+        "DDR_ODT"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D1",
+      "netClass": "DQ0",
+      "planarMm": 30.7277835406695,
+      "reducedSpacingExposureMm": 12.682956312136277,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D12",
+        "DDR_D4",
+        "DDR_D7"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D10",
+      "netClass": "DQ1",
+      "planarMm": 50.53587956337854,
+      "reducedSpacingExposureMm": 6.938836768532388,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CASn",
+        "DDR_CSn0",
+        "DDR_DQM1",
+        "DDR_ODT"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D11",
+      "netClass": "DQ1",
+      "planarMm": 50.53587956490522,
+      "reducedSpacingExposureMm": 8.185359965860634,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D13",
+        "DDR_D5",
+        "DDR_ODT"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D12",
+      "netClass": "DQ1",
+      "planarMm": 51.17087956484348,
+      "reducedSpacingExposureMm": 32.17611222370479,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CK",
+        "DDR_CKE",
+        "DDR_D1",
+        "DDR_D4",
+        "DDR_D7",
+        "DDR_D8",
+        "DDR_DQM0",
+        "DDR_DQS1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": false
+    },
+    {
+      "name": "DDR_D13",
+      "netClass": "DQ1",
+      "planarMm": 50.535879565400165,
+      "reducedSpacingExposureMm": 5.0446279009503785,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D11",
+        "DDR_D14",
+        "DDR_D5"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D14",
+      "netClass": "DQ1",
+      "planarMm": 50.91910899782122,
+      "reducedSpacingExposureMm": 4.05389602125505,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CASn",
+        "DDR_D13",
+        "DDR_ODT",
+        "DDR_RESETn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D15",
+      "netClass": "DQ1",
+      "planarMm": 50.53587956379684,
+      "reducedSpacingExposureMm": 10.539076038683467,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_DQM0",
+        "DDR_DQS1",
+        "DDR_DQSn0",
+        "DDR_DQSn1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D2",
+      "netClass": "DQ0",
+      "planarMm": 30.727783540224546,
+      "reducedSpacingExposureMm": 2.5911183903757014,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D3",
+        "DDR_DQS0"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D3",
+      "netClass": "DQ0",
+      "planarMm": 30.72778354054686,
+      "reducedSpacingExposureMm": 10.286398840150678,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CASn",
+        "DDR_D2",
+        "DDR_D8",
+        "DDR_D9",
+        "DDR_DQS0",
+        "DDR_DQSn0",
+        "DDR_DQSn1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D4",
+      "netClass": "DQ0",
+      "planarMm": 30.72778354052423,
+      "reducedSpacingExposureMm": 5.329242737097062,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D1",
+        "DDR_D12",
+        "DDR_D6",
+        "DDR_DQM0",
+        "DDR_DQS1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D5",
+      "netClass": "DQ0",
+      "planarMm": 30.727783540626,
+      "reducedSpacingExposureMm": 19.82239974123386,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CASn",
+        "DDR_D0",
+        "DDR_D11",
+        "DDR_D13",
+        "DDR_ODT"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D6",
+      "netClass": "DQ0",
+      "planarMm": 30.7277835402313,
+      "reducedSpacingExposureMm": 1.8731811768831377,
+      "normalSpacingMultipliers": [
+        3
+      ],
+      "neighbors": [
+        "DDR_D4"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D7",
+      "netClass": "DQ0",
+      "planarMm": 30.570362432353047,
+      "reducedSpacingExposureMm": 10.7347337910531,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CKE",
+        "DDR_D1",
+        "DDR_D12",
+        "DDR_DQSn1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D8",
+      "netClass": "DQ1",
+      "planarMm": 50.53587956533585,
+      "reducedSpacingExposureMm": 5.741013135988211,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D12",
+        "DDR_D3",
+        "DDR_D9",
+        "DDR_DQM0",
+        "DDR_DQM1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_D9",
+      "netClass": "DQ1",
+      "planarMm": 50.535879564900114,
+      "reducedSpacingExposureMm": 1.4669858323416134,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D3",
+        "DDR_D8",
+        "DDR_DQSn1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_DQM0",
+      "netClass": "DQ0",
+      "planarMm": 30.727783540455054,
+      "reducedSpacingExposureMm": 9.098550110969748,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D12",
+        "DDR_D15",
+        "DDR_D4",
+        "DDR_D8",
+        "DDR_DQS1",
+        "DDR_DQSn0"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_DQM1",
+      "netClass": "DQ1",
+      "planarMm": 50.53587956482551,
+      "reducedSpacingExposureMm": 7.896209948461711,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_D10",
+        "DDR_D8",
+        "DDR_ODT"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_DQS0",
+      "netClass": "DQS0",
+      "planarMm": 30.727783540546866,
+      "reducedSpacingExposureMm": 6.6150461359085275,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_D2",
+        "DDR_D3"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_DQS1",
+      "netClass": "DQS1",
+      "planarMm": 50.95313905432341,
+      "reducedSpacingExposureMm": 24.012197992764442,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_D12",
+        "DDR_D15",
+        "DDR_D4",
+        "DDR_DQM0"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_DQSn0",
+      "netClass": "DQS0",
+      "planarMm": 30.727783540546877,
+      "reducedSpacingExposureMm": 6.262679889858826,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_D15",
+        "DDR_D3",
+        "DDR_DQM0"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_DQSn1",
+      "netClass": "DQS1",
+      "planarMm": 51.03254838299123,
+      "reducedSpacingExposureMm": 7.169867052167162,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_D0",
+        "DDR_D15",
+        "DDR_D3",
+        "DDR_D7",
+        "DDR_D9"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_ODT",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 43.01828108257736,
+      "reducedSpacingExposureMm": 12.976168204463358,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_CSn0",
+        "DDR_D0",
+        "DDR_D10",
+        "DDR_D11",
+        "DDR_D14",
+        "DDR_D5",
+        "DDR_DQM1"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_RESETn",
+      "netClass": "ASYNC",
+      "planarMm": 52.64654254594159,
+      "reducedSpacingExposureMm": 7.941062132014862,
+      "normalSpacingMultipliers": [
+        4
+      ],
+      "neighbors": [
+        "DDR_A3",
+        "DDR_CASn",
+        "DDR_CK",
+        "DDR_CKn",
+        "DDR_CSn0",
+        "DDR_D14",
+        "DDR_WEn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    },
+    {
+      "name": "DDR_WEn",
+      "netClass": "ADDR_CTRL",
+      "planarMm": 43.22864064032822,
+      "reducedSpacingExposureMm": 19.862666818715088,
+      "normalSpacingMultipliers": [
+        3,
+        4
+      ],
+      "neighbors": [
+        "DDR_A5",
+        "DDR_A6",
+        "DDR_CK",
+        "DDR_RESETn"
+      ],
+      "exceptionLengthLimitMm": 31.75,
+      "reducedSpacingLengthPass": true
+    }
+  ],
+  "problems": [
+    "DDR_D12: 32.176112 mm below normal class spacing exceeds 31.75 mm allowance"
+  ],
+  "method": "Exact line-to-segment capsule intersection; union across all foreign DDR traces separately on each actual signal layer; routed lengths below the normal class spacing are counted once per path location.",
+  "excludedDifferentialPairClasses": [
+    "CK",
+    "DQS0",
+    "DQS1"
+  ],
+  "completeSpacingQualified": false,
+  "differentialImpedanceAndCouplingQualified": false,
+  "sameNetMeanderCouplingQualified": false,
+  "padsAndDrillsCheckedBySeparatePhysicalDrc": true,
+  "stackupSupplierConfirmed": false,
+  "viaAndPackageDelaysQualified": false,
+  "referencePlaneReturnPathsQualified": false,
+  "terminationAndOdtQualified": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false
+}

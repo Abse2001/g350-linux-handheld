@@ -1,0 +1,38 @@
+Building 1 file(s)...
+Building experiments/am3352-latest-bus-lanes-ddr-phases.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/am3352-latest-bus-lanes-native-phases-attempt-749/placement-unrouted.png
+Autorouting <board#2329 /> phase 1/6 "DDR_BYTE0_BUS_LANES" start: connections=11, obstacles=1104, previous_traces=102, router=bus_lanes, solver=BusLanesPipelineSolver, cache=disabled(strategy_not_cacheable)
+  connections: DDR_D2, DDR_D6, DDR_D0, DDR_DQS0, DDR_DQSn0, DDR_D4, DDR_DQM0, DDR_D1, DDR_D7, DDR_D3, DDR_D5
+Wrote debug artifact: dist/am3352-latest-bus-lanes-native-phases-attempt-749/phase-1.input.simple-route.json
+Wrote debug artifact: dist/am3352-latest-bus-lanes-native-phases-attempt-749/phase-1.input.simple-route.json
+Wrote debug artifact: dist/am3352-latest-bus-lanes-native-phases-attempt-749/phase-1.previous-output.traces.json
+Wrote debug artifact: dist/am3352-latest-bus-lanes-native-phases-attempt-749/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/am3352-latest-bus-lanes-native-phases-attempt-749/phase-1.timeout.json
+Autorouter timeout after 64.3s in phase 1/6 "DDR_BYTE0_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158814 |       return;
+158815 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158816 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158817 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158818 |     this.log(kleur_default.red(message));
+158819 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 64.3s in phase 1/6 "DDR_BYTE0_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/dist/am3352-latest-bus-lanes-native-phases-attempt-749/phase-1.timeout.json",
+
+      at checkTimeout (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:158819:11)
+      at generateCircuitJson (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167875:27)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+      at async <anonymous> (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 64.3s in phase 1/6 "DDR_BYTE0_BUS_LANES". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   autorouter-debug, autorouter-phase, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

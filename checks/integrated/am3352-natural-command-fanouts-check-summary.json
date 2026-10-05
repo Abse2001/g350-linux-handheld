@@ -1,0 +1,79 @@
+{
+  "status": "ALL_52_NATURAL_COMMAND_FANOUTS_PHYSICALLY_CONNECTED_CHANNELS_UNFINISHED",
+  "source": {
+    "path": "dist/experiments/am3352-joint-ddr-breakout-host/circuit.json",
+    "sha256": "fe69070a7bc659551dacbb0774ac3d633de80bfd3925e3ba5bf2b562c34e6b13",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-joint-ddr-breakout-host/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-natural-command-fanouts-physical-diagnostic/circuit.json",
+    "sha256": "8962b9997d7d6fd2853832876b91572fd2aba105fb4d03638b6d93f1d80931c1"
+  },
+  "board": {
+    "path": "dist/am3352-natural-command-fanouts-physical-diagnostic/board.kicad_pcb",
+    "sha256": "ada4707de3036bc3620539f6651612079d8e20ec3014e599b63bd40af3fa1c30"
+  },
+  "fixedFanouts": {
+    "path": "dist/am3352-joint-command-natural-fanouts-attempt-148/signal-escapes.native.json",
+    "sha256": "d28622a8174302997914c8a32b1ebc1716e3be4d87bd49716fe8c5ceae2fa2ea"
+  },
+  "nativeBootstrap": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "manualComposition": {
+    "path": "dist/am3352-joint-command-natural-fanouts-attempt-148/result.json",
+    "sha256": "878efe979261c87a31556cecc0ad9d852bdd06e34b8c037ac1a97755c1b3eb86"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "commandSignals": 26,
+  "cpuNaturalFanoutsConnected": 26,
+  "ramNaturalFanoutsConnected": 26,
+  "completedEndToEndDdrChannels": 0,
+  "requiredDdrChannels": 49,
+  "sourcePowerTracesPreserved": 69,
+  "sourcePowerViasPreserved": 69,
+  "signalViasReserved": 106,
+  "totalThroughVias": 175,
+  "minimumHoleEdgeClearanceMm": 0.31168542494923646,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolations": 0,
+  "unfinishedViaWarnings": 47,
+  "unfinishedTrackWarnings": 44,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "physicalLibraryRecordsPreserved": 4726,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-natural-command-fanouts-native-connectivity.json",
+      "sha256": "3431db5639d813de739032a4f65d9e15cbcbd56441953d44daef7c1a6a80e4dc"
+    },
+    {
+      "path": "checks/integrated/am3352-natural-command-fanouts-reference-connectivity.json",
+      "sha256": "680d330a9b2b48e534971e1c5d44cf18fa0275f7bcd6f514aea03644044f4a85"
+    },
+    {
+      "path": "checks/integrated/am3352-natural-command-fanouts-native-ddr-connectivity.json",
+      "sha256": "b9a14cb618a9df3d1c299a69c7501be3bb97bd957f17e90854f3edb5baceb4e4"
+    },
+    {
+      "path": "checks/integrated/am3352-natural-command-fanouts-kicad-drc.json",
+      "sha256": "7b36620abc969e3ad16e0ba8a579bcc5cb530d409c7ca8ff36e052d8e5a7afde"
+    },
+    {
+      "path": "checks/integrated/am3352-natural-command-fanouts-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    }
+  ],
+  "fullPhysicalDrcPass": false,
+  "fabricationReady": false,
+  "timingQualified": false,
+  "scope": "Both packages have complete natural local command/clock escapes. All unfinished-track/via warnings remain. CPU/RAM channel alignment, native channels, timing and full host integration are still required. The checked 23-signal active replay is separate."
+}

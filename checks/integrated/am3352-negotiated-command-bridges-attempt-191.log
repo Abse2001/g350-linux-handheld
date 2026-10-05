@@ -1,0 +1,20 @@
+137 |  assert.equal(resume.layerCount,4);assert.equal(resume.traces.length,prefixCount+26)
+138 |  // Resume only temporary authored bridges. Actual source copper, package
+139 |  // fanouts and the two native clock channels must still match this input.
+140 |  for(let i=0;i<prefixCount;i++){
+141 |   const a=structuredClone(resume.traces[i]),b=structuredClone(input.traces[i])
+142 |   if(i>=165){assert.equal(a.route.length,1);assert(layers.includes(a.route[0].layer));a.route[0].layer=b.route[0].layer}
+                          ^
+AssertionError: Expected values to be strictly equal:
+
+2 !== 1
+
+ generatedMessage: true,
+     actual: 2,
+   expected: 1,
+   operator: "strictEqual",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/repair-am3352-command-channels.mjs:142:21
+
+Bun v1.3.14 (macOS arm64)

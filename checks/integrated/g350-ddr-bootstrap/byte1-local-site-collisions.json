@@ -1,0 +1,4801 @@
+{
+  "status": "EXACT_LOCAL_SITE_DIAGNOSTIC_REQUIRES_NATIVE_AND_PHYSICAL_REPLAY",
+  "source": {
+    "path": "dist/g350-byte1-bootstrap-core2088/phase-3.input.simple-route.json",
+    "sha256": "897840878c1a60ab9ba209dfdc3afeeecd3650e90af19909a97e26f62a5f9de0"
+  },
+  "circuit": {
+    "path": "dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json",
+    "sha256": "01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555"
+  },
+  "override": null,
+  "helper": {
+    "path": "scripts/analyze-g350-byte1-local-sites.mjs",
+    "sha256": "f3dd9ebecd85bdcd9e930315640d72d03bc2b8e30cf4373c9aa04beb24949171"
+  },
+  "rules": {
+    "viaPadDiameterMm": 0.4572,
+    "viaHoleDiameterMm": 0.254,
+    "clearanceMm": 0.1016,
+    "traceWidthMm": 0.1016
+  },
+  "fixedThroughVias": 119,
+  "fixedTraces": 112,
+  "results": [
+    {
+      "signal": "DDR_D8",
+      "package": "U_SOC",
+      "port": {
+        "x": -0.4,
+        "y": 13.2,
+        "layer": "top",
+        "pointId": "pcb_port_8",
+        "pcb_port_id": "pcb_port_8"
+      },
+      "clearLocalSites": 3,
+      "candidates": [
+        {
+          "site": {
+            "x": -0.8,
+            "y": 12.799999999999999
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -0.8,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "H1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J1",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -0.8,
+            "y": 13.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -0.4,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J1",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -0.4,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J2",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076329
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J1",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 13.6
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D8",
+      "package": "U_RAM",
+      "port": {
+        "x": 2.4,
+        "y": 4.4,
+        "layer": "top",
+        "pointId": "pcb_port_390",
+        "pcb_port_id": "pcb_port_390"
+      },
+      "clearLocalSites": 0,
+      "candidates": [
+        {
+          "site": {
+            "x": 2,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0437358370432159
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0437358370432159
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06047855447195813
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999937
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06003595740819764
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06003595740819764
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.07261907873004234
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08994730510719531
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08076214290458081
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08076214290458081
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217524
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217524
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.09412032312840432
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06990993657488162
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895033
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895033
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C8",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.02939999999999912
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.035056968556392815
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.17740236760075526
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.20520984146546206
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.23939999999999995
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B8",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C8",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0906000000000001
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08018798230064797
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.08140121966271788
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.10763219270369774
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.11940000000000074
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.18940000000000012
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.1698364128764495
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.141909938486262
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.01249641487187117
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0206000000000007
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.8,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.02939999999999912
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.23939999999999995
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.8,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C9",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.030600000000000488
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.17940000000000034
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.12940000000000051
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08060000000000031
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.8,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0906000000000001
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.11940000000000074
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.18940000000000012
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0206000000000007
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D9",
+      "package": "U_SOC",
+      "port": {
+        "x": 0.4,
+        "y": 13.2,
+        "layer": "top",
+        "pointId": "pcb_port_9",
+        "pcb_port_id": "pcb_port_9"
+      },
+      "clearLocalSites": 1,
+      "candidates": [
+        {
+          "site": {
+            "x": 0,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076329
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J1",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 13.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746179982
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.18123271247461778
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999887
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746179982
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.18123271247461795
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076279
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D9",
+      "package": "U_RAM",
+      "port": {
+        "x": 1.6,
+        "y": 6,
+        "layer": "top",
+        "pointId": "pcb_port_372",
+        "pcb_port_id": "pcb_port_372"
+      },
+      "clearLocalSites": 1,
+      "candidates": [
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 5.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A7",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 6.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQS0",
+              "layer": "bottom",
+              "gapMm": 0.025257530459379868
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQS0",
+              "layer": "bottom",
+              "gapMm": 0.025257530459379868
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 5.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A7",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.03860000000000052
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 6.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A7",
+              "gapMm": -0.038599999999999635
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 5.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.2793999999999995
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 6.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D10",
+      "package": "U_SOC",
+      "port": {
+        "x": 0.4,
+        "y": 14,
+        "layer": "top",
+        "pointId": "pcb_port_27",
+        "pcb_port_id": "pcb_port_27"
+      },
+      "clearLocalSites": 3,
+      "candidates": [
+        {
+          "site": {
+            "x": 0,
+            "y": 13.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 14
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J2",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076279
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 14
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028600000000000098
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D10",
+      "package": "U_RAM",
+      "port": {
+        "x": -1.6,
+        "y": 4.4,
+        "layer": "top",
+        "pointId": "pcb_port_358",
+        "pcb_port_id": "pcb_port_358"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": -2,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDD_B2",
+              "position": {
+                "x": -2,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDD_B2",
+              "position": {
+                "x": -2,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.4572
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VDD_B2",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDD_B2",
+              "layer": "top",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VDD_B2",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.6,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C3",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.6,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B3",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C3",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDD_B2",
+              "position": {
+                "x": -2,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VSS_B3",
+              "position": {
+                "x": -1.2000000000000002,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VSS_B3",
+              "layer": "top",
+              "gapMm": 0.0034427124746187754
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VSS_B3",
+              "position": {
+                "x": -1.2000000000000002,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VSS_B3",
+              "position": {
+                "x": -1.2000000000000002,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.4572
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VSS_B3",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VSS_B3",
+              "layer": "top",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VSS_B3",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D11",
+      "package": "U_SOC",
+      "port": {
+        "x": 0.4,
+        "y": 14.8,
+        "layer": "top",
+        "pointId": "pcb_port_45",
+        "pcb_port_id": "pcb_port_45"
+      },
+      "clearLocalSites": 4,
+      "candidates": [
+        {
+          "site": {
+            "x": 0,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 14.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J3",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 15.200000000000001
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 15.200000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K4",
+              "gapMm": -0.02860000000000143
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 14.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.028600000000000098
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 15.200000000000001
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D11",
+      "package": "U_RAM",
+      "port": {
+        "x": -2.4,
+        "y": 6,
+        "layer": "top",
+        "pointId": "pcb_port_340",
+        "pcb_port_id": "pcb_port_340"
+      },
+      "clearLocalSites": 3,
+      "candidates": [
+        {
+          "site": {
+            "x": -2.8,
+            "y": 5.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_A1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 5.6
+              },
+              "gapMm": -0.45719999999999955
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VDDQ_A1",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_A1",
+              "layer": "top",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VDDQ_A1",
+              "layer": "top",
+              "gapMm": -0.10159999999999955
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.8,
+            "y": 6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A1",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_A1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 5.6
+              },
+              "gapMm": -0.05719999999999964
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_A1",
+              "layer": "top",
+              "gapMm": 0.0034427124746194415
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.8,
+            "y": 6.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -2.4,
+            "y": 5.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A2",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B2",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_A1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 5.6
+              },
+              "gapMm": -0.05719999999999964
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.4,
+            "y": 6.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A2",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 5.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A3",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 6.4
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_DQM1",
+      "package": "U_SOC",
+      "port": {
+        "x": -0.4,
+        "y": 14,
+        "layer": "top",
+        "pointId": "pcb_port_26",
+        "pcb_port_id": "pcb_port_26"
+      },
+      "clearLocalSites": 4,
+      "candidates": [
+        {
+          "site": {
+            "x": -0.8,
+            "y": 13.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -0.8,
+            "y": 14
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "H2",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J2",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -0.8,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -0.4,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J2",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -0.4,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J3",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 13.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 14
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J2",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_DQM1",
+      "package": "U_RAM",
+      "port": {
+        "x": -1.6,
+        "y": 3.6,
+        "layer": "top",
+        "pointId": "pcb_port_359",
+        "pcb_port_id": "pcb_port_359"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": -2,
+            "y": 3.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_D2",
+              "position": {
+                "x": -2,
+                "y": 3.2
+              },
+              "gapMm": -0.4572
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VDDQ_D2",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_D2",
+              "layer": "top",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VDDQ_D2",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 3.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_D2",
+              "position": {
+                "x": -2,
+                "y": 3.2
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_D2",
+              "layer": "top",
+              "gapMm": 0.003442712474618942
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -1.6,
+            "y": 3.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "E3",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_D2",
+              "position": {
+                "x": -2,
+                "y": 3.2
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-via",
+              "net": "DDR_D2",
+              "position": {
+                "x": -1.2,
+                "y": 3.200000000000001
+              },
+              "gapMm": -0.05719999999999986
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.003442712474619608
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "top",
+              "gapMm": 0.0034427124746188864
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.6,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C3",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 3.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "DDR_D2",
+              "position": {
+                "x": -1.2,
+                "y": 3.200000000000001
+              },
+              "gapMm": -0.45719999999999905
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "DDR_D2",
+              "gapMm": -0.2793999999999992
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2793999999999991
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "top",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "DDR_D2",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 3.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "DDR_D2",
+              "position": {
+                "x": -1.2,
+                "y": 3.200000000000001
+              },
+              "gapMm": -0.05720000000000097
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746182203
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D12",
+      "package": "U_SOC",
+      "port": {
+        "x": 0.4,
+        "y": 15.6,
+        "layer": "top",
+        "pointId": "pcb_port_63",
+        "pcb_port_id": "pcb_port_63"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": 0,
+            "y": 15.2
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 15.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "J4",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K4",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_J5",
+              "position": {
+                "x": -1.1102230246251565e-16,
+                "y": 16
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0,
+            "y": 16
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_J5",
+              "position": {
+                "x": -1.1102230246251565e-16,
+                "y": 16
+              },
+              "gapMm": -0.4571999999999999
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_SOC_VDDS_DDR_J5",
+              "gapMm": -0.27939999999999987
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_SOC_VDDS_DDR_J5",
+              "layer": "top",
+              "gapMm": -0.27939999999999987
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_SOC_VDDS_DDR_J5",
+              "layer": "top",
+              "gapMm": -0.10159999999999988
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 15.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.02860000000000143
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K4",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.4,
+            "y": 16
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K4",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K5",
+              "gapMm": -0.02860000000000143
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_J5",
+              "position": {
+                "x": -1.1102230246251565e-16,
+                "y": 16
+              },
+              "gapMm": -0.05719999999999986
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "position": {
+                "x": 0.7999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "layer": "top",
+              "gapMm": 0.0034427124746184423
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 15.2
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 15.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K4",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L4",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "position": {
+                "x": 0.7999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.8,
+            "y": 16
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "position": {
+                "x": 0.7999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.4571999999999999
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "gapMm": -0.27939999999999987
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "layer": "top",
+              "gapMm": -0.27939999999999987
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "layer": "top",
+              "gapMm": -0.10159999999999988
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D12",
+      "package": "U_RAM",
+      "port": {
+        "x": 1.6,
+        "y": 3.6,
+        "layer": "top",
+        "pointId": "pcb_port_375",
+        "pcb_port_id": "pcb_port_375"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 3.2
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 3.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D7",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 3.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "E7",
+              "gapMm": -0.038599999999999635
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D7",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 3.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999937
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 3.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999937
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0437358370432159
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0437358370432159
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06047855447195813
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_DQSn1",
+      "package": "U_SOC",
+      "port": {
+        "x": 1.2,
+        "y": 14,
+        "layer": "top",
+        "pointId": "pcb_port_28",
+        "pcb_port_id": "pcb_port_28"
+      },
+      "clearLocalSites": 1,
+      "candidates": [
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076262
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 14
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K2",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746181648
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.18123271247461825
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2793999999999992
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 14
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028599999999999876
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M2",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.003442712474618387
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.18123271247461842
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076229
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_DQSn1",
+      "package": "U_RAM",
+      "port": {
+        "x": 1.6,
+        "y": 5.2,
+        "layer": "top",
+        "pointId": "pcb_port_373",
+        "pcb_port_id": "pcb_port_373"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 4.8
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 5.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 5.6000000000000005
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 4.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.03860000000000052
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 5.6000000000000005
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A7",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.038599999999999635
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217569
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217569
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.09412032312840471
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06990993657488134
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895005
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895005
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 5.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05944721009615503
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.042029259996067686
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.042029259996067686
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 5.6000000000000005
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_DQS1",
+      "package": "U_SOC",
+      "port": {
+        "x": 1.2,
+        "y": 13.2,
+        "layer": "top",
+        "pointId": "pcb_port_10",
+        "pcb_port_id": "pcb_port_10"
+      },
+      "clearLocalSites": 1,
+      "candidates": [
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999904
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746181648
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.18123271247461809
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076262
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746202187
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746181648
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.18123271247461825
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 12.799999999999999
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028599999999999876
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746202187
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2793999999999992
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_DQS1",
+      "package": "U_RAM",
+      "port": {
+        "x": 1.6,
+        "y": 4.4,
+        "layer": "top",
+        "pointId": "pcb_port_374",
+        "pcb_port_id": "pcb_port_374"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2000000000000002,
+            "y": 4.800000000000001
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D7",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.038599999999999635
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0437358370432159
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.0437358370432159
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06047855447195813
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999937
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06003595740819764
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06003595740819764
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.07261907873004234
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08994730510719531
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08076214290458081
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08076214290458081
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217524
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217524
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.09412032312840432
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06990993657488162
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895033
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895033
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D13",
+      "package": "U_SOC",
+      "port": {
+        "x": 1.2,
+        "y": 14.8,
+        "layer": "top",
+        "pointId": "pcb_port_46",
+        "pcb_port_id": "pcb_port_46"
+      },
+      "clearLocalSites": 3,
+      "candidates": [
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 14.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 14.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K3",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.028599999999999987
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 15.200000000000001
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 15.200000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L4",
+              "gapMm": -0.02860000000000143
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 14.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D5",
+              "layer": "bottom",
+              "gapMm": -0.09472457505076229
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 14.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.028599999999999876
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M3",
+              "gapMm": -0.028600000000000098
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 15.200000000000001
+          },
+          "clear": true,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D13",
+      "package": "U_RAM",
+      "port": {
+        "x": -2.4,
+        "y": 4.4,
+        "layer": "top",
+        "pointId": "pcb_port_342",
+        "pcb_port_id": "pcb_port_342"
+      },
+      "clearLocalSites": 1,
+      "candidates": [
+        {
+          "site": {
+            "x": -2.8,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_C1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 4
+              },
+              "gapMm": -0.45719999999999955
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VDDQ_C1",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_C1",
+              "layer": "top",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VDDQ_C1",
+              "layer": "top",
+              "gapMm": -0.10159999999999955
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.8,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C1",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_C1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 4
+              },
+              "gapMm": -0.05719999999999964
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VSSQ_B1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.05719999999999964
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_C1",
+              "layer": "top",
+              "gapMm": 0.0034427124746194415
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.8,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VSSQ_B1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.45719999999999955
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VSSQ_B1",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VSSQ_B1",
+              "layer": "top",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VSSQ_B1",
+              "layer": "top",
+              "gapMm": -0.10159999999999955
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.4,
+            "y": 4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C2",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "D2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_C1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 4
+              },
+              "gapMm": -0.05719999999999964
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2.4,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B2",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C2",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VSSQ_B1",
+              "position": {
+                "x": -2.8000000000000003,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.05719999999999964
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDD_B2",
+              "position": {
+                "x": -2,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDD_B2",
+              "layer": "top",
+              "gapMm": 0.0034427124746187754
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 4.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDD_B2",
+              "position": {
+                "x": -2,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 4.800000000000001
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDD_B2",
+              "position": {
+                "x": -2,
+                "y": 4.800000000000001
+              },
+              "gapMm": -0.4572
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VDD_B2",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDD_B2",
+              "layer": "top",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VDD_B2",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D14",
+      "package": "U_SOC",
+      "port": {
+        "x": 1.2,
+        "y": 15.6,
+        "layer": "top",
+        "pointId": "pcb_port_64",
+        "pcb_port_id": "pcb_port_64"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 15.2
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 15.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "K4",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L4",
+              "gapMm": -0.028599999999999987
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "position": {
+                "x": 0.7999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 0.7999999999999999,
+            "y": 16
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "position": {
+                "x": 0.7999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.4572
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "layer": "top",
+              "gapMm": -0.2794
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 15.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L3",
+              "gapMm": -0.02860000000000143
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L4",
+              "gapMm": -0.028599999999999653
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.2,
+            "y": 16
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L4",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L5",
+              "gapMm": -0.02860000000000143
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_K5",
+              "position": {
+                "x": 0.7999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.05719999999999997
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "position": {
+                "x": 1.5999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "layer": "top",
+              "gapMm": 0.0034427124746184423
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 15.2
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 15.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L4",
+              "gapMm": -0.028599999999999876
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M4",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "position": {
+                "x": 1.5999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.05719999999999964
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 16
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "position": {
+                "x": 1.5999999999999999,
+                "y": 16
+              },
+              "gapMm": -0.4571999999999998
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "gapMm": -0.2793999999999998
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "layer": "top",
+              "gapMm": -0.27939999999999976
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_SOC_VDDS_DDR_L5",
+              "layer": "top",
+              "gapMm": -0.10159999999999983
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D14",
+      "package": "U_RAM",
+      "port": {
+        "x": -1.6,
+        "y": 6,
+        "layer": "top",
+        "pointId": "pcb_port_356",
+        "pcb_port_id": "pcb_port_356"
+      },
+      "clearLocalSites": 2,
+      "candidates": [
+        {
+          "site": {
+            "x": -2,
+            "y": 5.6
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A2",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A3",
+              "gapMm": -0.03860000000000008
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -2,
+            "y": 6.4
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": -1.6,
+            "y": 5.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A3",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B3",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.06112991072738369
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.04296659271704964
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.04296659271704964
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.16269430133879545
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.18741837085591506
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.1579067075925587
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.1340720257486539
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.07276504667556147
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.07276504667556147
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.09108700395560446
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.6,
+            "y": 6.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A3",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.04611858175156905
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.06854312887648259
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2604099999999999
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.23557968393541617
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.046118581751566384
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.046118581751566384
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.02867979718419092
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 5.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.040600000000000275
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.0440962161710515
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.10177736102346693
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.13004020875791544
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.16940000000000055
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.09799663498764768
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.1394000000000003
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.10674905954533838
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.07877646729013102
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.07209651758870647
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.07060000000000052
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A3",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.10059999999999988
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.10040231947289022
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.05412283320987091
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.08164169489025527
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.10940000000000095
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.09036779213446902
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.1993999999999999
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.1505266232308658
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.12239744627239997
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.016488157716709
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.010600000000000914
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": -1.2000000000000002,
+            "y": 6.4
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.0016414683992814483
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.028186251889195796
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.04940000000000136
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.08216357684368578
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2593999999999995
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.17640316878719414
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.15192528926493737
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.03701641582609563
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.049399999999998695
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D15",
+      "package": "U_SOC",
+      "port": {
+        "x": 2,
+        "y": 13.2,
+        "layer": "top",
+        "pointId": "pcb_port_11",
+        "pcb_port_id": "pcb_port_11"
+      },
+      "clearLocalSites": 1,
+      "candidates": [
+        {
+          "site": {
+            "x": 1.6,
+            "y": 12.799999999999999
+          },
+          "clear": true,
+          "blockers": []
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "L1",
+              "gapMm": -0.028599999999999876
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746202187
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 1.6,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": -0.2793999999999992
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "fixed-via",
+              "net": "DDR_D2",
+              "position": {
+                "x": 2.4000000000000012,
+                "y": 12.8
+              },
+              "gapMm": -0.05719999999999875
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": 0.0034427124746186644
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M1",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M2",
+              "gapMm": -0.028599999999999653
+            },
+            {
+              "kind": "fixed-via",
+              "net": "DDR_DQM0",
+              "position": {
+                "x": 2.4000000000000012,
+                "y": 13.600000000000001
+              },
+              "gapMm": -0.05719999999999875
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "top",
+              "gapMm": 0.003442712474620163
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D0",
+              "layer": "bottom",
+              "gapMm": 0.00344271247461983
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 12.799999999999999
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "DDR_D2",
+              "position": {
+                "x": 2.4000000000000012,
+                "y": 12.8
+              },
+              "gapMm": -0.4571999999999978
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "DDR_D2",
+              "gapMm": -0.2793999999999978
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "top",
+              "gapMm": -0.27939999999999776
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "DDR_D2",
+              "layer": "top",
+              "gapMm": -0.10159999999999779
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "bottom",
+              "gapMm": -0.2793999999999997
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 13.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "M1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_SOC",
+              "label": "N1",
+              "gapMm": -0.028600000000000098
+            },
+            {
+              "kind": "fixed-via",
+              "net": "DDR_D2",
+              "position": {
+                "x": 2.4000000000000012,
+                "y": 12.8
+              },
+              "gapMm": -0.057200000000001416
+            },
+            {
+              "kind": "fixed-via",
+              "net": "DDR_DQM0",
+              "position": {
+                "x": 2.4000000000000012,
+                "y": 13.600000000000001
+              },
+              "gapMm": -0.057199999999997864
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D2",
+              "layer": "top",
+              "gapMm": 0.003442712474618942
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 13.6
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "DDR_DQM0",
+              "position": {
+                "x": 2.4000000000000012,
+                "y": 13.600000000000001
+              },
+              "gapMm": -0.4571999999999978
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "DDR_DQM0",
+              "gapMm": -0.27939999999999776
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "top",
+              "gapMm": -0.27939999999999776
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "DDR_DQM0",
+              "layer": "top",
+              "gapMm": -0.10159999999999778
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999776
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "DDR_D15",
+      "package": "U_RAM",
+      "port": {
+        "x": 2.4,
+        "y": 5.2,
+        "layer": "top",
+        "pointId": "pcb_port_389",
+        "pcb_port_id": "pcb_port_389"
+      },
+      "clearLocalSites": 0,
+      "candidates": [
+        {
+          "site": {
+            "x": 2,
+            "y": 4.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217569
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08558872473217569
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.09412032312840471
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.06990993657488134
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895005
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05663090509895005
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 5.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B7",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.05944721009615503
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.042029259996067686
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.042029259996067686
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2,
+            "y": 5.6000000000000005
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_DQM0",
+              "layer": "bottom",
+              "gapMm": -0.27939999999999954
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 4.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B8",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "C8",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.09060000000000099
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.08018798230064891
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.08140121966271704
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.10763219270369691
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.11939999999999985
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.189400000000001
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.1698364128764502
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.14190993848626265
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.012496414871870337
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.020599999999999813
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.4,
+            "y": 5.6000000000000005
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "A8",
+              "gapMm": -0.03860000000000052
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B8",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_A8",
+              "position": {
+                "x": 2.8,
+                "y": 5.6
+              },
+              "gapMm": -0.057200000000000084
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_A8",
+              "layer": "top",
+              "gapMm": 0.0034427124746184423
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.8,
+            "y": 4.8
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.09060000000000099
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.11939999999999985
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.189400000000001
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": 0.020599999999999813
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.8,
+            "y": 5.2
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B8",
+              "gapMm": -0.03860000000000008
+            },
+            {
+              "kind": "pad-to-via",
+              "component": "U_RAM",
+              "label": "B9",
+              "gapMm": -0.038599999999999635
+            },
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_A8",
+              "position": {
+                "x": 2.8,
+                "y": 5.6
+              },
+              "gapMm": -0.05720000000000053
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.24940000000000062
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "DDR_D6",
+              "layer": "bottom",
+              "gapMm": -0.039399999999999796
+            }
+          ]
+        },
+        {
+          "site": {
+            "x": 2.8,
+            "y": 5.6000000000000005
+          },
+          "clear": false,
+          "blockers": [
+            {
+              "kind": "fixed-via",
+              "net": "U_RAM_VDDQ_A8",
+              "position": {
+                "x": 2.8,
+                "y": 5.6
+              },
+              "gapMm": -0.4571999999999991
+            },
+            {
+              "kind": "fixed-via-to-stub",
+              "net": "U_RAM_VDDQ_A8",
+              "gapMm": -0.27939999999999937
+            },
+            {
+              "kind": "fixed-wire-to-via",
+              "net": "U_RAM_VDDQ_A8",
+              "layer": "top",
+              "gapMm": -0.27939999999999937
+            },
+            {
+              "kind": "fixed-wire-to-stub",
+              "net": "U_RAM_VDDQ_A8",
+              "layer": "top",
+              "gapMm": -0.1016
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "jointAssignmentVerified": false,
+  "qualifiedNewSignals": 0,
+  "fabricationReady": false
+}

@@ -1,0 +1,182 @@
+(footprint "g350_U_USB_ESD_77106bb215a86fb24bbf8c4e52d877b2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "U_USB_ESD"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "514c4af3-ad88-47fa-8cb6-c10b9286770f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USBLC6-2SC6"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f117577d-272f-4c9a-b4e3-cef4c562dde6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "23e981cb-0ac0-4ee5-897b-e699e7a7e6f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ff95d0f-6f05-4b05-b025-040151dd0867")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C7519"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05eace80-0473-0721-0ed0-dcc2192eb263")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "USBLC6-2SC6"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0da93aa2-69ac-27fe-1efe-75625856ed3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.539189 0.889203)
+		(end -1.539189 -0.889203)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "37409aa0-455d-491a-810f-70aadf1e336d")
+	)
+	(fp_line
+		(start 1.539189 0.889203)
+		(end 1.539189 -0.889203)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6ffea479-902f-4f22-8790-71b87bbd4443")
+	)
+	(fp_circle
+		(center -1.668272 1.301496)
+		(end -1.518158 1.301496)
+		(stroke
+			(width 0.299999)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "74c32086-18e6-4c47-9268-1774a4bde8df")
+	)
+	(fp_poly
+		(pts
+			(xy -2.0788 -1.9264) (xy 1.774 -1.9264) (xy 1.774 2.028) (xy -2.0788 2.028) (xy -2.0788 -1.9264)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "78f89260-7259-23ff-6bb9-b59e651a473d")
+	)
+	(pad "1" smd rect
+		(at -0.94996 1.149096)
+		(size 0.532003 1.072007)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "20897e40-7ed1-8261-22e6-797e3b618aa3")
+	)
+	(pad "2" smd rect
+		(at 0 1.149096)
+		(size 0.532003 1.072007)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "720a8760-5e62-0361-4ab9-7f623710fb63")
+	)
+	(pad "3" smd rect
+		(at 0.94996 1.149096)
+		(size 0.532003 1.072007)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "1180b9c6-0407-2d86-0972-5eba16ebeafa")
+	)
+	(pad "4" smd rect
+		(at 0.94996 -1.149096)
+		(size 0.532003 1.072007)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "03a07a60-61e8-7e81-3fcf-7d5e1e7886c3")
+	)
+	(pad "5" smd rect
+		(at 0 -1.149096)
+		(size 0.532003 1.072007)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "618c951e-3d0b-6ee2-245c-8d1e7a3b76e2")
+	)
+	(pad "6" smd rect
+		(at -0.94996 -1.149096)
+		(size 0.532003 1.072007)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "3f0eee44-2ba9-919c-699d-ee84011a915c")
+	)
+	(embedded_fonts no)
+	(model "./imports/USBLC6_2SC6/USBLC6_2SC6.step"
+		(offset
+			(xyz 0.0000127000000703 0.0000127000000703 0.048939)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

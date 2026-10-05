@@ -1,0 +1,207 @@
+{
+  "status": "DDR26_RETAINED_REMAINING_ADDRESS_CONTROL_PHASES_REQUIRE_CPU_FANOUT_REPAIR",
+  "acceptedDefault": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-matched-check-summary.json",
+    "sha256": "7e0cac94ee9eeeea9b264efaf205a498afb94502a46009391cb2effa38677f60"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-matched-candidate/circuit.json",
+    "sha256": "37cce5810c43cc3f70485d5e2990512f6a2a7d8a2f35d316e02bbea0fbbf4997"
+  },
+  "acceptedDdrSignals": 26,
+  "remainingDdrSignals": 23,
+  "nativeAttempts": [
+    {
+      "attempt": 468,
+      "result": {
+        "path": "dist/am3352-ddr26-address-control-bottom-attempt-468/result.json",
+        "sha256": "a6fe87eb92ae6a982a8319ee02c5aae350c73db44451236e5e8bad64ef86ac83"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_A0,DDR_A1,DDR_A10,DDR_A11,DDR_A12,DDR_A13,DDR_A14,DDR_A2,DDR_A3,DDR_A4,DDR_A5,DDR_A6,DDR_A7,DDR_A8,DDR_A9,DDR_BA0,DDR_BA1,DDR_BA2,DDR_CASn,DDR_CSn0,DDR_ODT,DDR_RASn,DDR_WEn",
+      "signalLayer": "bottom",
+      "preparedEscapes": 0,
+      "failureCode": "local_dogbone_failed",
+      "error": "No collision-free local dogbone assignment",
+      "elapsedSeconds": 1.090773125,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 469,
+      "result": {
+        "path": "dist/am3352-ddr26-address-control-top-attempt-469/result.json",
+        "sha256": "2e9b9243ea360f0b7e87fe8912b66c8ddaf0c1fe327085c041f0c5a1da3a3807"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_A0,DDR_A1,DDR_A10,DDR_A11,DDR_A12,DDR_A13,DDR_A14,DDR_A2,DDR_A3,DDR_A4,DDR_A5,DDR_A6,DDR_A7,DDR_A8,DDR_A9,DDR_BA0,DDR_BA1,DDR_BA2,DDR_CASn,DDR_CSn0,DDR_ODT,DDR_RASn,DDR_WEn",
+      "signalLayer": "top",
+      "preparedEscapes": 0,
+      "failureCode": "no_planar_route",
+      "error": "Negotiated lane search exhausted without a complete route",
+      "elapsedSeconds": 1.202657542,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 470,
+      "result": {
+        "path": "dist/am3352-ddr26-ddr_odt-bottom-attempt-470/result.json",
+        "sha256": "df7aa1c8063094aee9240bd62305ebfdb7f4077ab0f17e5625d33b47b58bc8ed"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_ODT",
+      "signalLayer": "bottom",
+      "preparedEscapes": 0,
+      "failureCode": "local_dogbone_failed",
+      "error": "No collision-free local dogbone assignment",
+      "elapsedSeconds": 0.09482329200000003,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 471,
+      "result": {
+        "path": "dist/am3352-ddr26-ddr_odt-top-attempt-471/result.json",
+        "sha256": "c926385db2ce7d214f757f21e47310d870c5ab9f01cb11c89735705631e54b6c"
+      },
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "selection": "DDR_ODT",
+      "signalLayer": "top",
+      "preparedEscapes": 0,
+      "failureCode": null,
+      "error": null,
+      "elapsedSeconds": 15.047994792,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 472,
+      "result": {
+        "path": "dist/am3352-ddr26-ddr_csn0-bottom-attempt-472/result.json",
+        "sha256": "3cda2693f184685957e80a19afbdbc8c986b50b78bb8cb77fcde5c53cde9891f"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_CSn0",
+      "signalLayer": "bottom",
+      "preparedEscapes": 0,
+      "failureCode": "local_dogbone_failed",
+      "error": "No collision-free local dogbone assignment",
+      "elapsedSeconds": 0.1475675839999999,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 473,
+      "result": {
+        "path": "dist/am3352-ddr26-ddr_csn0-top-attempt-473/result.json",
+        "sha256": "f955e1e77f3bb9f598744562c247dcc811e332ecfec7de1849f1bcdd8b441375"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_CSn0",
+      "signalLayer": "top",
+      "preparedEscapes": 0,
+      "failureCode": "no_planar_route",
+      "error": "No collision-free routing found in the vector visibility graph",
+      "elapsedSeconds": 5.126590749999999,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 474,
+      "result": {
+        "path": "dist/am3352-ddr26-ddr_rasn-bottom-attempt-474/result.json",
+        "sha256": "46cfa51465f875ef095303a2db74c1ea85664947e8645830fcd41ac4f1941a70"
+      },
+      "status": "NATIVE_DDR_PHASE_FAILED",
+      "selection": "DDR_RASn",
+      "signalLayer": "bottom",
+      "preparedEscapes": 0,
+      "failureCode": "local_dogbone_failed",
+      "error": "No collision-free local dogbone assignment",
+      "elapsedSeconds": 0.12899008400000003,
+      "newConnectedSignals": 0
+    },
+    {
+      "attempt": 475,
+      "result": {
+        "path": "dist/am3352-ddr26-ddr_rasn-top-attempt-475/result.json",
+        "sha256": "4ac3cd0793bcf6054f5b3bbbcfa43156e6bdbed47d4f90db25adedeb3b882af2"
+      },
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "selection": "DDR_RASn",
+      "signalLayer": "top",
+      "preparedEscapes": 0,
+      "failureCode": null,
+      "error": null,
+      "elapsedSeconds": 15.061824332999999,
+      "newConnectedSignals": 0
+    }
+  ],
+  "manualPreparation": {
+    "path": "dist/am3352-ddr26-odt-guided-prep-attempt-476/result.json",
+    "sha256": "53e95a8e60d1676245bf87fd00585438d5b249c6ae9bdd9302c5b027817a304b"
+  },
+  "manualLocalRun": {
+    "path": "dist/am3352-ddr26-odt-manual-local-attempt-477/result.json",
+    "sha256": "cc766816770c37f312612b8e5dba2d03103bc9a150d763b12208f7b206e92b6b"
+  },
+  "odtRamFanout": {
+    "name": "source_trace_0",
+    "package": "U_RAM",
+    "end": {
+      "x": -9,
+      "y": -31.56
+    },
+    "expanded": 66472,
+    "newVias": 1,
+    "reusedBootstrapLayer": "top",
+    "length": 7.314600467681885
+  },
+  "odtCpuFailure": {
+    "name": "source_trace_0",
+    "package": "U_SOC",
+    "error": "no clearance-preserving local path",
+    "expanded": 4856,
+    "reachableLayers": [
+      "top"
+    ],
+    "reachableBounds": {
+      "minX": -2.16,
+      "maxX": -1.42,
+      "minY": -11.879999999999999,
+      "maxY": -6.619999999999999
+    },
+    "boundaryBlockers": [
+      {
+        "origin": {
+          "kind": "route",
+          "pcb_trace_id": "pcb_trace_21",
+          "source_trace_id": "source_trace_40",
+          "name": "DDR_D14"
+        },
+        "boundarySamples": 155,
+        "layers": [
+          "top"
+        ]
+      },
+      {
+        "origin": {
+          "kind": "route",
+          "pcb_trace_id": "pcb_trace_5",
+          "source_trace_id": "source_trace_11",
+          "name": "DDR_D10"
+        },
+        "boundarySamples": 127,
+        "layers": [
+          "top"
+        ]
+      }
+    ],
+    "blockerScope": "Diagnostic reachable-boundary contacts only; fixed copper and all clearance rules are unchanged."
+  },
+  "newConnectedDdrSignals": 0,
+  "allSourceTracesRetained": 128,
+  "allPhysicalHolesRetained": 143,
+  "allActualPadsRetained": 912,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "activeSolverHandles": [],
+  "nextAction": "Open a legal CPU ODT fanout by repairing neighbouring D14/D10 copper or its channel layer allocation without losing checked byte/pair matching or reference continuity. Retain the guarded RAM fanout, route the intervening channel with native bus_lanes, then replay and independently check any complete new signal. Complete the other address/control channels and nominal clock/CKE tuning.",
+  "originalShellGeometryRequired": true,
+  "fabricationReady": false
+}

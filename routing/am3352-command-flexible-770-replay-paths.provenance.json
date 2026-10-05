@@ -1,0 +1,39 @@
+{
+  "status": "COMMAND_MANUAL_CARRIER_REPLAY_REQUIRES_ALL_INDEPENDENT_CHECKS",
+  "run": {
+    "path": "dist/am3352-command-flexible-manual-carriers-attempt-770/result.json",
+    "sha256": "fcf9f9410ccb8d166f1a0f57ab3f0ed74147d5bff4122512ea6063108b9b125d"
+  },
+  "state": {
+    "path": "dist/am3352-command-flexible-manual-carriers-attempt-770/carriers.nonexportable.json",
+    "sha256": "feda8e4d32ade43d8728cd7d398ec51306b547cd3a048b694d70a64341d42887"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr23-command-replan-candidate/circuit.json",
+    "sha256": "aad4a9bb60a27ed7acb46130e7dcec8ce6622f15ec01d558769bbea1d9ee6058"
+  },
+  "fixedPaths": {
+    "path": "routing/am3352-ddr23-command-replan-fixed-paths.json",
+    "sha256": "7188248a85d19d25787ae5995117f14785b20885a3bdc3b39c11f7f895ea92b9"
+  },
+  "entry": {
+    "path": "experiments/am3352-command-flexible-770-replay.circuit.tsx",
+    "sha256": "148a4a9f8b5cddf82db3210075b6e8fd1599f734643654568a855defbbb32592"
+  },
+  "nativeEntry": {
+    "path": "experiments/am3352-command-flexible-770-replay-native-phase.circuit.tsx",
+    "sha256": "7f46f71649b8ffa57006561a04f255f883578e4657f5eda0a74d10f86fbe2da1"
+  },
+  "paths": {
+    "path": "routing/am3352-command-flexible-770-replay-paths.json",
+    "sha256": "7bccebcbd3ac2a2f2f1b93fbdc9838c4b75a9b747a47dbf65459172295a86389"
+  },
+  "stagedDdrSignals": 34,
+  "retainedDataResetSignals": 23,
+  "manualCommandChannels": 11,
+  "original125TracePiecesAnd141ViasRetained": true,
+  "uncommittedFanoutReservationsReplanned": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

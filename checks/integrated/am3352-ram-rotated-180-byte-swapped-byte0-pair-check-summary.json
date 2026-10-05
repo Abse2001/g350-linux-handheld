@@ -1,0 +1,124 @@
+{
+  "status": "RAM180_BYTE_SWAPPED_BYTE0_CONTINUITY_AND_PHYSICAL_CHECKS_PASS_WHOLE_BYTE_TIMING_FAIL",
+  "source": {
+    "path": "dist/diagnostics/am3352-byte-swapped-byte0-checked/circuit.json",
+    "sha256": "b2a550463ac76cec7149902942f9ad01a3c4e17df5641562f1c7cb52264f284f"
+  },
+  "board": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte-swapped-byte0-pair-replay/board.kicad_pcb",
+    "sha256": "3535ba6d10cc94fc13cfe9337cb9d79167e331ea45b901a85b07235154adc44b"
+  },
+  "baseSource": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte-swapped-power-host/circuit.json",
+    "sha256": "2348b793c1bf1fae885bb324e5c041c5213eae90939cb340a10c98be40b8b094",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-byte-swapped-power-host/circuit.json"
+  },
+  "editablePaths": {
+    "path": "routing/am3352-ram-rotated-180-byte-swapped-byte0-pair-paths.json",
+    "sha256": "9e39b7a73ad2104125ea728e1a5f0c60394735f8cc7fb5892f2ad731382c5fda"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-byte-swapped-connections.json",
+    "sha256": "6ebd82f25ffb1e0b6d7133a31b8d9d1af550a2b0b72655c5edeafd1b4560dd89"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotationDeg": 180,
+  "completeByteSwapAssociationsChecked": true,
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "nativeRun": {
+    "path": "dist/am3352-ram-rotated-180-byte-swapped-byte0-clear-pair-channel-attempt-358/result.json",
+    "sha256": "a7f22b7727a745842978f1b899775a84812bcdcf51448168ab6a111a5a733bde"
+  },
+  "components": 204,
+  "actualPads": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "ddrSignalsConnected": 11,
+  "requiredDdrSignals": 49,
+  "openDdrSignals": 38,
+  "totalTracePieces": 81,
+  "existingPowerTracePieces": 70,
+  "existingPowerVias": 69,
+  "ddrThroughVias": 24,
+  "totalThroughVias": 93,
+  "minimumHoleEdgeClearanceMm": 0.44600000000000284,
+  "dqs0PlanarSkewMm": 0,
+  "dqs0PlanarSkewLimitMm": 0.127,
+  "dqs0PlanarMatchPass": true,
+  "byte0PlanarSkewMm": 13.888611819066004,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarMatchPass": false,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "explicitInnerPowerBridge": {
+    "ball": "D2",
+    "connectedNativeSegments": 3,
+    "newHoles": 0
+  },
+  "exactFootprintsPreserved": 273,
+  "physicalLibraryRecordsPreserved": 2081,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-source-validation.json",
+      "sha256": "037664e695d6fcb61751cba8a3767fa0d0b9dbe8571787cdd3d103904b5d4c93"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-ddr-connectivity.json",
+      "sha256": "a60f011f1debef9053f08a6a760e0436001091bc3dbfc63839d3e352d5fc258b"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-native-ddr-connectivity.json",
+      "sha256": "3a1d3657b9cd9c2f576fc0fe601347b872328f53f74283fb35e52445db1ad749"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-reference-connectivity.json",
+      "sha256": "1cbe2d73787bad007f0ef160a2fe5a5cb10a43a448e60ce3d40b16825eb2360d"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-kicad-drc.json",
+      "sha256": "2a30192f4b66986c1412cd73410f0605ff3e41700ef4f194bbb34ff5c1e8276a"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte-swapped-byte0-pair-library.log",
+      "sha256": "0cff3f4e803d9485e7c9eb82860715c32cfe19ce7f0a0973dba277e8de2132e7"
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "images/am3352-ram-rotated-180-byte-swapped-byte0-pair-top.png",
+      "sha256": "2b4f802c75555d81401443f34e2aee26740f9ecf42990fdeeba88a245a77da59"
+    },
+    {
+      "path": "images/am3352-ram-rotated-180-byte-swapped-byte0-pair-bottom-detail.png",
+      "sha256": "7ecefe19f0fba0dfd8f88fc2ceb1e83d7faa93619d9a970fc93c841bb06701bf"
+    }
+  ],
+  "activeDefaultChanged": false,
+  "combinedWithOtherCandidates": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "timingQualified": false,
+  "fullElectricalTimingQualified": false,
+  "pairGeometryQualified": false,
+  "scope": "Separate whole-byte-swapped RAM180 byte0 replay. Eleven native channels plus edited local fanouts pass exact-pad connectivity, all-layer shorts, physical DRC and RAM plane checks. Whole-byte matching, 38 DDR signals, full powered host/peripherals, software leveling/Linux and measured original-shell integration remain unfinished."
+}

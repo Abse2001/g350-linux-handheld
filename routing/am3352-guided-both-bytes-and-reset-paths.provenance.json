@@ -1,0 +1,40 @@
+{
+  "source": {
+    "path": "dist/experiments/am3352-guided-both-bytes-matched-replay/circuit.json",
+    "sha256": "ed9d355f38dd8ef13c8c6104b7feae9632a7beb926dbcdce04dbdac01d6d978c",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-guided-both-bytes-matched-replay/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-guided-reset-channel-attempt-131/output.simple-route.json",
+    "sha256": "ae0f21673d440cebc39a4149e2e07e7032a3685495cc4ceafec06655034e475b"
+  },
+  "localFanoutRun": {
+    "path": "dist/am3352-guided-reset-local-attempt-130/result.json",
+    "sha256": "7fdc11e32299db924ba3e177abfd4b2edcdd153c5e656e81e32fe97afc4b8944"
+  },
+  "manualLocalStart": "Exact top-layer numeric package pads",
+  "preservedSavedDdr": {
+    "path": "routing/am3352-guided-both-bytes-matched-paths.json",
+    "sha256": "64dde5f37176f10ad462b1527b2f64267ee00bfe62f20caf102dad2403176f46",
+    "signals": 22
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "paths": {
+    "path": "routing/am3352-guided-both-bytes-and-reset-paths.json",
+    "sha256": "a356d0cffb8e29477d0c843b99efc91c91b1d63ff675747c72107a9fd62e2d48"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "signals": 23,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes channel with edited local escapes; independent planar timing/physical checks and complete host qualification required."
+}

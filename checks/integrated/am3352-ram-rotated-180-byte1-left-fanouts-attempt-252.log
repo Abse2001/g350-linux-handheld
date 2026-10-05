@@ -1,0 +1,17 @@
+305 |     if(freeDq&&freeDqNames.has(name))continue
+306 |     reserveHandoff(name,p)
+307 |   }
+308 |   let packageOrder=endpoint===1&&ramOrder==='reverse'?[...ordered].reverse():[...ordered]
+309 |   if(ramOrder==='pair-first')packageOrder=[...packageOrder.filter(c=>pairHandoffs.has(c.name)),...packageOrder.filter(c=>!pairHandoffs.has(c.name))]
+310 |   if(prioritySignal&&packageIndex===0){assert(packageOrder.some(c=>c.name===prioritySignal));packageOrder=[packageOrder.find(c=>c.name===prioritySignal),...packageOrder.filter(c=>c.name!==prioritySignal)]}
+                                             ^
+AssertionError: false == true
+ generatedMessage: true,
+     actual: false,
+   expected: true,
+   operator: "==",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-local-fanouts.mjs:310:40
+
+Bun v1.3.14 (macOS arm64)

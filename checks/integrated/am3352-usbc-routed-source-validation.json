@@ -1,0 +1,51 @@
+{
+  "status": "USB_ROUTED_SOURCE_AND_PLANAR_ORIENTATION_CHECKS_PASS_PHYSICAL_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-usbc-routed-tuned-checked/circuit.json",
+    "sha256": "5165f2f536469f7b80dee4a4fc507be05958d906932cbf1f20c673a345102cb3"
+  },
+  "layout": {
+    "path": "routing/am3352-usbc-routes.json",
+    "sha256": "03381129be72d87f8e6884b1badc9901f77c801ed0c26f099e8a750ed1848ede"
+  },
+  "copperLayers": 4,
+  "components": 212,
+  "actualPads": 912,
+  "traces": 104,
+  "throughVias": 105,
+  "existingTracePiecesPreserved": 81,
+  "usbTracePieces": 23,
+  "minimumHoleEdgeGapMm": 0.3460000000000014,
+  "cpuToEsdPlanar": {
+    "dpMm": 44.528963531886994,
+    "dmMm": 44.465463531886975,
+    "skewMm": 0.06350000000001899
+  },
+  "connectorOrientations": [
+    {
+      "dpPin": 8,
+      "dmPin": 9,
+      "dpPlanarMm": 50.793975766673526,
+      "dmPlanarMm": 50.730475766673514,
+      "skewMm": 0.06350000000001188,
+      "viasPerDataNet": 0
+    },
+    {
+      "dpPin": 10,
+      "dmPin": 7,
+      "dpPlanarMm": 53.94206016667352,
+      "dmPlanarMm": 53.87856016667351,
+      "skewMm": 0.06350000000001188,
+      "viasPerDataNet": 2
+    }
+  ],
+  "planarLimitMm": 0.127,
+  "physicalConnectivityQualified": false,
+  "controlledImpedanceQualified": false,
+  "vbusPmicFeedRouted": false,
+  "vbusSenseRouted": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "Exact authored global copper, conservative planar path lengths for both socket orientations, equal via count within each orientation, four-layer full-depth drills. Stackup, return-path and propagation-delay qualification remain required."
+}

@@ -1,0 +1,87 @@
+{
+  "status": "DDR29_DDR_A5_NATIVE_CHANNEL_AND_MANUAL_FANOUT_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-csn-joint-candidate/circuit.json",
+    "sha256": "1d16373e7127691924b25e3af3387d6e8c53132abb227c7416532e2da9e4a984"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-csn-joint-paths.json",
+    "sha256": "4a2ea02ce5c67975fb2ecb74b6e77293e2e506d46873d1b73d6c61e3405e564a",
+    "signals": 28
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-csn-joint-check-summary.json",
+    "sha256": "3f63f2f618d5033b30a99ec9ac2b5fccc5cf0e7d952c7632ae83d37f9d1d6afc"
+  },
+  "nativeChannelRun": {
+    "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/result.json",
+    "sha256": "09d0be4a74367566384131e829fe7d713f56172af56c34d609692c95046f0352"
+  },
+  "nativeChannelInput": {
+    "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/channel.input.simple-route.json",
+    "sha256": "5a87d44142a942d670caa0d074279ca83828d1e3b756c787257065d00a185a2a"
+  },
+  "nativeChannelOutput": {
+    "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/output.simple-route.json",
+    "sha256": "7a7b8264b1c8a22c6d84a8074274099edfc85ba08b86c0fff1d39aec3f32a892"
+  },
+  "manualLocalRun": {
+    "path": "dist/am3352-ddr28-a5-bottom-local-attempt-533/result.json",
+    "sha256": "1049d406afd8906a6c37d62ce4fd9970caabe7768f61fa43977516e5b1bf5cfb"
+  },
+  "manualLocalCopper": {
+    "path": "dist/am3352-ddr28-a5-bottom-local-attempt-533/local-escapes.json",
+    "sha256": "721ed024d56257c155d7dbf3d340360fcc05f0a415b4c1d4c0e99a9adee6d831"
+  },
+  "nativeBootstrap": {
+    "path": "dist/am3352-ddr28-a5-bottom-local-prep-attempt-529/signal-escapes.native.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "dogbones": 0
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-a5-native-paths.json",
+    "sha256": "c8a2ae6656d5584cecc9e515b1d45c697985b6359ca60fdb405fc2f74537d69e"
+  },
+  "newSignals": [
+    "DDR_A5"
+  ],
+  "sourceTraceId": "source_trace_8",
+  "priorSignalsPreserved": 28,
+  "connectedCandidateSignals": 29,
+  "remainingUnroutedDdrSignals": 20,
+  "planarMm": 38.744490603852796,
+  "throughVias": 2,
+  "preservedSourceTracePieces": 130,
+  "preservedSourceHoles": 149,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "removedCoincidentWirePoints": 2,
+  "originalTimingRequirements": {
+    "buses": [
+      {
+        "name": "DDR_COMMAND_CLOCK",
+        "busId": "DDR_COMMAND_CLOCK",
+        "connectionNames": [
+          "source_trace_8"
+        ],
+        "traceWidth": 0.1016,
+        "allowedLayers": [
+          "bottom"
+        ],
+        "maxLengthSkew": 0.635
+      }
+    ],
+    "differentialPairs": []
+  },
+  "fullCommandClassMatchingDeferred": true,
+  "nominalLengthRangeMm": [
+    41.75,
+    44.290000000000006
+  ],
+  "nominalLengthPass": false,
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

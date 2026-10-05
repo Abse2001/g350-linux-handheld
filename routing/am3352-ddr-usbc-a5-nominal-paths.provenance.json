@@ -1,0 +1,143 @@
+{
+  "status": "DDR29_A5_NATIVE_CARRIER_MANUAL_NOMINAL_TUNING_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-csn-joint-candidate/circuit.json",
+    "sha256": "1d16373e7127691924b25e3af3387d6e8c53132abb227c7416532e2da9e4a984"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-csn-joint-paths.json",
+    "sha256": "4a2ea02ce5c67975fb2ecb74b6e77293e2e506d46873d1b73d6c61e3405e564a",
+    "signals": 28
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-csn-joint-check-summary.json",
+    "sha256": "3f63f2f618d5033b30a99ec9ac2b5fccc5cf0e7d952c7632ae83d37f9d1d6afc"
+  },
+  "nativeChannelRun": {
+    "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/result.json",
+    "sha256": "09d0be4a74367566384131e829fe7d713f56172af56c34d609692c95046f0352"
+  },
+  "nativeChannelInput": {
+    "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/channel.input.simple-route.json",
+    "sha256": "5a87d44142a942d670caa0d074279ca83828d1e3b756c787257065d00a185a2a"
+  },
+  "nativeChannelOutput": {
+    "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/output.simple-route.json",
+    "sha256": "7a7b8264b1c8a22c6d84a8074274099edfc85ba08b86c0fff1d39aec3f32a892"
+  },
+  "manualLocalRun": {
+    "path": "dist/am3352-ddr28-a5-bottom-local-attempt-533/result.json",
+    "sha256": "1049d406afd8906a6c37d62ce4fd9970caabe7768f61fa43977516e5b1bf5cfb"
+  },
+  "manualLocalCopper": {
+    "path": "dist/am3352-ddr28-a5-bottom-local-attempt-533/local-escapes.json",
+    "sha256": "721ed024d56257c155d7dbf3d340360fcc05f0a415b4c1d4c0e99a9adee6d831"
+  },
+  "nativeBootstrap": {
+    "path": "dist/am3352-ddr28-a5-bottom-local-prep-attempt-529/signal-escapes.native.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "dogbones": 0
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-a5-nominal-paths.json",
+    "sha256": "37488bc704b74e3c9172994e7255f61e6d51a7b99a65c98e21012d7fc53aed26"
+  },
+  "newSignals": [
+    "DDR_A5"
+  ],
+  "sourceTraceId": "source_trace_8",
+  "priorSignalsPreserved": 28,
+  "connectedCandidateSignals": 29,
+  "remainingUnroutedDdrSignals": 20,
+  "planarMm": 43.020000000000024,
+  "throughVias": 2,
+  "preservedSourceTracePieces": 130,
+  "preservedSourceHoles": 149,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "removedCoincidentWirePoints": 2,
+  "originalTimingRequirements": {
+    "buses": [
+      {
+        "name": "DDR_COMMAND_CLOCK",
+        "busId": "DDR_COMMAND_CLOCK",
+        "connectionNames": [
+          "source_trace_8"
+        ],
+        "traceWidth": 0.1016,
+        "allowedLayers": [
+          "bottom"
+        ],
+        "maxLengthSkew": 0.635
+      }
+    ],
+    "differentialPairs": []
+  },
+  "fullCommandClassMatchingDeferred": true,
+  "nominalLengthRangeMm": [
+    41.75,
+    44.290000000000006
+  ],
+  "nominalLengthPass": true,
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false,
+  "manualNominalTuning": {
+    "status": "A5_BOTTOM_WIRE_NOMINAL_TUNING_REPLAY_REQUIRES_FULL_PHYSICAL_CHECKS",
+    "priorPaths": {
+      "path": "routing/am3352-ddr-usbc-a5-native-paths.json",
+      "sha256": "c8a2ae6656d5584cecc9e515b1d45c697985b6359ca60fdb405fc2f74537d69e"
+    },
+    "priorProvenance": {
+      "path": "routing/am3352-ddr-usbc-a5-native-paths.provenance.json",
+      "sha256": "95a13464a2062c630a6103b13ef08213b303f4849a8deb0ccc98b534f55b5600"
+    },
+    "signal": "DDR_A5",
+    "layer": "bottom",
+    "afterIndex": 153,
+    "insertedPoints": [
+      {
+        "x": -12.41899,
+        "y": -15.4
+      },
+      {
+        "x": -13.01899,
+        "y": -16
+      },
+      {
+        "x": -14.65968842322589,
+        "y": -16
+      },
+      {
+        "x": -15.25968842322589,
+        "y": -16.6
+      },
+      {
+        "x": -15.25968842322589,
+        "y": -19.4
+      },
+      {
+        "x": -14.65968842322589,
+        "y": -20
+      },
+      {
+        "x": -13.01899,
+        "y": -20
+      },
+      {
+        "x": -12.41899,
+        "y": -20.6
+      }
+    ],
+    "offsetMm": 2.840698423225889,
+    "chamferMm": 0.6,
+    "priorPlanarMm": 38.744490603852796,
+    "targetPlanarMm": 43.02,
+    "addedPlanarMm": 4.275509396147207,
+    "newVias": 0,
+    "retainedNativeBusLanesCarrier": true,
+    "allPreviouslyCheckedSignalsUnchanged": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "COMMAND_REPLAN_INPUT_REAL_PAD_AND_FIXED_COPPER_PRESERVATION_PASS",
+  "input": {
+    "path": "dist/am3352-ddr23-command-replan-manual-bootstrap-input/input.simple-route.json",
+    "sha256": "33ede3a768be37650773ef4eaf66922cf42a5a21e0949419c0b51487ade52a2a"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr23-command-replan-candidate/circuit.json",
+    "sha256": "aad4a9bb60a27ed7acb46130e7dcec8ce6622f15ec01d558769bbea1d9ee6058"
+  },
+  "priorSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-d12-spacing-repaired-candidate/circuit.json",
+    "sha256": "44da06639cf3249c5ff4821e02056e0bb989238213edb2111eca08b7cd988a17"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "retainedPaths": {
+    "path": "routing/am3352-ddr23-command-replan-fixed-paths.json",
+    "sha256": "7188248a85d19d25787ae5995117f14785b20885a3bdc3b39c11f7f895ea92b9"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.json",
+    "sha256": "a65e50e01b5519921b4e00e3e6d87e7dd2fd39d1ae808e9afb30c4117ee5fd12"
+  },
+  "components": 212,
+  "physicalPads": 912,
+  "fixedTraces": 125,
+  "fixedVias": 141,
+  "retainedDataAndResetPathsExact": 23,
+  "removedCommandClockRoutes": 10,
+  "commandClockConnections": 26,
+  "actualNumericPadEndpoints": 52,
+  "clockPairConstraintRetained": true,
+  "busConnectionOrder": [
+    "source_trace_0",
+    "source_trace_5",
+    "source_trace_6",
+    "source_trace_7",
+    "source_trace_8",
+    "source_trace_9",
+    "source_trace_18",
+    "source_trace_19",
+    "source_trace_20",
+    "source_trace_21",
+    "source_trace_22",
+    "source_trace_23",
+    "source_trace_24",
+    "source_trace_25",
+    "source_trace_33",
+    "source_trace_34",
+    "source_trace_35",
+    "source_trace_36",
+    "source_trace_37",
+    "source_trace_38",
+    "source_trace_39",
+    "source_trace_44",
+    "source_trace_45",
+    "source_trace_46",
+    "source_trace_47",
+    "source_trace_48"
+  ],
+  "connectionInputOrder": [
+    "source_trace_0",
+    "source_trace_5",
+    "source_trace_6",
+    "source_trace_7",
+    "source_trace_8",
+    "source_trace_9",
+    "source_trace_18",
+    "source_trace_19",
+    "source_trace_20",
+    "source_trace_21",
+    "source_trace_22",
+    "source_trace_23",
+    "source_trace_24",
+    "source_trace_25",
+    "source_trace_33",
+    "source_trace_34",
+    "source_trace_35",
+    "source_trace_36",
+    "source_trace_37",
+    "source_trace_38",
+    "source_trace_39",
+    "source_trace_44",
+    "source_trace_45",
+    "source_trace_46",
+    "source_trace_47",
+    "source_trace_48"
+  ],
+  "referenceLayersReserved": [
+    "inner1",
+    "inner2"
+  ],
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false
+}

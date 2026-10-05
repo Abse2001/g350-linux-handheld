@@ -1,0 +1,199 @@
+{
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-power-bridge-host/circuit.json",
+    "sha256": "f1c55ab13c9c41524d02a0bc22081ab6876f06c66f059aa22e5b0918293f0bb7",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-power-bridge-host/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-ram-rotated-180-byte1-balanced-pair-channel-attempt-292/output.simple-route.json",
+    "sha256": "754d6013daa38b482fb8cbe6dc8df4b923485195acff1a2e4118914a4f7f3cf9"
+  },
+  "manualPairTuning": {
+    "trace": "guided_local_dogbone_source_trace_28_1",
+    "addedLengthMm": 3.4262741699796635,
+    "beforeFixedLengthsMm": [
+      29.239494936611678,
+      32.66576910659134
+    ],
+    "afterFixedLengthsMm": [
+      32.66576910659133,
+      32.66576910659134
+    ],
+    "tested": 20,
+    "index": 9,
+    "teeth": 2,
+    "height": 0.24,
+    "pitch": 0.48,
+    "side": -1,
+    "amplitude": 0.9034314575050683,
+    "layer": "top",
+    "span": 5.300000000000004,
+    "offset": 2.2900000000000023
+  },
+  "manualUnusedBranchPruning": {
+    "prunedBusName": "DDR_COMMAND_CLOCK",
+    "nativeInput": {
+      "path": "dist/am3352-ram-rotated-180-byte1-cpu-pad-bootstrap-attempt-279/signal-escapes.native.json",
+      "sha256": "3113408a9142c4af543b4605eb999fd4d27b1154810fcd28a21a61d9e6e7284b"
+    },
+    "topPadDogboneWiresRetained": 26,
+    "unusedBootstrapHolesRemoved": 26,
+    "actualSourceCopperUnchanged": true,
+    "package": "U_SOC",
+    "changedTraceIds": [
+      "local_dogbone_source_trace_0_0",
+      "local_dogbone_source_trace_5_0",
+      "local_dogbone_source_trace_6_0",
+      "local_dogbone_source_trace_7_0",
+      "local_dogbone_source_trace_8_0",
+      "local_dogbone_source_trace_9_0",
+      "local_dogbone_source_trace_18_0",
+      "local_dogbone_source_trace_19_0",
+      "local_dogbone_source_trace_20_0",
+      "local_dogbone_source_trace_21_0",
+      "local_dogbone_source_trace_22_0",
+      "local_dogbone_source_trace_23_0",
+      "local_dogbone_source_trace_24_0",
+      "local_dogbone_source_trace_25_0",
+      "local_dogbone_source_trace_33_0",
+      "local_dogbone_source_trace_34_0",
+      "local_dogbone_source_trace_35_0",
+      "local_dogbone_source_trace_36_0",
+      "local_dogbone_source_trace_37_0",
+      "local_dogbone_source_trace_38_0",
+      "local_dogbone_source_trace_39_0",
+      "local_dogbone_source_trace_44_0",
+      "local_dogbone_source_trace_45_0",
+      "local_dogbone_source_trace_46_0",
+      "local_dogbone_source_trace_47_0",
+      "local_dogbone_source_trace_48_0"
+    ],
+    "otherNativeDogbonesUnchanged": 70,
+    "scope": "Manual intermediate fanout edit; no actual source hole is removed. New local layer changes still require full-depth physical vias and independent checks."
+  },
+  "localFanoutRun": {
+    "path": "dist/am3352-ram-rotated-180-byte1-balanced-local-pair-attempt-291/result.json",
+    "sha256": "357cb5c307f7d260ffe61093a08c7ee242b7438b505fac7981e7de68275de81d"
+  },
+  "manualUnusedBranchPruningHistory": [
+    {
+      "nativeInput": {
+        "path": "dist/am3352-ram-rotated-180-power-bridge-channel-layers-attempt-270/signal-escapes.native.json",
+        "sha256": "b97aed7f9e8e142fd48ca4a36a01cbca4a1b61de8386a7a792fbb6d5b371355a"
+      },
+      "topPadDogboneWiresRetained": 11,
+      "unusedBootstrapHolesRemoved": 11,
+      "actualSourceCopperUnchanged": true,
+      "package": "U_SOC",
+      "changedTraceIds": [
+        "local_dogbone_source_trace_1_0",
+        "local_dogbone_source_trace_2_0",
+        "local_dogbone_source_trace_11_0",
+        "local_dogbone_source_trace_12_0",
+        "local_dogbone_source_trace_13_0",
+        "local_dogbone_source_trace_26_0",
+        "local_dogbone_source_trace_27_0",
+        "local_dogbone_source_trace_28_0",
+        "local_dogbone_source_trace_29_0",
+        "local_dogbone_source_trace_40_0",
+        "local_dogbone_source_trace_41_0"
+      ],
+      "otherNativeDogbonesUnchanged": 85,
+      "actualSourceTracesRetained": 70,
+      "actualSourceThroughViasRetained": 69,
+      "retainedByte1RamThroughDogbones": 11,
+      "scope": "Manual intermediate fanout edit; no actual source hole is removed. New local layer changes still require full-depth physical vias and independent checks."
+    }
+  ],
+  "manualCpuPadStartCorrection": {
+    "priorNative": {
+      "path": "dist/am3352-ram-rotated-180-byte1-cpu-pruned-bootstrap-attempt-276/signal-escapes.native.json",
+      "sha256": "03251f347a63892e075d5af9d563f2566f881d8c29721ed3ab24da6d31f64368",
+      "dogbones": 96
+    },
+    "changedTraceIds": [
+      "local_dogbone_source_trace_1_0",
+      "local_dogbone_source_trace_2_0",
+      "local_dogbone_source_trace_11_0",
+      "local_dogbone_source_trace_12_0",
+      "local_dogbone_source_trace_13_0",
+      "local_dogbone_source_trace_26_0",
+      "local_dogbone_source_trace_27_0",
+      "local_dogbone_source_trace_28_0",
+      "local_dogbone_source_trace_29_0",
+      "local_dogbone_source_trace_40_0",
+      "local_dogbone_source_trace_41_0"
+    ],
+    "removedUnusedTopBranches": 11,
+    "actualSourceCopperUnchanged": true,
+    "physicalSignalHolesUnchanged": 85,
+    "actualCpuPadStartsRetained": true,
+    "zeroLengthPadDescriptorsAreNotPhysicalRoutes": true
+  },
+  "manualCpuStrobeViaRestoration": {
+    "priorNative": {
+      "path": "dist/am3352-ram-rotated-180-cpu-command-pruned-bootstrap-attempt-282/signal-escapes.native.json",
+      "sha256": "4fa4a7d8f3d303b163e270c349e1a6c98ad5ee4cd5d0ac10df924baa74ba475e"
+    },
+    "fullNative": {
+      "path": "dist/am3352-ram-rotated-180-power-bridge-channel-layers-attempt-270/signal-escapes.native.json",
+      "sha256": "b97aed7f9e8e142fd48ca4a36a01cbca4a1b61de8386a7a792fbb6d5b371355a"
+    },
+    "changedTraceIds": [
+      "local_dogbone_source_trace_27_0",
+      "local_dogbone_source_trace_28_0"
+    ],
+    "restoredNativeVias": 2,
+    "signalHoles": 61,
+    "remainingExactCpuByte1PadStarts": 9,
+    "everyOtherNativeDescriptorAndSourceCopperUnchanged": true,
+    "newCompleteChannels": 0
+  },
+  "cpuPairViaHandoffCorridor": true,
+  "manualChannelLayerAllocation": {
+    "bootstrapInput": {
+      "path": "dist/am3352-ram-rotated-180-power-bridge-bootstrap-attempt-269/input.simple-route.json",
+      "sha256": "63af5ca9de2f23a3301a7946b6d4c260e7f29b893027530b72df8e529ed1f1a1"
+    },
+    "nativeEscapes": {
+      "path": "dist/am3352-ram-rotated-180-power-bridge-bootstrap-attempt-269/signal-escapes.native.json",
+      "sha256": "b97aed7f9e8e142fd48ca4a36a01cbca4a1b61de8386a7a792fbb6d5b371355a"
+    },
+    "nativeEscapesRetained": 96,
+    "finalLayers": {
+      "DDR_BYTE0": "bottom",
+      "DDR_BYTE1": "top",
+      "DDR_COMMAND_CLOCK": "top",
+      "DDR_RESET": "top"
+    },
+    "sourcePowerAndObstaclesUnchanged": true,
+    "newCompletedChannels": 0,
+    "scope": "Channel layers match the actual source constraints. Full-depth native dogbones remain available on both outer layers; saved paths must record every real layer change."
+  },
+  "reusedPackageFanouts": {
+    "package": "U_RAM",
+    "directory": "dist/am3352-ram-rotated-180-cpu-strobe-ram-rebase-attempt-286",
+    "path": "dist/am3352-ram-rotated-180-cpu-strobe-ram-rebase-attempt-286/local-escapes.json",
+    "sha256": "1f7a83aa852f42583450a29c9ada0556dc90b029952959555fa10a04abd17a84",
+    "count": 11
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "paths": {
+    "path": "routing/am3352-ram-rotated-180-byte1-pair-paths.json",
+    "sha256": "43703332de00633af33d4a99025cf62e878513f050e0b784bce2e9aa17f4ebec"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "signals": 11,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes channel with edited local escapes; independent planar timing/physical checks and complete host qualification required."
+}

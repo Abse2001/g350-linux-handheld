@@ -2,7 +2,7 @@
   "status": "AM3352_LOGICAL_POWER_AND_BYPASS_PASS_ROUTING_INCOMPLETE",
   "circuit": {
     "path": "dist/experiments/am3352-powered-host/circuit.json",
-    "sha256": "dbc5ea0f6d7fe6918f9ee70a2be127fd10a3ccc9c761e7535faf284911064590"
+    "sha256": "8b2af16db954e60f81cfb876d59a0d740b5f2af4713a21d3df9a54e4c5ffb997"
   },
   "toolchain": {
     "tscircuit": "0.0.2729",
@@ -10,7 +10,7 @@
     "@tscircuit/core": "0.0.2050",
     "@tscircuit/capacity-autorouter": "0.0.952"
   },
-  "components": 142,
+  "components": 204,
   "memorySignalsDeclared": 49,
   "actualConnectedMemoryChannels": 0,
   "counts": {
@@ -44,9 +44,23 @@
   "explicitNoConnectVpp": true,
   "nativeSourcePlacementErrors": 0,
   "routedPower": false,
+  "sourceCopper": {
+    "manualBypassLoops": 15,
+    "ramBypassLoops": 14,
+    "packageReferenceEscapes": 39,
+    "ramReferenceEscapeCounts": {
+      "DDR_1V5": 18,
+      "GND": 21
+    },
+    "traces": 69,
+    "throughVias": 69,
+    "minimumDrillEdgeClearanceMm": 0.44600000000000284,
+    "generatedReferenceRegions": 2,
+    "completePowerRouting": false
+  },
   "completeHost": false,
   "fabricationReady": false,
-  "scope": "Actual generated logical connections, package supply domains, reset/control connections, bypass values/counts and nominal placement distances. No powered PCB, via topology, impedance, SI, effective-capacitance, startup, USB/battery, peripheral-load or thermal approval.",
+  "scope": "Generated logical connections, package supply domains, reset/control, bypass counts/placement, documented RAM reference escapes and bypass loops. Remaining supply escapes/copper, impedance, SI, effective capacitance, startup, USB/battery, full load and thermal qualification are incomplete.",
   "primarySources": [
     "https://www.ti.com/lit/ds/symlink/am3352.pdf",
     "https://www.ti.com/lit/ug/slvu551i/slvu551i.pdf",

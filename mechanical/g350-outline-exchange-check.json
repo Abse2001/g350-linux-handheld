@@ -1,0 +1,41 @@
+{
+  "status": "PASS_OUTLINE_EXCHANGE_ONLY",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "units": "mm",
+  "scale": "1:1",
+  "entry": "experiments/am3352-g350-ddr-corridor.circuit.tsx",
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6,
+    "mainBodyHeight": 99,
+    "speakerTabWidth": 22,
+    "speakerTabExtension": 19
+  },
+  "boundsMm": {
+    "minX": -38,
+    "maxX": 38,
+    "minY": -59,
+    "maxY": 59
+  },
+  "outlineVertices": 14,
+  "closedDxfPerimeter": true,
+  "exactCompiledOutlinePreserved": true,
+  "exactDxfRoundTrip": true,
+  "mountingGeometryVerified": false,
+  "nominalOuterCaseMarginsMm": {
+    "left": 2.5,
+    "right": 2.5,
+    "top": 5,
+    "bottom": 5
+  },
+  "limitation": "Outer-case margins do not establish clearance from internal walls, ribs, posts, ports or membranes.",
+  "hashes": {
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "dist/experiments/am3352-g350-ddr-corridor/circuit.json": "a9427ee89a309ba5be281575d5dd7ee4116034432209eee02adf97c0786de583",
+    "mechanical/g350-provisional-outline.dxf": "8f4c16e547906148d39aa947ed49f7b062f8f4e20d1e38dd84f1eee5494f72cd",
+    "mechanical/g350-paper-fit-template.svg": "93383545acb81f6c18426de486ff43e39a21f2c1cc0c0909129c5fb9c8bc23bb",
+    "scripts/export-g350-fit-outline.mjs": "2d253c3dd71a74457c17f27217eee842629594ef88591d7ef4a7ac82bd0ea74e"
+  }
+}

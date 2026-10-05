@@ -1,0 +1,316 @@
+{
+  "status": "KICAD_DDR_PARTIAL_CONNECTIVITY_VERIFIED",
+  "board": {
+    "path": "checks/integrated/g350-byte0-complete-bus/g350-byte0.kicad_pcb",
+    "sha256": "1b61379e0f651fa99527abd1721de2819ced06adbf4c4fc6269ab6ca8e2c6cfd"
+  },
+  "circuit": {
+    "path": "dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json",
+    "sha256": "01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555"
+  },
+  "connectedSignals": 11,
+  "requiredSignals": 49,
+  "expectedPartialCount": 11,
+  "connectionMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "results": [
+    {
+      "name": "DDR_ODT",
+      "socBall": "G1",
+      "ramBall": "K1",
+      "connected": false
+    },
+    {
+      "name": "DDR_D8",
+      "socBall": "J1",
+      "ramBall": "C8",
+      "connected": false
+    },
+    {
+      "name": "DDR_D9",
+      "socBall": "K1",
+      "ramBall": "A7",
+      "connected": false
+    },
+    {
+      "name": "DDR_D2",
+      "socBall": "N1",
+      "ramBall": "E3",
+      "connected": true
+    },
+    {
+      "name": "DDR_D6",
+      "socBall": "P3",
+      "ramBall": "F8",
+      "connected": true
+    },
+    {
+      "name": "DDR_CSn0",
+      "socBall": "H2",
+      "ramBall": "L2",
+      "connected": false
+    },
+    {
+      "name": "DDR_BA0",
+      "socBall": "C4",
+      "ramBall": "M2",
+      "connected": false
+    },
+    {
+      "name": "DDR_A3",
+      "socBall": "C3",
+      "ramBall": "N2",
+      "connected": false
+    },
+    {
+      "name": "DDR_A5",
+      "socBall": "B1",
+      "ramBall": "P2",
+      "connected": false
+    },
+    {
+      "name": "DDR_A7",
+      "socBall": "E2",
+      "ramBall": "R2",
+      "connected": false
+    },
+    {
+      "name": "DDR_RESETn",
+      "socBall": "G2",
+      "ramBall": "T2",
+      "connected": false
+    },
+    {
+      "name": "DDR_D10",
+      "socBall": "K2",
+      "ramBall": "C3",
+      "connected": false
+    },
+    {
+      "name": "DDR_D11",
+      "socBall": "K3",
+      "ramBall": "A2",
+      "connected": false
+    },
+    {
+      "name": "DDR_DQM1",
+      "socBall": "J2",
+      "ramBall": "D3",
+      "connected": false
+    },
+    {
+      "name": "DDR_D0",
+      "socBall": "M3",
+      "ramBall": "F2",
+      "connected": true
+    },
+    {
+      "name": "DDR_DQS0",
+      "socBall": "P1",
+      "ramBall": "F3",
+      "connected": true
+    },
+    {
+      "name": "DDR_DQSn0",
+      "socBall": "P2",
+      "ramBall": "G3",
+      "connected": true
+    },
+    {
+      "name": "DDR_D4",
+      "socBall": "N3",
+      "ramBall": "F7",
+      "connected": true
+    },
+    {
+      "name": "DDR_RASn",
+      "socBall": "G4",
+      "ramBall": "J3",
+      "connected": false
+    },
+    {
+      "name": "DDR_CASn",
+      "socBall": "F1",
+      "ramBall": "K3",
+      "connected": false
+    },
+    {
+      "name": "DDR_WEn",
+      "socBall": "B2",
+      "ramBall": "L3",
+      "connected": false
+    },
+    {
+      "name": "DDR_BA2",
+      "socBall": "B3",
+      "ramBall": "M3",
+      "connected": false
+    },
+    {
+      "name": "DDR_A0",
+      "socBall": "F3",
+      "ramBall": "N3",
+      "connected": false
+    },
+    {
+      "name": "DDR_A2",
+      "socBall": "E4",
+      "ramBall": "P3",
+      "connected": false
+    },
+    {
+      "name": "DDR_A9",
+      "socBall": "C1",
+      "ramBall": "R3",
+      "connected": false
+    },
+    {
+      "name": "DDR_A13",
+      "socBall": "H3",
+      "ramBall": "T3",
+      "connected": false
+    },
+    {
+      "name": "DDR_D12",
+      "socBall": "K4",
+      "ramBall": "D7",
+      "connected": false
+    },
+    {
+      "name": "DDR_DQSn1",
+      "socBall": "L2",
+      "ramBall": "B7",
+      "connected": false
+    },
+    {
+      "name": "DDR_DQS1",
+      "socBall": "L1",
+      "ramBall": "C7",
+      "connected": false
+    },
+    {
+      "name": "DDR_D13",
+      "socBall": "L3",
+      "ramBall": "C2",
+      "connected": false
+    },
+    {
+      "name": "DDR_DQM0",
+      "socBall": "M2",
+      "ramBall": "E7",
+      "connected": true
+    },
+    {
+      "name": "DDR_D1",
+      "socBall": "M4",
+      "ramBall": "H8",
+      "connected": true
+    },
+    {
+      "name": "DDR_D7",
+      "socBall": "P4",
+      "ramBall": "H7",
+      "connected": true
+    },
+    {
+      "name": "DDR_CK",
+      "socBall": "D2",
+      "ramBall": "J7",
+      "connected": false
+    },
+    {
+      "name": "DDR_CKn",
+      "socBall": "D1",
+      "ramBall": "K7",
+      "connected": false
+    },
+    {
+      "name": "DDR_A10",
+      "socBall": "F4",
+      "ramBall": "L7",
+      "connected": false
+    },
+    {
+      "name": "DDR_A12",
+      "socBall": "E3",
+      "ramBall": "N7",
+      "connected": false
+    },
+    {
+      "name": "DDR_A1",
+      "socBall": "H1",
+      "ramBall": "P7",
+      "connected": false
+    },
+    {
+      "name": "DDR_A11",
+      "socBall": "F2",
+      "ramBall": "R7",
+      "connected": false
+    },
+    {
+      "name": "DDR_A14",
+      "socBall": "H4",
+      "ramBall": "T7",
+      "connected": false
+    },
+    {
+      "name": "DDR_D14",
+      "socBall": "L4",
+      "ramBall": "A3",
+      "connected": false
+    },
+    {
+      "name": "DDR_D15",
+      "socBall": "M1",
+      "ramBall": "B8",
+      "connected": false
+    },
+    {
+      "name": "DDR_D3",
+      "socBall": "N2",
+      "ramBall": "H3",
+      "connected": true
+    },
+    {
+      "name": "DDR_D5",
+      "socBall": "N4",
+      "ramBall": "G2",
+      "connected": true
+    },
+    {
+      "name": "DDR_BA1",
+      "socBall": "E1",
+      "ramBall": "N8",
+      "connected": false
+    },
+    {
+      "name": "DDR_A4",
+      "socBall": "C2",
+      "ramBall": "P8",
+      "connected": false
+    },
+    {
+      "name": "DDR_A6",
+      "socBall": "D5",
+      "ramBall": "R8",
+      "connected": false
+    },
+    {
+      "name": "DDR_A8",
+      "socBall": "D4",
+      "ramBall": "T8",
+      "connected": false
+    },
+    {
+      "name": "DDR_CKE",
+      "socBall": "G3",
+      "ramBall": "K9",
+      "connected": false
+    }
+  ],
+  "fabricationReady": false,
+  "timingQualified": false
+}

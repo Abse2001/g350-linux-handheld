@@ -1,0 +1,118 @@
+{
+  "status": "ROTATED_RAM_BYTE1_PHYSICAL_AND_PLANAR_MATCH_CHECKS_PASS_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte1-matched-replay/circuit.json",
+    "sha256": "93584236ccc2abf71f833b2d6c55de801a3e3f4281291c013875403a156fbe39"
+  },
+  "board": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte1-matched-replay/board.kicad_pcb",
+    "sha256": "dc419e1f0d832d91572c59182e566204e5fa3d33ebec1e6fff4b5d7edcfde85f"
+  },
+  "baseSource": {
+    "path": "dist/experiments/am3352-ram-rotated-180-power-bridge-host/circuit.json",
+    "sha256": "f1c55ab13c9c41524d02a0bc22081ab6876f06c66f059aa22e5b0918293f0bb7",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-power-bridge-host/circuit.json"
+  },
+  "editablePaths": {
+    "path": "routing/am3352-ram-rotated-180-byte1-matched-paths.json",
+    "sha256": "0dce26d800fc0d878db7d30631850afcd88ba6891ee2d267ac4ea2a408e648b4"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotationDeg": 180,
+  "nativeAutorouter": "@tscircuit/core SOLVERS.BusLanesPipelineSolver",
+  "nativeRun": {
+    "path": "dist/am3352-ram-rotated-180-byte1-whole-matched-channel-attempt-332/result.json",
+    "sha256": "0ef3596b052a93eed15f2d9cb625daf626c832363dac33ce1daa400e5dbf46b5"
+  },
+  "nativeBootstrapChannels": 11,
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "ddrSignalsConnected": 11,
+  "requiredDdrSignals": 49,
+  "openDdrSignals": 38,
+  "existingPowerTracePieces": 70,
+  "existingPowerVias": 69,
+  "ddrThroughVias": 42,
+  "totalThroughVias": 111,
+  "minimumHoleEdgeClearanceMm": 0.25511688245431385,
+  "explicitInnerPowerBridge": {
+    "ball": "D2",
+    "connectedNativeSegments": 3,
+    "newHoles": 0
+  },
+  "dqs1PlanarSkewMm": 5.684341886080802e-14,
+  "dqs1PlanarSkewLimitMm": 0.127,
+  "dqs1PlanarMatchPass": true,
+  "byte1PlanarSkewMm": 0.0007586145376023978,
+  "byte1PlanarSkewLimitMm": 0.635,
+  "byte1PlanarMatchPass": true,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "exactFootprintsPreserved": 273,
+  "physicalLibraryRecordsPreserved": 3402,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-replay-source-validation.json",
+      "sha256": "91672a55df4c37b3cd4a6cd77ea4de435669a8bccfd0deca016ca7496d7fbbad"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-ddr-connectivity.json",
+      "sha256": "c9e79487d3330a8032e5b9f9cca5f8501e7e93923595ab148e5e53242d69983c"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-native-ddr-connectivity.json",
+      "sha256": "f709129cace704845b936bbed2b37e43ccc9d00297078af96482eec958cb6f58"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-reference-connectivity.json",
+      "sha256": "75a1bd7c320316fa696ceddb30feeadff9b97e2bafb7514e655ba1d74d298116"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-kicad-drc.json",
+      "sha256": "a997d2934bcb1cb67d39119da1a351b19c3d411075a8ea5254aeb746266492e7"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-matched-library.log",
+      "sha256": "b1d741171caa4546c0df6f013bbe4574b18885e12daa94a7e9fe419ea0fa6c37"
+    }
+  ],
+  "snapshot": {
+    "path": "images/am3352-ram-rotated-180-byte1-matched-top.png",
+    "sha256": "94ac6d78f23d1b465ef5bba2876175bcd040deea169467a97ce3bf6d9947af0b"
+  },
+  "activeDefaultChanged": false,
+  "combinedWithOtherCandidates": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "timingQualified": false,
+  "planarTimingPass": true,
+  "fullElectricalTimingQualified": false,
+  "pairGeometryQualified": false,
+  "scope": "Separate 180 degree RAM byte1 replay. Eleven native end-to-end channels plus manual fanouts pass physical clearance and numeric-pad connectivity; RAM references and the authored inner2 power bridge pass. Original whole-byte skew passes; 38 DDR signals and full host/mechanical qualification remain unfinished."
+}

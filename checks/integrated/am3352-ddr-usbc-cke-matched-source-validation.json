@@ -1,0 +1,61 @@
+{
+  "status": "DDR26_STROBE_REPAIR_EXACT_SOURCE_AND_ALL_OTHER_RECORDS_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-matched-candidate/circuit.json",
+    "sha256": "37cce5810c43cc3f70485d5e2990512f6a2a7d8a2f35d316e02bbea0fbbf4997"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-joint-power-plane-bounded-candidate/circuit.json",
+    "sha256": "4929ff439da1e340f7ce82538f4c23231d627868ef7889bd3915cd3714593e1b"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-cke-matched-paths.json",
+    "sha256": "421994ad47feaafc931944bccf6e1cf5b79215051b65d9fa545a8395c976b270"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-cke-matched-paths.provenance.json",
+    "sha256": "7ae599d8f14f799bbc3f76c5cbe2651947a71f6284705a6adf135e155054d779"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-check-summary.json",
+    "sha256": "da0f46ae3bc6b3884f39090ceafe060f9784543e244f75d9aebf59ca1b1997d3"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 128,
+  "throughVias": 143,
+  "changedSignals": [
+    "DDR_DQSn1"
+  ],
+  "preservedTracePieces": 127,
+  "preservedThroughVias": 143,
+  "negativeStrobePlanarMm": 51.03254838299123,
+  "positiveStrobePlanarMm": 50.95313905432341,
+  "strobePlanarSkewMm": 0.07940932866782191,
+  "byte1PlanarSkewMm": 0.6350000014649382,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "ddrPowerPlaneRepair": {
+    "entry": {
+      "path": "experiments/am3352-ddr-usbc-cke-joint-power-plane.circuit.tsx",
+      "sha256": "3ca0141e9b4b3fc302af1bdb2b7a7eabdf7233ee99e7ba8d14e00630ae6e578a"
+    },
+    "priorPlaneCopperClearanceMm": 0.2,
+    "planeCopperClearanceMm": 0.12,
+    "viaLandMm": 0.4572,
+    "viaDrillMm": 0.254,
+    "nominalPlaneToOtherNetDrillGapMm": 0.2216,
+    "nominalPlaneNeckAtPointEightPitchMm": 0.1028,
+    "sourceManufacturingMinimumsUnchanged": true,
+    "groundPlaneClearanceUnchanged": true,
+    "filledReferenceContinuityCheckRequired": true,
+    "independentFilledReferenceConnectivityPass": true,
+    "nativeZoneMinimumThicknessMm": 0.25
+  },
+  "newVias": 0,
+  "ckeConnected": true,
+  "ckePlanarMm": 49.90747867980896,
+  "ckeNominalLengthPass": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

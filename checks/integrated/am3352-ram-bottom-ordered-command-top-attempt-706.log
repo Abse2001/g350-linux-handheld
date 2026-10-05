@@ -1,0 +1,4 @@
+{"stage":"CPU_ORDERED_FANOUT","steps":13,"elapsedSeconds":14.975140791999998,"stats":{"phase":"route-assignment","assignmentCount":4,"assignment":1,"routedConnections":"0/49","routingStrategy":"default","workUnit":1,"workUnitCount":5,"bus":"DDR_BYTE0"}}
+{"stage":"CPU_ORDERED_FANOUT","steps":18,"elapsedSeconds":25.860138334,"stats":{"phase":"route-assignment","assignmentCount":4,"assignment":1,"routedConnections":"0/49","routingStrategy":"group-by-layer","workUnit":1,"workUnitCount":5,"bus":"DDR_BYTE0"}}
+{"stage":"CPU_ORDERED_FANOUT","steps":30,"elapsedSeconds":55.18215475,"stats":{"phase":"prepare-grouped-beam","assignment":1,"assignmentCount":4,"routedBuses":"0/5","routedConnections":"0/49","failedBuses":"DDR_BYTE0, DDR_ADDR_CTRL, DDR_BYTE1, DDR_CK, DDR_RESET","bestScore":49500000.17}}
+{"stage":"CPU_ORDERED_FANOUT","status":"FAILED","elapsedSeconds":55.183096250000006,"error":"FanoutSolver: best layer assignment routed 0/49 connections"}

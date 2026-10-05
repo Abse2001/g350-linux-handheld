@@ -1,0 +1,5 @@
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:boot-netlist
+> node scripts/check-am3352-boot.mjs
+
+{"status":"AM3352_LOGICAL_CLOCK_BOOT_DEBUG_PASS_ROUTING_INCOMPLETE","source":{"path":"dist/experiments/am3352-powered-host/circuit.json","sha256":"8b2af16db954e60f81cfb876d59a0d740b5f2af4713a21d3df9a54e4c5ffb997"},"components":204,"copperLayerCount":4,"clockFrequencyHz":24000000,"bootWord":"0x4017","bootOrder":["MMC0","SPI0","UART0","USB0"],"externallyStrappedBits":16,"smtDebugAccessPads":14,"biasResistorDnpPadsRetained":true,"fabricationReady":false,"oscillatorStartupQualified":false,"scope":"Source and placement audit only; clock routing, oscillator parasitics, boot firmware and complete PCB qualification remain required."}

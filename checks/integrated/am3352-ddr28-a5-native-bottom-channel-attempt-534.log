@@ -1,0 +1,17 @@
+ 6 | import {assertRetainedPhaseCopper} from './lib/am3352-retained-phase-copper.mjs'
+ 7 | import {readCheckedCommandSummary} from './lib/am3352-checked-command-sources.mjs'
+ 8 | import {assertOpenCpuTails} from './lib/am3352-open-cpu-tails.mjs'
+ 9 | 
+10 | const [localDirectory,directory,mode='matched',duration='60',tuning='smooth']=process.argv.slice(2)
+11 | assert(localDirectory&&directory&&['matched','matched-handoffs','pair-matched-bootstrap','connectivity-bootstrap'].includes(mode))
+     ^
+AssertionError: false == true
+ generatedMessage: true,
+     actual: false,
+   expected: true,
+   operator: "==",
+       code: "ERR_ASSERTION"
+
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-channel.mjs:11:1
+
+Bun v1.3.14 (macOS arm64)

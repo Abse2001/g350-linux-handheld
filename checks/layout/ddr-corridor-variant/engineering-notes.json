@@ -1,0 +1,48 @@
+{
+  "reviewDate": "2026-10-05",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "entry": "experiments/am3352-g350-ddr-corridor.circuit.tsx",
+  "changes": [
+    "RAM and its 17 support components translated together by +7 mm Y; CPU/RAM centers now 20 mm apart.",
+    "28 LCD source resistors relocated east of the planned DDR channel, pin1 facing the CPU.",
+    "76 x 118 mm provisional outline retained, 22 x 19 mm speaker extension."
+  ],
+  "routingReservation": {
+    "boundsMm": {
+      "minX": -14.5,
+      "maxX": 8.5,
+      "minY": -8.5,
+      "maxY": 19.3
+    },
+    "nonDdrCourtyardClearanceMm": 0.4064,
+    "qualification": "Engineering placement reservation only. Exact DDR keepout must follow actual routed copper and CPU breakout geometry. A rectangle cannot prove isolation or return-path compliance."
+  },
+  "sourceTermination": {
+    "averageStraightSourcePadDistanceMm": 7.128079690303652,
+    "maximumStraightSourcePadDistanceMm": 10.613821408421003,
+    "qualification": "Geometric placement measurements only; actual trace lengths and signal integrity remain unverified."
+  },
+  "ddrReference": {
+    "datasheet": "reference/am3352/am3352.pdf",
+    "revision": "SPRS717L",
+    "section": "7.7.2.3, DDR3 PCB layout guidance",
+    "requirements": [
+      "Four layers: L1 signal, L2 continuous GND, L3 power, L4 signal.",
+      "DDR region must include every DDR route and support part, with uninterrupted GND and VDDS_DDR references.",
+      "Non-DDR routes within the region require a separating ground layer.",
+      "Width 0.1016 mm, 0.4572/0.254 mm through-vias, and 4w non-DDR clearance.",
+      "CPU high-frequency bypass placement <=10.16 mm; RAM <=3.81 mm to both nearest supply and GND terminals.",
+      "Actual terminal/via connections, impedance, package delays and timing remain open."
+    ]
+  },
+  "remaining": [
+    "PMIC, boost, SD regulator and backlight high-current loops, feedback, thermal and ground returns.",
+    "Dedicated bypass vias, actual short and wide copper paths, effective capacitance and continuous reference planes.",
+    "Complete four-layer native bus_lanes DDR and host routing; independent timing, connectivity, shorts and manufacturing checks.",
+    "Linux panel, pinmux, audio and shared USB-C installation/recovery implementation and validation.",
+    "Battery protection, NTC, load current, dimensions and speaker load/mating qualification.",
+    "Measured original shell outline, holes, button/port registration and assembled clearances; the 1:1 PDF permits a perimeter check only."
+  ]
+}

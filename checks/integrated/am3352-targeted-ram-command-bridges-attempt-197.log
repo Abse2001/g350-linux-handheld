@@ -1,0 +1,17 @@
+ 5 | // Repair the failed native bus_lanes bootstrap on the two outer layers.
+ 6 | // Every physical pad, reserved fanout, supply piece and drilled hole stays
+ 7 | // an obstacle. These paths require independent continuity/DRC and timing.
+ 8 | const [bootstrap,directory,secondsArg='30',stepArg='.04',priorityNamesArg='',maxViasArg='4',mode='sequential',resumePath,viaGridArg='.2']=process.argv.slice(2)
+ 9 | assert(bootstrap&&directory)
+10 | const read=p=>JSON.parse(readFileSync(p)),hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex')
+                              ^
+ENOENT: no such file or directory, open 'dist/am3352-targeted-ram-command-bootstrap-attempt-196/result.json'
+    path: "dist/am3352-targeted-ram-command-bootstrap-attempt-196/result.json",
+ syscall: "open",
+   errno: -2,
+    code: "ENOENT"
+
+      at read (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/repair-am3352-command-channels.mjs:10:26)
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/repair-am3352-command-channels.mjs:11:13
+
+Bun v1.3.14 (macOS arm64)

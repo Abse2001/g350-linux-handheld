@@ -1,0 +1,26 @@
+{
+  "status": "TEMPORARY_DQS1_OPENING_TO_UNTRAP_CLOCK_PAD",
+  "original": {
+    "path": "routing/am3352-guided-both-bytes-and-reset-paths.json",
+    "sha256": "a356d0cffb8e29477d0c843b99efc91c91b1d63ff675747c72107a9fd62e2d48"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-clock-access-paths.json",
+    "sha256": "e525cac6f47f83defd1cd6da619b60a026aa74bd659c828eb69f0fab3cbbd7b5"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-control-candidate/circuit.json",
+    "sha256": "d4148ead1f242d69336d335d4b067b1f1c5cb6c3e23fa0534f308cc0068ad9c1"
+  },
+  "temporarilyOpenedSignals": [
+    "DDR_DQS1"
+  ],
+  "allOther22DdrPathsPreserved": true,
+  "usbLayoutUnchanged": {
+    "path": "routing/am3352-ddr-usbc-final-routes.json",
+    "sha256": "6e66c2f445a36198902a3f380e4ac97f30f9d9510d6f2525ce5b6c3cee49c127"
+  },
+  "reason": "Clock positive pad J7 is trapped by DQS1 RAM tail/through-via and D7 return. DQS1 must be rerouted and rematched before accepting any replacement.",
+  "defaultChanged": false,
+  "fabricationReady": false
+}

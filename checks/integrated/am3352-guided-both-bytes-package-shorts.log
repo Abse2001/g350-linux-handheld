@@ -1,0 +1,6 @@
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:shorts
+> node scripts/check-am3352-guided-replay-source.mjs dist/experiments/am3352-guided-both-bytes-matched-replay/circuit.json routing/am3352-guided-both-bytes-matched-paths.json checks/integrated/am3352-guided-both-bytes-matched-source-validation.json lib/am3352/ram-reference-escapes-byte1-access.json && tsci check shorts dist/experiments/am3352-guided-both-bytes-matched-replay/circuit.json --mode gerber --layer all
+
+{"status":"GUIDED_REPLAY_SOURCE_GEOMETRY_PASS_HOST_INCOMPLETE","ddrSignalTraces":22,"ddrThroughVias":40,"powerCopperRetained":69}
+No shorts detected in circuit.json

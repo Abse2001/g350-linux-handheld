@@ -1,0 +1,25 @@
+{
+  "status": "CONFIRMED_FAILED_NATIVE_BYTE0_BOOTSTRAP",
+  "fabricationReady": false,
+  "qualifiedNewDdrSignals": 0,
+  "components": 280,
+  "physicalSmtPads": 1161,
+  "allPhysicalSmtPadsIncludedAsRoutingObstacles": true,
+  "phaseSignals": 11,
+  "copperLayers": 4,
+  "actualShapedOutlinePreserved": true,
+  "planeObstacleStripsByLayer": {
+    "inner1": 236,
+    "inner2": 86
+  },
+  "observedFailure": {
+    "message": "No collision-free local dogbone assignment"
+  },
+  "scope": "Native bus_lanes phase on the full 280-part source. Fixed unbroken plane obstacles cover the signal-via sites. Next pass uses refillable dedicated pours; causal result and plane continuity still require verification.",
+  "hashes": {
+    "dist/g350-ddr-native-shaped-after-usb-deferral/phase-1.input.simple-route.json": "eacfccc6972cbc9b68de21b80b1c2a4c15518f0a134fea730768e06d7837aef5",
+    "dist/g350-ddr-native-shaped-after-usb-deferral/result.json": "4f2dd43a962bc0264874c10008631b62c0fa2d38ee0fa82035b1d318fed705bc",
+    "dist/g350-ddr-native-shaped-after-usb-deferral/compiled.circuit.json": "d3aa26471c09e40e84100e0bb792ae59a11100760ae32462286d3398e05228c8",
+    "dist/g350-ddr-native-shaped-after-usb-deferral/phase-1.error.json": "3387d3a13b90e75881061c2f9857cae0c34e0d701dd880abffde7537dcdd4fec"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "status": "PASS_SCOPED_SHAPED_BYTE0_PHYSICAL_CONNECTIVITY_UNMATCHED",
+  "entry": "experiments/am3352-g350-byte0-top-corridor-replay.circuit.tsx",
+  "source": {
+    "path": "dist/g350-byte0-top-corridor-replay/compiled.circuit.json",
+    "sha256": "ec3c1726521128e91bc7716a9d647448e058abc464a87a41237c85fc8db89f9a"
+  },
+  "board": {
+    "path": "checks/integrated/g350-byte0-top-corridor/g350-byte0.kicad_pcb",
+    "sha256": "2f71714e5776f50634904afc15b5008f543090dc04c645c6cc7d57bd20d59b88"
+  },
+  "sourceFunctionalRecordsAndPhysicalPlacementPreserved": true,
+  "all101PowerTracesAnd97PowerViasPreserved": true,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "placedComponents": 280,
+  "checkedConnectedDdrSignals": 11,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignals": 38,
+  "nativeBusLanesBootstrapUsed": true,
+  "nativeFullNineLaneSolve": false,
+  "nativeSevenCarrierWaypointsRetained": true,
+  "manualLastTwoCarriers": true,
+  "manualStrobeAndDataLengthRepairs": false,
+  "byte0PlanarSkewMm": 7.657838534762224,
+  "byte0PlanarSkewLimitMm": 0.635,
+  "byte0PlanarSkewPass": false,
+  "strobePairPlanarSkewMm": 3.552713678800501e-15,
+  "strobePairPlanarSkewPass": true,
+  "bothReferencePlanesContinuous": true,
+  "checkedPackagePowerTerminals": 101,
+  "traces": 112,
+  "physicalThroughVias": 119,
+  "nativeErrors": {
+    "pcb_port_not_connected_error": 818,
+    "pcb_trace_missing_error": 108
+  },
+  "independentPhysicalErrors": 0,
+  "presentationWarnings": 403,
+  "reportedUnconnectedItems": 499,
+  "unconnectedItemsMayBeCapped": true,
+  "allLayerGerberShorts": 0,
+  "noIgnoredKiCadRulesOrExclusions": true,
+  "ddrElectricalTimingQualified": false,
+  "stackupImpedanceQualified": false,
+  "bypassCapacitorsRouted": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "evidence": [
+    {
+      "path": "dist/g350-byte0-top-corridor-replay/execution.json",
+      "sha256": "b90805511c1727725e9dd9490ad130a52320c3527081e81b302fc229d37e0feb"
+    },
+    {
+      "path": "dist/g350-byte0-top-corridor-replay/result.json",
+      "sha256": "f575f9d34e22e35afc6db73e14ae664a99b3e124c415a7f4a653e967adc1f175"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/final-drc.json",
+      "sha256": "14ead98f620472f607517e25de70f212f03138f2c50e934b036261b14f6e1ea5"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/plane-connectivity.json",
+      "sha256": "2e57a1114a96f976f80a4389a2526b444a77f91fe95c075c16b8ec843ae18200"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/stencil-verified.json",
+      "sha256": "a08c140d9f3d6b3b8cca321b48fe93a3128205fc6f87cb948faed6d7f79bfa83"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/ddr-connectivity.json",
+      "sha256": "a978b6aaface985d13d3d5f7e1acf43afc9b52c13edad83fab68bc0353db28c8"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/full-ddr-timing.json",
+      "sha256": "9e6cefa6fffb8239f4eb7d72519d2b4c208a34e0b08b288bedca6c4f2bb7ef28"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/shorts.log",
+      "sha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+    },
+    {
+      "path": "checks/integrated/g350-byte0-top-corridor/library.log",
+      "sha256": "e5366cdf2ee4e72f909477ea2e48f2a44f54349383ef31099a9d691e4490d7bd"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/byte0-seven-native-cache.json",
+      "sha256": "82013539b189e14afb628468c42621926a18afa022713efe10a056c5fb5855c5"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/check-summary.json",
+      "sha256": "3b7051a48b0c89fc2965276ddb205ffd18a27b9e48eeb14039f8700c3544fdf5"
+    },
+    {
+      "path": "scripts/check-g350-ddr-plane-connectivity.py",
+      "sha256": "906e867eb1b1db29c67251e0c71aaf857589fbe1d7bf7f40432c91fa8a514b27"
+    },
+    {
+      "path": "scripts/check-am3352-kicad-ddr-connectivity.py",
+      "sha256": "1610638f37449c43e2a69e6b4023df916031176d102513f407d58234b44d77da"
+    }
+  ],
+  "scope": "Only byte0 numeric-pad continuity, physical copper/drill clearance, and the existing 101 package-to-plane connections. Planar skew is reported separately. Complete DDR timing/impedance, 38 signals, bypass and converter loops, remaining host connectivity, Linux and original-shell fit remain unfinished."
+}

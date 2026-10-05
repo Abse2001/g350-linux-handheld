@@ -1,0 +1,5 @@
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:power-netlist
+> node scripts/check-am3352-power.mjs
+
+{"status":"AM3352_LOGICAL_POWER_AND_BYPASS_PASS_ROUTING_INCOMPLETE","components":204,"counts":{"cpuSupply":73,"cpuGround":43,"ramSupply":18,"ramGround":21},"bypass":[{"device":"CPU","hsCapacitors":20,"nominalHsUf":2,"bulkCapacitors":2,"nominalBulkUf":44,"underPackage":3,"maxNearestPowerMm":9.972462083156797,"maxNearestGroundMm":6.946221994724902},{"device":"RAM","hsCapacitors":12,"nominalHsUf":1.2000000000000002,"bulkCapacitors":2,"nominalBulkUf":44,"underPackage":0,"maxNearestPowerMm":2.906888370749726,"maxNearestGroundMm":2.7658633371878665}],"fabricationReady":false}

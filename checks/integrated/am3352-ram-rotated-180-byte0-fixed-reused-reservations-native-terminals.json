@@ -1,0 +1,916 @@
+{
+  "status": "KICAD_ALL_74_REMAINING_SYNCHRONOUS_TERMINALS_CONNECTED",
+  "board": {
+    "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-diagnostic/board.kicad_pcb",
+    "sha256": "ed10e711fa3db65c17daa398f2af60d2459595c2fa74ff445912e3e534fdcedc"
+  },
+  "circuit": {
+    "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-diagnostic/circuit.json",
+    "sha256": "1c346099fa9651fdd96b9d0438675baa06024ac6181c830fab1d99a2333f877f"
+  },
+  "savedFanouts": {
+    "path": "dist/am3352-ram-rotated-180-byte0-fixed-reused-reservations-attempt-344/signal-escapes.native.json",
+    "sha256": "b9a8edee8cf0b2cad2db8f5eafd62a279961d974d0fce82d507b00e1ecc99439"
+  },
+  "connectionMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "cpuFanoutsConnected": 37,
+  "ramFanoutsConnected": 37,
+  "physicalVias": 160,
+  "copperLayers": 4,
+  "records": [
+    {
+      "name": "DDR_ODT",
+      "package": "U_SOC",
+      "ball": "G1",
+      "pin": 7,
+      "outboardEnd": {
+        "x": -1.5999999999999992,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_ODT",
+      "package": "U_RAM",
+      "ball": "K1",
+      "pin": 10,
+      "outboardEnd": {
+        "x": 3.6,
+        "y": -26.200000000000003,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D8",
+      "package": "U_SOC",
+      "ball": "J1",
+      "pin": 9,
+      "outboardEnd": {
+        "x": 4.440892098500626e-16,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D8",
+      "package": "U_RAM",
+      "ball": "C8",
+      "pin": 67,
+      "outboardEnd": {
+        "x": -2,
+        "y": -31.8,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D9",
+      "package": "U_SOC",
+      "ball": "K1",
+      "pin": 10,
+      "outboardEnd": {
+        "x": 0.8000000000000003,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D9",
+      "package": "U_RAM",
+      "ball": "A7",
+      "pin": 49,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -33.4,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CSn0",
+      "package": "U_SOC",
+      "ball": "H2",
+      "pin": 26,
+      "outboardEnd": {
+        "x": -0.7999999999999994,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CSn0",
+      "package": "U_RAM",
+      "ball": "L2",
+      "pin": 27,
+      "outboardEnd": {
+        "x": 2.8000000000000003,
+        "y": -25.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_BA0",
+      "package": "U_SOC",
+      "ball": "C4",
+      "pin": 57,
+      "outboardEnd": {
+        "x": -4.799999999999999,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_BA0",
+      "package": "U_RAM",
+      "ball": "M2",
+      "pin": 28,
+      "outboardEnd": {
+        "x": 2.8000000000000003,
+        "y": -24.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A3",
+      "package": "U_SOC",
+      "ball": "C3",
+      "pin": 39,
+      "outboardEnd": {
+        "x": -4.799999999999999,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A3",
+      "package": "U_RAM",
+      "ball": "N2",
+      "pin": 29,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -23.799999999999997,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A5",
+      "package": "U_SOC",
+      "ball": "B1",
+      "pin": 2,
+      "outboardEnd": {
+        "x": -6.4,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A5",
+      "package": "U_RAM",
+      "ball": "P2",
+      "pin": 30,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -23,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A7",
+      "package": "U_SOC",
+      "ball": "E2",
+      "pin": 23,
+      "outboardEnd": {
+        "x": -3.9999999999999996,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A7",
+      "package": "U_RAM",
+      "ball": "R2",
+      "pin": 31,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -22.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D10",
+      "package": "U_SOC",
+      "ball": "K2",
+      "pin": 28,
+      "outboardEnd": {
+        "x": 0.8000000000000003,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D10",
+      "package": "U_RAM",
+      "ball": "C3",
+      "pin": 35,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -31,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D11",
+      "package": "U_SOC",
+      "ball": "K3",
+      "pin": 46,
+      "outboardEnd": {
+        "x": 0.8000000000000003,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D11",
+      "package": "U_RAM",
+      "ball": "A2",
+      "pin": 17,
+      "outboardEnd": {
+        "x": 2.8000000000000003,
+        "y": -33.4,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_DQM1",
+      "package": "U_SOC",
+      "ball": "J2",
+      "pin": 27,
+      "outboardEnd": {
+        "x": 4.440892098500626e-16,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_DQM1",
+      "package": "U_RAM",
+      "ball": "D3",
+      "pin": 36,
+      "outboardEnd": {
+        "x": 1.2000000000000002,
+        "y": -31,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_RASn",
+      "package": "U_SOC",
+      "ball": "G4",
+      "pin": 61,
+      "outboardEnd": {
+        "x": -1.5999999999999992,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_RASn",
+      "package": "U_RAM",
+      "ball": "J3",
+      "pin": 41,
+      "outboardEnd": {
+        "x": 1.2000000000000002,
+        "y": -26.200000000000003,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CASn",
+      "package": "U_SOC",
+      "ball": "F1",
+      "pin": 6,
+      "outboardEnd": {
+        "x": -2.3999999999999995,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CASn",
+      "package": "U_RAM",
+      "ball": "K3",
+      "pin": 42,
+      "outboardEnd": {
+        "x": 1.2000000000000002,
+        "y": -25.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_WEn",
+      "package": "U_SOC",
+      "ball": "B2",
+      "pin": 20,
+      "outboardEnd": {
+        "x": -6.4,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_WEn",
+      "package": "U_RAM",
+      "ball": "L3",
+      "pin": 43,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -24.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_BA2",
+      "package": "U_SOC",
+      "ball": "B3",
+      "pin": 38,
+      "outboardEnd": {
+        "x": -5.6,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_BA2",
+      "package": "U_RAM",
+      "ball": "M3",
+      "pin": 44,
+      "outboardEnd": {
+        "x": 1.2000000000000002,
+        "y": -23.799999999999997,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A0",
+      "package": "U_SOC",
+      "ball": "F3",
+      "pin": 42,
+      "outboardEnd": {
+        "x": -2.3999999999999995,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A0",
+      "package": "U_RAM",
+      "ball": "N3",
+      "pin": 45,
+      "outboardEnd": {
+        "x": 1.2000000000000002,
+        "y": -23,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A2",
+      "package": "U_SOC",
+      "ball": "E4",
+      "pin": 59,
+      "outboardEnd": {
+        "x": -3.1999999999999997,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A2",
+      "package": "U_RAM",
+      "ball": "P3",
+      "pin": 46,
+      "outboardEnd": {
+        "x": 1.2000000000000002,
+        "y": -22.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A9",
+      "package": "U_SOC",
+      "ball": "C1",
+      "pin": 3,
+      "outboardEnd": {
+        "x": -5.6,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A9",
+      "package": "U_RAM",
+      "ball": "R3",
+      "pin": 47,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -21.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A13",
+      "package": "U_SOC",
+      "ball": "H3",
+      "pin": 44,
+      "outboardEnd": {
+        "x": -0.7999999999999994,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A13",
+      "package": "U_RAM",
+      "ball": "T3",
+      "pin": 48,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -20.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D12",
+      "package": "U_SOC",
+      "ball": "K4",
+      "pin": 64,
+      "outboardEnd": {
+        "x": 0.8000000000000003,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D12",
+      "package": "U_RAM",
+      "ball": "D7",
+      "pin": 52,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -31,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_DQSn1",
+      "package": "U_SOC",
+      "ball": "L2",
+      "pin": 29,
+      "outboardEnd": {
+        "x": 1.6000000000000005,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_DQSn1",
+      "package": "U_RAM",
+      "ball": "B7",
+      "pin": 50,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -32.6,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_DQS1",
+      "package": "U_SOC",
+      "ball": "L1",
+      "pin": 11,
+      "outboardEnd": {
+        "x": 1.6000000000000005,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_DQS1",
+      "package": "U_RAM",
+      "ball": "C7",
+      "pin": 51,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -31.8,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D13",
+      "package": "U_SOC",
+      "ball": "L3",
+      "pin": 47,
+      "outboardEnd": {
+        "x": 1.6000000000000005,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D13",
+      "package": "U_RAM",
+      "ball": "C2",
+      "pin": 19,
+      "outboardEnd": {
+        "x": 2.8000000000000003,
+        "y": -31,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CK",
+      "package": "U_SOC",
+      "ball": "D2",
+      "pin": 22,
+      "outboardEnd": {
+        "x": -4.799999999999999,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CK",
+      "package": "U_RAM",
+      "ball": "J7",
+      "pin": 57,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -27,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CKn",
+      "package": "U_SOC",
+      "ball": "D1",
+      "pin": 4,
+      "outboardEnd": {
+        "x": -4.799999999999999,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CKn",
+      "package": "U_RAM",
+      "ball": "K7",
+      "pin": 58,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -26.200000000000003,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A10",
+      "package": "U_SOC",
+      "ball": "F4",
+      "pin": 60,
+      "outboardEnd": {
+        "x": -2.3999999999999995,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A10",
+      "package": "U_RAM",
+      "ball": "L7",
+      "pin": 59,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -25.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A12",
+      "package": "U_SOC",
+      "ball": "E3",
+      "pin": 41,
+      "outboardEnd": {
+        "x": -3.1999999999999997,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A12",
+      "package": "U_RAM",
+      "ball": "N7",
+      "pin": 61,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -23.799999999999997,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A1",
+      "package": "U_SOC",
+      "ball": "H1",
+      "pin": 8,
+      "outboardEnd": {
+        "x": -0.7999999999999994,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A1",
+      "package": "U_RAM",
+      "ball": "P7",
+      "pin": 62,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -23,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A11",
+      "package": "U_SOC",
+      "ball": "F2",
+      "pin": 24,
+      "outboardEnd": {
+        "x": -3.1999999999999997,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A11",
+      "package": "U_RAM",
+      "ball": "R7",
+      "pin": 63,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -22.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A14",
+      "package": "U_SOC",
+      "ball": "H4",
+      "pin": 62,
+      "outboardEnd": {
+        "x": -0.7999999999999994,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A14",
+      "package": "U_RAM",
+      "ball": "T7",
+      "pin": 64,
+      "outboardEnd": {
+        "x": -1.2,
+        "y": -21.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D14",
+      "package": "U_SOC",
+      "ball": "L4",
+      "pin": 65,
+      "outboardEnd": {
+        "x": 1.6000000000000005,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D14",
+      "package": "U_RAM",
+      "ball": "A3",
+      "pin": 33,
+      "outboardEnd": {
+        "x": 2.0000000000000004,
+        "y": -33.4,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D15",
+      "package": "U_SOC",
+      "ball": "M1",
+      "pin": 12,
+      "outboardEnd": {
+        "x": 2.4000000000000012,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_D15",
+      "package": "U_RAM",
+      "ball": "B8",
+      "pin": 66,
+      "outboardEnd": {
+        "x": -2,
+        "y": -32.6,
+        "layer": "top"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_BA1",
+      "package": "U_SOC",
+      "ball": "E1",
+      "pin": 5,
+      "outboardEnd": {
+        "x": -3.9999999999999996,
+        "y": -7.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_BA1",
+      "package": "U_RAM",
+      "ball": "N8",
+      "pin": 77,
+      "outboardEnd": {
+        "x": -2,
+        "y": -23.799999999999997,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A4",
+      "package": "U_SOC",
+      "ball": "C2",
+      "pin": 21,
+      "outboardEnd": {
+        "x": -5.6,
+        "y": -6.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A4",
+      "package": "U_RAM",
+      "ball": "P8",
+      "pin": 78,
+      "outboardEnd": {
+        "x": -2,
+        "y": -23,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A6",
+      "package": "U_SOC",
+      "ball": "D5",
+      "pin": 76,
+      "outboardEnd": {
+        "x": -3.9999999999999996,
+        "y": -3.9999999999999996,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A6",
+      "package": "U_RAM",
+      "ball": "R8",
+      "pin": 79,
+      "outboardEnd": {
+        "x": -2,
+        "y": -22.2,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A8",
+      "package": "U_SOC",
+      "ball": "D4",
+      "pin": 58,
+      "outboardEnd": {
+        "x": -3.9999999999999996,
+        "y": -4.799999999999999,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_A8",
+      "package": "U_RAM",
+      "ball": "T8",
+      "pin": 80,
+      "outboardEnd": {
+        "x": -2,
+        "y": -21.4,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CKE",
+      "package": "U_SOC",
+      "ball": "G3",
+      "pin": 43,
+      "outboardEnd": {
+        "x": -1.5999999999999992,
+        "y": -5.6,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    },
+    {
+      "name": "DDR_CKE",
+      "package": "U_RAM",
+      "ball": "K9",
+      "pin": 90,
+      "outboardEnd": {
+        "x": -3.6,
+        "y": -26.200000000000003,
+        "layer": "bottom"
+      },
+      "padToOutboardConnected": true
+    }
+  ],
+  "fabricationReady": false,
+  "timingQualified": false,
+  "scope": "Exact numeric pad to saved local terminal only; full CPU/RAM DDR channels remain unfinished."
+}

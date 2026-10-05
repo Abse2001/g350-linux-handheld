@@ -1,0 +1,9 @@
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:shorts
+> npm run check:memory-connectivity && tsci check shorts dist/experiments/am3352-powered-host/circuit.json --mode gerber --layer all
+
+
+> @tsci/abse.g350-linux-handheld@1.3.3 check:memory-connectivity
+> node scripts/check-am3352-routing.mjs dist/experiments/am3352-powered-host/circuit.json checks/integrated/am3352-memory-connectivity.json lib/am3352/memory-byte1-swizzled-connections.json
+
+{"status":"AM3352_MEMORY_FAIL","connectedSignals":0,"tracePieces":69,"physicalVias":69,"problems":55}

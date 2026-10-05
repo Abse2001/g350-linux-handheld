@@ -1,0 +1,111 @@
+{
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-rebound-host/circuit.json",
+    "sha256": "792efd7656dd6c701a99fa74b5cffda877bda2f97212c11616a8caa90d76d2ac",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-byte0-rebound-host/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-ram-rotated-180-byte0-early-pair-channel-attempt-262/output.simple-route.json",
+    "sha256": "d82a2efc0a5e38e00efdbdb7784f7432c35f53bb477977ab205bd6828496daa2"
+  },
+  "manualPairTuning": {
+    "trace": "guided_local_dogbone_source_trace_15_1",
+    "addedLengthMm": 0.7633304448274068,
+    "beforeFixedLengthsMm": [
+      17.080874452027917,
+      17.844204896855324
+    ],
+    "afterFixedLengthsMm": [
+      17.844204896855324,
+      17.844204896855324
+    ],
+    "tested": 1,
+    "index": 0,
+    "teeth": 1,
+    "height": 0.24,
+    "pitch": 0.48,
+    "side": 1,
+    "amplitude": 0.42852813742385576,
+    "layer": "bottom",
+    "span": 1.0399999999999991,
+    "offset": 0.3999999999999996
+  },
+  "manualUnusedBranchPruning": {
+    "nativeInput": {
+      "path": "dist/am3352-ram-rotated-180-byte0-rebound-layers-attempt-234/signal-escapes.native.json",
+      "sha256": "b97aed7f9e8e142fd48ca4a36a01cbca4a1b61de8386a7a792fbb6d5b371355a"
+    },
+    "topPadDogboneWiresRetained": 11,
+    "unusedBootstrapHolesRemoved": 11,
+    "actualSourceCopperUnchanged": true,
+    "changedTraceIds": [
+      "local_dogbone_source_trace_1_1",
+      "local_dogbone_source_trace_2_1",
+      "local_dogbone_source_trace_11_1",
+      "local_dogbone_source_trace_12_1",
+      "local_dogbone_source_trace_13_1",
+      "local_dogbone_source_trace_26_1",
+      "local_dogbone_source_trace_27_1",
+      "local_dogbone_source_trace_28_1",
+      "local_dogbone_source_trace_29_1",
+      "local_dogbone_source_trace_40_1",
+      "local_dogbone_source_trace_41_1"
+    ],
+    "otherNativeDogbonesUnchanged": 85,
+    "actualSourceTracesRetained": 69,
+    "actualSourceThroughViasRetained": 69,
+    "package": "U_RAM",
+    "retainedByte1CpuThroughDogbones": 11,
+    "scope": "Manual intermediate fanout edit; no actual source hole is removed. New local layer changes still require full-depth physical vias and independent checks."
+  },
+  "localFanoutRun": {
+    "path": "dist/am3352-ram-rotated-180-byte0-early-pair-tuned-attempt-261/result.json",
+    "sha256": "44c67fb044025d795af2f5ae70590e4fdb9ead83bb9554fff7e7098a6693269c"
+  },
+  "manualChannelLayerAllocation": {
+    "bootstrapInput": {
+      "path": "dist/am3352-ram-rotated-180-byte0-rebound-bootstrap-attempt-233/input.simple-route.json",
+      "sha256": "95ee4da8df7f6c7ffdf5c549c5e9bf8e1572eff0be0db893c43fabeaed4e6259"
+    },
+    "nativeEscapes": {
+      "path": "dist/am3352-ram-rotated-180-byte0-rebound-bootstrap-attempt-233/signal-escapes.native.json",
+      "sha256": "b97aed7f9e8e142fd48ca4a36a01cbca4a1b61de8386a7a792fbb6d5b371355a"
+    },
+    "nativeEscapesRetained": 96,
+    "finalLayers": {
+      "DDR_BYTE0": "bottom",
+      "DDR_BYTE1": "top",
+      "DDR_COMMAND_CLOCK": "top",
+      "DDR_RESET": "top"
+    },
+    "sourcePowerAndObstaclesUnchanged": true,
+    "newCompletedChannels": 0,
+    "scope": "Channel layers match the actual source constraints. Full-depth native dogbones remain available on both outer layers; saved paths must record every real layer change."
+  },
+  "reusedPackageFanouts": {
+    "package": "U_RAM",
+    "directory": "dist/am3352-ram-rotated-180-byte0-early-reservations-rebase-attempt-259",
+    "path": "dist/am3352-ram-rotated-180-byte0-early-reservations-rebase-attempt-259/local-escapes.json",
+    "sha256": "5112b27fb07128cd17cff2f032de55a287b71e160f9b221562496e345e7128c5",
+    "count": 11
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "paths": {
+    "path": "routing/am3352-ram-rotated-180-byte0-early-pair-paths.json",
+    "sha256": "f754d9f93752a872a12d4e8defb64d86d520c0bd5b64d4696ede457d8aad00ac"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "signals": 11,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes channel with edited local escapes; independent planar timing/physical checks and complete host qualification required."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "CENTER_STROBE_APPROACH_REQUIRES_PHYSICAL_AND_BYTE_ROUTING_CHECKS",
+  "nativeCpuDogbonesRetained": true,
+  "powerCopperAndComponentPlacementUnchanged": true,
+  "ramViaSites": [
+    {
+      "signal": "DDR_DQS0",
+      "x": -0.4,
+      "y": 1.2
+    },
+    {
+      "signal": "DDR_DQSn0",
+      "x": -1.2,
+      "y": 1.6
+    }
+  ],
+  "planarLengthsMm": [
+    19.086260839907588,
+    19.08626083990758
+  ],
+  "planarSkewMm": 0,
+  "source": {
+    "path": "lib/am3352/placement/ddr-dqs0-native-paths.json",
+    "sha256": "ae762967385041e035be2251505b2994045a0e8aa066036e4d812a07ae60eb2b"
+  },
+  "paths": {
+    "path": "lib/am3352/placement/ddr-dqs0-center-approach-paths.json",
+    "sha256": "659e85bcace0a8057b5a3c348ba43d34f48d06df4584fc75c9e6bc5d818a85d1"
+  },
+  "fabricationReady": false,
+  "reason": "The prior left-hand strobe approach obstructed access to RAM data escape sites. Use the unpopulated center columns, with the positive strobe crossing the top-side empty center to a lower via, to keep the bottom paths ordered without crossing."
+}

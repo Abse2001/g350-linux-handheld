@@ -1,0 +1,11 @@
+ 95 | if(process.env.AM3352_COMMAND_CARRIER_REFERENCE_BOUNDS==='1'){
+ 96 |   assert(checkedPartialCommandPhase&&!temporaryCpuTails.length&&!prior.temporaryOpenRamTails)
+ 97 |   const planes=source.filter(e=>e.type==='pcb_copper_pour');assert.equal(planes.length,2)
+ 98 |   const power=planes.find(p=>p.layer==='inner2');assert(power)
+ 99 |   const points=power.brep_shape.outer_ring
+100 |   const planeBounds={minX:Math.min(...points.map(p=>p.x)),maxX:Math.max(...points.map(p=>p.x)),minY:Math.min(...points.map(p=>p.y)),maxY:Math.max(...points.map(p=>p.y))}
+                                                   ^
+TypeError: points.map is not a function. (In 'points.map((p) => p.x)', 'points.map' is undefined)
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-channel.mjs:100:46
+
+Bun v1.3.14 (macOS arm64)

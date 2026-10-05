@@ -1,0 +1,429 @@
+{
+  "status": "PASS_DDR_CORRIDOR_PLACEMENT_ONLY",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "logicalComponents": 280,
+  "movedComponents": 46,
+  "ramGroupParts": 18,
+  "lcdSourceResistors": 28,
+  "copperLayers": 4,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "cpuToRamCenterDistanceMm": 20,
+  "exactSourceConnectivityPreserved": true,
+  "allExplicitNetNamesDistinct": true,
+  "physicalPadAndNativePasteTransformVerified": true,
+  "unchangedComponentPlacements": 234,
+  "movedCourtyardsClear": true,
+  "ddrBypassPlacement": [
+    {
+      "capacitor": "C_DDR_CPU_1",
+      "powerDistanceMm": 2.9698484809835004,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_2",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_3",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.42426406871192884,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_4",
+      "powerDistanceMm": 5.507267925205748,
+      "groundDistanceMm": 1.6278820596099715,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_5",
+      "powerDistanceMm": 7.68960337078578,
+      "groundDistanceMm": 4.011234224026317,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_6",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.407027391856539,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_7",
+      "powerDistanceMm": 4.883646178829913,
+      "groundDistanceMm": 1.7464249196572985,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_8",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.060788100849392,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_9",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.438167441127948,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_10",
+      "powerDistanceMm": 4.883646178829912,
+      "groundDistanceMm": 1.8357559750685815,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_11",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.1000000000000005,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_12",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.46297145282261,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_13",
+      "powerDistanceMm": 5.507267925205746,
+      "groundDistanceMm": 1.6763054614240216,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_14",
+      "powerDistanceMm": 7.689603370785778,
+      "groundDistanceMm": 4.0311288741492755,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_15",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.419501538281613,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_16",
+      "powerDistanceMm": 6.579513659838392,
+      "groundDistanceMm": 2.06155281280883,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_17",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.205948168962618,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_18",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.2059481689626175,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_19",
+      "powerDistanceMm": 7.920227269466451,
+      "groundDistanceMm": 3.4885527085024814,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_20",
+      "powerDistanceMm": 9.567131231461184,
+      "groundDistanceMm": 5.060632371551998,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_RAM_1",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_2",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_3",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_4",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.325940669922601,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_5",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_6",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_7",
+      "powerDistanceMm": 2.906888370749726,
+      "groundDistanceMm": 2.765863337187866,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_8",
+      "powerDistanceMm": 2.5238858928247923,
+      "groundDistanceMm": 2.765863337187866,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_9",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_10",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_11",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_12",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    }
+  ],
+  "sourceDistances": [
+    {
+      "name": "R_LCD_DATA0",
+      "ball": "R1",
+      "oldDistanceMm": 6.757319356805329,
+      "newDistanceMm": 8.110724264198357,
+      "measuredDistanceMm": 8.110724264198357
+    },
+    {
+      "name": "R_LCD_DATA1",
+      "ball": "R2",
+      "oldDistanceMm": 5.917673469350603,
+      "newDistanceMm": 10.613821408421003,
+      "measuredDistanceMm": 10.613821408421003
+    },
+    {
+      "name": "R_LCD_DATA2",
+      "ball": "R3",
+      "oldDistanceMm": 5.60681314918341,
+      "newDistanceMm": 8.761033323179179,
+      "measuredDistanceMm": 8.761033323179179
+    },
+    {
+      "name": "R_LCD_DATA3",
+      "ball": "R4",
+      "oldDistanceMm": 5.908794131619071,
+      "newDistanceMm": 6.857575963112327,
+      "measuredDistanceMm": 6.857575963112327
+    },
+    {
+      "name": "R_LCD_DATA4",
+      "ball": "T1",
+      "oldDistanceMm": 3.472947579485758,
+      "newDistanceMm": 6.424862153373875,
+      "measuredDistanceMm": 6.424862153373875
+    },
+    {
+      "name": "R_LCD_DATA5",
+      "ball": "T2",
+      "oldDistanceMm": 4.671066183416372,
+      "newDistanceMm": 5.940231787553073,
+      "measuredDistanceMm": 5.940231787553073
+    },
+    {
+      "name": "R_LCD_DATA6",
+      "ball": "T3",
+      "oldDistanceMm": 6.215814804983815,
+      "newDistanceMm": 7.738747346299399,
+      "measuredDistanceMm": 7.738747346299399
+    },
+    {
+      "name": "R_LCD_DATA7",
+      "ball": "T4",
+      "oldDistanceMm": 7.906569932015777,
+      "newDistanceMm": 5.411686769377546,
+      "measuredDistanceMm": 5.411686769377546
+    },
+    {
+      "name": "R_LCD_DATA8",
+      "ball": "U1",
+      "oldDistanceMm": 9.632972463879257,
+      "newDistanceMm": 7.922166123596249,
+      "measuredDistanceMm": 7.922166123596248
+    },
+    {
+      "name": "R_LCD_DATA9",
+      "ball": "U2",
+      "oldDistanceMm": 9.001758322119963,
+      "newDistanceMm": 7.534468534001321,
+      "measuredDistanceMm": 7.534468534001319
+    },
+    {
+      "name": "R_LCD_DATA10",
+      "ball": "U3",
+      "oldDistanceMm": 8.736655383489495,
+      "newDistanceMm": 4.309159928554057,
+      "measuredDistanceMm": 4.309159928554055
+    },
+    {
+      "name": "R_LCD_DATA11",
+      "ball": "U4",
+      "oldDistanceMm": 8.870549119973125,
+      "newDistanceMm": 7.1251818285469755,
+      "measuredDistanceMm": 7.125181828546974
+    },
+    {
+      "name": "R_LCD_DATA12",
+      "ball": "V2",
+      "oldDistanceMm": 7.106451497748789,
+      "newDistanceMm": 3.7581730787519625,
+      "measuredDistanceMm": 3.7581730787519607
+    },
+    {
+      "name": "R_LCD_DATA13",
+      "ball": "V3",
+      "oldDistanceMm": 7.772975446369041,
+      "newDistanceMm": 6.09677961631024,
+      "measuredDistanceMm": 6.096779616310238
+    },
+    {
+      "name": "R_LCD_DATA14",
+      "ball": "V4",
+      "oldDistanceMm": 8.797536114723028,
+      "newDistanceMm": 3.4761853934817686,
+      "measuredDistanceMm": 3.4761853934817677
+    },
+    {
+      "name": "R_LCD_DATA15",
+      "ball": "T5",
+      "oldDistanceMm": 10.76262682108118,
+      "newDistanceMm": 8.840006249424038,
+      "measuredDistanceMm": 8.840006249424038
+    },
+    {
+      "name": "R_LCD_DATA16",
+      "ball": "U13",
+      "oldDistanceMm": 5.987784238752764,
+      "newDistanceMm": 6.274460876430418,
+      "measuredDistanceMm": 6.2744608764304175
+    },
+    {
+      "name": "R_LCD_DATA17",
+      "ball": "V13",
+      "oldDistanceMm": 7.769398952934262,
+      "newDistanceMm": 7.61385064798726,
+      "measuredDistanceMm": 7.613850647987257
+    },
+    {
+      "name": "R_LCD_DATA18",
+      "ball": "R12",
+      "oldDistanceMm": 7.189803341528612,
+      "newDistanceMm": 9.172041653299226,
+      "measuredDistanceMm": 9.172041653299226
+    },
+    {
+      "name": "R_LCD_DATA19",
+      "ball": "T12",
+      "oldDistanceMm": 9.071012737829001,
+      "newDistanceMm": 6.303876084589226,
+      "measuredDistanceMm": 6.303876084589225
+    },
+    {
+      "name": "R_LCD_DATA20",
+      "ball": "U12",
+      "oldDistanceMm": 6.703765993071057,
+      "newDistanceMm": 7.82436681718438,
+      "measuredDistanceMm": 7.824366817184379
+    },
+    {
+      "name": "R_LCD_DATA21",
+      "ball": "T11",
+      "oldDistanceMm": 10.122400115084169,
+      "newDistanceMm": 5.838351966938617,
+      "measuredDistanceMm": 5.838351966938616
+    },
+    {
+      "name": "R_LCD_DATA22",
+      "ball": "T10",
+      "oldDistanceMm": 10.287501936323318,
+      "newDistanceMm": 8.513266734330367,
+      "measuredDistanceMm": 8.513266734330365
+    },
+    {
+      "name": "R_LCD_DATA23",
+      "ball": "U10",
+      "oldDistanceMm": 11.5491426560527,
+      "newDistanceMm": 4.734063718398391,
+      "measuredDistanceMm": 4.73406371839839
+    },
+    {
+      "name": "R_LCD_HSYNC",
+      "ball": "R5",
+      "oldDistanceMm": 12.922487256323992,
+      "newDistanceMm": 10.406522228384276,
+      "measuredDistanceMm": 10.406522228384274
+    },
+    {
+      "name": "R_LCD_VSYNC",
+      "ball": "U5",
+      "oldDistanceMm": 12.82305255740052,
+      "newDistanceMm": 10.439711341309012,
+      "measuredDistanceMm": 10.439711341309012
+    },
+    {
+      "name": "R_LCD_PCLK",
+      "ball": "V5",
+      "oldDistanceMm": 12.596454933426944,
+      "newDistanceMm": 6.661322818318897,
+      "measuredDistanceMm": 6.661322818318897
+    },
+    {
+      "name": "R_LCD_DE",
+      "ball": "R6",
+      "oldDistanceMm": 13.519547747238294,
+      "newDistanceMm": 6.883592673150846,
+      "measuredDistanceMm": 6.8835926731508446
+    }
+  ],
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "scope": "Placement only. DDR reservation is an engineering plan, not copper isolation/return-path or signal-integrity qualification. Original-shell geometry and routing remain incomplete.",
+  "hashes": {
+    "dist/experiments/am3352-g350-ddr-corridor/circuit.json": "a9427ee89a309ba5be281575d5dd7ee4116034432209eee02adf97c0786de583",
+    "dist/experiments/am3352-g350-pin-allocation/circuit.json": "5ce4c3e9a65c1ebb8d25cabe6d45324f409638ecd6f00ecdbe7656d26da6eca4",
+    "checks/layout/pin-allocation-variant/g350-pin-allocation-check-summary.json": "2682c043b1445ac0b1b774e7e42367d70a5dbce58cab4ccaee22d5f7ee6518c9",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "experiments/am3352-g350-ddr-corridor.circuit.tsx": "7ecf5902b516bc2418aed9d6420ff03b19bf69334b3b85c37143e2f345f65896",
+    "lib/am3352/placement/DdrCorridorPlacement.tsx": "800353a3c9630a3fc16e81be3adceff381def0f883c2d27d04073a04bcad1b71",
+    "lib/am3352/placement/ddr-corridor-placements.json": "2dc409f699decce9d26d46e77c53f8662dda95d0c8e63284c7e9ddc309bf2718",
+    "scripts/plan-g350-ddr-corridor-placement.mjs": "cbd7bb5999f4411754dac492e4c4d23bcaea6a39d72d58685dbbc571c1cf64c1",
+    "scripts/check-g350-ddr-corridor.mjs": "d596e90a61bf72e784b0977d9def258d3957a0695a1198718a1a014d8a71cc94",
+    "checks/layout/ddr-corridor-variant/ddr-corridor-plan.json": "74eccee47626d03898bc9b635a36a84cf541612c3dd775746c3cbfcab5220d94",
+    "reference/am3352/am3352.pdf": "ec145b6b19a7ff35118bb0ec06b5ae9c51aa97ccdf4da935f2176d9168af0205"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-native-clock-candidate/circuit.json",
+    "sha256": "8fd18065e5761b51b1ae10e9ff0bb5c08513f23ae06880642be76c50a78bba5c",
+    "originalBuildPath": "dist/diagnostics/am3352-ddr-usbc-native-clock-candidate/circuit.json"
+  },
+  "nativeRouting": {
+    "path": "dist/am3352-ddr-usbc-strobe-connectivity-attempt-427/output.simple-route.json",
+    "sha256": "e065acf7cca4c898e4f60b84783329434c253eeddedd291592d19f34b430a436"
+  },
+  "localFanoutRun": {
+    "path": "dist/am3352-ddr-usbc-strobe-deeper-cpu-attempt-425/result.json",
+    "sha256": "33de7ebb55020daa81d04d244458e05dacb908b041459e801ce67f21604924fb"
+  },
+  "cpuPairViaHandoffCorridor": false,
+  "manualLocalStart": "Exact top-layer numeric package pads",
+  "reusedPackageFanouts": {
+    "package": "U_RAM",
+    "directory": "dist/am3352-ddr-usbc-strobe-right-local-attempt-422",
+    "path": "dist/am3352-ddr-usbc-strobe-right-local-attempt-422/local-escapes.json",
+    "sha256": "5fb34a979c72dbb382169bbfe5dd026cc818289fa8e17a89d41ee89cb23c88e9",
+    "count": 2
+  },
+  "preservedSavedDdr": {
+    "path": "routing/am3352-ddr-usbc-command-access-clock-paths.json",
+    "sha256": "b4e8a4377f6750728f9e87fec805d2818537eb2cb792b3d19005d46389ec2965",
+    "signals": 23
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-clock-and-strobes-unmatched-paths.json",
+    "sha256": "f31c4b88e6c64b60e1a29ca52d86629feb27558501bbca38eb3ce783362a7a8a"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "signals": 25,
+  "copperLayers": 4,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Native bus_lanes channel with edited local escapes; independent planar timing/physical checks and complete host qualification required."
+}

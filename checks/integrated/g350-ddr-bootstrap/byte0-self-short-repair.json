@@ -1,0 +1,27 @@
+{
+  "status": "NATIVE_SELF_SHORT_REPAIR_CANDIDATE_REQUIRES_FULL_REPLAY",
+  "source": {
+    "path": "lib/am3352/placement/ddr-byte0-matched-paths.json",
+    "sha256": "7c1c12051d5f0130410661d1cb2c9aece5071c2639de4674ce89186d9ded193c"
+  },
+  "output": {
+    "path": "lib/am3352/placement/ddr-byte0-complete-bus-paths.json",
+    "sha256": "d233dc099043e4016d7f79b350973f46f7e965f067c2559946fe1a5fd69fff61"
+  },
+  "signal": "DDR_D3",
+  "meanderShiftYmm": -0.2,
+  "normalizedRamViaRoundoffMm": 4.440892098500626e-16,
+  "oldPlanarLengthMm": 20.196017228003374,
+  "newPlanarLengthMm": 20.196017228003374,
+  "allOtherPathsUnchanged": true,
+  "completeBusNativeSelfShortErrors": 0,
+  "sourceWithGeneratedHandoff": {
+    "path": "dist/g350-current-index-byte0-d3-fixed/compiled.circuit.json",
+    "sha256": "f65b79a3239458fd2fce4ac119bc91cd6048f192f985ffd9617c968f38d7513f"
+  },
+  "helper": {
+    "path": "scripts/repair-g350-byte0-complete-bus.mjs",
+    "sha256": "53f09b15cda9700823d989da174f0a3a12086a1bc705e789f98d2bc6059290dd"
+  },
+  "fabricationReady": false
+}

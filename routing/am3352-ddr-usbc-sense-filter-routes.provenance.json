@@ -1,0 +1,34 @@
+{
+  "priorLayout": {
+    "path": "routing/am3352-ddr-usbc-sense-input-routes.json",
+    "sha256": "90fdc70a27ea71bc158706d9c905caad08a437b3ad4053d174a2650ecb28796a"
+  },
+  "priorProvenance": {
+    "path": "routing/am3352-ddr-usbc-sense-input-routes.provenance.json",
+    "sha256": "4c0dc315d20bf33e97531cfc6a8202a90d8d02d3050f34febf8e1b1d4b5d997a"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-with-sense-input/circuit.json",
+    "sha256": "9cec22cde4c8b7e82f4fbf3b1401fb1f60bb3c9b83dc1ff6d881b1f4298d41bd"
+  },
+  "nativeControlRun": {
+    "path": "dist/am3352-usbc-sense-cap-attempt-393/result.json",
+    "sha256": "4b02d7fdde70b52c1fdf23d0862e6ccc36287386d0f976c295b76fa7335e03d6"
+  },
+  "nativeCcRun": {
+    "path": "dist/am3352-usbc-cc-attempt-383/result.json",
+    "sha256": "923f45ac4e6373b49cba11a8b093a2bf96003a6ddc8cccd42424ab1b8dd34799"
+  },
+  "nativePairRun": {
+    "path": "dist/am3352-usbc-top-pair-bootstrap-attempt-382/result.json",
+    "sha256": "911c81e151ba82f6d85d39a985aa90c831cad379a99307ff2ba772dfc703fade"
+  },
+  "layout": {
+    "path": "routing/am3352-ddr-usbc-sense-filter-routes.json",
+    "sha256": "cb4f17c07bbd2187451f301f851c0833bcde59604e2320bb87694a90d5c74ac4"
+  },
+  "phase": "sense-cap",
+  "signal": "USB_VBUS_SENSE_FILTER",
+  "fullPoweredHostQualified": false,
+  "fabricationReady": false
+}

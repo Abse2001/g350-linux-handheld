@@ -1,0 +1,53 @@
+{
+  "status": "PASS_CORE_2088_REVIEWED_D3_REPAIR_AND_COMPLETE_BYTE0_BUS",
+  "source": {
+    "path": "dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json",
+    "sha256": "01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555"
+  },
+  "previousSummary": {
+    "path": "checks/integrated/g350-byte0-matched/check-summary.json",
+    "sha256": "e6d3b6c644ab9c24ed807ffc345610fcbae1faf25181fd5600ab663146aea698"
+  },
+  "previousSource": {
+    "path": "dist/g350-byte0-matched-replay/compiled.circuit.json",
+    "sha256": "e6be9cc6468c63f6da283f0240832757b3477eca74e039eff96c4152e5b739b5"
+  },
+  "allOtherNonMetadataRecordsExact": true,
+  "byte0BusMembers": [
+    "DDR_D0",
+    "DDR_D1",
+    "DDR_D2",
+    "DDR_D3",
+    "DDR_D4",
+    "DDR_D5",
+    "DDR_D6",
+    "DDR_D7",
+    "DDR_DQM0",
+    "DDR_DQS0",
+    "DDR_DQSn0"
+  ],
+  "reviewedPhysicalChange": {
+    "signal": "DDR_D3",
+    "meanderShiftYmm": -0.2,
+    "ramViaRoundoffNormalizedMm": 4.440892098500626e-16,
+    "allOtherCopperExact": true
+  },
+  "byte0SignalLayers": [
+    "top",
+    "bottom"
+  ],
+  "core": "0.0.2088",
+  "props": "0.0.687",
+  "physicalTraces": 112,
+  "physicalThroughVias": 119,
+  "completeDdrQualified": false,
+  "fabricationReady": false,
+  "execution": {
+    "path": "dist/g350-current-index-byte0-handoff-fixed/execution.json",
+    "sha256": "994b0183fac80c5c9fdc9fe32465d8baf43484f2cd78dcc560eaf48949a0b70a"
+  },
+  "result": {
+    "path": "dist/g350-current-index-byte0-handoff-fixed/result.json",
+    "sha256": "30a888d65a5c8a3fd0802230fe5a7e1a706b9875b24bbed8c8694cc53fe52155"
+  }
+}

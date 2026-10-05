@@ -1,0 +1,194 @@
+(footprint "g350_J_SPK_06bad6e0789d6ee1080a4b5e774dfa63"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "J_SPK"
+		(at -0.009271 -3.773185 0)
+		(layer "F.SilkS")
+		(uuid "30f777c3-3e31-4f21-8b04-d47b91be883b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SM02B-SRSS-TB(LF)(SN)"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d432d4c6-ae69-4850-8e73-0241c3295ea8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e3d6f6d-1ac0-49bb-be15-3af087a9ac91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "32391e1a-031b-471d-9016-4be5bf55c0ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C160402"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "731d1d80-18ac-df9f-41c3-5e4263cc63dd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "SM02B-SRSS-TB(LF)(SN)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "206c9b32-6e09-5852-4459-ea8e0942d292")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.999996 -1.712506)
+		(end -1.031138 -1.712506)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "11583a57-ba5c-4f1e-9527-20a49b9406f7")
+	)
+	(fp_line
+		(start -1.999996 0.137503)
+		(end -1.999996 -1.712506)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7d0eef5d-7899-44b4-9d12-bacb4d578f42")
+	)
+	(fp_line
+		(start -1.999996 0.137503)
+		(end -1.999996 0.743852)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4284a94d-e89c-4158-829a-67d6b9d9279f")
+	)
+	(fp_line
+		(start -0.968858 2.587511)
+		(end 0.968858 2.587511)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "98002cb6-e8c2-42c4-a310-b4e2fff542d0")
+	)
+	(fp_line
+		(start 1.031138 -1.712506)
+		(end 1.999996 -1.712506)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "56523ef3-5cc8-4da2-ae66-c8d7349a9e6e")
+	)
+	(fp_line
+		(start 1.999996 -1.712506)
+		(end 1.999996 0.743852)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bf84c7fc-4971-4f74-a93c-6fd2d4ed76c4")
+	)
+	(fp_poly
+		(pts
+			(xy -2.64997 -3.025014) (xy 2.64997 -3.025014) (xy 2.64997 3.025014) (xy -2.64997 3.025014) (xy -2.64997 -3.025014)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7b46ba60-74a7-4bff-6e07-dd9e67686f3d")
+	)
+	(pad "1" smd rect
+		(at -0.499999 -2.000009)
+		(size 0.599999 1.55001)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "11f6c7e2-332c-44de-784f-519e428da1a2")
+	)
+	(pad "2" smd rect
+		(at 0.499999 -2.000009)
+		(size 0.599999 1.55001)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "41727360-7675-e7df-2e5e-431e19b961a3")
+	)
+	(pad "3" smd rect
+		(at 1.799971 1.875015)
+		(size 1.199998 1.799996)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "7e0b6320-35f3-be5f-1223-e6625a3b8b23")
+	)
+	(pad "4" smd rect
+		(at -1.799971 1.875015)
+		(size 1.199998 1.799996)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "64f81b32-1fd5-0e72-254d-fe4e6a710b0e")
+	)
+	(embedded_fonts no)
+	(model "https://modelcdn.tscircuit.com/easyeda_models/assets/C160402.step?uuid=b15083895b61401296a20b79cbc50a55&cachebust_origin="
+		(offset
+			(xyz -0.5 -0.5135125 0.01)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,711 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Changed DDR_D0 planned path
++ actual - expected
+... Skipped lines
+
+  [
+    {
+      from_layer: undefined,
+      layer: 'top',
+      route_type: 'wire',
+...
+      x: 2,
++     y: -5.2
+-     y: -5.200000000000003
+    },
+    {
+      from_layer: undefined,
+      layer: 'top',
+      route_type: 'wire',
+...
+      width: 0.1016,
++     x: 2.4,
+-     x: 2.4000000000000004,
+      y: -25
+    }
+  ]
+
+    at file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/check-am3352-bottom-staged-replay.mjs:21:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    {
+      route_type: 'wire',
+      x: 2,
+      y: -5.2,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.42,
+      y: -5.619999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.66,
+      y: -5.619999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.6799999999999997,
+      y: -5.640000000000001,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.7200000000000006,
+      y: -5.640000000000001,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.74,
+      y: -5.659999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.76,
+      y: -5.659999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.780000000000001,
+      y: -5.68,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.8000000000000007,
+      y: -5.68,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.92,
+      y: -5.799999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.92,
+      y: -5.82,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9399999999999995,
+      y: -5.839999999999996,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9399999999999995,
+      y: -5.859999999999999,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.960000000000001,
+      y: -5.880000000000003,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.960000000000001,
+      y: -5.920000000000002,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9800000000000004,
+      y: -5.939999999999998,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9800000000000004,
+      y: -21.46,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4399999999999995,
+      y: -22,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4399999999999995,
+      y: -22.02,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.42,
+      y: -22.04,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.42,
+      y: -22.08,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4000000000000004,
+      y: -22.1,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4000000000000004,
+      y: -22.64,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4399999999999995,
+      y: -23.6,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4399999999999995,
+      y: -23.619999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.42,
+      y: -23.64,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.42,
+      y: -23.68,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4000000000000004,
+      y: -23.7,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4000000000000004,
+      y: -24.939999999999998,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.2200000000000006,
+      y: -25.119999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.2200000000000006,
+      y: -25.14,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.200000000000001,
+      y: -25.16,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.200000000000001,
+      y: -25.2,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.0199999999999996,
+      y: -25.38,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'via',
+      x: 2.0199999999999996,
+      y: -25.38,
+      layer: undefined,
+      width: undefined,
+      from_layer: 'top',
+      to_layer: 'bottom'
+    },
+    {
+      route_type: 'wire',
+      x: 2.0199999999999996,
+      y: -25.38,
+      layer: 'bottom',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4,
+      y: -25,
+      layer: 'bottom',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    }
+  ],
+  expected: [
+    {
+      route_type: 'wire',
+      x: 2,
+      y: -5.200000000000003,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.42,
+      y: -5.619999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.66,
+      y: -5.619999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.6799999999999997,
+      y: -5.640000000000001,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.7200000000000006,
+      y: -5.640000000000001,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.74,
+      y: -5.659999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.76,
+      y: -5.659999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.780000000000001,
+      y: -5.68,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.8000000000000007,
+      y: -5.68,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.92,
+      y: -5.799999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.92,
+      y: -5.82,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9399999999999995,
+      y: -5.839999999999996,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9399999999999995,
+      y: -5.859999999999999,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.960000000000001,
+      y: -5.880000000000003,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.960000000000001,
+      y: -5.920000000000002,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9800000000000004,
+      y: -5.939999999999998,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.9800000000000004,
+      y: -21.46,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4399999999999995,
+      y: -22,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4399999999999995,
+      y: -22.02,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.42,
+      y: -22.04,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.42,
+      y: -22.08,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4000000000000004,
+      y: -22.1,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 3.4000000000000004,
+      y: -22.64,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4399999999999995,
+      y: -23.6,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4399999999999995,
+      y: -23.619999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.42,
+      y: -23.64,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.42,
+      y: -23.68,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4000000000000004,
+      y: -23.7,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4000000000000004,
+      y: -24.939999999999998,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.2200000000000006,
+      y: -25.119999999999997,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.2200000000000006,
+      y: -25.14,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.200000000000001,
+      y: -25.16,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.200000000000001,
+      y: -25.2,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.0199999999999996,
+      y: -25.38,
+      layer: 'top',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'via',
+      x: 2.0199999999999996,
+      y: -25.38,
+      layer: undefined,
+      width: undefined,
+      from_layer: 'top',
+      to_layer: 'bottom'
+    },
+    {
+      route_type: 'wire',
+      x: 2.0199999999999996,
+      y: -25.38,
+      layer: 'bottom',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    },
+    {
+      route_type: 'wire',
+      x: 2.4000000000000004,
+      y: -25,
+      layer: 'bottom',
+      width: 0.1016,
+      from_layer: undefined,
+      to_layer: undefined
+    }
+  ],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.6.1

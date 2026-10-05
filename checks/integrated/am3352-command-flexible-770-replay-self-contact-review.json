@@ -1,0 +1,21 @@
+{
+  "status": "COMMAND34_SAME_NET_COPPER_LENGTH_AMBIGUITY_REQUIRES_REPAIR",
+  "source": {
+    "path": "dist/diagnostics/am3352-command-flexible-770-replay-candidate/circuit.json",
+    "sha256": "9217722d4be672cd28e09741b1c733e4f385ea5bc99b08ef01dd02b95479bbd5"
+  },
+  "planarAudit": {
+    "path": "checks/integrated/am3352-command-flexible-770-replay-ddr-connectivity.json",
+    "sha256": "e9e8544ba2997372e33c15d3fdf8bb8d7d4ccfb56b3431620543c3eca6c50b6b"
+  },
+  "problems": [
+    {
+      "name": "DDR_A9",
+      "routeSumMm": 41.77512985522206,
+      "graphShortestPathMm": 40.53630734528298,
+      "deltaMm": 1.2388225099390837
+    }
+  ],
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

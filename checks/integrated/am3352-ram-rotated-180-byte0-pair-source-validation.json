@@ -1,0 +1,53 @@
+{
+  "status": "GUIDED_REPLAY_SOURCE_GEOMETRY_PASS_HOST_INCOMPLETE",
+  "circuit": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-pair-replay/circuit.json",
+    "sha256": "36cb1b7e99db09fb818299fc2f0aae61a9659a863b17c0f29f6d1112095f8731"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "ddrSignalTraces": 11,
+  "ddrThroughVias": 30,
+  "physicalThroughVias": 99,
+  "existingPowerCopper": {
+    "manualBypassLoops": 15,
+    "ramBypassLoops": 14,
+    "packageReferenceEscapes": 39,
+    "ramReferenceEscapeCounts": {
+      "DDR_1V5": 18,
+      "GND": 21
+    },
+    "traces": 69,
+    "throughVias": 69,
+    "minimumDrillEdgeClearanceMm": 0.44600000000000284,
+    "generatedReferenceRegions": 2,
+    "completePowerRouting": false,
+    "savedDdrNames": [
+      "DDR_D0",
+      "DDR_D1",
+      "DDR_D2",
+      "DDR_D3",
+      "DDR_D4",
+      "DDR_D5",
+      "DDR_D6",
+      "DDR_D7",
+      "DDR_DQM0",
+      "DDR_DQS0",
+      "DDR_DQSn0"
+    ],
+    "totalSourceTraces": 80
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotation": 180,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false
+}

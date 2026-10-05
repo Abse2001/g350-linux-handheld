@@ -1,0 +1,12 @@
+190 |     if(x1<x0||y1<y0)continue
+191 |     for(let iy=y0;iy<=y1;iy++)for(let ix=x0;ix<=x1;ix++){
+192 |       const i=ix+iy*nx,x=bounds.minX+ix*step,y=bounds.minY+iy*step,d=pointDistance(s,x,y)
+193 |       // Own existing copper is connectable. All other copper retains its
+194 |       // full width plus clearance. Guard covers the half-cell diagonal.
+195 |       if(s.owner!==owner&&d<width/2+clearance+guard)for(const l of s.layers)blocked[layers.indexOf(l)][i]=1
+                                                                                                          ^
+TypeError: undefined is not an object (evaluating 'blocked[layers.indexOf(l)][i] = 1')
+      at localRoute (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-local-fanouts.mjs:195:101)
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-guided-local-fanouts.mjs:352:18
+
+Bun v1.3.14 (macOS arm64)

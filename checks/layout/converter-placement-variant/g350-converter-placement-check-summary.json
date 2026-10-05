@@ -1,0 +1,1556 @@
+{
+  "status": "CHECKED_CONVERTER_COMPONENT_PLACEMENT",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "fullHandheldPlacementComplete": false,
+  "entry": "experiments/am3352-g350-converter-placement.circuit.tsx",
+  "defaultEntryRemainsHistoricalDdrFixture": true,
+  "logicalComponents": 280,
+  "movedComponents": 17,
+  "converterSupportComponentsRelocated": 17,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "cpuToRamCenterDistanceMm": 20,
+  "copperLayers": 4,
+  "nativeErrors": 0,
+  "buildExitCode": 0,
+  "typecheckExitCode": 0,
+  "allLayerGerberShorts": 0,
+  "exactFunctionalSourcePreserved": true,
+  "allExplicitNetNamesDistinct": true,
+  "physicalPadsAndNativePasteTransformVerified": true,
+  "movedCourtyardsClear": true,
+  "all280CourtyardsNonoverlapping": true,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "ddrBypassPlacement": [
+    {
+      "capacitor": "C_DDR_CPU_1",
+      "powerDistanceMm": 2.9698484809835004,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_2",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.4242640687119289,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_3",
+      "powerDistanceMm": 2.121320343559644,
+      "groundDistanceMm": 0.42426406871192884,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_4",
+      "powerDistanceMm": 5.507267925205748,
+      "groundDistanceMm": 1.6278820596099715,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_5",
+      "powerDistanceMm": 7.68960337078578,
+      "groundDistanceMm": 4.011234224026317,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_6",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.407027391856539,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_7",
+      "powerDistanceMm": 4.883646178829913,
+      "groundDistanceMm": 1.7464249196572985,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_8",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.060788100849392,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_9",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.438167441127948,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_10",
+      "powerDistanceMm": 4.883646178829912,
+      "groundDistanceMm": 1.8357559750685815,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_11",
+      "powerDistanceMm": 7.256031973468695,
+      "groundDistanceMm": 4.1000000000000005,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_12",
+      "powerDistanceMm": 9.642095207992918,
+      "groundDistanceMm": 6.46297145282261,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_13",
+      "powerDistanceMm": 5.507267925205746,
+      "groundDistanceMm": 1.6763054614240216,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_14",
+      "powerDistanceMm": 7.689603370785778,
+      "groundDistanceMm": 4.0311288741492755,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_15",
+      "powerDistanceMm": 9.972462083156797,
+      "groundDistanceMm": 6.419501538281613,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_16",
+      "powerDistanceMm": 6.579513659838392,
+      "groundDistanceMm": 2.06155281280883,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_17",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.205948168962618,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_18",
+      "powerDistanceMm": 8.490583018850945,
+      "groundDistanceMm": 4.2059481689626175,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_19",
+      "powerDistanceMm": 7.920227269466451,
+      "groundDistanceMm": 3.4885527085024814,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_CPU_20",
+      "powerDistanceMm": 9.567131231461184,
+      "groundDistanceMm": 5.060632371551998,
+      "limitMm": 10.16
+    },
+    {
+      "capacitor": "C_DDR_RAM_1",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_2",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_3",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_4",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.325940669922601,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_5",
+      "powerDistanceMm": 2.325940669922601,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_6",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_7",
+      "powerDistanceMm": 2.906888370749726,
+      "groundDistanceMm": 2.765863337187866,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_8",
+      "powerDistanceMm": 2.5238858928247923,
+      "groundDistanceMm": 2.765863337187866,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_9",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_10",
+      "powerDistanceMm": 2.184032966784155,
+      "groundDistanceMm": 2.109502310972898,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_11",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    },
+    {
+      "capacitor": "C_DDR_RAM_12",
+      "powerDistanceMm": 2.109502310972898,
+      "groundDistanceMm": 2.184032966784155,
+      "limitMm": 3.81
+    }
+  ],
+  "converterDistances": [
+    {
+      "name": "boost_switch",
+      "from": "U_IO_BOOST.5",
+      "to": "L_IO_BOOST.2",
+      "oldStraightPadDistanceMm": 3.0651042026310726,
+      "newStraightPadDistanceMm": 2.913404444510001,
+      "measuredDistanceMm": 2.913404444510003
+    },
+    {
+      "name": "boost_input",
+      "from": "U_IO_BOOST.3",
+      "to": "C_IO_BOOST_IN.1",
+      "oldStraightPadDistanceMm": 6.492500028501892,
+      "newStraightPadDistanceMm": 2.751384240837805,
+      "measuredDistanceMm": 2.751384240837811
+    },
+    {
+      "name": "boost_input_ground",
+      "from": "U_IO_BOOST.4",
+      "to": "C_IO_BOOST_IN.2",
+      "oldStraightPadDistanceMm": 5.527429621451283,
+      "newStraightPadDistanceMm": 4.13036421648584,
+      "measuredDistanceMm": 4.130364216485834
+    },
+    {
+      "name": "boost_output1",
+      "from": "U_IO_BOOST.6",
+      "to": "C_IO_BOOST_OUT1.1",
+      "oldStraightPadDistanceMm": 4.111496903303543,
+      "newStraightPadDistanceMm": 3.192775977384353,
+      "measuredDistanceMm": 3.1927759773843607
+    },
+    {
+      "name": "boost_output2",
+      "from": "U_IO_BOOST.6",
+      "to": "C_IO_BOOST_OUT2.1",
+      "oldStraightPadDistanceMm": 7.804128060576312,
+      "newStraightPadDistanceMm": 6.147878094250288,
+      "measuredDistanceMm": 6.147878094250295
+    },
+    {
+      "name": "boost_output1_ground",
+      "from": "U_IO_BOOST.4",
+      "to": "C_IO_BOOST_OUT1.2",
+      "oldStraightPadDistanceMm": 6.985198660548653,
+      "newStraightPadDistanceMm": 3.192775977384353,
+      "measuredDistanceMm": 3.1927759773843607
+    },
+    {
+      "name": "boost_output2_ground",
+      "from": "U_IO_BOOST.4",
+      "to": "C_IO_BOOST_OUT2.2",
+      "oldStraightPadDistanceMm": 10.039571321890726,
+      "newStraightPadDistanceMm": 6.147878094250288,
+      "measuredDistanceMm": 6.147878094250295
+    },
+    {
+      "name": "boost_feedback_high",
+      "from": "U_IO_BOOST.1",
+      "to": "R_IO_BOOST_HI.2",
+      "oldStraightPadDistanceMm": 3.044713387535228,
+      "newStraightPadDistanceMm": 1.9778537736573503,
+      "measuredDistanceMm": 1.9778537736573547
+    },
+    {
+      "name": "boost_feedback_low",
+      "from": "U_IO_BOOST.1",
+      "to": "R_IO_BOOST_LO.1",
+      "oldStraightPadDistanceMm": 3.0906640545494835,
+      "newStraightPadDistanceMm": 3.078573087599293,
+      "measuredDistanceMm": 3.0785730875992923
+    },
+    {
+      "name": "boost_feedback_ff",
+      "from": "U_IO_BOOST.1",
+      "to": "C_IO_BOOST_FF.2",
+      "oldStraightPadDistanceMm": 6.968000429209244,
+      "newStraightPadDistanceMm": 3.162669375816989,
+      "measuredDistanceMm": 3.162669375816997
+    },
+    {
+      "name": "boost_divider",
+      "from": "R_IO_BOOST_HI.2",
+      "to": "R_IO_BOOST_LO.1",
+      "oldStraightPadDistanceMm": 2.3253006240914313,
+      "newStraightPadDistanceMm": 2.1802768155443033,
+      "measuredDistanceMm": 2.1802768155443033
+    },
+    {
+      "name": "boost_ff_feedback",
+      "from": "R_IO_BOOST_HI.2",
+      "to": "C_IO_BOOST_FF.2",
+      "oldStraightPadDistanceMm": 3.946659999999998,
+      "newStraightPadDistanceMm": 2.100677308774484,
+      "measuredDistanceMm": 2.100677308774484
+    },
+    {
+      "name": "boost_ff_output",
+      "from": "R_IO_BOOST_HI.1",
+      "to": "C_IO_BOOST_FF.1",
+      "oldStraightPadDistanceMm": 4.053340000000002,
+      "newStraightPadDistanceMm": 2.100677308774484,
+      "measuredDistanceMm": 2.100677308774484
+    },
+    {
+      "name": "sd_switch",
+      "from": "U_SD_REG.7",
+      "to": "L_SD_REG.1",
+      "oldStraightPadDistanceMm": 2.3782993758137354,
+      "newStraightPadDistanceMm": 1.8322567835857506,
+      "measuredDistanceMm": 1.8322567835857506
+    },
+    {
+      "name": "sd_output",
+      "from": "L_SD_REG.2",
+      "to": "C_SD_REG_OUT.1",
+      "oldStraightPadDistanceMm": 2.7225099999999998,
+      "newStraightPadDistanceMm": 2.5725099999999976,
+      "measuredDistanceMm": 2.5725099999999976
+    },
+    {
+      "name": "sd_input",
+      "from": "U_SD_REG.2",
+      "to": "C_SD_REG_IN.1",
+      "oldStraightPadDistanceMm": 3.5633704847876833,
+      "newStraightPadDistanceMm": 3.0655441950583593,
+      "measuredDistanceMm": 3.0655441950583593
+    },
+    {
+      "name": "sd_input_ground",
+      "from": "U_SD_REG.1",
+      "to": "C_SD_REG_IN.2",
+      "oldStraightPadDistanceMm": 3.1642661995988894,
+      "newStraightPadDistanceMm": 2.590855569483562,
+      "measuredDistanceMm": 2.590855569483562
+    },
+    {
+      "name": "sd_hf",
+      "from": "U_SD_REG.2",
+      "to": "C_SD_REG_HF.1",
+      "oldStraightPadDistanceMm": 2.1278722396873317,
+      "newStraightPadDistanceMm": 0.30231415757784386,
+      "measuredDistanceMm": 0.30231415757784386
+    },
+    {
+      "name": "sd_hf_ground",
+      "from": "U_SD_REG.1",
+      "to": "C_SD_REG_HF.2",
+      "oldStraightPadDistanceMm": 1.5732923598683088,
+      "newStraightPadDistanceMm": 1.0058340162173864,
+      "measuredDistanceMm": 1.0058340162173864
+    },
+    {
+      "name": "sd_sense",
+      "from": "U_SD_REG.6",
+      "to": "C_SD_REG_OUT.1",
+      "oldStraightPadDistanceMm": 7.461647114122723,
+      "newStraightPadDistanceMm": 6.76208057151761,
+      "measuredDistanceMm": 6.76208057151761
+    },
+    {
+      "name": "bl_switch",
+      "from": "U_LCD_BL.3",
+      "to": "D_LCD_BL.2",
+      "oldStraightPadDistanceMm": 2.5729236839175775,
+      "newStraightPadDistanceMm": 2.5729236839175775,
+      "measuredDistanceMm": 2.5729236839175775
+    },
+    {
+      "name": "bl_output",
+      "from": "D_LCD_BL.1",
+      "to": "C_LCD_BL_OUT.1",
+      "oldStraightPadDistanceMm": 2.715017999999997,
+      "newStraightPadDistanceMm": 2.709180316258773,
+      "measuredDistanceMm": 2.709180316258773
+    },
+    {
+      "name": "bl_output_ground",
+      "from": "U_LCD_BL.4",
+      "to": "C_LCD_BL_OUT.2",
+      "oldStraightPadDistanceMm": 6.743321452110967,
+      "newStraightPadDistanceMm": 3.097868404516238,
+      "measuredDistanceMm": 3.097868404516239
+    },
+    {
+      "name": "bl_input",
+      "from": "U_LCD_BL.1",
+      "to": "C_LCD_BL_IN.1",
+      "oldStraightPadDistanceMm": 5.838269932248421,
+      "newStraightPadDistanceMm": 2.7285882433588253,
+      "measuredDistanceMm": 2.7285882433588253
+    },
+    {
+      "name": "bl_input_ground",
+      "from": "U_LCD_BL.4",
+      "to": "C_LCD_BL_IN.2",
+      "oldStraightPadDistanceMm": 8.021497104767665,
+      "newStraightPadDistanceMm": 4.5961524998411445,
+      "measuredDistanceMm": 4.5961524998411445
+    },
+    {
+      "name": "bl_comp",
+      "from": "U_LCD_BL.5",
+      "to": "C_LCD_BL_COMP.1",
+      "oldStraightPadDistanceMm": 2.949966,
+      "newStraightPadDistanceMm": 2.22764328409106,
+      "measuredDistanceMm": 2.22764328409106
+    },
+    {
+      "name": "bl_comp_ground",
+      "from": "U_LCD_BL.4",
+      "to": "C_LCD_BL_COMP.2",
+      "oldStraightPadDistanceMm": 4.45253251552372,
+      "newStraightPadDistanceMm": 3.899343355206873,
+      "measuredDistanceMm": 3.899343355206873
+    },
+    {
+      "name": "bl_feedback",
+      "from": "U_LCD_BL.6",
+      "to": "R_LCD_BL_SENSE.1",
+      "oldStraightPadDistanceMm": 3.1780330686567737,
+      "newStraightPadDistanceMm": 2.7337249652216293,
+      "measuredDistanceMm": 2.7337249652216293
+    },
+    {
+      "name": "bl_sense_ground",
+      "from": "U_LCD_BL.4",
+      "to": "R_LCD_BL_SENSE.2",
+      "oldStraightPadDistanceMm": 5.6022283469094685,
+      "newStraightPadDistanceMm": 5.147001500963062,
+      "measuredDistanceMm": 5.147001500963062
+    },
+    {
+      "name": "pwm_input_pulldown",
+      "from": "U_LCD_PWM_BUF.2",
+      "to": "R_LCD_BL_PD.1",
+      "oldStraightPadDistanceMm": 4.8194740055172,
+      "newStraightPadDistanceMm": 4.705263275296718,
+      "measuredDistanceMm": 4.705263275296718
+    }
+  ],
+  "parentCpuBypassMetrics": [
+    {
+      "name": "C_CORE_BULK",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 18.104143172213373,
+      "newNearestSupplyDistanceMm": 12.44025723206719,
+      "targetBall": "M13",
+      "candidateCount": 12,
+      "measuredNearestSupplyDistanceMm": 12.44025723206719
+    },
+    {
+      "name": "C_CORE_1",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 5.635601121442148,
+      "newNearestSupplyDistanceMm": 0.5099019513592784,
+      "targetBall": "L9",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.5099019513592784
+    },
+    {
+      "name": "C_CORE_2",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 3.676955262170048,
+      "newNearestSupplyDistanceMm": 0.5590169943749481,
+      "targetBall": "H11",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.5590169943749481
+    },
+    {
+      "name": "C_CORE_3",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 2.0591260281974004,
+      "newNearestSupplyDistanceMm": 0.7433034373659253,
+      "targetBall": "K12",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.7433034373659253
+    },
+    {
+      "name": "C_CORE_4",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 1.019803902718557,
+      "newNearestSupplyDistanceMm": 1.0816653826391955,
+      "targetBall": "M13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 1.0816653826391955
+    },
+    {
+      "name": "C_CORE_5",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 0.2828427124746186,
+      "newNearestSupplyDistanceMm": 0.9219544457292875,
+      "targetBall": "N13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.9219544457292875
+    },
+    {
+      "name": "C_CORE_6",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 2.2090722034374526,
+      "newNearestSupplyDistanceMm": 0.7433034373659254,
+      "targetBall": "N12",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 0.7433034373659254
+    },
+    {
+      "name": "C_CORE_7",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 4.604345773288534,
+      "newNearestSupplyDistanceMm": 2.3563743335896357,
+      "targetBall": "N13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 2.3563743335896357
+    },
+    {
+      "name": "C_CORE_8",
+      "function": "VDD_CORE",
+      "oldNearestSupplyDistanceMm": 6.6603303221386865,
+      "newNearestSupplyDistanceMm": 3.9623225512317886,
+      "targetBall": "N13",
+      "candidateCount": 39,
+      "measuredNearestSupplyDistanceMm": 3.9623225512317886
+    },
+    {
+      "name": "C_MPU_BULK",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 20.280039447693387,
+      "newNearestSupplyDistanceMm": 9.451454914456292,
+      "targetBall": "F13",
+      "candidateCount": 14,
+      "measuredNearestSupplyDistanceMm": 9.451454914456292
+    },
+    {
+      "name": "C_MPU_1",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.690724809414742,
+      "newNearestSupplyDistanceMm": 3.994058086708304,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 3.994058086708304
+    },
+    {
+      "name": "C_MPU_2",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.009975124224178,
+      "newNearestSupplyDistanceMm": 2.4233241632105273,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 2.4233241632105273
+    },
+    {
+      "name": "C_MPU_3",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 2.0880613017821097,
+      "newNearestSupplyDistanceMm": 1.081665382639196,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 1.081665382639196
+    },
+    {
+      "name": "C_MPU_4",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 3.6055512754639887,
+      "newNearestSupplyDistanceMm": 0.6082762530298199,
+      "targetBall": "H13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 0.6082762530298199
+    },
+    {
+      "name": "C_MPU_5",
+      "function": "VDD_MPU",
+      "oldNearestSupplyDistanceMm": 5.758472019555187,
+      "newNearestSupplyDistanceMm": 6.456972975009266,
+      "targetBall": "F13",
+      "candidateCount": 38,
+      "measuredNearestSupplyDistanceMm": 6.456972975009266
+    },
+    {
+      "name": "C_VDDS_BULK",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 24.247061677654877,
+      "newNearestSupplyDistanceMm": 11.194641575325223,
+      "targetBall": "E14",
+      "candidateCount": 16,
+      "measuredNearestSupplyDistanceMm": 11.194641575325223
+    },
+    {
+      "name": "C_VDDS_1",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.9849717690342534,
+      "newNearestSupplyDistanceMm": 2.7189152248645048,
+      "targetBall": "P14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 2.7189152248645048
+    },
+    {
+      "name": "C_VDDS_2",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 4.534313619501853,
+      "newNearestSupplyDistanceMm": 5.798275605729688,
+      "targetBall": "E14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 5.798275605729688
+    },
+    {
+      "name": "C_VDDS_3",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.162277660168379,
+      "newNearestSupplyDistanceMm": 3.9824615503479737,
+      "targetBall": "E14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 3.9824615503479737
+    },
+    {
+      "name": "C_VDDS_4",
+      "function": "VDDS",
+      "oldNearestSupplyDistanceMm": 3.3105890714493693,
+      "newNearestSupplyDistanceMm": 3.860051813123755,
+      "targetBall": "P14",
+      "candidateCount": 53,
+      "measuredNearestSupplyDistanceMm": 3.860051813123755
+    },
+    {
+      "name": "C_SRAM_CORE_BULK",
+      "function": "VDDS_SRAM_CORE_BG",
+      "oldNearestSupplyDistanceMm": 15.56020565416794,
+      "newNearestSupplyDistanceMm": 7.454528824815155,
+      "targetBall": "E9",
+      "candidateCount": 6,
+      "measuredNearestSupplyDistanceMm": 7.454528824815155
+    },
+    {
+      "name": "C_SRAM_CORE_1",
+      "function": "VDDS_SRAM_CORE_BG",
+      "oldNearestSupplyDistanceMm": 7.964923100695951,
+      "newNearestSupplyDistanceMm": 0.5099019513592785,
+      "targetBall": "E9",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 0.5099019513592785
+    },
+    {
+      "name": "C_SRAM_MPU_BULK",
+      "function": "VDDS_SRAM_MPU_BB",
+      "oldNearestSupplyDistanceMm": 18.647251808242416,
+      "newNearestSupplyDistanceMm": 7.517978451685002,
+      "targetBall": "D10",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 7.517978451685002
+    },
+    {
+      "name": "C_SRAM_MPU_1",
+      "function": "VDDS_SRAM_MPU_BB",
+      "oldNearestSupplyDistanceMm": 9.35093578204877,
+      "newNearestSupplyDistanceMm": 5.0803543183522155,
+      "targetBall": "D10",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 5.0803543183522155
+    },
+    {
+      "name": "C_HV1_BULK",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 31.499206339207976,
+      "newNearestSupplyDistanceMm": 13.453624047073712,
+      "targetBall": "P8",
+      "candidateCount": 2,
+      "measuredNearestSupplyDistanceMm": 13.453624047073712
+    },
+    {
+      "name": "C_HV1_1",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 7.924645102463581,
+      "newNearestSupplyDistanceMm": 2.641968962724582,
+      "targetBall": "P8",
+      "candidateCount": 18,
+      "measuredNearestSupplyDistanceMm": 2.641968962724582
+    },
+    {
+      "name": "C_HV1_2",
+      "function": "VDDSHV1",
+      "oldNearestSupplyDistanceMm": 8.676404785393544,
+      "newNearestSupplyDistanceMm": 4.876474136094645,
+      "targetBall": "P8",
+      "candidateCount": 18,
+      "measuredNearestSupplyDistanceMm": 4.876474136094645
+    },
+    {
+      "name": "C_HV2_BULK",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 18.341210428976602,
+      "newNearestSupplyDistanceMm": 14.30978686074674,
+      "targetBall": "P11",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 14.30978686074674
+    },
+    {
+      "name": "C_HV2_1",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 12.814054783713075,
+      "newNearestSupplyDistanceMm": 0.3162277660168353,
+      "targetBall": "P10",
+      "candidateCount": 23,
+      "measuredNearestSupplyDistanceMm": 0.3162277660168353
+    },
+    {
+      "name": "C_HV2_2",
+      "function": "VDDSHV2",
+      "oldNearestSupplyDistanceMm": 10.912378292562991,
+      "newNearestSupplyDistanceMm": 5.189412298131649,
+      "targetBall": "P11",
+      "candidateCount": 23,
+      "measuredNearestSupplyDistanceMm": 5.189412298131649
+    },
+    {
+      "name": "C_HV3_BULK",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 23.435016535091247,
+      "newNearestSupplyDistanceMm": 12.857682528356346,
+      "targetBall": "P13",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 12.857682528356346
+    },
+    {
+      "name": "C_HV3_1",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 8.06225774829855,
+      "newNearestSupplyDistanceMm": 2.3769728648009423,
+      "targetBall": "P13",
+      "candidateCount": 28,
+      "measuredNearestSupplyDistanceMm": 2.3769728648009423
+    },
+    {
+      "name": "C_HV3_2",
+      "function": "VDDSHV3",
+      "oldNearestSupplyDistanceMm": 6.551335741663678,
+      "newNearestSupplyDistanceMm": 5.210806079677117,
+      "targetBall": "P13",
+      "candidateCount": 28,
+      "measuredNearestSupplyDistanceMm": 5.210806079677117
+    },
+    {
+      "name": "C_HV4_BULK",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 24.40491753725056,
+      "newNearestSupplyDistanceMm": 12.11156472137271,
+      "targetBall": "H14",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 12.11156472137271
+    },
+    {
+      "name": "C_HV4_1",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 5.66038867923396,
+      "newNearestSupplyDistanceMm": 4.981214711292819,
+      "targetBall": "J14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 4.981214711292819
+    },
+    {
+      "name": "C_HV4_2",
+      "function": "VDDSHV4",
+      "oldNearestSupplyDistanceMm": 7.224956747275376,
+      "newNearestSupplyDistanceMm": 1.4534441853748623,
+      "targetBall": "H14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 1.4534441853748623
+    },
+    {
+      "name": "C_HV5_BULK",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 13.613228860193308,
+      "newNearestSupplyDistanceMm": 11.50173899895142,
+      "targetBall": "L14",
+      "candidateCount": 13,
+      "measuredNearestSupplyDistanceMm": 11.50173899895142
+    },
+    {
+      "name": "C_HV5_1",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 7.840918313565061,
+      "newNearestSupplyDistanceMm": 1.4534441853748623,
+      "targetBall": "L14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 1.4534441853748623
+    },
+    {
+      "name": "C_HV5_2",
+      "function": "VDDSHV5",
+      "oldNearestSupplyDistanceMm": 9.91564420499243,
+      "newNearestSupplyDistanceMm": 3.1016124838541623,
+      "targetBall": "L14",
+      "candidateCount": 36,
+      "measuredNearestSupplyDistanceMm": 3.1016124838541623
+    },
+    {
+      "name": "C_HV6_BULK",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 15.72895419282541,
+      "newNearestSupplyDistanceMm": 8.683317338436963,
+      "targetBall": "F14",
+      "candidateCount": 15,
+      "measuredNearestSupplyDistanceMm": 8.683317338436963
+    },
+    {
+      "name": "C_HV6_1",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.841052550594825,
+      "newNearestSupplyDistanceMm": 5.391892061234165,
+      "targetBall": "E13",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 5.391892061234165
+    },
+    {
+      "name": "C_HV6_2",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.603029607687669,
+      "newNearestSupplyDistanceMm": 6.462971452822609,
+      "targetBall": "F14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 6.462971452822609
+    },
+    {
+      "name": "C_HV6_3",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 6.957010852370432,
+      "newNearestSupplyDistanceMm": 6.4381674411279475,
+      "targetBall": "G14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 6.4381674411279475
+    },
+    {
+      "name": "C_HV6_4",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 8.044874144447505,
+      "newNearestSupplyDistanceMm": 4.834511350695125,
+      "targetBall": "F14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 4.834511350695125
+    },
+    {
+      "name": "C_HV6_5",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 9.620810776644552,
+      "newNearestSupplyDistanceMm": 4.80130190677487,
+      "targetBall": "G14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 4.80130190677487
+    },
+    {
+      "name": "C_HV6_6",
+      "function": "VDDSHV6",
+      "oldNearestSupplyDistanceMm": 11.48564321228898,
+      "newNearestSupplyDistanceMm": 3.2280024783137926,
+      "targetBall": "F14",
+      "candidateCount": 40,
+      "measuredNearestSupplyDistanceMm": 3.2280024783137926
+    },
+    {
+      "name": "C_VDDS_RTC",
+      "function": "VDDS_RTC",
+      "oldNearestSupplyDistanceMm": 14.239382009062052,
+      "newNearestSupplyDistanceMm": 4.117341375208035,
+      "targetBall": "D7",
+      "candidateCount": 7,
+      "measuredNearestSupplyDistanceMm": 4.117341375208035
+    },
+    {
+      "name": "C_VDDS_PLL_DDR",
+      "function": "VDDS_PLL_DDR",
+      "oldNearestSupplyDistanceMm": 14.0356688476182,
+      "newNearestSupplyDistanceMm": 3.1144823004794886,
+      "targetBall": "E7",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 3.1144823004794886
+    },
+    {
+      "name": "C_VDDS_PLL_CORE_LCD",
+      "function": "VDDS_PLL_CORE_LCD",
+      "oldNearestSupplyDistanceMm": 13.3461604965623,
+      "newNearestSupplyDistanceMm": 4.127044947659281,
+      "targetBall": "R10",
+      "candidateCount": 14,
+      "measuredNearestSupplyDistanceMm": 4.127044947659281
+    },
+    {
+      "name": "C_VDDS_OSC",
+      "function": "VDDS_OSC",
+      "oldNearestSupplyDistanceMm": 11.58792474949678,
+      "newNearestSupplyDistanceMm": 1.5976545308670462,
+      "targetBall": "R11",
+      "candidateCount": 16,
+      "measuredNearestSupplyDistanceMm": 1.5976545308670462
+    },
+    {
+      "name": "C_VDDS_PLL_MPU",
+      "function": "VDDS_PLL_MPU",
+      "oldNearestSupplyDistanceMm": 8.497058314499203,
+      "newNearestSupplyDistanceMm": 2.3021728866442683,
+      "targetBall": "H15",
+      "candidateCount": 25,
+      "measuredNearestSupplyDistanceMm": 2.3021728866442683
+    },
+    {
+      "name": "C_VDDA3P3V_USB0",
+      "function": "VDDA3P3V_USB0",
+      "oldNearestSupplyDistanceMm": 7.912016177940995,
+      "newNearestSupplyDistanceMm": 4.011545836706845,
+      "targetBall": "N15",
+      "candidateCount": 22,
+      "measuredNearestSupplyDistanceMm": 4.011545836706845
+    },
+    {
+      "name": "C_VDDA3P3V_USB1",
+      "function": "VDDA3P3V_USB1",
+      "oldNearestSupplyDistanceMm": 8.1706792863262,
+      "newNearestSupplyDistanceMm": 4.527692569068709,
+      "targetBall": "R15",
+      "candidateCount": 22,
+      "measuredNearestSupplyDistanceMm": 4.527692569068709
+    },
+    {
+      "name": "C_VDDA1P8V_USB0",
+      "function": "VDDA1P8V_USB0",
+      "oldNearestSupplyDistanceMm": 13.038404810405297,
+      "newNearestSupplyDistanceMm": 4.850773134253963,
+      "targetBall": "N16",
+      "candidateCount": 24,
+      "measuredNearestSupplyDistanceMm": 4.850773134253963
+    },
+    {
+      "name": "C_VDDA1P8V_USB1",
+      "function": "VDDA1P8V_USB1",
+      "oldNearestSupplyDistanceMm": 12.448293055676347,
+      "newNearestSupplyDistanceMm": 3.4889110048839043,
+      "targetBall": "R16",
+      "candidateCount": 24,
+      "measuredNearestSupplyDistanceMm": 3.4889110048839043
+    },
+    {
+      "name": "C_CAP_VDD_SRAM_CORE",
+      "function": "CAP_VDD_SRAM_CORE",
+      "oldNearestSupplyDistanceMm": 1.52315462117278,
+      "newNearestSupplyDistanceMm": 2.2610838109190015,
+      "targetBall": "D9",
+      "candidateCount": 7,
+      "measuredNearestSupplyDistanceMm": 2.2610838109190015
+    },
+    {
+      "name": "C_CAP_VDD_SRAM_MPU",
+      "function": "CAP_VDD_SRAM_MPU",
+      "oldNearestSupplyDistanceMm": 1.8110770276274837,
+      "newNearestSupplyDistanceMm": 2.780287754891568,
+      "targetBall": "D11",
+      "candidateCount": 10,
+      "measuredNearestSupplyDistanceMm": 2.780287754891568
+    },
+    {
+      "name": "C_CAP_VBB_MPU",
+      "function": "CAP_VBB_MPU",
+      "oldNearestSupplyDistanceMm": 5.035871324805669,
+      "newNearestSupplyDistanceMm": 3.565459297201414,
+      "targetBall": "C10",
+      "candidateCount": 8,
+      "measuredNearestSupplyDistanceMm": 3.565459297201414
+    },
+    {
+      "name": "C_CAP_VDD_RTC",
+      "function": "CAP_VDD_RTC",
+      "oldNearestSupplyDistanceMm": 7.615773105863909,
+      "newNearestSupplyDistanceMm": 3.3615472627943235,
+      "targetBall": "D6",
+      "candidateCount": 2,
+      "measuredNearestSupplyDistanceMm": 3.3615472627943235
+    }
+  ],
+  "parentPmicDistances": [
+    {
+      "from": "U_PMIC.20",
+      "to": "L_DDR.1",
+      "oldStraightPadDistanceMm": 11.505757394402595,
+      "newStraightPadDistanceMm": 4.2786368411972076,
+      "category": "switches",
+      "measuredDistanceMm": 4.2786368411972076
+    },
+    {
+      "from": "U_PMIC.23",
+      "to": "L_MPU.1",
+      "oldStraightPadDistanceMm": 11.23668032890791,
+      "newStraightPadDistanceMm": 2.8681486039021764,
+      "category": "switches",
+      "measuredDistanceMm": 2.8681486039021764
+    },
+    {
+      "from": "U_PMIC.31",
+      "to": "L_CORE.1",
+      "oldStraightPadDistanceMm": 7.093727843232356,
+      "newStraightPadDistanceMm": 3.2401150000964467,
+      "category": "switches",
+      "measuredDistanceMm": 3.2401150000964467
+    },
+    {
+      "from": "L_DDR.2",
+      "to": "C_PMIC_DDR_OUT.1",
+      "oldStraightPadDistanceMm": 6.386659750174577,
+      "newStraightPadDistanceMm": 5.808434966882211,
+      "category": "outputs",
+      "measuredDistanceMm": 5.8084349668822135
+    },
+    {
+      "from": "L_MPU.2",
+      "to": "C_PMIC_MPU_OUT.1",
+      "oldStraightPadDistanceMm": 6.386659750174576,
+      "newStraightPadDistanceMm": 3.797037103387325,
+      "category": "outputs",
+      "measuredDistanceMm": 3.7970371033873223
+    },
+    {
+      "from": "L_CORE.2",
+      "to": "C_PMIC_CORE_OUT.1",
+      "oldStraightPadDistanceMm": 6.161529899310722,
+      "newStraightPadDistanceMm": 3.7970371033873214,
+      "category": "outputs",
+      "measuredDistanceMm": 3.7970371033873214
+    },
+    {
+      "from": "U_PMIC.19",
+      "to": "C_PMIC_DDR_OUT.1",
+      "oldStraightPadDistanceMm": 14.594591427534036,
+      "newStraightPadDistanceMm": 5.608838621198687,
+      "category": "feedback",
+      "measuredDistanceMm": 5.6088386211986885
+    },
+    {
+      "from": "U_PMIC.24",
+      "to": "C_PMIC_MPU_OUT.1",
+      "oldStraightPadDistanceMm": 15.53831891151118,
+      "newStraightPadDistanceMm": 5.405011914494361,
+      "category": "feedback",
+      "measuredDistanceMm": 5.4050119144943585
+    },
+    {
+      "from": "U_PMIC.29",
+      "to": "C_PMIC_CORE_OUT.1",
+      "oldStraightPadDistanceMm": 12.715501846158096,
+      "newStraightPadDistanceMm": 6.245547087777816,
+      "category": "feedback",
+      "measuredDistanceMm": 6.245547087777816
+    },
+    {
+      "from": "U_PMIC.21",
+      "to": "C_PMIC_DCDC1_IN.1",
+      "oldStraightPadDistanceMm": 6.273076094999169,
+      "newStraightPadDistanceMm": 0.4823950161952343,
+      "category": "inputs",
+      "measuredDistanceMm": 0.4823950161952343
+    },
+    {
+      "from": "U_PMIC.22",
+      "to": "C_PMIC_DCDC2_IN.1",
+      "oldStraightPadDistanceMm": 8.35852909958744,
+      "newStraightPadDistanceMm": 2.644200250860361,
+      "category": "inputs",
+      "measuredDistanceMm": 2.644200250860361
+    },
+    {
+      "from": "U_PMIC.32",
+      "to": "C_PMIC_DCDC3_IN.1",
+      "oldStraightPadDistanceMm": 9.243428607700174,
+      "newStraightPadDistanceMm": 2.8948908787120082,
+      "category": "inputs",
+      "measuredDistanceMm": 2.8948908787120082
+    },
+    {
+      "from": "U_PMIC.2",
+      "to": "C_PMIC_VINLDO.1",
+      "oldStraightPadDistanceMm": 2.5545305342958797,
+      "newStraightPadDistanceMm": 0.5154165799060035,
+      "category": "inputs",
+      "measuredDistanceMm": 0.5154165799060035
+    },
+    {
+      "from": "U_PMIC.7",
+      "to": "C_PMIC_SYS.1",
+      "oldStraightPadDistanceMm": 13.242600157697503,
+      "newStraightPadDistanceMm": 3.147373774855792,
+      "category": "support",
+      "measuredDistanceMm": 3.147373774855795
+    },
+    {
+      "from": "U_PMIC.8",
+      "to": "C_PMIC_SYS.1",
+      "oldStraightPadDistanceMm": 13.600064786597526,
+      "newStraightPadDistanceMm": 2.7697758800397545,
+      "category": "support",
+      "measuredDistanceMm": 2.7697758800397576
+    },
+    {
+      "from": "U_PMIC.12",
+      "to": "C_PMIC_USB.1",
+      "oldStraightPadDistanceMm": 4.539893969318006,
+      "newStraightPadDistanceMm": 2.5720890833425663,
+      "category": "support",
+      "measuredDistanceMm": 2.5720890833425663
+    },
+    {
+      "from": "U_PMIC.3",
+      "to": "C_PMIC_LDO1.1",
+      "oldStraightPadDistanceMm": 7.059803967620771,
+      "newStraightPadDistanceMm": 3.4410665866341508,
+      "category": "support",
+      "measuredDistanceMm": 3.4410665866341508
+    },
+    {
+      "from": "U_PMIC.1",
+      "to": "C_PMIC_LDO2.1",
+      "oldStraightPadDistanceMm": 8.92193607075471,
+      "newStraightPadDistanceMm": 2.783965023603924,
+      "category": "support",
+      "measuredDistanceMm": 2.783965023603924
+    },
+    {
+      "from": "U_PMIC.40",
+      "to": "C_PMIC_ANALOG_OUT.1",
+      "oldStraightPadDistanceMm": 8.617658960045354,
+      "newStraightPadDistanceMm": 4.276447204590511,
+      "category": "support",
+      "measuredDistanceMm": 4.276447204590511
+    },
+    {
+      "from": "U_PMIC.43",
+      "to": "C_PMIC_IO_OUT.1",
+      "oldStraightPadDistanceMm": 8.837669711900867,
+      "newStraightPadDistanceMm": 5.986145978728719,
+      "category": "support",
+      "measuredDistanceMm": 5.986145978728719
+    },
+    {
+      "from": "U_PMIC.47",
+      "to": "C_PMIC_BYPASS.1",
+      "oldStraightPadDistanceMm": 4.90942504565107,
+      "newStraightPadDistanceMm": 3.7299982759012082,
+      "category": "support",
+      "measuredDistanceMm": 3.7299982759012082
+    },
+    {
+      "from": "U_PMIC.48",
+      "to": "C_PMIC_INT_LDO.1",
+      "oldStraightPadDistanceMm": 4.027263203507066,
+      "newStraightPadDistanceMm": 2.9765336380968366,
+      "category": "support",
+      "measuredDistanceMm": 2.9765336380968366
+    }
+  ],
+  "smtStencil": {
+    "matchedPads": 1165,
+    "matchedNonplatedHoles": 2,
+    "scaledApertures": 1104,
+    "fullSizeApertures": 9,
+    "noPastePads": 48,
+    "geometryPreserved": true,
+    "nativeThroughHoleAperturesUnqualified": 8,
+    "fullStencilQualification": false
+  },
+  "independentKicad": {
+    "processExitCode": 5,
+    "errors": 0,
+    "warningCount": 403,
+    "warningTypes": {
+      "silk_edge_clearance": 5,
+      "silk_overlap": 199,
+      "silk_over_copper": 199
+    },
+    "unconnectedItemsReported": 499,
+    "unconnectedCountIsComplete": false,
+    "perItemExclusions": 0,
+    "ignoredRuleSeverities": 0,
+    "exactLocalFootprints": 280,
+    "physicalRecordSha256": "25cb5a1346346674ff098ae53965a019c5656561a73c11cbda99d0c8837bfe3a",
+    "fullDrcPass": false,
+    "scope": "Unrouted placement. Full DRC fails because open connections and silkscreen warnings remain."
+  },
+  "nativePolygonPastePolicyPreserved": true,
+  "toolchain": {
+    "tscircuit": "0.0.2744",
+    "core": "0.0.2085",
+    "capacityAutorouter": "0.0.958",
+    "cli": "0.1.2237"
+  },
+  "mechanical": {
+    "inheritedFrom": "experiments/am3352-g350-ddr-corridor.circuit.tsx",
+    "outlineExchangeVerified": true,
+    "actualSizePdfVerified": true,
+    "shellFitVerified": false,
+    "mountingGeometryVerified": false
+  },
+  "remaining": [
+    "Route and inspect PMIC and all three converter switching loops, quiet feedback, supply returns and thermal ground vias.",
+    "Build fresh DDR signal/ground/power escapes and continuous references for CPU(0,20) and RAM(0,0); use bus_lanes phases on the complete placed source and repair checked routes as needed.",
+    "Finish full connectivity, shorts, timing, stackup and independent manufacturing checks.",
+    "Implement and validate Linux panel, pinmux, audio and shared USB-C installation/recovery.",
+    "Qualify battery protection, NTC, load current, dimensions and speaker mating/load.",
+    "Verify original shell mounting, ribs, button/port alignment and assembled clearances."
+  ],
+  "scope": "Placement only. Distances are engineering comparisons, not manufacturer trace-length limits. Actual copper loops, dedicated bypass vias, thermal grounding, effective capacitance, original shell fit and routing remain incomplete.",
+  "hashes": {
+    "dist/experiments/am3352-g350-converter-placement/circuit.json": "3472fae419a96959403bba98227d761b92483269dbad128edaebe728be731bac",
+    "experiments/am3352-g350-converter-placement.circuit.tsx": "771daaba540f50d57ac158723a061359216262fbb463735904f4f02bb8a2465a",
+    "dist/experiments/am3352-g350-pmic-placement/circuit.json": "a76581781024de52d555b7c6f37dd5708ad7293c2b4a902414b721adccafdc2d",
+    "checks/layout/pmic-placement-variant/g350-pmic-placement-check-summary.json": "ef5d9b2b89118c844f7766b848d1bfca7d0e1c996186b38e9065d77faf81cac7",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "lib/am3352/placement/ConverterPlacement.tsx": "7b3b6a65e4d5d90e46934cdb5ad14475ba8d732cacd788f884aa3eb38ceff823",
+    "lib/am3352/placement/converter-placements.json": "e7fcd9c89e4cb819639e4f1f4b7b6dbcd76818c58e64b1e634f4ebe5fa1a70e5",
+    "scripts/plan-g350-converter-placement.mjs": "8c65e6615362cd35c7e7967dac5428858273493d667e21c874bfaa6982cf51f8",
+    "scripts/check-g350-converter-placement.mjs": "2edc8a1ce9f6519e202cfa5ef2ba2ff72ef70ced8d79326eb86ec9183e9f5655",
+    "checks/layout/converter-placement-variant/converter-plan.json": "797a33f7504c3492d068bec96e9e72a76a63a9060b9458b55f37739c9a828e8c",
+    "reference/am3352/am3352.pdf": "ec145b6b19a7ff35118bb0ec06b5ae9c51aa97ccdf4da935f2176d9168af0205",
+    "reference/am3352/tps61023-datasheet.pdf": "f74822dd6b1173c59bab1b508fe14468f524052dc20add6ad15291341e72d743",
+    "reference/am3352/tps62162-datasheet.pdf": "abc824ca04ee985ede3a513172ccdd2a42c8e1fdcfc3af5acdbe2c1af31aaa72",
+    "reference/am3352/display/TPS61165-datasheet.pdf": "bb0e9f995c5f8e0b73044d08ded5b0999cc1cad1bf2c532e0de257d2bb91aa35",
+    "package.json": "7ec924f6947e4c7409c3be3ea9d5c6060166acea2d5219a19f930d5b6b3364c1",
+    "package-lock.json": "99c1153b48c7de80bffcd24444aa34f29c11f5e1664d96e7c554678411170795",
+    "checks/layout/converter-placement-variant/g350-converter-placement-top.svg": "510a45915f650d844241609a6305678b2ae826eca3a52710c711888fdb288868",
+    "checks/layout/converter-placement-variant/g350-converter-placement-top.png": "a7649633237dffd14a6103f2e2dc116d7f4156d3dcbf1d8790382960d73dc6e0",
+    "checks/layout/converter-placement-variant/g350-converter-placement-bottom.svg": "4cfc37406437340358611eac8441c680db7cdf4d1f9c09987a2e170ced3f9455",
+    "checks/layout/converter-placement-variant/g350-converter-placement-bottom.png": "112a4e25894ebbce1e0984716541632a4c086df35a7aa6a3a2bd03f6ef4c6b96",
+    "dist/experiments/am3352-g350-ddr-corridor/circuit.json": "a9427ee89a309ba5be281575d5dd7ee4116034432209eee02adf97c0786de583",
+    "mechanical/g350-provisional-outline.dxf": "8f4c16e547906148d39aa947ed49f7b062f8f4e20d1e38dd84f1eee5494f72cd",
+    "mechanical/g350-paper-fit-template.svg": "93383545acb81f6c18426de486ff43e39a21f2c1cc0c0909129c5fb9c8bc23bb",
+    "scripts/export-g350-fit-outline.mjs": "2d253c3dd71a74457c17f27217eee842629594ef88591d7ef4a7ac82bd0ea74e",
+    "output/pdf/g350-actual-size-fit-template.pdf": "e365b11bcfbd39a99be156764ade77ce07d0fa56d9af2f249d518179d1125068",
+    "mechanical/g350-fit-template-preview.png": "bdf2a9968c9183b10893d93c5d8c956669d509ccd04d18242f7a4cf9a71c1521",
+    "/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/render-g350-fit-template.py": "3114fbf64852cedd564b9881ace47ee9402e7a1c01dd40139b9af83533258de8",
+    "checks/layout/converter-placement-variant/converter-placement-audit.json": "8e1bb657fdf504dca556465ea213ef90a7e492e2f38bbd49fe5e9cf86c9dec7f",
+    "checks/layout/converter-placement-variant/g350-converter-placement-render.json": "00d2c98f2260d78ecc7dc38483246561ef10e5728cef584fb85000168994d26f",
+    "checks/layout/converter-placement-variant/engineering-notes.json": "abb23f8947d37f2783710f3875f04b70de848245db2eef28f4dd6521dfd95a5a",
+    "checks/layout/converter-placement-variant/g350-converter-placement.kicad_pcb": "4ba85be3c874a66a8ebb16df46fe70b73bba695f679ae63612380286885f2b70",
+    "checks/layout/converter-placement-variant/g350-converter-placement.kicad_pro": "79c23527f1a005d9745b14f8214e0aff6d4b06b5d08a24e7af84f9418df14562",
+    "checks/layout/converter-placement-variant/g350-converter-placement.kicad_dru": "9b11da8892aaac037a9642c163db11cd86ff1aa4cde817e8f0155aa00b3e6a1a",
+    "checks/layout/converter-placement-variant/g350-converter-placement-kicad-drc.json": "bc3c1cde325c6828913ca7d5b4169631e40447d7b2bcb18a3f1fd57f982db49a",
+    "checks/layout/converter-placement-variant/stencil-final-verification.json": "aa8999a0026670035e53bc505181b01d9097a900b7cdb9b9788eec6dc525cb0d",
+    "checks/layout/converter-placement-variant/fp-lib-table": "d54250caa0e905c60ad14790b8b4e74b8b2f237cac43e820feba96ac1c87f365",
+    "checks/layout/converter-placement-variant/kicad-library.log": "33d7da8bafd7c8741c9952b6f26c69fcb1a004bfa40e184459310fe4f9b58fbc",
+    "checks/layout/converter-placement-variant/build.log": "c98a5085010b355665df9b1b59dfc326a693fd2824c52d6aeaff076ff3e3b9f8",
+    "checks/layout/converter-placement-variant/typecheck.log": "2a0a25f29122fc1809859614a598d9423a1113041ad373307c7e5b408bb2031e",
+    "checks/layout/converter-placement-variant/shorts.log": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca",
+    "mechanical/g350-outline-exchange-check.json": "f9559f9d379b9898a8c2462a0b46ee0bb2d30e3d5a7c94cde8a747cf8f54a0a9",
+    "mechanical/g350-fit-template-pdf-check.json": "ae03e4d3e1a8d907d5b843da5adf2ab9fe6c9da210c5dedf28a15f1e38b1662b",
+    "scripts/render-g350-converter-placement.mjs": "3441f3f0f4f5efc731810c7e476e4b3049cc08d6706cfbc90e1f7f24e85e3bfc",
+    "scripts/summarize-g350-converter-placement.mjs": "7130f51b3cd4783d52c9e31fe928bdce0162ed4264b4ab12a16a8baecf1a678d",
+    "scripts/prepare-g350-placement-kicad.mjs": "e0745bffdb5da991c23a8548ad046f4ab1f40ddb4ec36479731fdd554bfd98ae",
+    "scripts/prepare-g350-stencil.py": "44787a7a3ad78d9d0ebac3dbc9e6f24988ac4dab1dcc369e338fdb3c49eced4e",
+    "scripts/prepare-kicad-library.py": "4bd5517dd8a63776d94e82d6cf6c4b09a2fad88f5f4448f310c1a8add2412609",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_AUDIO_BULK_392600202ec82a7f246a54de1a0c7f3d.kicad_mod": "e3b31051520e8f06a982c62e1fd200844b0308f2cb0b3f8c7c8e98857ec4c657",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_AUDIO_HF_6961d4c073bfaa617e1d80027784aa5d.kicad_mod": "82163d31441fef1495558f5dd8ff0ee2a65271af2b773d3dfa2b20ae86602e08",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_BATTERY_017ffda058f040414c9f81de0dd0bc03.kicad_mod": "27df46b675bdcec0d9b6d24d2c54339b92343ea8208d121e006c94d2efa5acc6",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CAP_VBB_MPU_679ea71057047a9015a79c302bb54230.kicad_mod": "e1f63a37272a6638dcb10e0fc9bca95e6a8a99aeb8ce82fd841b8d652fcdd773",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CAP_VDD_RTC_72c6b4006868de5f5e0b08be53ad331d.kicad_mod": "70450ddbcbaa6561788fe2e4393bf38448e03d35a1e8a8ae74a3e19497a3c006",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CAP_VDD_SRAM_CORE_5924d8206382adc16de08362783e5903.kicad_mod": "29cb7844ce26a1fccdbd586eed1903d866b949d34ea68edf790087a5fc37ab29",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CAP_VDD_SRAM_MPU_53e9a9005e477ea168a55442730329e3.kicad_mod": "231b61a0f9609183e102edddf794e89ab9469acbcf69b6e9e08adc9d9cd537db",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_1_0342b2000da087a117fe5d42225c32e3.kicad_mod": "b2da5051c84a3b1fec3f1b64fb3ae9a01646f63bebc6f3459834df3cdb3800f5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_2_54f369a05f513f4169af14e2740cea83.kicad_mod": "ff51337362e1152ef054372540459ae51d3928bef1d4ad6099842d462ec8a287",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_3_2a942aa26bf1090252b2189e11553a3e.kicad_mod": "19a2bfd3a86c14a118e86b6e4ae74003485249ffd9b29585f7c8c5fe28a34c43",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_4_16e2a7a021407d412b9e52e235fc2883.kicad_mod": "d486eb17c4e9d6fbcf8742bb31ee3988dec8c0e9d59f24a7ac3771575fa68db3",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_5_6eca6c00792841a17c79e8be721c131d.kicad_mod": "2988f6f98c8d22da0fdd89db34c192a035604adb495aeb5a228e344fe5276b28",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_6_27a7a2e669048146559ea05a1441c1fa.kicad_mod": "876db5c7cf80d6177549c2dc8dd5705b650967e849703ba8e9299221ef25d701",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_7_4ea172560d4493f634184a6a757528ca.kicad_mod": "c433f6a09a0e16ec7777c43764917653f6eefed315277b01f3a68787bf64e60d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_8_1571d1400b13fb9f00b625fe09a7afa3.kicad_mod": "70a9c3dffba1192af4282dff5e3decdd53fc01782b047a5d333a1c543fff394d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_CORE_BULK_3f7b4a60412c6fdf3e2bd5e2427be45d.kicad_mod": "e07f9b12b1b22f4be5f6f8e21b74141090900e93c71992bfe32c26cbf39a30b5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_10_13dba440097dce9f00e007020b3ddca3.kicad_mod": "2c4073905244f198faaabc48973640b3dfba02a7b29cc33c79bab4790b93ec8d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_11_0d0559c002a7841f07b6518212142723.kicad_mod": "a538f2f5683b87a08221fb77c8f3a398effe39e8b395af7aa4f7a4f518258430",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_12_3df48c803396b6df2938e13e1edb0b9d.kicad_mod": "336997c6836872426715343250bdad0e6cb7cd1534c79ff57d6ef80469c08cb8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_13_6b80522061227c7f56c4a6de4c66d13d.kicad_mod": "5ba80a256c9ced21fb7efebe067f36eded4262c16c4471274482e260615d6c6a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_14_64aa07a05a4c31ff4fee5c5e459086bd.kicad_mod": "054d2b7ba19812aad761b6cdfecb539305854d5d98c64c59cd71700f390c0b0a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_15_6a66c5a074c49b417f2270e2767fb97d.kicad_mod": "ad4c6f9bcc29795fd650f78370173218a09529448ad3a9fe2f35f6668b54f5a3",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_16_3cdb00004738d5a15196ab425bf480e3.kicad_mod": "8f4434452fc213325046e640c9b9a20c9e9cde0a9df628891ed324a226c47dac",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_17_43b14a804e0f2021586cf5c262cacb63.kicad_mod": "db600ad4ad07ceb012ca12ebfbd705782cdc80ca0a4ae924bd8cc6f0d76c81fe",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_18_49dd50803f7f7adf3521a53e2ac3cf9d.kicad_mod": "6d069774dc039cd09b34137c7ed0ea1f9a41d8733f3119b877316e48f3a19d00",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_19_7ab837607ae9f2ff708c1d5e662e47bd.kicad_mod": "97c30d1bc761f4dec29a93bb70027d18a83ee9d2e0cc521cb827459312fda242",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_1_2898d3a01e3afdff13dd285e097f52bd.kicad_mod": "7a38790cedf1834be0e2b0d927b14de04578ed39f7abfe7cd7b65c27348b3d24",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_20_7e717e207413a87f69b5d2de5f57fd3d.kicad_mod": "aee6307c7a726b15918ed9473e9816f06ffe1df4ec25e24642e7e2bac0152bf4",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_2_67dadb807238b1217c9686c2790ba39d.kicad_mod": "16aadc15b8fec74a861e0ec682efb71a567ccf423a4a9238fc6b757961cd79fe",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_3_04949b0005c93aa1102710421a84e5e3.kicad_mod": "21fdcf419a21d2234b79d62ee7c245e911b99d0f6adceeb7fd122f819fe3843d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_4_7030576065d281bf5b74ac1e5116d67d.kicad_mod": "abe865eaebd582fa206d5712e8228607315397eadda73510319dc58fa7451a13",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_5_695a0ce05efc373f549e619e4a408bfd.kicad_mod": "de4efa60fb4fe634cf4bfbf27b5ea8166fbed0a264b6544ea95a5f2e05181504",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_6_65b6c060701496017a726ba27b2fbebd.kicad_mod": "4fb5a0c1b091d733881b86d372d579313fdcc9bcc2d4d387c05380d207441905",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_7_382afac04288d0614ce6a60257447ba3.kicad_mod": "cf88611c0dbf2a156d0eb80836121f916e2e15d8fed881430265794865f654a9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_8_4a9f542054fd29c15f5aff6269b8d503.kicad_mod": "4582a69dba9715390b8428b0e85567ad9690fcb4bcadfa17b33b2ab092a93a45",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_9_19b02160240df7012e6bcca238c9a243.kicad_mod": "4a7edd02cdccd3e6a3cdafc2e352746a6e1a0d66fe0f8035b591b11402581aa6",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_BULK1_42cca9e062c3183f0852da5e521d6383.kicad_mod": "fb6a981b58c877286cdcc990e6f3deb62a6feb14635e63246c1bffffa814d60a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_CPU_BULK2_0096cea059d96f414bb652de0eb9eb03.kicad_mod": "12e29c98a8d55e0acda662a39e21a1f5baf87255628c97288ec3a39d7a5aa164",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_10_4501b4c03aa3df1f3046097e25e833dd.kicad_mod": "3fef2762903c870725c379b3089497445d08df5745153c1bd7def7fc4fc64c92",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_11_114793fc7cf8063c175787845458eabc.kicad_mod": "8c6c50ac717b163fcbb644699fdda87cd697070e786b6516f7ba1307da38fb33",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_12_5afa68c065583e616fb614027a13e9a3.kicad_mod": "47bdbc7fe4c90a18237bec6fc33c625317206b6543e263a34d08759b3eb7d010",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_1_6bc1b260139693616d1126de12471ee3.kicad_mod": "26fd0ce4dc0739ea26de9ee967a596f12f0d03916f7d63bb014e85469398375c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_2_015ca1be6a53d08229fbbd3e41b4b502.kicad_mod": "fb13ee816383359f895817aef579ffb4eee2be5910cf00111f954f0fd596bf40",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_3_02a1d3e07cb671e103f1485e7b66fd63.kicad_mod": "53118b90635dc5df2cb05e3fdac173b997b7d8062a9bad3ef2bbe831a11a27fd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_4_7bd1b9c2187dd3fe53329e42411cef7e.kicad_mod": "ee55276e9ed92c24505e78b4b496ed45b4eee142e5d0f659b2a9d5e983755362",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_5_667e0aa01a29af9f652e96221b79241d.kicad_mod": "97f4210cb5ea3f975c09b10d00db0b14a29f3c67b60c36c2f679df89a451aeb0",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_6_47d4d05423dba1ec7073ebd404c37994.kicad_mod": "a6ad7e4adaac8509dd5a2187a38dab9255757f880d777fe23f09b6f67111f4b2",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_7_16eadcfc7d64b0c411b43e8459fc33bc.kicad_mod": "c8f52af3f0f786b649e04061acfd354babf12813af8811ce512fd0aa8cda1074",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_8_1b022dc0256003612fbdd9023a1baea3.kicad_mod": "491b8e6170334b204140e4d0616f47f1fa00b9e205c796ffc94defa1bb6660e2",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_9_6be6c784003655446b7a1cfc28d570c4.kicad_mod": "b67095af1f009cf6e7ba6ab914861cba57b184201108c0aacdc5dd735ff1e1ad",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_BULK1_7a3cf3001fccb51f3aa388c26aec395d.kicad_mod": "a785fd2396af2d378a62e38a9ccadff3337d20d16c221ce4926ea0e794ff8ec1",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_DDR_RAM_BULK2_4ed11af05b399cd067a21eb0740aa090.kicad_mod": "919308c71ec216c0855914f1216fa73fdae1892adf09eadb5df65bc875cb1770",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV1_1_1bbd9d40115fc79f0701f1fe035be3a3.kicad_mod": "b9be6b21b16224375a6169ce1b7a4b5847456a7b84defd378942fe5add84a346",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV1_2_589531604e375bbf43d9861e397bb07d.kicad_mod": "22d2e796b4096319fc32360ae2070bfc01afdb45d42456859f330159bd05f404",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV1_BULK_0e160b20688649013d09791e1d66c4c3.kicad_mod": "be9e43196acd09e88be6643204da8cf208cf4b7ac10e802ded8c43c5efdc8061",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV2_1_286e92001e10bc5f13b2e6be0955111d.kicad_mod": "91f582780eb8a1c5267046566f2b16d5bd408c66d413e5d81c31142425a57d87",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV2_2_44f53bc03a97661f3039907e25dbbadd.kicad_mod": "d89a280a20efbaec70336f609927e9dddaca418899721801fb5d0764e1f34014",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV2_BULK_36e7d60049bfe43f359861824b0f58bd.kicad_mod": "c9a05ccc1e73a370c0dd400a363a539e4ddaa21ccaf71f61d7be73b5970cd0db",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV3_1_4a54676054b23d015f1012a2696de843.kicad_mod": "cb5e1818a620f51d7dc59f791a91f833b44df8de8031bfe4031da28c9c7eb2bd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV3_2_0600219e475cfffe774621a235e94342.kicad_mod": "7ee6e77a79e3e98ada19d80ced42aa8a54d1b9363f90ad0f11250c1f89f37016",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV3_BULK_01978c807dc0b94102e700fe7c7144c3.kicad_mod": "57fe1a4057a0001243bd9c8e80d355753d6c4617c54e5e2b72820ef3dfaa35c9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV4_1_5f4d47201df068c0236c75a064c95400.kicad_mod": "9d0bd22762fb2d10f51c0a564b22404c267d5db73508194f88a4f297742f5b44",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV4_2_52375f805c95352166f30ac27150e063.kicad_mod": "45da216db94f06bccbddf650031df97095a42e2c0f6e9ecdcc515b16f9836221",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV4_BULK_4c8c50e84023cf0833bb4d282752cb48.kicad_mod": "8a7485a0062cb7e168f878c1643858a5bdaadc119afc2b7f879b73576edd7ef5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV5_1_2c2b7cc41531619c568e3ffc6814e1a4.kicad_mod": "bfd6123a4639d93371a404ab635cb6bee01ad290f754b50b54e6880085bac511",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV5_2_151adae00abd053f005f2f9e09fea603.kicad_mod": "282bba3efb033b1bb2300bc17035f5c6e5493f7a74fd82cc8b0e093478dc3dac",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV5_BULK_328c21004ccc24c133db957e4b7cb043.kicad_mod": "982c3239fcfd080aad2a827bf130373d1b6aa3146066b28026850f10a6406084",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_1_5a03dea04fa608ff4548335e3aea5dbd.kicad_mod": "d0410d0f22f8ec13800b93c0c7cad0fe4f9de82e6e13a5194aed7c9aa2c9610d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_2_19f106a62659888632c20a663f2a8c46.kicad_mod": "ab200f704584a85bd2d05305fdb80cb0b5bf5e8d746b0e6e8f3b7b188bdc88cf",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_3_359744a4292ec2c41cc640e4105dbf04.kicad_mod": "7feff979914264122ad6d2d6108976f3ed1f17f59db48bbac40cae332fc2ed29",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_4_03d77e600686574110e42ce21b420283.kicad_mod": "22a1420d59bcdaa5a2db7179b3671c82afa89926069d6ad3f8231f027db270df",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_5_7a2ab6807b7773df71199e3e66bbc89d.kicad_mod": "e0514758e92689fb4a6678f5165979ef9f569dbf75d4550be71f34be9768d618",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_6_67bea9822c90e43e3f1f8e02552fffbe.kicad_mod": "bb7493a8efeaa7ba93c41e1b04731952f2dca580023269177f9e8010cc37a921",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_HV6_BULK_46306140223f9cc0755065400ce06740.kicad_mod": "321fb5b8c72c5ddebfbb4000025dd796978834a991b120fd7795f03f6ad28c49",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_IO_BOOST_FF_302f3d726420504e079021f273409432.kicad_mod": "d8b5e4b1b478c0be51396fbc06572fb08b973afb8ca6621c1bbc59f1bf2814b8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_IO_BOOST_IN_08beb780019f1e210bfcf3c2165ac963.kicad_mod": "b256b584362211863a78961041a10d25c6b4be534aa79b853848a047a45feef9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_IO_BOOST_OUT1_14e02c206a7819a1162fa09e6928a523.kicad_mod": "15cbc932f467fdb368152522c068c740fb788c868aa1bd16c6afeb7671acfdba",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_IO_BOOST_OUT2_6408e06257a05e824b37dca23ecf5ac2.kicad_mod": "ff851e3aaaa68e46428b082a3986835aa230844ad4bf56103e76ab60485be0e6",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_KEYS_BULK_1be086401182b09f0724dafe0338faa3.kicad_mod": "d97f7b593faa22ef2167ca5555f40c38e9b633bc7810444f76a5aca1fe24b559",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_KEYS_HF_44d2b8440375d9e43de7047c7f43e2dc.kicad_mod": "834750a1be49fc817cf24f2a1854bd14ebfc31645102f364413f1b1c5d83a939",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_BL_COMP_525d3b606c45e6402ae907e01673d680.kicad_mod": "b8a35059301c47af4ae895f44aaf64f2b2cbf442afc2a9e77eab38bdae9470dd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_BL_IN_0b6432627714a4a21d3ae91e4e758922.kicad_mod": "b36b3537a493ff93f7adee3ccd5d6919850607c3a05cf55fa2c0554b772d5a9d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_BL_OUT_0caa00e25f06715e35491c62366755de.kicad_mod": "801a50f791832338af8bcf1baf31db20e3a40477a8db4ceabb642bb7cecae4c9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_BULK_57e6e716168a08b62ad2d5aa6c2fb40a.kicad_mod": "f3c7602b3c678fa2e35c5bff19c8527e4eab2ff77d6ccd057b4970473e148b25",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_IO_HF_7c8ea15e17c0ec6253ef85de406007e2.kicad_mod": "da52524312a95c81e3a0f28a2fd4c34e740f3b07088d4998beb1735dda317ffe",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_PWM_BUF_259675e00fd5636105ebaf1e1bacc19d.kicad_mod": "44e5f23169c5e2e3134171b6c79a45f6a218c2c81d481efea0851ebdc4b8ae2b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_LCD_VCI_HF_09551ea43807bfbc79649e1c453e8384.kicad_mod": "aaf839e9447d2bb3ff92b195017907d7ee870b367d675f213e0128faf25b777e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_MPU_1_3440648029e28edf1f84b93e1526e39d.kicad_mod": "898f1a9c413e2e5d56adab80186461a1286dd123fc13cd89e64fc5e3d8f814ac",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_MPU_2_55bfbe004b61e85f410412be36a63d1d.kicad_mod": "f0cd67d856cf271342a577a5f15964abe907758aaca5af932b3be35926bbf466",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_MPU_3_4aaa614a210610f673497cca07990a8a.kicad_mod": "d9c6fd7a186111dd4d04464a0ff3da5273a96b8bf5353b70bc4ff1fff7a17a29",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_MPU_4_30f36240635c2b80085446c07404b900.kicad_mod": "648373668a54e805104579896a73fd331d7df5c4c098ca1e7950be3e8c775d1e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_MPU_5_50489dc045eac81f3b8cf27e312f1cdd.kicad_mod": "30b8ec73a6e56c5a87652018d7c066b10ab3637aa7ddbe10e2232edb846a55f7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_MPU_BULK_60aa59c45441d7e447d956043b70d424.kicad_mod": "e73aac63ddc7033f2c3453536af88181a69b115759d3773670627bbba6f8d933",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_ANALOG_OUT_46d14e4c4d7e3f741e3232cc761d5af4.kicad_mod": "bce1e7a93f82d7c83f4682de2c0182156b77ea3d1d44eca77f4dfc22450852b0",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_BYPASS_021084146dc0f654268e976c4521dad4.kicad_mod": "d56406fbcd0b1a6f26b85bb10063cb6bdabf879a527bcc14e1a7e931d16eab74",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_CORE_OUT_037bdbee6f2c4e2e25233f92468d32ae.kicad_mod": "f091d89a2a49575bd01481945758465e3ac0328f401ef60d94407347ad32f65c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_DCDC1_IN_007686b40cdf089419478a7425b00c54.kicad_mod": "493f87de60308e960042f04520ebf563d69b5db15ba8f86f426050b061b72cce",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_DCDC2_IN_4572253051daa7105e4328f06aabaad0.kicad_mod": "e066cfeba83ca53269aaf005f2f57462ee8777fceb8b9f5162cc0fd11612129d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_DCDC3_IN_07be747404aa0d6c11128f4c1d7b112c.kicad_mod": "776bc1cf4c050963c2b2e951a22b681543338641b2b1b29168624c1f52e79ac9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_DDR_OUT_1375ad7e1fde2f5e2c46b13e38af331e.kicad_mod": "78fe703fbfb89a2a1e3faf8f8664522e3a6d83c4736ec3ab21910953924f03a3",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_INT_LDO_5ff8ced853904cf84727cb183abf4938.kicad_mod": "8100fe2ce3c2c79e0df2a75a0aeb421b2714f0e265e7bd359d115868a7bc4d3f",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_IO_OUT_1f3a76c0751517000964a4c0624bcd80.kicad_mod": "9b1e7081b9c46a14c498ab8804f39d42b5be1113ba632031235c9710b554af2b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_LDO1_7d4e3bc270e5b9e2647d38025814b622.kicad_mod": "d250cd9f833abf9b2f69ed69d8360befe4864069c94e30816eb8f484412573ea",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_LDO2_4357e14a50f7ac761ab8c5ca7996c7f6.kicad_mod": "1a2ac611c20347e3963b10b35da574d506affd73a92a34d54d482f24694041c4",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_MPU_OUT_740397dc7f93e644732b646466c2e284.kicad_mod": "a46460481d151d370f2b7b3c9aeda9b2595b282d05a95a2fa3945e786f98754b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_SYS_601c39a66c84bb8678ed3d667aaa40ba.kicad_mod": "d5fc13cae4d490785268b04a2cdae177827d1f1a4b85e3416d208fe240a7e00a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_USB_0efb8f9c1b64117c27cc935c3435153c.kicad_mod": "851fff5cfb40d074aaac0478cbb0468c60172a455a904fa04e898e52bdb16fbb",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_PMIC_VINLDO_102a47fa7bdaba3a1874d386533b9eba.kicad_mod": "b02a91b413c7df09c51ff5cde34118e742a331dddd607caa6cb99adfc7902163",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_POR_BYPASS_563d331649d4b1363d6c2f563103ad76.kicad_mod": "180756fefcaa879b0e13c5bc516289fff568c78915f2d6d42e6f056d5ce4822e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_POR_SENSE_4b57af6457c031446428b32470913504.kicad_mod": "ff91f3813b2a42e7e163ab1fc49f94e1b59d236a32ac80ae1037e4b4bf9b88dc",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SD_REG_HF_5ceb2860528d52bf482f7d1e3dd1a77d.kicad_mod": "400c875dd9f3722691491f87dcc3c0d9f5ec6b0af697d678fb0ae3c3ead17f10",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SD_REG_IN_3b687020310a9a7f26acc4de1c4eef3d.kicad_mod": "e7a22ab1f00cd58848302f22e0db07419689c4c818ee1dfe84fe42be8cca3c46",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SD_REG_OUT_00ae91e009af43c1140d19621e6aef03.kicad_mod": "b240fd61814d14b9269014d1a7dbeee2ae4456b7bf84aeb5161a67be695137dc",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SD_SOCKET_BULK_2d0df660376bcc0141c9a1a24c277743.kicad_mod": "f8f25187294b16ba43b88a5bf15bb5c0f7a9874d069e9098fa5412aa33f023b8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SD_SOCKET_HF_0600e8400fc02a3f25813cbe3b424f3d.kicad_mod": "fd9f9d52dd68dab14d392f678e09c5c8b517351df6fb16d3c3f43db86a1ee8ac",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SRAM_CORE_1_17c23b1253ee372e406156922b4f1bae.kicad_mod": "a4f60ed5501d1ada55375c6ac581f37556c1a2a54fda12b540fc00e536ff6205",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SRAM_CORE_BULK_59a8414a6610c32a7279450a7ee1c6ea.kicad_mod": "f25a73167ec5461e0287537b67bcd5ce0c1b27e7c1cfb5501db276645bab6118",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SRAM_MPU_1_2d4a523067053b9004ab36b0705ba8f0.kicad_mod": "9aa13ef47c5047c0ffdb6dc6c32f0599b7dc78f0eba2252ad31e35ed54f8acd4",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_SRAM_MPU_BULK_34400efa634ff30605200afa6d9008fa.kicad_mod": "f9326d6b60bfdc4a0050dc47264115e19f3d27cfe22165b7ec4b7e9bd49e5426",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_USB_ESD_4c3c73561f73feea74db8ed6092b1c96.kicad_mod": "377b0b15afad311f1f214a0c0de370ab052f48e8d3d65cb18a213f6b85a062af",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_USB_VBUS_SENSE_0ab2960a171b17ea238399ca2fec1baa.kicad_mod": "826c9577748d187f0db40b3ba9678e603ec8d5991f81faf77d5fcc9ddbd8f966",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDA1P8V_USB0_049716a07c10a39f0347a2227d60181d.kicad_mod": "ea6b9b44717f884e4abcdc893c0a5146773b85b4cf022c9ec814acec07873e72",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDA1P8V_USB1_21ec52341f708c2c60cd6a8c5dd5b714.kicad_mod": "dd11f925e41ae2c01560219f3ba4dfb02c69ebb2ca96c6a18bfab56aee00f615",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDA3P3V_USB0_3a28c3e207341a7e4890f8de761228c2.kicad_mod": "1d9d6b07092b7970e75cae3da1943fe1e7db06feaa9def66db8c07c644c3d8ec",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDA3P3V_USB1_0e5160a018af3641230d0be22d6ae183.kicad_mod": "36f1e5e4062a2165b7bfefbf54c95bbc07f985e713fee807f42c1a34fdfcd667",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_1_7de2d39e3c85f53e04d6e9224633c782.kicad_mod": "7c42b6ad55c05d83395523ec9d428abbcf6fe9b280db47dbad9ae66c5807dc63",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_2_017dd3c86d2e4608272147b8448f2a88.kicad_mod": "e9e18bbbf01392db739a17d4487e5eb6c73b79be8cec8966ae1068ceb3611a8f",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_3_7d1b97521733f66e547c7bd23fd311ee.kicad_mod": "958764efab4b9fc7b5344dbcc2d1bc50aea3bf53426e1c188d6251a6916e3829",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_4_624946806ca71c217704f1c27e9d389d.kicad_mod": "4e928cea74500a5408a53be23ce7f33218971ca1dd359b756a0503bd2b09c941",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_BULK_2d863c886a09c5780199c77866d63688.kicad_mod": "8d85a0cc12a081f6f50c9a8efbdd4222372142ecef62baf99c77ff8dbc0d7f92",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_OSC_010a849c426762fc7c3bbea43adee044.kicad_mod": "2799af497338355bf76ad238dd5a77ac63f97d4d69eb806baa0bc122eb579461",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_PLL_CORE_LCD_0cf9245c3463ba0475c0986448e2893c.kicad_mod": "99cb22fc1a4382398bbdb4e4322572b9bfac4eff2ebde1f81d922e53565995ff",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_PLL_DDR_2cbf10383ef16208555e2bb816524688.kicad_mod": "b0cf0b31f5a0b389264f6e85dc3154953f43840c09eb28a50fa5808c7c4c596e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_PLL_MPU_1fe6c4264bc9ae1a4885dfa6232a929a.kicad_mod": "aa94af3d1f3835b73ad738a37397470f54e18dfe5aef2716cf4d3fee83e52062",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VDDS_RTC_4b81d3604123fdbf36c6281e2c68527d.kicad_mod": "09a6f9a3da6551dbe75e8eb1e6266938d17f7d2133d0e75d9c7653843cbd9de7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VREF_CPU_549572043fba1bbc2bf656846859373c.kicad_mod": "c7a7649be9b5e552e7fef48ae93a6c17be10b53debba6002f3ac2f65b5d6a2ae",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VREF_RAM_CA_3bcad500316cff5f270f29be1cb1541d.kicad_mod": "b154bb08024d28a0493833ccfb11ea7ce78951e81600fa123f9d07a82a29f676",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_VREF_RAM_DQ_70ab39c823a453f8480c1e484c436f78.kicad_mod": "f30951187e943be5979fffb14617516dfdf3b7ed787692ace7117d308040c7bb",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_XTAL_IN_7a27b68438cad8240892063c49eee49c.kicad_mod": "2543a2cf3cf90c3af5c22074735e009ab944b038f9d6c101078172a7e471e024",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_C_XTAL_OUT_0ec3049e501fe2fe6e833ea22d266042.kicad_mod": "63c3af0f5b772d551d253fcf4a09f6269a450eca2a951f5994a54d00f1507955",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_D_LCD_BL_150c64e47f4328dc1392b69c581dbba4.kicad_mod": "3d0cc7d2321ffd63f51f3b626e9ef66d9113e4f352d50b8020cc90ff40283a21",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_D_USB_VBUS_SENSE_33eeefac27866dcc1b1debec0eb56a0c.kicad_mod": "9bb13be3490bfd79a34cb5185c3117b928e145602f176d0c09ab4b2e4c72b08a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_J_BAT_399be774556bf9ec1b8c24b4737bbcac.kicad_mod": "92efb44d9588f388110689a1052f9c47c0a5470253d136a0721f1f3978dd8c20",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_J_LCD_3b2712de2ebe90fe22560f1e15ed8d3e.kicad_mod": "4bff1b5a8605144ad66052ac9cae7dc774ef22db67187ef4aa7d7a9910d35416",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_J_SD_4162de604bc0b401561e89a2607c5f43.kicad_mod": "3e27089c3cde322d60015f305c365225b70c1c9194ee7413353f92069a319ecf",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_J_SPK_06bad6e0789d6ee1080a4b5e774dfa63.kicad_mod": "ddfcec0a0f5959812d0b50ad057d6045871d2121a0b6f0bfc40cce1f11f029e3",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_J_USB_48664640098e047f5b824f3e52896603.kicad_mod": "08695f9ae6fc243dc1f05b807a6ce1cfa646f3c01e640eff2e365406678d8756",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_A_37e0d400477771c13930487e4627fd43.kicad_mod": "9c7581cd32ed3bfef00ee9094b52c0abad7565ca44277ee5be4b2e3de61c20be",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_B_25c1e3a05ae5d69f24726f225c354b1d.kicad_mod": "59e088075fa75ecb99a097caa397cebf714440efefc92e99d2d5f21fa2e75295",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_DOWN_4cb4b49c404c32bc33e3b0dc277b2efc.kicad_mod": "0833a83e5a0087bc085d08922e172a866e7e4f39a0163114ba228122a05114a1",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_LEFT_4ab0b7923e4835b231dfb3d2257731f2.kicad_mod": "7999104230cfc43eae210f4b10bcfa5375c0c49cd40f1e56b40999e044eb00f7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_MENU_417a98403f2d21ff402b23c2407c967d.kicad_mod": "3e93daa06b65e7824259397283848bd6a348557502fd8b61b7bdbedc2a0179b5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_RIGHT_4e00fda041987bc0352ff9e028c77800.kicad_mod": "51ed646a33fd2c323aa415f0b7ac5cff2724dd0fe178db3690e5c50251220ea7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_SELECT_61751792550c95b248a413d23c3b91f2.kicad_mod": "d188a92a7090ae1575f9a0bd306a65f455296fde9886b8aebde657e5b15e6a92",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_START_26a91e0059fe9c3f2559a9825b4e10bd.kicad_mod": "6510b3f74341c85ca5e71ac7b6274350bdedad3f3c77afc758da8d2b4902d174",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_UP_0916888e0351f9520fba7b321c22fd12.kicad_mod": "f7c7e01cb503eec56be4915b318623964c738a90a8dd287db9afdb8fe65c64b9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_X_24e3d1005bc3e93f23945c825d135dbd.kicad_mod": "f29cea8b37313ab1b36c0d9d1aad51f86ddd6877649404ee9b73043988d591fa",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_KEY_Y_7d79776001dece617ec8ebde008f59e3.kicad_mod": "df058bbc9e8a214160cbf75bd14435913383e1875c638fab58d8468a80a05123",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_L_CORE_6e3a994c2614f474459b7dcc4eb40ff4.kicad_mod": "28d37791e7e1fd2139c6aa74a035bf5e7fd1bb7a7cb2b5b3599b928d002e7164",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_L_DDR_37d9e0a022965d417d069b22288926fd.kicad_mod": "682e021e5c4f678f25742599b6002a98769f1aa7d28f8ee0e3023213acaf1900",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_L_IO_BOOST_19dc99d87db3682815436a28532c93d8.kicad_mod": "c565d4c32a54d9a4f19a5377fa040b7cb9b0a2515d053c0ae02ba0134f17220c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_L_LCD_BL_7a05cdf81a49bfc85166b27842e8db48.kicad_mod": "b6e6d124118505dbedc235cec5d77fa1455a8198726e41f65cd65fb34b23e843",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_L_MPU_2832a2661bca20860f619ea602f91cc6.kicad_mod": "f1bd837f3c830582b618b33f1f8db8452c22a27166766acd0b0eec7e2ce9a96f",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_L_SD_REG_6f8917204f1a0a800dbd2c20339fb240.kicad_mod": "0fbcbda931386b68f00fb25beca2ddf18b80ca4c8f7496844d5f9b25ce8c1030",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_AUDIO_PD_705229de63e9a7fe5781261e4b18a43e.kicad_mod": "57fe92ee485dbff3661e9f1e0cba0121dfdf0b0d0d68fe21906c322efd9a2d45",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_CPU_POR_0e96d7361aff59162767daf633d05cd6.kicad_mod": "956fd8c1733cb169c506c563d1d36995c218b7ae318b67958c5fea647d722a2c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_DDR_VTP_62afb6fc0900bb4474b12d841f9e603c.kicad_mod": "46b05ec7f2dda318de1fb11da587c554c5cbb988f3ef510a841f8f8a0f1ea392",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_DDR_ZQ_48b7fad64b9792ea2018df567436ae6a.kicad_mod": "fac8ef8eb8fef2e3fab6ee5e22dd64241cb2933cd29f64625c181e53973ec50d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_EMU0_2cf14140789e80df1e2e42fe3c41fae3.kicad_mod": "22e7e14c4bc44e54ded191a2c06e9e5edf62fb4a325086299c1c3274cb72d9bd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_EMU1_26ad8ce07ee2353f2471f75e35fe4683.kicad_mod": "10b987826acf9fc2b9914a13534b065dc1740d4e1ebf30f10d77f27d314ea5a8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_IO_BOOST_HI_60bcda100af3983076a40a701dab8350.kicad_mod": "99850b9d3281fa47ba4b377a557df0276128be22482bdd5f6add351836edc9e1",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_IO_BOOST_LO_4b45fc2657ae7e066416ffe6707f81c6.kicad_mod": "dd059f722fa874171104f2a331b974cfc009da5f0798faec865a8a88e760249c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_KEYS_RESET_7fef33c00096edff7ec157c201e6627d.kicad_mod": "b9bee5610eaf1c28ff0ff99659e4718cd750453330ae5ce696b06c567469da5b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_BL_PD_3da5ed1203b6f14e4513cfae798f51f2.kicad_mod": "544e2a716089a4c3ab3c5ad0bf6ab8c87491051bc3e6dbe4fcd0b297169306d7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_BL_SENSE_241f56621d3d87fe5e9a665e6008bb42.kicad_mod": "35ca107214d7b35e7eb706d6d6b4517ea7d97afc255b3a6befafdc0684db4508",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_CS_PU_42fc95203c5bb0a1444c099e3b0c3c23.kicad_mod": "5bd9c8780ec88394b8b21974cbcef5c21850053986c20fd3d399f68f5722aaee",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_CTRL_PD_4f27a60c1c88cc3477c6c18c0c164f4c.kicad_mod": "f8a8631139a40cf90a012475107b3ef430a53d3cb4fda1b222d0164920c85678",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA0_035b4cb444b82b1479eaf68c388e182c.kicad_mod": "552b89f71406f697b27abfee0b70054e05f9a95b64721b7a7bc95b47c9d64f61",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA10_0ece68a2502b47026e77da9e2d1afc3e.kicad_mod": "5ec0762df6dc2da5c3e78222d9f610ff73e8c87f123a292ee725bddf435aa369",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA11_3b2e9852062e460e478b246e7717fd32.kicad_mod": "67e0072e42d173f4a86b68bdf8861831fca192f4d7d027bb72c5eaa08704244e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA12_6b3dd740557cc4c13fbbb24229fa9fc3.kicad_mod": "0066efc88308a71999f1bb904b94fe60405179372f73e40470759ca5e74d6b45",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA13_2ec8a15a12943d0653f11b666ab2063a.kicad_mod": "62ec0a45c6bd884bfb87aef14239a3b61f59a8c9e91b8d98a61c99d621dac127",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA14_77d33fc0726badc15caa9b4246e988c3.kicad_mod": "18f22948625bfb64d0f47b22c02056cea52bd467343a677697cffe433d3f6e14",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA15_696b81ac55379ff413dac1942d821ccc.kicad_mod": "dff271d895a78584dd7cc8a74b1b0469ceee3261218ea677275a2891a5cb82ef",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA16_017596a042d275007bd0aca03a73ce40.kicad_mod": "e1737020c65463bf84ad329e9e5795375a93f664fe6efb7326f99cb2a7ae5e8d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA17_496adc60080dfe00394ee0607aabbec0.kicad_mod": "a58c8e603ebc4cb9d16cf9b86e36abc5bc1fe35d08c22d7203530337a89b97ee",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA18_49c541405f8653bf7547663e74f78743.kicad_mod": "a9b368bfeae455d31bd9fdd0a833ccacd73c324da375e59c9f3fbb1b7d14901b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA19_22c740c03888533f4e4965be640a783d.kicad_mod": "d47ffa214a82f3042aba39861a266e452706af381db18547efb9e207297ca1c1",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA1_4785264c062847ec3b3496747c9174d4.kicad_mod": "96bb87bfbe0d5e11cb733aea033819c434154fc39c3b4d82fedc07a82e0a13b5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA20_10270f40059a033f1b5b15be311c283d.kicad_mod": "7e330e55d8a9c49e6e648084b2c9b0a3cf04fff09f3d3ca70368927295ce7be7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA21_21c9ab1e6326897e5b7c98221a1fb9c2.kicad_mod": "a37c85095fcbb3924f9d3f5adca306d239e163e5c2b43d2a5691ebad90779fd0",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA22_2916c7e21846167e59a2f4de65002cc2.kicad_mod": "1e777845972402c90691ed7336620b48bb7e4336462c9c586927c0526ca449ea",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA23_162411000062fe81155e13fe2b1f267d.kicad_mod": "fbd340b20fbd74685c40445bcd433f31e70d2ce14aa700bd2a1e3b92c5b362e8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA2_29a0434013df30c101e1e1be17a2f43d.kicad_mod": "318e824d9efa9f1e72ac0404df40f358f51a5e2846e7b8a818064d00aa5a07e4",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA3_2fb8c5204579d79f5b3aea1e70fbfc9d.kicad_mod": "c9c0b1f0249e39e9cf6de30c2d55270c0ca2ef9b1e800a9fc289241972dc0dbd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA4_7d91444067d031c1520f1f423c4e0cc3.kicad_mod": "53a9d2e6f9b89326c8b67570c4b6601fa446150c488a321f1514ed4a98338e75",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA5_5165e4cc1009066c3153d7f472b0b654.kicad_mod": "02c04432a15be93b17a7941c1320cb93202386e935a343c8241a4d17fa04f560",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA6_45ac47e05b6d5a5f712e6cde791080a3.kicad_mod": "93e91e144766ad1f48bf6541555cf5db6dd507e667c7e0346a2782528d96e71d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA7_043c42d83d209b887e7d79e84025a7b8.kicad_mod": "5eae7e66a67d5660c2205d7aa8678d580f23ac2b6626b875a155f630460e5e53",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA8_07e87f400dd8933f2399a5be395ab83d.kicad_mod": "f74a36e8dabdbe7fae06faead46fb59000bc96549b4e049b2e57af0df0e14f3c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DATA9_032a9464448772c47a1baedc38bed07c.kicad_mod": "b9f15449ca132110ba501923cba8aca3a4d30f66b0090d9a8191bd5907fea168",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_DE_21aebc9a630b9afa5b9786a61a3aa846.kicad_mod": "a8e7df0141c9364e4635c2828083112e84f292c4c788b62bbcbc62bb22a78c92",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_HSYNC_4912610033514e811d903c0207cf2983.kicad_mod": "537c4d25ad7bdd38ccf6d93cfcdbcff75d2a808dda65b5aac24a144f13abea5c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_PCLK_6736df807cf7f1ff6d46fb825785e903.kicad_mod": "23465b6cdad619cf4c0b0a9e5964cfd9626755935c275a81d612de3c815c6fbc",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_RESET_PD_2dba672038183cc1427612624cd3e803.kicad_mod": "1627b64464846fee64f96f619fa043900710bc26b50af758212ab11179bd4e56",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_LCD_VSYNC_58e45c7a65bec5262461e6c61cfaf79a.kicad_mod": "6e5d4f92a6f6097fa3d1fb3baa6607d167ca8e97bbbcd7473d84fe72ca8e1793",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_PMIC_INT_0a53a33e5e1c5ac23973a73e2efc56c2.kicad_mod": "cf2b2e31b9e2b00438eb92d668677d2a869f38005dc8670fb906970cec0b4b84",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_PMIC_RESET_50336474183c998c7f53687416e36a74.kicad_mod": "192854c9158948c7b6ff4f4bba7aeabb5eb60d261191cadd4ef98c27309fd9bb",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_PMIC_SCL_17264e325149afce464652322229abce.kicad_mod": "6597232816b1728fa8b26e7b7666c04e4c282247c3c6b178c496231940831ff7",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_PMIC_SDA_10bcf8b857b305483fdcfcb828930148.kicad_mod": "25645c2fc1fcfa7da4717fd4b8f10bfcfb2dbfd0f5b472bdf911ee59a5c7d79c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_PMIC_WAKEUP_03ea4dc46485b03c330a51c43565ac3c.kicad_mod": "864fea00d09be559196d72b16f31d22b18246fa3f3edd10dd3a3d17d69d3c0ec",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_CD_782b85267b6bf8fa6f03771a629af53a.kicad_mod": "6131668c6530780fc62f760ed00af2248243601274f0d2353362cd9b06c9a5b5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_CLK_6b5b0ea0154cab9f6a0b9a22169c201d.kicad_mod": "3912ee8d5a4103f0cc73c9c0669e962ed9c536d8a5aa14418663bf57939907cf",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_CMD_41a93f283540bd4828d83b681c6fb988.kicad_mod": "82ed494a4adeffa79b6be480035dd9816249d66b0154723f9bfc769189b973b1",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_DAT0_380336f0446bb8d050d43ab05d3cbc90.kicad_mod": "ebb70c1bb559e2ca6da320d24a43d9324730a1e3bcc9291540914b90b6e23053",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_DAT1_2667e69619ff64b60d96e2d6012e60f6.kicad_mod": "5a294f0fea5e066656b8be55a7a4991c43fc2d920baf6f9c986310c0ee8d44dd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_DAT2_7b2cfbe4786a823c6c02005c5f997e7c.kicad_mod": "269a504278cbeacc147f0e85a8d943d798321ad44213c4e0145df9e9fbb890f6",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SD_DAT3_1cc1de5e292a603e3592e21e41fb63fe.kicad_mod": "97b2ce3d573aed0f2ba563e0565c1d8817b68f4ad45a766e278cc853bbfffabc",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT0_77f1a8847ba5d59c6f3d53bc62d4d1dc.kicad_mod": "9571f6cb326df13f9d3e3dcb2d792e5d426ed07136965f36fdd3980bf7acb649",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT10_37760fda43de91ba5047139a5caf957a.kicad_mod": "b98c2f40f49be1e51b02b904bee10341ce565172ecddfc188e14dd786b414718",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT11_354a5b2e28e1d94e1c79576e1010d58e.kicad_mod": "ed5e1040590c4a3b8e74059d5fbc6e7afbf8c37954ee69cc9ab6ff068f5ee7ba",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT12_092c996274dd0ba21f72821e4c3df022.kicad_mod": "1c501ed1639c20a735408b04adce7c4bb98754176f012d1ac7a8053f07fceaa8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT13_40256b3e542a228217864fbe7cc93e02.kicad_mod": "24c40b4c6dc6bea8421c65a55726f84e5fe82d8d4d79a58678f9d8fd5de18968",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT14_771643461d394a7a4e7727c645d865fa.kicad_mod": "15d6c64cc2efb276aaf5d99341b87b014c86cd234bff9d12b9604a1ea6d04695",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT15_51f8e4b219b78d8e7a9800320ee78df2.kicad_mod": "a639b0d11cb799fb533ef6969a20b6490bf03313e7899aa2e2645b3a30e438cd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT1_0701a252136a24321fd2a6122c3b27f2.kicad_mod": "3dab163d92a5723cc72a9b6e05feb214c5be1ecb0ea0268f9bda9fad01ce3748",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT2_65bec8b6595646d64cedc4f640854316.kicad_mod": "c81ecde3cbb1e0ede623894a92a095492ddfa296f678617949a3285630c0f38e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT3_4e46d6185aaf57f86717d9d873805bb8.kicad_mod": "eb55be45a6de341e8c8be9ea6ccda5da68f240394678c9f92eb7ccc2748f6f9d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT4_6439765c301617643b9a5adc58b532e4.kicad_mod": "4c871a97d1f95f8b0ea95b8c6d1eada3fb66af21465d929c7d8857324e95e56f",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT5_23f8d23247b7a00e4c97edb21f18848e.kicad_mod": "a40dd3e9a8a078c5fec248860d8cd7554fb6744dec6d014c038021febc5bafbb",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT6_12f805d67ea8781615a715aa56095c96.kicad_mod": "b388852033ee3c791043dc9ebdc380c3d91808e237ef24376c90c2fa84a7c6ef",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT7_49e8ddde4a66afe22149c25e7305cb62.kicad_mod": "114791531e0b528591ecb57175c1b59e8971d6ad40ae0ef34cafb8111cf42c58",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT8_15268114218f02f42df784d43a6006b4.kicad_mod": "47b5759763bcbbf1a8f7e61db8a79a2083c583f0b5b73ad80d87ae88c6e5e36f",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_SYSBOOT9_5bc9851e4f61033e42f8815e368fff7e.kicad_mod": "717ae303a0a7abd63ff649b2800e641f2c715a8815aa2f657a344da875b4f376",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_TCK_2eaaa4542242227415d9a09409711eb4.kicad_mod": "83d4754d821f66cb76e2bcb74593585c9b9ae1d454485fcf577387eaacf1719a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_TDI_6ba285d65f3a03f652d1821646690036.kicad_mod": "c12826de42418c6ca80885f4d9f827adc30d4611a442a6c64a9583596e3b5c65",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_TMS_2069d8807ada16612ab5abbe2fba9223.kicad_mod": "99dfb3383a226e717b26352aaa29b1e50e6733002de0cd97a7ee1a433261cd82",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_TRSTn_0e4d3d2e1ab5bf0e271e40ee3386c2ce.kicad_mod": "2bf2e525d0dc1f79eb1f6490f94ce39cb793f82e442bab8312936433a53148a5",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_USB_CC1_6c2a3bec5fc1ba0c5359382c46f0b64c.kicad_mod": "8d19a2d592f9189b9731e09af1f60e80ff7849a59b6c9eb36a0791783c35d868",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_USB_CC2_7766f5547c3088cc6fc806ec635f850c.kicad_mod": "5c3bc793c574020526f93b373a29ab6481409021ec953138e93f50a78410fc02",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_USB_VBUS_SENSE_38e6c8ac2c7e46cc2015c4ec13ad430c.kicad_mod": "dc087cb7e1525586a3a9581718a024068657e16e2b9a96db18e0d52d4ea9c717",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_VREF_HI_49987f021ed77efe78b8830210488502.kicad_mod": "90f894a8cd51e2ce02e64873770f7fdb83d91236e147dff9128842e6e2c4a23e",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_VREF_LO_02b097ae6b2095ae2c6f6c523c0091ae.kicad_mod": "b97c064d6c9ec43dd20d865a0304fdffb52493cf8c1ee1d414fa3134e61e3247",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_WARMRSTn_4b451eb057ada09064162270707ea450.kicad_mod": "229c9db6736046114271000dfb6af749ee6134299043de3c6610ddc0955d0794",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_XTAL_BIAS_DNP_4830bf5a4c1ece661f91a3da74bde9e6.kicad_mod": "31d6d2a1f565299d07ed23388027041973973d6d7486bd4ecc26e75db23734ca",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_R_XTAL_DAMP_59294d0817cc6ea829906fb86aed4e18.kicad_mod": "56576766ca7ad1e4d5098795a71ed104b8d55d7163214b3d08f312ebd5562028",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_SW_POWER_6cca27007dce1aff68665cfe52fe9efd.kicad_mod": "8450402c1827a34fb49054ea176d5a691937db369bf83332216468a86448e792",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_SW_RESET_1b7dd7800f1555a002acd3c009bbae20.kicad_mod": "8bc38a74a531a95e3826948844875141116b45212cbf5930a3a71ee61ff32443",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_BAT_GND_6eabc8867b144a66788333ba6c1ab1da.kicad_mod": "3633e245f6d98cdeb3ce2f28cd4d5aa4d369b41c7c46695cd8fb9066a0a9bf4a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_BAT_INPUT_7719adfe7c7dd02270154e4263accc62.kicad_mod": "ed9fab0c937aff6cba9421d964b98c929e3b29d4c2e89f139e7d2f1dc7c26fd3",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_BAT_NTC_72e2bb427f4b3d22744c40fe67e3bf1e.kicad_mod": "0f31a089cbaac27f24550c3e3ba928aa46e745157fbb511ccbb11db5890a904a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_GND_7357bb6c7fc03d4c73d740d4676ebef4.kicad_mod": "ffb5cf8ca1624b19a79efa7ee5687e7206165ea46cfae40353a50ef65bd4715c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_IO_3V3_06da58721342da521fab5c322c13de12.kicad_mod": "782c6a655755e9e268ce4d54a5f1a5d6edcc20e7aa015ebc8b8b465fd564e359",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_EMU0_0fb1768c0348f4ac091f8d3415880f14.kicad_mod": "efc746dc0d845f610983b264107dcc6280d01a43722174de6017d9679ee987e6",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_EMU1_302df6783c96785848fefa3855677c18.kicad_mod": "b8be5386dd569cee94c2ffb06cb0631b30a9d0f445400c42bc546d75433b4d61",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_TCK_52db3b804672b9a03a0a37c02da1b5e0.kicad_mod": "649a6e2ba52fa5a931dc6cfb9b77138f937e457ae29bd47c2d732b7f8b027e3c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_TDI_263d458a19d4c3aa0d6c41ca0103bfea.kicad_mod": "be65dfdd81d6aab6750567841028a0796638721fc7d43139c09d93a621f144e9",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_TDO_19a2277a260aa95a32732b3a3edbad1a.kicad_mod": "eb9e8942f06f306b6827f8965ad6e8e7a97c83c307ae2e333942f2f99b7b0d2b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_TMS_46401d7052a89f505f1121306b79a310.kicad_mod": "eb69cf788f58389b98096dcbf53af089fbe7011bda6f9836c6c5132372b1da23",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_JTAG_TRSTn_5ccbec6e69346e4e759cf02e7dfa8df2.kicad_mod": "215cf0b9e57d72db431884ae3d4131a369b75c59116ddd4d2c202e31e75bb4b0",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_SPK_N_29eb7dc056bc3c7f289c0942580bb0fd.kicad_mod": "b1708c4afb9395853872fdc2abbb4d9149a71cd63e97945723f289ff99ef48f8",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_SPK_P_4740e0ae53a9628e6011e46e6c7a664e.kicad_mod": "7c4de9da52204d6d282f20534a53fb19aff8b5eefe0b68b8ca7d052adc6a1d75",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_UART_GND_4374da44370c58642aa3d6841e3b54a4.kicad_mod": "6fef6a023484876498cecc1433563fae6d6fab43d3b10ff2f5c2b7ff1b7e98fd",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_UART_IO_3V3_37926c4c2b29ea6c1ec1688c1258e6ac.kicad_mod": "32cdec0584457e7e44df7e9c3c13e7c0ea6255d6ec51cd8ca8ded72e225fed89",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_UART_UART0_RX_6f91774e6328f56e56c0738e4a57f1ae.kicad_mod": "c079a876bb86b25641732aa7e52cf6741393d5d48bbc4cc4ec76649127b42b3a",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_UART_UART0_TX_6451eba870ba6d887d22ef6876748eb8.kicad_mod": "a5c3fd2195ce91a0bb263978a06c94f202cd0fc276df15ecf6d04be9fdc2c171",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_USB_INPUT_44caabc05a3269c16f9a27c27afe1a3d.kicad_mod": "3083316f10bb475eedb87d553c3c1ad7a53c37ee8ca9c2959a7ab7e2078a6261",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_TP_WARM_RESETn_3c4f6c822fe6eaa2237e68c21715e6e2.kicad_mod": "7f567cb81f860672ad59ad3bcd423595b29722d8fccb4c0ba4709fcc416d9e6b",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_AUDIO_682f4a401728fb81697ebebe15d98703.kicad_mod": "844d506ad0000580ce916142349f565429b8ee1709cee7bb47b6897229a547c2",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_IO_BOOST_725420a07844215f62dc635e4d74a55d.kicad_mod": "060ededb9fe55dbeacb3489675435d5dbca08a8129387625d08fa0beed1cdac2",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_KEYS_61b84c806c1622217673f7c27f2e329d.kicad_mod": "f3f3f0657f73155f89f9546d42d75f772f81db6797da3231f894119c9d28b30c",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_LCD_BL_6bf43af45f8bb9145323373446bab554.kicad_mod": "156983ab4a35ff3861fba9a0be6e6fc7a5945cb8bbb949152435334756915c61",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_LCD_PWM_BUF_0d91a2ce19fa24ae2662a68e32cb286e.kicad_mod": "dc116c07b8016e47472c483bee9a0c1145d3400de2212a3248a27ca81638a6fc",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_PMIC_03b5ea0011b1d401271992023c815003.kicad_mod": "39a802d2db57c20c046875b5ada1cd71759b1d0e9de8370833a498ce09464d82",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_POR_50824ce65ceacec6695350a675bbd286.kicad_mod": "13ae8392644c7f1a7c13638f17ef73dab051e386920872e5305d95092e2cc02d",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_RAM_555ec8005030fa1f0a3f43c264af81a3.kicad_mod": "e50b6132e011f78d25fae4c9916383496612961e60f046c292da1fe31549cca4",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_SD_REG_112fd9806f77e0bf0fe0650270c7553d.kicad_mod": "40a00e9261e100f822bb1e2db8882ceeb8f2851383569f2eccba949f5b9ae835",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_SOC_333c072c3533f6d4625c0b2c0613f2d4.kicad_mod": "12d7f193f20342ab4a1c1c1c27c620011168edc05587303a964992b771a306d3",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_U_USB_ESD_77106bb215a86fb24bbf8c4e52d877b2.kicad_mod": "c65edb3ac29266a3769bfc29e1e5bf089e666d96bc028777ee6230c162c25e41",
+    "checks/layout/converter-placement-variant/tscircuit.pretty/g350_X_MAIN_68bf15ec5c56940c4fee122c4385904c.kicad_mod": "3f46b75514699b278b39423b681c5b83ebd4dd544a7e40159368f6c675016844"
+  }
+}

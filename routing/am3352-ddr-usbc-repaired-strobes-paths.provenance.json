@@ -1,0 +1,216 @@
+{
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-native-clock-candidate/circuit.json",
+    "sha256": "8fd18065e5761b51b1ae10e9ff0bb5c08513f23ae06880642be76c50a78bba5c"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-repaired-strobes-paths.json",
+    "sha256": "bbae477b28ab32d5a70d83e078dbe50d430d297490062a21cfbc97e82a811750"
+  },
+  "preservedSavedDdr": {
+    "path": "routing/am3352-ddr-usbc-command-access-clock-paths.json",
+    "sha256": "b4e8a4377f6750728f9e87fec805d2818537eb2cb792b3d19005d46389ec2965",
+    "signals": 23
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "ramReferenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-byte1-access.json",
+    "sha256": "edce9fa21a07fae959d779116f4b7cc131f91a31a48024318b409473f1c137f0"
+  },
+  "checkedCpuChannelReuse": {
+    "source": {
+      "path": "dist/diagnostics/am3352-ddr-usbc-control-candidate/circuit.json",
+      "sha256": "d4148ead1f242d69336d335d4b067b1f1c5cb6c3e23fa0534f308cc0068ad9c1"
+    },
+    "paths": {
+      "path": "routing/am3352-guided-both-bytes-and-reset-paths.json",
+      "sha256": "a356d0cffb8e29477d0c843b99efc91c91b1d63ff675747c72107a9fd62e2d48"
+    },
+    "checkedSummary": {
+      "path": "checks/integrated/am3352-ddr-usbc-control-check-summary.json",
+      "sha256": "1434d8738b7e02f32eeb22058b068b47dba97faa752132b4bd99d782ec51ebdc"
+    },
+    "sections": {
+      "path": "dist/am3352-ddr-usbc-reused-strobe-sections-attempt-435/signal-escapes.native.json",
+      "sha256": "6e979b8a690be58491dd818cd4f83025a499368d22211b1ed38492f839fc58d2"
+    },
+    "handoffs": [
+      {
+        "sourceTraceId": "source_trace_27",
+        "end": {
+          "route_type": "wire",
+          "x": 3.5999999999999996,
+          "y": -18,
+          "layer": "top",
+          "width": 0.1016
+        },
+        "lengthMm": 29.08235576013895
+      },
+      {
+        "sourceTraceId": "source_trace_28",
+        "end": {
+          "route_type": "wire",
+          "x": 3.92,
+          "y": -18,
+          "layer": "top",
+          "width": 0.1016
+        },
+        "lengthMm": 30.8952489789524
+      }
+    ]
+  },
+  "manualRamEscape": {
+    "sourceTraceId": "source_trace_28",
+    "pattern": "long",
+    "fromActualRamPad": {
+      "x": 1.6,
+      "y": -22.6,
+      "layer": "top",
+      "pointId": "pcb_port_374",
+      "pcb_port_id": "pcb_port_374"
+    },
+    "preflight": {
+      "status": "MANUAL_RAM_ESCAPE_PREFLIGHT_PASS_PENDING_EXACT_REPLAY_DRC",
+      "wireSamplingStepMm": 0.005,
+      "wireSamplingGuardMm": 0.003,
+      "wireSamples": 596,
+      "localShapesExamined": 104,
+      "totalShapes": 14486,
+      "copperClearanceMm": 0.1016,
+      "padToHoleMm": 0.2,
+      "holeEdgeGapMm": 0.254,
+      "failures": []
+    },
+    "bootstrap": {
+      "path": "dist/am3352-ddr-usbc-reused-strobe-sections-attempt-435/result.json",
+      "sha256": "af68676e41784386a11b11e8466347c6270d20212bf1225a40ff03096eb09da6"
+    },
+    "escapes": {
+      "path": "dist/am3352-ddr-usbc-ram-strobe-long-prep-attempt-445/signal-escapes.native.json",
+      "sha256": "cfda04800243e0b4e914431d686a79c0d576511e9a0a3b5ab1e53c5b1b4d4cf3"
+    },
+    "authoredManually": true,
+    "nativeGenerated": false
+  },
+  "nativeBootstrap": {
+    "path": "dist/am3352-ddr-usbc-ram-strobe-long-prep-attempt-445/signal-escapes.native.json",
+    "sha256": "cfda04800243e0b4e914431d686a79c0d576511e9a0a3b5ab1e53c5b1b4d4cf3",
+    "dogbones": 3
+  },
+  "ramTailRun": {
+    "path": "dist/am3352-ddr-usbc-ram-strobe-long-tails-attempt-446/result.json",
+    "sha256": "fe53a642db0992b1e882804dffd87a5f45f8af59dbfb1a9f7980d486d844da4d"
+  },
+  "ramTails": {
+    "path": "dist/am3352-ddr-usbc-ram-strobe-long-tails-attempt-446/local-escapes.json",
+    "sha256": "dfc2ea05e4fd2de57d899a86b43cbd0a859d18f8cbbbb413be967f3a19b5a474"
+  },
+  "signals": 25,
+  "copperLayers": 4,
+  "lengths": [
+    {
+      "name": "DDR_DQSn1",
+      "planarMm": 51.001321123576794,
+      "throughVias": 2
+    },
+    {
+      "name": "DDR_DQS1",
+      "planarMm": 50.95313905432341,
+      "throughVias": 4
+    }
+  ],
+  "skewMm": 0.04818206925338586,
+  "nativeBusLanesBootstrap": true,
+  "authoredManualRamRepair": true,
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false,
+  "scope": "Exact checked native/manual CPU and channel sections joined to guarded manual RAM repairs; source replay, full byte timing, Gerber shorts and independent physical checks required.",
+  "priorJoinedPaths": {
+    "path": "routing/am3352-ddr-usbc-reused-strobes-unmatched-paths.json",
+    "sha256": "6ed8fa4115a9242872de7105135d5f7f83ac81c52abe122586aacd0e683ce9b5"
+  },
+  "priorJoinedProvenance": {
+    "path": "routing/am3352-ddr-usbc-reused-strobes-unmatched-paths.provenance.json",
+    "sha256": "d701aa3b36a69f21ce314800ff65e2deb8656a0a698605b5bfde39dd5a476532"
+  },
+  "manualChannelShortening": {
+    "kind": "REMOVED_REDUNDANT_POSITIVE_STROBE_INWARD_TUNING_TURN",
+    "signal": "DDR_DQS1",
+    "originalIndices": [
+      103,
+      177
+    ],
+    "endpoints": [
+      {
+        "x": 10.723902814004635,
+        "y": -13.972360000000002
+      },
+      {
+        "x": 10.723902814004635,
+        "y": -14.903240000000004
+      }
+    ],
+    "beforePlanarMm": 53.72014363351597,
+    "afterPlanarMm": 50.95313905432341,
+    "removedLengthMm": 2.767004579192559,
+    "newHoles": 0,
+    "preservedThroughVias": 4,
+    "wireSamplingStepMm": 0.005,
+    "wireSamplingGuardMm": 0.003,
+    "samples": 188,
+    "minimumCopperEdgeGapMm": 0.11999999999999868,
+    "pairSkewMm": 0.04818206925338586,
+    "wholeBytePlanarSkewMm": 0.6350000014649382,
+    "byteLengths": [
+      {
+        "name": "DDR_D8",
+        "planarMm": 50.53587956533585
+      },
+      {
+        "name": "DDR_D9",
+        "planarMm": 50.535879564900114
+      },
+      {
+        "name": "DDR_D10",
+        "planarMm": 50.53587956337854
+      },
+      {
+        "name": "DDR_D11",
+        "planarMm": 50.53587956490522
+      },
+      {
+        "name": "DDR_DQM1",
+        "planarMm": 50.53587956482551
+      },
+      {
+        "name": "DDR_D12",
+        "planarMm": 51.17087956484348
+      },
+      {
+        "name": "DDR_D13",
+        "planarMm": 50.535879565400165
+      },
+      {
+        "name": "DDR_D14",
+        "planarMm": 50.53587956567147
+      },
+      {
+        "name": "DDR_D15",
+        "planarMm": 50.53587956379684
+      },
+      {
+        "name": "DDR_DQSn1",
+        "planarMm": 51.001321123576794
+      },
+      {
+        "name": "DDR_DQS1",
+        "planarMm": 50.95313905432341
+      }
+    ],
+    "exactSourceAndIndependentPhysicalChecksRequired": true
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "status": "DDR33_CASN_D3_CSN0_RESET_COMPLETE_DIAGNOSTIC_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+    "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-a6-bootstrap-paths.json",
+    "sha256": "1063d2552baaf86b644d8778ebbf90ef545a3e31512b17a351100d071ce04fc5"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-a6-bootstrap-check-summary.json",
+    "sha256": "dc111d31b068300ceb9f92a97923488d22ae62c8586740955e3edce640f92606"
+  },
+  "nativeCasnRun": {
+    "path": "dist/am3352-ddr32-casn-d3-open-native-bottom-leg-attempt-673/result.json",
+    "sha256": "bb3dc71904a357f38cd5ae34d6af4ab14b63786831516afe095d6db9267c72ac"
+  },
+  "nativeD3Run": {
+    "path": "dist/am3352-ddr32-d3-guarded-native-bottom-carrier-attempt-676/result.json",
+    "sha256": "7510ed13eeb4e2a8c0c4588a3a4828b45ccde69f088b9c7d729af03d946c2898"
+  },
+  "nativeCsn0Run": {
+    "path": "dist/am3352-ddr32-csn0-after-reset-open-native-top-attempt-681/result.json",
+    "sha256": "f0014a8a2642da90714cdf09e6e07a2d632ed5365a426167643ad64961b0010c"
+  },
+  "nativeResetRun": {
+    "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/result.json",
+    "sha256": "7f048ed95253190d01719caea9767582e47a42cda9b354d68baa73ae84a8ec9a"
+  },
+  "nativeResetInput": {
+    "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/input.simple-route.json",
+    "sha256": "1ae74978944de00233ab0a0406af44ec9cfefb5f9fba4cd96733efa4a7ea29cd"
+  },
+  "nativeResetOutput": {
+    "path": "dist/am3352-ddr32-reset-guarded-native-bottom-leg-attempt-683/output.simple-route.json",
+    "sha256": "a973c6c9a2bcb64413ab8a298d74eff826141d6fe966400893debae9fdb8743b"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-casn-d3-coupled-paths.json",
+    "sha256": "2fca504890ed38bb870fccfe7c7ddb1064d4bc8b7442bc149af68c2927f9a91e"
+  },
+  "addedSignals": [
+    "DDR_CASn"
+  ],
+  "changedExistingSignals": [
+    "DDR_D3",
+    "DDR_CSn0",
+    "DDR_RESETn"
+  ],
+  "fullyReconstructedSignals": [
+    "DDR_CASn",
+    "DDR_D3",
+    "DDR_CSn0",
+    "DDR_RESETn"
+  ],
+  "allActualEndpointsMatch": true,
+  "preservedExistingSignalPaths": 29,
+  "connectedCandidateSignals": 33,
+  "remainingUnroutedDdrSignals": 16,
+  "oldThroughViasPreserved": 161,
+  "replannedOldSignalHoles": [
+    "pcb_via_145",
+    "pcb_via_146"
+  ],
+  "newThroughVias": 8,
+  "expectedThroughVias": 169,
+  "expectedTracePieces": 135,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "routes": {
+    "DDR_CASn": {
+      "planarMm": 28.158341497356133,
+      "physicalVias": 2,
+      "actualCpuAndRamPadsMatch": true
+    },
+    "DDR_D3": {
+      "planarMm": 23.065382386916234,
+      "physicalVias": 4,
+      "actualCpuAndRamPadsMatch": true
+    },
+    "DDR_CSn0": {
+      "planarMm": 45.013122949343476,
+      "physicalVias": 0,
+      "actualCpuAndRamPadsMatch": true
+    },
+    "DDR_RESETn": {
+      "planarMm": 52.64654254594159,
+      "physicalVias": 2,
+      "actualCpuAndRamPadsMatch": true
+    }
+  },
+  "nativeBusLanesBootstrap": true,
+  "manualRepairs": true,
+  "pendingOpenedSignalRepairs": [],
+  "eligibleForDiagnosticReplay": true,
+  "wholeByteMatchingQualified": false,
+  "commandNominalLengthsQualified": false,
+  "copperLayers": 4,
+  "referenceLayersReserved": [
+    "inner1",
+    "inner2"
+  ],
+  "defaultChanged": false,
+  "originalShellFitVerified": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

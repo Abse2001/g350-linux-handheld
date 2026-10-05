@@ -1,0 +1,168 @@
+{
+  "status": "TI_NOMINAL_LENGTH_REVIEW_INCOMPLETE_CLOCK_RETUNING_REQUIRED",
+  "reviewedAt": "2026-10-04",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-repaired-strobes-candidate/circuit.json",
+    "sha256": "aa7dce6e20cf0173895ecee9ed5e7dbfd8f815fba47bfc64b8dc8eed3f536ae3"
+  },
+  "primarySource": "https://www.ti.com/lit/ds/symlink/am3352.pdf",
+  "sections": [
+    "7.7.2.3.6.1",
+    "Table 7-68 row13 and footnote9",
+    "Table 7-69"
+  ],
+  "commandClock": {
+    "longestManhattanMm": 35.400000000000006,
+    "additionalRoutingAllowanceMm": 7.62,
+    "nominalMm": 43.02,
+    "rangeMm": [
+      41.75,
+      44.290000000000006
+    ],
+    "clocks": [
+      {
+        "name": "DDR_CK",
+        "manhattanMm": 27.4,
+        "routedPlanarMm": 34.49909962830806,
+        "withinNominalRange": false
+      },
+      {
+        "name": "DDR_CKn",
+        "manhattanMm": 27.4,
+        "routedPlanarMm": 34.42248328065238,
+        "withinNominalRange": false
+      }
+    ],
+    "allClassSignalsConnected": false,
+    "nominalLengthPass": false
+  },
+  "byteNominalReferences": [
+    {
+      "name": "DDR_BYTE0",
+      "longestManhattanMm": 26.599999999999998,
+      "rows": [
+        {
+          "name": "DDR_D2",
+          "manhattanMm": 21.799999999999997,
+          "routedPlanarMm": 30.727783540224546
+        },
+        {
+          "name": "DDR_D6",
+          "manhattanMm": 21,
+          "routedPlanarMm": 30.7277835402313
+        },
+        {
+          "name": "DDR_D0",
+          "manhattanMm": 24.200000000000003,
+          "routedPlanarMm": 30.727783540320264
+        },
+        {
+          "name": "DDR_DQS0",
+          "manhattanMm": 23.4,
+          "routedPlanarMm": 30.727783540546866
+        },
+        {
+          "name": "DDR_DQSn0",
+          "manhattanMm": 25,
+          "routedPlanarMm": 30.72778354054688
+        },
+        {
+          "name": "DDR_D4",
+          "manhattanMm": 21,
+          "routedPlanarMm": 30.72778354052423
+        },
+        {
+          "name": "DDR_DQM0",
+          "manhattanMm": 18.599999999999998,
+          "routedPlanarMm": 30.727783540455054
+        },
+        {
+          "name": "DDR_D1",
+          "manhattanMm": 22.6,
+          "routedPlanarMm": 30.72778354066949
+        },
+        {
+          "name": "DDR_D7",
+          "manhattanMm": 24.200000000000003,
+          "routedPlanarMm": 31.362783540618018
+        },
+        {
+          "name": "DDR_D3",
+          "manhattanMm": 25,
+          "routedPlanarMm": 30.727783540635336
+        },
+        {
+          "name": "DDR_D5",
+          "manhattanMm": 26.599999999999998,
+          "routedPlanarMm": 30.727783540626003
+        }
+      ]
+    },
+    {
+      "name": "DDR_BYTE1",
+      "longestManhattanMm": 21,
+      "rows": [
+        {
+          "name": "DDR_D8",
+          "manhattanMm": 18.6,
+          "routedPlanarMm": 50.53587956533585
+        },
+        {
+          "name": "DDR_D9",
+          "manhattanMm": 15.399999999999999,
+          "routedPlanarMm": 50.535879564900114
+        },
+        {
+          "name": "DDR_D10",
+          "manhattanMm": 18.6,
+          "routedPlanarMm": 50.53587956337854
+        },
+        {
+          "name": "DDR_D11",
+          "manhattanMm": 18.6,
+          "routedPlanarMm": 50.53587956490522
+        },
+        {
+          "name": "DDR_DQM1",
+          "manhattanMm": 18.599999999999998,
+          "routedPlanarMm": 50.53587956482551
+        },
+        {
+          "name": "DDR_D12",
+          "manhattanMm": 20.2,
+          "routedPlanarMm": 51.17087956484348
+        },
+        {
+          "name": "DDR_DQSn1",
+          "manhattanMm": 16.2,
+          "routedPlanarMm": 51.001321123576794
+        },
+        {
+          "name": "DDR_DQS1",
+          "manhattanMm": 16.2,
+          "routedPlanarMm": 50.95313905432341
+        },
+        {
+          "name": "DDR_D13",
+          "manhattanMm": 21,
+          "routedPlanarMm": 50.535879565400165
+        },
+        {
+          "name": "DDR_D14",
+          "manhattanMm": 19.400000000000002,
+          "routedPlanarMm": 50.53587956567147
+        },
+        {
+          "name": "DDR_D15",
+          "manhattanMm": 15.4,
+          "routedPlanarMm": 50.53587956379684
+        }
+      ]
+    }
+  ],
+  "fullPropagationDelayQualified": false,
+  "spacingImpedanceReturnPathsQualified": false,
+  "originalShellGeometryVerified": false,
+  "fabricationReady": false,
+  "scope": "Placement-derived TI nominal references, separate from relative planar skew and physical DRC. CK/CKn must be lengthened and rechecked with the complete address/control class. Recompute after any placement or shell integration change; byte nominal references do not establish electrical qualification."
+}

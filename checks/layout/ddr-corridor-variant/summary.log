@@ -1,0 +1,76 @@
+{
+  "status": "CHECKED_DDR_CORRIDOR_COMPONENT_PLACEMENT",
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "routingPermitted": false,
+  "fullHandheldPlacementComplete": false,
+  "entry": "experiments/am3352-g350-ddr-corridor.circuit.tsx",
+  "defaultEntryRemainsHistoricalDdrFixture": true,
+  "logicalComponents": 280,
+  "movedComponents": 46,
+  "ramGroupTranslatedParts": 18,
+  "lcdSourceResistorsRelocated": 28,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "cpuToRamCenterDistanceMm": 20,
+  "copperLayers": 4,
+  "nativeErrors": 0,
+  "buildExitCode": 0,
+  "typecheckExitCode": 0,
+  "allLayerGerberShorts": 0,
+  "exactFunctionalSourcePreserved": true,
+  "allExplicitNetNamesDistinct": true,
+  "physicalPadsAndNativePasteTransformVerified": true,
+  "movedCourtyardsClear": true,
+  "minCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "ddrBypassPlacement": "32 measured",
+  "sourceDistances": "28 measured",
+  "parentCpuBypassMetrics": "59 preserved",
+  "smtStencil": {
+    "matchedPads": 1165,
+    "matchedNonplatedHoles": 2,
+    "scaledApertures": 1104,
+    "fullSizeApertures": 9,
+    "noPastePads": 48,
+    "geometryPreserved": true,
+    "nativeThroughHoleAperturesUnqualified": 8,
+    "fullStencilQualification": false
+  },
+  "independentKicad": {
+    "processExitCode": 5,
+    "errors": 0,
+    "warningCount": 404,
+    "warningTypes": {
+      "silk_edge_clearance": 6,
+      "silk_overlap": 199,
+      "silk_over_copper": 199
+    },
+    "unconnectedItemsReported": 499,
+    "unconnectedCountIsComplete": false,
+    "perItemExclusions": 0,
+    "ignoredRuleSeverities": 0,
+    "exactLocalFootprints": 280,
+    "physicalRecordSha256": "9a0cc01677299dbc7dece9d4033a6ec061e6c01de9a629efc4f095358f4e5a1b",
+    "fullDrcPass": false,
+    "scope": "Unrouted placement. Full DRC fails because open connections and silkscreen warnings remain."
+  },
+  "mechanical": {
+    "outlineExchangeVerified": true,
+    "actualSizePdfVerified": true,
+    "shellFitVerified": false,
+    "mountingGeometryVerified": false
+  },
+  "remaining": [
+    "PMIC, boost, SD regulator and backlight high-current loops, feedback, thermal and ground returns.",
+    "Dedicated bypass vias, actual short and wide copper paths, effective capacitance and continuous reference planes.",
+    "Complete four-layer native bus_lanes DDR and host routing; independent timing, connectivity, shorts and manufacturing checks.",
+    "Linux panel, pinmux, audio and shared USB-C installation/recovery implementation and validation.",
+    "Battery protection, NTC, load current, dimensions and speaker load/mating qualification.",
+    "Measured original shell outline, holes, button/port registration and assembled clearances; the 1:1 PDF permits a perimeter check only."
+  ],
+  "scope": "Placement only. DDR reservation is an engineering plan, not copper isolation/return-path or signal-integrity qualification. Original-shell geometry and routing remain incomplete.",
+  "hashes": "stored in summary"
+}

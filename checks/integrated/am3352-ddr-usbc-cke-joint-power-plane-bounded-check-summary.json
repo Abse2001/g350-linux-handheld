@@ -1,0 +1,242 @@
+{
+  "status": "DDR26_CKE_CONTINUITY_POWER_PLANES_AND_CLEARANCE_CHECKED_BYTE1_TIMING_FAILS_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-joint-power-plane-bounded-candidate/circuit.json",
+    "sha256": "4929ff439da1e340f7ce82538f4c23231d627868ef7889bd3915cd3714593e1b"
+  },
+  "board": {
+    "path": "dist/am3352-ddr-usbc-cke-joint-power-plane-bounded-diagnostic/board.kicad_pcb",
+    "sha256": "51eb29048f0d425259ac159d80644698059e838b6aeed2911a21b96e94ff79af"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-cke-joint-clean-unmatched-paths.json",
+    "sha256": "9676816aa13a32eb7a812dd7fbddabb52b2d5037d9e6d7149e3bacbcf9bdcf7b"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-access-check-summary.json",
+    "sha256": "df57ba9abd16d4f9aa8432dd8281dc73e2b498a0eb88054e2ead8a01424f2e68"
+  },
+  "entry": {
+    "path": "experiments/am3352-ddr-usbc-cke-joint-power-plane.circuit.tsx",
+    "sha256": "3ca0141e9b4b3fc302af1bdb2b7a7eabdf7233ee99e7ba8d14e00630ae6e578a"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-source-validation.json",
+    "sha256": "82607b189640b8872aed8714fbbd463829736af07fd1e7016601c05656fdc173"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-native-ddr-connectivity.json",
+    "sha256": "48cb4536ef765f6109432525c4a11f215e44ad4c27b16f684412ed7e2911d9ec"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-ddr-connectivity.json",
+    "sha256": "8e3ba316c033e1d98ed773fa7964d13649b5031b95eeb6d784b78f0b4f0ea691"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-native-usb-connectivity.json",
+    "sha256": "edb95e84c79f0b8cd42e2be9159b515772c5e926fa43be97183ea87e2675b216"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-reference-connectivity.json",
+    "sha256": "e9905ed4e5d98c43ba0035c8525192b9fbcff777809fbaa2ce5ebd455739ae4f"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-kicad-drc.json",
+    "sha256": "8253fd6a1289ee2db0cb69ba898887b5fc6eb8e3dde5927cca95bdc187d621e2"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "libraryAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-library.log",
+    "sha256": "a6dda3394e12149aa99515f42cf540b69bf09f4a6e09251e5e8feedbf45e022e"
+  },
+  "routingProvenance": {
+    "path": "routing/am3352-ddr-usbc-cke-joint-clean-unmatched-paths.provenance.json",
+    "sha256": "0510754ceb4bf105c2e90035dc055bdc92930813ec1737df8666d1be6ccc484b"
+  },
+  "nativeChannelRun": {
+    "path": "dist/am3352-ddr25-cke-joint-channel-attempt-461/result.json",
+    "sha256": "6c7016b3d86e11aae0333deaaea58e66aee32eb47351371f885843cf95793604"
+  },
+  "manualRamTailRun": {
+    "path": "dist/am3352-ddr25-cke-joint-ram-rebuild-attempt-464/result.json",
+    "sha256": "1759471e8b2193eba2d6d2dcefdfb799b352c914dcc6d993bacc04a161ad4ba2"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 128,
+  "throughVias": 143,
+  "preservedThroughVias": 135,
+  "addedThroughVias": 8,
+  "connectedDdrSignals": 26,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignalNames": [
+    "DDR_A0",
+    "DDR_A1",
+    "DDR_A10",
+    "DDR_A11",
+    "DDR_A12",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_A2",
+    "DDR_A3",
+    "DDR_A4",
+    "DDR_A5",
+    "DDR_A6",
+    "DDR_A7",
+    "DDR_A8",
+    "DDR_A9",
+    "DDR_BA0",
+    "DDR_BA1",
+    "DDR_BA2",
+    "DDR_CASn",
+    "DDR_CSn0",
+    "DDR_ODT",
+    "DDR_RASn",
+    "DDR_WEn"
+  ],
+  "changedExistingSignals": [
+    "DDR_DQSn1",
+    "DDR_D1",
+    "DDR_D7"
+  ],
+  "addedSignals": [
+    "DDR_CKE"
+  ],
+  "ddrTiming": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.15742110831645206,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 10.584846870112436,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 10.167587379167571,
+      "limitMm": 0.127,
+      "pass": false
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 0.07661634765567982,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "ckeConnected": true,
+  "newConnectedDdrSignals": 1,
+  "ckePlanarMm": 49.90747867980896,
+  "ckeThroughVias": 4,
+  "ckeNominalRangeMm": [
+    41.75,
+    44.29
+  ],
+  "ckeNominalLengthPass": false,
+  "negativeStrobePlanarMm": 61.12072643349098,
+  "positiveStrobePlanarMm": 50.95313905432341,
+  "negativeStrobeThroughVias": 4,
+  "positiveStrobeThroughVias": 4,
+  "bothCableOrientationsDataConnected": true,
+  "chargingAndDataShareOneSocket": true,
+  "usbNumericPadNetAssignmentsVerified": 38,
+  "usbConnectedPadChecks": 40,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "ddrPowerPlaneRepair": {
+    "entry": {
+      "path": "experiments/am3352-ddr-usbc-cke-joint-power-plane.circuit.tsx",
+      "sha256": "3ca0141e9b4b3fc302af1bdb2b7a7eabdf7233ee99e7ba8d14e00630ae6e578a"
+    },
+    "priorPlaneCopperClearanceMm": 0.2,
+    "planeCopperClearanceMm": 0.12,
+    "viaLandMm": 0.4572,
+    "viaDrillMm": 0.254,
+    "nominalPlaneToOtherNetDrillGapMm": 0.2216,
+    "nominalPlaneNeckAtPointEightPitchMm": 0.1028,
+    "sourceManufacturingMinimumsUnchanged": true,
+    "groundPlaneClearanceUnchanged": true,
+    "filledReferenceContinuityCheckRequired": true,
+    "independentFilledReferenceConnectivityPass": true,
+    "nativeZoneMinimumThicknessMm": 0.25
+  },
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItemsReported": 499,
+  "ignoredNativeChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "physicalLibraryRecordsPreserved": 13899,
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "bothBytePlanarTimingPass": false,
+  "allThreeDifferentialPairPlanarTimingPass": false,
+  "topSnapshot": {
+    "path": "images/am3352-ddr-usbc-cke-joint-power-plane-bounded-top.png",
+    "sha256": "f5feaa5180b58cf1dfc99912af65f7ad5ae68b9c4e1dbe689fc178ae217128b8",
+    "visuallyInspected": true
+  },
+  "bottomSnapshot": {
+    "path": "images/am3352-ddr-usbc-cke-joint-power-plane-bounded-bottom.png",
+    "sha256": "ce66b190e585a75cafefba9953e0b45fd257a3f0ebb6616afe5faa2c5d5c9f66",
+    "visuallyInspected": true
+  },
+  "cliPackageVersion": "0.1.2237",
+  "tscircuitVersion": "0.0.2742",
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "controlledImpedanceQualified": false,
+  "completePowerRouting": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "Separate DDR26 continuity candidate; default remains checked DDR25. CKE uses a native bus_lanes channel and manually guarded local fanouts. Three RAM tails are rebuilt, preserving all prior holes and other copper. A bounded DDR power-pour clearance repair restores the RAM supply plane without changing source manufacturing minimums or outer plane boundaries. Physical DRC, shorts, exact DDR/USB endpoints and RAM supply/ground/bypass continuity pass. Whole-byte1 and DQS1 planar matching fail; CKE is longer than the current TI placement nominal range. All 23 other address/control channels, nominal clock tuning, electrical timing, host/Linux and measured original-shell geometry remain required."
+}

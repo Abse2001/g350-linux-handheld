@@ -1,0 +1,34 @@
+{
+  "priorLayout": {
+    "path": "routing/am3352-ddr-usbc-sense-clamp-routes.json",
+    "sha256": "f7b1d8af4255697d6926c0af6a0de9d5d7ed71b08fd1a859c44b9bae1cf0a503"
+  },
+  "priorProvenance": {
+    "path": "routing/am3352-ddr-usbc-sense-clamp-routes.provenance.json",
+    "sha256": "3a691757e6e40b104499494b94b0aab3214371357230018f6bdf0c22e49abe1e"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-with-sense-clamp/circuit.json",
+    "sha256": "18dc6139b6f64579a76f87ed508fe4541617c49d9f7da121837c181824bb15d6"
+  },
+  "nativeControlRun": {
+    "path": "dist/am3352-usbc-pmic-cap-attempt-395/result.json",
+    "sha256": "0bb079cf38cf46a866371738dbdbb4e6535bebd00f5ed80c2ae496a86373ddea"
+  },
+  "nativeCcRun": {
+    "path": "dist/am3352-usbc-cc-attempt-383/result.json",
+    "sha256": "923f45ac4e6373b49cba11a8b093a2bf96003a6ddc8cccd42424ab1b8dd34799"
+  },
+  "nativePairRun": {
+    "path": "dist/am3352-usbc-top-pair-bootstrap-attempt-382/result.json",
+    "sha256": "911c81e151ba82f6d85d39a985aa90c831cad379a99307ff2ba772dfc703fade"
+  },
+  "layout": {
+    "path": "routing/am3352-ddr-usbc-final-routes.json",
+    "sha256": "6e66c2f445a36198902a3f380e4ac97f30f9d9510d6f2525ce5b6c3cee49c127"
+  },
+  "phase": "pmic-cap",
+  "signal": "USB_VBUS_PMIC_BYPASS",
+  "fullPoweredHostQualified": false,
+  "fabricationReady": false
+}

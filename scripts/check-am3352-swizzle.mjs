@@ -9,6 +9,9 @@ for(const [path,wholeByteSwap,byte1Only] of [
   ['lib/am3352/memory-swizzled-connections.json',false,false],
   ['lib/am3352/memory-byte-swapped-connections.json',true,false],
   ['lib/am3352/memory-byte1-swizzled-connections.json',false,true],
+  ['lib/am3352/memory-byte0-guided-swizzled-connections.json',false,false],
+  ['lib/am3352/memory-byte0-centered-swizzled-connections.json',false,false],
+  ['lib/am3352/memory-byte1-top-centered-swizzled-connections.json',false,false],
 ]) {
   const raw=readFileSync(path),selected=JSON.parse(raw)
   assert.equal(selected.length,49)

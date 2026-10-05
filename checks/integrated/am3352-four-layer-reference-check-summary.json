@@ -1,0 +1,56 @@
+{
+  "status": "FOUR_LAYER_REFERENCE_AND_FIRST_BYPASS_DIAGNOSTIC_HOST_INCOMPLETE",
+  "fabricationReady": false,
+  "poweredHost": false,
+  "source": {
+    "path": "dist/diagnostics/am3352-four-layer-reference/circuit.json",
+    "sha256": "4dccd5445f96a01b66572c013363e7bb4ec3d9249f3d1da5116f806653dc470d",
+    "components": 204
+  },
+  "copperLayerCount": 4,
+  "maxCopperLayers": 4,
+  "ddrSignalLayers": [
+    "top",
+    "bottom"
+  ],
+  "referenceLayers": {
+    "inner1": "GND",
+    "inner2": "DDR_1V5"
+  },
+  "referenceRegionsGenerated": 2,
+  "completeReferencePlaneConnections": false,
+  "manualBypassLoops": 1,
+  "copperTracePieces": 2,
+  "physicalThroughVias": 2,
+  "viaGeometryMm": {
+    "land": 0.4572,
+    "drill": 0.254
+  },
+  "ddrSignalsConnected": 0,
+  "requiredDdrSignals": 49,
+  "gerberShorts": 0,
+  "gerberShortsLayerScope": "all four layers",
+  "independentErrorSeverityViolations": 0,
+  "independentWarnings": 418,
+  "allHostUnconnectedItems": 499,
+  "sourcePlacementErrors": 0,
+  "checks": {
+    "ddrContinuity": "FAIL",
+    "powerSource": "PASS",
+    "bootSource": "PASS",
+    "storageSource": "PASS",
+    "gerberShorts": "PASS_ON_PARTIAL_COPPER",
+    "physicalDrc": "NO_ERRORS_418_WARNINGS_499_UNCONNECTED"
+  },
+  "board": {
+    "path": "dist/diagnostics/am3352-four-layer-reference/board.kicad_pcb",
+    "sha256": "241fe085145f9edd5f712a38eed8346c629aa2a9ad58e2b2dfb4a2bae349b3c6"
+  },
+  "snapshot": {
+    "path": "images/am3352-four-layer-reference-source.png",
+    "sha256": "21c5bee3df1e49c0d3ba0d5f4cdfb70f8b1217503f9c46fc3c471368b826bdb0",
+    "visuallyInspected": true
+  },
+  "fullElectricalTimingQualified": false,
+  "scope": "Exact current204-component placement, two reference regions and first bypass loop only.49 DDR signals and remaining supply/peripheral routing are incomplete; no order/fabrication approval."
+}

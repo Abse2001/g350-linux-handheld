@@ -1,0 +1,53 @@
+{
+  "status": "COMMAND_REAL_PAD_REPLAY_AND_ALL_FIXED_SOURCE_GEOMETRY_PASS",
+  "source": {
+    "path": "dist/diagnostics/am3352-command-fine-782-replay-candidate/circuit.json",
+    "sha256": "5d26b45a9b1b5e499fe224f63bbdc4b5de8289a139f6c904fdc7674075bfd33a"
+  },
+  "base": {
+    "path": "dist/diagnostics/am3352-ddr23-command-replan-candidate/circuit.json",
+    "sha256": "aad4a9bb60a27ed7acb46130e7dcec8ce6622f15ec01d558769bbea1d9ee6058"
+  },
+  "paths": {
+    "path": "routing/am3352-command-fine-782-replay-paths.json",
+    "sha256": "d709d0005338361a704c70cccedf21ec8b8c21ca5dd14211fb3e57e889d0e1a2"
+  },
+  "fixedPaths": {
+    "path": "routing/am3352-ddr23-command-replan-fixed-paths.json",
+    "sha256": "7188248a85d19d25787ae5995117f14785b20885a3bdc3b39c11f7f895ea92b9"
+  },
+  "components": 212,
+  "pads": 912,
+  "copperLayers": 4,
+  "fixedTracePiecesPreserved": 125,
+  "fixedViasPreserved": 141,
+  "retainedDataResetPathsExact": 23,
+  "newCommandPaths": [
+    "DDR_CK",
+    "DDR_CKn",
+    "DDR_ODT",
+    "DDR_CSn0",
+    "DDR_A6",
+    "DDR_A9",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_CASn",
+    "DDR_A1",
+    "DDR_A8",
+    "DDR_BA2",
+    "DDR_A7",
+    "DDR_BA1",
+    "DDR_A5",
+    "DDR_BA0",
+    "DDR_A0",
+    "DDR_A4",
+    "DDR_A10"
+  ],
+  "stagedDdrChannels": 42,
+  "allDifferentialPairDeclarationsRestored": true,
+  "referenceBoundariesPreserved": true,
+  "independentPlaneConnectivityStillRequired": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

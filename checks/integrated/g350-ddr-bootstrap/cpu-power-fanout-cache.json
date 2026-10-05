@@ -1,0 +1,64 @@
+{
+  "status": "NATIVE_62_CPU_PLANE_ESCAPES_SOURCE_CACHE_REQUIRES_INDEPENDENT_CHECKS",
+  "fabricationReady": false,
+  "qualifiedPowerConnections": 0,
+  "processorConnections": 62,
+  "physicalVias": 58,
+  "sharedGroundVias": [
+    {
+      "connection": "U_SOC.pin111",
+      "sharedWith": "U_SOC.pin110",
+      "net": "GND",
+      "x": -6.4,
+      "y": 18.4
+    },
+    {
+      "connection": "U_SOC.pin147",
+      "sharedWith": "U_SOC.pin146",
+      "net": "GND",
+      "x": -6.4,
+      "y": 20
+    },
+    {
+      "connection": "U_SOC.pin135",
+      "sharedWith": "U_SOC.pin117",
+      "net": "GND",
+      "x": -1.1102230246251565e-16,
+      "y": 17.6
+    },
+    {
+      "connection": "U_SOC.pin153",
+      "sharedWith": "U_SOC.pin152",
+      "net": "GND",
+      "x": -1.5999999999999999,
+      "y": 20
+    }
+  ],
+  "padToViaMaxMm": 1.3656854249492372,
+  "padToViaLimitMm": 1.778,
+  "wireCoordinatesRetained": true,
+  "duplicatePhysicalViaEmissionRemoved": true,
+  "artifacts": [
+    {
+      "path": "dist/g350-ddr-cpu-power-same-net/solver-input.json",
+      "sha256": "419288bf93942f2b8b517dcf9d0acfa92073d2b4bec6ec0f2539d3febb6a16a4"
+    },
+    {
+      "path": "dist/g350-ddr-cpu-power-same-net/output.json",
+      "sha256": "3040499876a4c454591721f6ba9484041ab58b1448551f861bacaf7913dffd1e"
+    },
+    {
+      "path": "dist/g350-ddr-cpu-power-same-net/result.json",
+      "sha256": "354dea041812b72fa546188a0c24b7065efe33cc9d4593c1968483aaefaf3589"
+    },
+    {
+      "path": "dist/g350-ddr-ram-power-checked-rules/compiled.circuit.json",
+      "sha256": "d79b07d5c97a2d1063b48ccc49e4d6d3b807b2ec25a214dc95d7f4297a93a616"
+    },
+    {
+      "path": "lib/am3352/placement/ddr-cpu-power-fanout.json",
+      "sha256": "fedc334e13ec0fe6a3b086c9c3b6daf49ea01ebde0a4d053fdfac59d7342d04f"
+    }
+  ],
+  "scope": "Fresh native FanoutSolver output on all placed obstacles and checked RAM escape obstacles. Same-net merges enabled. Four duplicate ground via emissions removed at identical native coordinates; all 62 connections must be replayed and checked on the actual shaped board."
+}

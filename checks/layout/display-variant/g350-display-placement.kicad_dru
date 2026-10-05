@@ -1,0 +1,16 @@
+(version 1)
+(rule "AM3352 trial copper spacing" (constraint clearance (min 0.1016mm)))
+(rule "AM3352 SMT spacing" (condition "A.Type == 'Pad' && B.Type == 'Pad'") (constraint clearance (min 0.15mm)))
+(rule "AM3352 trace width" (constraint track_width (min 0.1016mm)))
+(rule "AM3352 via land" (constraint via_diameter (min 0.4572mm)))
+(rule "AM3352 via drill" (constraint hole_size (min 0.254mm)))
+(rule "AM3352 via annular ring" (constraint annular_width (min 0.1016mm)))
+(rule "AM3352 drill separation" (constraint hole_to_hole (min 0.254mm)))
+(rule "AM3352 copper to drill" (constraint hole_clearance (min 0.20mm)))
+(rule "AM3352 edge clearance" (constraint edge_clearance (min 0.30mm)))
+(rule "SD_NO_COPPER_0 housing exception"
+  (condition "A.Type == 'Footprint' && A.Reference != 'J_SD' && A.Layer == 'F.Cu' && A.intersectsArea('SD_NO_COPPER_0')")
+  (constraint disallow footprint))
+(rule "SD_NO_COPPER_1 housing exception"
+  (condition "A.Type == 'Footprint' && A.Reference != 'J_SD' && A.Layer == 'F.Cu' && A.intersectsArea('SD_NO_COPPER_1')")
+  (constraint disallow footprint))

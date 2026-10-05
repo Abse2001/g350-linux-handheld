@@ -1,0 +1,34 @@
+{
+  "status": "GUIDED_REPLAY_SOURCE_GEOMETRY_PASS_UNTUNED_HOST_INCOMPLETE",
+  "circuit": {
+    "path": "dist/experiments/am3352-guided-byte0-replay/circuit.json",
+    "sha256": "4a0b831d21de83c1a4b565530d88c20ca9091141de2ccdf13c7a5d9835d323df"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "ddrSignalTraces": 11,
+  "ddrThroughVias": 30,
+  "physicalThroughVias": 99,
+  "existingPowerCopper": {
+    "manualBypassLoops": 15,
+    "ramBypassLoops": 14,
+    "packageReferenceEscapes": 39,
+    "ramReferenceEscapeCounts": {
+      "DDR_1V5": 18,
+      "GND": 21
+    },
+    "traces": 69,
+    "throughVias": 69,
+    "minimumDrillEdgeClearanceMm": 0.44600000000000284,
+    "generatedReferenceRegions": 2,
+    "completePowerRouting": false
+  },
+  "timingQualified": false,
+  "pairGeometryQualified": false,
+  "fabricationReady": false
+}

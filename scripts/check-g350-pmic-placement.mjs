@@ -1,0 +1,201 @@
+import {readFileSync,writeFileSync} from 'node:fs'
+import {createHash} from 'node:crypto'
+import assert from 'node:assert/strict'
+
+const root='checks/layout/pmic-placement-variant',input='dist/experiments/am3352-g350-pmic-placement/circuit.json'
+const baseline='dist/experiments/am3352-g350-ddr-corridor/circuit.json'
+const read=p=>JSON.parse(readFileSync(p)),sha=p=>createHash('sha256').update(readFileSync(p)).digest('hex')
+const d=read(input),old=read(baseline),moves=read('lib/am3352/placement/pmic-placements.json')
+const plan=read(`${root}/pmic-plan.json`),cache=new WeakMap()
+const idx=a=>{
+ if(!cache.has(a)){
+  const types=new Map(),ids=new Map()
+  for(const e of a){if(!types.has(e.type))types.set(e.type,[]);types.get(e.type).push(e);ids.set(e[`${e.type}_id`],e)}
+  const names=new Map(types.get('source_component').map(e=>[e.name,e]))
+  const pcb=new Map(types.get('pcb_component').map(e=>[ids.get(e.source_component_id).name,e]))
+  cache.set(a,{types,ids,names,pcb})
+ }
+ return cache.get(a)
+}
+const types=(a,t)=>idx(a).types.get(t)??[],pcb=(a,n)=>idx(a).pcb.get(n)
+const close=(a,b,label)=>assert(Math.abs(a-b)<1e-8,`${label}: ${a} != ${b}`)
+const near=(a,b,label)=>{
+ if(typeof a==='number'){close(a,b,label);return}
+ if(Array.isArray(a)){assert.equal(a.length,b.length,label);a.forEach((v,i)=>near(v,b[i],label));return}
+ if(a&&typeof a==='object'){assert.deepEqual(Object.keys(a).sort(),Object.keys(b).sort(),label);for(const k in a)near(a[k],b[k],label);return}
+ assert.deepEqual(a,b,label)
+}
+const pin=(a,p)=>idx(a).ids.get(idx(a).ids.get(p.pcb_port_id)?.source_port_id)
+const group=p=>p.subcircuit_connectivity_map_key
+const pads=(a,n)=>[...types(a,'pcb_smtpad'),...types(a,'pcb_plated_hole')].filter(p=>p.pcb_component_id===pcb(a,n).pcb_component_id)
+const board=types(d,'pcb_board')[0]
+assert.equal(types(d,'pcb_board').length,1);assert.deepEqual(board,types(old,'pcb_board')[0])
+assert.equal(board.width,76);assert.equal(board.height,118);assert.equal(board.num_layers,4)
+assert.deepEqual(board.outline,read('mechanical/g350-provisional-outline.json').outline)
+assert.equal(types(d,'source_component').length,280);assert.equal(types(d,'pcb_component').length,280)
+assert.equal(types(d,'pcb_smtpad').length+types(d,'pcb_plated_hole').length,1165)
+assert.equal(types(d,'pcb_solder_paste').length,1121)
+assert.equal(types(d,'pcb_hole').length,2)
+assert.equal(Object.keys(moves).length,18)
+assert.equal(d.filter(e=>e.type.endsWith('_error')).length,0)
+for(const t of ['pcb_trace','pcb_via','pcb_copper_pour'])assert.equal(types(d,t).length,0)
+// Exact source equality transfers the reviewed functional pin allocation,
+// procurement identities and intentional NCs without relying on net names.
+for(const t of ['source_component','source_port','source_net','source_trace'])assert.deepEqual(types(d,t),types(old,t),'Source changed '+t)
+const netNames=new Map()
+for(const n of types(d,'source_net')){
+ assert(group(n));assert(!netNames.has(group(n)),'Merged explicit functional nets')
+ netNames.set(group(n),n.name)
+}
+const geometryKeys=['shape','x','y','width','height','radius','corner_radius','points','ccw_rotation',
+ 'outer_width','outer_height','outer_diameter','hole_width','hole_height','hole_diameter','layer','layers','is_covered_with_solder_mask']
+const project=e=>Object.fromEntries(geometryKeys.filter(k=>e[k]!==undefined).map(k=>[k,e[k]]))
+const transformed=(e,name)=>{
+ const result=project(e),o=pcb(old,name),n=pcb(d,name)
+ const r0=-o.rotation*Math.PI/180,r1=n.rotation*Math.PI/180
+ const point=p=>{
+  const dx=p.x-o.center.x,dy=p.y-o.center.y
+  let x=dx*Math.cos(r0)-dy*Math.sin(r0),y=dx*Math.sin(r0)+dy*Math.cos(r0)
+  if(o.layer!==n.layer)x=-x
+  return {x:n.center.x+x*Math.cos(r1)-y*Math.sin(r1),y:n.center.y+x*Math.sin(r1)+y*Math.cos(r1)}
+ }
+ const angle=n.rotation-o.rotation
+ if(result.layer)result.layer=n.layer
+ if(e.points)result.points=e.points.map(point)
+ if(e.x!==undefined)Object.assign(result,point(e))
+ if(Math.abs(angle)%180===90){[result.width,result.height]=[result.height,result.width]}
+ return result
+}
+const movedCourts=[]
+for(const s of types(old,'source_component')){
+ const n=pcb(d,s.name),o=pcb(old,s.name),m=moves[s.name]
+ if(m){assert.deepEqual(n.center,{x:m.x,y:m.y});assert.equal(n.layer,m.layer);assert.equal(n.rotation,m.rotation)}
+ else for(const k of ['center','layer','rotation','width','height'])assert.deepEqual(n[k],o[k],'Unplanned move '+s.name)
+ const np=pads(d,s.name),op=pads(old,s.name);assert.equal(np.length,op.length)
+ for(const p of op){
+  const q=np.find(q=>q[`${q.type}_id`]===p[`${p.type}_id`]);assert(q,'Lost pad '+s.name)
+  assert.equal(pin(d,q).pin_number,pin(old,p).pin_number,'Physical pin changed')
+  near(project(q),m?transformed(p,s.name):project(p),'Pad geometry '+s.name)
+ }
+ const npaste=types(d,'pcb_solder_paste').filter(p=>p.pcb_component_id===n.pcb_component_id)
+ const opaste=types(old,'pcb_solder_paste').filter(p=>p.pcb_component_id===o.pcb_component_id)
+ assert.equal(npaste.length,opaste.length)
+ for(const p of opaste){
+  const q=npaste.find(q=>q.pcb_solder_paste_id===p.pcb_solder_paste_id);assert(q)
+  near(project(q),m?transformed(p,s.name):project(p),'Native paste '+s.name)
+ }
+ if(m)movedCourts.push(n.pcb_component_id)
+}
+assert.deepEqual(types(d,'pcb_hole'),types(old,'pcb_hole'))
+assert.deepEqual(types(d,'pcb_plated_hole'),types(old,'pcb_plated_hole'))
+const box=c=>c.outline?{minX:Math.min(...c.outline.map(p=>p.x)),maxX:Math.max(...c.outline.map(p=>p.x)),minY:Math.min(...c.outline.map(p=>p.y)),maxY:Math.max(...c.outline.map(p=>p.y))}:
+ {minX:c.center.x-(c.width??2*c.radius)/2,maxX:c.center.x+(c.width??2*c.radius)/2,
+ minY:c.center.y-(c.height??2*c.radius)/2,maxY:c.center.y+(c.height??2*c.radius)/2}
+const courts=d.filter(e=>e.type.startsWith('pcb_courtyard_')).map(c=>({...box(c),layer:c.layer,id:c.pcb_component_id}))
+assert.equal(courts.length,280)
+const overlaps=(a,b)=>a.layer===b.layer&&a.minX<b.maxX&&a.maxX>b.minX&&a.minY<b.maxY&&a.maxY>b.minY
+assert(courts.every(q=>[q.minX,q.maxX,q.minY,q.maxY].every(Number.isFinite)))
+for(let i=0;i<courts.length;i++)for(let j=i+1;j<courts.length;j++)assert(!overlaps(courts[i],courts[j]),'Courtyard collision anywhere on board')
+for(const c of courts.filter(c=>movedCourts.includes(c.id)))assert(!courts.some(q=>q.id!==c.id&&overlaps(c,q)),'Moved courtyard collision '+c.id)
+// Independently transcribed SLVSB64I pins and circuit intent.
+const net=name=>types(d,'source_net').find(n=>n.name===name)
+const toNet=(name,pinNumber,label)=>{
+ const p=pads(d,name).find(p=>pin(d,p).pin_number===pinNumber);assert(p)
+ assert.equal(group(pin(d,p)),group(net(label)),name+'.'+pinNumber+' -> '+label)
+}
+for(const [sw,fb,vin,inductor,outCap,outLabel,swLabel] of [
+ [20,19,21,'L_DDR','C_PMIC_DDR_OUT','DDR_1V5','SW_DDR'],
+ [23,24,22,'L_MPU','C_PMIC_MPU_OUT','VDD_MPU','SW_MPU'],
+ [31,29,32,'L_CORE','C_PMIC_CORE_OUT','VDD_CORE','SW_CORE']]){
+ toNet('U_PMIC',sw,swLabel);toNet('U_PMIC',fb,outLabel);toNet('U_PMIC',vin,'VSYS')
+ toNet(inductor,1,swLabel);toNet(inductor,2,outLabel);toNet(outCap,1,outLabel);toNet(outCap,2,'GND')
+ assert.equal(pcb(d,inductor).layer,'top');assert.equal(pcb(d,outCap).layer,'top')
+}
+for(const name of ['C_PMIC_DCDC1_IN','C_PMIC_DCDC2_IN','C_PMIC_DCDC3_IN','C_PMIC_SYS']){
+ toNet(name,1,'VSYS');toNet(name,2,'GND');assert.equal(pcb(d,name).layer,'bottom')
+}
+for(const [pinNumber,name,label] of [[2,'C_PMIC_VINLDO','VIO_BOOST5V'],[12,'C_PMIC_USB','USB_5V'],
+ [3,'C_PMIC_LDO1','VDDS_1V8'],[1,'C_PMIC_LDO2','LDO2_3V3'],[40,'C_PMIC_ANALOG_OUT','ANALOG_1V8'],
+ [43,'C_PMIC_IO_OUT','IO_3V3'],[47,'C_PMIC_BYPASS','PMIC_BYPASS'],[48,'C_PMIC_INT_LDO','PMIC_INT_LDO']]){
+ toNet('U_PMIC',pinNumber,label);toNet(name,1,label);toNet(name,2,'GND')
+}
+for(const n of [30,41,49])toNet('U_PMIC',n,'GND')
+toNet('U_PMIC',7,'VSYS');toNet('U_PMIC',8,'VSYS')
+const pmicDistances=[]
+for(const category of ['switches','outputs','feedback','inputs','support'])for(const item of plan[category]){
+ const location=terminal=>{const [name,number]=terminal.split('.');return pads(d,name).find(p=>pin(d,p).pin_number===Number(number))}
+ const a=location(item.from),b=location(item.to);assert(a&&b)
+ const measuredDistanceMm=Math.hypot(a.x-b.x,a.y-b.y)
+ close(measuredDistanceMm,item.newStraightPadDistanceMm,'PMIC placement '+item.from+' -> '+item.to)
+ pmicDistances.push({...item,category,measuredDistanceMm})
+}
+assert.equal(pmicDistances.length,22)
+// Check every copper envelope against the actual nonrectangular outline.
+const poly=board.outline
+const clearance=p=>{
+ let inside=false
+ for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+  const a=poly[i],b=poly[j]
+  if((a.y>p.y)!==(b.y>p.y)&&p.x<(b.x-a.x)*(p.y-a.y)/(b.y-a.y)+a.x)inside=!inside
+ }
+ const distance=Math.min(...poly.map((a,i)=>{
+  const b=poly[(i+1)%poly.length],x=b.x-a.x,y=b.y-a.y
+  const t=Math.max(0,Math.min(1,((p.x-a.x)*x+(p.y-a.y)*y)/(x*x+y*y)))
+  return Math.hypot(p.x-a.x-t*x,p.y-a.y-t*y)
+ }))
+ return inside?distance:-distance
+}
+let minCopperEdgeClearanceLowerBoundMm=Infinity
+for(const p of [...types(d,'pcb_smtpad'),...types(d,'pcb_plated_hole')]){
+ if(p.shape==='circle'){
+  minCopperEdgeClearanceLowerBoundMm=Math.min(minCopperEdgeClearanceLowerBoundMm,clearance(p)-(p.radius??p.outer_diameter/2));continue
+ }
+ const w=p.width??p.outer_width,h=p.height??p.outer_height,r=(p.ccw_rotation??0)*Math.PI/180
+ const points=p.points??[[-w/2,-h/2],[w/2,-h/2],[w/2,h/2],[-w/2,h/2]].map(([x,y])=>({x:p.x+x*Math.cos(r)-y*Math.sin(r),y:p.y+x*Math.sin(r)+y*Math.cos(r)}))
+ for(let i=0;i<points.length;i++){
+  const a=points[i],b=points[(i+1)%points.length],n=Math.max(1,Math.ceil(Math.hypot(b.x-a.x,b.y-a.y)/.1))
+  for(let j=0;j<=n;j++)minCopperEdgeClearanceLowerBoundMm=Math.min(minCopperEdgeClearanceLowerBoundMm,clearance({x:a.x+(b.x-a.x)*j/n,y:a.y+(b.y-a.y)*j/n})-.05)
+ }
+}
+assert(minCopperEdgeClearanceLowerBoundMm>=board.min_board_edge_clearance,'Copper reaches outline')
+const ddrBypassPlacement=[]
+const rail=types(d,'source_net').find(n=>n.name==='DDR_1V5'),gnd=types(d,'source_net').find(n=>n.name==='GND')
+for(const [chip,count,limit] of [['U_SOC',20,10.16],['U_RAM',12,3.81]]){
+ const chipPads=pads(d,chip),supply=chipPads.filter(p=>group(pin(d,p))===group(rail)),ground=chipPads.filter(p=>group(pin(d,p))===group(gnd))
+ assert(supply.length&&ground.length)
+ for(let i=1;i<=count;i++){
+  const name=`C_DDR_${chip==='U_SOC'?'CPU':'RAM'}_${i}`,cap=pcb(d,name)
+  const distance=ps=>Math.min(...ps.map(p=>Math.hypot(p.x-cap.center.x,p.y-cap.center.y)))
+  const powerDistanceMm=distance(supply),groundDistanceMm=distance(ground)
+  assert(Math.max(powerDistanceMm,groundDistanceMm)<=limit,'DDR bypass '+name)
+  ddrBypassPlacement.push({capacitor:name,powerDistanceMm,groundDistanceMm,limitMm:limit})
+ }
+}
+// Preserve the new-core pre-policy build as a negative control: exactly
+// four USB anchors and two inductor primaries gained polygon paste. The
+// final source explicitly suppresses those six additions without changing
+// copper or deleting the intentional rectangular inductor apertures.
+const negativeControlPath='checks/integrated/tscircuit-core-2085/native-before-paste-policy.circuit.json'
+const negative=read(negativeControlPath),extra=types(negative,'pcb_solder_paste').filter(p=>p.shape==='polygon')
+assert.equal(types(negative,'pcb_solder_paste').length,1127);assert.equal(extra.length,6)
+assert.deepEqual(extra.map(p=>idx(negative).ids.get(idx(negative).ids.get(p.pcb_component_id).source_component_id).name).sort(),['J_USB','J_USB','J_USB','J_USB','L_LCD_BL','L_LCD_BL'])
+assert.equal(types(d,'pcb_solder_paste').filter(p=>p.shape==='polygon').length,0)
+const parent='checks/layout/ddr-corridor-variant/g350-ddr-corridor-check-summary.json',proof=read(parent)
+for(const [p,h] of Object.entries(proof.hashes))assert.equal(sha(p),h,'Stale parent '+p)
+const paths=[input,baseline,parent,'mechanical/g350-provisional-outline.json',
+ 'experiments/am3352-g350-pmic-placement.circuit.tsx','lib/am3352/placement/PmicPlacement.tsx',
+ 'lib/am3352/placement/pmic-placements.json','scripts/plan-g350-pmic-placement.mjs',
+ 'scripts/check-g350-pmic-placement.mjs',`${root}/pmic-plan.json`,'reference/am3352/am3352.pdf','reference/am3352/tps65217.pdf','package.json','package-lock.json',negativeControlPath]
+assert.equal(plan.inputSha256,sha(baseline));assert.equal(plan.plannerSha256,sha('scripts/plan-g350-pmic-placement.mjs'))
+const report={status:'PASS_PMIC_PLACEMENT_ONLY',fabricationReady:false,originalShellFitVerified:false,routingPermitted:false,
+ logicalComponents:280,movedComponents:18,pmicSupportParts:18,copperLayers:4,
+ dimensionsMm:{width:76,height:118,thickness:1.6},cpuToRamCenterDistanceMm:20,
+ exactSourceConnectivityPreserved:true,allExplicitNetNamesDistinct:true,physicalPadAndNativePasteTransformVerified:true,
+ unchangedComponentPlacements:262,movedCourtyardsClear:true,ddrBypassPlacement,pmicDistances,
+ newCorePolygonPasteIntentPreserved:true,polygonPasteNegativeControlDetected:true,
+ all280CourtyardsNonoverlapping:true,
+ minCopperEdgeClearanceLowerBoundMm,
+ scope:'Placement only. PMIC pad-distance limits are engineering bounds, not manufacturer trace-length limits. Actual copper loops, dedicated input vias, thermal grounding, effective capacitance, original shell fit and routing remain incomplete.',
+ hashes:Object.fromEntries(paths.map(p=>[p,sha(p)]))}
+writeFileSync(`${root}/pmic-placement-audit.json`,JSON.stringify(report,null,2)+'\n')
+console.log(JSON.stringify({...report,ddrBypassPlacement:'32 freshly checked',pmicDistances:'22 freshly checked',hashes:'stored in audit'},null,2))

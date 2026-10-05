@@ -22,14 +22,14 @@ const board=base.find(e=>e.type==="pcb_board")
 const diameter=board?.min_via_pad_diameter,drill=board?.min_via_hole_diameter
 if(![.3,.35].includes(diameter)||drill!==.15||input.minViaPadDiameter!==diameter||input.minViaHoleDiameter!==drill)
   throw new Error("Native checkpoint and board disagree on the reviewed trial via construction")
-const layers=["top","inner1","inner2","inner3","inner4","inner5","inner6","bottom"]
+const layers=["top","inner1","inner2","bottom"]
 const components=base.filter(e=>e.type==="source_component")
 const packages=components.filter(c=>["U_SOC","U_RAM"].includes(c.name))
 if(packages.length!==2||packages.find(c=>c.name==="U_SOC")?.manufacturer_part_number!=="AM3352BZCZ100"||
   packages.find(c=>c.name==="U_RAM")?.manufacturer_part_number!=="MT41K256M16TW-107:P")
   throw new Error("Wrong processor or memory package")
 const packagePcbIds=base.filter(e=>e.type==="pcb_component"&&packages.some(c=>c.source_component_id===e.source_component_id)).map(c=>c.pcb_component_id)
-if(base.filter(e=>e.type==="pcb_smtpad"&&packagePcbIds.includes(e.pcb_component_id)).length!==420||board?.num_layers!==8)
+if(base.filter(e=>e.type==="pcb_smtpad"&&packagePcbIds.includes(e.pcb_component_id)).length!==420||board?.num_layers!==4||input.layerCount!==4)
   throw new Error("Wrong AM3352 physical packages or layer count")
 if(base.some(e=>e.type==="pcb_trace"||e.type==="pcb_via"))throw new Error("Use native copper when available")
 if(!input.traces?.length||input.traces.length>=49)throw new Error("Expected an actual partial checkpoint")
@@ -48,7 +48,7 @@ for(const saved of input.traces) {
   const traceId=`diagnostic_${saved.pcb_trace_id}`
   const route=saved.route.map(p=>{
     if(p.route_type==="wire")return {...p}
-    if(p.route_type!=="via"||p.layers?.length!==8||!layers.every(l=>p.layers.includes(l))||p.via_diameter!==diameter||p.via_hole_diameter!==drill)
+    if(p.route_type!=="via"||p.layers?.length!==4||!layers.every(l=>p.layers.includes(l))||p.via_diameter!==diameter||p.via_hole_diameter!==drill)
       throw new Error("Unexpected native physical via construction")
     if(vias.some(v=>near(v,p)))throw new Error("Unexpected repeated physical drill site")
     vias.push(any_circuit_element.parse({type:"pcb_via",pcb_via_id:`diagnostic_pcb_via_${vias.length}`,
@@ -69,7 +69,7 @@ result.find(e=>e.type==="pcb_board").title=`AM3352 PARTIAL ${copper.length}/49 â
 mkdirSync(out,{recursive:true})
 writeFileSync(`${out}/circuit.json`,JSON.stringify(result,null,2)+"\n")
 const report={status:"EXACT_NATIVE_BUS_LANES_PARTIAL_DIAGNOSTIC",fabricationReady:false,completedSignals:copper.length,requiredSignals:49,
-  sourceComponents:components.length,
+  sourceComponents:components.length,copperLayerCount:4,
   physicalVias:vias.length,viaGeometry:{landMm:diameter,drillMm:drill},source:{path:basePath,sha256:hash(basePath)},checkpoint:{path:inputPath,sha256:hash(inputPath)},
   failure:{path:errorPath,sha256:hash(errorPath),record:failureRecord,omittedPresentationData:"lastProgress.debugGraphics only; original file hash retained"},diagnosticSha256:hash(`${out}/circuit.json`),
   scope:"Unmodified native completed DDR route coordinates from this failed run. All original components, source pads and native failures retained. No completed power copper or reference planes; unpowered and incomplete."}

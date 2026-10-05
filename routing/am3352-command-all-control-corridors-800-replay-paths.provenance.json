@@ -1,0 +1,52 @@
+{
+  "status": "COMMAND_MANUAL_CARRIER_REPLAY_REQUIRES_ALL_INDEPENDENT_CHECKS",
+  "run": {
+    "path": "dist/am3352-command-all-control-corridors-preparation-attempt-800/replay-input.json",
+    "sha256": "c62e0f9ceae3b3706574a818715788c1caaf08da6c549c09aaac29652b467f2c"
+  },
+  "state": {
+    "path": "dist/am3352-command-all-control-corridors-preparation-attempt-800/carriers.nonexportable.json",
+    "sha256": "0eefc037f3401f573a7abb82bb433cbb25510e4f335f9361a78c3e5e6fae5236"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr23-command-replan-candidate/circuit.json",
+    "sha256": "aad4a9bb60a27ed7acb46130e7dcec8ce6622f15ec01d558769bbea1d9ee6058"
+  },
+  "fixedPaths": {
+    "path": "routing/am3352-ddr23-command-replan-fixed-paths.json",
+    "sha256": "7188248a85d19d25787ae5995117f14785b20885a3bdc3b39c11f7f895ea92b9"
+  },
+  "entry": {
+    "path": "experiments/am3352-command-all-control-corridors-800-replay.circuit.tsx",
+    "sha256": "9553ebc2c568a696f264683023587ba2aa902ac80bc18004acf163c9b7b5ca23"
+  },
+  "nativeEntry": {
+    "path": "experiments/am3352-command-all-control-corridors-800-replay-native-phase.circuit.tsx",
+    "sha256": "3c0ba07f5adb7cd923ee33ca7782f97d7146891e507df8129950f433121913f5"
+  },
+  "paths": {
+    "path": "routing/am3352-command-all-control-corridors-800-replay-paths.json",
+    "sha256": "13cb3161fbe10a5b0fb5de2d4e27fa58b0400468b3cb3c6cb52806fbe1335306"
+  },
+  "stagedDdrSignals": 25,
+  "retainedDataResetSignals": 23,
+  "manualCommandChannels": 0,
+  "retainedCheckedClockChannels": 2,
+  "retainedCheckedClockNames": [
+    "DDR_CK",
+    "DDR_CKn"
+  ],
+  "checkedClockPaths": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.json",
+    "sha256": "a65e50e01b5519921b4e00e3e6d87e7dd2fd39d1ae808e9afb30c4117ee5fd12"
+  },
+  "executionHelper": {
+    "path": "scripts/replay-am3352-command-manual-carriers.mjs",
+    "sha256": "6bf4917b59e2fffad384c63996f9358f1d1dc6791c3e8f267ca2e9d2b4421460"
+  },
+  "original125TracePiecesAnd141ViasRetained": true,
+  "uncommittedFanoutReservationsReplanned": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

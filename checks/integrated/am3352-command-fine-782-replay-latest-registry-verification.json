@@ -1,0 +1,57 @@
+{
+  "status": "REGISTRY_LATEST_MATCHES_INSTALLED",
+  "verifiedAt": "2026-10-04T15:39:05Z",
+  "versions": {
+    "tscircuit": "0.0.2744",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2080",
+    "@tscircuit/capacity-autorouter": "0.0.958"
+  },
+  "matchesInstalled": true,
+  "commands": [
+    "npm view tscircuit version",
+    "npm view @tscircuit/core version",
+    "npm view @tscircuit/capacity-autorouter version",
+    "npm view @tscircuit/cli version"
+  ],
+  "observedRegistryOutput": [
+    "0.0.2744",
+    "0.0.2080",
+    "0.0.958",
+    "0.1.2237"
+  ],
+  "registryQueryProcess": 97876,
+  "registryQueryExitCode": 0,
+  "packages": [
+    {
+      "path": "package.json",
+      "sha256": "3153f82eaa0593ab37349d65aef7ad98bbc4139b61c6abf20d277b458a2dab85"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f15cd713fa2268980d69855d8aa50dad251e129c24501e754a67269562416c71"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "04d4da6bc7e052eddeb05f46232a6fc7d29cf4245134517562236fc43dfb4149"
+    },
+    {
+      "path": "node_modules/tscircuit/package.json",
+      "sha256": "ba47f6f0ac3c54391dc95d94f234df9d5d0f91a83c2f9211cc6c02dd6269ac2c"
+    },
+    {
+      "path": "node_modules/@tscircuit/cli/package.json",
+      "sha256": "536305cbd35e4388e719940a5ca1f0b12238a13f3107017eea95ebc4980692cd"
+    },
+    {
+      "path": "node_modules/@tscircuit/core/package.json",
+      "sha256": "8f5ce6b15d4c9a5d4ed0dca86a73d6d1986b0c3063308c3acdae167e25ddbe8d"
+    },
+    {
+      "path": "node_modules/@tscircuit/capacity-autorouter/package.json",
+      "sha256": "213cf5a960b366156d99b50a10defaceae9de35c4b935519ded9403ea49588e4"
+    }
+  ],
+  "defaultChanged": false,
+  "fabricationReady": false
+}

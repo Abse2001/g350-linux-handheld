@@ -1,0 +1,17 @@
+file:///Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/shorten-am3352-coupled-csn0.mjs:12
+const checked=selectCheckedCommandSummary(validation.source),{summary,registration}=readCheckedCommandSummary(checked);assert.equal(registration.signals,33)
+      ^
+
+SyntaxError: Identifier 'checked' has already been declared
+    at compileSourceTextModule (node:internal/modules/esm/utils:305:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:98:18)
+    at #translate (node:internal/modules/esm/loader:467:20)
+    at afterLoad (node:internal/modules/esm/loader:523:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:528:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:571:36)
+    at afterResolve (node:internal/modules/esm/loader:619:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:625:12)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:32)
+    at TracingChannel.tracePromise (node:diagnostics_channel:350:14)
+
+Node.js v25.6.1

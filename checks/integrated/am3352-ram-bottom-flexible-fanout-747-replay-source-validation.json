@@ -1,0 +1,267 @@
+{
+  "status": "BOTTOM_RAM_NATIVE_AND_MANUAL_PATHS_EXACT_SOURCE_REPLAY_VERIFIED_PHYSICAL_CHECKS_PENDING",
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bottom-flexible-fanout-747-replay-candidate/circuit.json",
+    "sha256": "aff5fb56cccf7eb917474972fd5e608748ec9d077601ef0d556d7a7a6e75432c"
+  },
+  "paths": {
+    "path": "routing/am3352-ram-bottom-flexible-fanout-747-replay-paths.json",
+    "sha256": "b65a10cd327d9487abcc4c2f896152fca64066ec67b0abda7b044ed73f54fce1"
+  },
+  "provenance": {
+    "path": "routing/am3352-ram-bottom-flexible-fanout-747-replay-paths.provenance.json",
+    "sha256": "50ea3b581357162c185f6ecffb47f2daee8c8ad6cf0815923834214330c66f37"
+  },
+  "priorSource": {
+    "path": "dist/diagnostics/am3352-ram-bottom-via-style-corrected-candidate/circuit.json",
+    "sha256": "13071d295fdecbf4e8a2550b8d814562fc29186dc957a8d8583833d3cdaa6666"
+  },
+  "stageState": {
+    "path": "dist/am3352-ram-bottom-flexible-fanout-repair-attempt-747/staged-state.nonexportable.json",
+    "sha256": "26d907baf1c87957aad2ecba7d0f122ebd80539be1026634c82a66b88ac2f568"
+  },
+  "actualDdrPaths": [
+    {
+      "name": "DDR_ODT",
+      "sourceTraceId": "source_trace_0",
+      "trace": "pcb_trace_0",
+      "planarMm": 26.04729147550635,
+      "vias": 5,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_D8",
+      "sourceTraceId": "source_trace_1",
+      "trace": "pcb_trace_1",
+      "planarMm": 16.660179015016983,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_D9",
+      "sourceTraceId": "source_trace_2",
+      "trace": "pcb_trace_2",
+      "planarMm": 15.088336966048422,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_BA0",
+      "sourceTraceId": "source_trace_6",
+      "trace": "pcb_trace_3",
+      "planarMm": 37.4129941269797,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A3",
+      "sourceTraceId": "source_trace_7",
+      "trace": "pcb_trace_4",
+      "planarMm": 40.07708595931029,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A5",
+      "sourceTraceId": "source_trace_8",
+      "trace": "pcb_trace_5",
+      "planarMm": 32.40399572161004,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_D10",
+      "sourceTraceId": "source_trace_11",
+      "trace": "pcb_trace_6",
+      "planarMm": 31.010134187980945,
+      "vias": 3,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_D11",
+      "sourceTraceId": "source_trace_12",
+      "trace": "pcb_trace_7",
+      "planarMm": 24.230580079512677,
+      "vias": 1,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_DQS0",
+      "sourceTraceId": "source_trace_15",
+      "trace": "pcb_trace_8",
+      "planarMm": 22.133787150400106,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_DQSn0",
+      "sourceTraceId": "source_trace_16",
+      "trace": "pcb_trace_9",
+      "planarMm": 22.260787150400127,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_RASn",
+      "sourceTraceId": "source_trace_18",
+      "trace": "pcb_trace_10",
+      "planarMm": 34.41915005775761,
+      "vias": 1,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_WEn",
+      "sourceTraceId": "source_trace_20",
+      "trace": "pcb_trace_11",
+      "planarMm": 36.9592370722354,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_BA2",
+      "sourceTraceId": "source_trace_21",
+      "trace": "pcb_trace_12",
+      "planarMm": 37.928483131975675,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A2",
+      "sourceTraceId": "source_trace_23",
+      "trace": "pcb_trace_13",
+      "planarMm": 35.050823945689096,
+      "vias": 3,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_A9",
+      "sourceTraceId": "source_trace_24",
+      "trace": "pcb_trace_14",
+      "planarMm": 35.394255403194144,
+      "vias": 3,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_D12",
+      "sourceTraceId": "source_trace_26",
+      "trace": "pcb_trace_15",
+      "planarMm": 21.718184837894782,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_DQSn1",
+      "sourceTraceId": "source_trace_27",
+      "trace": "pcb_trace_16",
+      "planarMm": 17.615391203224018,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_DQS1",
+      "sourceTraceId": "source_trace_28",
+      "trace": "pcb_trace_17",
+      "planarMm": 17.488391203224047,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_CK",
+      "sourceTraceId": "source_trace_33",
+      "trace": "pcb_trace_18",
+      "planarMm": 24.02351201234579,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_CKn",
+      "sourceTraceId": "source_trace_34",
+      "trace": "pcb_trace_19",
+      "planarMm": 23.896512012346104,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A12",
+      "sourceTraceId": "source_trace_36",
+      "trace": "pcb_trace_20",
+      "planarMm": 27.746402128991416,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A1",
+      "sourceTraceId": "source_trace_37",
+      "trace": "pcb_trace_21",
+      "planarMm": 26.54267064430188,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A11",
+      "sourceTraceId": "source_trace_38",
+      "trace": "pcb_trace_22",
+      "planarMm": 35.933025757795136,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_D14",
+      "sourceTraceId": "source_trace_40",
+      "trace": "pcb_trace_23",
+      "planarMm": 18.188427124746184,
+      "vias": 1,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_D5",
+      "sourceTraceId": "source_trace_43",
+      "trace": "pcb_trace_24",
+      "planarMm": 26.589924809689975,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_BA1",
+      "sourceTraceId": "source_trace_44",
+      "trace": "pcb_trace_25",
+      "planarMm": 26.903244291799616,
+      "vias": 1,
+      "nativeBootstrapRetained": true
+    },
+    {
+      "name": "DDR_A4",
+      "sourceTraceId": "source_trace_45",
+      "trace": "pcb_trace_26",
+      "planarMm": 44.238073580374405,
+      "vias": 3,
+      "nativeBootstrapRetained": false
+    },
+    {
+      "name": "DDR_CKE",
+      "sourceTraceId": "source_trace_48",
+      "trace": "pcb_trace_27",
+      "planarMm": 24.428914857098974,
+      "vias": 1,
+      "nativeBootstrapRetained": false
+    }
+  ],
+  "stagedDdrRoutes": 28,
+  "remainingDdrSignals": 21,
+  "nativeCarriersRetained": 19,
+  "manualRoutes": 9,
+  "negotiatedRepairSteps": 9,
+  "original89SourceHolesPreserved": true,
+  "original102SourcePiecesPreserved": true,
+  "allFixedPhysicalAndLogicalRecordsPreserved": true,
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "physicalVias": 129,
+  "tracePieces": 130,
+  "completeHostRouting": false,
+  "fullElectricalTimingQualified": false,
+  "originalShellFitVerified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

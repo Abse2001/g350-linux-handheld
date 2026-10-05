@@ -1,0 +1,143 @@
+{
+  "status": "DDR28_NATIVE_A5_CARRIER_AND_MANUAL_NOMINAL_TUNING_PROMOTED_AFTER_COMPLETE_DDR29_CHECKS",
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-csn-joint-check-summary.json",
+    "sha256": "3f63f2f618d5033b30a99ec9ac2b5fccc5cf0e7d952c7632ae83d37f9d1d6afc"
+  },
+  "trials": [
+    {
+      "path": "dist/am3352-ddr28-a5-bottom-local-attempt-533/result.json",
+      "sha256": "1049d406afd8906a6c37d62ce4fd9970caabe7768f61fa43977516e5b1bf5cfb",
+      "attempt": 533,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING"
+    },
+    {
+      "path": "dist/am3352-ddr28-a5-bottom-local-prep-attempt-529/result.json",
+      "sha256": "95e8960bfd35245d1ad7931e0a0e23d7aff67f83f98a33bb6f7e122b98cbb697",
+      "attempt": 529,
+      "status": "DDR28_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS"
+    },
+    {
+      "path": "dist/am3352-ddr28-a5-native-bottom-channel-attempt-535/result.json",
+      "sha256": "09d0be4a74367566384131e829fe7d713f56172af56c34d609692c95046f0352",
+      "attempt": 535,
+      "status": "GUIDED_NATIVE_CHANNEL_ROUTED_UNQUALIFIED"
+    },
+    {
+      "path": "dist/am3352-ddr28-a5-top-local-attempt-532/result.json",
+      "sha256": "2a98343aa5abd379bc9a3741354a78e5bedd7c97420381cf07e892e5d593743d",
+      "attempt": 532,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE"
+    },
+    {
+      "path": "dist/am3352-ddr28-a5-top-local-prep-attempt-528/result.json",
+      "sha256": "f0bb3416a0093e5779e8bd9149aa7927d97a7b3564d3273ed2c8cd6fd87e19cb",
+      "attempt": 528,
+      "status": "DDR28_RETAINED_SINGLE_COMMAND_EXACT_PAD_STARTS_READY_FOR_MANUAL_FANOUTS"
+    },
+    {
+      "path": "dist/am3352-ddr28-ddr_a3-native-top-attempt-526/result.json",
+      "sha256": "69054834ef86ad333172fe44c2f6cb6f82472a4826ca6c5ae14a50926f92a174",
+      "attempt": 526,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "elapsedSeconds": 15.126674125
+    },
+    {
+      "path": "dist/am3352-ddr28-ddr_a5-native-top-attempt-525/result.json",
+      "sha256": "8e826de91d521da8ed86ec03e3261007f849057248947004412d703203cebaf0",
+      "attempt": 525,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "elapsedSeconds": 15.071196042
+    },
+    {
+      "path": "dist/am3352-ddr28-ddr_wen-native-top-attempt-527/result.json",
+      "sha256": "6fc60db94420590616ddf14f3fd51030602c8bf779c7393daf4655809ef75926",
+      "attempt": 527,
+      "status": "NATIVE_DDR_PHASE_TIMEOUT",
+      "elapsedSeconds": 15.079277916999999
+    }
+  ],
+  "invocationGuards": [
+    {
+      "path": "checks/integrated/am3352-ddr28-a5-top-local-attempt-530.log",
+      "sha256": "d4a1d89585f1191e74e1a0008d14c92dfb133defe2fd80a3bd1f80b511a73c71"
+    },
+    {
+      "path": "checks/integrated/am3352-ddr28-a5-bottom-local-attempt-531.log",
+      "sha256": "d4a1d89585f1191e74e1a0008d14c92dfb133defe2fd80a3bd1f80b511a73c71"
+    },
+    {
+      "path": "checks/integrated/am3352-ddr28-a5-native-bottom-channel-attempt-534.log",
+      "sha256": "6eb9a1f10800f89156f026daa936fb242da03190e8ac6501b316a83b08c4582f"
+    }
+  ],
+  "acceptedReplay": {
+    "path": "checks/integrated/am3352-ddr-usbc-a5-nominal-check-summary.json",
+    "sha256": "94cb51957ff9ab95da3fadfbf8160d6170304d4940027e8a15a6b98a97118c53"
+  },
+  "acceptedDdrSignals": 29,
+  "remainingDdrSignals": 20,
+  "allOldHolesRetained": 149,
+  "allOldTracesRetained": 130,
+  "addedSignal": "DDR_A5",
+  "addedThroughVias": 2,
+  "planarMm": 43.020000000000024,
+  "manualNominalTuning": {
+    "status": "A5_BOTTOM_WIRE_NOMINAL_TUNING_REPLAY_REQUIRES_FULL_PHYSICAL_CHECKS",
+    "priorPaths": {
+      "path": "routing/am3352-ddr-usbc-a5-native-paths.json",
+      "sha256": "c8a2ae6656d5584cecc9e515b1d45c697985b6359ca60fdb405fc2f74537d69e"
+    },
+    "priorProvenance": {
+      "path": "routing/am3352-ddr-usbc-a5-native-paths.provenance.json",
+      "sha256": "95a13464a2062c630a6103b13ef08213b303f4849a8deb0ccc98b534f55b5600"
+    },
+    "signal": "DDR_A5",
+    "layer": "bottom",
+    "afterIndex": 153,
+    "insertedPoints": [
+      {
+        "x": -12.41899,
+        "y": -15.4
+      },
+      {
+        "x": -13.01899,
+        "y": -16
+      },
+      {
+        "x": -14.65968842322589,
+        "y": -16
+      },
+      {
+        "x": -15.25968842322589,
+        "y": -16.6
+      },
+      {
+        "x": -15.25968842322589,
+        "y": -19.4
+      },
+      {
+        "x": -14.65968842322589,
+        "y": -20
+      },
+      {
+        "x": -13.01899,
+        "y": -20
+      },
+      {
+        "x": -12.41899,
+        "y": -20.6
+      }
+    ],
+    "offsetMm": 2.840698423225889,
+    "chamferMm": 0.6,
+    "priorPlanarMm": 38.744490603852796,
+    "targetPlanarMm": 43.02,
+    "addedPlanarMm": 4.275509396147207,
+    "newVias": 0,
+    "retainedNativeBusLanesCarrier": true,
+    "allPreviouslyCheckedSignalsUnchanged": true
+  },
+  "activeSolverHandles": [],
+  "fabricationReady": false
+}

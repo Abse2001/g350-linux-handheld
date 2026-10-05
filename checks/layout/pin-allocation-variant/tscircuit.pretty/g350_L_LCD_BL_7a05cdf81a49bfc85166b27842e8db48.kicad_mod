@@ -1,0 +1,194 @@
+(footprint "g350_L_LCD_BL_7a05cdf81a49bfc85166b27842e8db48"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "L_LCD_BL"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d541088b-333c-49ee-847b-4235e1a841c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "10µH"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ca9c856-1605-4e98-a99a-4f785a2ac613")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cb4fadf0-b287-49ff-9bfe-cd99b07a03d5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a33380ca-48e2-4e20-a086-6d121bc31be9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C89448"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4c44b284-1f6b-bfbc-74e3-ce0409335bc4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "VLCF5020T-100M1R1-1"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d0208a0-5a25-d1ff-78b6-64a24b929b43")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.85 -2.7)
+		(end 2.85 -2.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "15b9d304-377c-4003-b8c4-94e4c9c73b44")
+	)
+	(fp_line
+		(start -2.85 2.7)
+		(end 2.85 2.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "16254eb4-ef6d-49c3-9c36-dfa1a4372092")
+	)
+	(fp_rect
+		(start -3.05 -2.9)
+		(end 3.05 2.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a40e67b9-cb19-450f-90e8-8f5aca84c258")
+	)
+	(pad "1" smd custom
+		(at -1.733333 0)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -1.016667 1.5) (xy -0.066667 2.45) (xy 1.083333 2.45) (xy 1.083333 -2.45) (xy -0.066667 -2.45)
+					(xy -1.016667 -1.5)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "0c3e0560-6631-6a81-3fdb-305e1a1834c3")
+	)
+	(pad "1" smd rect
+		(at -1.7 0)
+		(size 1.8 2.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(uuid "219a5f20-7b8d-c441-2a7e-d69e2f748e83")
+	)
+	(pad "1" smd rect
+		(at -1.225 0)
+		(size 0.85 4.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(uuid "3c309a80-1dc2-caa1-77b6-2fc22e566b1d")
+	)
+	(pad "2" smd rect
+		(at 1.225 0)
+		(size 0.85 4.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(uuid "13fc5c34-2767-4ef4-3ad2-41b44e3d3474")
+	)
+	(pad "2" smd rect
+		(at 1.7 0)
+		(size 1.8 2.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(uuid "5943a876-6cae-9b36-7fe6-720a6c7b7f4a")
+	)
+	(pad "2" smd custom
+		(at 1.733333 0)
+		(size 0.2 0.2)
+		(layers "F.Cu" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 1.016667 -1.5) (xy 0.066667 -2.45) (xy -1.083333 -2.45) (xy -1.083333 2.45) (xy 0.066667 2.45)
+					(xy 1.016667 1.5)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "448696ea-57f1-89aa-6b5c-7c6a7ec76f2a")
+	)
+	(embedded_fonts no)
+	(model "https://modelcdn.tscircuit.com/easyeda_models/assets/C89448.step?uuid=1e6462a2fb334513b798a667703fbcd8&cachebust_origin="
+		(offset
+			(xyz 0.000012699999985 0.0000254000000126 0.4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

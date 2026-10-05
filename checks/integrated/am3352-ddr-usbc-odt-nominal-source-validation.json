@@ -1,0 +1,49 @@
+{
+  "status": "DDR27_ODT_EXACT_REPLAY_AND_ALL_PRIOR_COPPER_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-odt-nominal-candidate/circuit.json",
+    "sha256": "3f2ef3f83fb4a1aaf427e24dacb24b189cbfc9a30a982d6387641c00b336d6ee"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-matched-candidate/circuit.json",
+    "sha256": "37cce5810c43cc3f70485d5e2990512f6a2a7d8a2f35d316e02bbea0fbbf4997"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-odt-nominal-paths.json",
+    "sha256": "fd789c5a9f8d2d2eb6170f63090b8f98443b97ac6f2d6d89ef5029c983c56431"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-odt-nominal-paths.provenance.json",
+    "sha256": "7f0735e6ceaa427412a2c7c6206412917666253edb433b97e413a34cd85e0c3f"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-matched-check-summary.json",
+    "sha256": "7e0cac94ee9eeeea9b264efaf205a498afb94502a46009391cb2effa38677f60"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 129,
+  "throughVias": 147,
+  "preservedTracePieces": 128,
+  "preservedThroughVias": 143,
+  "addedThroughVias": 4,
+  "changedExistingSignals": [],
+  "addedSignals": [
+    "DDR_ODT"
+  ],
+  "odtPlanarMm": 43.01828108257736,
+  "odtNominalLengthPass": true,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForAddedHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "fullCommandClassMatchingDeferred": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-04",
+  "status": "PROVISIONAL_UNROUTED_PLACEMENT",
+  "fabricationReady": false,
+  "entry": "experiments/am3352-g350-harness-placement.circuit.tsx",
+  "mechanical": {
+    "overallMm": [76, 118],
+    "nominalThicknessMm": 1.6,
+    "copperLayers": 4,
+    "mainBodyHeightMm": 99,
+    "speakerTabMm": [22, 19],
+    "originalShellFitVerified": false,
+    "mountingHoles": "Unknown; none invented.",
+    "basis": "Provisional engineering outline within published outside dimensions, informed by inspected teardown photographs. Outside-case margins do not measure interior clearance.",
+    "open": ["Measured perimeter, mounting and case ribs", "Control membrane and port registration", "Assembled display, battery, speaker, connector and cable volumes"]
+  },
+  "batteryHarness": {
+    "header": "Hirose DF65-3P-1.7V(21)",
+    "jlcpcb": "C3032596",
+    "positionMm": [-17, -26],
+    "layer": "top",
+    "pinMap": {"1": "VBAT", "2": "BAT_NTC", "3": "GND", "6": "mechanical/no-connect", "7": "mechanical/no-connect"},
+    "matingHousing": "DF65-3S-1.7C",
+    "contacts": "DF65-2428SCF, tin, AWG 24-28",
+    "manufacturerRating": "50 V; 4 A with AWG 24. Use the applicable lower current rating for AWG 26/28.",
+    "reference": "reference/am3352/harness/DF65-3P-1.7V-21-drawing.pdf",
+    "referenceRole": "Six-page 2022 manufacturer series catalog, despite legacy local filename; not the exact part-specific customer drawing.",
+    "manufacturerPage": "https://www.hirose.com/product/p/CL0666-6004-5-21",
+    "landCorrection": "Mechanical anchors use recommended nominal x +/-3.075 mm and a 5.05 mm center separation from signal row. 0.1 mm stencil and full-size apertures follow the catalog.",
+    "open": ["Exact current customer drawing and assembly qualification", "Protected battery pack, matching 10 kohm NTC, capacity, discharge rating and dimensions", "Custom harness polarity verification; original plug compatibility is not established", "Complete charger, protection, temperature and power-path review"]
+  },
+  "speakerHarness": {
+    "header": "JST SM02B-SRSS-TB(LF)(SN)",
+    "jlcpcb": "C160402",
+    "positionMm": [0, -52],
+    "layer": "top",
+    "pinMap": {"1": "SPK_P", "2": "SPK_N", "3": "mechanical/no-connect", "4": "mechanical/no-connect"},
+    "matingHousing": "SHR-02V-S",
+    "contacts": "SSH-003T-P0.2-H",
+    "manufacturerRating": "1 A with AWG 28; 50 V.",
+    "reference": "reference/am3352/harness/JST-SH.pdf",
+    "referenceRole": "Public manufacturer SH series catalog; imported side-entry nominal lands match the drawing.",
+    "manufacturerPage": "https://www.jst-mfg.com/product/index.php?lang=2&series=231",
+    "open": ["Exact part-specific assembly drawing and mating clearance", "Speaker impedance, power, dimensions and case attachment", "Neither BTL output may be grounded"]
+  },
+  "displayFootprint": {
+    "header": "BOOMELE 0.5-54PFGPZ, C30732",
+    "reference": "reference/am3352/display/C30732-connector.pdf",
+    "referenceRole": "Actual part manufacturer drawing obtained from the LCSC product-page datasheet iframe.",
+    "verified": "54 contacts, 0.5 mm pitch, bottom-contact 0.3 mm FPC, 2 mm housing height. Signal lands now use nominal 0.30 x 1.30 mm; mount lands and pin orientation verified.",
+    "open": ["Original shell display window and folded flex path", "Panel supply budget and Linux driver/timing/color-format qualification"]
+  },
+  "backlightInductor": {
+    "part": "TDK VLCF5020T-100M1R1-1, C89448",
+    "reference": "reference/am3352/display/TDK-VLCF5020-datasheet.pdf",
+    "referenceRole": "Manufacturer four-page 20180831 datasheet; recommended pattern on page 3.",
+    "correction": "Use two chamfered polygon lands; each has two inscribed same-terminal rectangular helper pads to emit native paste. Copper/mask unions remain within the main lands.",
+    "nominalGeometryMm": {"padWidth": 2.1, "padHeight": 4.9, "gap": 1.3, "chamfer": 0.95},
+    "geometryQualification": "0.95 mm chamfer follows 4.9/3.0 mm widths and the 45-degree drawing. Its small 1.2 mm dimension annotation is rounded; confirm with assembly review.",
+    "open": ["Stencil volume and overlap of the two inscribed apertures", "DC-biased output capacitance, startup/fault limits and reference-ground return", "Final routed SW/diode/input/output/COMP/FB loops"]
+  },
+  "bareContactsAndProbes": {
+    "logicalComponents": 31,
+    "exposedPads": 42,
+    "treatment": "11 membrane contacts and 20 probe points have exposed mask, no paste, and doNotPlace. Four accidentally defaulted plated probes become their declared 2 mm SMT probes. The battery probe row moves to y=-38.5 mm to clear the battery capacitor courtyard; pin assignments and diameters are retained.",
+    "open": ["Membrane contact geometry, finish and registration", "Supplier finish and wear qualification"]
+  },
+  "keyControllerPads": {
+    "count": 28,
+    "correction": "Represent imported axis-aligned capsules as equivalent rounded rectangles. This preserves the full copper shape and emits native 70-percent linear stencil apertures, which core omitted for bottom-side rotated_pill pads. No auxiliary pads are used on this controller."
+  },
+  "stencilScope": {
+    "verified": "SMT aperture presence and native aperture scale in the final KiCad board, with copper, mask, drills, full pad polygons and net identities preserved.",
+    "open": ["Eight native through-hole paste records at USB-C anchors require process qualification and matching export treatment", "Native default 70-percent linear apertures, especially BGA/QFN, require supplier stencil-volume qualification", "Solder-mask clearances, stencil thickness and complete manufacturing output comparison"],
+    "fullStencilQualification": false
+  },
+  "routing": {
+    "permitted": false,
+    "nativeDdrBusLanesPhasesRetained": true,
+    "traces": 0,
+    "vias": 0,
+    "copperPours": 0,
+    "reason": "Finish all component placement and critical placement review before native bus_lanes DDR and host routing. Existing historical routes cannot be reused after relocation without fresh checks."
+  },
+  "publication": "Local only; no GitHub or tscircuit push. Fabrication export remains guarded."
+}

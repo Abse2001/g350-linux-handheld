@@ -1,0 +1,286 @@
+{
+  "status": "DDR25_AND_SHARED_USBC_COPPER_AND_PLANAR_MATCHING_CHECKED_HOST_INCOMPLETE",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-repaired-strobes-candidate/circuit.json",
+    "sha256": "aa7dce6e20cf0173895ecee9ed5e7dbfd8f815fba47bfc64b8dc8eed3f536ae3"
+  },
+  "board": {
+    "path": "dist/am3352-ddr-usbc-repaired-strobes-diagnostic/board.kicad_pcb",
+    "sha256": "1eb033d77b195bc89946c9d83156ca65bf56afbf735c33323c6c36911e6bb818"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-repaired-strobes-paths.json",
+    "sha256": "bbae477b28ab32d5a70d83e078dbe50d430d297490062a21cfbc97e82a811750"
+  },
+  "priorCheckedClockSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-native-clock-check-summary.json",
+    "sha256": "31f35ecb2680f808bc040d7bda5cdc64e8b7551f8a89b2878bf6d974b92c5c0f"
+  },
+  "sourceGeometryAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-source-validation.json",
+    "sha256": "0ec79b43654853b9ea1d00e9e77bd9316e8742872ebfd75837908ed191d538b7"
+  },
+  "nativeDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-native-ddr-connectivity.json",
+    "sha256": "13e1cc6a37f1e3398d27cb9855187416591ee610e21dd2f705e2f0e12876a7bf"
+  },
+  "planarDdrAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-ddr-connectivity.json",
+    "sha256": "c42b40b2f750e6ac59da39ae5c804f4000cb5458ed7db0e48ecf6d5d08c7674c"
+  },
+  "nativeUsbAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-native-usb-connectivity.json",
+    "sha256": "def27f92b9d58f9932b56b9d90aace3c692e8346ed218108f8224331d8556deb"
+  },
+  "ramReferenceAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-reference-connectivity.json",
+    "sha256": "f50ce5895eea1ef0bd694c7fc9231c99ce74deb330a079fe612dee9284436a94"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-kicad-drc.json",
+    "sha256": "6144f5948e45021303bcdb4bbb5d81f0fd35a33d7e9fb4a6ce4f0630913164a6"
+  },
+  "gerberShortsAudit": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-shorts.log",
+    "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+  },
+  "ramRepairRun": {
+    "path": "dist/am3352-ddr-usbc-ram-strobe-long-tails-attempt-446/result.json",
+    "sha256": "fe53a642db0992b1e882804dffd87a5f45f8af59dbfb1a9f7980d486d844da4d"
+  },
+  "manualChannelShortening": {
+    "kind": "REMOVED_REDUNDANT_POSITIVE_STROBE_INWARD_TUNING_TURN",
+    "signal": "DDR_DQS1",
+    "originalIndices": [
+      103,
+      177
+    ],
+    "endpoints": [
+      {
+        "x": 10.723902814004635,
+        "y": -13.972360000000002
+      },
+      {
+        "x": 10.723902814004635,
+        "y": -14.903240000000004
+      }
+    ],
+    "beforePlanarMm": 53.72014363351597,
+    "afterPlanarMm": 50.95313905432341,
+    "removedLengthMm": 2.767004579192559,
+    "newHoles": 0,
+    "preservedThroughVias": 4,
+    "wireSamplingStepMm": 0.005,
+    "wireSamplingGuardMm": 0.003,
+    "samples": 188,
+    "minimumCopperEdgeGapMm": 0.11999999999999868,
+    "pairSkewMm": 0.04818206925338586,
+    "wholeBytePlanarSkewMm": 0.6350000014649382,
+    "byteLengths": [
+      {
+        "name": "DDR_D8",
+        "planarMm": 50.53587956533585
+      },
+      {
+        "name": "DDR_D9",
+        "planarMm": 50.535879564900114
+      },
+      {
+        "name": "DDR_D10",
+        "planarMm": 50.53587956337854
+      },
+      {
+        "name": "DDR_D11",
+        "planarMm": 50.53587956490522
+      },
+      {
+        "name": "DDR_DQM1",
+        "planarMm": 50.53587956482551
+      },
+      {
+        "name": "DDR_D12",
+        "planarMm": 51.17087956484348
+      },
+      {
+        "name": "DDR_D13",
+        "planarMm": 50.535879565400165
+      },
+      {
+        "name": "DDR_D14",
+        "planarMm": 50.53587956567147
+      },
+      {
+        "name": "DDR_D15",
+        "planarMm": 50.53587956379684
+      },
+      {
+        "name": "DDR_DQSn1",
+        "planarMm": 51.001321123576794
+      },
+      {
+        "name": "DDR_DQS1",
+        "planarMm": 50.95313905432341
+      }
+    ],
+    "exactSourceAndIndependentPhysicalChecksRequired": true
+  },
+  "fabricationGuard": {
+    "path": "checks/integrated/am3352-ddr-usbc-repaired-strobes-fabrication-guard.log",
+    "sha256": "69cb4caf57d2b1ca7a6deb2d440845f46df62adc78fc0630a15e1049b6c4f248"
+  },
+  "fabricationGuardStatus": "EXPECTED_BLOCK_BEFORE_ORDERING_FILES",
+  "cliPackageVersion": "0.1.2237",
+  "tscircuitVersion": "0.0.2742",
+  "components": 212,
+  "copperLayers": 4,
+  "actualPads": 912,
+  "tracePieces": 127,
+  "throughVias": 135,
+  "connectedDdrSignals": 25,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignalNames": [
+    "DDR_A0",
+    "DDR_A1",
+    "DDR_A10",
+    "DDR_A11",
+    "DDR_A12",
+    "DDR_A13",
+    "DDR_A14",
+    "DDR_A2",
+    "DDR_A3",
+    "DDR_A4",
+    "DDR_A5",
+    "DDR_A6",
+    "DDR_A7",
+    "DDR_A8",
+    "DDR_A9",
+    "DDR_BA0",
+    "DDR_BA1",
+    "DDR_BA2",
+    "DDR_CASn",
+    "DDR_CKE",
+    "DDR_CSn0",
+    "DDR_ODT",
+    "DDR_RASn",
+    "DDR_WEn"
+  ],
+  "addedStrobeSignals": 2,
+  "addedThroughVias": 6,
+  "preservedTracePieces": 125,
+  "preservedThroughVias": 129,
+  "strobeLengths": [
+    {
+      "name": "DDR_DQS1",
+      "planarMm": 50.95313905432341,
+      "throughVias": 4
+    },
+    {
+      "name": "DDR_DQSn1",
+      "planarMm": 51.001321123576794,
+      "throughVias": 2
+    }
+  ],
+  "strobePlanarSkewMm": 0.04818206925338586,
+  "strobePlanarLimitMm": 0.127,
+  "ddrTiming": [
+    {
+      "name": "DDR_BYTE0",
+      "signals": 11,
+      "skewMm": 0.6350000003934717,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_BYTE1",
+      "signals": 11,
+      "skewMm": 0.6350000014649382,
+      "limitMm": 0.635,
+      "pass": true
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "signals": 26,
+      "skewMm": null,
+      "limitMm": 0.635,
+      "pass": false
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "signals": 2,
+      "skewMm": 1.0658141036401503e-14,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "signals": 2,
+      "skewMm": 0.04818206925338586,
+      "limitMm": 0.127,
+      "pass": true
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "signals": 2,
+      "skewMm": 0.07661634765567982,
+      "limitMm": 0.127,
+      "pass": true
+    }
+  ],
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "bothCableOrientationsDataConnected": true,
+  "chargingAndDataShareOneSocket": true,
+  "usbNumericPadNetAssignmentsVerified": 38,
+  "usbConnectedPadChecks": 40,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "gerberShortsAllLayers": 0,
+  "independentPhysicalViolationsAllSeverities": 0,
+  "presentationWarnings": 418,
+  "hostUnconnectedItemsReported": 499,
+  "ignoredNativeChecks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "physicalLibraryRecordsPreserved": 13831,
+  "nativeBusLanesBootstrap": true,
+  "checkedCpuChannelReuse": true,
+  "manualRamEscapes": true,
+  "topSnapshot": {
+    "path": "images/am3352-ddr-usbc-repaired-strobes-top.png",
+    "sha256": "aba653234d54b7a7f78333d41bb4c02b038c8fc66b4f5a3f88f0bca0e5fdb4ea",
+    "visuallyInspected": true
+  },
+  "bottomSnapshot": {
+    "path": "images/am3352-ddr-usbc-repaired-strobes-bottom.png",
+    "sha256": "e574769bb2414e59ab8e8f41f44706467703ccd0962171b96e057d56b01d08a3",
+    "visuallyInspected": true
+  },
+  "bothBytePlanarTimingPass": true,
+  "allThreeDifferentialPairPlanarTimingPass": true,
+  "fullElectricalTimingQualified": false,
+  "controlledImpedanceQualified": false,
+  "completePowerRouting": false,
+  "linuxInstallerTested": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "One source contains both DDR byte lanes, reset and clock with shared USB-C preserved. Native bus_lanes supplies the clock and original byte bootstrap; checked CPU/channel sections are reused with guarded manual RAM escapes and a shortened positive strobe turn. All available planar matching groups pass. Unequal strobe via counts, package delays, coupling and real stackup remain unqualified. The 24 address/control signals, complete host, Linux and measured original shell remain unfinished."
+}

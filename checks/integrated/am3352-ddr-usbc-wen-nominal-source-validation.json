@@ -1,0 +1,55 @@
+{
+  "status": "DDR30_DDR_WEn_EXACT_REPLAY_AND_PRIOR_COPPER_PRESERVED_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-wen-nominal-candidate/circuit.json",
+    "sha256": "ac758f1c2e20b4d4132f5240797418d90d04a209bd713e956b8141a4392a8f1b"
+  },
+  "previousSource": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a5-nominal-candidate/circuit.json",
+    "sha256": "10446725db144f0ab7fe27534f7a544db74cccae240288b3b9772917e1e3e09b"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-wen-nominal-paths.json",
+    "sha256": "171d760afb7bbcdb84f23e9b6312dda7269f42db4677f6fb103794c23cc125bd"
+  },
+  "provenance": {
+    "path": "routing/am3352-ddr-usbc-wen-nominal-paths.provenance.json",
+    "sha256": "d6d3c24e953ac53658f3a9ee6b6810d4120cd6b59318f1bcff49a2075baae4ca"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-a5-nominal-check-summary.json",
+    "sha256": "94cb51957ff9ab95da3fadfbf8160d6170304d4940027e8a15a6b98a97118c53"
+  },
+  "memoryMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "components": 212,
+  "actualPads": 912,
+  "copperLayers": 4,
+  "tracePieces": 132,
+  "throughVias": 157,
+  "preservedTracePieces": 131,
+  "preservedThroughVias": 151,
+  "addedThroughVias": 6,
+  "changedExistingSignals": [],
+  "addedSignals": [
+    "DDR_WEn"
+  ],
+  "addedSignalPlanarMm": 43.22864064032822,
+  "addedSignalNominalLengthPass": true,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "carrierReferenceSearchBounds": {
+    "minX": -17.5,
+    "maxX": 17.5,
+    "minY": -38.5,
+    "maxY": 9.5
+  },
+  "planeDeclarationsAndBoundariesPreserved": true,
+  "planeAntipadsRegeneratedForAddedHoles": true,
+  "independentFilledPlaneConnectivityRequired": true,
+  "fullCommandClassMatchingDeferred": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,91 @@
+{
+  "status": "COMMAND_BYTE_MERGE_HAS_HOLE_OR_VIA_COPPER_CONFLICTS",
+  "inputs": [
+    {
+      "path": "routing/am3352-command-unmatched-pruned-paths.json",
+      "sha256": "0becf9c883dc04f3223ca1dbbcef983ac4958902de5a7b8760490bc284abf5bd"
+    },
+    {
+      "path": "routing/am3352-guided-both-bytes-and-reset-paths.json",
+      "sha256": "a356d0cffb8e29477d0c843b99efc91c91b1d63ff675747c72107a9fd62e2d48"
+    }
+  ],
+  "commandVias": 130,
+  "byteVias": 40,
+  "minimumCrossHoleEdgeClearanceMm": -0.25399999999999645,
+  "conflicts": [
+    {
+      "command": "DDR_A7",
+      "byte": "DDR_D13",
+      "commandVia": {
+        "x": -3.5999999999999996,
+        "y": -10
+      },
+      "byteVia": {
+        "x": -3.5999999999999996,
+        "y": -9.6
+      },
+      "holeEdgeClearanceMm": 0.14600000000000035,
+      "copperEdgeClearanceMm": -0.05719999999999964
+    },
+    {
+      "command": "DDR_CK",
+      "byte": "DDR_DQS1",
+      "commandVia": {
+        "x": 2.0000000000000004,
+        "y": -27.799999999999997
+      },
+      "byteVia": {
+        "x": 2,
+        "y": -27.8
+      },
+      "holeEdgeClearanceMm": -0.25399999999999645,
+      "copperEdgeClearanceMm": -0.45719999999999644
+    },
+    {
+      "command": "DDR_A10",
+      "byte": "DDR_D8",
+      "commandVia": {
+        "x": 0.40000000000000036,
+        "y": -24.199999999999996
+      },
+      "byteVia": {
+        "x": 0.40000000000000036,
+        "y": -24.2
+      },
+      "holeEdgeClearanceMm": -0.25399999999999645,
+      "copperEdgeClearanceMm": -0.45719999999999644
+    },
+    {
+      "command": "DDR_A14",
+      "byte": "DDR_D15",
+      "commandVia": {
+        "x": 2.8000000000000007,
+        "y": -10.4
+      },
+      "byteVia": {
+        "x": 3.2,
+        "y": -10.4
+      },
+      "holeEdgeClearanceMm": 0.14599999999999946,
+      "copperEdgeClearanceMm": -0.05720000000000053
+    },
+    {
+      "command": "DDR_CKE",
+      "byte": "DDR_DQS1",
+      "commandVia": {
+        "x": 3.6,
+        "y": -28.6
+      },
+      "byteVia": {
+        "x": 4,
+        "y": -28.6
+      },
+      "holeEdgeClearanceMm": 0.1459999999999999,
+      "copperEdgeClearanceMm": -0.057200000000000084
+    }
+  ],
+  "accepted": false,
+  "fabricationReady": false,
+  "scope": "Cross-candidate via/hole screen only. Traces, pads, full independent DRC, timing and original-shell integration are outside this diagnostic."
+}

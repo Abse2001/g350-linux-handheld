@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+    "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+  },
+  "preparations": [
+    {
+      "preparation": {
+        "path": "dist/am3352-ddr32-casn-dqm1-d10-open-attempt-636/result.json",
+        "sha256": "dce1e48f47bd43056fa7dada1e194166263fc61396878c88f09b6e1638383269"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-casn-dqm1-d10-open-attempt-636/input.simple-route.json",
+        "sha256": "8813f621ffc2bd3e13bc0d9cc3c53aad3706c788ffba127d10566d6293bb47f8"
+      },
+      "descriptor": {
+        "path": "dist/am3352-ddr32-casn-dqm1-d10-open-attempt-636/temporarily-open-data-wires.json",
+        "sha256": "9c4b4816ba53786e3d09f4ac775fdbfff711c451587227f3197af0f456b15158",
+        "originalSource": {
+          "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+          "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+        },
+        "priorInput": {
+          "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+          "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+        },
+        "stagedRepairOnly": true,
+        "exportable": false,
+        "names": [
+          "DDR_DQM1",
+          "DDR_D10"
+        ],
+        "physicalHolesRemoved": 0
+      }
+    },
+    {
+      "preparation": {
+        "path": "dist/am3352-ddr32-casn-dqm1-d10-ram-tails-retained-attempt-646/result.json",
+        "sha256": "81e16525972bfdb2ee4184c24b995db2fb37b881960df70f0b681873fd8fd8ee"
+      },
+      "input": {
+        "path": "dist/am3352-ddr32-casn-dqm1-d10-ram-tails-retained-attempt-646/input.simple-route.json",
+        "sha256": "554480dffcde151ba3d9c6745e610bcbfbd4441c388696af181c16366a713234"
+      },
+      "descriptor": {
+        "path": "dist/am3352-ddr32-casn-dqm1-d10-ram-tails-retained-attempt-646/temporarily-open-data-wires.json",
+        "sha256": "e4d9f9358e51a6ffb550a12bcb634ecc8d686e6233259b0961b8bf77f7e5c4fb",
+        "originalSource": {
+          "path": "dist/diagnostics/am3352-ddr-usbc-a6-bootstrap-candidate/circuit.json",
+          "sha256": "b541e91b183675265480029dbc04850c6f4df69b5cf94fc0f73e24b5758665aa"
+        },
+        "priorInput": {
+          "path": "dist/am3352-ddr32-casn-csn-prefix-open-attempt-614/input.simple-route.json",
+          "sha256": "8a6858fc8981697820a3c6724209eb6ce089942715aba2f54a3f1919198a533a"
+        },
+        "stagedRepairOnly": true,
+        "exportable": false,
+        "names": [
+          "DDR_DQM1",
+          "DDR_D10"
+        ],
+        "physicalHolesRemoved": 0
+      }
+    }
+  ],
+  "tests": {
+    "declaredCpuMarkerOpeningAccepted": true,
+    "undeclaredCopperMutationRejected": true,
+    "padObstacleMutationRejected": true,
+    "obstacleDeletionRejected": true,
+    "traceOwnerMutationRejected": true,
+    "physicalSourceHoleDeletionRejected": true,
+    "declaredRamTailsAccepted": true,
+    "changedRamTailCutRejected": true,
+    "changedRamPadEndpointRejected": true,
+    "routedStagingSaveRejected": true,
+    "routedStagingOutputAbsent": true
+  },
+  "helpers": [
+    {
+      "path": "scripts/validate-am3352-staged-wire-guards.mjs",
+      "sha256": "e1971f942397f5fcf34f1136c997f621679d8c665dfca38fe64df1576fa2d666"
+    },
+    {
+      "path": "scripts/lib/am3352-open-data-wires.mjs",
+      "sha256": "1a71810b75088f7eaccf02c8cfbf10aa78c0a1d3f1060b0caf1bde6b97a0c4ba"
+    },
+    {
+      "path": "scripts/lib/am3352-open-command-prefixes.mjs",
+      "sha256": "acc076b13cad647a7867aa064613c7a39e810973b85757d02821fa63b2fd12a5"
+    },
+    {
+      "path": "scripts/save-am3352-registered-command.mjs",
+      "sha256": "cda326464f1570361439ae1530c1c379a13dfaef2221c008b4b97b3bc173a1fa"
+    }
+  ],
+  "defaultChanged": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,93 @@
+{
+  "status": "DDR31_DDR_A3_NATIVE_CHANNEL_AND_MANUAL_FANOUT_REPLAY_INDEPENDENT_CHECKS_REQUIRED",
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-wen-nominal-candidate/circuit.json",
+    "sha256": "ac758f1c2e20b4d4132f5240797418d90d04a209bd713e956b8141a4392a8f1b"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-wen-nominal-paths.json",
+    "sha256": "171d760afb7bbcdb84f23e9b6312dda7269f42db4677f6fb103794c23cc125bd",
+    "signals": 30
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-wen-nominal-check-summary.json",
+    "sha256": "75acef5197ef4e1deb2a64fb867d55b294d844d5a0aaa04512924d63dae207f8"
+  },
+  "nativeChannelRun": {
+    "path": "dist/am3352-ddr30-a3-native-outer-channel-attempt-572/result.json",
+    "sha256": "f20d75095acd84f719a5dfe8243983efde5cc6892a3cd35028483301e7502013"
+  },
+  "nativeChannelInput": {
+    "path": "dist/am3352-ddr30-a3-native-outer-channel-attempt-572/channel.input.simple-route.json",
+    "sha256": "32c1cbf29750ad6b7dfab41d4fbc93314eeca2214ac83ca4b7a5f8a6ebd7418f"
+  },
+  "nativeChannelOutput": {
+    "path": "dist/am3352-ddr30-a3-native-outer-channel-attempt-572/output.simple-route.json",
+    "sha256": "b1831f2e2a4bb5975e2fdba677d76ed330d3f00874bc58124174557e08da6f90"
+  },
+  "carrierReferenceSearchBounds": {
+    "minX": -17.5,
+    "maxX": 17.5,
+    "minY": -38.5,
+    "maxY": 9.5
+  },
+  "manualLocalRun": {
+    "path": "dist/am3352-ddr30-a3-top-outer-cpu-local-attempt-571/result.json",
+    "sha256": "1daeac674ab95d65dea32d187489cfc7a95514dbc67d9b7de5074de9653c69da"
+  },
+  "manualLocalCopper": {
+    "path": "dist/am3352-ddr30-a3-top-outer-cpu-local-attempt-571/local-escapes.json",
+    "sha256": "2f6a6a525e99e63304b3eb31c8929830fef585f3b7e1b4fc33274e63bbb1b8b8"
+  },
+  "nativeBootstrap": {
+    "path": "dist/am3352-ddr30-a3-top-local-prep-attempt-565/signal-escapes.native.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "dogbones": 0
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-a3-bootstrap-paths.json",
+    "sha256": "57db9d48574662eb138ca206c27d9b20248ba34dd0491c98ad912f7847825e06"
+  },
+  "newSignals": [
+    "DDR_A3"
+  ],
+  "sourceTraceId": "source_trace_7",
+  "priorSignalsPreserved": 30,
+  "connectedCandidateSignals": 31,
+  "remainingUnroutedDdrSignals": 18,
+  "planarMm": 45.4115827317725,
+  "throughVias": 4,
+  "preservedSourceTracePieces": 132,
+  "preservedSourceHoles": 157,
+  "minimumHoleEdgeGapMm": 0.31168542494923857,
+  "removedCoincidentWirePoints": 2,
+  "originalTimingRequirements": {
+    "buses": [
+      {
+        "name": "DDR_COMMAND_CLOCK",
+        "busId": "DDR_COMMAND_CLOCK",
+        "connectionNames": [
+          "source_trace_7"
+        ],
+        "traceWidth": 0.1016,
+        "allowedLayers": [
+          "top"
+        ],
+        "maxLengthSkew": 0.635
+      }
+    ],
+    "differentialPairs": []
+  },
+  "fullCommandClassMatchingDeferred": true,
+  "nominalLengthRangeMm": [
+    41.75,
+    44.290000000000006
+  ],
+  "nominalLengthPass": false,
+  "nativeBusLanesBootstrap": true,
+  "manualLocalRepairs": true,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

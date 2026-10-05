@@ -1,0 +1,91 @@
+{
+  "status": "DDR26_NEGATIVE_STROBE_TWO_WIRE_SHORTCUTS_PLANAR_MATCHING_PASS_INDEPENDENT_CHECKS_REQUIRED",
+  "input": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-check-summary.json",
+    "sha256": "da0f46ae3bc6b3884f39090ceafe060f9784543e244f75d9aebf59ca1b1997d3"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr-usbc-cke-joint-power-plane-bounded-candidate/circuit.json",
+    "sha256": "4929ff439da1e340f7ce82538f4c23231d627868ef7889bd3915cd3714593e1b"
+  },
+  "priorPaths": {
+    "path": "routing/am3352-ddr-usbc-cke-joint-clean-unmatched-paths.json",
+    "sha256": "9676816aa13a32eb7a812dd7fbddabb52b2d5037d9e6d7149e3bacbcf9bdcf7b"
+  },
+  "paths": {
+    "path": "routing/am3352-ddr-usbc-cke-matched-paths.json",
+    "sha256": "421994ad47feaafc931944bccf6e1cf5b79215051b65d9fa545a8395c976b270"
+  },
+  "shortcutDiagnostic": {
+    "path": "dist/am3352-ddr26-cke-negative-shortcuts-attempt-466/result.json",
+    "sha256": "8d5e6ba2547fb89127807ba94b9e5838e9dd8e11458087fc836d3781bfc7e3dd"
+  },
+  "bootstrapPreparation": {
+    "path": "dist/am3352-ddr25-address-control-top-prep-attempt-449/result.json",
+    "sha256": "70bdfb3eb1dde46fb253a85b550b17d670b44c921bfd960439487fd88a6f59e9"
+  },
+  "changedSignals": [
+    "DDR_DQSn1"
+  ],
+  "preflights": [
+    {
+      "from": 61,
+      "to": 127,
+      "fromPoint": {
+        "x": 8.93050516015318,
+        "y": -12.301562894813463
+      },
+      "toPoint": {
+        "x": 8.96482295329197,
+        "y": -14.266040000000002
+      },
+      "layer": "top",
+      "savedPlanarMm": 2.7576599936156865,
+      "minimumCopperEdgeGapMm": 0.12000000000000012,
+      "nearest": "pcb_trace_14"
+    },
+    {
+      "from": 201,
+      "to": 227,
+      "fromPoint": {
+        "x": 8.980924889745847,
+        "y": -16.46591164614485
+      },
+      "toPoint": {
+        "x": 7.240000000000002,
+        "y": -17.04
+      },
+      "layer": "top",
+      "savedPlanarMm": 7.3305180568840616,
+      "minimumCopperEdgeGapMm": 0.11999999999999945,
+      "nearest": "pcb_trace_14"
+    }
+  ],
+  "originalLengthMm": 61.12072643349098,
+  "negativeStrobePlanarMm": 51.03254838299123,
+  "positiveStrobePlanarMm": 50.95313905432341,
+  "strobePlanarSkewMm": 0.07940932866782191,
+  "byte1PlanarSkewMm": 0.6350000014649382,
+  "wireGuardMm": 0.003,
+  "wireWidthMm": 0.1016,
+  "wireClearanceMinimumMm": 0.1016,
+  "preservedPhysicalThroughVias": 143,
+  "newVias": 0,
+  "otherNetChanges": 0,
+  "nativeBusLanesBootstrap": true,
+  "manualWireRepair": true,
+  "copperLayers": 4,
+  "defaultChanged": false,
+  "ckeNominalLengthPass": false,
+  "independentSourceAndPhysicalChecksRequired": true,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false,
+  "repairRun": {
+    "path": "dist/am3352-ddr26-cke-negative-two-cuts-attempt-467/result.json",
+    "sha256": "111f0924024beb5318bab45332c9c08e5d61dc33766ce804f6b9188edf1c89db"
+  },
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-cke-joint-power-plane-bounded-check-summary.json",
+    "sha256": "da0f46ae3bc6b3884f39090ceafe060f9784543e244f75d9aebf59ca1b1997d3"
+  }
+}

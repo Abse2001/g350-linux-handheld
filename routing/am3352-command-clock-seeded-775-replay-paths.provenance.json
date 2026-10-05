@@ -1,0 +1,52 @@
+{
+  "status": "COMMAND_MANUAL_CARRIER_REPLAY_REQUIRES_ALL_INDEPENDENT_CHECKS",
+  "run": {
+    "path": "dist/am3352-command-clock-seeded-longer-carriers-attempt-775/result.json",
+    "sha256": "561b45bc42b521f0fbd15e3185ac664f498d0febed0c0a7598666ef1bd80c38d"
+  },
+  "state": {
+    "path": "dist/am3352-command-clock-seeded-longer-carriers-attempt-775/carriers.nonexportable.json",
+    "sha256": "090875002b43f0be8d442b1f5a80efc719e6c1866a2bb1283ba6e19e6d04d9fc"
+  },
+  "source": {
+    "path": "dist/diagnostics/am3352-ddr23-command-replan-candidate/circuit.json",
+    "sha256": "aad4a9bb60a27ed7acb46130e7dcec8ce6622f15ec01d558769bbea1d9ee6058"
+  },
+  "fixedPaths": {
+    "path": "routing/am3352-ddr23-command-replan-fixed-paths.json",
+    "sha256": "7188248a85d19d25787ae5995117f14785b20885a3bdc3b39c11f7f895ea92b9"
+  },
+  "entry": {
+    "path": "experiments/am3352-command-clock-seeded-775-replay.circuit.tsx",
+    "sha256": "48811ea796ed024f8bc0135bfb6fe8b3c1e3ec2b8d2db5466baf3eee96ebfbc8"
+  },
+  "nativeEntry": {
+    "path": "experiments/am3352-command-clock-seeded-775-replay-native-phase.circuit.tsx",
+    "sha256": "286b1a15b659be9e4a04b9ab683cf39d03fdcd4863e8cf79aea8858ec6a8687b"
+  },
+  "paths": {
+    "path": "routing/am3352-command-clock-seeded-775-replay-paths.json",
+    "sha256": "d85e838e8b392d3c1fd97b8175be59005c9e04383eaae72c1010c596de36fd2b"
+  },
+  "stagedDdrSignals": 38,
+  "retainedDataResetSignals": 23,
+  "manualCommandChannels": 13,
+  "retainedCheckedClockChannels": 2,
+  "retainedCheckedClockNames": [
+    "DDR_CK",
+    "DDR_CKn"
+  ],
+  "checkedClockPaths": {
+    "path": "routing/am3352-ddr-usbc-d12-spacing-repaired-paths.json",
+    "sha256": "a65e50e01b5519921b4e00e3e6d87e7dd2fd39d1ae808e9afb30c4117ee5fd12"
+  },
+  "executionHelper": {
+    "path": "scripts/replay-am3352-command-manual-carriers.mjs",
+    "sha256": "6bf4917b59e2fffad384c63996f9358f1d1dc6791c3e8f267ca2e9d2b4421460"
+  },
+  "original125TracePiecesAnd141ViasRetained": true,
+  "uncommittedFanoutReservationsReplanned": true,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

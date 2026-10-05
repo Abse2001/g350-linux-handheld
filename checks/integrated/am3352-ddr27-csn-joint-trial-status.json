@@ -1,0 +1,172 @@
+{
+  "status": "DDR27_STAGED_CSN_CPU_REPAIR_PROMOTED_ONLY_AFTER_COMPLETE_DDR28_CHECKS",
+  "priorCheckedSummary": {
+    "path": "checks/integrated/am3352-ddr-usbc-odt-nominal-check-summary.json",
+    "sha256": "b5fc4c469c1c0418859d7c931f8b5cb20576f076cca900e446c6a6faba218e99"
+  },
+  "trials": [
+    {
+      "path": "dist/am3352-ddr27-csn-cpu-prefix-native-rebuild-attempt-519/result.json",
+      "sha256": "b67946fdd81674b3e606f8819bbabb0f125f63ed62184f79575758410d3eb33a",
+      "attempt": 519,
+      "status": "STAGED_CPU_PREFIX_NATIVE_ROUTING_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false,
+      "elapsedSeconds": 2.389667041
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-cpu-prefix-native-rebuild-attempt-520/result.json",
+      "sha256": "d4eed30e35e5734e0e8a0140127ecc97bae6b01236dcf63eb98128190218ef0b",
+      "attempt": 520,
+      "status": "STAGED_CPU_PREFIX_NATIVE_ROUTING_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false,
+      "elapsedSeconds": 2.197360625
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-d10-manual-prefix-attempt-522/result.json",
+      "sha256": "4d943fe9e99d7452f7c0b5fd04a74decb43c524f32bf1024bf281b54522ba034",
+      "attempt": 522,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-d10-manual-prefix-prep-attempt-521/result.json",
+      "sha256": "fe730743d84ab090bbc8d0bfe2cbbf8a3f61a2e4a1824f83f783d7aeffc07c10",
+      "attempt": 521,
+      "status": "STAGED_D10_CPU_PREFIX_MANUAL_REPAIR_PREPARATION_NOT_EXPORTABLE",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-attempt-524/result.json",
+      "sha256": "bba5cf12e9b64754359c2e8614c3fcd950a3f9dd3c51772c3cdd33a2dfb51703",
+      "attempt": 524,
+      "status": "STAGED_DDR_D14_CPU_PREFIX_MANUAL_REPAIR_READY_REPLAY_AND_MATCHING_REQUIRED",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-d14-manual-prefix-prep-attempt-523/result.json",
+      "sha256": "a17f606c3f1c95621bdd147f2c7cc442cd85e57f2e11c6a2947e5761c739f877",
+      "attempt": 523,
+      "status": "STAGED_D14_CPU_PREFIX_REPAIR_D10_RESTORED_NOT_EXPORTABLE",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-joint-cpu-local-attempt-517/result.json",
+      "sha256": "eba07e11fa038eafd2e75cc6040152e354a4750b8faee9d24e522e55d0a2df42",
+      "attempt": 517,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-joint-cpu-native-channel-attempt-518/result.json",
+      "sha256": "2571ebffd06167fd4fc2edae3789b155d096002f69b7051ab9085ac3ad3e3f3c",
+      "attempt": 518,
+      "status": "GUIDED_NATIVE_CHANNEL_ROUTED_UNQUALIFIED",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-csn-joint-cpu-prep-attempt-516/result.json",
+      "sha256": "cace6462c61e6ca82fdde6abd48dbed8a87dc2ad2857d30c470de4c5c12324cd",
+      "attempt": 516,
+      "status": "STAGED_CSN_CPU_ACCESS_TWO_DATA_PREFIXES_OPEN_NOT_EXPORTABLE",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-corridor-top-local-attempt-514/result.json",
+      "sha256": "92e3854247b9e8a53a7cd423d61d4e290c861ebee5eec516227b1d9221b4d8af",
+      "attempt": 514,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-corridor-top-local-attempt-515/result.json",
+      "sha256": "fc7323c8d6723e267848a33147d052e8b5f5eedbe5b2cfe45026410b6ff4863c",
+      "attempt": 515,
+      "status": "LOCAL_MODIFICATION_ORDER_CYCLE",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-local-attempt-505/result.json",
+      "sha256": "97555769f57a7cdc14e8175cc4e7dc4160c4562671ca357c22b0322ee20cc62d",
+      "attempt": 505,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-local-attempt-506/result.json",
+      "sha256": "ec5422f7adc7dac0a547b62b3e364e52f5463c5e689637d9628d2bb92f9f30a0",
+      "attempt": 506,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-native-channel-attempt-507/result.json",
+      "sha256": "b7d1b3dbc499e7c3e715cee6b07122337190560e76106e5b3954e8cdc3afd8f5",
+      "attempt": 507,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-native-channel-attempt-508/result.json",
+      "sha256": "49e45285d6a28bdae0e03eed86dc7fe346736486e3953f285d44141ee71edecb",
+      "attempt": 508,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-native-channel-attempt-509/result.json",
+      "sha256": "d9fccc8edb153b8acd75a7c6a42ab8d8eea424067f821e89df7de0ded0298338",
+      "attempt": 509,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-top-local-attempt-510/result.json",
+      "sha256": "cde23c5f7420aae6a9a2e55c817e8996a2d1085d3fb737310d778ad86227258a",
+      "attempt": 510,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-top-local-attempt-511/result.json",
+      "sha256": "def8ed39815066a446f67e3db4354bd6ac1b9aea4056838350ff430478ba27b6",
+      "attempt": 511,
+      "status": "LOCAL_FANOUTS_READY_FOR_NATIVE_CHANNEL_ROUTING",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-top-native-channel-attempt-512/result.json",
+      "sha256": "38ccf8badaabbfb2be2ff2a1535d2ab17b1247c25bb915b817556c33bd560922",
+      "attempt": 512,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false
+    },
+    {
+      "path": "dist/am3352-ddr27-rasn-independent-top-native-channel-attempt-513/result.json",
+      "sha256": "af55c19d968ece364f948872c92a63ada7f3335d8a5d7e5b82c8cff0741aca83",
+      "attempt": 513,
+      "status": "GUIDED_NATIVE_CHANNEL_FAILED_OR_TIMEOUT",
+      "completeAcceptedDdrReplay": false
+    }
+  ],
+  "acceptedReplay": {
+    "path": "checks/integrated/am3352-ddr-usbc-csn-joint-check-summary.json",
+    "sha256": "3f63f2f618d5033b30a99ec9ac2b5fccc5cf0e7d952c7632ae83d37f9d1d6afc"
+  },
+  "acceptedDdrSignals": 28,
+  "remainingDdrSignals": 21,
+  "allOldHolesRetained": 147,
+  "unchangedOldTraces": 128,
+  "changedOldSignals": [
+    "DDR_D14"
+  ],
+  "addedSignals": [
+    "DDR_CSn0"
+  ],
+  "restoredD10Unchanged": true,
+  "csnPlanarMm": 42.80071426749381,
+  "d14PlanarMm": 50.91910899782122,
+  "addedD14CpuThroughVias": 2,
+  "rasnComplete": false,
+  "activeSolverHandles": [],
+  "fabricationReady": false
+}

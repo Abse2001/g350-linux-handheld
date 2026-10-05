@@ -1,0 +1,86 @@
+(footprint "g350_TP_UART_IO_3V3_37926c4c2b29ea6c1ec1688c1258e6ac"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "TP_UART_IO_3V3"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "775d382d-f3d9-4e52-8abf-f91d5d6dadb7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TP_UART_IO_3V3"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dcf0284c-8c39-4ea6-b722-b8e16d5280fe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "041dc569-d608-47de-a45d-22f0fb83c6e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "072259fc-3170-48a2-99a7-d2c9fa4b9471")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5beca830-150b-7670-79fc-6af009044c50")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr dnp)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 1 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6f0aa6e4-a4a0-4668-912b-08e0acd22af7")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 1.5 1.5)
+		(layers "F.Cu" "F.Mask")
+		(uuid "0248e580-25cb-8f3f-494e-38fe6cd0e2bd")
+	)
+	(embedded_fonts no)
+)

@@ -7,7 +7,9 @@ import { prepareJlcpcbAssembly, isJlcpcbAssembledComponent } from "./assembly.mj
 
 const designStatus=JSON.parse(readFileSync("design-status.json","utf8"))
 if(designStatus.fabricationReady!==true)
-  throw new Error("Fabrication export blocked: the required integrated Linux handheld is still in progress. Revision B is an external-Pi carrier; see docs/INTEGRATED_HOST.md.")
+  throw new Error("Fabrication export blocked: integrated handheld routing, original G350 shell fit and release checks remain incomplete; see docs/INTEGRATED_HOST.md.")
+if(designStatus.originalShellFit?.verified!==true)
+  throw new Error("Fabrication export blocked: original G350 PCB outline, mounts, ports and assembled clearances have not been verified; see docs/G350_SHELL_FIT.md.")
 
 const sourcePath = "dist/index/circuit.json"
 if (JSON.parse(readFileSync("routing/rev-b-routes.json","utf8"))

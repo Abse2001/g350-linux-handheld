@@ -1,0 +1,43 @@
+{
+  "status": "PASS_CURRENT_SOURCE_OUTLINE_GEOMETRY_ONLY",
+  "reviewDate": "2026-10-05",
+  "entry": "experiments/am3352-g350-pmic-placement.circuit.tsx",
+  "circuit": "dist/experiments/am3352-g350-pmic-placement/circuit.json",
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "outlineVertexCount": 14,
+  "lowerSpeakerTabMm": {
+    "width": 22,
+    "extension": 19
+  },
+  "publishedExteriorMm": {
+    "width": 81,
+    "height": 128,
+    "depth": 22
+  },
+  "nominalDifferenceFromExteriorMm": {
+    "left": 2.5,
+    "right": 2.5,
+    "top": 5,
+    "bottom": 5
+  },
+  "nominalMarginsAreInternalClearances": false,
+  "logicalComponents": 280,
+  "all280CourtyardsNonoverlapping": true,
+  "minimumCopperEdgeClearanceLowerBoundMm": 0.45000699999999655,
+  "originalShellFitVerified": false,
+  "mountingGeometryVerified": false,
+  "buttonAndPortRegistrationVerified": false,
+  "fabricationReady": false,
+  "researchConclusion": "Inspected online results provide exterior dimensions and teardown photographs; no dimensioned original PCB outline, mounting positions or internal shell clearances were found.",
+  "reference": "https://handhelds.wiki/BATLEXP_G350_Overview",
+  "hashes": {
+    "dist/experiments/am3352-g350-pmic-placement/circuit.json": "a76581781024de52d555b7c6f37dd5708ad7293c2b4a902414b721adccafdc2d",
+    "mechanical/g350-provisional-outline.json": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+    "checks/layout/pmic-placement-variant/g350-pmic-placement-check-summary.json": "ef5d9b2b89118c844f7766b848d1bfca7d0e1c996186b38e9065d77faf81cac7"
+  }
+}

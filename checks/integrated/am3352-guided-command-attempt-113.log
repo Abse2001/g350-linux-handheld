@@ -1,0 +1,13 @@
+72756 |   }
+72757 |   const sites = matchComponentDogboneViaSites3(prepared, {
+72758 |     ...geometryRules,
+72759 |     preferredViaPointsByConnectionIndex
+72760 |   });
+72761 |   if (!sites) throw Error("No collision-free local dogbone assignment");
+                            ^
+error: No collision-free local dogbone assignment
+      at routeLocalSignalDogbones (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:72761:21)
+      at prepare (/Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/node_modules/@tscircuit/core/dist/index.js:72942:20)
+      at /Users/abdolsalamallawlabi/Documents/Codex/2026-10-01-make-the-g350-gameboy-linux-using/scripts/route-am3352-outer-layer-ddr.mjs:88:27
+
+Bun v1.3.14 (macOS arm64)

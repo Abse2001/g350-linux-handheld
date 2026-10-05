@@ -1,14 +1,16 @@
 {
   "status": "AM3352_MEMORY_FAIL",
-  "circuitSha256": "dbc5ea0f6d7fe6918f9ee70a2be127fd10a3ccc9c761e7535faf284911064590",
+  "circuitSha256": "2c72f2f082db98ec4b816ac334bd0502b2f1f926abdedd5a995b0ed6bafcab04",
   "requiredSignals": 49,
-  "connectedSignals": 0,
+  "connectedSignals": 23,
   "connectionMap": {
-    "path": "lib/am3352/memory-byte1-swizzled-connections.json",
-    "sha256": "9e833a40b6cd5ccffbe5499254455d1f6f713c7278a0f6195d0aa9dab6546671"
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
   },
-  "tracePieces": 0,
-  "physicalVias": 0,
+  "copperLayerCount": 4,
+  "maxCopperLayers": 4,
+  "tracePieces": 92,
+  "physicalVias": 109,
   "results": [
     {
       "name": "DDR_ODT",
@@ -19,31 +21,31 @@
     },
     {
       "name": "DDR_D8",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 50.53587956533585,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D9",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
+      "connected": true,
+      "planarLengthMm": 50.535879564900114,
+      "tracePieces": 1,
       "physicalVias": 0
     },
     {
       "name": "DDR_D2",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540224546,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D6",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.7277835402313,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_CSn0",
@@ -82,59 +84,59 @@
     },
     {
       "name": "DDR_RESETn",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
+      "connected": true,
+      "planarLengthMm": 51.037038943812156,
+      "tracePieces": 1,
       "physicalVias": 0
     },
     {
       "name": "DDR_D10",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
+      "connected": true,
+      "planarLengthMm": 50.53587956337854,
+      "tracePieces": 1,
       "physicalVias": 0
     },
     {
       "name": "DDR_D11",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 50.53587956490522,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_DQM1",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
+      "connected": true,
+      "planarLengthMm": 50.53587956482551,
+      "tracePieces": 1,
       "physicalVias": 0
     },
     {
       "name": "DDR_D0",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540320264,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_DQS0",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540546866,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_DQSn0",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540546877,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D4",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.72778354052423,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_RASn",
@@ -194,52 +196,52 @@
     },
     {
       "name": "DDR_D12",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 51.17087956484348,
+      "tracePieces": 1,
+      "physicalVias": 4
     },
     {
       "name": "DDR_DQSn1",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 50.53587956480395,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_DQS1",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 50.53587956480395,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D13",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 50.535879565400165,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_DQM0",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540455054,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D1",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.72778354066949,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D7",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 31.362783540618018,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_CK",
@@ -292,31 +294,31 @@
     },
     {
       "name": "DDR_D14",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
+      "connected": true,
+      "planarLengthMm": 50.53587956567147,
+      "tracePieces": 1,
       "physicalVias": 0
     },
     {
       "name": "DDR_D15",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 50.53587956379684,
+      "tracePieces": 1,
+      "physicalVias": 4
     },
     {
       "name": "DDR_D3",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540635336,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_D5",
-      "connected": false,
-      "planarLengthMm": null,
-      "tracePieces": 0,
-      "physicalVias": 0
+      "connected": true,
+      "planarLengthMm": 30.727783540626,
+      "tracePieces": 1,
+      "physicalVias": 2
     },
     {
       "name": "DDR_BA1",
@@ -358,16 +360,16 @@
     {
       "name": "DDR_BYTE0",
       "signals": 11,
-      "skewMm": null,
+      "skewMm": 0.6350000003934717,
       "limitMm": 0.635,
-      "pass": false
+      "pass": true
     },
     {
       "name": "DDR_BYTE1",
       "signals": 11,
-      "skewMm": null,
+      "skewMm": 0.6350000014649382,
       "limitMm": 0.635,
-      "pass": false
+      "pass": true
     },
     {
       "name": "DDR_COMMAND_CLOCK",
@@ -379,16 +381,16 @@
     {
       "name": "DDR_DQS0_PAIR",
       "signals": 2,
-      "skewMm": null,
+      "skewMm": 1.0658141036401503e-14,
       "limitMm": 0.127,
-      "pass": false
+      "pass": true
     },
     {
       "name": "DDR_DQS1_PAIR",
       "signals": 2,
-      "skewMm": null,
+      "skewMm": 0,
       "limitMm": 0.127,
-      "pass": false
+      "pass": true
     },
     {
       "name": "DDR_CK_PAIR",
@@ -399,25 +401,12 @@
     }
   ],
   "problems": [
-    "No completed routed copper",
     "Unconnected memory signal: DDR_ODT",
-    "Unconnected memory signal: DDR_D8",
-    "Unconnected memory signal: DDR_D9",
-    "Unconnected memory signal: DDR_D2",
-    "Unconnected memory signal: DDR_D6",
     "Unconnected memory signal: DDR_CSn0",
     "Unconnected memory signal: DDR_BA0",
     "Unconnected memory signal: DDR_A3",
     "Unconnected memory signal: DDR_A5",
     "Unconnected memory signal: DDR_A7",
-    "Unconnected memory signal: DDR_RESETn",
-    "Unconnected memory signal: DDR_D10",
-    "Unconnected memory signal: DDR_D11",
-    "Unconnected memory signal: DDR_DQM1",
-    "Unconnected memory signal: DDR_D0",
-    "Unconnected memory signal: DDR_DQS0",
-    "Unconnected memory signal: DDR_DQSn0",
-    "Unconnected memory signal: DDR_D4",
     "Unconnected memory signal: DDR_RASn",
     "Unconnected memory signal: DDR_CASn",
     "Unconnected memory signal: DDR_WEn",
@@ -426,13 +415,6 @@
     "Unconnected memory signal: DDR_A2",
     "Unconnected memory signal: DDR_A9",
     "Unconnected memory signal: DDR_A13",
-    "Unconnected memory signal: DDR_D12",
-    "Unconnected memory signal: DDR_DQSn1",
-    "Unconnected memory signal: DDR_DQS1",
-    "Unconnected memory signal: DDR_D13",
-    "Unconnected memory signal: DDR_DQM0",
-    "Unconnected memory signal: DDR_D1",
-    "Unconnected memory signal: DDR_D7",
     "Unconnected memory signal: DDR_CK",
     "Unconnected memory signal: DDR_CKn",
     "Unconnected memory signal: DDR_A10",
@@ -440,20 +422,12 @@
     "Unconnected memory signal: DDR_A1",
     "Unconnected memory signal: DDR_A11",
     "Unconnected memory signal: DDR_A14",
-    "Unconnected memory signal: DDR_D14",
-    "Unconnected memory signal: DDR_D15",
-    "Unconnected memory signal: DDR_D3",
-    "Unconnected memory signal: DDR_D5",
     "Unconnected memory signal: DDR_BA1",
     "Unconnected memory signal: DDR_A4",
     "Unconnected memory signal: DDR_A6",
     "Unconnected memory signal: DDR_A8",
     "Unconnected memory signal: DDR_CKE",
-    "Incomplete or unmatched planar timing group: DDR_BYTE0",
-    "Incomplete or unmatched planar timing group: DDR_BYTE1",
     "Incomplete or unmatched planar timing group: DDR_COMMAND_CLOCK",
-    "Incomplete or unmatched planar timing group: DDR_DQS0_PAIR",
-    "Incomplete or unmatched planar timing group: DDR_DQS1_PAIR",
     "Incomplete or unmatched planar timing group: DDR_CK_PAIR"
   ],
   "nativeErrors": [],

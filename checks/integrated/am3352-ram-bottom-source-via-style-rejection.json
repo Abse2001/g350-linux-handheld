@@ -1,0 +1,33 @@
+{
+  "status": "BOTTOM_RAM_SOURCE_REJECTED_EIGHT_USB_VIAS_DO_NOT_MATCH_DECLARED_TI_PROCESS",
+  "source": {
+    "path": "dist/diagnostics/am3352-ram-bottom-source-candidate/circuit.json",
+    "sha256": "a155e37461782d654d242c9885f45d414dcfac34059da6a0d01fb8e8e8e0bf12"
+  },
+  "board": {
+    "path": "dist/am3352-ram-bottom-source-diagnostic/board.kicad_pcb",
+    "sha256": "83772bbf88dd8cf32bb4c50d68414bb384d12a848c211ca7d9124bfdc4e35332"
+  },
+  "sourceValidationLog": {
+    "path": "checks/integrated/am3352-ram-bottom-source-validation.log",
+    "sha256": "69cf2adfa085b63e356fa22ccfb405d32175cbdc630ffcbca2cbd3657c3a6971"
+  },
+  "nativeDrc": {
+    "path": "checks/integrated/am3352-ram-bottom-source-kicad-drc.json",
+    "sha256": "8e2125b15fa59a02ce2fa99cb5290358e2b3c279bd9db11ef167c083236f7253"
+  },
+  "badUsbVias": 8,
+  "physicalViolations": 24,
+  "declaredViaMm": {
+    "land": 0.4572,
+    "drill": 0.254
+  },
+  "actualBadViaMm": {
+    "land": 0.3,
+    "drill": 0.15
+  },
+  "nativeRoutingEligible": false,
+  "sourceRetainedAsRejectedEvidence": true,
+  "defaultChanged": false,
+  "fabricationReady": false
+}

@@ -1,0 +1,88 @@
+{
+  "status": "ROTATED_RAM_ALL_96_NATIVE_TERMINALS_CONNECTED_REFERENCE_PLANES_PRESERVED_CHANNELS_OPEN",
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-host/circuit.json",
+    "sha256": "58462305cdd34fc164dbece8e37830ebcdfeb7113f0c5b0b92f5d7e18015f8e8",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-host/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-ram-rotated-180-pruned-breakout-diagnostic/circuit.json",
+    "sha256": "619dce77f4c1dee3b923868f02ea42bcac12a394f8c8af4cc2facd65a086bc14"
+  },
+  "board": {
+    "path": "dist/am3352-ram-rotated-180-pruned-breakout-diagnostic/board.kicad_pcb",
+    "sha256": "686f50b236424762609cecb54b3291010d909a4f51b25643f86e1022f64287b8"
+  },
+  "nativeTerminals": {
+    "path": "dist/am3352-ram-rotated-180-pruned-bootstrap-attempt-231/signal-escapes.native.json",
+    "sha256": "4a398bbb42b92d540f6e01a478e33d2640654c7da421fc60c98a68e76e412dd0"
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotationDeg": 180,
+  "coreVersion": "0.0.2056",
+  "nativePreparation": {
+    "path": "dist/am3352-ram-rotated-180-bootstrap-attempt-229/result.json",
+    "sha256": "368bd2f0e9df2940e0e1f922223e3d984c904899021b54f64a8e8420e5f34356"
+  },
+  "unusedBranchPruning": {
+    "path": "dist/am3352-ram-rotated-180-pruned-bootstrap-attempt-231/result.json",
+    "sha256": "a1ea40ff4597f1681011ef7ce6c16a807feda12f446fa1ee35e906ac04dbbd72"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "cpuSynchronousTerminalsConnected": 48,
+  "ramSynchronousTerminalsConnected": 48,
+  "sourcePowerTracePiecesPreserved": 69,
+  "sourcePowerThroughViasPreserved": 69,
+  "addedReservedSignalVias": 74,
+  "totalThroughVias": 143,
+  "completedEndToEndDdrChannels": 0,
+  "requiredDdrChannels": 49,
+  "minimumHoleEdgeClearanceMm": 0.44600000000000284,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolations": 0,
+  "unfinishedViaWarnings": 74,
+  "unfinishedTrackWarnings": 22,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "physicalLibraryRecordsPreserved": 598,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-pruned-breakout-native-connectivity.json",
+      "sha256": "fbdfdbc1ea274abba3171ac822ad745413bacfde9bba2e7b7183b5cad618c2e3"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-pruned-breakout-reference-connectivity.json",
+      "sha256": "f407514a3bf64a45c35e9321c6663f87358f65ac4be876ce83eebaba7813cc57"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-pruned-breakout-native-ddr-connectivity.json",
+      "sha256": "99a53a186db7e52f549d07602fba048079c946f1ff43e142b7467dd7a3c7b133"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-pruned-breakout-kicad-drc.json",
+      "sha256": "905725788e5f0fe4b2b12309c580c087fdd1c095537dacf77caf57a7f03a8c90"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-pruned-breakout-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    }
+  ],
+  "fullPhysicalDrcPass": false,
+  "timingQualified": false,
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "scope": "Separate 180 degree RAM placement with explicitly transformed supply escapes. All synchronous local terminals and RAM reference connections pass. Unused temporary byte1 holes are pruned; All remaining dangling warnings are retained. Complete DDR channels, original matching and full host/mechanical qualification remain required."
+}

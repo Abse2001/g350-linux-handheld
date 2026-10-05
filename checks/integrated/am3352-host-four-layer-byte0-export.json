@@ -1,0 +1,49 @@
+{
+  "status": "EXACT_NATIVE_BUS_LANES_PARTIAL_DIAGNOSTIC",
+  "fabricationReady": false,
+  "completedSignals": 11,
+  "requiredSignals": 49,
+  "sourceComponents": 185,
+  "copperLayerCount": 4,
+  "physicalVias": 22,
+  "viaGeometry": {
+    "landMm": 0.35,
+    "drillMm": 0.15
+  },
+  "source": {
+    "path": "dist/am3352-host-four-layer-attempt-21/board.source-and-pcb.circuit.json",
+    "sha256": "1e0ef6ecb351eb336f3e533bc615cea4a37f44529244621b96b1ad1e9c0236db"
+  },
+  "checkpoint": {
+    "path": "dist/am3352-host-four-layer-attempt-21/phase-2.input.simple-route.json",
+    "sha256": "d0868ab805d6962370647533f754aeb1082d465bfa8518d2764d352af52c12ac"
+  },
+  "failure": {
+    "path": "dist/am3352-host-four-layer-attempt-21/phase-2.error.json",
+    "sha256": "802fc76391f966575a7bf678078f11ba8f2767867d5a6fcf0b4927bd6d596ca1",
+    "record": {
+      "type": "autorouter_phase_error",
+      "subcircuit_id": "subcircuit_source_group_0",
+      "routingPhaseIndex": 2,
+      "phaseName": "DDR_BYTE1_BUS_LANES",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 5,
+      "elapsedMs": 627,
+      "connectionCount": 11,
+      "obstacleCount": 825,
+      "previousTraceCount": 11,
+      "autorouterName": "bus_lanes",
+      "solverName": "BusLanesPipelineSolver",
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "error": {
+        "message": "No collision-free local dogbone assignment"
+      }
+    },
+    "omittedPresentationData": "lastProgress.debugGraphics only; original file hash retained"
+  },
+  "diagnosticSha256": "45bdaf17faf810102e8ad35576a109b9fad00c5ae6e0ac7272b8d29d809a3257",
+  "scope": "Unmodified native completed DDR route coordinates from this failed run. All original components, source pads and native failures retained. No completed power copper or reference planes; unpowered and incomplete."
+}

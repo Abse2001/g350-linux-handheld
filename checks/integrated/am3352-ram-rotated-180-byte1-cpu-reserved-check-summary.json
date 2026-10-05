@@ -1,0 +1,93 @@
+{
+  "status": "ROTATED_RAM_CPU_BYTE1_ESCAPES_RESERVED_ALL_96_TERMINALS_CHECKED_CHANNELS_OPEN",
+  "source": {
+    "path": "dist/experiments/am3352-ram-rotated-180-byte0-rebound-host/circuit.json",
+    "sha256": "792efd7656dd6c701a99fa74b5cffda877bda2f97212c11616a8caa90d76d2ac",
+    "components": 204,
+    "originalBuildPath": "dist/experiments/am3352-ram-rotated-180-byte0-rebound-host/circuit.json"
+  },
+  "circuit": {
+    "path": "dist/am3352-ram-rotated-180-byte1-cpu-reserved-breakout-diagnostic/circuit.json",
+    "sha256": "99545a58b3dbfd245350bc1d3a6111bdb6a32794ca10d8dd41e364fc96dec7ad"
+  },
+  "board": {
+    "path": "dist/am3352-ram-rotated-180-byte1-cpu-reserved-breakout-diagnostic/board.kicad_pcb",
+    "sha256": "101204bf655822886af6f350cc944eba6597ba7a76d54727a543159f17036232"
+  },
+  "nativeTerminals": {
+    "path": "dist/am3352-ram-rotated-180-byte1-cpu-reserved-bootstrap-attempt-258/signal-escapes.native.json",
+    "sha256": "66292c52b07ccfd9ac21021ca5099ee7afcc73998e7c5bef54bda6bdf32530cc"
+  },
+  "referenceLayout": {
+    "path": "lib/am3352/ram-reference-escapes-rotated-180.json",
+    "sha256": "e0e112a4edf3e28e3c3a1cfc0684f36c1d5fd0b7a8129f58fa3bad1e95afb2ff"
+  },
+  "ramRotationDeg": 180,
+  "coreVersion": "0.0.2056",
+  "nativePreparation": {
+    "path": "dist/am3352-ram-rotated-180-byte0-rebound-bootstrap-attempt-233/result.json",
+    "sha256": "4ff743f5dca8d855f043001e63d2d8cc12ef56443a369786003998dac8476e7a"
+  },
+  "unusedBranchPruning": {
+    "path": "dist/am3352-ram-rotated-180-byte1-cpu-reserved-bootstrap-attempt-258/result.json",
+    "sha256": "f9e572cc35fe9c75fb6f2e61de2ffd411e5650ba7b87ad1e12003f36b85cb0c6"
+  },
+  "components": 204,
+  "actualPadObstacles": 882,
+  "copperLayers": 4,
+  "signalLayers": [
+    "top",
+    "bottom"
+  ],
+  "cpuSynchronousTerminalsConnected": 48,
+  "ramSynchronousTerminalsConnected": 48,
+  "sourcePowerTracePiecesPreserved": 69,
+  "sourcePowerThroughViasPreserved": 69,
+  "addedReservedSignalVias": 85,
+  "totalThroughVias": 154,
+  "retainedByte1CpuThroughDogbones": 11,
+  "connectionMap": {
+    "path": "lib/am3352/memory-ram-rotated-180-byte0-swizzled-connections.json",
+    "sha256": "1d70f67669ede595ffe886aee2792696efbe51108003132a1a2c15eb1ac0a096"
+  },
+  "completedEndToEndDdrChannels": 0,
+  "requiredDdrChannels": 49,
+  "minimumHoleEdgeClearanceMm": 0.44600000000000284,
+  "gerberShortsAllLayers": 0,
+  "clearanceViolations": 0,
+  "unfinishedViaWarnings": 85,
+  "unfinishedTrackWarnings": 11,
+  "presentationWarnings": 418,
+  "hostUnconnectedItems": 499,
+  "ramSupplyBallsConnected": 18,
+  "ramGroundBallsConnected": 21,
+  "ramBypassTerminalsConnected": 28,
+  "physicalLibraryRecordsPreserved": 609,
+  "evidence": [
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-cpu-reserved-native-connectivity.json",
+      "sha256": "0c3e7f9405811ea3f3102d8f29046d109435c6895a6c3b681ed7a9aa7d53e9e8"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-cpu-reserved-reference-connectivity.json",
+      "sha256": "4b6bbdfa4eaab5727ce6b4fff28b72f8c4b2908b71dde4ad1f2bf304abad5a62"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-cpu-reserved-native-ddr-connectivity.json",
+      "sha256": "8d64bc7fc019a36586b950466351463c1a699b7eff79dee01d65a3bea4efc785"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-cpu-reserved-kicad-drc.json",
+      "sha256": "294f0dce27683dd22c3a73d1852cee056a62cbc4a08305ef78e1ce5992b8e6fa"
+    },
+    {
+      "path": "checks/integrated/am3352-ram-rotated-180-byte1-cpu-reserved-shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    }
+  ],
+  "fullPhysicalDrcPass": false,
+  "timingQualified": false,
+  "fabricationReady": false,
+  "originalShellFitVerified": false,
+  "scope": "Separate 180 degree RAM placement with explicitly transformed supply escapes. All synchronous local terminals and RAM reference connections pass. Eleven CPU byte1 through-dogbones remain reserved before byte0 fanouts; only unused RAM byte1 holes are pruned. All remaining dangling warnings are retained. Complete DDR channels, original matching and full host/mechanical qualification remain required."
+}

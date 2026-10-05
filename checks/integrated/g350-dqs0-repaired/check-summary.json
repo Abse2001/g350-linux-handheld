@@ -1,0 +1,108 @@
+{
+  "status": "PASS_SCOPED_SHAPED_DQS0_CONNECTIVITY_AND_PHYSICAL_CHECKS",
+  "entry": "experiments/am3352-g350-dqs0-shaped-replay.circuit.tsx",
+  "source": {
+    "path": "dist/g350-dqs0-shaped-corridor-repair/compiled.circuit.json",
+    "sha256": "ffc19638cb059ce64785dd848eeeb1ae5a7191991b01fa54c52f786f63063086"
+  },
+  "board": {
+    "path": "checks/integrated/g350-dqs0-repaired/g350-dqs0.kicad_pcb",
+    "sha256": "06f90b85c21b8844e2fe839e87f2d61774897ff082cf5be5c038285ce22d9ab4"
+  },
+  "sourceFunctionalRecordsAndPhysicalPlacementPreserved": true,
+  "all101PowerTracesAnd97PowerViasPreserved": true,
+  "dimensionsMm": {
+    "width": 76,
+    "height": 118,
+    "thickness": 1.6
+  },
+  "copperLayers": 4,
+  "placedComponents": 280,
+  "checkedConnectedDdrSignals": 2,
+  "requiredDdrSignals": 49,
+  "remainingDdrSignals": 47,
+  "nativeBusLanesBootstrapUsed": true,
+  "manualRamApproachRepair": true,
+  "planarLengthsMm": [
+    19.086260839907585,
+    19.086260839907585
+  ],
+  "planarSkewMm": 0,
+  "planarSkewLimitMm": 0.127,
+  "bothReferencePlanesContinuous": true,
+  "checkedPackagePowerTerminals": 101,
+  "traces": 103,
+  "physicalThroughVias": 101,
+  "nativeErrors": {
+    "pcb_port_not_connected_error": 827,
+    "pcb_trace_missing_error": 117
+  },
+  "independentPhysicalErrors": 0,
+  "presentationWarnings": 403,
+  "reportedUnconnectedItems": 499,
+  "unconnectedItemsMayBeCapped": true,
+  "allLayerGerberShorts": 0,
+  "noIgnoredKiCadRulesOrExclusions": true,
+  "evidence": [
+    {
+      "path": "dist/g350-dqs0-shaped-corridor-repair/execution.json",
+      "sha256": "fe6bd845c46eff88b94de22821cac8017444f24ed11e8ad3a9c6967aba946fb0"
+    },
+    {
+      "path": "dist/g350-dqs0-shaped-corridor-repair/result.json",
+      "sha256": "a3ea8ebc27cc5dea31fcaeed5d40818b46156f6055c939acb4e927f4f4cf8a68"
+    },
+    {
+      "path": "checks/integrated/g350-dqs0-repaired/final-drc.json",
+      "sha256": "3f9f6e5e04b566fd7d503d3af1f475dca6377d8d9e2e1b64361fabb640c9465a"
+    },
+    {
+      "path": "checks/integrated/g350-dqs0-repaired/plane-connectivity.json",
+      "sha256": "1050b456b09681fa9531443084f9a243d81b799904ea41afcceaa1c26ebefe3f"
+    },
+    {
+      "path": "checks/integrated/g350-dqs0-repaired/stencil-verified.json",
+      "sha256": "0cb86d54f8f87d0ba1ccd298facc7505c3fe494192acb6de184d0377ab825c2b"
+    },
+    {
+      "path": "checks/integrated/g350-dqs0-repaired/ddr-connectivity.json",
+      "sha256": "5bdbe3eaec59fe3ac298f9416c3f272a186fdad51160a0e52747d563b3ef535d"
+    },
+    {
+      "path": "checks/integrated/g350-dqs0-repaired/shorts.log",
+      "sha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+    },
+    {
+      "path": "checks/integrated/g350-dqs0-repaired/library.log",
+      "sha256": "d213047fee01953af8452becadabfbb43c85d9c85fbfdbd9ba429e9a9f9258ce"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/dqs0-native-cache.json",
+      "sha256": "385351bce5909093519c1ed3be8ab4ee5b763219e23c003790e561eb0719aaba"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-bootstrap/dqs0-corridor-repair.json",
+      "sha256": "7292f6d774714f1fa23a91df3d932aa904f52324831d439a4acb73e66189c3e6"
+    },
+    {
+      "path": "checks/integrated/g350-ddr-power-combined/check-summary.json",
+      "sha256": "3b7051a48b0c89fc2965276ddb205ffd18a27b9e48eeb14039f8700c3544fdf5"
+    }
+  ],
+  "snapshots": {
+    "top": {
+      "path": "checks/integrated/g350-dqs0-repaired/g350-dqs0-top.png",
+      "sha256": "84ac6824356a256cede8ebe275aa644a5599e937eec29ca0d0d2c2047604cfc5"
+    },
+    "bottom": {
+      "path": "checks/integrated/g350-dqs0-repaired/g350-dqs0-bottom.png",
+      "sha256": "6ece5dce124e312f6ced7859296806178b59c6e3b72a70cbd7b508247db4700f"
+    }
+  },
+  "ddrTimingQualified": false,
+  "stackupImpedanceQualified": false,
+  "bypassCapacitorsRouted": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "scope": "Only two DDR strobe pad-to-pad connections plus the 101 existing package-to-plane escapes are checked here. The rest of DDR, bypass loops, other power domains, complete timing/impedance, Linux startup and shell mounting remain unfinished."
+}
