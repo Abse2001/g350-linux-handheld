@@ -56,3 +56,12 @@ restore and validate power/reference copper, route remaining power/peripheral
 nets, qualify package/via delays and impedance/return paths, and verify the
 original shell dimensions. `fabricationReady` remains false. This candidate
 is not a powered, timing-qualified, fully routed board.
+
+## Saved four-layer image
+
+The user-reviewed 49-signal image is retained at
+`checks/integrated/g350-ram90-ddr49/ddr49-four-layer.png`. It draws actual
+source copper, with each of the four layers shown separately. Recreate it with
+`MPLCONFIGDIR=/tmp/g350-mpl XDG_CACHE_HOME=/tmp/g350-cache python3 scripts/render-g350-ddr-layers.py CIRCUIT_JSON OUTPUT_PNG`.
+It is a routing-connectivity illustration; the original six timing failures
+remain part of that frozen baseline. Timing repairs use separate candidates.

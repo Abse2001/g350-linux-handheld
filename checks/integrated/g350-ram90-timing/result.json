@@ -1,0 +1,53 @@
+{
+  "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+  "code": 1,
+  "signal": null,
+  "forcedTimeout": false,
+  "selectedPhaseFinished": true,
+  "selectedPhaseCompletion": "  phase 1/1 \"G350_RAM90_THREE_PAIRS_SAFE_REPLAY\" done: routed_traces=49, jumpers=0, errors=0, elapsed=64.0s",
+  "freshCompiledSource": true,
+  "sourceDefinitionsUnchanged": true,
+  "elapsedSeconds": 356.199696249,
+  "execution": {
+    "path": "dist/g350-ram90-three-pairs-safe-source-01/execution.json",
+    "sha256": "836438e0ad7ce3dd7abc99401cd9e635debf41c5c034e2312d8a21f98a665def"
+  },
+  "log": {
+    "path": "dist/g350-ram90-three-pairs-safe-source-01/build.log",
+    "sha256": "32fccf6edbc566c859ad303aaf9395a13d85330f872d3f407a1c1c3290a550eb"
+  },
+  "artifacts": [
+    {
+      "path": "dist/g350-ram90-three-pairs-safe-source-01/board.meta.json",
+      "sha256": "9b1aa0f0ed25db04f5e92525f4389da889a31ae60eb2fcc8dde21a5c95ee8a1a"
+    },
+    {
+      "path": "dist/g350-ram90-three-pairs-safe-source-01/compiled.circuit.json",
+      "sha256": "edf2dc7fea697f48f2a7705e9a13f687884a23aaccd0d1d8f8958d4599c3098b"
+    },
+    {
+      "path": "dist/g350-ram90-three-pairs-safe-source-01/phase-0.input.simple-route.json",
+      "sha256": "ccf3837648b95986e918cdcfa32f54cd8c2bbc591dc87f6ef248ec8dc71c852b"
+    },
+    {
+      "path": "dist/g350-ram90-three-pairs-safe-source-01/phase-0.output.traces.json",
+      "sha256": "28d919c44b7f7fe6594b73c0639487895f29a0a51d60b3855f65e909c402bfa4"
+    }
+  ],
+  "phases": [
+    {
+      "input": {
+        "path": "dist/g350-ram90-three-pairs-safe-source-01/phase-0.input.simple-route.json",
+        "sha256": "ccf3837648b95986e918cdcfa32f54cd8c2bbc591dc87f6ef248ec8dc71c852b"
+      },
+      "connections": 49,
+      "fixedTraces": 0,
+      "physicalPads": 1257,
+      "innerPlanesReserved": false,
+      "signalPolicy": "four-ddr"
+    }
+  ],
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false,
+  "defaultChanged": false
+}

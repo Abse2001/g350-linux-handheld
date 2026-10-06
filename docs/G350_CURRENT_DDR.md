@@ -40,3 +40,15 @@ The initial byte1 phase failed local dogbone assignment. A separate 22-endpoint 
 Complete DDR electrical timing, package/via delay, class spacing, stackup impedance, return paths and bypass loops remain unqualified. The remainder of the handheld needs power/peripheral routing, Linux bring-up, footprint/stencil qualification, silkscreen cleanup and measured original-shell geometry. Nothing from this update has been pushed or released for ordering.
 
 The [tscircuit DDR guide](https://docs.tscircuit.com/guides/routing-ddr) describes separate fanouts, byte buses and phased bus-lane routing. Its example geometry is illustrative; the current board's checks and constraints use the reviewed TI and fabrication requirements recorded in this project.
+
+## Rotated-RAM timing repair (2026-10-06)
+
+Continue `experiments/am3352-g350-ram90-three-pairs-safe-replay.circuit.tsx`
+from `cloud/DDR_TIMING_REPAIR_2026-10-06.md`. Its fresh editable source retains
+49/49 DDR connectivity and all 280 component placements. All three differential
+pairs pass; native skew failures decreased from six to three whole-bus failures.
+Native physical checks, all-layer shorts, manufacturing clearance and independent
+KiCad connectivity pass. The default and the prior 49/49 evidence remain frozen.
+Power/reference copper, peripheral routing, electrical timing and shell fit remain
+unfinished. `fabricationReady` is false. The earlier three-pairs entry without
+`safe` was rejected for manufacturing clearance and must not be promoted.

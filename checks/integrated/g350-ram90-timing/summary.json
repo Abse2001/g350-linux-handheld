@@ -1,0 +1,53 @@
+{
+  "entry": "experiments/am3352-g350-ram90-three-pairs-safe-replay.circuit.tsx",
+  "sourceCircuitSha256": "edf2dc7fea697f48f2a7705e9a13f687884a23aaccd0d1d8f8958d4599c3098b",
+  "sourceEvidenceArchiveSha256": "16a57081e848eeb182d8a91d2db54f6c8f00fb5694e4db8dc5dcf8e763aaec5a",
+  "trialArchiveSha256": "4ff95dd8a303b94be17c4a79ebbd600e348d5afa1a4f60b1fefff7d7614af6b7",
+  "connectedDdrSignals": 49,
+  "requiredDdrSignals": 49,
+  "differentialPairs": {
+    "DDR_DQS0/DDR_DQSn0": {
+      "lengthsMm": [
+        32.831524346786374,
+        32.831524346786374
+      ],
+      "skewMm": 0.0,
+      "limitMm": 0.127
+    },
+    "DDR_DQS1/DDR_DQSn1": {
+      "lengthsMm": [
+        31.324860416852758,
+        31.324860416852776
+      ],
+      "skewMm": 1.7763568394002505e-14,
+      "limitMm": 0.127
+    },
+    "DDR_CK/DDR_CKn": {
+      "lengthsMm": [
+        24.44410388417766,
+        24.444103884177668
+      ],
+      "skewMm": 7.105427357601002e-15,
+      "limitMm": 0.127
+    }
+  },
+  "nativeLengthSkewFailures": 3,
+  "nativePhysicalErrors": 0,
+  "manufacturingViaTrackClearanceErrors": 0,
+  "allLayerGerberShorts": 0,
+  "kicadManufacturingErrors": 0,
+  "kicadWarnings": 602,
+  "reportedKicadUnconnectedItems": 499,
+  "sourceErrorCounts": {
+    "pcb_port_not_connected_error": 881,
+    "pcb_trace_missing_error": 70,
+    "pcb_bus_length_skew_error": 3
+  },
+  "componentPlacementPreserved": true,
+  "components": 280,
+  "standardThroughVias": 139,
+  "fabricationReady": false,
+  "filledReferencesQualified": false,
+  "fullElectricalTimingQualified": false,
+  "defaultChanged": false
+}

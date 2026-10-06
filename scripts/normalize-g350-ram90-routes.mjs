@@ -1,8 +1,9 @@
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
 import * as checks from '@tscircuit/checks'
-const [root]=process.argv.slice(2);assert(root&&!fs.existsSync(root));fs.mkdirSync(root)
-const circuit=JSON.parse(fs.readFileSync('dist/g350-ram90-negotiated-01/merged.circuit.json'))
+import {g350DdrPhysicalChecks} from './lib/g350-ddr-physical-checks.mjs'
+const [root,inputPath='dist/g350-ram90-negotiated-01/merged.circuit.json']=process.argv.slice(2);assert(root&&!fs.existsSync(root));fs.mkdirSync(root)
+const circuit=JSON.parse(fs.readFileSync(inputPath))
 const width=.1016,reach=(.4572+width)/2
 const sq=p=>p.x*p.x+p.y*p.y,sub=(a,b)=>({x:a.x-b.x,y:a.y-b.y}),dot=(a,b)=>a.x*b.x+a.y*b.y
 const project=(p,a,b)=>{const v=sub(b,a),t=Math.max(0,Math.min(1,dot(sub(p,a),v)/sq(v)));return {x:a.x+t*v.x,y:a.y+t*v.y}}
@@ -61,7 +62,7 @@ for(const t of circuit.filter(r=>r.type==='pcb_trace')){
 }
 const out=circuit.filter(r=>r.type!=='pcb_via')
 for(const t of out.filter(r=>r.type==='pcb_trace'))for(const [i,v]of t.route.filter(p=>p.route_type==='via').entries())out.push({type:'pcb_via',pcb_via_id:`normalized_${t.pcb_trace_id}_${i}`,pcb_trace_id:t.pcb_trace_id,x:v.x,y:v.y,hole_diameter:.254,outer_diameter:.4572,layers:['top','inner1','inner2','bottom'],from_layer:'top',to_layer:'bottom',subcircuit_id:t.subcircuit_id})
-const prep=JSON.parse(fs.readFileSync('dist/g350-ram90-four-layer-manual-02/preparation.json'))
+const prep={physicalChecks:g350DdrPhysicalChecks}
 const errors=prep.physicalChecks.flatMap(name=>checks[name](out).map(e=>({check:name,...e})))
 fs.writeFileSync(`${root}/candidate.circuit.json`,JSON.stringify(out,null,2)+'\n')
 fs.writeFileSync(`${root}/physical-errors.json`,JSON.stringify(errors,null,2)+'\n')

@@ -52,3 +52,15 @@ Six native length/skew failures, power/reference copper and peripheral routing
 remain unfinished. The default 11/49 layout is unchanged; preserve its evidence,
 but continue the user-requested rotated candidate rather than mixing placements.
 `fabricationReady` stays false.
+
+## Rotated-RAM timing repair (2026-10-06)
+
+Continue `experiments/am3352-g350-ram90-three-pairs-safe-replay.circuit.tsx`
+from `cloud/DDR_TIMING_REPAIR_2026-10-06.md`. Its fresh editable source retains
+49/49 DDR connectivity and all 280 component placements. All three differential
+pairs pass; native skew failures decreased from six to three whole-bus failures.
+Native physical checks, all-layer shorts, manufacturing clearance and independent
+KiCad connectivity pass. The default and the prior 49/49 evidence remain frozen.
+Power/reference copper, peripheral routing, electrical timing and shell fit remain
+unfinished. `fabricationReady` is false. The earlier three-pairs entry without
+`safe` was rejected for manufacturing clearance and must not be promoted.
