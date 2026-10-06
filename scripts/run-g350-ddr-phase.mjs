@@ -31,8 +31,8 @@ const definitions=[...originals].sort().map(originalPath=>{
  writeFileSync(path,readFileSync(originalPath));return {...artifact(path),originalPath}
 })
 const versions=Object.fromEntries(['tscircuit','@tscircuit/cli','@tscircuit/core','@tscircuit/checks','@tscircuit/capacity-autorouter'].map(p=>[p,read(`node_modules/${p}/package.json`).version]))
-assert.equal(versions['@tscircuit/core'],'0.0.2088')
-assert.equal(versions['@tscircuit/checks'],'0.0.239')
+assert.equal(versions['@tscircuit/core'],'0.0.2095')
+assert.equal(versions['@tscircuit/checks'],'0.0.240')
 assert(readFileSync('node_modules/@tscircuit/checks/dist/index.js','utf8').includes('minClearance ?? getBoardDrcValue(board, "min_via_edge_to_pad_edge_clearance")'),'Native checks must honor the declared via-pad rule')
 const args=['build',entry,'--disable-parts-engine','--autorouter-debug','--autorouter-phase',phase,'--autorouter-debug-dir',directory,'--autorouter-dump-srj','all','--autorouter-timeout',`${seconds}s`]
 writeFileSync(`${directory}/execution.json`,JSON.stringify({definitions,versions,sameCoreExports:true,nativeChecks:artifact('node_modules/@tscircuit/checks/dist/index.js'),command:'node_modules/.bin/tsci',args,executionHelper:artifact(snapshot)},null,2)+'\n')

@@ -1,0 +1,40 @@
+{
+  "status": "SCOPED_SEEDED_STROBES_INDEPENDENT_CONNECTIVITY_VERIFIED",
+  "source": {
+    "path": "dist/g350-byte1-strobe-seeded-source/compiled.circuit.json",
+    "sha256": "422b953063e3e6b92502f0a8376f092d397923ca405eed978ba40c664509734a"
+  },
+  "board": {
+    "path": "checks/integrated/g350-byte1-seeded-strobes-linux-20261006/g350-seeded-strobes.kicad_pcb",
+    "sha256": "1da2758f27ed1409852236bc9e48dee08071c3303ab41e5fc3779db76d92dba6"
+  },
+  "sourceDefinitionsMatchFrozenReplay": true,
+  "connectedDdrSignals": 13,
+  "requiredDdrSignals": 49,
+  "unconnectedDdrSignals": 36,
+  "physicalDrcErrors": 0,
+  "drcWarnings": 421,
+  "reportedOpens": 499,
+  "ignoredRuleSeverities": 0,
+  "perItemExclusions": 0,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false,
+  "defaultChanged": false,
+  "fullBoardDrcPass": false,
+  "reports": {
+    "ddr-connectivity": "e86ae9c06f1a9c2ede55e0e6902276d1f6fa962c0b5f149dfe682f60bc6733ad",
+    "reference-plane-connectivity": "72d80d5d2db9aaa427ab56bf841d9205a83e794c1188e8e2884f055181aaa227",
+    "package-escape-connectivity": "5e66c9f4366978fa058613205a68880e134a05e988b386eecb864bf617a544a0",
+    "stencil-verification": "382d1cac39c95100a90c03a317598657902230037d760f3e1eceaa6f4aef9799",
+    "drc": "1750f4d5d25f8d2b5efab0734930671dea55473cd87009535708fac4db42eb6a"
+  },
+  "limits": "Scoped candidate qualification only. Whole byte1, 36 DDR channels, host/peripheral routing, electrical timing, exact shell fit and stencil cleanup remain unfinished.",
+  "validatedBeforeRuntimeUpgrade": true,
+  "compiledSourceRuntime": {
+    "core": "0.0.2088",
+    "checks": "0.0.239"
+  },
+  "latestRuntimeSourceReplayClaimed": false,
+  "latestCliAllLayerGerberShorts": 0,
+  "shortsLogSha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+}

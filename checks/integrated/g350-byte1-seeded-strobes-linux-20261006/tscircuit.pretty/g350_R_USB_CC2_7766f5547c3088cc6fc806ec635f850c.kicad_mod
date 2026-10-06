@@ -1,0 +1,178 @@
+(footprint "g350_R_USB_CC2_7766f5547c3088cc6fc806ec635f850c"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "R_USB_CC2"
+		(at -0.0127 -1.6604 0)
+		(layer "F.SilkS")
+		(uuid "f903d873-822a-46e5-9ab9-1ef70e3a93de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "5.1kΩ"
+		(at 0 3 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a89aa966-f2a1-466c-8a00-17eb492bdb3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cbd8223c-0bcd-4589-ba5f-1905406c9280")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "25ce0de5-756b-4af0-9013-01f60ec0f319")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier Part Number" "C23186"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0ce539e0-1743-0f81-21a0-e5222bfebac3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "0603WAF5101T5E"
+		(at 0 0 270)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56069b94-214e-c70c-675b-d6540ff98c4c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.385087 -0.660603)
+		(end -0.426212 -0.660603)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "83e8ed4a-69ce-4220-a3db-385dbe540e40")
+	)
+	(fp_line
+		(start -1.385087 0.660603)
+		(end -1.385087 -0.660603)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ef49e717-b0fb-4de2-8239-6cd2d8664e00")
+	)
+	(fp_line
+		(start -0.426212 0.660603)
+		(end -1.385087 0.660603)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2c3cddc6-5fec-4c04-b820-e295e9733dd3")
+	)
+	(fp_line
+		(start 0.426212 0.660603)
+		(end 1.385087 0.660603)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "56d9cb79-2bec-4701-ba54-c883ba5d5010")
+	)
+	(fp_line
+		(start 1.385087 -0.660603)
+		(end 0.426212 -0.660603)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "19fc4ce5-5533-4461-917c-40a76bfb3d7c")
+	)
+	(fp_line
+		(start 1.385087 0.660603)
+		(end 1.385087 -0.660603)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bfc95923-79a3-4996-bbcb-aeef975a3d6d")
+	)
+	(fp_poly
+		(pts
+			(xy -1.406602 -0.682003) (xy 1.406602 -0.682003) (xy 1.406602 0.682003) (xy -1.406602 0.682003) (xy -1.406602 -0.682003)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "771f3f40-707f-d0df-69e0-627e6340f41d")
+	)
+	(pad "1" smd rect
+		(at -0.753364 0 270)
+		(size 0.864006 0.806475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "3997cdc0-205b-9761-7a4e-fc822bbd9e5d")
+	)
+	(pad "2" smd rect
+		(at 0.753364 0 270)
+		(size 0.864006 0.806475)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio -0.15)
+		(uuid "2b9fce40-1834-db80-04c9-e8c00ea10a00")
+	)
+	(embedded_fonts no)
+	(model "https://modelcdn.tscircuit.com/easyeda_models/assets/C23186.step?uuid=6bd5cd867e9542ebae21caaf5d2d4c4d&cachebust_origin="
+		(offset
+			(xyz 0 0.005 0.01)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

@@ -1,0 +1,299 @@
+{
+  "status": "PASS_22_NUMERIC_PAD_TO_EXACT_THROUGH_VIA_ESCAPES",
+  "board": {
+    "path": "checks/integrated/g350-byte1-seeded-strobes-linux-20261006/g350-seeded-strobes.kicad_pcb",
+    "sha256": "1da2758f27ed1409852236bc9e48dee08071c3303ab41e5fc3779db76d92dba6"
+  },
+  "circuit": {
+    "path": "dist/g350-byte1-strobe-seeded-source/compiled.circuit.json",
+    "sha256": "422b953063e3e6b92502f0a8376f092d397923ca405eed978ba40c664509734a"
+  },
+  "escapeCache": {
+    "path": "lib/am3352/placement/ddr-byte1-manual-escapes.json",
+    "sha256": "3725ad9fcca9ab2056dede0a09fdb465cb0e6f876c909b7fec200da583bbcaba"
+  },
+  "pinMap": {
+    "path": "lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+    "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50"
+  },
+  "checker": {
+    "path": "/workspace/g350-linux-handheld/scripts/check-g350-kicad-byte1-escapes.py",
+    "sha256": "cdae2814e6710ab0ec140edc89c797c0f2af2b6733c7351e2a2ae03f2029847e"
+  },
+  "checkedPackagePads": 22,
+  "connectedByte1Channels": 2,
+  "connectedByte1Names": [
+    "DDR_DQSn1",
+    "DDR_DQS1"
+  ],
+  "fourCopperLayers": true,
+  "fullDepthStandardVias": true,
+  "records": [
+    {
+      "signal": "DDR_D8",
+      "package": "U_SOC",
+      "ball": "J1",
+      "numericPin": 9,
+      "via": {
+        "x": -0.8,
+        "y": 12.8
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.565685424949237
+    },
+    {
+      "signal": "DDR_D8",
+      "package": "U_RAM",
+      "ball": "C8",
+      "numericPin": 67,
+      "via": {
+        "x": 2.8,
+        "y": 4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_D9",
+      "package": "U_SOC",
+      "ball": "K1",
+      "numericPin": 10,
+      "via": {
+        "x": 0,
+        "y": 13.6
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_D9",
+      "package": "U_RAM",
+      "ball": "A7",
+      "numericPin": 49,
+      "via": {
+        "x": 1.2,
+        "y": 5.6
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492383
+    },
+    {
+      "signal": "DDR_D10",
+      "package": "U_SOC",
+      "ball": "K2",
+      "numericPin": 28,
+      "via": {
+        "x": 0,
+        "y": 14.4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_D10",
+      "package": "U_RAM",
+      "ball": "C3",
+      "numericPin": 35,
+      "via": {
+        "x": -0.42,
+        "y": 10.65
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 7.43
+    },
+    {
+      "signal": "DDR_D11",
+      "package": "U_SOC",
+      "ball": "K3",
+      "numericPin": 46,
+      "via": {
+        "x": 0,
+        "y": 15.2
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.565685424949237
+    },
+    {
+      "signal": "DDR_D11",
+      "package": "U_RAM",
+      "ball": "A2",
+      "numericPin": 17,
+      "via": {
+        "x": -2.8,
+        "y": 6.4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_DQM1",
+      "package": "U_SOC",
+      "ball": "J2",
+      "numericPin": 27,
+      "via": {
+        "x": -0.8,
+        "y": 14.4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_DQM1",
+      "package": "U_RAM",
+      "ball": "D3",
+      "numericPin": 36,
+      "via": {
+        "x": -1.2,
+        "y": 4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.565685424949238
+    },
+    {
+      "signal": "DDR_D12",
+      "package": "U_SOC",
+      "ball": "K4",
+      "numericPin": 64,
+      "via": {
+        "x": 0.8,
+        "y": 15.2
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_D12",
+      "package": "U_RAM",
+      "ball": "D7",
+      "numericPin": 52,
+      "via": {
+        "x": 1.2,
+        "y": 3.2
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.565685424949238
+    },
+    {
+      "signal": "DDR_DQSn1",
+      "package": "U_SOC",
+      "ball": "L2",
+      "numericPin": 29,
+      "via": {
+        "x": 0.8,
+        "y": 9.1
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 5.065685424949239
+    },
+    {
+      "signal": "DDR_DQSn1",
+      "package": "U_RAM",
+      "ball": "B7",
+      "numericPin": 50,
+      "via": {
+        "x": 1.2,
+        "y": 4.8
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492383
+    },
+    {
+      "signal": "DDR_DQS1",
+      "package": "U_SOC",
+      "ball": "L1",
+      "numericPin": 11,
+      "via": {
+        "x": 1.2,
+        "y": 9.6
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 3.5999999999999996
+    },
+    {
+      "signal": "DDR_DQS1",
+      "package": "U_RAM",
+      "ball": "C7",
+      "numericPin": 51,
+      "via": {
+        "x": 1.2,
+        "y": 4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492383
+    },
+    {
+      "signal": "DDR_D13",
+      "package": "U_SOC",
+      "ball": "L3",
+      "numericPin": 47,
+      "via": {
+        "x": 1.7,
+        "y": 10.1
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 4.907106781186549
+    },
+    {
+      "signal": "DDR_D13",
+      "package": "U_RAM",
+      "ball": "C2",
+      "numericPin": 19,
+      "via": {
+        "x": -2,
+        "y": 4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_D14",
+      "package": "U_SOC",
+      "ball": "L4",
+      "numericPin": 65,
+      "via": {
+        "x": 1.6,
+        "y": 15.2
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492383
+    },
+    {
+      "signal": "DDR_D14",
+      "package": "U_RAM",
+      "ball": "A3",
+      "numericPin": 33,
+      "via": {
+        "x": -2,
+        "y": 6.4
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    },
+    {
+      "signal": "DDR_D15",
+      "package": "U_SOC",
+      "ball": "M1",
+      "numericPin": 12,
+      "via": {
+        "x": 2.2,
+        "y": 10.5
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 2.7828427124746185
+    },
+    {
+      "signal": "DDR_D15",
+      "package": "U_RAM",
+      "ball": "B8",
+      "numericPin": 66,
+      "via": {
+        "x": 2.8,
+        "y": 4.8
+      },
+      "padToViaConnected": true,
+      "planarLengthMm": 0.5656854249492382
+    }
+  ],
+  "fabricationReady": false,
+  "electricalTimingQualified": false
+}
