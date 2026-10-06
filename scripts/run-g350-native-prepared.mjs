@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto'
 import {readFileSync,writeFileSync,existsSync,openSync,closeSync} from 'node:fs'
 
 const [root,mode='lanes',secondsText='120']=process.argv.slice(2),seconds=Number(secondsText)
-assert(root&&['lanes','pipeline','dogbone'].includes(mode)&&seconds>0&&seconds<=120)
+assert(root&&['lanes','pipeline','dogbone','refine'].includes(mode)&&seconds>0&&seconds<=120)
 assert(!existsSync(`${root}/solver-result.json`)&&!existsSync(`${root}/execution.json`),'Use a fresh prepared root')
 const artifact=p=>({path:p,sha256:createHash('sha256').update(readFileSync(p)).digest('hex')})
 const preparation=JSON.parse(readFileSync(`${root}/preparation.json`))

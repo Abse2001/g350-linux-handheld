@@ -20,3 +20,14 @@ Keep fabricationReady false until every electrical, mechanical and manufacturing
 gate passes; the user wants an order-ready prototype, not a partial routing image.
 Shell measurements remain missing, so continue independently useful electronics
 work while clearly recording the remaining physical-fit evidence needed.
+
+## Latest rotated-RAM DDR candidate
+
+The user requested RAM rotated 90 degrees and four-layer routing with inner
+layer priority. The new source-verified candidate connects all 49 DDR signals
+with zero native physical errors and zero Gerber shorts. Read
+`cloud/DDR49_ROTATED_RAM_2026-10-06.md` and its evidence before continuing.
+Six native length/skew failures, power/reference copper and peripheral routing
+remain unfinished. The default 11/49 layout is unchanged; preserve its evidence,
+but continue the user-requested rotated candidate rather than mixing placements.
+`fabricationReady` stays false.

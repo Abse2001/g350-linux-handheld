@@ -41,3 +41,14 @@ Recheck the shared mechanical outline and assembly envelope after edits.
 The user requested this GitHub/cloud handoff. After that, push additional board
 work only on meaningful verified breakthroughs, as previously requested. Do
 not place an order or claim fabrication readiness from partial routing evidence.
+
+## Latest rotated-RAM DDR candidate
+
+The user requested RAM rotated 90 degrees and four-layer routing with inner
+layer priority. The new source-verified candidate connects all 49 DDR signals
+with zero native physical errors and zero Gerber shorts. Read
+`cloud/DDR49_ROTATED_RAM_2026-10-06.md` and its evidence before continuing.
+Six native length/skew failures, power/reference copper and peripheral routing
+remain unfinished. The default 11/49 layout is unchanged; preserve its evidence,
+but continue the user-requested rotated candidate rather than mixing placements.
+`fabricationReady` stays false.

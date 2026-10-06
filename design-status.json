@@ -4971,5 +4971,16 @@
     "latestNativeResult": "dist/g350-byte1-strobe-seed-05-native-two/result.json",
     "aggregateByte1EvidenceQualified": false,
     "reason": "Escape summary rejected ignored KiCad rules; seeded-strobe independent checks pending. Current checked default stays 11/49 DDR."
+  },
+  "rotatedRamDdr49Candidate": {
+    "entry": "experiments/am3352-g350-ram90-float-safe-replay.circuit.tsx",
+    "report": "cloud/DDR49_ROTATED_RAM_2026-10-06.md",
+    "connectedDdrSignals": 49,
+    "requiredDdrSignals": 49,
+    "nativePhysicalErrors": 0,
+    "allLayerGerberShorts": 0,
+    "nativeLengthSkewFailures": 6,
+    "powerReferencesQualified": false,
+    "fabricationReady": false
   }
 }

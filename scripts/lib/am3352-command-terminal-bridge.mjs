@@ -7,9 +7,11 @@ import assert from 'node:assert/strict'
 
 // Conservative two-outer-layer search for manual handoffs. Native planar
 // phases and independent physical/source checks remain required.
-export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2}){
+export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016}){
 assert(Number.isFinite(overlapPenalty)&&overlapPenalty>0&&overlapPenalty<=100)
-const layers=['top','bottom'],width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=2
+assert(viaCopperClearance>=.1016&&viaCopperClearance<=.2)
+assert(routingLayers.length===2&&new Set(routingLayers).size===2&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
+const layers=routingLayers,width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=2
 assert([.02,.04].includes(gridMm));assert(seconds>0&&seconds<=60)
 assert(Number.isInteger(maxVias)&&maxVias>=2&&maxVias<=6)
 assert([.02,.04,.1,.2].includes(viaGrid))
@@ -38,7 +40,7 @@ function routeConnection(c,step,penalty=0){
  const blocked=[new Uint8Array(N),new Uint8Array(N)],viaBlocked=new Uint8Array(N)
  const softCost=[new Float32Array(N),new Float32Array(N)],softViaCost=new Float32Array(N)
  for(const s of shapes){
-  const r=land/2+clearance+guard+(s.kind==='segment'?s.w/2:0)
+  const r=land/2+Math.max(clearance,s.hole?viaCopperClearance:clearance)+guard+(s.kind==='segment'?s.w/2:0)
   const x0=Math.max(0,Math.floor(((s.kind==='segment'?Math.min(s.a.x,s.b.x):s.x-s.w/2)-r-bounds.minX)/step))
   const x1=Math.min(nx-1,Math.ceil(((s.kind==='segment'?Math.max(s.a.x,s.b.x):s.x+s.w/2)+r-bounds.minX)/step))
   const y0=Math.max(0,Math.floor(((s.kind==='segment'?Math.min(s.a.y,s.b.y):s.y-s.h/2)-r-bounds.minY)/step))
@@ -53,7 +55,7 @@ function routeConnection(c,step,penalty=0){
     if(s.soft)softCost[layers.indexOf(l)][i]+=penalty*(s.softWeight??1)
     else blocked[layers.indexOf(l)][i]=1
    }
-   if((s.owner!==c.name&&d<land/2+clearance+1e-9)||(s.pad&&d<drill/2+.2+1e-9)||
+   if((s.owner!==c.name&&d<land/2+(s.hole?viaCopperClearance:clearance)+1e-9)||(s.pad&&d<drill/2+.2+1e-9)||
     (s.hole&&Math.hypot(p.x-s.x,p.y-s.y)<drill/2+s.hole/2+.254+1e-9)){
     if(s.soft)softViaCost[i]+=penalty*16*(s.softWeight??1)
     else viaBlocked[i]=1

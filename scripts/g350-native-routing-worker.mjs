@@ -4,7 +4,7 @@ import {SOLVERS} from '@tscircuit/core'
 const [root,mode,budgetText]=process.argv.slice(2),budget=Number(budgetText)
 const input=JSON.parse(readFileSync(`${root}/solver-input.json`,'utf8'))
 const options=JSON.parse(readFileSync(`${root}/solver-options.json`,'utf8'))
-const solver=mode==='dogbone'?new SOLVERS.DogboneFanoutSolver({input,fanoutRoutingLayers:['bottom']}):mode==='lanes'?new SOLVERS.BusLanesSolver(input,options):new SOLVERS.BusLanesPipelineSolver(input,options)
+const solver=mode==='refine'?SOLVERS.BusLanesSolver.forRefinement(input,JSON.parse(readFileSync(`${root}/refine-traces.json`,'utf8')),options):mode==='dogbone'?new SOLVERS.DogboneFanoutSolver({input,fanoutRoutingLayers:['bottom']}):mode==='lanes'?new SOLVERS.BusLanesSolver(input,options):new SOLVERS.BusLanesPipelineSolver(input,options)
 const start=performance.now();let lastPhase='',timedOut=false
 while(!solver.solved&&!solver.failed){
  const phase=solver.phase??'unknown'

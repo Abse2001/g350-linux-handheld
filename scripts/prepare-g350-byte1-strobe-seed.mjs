@@ -11,6 +11,11 @@ const artifact=p=>({path:p,sha256:createHash('sha256').update(readFileSync(p)).d
 const baseRoot='dist/g350-byte1-access-plan-04',preparation=read(`${baseRoot}/preparation.json`)
 for(const file of preparation.files)assert.equal(artifact(file.path).sha256,file.sha256)
 const config=read(configPath),circuit=read(`${baseRoot}/candidate.circuit.json`),input=read(`${baseRoot}/solver-input.json`)
+const solverOptions={smoothTuning:false,denseSearch:true,maxSearchIterations:50000,...config.nativeSolverOptions}
+assert(Object.keys(solverOptions).every(k=>['smoothTuning','denseSearch','maxSearchIterations'].includes(k)),'Unsupported native solver option')
+assert.equal(typeof solverOptions.smoothTuning,'boolean')
+assert.equal(typeof solverOptions.denseSearch,'boolean')
+assert(Number.isInteger(solverOptions.maxSearchIterations)&&solverOptions.maxSearchIterations>0&&solverOptions.maxSearchIterations<=200000)
 const byte0=read(`${baseRoot}/byte0-data-paths.json`),escapes=read(`${baseRoot}/byte1-escape-paths.json`)
 const names=new Map(circuit.filter(r=>r.type==='source_trace').map(r=>[r.source_trace_id,r.name]))
 const length=route=>route.slice(1).reduce((n,p,i)=>n+(p.route_type==='wire'&&route[i].route_type==='wire'&&p.layer===route[i].layer?Math.hypot(p.x-route[i].x,p.y-route[i].y):0),0)
@@ -85,11 +90,14 @@ const carrierLayer=config.nativeCarrierLayer??'bottom'
 assert(['top','bottom'].includes(carrierLayer))
 input.allowedLayers=[carrierLayer]
 input.buses=input.buses.map(b=>({...b,allowedLayers:[carrierLayer]}))
-for(const c of input.connections)for(const p of c.pointsToConnect)p.layer=carrierLayer
+for(const c of input.connections)for(const p of c.pointsToConnect){
+ if(carrierLayer!==p.layer)assert(input.traces.some(t=>t.connection_name===c.name&&t.route.some(v=>v.route_type==='via'&&Math.hypot(v.x-p.x,v.y-p.y)<1e-8&&v.from_layer==='top'&&v.to_layer==='bottom')),'Alternate carrier layer requires same-net physical through-via access')
+ p.layer=carrierLayer
+}
 const physicalChecks=preparation.physicalChecks
 const errors=physicalChecks.flatMap(name=>checks[name](circuit).map(e=>({check:name,...e})))
 mkdirSync(root)
-const objects={'candidate.circuit.json':circuit,'solver-input.json':input,'solver-options.json':{smoothTuning:false,denseSearch:true,maxSearchIterations:50000},'byte0-data-paths.json':byte0,'byte1-escape-paths.json':escapes,'strobe-carriers.traces.json':carrierTraces,'physical-errors.json':errors,'authored-geometry.json':config}
+const objects={'candidate.circuit.json':circuit,'solver-input.json':input,'solver-options.json':solverOptions,'byte0-data-paths.json':byte0,'byte1-escape-paths.json':escapes,'strobe-carriers.traces.json':carrierTraces,'physical-errors.json':errors,'authored-geometry.json':config}
 for(const [name,obj]of Object.entries(objects))writeFileSync(`${root}/${name}`,JSON.stringify(obj,null,2)+'\n')
 writeFileSync(`${root}/prepare.executed.mjs`,readFileSync('scripts/prepare-g350-byte1-strobe-seed.mjs'))
 const report={status:errors.length?'STROBE_SEED_PHYSICAL_ERRORS':skew>.127?'STROBE_SEED_PAIR_SKEW_FAILED':'STROBE_SEED_GEOMETRY_AND_PLANAR_PAIR_CHECKED_REPLAY_REQUIRED',

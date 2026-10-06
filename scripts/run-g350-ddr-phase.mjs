@@ -6,11 +6,15 @@ import {resolve,dirname,relative} from 'node:path'
 import {Circuit} from 'tscircuit'
 import {Circuit as CoreCircuit} from '@tscircuit/core'
 
-const [entry,directory,phase='DDR_COMMAND_CLOCK_BUS_LANES',duration='120']=process.argv.slice(2)
+const [entry,directory,phase='DDR_COMMAND_CLOCK_BUS_LANES',duration='120',signalPolicy='outer',wallBudgetText]=process.argv.slice(2)
+assert(['outer','inner-ddr','four-ddr'].includes(signalPolicy))
+const permittedSignalLayers=signalPolicy==='four-ddr'?['top','inner1','inner2','bottom']:signalPolicy==='inner-ddr'?['inner1','inner2']:['top','bottom']
 assert(entry&&directory&&!existsSync(`${directory}/result.json`));const seconds=Number(duration);assert(seconds>0&&seconds<=180)
 assert.equal(Circuit,CoreCircuit,'tsci/eval must use the same latest core as the direct native solver')
 const read=p=>JSON.parse(readFileSync(p)),hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex'),artifact=path=>({path,sha256:hash(path)})
 mkdirSync(directory,{recursive:true})
+const wallBudgetSeconds=wallBudgetText?Number(wallBudgetText):seconds+90
+assert(Number.isFinite(wallBudgetSeconds)&&wallBudgetSeconds>=seconds&&wallBudgetSeconds<=900)
 const snapshot=`${directory}/phase-helper.executed.mjs`;writeFileSync(snapshot,readFileSync('scripts/run-g350-ddr-phase.mjs'))
 const definitionDirectory=`${directory}/execution-inputs`;mkdirSync(definitionDirectory)
 // Freeze the complete local import graph, including every placement wrapper,
@@ -35,12 +39,12 @@ assert.equal(versions['@tscircuit/core'],'0.0.2095')
 assert.equal(versions['@tscircuit/checks'],'0.0.240')
 assert(readFileSync('node_modules/@tscircuit/checks/dist/index.js','utf8').includes('minClearance ?? getBoardDrcValue(board, "min_via_edge_to_pad_edge_clearance")'),'Native checks must honor the declared via-pad rule')
 const args=['build',entry,'--disable-parts-engine','--autorouter-debug','--autorouter-phase',phase,'--autorouter-debug-dir',directory,'--autorouter-dump-srj','all','--autorouter-timeout',`${seconds}s`]
-writeFileSync(`${directory}/execution.json`,JSON.stringify({definitions,versions,sameCoreExports:true,nativeChecks:artifact('node_modules/@tscircuit/checks/dist/index.js'),command:'node_modules/.bin/tsci',args,executionHelper:artifact(snapshot)},null,2)+'\n')
+writeFileSync(`${directory}/execution.json`,JSON.stringify({definitions,versions,sameCoreExports:true,wallBudgetSeconds,nativeChecks:artifact('node_modules/@tscircuit/checks/dist/index.js'),command:'node_modules/.bin/tsci',args,executionHelper:artifact(snapshot)},null,2)+'\n')
 const logPath=`${directory}/build.log`,fd=openSync(logPath,'wx'),start=performance.now(),wallStart=Date.now()
 const child=spawn('node_modules/.bin/tsci',args,{detached:true,stdio:['ignore',fd,fd]})
 let forcedTimeout=false,forceTimer
 const stop=()=>{try{process.kill(-child.pid,'SIGTERM')}catch(e){if(e.code!=='ESRCH')throw e}forceTimer=setTimeout(()=>{try{process.kill(-child.pid,'SIGKILL')}catch(e){if(e.code!=='ESRCH')throw e}},5000)}
-const timer=setTimeout(()=>{forcedTimeout=true;stop()},(seconds+90)*1000)
+const timer=setTimeout(()=>{forcedTimeout=true;stop()},wallBudgetSeconds*1000)
 const outcome=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('close',(code,signal)=>resolve({code,signal}))})
 clearTimeout(timer);clearTimeout(forceTimer);closeSync(fd)
 const compiledPath=`dist/${entry.replace(/\.circuit\.tsx$/,'/circuit.json')}`
@@ -49,7 +53,7 @@ const compiledPath=`dist/${entry.replace(/\.circuit\.tsx$/,'/circuit.json')}`
 const freshCompiledSource=existsSync(compiledPath)&&statSync(compiledPath).mtimeMs>=wallStart
 if(freshCompiledSource)writeFileSync(`${directory}/compiled.circuit.json`,readFileSync(compiledPath))
 const artifacts=readdirSync(directory).filter(p=>/phase-.*\.(input\.simple-route|error|timeout|output\.traces)\.json$|board\.meta\.json$|board\.source-and-pcb\.circuit\.json$|^compiled\.circuit\.json$/.test(p)).map(p=>artifact(`${directory}/${p}`))
-const phases=artifacts.filter(a=>a.path.endsWith('.input.simple-route.json')).map(a=>{const input=read(a.path);assert.equal(input.layerCount,4);for(const bus of input.buses??[])assert((bus.allowedLayers??[]).every(l=>['top','bottom'].includes(l)));return {input:a,connections:input.connections.length,fixedTraces:input.traces?.length??0,physicalPads:input.obstacles.filter(o=>o.circuitJsonMetadata?.pcb_smtpad_id).length,innerPlanesReserved:true}})
+const phases=artifacts.filter(a=>a.path.endsWith('.input.simple-route.json')).map(a=>{const input=read(a.path);assert.equal(input.layerCount,4);for(const bus of input.buses??[])assert((bus.allowedLayers??[]).every(l=>permittedSignalLayers.includes(l)));return {input:a,connections:input.connections.length,fixedTraces:input.traces?.length??0,physicalPads:input.obstacles.filter(o=>o.circuitJsonMetadata?.pcb_smtpad_id).length,innerPlanesReserved:signalPolicy==='outer',signalPolicy}})
 // Earlier cached phases also emit output files. Only the selected phase's
 // own terminal completion line can establish that this routing phase finished.
 const selectedPhaseCompletion=readFileSync(logPath,'utf8').split('\n').find(line=>line.includes(`"${phase}" done:`)&&/\berrors=0(?:,|\s|$)/.test(line))
