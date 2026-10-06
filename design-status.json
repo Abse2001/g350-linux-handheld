@@ -4924,7 +4924,8 @@
       "qualifiedNewDdrSignals": 0,
       "defaultChanged": false,
       "fabricationReady": false
-    }
+    },
+    "scope": "Frozen default index.circuit.tsx only. Continue the latest user-requested rotated-RAM candidate in currentContinuation and rotatedRamDdrZeroSkew; default evidence stays unchanged."
   },
   "latestCoreUpgrade": {
     "path": "checks/integrated/g350-dqs0-repaired/check-summary.json",
@@ -5036,5 +5037,122 @@
     "fullElectricalTimingQualified": false,
     "defaultChanged": false,
     "report": "cloud/DDR_TIMING_REPAIR_2026-10-06.md"
+  },
+  "rotatedRamDdrZeroSkew": {
+    "status": "PASS_SCOPED_49_DDR_NATIVE_LENGTH_PHYSICAL_SHORTS_AND_KICAD_CONNECTIVITY",
+    "entry": "experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
+    "sourceCircuitSha256": "cff9b16ea1e265a304765a74b2a930412fcaf867654512e3405c18c12c175a17",
+    "sourceEvidenceArchive": {
+      "path": "checks/integrated/g350-ram90-zero-skew/source-replay-evidence.tar.gz",
+      "sha256": "78f2edd701c28d9ac018c4bfdfb43c0b5df4d374f75f918f4bf90fcbf62160b9"
+    },
+    "routingTrialsArchive": {
+      "path": "checks/integrated/g350-ram90-zero-skew/routing-trials.tar.gz",
+      "sha256": "08bb8cd4be30f509659638aa8e9c688e6632cfb135a3cd4b7f7db26f220b4bfa"
+    },
+    "connectedDdrSignals": 49,
+    "requiredDdrSignals": 49,
+    "nativeLengthSkewFailures": 0,
+    "nativePhysicalErrors": 0,
+    "manufacturingViaTrackClearanceErrors": 0,
+    "allLayerGerberShorts": 0,
+    "kicadManufacturingErrors": 0,
+    "kicadIgnoredChecks": 0,
+    "kicadPerItemExclusions": 0,
+    "kicadWarnings": 602,
+    "reportedKicadUnconnectedItems": 499,
+    "kicadUnconnectedItemsMayBeCapped": true,
+    "sourceErrorCounts": {
+      "pcb_port_not_connected_error": 881,
+      "pcb_trace_missing_error": 70
+    },
+    "componentPlacementPreserved": true,
+    "components": 280,
+    "copperLayers": 4,
+    "ramRotationDegrees": 90,
+    "standardThroughVias": 104,
+    "viaLandMm": 0.4572,
+    "viaDrillMm": 0.254,
+    "traceWidthMm": 0.1016,
+    "copperClearanceMm": 0.1016,
+    "groups": [
+      {
+        "name": "DDR_BYTE0",
+        "limitMm": 0.635,
+        "skewMm": 3.552713678800501e-14,
+        "members": 11,
+        "minNativeLengthMm": 33.99999999999997,
+        "maxNativeLengthMm": 34.00000000000001
+      },
+      {
+        "name": "DDR_BYTE1",
+        "limitMm": 0.635,
+        "skewMm": 4.973799150320701e-14,
+        "members": 11,
+        "minNativeLengthMm": 33.99999999999998,
+        "maxNativeLengthMm": 34.00000000000003
+      },
+      {
+        "name": "DDR_COMMAND_CLOCK",
+        "limitMm": 0.635,
+        "skewMm": 0.13319373547517444,
+        "members": 26,
+        "minNativeLengthMm": 37.06680626452497,
+        "maxNativeLengthMm": 37.200000000000145
+      },
+      {
+        "name": "DDR_DQS0_PAIR",
+        "limitMm": 0.127,
+        "skewMm": 0,
+        "members": 2,
+        "minNativeLengthMm": 33.99999999999999,
+        "maxNativeLengthMm": 33.99999999999999
+      },
+      {
+        "name": "DDR_DQS1_PAIR",
+        "limitMm": 0.127,
+        "skewMm": 7.105427357601002e-15,
+        "members": 2,
+        "minNativeLengthMm": 33.99999999999999,
+        "maxNativeLengthMm": 34
+      },
+      {
+        "name": "DDR_CK_PAIR",
+        "limitMm": 0.127,
+        "skewMm": 0,
+        "members": 2,
+        "minNativeLengthMm": 37.20000000000002,
+        "maxNativeLengthMm": 37.20000000000002
+      }
+    ],
+    "planarLengthPerLayerMm": {
+      "top": 293.7848134828451,
+      "inner1": 453.6303308389752,
+      "inner2": 490.0629463849378,
+      "bottom": 336.50003787919576
+    },
+    "innerPlanarLengthPercent": 59.9559333185727,
+    "fullDepthViaThicknessMm": 1.6,
+    "defaultChanged": false,
+    "filledReferencesQualified": false,
+    "fullElectricalTimingQualified": false,
+    "nominalAllSignalsQualified": false,
+    "peripheralRoutingComplete": false,
+    "originalShellFitVerified": false,
+    "fabricationReady": false,
+    "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md"
+  },
+  "currentContinuation": {
+    "stage": "ROTATED_RAM_DDR49_NATIVE_SKEW_CLEARED_FULL_ELECTRICAL_QUALIFICATION_PENDING",
+    "entry": "experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
+    "reason": "Fresh editable-source replay retains 49 DDR connections with zero native length/skew/physical violations, zero all-layer shorts and independent KiCad manufacturing/connectivity pass.",
+    "remaining": [
+      "Filled power/reference copper",
+      "Package/via delay, nominal lengths for every signal, stackup impedance, class spacing and return paths",
+      "Power and peripheral routing",
+      "Footprint/stencil qualification, Linux bring-up and measured original-shell fit"
+    ],
+    "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md",
+    "fabricationReady": false
   }
 }

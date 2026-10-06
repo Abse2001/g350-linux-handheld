@@ -1,0 +1,996 @@
+Building 1 file(s)...
+Building experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx...
+Generating circuit JSON...
+Wrote debug artifact: dist/g350-ram90-zero-skew-source-01/placement-unrouted.png
+Autorouting <board#2394 /> phase 1/1 "G350_RAM90_ZERO_SKEW_REPLAY" start: connections=49, obstacles=1265, previous_traces=0, router=precomputed, cache=disabled(precomputed)
+  connections: DDR_ODT, DDR_D8, DDR_D9, DDR_D2, DDR_D6, DDR_CSn0, DDR_BA0, DDR_A3, DDR_A5, DDR_A7, DDR_RESETn, DDR_D10, DDR_D11, DDR_DQM1, DDR_D0, DDR_DQS0, DDR_DQSn0, DDR_D4, DDR_RASn, DDR_CASn, DDR_WEn, DDR_BA2, DDR_A0, DDR_A2, DDR_A9, DDR_A13, DDR_D12, DDR_DQSn1, DDR_DQS1, DDR_D13, DDR_DQM0, DDR_D1, DDR_D7, DDR_CK, DDR_CKn, DDR_A10, DDR_A12, DDR_A1, DDR_A11, DDR_A14, DDR_D14, DDR_D15, DDR_D3, DDR_D5, DDR_BA1, DDR_A4, DDR_A6, DDR_A8, DDR_CKE
+Wrote debug artifact: dist/g350-ram90-zero-skew-source-01/phase-0.input.simple-route.json
+  phase 1/1 "G350_RAM90_ZERO_SKEW_REPLAY" done: routed_traces=49, jumpers=0, errors=0, elapsed=67.4s
+Wrote debug artifact: dist/g350-ram90-zero-skew-source-01/phase-0.output.traces.json
+Wrote debug artifact: dist/g350-ram90-zero-skew-source-01/phase-0-routed.png
+Saved autorouting paths to .tscircuit/autorouting-artifacts/am3352-g350-ram90-zero-skew-replay-circuit-tsx-23959b67f4/subcircuit_source_group_0-phase-0-order-0-stage-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Wrote debug artifact: dist/g350-ram90-zero-skew-source-01/board.meta.json
+Circuit JSON written to dist/experiments/am3352-g350-ram90-zero-skew-replay/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+KEY_UP has no pin with requires_power=true
+KEY_DOWN has no pin with requires_power=true
+KEY_LEFT has no pin with requires_power=true
+KEY_RIGHT has no pin with requires_power=true
+KEY_A has no pin with requires_power=true
+KEY_B has no pin with requires_power=true
+KEY_X has no pin with requires_power=true
+KEY_Y has no pin with requires_power=true
+KEY_SELECT has no pin with requires_power=true
+KEY_START has no pin with requires_power=true
+KEY_MENU has no pin with requires_power=true
+J_LCD has no pin with requires_power=true
+J_LCD has no pin with requires_ground=true
+J_BAT has no pin with requires_power=true
+J_BAT has no pin with requires_ground=true
+J_SPK has no pin with requires_power=true
+J_SPK has no pin with requires_ground=true
+J_LCD is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+J_BAT is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x- so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+Port [U_SOC.A1] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.V1] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.A2] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.J3] is not connected to net [DDR_VTP] by a PCB trace.
+Port [U_SOC.B4] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J4] is not connected to net [DDR_VREF] by a PCB trace.
+Port [U_SOC.A5] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B5] is not connected to net [RTC_PORn] by a PCB trace.
+Port [U_SOC.C5] is not connected to net [PMIC_WAKEUPn] by a PCB trace.
+Port [U_SOC.E5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.F5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.G5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.H5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.J5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.K5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.L5] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_SOC.N5] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.P5] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.B6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C6] is not connected to net [PMIC_ENABLE] by a PCB trace.
+Port [U_SOC.D6] is not connected to net [CAP_VDD_RTC] by a PCB trace.
+Port [U_SOC.E6] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.F6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.G6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.H6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.L6] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M6] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N6] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.P6] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.A7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.D7] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.E7] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.F7] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.G7] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.H7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L7] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N7] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P7] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.A8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.D8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.E8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.F8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.G8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K8] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.L8] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M8] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N8] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P8] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.A9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.C9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.D9] is not connected to net [CAP_VDD_SRAM_CORE] by a PCB trace.
+Port [U_SOC.E9] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.F9] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.G9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L9] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.M9] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N9] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P9] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.C10] is not connected to net [CAP_VBB_MPU] by a PCB trace.
+Port [U_SOC.D10] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.E10] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F10] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G10] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.H10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N10] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P10] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.R10] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.D11] is not connected to net [CAP_VDD_SRAM_MPU] by a PCB trace.
+Port [U_SOC.E11] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F11] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H11] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.J11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.K11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.L11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M11] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.N11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P11] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.R11] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.V11] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.E12] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F12] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.H12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.J12] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.K12] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.L12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M12] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N12] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P12] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.E13] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.F13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.G13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.H13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.J13] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_SOC.K13] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.L13] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.M13] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.N13] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_SOC.P13] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.E14] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.F14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.G14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.H14] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_SOC.J14] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_SOC.K14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.L14] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.M14] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.N14] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P14] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_SOC.B15] is not connected to net [CPU_PORn] by a PCB trace.
+Port [U_SOC.H15] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.N15] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.R15] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SOC.C16] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [U_SOC.N16] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.R16] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_SOC.C17] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [U_SOC.A18] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.B18] is not connected to net [PMIC_INTn] by a PCB trace.
+Port [U_SOC.V18] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.A1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.B1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.C1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.E1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.F1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.G1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.H1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [U_RAM.M1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.N1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.P1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.R1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.T1] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.B2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.E2] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.H2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.J2] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.K2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.B3] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.G7] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.A8] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.E8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.G8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.J8] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.K8] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.L8] is not connected to net [DDR_ZQ] by a PCB trace.
+Port [U_RAM.M8] is not connected to net [DDR_VREF] by a PCB trace.
+Port [U_RAM.A9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.B9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.C9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.D9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.E9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.F9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.G9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.H9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.M9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.N9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.P9] is not connected to net [GND] by a PCB trace.
+Port [U_RAM.R9] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_RAM.T9] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.VLDO2] is not connected to net [LDO2_3V3] by a PCB trace.
+Port [U_PMIC.VINLDO] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_PMIC.VLDO1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_PMIC.BAT1] is not connected to net [VBAT] by a PCB trace.
+Port [U_PMIC.BAT2] is not connected to net [VBAT] by a PCB trace.
+Port [U_PMIC.SYS1] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.SYS2] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.PWR_EN] is not connected to net [PMIC_ENABLE] by a PCB trace.
+Port [U_PMIC.TS] is not connected to net [BAT_NTC] by a PCB trace.
+Port [U_PMIC.USB] is not connected to net [USB_5V] by a PCB trace.
+Port [U_PMIC.nWAKEUP] is not connected to net [PMIC_WAKEUPn] by a PCB trace.
+Port [U_PMIC.VIO] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [U_PMIC.VDCDC1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [U_PMIC.L1] is not connected to net [SW_DDR] by a PCB trace.
+Port [U_PMIC.VIN_DCDC1] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.VIN_DCDC2] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.L2] is not connected to net [SW_MPU] by a PCB trace.
+Port [U_PMIC.VDCDC2] is not connected to net [VDD_MPU] by a PCB trace.
+Port [U_PMIC.PB_IN] is not connected to net [PMIC_BUTTONn] by a PCB trace.
+Port [U_PMIC.PGOOD] is not connected to net [PMIC_MAIN_PGOOD] by a PCB trace.
+Port [U_PMIC.SDA] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [U_PMIC.SCL] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [U_PMIC.VDCDC3] is not connected to net [VDD_CORE] by a PCB trace.
+Port [U_PMIC.PGND] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.L3] is not connected to net [SW_CORE] by a PCB trace.
+Port [U_PMIC.VIN_DCDC3] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.LS1_IN] is not connected to net [VSYS] by a PCB trace.
+Port [U_PMIC.LS1_OUT] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [U_PMIC.AGND] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.LS2_IN] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_PMIC.LS2_OUT] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_PMIC.nRESET] is not connected to net [PMIC_RESETn] by a PCB trace.
+Port [U_PMIC.nINT] is not connected to net [PMIC_INTn] by a PCB trace.
+Port [U_PMIC.LDO_PGOOD] is not connected to net [RTC_PORn] by a PCB trace.
+Port [U_PMIC.BYPASS] is not connected to net [PMIC_BYPASS] by a PCB trace.
+Port [U_PMIC.INT_LDO] is not connected to net [PMIC_INT_LDO] by a PCB trace.
+Port [U_PMIC.EP] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.ISINK2] is not connected to net [GND] by a PCB trace.
+Port [U_PMIC.ISINK1] is not connected to net [GND] by a PCB trace.
+Port [TP_BAT_INPUT.pin1] is not connected to net [VBAT] by a PCB trace.
+Ports [U_PMIC.BAT_SENSE, J_BAT.pin1] are not connected together through the same net.
+Port [TP_BAT_NTC.pin1] is not connected to net [BAT_NTC] by a PCB trace.
+Port [TP_BAT_GND.pin1] is not connected to net [GND] by a PCB trace.
+Port [TP_USB_INPUT.pin1] is not connected to net [USB_5V] by a PCB trace.
+Port [SW_POWER.A] is not connected to net [PMIC_BUTTONn] by a PCB trace.
+Port [SW_POWER.C] is not connected to net [GND] by a PCB trace.
+Port [U_IO_BOOST.VIN] is not connected to net [VSYS] by a PCB trace.
+Port [U_IO_BOOST.EN] is not connected to net [VSYS] by a PCB trace.
+Port [U_IO_BOOST.GND] is not connected to net [GND] by a PCB trace.
+Port [U_IO_BOOST.VOUT] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_IO_BOOST.FB] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [U_IO_BOOST.SW] is not connected to net [IO_BOOST_SW] by a PCB trace.
+Port [L_DDR.pin1] is not connected to net [SW_DDR] by a PCB trace.
+Port [L_DDR.pin2] is not connected to net [DDR_1V5] by a PCB trace.
+Port [L_MPU.pin1] is not connected to net [SW_MPU] by a PCB trace.
+Port [L_MPU.pin2] is not connected to net [VDD_MPU] by a PCB trace.
+Port [L_CORE.pin1] is not connected to net [SW_CORE] by a PCB trace.
+Port [L_CORE.pin2] is not connected to net [VDD_CORE] by a PCB trace.
+Port [L_IO_BOOST.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [L_IO_BOOST.pin2] is not connected to net [IO_BOOST_SW] by a PCB trace.
+Port [C_PMIC_SYS.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_SYS.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DCDC1_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_DCDC1_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DCDC2_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_DCDC2_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DCDC3_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_PMIC_DCDC3_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_DDR_OUT.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_PMIC_DDR_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_MPU_OUT.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_PMIC_MPU_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_CORE_OUT.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_PMIC_CORE_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_ANALOG_OUT.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_PMIC_ANALOG_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_IO_OUT.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_PMIC_IO_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_BYPASS.pin1] is not connected to net [PMIC_BYPASS] by a PCB trace.
+Port [C_PMIC_BYPASS.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_BATTERY.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [C_BATTERY.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_OUT1.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_IO_BOOST_OUT1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_OUT2.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_IO_BOOST_OUT2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_VINLDO.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_PMIC_VINLDO.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_USB.pin1] is not connected to net [USB_5V] by a PCB trace.
+Port [C_PMIC_USB.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_IN.pin1] is not connected to net [VSYS] by a PCB trace.
+Port [C_IO_BOOST_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_LDO1.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_PMIC_LDO1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_LDO2.pin1] is not connected to net [LDO2_3V3] by a PCB trace.
+Port [C_PMIC_LDO2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_PMIC_INT_LDO.pin1] is not connected to net [PMIC_INT_LDO] by a PCB trace.
+Port [C_PMIC_INT_LDO.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_IO_BOOST_HI.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [R_IO_BOOST_HI.pin2] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [R_IO_BOOST_LO.pin1] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [R_IO_BOOST_LO.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_IO_BOOST_FF.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_IO_BOOST_FF.pin2] is not connected to net [IO_BOOST_FB] by a PCB trace.
+Port [R_PMIC_RESET.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [R_PMIC_RESET.pin2] is not connected to net [PMIC_RESETn] by a PCB trace.
+Port [R_PMIC_WAKEUP.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [R_PMIC_WAKEUP.pin2] is not connected to net [PMIC_WAKEUPn] by a PCB trace.
+Port [R_PMIC_INT.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_PMIC_INT.pin2] is not connected to net [PMIC_INTn] by a PCB trace.
+Port [R_PMIC_SDA.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_PMIC_SDA.pin2] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [R_PMIC_SCL.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_PMIC_SCL.pin2] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [R_VREF_HI.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [R_VREF_HI.pin2] is not connected to net [DDR_VREF] by a PCB trace.
+Port [R_VREF_LO.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [R_VREF_LO.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_DDR_VTP.pin1] is not connected to net [DDR_VTP] by a PCB trace.
+Port [R_DDR_VTP.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_DDR_ZQ.pin1] is not connected to net [DDR_ZQ] by a PCB trace.
+Port [R_DDR_ZQ.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_BULK.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_1.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_2.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_3.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_4.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_5.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_6.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_7.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_7.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CORE_8.pin1] is not connected to net [VDD_CORE] by a PCB trace.
+Port [C_CORE_8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_BULK.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_1.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_2.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_3.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_4.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_MPU_5.pin1] is not connected to net [VDD_MPU] by a PCB trace.
+Port [C_MPU_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_BULK.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_1.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_2.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_3.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_4.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_CORE_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_CORE_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_CORE_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_CORE_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_MPU_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_MPU_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SRAM_MPU_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_SRAM_MPU_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV1_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV1_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV1_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV1_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV1_2.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV1_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV2_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV2_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV2_1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV2_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV2_2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV2_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV3_BULK.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV3_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV3_1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV3_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV3_2.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_HV3_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV4_BULK.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_HV4_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV4_1.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_HV4_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV4_2.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_HV4_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV5_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV5_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV5_1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV5_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV5_2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV5_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_3.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_4.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_5.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_HV6_6.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_HV6_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_RTC.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_VDDS_RTC.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_PLL_DDR.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_PLL_DDR.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_PLL_CORE_LCD.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_PLL_CORE_LCD.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_OSC.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_OSC.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDS_PLL_MPU.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDS_PLL_MPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA3P3V_USB0.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_VDDA3P3V_USB0.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA3P3V_USB1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_VDDA3P3V_USB1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA1P8V_USB0.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDA1P8V_USB0.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VDDA1P8V_USB1.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_VDDA1P8V_USB1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VDD_SRAM_CORE.pin1] is not connected to net [CAP_VDD_SRAM_CORE] by a PCB trace.
+Port [C_CAP_VDD_SRAM_CORE.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VDD_SRAM_MPU.pin1] is not connected to net [CAP_VDD_SRAM_MPU] by a PCB trace.
+Port [C_CAP_VDD_SRAM_MPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VBB_MPU.pin1] is not connected to net [CAP_VBB_MPU] by a PCB trace.
+Port [C_CAP_VBB_MPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_CAP_VDD_RTC.pin1] is not connected to net [CAP_VDD_RTC] by a PCB trace.
+Port [C_CAP_VDD_RTC.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_3.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_4.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_5.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_6.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_7.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_7.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_8.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_9.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_9.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_10.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_10.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_11.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_11.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_12.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_12.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_13.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_13.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_14.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_14.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_15.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_15.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_16.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_16.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_17.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_17.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_18.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_18.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_19.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_19.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_20.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_20.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_BULK1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_BULK1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_CPU_BULK2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_CPU_BULK2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_3.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_4.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_5.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_5.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_6.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_6.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_7.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_7.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_8.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_9.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_9.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_10.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_10.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_11.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_11.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_12.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_12.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_BULK1.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_BULK1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_DDR_RAM_BULK2.pin1] is not connected to net [DDR_1V5] by a PCB trace.
+Port [C_DDR_RAM_BULK2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VREF_CPU.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [C_VREF_CPU.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VREF_RAM_CA.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [C_VREF_RAM_CA.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_VREF_RAM_DQ.pin1] is not connected to net [DDR_VREF] by a PCB trace.
+Port [C_VREF_RAM_DQ.pin2] is not connected to net [GND] by a PCB trace.
+Port [X_MAIN.pin1] is not connected to net [XTAL_IN] by a PCB trace.
+Port [X_MAIN.pin2] is not connected to net [GND] by a PCB trace.
+Port [X_MAIN.pin3] is not connected to net [XTAL_DRIVE] by a PCB trace.
+Port [X_MAIN.pin4] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.V10] is not connected to net [XTAL_IN] by a PCB trace.
+Port [U_SOC.U11] is not connected to net [XTAL_OUT] by a PCB trace.
+Port [R_XTAL_DAMP.pin1] is not connected to net [XTAL_OUT] by a PCB trace.
+Port [R_XTAL_DAMP.pin2] is not connected to net [XTAL_DRIVE] by a PCB trace.
+Port [R_XTAL_BIAS_DNP.pin1] is not connected to net [XTAL_IN] by a PCB trace.
+Port [R_XTAL_BIAS_DNP.pin2] is not connected to net [XTAL_OUT] by a PCB trace.
+Port [C_XTAL_IN.pin1] is not connected to net [XTAL_IN] by a PCB trace.
+Port [C_XTAL_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_XTAL_OUT.pin1] is not connected to net [XTAL_DRIVE] by a PCB trace.
+Port [C_XTAL_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.R1] is not connected to net [LCD_DATA0] by a PCB trace.
+Port [R_SYSBOOT0.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_SYSBOOT0.pin2] is not connected to net [LCD_DATA0] by a PCB trace.
+Port [U_SOC.R2] is not connected to net [LCD_DATA1] by a PCB trace.
+Port [R_SYSBOOT1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_SYSBOOT1.pin2] is not connected to net [LCD_DATA1] by a PCB trace.
+Port [U_SOC.R3] is not connected to net [LCD_DATA2] by a PCB trace.
+Port [R_SYSBOOT2.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_SYSBOOT2.pin2] is not connected to net [LCD_DATA2] by a PCB trace.
+Port [U_SOC.R4] is not connected to net [LCD_DATA3] by a PCB trace.
+Port [R_SYSBOOT3.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT3.pin2] is not connected to net [LCD_DATA3] by a PCB trace.
+Port [U_SOC.T1] is not connected to net [LCD_DATA4] by a PCB trace.
+Port [R_SYSBOOT4.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_SYSBOOT4.pin2] is not connected to net [LCD_DATA4] by a PCB trace.
+Port [U_SOC.T2] is not connected to net [LCD_DATA5] by a PCB trace.
+Port [R_SYSBOOT5.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT5.pin2] is not connected to net [LCD_DATA5] by a PCB trace.
+Port [U_SOC.T3] is not connected to net [LCD_DATA6] by a PCB trace.
+Port [R_SYSBOOT6.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT6.pin2] is not connected to net [LCD_DATA6] by a PCB trace.
+Port [U_SOC.T4] is not connected to net [LCD_DATA7] by a PCB trace.
+Port [R_SYSBOOT7.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT7.pin2] is not connected to net [LCD_DATA7] by a PCB trace.
+Port [U_SOC.U1] is not connected to net [LCD_DATA8] by a PCB trace.
+Port [R_SYSBOOT8.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT8.pin2] is not connected to net [LCD_DATA8] by a PCB trace.
+Port [U_SOC.U2] is not connected to net [LCD_DATA9] by a PCB trace.
+Port [R_SYSBOOT9.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT9.pin2] is not connected to net [LCD_DATA9] by a PCB trace.
+Port [U_SOC.U3] is not connected to net [LCD_DATA10] by a PCB trace.
+Port [R_SYSBOOT10.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT10.pin2] is not connected to net [LCD_DATA10] by a PCB trace.
+Port [U_SOC.U4] is not connected to net [LCD_DATA11] by a PCB trace.
+Port [R_SYSBOOT11.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT11.pin2] is not connected to net [LCD_DATA11] by a PCB trace.
+Port [U_SOC.V2] is not connected to net [LCD_DATA12] by a PCB trace.
+Port [R_SYSBOOT12.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT12.pin2] is not connected to net [LCD_DATA12] by a PCB trace.
+Port [U_SOC.V3] is not connected to net [LCD_DATA13] by a PCB trace.
+Port [R_SYSBOOT13.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT13.pin2] is not connected to net [LCD_DATA13] by a PCB trace.
+Port [U_SOC.V4] is not connected to net [LCD_DATA14] by a PCB trace.
+Port [R_SYSBOOT14.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_SYSBOOT14.pin2] is not connected to net [LCD_DATA14] by a PCB trace.
+Port [U_SOC.T5] is not connected to net [LCD_DATA15] by a PCB trace.
+Port [R_SYSBOOT15.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_SYSBOOT15.pin2] is not connected to net [LCD_DATA15] by a PCB trace.
+Port [U_SOC.C14] is not connected to net [JTAG_EMU0] by a PCB trace.
+Port [R_EMU0.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_EMU0.pin2] is not connected to net [JTAG_EMU0] by a PCB trace.
+Port [U_SOC.B14] is not connected to net [JTAG_EMU1] by a PCB trace.
+Port [R_EMU1.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_EMU1.pin2] is not connected to net [JTAG_EMU1] by a PCB trace.
+Port [U_SOC.C11] is not connected to net [JTAG_TMS] by a PCB trace.
+Port [R_TMS.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_TMS.pin2] is not connected to net [JTAG_TMS] by a PCB trace.
+Port [U_SOC.B11] is not connected to net [JTAG_TDI] by a PCB trace.
+Port [R_TDI.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_TDI.pin2] is not connected to net [JTAG_TDI] by a PCB trace.
+Port [U_SOC.A12] is not connected to net [JTAG_TCK] by a PCB trace.
+Port [R_TCK.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_TCK.pin2] is not connected to net [JTAG_TCK] by a PCB trace.
+Port [U_SOC.B10] is not connected to net [JTAG_TRSTn] by a PCB trace.
+Port [R_TRSTn.pin1] is not connected to net [GND] by a PCB trace.
+Port [R_TRSTn.pin2] is not connected to net [JTAG_TRSTn] by a PCB trace.
+Port [U_SOC.A10] is not connected to net [WARM_RESETn] by a PCB trace.
+Port [R_WARMRSTn.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_WARMRSTn.pin2] is not connected to net [WARM_RESETn] by a PCB trace.
+Port [U_SOC.A11] is not connected to net [JTAG_TDO] by a PCB trace.
+Port [U_SOC.E15] is not connected to net [UART0_RX] by a PCB trace.
+Port [U_SOC.E16] is not connected to net [UART0_TX] by a PCB trace.
+Port [TP_JTAG_TMS.pin1] is not connected to net [JTAG_TMS] by a PCB trace.
+Port [TP_JTAG_TDI.pin1] is not connected to net [JTAG_TDI] by a PCB trace.
+Port [TP_JTAG_TDO.pin1] is not connected to net [JTAG_TDO] by a PCB trace.
+Port [TP_JTAG_TCK.pin1] is not connected to net [JTAG_TCK] by a PCB trace.
+Port [TP_JTAG_TRSTn.pin1] is not connected to net [JTAG_TRSTn] by a PCB trace.
+Port [TP_JTAG_EMU0.pin1] is not connected to net [JTAG_EMU0] by a PCB trace.
+Port [TP_JTAG_EMU1.pin1] is not connected to net [JTAG_EMU1] by a PCB trace.
+Port [TP_WARM_RESETn.pin1] is not connected to net [WARM_RESETn] by a PCB trace.
+Port [TP_GND.pin1] is not connected to net [GND] by a PCB trace.
+Port [TP_IO_3V3.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [TP_UART_GND.pin1] is not connected to net [GND] by a PCB trace.
+Port [TP_UART_UART0_RX.pin1] is not connected to net [UART0_RX] by a PCB trace.
+Port [TP_UART_UART0_TX.pin1] is not connected to net [UART0_TX] by a PCB trace.
+Port [TP_UART_IO_3V3.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [SW_RESET.A] is not connected to net [WARM_RESETn] by a PCB trace.
+Port [SW_RESET.C] is not connected to net [GND] by a PCB trace.
+Port [U_SD_REG.PGND] is not connected to net [GND] by a PCB trace.
+Port [U_SD_REG.VIN] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_SD_REG.EN] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_SD_REG.AGND] is not connected to net [GND] by a PCB trace.
+Port [U_SD_REG.FB] is not connected to net [GND] by a PCB trace.
+Port [U_SD_REG.VOS] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_SD_REG.SW] is not connected to net [PERIPH_SW] by a PCB trace.
+Port [U_SD_REG.EP] is not connected to net [GND] by a PCB trace.
+Port [L_SD_REG.pin1] is not connected to net [PERIPH_SW] by a PCB trace.
+Port [L_SD_REG.pin2] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_SD_REG_IN.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_SD_REG_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SD_REG_HF.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_SD_REG_HF.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SD_REG_OUT.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_SD_REG_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [U_POR.N_RESET] is not connected to net [CPU_PORn] by a PCB trace.
+Port [U_POR.GND] is not connected to net [GND] by a PCB trace.
+Port [U_POR.N_MR] is not connected to net [PMIC_MAIN_PGOOD] by a PCB trace.
+Port [U_POR.SENSE] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_POR.VDD] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [R_CPU_POR.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [R_CPU_POR.pin2] is not connected to net [CPU_PORn] by a PCB trace.
+Port [C_POR_BYPASS.pin1] is not connected to net [VDDS_1V8] by a PCB trace.
+Port [C_POR_BYPASS.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_POR_SENSE.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_POR_SENSE.pin2] is not connected to net [GND] by a PCB trace.
+Port [J_SD.DAT2] is not connected to net [SD_DAT2] by a PCB trace.
+Port [J_SD.pin2] is not connected to net [SD_DAT3] by a PCB trace.
+Port [J_SD.CMD] is not connected to net [SD_CMD] by a PCB trace.
+Port [J_SD.VDD] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [J_SD.CLK] is not connected to net [SD_CLK_CARD] by a PCB trace.
+Port [J_SD.VSS] is not connected to net [GND] by a PCB trace.
+Port [J_SD.DAT0] is not connected to net [SD_DAT0] by a PCB trace.
+Port [J_SD.DAT1] is not connected to net [SD_DAT1] by a PCB trace.
+Port [J_SD.B] is not connected to net [SD_CD] by a PCB trace.
+Port [J_SD.A] is not connected to net [GND] by a PCB trace.
+Port [J_SD.GND1] is not connected to net [GND] by a PCB trace.
+Port [J_SD.GND2] is not connected to net [GND] by a PCB trace.
+Port [J_SD.GND3] is not connected to net [GND] by a PCB trace.
+Port [J_SD.GND4] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.G16] is not connected to net [SD_DAT0] by a PCB trace.
+Port [R_SD_DAT0.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [R_SD_DAT0.pin2] is not connected to net [SD_DAT0] by a PCB trace.
+Port [U_SOC.G15] is not connected to net [SD_DAT1] by a PCB trace.
+Port [R_SD_DAT1.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [R_SD_DAT1.pin2] is not connected to net [SD_DAT1] by a PCB trace.
+Port [U_SOC.F18] is not connected to net [SD_DAT2] by a PCB trace.
+Port [R_SD_DAT2.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [R_SD_DAT2.pin2] is not connected to net [SD_DAT2] by a PCB trace.
+Port [U_SOC.F17] is not connected to net [SD_DAT3] by a PCB trace.
+Port [R_SD_DAT3.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [R_SD_DAT3.pin2] is not connected to net [SD_DAT3] by a PCB trace.
+Port [U_SOC.G18] is not connected to net [SD_CMD] by a PCB trace.
+Port [R_SD_CMD.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [R_SD_CMD.pin2] is not connected to net [SD_CMD] by a PCB trace.
+Port [U_SOC.G17] is not connected to net [SD_CLK_CPU] by a PCB trace.
+Port [R_SD_CLK.pin1] is not connected to net [SD_CLK_CPU] by a PCB trace.
+Port [R_SD_CLK.pin2] is not connected to net [SD_CLK_CARD] by a PCB trace.
+Port [U_SOC.C18] is not connected to net [SD_CD] by a PCB trace.
+Port [R_SD_CD.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_SD_CD.pin2] is not connected to net [SD_CD] by a PCB trace.
+Port [C_SD_SOCKET_HF.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_SD_SOCKET_HF.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_SD_SOCKET_BULK.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_SD_SOCKET_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [J_USB.EH2] is not connected to net [GND] by a PCB trace.
+Port [J_USB.EH1] is not connected to net [GND] by a PCB trace.
+Port [J_USB.EH4] is not connected to net [GND] by a PCB trace.
+Port [J_USB.EH3] is not connected to net [GND] by a PCB trace.
+Port [J_USB.A1B12] is not connected to net [GND] by a PCB trace.
+Port [J_USB.B1A12] is not connected to net [GND] by a PCB trace.
+Port [J_USB.B4A9] is not connected to net [USB_5V] by a PCB trace.
+Port [J_USB.A4B9] is not connected to net [USB_5V] by a PCB trace.
+Port [J_USB.A5] is not connected to net [USB_CC1] by a PCB trace.
+Port [J_USB.B5] is not connected to net [USB_CC2] by a PCB trace.
+Port [R_USB_CC1.pin1] is not connected to net [USB_CC1] by a PCB trace.
+Port [R_USB_CC1.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_USB_CC2.pin1] is not connected to net [USB_CC2] by a PCB trace.
+Port [R_USB_CC2.pin2] is not connected to net [GND] by a PCB trace.
+Port [U_USB_ESD.pin2] is not connected to net [GND] by a PCB trace.
+Port [U_USB_ESD.pin5] is not connected to net [USB_5V] by a PCB trace.
+Port [C_USB_ESD.pin1] is not connected to net [USB_5V] by a PCB trace.
+Port [C_USB_ESD.pin2] is not connected to net [GND] by a PCB trace.
+Ports [U_SOC.N17, U_USB_ESD.pin3] are not connected together through the same net.
+Ports [U_SOC.N18, U_USB_ESD.pin1] are not connected together through the same net.
+Port [J_USB.A6] is not connected to net [USB0_DP] by a PCB trace.
+Port [J_USB.B6] is not connected to net [USB0_DP] by a PCB trace.
+Port [U_USB_ESD.pin3] is not connected to net [USB0_DP] by a PCB trace.
+Port [U_USB_ESD.pin4] is not connected to net [USB0_DP] by a PCB trace.
+Port [J_USB.B7] is not connected to net [USB0_DM] by a PCB trace.
+Port [J_USB.A7] is not connected to net [USB0_DM] by a PCB trace.
+Port [U_USB_ESD.pin1] is not connected to net [USB0_DM] by a PCB trace.
+Port [U_USB_ESD.pin6] is not connected to net [USB0_DM] by a PCB trace.
+Port [R_USB_VBUS_SENSE.pin1] is not connected to net [USB_5V] by a PCB trace.
+Port [R_USB_VBUS_SENSE.pin2] is not connected to net [USB0_VBUS_SENSE] by a PCB trace.
+Port [C_USB_VBUS_SENSE.pin1] is not connected to net [USB0_VBUS_SENSE] by a PCB trace.
+Port [C_USB_VBUS_SENSE.pin2] is not connected to net [GND] by a PCB trace.
+Port [D_USB_VBUS_SENSE.cathode] is not connected to net [USB0_VBUS_SENSE] by a PCB trace.
+Port [D_USB_VBUS_SENSE.anode] is not connected to net [GND] by a PCB trace.
+Port [U_SOC.P15] is not connected to net [USB0_VBUS_SENSE] by a PCB trace.
+Port [U_KEYS.VDD] is not connected to net [IO_3V3] by a PCB trace.
+Port [U_KEYS.VSS] is not connected to net [GND] by a PCB trace.
+Port [U_KEYS.A0] is not connected to net [GND] by a PCB trace.
+Port [U_KEYS.A1] is not connected to net [GND] by a PCB trace.
+Port [U_KEYS.A2] is not connected to net [GND] by a PCB trace.
+Port [U_KEYS.SDA] is not connected to net [I2C0_SDA] by a PCB trace.
+Port [U_KEYS.SCL] is not connected to net [I2C0_SCL] by a PCB trace.
+Port [U_KEYS.N_RESET] is not connected to net [KEYS_RESETn] by a PCB trace.
+Port [R_KEYS_RESET.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_KEYS_RESET.pin2] is not connected to net [KEYS_RESETn] by a PCB trace.
+Port [C_KEYS_HF.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_KEYS_HF.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_KEYS_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_KEYS_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Ports [KEY_UP.KEY, U_KEYS.GPA0] are not connected together through the same net.
+Port [KEY_UP.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_DOWN.KEY, U_KEYS.GPA1] are not connected together through the same net.
+Port [KEY_DOWN.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_LEFT.KEY, U_KEYS.GPA2] are not connected together through the same net.
+Port [KEY_LEFT.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_RIGHT.KEY, U_KEYS.GPA3] are not connected together through the same net.
+Port [KEY_RIGHT.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_A.KEY, U_KEYS.GPA4] are not connected together through the same net.
+Port [KEY_A.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_B.KEY, U_KEYS.GPA5] are not connected together through the same net.
+Port [KEY_B.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_X.KEY, U_KEYS.GPA6] are not connected together through the same net.
+Port [KEY_X.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_Y.KEY, U_KEYS.GPB3] are not connected together through the same net.
+Port [KEY_Y.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_SELECT.KEY, U_KEYS.GPB0] are not connected together through the same net.
+Port [KEY_SELECT.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_START.KEY, U_KEYS.GPB1] are not connected together through the same net.
+Port [KEY_START.RETURN] is not connected to net [GND] by a PCB trace.
+Ports [KEY_MENU.KEY, U_KEYS.GPB2] are not connected together through the same net.
+Port [KEY_MENU.RETURN] is not connected to net [GND] by a PCB trace.
+Port [U_AUDIO.DIN] is not connected to net [AUDIO_DIN] by a PCB trace.
+Port [U_AUDIO.BCLK] is not connected to net [AUDIO_BCLK] by a PCB trace.
+Port [U_AUDIO.LRCLK] is not connected to net [AUDIO_LRCLK] by a PCB trace.
+Port [U_AUDIO.N_SD_MODE] is not connected to net [AUDIO_ENABLE] by a PCB trace.
+Port [U_AUDIO.GAIN_SLOT] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_AUDIO.VDD1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_AUDIO.VDD2] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [U_AUDIO.GND1] is not connected to net [GND] by a PCB trace.
+Port [U_AUDIO.GND2] is not connected to net [GND] by a PCB trace.
+Port [U_AUDIO.GND3] is not connected to net [GND] by a PCB trace.
+Port [U_AUDIO.EP] is not connected to net [GND] by a PCB trace.
+Port [U_AUDIO.OUTP] is not connected to net [SPK_P] by a PCB trace.
+Port [U_AUDIO.OUTN] is not connected to net [SPK_N] by a PCB trace.
+Port [U_SOC.D12] is not connected to net [AUDIO_DIN] by a PCB trace.
+Port [U_SOC.A13] is not connected to net [AUDIO_BCLK] by a PCB trace.
+Port [U_SOC.B13] is not connected to net [AUDIO_LRCLK] by a PCB trace.
+Port [U_SOC.A14] is not connected to net [AUDIO_ENABLE] by a PCB trace.
+Port [R_AUDIO_PD.pin1] is not connected to net [AUDIO_ENABLE] by a PCB trace.
+Port [R_AUDIO_PD.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_AUDIO_HF.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_AUDIO_HF.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_AUDIO_BULK.pin1] is not connected to net [PERIPH_3V3] by a PCB trace.
+Port [C_AUDIO_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [TP_SPK_P.pin1] is not connected to net [SPK_P] by a PCB trace.
+Port [TP_SPK_N.pin1] is not connected to net [SPK_N] by a PCB trace.
+Port [J_LCD.pin1] is not connected to net [LCD_LED_K] by a PCB trace.
+Port [J_LCD.pin2] is not connected to net [LCD_LED_K] by a PCB trace.
+Port [J_LCD.pin3] is not connected to net [LCD_LED_A] by a PCB trace.
+Port [J_LCD.pin4] is not connected to net [LCD_LED_A] by a PCB trace.
+Port [J_LCD.pin8] is not connected to net [LCD_RESETn] by a PCB trace.
+Port [J_LCD.pin9] is not connected to net [LCD_CS1n] by a PCB trace.
+Port [J_LCD.pin10] is not connected to net [LCD_SPI_CLK] by a PCB trace.
+Port [J_LCD.pin11] is not connected to net [LCD_SPI_MOSI] by a PCB trace.
+Port [J_LCD.pin41] is not connected to net [IO_3V3] by a PCB trace.
+Port [J_LCD.pin42] is not connected to net [IO_3V3] by a PCB trace.
+Port [J_LCD.pin53] is not connected to net [GND] by a PCB trace.
+Port [J_LCD.pin54] is not connected to net [GND] by a PCB trace.
+Ports [U_SOC.R1, R_LCD_DATA0.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA0.pin2, J_LCD.pin12] are not connected together through the same net.
+Ports [U_SOC.R2, R_LCD_DATA1.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA1.pin2, J_LCD.pin13] are not connected together through the same net.
+Ports [U_SOC.R3, R_LCD_DATA2.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA2.pin2, J_LCD.pin14] are not connected together through the same net.
+Ports [U_SOC.R4, R_LCD_DATA3.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA3.pin2, J_LCD.pin15] are not connected together through the same net.
+Ports [U_SOC.T1, R_LCD_DATA4.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA4.pin2, J_LCD.pin16] are not connected together through the same net.
+Ports [U_SOC.T2, R_LCD_DATA5.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA5.pin2, J_LCD.pin17] are not connected together through the same net.
+Ports [U_SOC.T3, R_LCD_DATA6.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA6.pin2, J_LCD.pin18] are not connected together through the same net.
+Ports [U_SOC.T4, R_LCD_DATA7.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA7.pin2, J_LCD.pin19] are not connected together through the same net.
+Ports [U_SOC.U1, R_LCD_DATA8.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA8.pin2, J_LCD.pin20] are not connected together through the same net.
+Ports [U_SOC.U2, R_LCD_DATA9.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA9.pin2, J_LCD.pin21] are not connected together through the same net.
+Ports [U_SOC.U3, R_LCD_DATA10.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA10.pin2, J_LCD.pin22] are not connected together through the same net.
+Ports [U_SOC.U4, R_LCD_DATA11.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA11.pin2, J_LCD.pin23] are not connected together through the same net.
+Ports [U_SOC.V2, R_LCD_DATA12.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA12.pin2, J_LCD.pin24] are not connected together through the same net.
+Ports [U_SOC.V3, R_LCD_DATA13.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA13.pin2, J_LCD.pin25] are not connected together through the same net.
+Ports [U_SOC.V4, R_LCD_DATA14.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA14.pin2, J_LCD.pin26] are not connected together through the same net.
+Ports [U_SOC.T5, R_LCD_DATA15.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA15.pin2, J_LCD.pin27] are not connected together through the same net.
+Ports [U_SOC.U13, R_LCD_DATA16.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA16.pin2, J_LCD.pin28] are not connected together through the same net.
+Ports [U_SOC.V13, R_LCD_DATA17.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA17.pin2, J_LCD.pin29] are not connected together through the same net.
+Ports [U_SOC.R12, R_LCD_DATA18.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA18.pin2, J_LCD.pin30] are not connected together through the same net.
+Ports [U_SOC.T12, R_LCD_DATA19.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA19.pin2, J_LCD.pin31] are not connected together through the same net.
+Ports [U_SOC.U12, R_LCD_DATA20.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA20.pin2, J_LCD.pin32] are not connected together through the same net.
+Ports [U_SOC.T11, R_LCD_DATA21.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA21.pin2, J_LCD.pin33] are not connected together through the same net.
+Ports [U_SOC.T10, R_LCD_DATA22.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA22.pin2, J_LCD.pin34] are not connected together through the same net.
+Ports [U_SOC.U10, R_LCD_DATA23.pin1] are not connected together through the same net.
+Ports [R_LCD_DATA23.pin2, J_LCD.pin35] are not connected together through the same net.
+Ports [U_SOC.R5, R_LCD_HSYNC.pin1] are not connected together through the same net.
+Ports [R_LCD_HSYNC.pin2, J_LCD.pin36] are not connected together through the same net.
+Ports [U_SOC.U5, R_LCD_VSYNC.pin1] are not connected together through the same net.
+Ports [R_LCD_VSYNC.pin2, J_LCD.pin37] are not connected together through the same net.
+Ports [U_SOC.V5, R_LCD_PCLK.pin1] are not connected together through the same net.
+Ports [R_LCD_PCLK.pin2, J_LCD.pin38] are not connected together through the same net.
+Ports [U_SOC.R6, R_LCD_DE.pin1] are not connected together through the same net.
+Ports [R_LCD_DE.pin2, J_LCD.pin52] are not connected together through the same net.
+Port [U_SOC.A17] is not connected to net [LCD_SPI_CLK] by a PCB trace.
+Port [U_SOC.B16] is not connected to net [LCD_SPI_MOSI] by a PCB trace.
+Port [U_SOC.C15] is not connected to net [LCD_CS1n] by a PCB trace.
+Port [U_SOC.D13] is not connected to net [LCD_RESETn] by a PCB trace.
+Port [U_SOC.U14] is not connected to net [LCD_BL_PWM] by a PCB trace.
+Port [R_LCD_CS_PU.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [R_LCD_CS_PU.pin2] is not connected to net [LCD_CS1n] by a PCB trace.
+Port [R_LCD_RESET_PD.pin1] is not connected to net [LCD_RESETn] by a PCB trace.
+Port [R_LCD_RESET_PD.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_LCD_IO_HF.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_LCD_IO_HF.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_LCD_VCI_HF.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_LCD_VCI_HF.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_LCD_BULK.pin1] is not connected to net [IO_3V3] by a PCB trace.
+Port [C_LCD_BULK.pin2] is not connected to net [GND] by a PCB trace.
+Port [U_LCD_BL.VIN] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [U_LCD_BL.CTRL] is not connected to net [LCD_BL_CTRL] by a PCB trace.
+Port [U_LCD_BL.SW] is not connected to net [LCD_BL_SW] by a PCB trace.
+Port [U_LCD_BL.GND] is not connected to net [GND] by a PCB trace.
+Port [U_LCD_BL.COMP] is not connected to net [LCD_BL_COMP] by a PCB trace.
+Port [U_LCD_BL.FB] is not connected to net [LCD_LED_K] by a PCB trace.
+Port [L_LCD_BL.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [L_LCD_BL.pin2] is not connected to net [LCD_BL_SW] by a PCB trace.
+Port [D_LCD_BL.anode] is not connected to net [LCD_BL_SW] by a PCB trace.
+Port [D_LCD_BL.cathode] is not connected to net [LCD_LED_A] by a PCB trace.
+Port [C_LCD_BL_OUT.pin1] is not connected to net [LCD_LED_A] by a PCB trace.
+Port [C_LCD_BL_OUT.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_LCD_BL_IN.pin1] is not connected to net [VIO_BOOST5V] by a PCB trace.
+Port [C_LCD_BL_IN.pin2] is not connected to net [GND] by a PCB trace.
+Port [C_LCD_BL_COMP.pin1] is not connected to net [LCD_BL_COMP] by a PCB trace.
+Port [C_LCD_BL_COMP.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_LCD_BL_SENSE.pin1] is not connected to net [LCD_LED_K] by a PCB trace.
+Port [R_LCD_BL_SENSE.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_LCD_BL_PD.pin1] is not connected to net [LCD_BL_PWM] by a PCB trace.
+Port [R_LCD_BL_PD.pin2] is not connected to net [GND] by a PCB trace.
+Port [J_BAT.pin1] is not connected to net [VBAT] by a PCB trace.
+Port [J_BAT.pin2] is not connected to net [BAT_NTC] by a PCB trace.
+Port [J_BAT.pin3] is not connected to net [GND] by a PCB trace.
+Port [J_SPK.pin1] is not connected to net [SPK_P] by a PCB trace.
+Port [J_SPK.pin2] is not connected to net [SPK_N] by a PCB trace.
+Port [U_LCD_PWM_BUF.OE] is not connected to net [GND] by a PCB trace.
+Port [U_LCD_PWM_BUF.A] is not connected to net [LCD_BL_PWM] by a PCB trace.
+Port [U_LCD_PWM_BUF.GND] is not connected to net [GND] by a PCB trace.
+Port [U_LCD_PWM_BUF.Y] is not connected to net [LCD_BL_CTRL] by a PCB trace.
+Port [U_LCD_PWM_BUF.VCC] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_LCD_PWM_BUF.pin1] is not connected to net [ANALOG_1V8] by a PCB trace.
+Port [C_LCD_PWM_BUF.pin2] is not connected to net [GND] by a PCB trace.
+Port [R_LCD_CTRL_PD.pin1] is not connected to net [LCD_BL_CTRL] by a PCB trace.
+Port [R_LCD_CTRL_PD.pin2] is not connected to net [GND] by a PCB trace.
+Trace [U_PMIC.pin6 to J_BAT.pin1] is not connected (it has no PCB trace)
+Trace [U_SOC.pin301 to U_USB_ESD.pin3] is not connected (it has no PCB trace)
+Trace [U_SOC.pin319 to U_USB_ESD.pin1] is not connected (it has no PCB trace)
+Trace [KEY_UP.pin1 to U_KEYS.GPA0] is not connected (it has no PCB trace)
+Trace [KEY_DOWN.pin1 to U_KEYS.GPA1] is not connected (it has no PCB trace)
+Trace [KEY_LEFT.pin1 to U_KEYS.GPA2] is not connected (it has no PCB trace)
+Trace [KEY_RIGHT.pin1 to U_KEYS.GPA3] is not connected (it has no PCB trace)
+Trace [KEY_A.pin1 to U_KEYS.GPA4] is not connected (it has no PCB trace)
+Trace [KEY_B.pin1 to U_KEYS.GPA5] is not connected (it has no PCB trace)
+Trace [KEY_X.pin1 to U_KEYS.GPA6] is not connected (it has no PCB trace)
+Trace [KEY_Y.pin1 to U_KEYS.GPB3] is not connected (it has no PCB trace)
+Trace [KEY_SELECT.pin1 to U_KEYS.GPB0] is not connected (it has no PCB trace)
+Trace [KEY_START.pin1 to U_KEYS.GPB1] is not connected (it has no PCB trace)
+Trace [KEY_MENU.pin1 to U_KEYS.GPB2] is not connected (it has no PCB trace)
+Trace [U_SOC.pin15 to R_LCD_DATA0.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA0.pin2 to J_LCD.pin12] is not connected (it has no PCB trace)
+Trace [U_SOC.pin33 to R_LCD_DATA1.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA1.pin2 to J_LCD.pin13] is not connected (it has no PCB trace)
+Trace [U_SOC.pin51 to R_LCD_DATA2.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA2.pin2 to J_LCD.pin14] is not connected (it has no PCB trace)
+Trace [U_SOC.pin69 to R_LCD_DATA3.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA3.pin2 to J_LCD.pin15] is not connected (it has no PCB trace)
+Trace [U_SOC.pin16 to R_LCD_DATA4.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA4.pin2 to J_LCD.pin16] is not connected (it has no PCB trace)
+Trace [U_SOC.pin34 to R_LCD_DATA5.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA5.pin2 to J_LCD.pin17] is not connected (it has no PCB trace)
+Trace [U_SOC.pin52 to R_LCD_DATA6.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA6.pin2 to J_LCD.pin18] is not connected (it has no PCB trace)
+Trace [U_SOC.pin70 to R_LCD_DATA7.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA7.pin2 to J_LCD.pin19] is not connected (it has no PCB trace)
+Trace [U_SOC.pin17 to R_LCD_DATA8.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA8.pin2 to J_LCD.pin20] is not connected (it has no PCB trace)
+Trace [U_SOC.pin35 to R_LCD_DATA9.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA9.pin2 to J_LCD.pin21] is not connected (it has no PCB trace)
+Trace [U_SOC.pin53 to R_LCD_DATA10.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA10.pin2 to J_LCD.pin22] is not connected (it has no PCB trace)
+Trace [U_SOC.pin71 to R_LCD_DATA11.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA11.pin2 to J_LCD.pin23] is not connected (it has no PCB trace)
+Trace [U_SOC.pin36 to R_LCD_DATA12.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA12.pin2 to J_LCD.pin24] is not connected (it has no PCB trace)
+Trace [U_SOC.pin54 to R_LCD_DATA13.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA13.pin2 to J_LCD.pin25] is not connected (it has no PCB trace)
+Trace [U_SOC.pin72 to R_LCD_DATA14.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA14.pin2 to J_LCD.pin26] is not connected (it has no PCB trace)
+Trace [U_SOC.pin88 to R_LCD_DATA15.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA15.pin2 to J_LCD.pin27] is not connected (it has no PCB trace)
+Trace [U_SOC.pin233 to R_LCD_DATA16.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA16.pin2 to J_LCD.pin28] is not connected (it has no PCB trace)
+Trace [U_SOC.pin234 to R_LCD_DATA17.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA17.pin2 to J_LCD.pin29] is not connected (it has no PCB trace)
+Trace [U_SOC.pin213 to R_LCD_DATA18.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA18.pin2 to J_LCD.pin30] is not connected (it has no PCB trace)
+Trace [U_SOC.pin214 to R_LCD_DATA19.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA19.pin2 to J_LCD.pin31] is not connected (it has no PCB trace)
+Trace [U_SOC.pin215 to R_LCD_DATA20.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA20.pin2 to J_LCD.pin32] is not connected (it has no PCB trace)
+Trace [U_SOC.pin196 to R_LCD_DATA21.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA21.pin2 to J_LCD.pin33] is not connected (it has no PCB trace)
+Trace [U_SOC.pin178 to R_LCD_DATA22.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA22.pin2 to J_LCD.pin34] is not connected (it has no PCB trace)
+Trace [U_SOC.pin179 to R_LCD_DATA23.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DATA23.pin2 to J_LCD.pin35] is not connected (it has no PCB trace)
+Trace [U_SOC.pin87 to R_LCD_HSYNC.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_HSYNC.pin2 to J_LCD.pin36] is not connected (it has no PCB trace)
+Trace [U_SOC.pin89 to R_LCD_VSYNC.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_VSYNC.pin2 to J_LCD.pin37] is not connected (it has no PCB trace)
+Trace [U_SOC.pin90 to R_LCD_PCLK.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_PCLK.pin2 to J_LCD.pin38] is not connected (it has no PCB trace)
+Trace [U_SOC.pin105 to R_LCD_DE.pin1] is not connected (it has no PCB trace)
+Trace [R_LCD_DE.pin2 to J_LCD.pin52] is not connected (it has no PCB trace)
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   autorouter-debug, autorouter-phase, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

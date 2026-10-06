@@ -1,0 +1,599 @@
+{
+  "status": "DDR_NATIVE_49_LENGTH_AND_PHYSICAL_PASS",
+  "source": {
+    "path": "dist/g350-ram90-zero-skew-source-01/compiled.circuit.json",
+    "sha256": "cff9b16ea1e265a304765a74b2a930412fcaf867654512e3405c18c12c175a17"
+  },
+  "placementReference": {
+    "path": "dist/g350-ram90-three-pairs-safe-source-01/compiled.circuit.json",
+    "sha256": "edf2dc7fea697f48f2a7705e9a13f687884a23aaccd0d1d8f8958d4599c3098b"
+  },
+  "components": 280,
+  "numericEndpointPairs": 49,
+  "componentPlacementPreserved": true,
+  "groups": [
+    {
+      "name": "DDR_BYTE0",
+      "members": [
+        {
+          "name": "DDR_D2",
+          "nativeLengthMm": 33.99999999999998,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D6",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 4
+        },
+        {
+          "name": "DDR_D0",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQS0",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQSn0",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D4",
+          "nativeLengthMm": 34,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQM0",
+          "nativeLengthMm": 34,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D1",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D7",
+          "nativeLengthMm": 33.99999999999997,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D3",
+          "nativeLengthMm": 33.999999999999986,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D5",
+          "nativeLengthMm": 34.00000000000001,
+          "standardThroughVias": 2
+        }
+      ],
+      "limitMm": 0.635,
+      "skewMm": 3.552713678800501e-14
+    },
+    {
+      "name": "DDR_BYTE1",
+      "members": [
+        {
+          "name": "DDR_D8",
+          "nativeLengthMm": 34,
+          "standardThroughVias": 0
+        },
+        {
+          "name": "DDR_D9",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D10",
+          "nativeLengthMm": 33.99999999999998,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D11",
+          "nativeLengthMm": 34,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQM1",
+          "nativeLengthMm": 34.00000000000003,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D12",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQSn1",
+          "nativeLengthMm": 34,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQS1",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D13",
+          "nativeLengthMm": 34.00000000000001,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D14",
+          "nativeLengthMm": 33.999999999999986,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_D15",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 4
+        }
+      ],
+      "limitMm": 0.635,
+      "skewMm": 4.973799150320701e-14
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "members": [
+        {
+          "name": "DDR_ODT",
+          "nativeLengthMm": 37.20000000000003,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_CSn0",
+          "nativeLengthMm": 37.200000000000024,
+          "standardThroughVias": 3
+        },
+        {
+          "name": "DDR_BA0",
+          "nativeLengthMm": 37.20000000000005,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A3",
+          "nativeLengthMm": 37.20000000000004,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A5",
+          "nativeLengthMm": 37.200000000000074,
+          "standardThroughVias": 0
+        },
+        {
+          "name": "DDR_A7",
+          "nativeLengthMm": 37.20000000000005,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_RASn",
+          "nativeLengthMm": 37.20000000000001,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_CASn",
+          "nativeLengthMm": 37.200000000000145,
+          "standardThroughVias": 0
+        },
+        {
+          "name": "DDR_WEn",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_BA2",
+          "nativeLengthMm": 37.20000000000001,
+          "standardThroughVias": 3
+        },
+        {
+          "name": "DDR_A0",
+          "nativeLengthMm": 37.20000000000007,
+          "standardThroughVias": 4
+        },
+        {
+          "name": "DDR_A2",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A9",
+          "nativeLengthMm": 37.200000000000024,
+          "standardThroughVias": 3
+        },
+        {
+          "name": "DDR_A13",
+          "nativeLengthMm": 37.20000000000005,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_CK",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_CKn",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A10",
+          "nativeLengthMm": 37.06680626452497,
+          "standardThroughVias": 4
+        },
+        {
+          "name": "DDR_A12",
+          "nativeLengthMm": 37.20000000000008,
+          "standardThroughVias": 3
+        },
+        {
+          "name": "DDR_A1",
+          "nativeLengthMm": 37.20000000000007,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A11",
+          "nativeLengthMm": 37.20000000000003,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A14",
+          "nativeLengthMm": 37.200000000000024,
+          "standardThroughVias": 0
+        },
+        {
+          "name": "DDR_BA1",
+          "nativeLengthMm": 37.20000000000003,
+          "standardThroughVias": 3
+        },
+        {
+          "name": "DDR_A4",
+          "nativeLengthMm": 37.2,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_A6",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 3
+        },
+        {
+          "name": "DDR_A8",
+          "nativeLengthMm": 37.20000000000005,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_CKE",
+          "nativeLengthMm": 37.200000000000024,
+          "standardThroughVias": 2
+        }
+      ],
+      "limitMm": 0.635,
+      "skewMm": 0.13319373547517444
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "members": [
+        {
+          "name": "DDR_DQS0",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQSn0",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        }
+      ],
+      "limitMm": 0.127,
+      "skewMm": 0
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "members": [
+        {
+          "name": "DDR_DQSn1",
+          "nativeLengthMm": 34,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_DQS1",
+          "nativeLengthMm": 33.99999999999999,
+          "standardThroughVias": 2
+        }
+      ],
+      "limitMm": 0.127,
+      "skewMm": 7.105427357601002e-15
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "members": [
+        {
+          "name": "DDR_CK",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 2
+        },
+        {
+          "name": "DDR_CKn",
+          "nativeLengthMm": 37.20000000000002,
+          "standardThroughVias": 2
+        }
+      ],
+      "limitMm": 0.127,
+      "skewMm": 0
+    }
+  ],
+  "physicalChecks": {
+    "checkEachPcbTraceNonOverlapping": [],
+    "checkViaPadClearance": [],
+    "checkViaTraceClearance": [],
+    "checkPcbTraceSelfShorts": [],
+    "checkCopperToBoardEdgeClearance": [],
+    "checkDifferentNetViaSpacing": [],
+    "checkHoleTraceClearance": [],
+    "checkPadTraceClearance": [],
+    "checkViasInPads": [],
+    "checkViasOffBoard": []
+  },
+  "manufacturingViaTrackErrors": [],
+  "nativeSkewErrors": [],
+  "sourceErrorCounts": {
+    "pcb_port_not_connected_error": 881,
+    "pcb_trace_missing_error": 70
+  },
+  "rows": [
+    {
+      "name": "DDR_ODT",
+      "nativeLengthMm": 37.20000000000003,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D8",
+      "nativeLengthMm": 34,
+      "standardThroughVias": 0
+    },
+    {
+      "name": "DDR_D9",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D2",
+      "nativeLengthMm": 33.99999999999998,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D6",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 4
+    },
+    {
+      "name": "DDR_CSn0",
+      "nativeLengthMm": 37.200000000000024,
+      "standardThroughVias": 3
+    },
+    {
+      "name": "DDR_BA0",
+      "nativeLengthMm": 37.20000000000005,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A3",
+      "nativeLengthMm": 37.20000000000004,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A5",
+      "nativeLengthMm": 37.200000000000074,
+      "standardThroughVias": 0
+    },
+    {
+      "name": "DDR_A7",
+      "nativeLengthMm": 37.20000000000005,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_RESETn",
+      "nativeLengthMm": 25.311322321431014,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D10",
+      "nativeLengthMm": 33.99999999999998,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D11",
+      "nativeLengthMm": 34,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_DQM1",
+      "nativeLengthMm": 34.00000000000003,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D0",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_DQS0",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_DQSn0",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D4",
+      "nativeLengthMm": 34,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_RASn",
+      "nativeLengthMm": 37.20000000000001,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_CASn",
+      "nativeLengthMm": 37.200000000000145,
+      "standardThroughVias": 0
+    },
+    {
+      "name": "DDR_WEn",
+      "nativeLengthMm": 37.20000000000002,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_BA2",
+      "nativeLengthMm": 37.20000000000001,
+      "standardThroughVias": 3
+    },
+    {
+      "name": "DDR_A0",
+      "nativeLengthMm": 37.20000000000007,
+      "standardThroughVias": 4
+    },
+    {
+      "name": "DDR_A2",
+      "nativeLengthMm": 37.20000000000002,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A9",
+      "nativeLengthMm": 37.200000000000024,
+      "standardThroughVias": 3
+    },
+    {
+      "name": "DDR_A13",
+      "nativeLengthMm": 37.20000000000005,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D12",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_DQSn1",
+      "nativeLengthMm": 34,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_DQS1",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D13",
+      "nativeLengthMm": 34.00000000000001,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_DQM0",
+      "nativeLengthMm": 34,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D1",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D7",
+      "nativeLengthMm": 33.99999999999997,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_CK",
+      "nativeLengthMm": 37.20000000000002,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_CKn",
+      "nativeLengthMm": 37.20000000000002,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A10",
+      "nativeLengthMm": 37.06680626452497,
+      "standardThroughVias": 4
+    },
+    {
+      "name": "DDR_A12",
+      "nativeLengthMm": 37.20000000000008,
+      "standardThroughVias": 3
+    },
+    {
+      "name": "DDR_A1",
+      "nativeLengthMm": 37.20000000000007,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A11",
+      "nativeLengthMm": 37.20000000000003,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A14",
+      "nativeLengthMm": 37.200000000000024,
+      "standardThroughVias": 0
+    },
+    {
+      "name": "DDR_D14",
+      "nativeLengthMm": 33.999999999999986,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D15",
+      "nativeLengthMm": 33.99999999999999,
+      "standardThroughVias": 4
+    },
+    {
+      "name": "DDR_D3",
+      "nativeLengthMm": 33.999999999999986,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_D5",
+      "nativeLengthMm": 34.00000000000001,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_BA1",
+      "nativeLengthMm": 37.20000000000003,
+      "standardThroughVias": 3
+    },
+    {
+      "name": "DDR_A4",
+      "nativeLengthMm": 37.2,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_A6",
+      "nativeLengthMm": 37.20000000000002,
+      "standardThroughVias": 3
+    },
+    {
+      "name": "DDR_A8",
+      "nativeLengthMm": 37.20000000000005,
+      "standardThroughVias": 2
+    },
+    {
+      "name": "DDR_CKE",
+      "nativeLengthMm": 37.200000000000024,
+      "standardThroughVias": 2
+    }
+  ],
+  "fullDepthViaThicknessMm": 1.6,
+  "standardThroughVias": 104,
+  "independentKicadAndGerberChecksRequired": true,
+  "filledReferencesQualified": false,
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false
+}

@@ -43,3 +43,21 @@ KiCad connectivity pass. The default and the prior 49/49 evidence remain frozen.
 Power/reference copper, peripheral routing, electrical timing and shell fit remain
 unfinished. `fabricationReady` is false. The earlier three-pairs entry without
 `safe` was rejected for manufacturing clearance and must not be promoted.
+
+## DDR native skew cleared (2026-10-06)
+
+The latest checked continuation is
+`experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx`.
+Read `cloud/DDR_ZERO_SKEW_2026-10-06.md` and
+`checks/integrated/g350-ram90-zero-skew/summary.json`.
+Fresh editable-source replay has 49/49 DDR connections, zero native length/skew
+violations, zero physical/manufacturing errors and zero all-layer shorts.
+Independent KiCad verifies all 49 connections with no ignored checks/exclusions.
+All 280 placements, RAM at 90 degrees and four layers are retained; about 60% of
+planar DDR copper uses Inner1/Inner2. Native pair bootstrap and checked manual
+repairs are archived. The old default and all older evidence remain frozen.
+This clears the native skew milestone, not full electrical timing or fabrication:
+power/reference copper, nominal/package/via timing, impedance/return paths,
+peripherals, Linux and measured original-shell fit remain unqualified.
+`fabricationReady` stays false. Continue this newest checked entry; older timing
+sections describe preserved historical checkpoints.

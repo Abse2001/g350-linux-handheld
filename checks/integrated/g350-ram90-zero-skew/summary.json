@@ -1,0 +1,210 @@
+{
+  "status": "PASS_SCOPED_49_DDR_NATIVE_LENGTH_PHYSICAL_SHORTS_AND_KICAD_CONNECTIVITY",
+  "entry": "experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
+  "sourceCircuitSha256": "cff9b16ea1e265a304765a74b2a930412fcaf867654512e3405c18c12c175a17",
+  "sourceEvidenceArchive": {
+    "path": "checks/integrated/g350-ram90-zero-skew/source-replay-evidence.tar.gz",
+    "sha256": "78f2edd701c28d9ac018c4bfdfb43c0b5df4d374f75f918f4bf90fcbf62160b9"
+  },
+  "routingTrialsArchive": {
+    "path": "checks/integrated/g350-ram90-zero-skew/routing-trials.tar.gz",
+    "sha256": "08bb8cd4be30f509659638aa8e9c688e6632cfb135a3cd4b7f7db26f220b4bfa"
+  },
+  "connectedDdrSignals": 49,
+  "requiredDdrSignals": 49,
+  "nativeLengthSkewFailures": 0,
+  "nativePhysicalErrors": 0,
+  "manufacturingViaTrackClearanceErrors": 0,
+  "allLayerGerberShorts": 0,
+  "kicadManufacturingErrors": 0,
+  "kicadIgnoredChecks": 0,
+  "kicadPerItemExclusions": 0,
+  "kicadWarnings": 602,
+  "reportedKicadUnconnectedItems": 499,
+  "kicadUnconnectedItemsMayBeCapped": true,
+  "sourceErrorCounts": {
+    "pcb_port_not_connected_error": 881,
+    "pcb_trace_missing_error": 70
+  },
+  "componentPlacementPreserved": true,
+  "components": 280,
+  "copperLayers": 4,
+  "ramRotationDegrees": 90,
+  "standardThroughVias": 104,
+  "viaLandMm": 0.4572,
+  "viaDrillMm": 0.254,
+  "traceWidthMm": 0.1016,
+  "copperClearanceMm": 0.1016,
+  "groups": [
+    {
+      "name": "DDR_BYTE0",
+      "limitMm": 0.635,
+      "skewMm": 3.552713678800501e-14,
+      "members": 11,
+      "minNativeLengthMm": 33.99999999999997,
+      "maxNativeLengthMm": 34.00000000000001
+    },
+    {
+      "name": "DDR_BYTE1",
+      "limitMm": 0.635,
+      "skewMm": 4.973799150320701e-14,
+      "members": 11,
+      "minNativeLengthMm": 33.99999999999998,
+      "maxNativeLengthMm": 34.00000000000003
+    },
+    {
+      "name": "DDR_COMMAND_CLOCK",
+      "limitMm": 0.635,
+      "skewMm": 0.13319373547517444,
+      "members": 26,
+      "minNativeLengthMm": 37.06680626452497,
+      "maxNativeLengthMm": 37.200000000000145
+    },
+    {
+      "name": "DDR_DQS0_PAIR",
+      "limitMm": 0.127,
+      "skewMm": 0,
+      "members": 2,
+      "minNativeLengthMm": 33.99999999999999,
+      "maxNativeLengthMm": 33.99999999999999
+    },
+    {
+      "name": "DDR_DQS1_PAIR",
+      "limitMm": 0.127,
+      "skewMm": 7.105427357601002e-15,
+      "members": 2,
+      "minNativeLengthMm": 33.99999999999999,
+      "maxNativeLengthMm": 34
+    },
+    {
+      "name": "DDR_CK_PAIR",
+      "limitMm": 0.127,
+      "skewMm": 0,
+      "members": 2,
+      "minNativeLengthMm": 37.20000000000002,
+      "maxNativeLengthMm": 37.20000000000002
+    }
+  ],
+  "nativeBusLanesBootstrap": {
+    "scope": "Three differential pairs, six complete signals",
+    "solved": true,
+    "execution": {
+      "path": "dist/g350-ram90-native-seeded-pairs-bottom-clock-01/execution.json",
+      "sha256": "3a93ab6d3927163ba84becb2d500a68163ddbe92f0aebdf2fda405cb565e5c5e"
+    },
+    "manualRoutingAndTuningRetained": true
+  },
+  "planarLengthPerLayerMm": {
+    "top": 293.7848134828451,
+    "inner1": 453.6303308389752,
+    "inner2": 490.0629463849378,
+    "bottom": 336.50003787919576
+  },
+  "innerPlanarLengthPercent": 59.9559333185727,
+  "fullDepthViaThicknessMm": 1.6,
+  "defaultChanged": false,
+  "filledReferencesQualified": false,
+  "fullElectricalTimingQualified": false,
+  "nominalAllSignalsQualified": false,
+  "peripheralRoutingComplete": false,
+  "originalShellFitVerified": false,
+  "fabricationReady": false,
+  "evidence": [
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/build.log",
+      "sha256": "406f0547d934cb6d2cb7504378555f1439cda63f210f9b379d0fea27762dac66"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/check-am3352-kicad-ddr-connectivity.py.executed",
+      "sha256": "1610638f37449c43e2a69e6b4023df916031176d102513f407d58234b44d77da"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/ddr-connectivity.json",
+      "sha256": "dfea45f283666b43378e9f5955a2c19339b91563e93786a511410e7d64890329"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/ddr49-four-layer.png",
+      "sha256": "d3254fb2142c5a18363c1571349610fdfea852bf7adcd5c12d16d391e2377e2d"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/enable-g350-kicad-checks.mjs.executed",
+      "sha256": "4ef3bd4964aed61ec6f921c3fb14c4f57ad6c1be138a578e8343176a1f383f26"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/execution.json",
+      "sha256": "9417d357e855625329386006d786f420a719810e62a50447946346b7aa6881a6"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/export.log",
+      "sha256": "3259177f481d1809f8bec86347e5f6ad39decf4da9bbfd92660a09969d4ceb84"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/gerber-shorts.log",
+      "sha256": "d631608b8047a06bfa3b06c1b620f5d090a29f126040ee64959df38c0566bf52"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/kicad-adapter.log",
+      "sha256": "e09b3d0be5ddb5b43cc4f9f435e4c4d7490b3f2cce79ed100296b86ce731cf71"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/kicad-defaults-drc.json",
+      "sha256": "b108e69e7a1193c5c8c29670b9a090ea8fa6a40ae5f25614096dfdf6105414f0"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/kicad-defaults-drc.log",
+      "sha256": "5374640b1d874ed93dee5854521033db070d0faab5a285c65adcbb645608f06a"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/kicad-drc.json",
+      "sha256": "25812d1d93e3a3971b0f26b63ac9a5ce2252e8f43339183af29a823654e6c12c"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/kicad-drc.log",
+      "sha256": "8995808e6d2f5714e951a1fc1bdf765c45f4e4aa360a161b0c78470024def507"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/kicad-rule-audit.json",
+      "sha256": "108ada53071dfb555cc9605fed99a6beca919b521aefb5a2bad23c64d0783a86"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/native-qualification.json",
+      "sha256": "614e03599b2be93d27731c11e0dc60134b736f7c21b92591e30d233d4f82e2df"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/prepare-am3352-kicad.mjs.executed",
+      "sha256": "7e41b5d9287553d4cfcedca87638bafc9a63c8a0589a3dd227c9eadf18fe3403"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/qualify-g350-ram90-ddr-native.mjs.executed",
+      "sha256": "471f03b24339fb079e242bdabe82e72221f80a81b1f90d8cba8ac0e44f44e2e3"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/render-g350-ddr-layers.py.executed",
+      "sha256": "3aebbf9885efe602570adb1fcedefd5bf6ca53eb1de63d082951f47cfb36da34"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/result.json",
+      "sha256": "819e8a251f8a75979a409265f2d2e0e0c3c9f08dba3ce5225eb6b84f236b9d36"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/routing-trials.tar.gz",
+      "sha256": "08bb8cd4be30f509659638aa8e9c688e6632cfb135a3cd4b7f7db26f220b4bfa"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/source-replay-evidence.tar.gz",
+      "sha256": "78f2edd701c28d9ac018c4bfdfb43c0b5df4d374f75f918f4bf90fcbf62160b9"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/summarize-g350-ram90-zero-skew.mjs.executed",
+      "sha256": "7601c1d37bc1a8d14582be4ca312cf3e307e7338da48caa22af370147a11e94c"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/trial-archive-files.txt",
+      "sha256": "a9be9eb1d684cbe8ed660ac4d1a0df754fd8b944a8c858eb9fe8454daade94bd"
+    },
+    {
+      "path": "checks/integrated/g350-ram90-zero-skew/trial-archive-roots.json",
+      "sha256": "33bbd9dc481ae88d1057cbd3eecb9a001be7cf1ee8e81e0d698a18b3752c23db"
+    }
+  ]
+}

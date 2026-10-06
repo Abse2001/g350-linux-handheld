@@ -1,0 +1,53 @@
+{
+  "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+  "code": 1,
+  "signal": null,
+  "forcedTimeout": false,
+  "selectedPhaseFinished": true,
+  "selectedPhaseCompletion": "  phase 1/1 \"G350_RAM90_ZERO_SKEW_REPLAY\" done: routed_traces=49, jumpers=0, errors=0, elapsed=67.4s",
+  "freshCompiledSource": true,
+  "sourceDefinitionsUnchanged": true,
+  "elapsedSeconds": 366.965803368,
+  "execution": {
+    "path": "dist/g350-ram90-zero-skew-source-01/execution.json",
+    "sha256": "9417d357e855625329386006d786f420a719810e62a50447946346b7aa6881a6"
+  },
+  "log": {
+    "path": "dist/g350-ram90-zero-skew-source-01/build.log",
+    "sha256": "406f0547d934cb6d2cb7504378555f1439cda63f210f9b379d0fea27762dac66"
+  },
+  "artifacts": [
+    {
+      "path": "dist/g350-ram90-zero-skew-source-01/board.meta.json",
+      "sha256": "16784b84db8ce051d304c7f05a801a97a69b2d2fc0745f4114f4265c1d0c1878"
+    },
+    {
+      "path": "dist/g350-ram90-zero-skew-source-01/compiled.circuit.json",
+      "sha256": "cff9b16ea1e265a304765a74b2a930412fcaf867654512e3405c18c12c175a17"
+    },
+    {
+      "path": "dist/g350-ram90-zero-skew-source-01/phase-0.input.simple-route.json",
+      "sha256": "ccf3837648b95986e918cdcfa32f54cd8c2bbc591dc87f6ef248ec8dc71c852b"
+    },
+    {
+      "path": "dist/g350-ram90-zero-skew-source-01/phase-0.output.traces.json",
+      "sha256": "7c67075526dfcf78e6a217924454a2f2fbe95d2ffcf8599a634d720d931d2bdf"
+    }
+  ],
+  "phases": [
+    {
+      "input": {
+        "path": "dist/g350-ram90-zero-skew-source-01/phase-0.input.simple-route.json",
+        "sha256": "ccf3837648b95986e918cdcfa32f54cd8c2bbc591dc87f6ef248ec8dc71c852b"
+      },
+      "connections": 49,
+      "fixedTraces": 0,
+      "physicalPads": 1257,
+      "innerPlanesReserved": false,
+      "signalPolicy": "four-ddr"
+    }
+  ],
+  "qualifiedNewDdrSignals": 0,
+  "fabricationReady": false,
+  "defaultChanged": false
+}
