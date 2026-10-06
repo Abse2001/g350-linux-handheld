@@ -1,7 +1,7 @@
 # G350 complete user-visible chat context
 
-Exported 2026-10-05T22:58:07.049794+00:00 from the original project task, starting 2026-10-01.
-All 1102 recorded human messages and visible assistant replies through
+Exported 2026-10-05T23:45:49.782756+00:00 from the original project task, starting 2026-10-01.
+All 1115 recorded human messages and visible assistant replies through
 this snapshot are included below in chronological order. The user's structured
 question answers are retained verbatim. Later messages from the transfer itself
 are recorded separately in the handoff status.
@@ -4751,3 +4751,55 @@ I’m using the OpenAI docs skill to check Codex cloud setup. I’ll also preser
 ## 1102. Assistant — 2026-10-05T22:54:52.478Z (commentary)
 
 The GitHub repository is accessible. I’m packaging the sources, routing history and frozen check files so cloud work can continue from the same state. The default board still has 11 of 49 DDR signals connected; the latest experiments and unfinished checks will be preserved separately.
+
+## 1103. Assistant — 2026-10-05T22:59:25.569Z (commentary)
+
+I recovered the full recorded user-visible chat and exported it to Markdown. I’m also preserving the generated routing files in verified archive parts. The Linux setup will include the pinned tscircuit packages, native DDR solver, KiCad and the scripts needed to check the board.
+
+## 1104. Assistant — 2026-10-05T23:05:16.658Z (commentary)
+
+The handoff now separates the checked default from the newer byte1 experiments. It also records a check that currently blocks their aggregate approval: generated KiCad settings ignore five rules. I’m preserving that failure, verifying the evidence archive, then committing and pushing the transfer.
+
+## 1105. Assistant — 2026-10-05T23:09:22.475Z (commentary)
+
+The archive passed verification for all 25,814 saved evidence files. A clean dependency install also loaded the native DDR solver and reproduced the reviewed checks patch. I’m committing the handoff now, then I’ll push it and create the cloud environment from that branch.
+
+## 1106. Assistant — 2026-10-05T23:11:01.769Z (commentary)
+
+The GitHub push is in progress. It includes the full routing history, about 630 MB compressed, so cloud work will retain the failed attempts and frozen checkpoints. I’m waiting for the remote branch to be confirmed before attaching it to the environment.
+
+## 1107. Assistant — 2026-10-05T23:12:48.281Z (commentary)
+
+The complete project is now pushed to GitHub on `codex/cloud-handoff`, and the remote commit matches locally. I’m creating the cloud environment with that branch, the setup script and the pinned upstream repositories.
+
+## 1108. Assistant — 2026-10-05T23:16:38.854Z (commentary)
+
+The environment can attach the official upstream repositories directly. The board, core, DDR lane solver, autorouter, checks and schemas are selected; I’m adding the final trace-linter dependency before starting setup.
+
+## 1109. Assistant — 2026-10-05T23:20:47.802Z (commentary)
+
+The cloud setup is running with all 12 repositories attached. It uses Debian 13, so I’m checking a KiCad installation path that preserves the board-checking tools. The handoff branch and full chat context are already available there.
+
+## 1110. Assistant — 2026-10-05T23:22:01.780Z (commentary)
+
+A G350 setup note went to “Set up tscircuit-autorouter” after the browser switched chats. Sorry—that was my mistake. I’m returning to the G350 setup and checking the destination before any further submission.
+
+## 1111. Assistant — 2026-10-05T23:24:21.272Z (commentary)
+
+The G350 setup has fetched the correct handoff branch. I’ve sent its Debian compatibility requirements to the exact G350 task and am waiting for Linux verification before publication. The PCB’s unfinished routing and fabrication status remain clearly recorded.
+
+## 1112. Assistant — 2026-10-05T23:27:24.442Z (commentary)
+
+KiCad 10.0.6 is installed in an isolated cloud tool container. The restored evidence, pinned packages, typecheck, shorts and provisional mechanical checks have passed in cloud. Setup is now testing fresh KiCad exports and connectivity tools before saving the reusable configuration.
+
+## 1113. Assistant — 2026-10-05T23:33:22.430Z (commentary)
+
+The cloud plane checker now passes for all 101 package power terminals, 119 through-vias and both filled reference planes. DDR connectivity is still 11/49. The remaining setup check is restoring the retained tool image for future tasks and saving the tested installation and startup instructions.
+
+## 1114. Assistant — 2026-10-05T23:39:03.559Z (commentary)
+
+Cloud setup is verified, and its Debian-compatible scripts and Linux report are pushed to GitHub. All 12 repository references and startup instructions are saved. I’m publishing “G350 AM3352 handheld” now so it can be used to continue the board.
+
+## 1115. Assistant — 2026-10-05T23:44:50.600Z (commentary)
+
+The G350 cloud environment is published, and its Linux tools and restored board files passed the setup checks. I’m saving the publication record and final handoff notes to GitHub. The PCB’s fabrication status remains unfinished.

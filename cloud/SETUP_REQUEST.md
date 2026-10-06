@@ -11,7 +11,8 @@ out before inspecting the project. The repository default branch is older.
 Read `AGENTS.md`, `docs/CLOUD_HANDOFF.md` and `design-status.json`. The complete
 recorded user-visible chat is in `docs/CHAT_CONTEXT.md`.
 
-Use Ubuntu Linux. Install/run `bash scripts/setup-cloud.sh` in the board repo.
+Setup is verified on Debian 13 with isolated official KiCad 10.0.6 tools; see
+`cloud/LINUX_VALIDATION.md`. Debian and Ubuntu setup are supported. Install/run `bash scripts/setup-cloud.sh` in the board repo.
 It restores all 25,814 hash-indexed evidence files, installs pinned packages,
 Node 25.6.1/Bun 1.3.14/KiCad 10, applies the reviewed native checks correction,
 checks out all eleven pinned upstream source references, and verifies typecheck,
@@ -37,5 +38,7 @@ the environment. Keep fabricationReady false. The current checked board is
 The latest seeded-strobe replay reports 13/49 but independent checks are pending.
 Whole-shell fit is unverified. Failed native byte1 outputs remain failed.
 
-Finish environment setup, present the verified report and make it ready to
-publish. The human has explicitly requested this transfer and project upload.
+The environment was published on 2026-10-06 after setup verification. See
+`cloud/transfer-status.json` and the publication screenshot. The human explicitly
+requested this transfer and project upload. A new platform board task has not yet
+been started or independently verified; use `cloud/CONTINUE_BOARD.md` to continue.

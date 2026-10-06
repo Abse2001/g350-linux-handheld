@@ -5,21 +5,22 @@
   "archiveCompressedBytes": 629778489,
   "allArchiveMembersHashVerified": true,
   "allArchivePartsUnderGithubSingleFileLimit": true,
-  "visibleChatMessages": 1102,
-  "chatSha256": "8fd1709d25368fbea468c2523633f428f4902285dc611bb5e369ef663c0ebbb7",
+  "visibleChatMessages": 1115,
+  "chatSha256": "b5a7d3beaaa64e78bf4a92647184da82a9ca2069d94fc0cfd3ec8df9f1393e90",
   "typecheckPassed": true,
   "isolatedNpmCiPassed": true,
   "cleanInstallReviewedPatchHashMatched": true,
   "cleanInstallCoreAndNativeBusLanesLoaded": true,
   "frozenCurrentBoardAndPackagePinsVerified": true,
   "shellScriptsSyntaxChecked": true,
-  "linuxCloudSetupExecuted": false,
+  "linuxCloudSetupExecuted": true,
   "fabricationReady": false,
   "notes": [
-    "Local verification used macOS Node 25.6.1; Ubuntu KiCad setup must be tested in cloud.",
+    "Local verification used macOS Node 25.6.1. Linux setup was subsequently verified on Debian 13 with KiCad 10.0.6; see cloud/LINUX_VALIDATION.md.",
     "Two dependency engine warnings request Node 24.x; the pinned Node 25.6.1 runtime loaded successfully locally.",
     "npm reports eight moderate audit issues; no automatic dependency rewrite was applied."
   ],
   "allElevenPinnedUpstreamCheckoutsVerified": true,
-  "cleanInstallAllLayerGerberShortsPassed": true
+  "cleanInstallAllLayerGerberShortsPassed": true,
+  "linuxCloudValidationReport": "cloud/LINUX_VALIDATION.md"
 }
