@@ -81,7 +81,7 @@ if os.environ.get('G350_NEGOTIATED_POWER_FIRST')=='1':
 if os.environ.get('G350_NEGOTIATED_DDR_FIRST')=='1':pending.sort(key=lambda n:n not in ddr_nets)
 max_attempts=int(os.environ.get('G350_NEGOTIATED_ATTEMPTS','600'))
 manifest=json.loads((root/'execution.json').read_text())
-for key in ['G350_NEGOTIATED_ONLY_OPEN','G350_NEGOTIATED_KEEP_VIAS','G350_NEGOTIATED_LOCAL_RIP','G350_NEGOTIATED_DDR_FIRST','G350_GRID_VIA_COST','G350_GRID_ESCAPE_MARGIN']:
+for key in ['G350_NEGOTIATED_ONLY_OPEN','G350_NEGOTIATED_KEEP_VIAS','G350_NEGOTIATED_LOCAL_RIP','G350_NEGOTIATED_DDR_FIRST','G350_NEGOTIATED_PROTECT_ALL_DDR','G350_GRID_VIA_COST','G350_GRID_ESCAPE_MARGIN']:
     manifest['routingParameters'][key]=os.environ.get(key)
 (root/'execution.json').write_text(json.dumps(manifest,indent=2)+'\n')
 while pending and len(events)<max_attempts:
@@ -91,7 +91,9 @@ while pending and len(events)<max_attempts:
     width=widths[net];restricted='XTAL_IN' in netlabel(net) or 'XTAL_DRIVE' in netlabel(net);usb='USB0_DP' in netlabel(net) or 'USB0_DM' in netlabel(net)
     ripups=set();added=0;reason=None
     rejected_access=np.zeros((4,h,w),dtype=np.bool_);clearance_retries=0
-    for iteration in range(150):
+    # A ground net can have nearly 300 separate pad groups before zone fill.
+    # Budget a real join for every required pad, plus clearance retries.
+    for iteration in range(max(150,len(required)+20)):
         groups=[ids for ids in components(net) if any(objects[i]['pid'] in required for i in ids)]
         if len(groups)<=1:break
         main,others=groups[0],groups[1:];target=unary_union([objects[i]['shape'] for i in main]);goal,centres=goal_for(main,net,width)
@@ -106,13 +108,15 @@ while pending and len(events)<max_attempts:
                         slices,mask=region
                         if inside is not None:mask=mask & (g['escape_mask'][slices] if inside else ~g['escape_mask'][slices])
                         for layer in o['layers']:blocked[layer][slices]|=mask
-        if os.environ.get('G350_NEGOTIATED_PROTECT_DDR')=='1' and net not in ddr_nets:
+        if os.environ.get('G350_NEGOTIATED_PROTECT_DDR')=='1' and (net not in ddr_nets or os.environ.get('G350_NEGOTIATED_PROTECT_ALL_DDR')=='1'):
             for o in objects:
-                if o.get('mutable') and o['net'] in ddr_nets:
-                    region=g['pixels'](o['shape'].buffer(.1016+width/2+.001))
-                    if region:
-                        slices,mask=region
-                        for layer in o['layers']:blocked[layer][slices]|=mask
+                if o.get('mutable') and o['net'] in ddr_nets and o['net']!=net:
+                    for clearance_width,inside in [(width,False),(g['escape_widths'][net],True)] if g['can_neck'][net] and not restricted and not usb else [(width,None)]:
+                        region=g['pixels'](o['shape'].buffer(.1016+clearance_width/2+.001))
+                        if region:
+                            slices,mask=region
+                            if inside is not None:mask=mask & (g['escape_mask'][slices] if inside else ~g['escape_mask'][slices])
+                            for layer in o['layers']:blocked[layer][slices]|=mask
         if restricted:blocked[1:]=True
         if usb:blocked[1:3]=True
         goal&=~blocked

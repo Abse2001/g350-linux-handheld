@@ -135,3 +135,32 @@ actual seed, execution inputs and native failures; it is not a complete board.
 The full checker now includes the pinned `checkDanglingTraces` check. Continuous
 clearance failures retain obstacle diagnostics and reject the failed grid access
 before retrying; clearances and source constraints are unchanged.
+
+## Explicit ground backbone verified (2026-10-07)
+
+`dist/g350-physical-ground-backbone-10/centered.circuit.json` (SHA256
+`692f93762db48d97308d977ac947a714cdcfeacac3fd587c214dfbd31790d87f`)
+connects all 296 required GND pads with actual traces and standard through-vias.
+The router used an empty ground-polygon input, and the independent KiCad export
+contains no ground pours. Numeric connectivity verifies all 296 pads even without
+filled planes. All ten native copper checks, strict manufacturing, pad/pad,
+source widths, layers/board checks and dangling checks pass. Independent KiCad
+manufacturing errors are zero, with no ignored checks or exclusions. The seed
+has only 13/217 required connections complete overall; its other failures remain
+explicit and are not waived. This is a ground milestone, not a complete board.
+
+Its ground wire/via copper is fixed in
+`dist/g350-full-board-physical-ground-recover-11/`, together with the independently
+checked reset/reference/calibration paths and six DDR pair paths. Recovery uses
+the saved signal copper and actual pad/wire/via connectivity; no stale filled
+plane participates in this model. Already connected DDR paths are protected
+against subsequent DDR rip-up. The larger ground net now gets enough iterations
+to join every required pad, rather than the old 150-join ceiling. Full signal
+recovery, fresh editable replay, final fills, all-layer shorts and DDR matching
+remain required. Native matching does not qualify package/via timing or PDN.
+
+`physical-ground-backbone.tar.gz` and its manifest preserve the exact source,
+executed workers, empty plane input, native reports and independent unfilled
+board/checks. `critical-access-independent.tar.gz` retains the earlier fresh
+four-fill seed and rejected default-project export, with the audited rerun
+clearly identified. Every archive member has a verified SHA256.
