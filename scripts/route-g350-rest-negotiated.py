@@ -80,8 +80,9 @@ if os.environ.get('G350_NEGOTIATED_POWER_FIRST')=='1':
     pending.sort(key=lambda n:(n==ground_net,0 if widths[n]>.15 else (1 if n in ddr_nets else 2),-len({p['pcb_port_id'] for c in connections[n] for p in c['pointsToConnect']})))
 if os.environ.get('G350_NEGOTIATED_DDR_FIRST')=='1':pending.sort(key=lambda n:n not in ddr_nets)
 max_attempts=int(os.environ.get('G350_NEGOTIATED_ATTEMPTS','600'))
+ground_recovery_requested=not os.environ.get('G350_NEGOTIATED_NETS') or 'GND' in os.environ['G350_NEGOTIATED_NETS'].split(',')
 manifest=json.loads((root/'execution.json').read_text())
-for key in ['G350_NEGOTIATED_ONLY_OPEN','G350_NEGOTIATED_KEEP_VIAS','G350_NEGOTIATED_LOCAL_RIP','G350_NEGOTIATED_DDR_FIRST','G350_NEGOTIATED_PROTECT_ALL_DDR','G350_NEGOTIATED_MUTABLE_PENALTY','G350_NEGOTIATED_HISTORY_INCREMENT','G350_NEGOTIATED_NO_NEW_ESCAPE_VIAS','G350_NEGOTIATED_ESCAPE_VIA_CHANNEL','G350_NEGOTIATED_DYNAMIC_GROUND_PROXY','G350_GRID_VIA_COST','G350_GRID_ESCAPE_MARGIN','G350_GRID_EXPANSION_LIMIT']:
+for key in ['G350_NEGOTIATED_ONLY_OPEN','G350_NEGOTIATED_KEEP_VIAS','G350_NEGOTIATED_LOCAL_RIP','G350_NEGOTIATED_DDR_FIRST','G350_NEGOTIATED_PROTECT_ALL_DDR','G350_NEGOTIATED_MUTABLE_PENALTY','G350_NEGOTIATED_HISTORY_INCREMENT','G350_NEGOTIATED_NO_NEW_ESCAPE_VIAS','G350_NEGOTIATED_ESCAPE_VIA_CHANNEL','G350_NEGOTIATED_DYNAMIC_GROUND_PROXY','G350_NEGOTIATED_PROTECT_GROUND_ADDITIONS','G350_NEGOTIATED_PROTECT_RECOVERED','G350_GRID_VIA_COST','G350_GRID_ESCAPE_MARGIN','G350_GRID_EXPANSION_LIMIT']:
     manifest['routingParameters'][key]=os.environ.get(key)
 (root/'execution.json').write_text(json.dumps(manifest,indent=2)+'\n')
 mutable_penalty=int(os.environ.get('G350_NEGOTIATED_MUTABLE_PENALTY','100'))
@@ -169,6 +170,12 @@ while pending and len(events)<max_attempts:
         for o in objects:
             if o.get('mutable') and o['net']==net and o['kind']=='via':paint_block(own_holes,o['shape'].buffer(.508-.4572/2+.001))
         via&=~own_holes
+        if os.environ.get('G350_NEGOTIATED_KEEP_VIAS')=='1':
+            retained_foreign_lands=np.zeros((h,w),dtype=np.bool_)
+            for o in objects:
+                if o.get('mutable') and o['net']!=net and o['kind']=='via':
+                    paint_block(retained_foreign_lands,o['shape'].buffer(.15+.4572/2+.001))
+            via&=~retained_foreign_lands
         # A through-via occupies all four layers. Wire-step penalties do not
         # price its full land/drill footprint, so keep new via sites clear of
         # existing mutable copper rather than repeatedly ripping up four nets.
@@ -337,20 +344,25 @@ while pending and len(events)<max_attempts:
         extra.append(dict(type='pcb_trace',pcb_trace_id=tid,source_trace_id=st_id,connection_name=owner,route=route,subcircuit_id='subcircuit_source_group_0'))
         for p in route:
             if p['route_type']=='via':extra.append(dict(type='pcb_via',pcb_via_id=root.name.replace('-','_')+'_via_'+str(next(serial)),pcb_trace_id=tid,source_trace_id=st_id,x=p['x'],y=p['y'],outer_diameter=.4572,hole_diameter=.254,layers=layers,from_layer='top',to_layer='bottom',subcircuit_id='subcircuit_source_group_0'))
+        if net==ground_net and os.environ.get('G350_NEGOTIATED_PROTECT_GROUND_ADDITIONS')=='1':
+            # Keep each new physical ground stitch while signal routes recover,
+            # even when another ground island still needs a connection.
+            for o in planned:
+                o['mutable']=False;g['insert'](o)
         added+=1
         save()
         print(json.dumps(dict(stage='net_join',net=netlabel(net),added=added,previousPadGroups=len(groups),seconds=time.monotonic()-begun)),flush=True)
     groups=[ids for ids in components(net) if any(objects[i]['pid'] in required for i in ids)];complete=len(groups)<=1
     if complete:failed.discard(net)
     else:failed.add(net)
-    if complete and net==ground_net and os.environ.get('G350_NEGOTIATED_PROTECT_GROUND_AFTER')=='1':
+    if complete and ((net==ground_net and os.environ.get('G350_NEGOTIATED_PROTECT_GROUND_AFTER')=='1') or os.environ.get('G350_NEGOTIATED_PROTECT_RECOVERED')=='1'):
         # Preserve newly connected ground escapes while other nets recover.
         # Paint them into the same hard-clearance model as the fixed seed.
         for o in objects:
-            if o['net']==ground_net and o.get('mutable'):
+            if o['net']==net and o.get('mutable'):
                 o['mutable']=False;g['insert'](o)
     checkpoint_model({net}|ripups)
-    if os.environ.get('G350_NEGOTIATED_DYNAMIC_GROUND_PROXY')=='1' and model_counts[ground_net]>1 and ground_net not in pending:
+    if ground_recovery_requested and os.environ.get('G350_NEGOTIATED_DYNAMIC_GROUND_PROXY')=='1' and model_counts[ground_net]>1 and ground_net not in pending:
         pending.append(ground_net)
     event=dict(net=netlabel(net),complete=complete,padGroups=len(groups),added=added,rippedNets=[netlabel(n) for n in sorted(ripups)],reason=reason,pending=len(pending));events.append(event);save();print(json.dumps(event),flush=True)
     if not pending and failed and rounds<3:

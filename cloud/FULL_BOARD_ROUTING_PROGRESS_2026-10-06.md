@@ -1,3 +1,16 @@
+# Newest routing milestone (2026-10-07)
+
+This document preserves the earlier partial and rejected trials. The latest
+checked continuation is now `cloud/FULL_BOARD_CONNECTED_2026-10-07.md` and
+`experiments/am3352-g350-full-board-ground-joined-replay.circuit.tsx`. Fresh
+editable source and independent checks verify 217/217 connections, all 49 DDR
+signals and all 298 ground ports. Native checks report only three whole-DDR-bus
+skew failures; KiCad error categories/unconnected items and all-layer Gerber
+shorts are zero, with no ignored rules or exclusions. The complete build exits
+1 for DDR matching. Fabrication readiness remains false. Older counts below do
+not describe the newest candidate; their evidence is preserved in the indexed
+ground-recovery and connected-routing archives linked from the new summary.
+
 # Whole-board routing progress — not a fabrication release
 
 The checked DDR-only continuation remains

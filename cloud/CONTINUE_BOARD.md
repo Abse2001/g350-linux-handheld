@@ -1,3 +1,17 @@
+# Latest whole-board continuation (2026-10-07)
+
+The user requested the rest of the rotated-RAM board routed. The newest checked
+entry is `experiments/am3352-g350-full-board-ground-joined-replay.circuit.tsx`.
+Read `cloud/FULL_BOARD_CONNECTED_2026-10-07.md` and
+`checks/integrated/g350-full-board-progress/summary.json` first. Fresh source and
+independent checks verify 217/217 connections, all 49 DDR signals and 298 ground
+ports; native connectivity/physical checks and all-rule KiCad error categories
+are zero. All-layer shorts are zero. Three whole-DDR-bus skew failures still
+make the complete build exit 1. Restore its hash-indexed archive as documented;
+keep the default, DDR-only zero-skew evidence and failed trials frozen. Continue
+whole-board DDR matching and remaining electrical, mechanical and release gates.
+`fabricationReady` stays false. Older instructions below are historical context.
+
 # Continue the G350 board in cloud
 
 Read `AGENTS.md`, `docs/CLOUD_HANDOFF.md`, `design-status.json` and the original

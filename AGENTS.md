@@ -85,14 +85,20 @@ sections describe preserved historical checkpoints.
 
 ## Whole-board routing trial (2026-10-07)
 
-The user subsequently requested the rest of the board routed. Read
-`cloud/FULL_BOARD_ROUTING_PROGRESS_2026-10-06.md` and
-`checks/integrated/g350-full-board-progress/summary.json` for the explicitly
-partial checkpoint: independent numeric connectivity is 216/217, with ground
-incomplete; native whole-DDR-bus matching also needs repair. The candidate
-replay entry and caches are experiments, not a replacement for the checked
-zero-skew DDR-only entry or the frozen default. Restore archived evidence and
-continue the newest documented routing trial before promoting any result.
+The user subsequently requested the rest of the board routed. Continue
+`experiments/am3352-g350-full-board-ground-joined-replay.circuit.tsx` and read
+`cloud/FULL_BOARD_CONNECTED_2026-10-07.md` plus
+`checks/integrated/g350-full-board-progress/summary.json`. Fresh editable source
+and independent fresh-fill numeric checks now verify 217/217 connections,
+49/49 DDR signals and all 298 ground ports. Source and fresh-filled native
+checks report only three whole-DDR-bus skew failures; all other native checks
+are zero. KiCad has zero clearance errors and unconnected items, with no ignored
+rules or exclusions; all-layer Gerber shorts are zero. The full build still
+exits 1 for DDR matching, and warnings/electrical/mechanical gates remain open.
+The entry and caches are experiments, not a fabrication release or a replacement
+for the preserved zero-skew DDR-only entry or the frozen default. Restore the
+latest evidence with `scripts/restore-g350-routing-evidence.py` and the manifest
+named in the new report; the prior progress document preserves rejected trials.
 Run `bash scripts/setup-g350-routing-tools.sh` after `source cloud/env.sh` to
 reconstruct the hash-pinned isolated geometry tools and verified grid engine.
 Use fresh fills and numeric pad checks; a stale filled-plane router model does
