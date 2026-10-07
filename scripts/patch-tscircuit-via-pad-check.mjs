@@ -2,13 +2,13 @@ import assert from 'node:assert/strict'
 import {createHash} from 'node:crypto'
 import {readFileSync,writeFileSync} from 'node:fs'
 
-// @tscircuit/checks 0.0.240 exposes the board's separate via-to-pad rule,
+// @tscircuit/checks 0.0.242 exposes the board's separate via-to-pad rule,
 // but checkViaPadClearance incorrectly reads only the SMT pad-to-pad rule.
 // Correct that lookup; retain all checks, the explicit override, and the
 // original SMT-rule fallback for boards without a via-specific rule.
 const root='node_modules/@tscircuit/checks'
 const pkg=JSON.parse(readFileSync(`${root}/package.json`,'utf8'))
-assert.equal(pkg.version,'0.0.240','Review the upstream fix before applying this patch to another release')
+assert.equal(pkg.version,'0.0.242','Review the upstream fix before applying this patch to another release')
 const path=`${root}/dist/index.js`
 const original='const requiredClearance = minClearance ?? getBoardDrcValue(board, "min_pad_edge_to_pad_edge_clearance") ?? jlcMinTolerances.min_pad_edge_to_pad_edge_clearance;'
 const corrected='const requiredClearance = minClearance ?? getBoardDrcValue(board, "min_via_edge_to_pad_edge_clearance") ?? getBoardDrcValue(board, "min_pad_edge_to_pad_edge_clearance") ?? jlcMinTolerances.min_pad_edge_to_pad_edge_clearance;'

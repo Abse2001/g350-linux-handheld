@@ -94,22 +94,22 @@
     "check:latest-tscircuit-upgrade": "node scripts/check-am3352-ddr-active-source.mjs dist/index/circuit.json checks/integrated/tscircuit-upgrade-active-equivalence.json && tsci check shorts dist/index/circuit.json --mode gerber --layer all"
   },
   "devDependencies": {
-    "@tscircuit/capacity-autorouter": "0.0.959",
-    "@tscircuit/checks": "0.0.240",
-    "@tscircuit/cli": "0.1.2251",
-    "@tscircuit/core": "0.0.2095",
-    "circuit-json": "0.0.517",
+    "@tscircuit/capacity-autorouter": "0.0.962",
+    "@tscircuit/checks": "0.0.242",
+    "@tscircuit/cli": "0.1.2257",
+    "@tscircuit/core": "0.0.2106",
+    "circuit-json": "0.0.520",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "three": "0.179.1",
-    "tscircuit": "0.0.2745",
+    "tscircuit": "0.0.2757",
     "typescript": "5.9.3",
-    "@tscircuit/props": "0.0.689"
+    "@tscircuit/props": "0.0.695"
   },
   "author": "abse",
   "overrides": {
-    "@tscircuit/checks": "0.0.240",
-    "@tscircuit/core": "0.0.2095",
-    "@tscircuit/props": "0.0.689"
+    "@tscircuit/checks": "0.0.242",
+    "@tscircuit/core": "0.0.2106",
+    "@tscircuit/props": "0.0.695"
   }
 }

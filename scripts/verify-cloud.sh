@@ -7,7 +7,8 @@ node scripts/verify-cloud-state.mjs
 npm run typecheck
 scripts/kicad-python.sh -c 'import pcbnew, wx; print("KiCad Python:", pcbnew.GetBuildVersion()); print("wx:", wx.version())'
 kicad-cli version
-node_modules/.bin/tsci check shorts dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json --mode gerber --layer all > checks/cloud/current-shorts.log 2>&1
+shorts_directory=$(mktemp -d "$PWD/checks/cloud/current-shorts.XXXXXX")
+bash scripts/check-g350-shorts-isolated.sh dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json "$shorts_directory" > checks/cloud/current-shorts.log 2>&1
 # Keep frozen handoff evidence intact while retaining the fresh result.
 backup=$(mktemp)
 cp checks/mechanical/g350-current-envelope-check.json "$backup"

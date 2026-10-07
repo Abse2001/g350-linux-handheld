@@ -4935,21 +4935,23 @@
     "scope": "Scoped native and independent checks on the current shaped power/strobe replay; historical routed fixtures were not rebuilt."
   },
   "currentToolchain": {
-    "tscircuit": "0.0.2744",
-    "core": "0.0.2086",
-    "capacityAutorouter": "0.0.958",
-    "cli": "0.1.2237",
-    "circuitJson": "0.0.515",
+    "tscircuit": "0.0.2757",
+    "core": "0.0.2106",
+    "capacityAutorouter": "0.0.962",
+    "cli": "0.1.2257",
+    "circuitJson": "0.0.520",
     "typecheckPassed": true,
     "currentPlacementSourceVerified": true,
     "historicalRoutedFixturesRebuilt": false,
-    "checks": "0.0.239",
+    "checks": "0.0.242",
     "currentRoutingSourceVerified": true,
     "nativeChecksLocalCorrections": [
       "Via-to-pad clearance reads the separate declared via rule.",
       "Degenerate copper-contact edges use point distance; a removed real CPU ground trace still fails connectivity."
     ],
-    "latestNativeRoutingExecution": "dist/g350-dqs0-shaped-corridor-repair/execution.json"
+    "latestNativeRoutingExecution": "dist/g350-full-board-ddr-shortcut-source-78/execution.json",
+    "props": "0.0.695",
+    "scope": "Latest runtime and checked whole-board experiment; default circuit and frozen source evidence remain unchanged"
   },
   "previousCoreUpgrade": {
     "path": "checks/integrated/tscircuit-core-2085/final-summary.json",
@@ -5143,16 +5145,32 @@
     "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md"
   },
   "currentContinuation": {
-    "stage": "ROTATED_RAM_DDR49_NATIVE_SKEW_CLEARED_FULL_ELECTRICAL_QUALIFICATION_PENDING",
-    "entry": "experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
-    "reason": "Fresh editable-source replay retains 49 DDR connections with zero native length/skew/physical violations, zero all-layer shorts and independent KiCad manufacturing/connectivity pass.",
+    "stage": "WHOLE_BOARD_CONNECTED_DDR_SHORTCUT_PROGRESS_THREE_BUS_ERRORS_REMAIN",
+    "entry": "experiments/am3352-g350-full-board-ddr-shortcut-replay.circuit.tsx",
+    "report": "cloud/DDR_SHORTCUT_PROGRESS_2026-10-07.md",
+    "connectedConnections": 217,
+    "requiredConnections": 217,
+    "connectedDdrSignals": 49,
+    "nativeBusSkewFailures": 3,
     "remaining": [
-      "Filled power/reference copper",
-      "Package/via delay, nominal lengths for every signal, stackup impedance, class spacing and return paths",
-      "Power and peripheral routing",
-      "Footprint/stencil qualification, Linux bring-up and measured original-shell fit"
+      "Whole-board DDR bus length matching",
+      "157 dangling-copper warnings",
+      "Manufacturer stackup, impedance, package/via delays, nominal timing and return paths",
+      "Power/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
-    "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md",
     "fabricationReady": false
+  },
+  "runtimeUpgrade20261007": {
+    "versions": {
+      "tscircuit": "0.0.2757",
+      "@tscircuit/core": "0.0.2106",
+      "@tscircuit/props": "0.0.695",
+      "@tscircuit/checks": "0.0.242",
+      "@tscircuit/cli": "0.1.2257",
+      "@tscircuit/capacity-autorouter": "0.0.962",
+      "circuit-json": "0.0.520"
+    },
+    "checksSha256": "1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc",
+    "report": "cloud/RUNTIME_UPGRADE_2026-10-07.md"
   }
 }

@@ -1,0 +1,160 @@
+{
+  "status": "PASS_LATEST_RUNTIME_GEOMETRY_EQUIVALENCE_WITH_EXISTING_THREE_TIMING_FAILURES",
+  "registryVersions": {
+    "tscircuit": "0.0.2757",
+    "@tscircuit/core": "0.0.2106",
+    "@tscircuit/props": "0.0.695",
+    "@tscircuit/checks": "0.0.242",
+    "@tscircuit/cli": "0.1.2257",
+    "@tscircuit/capacity-autorouter": "0.0.962",
+    "circuit-json": "0.0.520"
+  },
+  "comparedTypes": [
+    "cad_component",
+    "pcb_board",
+    "pcb_component",
+    "pcb_connector_not_in_accessible_orientation_warning",
+    "pcb_copper_pour",
+    "pcb_courtyard_circle",
+    "pcb_courtyard_outline",
+    "pcb_courtyard_rect",
+    "pcb_debug_object",
+    "pcb_fabrication_note_path",
+    "pcb_fabrication_note_text",
+    "pcb_hole",
+    "pcb_keepout",
+    "pcb_note_rect",
+    "pcb_plated_hole",
+    "pcb_port",
+    "pcb_silkscreen_circle",
+    "pcb_silkscreen_path",
+    "pcb_silkscreen_text",
+    "pcb_smtpad",
+    "pcb_solder_paste",
+    "pcb_trace",
+    "pcb_via",
+    "source_board",
+    "source_bus",
+    "source_component",
+    "source_component_internal_connection",
+    "source_group",
+    "source_net",
+    "source_no_ground_pin_defined_warning",
+    "source_no_power_pin_defined_warning",
+    "source_port",
+    "source_refdes_convention_warning",
+    "source_trace"
+  ],
+  "allPhysicalAndLogicalRecordsExactlyPreserved": true,
+  "excludedMetadataType": "source_project_metadata",
+  "buildResult": {
+    "status": "NATIVE_TSCI_PHASE_BUILD_FAILED",
+    "code": 1,
+    "signal": null,
+    "forcedTimeout": false,
+    "selectedPhaseFinished": true,
+    "selectedPhaseCompletion": "  phase 1/3 \"G350_FULL_BOARD_DDR_CANDIDATE_REPLAY\" done: routed_traces=49, jumpers=0, errors=0, elapsed=80.0s\n  phase 2/3 \"G350_REST_SAVED_REPLAY\" done: routed_traces=699, jumpers=0, errors=0, elapsed=659ms",
+    "freshCompiledSource": true,
+    "sourceDefinitionsUnchanged": true,
+    "elapsedSeconds": 493.56205933200005,
+    "execution": {
+      "path": "dist/latest-whole-board-source-01/execution.json",
+      "sha256": "dfbbfe610933548707b767f9a282257fa87c1578d184e550c4699c9ce2b42d5e"
+    },
+    "log": {
+      "path": "dist/latest-whole-board-source-01/build.log",
+      "sha256": "6d77f5b31275c7b57fd25f83377513f8f1c7cac075c6b034ba4ff8612115ea7f"
+    },
+    "artifacts": [
+      {
+        "path": "dist/latest-whole-board-source-01/board.meta.json",
+        "sha256": "246e25b28952b52aa283191c8eb289323dcaf4a56a4c43aa4107876a03d636e7"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/compiled.circuit.json",
+        "sha256": "449aec7631a6c4c58633405c7cf338640d3898fdf3d4a72ec5a24d6da545a198"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/phase-0.input.simple-route.json",
+        "sha256": "24f9d23f8622914a8b5c4ce9e11fd24bfc06ea6a4b77f73468099bae31973115"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/phase-0.output.traces.json",
+        "sha256": "94af27a900d519d589b47eea80ec5922a43b452317d7e39662839574987d6324"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/phase-1.input.simple-route.json",
+        "sha256": "84fda264a8f9028e43deafc69408cabf6b169ba29672fea35c0f790e9dee12dd"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/phase-1.output.traces.json",
+        "sha256": "34ab658d6a6bf69024f7e78dfcd2e7a7d13e78881ad5fdc669f753c110d6b023"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/phase-2.input.simple-route.json",
+        "sha256": "66e9bca44470687e8595ed37d1e98ade3996113c2e0d02cb97686a2b8612e407"
+      },
+      {
+        "path": "dist/latest-whole-board-source-01/phase-2.output.traces.json",
+        "sha256": "aac60e8d9b40c8e3ae6027870ba706319a977e82c42f1a1101477574c5b8a939"
+      }
+    ],
+    "phases": [
+      {
+        "input": {
+          "path": "dist/latest-whole-board-source-01/phase-0.input.simple-route.json",
+          "sha256": "24f9d23f8622914a8b5c4ce9e11fd24bfc06ea6a4b77f73468099bae31973115"
+        },
+        "connections": 49,
+        "fixedTraces": 0,
+        "physicalPads": 1257,
+        "innerPlanesReserved": false,
+        "signalPolicy": "four-ddr"
+      },
+      {
+        "input": {
+          "path": "dist/latest-whole-board-source-01/phase-1.input.simple-route.json",
+          "sha256": "84fda264a8f9028e43deafc69408cabf6b169ba29672fea35c0f790e9dee12dd"
+        },
+        "connections": 85,
+        "fixedTraces": 0,
+        "physicalPads": 1257,
+        "innerPlanesReserved": false,
+        "signalPolicy": "four-ddr"
+      },
+      {
+        "input": {
+          "path": "dist/latest-whole-board-source-01/phase-2.input.simple-route.json",
+          "sha256": "66e9bca44470687e8595ed37d1e98ade3996113c2e0d02cb97686a2b8612e407"
+        },
+        "connections": 83,
+        "fixedTraces": 699,
+        "physicalPads": 1257,
+        "innerPlanesReserved": false,
+        "signalPolicy": "four-ddr"
+      }
+    ],
+    "qualifiedNewDdrSignals": 0,
+    "fabricationReady": false,
+    "defaultChanged": false
+  },
+  "previousCircuitSha256": "3cd5b175253342cd6a422c2c5e6a60f53ad89a300cbb5a837055716aae90683d",
+  "latestCircuitSha256": "449aec7631a6c4c58633405c7cf338640d3898fdf3d4a72ec5a24d6da545a198",
+  "checkerRegressionOutputs": [
+    ".cloud-tools/runtime-20261007/checks/integrated/g350-ddr-bootstrap/via-pad-rule-verification.json",
+    ".cloud-tools/runtime-20261007/checks/integrated/g350-ddr-bootstrap/copper-contact-regression.json"
+  ],
+  "mainNpmCiExitCode": 0,
+  "mainTypecheckLog": ".cloud-tools/runtime-20261007/main-typecheck.log",
+  "fabricationReady": false,
+  "mainTypecheckPassed": true,
+  "cloudSmokePassed": true,
+  "savedInstallScriptPassed": true,
+  "savedInstallScriptLog": ".cloud-tools/runtime-20261007/saved-install-test-02.log",
+  "frozenEvidenceRestoredAndVerified": 25814,
+  "frozenDebugPreservationPositiveAndNegativeControlsPassed": true,
+  "newEvidenceArchiveMembersVerified": 1551,
+  "newEvidenceFreshRestoreFiles": 1551,
+  "newEvidenceRepeatRestoreFiles": 0,
+  "savedStartSkillCodeBlockPassed": true
+}

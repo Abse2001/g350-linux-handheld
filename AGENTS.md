@@ -103,3 +103,18 @@ Run `bash scripts/setup-g350-routing-tools.sh` after `source cloud/env.sh` to
 reconstruct the hash-pinned isolated geometry tools and verified grid engine.
 Use fresh fills and numeric pad checks; a stale filled-plane router model does
 not establish final ground connectivity. Keep `fabricationReady` false.
+
+## Latest runtime and whole-board shortcut checkpoint (2026-10-07)
+
+Continue `experiments/am3352-g350-full-board-ddr-shortcut-replay.circuit.tsx`
+and read `cloud/RUNTIME_UPGRADE_2026-10-07.md`,
+`cloud/DDR_SHORTCUT_PROGRESS_2026-10-07.md` and the full-board summary.
+Latest tested tscircuit is 0.0.2757; reviewed checks 0.0.242 hash is
+1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc.
+Fresh source and independent checks retain 217/217 connections and 49 DDR signals,
+with zero physical errors/opens/shorts and exactly three native bus-skew failures.
+The checked ink cleanup export has zero library/silkscreen warnings, with 157
+dangling-copper warnings remaining. D12's finer reroute is an unqualified separate
+trial. Use `bash scripts/check-g350-shorts-isolated.sh INPUT NEW_OUTPUT_DIRECTORY`
+so failed checks cannot overwrite restored frozen debug files. Keep all old
+evidence, actual checker assertions and fabricationReady=false.

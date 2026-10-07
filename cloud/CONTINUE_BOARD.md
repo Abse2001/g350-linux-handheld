@@ -1,3 +1,13 @@
+## Latest checked whole-board continuation (2026-10-07)
+
+Use `experiments/am3352-g350-full-board-ddr-shortcut-replay.circuit.tsx`.
+Read `cloud/DDR_SHORTCUT_PROGRESS_2026-10-07.md` and
+`cloud/RUNTIME_UPGRADE_2026-10-07.md` before the historical sections below.
+All 217 connections and 49 DDR signals are checked; three bus-skew failures and
+157 dangling-copper warnings remain. Package/via timing, impedance, return paths,
+electrical qualification and measured shell fit remain unfinished.
+Use the isolated Gerber wrapper and preserve every original evidence file.
+
 # Latest whole-board continuation (2026-10-07)
 
 The user requested the rest of the rotated-RAM board routed. The newest checked

@@ -11,7 +11,7 @@ for (const [name, version] of Object.entries(pkg.devDependencies))
 assert.equal(Circuit, CoreCircuit)
 for (const name of ['BusLanesSolver','BusLanesPipelineSolver','DogboneFanoutSolver'])
   assert.equal(typeof SOLVERS[name], 'function', `Missing native ${name}`)
-assert.equal(sha('node_modules/@tscircuit/checks/dist/index.js'), '7bb83632137db56a698d91dc75ace0e74561e51dfcfb2bd9c6928a2280c45b2a', 'Native checks patch/build drift')
+assert.equal(sha('node_modules/@tscircuit/checks/dist/index.js'), '1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc', 'Native checks patch/build drift')
 const expected = '01815364357e0354de1089af4253e2ce2dc926f822b5f173b7ccb133e459f555'
 for (const p of ['dist/g350-current-index-byte0-handoff-fixed/compiled.circuit.json','dist/index/circuit.json'])
   assert.equal(sha(p), expected, `Current frozen circuit changed: ${p}`)
