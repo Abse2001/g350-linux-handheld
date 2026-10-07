@@ -4,8 +4,13 @@ import fs from 'node:fs'
 import assert from 'node:assert/strict'
 import {spawnSync} from 'node:child_process'
 import {createHash} from 'node:crypto'
-const [input,out]=process.argv.slice(2)
-assert(input&&out&&!fs.existsSync(out))
+import {resolve} from 'node:path'
+const [inputArg,outArg]=process.argv.slice(2)
+assert(inputArg&&outArg)
+// tsci resolves output relative to its input directory. Absolute paths keep
+// a project-relative output from being prefixed with that directory twice.
+const input=resolve(inputArg),out=resolve(outArg)
+assert(!fs.existsSync(out))
 const circuit=JSON.parse(fs.readFileSync(input));const budget=Math.max(1000,circuit.length+2)
 let exportInput=input
 if(process.env.G350_EXPORT_WITHOUT_POURS==='1'){

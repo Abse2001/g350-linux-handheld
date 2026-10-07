@@ -151,3 +151,18 @@ bus-skew errors. Keep fabricationReady false and preserve all older evidence.
 Do not promote zero-skew DDR-only copper over a whole board with physical
 collisions or incomplete recovered nets. Package-width and other recovery trials
 require full native width/clearance and fresh source/independent qualification.
+
+## Latest checked middle shortcut (2026-10-07)
+
+Continue `experiments/am3352-g350-clean-full-board-middle-shortcut-replay.circuit.tsx`
+and read `cloud/DDR_MIDDLE_SHORTCUT_PROGRESS_2026-10-07.md`. Fresh source 144,
+independent refill 145 and isolated Gerber 146 retain all 217 connections and
+49 DDR signals, with zero DRC errors/warnings/opens/dangling copper/shorts.
+All native physical checks pass; three bus-skew errors remain at 33.771477 /
+36.800514 / 27.930389 mm versus 0.635 mm. Differential pairs pass. Runtime and
+reviewed checker/solver pins stay fixed; tscircuit 0.0.2759 is current. Isolated
+Core 0.0.2108 replay is retained as an upgrade trial, not substituted silently.
+D6 detour length physically bypassed by full-depth via lands must never count
+as timing length. Rejected trials and stopped incomplete recoveries are archived;
+their geometry rasters need not be restored in ordinary startup. Target DDR clock
+and actual manufacturer stackup remain unspecified. Keep fabricationReady false.

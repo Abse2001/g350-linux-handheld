@@ -1,0 +1,30 @@
+Pinned packages, shared core, native DDR solvers, patched checks and frozen current board verified
+core: efdc037363a4ec95a619a8f48e53d8540b4dca76
+tscircuit-autorouter: 8e66b6388d1b2adc2e31eb3568a7e86648f92c7a
+checks: ec5e6f6fba26561ab9cad3789cbeb5bcb330091b
+cli: 7b9cdd526be249e48c5e24afae8aa3bfde4b2175
+bus-lanes-solver: 2417031d063f208050c966ee9d997fc8d6e26a59
+bga-fanout-solver: 247c835cb8d69b65e53891dcf869731079415b39
+fanout-solver: 39adfeb68c9ade6ea30ce5bd9f06ac5f208146d7
+tscircuit: 0b14142ae106a83f591c354df35a3e9aeaa4f325
+props: 62a9d617f2b31d5f90a03713030a982d8a59ba5c
+circuit-json: caa04881bc8015d2bc746180f9e48b325fe7e625
+pcb-trace-linter: 4c035f9d40ffb03ba547a08975b5e64b20371123
+10.0.6
+10.0.6+dfsg-1
+4.2.5 gtk3 (phoenix) wxWidgets 3.2.11
+Verified 1551 evidence members; restored 0
+Verified 887 evidence members; restored 0
+Verified 1078 evidence members; restored 0
+Verified 649 evidence members; restored 0
+Collecting numpy==2.3.5 (from -r cloud/python-routing-requirements.txt (line 2))
+  Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+Collecting scipy==1.17.0 (from -r cloud/python-routing-requirements.txt (line 76))
+  Using cached scipy-1.17.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.0 MB)
+Collecting shapely==2.1.2 (from -r cloud/python-routing-requirements.txt (line 137))
+  Using cached shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.1 MB)
+Installing collected packages: shapely, scipy, numpy
+
+Successfully installed numpy-2.3.5 scipy-1.17.0 shapely-2.1.2
+{"python": "3.12.14", "numpy": "2.3.5", "scipy": "1.17.0", "shapely": "2.1.2", "geos": "3.13.1", "compiler": "g++ (Debian 14.2.0-19) 14.2.0", "sourceSha256": "f5ae4485902f16d6fb9f0dee542662cc1fc515d4f33a7157684a7b7de70ff1f6", "binarySha256": "116c5bb1b8df8751d6be67ccfd3413b417f44873d2a69e46224403338f2bf92e", "wheelRequirementsSha256": "b1f25125e7f638c6cafbca3492fc7c12ba56fbdd38f31effdcc6276dd1773d01", "tests": [{"name": "planar", "passed": true}, {"name": "corner_cut_rejected", "passed": true}, {"name": "layer_change", "passed": true}, {"name": "budget_exhaustion_distinct_from_no_path", "passed": true}], "boardRoutingQualified": false, "fabricationReady": false}
+{"python": "3.12.14", "numpy": "2.3.5", "scipy": "1.17.0", "shapely": "2.1.2", "geos": "3.13.1", "compiler": "g++ (Debian 14.2.0-19) 14.2.0", "sourceSha256": "f5ae4485902f16d6fb9f0dee542662cc1fc515d4f33a7157684a7b7de70ff1f6", "binarySha256": "116c5bb1b8df8751d6be67ccfd3413b417f44873d2a69e46224403338f2bf92e", "wheelRequirementsSha256": "b1f25125e7f638c6cafbca3492fc7c12ba56fbdd38f31effdcc6276dd1773d01", "tests": [{"name": "planar", "passed": true}, {"name": "corner_cut_rejected", "passed": true}, {"name": "layer_change", "passed": true}, {"name": "budget_exhaustion_distinct_from_no_path", "passed": true}], "boardRoutingQualified": false, "fabricationReady": false}

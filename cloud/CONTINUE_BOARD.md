@@ -1,3 +1,21 @@
+## Latest checked middle-shortcut continuation (2026-10-07)
+
+Continue `experiments/am3352-g350-clean-full-board-middle-shortcut-replay.circuit.tsx`.
+Read `cloud/DDR_MIDDLE_SHORTCUT_PROGRESS_2026-10-07.md` and
+`checks/integrated/g350-middle-shortcut-progress/summary.json` first. Fresh source
+144 / independent refill 145 / isolated Gerber 146 retain all 217 connections,
+49 DDR signals, 280 placements, RAM90 and four layers. DRC errors/warnings,
+opens, dangling copper and shorts are zero. All native checks pass except three
+bus-skew failures: 33.771477 / 36.800514 / 27.930389 mm versus 0.635 mm.
+All differential pairs pass. Runtime pins remain tscircuit 0.0.2759 / Core
+0.0.2107 / CLI 0.1.2258 with unchanged reviewed checks and solvers. Core 0.0.2108
+was tested in isolation and did not change any non-metadata source record;
+it is not silently substituted into the board runtime. Preserve the rejected
+recovery/physical-via bypass trials and restore their rasters only if needed.
+Target DDR clock and manufacturer's stackup remain unspecified; full electrical
+timing and measured shell fit are unqualified. Keep fabricationReady false.
+Older entries below preserve historical checked checkpoints.
+
 ## Latest checked clean whole-board length progress (2026-10-07)
 
 Continue `experiments/am3352-g350-clean-full-board-length-progress-replay.circuit.tsx`.
