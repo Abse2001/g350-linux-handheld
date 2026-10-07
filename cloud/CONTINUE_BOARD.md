@@ -1,12 +1,20 @@
 ## Latest checked whole-board continuation (2026-10-07)
 
-Use `experiments/am3352-g350-full-board-ddr-shortcut-replay.circuit.tsx`.
-Read `cloud/DDR_SHORTCUT_PROGRESS_2026-10-07.md` and
+Use `experiments/am3352-g350-full-board-dangling-clean-replay.circuit.tsx`.
+Read `cloud/DANGLING_COPPER_CLEANUP_2026-10-07.md`,
+`checks/integrated/g350-dangling-copper-cleanup/summary.json` and
 `cloud/RUNTIME_UPGRADE_2026-10-07.md` before the historical sections below.
-All 217 connections and 49 DDR signals are checked; three bus-skew failures and
-157 dangling-copper warnings remain. Package/via timing, impedance, return paths,
-electrical qualification and measured shell fit remain unfinished.
-Use the isolated Gerber wrapper and preserve every original evidence file.
+All 217 connections and 49 DDR signals are independently checked. KiCad errors,
+warnings, dangling tracks/vias, opens and all-layer Gerber shorts are zero.
+119 unused vias and 135.834855 mm of non-DDR planar copper were removed.
+All DDR copper and component placements are exactly preserved. Three bus-skew
+failures remain: Byte0 34.878647 mm, Byte1 41.191260 mm, command/clock 29.576845 mm
+against 0.635 mm. All three differential pairs pass their 0.127 mm limits.
+Keep fabricationReady false: full electrical timing and measured shell fit remain
+unfinished. Restore only the final source archive during normal startup; large
+compressed scratch rasters are preservation evidence, not startup dependencies.
+Use the isolated Gerber wrapper, run KiCad containers sequentially and preserve
+all original evidence. Older entries below are historical checkpoints.
 
 # Latest whole-board continuation (2026-10-07)
 

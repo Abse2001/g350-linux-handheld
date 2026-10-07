@@ -4949,7 +4949,7 @@
       "Via-to-pad clearance reads the separate declared via rule.",
       "Degenerate copper-contact edges use point distance; a removed real CPU ground trace still fails connectivity."
     ],
-    "latestNativeRoutingExecution": "dist/g350-full-board-ddr-shortcut-source-78/execution.json",
+    "latestNativeRoutingExecution": "dist/g350-dangling-clean-source-111/execution.json",
     "props": "0.0.695",
     "scope": "Latest runtime and checked whole-board experiment; default circuit and frozen source evidence remain unchanged"
   },
@@ -5145,20 +5145,25 @@
     "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md"
   },
   "currentContinuation": {
-    "stage": "WHOLE_BOARD_CONNECTED_DDR_SHORTCUT_PROGRESS_THREE_BUS_ERRORS_REMAIN",
-    "entry": "experiments/am3352-g350-full-board-ddr-shortcut-replay.circuit.tsx",
-    "report": "cloud/DDR_SHORTCUT_PROGRESS_2026-10-07.md",
+    "stage": "WHOLE_BOARD_CONNECTED_ZERO_DANGLING_COPPER_THREE_DDR_SKEW_FAILURES",
+    "entry": "experiments/am3352-g350-full-board-dangling-clean-replay.circuit.tsx",
+    "report": "cloud/DANGLING_COPPER_CLEANUP_2026-10-07.md",
     "connectedConnections": 217,
     "requiredConnections": 217,
     "connectedDdrSignals": 49,
     "nativeBusSkewFailures": 3,
     "remaining": [
-      "Whole-board DDR bus length matching",
-      "157 dangling-copper warnings",
+      "Whole-board DDR bus length matching: Byte0 34.878647 mm, Byte1 41.191260 mm, command/clock 29.576845 mm against 0.635 mm",
       "Manufacturer stackup, impedance, package/via delays, nominal timing and return paths",
       "Power/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
-    "fabricationReady": false
+    "fabricationReady": false,
+    "danglingTracks": 0,
+    "danglingVias": 0,
+    "kicadErrors": 0,
+    "kicadWarnings": 0,
+    "allLayerGerberShorts": 0,
+    "summary": "checks/integrated/g350-dangling-copper-cleanup/summary.json"
   },
   "runtimeUpgrade20261007": {
     "versions": {

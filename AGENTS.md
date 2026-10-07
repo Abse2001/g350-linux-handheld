@@ -118,3 +118,19 @@ dangling-copper warnings remaining. D12's finer reroute is an unqualified separa
 trial. Use `bash scripts/check-g350-shorts-isolated.sh INPUT NEW_OUTPUT_DIRECTORY`
 so failed checks cannot overwrite restored frozen debug files. Keep all old
 evidence, actual checker assertions and fabricationReady=false.
+
+## Latest dangling-copper cleanup (2026-10-07)
+
+Continue `experiments/am3352-g350-full-board-dangling-clean-replay.circuit.tsx`.
+Read `cloud/DANGLING_COPPER_CLEANUP_2026-10-07.md` and its integrated summary.
+Fresh source 111, independent fresh-fill/export 113 and isolated Gerber check 114
+verify all 217 connections / 49 DDR signals, zero physical/native manufacturing
+errors, zero KiCad errors/warnings/opens/dangling copper and zero shorts. 119
+unused vias and 135.834855 mm of non-DDR planar copper were removed; all DDR
+copper and 280 component placements are exactly preserved. There are 825 standard
+full-depth vias. The complete build still exits 1 for three DDR bus-skew errors:
+34.878647 / 41.191260 / 29.576845 mm versus 0.635 mm. All differential pairs pass.
+Restore the final source archive, retain old checked checkpoints and failed trials,
+and keep fabricationReady false until timing/electrical/mechanical gates pass.
+Run KiCad containers sequentially: concurrent VFS containers can exhaust disk.
+Compressed archived routing rasters need not be restored during normal startup.
