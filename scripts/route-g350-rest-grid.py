@@ -99,6 +99,20 @@ for cid in package_ids:
 escape_region=unary_union(package_regions)
 package_source_ports={p['source_port_id'] for p in ports.values() if p['pcb_component_id'] in package_ids}
 escape_widths={net:max([.1016]+[st.get('min_trace_thickness',.1016) for tid,st in source_traces.items() if trace_net.get(tid)==net and (len(st['connected_source_port_ids'])>=2 or any(p in package_source_ports for p in st['connected_source_port_ids']))]) for net in connections}
+# A separate, opt-in trial scopes package escapes to authored package branches.
+# A wider two-port connection elsewhere on a shared rail must not widen every
+# CPU/RAM escape. Outside the package region, the original net width is retained.
+# Actual native source-width checks and independent CAD still qualify any result.
+if os.environ.get('G350_GRID_BRANCH_ESCAPE_WIDTH')=='1':
+    scoped={}
+    for net in connections:
+        package_branches=[st for tid,st in source_traces.items() if trace_net.get(tid)==net and any(p in package_source_ports for p in st['connected_source_port_ids'])]
+        scoped[net]=max([.1016]+[st.get('min_trace_thickness',.1016) for st in package_branches]) if package_branches else widths[net]
+    escape_widths=scoped
+    manifest=json.loads((root/'execution.json').read_text())
+    manifest['routingParameters']['G350_GRID_BRANCH_ESCAPE_WIDTH']='1'
+    manifest['packageEscapeWidths']={label(net):dict(outsideMm=widths[net],packageMm=escape_widths[net]) for net in connections if escape_widths[net]<widths[net]}
+    (root/'execution.json').write_text(json.dumps(manifest,indent=2)+'\n')
 can_neck={net:escape_widths[net]<widths[net] for net in connections}
 if os.environ.get('G350_GRID_GROUND_STITCH_WIDTH'):
     stitch_width=float(os.environ['G350_GRID_GROUND_STITCH_WIDTH'])

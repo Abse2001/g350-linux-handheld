@@ -1,3 +1,17 @@
+## Latest checked clean whole-board length progress (2026-10-07)
+
+Continue `experiments/am3352-g350-clean-full-board-length-progress-replay.circuit.tsx`.
+Read `cloud/CLEAN_DDR_LENGTH_PROGRESS_2026-10-07.md`, its integrated summary and
+`cloud/RUNTIME_REFRESH_2026-10-07.md` first. Source 123 / independent 129 / Gerber
+130 retain 217/217 connections and 49 DDR signals, with zero KiCad errors,
+warnings, opens, dangling copper and shorts. All 280 placements remain fixed.
+Three bus-skew failures remain: 34.278647 / 37.400514 / 28.530389 mm versus
+0.635 mm. All differential pairs pass. Runtime is tscircuit 0.0.2759, Core
+0.0.2107 and CLI 0.1.2258; checker/solver pins and reviewed patch remain intact.
+Keep fabricationReady false. Matched-DDR rest-recovery and later tuning trials
+are unqualified until fresh source and independent checks pass. Older sections
+below are historical checked checkpoints.
+
 ## Latest checked whole-board continuation (2026-10-07)
 
 Use `experiments/am3352-g350-full-board-dangling-clean-replay.circuit.tsx`.

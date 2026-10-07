@@ -134,3 +134,20 @@ Restore the final source archive, retain old checked checkpoints and failed tria
 and keep fabricationReady false until timing/electrical/mechanical gates pass.
 Run KiCad containers sequentially: concurrent VFS containers can exhaust disk.
 Compressed archived routing rasters need not be restored during normal startup.
+
+## Latest checked clean length progress and runtime (2026-10-07)
+
+Continue `experiments/am3352-g350-clean-full-board-length-progress-replay.circuit.tsx`.
+Read `cloud/CLEAN_DDR_LENGTH_PROGRESS_2026-10-07.md`, its integrated summary and
+`cloud/RUNTIME_REFRESH_2026-10-07.md`. Tested current registry runtime is tscircuit
+0.0.2759 / Core 0.0.2107 / CLI 0.1.2258; all other checker/solver pins remain.
+Source 123, independent refill/export 129 and isolated Gerber 130 verify all
+217 connections / 49 DDR signals with zero physical/native manufacturing errors,
+zero KiCad errors/warnings/opens/dangling copper and zero shorts. All 280 placements
+and RAM rotation/four layers remain fixed; 824 standard full-depth vias remain.
+Native bus skew improved to 34.278647 / 37.400514 / 28.530389 mm, still failing
+0.635 mm. Differential pairs pass; the complete build still exits 1 for three
+bus-skew errors. Keep fabricationReady false and preserve all older evidence.
+Do not promote zero-skew DDR-only copper over a whole board with physical
+collisions or incomplete recovered nets. Package-width and other recovery trials
+require full native width/clearance and fresh source/independent qualification.

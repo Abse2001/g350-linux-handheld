@@ -1,0 +1,45 @@
+"""Bind a fresh cleanup source to native, KiCad, pad and Gerber evidence."""
+import hashlib,json,math,sys
+from pathlib import Path
+source_root,verified_root,shorts_root,output=map(Path,sys.argv[1:5]);assert not output.exists()
+read=lambda p:json.loads(p.read_text())
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+artifact=lambda p:dict(path=str(p),sha256=sha(p))
+source=source_root/'compiled.circuit.json';filled=verified_root/'fresh-filled.circuit.json';board=verified_root/'filled/ground-reference.kicad_pcb'
+c=read(source);native=read(source_root/'native.json');filled_native=read(verified_root/'native-filled.json');build=read(source_root/'result.json')
+assert build['code']==1 and not build['forcedTimeout'] and build['freshCompiledSource'] and build['sourceDefinitionsUnchanged']
+assert any(r['path']==str(source) and r['sha256']==sha(source) for r in build['artifacts'])
+assert native['sourceSha256']==sha(source) and filled_native['sourceSha256']==sha(filled)
+for report in (native,filled_native):
+ assert report['counts']['checkPcbBusLengthSkew']==3 and all(v==0 for k,v in report['counts'].items() if k!='checkPcbBusLengthSkew')
+ assert report['componentPlacementsExactlyPreserved']
+ assert report['checksSha256']=='1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc'
+assert read(verified_root/'candidate.circuit.json')==c
+conn=read(verified_root/'filled/final-connectivity.json');assert conn['boardSha256']==sha(board) and conn['circuitSha256']==sha(source)
+assert conn['requiredConnections']==conn['connectedConnections']==217 and not conn['disconnectedConnections'] and not conn['missingPadMemberships']
+drc=read(verified_root/'filled/drc.json')
+for category in ('violations','unconnected_items','schematic_parity'):assert not drc[category]
+settings=read(verified_root/'filled/ground-reference.kicad_pro')['board']['design_settings']
+assert all(v!='ignore' for v in settings['rule_severities'].values()) and not settings.get('drc_exclusions',[])
+shorts=read(shorts_root/'execution.json');assert shorts['inputSha256']==sha(filled) and shorts['mode']=='gerber' and shorts['layer']=='all' and shorts['exitCode']==0
+assert shorts['cliVersion']=='0.1.2258'
+source_traces={s['source_trace_id']:s for s in c if s['type']=='source_trace'}
+traces=[s for s in c if s['type']=='pcb_trace'];ddr={sid for sid,s in source_traces.items() if s.get('name','').startswith('DDR_')};assert len(ddr)==49
+board_record=next(s for s in c if s['type']=='pcb_board');assert board_record['num_layers']==4
+assert sum(s['type']=='pcb_component' for s in c)==280
+vias=[s for s in c if s['type']=='pcb_via']
+assert len(vias)==824
+assert all(set(v['layers'])=={'top','inner1','inner2','bottom'} and abs(v['outer_diameter']-.4572)<1e-8 and abs(v['hole_diameter']-.254)<1e-8 for v in vias)
+length=lambda t:sum(math.hypot(b['x']-a['x'],b['y']-a['y'])+(1.6 if b['route_type']=='via' else 0) for a,b in zip(t['route'],t['route'][1:]))
+timing=[]
+for bus in c:
+ if bus['type']!='source_bus' or bus.get('name') not in ['DDR_BYTE0','DDR_BYTE1','DDR_COMMAND_CLOCK','DDR_DQS0_PAIR','DDR_DQS1_PAIR','DDR_CK_PAIR']:continue
+ rows=[dict(signal=source_traces[sid]['name'],nativeLengthMm=sum(length(t) for t in traces if t.get('source_trace_id')==sid)) for sid in bus['source_trace_ids']]
+ lo=min(rows,key=lambda r:r['nativeLengthMm']);hi=max(rows,key=lambda r:r['nativeLengthMm']);skew=hi['nativeLengthMm']-lo['nativeLengthMm']
+ timing.append(dict(bus=bus['name'],shortest=lo,longest=hi,skewMm=skew,limitMm=bus['max_length_skew'],passNativeSkew=skew<=bus['max_length_skew']+1e-6))
+assert sum(not t['passNativeSkew'] for t in timing)==3
+report=dict(status='WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES',checkedEntry='experiments/am3352-g350-clean-full-board-length-progress-replay.circuit.tsx',compiledCircuit=artifact(source),freshFilledCircuit=artifact(filled),independentBoard=artifact(board),freshEditableSource=True,sourceDefinitionsUnchanged=True,buildExitCode=1,buildElapsedSeconds=build['elapsedSeconds'],nativeSource=artifact(source_root/'native.json'),nativeFilled=artifact(verified_root/'native-filled.json'),sourceNativeCounts=native['counts'],freshFilledNativeCounts=filled_native['counts'],independentConnectivity=conn,independentDrc=artifact(verified_root/'filled/drc.json'),kicadErrors=0,kicadWarnings=0,kicadUnconnectedItems=0,danglingTracks=0,danglingVias=0,ignoredKiCadRules=[],kiCadExclusions=[],allLayerGerberShorts=0,shortsVerification=shorts,connectedDdrSignals=49,parts=280,numLayers=4,ramRotationDegrees=90,standardThroughVias=824,ddrCopperExactlyPreserved=False,componentPlacementsExactlyPreserved=True,ddrNativeTiming=timing,nativeViaAllowanceMm=1.6,snapshot=artifact(verified_root/'pcb-all-layers.png'),fullElectricalTimingQualified=False,fabricationReady=False)
+report['baselineCleanupSummary']='checks/integrated/g350-dangling-copper-cleanup/summary.json'
+report['latestRuntime']={'tscircuit':'0.0.2759','core':'0.0.2107','cli':'0.1.2258','checks':'0.0.242'}
+output.write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({k:report[k] for k in ['status','kicadErrors','kicadWarnings','connectedDdrSignals','allLayerGerberShorts','fabricationReady']}))

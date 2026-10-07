@@ -4935,10 +4935,10 @@
     "scope": "Scoped native and independent checks on the current shaped power/strobe replay; historical routed fixtures were not rebuilt."
   },
   "currentToolchain": {
-    "tscircuit": "0.0.2757",
-    "core": "0.0.2106",
+    "tscircuit": "0.0.2759",
+    "core": "0.0.2107",
     "capacityAutorouter": "0.0.962",
-    "cli": "0.1.2257",
+    "cli": "0.1.2258",
     "circuitJson": "0.0.520",
     "typecheckPassed": true,
     "currentPlacementSourceVerified": true,
@@ -4949,7 +4949,7 @@
       "Via-to-pad clearance reads the separate declared via rule.",
       "Degenerate copper-contact edges use point distance; a removed real CPU ground trace still fails connectivity."
     ],
-    "latestNativeRoutingExecution": "dist/g350-dangling-clean-source-111/execution.json",
+    "latestNativeRoutingExecution": "dist/g350-clean-full-board-length-progress-source-123/execution.json",
     "props": "0.0.695",
     "scope": "Latest runtime and checked whole-board experiment; default circuit and frozen source evidence remain unchanged"
   },
@@ -5145,16 +5145,16 @@
     "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md"
   },
   "currentContinuation": {
-    "stage": "WHOLE_BOARD_CONNECTED_ZERO_DANGLING_COPPER_THREE_DDR_SKEW_FAILURES",
-    "entry": "experiments/am3352-g350-full-board-dangling-clean-replay.circuit.tsx",
-    "report": "cloud/DANGLING_COPPER_CLEANUP_2026-10-07.md",
+    "stage": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES",
+    "entry": "experiments/am3352-g350-clean-full-board-length-progress-replay.circuit.tsx",
+    "report": "cloud/CLEAN_DDR_LENGTH_PROGRESS_2026-10-07.md",
     "connectedConnections": 217,
     "requiredConnections": 217,
     "connectedDdrSignals": 49,
     "nativeBusSkewFailures": 3,
     "remaining": [
-      "Whole-board DDR bus length matching: Byte0 34.878647 mm, Byte1 41.191260 mm, command/clock 29.576845 mm against 0.635 mm",
-      "Manufacturer stackup, impedance, package/via delays, nominal timing and return paths",
+      "Whole-board DDR matching: Byte0 34.278647 mm, Byte1 37.400514 mm, command/clock 28.530389 mm against 0.635 mm",
+      "Final target clock, manufacturer stackup, impedance, package/via delays, nominal timing and return paths",
       "Power/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
     "fabricationReady": false,
@@ -5163,7 +5163,7 @@
     "kicadErrors": 0,
     "kicadWarnings": 0,
     "allLayerGerberShorts": 0,
-    "summary": "checks/integrated/g350-dangling-copper-cleanup/summary.json"
+    "summary": "checks/integrated/g350-clean-length-progress/summary.json"
   },
   "runtimeUpgrade20261007": {
     "versions": {

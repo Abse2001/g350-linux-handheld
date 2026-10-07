@@ -16,14 +16,14 @@ if(process.env.G350_EXPORT_WITHOUT_POURS==='1'){
  fs.writeFileSync(exportInput,JSON.stringify(circuit.filter(e=>e.type!=='pcb_copper_pour'),null,2)+'\n')
 }
 const cli='node_modules/@tscircuit/cli/dist/cli/main.js',source=fs.readFileSync(cli,'utf8')
-assert.equal(JSON.parse(fs.readFileSync('node_modules/@tscircuit/cli/package.json')).version,'0.1.2257')
+assert.equal(JSON.parse(fs.readFileSync('node_modules/@tscircuit/cli/package.json')).version,'0.1.2258')
 const needle='var ConverterStage = class {\n  MAX_ITERATIONS = 1000;'
 assert.equal(source.split(needle).length,2)
 const root='.cloud-tools/tsci-large-kicad';fs.mkdirSync(root,{recursive:true})
 const adapted=source.replace(needle,`var ConverterStage = class {\n  MAX_ITERATIONS = ${budget};`)
 fs.writeFileSync(`${root}/main.js`,adapted)
 const hash=s=>createHash('sha256').update(s).digest('hex')
-fs.writeFileSync(out+'.converter.json',JSON.stringify({pinnedCli:'0.1.2257',originalCliSha256:hash(source),adaptedCliSha256:hash(adapted),originalStageBudget:1000,stageBudget:budget,circuitRecords:circuit.length,onlyChange:'ConverterStage finite iteration budget',exportInput,sourceSha256:hash(fs.readFileSync(input)),groundFillsRequireFreshReconstruction:exportInput!==input,nativeChecksChanged:false},null,2)+'\n')
+fs.writeFileSync(out+'.converter.json',JSON.stringify({pinnedCli:'0.1.2258',originalCliSha256:hash(source),adaptedCliSha256:hash(adapted),originalStageBudget:1000,stageBudget:budget,circuitRecords:circuit.length,onlyChange:'ConverterStage finite iteration budget',exportInput,sourceSha256:hash(fs.readFileSync(input)),groundFillsRequireFreshReconstruction:exportInput!==input,nativeChecksChanged:false},null,2)+'\n')
 const result=spawnSync('bun',[`${root}/main.js`,'export',exportInput,'-f','kicad_pcb','-o',out],{stdio:'inherit'})
 assert.equal(hash(fs.readFileSync(cli,'utf8')),hash(source),'Pinned CLI must remain unchanged')
 process.exitCode=result.status??1
