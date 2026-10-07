@@ -38,7 +38,7 @@ const versions=Object.fromEntries(['tscircuit','@tscircuit/cli','@tscircuit/core
 assert.equal(versions['@tscircuit/core'],'0.0.2095')
 assert.equal(versions['@tscircuit/checks'],'0.0.240')
 assert(readFileSync('node_modules/@tscircuit/checks/dist/index.js','utf8').includes('minClearance ?? getBoardDrcValue(board, "min_via_edge_to_pad_edge_clearance")'),'Native checks must honor the declared via-pad rule')
-const args=['build',entry,'--disable-parts-engine','--autorouter-debug','--autorouter-phase',phase,'--autorouter-debug-dir',directory,'--autorouter-dump-srj','all','--autorouter-timeout',`${seconds}s`]
+const args=['build',entry,'--disable-parts-engine','--autorouter-debug',...(phase==='ALL'?[]:['--autorouter-phase',phase]),'--autorouter-debug-dir',directory,'--autorouter-dump-srj','all','--autorouter-timeout',`${seconds}s`]
 writeFileSync(`${directory}/execution.json`,JSON.stringify({definitions,versions,sameCoreExports:true,wallBudgetSeconds,nativeChecks:artifact('node_modules/@tscircuit/checks/dist/index.js'),command:'node_modules/.bin/tsci',args,executionHelper:artifact(snapshot)},null,2)+'\n')
 const logPath=`${directory}/build.log`,fd=openSync(logPath,'wx'),start=performance.now(),wallStart=Date.now()
 const child=spawn('node_modules/.bin/tsci',args,{detached:true,stdio:['ignore',fd,fd]})
@@ -56,7 +56,7 @@ const artifacts=readdirSync(directory).filter(p=>/phase-.*\.(input\.simple-route
 const phases=artifacts.filter(a=>a.path.endsWith('.input.simple-route.json')).map(a=>{const input=read(a.path);assert.equal(input.layerCount,4);for(const bus of input.buses??[])assert((bus.allowedLayers??[]).every(l=>permittedSignalLayers.includes(l)));return {input:a,connections:input.connections.length,fixedTraces:input.traces?.length??0,physicalPads:input.obstacles.filter(o=>o.circuitJsonMetadata?.pcb_smtpad_id).length,innerPlanesReserved:signalPolicy==='outer',signalPolicy}})
 // Earlier cached phases also emit output files. Only the selected phase's
 // own terminal completion line can establish that this routing phase finished.
-const selectedPhaseCompletion=readFileSync(logPath,'utf8').split('\n').find(line=>line.includes(`"${phase}" done:`)&&/\berrors=0(?:,|\s|$)/.test(line))
+const selectedPhaseCompletion=readFileSync(logPath,'utf8').split('\n').filter(line=>(phase==='ALL'?line.includes('" done:'):line.includes(`"${phase}" done:`))&&/\berrors=0(?:,|\s|$)/.test(line)).join('\n')||undefined
 const selectedPhaseFinished=!forcedTimeout&&Boolean(selectedPhaseCompletion)&&!artifacts.some(a=>a.path.endsWith('.error.json')||a.path.endsWith('.timeout.json'))
 const sourceDefinitionsUnchanged=definitions.every(d=>hash(d.originalPath)===d.sha256)
 const report={status:forcedTimeout?'NATIVE_TSCI_PHASE_EXTERNAL_TIMEOUT':outcome.code===0?'NATIVE_TSCI_PHASE_BUILD_FINISHED_CHECKS_REQUIRED':'NATIVE_TSCI_PHASE_BUILD_FAILED',...outcome,forcedTimeout,selectedPhaseFinished,selectedPhaseCompletion:selectedPhaseCompletion??null,freshCompiledSource,sourceDefinitionsUnchanged,elapsedSeconds:(performance.now()-start)/1000,execution:artifact(`${directory}/execution.json`),log:artifact(logPath),artifacts,phases,qualifiedNewDdrSignals:0,fabricationReady:false,defaultChanged:false}

@@ -1,0 +1,44 @@
+{
+  "status": "PARTIAL_WHOLE_BOARD_ROUTING_CHECKPOINT",
+  "checkedCircuit": {
+    "path": "dist/g350-full-board-clock-complete-01/candidate.circuit.json",
+    "sha256": "188cb4ab700decd2435c7d90b9418e595cf5fea526331ca165af529be9257385"
+  },
+  "nativeCounts": {
+    "checkEachPcbTraceNonOverlapping": 0,
+    "checkViaPadClearance": 0,
+    "checkViaTraceClearance": 0,
+    "checkPcbTraceSelfShorts": 0,
+    "checkCopperToBoardEdgeClearance": 0,
+    "checkDifferentNetViaSpacing": 0,
+    "checkHoleTraceClearance": 0,
+    "checkPadTraceClearance": 0,
+    "checkViasInPads": 0,
+    "checkViasOffBoard": 0,
+    "checkPadPadClearance": 0,
+    "checkEachPcbPortConnectedToPcbTraces": 3,
+    "checkSourceTracesHavePcbTraces": 0,
+    "checkSourceTracesMatchPcbTraceThickness": 0,
+    "checkTracesAreContiguous": 0,
+    "checkPcbBusLengthSkew": 3,
+    "checkPcbRoutingConstraints": 0,
+    "checkPcbTraceLengths": 0,
+    "checkPcbTraceViaCounts": 0,
+    "checkPcbTracesOutOfBoard": 0,
+    "checkPcbCopperOverKeepout": 0,
+    "checkPcbComponentOverlap": 0,
+    "checkPcbComponentsOutOfBoard": 0,
+    "checkG350ViaTrackManufacturingClearance": 0
+  },
+  "independentConnectivity": {
+    "requiredConnections": 217,
+    "connectedConnections": 216,
+    "disconnectedConnections": 1,
+    "missingPadMemberships": 87
+  },
+  "checkedDDROnlyEntry": "experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
+  "experimentalWholeBoardEntry": "experiments/am3352-g350-full-board-candidate-replay.circuit.tsx",
+  "completeWholeBoardReplayPassed": false,
+  "fabricationReady": false,
+  "defaultAndFrozenEvidencePreserved": true
+}

@@ -1,0 +1,27 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "shapely": "2.1.2",
+  "geos": "3.13.1",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "sourceSha256": "1d08dd83995713ecb75479f798903bb051a05b89594c65cb688a52302c0366ab",
+  "binarySha256": "ed328b9864781f59f15124f8b1d798d86e330a277066f982bd95380fd26d73cb",
+  "wheelRequirementsSha256": "b1f25125e7f638c6cafbca3492fc7c12ba56fbdd38f31effdcc6276dd1773d01",
+  "tests": [
+    {
+      "name": "planar",
+      "passed": true
+    },
+    {
+      "name": "corner_cut_rejected",
+      "passed": true
+    },
+    {
+      "name": "layer_change",
+      "passed": true
+    }
+  ],
+  "boardRoutingQualified": false,
+  "fabricationReady": false
+}

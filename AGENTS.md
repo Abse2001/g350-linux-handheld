@@ -82,3 +82,18 @@ power/reference copper, nominal/package/via timing, impedance/return paths,
 peripherals, Linux and measured original-shell fit remain unqualified.
 `fabricationReady` stays false. Continue this newest checked entry; older timing
 sections describe preserved historical checkpoints.
+
+## Whole-board routing trial (2026-10-07)
+
+The user subsequently requested the rest of the board routed. Read
+`cloud/FULL_BOARD_ROUTING_PROGRESS_2026-10-06.md` and
+`checks/integrated/g350-full-board-progress/summary.json` for the explicitly
+partial checkpoint: independent numeric connectivity is 216/217, with ground
+incomplete; native whole-DDR-bus matching also needs repair. The candidate
+replay entry and caches are experiments, not a replacement for the checked
+zero-skew DDR-only entry or the frozen default. Restore archived evidence and
+continue the newest documented routing trial before promoting any result.
+Run `bash scripts/setup-g350-routing-tools.sh` after `source cloud/env.sh` to
+reconstruct the hash-pinned isolated geometry tools and verified grid engine.
+Use fresh fills and numeric pad checks; a stale filled-plane router model does
+not establish final ground connectivity. Keep `fabricationReady` false.

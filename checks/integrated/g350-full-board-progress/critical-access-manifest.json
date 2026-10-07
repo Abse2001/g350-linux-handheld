@@ -1,0 +1,92 @@
+{
+  "status": "CHECKED_CRITICAL_ACCESS_SEED_NOT_FULL_BOARD",
+  "archive": "checks/integrated/g350-full-board-progress/critical-access-seed.tar.gz",
+  "archiveSha256": "e5deb275007fe8ada5544a9aaf71b0c30699386c0103988a38ac7f3e1be312b0",
+  "members": [
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/native.json",
+      "sha256": "cb045c45e6eddc437d3160ed8eb832e95d32b848199dd3bab236299c1b4e3a4b",
+      "bytes": 157619
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/candidate.circuit.json",
+      "sha256": "ef1875066feee5646b72d94cdb2b642ef4aadc26eb2cd5ae4efbb663eafa3c9e",
+      "bytes": 5785882
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/worker.executed.py",
+      "sha256": "a40c5b45d55d57e0e84aae09cd6d634ddff43507e546cb3fe0f37f254061c2b7",
+      "bytes": 25257
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/progress.json",
+      "sha256": "bdde5bff2b6bfd41d52524046b25aa06b3a2729f2f28012aafbc2d67c2195371",
+      "bytes": 619
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/native.log",
+      "sha256": "42b25e1657bf558c46fdf003bc6765b05a33760b81470d32ce000919b0b45c69",
+      "bytes": 3046
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/worker.executed.cpp",
+      "sha256": "1d08dd83995713ecb75479f798903bb051a05b89594c65cb688a52302c0366ab",
+      "bytes": 4027
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/final-connectivity-model.json",
+      "sha256": "c5695f324e0cc39d3c5085f6ffcb6cb0f3b677374fe3964c20ef9045386d87cf",
+      "bytes": 17935
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/execution.json",
+      "sha256": "2048ad7df7c0f7bf8061410a2b0f2cdb2fc4a50993e525a0200182ff49587c59",
+      "bytes": 1328
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/geometry/candidate.circuit.json",
+      "sha256": "43403f8a2ffa0b9c5e4f668e1c39445683aae89deedf8cca3aacfd71092af25c",
+      "bytes": 5743853
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/geometry/worker.executed.py",
+      "sha256": "bc6b3d4278c9aa95709948c42261560c6031cb0a7a1dcdfa74cbf22ac6b75564",
+      "bytes": 34386
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/geometry/progress.json",
+      "sha256": "813e916f13c4c2206981467fe0afebacf42176cc47f05c071fdcc5909624ac45",
+      "bytes": 126
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/geometry/worker.executed.cpp",
+      "sha256": "1d08dd83995713ecb75479f798903bb051a05b89594c65cb688a52302c0366ab",
+      "bytes": 4027
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08/geometry/execution.json",
+      "sha256": "c80d6f47de42c227967bfa82968c8149a838420ef1e26083299b7f1ee40f62e6",
+      "bytes": 1256
+    },
+    {
+      "path": "dist/g350-fixed-escape-access-diagnostic-08.log",
+      "sha256": "6dcb76f54d266150c66149a277818e514e41a766090e83b9d7427bd167bd475b",
+      "bytes": 1484
+    },
+    {
+      "path": "dist/g350-post-ground-shared-analog-07/native-with-dangling.json",
+      "sha256": "d750d293e66a001e402fbec6ac193e621bb53ac9a2ebf42f20260809431d42c0",
+      "bytes": 160737
+    }
+  ],
+  "connectedTargetNets": [
+    "DDR_ZQ",
+    "CPU_PORn",
+    "DDR_VREF"
+  ],
+  "allTenNativeCopperChecksErrors": 0,
+  "strictManufacturingErrors": 0,
+  "fullRoutingChecksPass": false,
+  "requiresIndependentConnectivity": true,
+  "fabricationReady": false
+}
