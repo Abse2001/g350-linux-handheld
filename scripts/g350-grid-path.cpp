@@ -10,13 +10,15 @@
 // Candidate search only. Continuous geometry and native/KiCad checks decide acceptance.
 struct Node { float f, g; int id; bool operator<(const Node& n) const {return f>n.f;} };
 int main(int argc,char**argv){
- if(argc<10 || argc>14)return 2;
+ if(argc<10 || argc>15)return 2;
  int w=std::stoi(argv[1]),h=std::stoi(argv[2]),sx=std::stoi(argv[3]),sy=std::stoi(argv[4]),sl=std::stoi(argv[5]);
  int plane=w*h,n=plane*4;bool prefer_inner=argc>=12&&std::stoi(argv[11])==1;
  std::vector<uint8_t> blocked(n),via(plane),goal(n),penalty(n,0);
  if(argc>=13 && std::string(argv[12])!="-"){std::ifstream f(argv[12],std::ios::binary);f.read((char*)penalty.data(),penalty.size());if(!f)return 3;}
- const float via_cost=argc==14?std::stof(argv[13]):30.f;
+ const float via_cost=argc>=14?std::stof(argv[13]):30.f;
  if(via_cost<=0)return 2;
+ const int expansion_limit=argc==15?std::stoi(argv[14]):std::max(3000000,n/2);
+ if(expansion_limit<1 || (argc==15 && expansion_limit>std::max(3000000LL,2LL*n)))return 2;
  for(auto pair:{std::make_pair(argv[6],&blocked),std::make_pair(argv[7],&via),std::make_pair(argv[8],&goal)}){
   std::ifstream f(pair.first,std::ios::binary);f.read((char*)pair.second->data(),pair.second->size());if(!f)return 3;
  }
@@ -45,11 +47,14 @@ int main(int argc,char**argv){
  std::vector<float> cost(n,INFINITY);std::vector<int> parent(n,-1);std::priority_queue<Node> open;
  std::vector<int> starts{start};
  if(argc>=11){starts.clear();std::stringstream input(argv[10]);std::string item;while(std::getline(input,item,','))starts.push_back(std::stoi(item));}
- for(int id:starts)if(id>=0&&id<n&&!blocked[id]){cost[id]=0;open.push({heuristic(id%w,(id%plane)/w),0,id});}int end=-1,expanded=0;auto begun=std::chrono::steady_clock::now();
+ for(int id:starts)if(id>=0&&id<n&&!blocked[id]){cost[id]=0;open.push({heuristic(id%w,(id%plane)/w),0,id});}int end=-1,expanded=0;const char* stopped=nullptr;auto begun=std::chrono::steady_clock::now();
  while(!open.empty()){
   auto node=open.top();open.pop();if(node.g!=cost[node.id])continue;
   if(goal[node.id]){end=node.id;break;}
-  if(++expanded%10000==0 && (expanded>std::max(3000000,n/2) || std::chrono::steady_clock::now()-begun>std::chrono::seconds(std::stoi(argv[9]))))break;
+  if(++expanded>expansion_limit){stopped="SEARCH_LIMIT_EXPANSIONS";break;}
+  if(expanded%10000==0){
+   if(std::chrono::steady_clock::now()-begun>std::chrono::seconds(std::stoi(argv[9]))){stopped="SEARCH_LIMIT_TIME";break;}
+  }
   int layer=node.id/plane,xy=node.id%plane,x=xy%w,y=xy/w;
   auto offer=[&](int id,float edge){float next=node.g+edge*(prefer_inner&&(id/plane==0||id/plane==3)?1.15f:1.f)+penalty[id];if(!blocked[id]&&next<cost[id]){cost[id]=next;parent[id]=node.id;open.push({next+heuristic(id%w,(id%plane)/w),next,id});}};
   for(int dy=-1;dy<=1;dy++)for(int dx=-1;dx<=1;dx++){
@@ -59,7 +64,7 @@ int main(int argc,char**argv){
   }
   if(via[xy])for(int l=0;l<4;l++)if(l!=layer)offer(l*plane+xy,via_cost);
  }
- if(end<0){std::cout<<"NO_PATH "<<expanded<<"\n";return 0;}
+ if(end<0){std::cout<<(stopped?stopped:"NO_PATH")<<" "<<expanded<<"\n";return 0;}
  std::vector<int> path;for(int id=end;id>=0;id=parent[id])path.push_back(id);std::reverse(path.begin(),path.end());
  std::cout<<"PATH "<<expanded<<" "<<cost[end]<<"\n";for(int id:path)std::cout<<id<<" ";std::cout<<"\n";
 }

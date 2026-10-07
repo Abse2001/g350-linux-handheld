@@ -34,9 +34,13 @@ for layer in zone_layers:
     polygon.NewOutline()
     for p in outline:
         polygon.Append(pcbnew.FromMM(100 + p['x']), pcbnew.FromMM(100 - p['y']))
+    # Match the authored reference margin and leave room for polygon/arc
+    # discretization: the native board minimum remains 0.30 mm.
+    polygon.Inflate(-pcbnew.FromMM(.35), pcbnew.CORNER_STRATEGY_ALLOW_ACUTE_CORNERS, pcbnew.FromMM(.001))
+    assert polygon.OutlineCount()==1 and polygon.COutline(0).PointCount()>=3
     board.Add(zone)
 path = root / 'ground-reference.kicad_pcb'
 pcbnew.SaveBoard(str(path.resolve()), board)
-report = {'sourceBoardSha256': hashlib.sha256(board_path.read_bytes()).hexdigest(), 'board': str(path), 'newReferenceLayers': layer_names, 'net': 'GND', 'clearanceMm': .12, 'minimumNeckMm': .1016, 'padConnection': 'solid', 'requiresFreshFillAndConnectivityChecks': True, 'returnPathsAndAssemblyQualified': False, 'fabricationReady': False}
+report = {'sourceBoardSha256': hashlib.sha256(board_path.read_bytes()).hexdigest(), 'board': str(path), 'newReferenceLayers': layer_names, 'net': 'GND', 'clearanceMm': .12, 'minimumNeckMm': .1016, 'boardEdgeMarginMm': .35, 'padConnection': 'solid', 'requiresFreshFillAndConnectivityChecks': True, 'returnPathsAndAssemblyQualified': False, 'fabricationReady': False}
 (root / 'preparation.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report))

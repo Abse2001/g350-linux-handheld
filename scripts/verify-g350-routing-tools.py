@@ -25,6 +25,17 @@ with tempfile.TemporaryDirectory(prefix='g350-grid-smoke-',dir='/tmp') as tmp:
             assert nodes[0]==0 and nodes[-1]==(35 if via_required else 8)
             if via_required:assert any(a//9!=b//9 for a,b in zip(nodes,nodes[1:]))
         reports.append(dict(name=name,passed=True))
+    # A reachable graph stopped by an explicit budget must not be reported
+    # as disconnected. Retest the same graph with sufficient budget.
+    blocked=np.zeros((4,3,3),dtype=np.uint8);goal=np.zeros_like(blocked)
+    via=np.zeros((3,3),dtype=np.uint8);goal[0,2,2]=1
+    for filename,array in [('blocked',blocked),('goal',goal),('via',via)]:array.tofile(p/filename)
+    command=[str(root),'3','3','0','0','0',str(p/'blocked'),str(p/'via'),str(p/'goal'),'2','0','0','-','64']
+    limited=subprocess.run(command+['1'],capture_output=True,text=True,check=True)
+    assert limited.stdout.startswith('SEARCH_LIMIT_EXPANSIONS'),limited.stdout
+    sufficient=subprocess.run(command+['36'],capture_output=True,text=True,check=True)
+    assert sufficient.stdout.startswith('PATH'),sufficient.stdout
+    reports.append(dict(name='budget_exhaustion_distinct_from_no_path',passed=True))
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 assert sha(root)==sha('.cloud-tools/g350-grid-negotiated-path')
 report=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__,shapely=shapely.__version__,geos=shapely.geos_version_string,compiler=subprocess.check_output(['g++','--version'],text=True).splitlines()[0],sourceSha256=sha('scripts/g350-grid-path.cpp'),binarySha256=sha(root),wheelRequirementsSha256=sha('cloud/python-routing-requirements.txt'),tests=reports,boardRoutingQualified=False,fabricationReady=False)

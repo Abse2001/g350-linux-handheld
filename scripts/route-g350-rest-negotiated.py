@@ -1,5 +1,5 @@
 """Candidate-only routing with reversible rip-up. No check is waived."""
-import os,sys,json,math,time,runpy,shutil,itertools
+import os,sys,json,math,time,runpy,shutil,itertools,hashlib
 from pathlib import Path
 from collections import defaultdict
 import numpy as np
@@ -81,9 +81,53 @@ if os.environ.get('G350_NEGOTIATED_POWER_FIRST')=='1':
 if os.environ.get('G350_NEGOTIATED_DDR_FIRST')=='1':pending.sort(key=lambda n:n not in ddr_nets)
 max_attempts=int(os.environ.get('G350_NEGOTIATED_ATTEMPTS','600'))
 manifest=json.loads((root/'execution.json').read_text())
-for key in ['G350_NEGOTIATED_ONLY_OPEN','G350_NEGOTIATED_KEEP_VIAS','G350_NEGOTIATED_LOCAL_RIP','G350_NEGOTIATED_DDR_FIRST','G350_NEGOTIATED_PROTECT_ALL_DDR','G350_GRID_VIA_COST','G350_GRID_ESCAPE_MARGIN']:
+for key in ['G350_NEGOTIATED_ONLY_OPEN','G350_NEGOTIATED_KEEP_VIAS','G350_NEGOTIATED_LOCAL_RIP','G350_NEGOTIATED_DDR_FIRST','G350_NEGOTIATED_PROTECT_ALL_DDR','G350_NEGOTIATED_MUTABLE_PENALTY','G350_NEGOTIATED_HISTORY_INCREMENT','G350_NEGOTIATED_NO_NEW_ESCAPE_VIAS','G350_NEGOTIATED_ESCAPE_VIA_CHANNEL','G350_NEGOTIATED_DYNAMIC_GROUND_PROXY','G350_GRID_VIA_COST','G350_GRID_ESCAPE_MARGIN','G350_GRID_EXPANSION_LIMIT']:
     manifest['routingParameters'][key]=os.environ.get(key)
 (root/'execution.json').write_text(json.dumps(manifest,indent=2)+'\n')
+mutable_penalty=int(os.environ.get('G350_NEGOTIATED_MUTABLE_PENALTY','100'))
+history_increment=int(os.environ.get('G350_NEGOTIATED_HISTORY_INCREMENT','8'))
+assert 1<=mutable_penalty<=240 and 1<=history_increment<=240
+model_counts={}
+best_score=None
+proxy_zones=[dict(o) for o in objects if o['kind']=='zone']
+def refresh_ground_proxy():
+    if os.environ.get('G350_NEGOTIATED_DYNAMIC_GROUND_PROXY')!='1':return
+    # Signals can sever a previously filled reference neck during recovery.
+    # Retain only a conservative subset of the actual input fill: subtract all
+    # current foreign copper with zone clearance, then remove narrow necks.
+    # Removed signal copper never expands this proxy. Actual refill is required.
+    foreign={layer:unary_union([o['shape'] for o in objects if o['net']!=ground_net and o['kind'] in ('wire','via') and layer in o['layers']]).buffer(.121) for layer in range(4)}
+    rebuilt=[]
+    for layer in range(4):
+        original=unary_union([o['shape'] for o in proxy_zones if layer in o['layers']])
+        shape=original.difference(foreign[layer]).buffer(-.0509).buffer(.0509).intersection(original)
+        parts=list(shape.geoms) if hasattr(shape,'geoms') else [shape]
+        rebuilt.extend(dict(net=ground_net,layers=[layer],shape=p,kind='zone',pid=None) for p in parts if p.geom_type=='Polygon' and not p.is_empty)
+    objects[:]=[o for o in objects if o['kind']!='zone']+rebuilt
+def checkpoint_model(changed=None):
+    global best_score
+    refresh_ground_proxy()
+    if changed is not None:changed=set(changed)|{ground_net}
+    for n in connections if changed is None else changed:
+        required_n={p['pcb_port_id'] for c in connections[n] for p in c['pointsToConnect']}
+        model_counts[n]=sum(any(objects[i]['pid'] in required_n for i in ids) for ids in components(n))
+    score=(sum(max(0,count-1) for count in model_counts.values()),
+           sum(count>1 for count in model_counts.values()))
+    model=dict(complete=sum(count==1 for count in model_counts.values()),total=len(model_counts),
+               excessPadGroups=score[0],nets=[dict(net=netlabel(n),padGroups=count) for n,count in model_counts.items()],
+               requiresIndependentVerification=True,fabricationReady=False)
+    snapshot=json.dumps(g['circuit']+extra,indent=2)+'\n'
+    model['snapshotSha256']=hashlib.sha256(snapshot.encode()).hexdigest()
+    model['snapshot']='current-model.circuit.json'
+    model['scope']='After the last completed net attempt; live joins may have changed candidate.circuit.json'
+    (root/'current-model.circuit.json').write_text(snapshot)
+    (root/'current-connectivity-model.json').write_text(json.dumps(model,indent=2)+'\n')
+    if best_score is None or score<best_score:
+        best_score=score
+        (root/'best-connectivity-model.json').write_text(json.dumps({**model,'snapshot':'best.circuit.json'},indent=2)+'\n')
+        (root/'best.circuit.json').write_text(snapshot)
+        print(json.dumps(dict(stage='best_model',complete=model['complete'],total=model['total'],excessPadGroups=score[0])),flush=True)
+checkpoint_model()
 while pending and len(events)<max_attempts:
     net=pending.pop(0);required={p['pcb_port_id'] for c in connections[net] for p in c['pointsToConnect']}
     cs=connections[net];global_cs=[c for c in cs if c['name'].startswith('source_net_')];owner=(global_cs or cs)[0]['name'];st_id=cs[0].get('source_trace_id')
@@ -135,6 +179,19 @@ while pending and len(events)<max_attempts:
                     clearance=.15 if o['kind']=='via' else .1016
                     paint_block(foreign_via_footprints,o['shape'].buffer(clearance+.4572/2+.001))
             via&=~foreign_via_footprints
+        # Existing through-via centres remain valid layer-change contacts.
+        # Optional planning prevents new off-lattice lands from closing the
+        # remaining package-field channels on all four layers.
+        if os.environ.get('G350_NEGOTIATED_NO_NEW_ESCAPE_VIAS')=='1':via&=~g['escape_mask']
+        if os.environ.get('G350_NEGOTIATED_ESCAPE_VIA_CHANNEL')=='1':
+            # Leave room for a 4 mil wire plus clearance on both sides between
+            # foreign full-depth lands: .4572 + 2*.1016 + .1016 = .762 mm.
+            # This tightens new-site planning; manufacturing rules are unchanged.
+            channel_block=np.zeros((h,w),dtype=np.bool_)
+            for o in objects:
+                if o['kind']=='via' and o['net']!=net:
+                    paint_block(channel_block,o['shape'].buffer(.762-.4572/2+.001))
+            via&=~(channel_block&g['escape_mask'])
         for (iy,ix) in centres:via[iy,ix]=True
         if restricted:via[:]=False
         penalty=history.copy()
@@ -144,7 +201,7 @@ while pending and len(events)<max_attempts:
             if region is None:continue
             slices,mask=region
             for layer in o['layers']:
-                view=penalty[layer][slices];view[mask]=np.minimum(240,view[mask].astype(np.uint16)+100).astype(np.uint8)
+                view=penalty[layer][slices];view[mask]=np.minimum(240,view[mask].astype(np.uint16)+mutable_penalty).astype(np.uint8)
         opts=[];seen=set()
         for group in others:
             for i in group:
@@ -163,11 +220,13 @@ while pending and len(events)<max_attempts:
         opts.sort();_,sx,sy,sl=opts[0]
         for filename,array in [('blocked.bin',blocked),('via.bin',via),('goal.bin',goal),('penalty.bin',penalty)]:array.tofile(root/filename)
         starts=','.join(str(layer*w*h+iy*w+ix) for _,ix,iy,layer in opts)
-        run=__import__('subprocess').run([str(root/'search.executable'),str(w),str(h),str(sx),str(sy),str(sl),str(root/'blocked.bin'),str(root/'via.bin'),str(root/'goal.bin'),os.environ.get('G350_GRID_SEARCH_SECONDS','15'),starts,'1' if net in ddr_nets else '0',str(root/'penalty.bin'),os.environ.get('G350_GRID_VIA_COST','30')],capture_output=True,text=True,check=True)
+        search_args=[str(root/'search.executable'),str(w),str(h),str(sx),str(sy),str(sl),str(root/'blocked.bin'),str(root/'via.bin'),str(root/'goal.bin'),os.environ.get('G350_GRID_SEARCH_SECONDS','15'),starts,'1' if net in ddr_nets else '0',str(root/'penalty.bin'),os.environ.get('G350_GRID_VIA_COST','30')]
+        if os.environ.get('G350_GRID_EXPANSION_LIMIT'):search_args.append(os.environ['G350_GRID_EXPANSION_LIMIT'])
+        run=__import__('subprocess').run(search_args,capture_output=True,text=True,check=True)
         if not run.stdout.startswith('PATH'):
             reason=run.stdout.strip()
             diagnostic=root/('failed-access-'+str(net)+'-'+str(len(events))+'.npz')
-            np.savez_compressed(diagnostic,blocked=blocked,via=via,goal=goal,starts=np.array([(ix,iy,layer) for _,ix,iy,layer in opts]),width=width,escapeWidth=g['escape_widths'][net],canNeck=g['can_neck'][net])
+            np.savez_compressed(diagnostic,blocked=blocked,via=via,goal=goal,penalty=penalty,starts=np.array([(ix,iy,layer) for _,ix,iy,layer in opts]),width=width,escapeWidth=g['escape_widths'][net],canNeck=g['can_neck'][net])
             print(json.dumps(dict(stage='failed_access_saved',net=netlabel(net),file=str(diagnostic),reason=reason,width=width,escapeWidth=g['escape_widths'][net],canNeck=g['can_neck'][net])),flush=True)
             break
         ids=list(map(int,run.stdout.splitlines()[1].split()));path=[(k//(w*h),x0+(k%w)*step,y0+((k%(w*h))//w)*step) for k in ids]
@@ -273,7 +332,7 @@ while pending and len(events)<max_attempts:
                 for layer in o['layers']:
                     region=g['pixels'](o['shape'].buffer(.1016+width/2))
                     if region is None:continue
-                    slices,mask=region;view=history[layer][slices];view[mask]=np.minimum(160,view[mask].astype(np.uint16)+8).astype(np.uint8)
+                    slices,mask=region;view=history[layer][slices];view[mask]=np.minimum(240,view[mask].astype(np.uint16)+history_increment).astype(np.uint8)
         mutable_ids.add(tid);objects.extend(planned)
         extra.append(dict(type='pcb_trace',pcb_trace_id=tid,source_trace_id=st_id,connection_name=owner,route=route,subcircuit_id='subcircuit_source_group_0'))
         for p in route:
@@ -290,6 +349,9 @@ while pending and len(events)<max_attempts:
         for o in objects:
             if o['net']==ground_net and o.get('mutable'):
                 o['mutable']=False;g['insert'](o)
+    checkpoint_model({net}|ripups)
+    if os.environ.get('G350_NEGOTIATED_DYNAMIC_GROUND_PROXY')=='1' and model_counts[ground_net]>1 and ground_net not in pending:
+        pending.append(ground_net)
     event=dict(net=netlabel(net),complete=complete,padGroups=len(groups),added=added,rippedNets=[netlabel(n) for n in sorted(ripups)],reason=reason,pending=len(pending));events.append(event);save();print(json.dumps(event),flush=True)
     if not pending and failed and rounds<3:
         rounds+=1;pending=list(failed);failed.clear()

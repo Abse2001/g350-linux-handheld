@@ -164,3 +164,74 @@ executed workers, empty plane input, native reports and independent unfilled
 board/checks. `critical-access-independent.tar.gz` retains the earlier fresh
 four-fill seed and rejected default-project export, with the audited rerun
 clearly identified. Every archive member has a verified SHA256.
+
+## Ground-island checkpoint and fresh-source limits (2026-10-07)
+
+The newer independently checked partial checkpoint is
+`dist/g350-ground-islands-fixed-signals-15/pruned.circuit.json`, SHA256
+`584c1cc26b3482e46858b190cbc6bd02781d828b9b6e573dab1d297590513520`.
+Three short ground stitches reduce missing ground pad memberships from 87 to
+82. All 216 other connections, including 49 DDR signals, remain connected.
+All 280 placements and DDR copper are preserved. Three actual pad-centre
+bridges and two confirmed dead-tail removals clear the three non-ground port
+errors and two known dead tails in the carried-pour snapshot. The three
+whole-DDR-bus skew failures remain. All native physical and
+strict via/track checks pass. Fresh KiCad fill has zero manufacturing errors,
+no ignored rules and no exclusions.
+
+Two carried-over ground pours were stale: Gerber checking them found shorts.
+That rejection is retained. Replacing only derived pours with the exact
+hash-bound independently filled copper gives zero Gerber shorts on all four
+layers. `rebuild-g350-filled-pours.py` enforces the board/source/connectivity
+bindings and preserves every signal and placement record. This is checked
+export evidence, not a successful editable-source rebuild.
+
+The experimental replay caches now represent this checkpoint. Its fresh ALL
+source build (`g350-full-board-candidate-source-replay-16`) completes in
+383.24 seconds but exits 1: 259 ground-port errors and three whole-bus skew
+errors. The final native pour checker requires every same-net pad to share
+one physical poured component; disconnected ground islands prevent that check
+from passing even where an individual pad touches a pour. Phase callbacks with
+zero errors do not establish whole-source success. No check is weakened.
+The checkpoint, negative source replay, execution inputs and reports are in
+`checks/integrated/g350-full-board-progress/ground-islands-checkpoint-15.tar.gz`,
+with verified per-file hashes in its adjacent manifest.
+
+Later trial 18 still independently connects 216/217 nets and has zero KiCad
+manufacturing errors, but ground has 17 groups (103 memberships outside the
+first group). It is not an improvement over checkpoint 15. Fixed-signal trial
+19 adds five ground joins; trial 20 joins its remaining model groups while
+ripping eleven non-DDR nets. These are provisional routing events, not final
+connectivity. The active trial is `g350-ground-dynamic-proxy-recover-21`.
+
+A conservative planning option now clips old ground-fill proxies around
+current foreign copper and removes narrow reference necks. Newly routed signals
+therefore cannot rely on ground connections that they cut through. A geometry
+regression demonstrates a previously continuous reference splitting into two
+groups when a foreign signal crosses it. Actual fresh fill and numeric checks
+remain required. New optional package via placement leaves a 0.762 mm centre
+spacing from foreign lands to preserve a 4 mil channel; manufacturing limits
+are unchanged. C++ searches now distinguish exhausted time/expansion budgets
+from a truly exhausted graph; the four routing-tool verification tests pass.
+
+The checked zero-skew DDR-only entry and the frozen default remain unchanged.
+Whole-board routing, source replay, electrical timing and fabrication readiness
+remain unfinished.
+
+### Fill adapter edge audit
+
+Running the complete native suite on the first exact KiCad fill revealed four
+edge-clearance failures: polygon discretization measured 0.297 mm against the
+unchanged 0.300 mm rule. The earlier carried-pour native counts do not qualify
+those new fills. That failed native report is preserved. The fresh zone adapter
+now insets its contour by the authored 0.35 mm reference margin, using KiCad's
+polygon API; no board outline or rule changes.
+
+`g350-ground-islands-independent-15d` is the corrected independent fill:
+216/217 connections, 82 missing ground pad memberships, zero manufacturing
+errors, no ignored rules/exclusions, and zero all-layer Gerber shorts. Its exact
+filled Circuit JSON passes every native physical/width/placement/dangling check;
+259 ground-port connectivity errors and three whole-bus skew errors remain.
+The adjacent fresh-validation archive and manifest preserve both this evidence
+and the earlier rejected edge report. The progress summary now uses these
+fresh-fill native counts rather than the stale-pour snapshot counts.

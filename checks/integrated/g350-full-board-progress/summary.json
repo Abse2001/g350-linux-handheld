@@ -1,8 +1,8 @@
 {
   "status": "PARTIAL_WHOLE_BOARD_ROUTING_CHECKPOINT",
   "checkedCircuit": {
-    "path": "dist/g350-full-board-clock-complete-01/candidate.circuit.json",
-    "sha256": "188cb4ab700decd2435c7d90b9418e595cf5fea526331ca165af529be9257385"
+    "path": "dist/g350-ground-islands-independent-15d/fresh-filled.circuit.json",
+    "sha256": "57a9d8fb7ba61db5e6ee2bfc135e48d7b2700f5526c83382bc6a813c26ec2ca9"
   },
   "nativeCounts": {
     "checkEachPcbTraceNonOverlapping": 0,
@@ -16,10 +16,11 @@
     "checkViasInPads": 0,
     "checkViasOffBoard": 0,
     "checkPadPadClearance": 0,
-    "checkEachPcbPortConnectedToPcbTraces": 3,
+    "checkEachPcbPortConnectedToPcbTraces": 259,
     "checkSourceTracesHavePcbTraces": 0,
     "checkSourceTracesMatchPcbTraceThickness": 0,
     "checkTracesAreContiguous": 0,
+    "checkDanglingTraces": 0,
     "checkPcbBusLengthSkew": 3,
     "checkPcbRoutingConstraints": 0,
     "checkPcbTraceLengths": 0,
@@ -31,14 +32,48 @@
     "checkG350ViaTrackManufacturingClearance": 0
   },
   "independentConnectivity": {
+    "boardSha256": "a14e8af5d82921937b319a14266c5083440dc38ed8d6d6ba15e4e260a281aeda",
+    "circuitSha256": "584c1cc26b3482e46858b190cbc6bd02781d828b9b6e573dab1d297590513520",
     "requiredConnections": 217,
     "connectedConnections": 216,
     "disconnectedConnections": 1,
-    "missingPadMemberships": 87
+    "missingPadMemberships": 82,
+    "fabricationReady": false
   },
   "checkedDDROnlyEntry": "experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
   "experimentalWholeBoardEntry": "experiments/am3352-g350-full-board-candidate-replay.circuit.tsx",
   "completeWholeBoardReplayPassed": false,
   "fabricationReady": false,
-  "defaultAndFrozenEvidencePreserved": true
+  "defaultAndFrozenEvidencePreserved": true,
+  "previousCheckedCircuit": {
+    "path": "dist/g350-full-board-clock-complete-01/candidate.circuit.json",
+    "sha256": "188cb4ab700decd2435c7d90b9418e595cf5fea526331ca165af529be9257385"
+  },
+  "allLayerGerberShorts": 0,
+  "gerberSource": "dist/g350-ground-islands-independent-15d/fresh-filled.circuit.json",
+  "freshEditableSourceReplay": {
+    "path": "dist/g350-full-board-candidate-source-replay-16/compiled.circuit.json",
+    "buildExitCode": 1,
+    "elapsedSeconds": 383.241809676,
+    "sourceDefinitionsUnchanged": true,
+    "errors": {
+      "groundPortConnectivity": 259,
+      "wholeDdrBusSkew": 3
+    },
+    "passed": false
+  },
+  "checkpointArchive": "checks/integrated/g350-full-board-progress/ground-islands-checkpoint-15.tar.gz",
+  "checkpointArchiveSha256": "c2224d32ebca54aea7eb7dfa04be032f7cb817eb5446395059280e02bd91791e",
+  "routingCircuit": {
+    "path": "dist/g350-ground-islands-fixed-signals-15/pruned.circuit.json",
+    "sha256": "584c1cc26b3482e46858b190cbc6bd02781d828b9b6e573dab1d297590513520"
+  },
+  "freshValidationArchive": "checks/integrated/g350-full-board-progress/ground-islands-fresh-validation-15d.tar.gz",
+  "freshValidationArchiveSha256": "6623ad910a3230e0d87f081a483e916e6db05a47994fbde8e1a3756ff8cdcd73",
+  "rejectedPreviousFreshFill": {
+    "path": "dist/g350-ground-islands-fixed-signals-15/fresh-filled-native.json",
+    "edgeClearanceErrors": 4,
+    "measuredMm": 0.297,
+    "minimumMm": 0.3
+  }
 }
