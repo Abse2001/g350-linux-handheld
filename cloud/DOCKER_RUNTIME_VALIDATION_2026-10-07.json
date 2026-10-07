@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "date": "2026-10-07",
+  "host": "Debian 13",
+  "dockerVersion": "28.4.0",
+  "kicadCliVersion": "10.0.6",
+  "pcbnewVersion": "10.0.6+dfsg-1",
+  "tests": [
+    "Default Docker bridge: official Debian apt-get update succeeds using the current public CA bundle.",
+    "Retained KiCad archive hash verifies and loads through the local Unix socket despite stale remote Docker selectors.",
+    "CLI and headless pcbnew connectivity/serializer imports succeed.",
+    "Pinned packages, shared core, native DDR solvers, reviewed checks patch and frozen board verify."
+  ],
+  "logs": {
+    "dist/g350-cloud-docker-bridge-apt-01.log": "d0a4bb515e4e86df5f43bf03bca54e8998cd5863e99e5e9f2689b59adb26f301",
+    "dist/g350-cloud-docker-archive-restore-02.log": "00cec616c3c5bdc222f0dde9475082e65fa4b81d0dcf82e39b4e16cf9e2dbe67",
+    "dist/g350-cloud-docker-python-02.log": "ecd7d4ba773eccdbe43b56a8b6739584cd4cec800c6e4203918310b1dcb8e111",
+    "dist/g350-cloud-state-docker-02.log": "dc95633d8a77f302a8a0a22971ebce6e08cfbeec71c0397d44480b1e13ed3aa2"
+  },
+  "fabricationReady": false,
+  "archiveSha256": "a514e08b40db54980929f2bc71a9014e35cd38ab371f45123203c310f9f5ed19"
+}
