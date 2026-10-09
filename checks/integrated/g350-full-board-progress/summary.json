@@ -1,29 +1,29 @@
 {
   "status": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES",
-  "checkedEntry": "experiments/am3352-g350-clean-full-board-bend-timing-replay.circuit.tsx",
+  "checkedEntry": "experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx",
   "compiledCircuit": {
-    "path": "dist/g350-bend-timing-source-166/compiled.circuit.json",
-    "sha256": "9534fc9ae3d89050ee11b86fcaf9f38307b30dc799b805bd18151d981e419e23"
+    "path": "dist/g350-checked-shortcuts-source-178/compiled.circuit.json",
+    "sha256": "7de83799c838531e93f84315e6bbd5ba084367596e4eaf552bda98ae6df8b52d"
   },
   "freshFilledCircuit": {
-    "path": "dist/g350-bend-timing-verified-167/fresh-filled.circuit.json",
-    "sha256": "413b4394a72300634d3273984f0a499db9b59a3be02da655c636606d3f93ee3e"
+    "path": "dist/g350-checked-shortcuts-verified-179/fresh-filled.circuit.json",
+    "sha256": "2363321a714f9fce429e8667eee9bc21e0a71c57668c5dfb02d2a9f10edbd420"
   },
   "independentBoard": {
-    "path": "dist/g350-bend-timing-verified-167/filled/ground-reference.kicad_pcb",
-    "sha256": "bb849031ad2469dc346649a229fc89ef3422b674cb6793be6a6573f9504c2d32"
+    "path": "dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pcb",
+    "sha256": "d6c6506779f9dd9a07f1e4606701358263106f1949dcdd5bba29fd36ab832255"
   },
   "freshEditableSource": true,
   "sourceDefinitionsUnchanged": true,
   "buildExitCode": 1,
-  "buildElapsedSeconds": 454.10251053999997,
+  "buildElapsedSeconds": 438.15904219899994,
   "nativeSource": {
-    "path": "dist/g350-bend-timing-source-166/native.json",
-    "sha256": "69011a8f5a1ec9412b49ba98fef541ad99e4ae942d85a037860db89ef69d213e"
+    "path": "dist/g350-checked-shortcuts-source-178/native.json",
+    "sha256": "5ff73c9587ea37cdd23cc7e120cb4b332f579d764c655665b84609ecfa77c031"
   },
   "nativeFilled": {
-    "path": "dist/g350-bend-timing-verified-167/native-filled.json",
-    "sha256": "f7ca0d039293ab34125fc768221d0baf4ba319418e1302d059fccc88159d8ab4"
+    "path": "dist/g350-checked-shortcuts-verified-179/native-filled.json",
+    "sha256": "113c78e9ab0bcdee0f41942e88494af2ede20d7a4c63bf7ebbb07afda1e09a8f"
   },
   "sourceNativeCounts": {
     "checkEachPcbTraceNonOverlapping": 0,
@@ -80,8 +80,8 @@
     "checkG350ViaTrackManufacturingClearance": 0
   },
   "independentConnectivity": {
-    "boardSha256": "bb849031ad2469dc346649a229fc89ef3422b674cb6793be6a6573f9504c2d32",
-    "circuitSha256": "9534fc9ae3d89050ee11b86fcaf9f38307b30dc799b805bd18151d981e419e23",
+    "boardSha256": "d6c6506779f9dd9a07f1e4606701358263106f1949dcdd5bba29fd36ab832255",
+    "circuitSha256": "7de83799c838531e93f84315e6bbd5ba084367596e4eaf552bda98ae6df8b52d",
     "requiredConnections": 217,
     "connectedConnections": 217,
     "disconnectedConnections": 0,
@@ -1610,8 +1610,8 @@
     "fabricationReady": false
   },
   "independentDrc": {
-    "path": "dist/g350-bend-timing-verified-167/filled/drc.json",
-    "sha256": "7587b081026cc3e0483cf20199a1f20afd9dfa5c87aea7f359043de2a289c198"
+    "path": "dist/g350-checked-shortcuts-verified-179/filled/drc.json",
+    "sha256": "b7cf8086c418330a84db4debd8445a6aac02ef38d6d663bbf423636389f9e023"
   },
   "kicadErrors": 0,
   "kicadWarnings": 0,
@@ -1622,15 +1622,15 @@
   "kiCadExclusions": [],
   "allLayerGerberShorts": 0,
   "shortsVerification": {
-    "input": "/workspace/g350-linux-handheld/dist/g350-bend-timing-verified-167/fresh-filled.circuit.json",
-    "inputSha256": "413b4394a72300634d3273984f0a499db9b59a3be02da655c636606d3f93ee3e",
+    "input": "/workspace/g350-linux-handheld/dist/g350-checked-shortcuts-verified-179/fresh-filled.circuit.json",
+    "inputSha256": "2363321a714f9fce429e8667eee9bc21e0a71c57668c5dfb02d2a9f10edbd420",
     "mode": "gerber",
     "layer": "all",
     "cliVersion": "0.1.2258",
     "cliSha256": "2135bc7f5e27b72ddfaa9b65586c905897e4222f989328ebc0434b1d1961c19c",
     "logSha256": "d6eba65722c309471fe66e04ff6be6fd43a3b8c520a1460bb9ab02803181c321",
     "exitCode": 0,
-    "workingDirectory": "/workspace/g350-linux-handheld/dist/g350-bend-timing-shorts-168",
+    "workingDirectory": "/workspace/g350-linux-handheld/dist/g350-checked-shortcuts-shorts-180",
     "fabricationReady": false
   },
   "connectedDdrSignals": 49,
@@ -1649,9 +1649,9 @@
       },
       "longest": {
         "signal": "DDR_D2",
-        "nativeLengthMm": 54.304508207729185
+        "nativeLengthMm": 52.83132288376018
       },
-      "skewMm": 30.62147744130635,
+      "skewMm": 29.148292117337345,
       "limitMm": 0.635,
       "passNativeSkew": false
     },
@@ -1663,9 +1663,9 @@
       },
       "longest": {
         "signal": "DDR_D12",
-        "nativeLengthMm": 56.64145321733084
+        "nativeLengthMm": 55.34816452257317
       },
-      "skewMm": 34.678381418245955,
+      "skewMm": 33.385092723488285,
       "limitMm": 0.635,
       "passNativeSkew": false
     },
@@ -1677,9 +1677,9 @@
       },
       "longest": {
         "signal": "DDR_A0",
-        "nativeLengthMm": 52.682422455509105
+        "nativeLengthMm": 52.469958657301945
       },
-      "skewMm": 24.692715943222957,
+      "skewMm": 24.480252145015797,
       "limitMm": 0.635,
       "passNativeSkew": false
     },
@@ -1728,45 +1728,52 @@
   ],
   "nativeViaAllowanceMm": 1.6,
   "snapshot": {
-    "path": "dist/g350-bend-timing-verified-167/pcb-all-layers.png",
-    "sha256": "76554174fecb20deab78a204804b7088b9e98b224d383c7e1a240b6633ed68e4"
+    "path": "dist/g350-checked-shortcuts-verified-179/pcb-all-layers.png",
+    "sha256": "78d4ae81002a218339165b71445387287f16ad4ef53ea2c67fdda6ab87ec1a50"
   },
   "fullElectricalTimingQualified": false,
   "fabricationReady": false,
   "baselineCleanupSummary": "checks/integrated/g350-dangling-copper-cleanup/summary.json",
   "latestRuntime": {
-    "tscircuit": "0.0.2759",
+    "tscircuit": "0.0.2803",
     "core": "0.0.2107",
     "cli": "0.1.2258",
     "checks": "0.0.242"
   },
-  "baselineCheckedSummary": "checks/integrated/g350-middle-shortcut-progress/summary.json",
-  "preservedConnectedCheckpoint": "cloud/CONNECTED_CHECKPOINT_2026-10-09.json",
-  "nonDdrTraceGeometryExactlyPreserved": true,
-  "nonDdrDerivedPourAnnotationsChanged": 102,
-  "allLogicalConstraintsExactlyPreserved": true,
-  "allRequiredNumericPorts": 1032,
-  "connectedGroundPorts": 298,
-  "fullElectricalTimingInputsPending": [
-    "target DDR clock",
-    "actual manufacturer four-layer stackup",
-    "package/via delay and impedance/return-path qualification"
-  ],
-  "report": "cloud/DDR_BEND_TIMING_PROGRESS_2026-10-09.md",
-  "previousFullBoardSummary": {
-    "path": "checks/integrated/g350-bend-timing-progress/previous-full-board-summary.json",
-    "sha256": "1e7ea3e62fab40e48eaa5338400ec29e8e0dc52ae6021f60aa6cc9587ab787be"
+  "baselineComparison": {
+    "logicalTypesExactlyPreserved": [
+      "source_trace",
+      "source_bus",
+      "source_port",
+      "pcb_port",
+      "pcb_smtpad",
+      "pcb_component",
+      "pcb_via"
+    ],
+    "nonDdrCopperGeometryExactlyPreserved": true,
+    "changedDdrCopperGeometries": [
+      "DDR_D2",
+      "DDR_A0",
+      "DDR_D12"
+    ],
+    "nonDdrDerivedAnnotationRecordsChanged": 102,
+    "allOtherDdrCopperGeometriesPreserved": 46,
+    "fabricationReady": false
   },
-  "updatedDdrSignalRouteRecords": 49,
-  "updatedDdrSignalCopperGeometries": 45,
-  "zeroLengthViaTransitionAnchorsAddedByReplay": true,
-  "archives": {
-    "checkedSourceAndTrialsManifest": "checks/integrated/g350-bend-timing-progress/checked-source-and-trials-153-172-manifest.json",
-    "members": 509,
-    "bytes": 35338999
+  "previousCheckedSummary": "checks/integrated/g350-bend-timing-progress/summary.json",
+  "report": "cloud/DDR_CHECKED_SHORTCUT_PROGRESS_2026-10-09.md",
+  "finalArtifactVerifier": {
+    "path": "dist/g350-checked-shortcuts-verified-179/final-verifier-exit.json",
+    "exitCode": 0
   },
-  "startupValidation": "checks/integrated/g350-bend-timing-progress/start-validation/result.json",
-  "typecheckValidation": "dist/g350-bend-timing-validation-170/validation.json",
-  "originalEvidenceFilesVerified": 25814,
-  "archiveMembersVerified": 509
+  "combinedQualificationWrapperExitCode": 1,
+  "evidenceArchive": {
+    "path": "checks/integrated/g350-checked-shortcut-progress/checked-source-and-trials-173-180.tar.gz",
+    "bytes": 29498653,
+    "sha256": "ceb8d4902963e9554a1c2fb4b91882dcd4e97c1ba33e4eabfe167827821ae544"
+  },
+  "evidenceManifest": "checks/integrated/g350-checked-shortcut-progress/checked-source-and-trials-173-180-manifest.json",
+  "savedInstallScriptExitCode": 0,
+  "startBashBlockExitCode": 0,
+  "githubAuthenticationRecovered": true
 }

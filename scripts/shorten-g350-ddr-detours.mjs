@@ -8,11 +8,14 @@ import {createG350LocalGuard} from './lib/g350-ddr-local-guard.mjs'
 import {g350DdrPhysicalChecks,checkG350ViaTrackManufacturingClearance} from './lib/g350-ddr-physical-checks.mjs'
 const [input,out,selectedSignal]=process.argv.slice(2)
 assert(input&&out&&!fs.existsSync(out));fs.mkdirSync(out,{recursive:true})
+const checkEach=process.env.G350_SHORTCUT_CHECK_EACH==='1'
+const probeBudget=Number(process.env.G350_SHORTCUT_PROBES??40)
+assert(Number.isInteger(probeBudget)&&probeBudget>0&&probeBudget<=100)
 fs.copyFileSync('scripts/shorten-g350-ddr-detours.mjs',out+'/worker.executed.mjs')
 const circuit=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
 const names=new Map(circuit.filter(e=>e.type==='source_trace').map(e=>[e.source_trace_id,e.name]))
 const length=r=>r.slice(1).reduce((s,p,i)=>s+(p.route_type==='via'?1.6:0)+(p.route_type==='wire'&&r[i].route_type==='wire'&&p.layer===r[i].layer?Math.hypot(p.x-r[i].x,p.y-r[i].y):0),0)
-const changes=[],rejected=[]
+const changes=[],rejected=[],proposals=[]
 const parent=new Map()
 const find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)}
 for(const s of circuit.filter(e=>e.type==='source_trace'))for(const member of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(member))
@@ -32,7 +35,7 @@ for(const trace of circuit.filter(e=>e.type==='pcb_trace')){
  const original=structuredClone(trace.route),before=length(original)
  if(before<=target+.01)continue
  const guard=createG350LocalGuard(circuit,trace)
- let edits=0
+ let edits=0,probes=0
  while(edits<20){
   const route=trace.route,total=length(route),candidates=[]
   for(let i=0;i<route.length-2;i++){
@@ -50,7 +53,21 @@ for(const trace of circuit.filter(e=>e.type==='pcb_trace')){
   }
   if(!candidates.length)break
   candidates.sort((a,b)=>b.gain-a.gain)
-  const best=candidates[0];trace.route=[...route.slice(0,best.i+1),...route.slice(best.j)];edits++
+  if(checkEach){
+   let accepted=false
+   for(const best of candidates){
+    if(probes>=probeBudget)break
+    probes++
+    trace.route=[...route.slice(0,best.i+1),...route.slice(best.j)]
+    const failures=physical(),counts=Object.fromEntries(Object.entries(failures).map(([n,e])=>[n,e.length]))
+    proposals.push({name,i:best.i,j:best.j,gainMm:best.gain,accepted:Object.keys(counts).length===0,checks:counts})
+    if(!Object.keys(counts).length){accepted=true;edits++;break}
+    trace.route=route
+   }
+   if(!accepted||probes>=probeBudget)break
+  }else{
+   const best=candidates[0];trace.route=[...route.slice(0,best.i+1),...route.slice(best.j)];edits++
+  }
  }
  if(!edits)continue
  const failures=physical()
@@ -60,7 +77,7 @@ for(const trace of circuit.filter(e=>e.type==='pcb_trace')){
  console.log(JSON.stringify(changes.at(-1)))
 }
 const failures=physical();assert.equal(Object.keys(failures).length,0)
-const report={inputSha256:createHash('sha256').update(fs.readFileSync(input)).digest('hex'),changes,rejected,physicalErrors:failures,remainingSkew:checks.checkPcbBusLengthSkew(circuit),fabricationReady:false,requiresFreshSourceAndIndependentVerification:true}
+const report={inputSha256:createHash('sha256').update(fs.readFileSync(input)).digest('hex'),checkEach,probeBudget,proposals,changes,rejected,physicalErrors:failures,remainingSkew:checks.checkPcbBusLengthSkew(circuit),fabricationReady:false,requiresFreshSourceAndIndependentVerification:true}
 fs.writeFileSync(`${out}/candidate.circuit.json`,JSON.stringify(circuit,null,2)+'\n')
 fs.writeFileSync(`${out}/report.json`,JSON.stringify(report,null,2)+'\n')
 console.log(JSON.stringify({changed:changes.length,rejected:rejected.length}))

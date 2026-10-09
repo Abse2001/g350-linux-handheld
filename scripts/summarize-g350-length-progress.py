@@ -10,6 +10,7 @@ artifact=lambda p:dict(path=str(p),sha256=sha(p))
 source=source_root/'compiled.circuit.json';filled=verified_root/'fresh-filled.circuit.json';board=verified_root/'filled/ground-reference.kicad_pcb'
 c=read(source);native=read(source_root/'native.json');filled_native=read(verified_root/'native-filled.json');build=read(source_root/'result.json')
 execution=read(source_root/'execution.json')
+assert execution['versions']=={'tscircuit':'0.0.2803','@tscircuit/core':'0.0.2107','@tscircuit/cli':'0.1.2258','@tscircuit/checks':'0.0.242','@tscircuit/capacity-autorouter':'0.0.962'}
 assert execution['args'][0]=='build' and execution['args'][1]==entry
 assert build['execution']['sha256']==sha(source_root/'execution.json')
 assert build['code']==1 and not build['forcedTimeout'] and build['freshCompiledSource'] and build['sourceDefinitionsUnchanged']
@@ -46,6 +47,6 @@ assert sum(not t['passNativeSkew'] for t in timing)==3
 report=dict(status='WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES',checkedEntry='experiments/am3352-g350-clean-full-board-length-progress-replay.circuit.tsx',compiledCircuit=artifact(source),freshFilledCircuit=artifact(filled),independentBoard=artifact(board),freshEditableSource=True,sourceDefinitionsUnchanged=True,buildExitCode=1,buildElapsedSeconds=build['elapsedSeconds'],nativeSource=artifact(source_root/'native.json'),nativeFilled=artifact(verified_root/'native-filled.json'),sourceNativeCounts=native['counts'],freshFilledNativeCounts=filled_native['counts'],independentConnectivity=conn,independentDrc=artifact(verified_root/'filled/drc.json'),kicadErrors=0,kicadWarnings=0,kicadUnconnectedItems=0,danglingTracks=0,danglingVias=0,ignoredKiCadRules=[],kiCadExclusions=[],allLayerGerberShorts=0,shortsVerification=shorts,connectedDdrSignals=49,parts=280,numLayers=4,ramRotationDegrees=90,standardThroughVias=824,ddrCopperExactlyPreserved=False,componentPlacementsExactlyPreserved=True,ddrNativeTiming=timing,nativeViaAllowanceMm=1.6,snapshot=artifact(verified_root/'pcb-all-layers.png'),fullElectricalTimingQualified=False,fabricationReady=False)
 report['baselineCleanupSummary']='checks/integrated/g350-dangling-copper-cleanup/summary.json'
 report['checkedEntry']=entry
-report['latestRuntime']={'tscircuit':'0.0.2759','core':'0.0.2107','cli':'0.1.2258','checks':'0.0.242'}
+report['latestRuntime']={'tscircuit':execution['versions']['tscircuit'],'core':execution['versions']['@tscircuit/core'],'cli':execution['versions']['@tscircuit/cli'],'checks':execution['versions']['@tscircuit/checks']}
 output.write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:report[k] for k in ['status','kicadErrors','kicadWarnings','connectedDdrSignals','allLayerGerberShorts','fabricationReady']}))

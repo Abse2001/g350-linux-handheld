@@ -1,0 +1,1779 @@
+{
+  "status": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES",
+  "checkedEntry": "experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx",
+  "compiledCircuit": {
+    "path": "dist/g350-checked-shortcuts-source-178/compiled.circuit.json",
+    "sha256": "7de83799c838531e93f84315e6bbd5ba084367596e4eaf552bda98ae6df8b52d"
+  },
+  "freshFilledCircuit": {
+    "path": "dist/g350-checked-shortcuts-verified-179/fresh-filled.circuit.json",
+    "sha256": "2363321a714f9fce429e8667eee9bc21e0a71c57668c5dfb02d2a9f10edbd420"
+  },
+  "independentBoard": {
+    "path": "dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pcb",
+    "sha256": "d6c6506779f9dd9a07f1e4606701358263106f1949dcdd5bba29fd36ab832255"
+  },
+  "freshEditableSource": true,
+  "sourceDefinitionsUnchanged": true,
+  "buildExitCode": 1,
+  "buildElapsedSeconds": 438.15904219899994,
+  "nativeSource": {
+    "path": "dist/g350-checked-shortcuts-source-178/native.json",
+    "sha256": "5ff73c9587ea37cdd23cc7e120cb4b332f579d764c655665b84609ecfa77c031"
+  },
+  "nativeFilled": {
+    "path": "dist/g350-checked-shortcuts-verified-179/native-filled.json",
+    "sha256": "113c78e9ab0bcdee0f41942e88494af2ede20d7a4c63bf7ebbb07afda1e09a8f"
+  },
+  "sourceNativeCounts": {
+    "checkEachPcbTraceNonOverlapping": 0,
+    "checkViaPadClearance": 0,
+    "checkViaTraceClearance": 0,
+    "checkPcbTraceSelfShorts": 0,
+    "checkCopperToBoardEdgeClearance": 0,
+    "checkDifferentNetViaSpacing": 0,
+    "checkHoleTraceClearance": 0,
+    "checkPadTraceClearance": 0,
+    "checkViasInPads": 0,
+    "checkViasOffBoard": 0,
+    "checkPadPadClearance": 0,
+    "checkEachPcbPortConnectedToPcbTraces": 0,
+    "checkSourceTracesHavePcbTraces": 0,
+    "checkSourceTracesMatchPcbTraceThickness": 0,
+    "checkTracesAreContiguous": 0,
+    "checkDanglingTraces": 0,
+    "checkPcbBusLengthSkew": 3,
+    "checkPcbRoutingConstraints": 0,
+    "checkPcbTraceLengths": 0,
+    "checkPcbTraceViaCounts": 0,
+    "checkPcbTracesOutOfBoard": 0,
+    "checkPcbCopperOverKeepout": 0,
+    "checkPcbComponentOverlap": 0,
+    "checkPcbComponentsOutOfBoard": 0,
+    "checkG350ViaTrackManufacturingClearance": 0
+  },
+  "freshFilledNativeCounts": {
+    "checkEachPcbTraceNonOverlapping": 0,
+    "checkViaPadClearance": 0,
+    "checkViaTraceClearance": 0,
+    "checkPcbTraceSelfShorts": 0,
+    "checkCopperToBoardEdgeClearance": 0,
+    "checkDifferentNetViaSpacing": 0,
+    "checkHoleTraceClearance": 0,
+    "checkPadTraceClearance": 0,
+    "checkViasInPads": 0,
+    "checkViasOffBoard": 0,
+    "checkPadPadClearance": 0,
+    "checkEachPcbPortConnectedToPcbTraces": 0,
+    "checkSourceTracesHavePcbTraces": 0,
+    "checkSourceTracesMatchPcbTraceThickness": 0,
+    "checkTracesAreContiguous": 0,
+    "checkDanglingTraces": 0,
+    "checkPcbBusLengthSkew": 3,
+    "checkPcbRoutingConstraints": 0,
+    "checkPcbTraceLengths": 0,
+    "checkPcbTraceViaCounts": 0,
+    "checkPcbTracesOutOfBoard": 0,
+    "checkPcbCopperOverKeepout": 0,
+    "checkPcbComponentOverlap": 0,
+    "checkPcbComponentsOutOfBoard": 0,
+    "checkG350ViaTrackManufacturingClearance": 0
+  },
+  "independentConnectivity": {
+    "boardSha256": "d6c6506779f9dd9a07f1e4606701358263106f1949dcdd5bba29fd36ab832255",
+    "circuitSha256": "7de83799c838531e93f84315e6bbd5ba084367596e4eaf552bda98ae6df8b52d",
+    "requiredConnections": 217,
+    "connectedConnections": 217,
+    "disconnectedConnections": 0,
+    "missingPadMemberships": 0,
+    "results": [
+      {
+        "connection": "source_trace_0",
+        "net": "U_SOC.pin7 to U_RAM.pin10",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_1",
+        "net": "U_SOC.pin9 to U_RAM.pin67",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_2",
+        "net": "U_SOC.pin10 to U_RAM.pin49",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_3",
+        "net": "U_SOC.pin13 to U_RAM.pin37",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_4",
+        "net": "U_SOC.pin50 to U_RAM.pin70",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_5",
+        "net": "U_SOC.pin26 to U_RAM.pin27",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_6",
+        "net": "U_SOC.pin57 to U_RAM.pin28",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_7",
+        "net": "U_SOC.pin39 to U_RAM.pin29",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_8",
+        "net": "U_SOC.pin2 to U_RAM.pin30",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_9",
+        "net": "U_SOC.pin23 to U_RAM.pin31",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_10",
+        "net": "U_SOC.pin25 to U_RAM.pin32",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_11",
+        "net": "U_SOC.pin28 to U_RAM.pin35",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_12",
+        "net": "U_SOC.pin46 to U_RAM.pin17",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_13",
+        "net": "U_SOC.pin27 to U_RAM.pin36",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_14",
+        "net": "U_SOC.pin48 to U_RAM.pin22",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_15",
+        "net": "U_SOC.pin14 to U_RAM.pin38",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_16",
+        "net": "U_SOC.pin32 to U_RAM.pin39",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_17",
+        "net": "U_SOC.pin49 to U_RAM.pin54",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_18",
+        "net": "U_SOC.pin61 to U_RAM.pin41",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_19",
+        "net": "U_SOC.pin6 to U_RAM.pin42",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_20",
+        "net": "U_SOC.pin20 to U_RAM.pin43",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_21",
+        "net": "U_SOC.pin38 to U_RAM.pin44",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_22",
+        "net": "U_SOC.pin42 to U_RAM.pin45",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_23",
+        "net": "U_SOC.pin59 to U_RAM.pin46",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_24",
+        "net": "U_SOC.pin3 to U_RAM.pin47",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_25",
+        "net": "U_SOC.pin44 to U_RAM.pin48",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_26",
+        "net": "U_SOC.pin64 to U_RAM.pin52",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_27",
+        "net": "U_SOC.pin29 to U_RAM.pin50",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_28",
+        "net": "U_SOC.pin11 to U_RAM.pin51",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_29",
+        "net": "U_SOC.pin47 to U_RAM.pin19",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_30",
+        "net": "U_SOC.pin30 to U_RAM.pin53",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_31",
+        "net": "U_SOC.pin66 to U_RAM.pin72",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_32",
+        "net": "U_SOC.pin68 to U_RAM.pin56",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_33",
+        "net": "U_SOC.pin22 to U_RAM.pin57",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_34",
+        "net": "U_SOC.pin4 to U_RAM.pin58",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_35",
+        "net": "U_SOC.pin60 to U_RAM.pin59",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_36",
+        "net": "U_SOC.pin41 to U_RAM.pin61",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_37",
+        "net": "U_SOC.pin8 to U_RAM.pin62",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_38",
+        "net": "U_SOC.pin24 to U_RAM.pin63",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_39",
+        "net": "U_SOC.pin62 to U_RAM.pin64",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_40",
+        "net": "U_SOC.pin65 to U_RAM.pin33",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_41",
+        "net": "U_SOC.pin12 to U_RAM.pin66",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_42",
+        "net": "U_SOC.pin31 to U_RAM.pin40",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_43",
+        "net": "U_SOC.pin67 to U_RAM.pin23",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_44",
+        "net": "U_SOC.pin5 to U_RAM.pin77",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_45",
+        "net": "U_SOC.pin21 to U_RAM.pin78",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_46",
+        "net": "U_SOC.pin76 to U_RAM.pin79",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_47",
+        "net": "U_SOC.pin58 to U_RAM.pin80",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_48",
+        "net": "U_SOC.pin43 to U_RAM.pin90",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_271",
+        "net": "VBAT",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_735",
+        "net": "USB0_DP",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_736",
+        "net": "USB0_DM",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_766",
+        "net": "KEY_UP.pin1 to U_KEYS.GPA0",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_768",
+        "net": "KEY_DOWN.pin1 to U_KEYS.GPA1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_770",
+        "net": "KEY_LEFT.pin1 to U_KEYS.GPA2",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_772",
+        "net": "KEY_RIGHT.pin1 to U_KEYS.GPA3",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_774",
+        "net": "KEY_A.pin1 to U_KEYS.GPA4",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_776",
+        "net": "KEY_B.pin1 to U_KEYS.GPA5",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_778",
+        "net": "KEY_X.pin1 to U_KEYS.GPA6",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_780",
+        "net": "KEY_Y.pin1 to U_KEYS.GPB3",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_782",
+        "net": "KEY_SELECT.pin1 to U_KEYS.GPB0",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_784",
+        "net": "KEY_START.pin1 to U_KEYS.GPB1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_786",
+        "net": "KEY_MENU.pin1 to U_KEYS.GPB2",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_825",
+        "net": "LCD_DATA0",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_826",
+        "net": "R_LCD_DATA0.pin2 to J_LCD.pin12",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_827",
+        "net": "LCD_DATA1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_828",
+        "net": "R_LCD_DATA1.pin2 to J_LCD.pin13",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_829",
+        "net": "LCD_DATA2",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_830",
+        "net": "R_LCD_DATA2.pin2 to J_LCD.pin14",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_831",
+        "net": "LCD_DATA3",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_832",
+        "net": "R_LCD_DATA3.pin2 to J_LCD.pin15",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_833",
+        "net": "LCD_DATA4",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_834",
+        "net": "R_LCD_DATA4.pin2 to J_LCD.pin16",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_835",
+        "net": "LCD_DATA5",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_836",
+        "net": "R_LCD_DATA5.pin2 to J_LCD.pin17",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_837",
+        "net": "LCD_DATA6",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_838",
+        "net": "R_LCD_DATA6.pin2 to J_LCD.pin18",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_839",
+        "net": "LCD_DATA7",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_840",
+        "net": "R_LCD_DATA7.pin2 to J_LCD.pin19",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_841",
+        "net": "LCD_DATA8",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_842",
+        "net": "R_LCD_DATA8.pin2 to J_LCD.pin20",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_843",
+        "net": "LCD_DATA9",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_844",
+        "net": "R_LCD_DATA9.pin2 to J_LCD.pin21",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_845",
+        "net": "LCD_DATA10",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_846",
+        "net": "R_LCD_DATA10.pin2 to J_LCD.pin22",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_847",
+        "net": "LCD_DATA11",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_848",
+        "net": "R_LCD_DATA11.pin2 to J_LCD.pin23",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_849",
+        "net": "LCD_DATA12",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_850",
+        "net": "R_LCD_DATA12.pin2 to J_LCD.pin24",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_851",
+        "net": "LCD_DATA13",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_852",
+        "net": "R_LCD_DATA13.pin2 to J_LCD.pin25",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_853",
+        "net": "LCD_DATA14",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_854",
+        "net": "R_LCD_DATA14.pin2 to J_LCD.pin26",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_855",
+        "net": "LCD_DATA15",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_856",
+        "net": "R_LCD_DATA15.pin2 to J_LCD.pin27",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_857",
+        "net": "U_SOC.pin233 to R_LCD_DATA16.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_858",
+        "net": "R_LCD_DATA16.pin2 to J_LCD.pin28",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_859",
+        "net": "U_SOC.pin234 to R_LCD_DATA17.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_860",
+        "net": "R_LCD_DATA17.pin2 to J_LCD.pin29",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_861",
+        "net": "U_SOC.pin213 to R_LCD_DATA18.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_862",
+        "net": "R_LCD_DATA18.pin2 to J_LCD.pin30",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_863",
+        "net": "U_SOC.pin214 to R_LCD_DATA19.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_864",
+        "net": "R_LCD_DATA19.pin2 to J_LCD.pin31",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_865",
+        "net": "U_SOC.pin215 to R_LCD_DATA20.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_866",
+        "net": "R_LCD_DATA20.pin2 to J_LCD.pin32",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_867",
+        "net": "U_SOC.pin196 to R_LCD_DATA21.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_868",
+        "net": "R_LCD_DATA21.pin2 to J_LCD.pin33",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_869",
+        "net": "U_SOC.pin178 to R_LCD_DATA22.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_870",
+        "net": "R_LCD_DATA22.pin2 to J_LCD.pin34",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_871",
+        "net": "U_SOC.pin179 to R_LCD_DATA23.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_872",
+        "net": "R_LCD_DATA23.pin2 to J_LCD.pin35",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_873",
+        "net": "U_SOC.pin87 to R_LCD_HSYNC.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_874",
+        "net": "R_LCD_HSYNC.pin2 to J_LCD.pin36",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_875",
+        "net": "U_SOC.pin89 to R_LCD_VSYNC.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_876",
+        "net": "R_LCD_VSYNC.pin2 to J_LCD.pin37",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_877",
+        "net": "U_SOC.pin90 to R_LCD_PCLK.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_878",
+        "net": "R_LCD_PCLK.pin2 to J_LCD.pin38",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_879",
+        "net": "U_SOC.pin105 to R_LCD_DE.pin1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_trace_880",
+        "net": "R_LCD_DE.pin2 to J_LCD.pin52",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_0",
+        "net": "GND",
+        "requiredPads": 298,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_1",
+        "net": "VSYS",
+        "requiredPads": 14,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_2",
+        "net": "USB_5V",
+        "requiredPads": 8,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_3",
+        "net": "VBAT",
+        "requiredPads": 6,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_4",
+        "net": "VIO_BOOST5V",
+        "requiredPads": 16,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_5",
+        "net": "DDR_1V5",
+        "requiredPads": 65,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_6",
+        "net": "VDD_MPU",
+        "requiredPads": 17,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_7",
+        "net": "VDD_CORE",
+        "requiredPads": 32,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_8",
+        "net": "VDDS_1V8",
+        "requiredPads": 22,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_9",
+        "net": "ANALOG_1V8",
+        "requiredPads": 32,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_10",
+        "net": "IO_3V3",
+        "requiredPads": 59,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_11",
+        "net": "PERIPH_3V3",
+        "requiredPads": 23,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_12",
+        "net": "LDO2_3V3",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_13",
+        "net": "USB0_DP",
+        "requiredPads": 5,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_14",
+        "net": "USB0_DM",
+        "requiredPads": 5,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_15",
+        "net": "DDR_VTP",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_16",
+        "net": "DDR_VREF",
+        "requiredPads": 8,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_17",
+        "net": "RTC_PORn",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_18",
+        "net": "PMIC_WAKEUPn",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_19",
+        "net": "PMIC_ENABLE",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_20",
+        "net": "CAP_VDD_RTC",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_21",
+        "net": "CAP_VDD_SRAM_CORE",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_22",
+        "net": "CAP_VBB_MPU",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_23",
+        "net": "CAP_VDD_SRAM_MPU",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_24",
+        "net": "CPU_PORn",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_25",
+        "net": "I2C0_SCL",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_26",
+        "net": "I2C0_SDA",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_27",
+        "net": "PMIC_INTn",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_28",
+        "net": "DDR_ZQ",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_29",
+        "net": "BAT_NTC",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_30",
+        "net": "SW_DDR",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_31",
+        "net": "SW_MPU",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_32",
+        "net": "PMIC_BUTTONn",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_33",
+        "net": "PMIC_MAIN_PGOOD",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_34",
+        "net": "SW_CORE",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_35",
+        "net": "PMIC_RESETn",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_36",
+        "net": "PMIC_BYPASS",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_37",
+        "net": "PMIC_INT_LDO",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_38",
+        "net": "IO_BOOST_FB",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_39",
+        "net": "IO_BOOST_SW",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_40",
+        "net": "XTAL_IN",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_41",
+        "net": "XTAL_DRIVE",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_42",
+        "net": "XTAL_OUT",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_43",
+        "net": "LCD_DATA0",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_44",
+        "net": "LCD_DATA1",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_45",
+        "net": "LCD_DATA2",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_46",
+        "net": "LCD_DATA3",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_47",
+        "net": "LCD_DATA4",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_48",
+        "net": "LCD_DATA5",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_49",
+        "net": "LCD_DATA6",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_50",
+        "net": "LCD_DATA7",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_51",
+        "net": "LCD_DATA8",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_52",
+        "net": "LCD_DATA9",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_53",
+        "net": "LCD_DATA10",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_54",
+        "net": "LCD_DATA11",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_55",
+        "net": "LCD_DATA12",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_56",
+        "net": "LCD_DATA13",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_57",
+        "net": "LCD_DATA14",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_58",
+        "net": "LCD_DATA15",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_59",
+        "net": "JTAG_EMU0",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_60",
+        "net": "JTAG_EMU1",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_61",
+        "net": "JTAG_TMS",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_62",
+        "net": "JTAG_TDI",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_63",
+        "net": "JTAG_TCK",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_64",
+        "net": "JTAG_TRSTn",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_65",
+        "net": "WARM_RESETn",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_66",
+        "net": "JTAG_TDO",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_67",
+        "net": "UART0_RX",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_68",
+        "net": "UART0_TX",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_69",
+        "net": "PERIPH_SW",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_70",
+        "net": "SD_DAT2",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_71",
+        "net": "SD_DAT3",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_72",
+        "net": "SD_CMD",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_73",
+        "net": "SD_CLK_CARD",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_74",
+        "net": "SD_DAT0",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_75",
+        "net": "SD_DAT1",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_76",
+        "net": "SD_CD",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_77",
+        "net": "SD_CLK_CPU",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_78",
+        "net": "USB_CC1",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_79",
+        "net": "USB_CC2",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_80",
+        "net": "USB0_VBUS_SENSE",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_81",
+        "net": "KEYS_RESETn",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_82",
+        "net": "AUDIO_DIN",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_83",
+        "net": "AUDIO_BCLK",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_84",
+        "net": "AUDIO_LRCLK",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_85",
+        "net": "AUDIO_ENABLE",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_86",
+        "net": "SPK_P",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_87",
+        "net": "SPK_N",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_88",
+        "net": "LCD_LED_K",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_89",
+        "net": "LCD_LED_A",
+        "requiredPads": 4,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_90",
+        "net": "LCD_RESETn",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_91",
+        "net": "LCD_CS1n",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_92",
+        "net": "LCD_SPI_CLK",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_93",
+        "net": "LCD_SPI_MOSI",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_94",
+        "net": "LCD_BL_PWM",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_95",
+        "net": "LCD_BL_CTRL",
+        "requiredPads": 3,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_96",
+        "net": "LCD_BL_SW",
+        "requiredPads": 5,
+        "connected": true,
+        "missingPads": []
+      },
+      {
+        "connection": "source_net_97",
+        "net": "LCD_BL_COMP",
+        "requiredPads": 2,
+        "connected": true,
+        "missingPads": []
+      }
+    ],
+    "fabricationReady": false
+  },
+  "independentDrc": {
+    "path": "dist/g350-checked-shortcuts-verified-179/filled/drc.json",
+    "sha256": "b7cf8086c418330a84db4debd8445a6aac02ef38d6d663bbf423636389f9e023"
+  },
+  "kicadErrors": 0,
+  "kicadWarnings": 0,
+  "kicadUnconnectedItems": 0,
+  "danglingTracks": 0,
+  "danglingVias": 0,
+  "ignoredKiCadRules": [],
+  "kiCadExclusions": [],
+  "allLayerGerberShorts": 0,
+  "shortsVerification": {
+    "input": "/workspace/g350-linux-handheld/dist/g350-checked-shortcuts-verified-179/fresh-filled.circuit.json",
+    "inputSha256": "2363321a714f9fce429e8667eee9bc21e0a71c57668c5dfb02d2a9f10edbd420",
+    "mode": "gerber",
+    "layer": "all",
+    "cliVersion": "0.1.2258",
+    "cliSha256": "2135bc7f5e27b72ddfaa9b65586c905897e4222f989328ebc0434b1d1961c19c",
+    "logSha256": "d6eba65722c309471fe66e04ff6be6fd43a3b8c520a1460bb9ab02803181c321",
+    "exitCode": 0,
+    "workingDirectory": "/workspace/g350-linux-handheld/dist/g350-checked-shortcuts-shorts-180",
+    "fabricationReady": false
+  },
+  "connectedDdrSignals": 49,
+  "parts": 280,
+  "numLayers": 4,
+  "ramRotationDegrees": 90,
+  "standardThroughVias": 824,
+  "ddrCopperExactlyPreserved": false,
+  "componentPlacementsExactlyPreserved": true,
+  "ddrNativeTiming": [
+    {
+      "bus": "DDR_BYTE0",
+      "shortest": {
+        "signal": "DDR_D6",
+        "nativeLengthMm": 23.683030766422835
+      },
+      "longest": {
+        "signal": "DDR_D2",
+        "nativeLengthMm": 52.83132288376018
+      },
+      "skewMm": 29.148292117337345,
+      "limitMm": 0.635,
+      "passNativeSkew": false
+    },
+    {
+      "bus": "DDR_BYTE1",
+      "shortest": {
+        "signal": "DDR_D9",
+        "nativeLengthMm": 21.963071799084886
+      },
+      "longest": {
+        "signal": "DDR_D12",
+        "nativeLengthMm": 55.34816452257317
+      },
+      "skewMm": 33.385092723488285,
+      "limitMm": 0.635,
+      "passNativeSkew": false
+    },
+    {
+      "bus": "DDR_COMMAND_CLOCK",
+      "shortest": {
+        "signal": "DDR_CASn",
+        "nativeLengthMm": 27.989706512286148
+      },
+      "longest": {
+        "signal": "DDR_A0",
+        "nativeLengthMm": 52.469958657301945
+      },
+      "skewMm": 24.480252145015797,
+      "limitMm": 0.635,
+      "passNativeSkew": false
+    },
+    {
+      "bus": "DDR_DQS0_PAIR",
+      "shortest": {
+        "signal": "DDR_DQSn0",
+        "nativeLengthMm": 35.199999999999996
+      },
+      "longest": {
+        "signal": "DDR_DQS0",
+        "nativeLengthMm": 35.2
+      },
+      "skewMm": 7.105427357601002e-15,
+      "limitMm": 0.127,
+      "passNativeSkew": true
+    },
+    {
+      "bus": "DDR_DQS1_PAIR",
+      "shortest": {
+        "signal": "DDR_DQS1",
+        "nativeLengthMm": 35.20000000000001
+      },
+      "longest": {
+        "signal": "DDR_DQS1",
+        "nativeLengthMm": 35.20000000000001
+      },
+      "skewMm": 0.0,
+      "limitMm": 0.127,
+      "passNativeSkew": true
+    },
+    {
+      "bus": "DDR_CK_PAIR",
+      "shortest": {
+        "signal": "DDR_CKn",
+        "nativeLengthMm": 38.4
+      },
+      "longest": {
+        "signal": "DDR_CK",
+        "nativeLengthMm": 38.40000000000001
+      },
+      "skewMm": 1.4210854715202004e-14,
+      "limitMm": 0.127,
+      "passNativeSkew": true
+    }
+  ],
+  "nativeViaAllowanceMm": 1.6,
+  "snapshot": {
+    "path": "dist/g350-checked-shortcuts-verified-179/pcb-all-layers.png",
+    "sha256": "78d4ae81002a218339165b71445387287f16ad4ef53ea2c67fdda6ab87ec1a50"
+  },
+  "fullElectricalTimingQualified": false,
+  "fabricationReady": false,
+  "baselineCleanupSummary": "checks/integrated/g350-dangling-copper-cleanup/summary.json",
+  "latestRuntime": {
+    "tscircuit": "0.0.2803",
+    "core": "0.0.2107",
+    "cli": "0.1.2258",
+    "checks": "0.0.242"
+  },
+  "baselineComparison": {
+    "logicalTypesExactlyPreserved": [
+      "source_trace",
+      "source_bus",
+      "source_port",
+      "pcb_port",
+      "pcb_smtpad",
+      "pcb_component",
+      "pcb_via"
+    ],
+    "nonDdrCopperGeometryExactlyPreserved": true,
+    "changedDdrCopperGeometries": [
+      "DDR_D2",
+      "DDR_A0",
+      "DDR_D12"
+    ],
+    "nonDdrDerivedAnnotationRecordsChanged": 102,
+    "allOtherDdrCopperGeometriesPreserved": 46,
+    "fabricationReady": false
+  },
+  "previousCheckedSummary": "checks/integrated/g350-bend-timing-progress/summary.json",
+  "report": "cloud/DDR_CHECKED_SHORTCUT_PROGRESS_2026-10-09.md",
+  "finalArtifactVerifier": {
+    "path": "dist/g350-checked-shortcuts-verified-179/final-verifier-exit.json",
+    "exitCode": 0
+  },
+  "combinedQualificationWrapperExitCode": 1,
+  "evidenceArchive": {
+    "path": "checks/integrated/g350-checked-shortcut-progress/checked-source-and-trials-173-180.tar.gz",
+    "bytes": 29498653,
+    "sha256": "ceb8d4902963e9554a1c2fb4b91882dcd4e97c1ba33e4eabfe167827821ae544"
+  },
+  "evidenceManifest": "checks/integrated/g350-checked-shortcut-progress/checked-source-and-trials-173-180-manifest.json",
+  "savedInstallScriptExitCode": 0,
+  "startBashBlockExitCode": 0,
+  "githubAuthenticationRecovered": true
+}

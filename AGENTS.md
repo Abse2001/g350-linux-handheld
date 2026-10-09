@@ -182,3 +182,24 @@ The preceding connected checkpoint and all new trials are hash-indexed and
 retained. Runtime/checker/solver pins stay fixed. Whole-bus matching is unfinished;
 target DDR clock and manufacturer stackup are still needed for electrical timing.
 Keep fabricationReady false. Older sections describe preserved checkpoints.
+
+## Latest checked DDR shortcuts and runtime (2026-10-09 UTC)
+
+Continue `experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx`.
+Read `cloud/DDR_CHECKED_SHORTCUT_PROGRESS_2026-10-09.md`,
+`cloud/RUNTIME_REFRESH_2026-10-09.md` and
+`checks/integrated/g350-checked-shortcut-progress/summary.json`. Fresh source 178,
+independent refill/export 179 and Gerber 180 retain 217/217 connections, 49 DDR
+signals, 280 placements, RAM90, four layers and 824 standard full-depth vias.
+DRC errors/warnings, opens, dangling copper and shorts are zero. All native checks
+pass except three bus-skew failures: 29.148292 / 33.385093 / 24.480252 mm versus
+0.635 mm; differential pairs pass. Only D2/D12/A0 copper changes. Other DDR and
+peripheral geometry, logical constraints, pads, placements and vias are preserved.
+The new tscircuit 0.0.2803 wrapper is source-tested with unchanged reviewed
+Core/CLI/checker/solver pins. The preceding connected 7b08fba checkpoint and frozen
+evidence remain. A separate exit-bound final artifact verifier passes; the initial
+combined wrapper's exit 1 is retained and explained in the report. GitHub
+authentication briefly failed, then recovered; a fresh fetch confirms the same
+7b08fba parent. Preserve any newer transfer records before pushing. Matching and electrical
+clock/stackup/package/via/impedance/return-path qualification remain unfinished.
+Keep fabricationReady false. Older sections describe preserved checkpoints.
