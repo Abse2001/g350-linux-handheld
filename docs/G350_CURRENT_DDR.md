@@ -1,5 +1,21 @@
 # Current shaped-board DDR routing
 
+## Latest checked DDR bend progress (2026-10-09)
+
+Continue `experiments/am3352-g350-clean-full-board-bend-timing-replay.circuit.tsx`.
+Read `cloud/DDR_BEND_TIMING_PROGRESS_2026-10-09.md` and
+`checks/integrated/g350-bend-timing-progress/summary.json`. Fresh source 166,
+independent refill/export 167 and isolated Gerber 168 retain 217/217 connections,
+49 DDR signals, all 280 placements, RAM90 and four layers. DRC errors/warnings,
+opens, dangling copper and shorts are zero. All native checks pass except three
+bus-skew failures: 30.621477 / 34.678381 / 24.692716 mm versus 0.635 mm.
+Differential pairs pass. Non-DDR copper geometry, logical constraints and all
+824 standard through-vias are unchanged; derived pour annotations renumber.
+The preceding connected checkpoint and all new trials are hash-indexed and
+retained. Runtime/checker/solver pins stay fixed. Whole-bus matching is unfinished;
+target DDR clock and manufacturer stackup are still needed for electrical timing.
+Keep fabricationReady false. Older sections describe preserved checkpoints.
+
 The editable default reexports `experiments/am3352-g350-byte0-complete-bus.circuit.tsx`. It retains all 280 placed parts on the provisional 76 × 118 × 1.6 mm outline and four copper layers. The CPU is AM3352BZCZ100; memory is MT41K256M16TW-107:P, x16, 512 MiB. Original-shell fit and fabrication release remain unverified.
 
 The first complete byte has eleven connected signals: D0–D7, DQM0 and DQS0/DQSn0. Seven data carriers originated in a saved native `bus_lanes` partial solution; the remaining two carriers and length repairs are manual. This is not a successful native solve of all nine data carriers. Native bootstrap waypoints remain in order. The source restores the complete eleven-member byte bus and permits Top/Bottom signal routing; the two inner layers remain GND and DDR power references.

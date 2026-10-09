@@ -9,6 +9,9 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
  const parent=new Map(); const find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)};
  for(const s of circuit.filter(e=>e.type==='source_trace'))for(const member of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(member));
  const manufacturing=()=>checkG350ViaTrackManufacturingClearance(circuit.map(e=>e.type==='pcb_trace'?{...e,source_trace_id:find(e.source_trace_id)}:e));
+ // Reject electrical bypasses first; an accepted candidate still runs every
+ // unchanged full-board physical/manufacturing check below.
+ const passesPhysical=()=>!checks.checkPcbTraceSelfShorts(circuit).length&&!manufacturing().length&&g350DdrPhysicalChecks.every(n=>checks[n](circuit).length===0)
  const escapeRegions=protectEscapeRegions?g350BgaEscapeRegions(circuit):[]
  const simplifySeconds=Number(process.env.G350_LENGTH_SIMPLIFY_SECONDS??seconds*.35);assert(Number.isFinite(simplifySeconds)&&simplifySeconds>=0&&simplifySeconds<=seconds);
  const simplifyDeadline=Date.now()+simplifySeconds*1000
@@ -24,11 +27,11 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
    const b=r[j];if(Math.hypot(a.x-b.x,a.y-b.y)<1||!simplifyGuard([a,b]))continue
    trace.route=[...r.slice(0,i+1),...r.slice(j)]
    shortcutProbes++
-   if(!manufacturing().length&&g350DdrPhysicalChecks.every(n=>checks[n](circuit).length===0)){simplified++;break}
+   if(passesPhysical()){simplified++;break}
    trace.route=r
   }
  }
- const length=ddrRouteLength,original=structuredClone(trace.route),delta=goalLength-length(original),deadline=Date.now()+seconds*1000,preparation={physicalChecks:g350DdrPhysicalChecks};
+ const length=ddrRouteLength,original=structuredClone(trace.route),delta=goalLength-length(original),deadline=Date.now()+seconds*1000;
  if(delta<=.05)return {found:delta>=-.635,tries:0};
   let found=false,tries=0
   const localGuard=createG350LocalGuard(circuit,trace)
@@ -48,7 +51,7 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
    trace.route=[...original.slice(0,i+1),...replacement,...original.slice(i+1)]
    assert(Math.abs(length(trace.route)-goalLength)<1e-7)
    tries++
-   if(!manufacturing().length&&preparation.physicalChecks.every(name=>checks[name](circuit).length===0)){found=true;break search}
+   if(passesPhysical()){found=true;break search}
   }
   // Grow an existing rectangular bend without consuming another straight
   // section. Its two perpendicular legs gain delta/2 each.
@@ -62,7 +65,34 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
    if(!localGuard([a,nb,nc,d]))continue
    trace.route=[...original.slice(0,i+1),nb,nc,...original.slice(i+3)]
    assert(Math.abs(length(trace.route)-goalLength)<1e-7);tries++
-   if(!manufacturing().length&&preparation.physicalChecks.every(name=>checks[name](circuit).length===0))found=true
+   if(passesPhysical())found=true
+  }
+  // A short staircase need not contain a rectangle or a long straight.
+  // Move one existing bend, solving its two-leg length exactly. This is only
+  // a search proposal; unchanged full checks still qualify every acceptance.
+  if(!found&&process.env.G350_LENGTH_MOVE_BENDS==='1'){
+   bends:for(let i=1;i<original.length-1;i++){
+    const [a,b,c]=original.slice(i-1,i+2)
+    if(![a,b,c].every(p=>p.route_type==='wire'&&p.layer===a.layer))continue
+    const ab=Math.hypot(b.x-a.x,b.y-a.y),bc=Math.hypot(b.x-c.x,b.y-c.y)
+    if(ab<.1||bc<.1)continue
+    const gx=(b.x-a.x)/ab+(b.x-c.x)/bc,gy=(b.y-a.y)/ab+(b.y-c.y)/bc
+    for(let j=0;j<16;j++){
+     if(Date.now()>deadline)break bends
+     const dx=Math.cos(j*Math.PI/8),dy=Math.sin(j*Math.PI/8)
+     if(gx*dx+gy*dy<-.000001)continue
+     const moved=d=>({...b,x:b.x+dx*d,y:b.y+dy*d})
+     const gain=d=>{const p=moved(d);return Math.hypot(p.x-a.x,p.y-a.y)+Math.hypot(p.x-c.x,p.y-c.y)-ab-bc}
+     let lo=0,hi=delta+Math.max(ab,bc)
+     if(gain(hi)<delta)continue
+     for(let k=0;k<50;k++){const mid=(lo+hi)/2;if(gain(mid)<delta)lo=mid;else hi=mid}
+     const nb=moved((lo+hi)/2)
+     if(!g350AvoidsEscapeRegions([a,nb,c],escapeRegions)||!localGuard([a,nb,c]))continue
+     trace.route=[...original.slice(0,i),nb,...original.slice(i+1)]
+     assert(Math.abs(length(trace.route)-goalLength)<1e-7);tries++
+     if(passesPhysical()){found=true;break bends}
+    }
+   }
   }
   if(!found&&delta>3.65){
    alternate:for(const {a,b,i}of segments)for(const layer of ['inner1','inner2','top','bottom'].filter(l=>l!==a.layer))for(const sign of [1,-1]){
@@ -77,7 +107,7 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
     assert(Math.abs(length(trace.route)-goalLength)<1e-7)
     const newVias=[v1,v2].map((v,j)=>({type:'pcb_via',pcb_via_id:`tuned_${trace.pcb_trace_id}_${j}`,pcb_trace_id:trace.pcb_trace_id,x:v.x,y:v.y,hole_diameter:.254,outer_diameter:.4572,layers:['top','inner1','inner2','bottom'],from_layer:'top',to_layer:'bottom',subcircuit_id:trace.subcircuit_id}))
     circuit.push(...newVias);tries++
-    if(!manufacturing().length&&preparation.physicalChecks.every(name=>checks[name](circuit).length===0)){found=true;break alternate}
+    if(passesPhysical()){found=true;break alternate}
     circuit.splice(circuit.length-2,2)
    }
   }

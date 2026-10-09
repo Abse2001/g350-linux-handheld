@@ -7,7 +7,7 @@ import assert from 'node:assert/strict'
 
 // Conservative two-to-four-layer search for manual handoffs. Native planar
 // phases and independent physical/source checks remain required.
-export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm}){
+export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false}){
 assert(Number.isFinite(overlapPenalty)&&overlapPenalty>0&&overlapPenalty<=100)
 assert(viaCopperClearance>=.1016&&viaCopperClearance<=.2)
 assert(routingLayers.length>=2&&routingLayers.length<=4&&new Set(routingLayers).size===routingLayers.length&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
@@ -53,7 +53,9 @@ function routeConnection(c,step,penalty=0){
    const actualTerminalPad=s.pad&&s.owner===c.name&&(
     Math.hypot(s.x-start.x,s.y-start.y)<1e-8||Math.hypot(s.x-goal.x,s.y-goal.y)<1e-8)
    const actualTerminalVia=s.hole&&s.owner===c.name&&(Math.hypot(s.x-start.x,s.y-start.y)<1e-8||Math.hypot(s.x-goal.x,s.y-goal.y)<1e-8)
-   const terminalContact=s.owner===c.name // Same-net prefixes are electrical copper; drilling remains forbidden.
+   // A retained own barrel that is not this leg's terminal must not bypass
+   // the added length. Keep historical callers unchanged unless requested.
+   const terminalContact=s.owner===c.name&&(!guardNonterminalOwnVias||!s.hole||actualTerminalVia)
    if(!s.viaOnly&&!terminalContact&&d<width/2+clearance+guard)for(const l of s.layers){
     if(s.soft)softCost[layers.indexOf(l)][i]+=penalty*(s.softWeight??1)
     else blocked[layers.indexOf(l)][i]=1

@@ -1,5 +1,21 @@
 # G350 Linux handheld — cloud continuation handoff
 
+## Latest checked DDR bend progress (2026-10-09)
+
+Continue `experiments/am3352-g350-clean-full-board-bend-timing-replay.circuit.tsx`.
+Read `cloud/DDR_BEND_TIMING_PROGRESS_2026-10-09.md` and
+`checks/integrated/g350-bend-timing-progress/summary.json`. Fresh source 166,
+independent refill/export 167 and isolated Gerber 168 retain 217/217 connections,
+49 DDR signals, all 280 placements, RAM90 and four layers. DRC errors/warnings,
+opens, dangling copper and shorts are zero. All native checks pass except three
+bus-skew failures: 30.621477 / 34.678381 / 24.692716 mm versus 0.635 mm.
+Differential pairs pass. Non-DDR copper geometry, logical constraints and all
+824 standard through-vias are unchanged; derived pour annotations renumber.
+The preceding connected checkpoint and all new trials are hash-indexed and
+retained. Runtime/checker/solver pins stay fixed. Whole-bus matching is unfinished;
+target DDR clock and manufacturer stackup are still needed for electrical timing.
+Keep fabricationReady false. Older sections describe preserved checkpoints.
+
 Prepared 2026-10-06. This transfers the complete authored project, original
 user-visible conversation, and routing evidence to GitHub before cloud setup.
 **The PCB is unfinished and must not be ordered.** Moving it to cloud does not

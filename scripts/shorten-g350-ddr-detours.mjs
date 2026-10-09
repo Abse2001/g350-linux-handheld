@@ -6,8 +6,9 @@ import {createHash} from 'node:crypto'
 import * as checks from '@tscircuit/checks'
 import {createG350LocalGuard} from './lib/g350-ddr-local-guard.mjs'
 import {g350DdrPhysicalChecks,checkG350ViaTrackManufacturingClearance} from './lib/g350-ddr-physical-checks.mjs'
-const [input,out]=process.argv.slice(2)
+const [input,out,selectedSignal]=process.argv.slice(2)
 assert(input&&out&&!fs.existsSync(out));fs.mkdirSync(out,{recursive:true})
+fs.copyFileSync('scripts/shorten-g350-ddr-detours.mjs',out+'/worker.executed.mjs')
 const circuit=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
 const names=new Map(circuit.filter(e=>e.type==='source_trace').map(e=>[e.source_trace_id,e.name]))
 const length=r=>r.slice(1).reduce((s,p,i)=>s+(p.route_type==='via'?1.6:0)+(p.route_type==='wire'&&r[i].route_type==='wire'&&p.layer===r[i].layer?Math.hypot(p.x-r[i].x,p.y-r[i].y):0),0)
@@ -25,6 +26,7 @@ const physical=()=>{
 assert.equal(Object.keys(physical()).length,0,'Input must pass physical checks')
 for(const trace of circuit.filter(e=>e.type==='pcb_trace')){
  const name=names.get(trace.source_trace_id)
+ if(selectedSignal&&name!==selectedSignal)continue
  if(!name?.startsWith('DDR_')||/DQS|DQSn|^DDR_CK[n]?$|RESET/.test(name))continue
  const target=/^DDR_D/.test(name)?34:37.2
  const original=structuredClone(trace.route),before=length(original)
@@ -52,7 +54,7 @@ for(const trace of circuit.filter(e=>e.type==='pcb_trace')){
  }
  if(!edits)continue
  const failures=physical()
- if(Object.keys(failures).length){trace.route=original;rejected.push({name,edits,checks:Object.fromEntries(Object.entries(failures).map(([n,e])=>[n,e.length]))});continue}
+ if(Object.keys(failures).length){fs.writeFileSync(`${out}/rejected-${name}.circuit.json`,JSON.stringify(circuit,null,2)+'\n');trace.route=original;rejected.push({name,edits,checks:Object.fromEntries(Object.entries(failures).map(([n,e])=>[n,e.length]))});continue}
  delete trace.trace_length
  changes.push({name,beforeMm:before,afterMm:length(trace.route),edits})
  console.log(JSON.stringify(changes.at(-1)))

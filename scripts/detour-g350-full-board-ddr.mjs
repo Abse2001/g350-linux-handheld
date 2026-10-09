@@ -1,6 +1,7 @@
 // Separate manual-routing trials. Keep terminal pads and all foreign copper fixed.
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
+import {createHash} from 'node:crypto'
 import * as checks from '@tscircuit/checks'
 import {routeGuardedOuterBridge} from './lib/g350-ddr-timing-detour-bridge.mjs'
 import {g350DdrPhysicalChecks,checkG350ViaTrackManufacturingClearance} from './lib/g350-ddr-physical-checks.mjs'
@@ -14,8 +15,9 @@ const first=selection?viaIndexes[selection[0]]:viaIndexes[0],last=selection?viaI
 const parent=new Map();const find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)};for(const s of baseline.filter(e=>e.type==='source_trace'))for(const p of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(p));
 const layers=['inner1','inner2','top','bottom'],attempts=[];let accepted
 const direct=process.env.G350_DDR_DIRECT_SHORTEN==='1';
+fs.writeFileSync(root+'/execution.json',JSON.stringify({input, inputSha256:createHash('sha256').update(fs.readFileSync(input)).digest('hex'),signal,targetMm:target,waypoints:pointText,options:Object.fromEntries(['G350_DDR_DIRECT_SHORTEN','G350_DDR_VIA_SPAN','G350_DDR_MAX_VIAS','G350_DDR_EXACT_RASTER','G350_DDR_GUARD_OWN_VIAS','G350_DDR_JOIN_LAST_BARREL','G350_DDR_VIA_CLEARANCE','G350_DDR_SEARCH_SECONDS'].map(name=>[name,process.env[name]??null])),fabricationReady:false},null,2)+'\n')
 for(const value of direct?['direct']:pointText.split(';')){
- const [x,y]=direct?[0,0]:value.split(',').map(Number);assert(Number.isFinite(x)&&Number.isFinite(y));const waypoint=direct?null:{x,y};const c=structuredClone(baseline),t=c.find(e=>e.pcb_trace_id===original.pcb_trace_id&&e.type==='pcb_trace');
+ let [x,y]=direct?[0,0]:value.split(',').map(Number);assert(Number.isFinite(x)&&Number.isFinite(y));let waypoint=direct?null:{x,y};const c=structuredClone(baseline),t=c.find(e=>e.pcb_trace_id===original.pcb_trace_id&&e.type==='pcb_trace');
  const shapes=[];const owners=new Map(c.filter(e=>e.type==='pcb_trace').map(e=>[e.pcb_trace_id,e.source_trace_id]));
  for(const p of c.filter(e=>e.type==='pcb_smtpad')){const w=p.width??2*p.radius,h=p.height??w;if(Number.isFinite(w)&&Number.isFinite(h))shapes.push({kind:p.shape==='circle'?'circle':'rect',x:p.x,y:p.y,w,h,layers:[p.layer],pad:true,owner:'fixed_pad'})}
  const removedBarrels=original.route.slice(first+1,last).filter(p=>p.route_type==='via');
@@ -29,11 +31,24 @@ for(const value of direct?['direct']:pointText.split(';')){
  }
  const addRoute=(r,owner,trim=false)=>{for(let i=1;i<r.length;i++){const a=r[i-1],b=r[i];if(a.route_type!=='wire'||b.route_type!=='wire'||a.layer!==b.layer||Math.hypot(a.x-b.x,a.y-b.y)<1e-8)continue;let end=b;if(trim&&Math.hypot(b.x-x,b.y-y)<1e-8){const n=Math.hypot(a.x-b.x,a.y-b.y);if(n<=.7)continue;end={...b,x:b.x+(a.x-b.x)*.7/n,y:b.y+(a.y-b.y)*.7/n}}shapes.push({kind:'segment',a,b:end,w:b.width??.1016,layers:[a.layer],owner})}}
  for(const other of c.filter(e=>e.type==='pcb_trace'))if(other!==t)addRoute(other.route,other.source_trace_id);else{addRoute(original.route.slice(0,first+1),st.source_trace_id);addRoute(original.route.slice(last),st.source_trace_id)}
- const solve=(a,b)=>routeGuardedOuterBridge({connection:{name:st.source_trace_id,pointsToConnect:[a,b].map(p=>({...p,layer:'inner1'}))},shapes,searchBounds:{minX:-24,maxX:24,minY:-18,maxY:34},seconds:12,gridMm:.025,maxVias:Number(process.env.G350_DDR_MAX_VIAS??2),viaGrid:.025,routingLayers:layers,viaCopperClearance:.15,...(process.env.G350_DDR_EXACT_RASTER==='1'?{rasterGuardMm:0}:{})})
+ const solve=(a,b)=>routeGuardedOuterBridge({connection:{name:st.source_trace_id,pointsToConnect:[a,b].map(p=>({...p,layer:'inner1'}))},shapes,searchBounds:{minX:-24,maxX:24,minY:-18,maxY:34},seconds:Number(process.env.G350_DDR_SEARCH_SECONDS??12),gridMm:.025,maxVias:Number(process.env.G350_DDR_MAX_VIAS??2),viaGrid:.025,routingLayers:layers,viaCopperClearance:Number(process.env.G350_DDR_VIA_CLEARANCE??.15),guardNonterminalOwnVias:process.env.G350_DDR_GUARD_OWN_VIAS==='1',...(process.env.G350_DDR_EXACT_RASTER==='1'?{rasterGuardMm:0}:{})})
  const one=solve(original.route[first],direct?original.route[last]:waypoint);if(!one.route){attempts.push({waypoint,leg:1,error:one.error,expanded:one.expanded,startBlocked:one.startBlocked,goalBlocked:one.goalBlocked});fs.writeFileSync(root+'/attempts.json',JSON.stringify(attempts,null,2));continue}
  let two;
  if(direct)two={route:[structuredClone(one.route.at(-1))]};
- else{addRoute(one.route,'first_detour_leg',true);two=solve(waypoint,original.route[last]);if(!two.route){attempts.push({waypoint,leg:2,error:two.error,expanded:two.expanded});fs.writeFileSync(root+'/attempts.json',JSON.stringify(attempts,null,2));continue}}
+ else{
+  // If the waypoint falls inside the last generated barrel's guard, join at
+  // that physical barrel instead. Remove the tiny outgoing stub, reuse its
+  // all-layer access and count the hole exactly once.
+  const lastNewVia=one.route.findLastIndex(p=>p.route_type==='via');
+  const seam=process.env.G350_DDR_JOIN_LAST_BARREL==='1'&&lastNewVia>=0&&Math.hypot(one.route[lastNewVia].x-x,one.route[lastNewVia].y-y)<.7?one.route[lastNewVia]:null;
+  if(seam){x=seam.x;y=seam.y;waypoint={x,y};one.route=one.route.slice(0,lastNewVia+1);one.route.push({route_type:'wire',x,y,layer:seam.to_layer,width:.1016})}
+  addRoute(one.route,'first_detour_leg',true);
+  // A new first-leg via occupies every copper layer, including layers the
+  // first leg did not use. Protect its barrel before searching the return leg.
+  if(process.env.G350_DDR_GUARD_OWN_VIAS==='1')for(const v of one.route.filter(p=>p.route_type==='via'))shapes.push({kind:'circle',x:v.x,y:v.y,w:.4572,h:.4572,hole:.254,layers,owner:v===seam?st.source_trace_id:'first_detour_leg'});
+  two=solve(waypoint,original.route[last]);if(!two.route){attempts.push({waypoint,leg:2,error:two.error,expanded:two.expanded});fs.writeFileSync(root+'/attempts.json',JSON.stringify(attempts,null,2));continue}
+  if(seam){seam.to_layer=two.route[0].layer;one.route.at(-1).layer=two.route[0].layer}
+ }
  const head=structuredClone(original.route.slice(0,first+1)),tail=structuredClone(original.route.slice(last));head.at(-1).to_layer=one.route[0].layer;tail[0].from_layer=two.route.at(-1).layer;
  const transfer=one.route.at(-1).layer===two.route[0].layer?[]:[{route_type:'via',...waypoint,from_layer:one.route.at(-1).layer,to_layer:two.route[0].layer,via_diameter:.4572,via_hole_diameter:.254}];t.route=[...head,...one.route,...transfer,...two.route,...tail];delete t.trace_length
  for(let i=c.length-1;i>=0;i--)if(c[i].type==='pcb_via'&&c[i].pcb_trace_id===t.pcb_trace_id)c.splice(i,1)
