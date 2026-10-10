@@ -1,0 +1,39 @@
+{
+  "manifest": "checks/integrated/g350-shorter-byte1-second-batch-progress/start-runtime-778-manifest.json",
+  "freshDestination": "/tmp/g350-shorter-byte1-start-restoration-779",
+  "results": [
+    {
+      "label": "archive",
+      "actualExitCode": 0,
+      "stdout": "Verified 3 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh",
+      "actualExitCode": 0,
+      "stdout": "Verified 3 evidence members; restored 3\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat",
+      "actualExitCode": 0,
+      "stdout": "Verified 3 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "inplace",
+      "actualExitCode": 0,
+      "stdout": "Verified 3 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "edited_refusal",
+      "actualExitCode": 1,
+      "editedFileSha256": "076ecb6e5cbfefacd1a780c104f681ac07e56b3409663575ba1a9dc4aafb1256",
+      "editedFilePreserved": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-shorter-byte1-start-restoration-779/dist/g350-shorter-byte1-start-direct-778/execution.json\n"
+    }
+  ],
+  "fabricationReady": false
+}

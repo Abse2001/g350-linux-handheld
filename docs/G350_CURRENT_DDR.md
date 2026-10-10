@@ -1,6 +1,32 @@
 # Current shaped-board DDR routing
 
 Latest checked continuation (2026-10-10 UTC): use
+`experiments/am3352-g350-full-board-shorter-byte1-second-batch-replay.circuit.tsx` and read
+`cloud/DDR_SHORTER_BYTE1_SECOND_BATCH_2026-10-10.md` plus `checks/integrated/g350-shorter-byte1-second-batch-progress/summary.json`.
+Fresh source770 / KiCad771 / Gerber772 retain all217 connections,49 DDR,
+298 grounds,1,032 numeric pads,280 placements,RAM90,four layers and824 standard
+through-vias. Native physical/manufacturing/ground checks, all-rule KiCad
+errors/warnings/opens/dangling copper and all-layer shorts are zero.
+Byte0 passes 0.574882 mm; byte1 5.461624 mm and
+command/clock 6.210969 mm still fail0.635 mm. All pairs pass0.127 mm.
+Source build exit1 is exactly those two failures; complete qualification exits0.
+D8 removes three existing acute corners and shortens5.380863 mm; one acute
+corner remains. DQM1 shortens5.461572 mm, with its floor adjusted by real0.1 mm
+copper. Original pad endpoints, all foreign copper, placements and constraints
+stay exact. A0's same two bounded middle-barrel moves are retained; all824
+original hole IDs/dimensions/full depth remain. Exact planned copper reproduces
+in source. Joint public BusLanes11/37-lane trials find no complete route and
+are not promoted. Snapshot763 is completed round2, not the entire8-round parent.
+Keep runtime pins, reviewed native patch and every existing physical assertion.
+Native1.6 mm per transition is not electrical delay. Clock/stackup/package/via
+models, impedance/coupling/returns, PDN/footprints, Linux and measured shell fit
+remain open. fabricationReady=false; the board is not ready to order.
+Preserve source737/699/643/610/591/565/540/532/319 and frozen evidence.
+Future edits require fresh source and complete independent qualification.
+
+## Previous four-layer owned-via checkpoint (preserved history)
+
+Latest checked continuation (2026-10-10 UTC): use
 `experiments/am3352-g350-full-board-four-layer-owned-via-replay.circuit.tsx` and read
 `cloud/DDR_FOUR_LAYER_OWNED_VIA_PROGRESS_2026-10-10.md` plus `checks/integrated/g350-four-layer-owned-via-progress/summary.json`.
 Fresh source737 / KiCad738 / Gerber739 retain all217 connections, 49DDR,
