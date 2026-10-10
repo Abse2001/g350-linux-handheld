@@ -142,3 +142,18 @@ current checked entry. Fabrication readiness remains false.
 +Install19, lockfiles, native patch and KiCad archive/image are unchanged. Saved
 +configuration does not publish or establish fresh-task restoration/readiness.
 +
+## Checked source591 startup and low-disk preservation (2026-10-10 UTC)
+
+START_ASCENDING_CHECKED_2026-10-10.sh passes actual exit0 in runtime599. All
+pinned versions, official KiCad10.0.6 archive/pcbnew APIs, eleven upstream refs,
+25,814 frozen hashes and four C++ geometry controls pass. Full qualification
+591–593 passes0 with217 connections/all49 DDR and zero physical/DRC/opens/
+dangling/shorts; two native matching failures remain. Checked450-member archive
+passes fresh/repeated/in-place restoration and edited-file preservation.
+
+Low disk was resolved by reclaiming only607,749,921 redundant generated planning
+bytes after archive and independent fresh-restore hash checks. Index590/595
+records every path/hash/archive. Live hardware sources, frozen evidence, checked
+fallbacks, KiCad image/archive, lockfiles and native patch remain unchanged.
+Install19 is preserved; saved configuration still requires publication and does
+not establish restoration in a new task.

@@ -5146,14 +5146,14 @@
   },
   "currentContinuation": {
     "stage": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_TWO_SKEW_FAILURES",
-    "entry": "experiments/am3352-g350-full-board-large-group-restored-replay.circuit.tsx",
-    "report": "cloud/DDR_LARGE_GROUP_RESTORED_2026-10-10.md",
+    "entry": "experiments/am3352-g350-full-board-ascending-group-restored-replay.circuit.tsx",
+    "report": "cloud/DDR_ASCENDING_GROUP_RESTORED_2026-10-10.md",
     "connectedConnections": 217,
     "requiredConnections": 217,
     "connectedDdrSignals": 49,
     "nativeBusSkewFailures": 2,
     "remaining": [
-      "Whole-board native DDR matching: byte1 7.693572 mm and command/clock 11.150328 mm versus 0.635 mm; byte0 passes 0.574882 mm",
+      "Whole-board native DDR matching: byte1 7.373572 mm and command/clock 10.350328 mm versus 0.635 mm; byte0 passes 0.574882 mm",
       "Native 1.6 mm per transition is not delay: byte0 planar spread is 8 mm with 2\u20137 transitions; actual stackup/clock/package/via/impedance/coupling/return paths remain unqualified",
       "PDN/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
@@ -5163,9 +5163,9 @@
     "kicadErrors": 0,
     "kicadWarnings": 0,
     "allLayerGerberShorts": 0,
-    "summary": "checks/integrated/g350-large-group-restored-progress/summary.json",
+    "summary": "checks/integrated/g350-ascending-group-restored-progress/summary.json",
     "byte0PassesNativeMatching": true,
-    "sourceSha256": "f493423c7ddf9fe603755ac71d38e919d003ce6226b9585753d8f850e8f99b7b"
+    "sourceSha256": "5ad6e093dccdbcbc5f27902a01030d1fe20db0eae21c3bbb7e5be56473727540"
   },
   "runtimeUpgrade20261007": {
     "versions": {

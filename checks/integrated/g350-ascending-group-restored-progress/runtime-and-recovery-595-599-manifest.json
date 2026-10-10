@@ -1,0 +1,40 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-ascending-group-restored-progress/runtime-and-recovery-595-599.tar.gz",
+    "bytes": 5077,
+    "sha256": "5937e28d343d2028cbf5377d237a0734320fefe1046cd2016b9b85b62ad33a7e"
+  },
+  "files": [
+    {
+      "path": ".cloud-tools/g350-timing-snapshots/archived-ground-planning-reclaim-595.json",
+      "bytes": 4567,
+      "sha256": "4e98222d445b0abefe410ac1228ca644a53a0d8bd0b9c824248d1c22f37c0c05"
+    },
+    {
+      "path": ".cloud-tools/g350-timing-snapshots/retain-ground-safe-growth-588.mjs",
+      "bytes": 3719,
+      "sha256": "a67d2dfdf3110e10b7293968ac46402e6ddcdfe684c61b74daaf6f0482db53a8"
+    },
+    {
+      "path": "dist/g350-ascending-runtime-validation-599/execution.json",
+      "bytes": 188,
+      "sha256": "1a7c26f61b24ae43f7ff308ed8b3d2b5299c35ce95f9cd9e7bee453f5a305a28"
+    },
+    {
+      "path": "dist/g350-ascending-runtime-validation-599/routing-tools-validation.json",
+      "bytes": 789,
+      "sha256": "bb02e568414596df9477814278e96b6ea82674c8dd44190f97907288b36a6c1e"
+    },
+    {
+      "path": "dist/g350-ascending-runtime-validation-599/start-tested.sh",
+      "bytes": 2739,
+      "sha256": "d06c484e0b99e64efe887a6d8221658cb2ed9bff066e197e1daaf128f074db1a"
+    },
+    {
+      "path": "dist/g350-ascending-runtime-validation-599/start.log",
+      "bytes": 3405,
+      "sha256": "c335f569fbf48e75ed87c4e14f5b116925e72fa7484f2c54ff4154708cc8a4c8"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-ascending-group-restored-progress/runtime-and-recovery-595-599-manifest.json"
+}

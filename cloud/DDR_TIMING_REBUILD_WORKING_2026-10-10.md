@@ -370,3 +370,20 @@ steps6,3,1.2,.6,.3,.1,.02,.01; new optional G350_LENGTH_BLOCK_SIZES=
 Two A9 fresh-ground proposals fail215 errors and are not retained. Existing/new
 barrel middle-reroute trials549–554 are rejected for no path or longer routes.
 Planning archives preserve all outcomes and source540 stays a qualified fallback.
+
+## Qualified ascending bend groups with A9 restored (2026-10-10 UTC)
+
+Fresh591/CAD592/Gerber593 qualification0 preserves217/217 connections and49 DDR,
+with zero native physical/independent DRC/opens/dangling/shorts. Native byte1
+7.373572 mm and command10.350328 mm remain unmatched; byte0/pairs still pass.
+Read DDR_ASCENDING_GROUP_RESTORED_2026-10-10.md for the checked entry and archives.
+
+Trial575 uses3 rounds,6 seconds per proposal and only D9/A13, with per-unit
+fresh ground checks. Groups2,3,4,6,8,12,16,24,32,48,64 are searched in ascending
+order. Trial586 requests2 rounds,3 seconds, both full buses, ground-per-unit0
+with unchanged full-batch physical/ground gates. Its first batch fails215 ground
+errors and rolls back. Merge588 uses the stable575 base and restores original
+A9 while retaining other edits; complete fresh qualification passes. A9's
+rejected6 mm detour changed top copper; its inner2 geometry remained unchanged.
+Future A9 proposals should preserve the checked top ground corridor and must
+pass all full checks. No failed or unqualified output replaces the checked entry.
