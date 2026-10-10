@@ -17,6 +17,7 @@ const steps=process.env.G350_LENGTH_STEPS?.split(',').map(Number)??[1.2,.6,.3,.1
 assert(steps.length&&steps.length<=8&&steps.every(n=>Number.isFinite(n)&&n>0&&n<=6)&&steps.every((n,i)=>i===0||n<steps[i-1]))
 const proposalLayers=process.env.G350_LENGTH_SIGNAL_LAYERS?.split(',')??['top','inner1','inner2','bottom']
 assert(proposalLayers.length&&proposalLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
+assert(process.env.G350_LENGTH_WINDOW_ORDER===undefined||['forward','reverse'].includes(process.env.G350_LENGTH_WINDOW_ORDER),'Window order must be forward or reverse')
 assert.equal(process.env.G350_LENGTH_SIMPLIFY_SECONDS,'0')
 assert.equal(process.env.G350_LENGTH_MOVE_BENDS,'1')
 const verifyGround=process.env.G350_LENGTH_VERIFY_GROUND==='1'
@@ -53,7 +54,7 @@ const groundChecks=[]
 const unitGroundChecks=[]
 if(verifyGround){const g=await fillG350LockedGround(circuit);assert.equal(g.portErrors,0,'Ground-guarded planning requires a connected baseline');groundChecks.push({round:0,portErrors:g.portErrors,elapsedSeconds:g.elapsedSeconds});fs.writeFileSync(root+'/fresh-filled.circuit.json',JSON.stringify(g.circuit,null,2)+'\n')}
 const hash=s=>createHash('sha256').update(s).digest('hex')
-const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_SIGNAL_LAYER_OVERRIDES_JSON','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES','G350_LENGTH_MOVE_BLOCKS','G350_LENGTH_BLOCK_SIZES','G350_GROUND_FILL_ISOLATED_WORKER'].map(k=>[k,process.env[k]??null]))
+const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_SIGNAL_LAYER_OVERRIDES_JSON','G350_LENGTH_WINDOW_ORDER','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES','G350_LENGTH_MOVE_BLOCKS','G350_LENGTH_BLOCK_SIZES','G350_GROUND_FILL_ISOLATED_WORKER'].map(k=>[k,process.env[k]??null]))
 const persist=()=>{
  fs.writeFileSync(root+'/candidate.circuit.json',JSON.stringify(circuit,null,2)+'\n')
  fs.writeFileSync(root+'/report.json',JSON.stringify({input,inputSha256:hash(fs.readFileSync(input)),checksSha256:hash(fs.readFileSync('node_modules/@tscircuit/checks/dist/index.js')),roundsRequested:rounds,secondsPerProposal:seconds,environment,incrementalChecksScope:'Planar trace proposals; immutable via/pad/board checks reused within a batch, full unchanged checks before retaining every batch',progress,batchChecks,groundChecks,unitGroundChecks,groups:groups(),skewErrors:checks.checkPcbBusLengthSkew(circuit),requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')

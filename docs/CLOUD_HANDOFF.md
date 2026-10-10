@@ -1,6 +1,27 @@
 # G350 Linux handheld — cloud continuation handoff
 
 Latest checked continuation (2026-10-10): use
+`experiments/am3352-g350-full-board-reverse-window-replay.circuit.tsx`
+and read `cloud/DDR_REVERSE_WINDOW_PROGRESS_2026-10-10.md` plus
+`checks/integrated/g350-reverse-window-progress/summary.json`.
+Fresh source643 / KiCad644 / Gerber645 retain all217 connections, 49DDR,
+298 ground ports, 1,032 numeric ports, 280 placements and824 standard through-vias.
+Native physical checks, all-rule DRC errors/warnings, opens, dangling copper and
+all-layer shorts are zero. Byte0 passes0.574882 mm; byte1 6.973572 mm and
+command/clock8.600328 mm still fail0.635 mm. All differential pairs pass.
+Build exit1 is solely those two failures; full qualification exits0.
+Inner-layer tuning now scans bend/block windows from the RAM end, preserving
+original barrels/endpoints, outer-layer wire points, peripheral copper and logic.
+All pins, minimum clearances, physical and fresh-ground assertions stay fixed.
+Native length includes1.6 mm per transition; electrical timing, stackup,
+PDN/footprints, Linux and measured shell fit remain unqualified.
+Preserve source610/591/565/540/532/319, BusLanes bootstrap and frozen evidence.
+Rejected631/635/639 lose215 ground ports; do not promote those candidates.
+Keep fabricationReady=false. The board is not ready to order.
+
+## Previous protected-layer checkpoint (preserved history)
+
+Latest checked continuation (2026-10-10): use
 `experiments/am3352-g350-full-board-protected-layer-replay.circuit.tsx`
 and read `cloud/DDR_PROTECTED_LAYER_PROGRESS_2026-10-10.md` plus
 `checks/integrated/g350-protected-layer-progress/summary.json`.

@@ -11,6 +11,9 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
  assert(proposalLayersOverride===null||Array.isArray(proposalLayersOverride))
  const proposalLayers=proposalLayersOverride??process.env.G350_LENGTH_SIGNAL_LAYERS?.split(',')??['top','inner1','inner2','bottom']
  assert(proposalLayers.length&&new Set(proposalLayers).size===proposalLayers.length&&proposalLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
+ const windowOrder=process.env.G350_LENGTH_WINDOW_ORDER??'forward'
+ assert(['forward','reverse'].includes(windowOrder),'Window order must be forward or reverse')
+ const windowIndices=(start,end)=>Array.from({length:Math.max(0,end-start)},(_,i)=>windowOrder==='reverse'?end-i-1:start+i)
  const parent=new Map(); const find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)};
  for(const s of circuit.filter(e=>e.type==='source_trace'))for(const member of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(member));
  const manufacturing=()=>checkG350ViaTrackManufacturingClearance(circuit.map(e=>e.type==='pcb_trace'?{...e,source_trace_id:find(e.source_trace_id)}:e));
@@ -66,7 +69,8 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
   }
   // Grow an existing rectangular bend without consuming another straight
   // section. Its two perpendicular legs gain delta/2 each.
-  for(let i=0;i<original.length-3&&!found;i++){
+  for(const i of windowIndices(0,original.length-3)){
+   if(found)break
    if(balanced&&Date.now()>rectangleDeadline)break
    const [a,b,c,d]=original.slice(i,i+4)
    if(!proposalLayers.includes(a.layer)||![a,b,c,d].every(p=>p.route_type==='wire'&&p.layer===a.layer))continue
@@ -102,7 +106,7 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
   // its own neighbouring staircase. Internal copper lengths stay unchanged;
   // solve the two joining legs, then require the same physical checks.
   if(!found&&blocksFlag==='1'){
-   blocks:for(const count of blockSizes)for(let i=1;i+count<original.length;i++){
+   blocks:for(const count of blockSizes)for(const i of windowIndices(1,original.length-count)){
     const a=original[i-1],d=original[i+count],block=original.slice(i,i+count)
     if(!proposalLayers.includes(a.layer)||![a,...block,d].every(p=>p.route_type==='wire'&&p.layer===a.layer&&(p.width??.1016)===(a.width??.1016)))continue
     const b=block[0],c=block.at(-1),ab=Math.hypot(b.x-a.x,b.y-a.y),cd=Math.hypot(c.x-d.x,c.y-d.y)
@@ -150,7 +154,7 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
   // Move one existing bend, solving its two-leg length exactly. This is only
   // a search proposal; unchanged full checks still qualify every acceptance.
   if(!found&&process.env.G350_LENGTH_MOVE_BENDS==='1'){
-   bends:for(let i=1;i<original.length-1;i++){
+   bends:for(const i of windowIndices(1,original.length-1)){
     const [a,b,c]=original.slice(i-1,i+2)
     if(!proposalLayers.includes(a.layer)||![a,b,c].every(p=>p.route_type==='wire'&&p.layer===a.layer))continue
     const ab=Math.hypot(b.x-a.x,b.y-a.y),bc=Math.hypot(b.x-c.x,b.y-c.y)

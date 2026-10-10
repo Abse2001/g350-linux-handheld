@@ -5146,14 +5146,14 @@
   },
   "currentContinuation": {
     "stage": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_TWO_SKEW_FAILURES",
-    "entry": "experiments/am3352-g350-full-board-protected-layer-replay.circuit.tsx",
-    "report": "cloud/DDR_PROTECTED_LAYER_PROGRESS_2026-10-10.md",
+    "entry": "experiments/am3352-g350-full-board-reverse-window-replay.circuit.tsx",
+    "report": "cloud/DDR_REVERSE_WINDOW_PROGRESS_2026-10-10.md",
     "connectedConnections": 217,
     "requiredConnections": 217,
     "connectedDdrSignals": 49,
     "nativeBusSkewFailures": 2,
     "remaining": [
-      "Whole-board native DDR matching: byte1 7.333572 mm and command/clock 9.650328 mm versus 0.635 mm; byte0 passes 0.574882 mm",
+      "Whole-board native DDR matching: byte1 6.973572 mm and command/clock 8.600328 mm versus 0.635 mm; byte0 passes 0.574882 mm",
       "Native 1.6 mm per transition is not delay: byte0 planar spread is 8 mm with 2\u20137 transitions; actual stackup/clock/package/via/impedance/coupling/return paths remain unqualified",
       "PDN/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
@@ -5163,9 +5163,9 @@
     "kicadErrors": 0,
     "kicadWarnings": 0,
     "allLayerGerberShorts": 0,
-    "summary": "checks/integrated/g350-protected-layer-progress/summary.json",
+    "summary": "checks/integrated/g350-reverse-window-progress/summary.json",
     "byte0PassesNativeMatching": true,
-    "sourceSha256": "dff444c5765cc9220d41fe2739d4426040a6600baa3c3e4460e8475377200922"
+    "sourceSha256": "216050a945c4f790c0c7cf34883fbf851db42e2ce2f7f36ed27ae7ab5fec84f6"
   },
   "runtimeUpgrade20261007": {
     "versions": {
