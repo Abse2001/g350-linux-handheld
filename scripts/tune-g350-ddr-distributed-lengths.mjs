@@ -34,6 +34,16 @@ const selectedBuses=process.env.G350_LENGTH_BUSES?.split(',')??['DDR_BYTE0','DDR
 assert(selectedBuses.length&&new Set(selectedBuses).size===selectedBuses.length&&selectedBuses.every(n=>['DDR_BYTE0','DDR_BYTE1','DDR_COMMAND_CLOCK'].includes(n)))
 const buses=circuit.filter(e=>e.type==='source_bus'&&selectedBuses.includes(e.name))
 assert.equal(buses.length,selectedBuses.length)
+// Restrict proposal geometry for a signal whose other layers protect a checked
+// ground corridor. Defaults and every native/fresh-ground guard stay unchanged.
+const signalLayerOverrides=JSON.parse(process.env.G350_LENGTH_SIGNAL_LAYER_OVERRIDES_JSON??'{}')
+assert(signalLayerOverrides&&typeof signalLayerOverrides==='object'&&!Array.isArray(signalLayerOverrides))
+assert(Object.keys(signalLayerOverrides).length<=49)
+for(const [name,layers] of Object.entries(signalLayerOverrides)){
+ assert(circuit.some(e=>e.type==='source_trace'&&e.name===name&&buses.some(b=>b.source_trace_ids.includes(e.source_trace_id))),'Layer override must name a signal in a selected bus')
+ assert(Array.isArray(layers)&&layers.length>0&&new Set(layers).size===layers.length&&layers.every(l=>proposalLayers.includes(l)),'Signal layers must be a nonempty subset of proposal layers')
+}
+const signalLayers=id=>signalLayerOverrides[names.get(id)]??proposalLayers
 const selectedSignals=process.env.G350_LENGTH_SIGNALS?.split(',')??null
 if(selectedSignals){assert(selectedSignals.length&&new Set(selectedSignals).size===selectedSignals.length);assert(selectedSignals.every(n=>circuit.some(e=>e.type==='source_trace'&&e.name===n&&buses.some(b=>b.source_trace_ids.includes(e.source_trace_id)))))}
 const pairs=[['DDR_DQS0','DDR_DQSn0'],['DDR_DQS1','DDR_DQSn1'],['DDR_CK','DDR_CKn']]
@@ -43,7 +53,7 @@ const groundChecks=[]
 const unitGroundChecks=[]
 if(verifyGround){const g=await fillG350LockedGround(circuit);assert.equal(g.portErrors,0,'Ground-guarded planning requires a connected baseline');groundChecks.push({round:0,portErrors:g.portErrors,elapsedSeconds:g.elapsedSeconds});fs.writeFileSync(root+'/fresh-filled.circuit.json',JSON.stringify(g.circuit,null,2)+'\n')}
 const hash=s=>createHash('sha256').update(s).digest('hex')
-const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES','G350_LENGTH_MOVE_BLOCKS','G350_LENGTH_BLOCK_SIZES','G350_GROUND_FILL_ISOLATED_WORKER'].map(k=>[k,process.env[k]??null]))
+const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_SIGNAL_LAYER_OVERRIDES_JSON','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES','G350_LENGTH_MOVE_BLOCKS','G350_LENGTH_BLOCK_SIZES','G350_GROUND_FILL_ISOLATED_WORKER'].map(k=>[k,process.env[k]??null]))
 const persist=()=>{
  fs.writeFileSync(root+'/candidate.circuit.json',JSON.stringify(circuit,null,2)+'\n')
  fs.writeFileSync(root+'/report.json',JSON.stringify({input,inputSha256:hash(fs.readFileSync(input)),checksSha256:hash(fs.readFileSync('node_modules/@tscircuit/checks/dist/index.js')),roundsRequested:rounds,secondsPerProposal:seconds,environment,incrementalChecksScope:'Planar trace proposals; immutable via/pad/board checks reused within a batch, full unchanged checks before retaining every batch',progress,batchChecks,groundChecks,unitGroundChecks,groups:groups(),skewErrors:checks.checkPcbBusLengthSkew(circuit),requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')
@@ -57,7 +67,7 @@ for(let round=1;round<=rounds;round++){
   units.sort((a,b)=>ddrRouteLength(circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===a[0]).route)-ddrRouteLength(circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===b[0]).route))
   for(const ids of units){
    if(selectedSignals&&!ids.every(id=>selectedSignals.includes(names.get(id))))continue
-   if(ids.some(id=>!circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===id).route.some(p=>p.route_type==='wire'&&proposalLayers.includes(p.layer))))continue
+   if(ids.some(id=>!circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===id).route.some(p=>p.route_type==='wire'&&signalLayers(id).includes(p.layer))))continue
    const before=structuredClone(circuit);let success=false,details=[]
    const lengths=ids.map(id=>ddrRouteLength(circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===id).route))
    const busMinimum=Math.min(...members.map(t=>ddrRouteLength(circuit.find(e=>e.type==='pcb_trace'&&e.source_trace_id===t.source_trace_id).route)))
@@ -69,9 +79,11 @@ for(let round=1;round<=rounds;round++){
     for(const id of ids){
      const t=circuit.find(e=>e.type==='pcb_trace'&&e.source_trace_id===id)
      const vias=JSON.stringify(t.route.filter(p=>p.route_type==='via')),ends=JSON.stringify([t.route[0],t.route.at(-1)])
-     const result=tuneOneG350DdrTrace(circuit,t,target,seconds,{planningValidator:validator.validate,allowNewVias:false})
+     const layers=signalLayers(id),fixedLayers=JSON.stringify(t.route.filter(p=>p.route_type==='wire'&&!layers.includes(p.layer)))
+     const result=tuneOneG350DdrTrace(circuit,t,target,seconds,{planningValidator:validator.validate,allowNewVias:false,proposalLayersOverride:layers})
      validator.assertImmutable(circuit)
      assert.equal(JSON.stringify(t.route.filter(p=>p.route_type==='via')),vias);assert.equal(JSON.stringify([t.route[0],t.route.at(-1)]),ends)
+     assert.equal(JSON.stringify(t.route.filter(p=>p.route_type==='wire'&&!layers.includes(p.layer))),fixedLayers,'Geometry outside permitted signal layers must remain unchanged')
      if(result.found)delete t.trace_length
      details.push({signal:names.get(id),beforeMm:lengths[ids.indexOf(id)],afterMm:ddrRouteLength(t.route),step,...result})
      success&&=result.found

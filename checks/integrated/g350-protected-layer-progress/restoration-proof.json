@@ -1,0 +1,31 @@
+{
+  "manifest": "checks/integrated/g350-protected-layer-progress/connected-source-609-622-manifest.json",
+  "manifestSha256": "ce77d16f42bb3f6edd851b163b8aef809c6c0fdae23233f1bd2c143347da5fab",
+  "controls": [
+    {
+      "control": "archive",
+      "exitCode": 0,
+      "output": "Verified 452 evidence members; restored 0"
+    },
+    {
+      "control": "fresh",
+      "exitCode": 0,
+      "output": "Verified 452 evidence members; restored 452"
+    },
+    {
+      "control": "repeat",
+      "exitCode": 0,
+      "output": "Verified 452 evidence members; restored 0"
+    },
+    {
+      "control": "inPlace",
+      "exitCode": 0,
+      "output": "Verified 452 evidence members; restored 0"
+    },
+    {
+      "control": "editedFileRefusal",
+      "exitCode": 1,
+      "editedFilePreserved": true
+    }
+  ]
+}

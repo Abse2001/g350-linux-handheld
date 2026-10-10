@@ -1,3 +1,25 @@
+## Latest checked protected-layer timing progress (2026-10-10 UTC)
+
+Latest checked continuation (2026-10-10): use
+`experiments/am3352-g350-full-board-protected-layer-replay.circuit.tsx`
+and read `cloud/DDR_PROTECTED_LAYER_PROGRESS_2026-10-10.md` plus
+`checks/integrated/g350-protected-layer-progress/summary.json`.
+Fresh source610 / KiCad621 / Gerber622 retain all217 connections, 49DDR,
+298 ground ports, 1,032 numeric ports, 280 placements and824 standard through-vias.
+Native physical checks, all-rule DRC errors/warnings, opens, dangling copper and
+all-layer shorts are zero. Byte0 passes0.574882 mm; byte1 7.333572 mm and
+command/clock9.650328 mm still fail0.635 mm. All differential pairs pass.
+Build exit1 is solely those two failures; full qualification exits0.
+A9 gains3 mm on Inner2 while its other-layer geometry remains exact. Original
+barrels/endpoints, peripheral copper, logical constraints and all pins/guards stay
+fixed. Native length includes1.6 mm per transition; electrical timing, stackup,
+PDN/footprints, Linux and measured shell fit remain unqualified.
+Preserve source591/565/540/532/319, BusLanes bootstrap and all frozen evidence.
+Read cloud/LINUX_VALIDATION.md for tested VFS space preflight and Xvfb socket fixes.
+Keep fabricationReady=false. The board is not ready to order.
+
+## Previous ascending-group checkpoint (preserved history)
+
 ## Latest checked ascending-group timing progress (2026-10-10 UTC)
 
 Latest checked continuation (2026-10-10): use

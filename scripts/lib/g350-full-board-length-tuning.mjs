@@ -5,10 +5,11 @@ import {createG350LocalGuard} from './g350-ddr-local-guard.mjs'
 import {g350BgaEscapeRegions,g350AvoidsEscapeRegions} from './g350-ddr-bga-escape-regions.mjs'
 export const ddrRouteLength=r=>r.slice(1).reduce((n,p,i)=>n+(p.route_type==='via'?1.6:0)+(p.route_type==='wire'&&r[i].route_type==='wire'&&p.layer===r[i].layer?Math.hypot(p.x-r[i].x,p.y-r[i].y):0),0)
 
-export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protectEscapeRegions=false,planningValidator=null,allowNewVias=true}={}){
+export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protectEscapeRegions=false,planningValidator=null,allowNewVias=true,proposalLayersOverride=null}={}){
  assert(planningValidator===null||typeof planningValidator==='function')
  assert.equal(typeof allowNewVias,'boolean')
- const proposalLayers=process.env.G350_LENGTH_SIGNAL_LAYERS?.split(',')??['top','inner1','inner2','bottom']
+ assert(proposalLayersOverride===null||Array.isArray(proposalLayersOverride))
+ const proposalLayers=proposalLayersOverride??process.env.G350_LENGTH_SIGNAL_LAYERS?.split(',')??['top','inner1','inner2','bottom']
  assert(proposalLayers.length&&new Set(proposalLayers).size===proposalLayers.length&&proposalLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
  const parent=new Map(); const find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)};
  for(const s of circuit.filter(e=>e.type==='source_trace'))for(const member of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(member));

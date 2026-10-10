@@ -7,6 +7,20 @@ if ! "${docker_local[@]}" image inspect "$image" >/dev/null 2>&1; then
   (cd "$root/.cloud-tools"; sha256sum -c kicad10-debian.tar.sha256)
   "${docker_local[@]}" load -i "$root/.cloud-tools/kicad10-debian.tar" >/dev/null
 fi
+# VFS allocates both an init layer and a writable copy even for --read-only.
+# Refuse before container creation: ENOSPC can otherwise leave orphan copies.
+if [[ "$("${docker_local[@]}" info --format '{{.Driver}}')" == vfs ]]; then
+  docker_root="$("${docker_local[@]}" info --format '{{.DockerRootDir}}')"
+  image_bytes="$("${docker_local[@]}" image inspect "$image" --format '{{.Size}}')"
+  python3 - "$docker_root" "$image_bytes" <<'PY'
+import shutil,sys
+available=shutil.disk_usage(sys.argv[1]).free
+required=2*int(sys.argv[2])+256*1024*1024
+if available < required:
+    print(f'KiCad VFS disk preflight refused: {available} bytes free; {required} required. Preserve evidence and reclaim space before retrying.',file=sys.stderr)
+    sys.exit(3)
+PY
+fi
 # VFS image copies can fill the workspace disk. Put transient Xvfb/config files
 # on /tmp, and optionally mirror an explicitly selected new dist output there.
 # The container still sees the same paths; copy completed outputs back only after
@@ -47,6 +61,7 @@ finish() {
 trap finish EXIT
 "${docker_local[@]}" run --rm --init -i --user "$(id -u):$(id -g)" \
   --read-only --tmpfs /tmp:rw,nosuid,size=512m \
+  --tmpfs /tmp/.X11-unix:rw,nosuid,size=1m,mode=1777 \
   -v /workspace:/workspace -w "$PWD" \
   -v "$scratch:/g350-runtime" "${output_mount[@]}" \
   -e PYTHONPATH="$root/.cloud-tools/python-compat" \

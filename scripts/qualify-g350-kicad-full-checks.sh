@@ -4,7 +4,7 @@ set -euo pipefail
 test "$#" -eq 3
 input="$1"; verified_root="$2"; solver_input="$3"
 cp "$0" "$verified_root/kicad-qualification.executed.sh"
-python_kicad() { xvfb-run -a /usr/bin/python3 "$@"; }
+python_kicad() { xvfb-run -a -e /dev/stderr /usr/bin/python3 "$@"; }
 python_kicad scripts/prepare-g350-ground-references.py "$verified_root/candidate.kicad_pcb" "$input" "$verified_root/filled" --all-layers > "$verified_root/ground-reference.log" 2>&1
 cp dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pro "$verified_root/filled/ground-reference.kicad_pro"
 cp "$verified_root/candidate.kicad_dru" "$verified_root/filled/ground-reference.kicad_dru"

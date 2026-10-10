@@ -157,3 +157,28 @@ records every path/hash/archive. Live hardware sources, frozen evidence, checked
 fallbacks, KiCad image/archive, lockfiles and native patch remain unchanged.
 Install19 is preserved; saved configuration still requires publication and does
 not establish restoration in a new task.
+
+## 2026-10-10: VFS preflight and Xvfb socket verification
+
+Debian13 and the existing official KiCad10.0.6 / pcbnew10.0.6+dfsg-1 image remain
+pinned. wx is4.2.5 gtk3, wxWidgets3.2.11. Source610 / CAD621 / Gerber622 pass complete
+independent board validation with217/217 connections and zero all-rule DRC errors/
+warnings/opens/dangling copper/shorts; two native bus-skew errors remain.
+
+`scripts/cloud-kicad-tool.sh` now checks the Docker VFS filesystem before container
+creation: require2×image.Size +256 MiB, currently3,308,305,874 bytes. A real low-space
+control exits3 without creating a KiCad container. The wrapper also mounts a
+root-owned mode1777 `/tmp/.X11-unix` tmpfs. Eight consecutive GTK/pcbnew starts pass0.
+`scripts/qualify-g350-kicad-full-checks.sh` captures Xvfb stderr via `-e /dev/stderr`.
+The exact refreshed Start commands pass0 after these fixes. Install19 is unchanged.
+
+Failed attempts611 (disk exit125) and615 (display exit134) are retained. Recovery
+backs up and exact-compares seven orphan VFS directories, checks none is referenced
+by any Docker cache/mount/init ID, and removes only those copies. All four registered
+images and the original KiCad archive remain. The backup is under
+`/tmp/g350-docker-orphan-preservation-617` with SHA256
+`05d3da61926bee21a37312c962bb7f4cbe335d60827667f591aa2487e486a3dc`.
+Archive/recovery proofs are indexed by
+`checks/integrated/g350-protected-layer-progress/runtime-and-recovery-611-624-manifest.json`.
+Frozen evidence, hardware sources, checked fallbacks and user-owned changes are
+preserved. See `cloud/DDR_PROTECTED_LAYER_PROGRESS_2026-10-10.md` for current timing.
