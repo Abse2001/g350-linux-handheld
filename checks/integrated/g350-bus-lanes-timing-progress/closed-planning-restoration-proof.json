@@ -1,0 +1,39 @@
+{
+  "manifest": "checks/integrated/g350-bus-lanes-timing-progress/planning-closed-662-684-manifest.json",
+  "freshDestination": "/tmp/g350-bus-lanes-closed-planning-restore-687",
+  "results": [
+    {
+      "label": "archive",
+      "actualExitCode": 0,
+      "stdout": "Verified 140 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh",
+      "actualExitCode": 0,
+      "stdout": "Verified 140 evidence members; restored 140\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat",
+      "actualExitCode": 0,
+      "stdout": "Verified 140 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "inplace",
+      "actualExitCode": 0,
+      "stdout": "Verified 140 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "edited_refusal",
+      "actualExitCode": 1,
+      "editedFileSha256": "a81c8bf63ded360598378f1e643aa3add20a074c807c2fa0897ee72995bf29f6",
+      "editedFilePreserved": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-bus-lanes-closed-planning-restore-687/dist/am3352-ddr32-casn-data-joint-native-top-attempt-664/input.simple-route.json\n"
+    }
+  ],
+  "fabricationReady": false
+}

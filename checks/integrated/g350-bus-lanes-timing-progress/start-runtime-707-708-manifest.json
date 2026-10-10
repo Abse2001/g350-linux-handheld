@@ -1,0 +1,40 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-bus-lanes-timing-progress/start-runtime-707-708.tar.gz",
+    "bytes": 2765,
+    "sha256": "02357420987ed0fb585ec72f0f8da835030eb61ae98a29d80ffb6ca9bf23f08b"
+  },
+  "files": [
+    {
+      "path": "dist/g350-bus-lanes-smoothed-start-repeat-708/execution.json",
+      "bytes": 182,
+      "sha256": "396325aac274f4165e2e9c6f7f916489dd0c87bfcd593559a98a159792caf14c"
+    },
+    {
+      "path": "dist/g350-bus-lanes-smoothed-start-repeat-708/start.executed.sh",
+      "bytes": 3147,
+      "sha256": "24bc8b766f4e64666ffb63b7ffb59ffa9365bfad3f8bc03d37447ad33e76e4f0"
+    },
+    {
+      "path": "dist/g350-bus-lanes-smoothed-start-repeat-708/start.log",
+      "bytes": 3531,
+      "sha256": "89b3020fff876a2a61ae6f99c31e169a7c46cf5b5be2116ea8f524f313136142"
+    },
+    {
+      "path": "dist/g350-bus-lanes-smoothed-start-validation-707/execution.json",
+      "bytes": 361,
+      "sha256": "771ef762112813402499c432ca384d774bce0d13572a26563aea67087a9bcdb3"
+    },
+    {
+      "path": "dist/g350-bus-lanes-smoothed-start-validation-707/start.executed.sh",
+      "bytes": 3147,
+      "sha256": "24bc8b766f4e64666ffb63b7ffb59ffa9365bfad3f8bc03d37447ad33e76e4f0"
+    },
+    {
+      "path": "dist/g350-bus-lanes-smoothed-start-validation-707/start.log",
+      "bytes": 3531,
+      "sha256": "89b3020fff876a2a61ae6f99c31e169a7c46cf5b5be2116ea8f524f313136142"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-bus-lanes-timing-progress/start-runtime-707-708-manifest.json"
+}

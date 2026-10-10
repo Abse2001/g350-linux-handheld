@@ -1,5 +1,26 @@
 # G350 board continuation
 
+Latest checked continuation (2026-10-10 UTC): use
+`experiments/am3352-g350-full-board-bus-lanes-smoothed-replay.circuit.tsx` and read
+`cloud/DDR_BUS_LANES_SMOOTHED_PROGRESS_2026-10-10.md` plus `checks/integrated/g350-bus-lanes-timing-progress/summary.json`.
+Fresh source699 / KiCad700 / Gerber701 retain all217 connections, 49DDR,
+298 ground ports, 1,032 numeric ports, 280 placements and824 standard through-vias.
+Native physical/manufacturing checks, all-rule DRC errors/warnings, opens,
+dangling copper and all-layer shorts are zero. Byte0 passes0.574882 mm;
+byte1 5.766561 mm and command/clock8.056486 mm still fail0.635 mm.
+All differential pairs pass0.127 mm. Build exit1 is solely those two failures;
+complete source/CAD/Gerber qualification exits0. fabricationReady=false.
+Pinned public BusLanes shortens A6's Inner1 carrier by6 mm; guarded smoothing
+and matching preserve every original barrel, endpoint, outer-layer wire,
+peripheral trace, placement and logical constraint. Keep all runtime pins and
+reviewed native checks. Native length includes1.6 mm per transition, not
+qualified electrical delay. Target clock, stackup, package/via delay, impedance,
+coupling, return paths, PDN/footprints, Linux and measured shell fit remain open.
+Preserve source643/610/591/565/540/532/319 and frozen evidence. The board is not
+ready to order. Further candidate edits require full independent qualification.
+
+## Previous RAM-end window checkpoint (preserved history)
+
 Latest checked continuation (2026-10-10): use
 `experiments/am3352-g350-full-board-reverse-window-replay.circuit.tsx`
 and read `cloud/DDR_REVERSE_WINDOW_PROGRESS_2026-10-10.md` plus
