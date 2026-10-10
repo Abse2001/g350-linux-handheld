@@ -1,29 +1,29 @@
 {
   "status": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES",
-  "checkedEntry": "experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx",
+  "checkedEntry": "experiments/am3352-g350-full-board-inner-timing-ground-preserved-replay.circuit.tsx",
   "compiledCircuit": {
-    "path": "dist/g350-checked-shortcuts-source-178/compiled.circuit.json",
-    "sha256": "7de83799c838531e93f84315e6bbd5ba084367596e4eaf552bda98ae6df8b52d"
+    "path": "dist/g350-ddr-inner-ground-preserved-source-209/compiled.circuit.json",
+    "sha256": "bb440bde79aa092179b270eac4c26c1fa70fd43cbbc89802c1b05389fdb5a404"
   },
   "freshFilledCircuit": {
-    "path": "dist/g350-checked-shortcuts-verified-179/fresh-filled.circuit.json",
-    "sha256": "2363321a714f9fce429e8667eee9bc21e0a71c57668c5dfb02d2a9f10edbd420"
+    "path": "dist/g350-ddr-inner-ground-preserved-verified-210/fresh-filled.circuit.json",
+    "sha256": "837ad0aa9abf85d7efd3e7a8865aacb81854d3980c00c5b64b74bab8979fa78d"
   },
   "independentBoard": {
-    "path": "dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pcb",
-    "sha256": "d6c6506779f9dd9a07f1e4606701358263106f1949dcdd5bba29fd36ab832255"
+    "path": "dist/g350-ddr-inner-ground-preserved-verified-210/filled/ground-reference.kicad_pcb",
+    "sha256": "67b0f534e6f9275f6b46024479b4637a9f86024e2b98c9ccac7df31a67cb2a4a"
   },
   "freshEditableSource": true,
   "sourceDefinitionsUnchanged": true,
   "buildExitCode": 1,
-  "buildElapsedSeconds": 438.15904219899994,
+  "buildElapsedSeconds": 419.666268404,
   "nativeSource": {
-    "path": "dist/g350-checked-shortcuts-source-178/native.json",
-    "sha256": "5ff73c9587ea37cdd23cc7e120cb4b332f579d764c655665b84609ecfa77c031"
+    "path": "dist/g350-ddr-inner-ground-preserved-source-209/native.json",
+    "sha256": "4058317a96e11beacbb19bf122f7c5d941c9a60c137c623d940539a6c6550006"
   },
   "nativeFilled": {
-    "path": "dist/g350-checked-shortcuts-verified-179/native-filled.json",
-    "sha256": "113c78e9ab0bcdee0f41942e88494af2ede20d7a4c63bf7ebbb07afda1e09a8f"
+    "path": "dist/g350-ddr-inner-ground-preserved-verified-210/native-filled.json",
+    "sha256": "4bb8d93018a7c87eab4f79366037de193e7f238b4e9c5334c5a46229d4e7320d"
   },
   "sourceNativeCounts": {
     "checkEachPcbTraceNonOverlapping": 0,
@@ -80,8 +80,8 @@
     "checkG350ViaTrackManufacturingClearance": 0
   },
   "independentConnectivity": {
-    "boardSha256": "d6c6506779f9dd9a07f1e4606701358263106f1949dcdd5bba29fd36ab832255",
-    "circuitSha256": "7de83799c838531e93f84315e6bbd5ba084367596e4eaf552bda98ae6df8b52d",
+    "boardSha256": "67b0f534e6f9275f6b46024479b4637a9f86024e2b98c9ccac7df31a67cb2a4a",
+    "circuitSha256": "bb440bde79aa092179b270eac4c26c1fa70fd43cbbc89802c1b05389fdb5a404",
     "requiredConnections": 217,
     "connectedConnections": 217,
     "disconnectedConnections": 0,
@@ -1610,8 +1610,8 @@
     "fabricationReady": false
   },
   "independentDrc": {
-    "path": "dist/g350-checked-shortcuts-verified-179/filled/drc.json",
-    "sha256": "b7cf8086c418330a84db4debd8445a6aac02ef38d6d663bbf423636389f9e023"
+    "path": "dist/g350-ddr-inner-ground-preserved-verified-210/filled/drc.json",
+    "sha256": "aff94c71e218e0e5132a2436e130f0551c580692350a8adb8e8250a9c32fa52b"
   },
   "kicadErrors": 0,
   "kicadWarnings": 0,
@@ -1622,15 +1622,15 @@
   "kiCadExclusions": [],
   "allLayerGerberShorts": 0,
   "shortsVerification": {
-    "input": "/workspace/g350-linux-handheld/dist/g350-checked-shortcuts-verified-179/fresh-filled.circuit.json",
-    "inputSha256": "2363321a714f9fce429e8667eee9bc21e0a71c57668c5dfb02d2a9f10edbd420",
+    "input": "/workspace/g350-linux-handheld/dist/g350-ddr-inner-ground-preserved-verified-210/fresh-filled.circuit.json",
+    "inputSha256": "837ad0aa9abf85d7efd3e7a8865aacb81854d3980c00c5b64b74bab8979fa78d",
     "mode": "gerber",
     "layer": "all",
     "cliVersion": "0.1.2258",
     "cliSha256": "2135bc7f5e27b72ddfaa9b65586c905897e4222f989328ebc0434b1d1961c19c",
     "logSha256": "d6eba65722c309471fe66e04ff6be6fd43a3b8c520a1460bb9ab02803181c321",
     "exitCode": 0,
-    "workingDirectory": "/workspace/g350-linux-handheld/dist/g350-checked-shortcuts-shorts-180",
+    "workingDirectory": "/workspace/g350-linux-handheld/dist/g350-ddr-inner-ground-preserved-shorts-211",
     "fabricationReady": false
   },
   "connectedDdrSignals": 49,
@@ -1644,14 +1644,14 @@
     {
       "bus": "DDR_BYTE0",
       "shortest": {
-        "signal": "DDR_D6",
-        "nativeLengthMm": 23.683030766422835
+        "signal": "DDR_D4",
+        "nativeLengthMm": 33.53766125506082
       },
       "longest": {
-        "signal": "DDR_D2",
-        "nativeLengthMm": 52.83132288376018
+        "signal": "DDR_D7",
+        "nativeLengthMm": 52.831322883760194
       },
-      "skewMm": 29.148292117337345,
+      "skewMm": 19.293661628699375,
       "limitMm": 0.635,
       "passNativeSkew": false
     },
@@ -1659,13 +1659,13 @@
       "bus": "DDR_BYTE1",
       "shortest": {
         "signal": "DDR_D9",
-        "nativeLengthMm": 21.963071799084886
+        "nativeLengthMm": 30.163071799084896
       },
       "longest": {
         "signal": "DDR_D12",
         "nativeLengthMm": 55.34816452257317
       },
-      "skewMm": 33.385092723488285,
+      "skewMm": 25.185092723488275,
       "limitMm": 0.635,
       "passNativeSkew": false
     },
@@ -1687,13 +1687,13 @@
       "bus": "DDR_DQS0_PAIR",
       "shortest": {
         "signal": "DDR_DQSn0",
-        "nativeLengthMm": 35.199999999999996
+        "nativeLengthMm": 47.200000000000045
       },
       "longest": {
         "signal": "DDR_DQS0",
-        "nativeLengthMm": 35.2
+        "nativeLengthMm": 47.2000000000001
       },
-      "skewMm": 7.105427357601002e-15,
+      "skewMm": 5.684341886080802e-14,
       "limitMm": 0.127,
       "passNativeSkew": true
     },
@@ -1701,13 +1701,13 @@
       "bus": "DDR_DQS1_PAIR",
       "shortest": {
         "signal": "DDR_DQS1",
-        "nativeLengthMm": 35.20000000000001
+        "nativeLengthMm": 43.900000000000055
       },
       "longest": {
-        "signal": "DDR_DQS1",
-        "nativeLengthMm": 35.20000000000001
+        "signal": "DDR_DQSn1",
+        "nativeLengthMm": 43.90000000000007
       },
-      "skewMm": 0.0,
+      "skewMm": 1.4210854715202004e-14,
       "limitMm": 0.127,
       "passNativeSkew": true
     },
@@ -1728,8 +1728,8 @@
   ],
   "nativeViaAllowanceMm": 1.6,
   "snapshot": {
-    "path": "dist/g350-checked-shortcuts-verified-179/pcb-all-layers.png",
-    "sha256": "78d4ae81002a218339165b71445387287f16ad4ef53ea2c67fdda6ab87ec1a50"
+    "path": "dist/g350-ddr-inner-ground-preserved-verified-210/pcb-all-layers.png",
+    "sha256": "3cbf2db3cf60cf11f524aa2f7eb5dd0d94715adfde03fde8018b59c3757a9e13"
   },
   "fullElectricalTimingQualified": false,
   "fabricationReady": false,
@@ -1740,40 +1740,8 @@
     "cli": "0.1.2258",
     "checks": "0.0.242"
   },
-  "baselineComparison": {
-    "logicalTypesExactlyPreserved": [
-      "source_trace",
-      "source_bus",
-      "source_port",
-      "pcb_port",
-      "pcb_smtpad",
-      "pcb_component",
-      "pcb_via"
-    ],
-    "nonDdrCopperGeometryExactlyPreserved": true,
-    "changedDdrCopperGeometries": [
-      "DDR_D2",
-      "DDR_A0",
-      "DDR_D12"
-    ],
-    "nonDdrDerivedAnnotationRecordsChanged": 102,
-    "allOtherDdrCopperGeometriesPreserved": 46,
-    "fabricationReady": false
-  },
-  "previousCheckedSummary": "checks/integrated/g350-bend-timing-progress/summary.json",
-  "report": "cloud/DDR_CHECKED_SHORTCUT_PROGRESS_2026-10-09.md",
-  "finalArtifactVerifier": {
-    "path": "dist/g350-checked-shortcuts-verified-179/final-verifier-exit.json",
-    "exitCode": 0
-  },
-  "combinedQualificationWrapperExitCode": 1,
-  "evidenceArchive": {
-    "path": "checks/integrated/g350-checked-shortcut-progress/checked-source-and-trials-173-180.tar.gz",
-    "bytes": 29498653,
-    "sha256": "ceb8d4902963e9554a1c2fb4b91882dcd4e97c1ba33e4eabfe167827821ae544"
-  },
-  "evidenceManifest": "checks/integrated/g350-checked-shortcut-progress/checked-source-and-trials-173-180-manifest.json",
-  "savedInstallScriptExitCode": 0,
-  "startBashBlockExitCode": 0,
-  "githubAuthenticationRecovered": true
+  "report": "cloud/DDR_INNER_TIMING_CONNECTED_2026-10-10.md",
+  "baselineCheckpoint": "b70590b3317d74fb3e03fb289bc1be64339b5c6a",
+  "peripheralCopperGeometryExactlyPreserved": true,
+  "preservationComparison": "dist/g350-ddr-inner-ground-preserved-verified-210/baseline-preservation.json"
 }

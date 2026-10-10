@@ -5146,16 +5146,16 @@
   },
   "currentContinuation": {
     "stage": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES",
-    "entry": "experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx",
-    "report": "cloud/DDR_CHECKED_SHORTCUT_PROGRESS_2026-10-09.md",
+    "entry": "experiments/am3352-g350-full-board-inner-timing-ground-preserved-replay.circuit.tsx",
+    "report": "cloud/DDR_INNER_TIMING_CONNECTED_2026-10-10.md",
     "connectedConnections": 217,
     "requiredConnections": 217,
     "connectedDdrSignals": 49,
     "nativeBusSkewFailures": 3,
     "remaining": [
-      "Whole-board DDR matching: Byte0 29.148292 mm, Byte1 33.385093 mm, command/clock 24.480252 mm against 0.635 mm",
-      "Target clock, actual manufacturer stackup, impedance, package/via delay, nominal timing and return paths",
-      "Power/footprint/electrical qualification, Linux and measured original-shell fit"
+      "Whole-board DDR matching: Byte0 19.293662 mm, Byte1 25.185093 mm, command/clock 24.480252 mm against 0.635 mm",
+      "Target clock, manufacturer stackup, impedance, package/via delay, nominal timing, coupling and return paths",
+      "PDN/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
     "fabricationReady": false,
     "danglingTracks": 0,
@@ -5163,7 +5163,7 @@
     "kicadErrors": 0,
     "kicadWarnings": 0,
     "allLayerGerberShorts": 0,
-    "summary": "checks/integrated/g350-checked-shortcut-progress/summary.json"
+    "summary": "checks/integrated/g350-inner-ground-timing-progress/summary.json"
   },
   "runtimeUpgrade20261007": {
     "versions": {

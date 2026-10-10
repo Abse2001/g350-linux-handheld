@@ -1,0 +1,106 @@
+{
+  "repositories": [
+    {
+      "name": "tscircuit/bga-fanout-solver",
+      "host": "github.com",
+      "commit": "247c835cb8d69b65e53891dcf869731079415b39",
+      "mount_path": "bga-fanout-solver"
+    },
+    {
+      "name": "tscircuit/bus-lanes-solver",
+      "host": "github.com",
+      "commit": "2417031d063f208050c966ee9d997fc8d6e26a59",
+      "mount_path": "bus-lanes-solver"
+    },
+    {
+      "name": "tscircuit/checks",
+      "host": "github.com",
+      "commit": "ec5e6f6fba26561ab9cad3789cbeb5bcb330091b",
+      "mount_path": "checks"
+    },
+    {
+      "name": "tscircuit/circuit-json",
+      "host": "github.com",
+      "commit": "caa04881bc8015d2bc746180f9e48b325fe7e625",
+      "mount_path": "circuit-json"
+    },
+    {
+      "name": "tscircuit/cli",
+      "host": "github.com",
+      "commit": "7b9cdd526be249e48c5e24afae8aa3bfde4b2175",
+      "mount_path": "cli"
+    },
+    {
+      "name": "tscircuit/core",
+      "host": "github.com",
+      "commit": "efdc037363a4ec95a619a8f48e53d8540b4dca76",
+      "mount_path": "core"
+    },
+    {
+      "name": "tscircuit/fanout-solver",
+      "host": "github.com",
+      "commit": "39adfeb68c9ade6ea30ce5bd9f06ac5f208146d7",
+      "mount_path": "fanout-solver"
+    },
+    {
+      "name": "Abse2001/g350-linux-handheld",
+      "host": "github.com",
+      "commit": "b70590b3317d74fb3e03fb289bc1be64339b5c6a",
+      "mount_path": "g350-linux-handheld"
+    },
+    {
+      "name": "tscircuit/pcb-trace-linter",
+      "host": "github.com",
+      "commit": "4c035f9d40ffb03ba547a08975b5e64b20371123",
+      "mount_path": "pcb-trace-linter"
+    },
+    {
+      "name": "tscircuit/props",
+      "host": "github.com",
+      "commit": "62a9d617f2b31d5f90a03713030a982d8a59ba5c",
+      "mount_path": "props"
+    },
+    {
+      "name": "tscircuit/tscircuit",
+      "host": "github.com",
+      "commit": "0b14142ae106a83f591c354df35a3e9aeaa4f325",
+      "mount_path": "tscircuit"
+    },
+    {
+      "name": "tscircuit/tscircuit-autorouter",
+      "host": "github.com",
+      "commit": "8e66b6388d1b2adc2e31eb3568a7e86648f92c7a",
+      "mount_path": "tscircuit-autorouter"
+    }
+  ],
+  "excludedDependencyToolCaches": [
+    "/workspace/.codex",
+    "/workspace/.agents",
+    "/workspace/.aws",
+    "/workspace/.git",
+    "/workspace/bga-fanout-solver/.git",
+    "/workspace/bus-lanes-solver/.git",
+    "/workspace/checks/.git",
+    "/workspace/circuit-json/.git",
+    "/workspace/cli/.git",
+    "/workspace/core/.git",
+    "/workspace/fanout-solver/.git",
+    "/workspace/g350-linux-handheld/.cloud-tools",
+    "/workspace/g350-linux-handheld/.git",
+    "/workspace/g350-linux-handheld/node_modules",
+    "/workspace/g350-linux-handheld/scripts/__pycache__",
+    "/workspace/pcb-trace-linter/.git",
+    "/workspace/props/.git",
+    "/workspace/setup-tools/node_modules",
+    "/workspace/tscircuit/.git",
+    "/workspace/tscircuit-autorouter/.agents",
+    "/workspace/tscircuit-autorouter/.git"
+  ],
+  "emptyManagedScaffolds": [
+    {
+      "path": "/workspace/.git",
+      "emptyManagedSandboxScaffold": true
+    }
+  ],
+  "completeTraversal": true
+}

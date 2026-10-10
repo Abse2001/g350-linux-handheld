@@ -5,13 +5,17 @@ import {createG350LocalGuard} from './g350-ddr-local-guard.mjs'
 import {g350BgaEscapeRegions,g350AvoidsEscapeRegions} from './g350-ddr-bga-escape-regions.mjs'
 export const ddrRouteLength=r=>r.slice(1).reduce((n,p,i)=>n+(p.route_type==='via'?1.6:0)+(p.route_type==='wire'&&r[i].route_type==='wire'&&p.layer===r[i].layer?Math.hypot(p.x-r[i].x,p.y-r[i].y):0),0)
 
-export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protectEscapeRegions=false}={}){
+export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protectEscapeRegions=false,planningValidator=null}={}){
+ assert(planningValidator===null||typeof planningValidator==='function')
  const parent=new Map(); const find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)};
  for(const s of circuit.filter(e=>e.type==='source_trace'))for(const member of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(member));
  const manufacturing=()=>checkG350ViaTrackManufacturingClearance(circuit.map(e=>e.type==='pcb_trace'?{...e,source_trace_id:find(e.source_trace_id)}:e));
  // Reject electrical bypasses first; an accepted candidate still runs every
  // unchanged full-board physical/manufacturing check below.
- const passesPhysical=()=>!checks.checkPcbTraceSelfShorts(circuit).length&&!manufacturing().length&&g350DdrPhysicalChecks.every(n=>checks[n](circuit).length===0)
+ // A caller may use an incremental validator for unqualified planning. Such
+ // callers must validate the complete board before retaining each batch and
+ // before any source/export promotion. Existing callers keep full checks.
+ const passesPhysical=()=>planningValidator?planningValidator(circuit,trace):!checks.checkPcbTraceSelfShorts(circuit).length&&!manufacturing().length&&g350DdrPhysicalChecks.every(n=>checks[n](circuit).length===0)
  const escapeRegions=protectEscapeRegions?g350BgaEscapeRegions(circuit):[]
  const simplifySeconds=Number(process.env.G350_LENGTH_SIMPLIFY_SECONDS??seconds*.35);assert(Number.isFinite(simplifySeconds)&&simplifySeconds>=0&&simplifySeconds<=seconds);
  const simplifyDeadline=Date.now()+simplifySeconds*1000
@@ -32,13 +36,16 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
   }
  }
  const length=ddrRouteLength,original=structuredClone(trace.route),delta=goalLength-length(original),deadline=Date.now()+seconds*1000;
+ const balancedFlag=process.env.G350_LENGTH_BALANCED_SEARCH
+ assert(balancedFlag===undefined||['0','1'].includes(balancedFlag))
+ const balanced=balancedFlag==='1',rectangleDeadline=balanced?Date.now()+seconds*700:deadline,combDeadline=balanced?Date.now()+seconds*400:deadline
  if(delta<=.05)return {found:delta>=-.635,tries:0};
   let found=false,tries=0
   const localGuard=createG350LocalGuard(circuit,trace)
   const segments=original.slice(0,-1).map((a,i)=>({a,b:original[i+1],i})).filter(s=>s.a.route_type==='wire'&&s.b.route_type==='wire'&&s.a.layer===s.b.layer&&Math.hypot(s.a.x-s.b.x,s.a.y-s.b.y)>.66).sort((a,b)=>Number(b.a.layer.startsWith('inner'))-Number(a.a.layer.startsWith('inner'))||Math.hypot(b.a.x-b.b.x,b.a.y-b.b.y)-Math.hypot(a.a.x-a.b.x,a.a.y-a.b.y))
   search:for(const {a,b,i}of segments)for(const teeth of [12,8,6,4,3,2,1])for(const fraction of [.8,.6,.4,.25,.15])for(const start of [.1,.2,.35,.5,.65,.8])for(const sign of [1,-1])for(const offset of [0,.04,-.04]){
    if(found)break search
-   if(Date.now()>deadline)break search
+   if(Date.now()>combDeadline)break search
    const span=Math.hypot(b.x-a.x,b.y-a.y),h=delta/(2*teeth),pitch=fraction*span/teeth
    if(h<.22||pitch/2<.22)continue
    if(start*span+offset<.22||start*span+offset+(teeth-1)*pitch+pitch/2>span-.22)continue
@@ -56,6 +63,7 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
   // Grow an existing rectangular bend without consuming another straight
   // section. Its two perpendicular legs gain delta/2 each.
   for(let i=0;i<original.length-3&&!found;i++){
+   if(balanced&&Date.now()>rectangleDeadline)break
    const [a,b,c,d]=original.slice(i,i+4)
    if(![a,b,c,d].every(p=>p.route_type==='wire'&&p.layer===a.layer))continue
    const ux=b.x-a.x,uy=b.y-a.y,vx=c.x-b.x,vy=c.y-b.y,h=Math.hypot(ux,uy)
@@ -77,9 +85,10 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
     const ab=Math.hypot(b.x-a.x,b.y-a.y),bc=Math.hypot(b.x-c.x,b.y-c.y)
     if(ab<.1||bc<.1)continue
     const gx=(b.x-a.x)/ab+(b.x-c.x)/bc,gy=(b.y-a.y)/ab+(b.y-c.y)/bc
-    for(let j=0;j<16;j++){
+    const directions=balanced?64:16
+    for(let j=0;j<directions;j++){
      if(Date.now()>deadline)break bends
-     const dx=Math.cos(j*Math.PI/8),dy=Math.sin(j*Math.PI/8)
+     const dx=Math.cos(j*2*Math.PI/directions),dy=Math.sin(j*2*Math.PI/directions)
      if(gx*dx+gy*dy<-.000001)continue
      const moved=d=>({...b,x:b.x+dx*d,y:b.y+dy*d})
      const gain=d=>{const p=moved(d);return Math.hypot(p.x-a.x,p.y-a.y)+Math.hypot(p.x-c.x,p.y-c.y)-ab-bc}

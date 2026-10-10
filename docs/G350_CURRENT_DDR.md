@@ -1,5 +1,25 @@
 # Current shaped-board DDR routing
 
+## Latest connected inner-layer timing checkpoint (2026-10-10 UTC)
+
+Continue `experiments/am3352-g350-full-board-inner-timing-ground-preserved-replay.circuit.tsx`.
+Read `cloud/DDR_INNER_TIMING_CONNECTED_2026-10-10.md` and
+`checks/integrated/g350-inner-ground-timing-progress/summary.json`. Fresh source 209,
+independent fresh-fill KiCad 210 and Gerber 211 retain 217/217 connections, all 49 DDR
+signals, 298 ground ports and 1,032 required numeric ports. All 280 placements, RAM90,
+four layers and 824 full-depth vias are preserved. DRC errors/warnings/opens/dangling
+copper and shorts are zero. Source/fresh-filled native checks pass except three
+bus-skew failures: 19.293662 / 25.185093 / 24.480252 mm versus 0.635 mm. Pairs pass.
+The build exits 1 for matching; the qualification wrapper exits 0. The b70590b
+checkpoint and frozen evidence remain. Distributed growth trials that broke ground
+are rejected; 215 native ground errors reflected the whole-net assertion, while
+KiCad identified three stranded pads. Checked outer spans were restored while
+retaining inner-layer tuning. Further recovery 212/217/220 is unqualified and must
+not replace the checked entry. Preserve native whole-net assertions and runtime pins;
+fresh numeric/ground/Gerber checks remain mandatory. Electrical clock/stackup/timing,
+PDN, Linux and measured shell fit remain unfinished. Keep fabricationReady false.
+
+
 ## Latest checked DDR shortcuts and runtime (2026-10-09 UTC)
 
 Continue `experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx`.
