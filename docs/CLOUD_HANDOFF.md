@@ -1,5 +1,13 @@
 # G350 Linux handheld — cloud continuation handoff
 
+Latest checked continuation: source 319 / KiCad 320 / Gerber 321,
+`experiments/am3352-g350-full-board-ground-safe-byte-growth-stable-replay.circuit.tsx`.
+Read `cloud/DDR_GROUND_SAFE_BYTE_GROWTH_2026-10-10.md` and its integrated summary.
+All 217 connections, 49 DDR and 298 ground ports remain connected; DRC, dangling
+copper and shorts are zero. Native bus skews improve to 15.124882 / 23.748074 /
+24.300328 mm, still above 0.635 mm. Preserve the prior 8284474 checkpoint and
+frozen evidence; runtime/checker pins stay fixed and fabricationReady is false.
+
 ## Latest checked DDR shortcuts and runtime (2026-10-09 UTC)
 
 Continue `experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx`.

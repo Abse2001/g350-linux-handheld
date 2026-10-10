@@ -3,7 +3,7 @@ import fs from 'node:fs'
 import assert from 'node:assert/strict'
 import {createHash} from 'node:crypto'
 import {fanoutTracePath} from '@tscircuit/props'
-const [input,srjPath,root]=process.argv.slice(2)
+const [input,srjPath,root,orderPath]=process.argv.slice(2)
 assert(input&&srjPath&&root&&!fs.existsSync(root));fs.mkdirSync(root)
 const c=JSON.parse(fs.readFileSync(input)),srj=JSON.parse(fs.readFileSync(srjPath))
 const source=new Map(c.filter(e=>e.type==='source_trace').map(e=>[e.source_trace_id,e]))
@@ -28,6 +28,17 @@ for(const id of ddr){
  assert(Math.hypot(route[0].x-p.x,route[0].y-p.y)<1e-6,'DDR route must start at CPU numeric pad')
  paths.push(fanoutTracePath.parse({connection:`U_SOC.pin${logical.get(cpu).pin_number}`,route}))
 }
+// Replaying an existing board must preserve the original DDR path order:
+// Core generates physical trace/via IDs from that order, independently of
+// source_trace declaration order. Do not alter any route to achieve ordering.
+if(orderPath){
+ const order=JSON.parse(fs.readFileSync(orderPath)).map(p=>fanoutTracePath.parse(p).connection)
+ assert.equal(order.length,49);assert.equal(new Set(order).size,49)
+ assert.deepEqual([...new Set(paths.map(p=>p.connection))].sort(),[...order].sort())
+ const byConnection=new Map(paths.map(p=>[p.connection,p]));assert.equal(byConnection.size,49)
+ const ordered=order.map(connection=>byConnection.get(connection))
+ paths.splice(0,paths.length,...ordered)
+}
 const traces=c.filter(e=>e.type==='pcb_trace'&&!ddr.has(e.source_trace_id)).map(t=>{
  const candidates=srj.connections.filter(conn=>find(conn.name)===find(t.source_trace_id))
  const named=connections.get(t.connection_name)
@@ -39,4 +50,4 @@ const cache={ports:[...ports.values()].map(p=>({id:p.pcb_port_id,x:p.x,y:p.y})),
 fs.writeFileSync(root+'/ddr-paths.json',JSON.stringify(paths,null,2)+'\n')
 fs.writeFileSync(root+'/rest-routing.json',JSON.stringify(cache,null,2)+'\n')
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex')
-fs.writeFileSync(root+'/preparation.json',JSON.stringify({sourceSha256:hash(input),solverInputSha256:hash(srjPath),ddrPaths:paths.length,restTraceRecords:traces.length,requiresFreshEditableSourceAndIndependentChecks:true,fabricationReady:false},null,2)+'\n')
+fs.writeFileSync(root+'/preparation.json',JSON.stringify({sourceSha256:hash(input),solverInputSha256:hash(srjPath),ddrPaths:paths.length,restTraceRecords:traces.length,replayOrderReference:orderPath?{path:orderPath,sha256:hash(orderPath)}:null,requiresFreshEditableSourceAndIndependentChecks:true,fabricationReady:false},null,2)+'\n')

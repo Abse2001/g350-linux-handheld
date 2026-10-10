@@ -15,6 +15,7 @@ assert(selectedNames===null||selectedNames.every(n=>[...names.values()].includes
 assert(selectedLayers.length&&selectedLayers.every(l=>['top','bottom'].includes(l)))
 const split=route=>{const spans=[],vias=[];let span=[];for(const p of route){if(p.route_type==='via'){spans.push(span);span=[];vias.push(p)}else span.push(p)}spans.push(span);return {spans,vias}}
 for(const t of c.filter(e=>e.type==='pcb_trace'&&names.has(e.source_trace_id))){
+ if(selectedNames&&!selectedNames.includes(names.get(t.source_trace_id)))continue
  const old=baseline.find(e=>e.type==='pcb_trace'&&e.source_trace_id===t.source_trace_id);assert(old)
  const a=split(t.route),b=split(old.route);assert.deepEqual(a.vias,b.vias);assert.equal(a.spans.length,b.spans.length)
  const before=ddrRouteLength(t.route),restored=[];const joined=[]
@@ -29,6 +30,7 @@ for(const t of c.filter(e=>e.type==='pcb_trace'&&names.has(e.source_trace_id))){
  rows.push({name:names.get(t.source_trace_id),beforeMm:before,afterMm:ddrRouteLength(joined),baselineMm:ddrRouteLength(old.route),restored})
 }
 for(let i=0;i<c.length;i++)if(c[i].type!=='pcb_trace'||!names.has(c[i].source_trace_id))assert.deepEqual(c[i],original[i])
+if(selectedNames)assert.deepEqual(c.filter(e=>e.type==='pcb_trace'&&names.has(e.source_trace_id)&&!selectedNames.includes(names.get(e.source_trace_id))),original.filter(e=>e.type==='pcb_trace'&&names.has(e.source_trace_id)&&!selectedNames.includes(names.get(e.source_trace_id))))
 const parent=new Map(),find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)}
 for(const s of c.filter(e=>e.type==='source_trace'))for(const p of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(p))
 const counts=Object.fromEntries([...g350DdrPhysicalChecks,'checkPcbTracesOutOfBoard','checkPcbBusLengthSkew'].map(n=>[n,checks[n](c).length]))

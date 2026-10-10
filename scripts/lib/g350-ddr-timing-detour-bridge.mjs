@@ -7,7 +7,7 @@ import assert from 'node:assert/strict'
 
 // Conservative two-to-four-layer search for manual handoffs. Native planar
 // phases and independent physical/source checks remain required.
-export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false}){
+export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false,startTerminalLayers,goalTerminalLayers}){
 assert(Number.isFinite(overlapPenalty)&&overlapPenalty>0&&overlapPenalty<=100)
 assert(viaCopperClearance>=.1016&&viaCopperClearance<=.2)
 assert(routingLayers.length>=2&&routingLayers.length<=4&&new Set(routingLayers).size===routingLayers.length&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
@@ -68,7 +68,9 @@ function routeConnection(c,step,penalty=0){
   }
  }
  const physicalTerminal=p=>shapes.some(s=>s.hole&&s.owner===c.name&&Math.hypot(p.x-s.x,p.y-s.y)<1e-6)
- const startLayers=!primaryTerminalLayer&&physicalTerminal(start)?layers:[start.layer],goalLayers=!primaryTerminalLayer&&physicalTerminal(goal)?layers:[goal.layer]
+ if(startTerminalLayers)assert(physicalTerminal(start)&&startTerminalLayers.length&&new Set(startTerminalLayers).size===startTerminalLayers.length)
+ if(goalTerminalLayers)assert(physicalTerminal(goal)&&goalTerminalLayers.length&&new Set(goalTerminalLayers).size===goalTerminalLayers.length)
+ const startLayers=startTerminalLayers??(!primaryTerminalLayer&&physicalTerminal(start)?layers:[start.layer]),goalLayers=goalTerminalLayers??(!primaryTerminalLayer&&physicalTerminal(goal)?layers:[goal.layer])
  assert(startLayers.every(l=>layers.includes(l))&&goalLayers.every(l=>layers.includes(l)))
  const distances=new Float64Array(N*layerCount*(maxVias+1));distances.fill(Infinity)
  const parents=new Int32Array(distances.length);parents.fill(-1)

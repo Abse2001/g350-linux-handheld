@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/g350-linux-handheld/scripts/restore-g350-compressed-planning-evidence.py", line 31, in <module>
+    assert target.is_file() and digest(target.read_bytes()) == row['sha256'], 'Refuse to replace edited ' + str(target)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Refuse to replace edited /tmp/g350-compressed-restoration-328/dist/g350-ddr-byte1-short-target-rebuild-271/trial-1.circuit.json

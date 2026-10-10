@@ -1,5 +1,15 @@
 # Current shaped-board DDR routing
 
+Latest checked source: `experiments/am3352-g350-full-board-ground-safe-byte-growth-stable-replay.circuit.tsx`.
+Read `cloud/DDR_GROUND_SAFE_BYTE_GROWTH_2026-10-10.md` and
+`checks/integrated/g350-ground-safe-byte-growth-progress/summary.json`.
+Fresh source 319, KiCad 320 and Gerber 321 verify 217/217 connections, 49 DDR,
+298 ground ports and 1,032 numeric ports with zero DRC warnings/errors, opens,
+dangling copper and shorts. All placements, physical barrels, peripheral copper
+and constraints are preserved. Native skews are 15.124882 / 23.748074 / 24.300328 mm
+against 0.635 mm; all pairs pass. Build exits 1 for matching. Fabrication readiness
+is false; smaller planning gains and command subsets remain unqualified.
+
 ## Latest connected inner-layer timing checkpoint (2026-10-10 UTC)
 
 Continue `experiments/am3352-g350-full-board-inner-timing-ground-preserved-replay.circuit.tsx`.

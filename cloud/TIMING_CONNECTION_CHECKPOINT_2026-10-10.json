@@ -1,0 +1,135 @@
+{
+  "environmentName": "G350 AM3352 handheld",
+  "environmentId": "ccarenv_b64_Y2NhcmVudl8wYjU5Y2I4OWQzMzA4MTkxOTliZDkxMzE1ODNhNjRhNg",
+  "connectivity": "connected",
+  "observedPhase": "running",
+  "sourceConfigId": "1a829d16-28cf-455e-8a71-028c9e5542df~cecfg_6ac42fe26f808195b507706933b7f698",
+  "specRevision": "4",
+  "draftId": "1a829d16-28cf-455e-8a71-028c9e5542df~cecfgdraft_6ac4798d08e0819583da3339e2d8414d",
+  "draftRevision": 18,
+  "networkEnforcementState": "unknown",
+  "additionalDomains": [
+    "buydisplay.com",
+    "docs.tscircuit.com",
+    "jlcpcb.com",
+    "jscdn.tscircuit.com",
+    "lcsc.com",
+    "micron.com",
+    "nodejs.org",
+    "registry.tscircuit.com",
+    "ti.com",
+    "tscircuit.com"
+  ],
+  "observedUtc": "2026-10-10 04:14:30 UTC",
+  "repositories": [
+    {
+      "depth": null,
+      "mount_path": "bga-fanout-solver",
+      "ref": "247c835cb8d69b65e53891dcf869731079415b39",
+      "repository_id": "tscircuit/bga-fanout-solver"
+    },
+    {
+      "depth": null,
+      "mount_path": "bus-lanes-solver",
+      "ref": "2417031d063f208050c966ee9d997fc8d6e26a59",
+      "repository_id": "tscircuit/bus-lanes-solver"
+    },
+    {
+      "depth": null,
+      "mount_path": "checks",
+      "ref": "ec5e6f6fba26561ab9cad3789cbeb5bcb330091b",
+      "repository_id": "tscircuit/checks"
+    },
+    {
+      "depth": null,
+      "mount_path": "circuit-json",
+      "ref": "caa04881bc8015d2bc746180f9e48b325fe7e625",
+      "repository_id": "tscircuit/circuit-json"
+    },
+    {
+      "depth": null,
+      "mount_path": "cli",
+      "ref": "7b9cdd526be249e48c5e24afae8aa3bfde4b2175",
+      "repository_id": "tscircuit/cli"
+    },
+    {
+      "depth": null,
+      "mount_path": "core",
+      "ref": "efdc037363a4ec95a619a8f48e53d8540b4dca76",
+      "repository_id": "tscircuit/core"
+    },
+    {
+      "depth": null,
+      "mount_path": "fanout-solver",
+      "ref": "39adfeb68c9ade6ea30ce5bd9f06ac5f208146d7",
+      "repository_id": "tscircuit/fanout-solver"
+    },
+    {
+      "depth": null,
+      "mount_path": "g350-linux-handheld",
+      "ref": "82844746daba9142fd11ae99e40805b4dd371b50",
+      "repository_id": "Abse2001/g350-linux-handheld"
+    },
+    {
+      "depth": null,
+      "mount_path": "pcb-trace-linter",
+      "ref": "4c035f9d40ffb03ba547a08975b5e64b20371123",
+      "repository_id": "tscircuit/pcb-trace-linter"
+    },
+    {
+      "depth": null,
+      "mount_path": "props",
+      "ref": "62a9d617f2b31d5f90a03713030a982d8a59ba5c",
+      "repository_id": "tscircuit/props"
+    },
+    {
+      "depth": null,
+      "mount_path": "tscircuit",
+      "ref": "0b14142ae106a83f591c354df35a3e9aeaa4f325",
+      "repository_id": "tscircuit/tscircuit"
+    },
+    {
+      "depth": null,
+      "mount_path": "tscircuit-autorouter",
+      "ref": "8e66b6388d1b2adc2e31eb3568a7e86648f92c7a",
+      "repository_id": "tscircuit/tscircuit-autorouter"
+    }
+  ],
+  "boardBranch": "codex/cloud-handoff",
+  "verifiedPushedCommit": "82844746daba9142fd11ae99e40805b4dd371b50",
+  "authoritativeEntry": "experiments/am3352-g350-full-board-inner-timing-ground-preserved-replay.circuit.tsx",
+  "checkedConnections": {
+    "board": 217,
+    "ddr": 49,
+    "groundPorts": 298,
+    "numericPorts": 1032
+  },
+  "checkedSkewMm": {
+    "DDR_BYTE0": 19.293661628699375,
+    "DDR_BYTE1": 25.185092723488275,
+    "DDR_COMMAND_CLOCK": 24.480252145015797
+  },
+  "fabricationReady": false,
+  "timingTrialsQualified": false,
+  "startSkillSaved": true,
+  "installScriptSaved": true,
+  "publicationRevalidated": false,
+  "resumeReport": "cloud/DDR_TIMING_REBUILD_WORKING_2026-10-10.md",
+  "latestCheckedContinuation": {
+    "entry": "experiments/am3352-g350-full-board-ground-safe-byte-growth-stable-replay.circuit.tsx",
+    "summary": "checks/integrated/g350-ground-safe-byte-growth-progress/summary.json",
+    "report": "cloud/DDR_GROUND_SAFE_BYTE_GROWTH_2026-10-10.md",
+    "skewMm": [
+      15.124882197883345,
+      23.7480743092418,
+      24.300327815744033
+    ],
+    "connectedConnections": 217,
+    "connectedDdrSignals": 49,
+    "groundPorts": 298,
+    "source": 319,
+    "independentFreshFill": 320,
+    "gerber": 321,
+    "fabricationReady": false
+  }
+}

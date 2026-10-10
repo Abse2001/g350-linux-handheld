@@ -1,3 +1,16 @@
+## Latest checked ground-preserving byte growth (2026-10-10 UTC)
+
+Continue `experiments/am3352-g350-full-board-ground-safe-byte-growth-stable-replay.circuit.tsx`.
+Read `cloud/DDR_GROUND_SAFE_BYTE_GROWTH_2026-10-10.md` and
+`checks/integrated/g350-ground-safe-byte-growth-progress/summary.json`.
+Source 319, KiCad 320 and Gerber 321 preserve all 217 connections, 49 DDR,
+298 ground ports, placements and 824 standard through-vias, with zero DRC
+warnings/errors, opens, dangling copper and shorts. Native bus skews are
+15.124882 / 23.748074 / 24.300328 mm against 0.635 mm; pairs pass. Build still
+exits 1 for matching. Preserve prior 8284474 and all frozen evidence, retain
+runtime/checker pins, and keep fabricationReady false. See the working report
+for unqualified small gains, rejected ground interactions and cache-order fixes.
+
 ## Latest checked DDR shortcuts and runtime (2026-10-09 UTC)
 
 Continue `experiments/am3352-g350-clean-full-board-checked-shortcuts-replay.circuit.tsx`.
