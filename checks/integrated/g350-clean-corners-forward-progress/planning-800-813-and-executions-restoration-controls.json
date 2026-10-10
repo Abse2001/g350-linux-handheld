@@ -1,0 +1,39 @@
+{
+  "manifest": "checks/integrated/g350-clean-corners-forward-progress/planning-800-813-and-executions-manifest.json",
+  "freshDestination": "/tmp/g350-clean-corners-restore-trials-843",
+  "results": [
+    {
+      "label": "archive",
+      "actualExitCode": 0,
+      "stdout": "Verified 96 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh",
+      "actualExitCode": 0,
+      "stdout": "Verified 96 evidence members; restored 96\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat",
+      "actualExitCode": 0,
+      "stdout": "Verified 96 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "inplace",
+      "actualExitCode": 0,
+      "stdout": "Verified 96 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "edited_refusal",
+      "actualExitCode": 1,
+      "editedFileSha256": "eb716feb16519e8b9d5781c7f2fe22dfcff50ad67734ce89bdc66a2b5f0bc820",
+      "editedFilePreserved": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-clean-corners-restore-trials-843/dist/g350-ddr-byte1-no-d8-acute-merged-804/candidate.circuit.json\n"
+    }
+  ],
+  "fabricationReady": false
+}

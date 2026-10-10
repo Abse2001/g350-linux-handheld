@@ -1,6 +1,35 @@
 # G350 Linux handheld — cloud continuation handoff
 
 Latest checked continuation (2026-10-10 UTC): use
+`experiments/am3352-g350-full-board-ground-preserving-clean-corners-replay.circuit.tsx` and read
+`cloud/DDR_CLEAN_CORNERS_FORWARD_PROGRESS_2026-10-10.md` plus `checks/integrated/g350-clean-corners-forward-progress/summary.json`.
+Fresh source 836 / KiCad 837 / Gerber838 retain all 217 connections,49 DDR,
+298 grounds,1,032 numeric pads,280 placements,RAM90,four layers and824 original
+standard through-vias. Native physical/manufacturing/ground checks, all-rule
+KiCad errors/warnings/opens/dangling copper and all-layer shorts are zero.
+Byte0 passes 0.574882 mm; byte1 4.211624 mm and
+command/clock 4.410969 mm still fail 0.635 mm. All pairs pass 0.127 mm.
+Source exit 1 is exactly those two failures; complete independent qualification exits 0.
+D8 now has zero corners below 25 degrees. Seven completed byte1 rounds814 and
+three completed command rounds815 are retained snapshots, not entire parent
+runs780/781. Selective cleanup811/816 and merge 817 preserve every original hole,
+CPU/RAM endpoint, peripheral trace, placement, logical constraint and runtime pin.
+Exact planned834 canonical DDR copper and physical hole records reproduce in source.
+The existing two bounded A0 barrel moves remain unchanged relative source 770.
+Bottom DDR copper is restored exactly from checked source 770; CASn is retuned
+on Top only. No new hole, removed hole or failed topology trial is promoted. Public pinned
+BusLanes trials 787/788/800/801 find no complete qualifying route. Fine-grid809
+passes an independent clearance control; board trials 808/810/812/813 fail the
+unchanged overlap/self-short guards. Keep those planning helpers experimental.
+Native1.6 mm per transition is not qualified electrical delay. Clock/stackup/
+package/via models, impedance/coupling/returns, PDN/footprints, Linux and measured
+shell fit remain open. fabricationReady=false; the board is not ready to order.
+Preserve source 770/737/699/643/610/591/565/540/532/319 and all frozen evidence.
+Further edits require fresh source and complete independent qualification.
+
+## Previous shorter-byte1 checkpoint (preserved history)
+
+Latest checked continuation (2026-10-10 UTC): use
 `experiments/am3352-g350-full-board-shorter-byte1-second-batch-replay.circuit.tsx` and read
 `cloud/DDR_SHORTER_BYTE1_SECOND_BATCH_2026-10-10.md` plus `checks/integrated/g350-shorter-byte1-second-batch-progress/summary.json`.
 Fresh source770 / KiCad771 / Gerber772 retain all217 connections,49 DDR,

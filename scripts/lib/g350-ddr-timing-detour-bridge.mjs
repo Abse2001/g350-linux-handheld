@@ -14,12 +14,12 @@ assert(Number.isFinite(heuristicWeight)&&heuristicWeight>=1&&heuristicWeight<=2)
 assert(viaCopperClearance>=.1016&&viaCopperClearance<=.2)
 assert(routingLayers.length>=2&&routingLayers.length<=4&&new Set(routingLayers).size===routingLayers.length&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
 const layers=routingLayers,layerCount=layers.length,width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=viaCostMm
-assert([.02,.025,.04].includes(gridMm));assert(seconds>0&&seconds<=60)
+assert([.0125,.02,.025,.04].includes(gridMm));assert(seconds>0&&seconds<=60)
 // The connected board already contains a seven-barrel D2 channel. This is a
 // search resource bound, not a manufacturing waiver; native counts still gate
 // every result. Historical/default callers retain their original budgets.
 assert(Number.isInteger(maxVias)&&maxVias>=2&&maxVias<=8)
-assert([.02,.025,.04,.1,.2].includes(viaGrid))
+assert([.0125,.02,.025,.04,.1,.2].includes(viaGrid))
 assert(rasterGuardMm===undefined||(Number.isFinite(rasterGuardMm)&&rasterGuardMm>=0&&rasterGuardMm<=gridMm*Math.SQRT1_2+1e-4))
 const distance=(s,p)=>{
  if(s.kind==='circle')return Math.hypot(p.x-s.x,p.y-s.y)-s.w/2

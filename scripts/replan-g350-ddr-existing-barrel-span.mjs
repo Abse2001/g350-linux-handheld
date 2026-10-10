@@ -14,6 +14,8 @@ const rebuildFromPads=process.env.G350_SPAN_REBUILD_FROM_PADS==='1'
 const direct=process.env.G350_SPAN_DIRECT_PADS==='1'||rebuildFromPads
 const removeIntermediate=process.env.G350_SPAN_REMOVE_INTERMEDIATE==='1'
 const allowNewVias=process.env.G350_SPAN_ALLOW_NEW_VIAS==='1'
+const guardFixedOwnWires=process.env.G350_SPAN_GUARD_FIXED_OWN_WIRES==='1'
+assert(process.env.G350_SPAN_GUARD_FIXED_OWN_WIRES===undefined||['0','1'].includes(process.env.G350_SPAN_GUARD_FIXED_OWN_WIRES))
 assert(!allowNewVias||removeIntermediate,'New barrels require explicit middle-channel reconstruction')
 assert(!(direct&&removeIntermediate)||rebuildFromPads,'Choose one physical via-removal scope')
 assert(!rebuildFromPads||allowNewVias&&removeIntermediate,'Full pad reconstruction requires explicit real barrel replacement')
@@ -21,7 +23,7 @@ assert(!direct||layer==='top','Direct BGA-pad diagnostic starts on the authored 
 const maxNewVias=process.env.G350_SPAN_MAX_NEW_VIAS===undefined?2:Number(process.env.G350_SPAN_MAX_NEW_VIAS)
 assert(Number.isInteger(maxNewVias)&&maxNewVias>=2&&maxNewVias<=8)
 const viaCostMm=Number(process.env.G350_SPAN_VIA_COST_MM??2),heuristicWeight=Number(process.env.G350_SPAN_HEURISTIC_WEIGHT??1.5),searchSeconds=Number(process.env.G350_SPAN_SEARCH_SECONDS??15)
-const gridMm=Number(process.env.G350_SPAN_GRID_MM??.025);assert([.02,.025,.04].includes(gridMm))
+const gridMm=Number(process.env.G350_SPAN_GRID_MM??.025);assert([.0125,.02,.025,.04].includes(gridMm))
 // Search margin only; every native clearance/manufacturing check below remains mandatory.
 const viaCopperClearance=Number(process.env.G350_SPAN_VIA_COPPER_CLEARANCE_MM??.15)
 assert(Number.isFinite(viaCopperClearance)&&viaCopperClearance>=.1016&&viaCopperClearance<=.2)
@@ -40,7 +42,14 @@ const own=find(source.source_trace_id),owners=new Map(original.filter(e=>e.type=
 const routingLayers=allowNewVias?['top','inner1','inner2','bottom']:[layer,...['top','bottom','inner1','inner2'].filter(l=>l!==layer).slice(0,1)],shapes=[]
 for(const p of original.filter(e=>e.type==='pcb_smtpad'&&Number.isFinite(e.x))){const w=p.width??2*p.radius,h=p.height??w;if(Number.isFinite(w)&&Number.isFinite(h))shapes.push({kind:p.shape==='circle'?'circle':'rect',x:p.x,y:p.y,w,h,layers:[p.layer].filter(l=>routingLayers.includes(l)),pad:true,owner:find(ports.get(p.pcb_port_id)??p.pcb_smtpad_id)})}
 for(const v of original.filter(e=>e.type==='pcb_via'&&!removedViaIds.has(e.pcb_via_id)))shapes.push({kind:'circle',x:v.x,y:v.y,w:v.outer_diameter,h:v.outer_diameter,hole:v.hole_diameter,layers:routingLayers,owner:owners.get(v.pcb_trace_id)})
-for(const t of original.filter(e=>e.type==='pcb_trace'))for(let i=1;i<t.route.length;i++){const a=t.route[i-1],b=t.route[i];if(a.route_type==='wire'&&b.route_type==='wire'&&a.layer===b.layer&&Math.hypot(a.x-b.x,a.y-b.y)>1e-8)shapes.push({kind:'segment',a,b,w:b.width??.1016,layers:[a.layer].filter(l=>routingLayers.includes(l)),owner:find(t.source_trace_id)})}
+for(const t of original.filter(e=>e.type==='pcb_trace'))for(let i=1;i<t.route.length;i++){
+ const a=t.route[i-1],b=t.route[i]
+ if(a.route_type!=='wire'||b.route_type!=='wire'||a.layer!==b.layer||Math.hypot(a.x-b.x,a.y-b.y)<=1e-8)continue
+ const selected=t.pcb_trace_id===trace.pcb_trace_id,insideReplaced=direct||i>startIndex&&i<=endIndex
+ const touchesTerminal=[a,b].some(p=>[start,end].some(q=>Math.hypot(p.x-q.x,p.y-q.y)<1e-8))
+ const fixedOwn=guardFixedOwnWires&&selected&&!insideReplaced&&!touchesTerminal
+ shapes.push({kind:'segment',a,b,w:b.width??.1016,layers:[a.layer].filter(l=>routingLayers.includes(l)),owner:fixedOwn?'FIXED_OWN_SIGNAL_WIRE':find(t.source_trace_id)})
+}
 // Computational via prohibition: only wires are searched. This reserve has
 // no copper representation and cannot qualify a physical board.
 if(!allowNewVias)shapes.push({kind:'rect',x:0,y:12,w:100,h:100,layers:routingLayers,viaOnly:true,owner:'NO_NEW_HOLES'})
@@ -99,4 +108,4 @@ for(const waypoints of cases){
  record.newFullDepthVias=newVias.length
  record.accepted=true;const path=root+'/case-'+attempts.length+'.circuit.json';fs.writeFileSync(path,JSON.stringify(c,null,2)+'\n');record.candidate={path,sha256:hash(path)};retained??=path;console.log(JSON.stringify(record))
 }
-fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:hash(input)},name,layer,bounds,gridMm,planningBoundsInsideUnchangedOutline:true,directPads:direct,rebuildFromPads,maxNewVias,viaCostMm,viaCopperClearance,heuristicWeight,searchSeconds,viaRange,removeIntermediate,allowNewVias,guardEarlierLegs,proposedRemovedOwnedViaIds:[...removedViaIds],removedOwnedVias:retained?removedViaIds.size:0,attempts,retained,allForeignHolesAndPeripheralGeometryExactlyPreserved:true,changedBarrelAccessLayers:!direct,requiresFreshGroundSourceAndIndependentChecks:true,planningOnly:true,fabricationReady:false},null,2)+'\n')
+fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:hash(input)},name,layer,bounds,gridMm,planningBoundsInsideUnchangedOutline:true,directPads:direct,rebuildFromPads,maxNewVias,viaCostMm,viaCopperClearance,heuristicWeight,searchSeconds,viaRange,removeIntermediate,allowNewVias,guardEarlierLegs,guardFixedOwnWires,proposedRemovedOwnedViaIds:[...removedViaIds],removedOwnedVias:retained?removedViaIds.size:0,attempts,retained,allForeignHolesAndPeripheralGeometryExactlyPreserved:true,changedBarrelAccessLayers:!direct,requiresFreshGroundSourceAndIndependentChecks:true,planningOnly:true,fabricationReady:false},null,2)+'\n')

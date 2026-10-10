@@ -1,0 +1,490 @@
+{
+  "observedAtUtc": "2026-10-10 19:15:18 UTC",
+  "observationScope": "Before saving the clean-corners checked revision",
+  "environment": {
+    "environment_id": "ccarenv_b64_Y2NhcmVudl8wYjU5Y2I4OWQzMzA4MTkxOTliZDkxMzE1ODNhNjRhNg",
+    "source_config_id": "1a829d16-28cf-455e-8a71-028c9e5542df~cecfg_6ac42fe26f808195b507706933b7f698",
+    "source_config_version_id": "1a829d16-28cf-455e-8a71-028c9e5542df~cecfgver_6ac43528a3108195b2c417c12c675e73",
+    "spec_revision": "4",
+    "observed_spec_revision": "4",
+    "observations_current": true,
+    "desired_phase": "running",
+    "observed_phase": "running",
+    "connectivity": "connected",
+    "provider": "cloud"
+  },
+  "draft": {
+    "draft_id": "1a829d16-28cf-455e-8a71-028c9e5542df~cecfgdraft_6ac4798d08e0819583da3339e2d8414d",
+    "revision": 29,
+    "base_version_id": "1a829d16-28cf-455e-8a71-028c9e5542df~cecfgver_6ac43528a3108195b2c417c12c675e73",
+    "repositories": [
+      {
+        "repository_id": "tscircuit/bga-fanout-solver",
+        "ref": "247c835cb8d69b65e53891dcf869731079415b39",
+        "mount_path": "bga-fanout-solver",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/bus-lanes-solver",
+        "ref": "2417031d063f208050c966ee9d997fc8d6e26a59",
+        "mount_path": "bus-lanes-solver",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/checks",
+        "ref": "ec5e6f6fba26561ab9cad3789cbeb5bcb330091b",
+        "mount_path": "checks",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/circuit-json",
+        "ref": "caa04881bc8015d2bc746180f9e48b325fe7e625",
+        "mount_path": "circuit-json",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/cli",
+        "ref": "7b9cdd526be249e48c5e24afae8aa3bfde4b2175",
+        "mount_path": "cli",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/core",
+        "ref": "efdc037363a4ec95a619a8f48e53d8540b4dca76",
+        "mount_path": "core",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/fanout-solver",
+        "ref": "39adfeb68c9ade6ea30ce5bd9f06ac5f208146d7",
+        "mount_path": "fanout-solver",
+        "depth": null
+      },
+      {
+        "repository_id": "Abse2001/g350-linux-handheld",
+        "ref": "d13235dcb125f3994900b80e3bc72621f8e284c8",
+        "mount_path": "g350-linux-handheld",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/pcb-trace-linter",
+        "ref": "4c035f9d40ffb03ba547a08975b5e64b20371123",
+        "mount_path": "pcb-trace-linter",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/props",
+        "ref": "62a9d617f2b31d5f90a03713030a982d8a59ba5c",
+        "mount_path": "props",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/tscircuit",
+        "ref": "0b14142ae106a83f591c354df35a3e9aeaa4f325",
+        "mount_path": "tscircuit",
+        "depth": null
+      },
+      {
+        "repository_id": "tscircuit/tscircuit-autorouter",
+        "ref": "8e66b6388d1b2adc2e31eb3568a7e86648f92c7a",
+        "mount_path": "tscircuit-autorouter",
+        "depth": null
+      }
+    ],
+    "installScriptCharacters": 646,
+    "startSkillCharacters": 12764,
+    "network_policy": {
+      "type": "restricted",
+      "presets": [
+        "package_managers"
+      ],
+      "egress_rules": [
+        {
+          "host": "buydisplay.com"
+        },
+        {
+          "host": "docs.tscircuit.com"
+        },
+        {
+          "host": "jlcpcb.com"
+        },
+        {
+          "host": "jscdn.tscircuit.com"
+        },
+        {
+          "host": "lcsc.com"
+        },
+        {
+          "host": "micron.com"
+        },
+        {
+          "host": "nodejs.org"
+        },
+        {
+          "host": "registry.tscircuit.com"
+        },
+        {
+          "host": "ti.com"
+        },
+        {
+          "host": "tscircuit.com"
+        }
+      ],
+      "preset_egress_rules": [
+        {
+          "host": "github.com"
+        },
+        {
+          "host": "codeload.github.com"
+        },
+        {
+          "host": "github-cloud.githubusercontent.com"
+        },
+        {
+          "host": "github-cloud.s3.amazonaws.com"
+        },
+        {
+          "host": "lfs.github.com"
+        },
+        {
+          "host": "release-assets.githubusercontent.com"
+        },
+        {
+          "host": "git.chatgpt-team.site"
+        },
+        {
+          "host": "eu.git.chatgpt-team.site"
+        },
+        {
+          "host": "us.git.chatgpt-team.site"
+        },
+        {
+          "host": "git.chatgpt.site"
+        },
+        {
+          "host": "eu.git.chatgpt.site"
+        },
+        {
+          "host": "us.git.chatgpt.site"
+        },
+        {
+          "host": "git.appgardenapps.dev"
+        },
+        {
+          "host": "eu.git.appgardenapps.dev"
+        },
+        {
+          "host": "us.git.appgardenapps.dev"
+        },
+        {
+          "host": "git.appgardenapps.com"
+        },
+        {
+          "host": "pypi.org"
+        },
+        {
+          "host": "files.pythonhosted.org"
+        },
+        {
+          "host": "download.pytorch.org"
+        },
+        {
+          "host": "download-r2.pytorch.org"
+        },
+        {
+          "host": "registry.npmjs.org"
+        },
+        {
+          "host": "registry.yarnpkg.com"
+        },
+        {
+          "host": "buf.build"
+        },
+        {
+          "host": "crates.io"
+        },
+        {
+          "host": "index.crates.io"
+        },
+        {
+          "host": "static.crates.io"
+        },
+        {
+          "host": "static.rust-lang.org"
+        },
+        {
+          "host": "proxy.golang.org"
+        },
+        {
+          "host": "sum.golang.org"
+        },
+        {
+          "host": "dl.google.com"
+        },
+        {
+          "host": "repo.maven.apache.org"
+        },
+        {
+          "host": "repo1.maven.org"
+        },
+        {
+          "host": "plugins.gradle.org"
+        },
+        {
+          "host": "plugins-artifacts.gradle.org"
+        },
+        {
+          "host": "services.gradle.org"
+        },
+        {
+          "host": "downloads.gradle.org"
+        },
+        {
+          "host": "bcr.bazel.build"
+        },
+        {
+          "host": "mirror.bazel.build"
+        },
+        {
+          "host": "pkgconfig.freedesktop.org"
+        },
+        {
+          "host": "cpan.metacpan.org"
+        },
+        {
+          "host": "archive.ubuntu.com"
+        },
+        {
+          "host": "security.ubuntu.com"
+        },
+        {
+          "host": "ports.ubuntu.com"
+        },
+        {
+          "host": "ppa.launchpadcontent.net"
+        },
+        {
+          "host": "packages.microsoft.com"
+        },
+        {
+          "host": "apt.buildkite.com"
+        },
+        {
+          "host": "developer.download.nvidia.com"
+        },
+        {
+          "host": "deb.nodesource.com"
+        },
+        {
+          "host": "deb.debian.org"
+        },
+        {
+          "host": "security.debian.org"
+        },
+        {
+          "host": "apt.llvm.org"
+        },
+        {
+          "host": "bitbucket.org"
+        },
+        {
+          "host": "cpan.org"
+        },
+        {
+          "host": "auth.docker.io"
+        },
+        {
+          "host": "production.cloudfront.docker.com"
+        },
+        {
+          "host": "dot.net"
+        },
+        {
+          "host": "gcr.io"
+        },
+        {
+          "host": "ghcr.io"
+        },
+        {
+          "host": "gitlab.com"
+        },
+        {
+          "host": "goproxy.io"
+        },
+        {
+          "host": "hex.pm"
+        },
+        {
+          "host": "jcenter.bintray.com"
+        },
+        {
+          "host": "mcr.microsoft.com"
+        },
+        {
+          "host": "nodejs.org"
+        },
+        {
+          "host": "nuget.org"
+        },
+        {
+          "host": "packagecloud.io"
+        },
+        {
+          "host": "ppa.launchpad.net"
+        },
+        {
+          "host": "pub.dev"
+        },
+        {
+          "host": "pypi.python.org"
+        },
+        {
+          "host": "quay.io"
+        },
+        {
+          "host": "registry-1.docker.io"
+        },
+        {
+          "host": "rubygems.org"
+        },
+        {
+          "host": "sourceforge.net"
+        },
+        {
+          "host": "aka.ms"
+        },
+        {
+          "host": "api.nuget.org"
+        },
+        {
+          "host": "archive.apache.org"
+        },
+        {
+          "host": "azuresearch-usnc.nuget.org"
+        },
+        {
+          "host": "azuresearch-ussc.nuget.org"
+        },
+        {
+          "host": "builds.dotnet.microsoft.com"
+        },
+        {
+          "host": "builds.hex.pm"
+        },
+        {
+          "host": "cache.ruby-lang.org"
+        },
+        {
+          "host": "cdn.cocoapods.org"
+        },
+        {
+          "host": "cdn.jsdelivr.net"
+        },
+        {
+          "host": "cdn.quay.io"
+        },
+        {
+          "host": "cdn01.quay.io"
+        },
+        {
+          "host": "cdn02.quay.io"
+        },
+        {
+          "host": "cdn03.quay.io"
+        },
+        {
+          "host": "cdn04.quay.io"
+        },
+        {
+          "host": "cdn05.quay.io"
+        },
+        {
+          "host": "cdn06.quay.io"
+        },
+        {
+          "host": "conda.anaconda.org"
+        },
+        {
+          "host": "d3fo0g5hm7lbuv.cloudfront.net"
+        },
+        {
+          "host": "dl.k8s.io"
+        },
+        {
+          "host": "dlcdn.apache.org"
+        },
+        {
+          "host": "download.eclipse.org"
+        },
+        {
+          "host": "download.oracle.com"
+        },
+        {
+          "host": "download.swift.org"
+        },
+        {
+          "host": "downloads.haskell.org"
+        },
+        {
+          "host": "downloads.sourceforge.net"
+        },
+        {
+          "host": "get-ghcup.haskell.org"
+        },
+        {
+          "host": "get.rvm.io"
+        },
+        {
+          "host": "globalcdn.nuget.org"
+        },
+        {
+          "host": "go.dev"
+        },
+        {
+          "host": "hackage.haskell.org"
+        },
+        {
+          "host": "pkg-containers.githubusercontent.com"
+        },
+        {
+          "host": "pkgs.k8s.io"
+        },
+        {
+          "host": "prod-cdn.packages.k8s.io"
+        },
+        {
+          "host": "raw.githubusercontent.com"
+        },
+        {
+          "host": "registry.bower.io"
+        },
+        {
+          "host": "registry.terraform.io"
+        },
+        {
+          "host": "releases.bazel.build"
+        },
+        {
+          "host": "releases.hashicorp.com"
+        },
+        {
+          "host": "repo.anaconda.com"
+        },
+        {
+          "host": "repo.hex.pm"
+        },
+        {
+          "host": "repo.packagist.org"
+        },
+        {
+          "host": "sh.rustup.rs"
+        }
+      ]
+    }
+  },
+  "branch": "codex/cloud-handoff",
+  "preSaveBoardCommit": "d13235dcb125f3994900b80e3bc72621f8e284c8",
+  "fabricationReady": false,
+  "freshManagedTaskRestorationVerified": false,
+  "savingDoesNotPublishOrActivate": true
+}
