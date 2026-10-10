@@ -1,6 +1,24 @@
 # G350 board continuation
 
 Latest checked continuation (2026-10-10): use
+`experiments/am3352-g350-full-board-large-group-restored-replay.circuit.tsx`
+and read `cloud/DDR_LARGE_GROUP_RESTORED_2026-10-10.md` plus
+`checks/integrated/g350-large-group-restored-progress/summary.json`.
+Fresh source 565 / KiCad 566 / Gerber 567 preserve all 217 connections, 49 DDR,
+298 ground ports, 1,032 numeric ports, 280 placements and 824 standard through-vias.
+Native physical checks, all-rule DRC errors/warnings, opens, dangling copper and
+all-layer shorts are zero. Byte0 passes native matching at 0.574882 mm; byte1
+7.693572 mm and command/clock 11.150328 mm still fail 0.635 mm. All pairs pass.
+Build exit is 1 for exactly those two failures; qualification wrapper exit is 0.
+Native length counts 1.6 mm per transition, not electrical delay. Keep all
+original barrels/endpoints, source540/532/319 and frozen evidence. The A0
+shortcut in source560 creates a native self-short and is rejected; source565
+restores the entire checked A0 route while retaining accepted growth elsewhere.
+Further tuning requires complete qualification. Keep fabricationReady=false.
+
+## Previous constant-neck checkpoint (preserved history)
+
+Previous checked continuation (2026-10-10): use
 `experiments/am3352-g350-full-board-constant-neck-timing-replay.circuit.tsx`
 and read `cloud/DDR_CONSTANT_NECK_TIMING_2026-10-10.md` plus
 `checks/integrated/g350-constant-neck-timing-progress/summary.json`.

@@ -127,3 +127,18 @@ restore and edited-file refusal. Test logs and commands are in
 `checks/integrated/g350-constant-neck-timing-progress/runtime-validation-544-manifest.json`.
 Unqualified trials are archived separately; never substitute them for the
 current checked entry. Fabrication readiness remains false.
+
+## Connected timing checkpoint565 startup validation (2026-10-10 UTC)
++
++The complete Start shell in START_LARGE_GROUP_CHECKED_2026-10-10.sh passes
++actual exit0 in repeat573. Node25.6.1, Bun1.3.14, official KiCad10.0.6 / pcbnew
++10.0.6+dfsg-1, wx4.2.5 gtk3, all eleven upstream pins and25,814 frozen hashes
++remain verified. Isolated Python3.12.14 / NumPy2.3.5 / SciPy1.17.0 / Shapely2.1.2
++and all four C++ grid controls pass. Checked565–568 restoration is fresh/repeated/
++in-place0 and edited-file refusal1 with the edit retained. Complete fresh
++source565/CAD566/Gerber567 qualification0 preserves217 connections/all49 DDR
++and zero DRC errors/warnings/opens/dangling/shorts. Two native matching failures
++remain. Read DDR_LARGE_GROUP_RESTORED_2026-10-10.md and its indexed evidence.
++Install19, lockfiles, native patch and KiCad archive/image are unchanged. Saved
++configuration does not publish or establish fresh-task restoration/readiness.
++

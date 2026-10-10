@@ -1,0 +1,40 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-large-group-restored-progress/runtime-validation-572-573.tar.gz",
+    "bytes": 2581,
+    "sha256": "3a33e6b1fe072299c626ee129230a2f0ecb79a3dba796e286bc35a3dc2b92549"
+  },
+  "files": [
+    {
+      "path": "dist/g350-large-group-runtime-validation-572/start-exit.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "dist/g350-large-group-runtime-validation-572/start-tested.sh",
+      "bytes": 2594,
+      "sha256": "2321cf081c5f934f11ba557ccb2f6ad7c4406247be179f1ede7af62299bfac7e"
+    },
+    {
+      "path": "dist/g350-large-group-runtime-validation-572/start.log",
+      "bytes": 3363,
+      "sha256": "3e5def2b8047f8cee93e0f21ad06ad513a4b61b4a83bf75af1b20d900b6efaf1"
+    },
+    {
+      "path": "dist/g350-large-group-runtime-validation-573/execution.json",
+      "bytes": 188,
+      "sha256": "2a8093a2e7cfd6b218a8f395d0a5a3c3c5c3afe7eb13c4df0dfe1d18e782ee0a"
+    },
+    {
+      "path": "dist/g350-large-group-runtime-validation-573/start-tested.sh",
+      "bytes": 2594,
+      "sha256": "2321cf081c5f934f11ba557ccb2f6ad7c4406247be179f1ede7af62299bfac7e"
+    },
+    {
+      "path": "dist/g350-large-group-runtime-validation-573/start.log",
+      "bytes": 3363,
+      "sha256": "3e5def2b8047f8cee93e0f21ad06ad513a4b61b4a83bf75af1b20d900b6efaf1"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-large-group-restored-progress/runtime-validation-572-573-manifest.json"
+}

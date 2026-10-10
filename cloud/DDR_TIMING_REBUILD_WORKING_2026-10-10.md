@@ -350,3 +350,23 @@ helper targets BA1 by G350_NECK_X/Y with minimum offset0.1; its executed copy,
 input513 and Shapely model are preserved in planning-ram-ground-repair-515-538.
 The model is a proposal guide, never final connectivity proof. All future
 geometry still requires fresh editable source, all-rule CAD and Gerber checks.
+
+## Qualified larger bend groups with A0 restored (2026-10-10 UTC)
+
+Fresh source565/CAD566/Gerber567 complete qualification0: 217 connections,
+49 DDR, zero native physical/independent DRC/opens/dangling/shorts. Byte1
+7.693572 mm and command11.150328 mm remain unmatched; byte0/pairs still pass.
+Read DDR_LARGE_GROUP_RESTORED_2026-10-10.md for the current entry and archives.
+Source560/qualification561 exposes a native A0 self-short after a raw shortcut;
+it exits1 before CAD and is rejected. Restoring the whole checked A0 route564
+retains the other24 larger-group changes556 and clears fresh source qualification.
+
+Trial556 uses two rounds,3 seconds per proposal, isolated ground fill, ground
+per unit and batch, four signal layers, minimum window0.5, insert bends,
+minimum new bend angle25 degrees, move bends/blocks and balanced search.
+G350_LENGTH_SIMPLIFY_SECONDS=0; buses DDR_BYTE1,DDR_COMMAND_CLOCK;
+steps6,3,1.2,.6,.3,.1,.02,.01; new optional G350_LENGTH_BLOCK_SIZES=
+64,48,32,24,16,12,8,6,4,3,2. Default behavior and every full guard remain unchanged.
+Two A9 fresh-ground proposals fail215 errors and are not retained. Existing/new
+barrel middle-reroute trials549–554 are rejected for no path or longer routes.
+Planning archives preserve all outcomes and source540 stays a qualified fallback.

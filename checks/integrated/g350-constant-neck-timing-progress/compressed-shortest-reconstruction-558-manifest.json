@@ -1,0 +1,45 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-constant-neck-timing-progress/compressed-shortest-reconstruction-558.tar.gz",
+    "bytes": 6825489,
+    "sha256": "6f5531ade218396584f9ef030940821d98db375513c36be910607dc0efc44361"
+  },
+  "files": [
+    {
+      "path": ".cloud-tools/g350-timing-snapshots/compressed-shortest-reconstruction-558.json",
+      "bytes": 3150,
+      "sha256": "b450ee97a8fc51111ccc420bb847c3fc4a972cd9aec3cc0ae482636a494bf307"
+    },
+    {
+      "path": "dist/g350-ddr-a0-existing-barrel-inner2-shortcut-546/case-1.circuit.json.gz",
+      "bytes": 1094900,
+      "sha256": "a7f1578ca1dbd62f0a336c3dbce7b5297b1cee7098b887772a6f2ca2c7cee74e"
+    },
+    {
+      "path": "dist/g350-ddr-a0-four-new-barrel-corridor-554/case-1.circuit.json.gz",
+      "bytes": 1095136,
+      "sha256": "5870de5d3f2abc19a8ef00fb4e01364685162a96fdfa7edadaf8820d7f5912fc"
+    },
+    {
+      "path": "dist/g350-ddr-a0-locked-inner2-shortcuts-547/candidate.circuit.json.gz",
+      "bytes": 1093318,
+      "sha256": "c6134ae44cc4fdb24a09097b367a99693ea9c9ea484437d037cbfe10aeaa779b"
+    },
+    {
+      "path": "dist/g350-ddr-a0-replanned-inner2-shortcuts-548/candidate.circuit.json.gz",
+      "bytes": 1093443,
+      "sha256": "9758a99c01dc6ca3936c980d042ff16bb44a329627da546407972f292d336aac"
+    },
+    {
+      "path": "dist/g350-ddr-a0-replanned-inner2-shortcuts-548/fresh-filled.circuit.json.gz",
+      "bytes": 1405761,
+      "sha256": "c347dce7fb3596f741cbb3acf3cbb50fabc54a4a4410e2cd68826ef6af10fab2"
+    },
+    {
+      "path": "dist/g350-ddr-d12-four-new-barrel-corridor-553/case-1.circuit.json.gz",
+      "bytes": 1095905,
+      "sha256": "96e484946a9604b73792588dc78dd8974513dccc141628d16352afd5904fa28d"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-constant-neck-timing-progress/compressed-shortest-reconstruction-558-manifest.json"
+}

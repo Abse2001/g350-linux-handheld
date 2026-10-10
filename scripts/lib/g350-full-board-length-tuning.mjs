@@ -94,11 +94,14 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
   }
   const blocksFlag=process.env.G350_LENGTH_MOVE_BLOCKS
   assert(blocksFlag===undefined||['0','1'].includes(blocksFlag))
+  const blockSizes=process.env.G350_LENGTH_BLOCK_SIZES?.split(',').map(Number)??[2,3,4,6,8,12]
+  assert(blockSizes.length>0&&blockSizes.length<=12&&new Set(blockSizes).size===blockSizes.length&&blockSizes.every(n=>Number.isInteger(n)&&n>=2&&n<=64))
+  assert(process.env.G350_LENGTH_BLOCK_SIZES===undefined||blocksFlag==='1','Explicit bend groups require block movement')
   // Translate a contiguous bend group when moving one vertex collides with
   // its own neighbouring staircase. Internal copper lengths stay unchanged;
   // solve the two joining legs, then require the same physical checks.
   if(!found&&blocksFlag==='1'){
-   blocks:for(const count of [2,3,4,6,8,12])for(let i=1;i+count<original.length;i++){
+   blocks:for(const count of blockSizes)for(let i=1;i+count<original.length;i++){
     const a=original[i-1],d=original[i+count],block=original.slice(i,i+count)
     if(!proposalLayers.includes(a.layer)||![a,...block,d].every(p=>p.route_type==='wire'&&p.layer===a.layer&&(p.width??.1016)===(a.width??.1016)))continue
     const b=block[0],c=block.at(-1),ab=Math.hypot(b.x-a.x,b.y-a.y),cd=Math.hypot(c.x-d.x,c.y-d.y)
