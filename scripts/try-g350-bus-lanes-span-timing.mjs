@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url'
 
 const argv=process.argv.slice(2),worker=argv[0]==='--worker'
 if(worker)argv.shift()
-const [input,phaseInput,root,signal,deltaText,mode='refine',spanFirst='auto',targetLayer='same']=argv
+const [input,phaseInput,root,signal,deltaText,mode='refine',spanFirst='auto',targetLayer='same',endStubText='',startStubText='']=argv
 assert(input&&phaseInput&&root&&signal&&deltaText)
 const delta=Number(deltaText)
 assert(['DDR_D9','DDR_A13','DDR_D12','DDR_D15','DDR_A0','DDR_A6'].includes(signal))
@@ -15,6 +15,10 @@ assert(Number.isFinite(delta)&&delta!==0&&Math.abs(delta)<=8)
 assert(spanFirst==='auto'||/^\d+(?::\d+)?$/.test(spanFirst))
 assert(['same','inner1','inner2','bottom','top-remove-boundary-vias'].includes(targetLayer))
 assert(['refine','route'].includes(mode))
+const endStubCoordinates=endStubText?endStubText.split(',').map(Number):null
+if(endStubCoordinates){assert.equal(endStubCoordinates.length,2);assert(endStubCoordinates.every(Number.isFinite));assert(mode==='route'&&targetLayer!=='top-remove-boundary-vias');assert(endStubCoordinates[0]>=-20&&endStubCoordinates[0]<=20&&endStubCoordinates[1]>=-8&&endStubCoordinates[1]<=34)}
+const startStubCoordinates=startStubText?startStubText.split(',').map(Number):null
+if(startStubCoordinates){assert.equal(startStubCoordinates.length,2);assert(startStubCoordinates.every(Number.isFinite));assert(mode==='route'&&targetLayer!=='top-remove-boundary-vias');assert(startStubCoordinates[0]>=-20&&startStubCoordinates[0]<=20&&startStubCoordinates[1]>=-8&&startStubCoordinates[1]<=34)}
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex')
 if(!worker){
  assert(!fs.existsSync(root));fs.mkdirSync(root,{recursive:true})
@@ -26,7 +30,7 @@ if(!worker){
  const result=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',(code,signal)=>resolve({code,signal}))})
  clearTimeout(timer);fs.closeSync(log)
  assert.equal(hash(input),JSON.parse(fs.readFileSync(root+'/inputs.json')).inputSha256,'Planning must not modify its source')
- fs.writeFileSync(root+'/execution.json',JSON.stringify({signal,deltaMm:delta,mode,spanFirst,targetLayer,...result,deadlineExceeded,elapsedSeconds:(performance.now()-started)/1000,sourceBytesUnchanged:true,fabricationReady:false},null,2)+'\n')
+ fs.writeFileSync(root+'/execution.json',JSON.stringify({signal,deltaMm:delta,mode,spanFirst,targetLayer,endStubText,startStubText,...result,deadlineExceeded,elapsedSeconds:(performance.now()-started)/1000,sourceBytesUnchanged:true,fabricationReady:false},null,2)+'\n')
  console.log(JSON.stringify({root,...result,deadlineExceeded}));process.exitCode=result.code??1
 }else{
  const {SOLVERS}=await import('@tscircuit/core')
@@ -37,7 +41,7 @@ if(!worker){
  const patch='1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc'
  assert.equal(hash('node_modules/@tscircuit/checks/dist/index.js'),patch)
  assert.equal(JSON.parse(fs.readFileSync('node_modules/@tscircuit/core/package.json')).version,'0.0.2107')
- fs.writeFileSync(root+'/inputs.json',JSON.stringify({input,inputSha256:hash(input),phaseInput,phaseInputSha256:hash(phaseInput),checksSha256:patch,coreVersion:'0.0.2107',coreSha256:hash('node_modules/@tscircuit/core/dist/index.js'),signal,deltaMm:delta,mode,spanFirst,targetLayer,fabricationReady:false},null,2)+'\n')
+ fs.writeFileSync(root+'/inputs.json',JSON.stringify({input,inputSha256:hash(input),phaseInput,phaseInputSha256:hash(phaseInput),checksSha256:patch,coreVersion:'0.0.2107',coreSha256:hash('node_modules/@tscircuit/core/dist/index.js'),signal,deltaMm:delta,mode,spanFirst,targetLayer,endStubText,startStubText,fabricationReady:false},null,2)+'\n')
  let circuit=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
  const source=circuit.find(e=>e.type==='source_trace'&&e.name===signal)
  const trace=circuit.find(e=>e.type==='pcb_trace'&&e.source_trace_id===source.source_trace_id)
@@ -62,6 +66,13 @@ if(!worker){
  assert(['inner1','inner2'].includes(originalLayer))
  const span=original.slice(first,last+1),width=span[0].width
  assert(span.every(p=>p.route_type==='wire'&&p.layer===originalLayer&&p.width===width))
+ const endStub=endStubCoordinates?{route_type:'wire',x:endStubCoordinates[0],y:endStubCoordinates[1],layer,width}:null
+ const startStub=startStubCoordinates?{route_type:'wire',x:startStubCoordinates[0],y:startStubCoordinates[1],layer,width}:null
+ const endStubLength=endStub?Math.hypot(endStub.x-span.at(-1).x,endStub.y-span.at(-1).y):0
+ const startStubLength=startStub?Math.hypot(startStub.x-span[0].x,startStub.y-span[0].y):0
+ if(endStub)assert(endStubLength>=.2&&endStubLength<=2,'A real portal escape must be 0.2–2 mm long')
+ if(startStub)assert(startStubLength>=.2&&startStubLength<=2,'A real portal escape must be 0.2–2 mm long')
+ const stubLength=endStubLength+startStubLength
  if(layer!==originalLayer){
   assert(first>0&&last+1<original.length)
   for(const [via,wire] of [[original[first-1],span[0]],[original[last+1],span.at(-1)]]){
@@ -87,7 +98,7 @@ if(!worker){
  const owners=new Map(circuit.filter(e=>e.type==='pcb_trace').map(t=>[t.pcb_trace_id,t.source_trace_id]))
  const obstacles=srj.obstacles.map(o=>({...o,connectedTo:o.connectedTo.includes(sid)?[sid]:[]}))
  for(const v of circuit.filter(e=>e.type==='pcb_via'))obstacles.push({type:'obstacle',shape:'circle',center:{x:v.x,y:v.y},width:v.outer_diameter,height:v.outer_diameter,layers:['top','inner1','inner2','bottom'],connectedTo:[owners.get(v.pcb_trace_id)??'FIXED_HOLE']})
- const connection={name:sid,source_trace_id:sid,nominalTraceWidth:width,pointsToConnect:[span[0],span.at(-1)].map(p=>({x:p.x,y:p.y,layer}))}
+ const connection={name:sid,source_trace_id:sid,nominalTraceWidth:width,pointsToConnect:[startStub??span[0],endStub??span.at(-1)].map(p=>({x:p.x,y:p.y,layer}))}
  const planarLength=r=>r.slice(1).reduce((n,p,i)=>n+Math.hypot(p.x-r[i].x,p.y-r[i].y),0)
  const spanGoal=planarLength(span)+delta
  assert(spanGoal>0)
@@ -101,6 +112,9 @@ if(!worker){
   ownFixed.push({type:'pcb_trace',pcb_trace_id:'own_fixed_'+i,connection_name:owner,source_trace_id:owner,route:[a,b]})
  }
  const fixedLength=ownFixed.filter(t=>t.connection_name===sid).reduce((sum,t)=>sum+planarLength(t.route),0)
+ if(endStub)ownFixed.push({type:'pcb_trace',pcb_trace_id:'g350_real_portal_escape',connection_name:sid,source_trace_id:sid,route:[endStub,{...span.at(-1),layer}]})
+ if(startStub)ownFixed.push({type:'pcb_trace',pcb_trace_id:'g350_real_start_portal_escape',connection_name:sid,source_trace_id:sid,route:[{...span[0],layer},startStub]})
+ const carrierGoal=spanGoal-stubLength;assert(carrierGoal>0)
  const problem={...srj,bounds,outline:undefined,connections:[connection],obstacles,
   allowedLayers:[layer],differentialPairs:[],
   buses:[{busId:'g350_inner_span_target',connectionNames:[sid],minLength:spanGoal+fixedLength,maxLength:spanGoal+fixedLength+.001,maxLengthSkew:.001,traceWidth:width,allowedLayers:[layer]}],
@@ -111,17 +125,22 @@ if(!worker){
  const solver=mode==='refine'?SOLVERS.BusLanesSolver.forRefinement(problem,[{...trace,connection_name:sid,route:span.map(p=>({...p,layer}))}],options):new SOLVERS.BusLanesSolver(problem,options)
  let iterations=0
  while(!solver.solved&&!solver.failed&&iterations<200000){solver.step();iterations++}
- const report={signal,deltaMm:delta,mode,first,last,originalLayer,layer,removedBoundaryViaIds:[...removedBoundaryViaIds],iterations,solved:solver.solved,failed:solver.failed,error:solver.error??null,failureCode:solver.failureCode??null,stats:solver.stats,spanBeforeMm:planarLength(span),spanGoalMm:spanGoal,fixedPortalContributionMm:fixedLength,planningRectangleInsidePhysicalOutline:true,requiresFreshSourceAndIndependentQualification:true,fabricationReady:false}
+ const report={signal,deltaMm:delta,mode,first,last,originalLayer,layer,removedBoundaryViaIds:[...removedBoundaryViaIds],iterations,solved:solver.solved,failed:solver.failed,error:solver.error??null,failureCode:solver.failureCode??null,stats:solver.stats,spanBeforeMm:planarLength(span),spanGoalMm:spanGoal,fixedPortalContributionMm:fixedLength+stubLength,externalPortalContributionMm:fixedLength,realPortalEscapeMm:stubLength,carrierGoalMm:carrierGoal,endStub,startStub,endStubLengthMm:endStubLength,startStubLengthMm:startStubLength,planningRectangleInsidePhysicalOutline:true,requiresFreshSourceAndIndependentQualification:true,fabricationReady:false}
  fs.writeFileSync(root+'/solver-report.json',JSON.stringify(report,null,2)+'\n')
  if(!solver.solved){console.log(JSON.stringify(report));process.exitCode=2}else{
   const output=solver.getOutput().traces.findLast(t=>t.connection_name===sid)
   assert(output?.route.length>1)
-  assert(Math.hypot(output.route[0].x-span[0].x,output.route[0].y-span[0].y)<1e-8)
-  assert(Math.hypot(output.route.at(-1).x-span.at(-1).x,output.route.at(-1).y-span.at(-1).y)<1e-8)
-  assert(Math.abs(planarLength(output.route)-spanGoal)<1e-6,'Selected carrier must satisfy the exact requested span length')
+  const carrierStart=startStub??span[0]
+  assert(Math.hypot(output.route[0].x-carrierStart.x,output.route[0].y-carrierStart.y)<1e-8)
+  const carrierEnd=endStub??span.at(-1)
+  assert(Math.hypot(output.route.at(-1).x-carrierEnd.x,output.route.at(-1).y-carrierEnd.y)<1e-8)
+  assert(Math.abs(planarLength(output.route)-carrierGoal)<1e-6,'Carrier plus the real escape must satisfy the exact requested span length')
   fs.writeFileSync(root+'/output.span.json',JSON.stringify(output,null,2)+'\n')
   const replacement=output.route.map(p=>({route_type:'wire',x:p.x,y:p.y,layer,width}))
-  replacement[0]={...original[first],layer};replacement[replacement.length-1]={...original[last],layer}
+  if(startStub)replacement.unshift({...original[first],layer})
+  else replacement[0]={...original[first],layer}
+  if(endStub)replacement.push({...original[last],layer})
+  else replacement[replacement.length-1]={...original[last],layer}
   trace.route=[...original.slice(0,first),...replacement,...original.slice(last+1)]
   const expected=structuredClone(original)
   if(removeBoundaryVias){

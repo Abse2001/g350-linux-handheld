@@ -1,0 +1,40 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-four-layer-owned-via-progress/start-runtime-746-747.tar.gz",
+    "bytes": 2750,
+    "sha256": "7ad6467a97a9d6392e88b82c2243af5bf5c8c332d2a2dabcdadbae0d39dc8828"
+  },
+  "files": [
+    {
+      "path": "dist/g350-four-layer-start-direct-747/execution.json",
+      "bytes": 160,
+      "sha256": "cafac096adab2f0c2f83f54045ca50b347c082a8045b43516869a1a7b8ae5fab"
+    },
+    {
+      "path": "dist/g350-four-layer-start-direct-747/start.executed.sh",
+      "bytes": 3288,
+      "sha256": "7c4ea88bc4ca2e43a5ef7373be4f3b551d7c14c99e3b46eb062b0097986b74bd"
+    },
+    {
+      "path": "dist/g350-four-layer-start-direct-747/start.log",
+      "bytes": 3573,
+      "sha256": "6e0db5f2e613c21bae081079dce491dee8b0e1de979a85f8e6b0826265ab3d29"
+    },
+    {
+      "path": "dist/g350-four-layer-start-repeat-746/execution.json",
+      "bytes": 327,
+      "sha256": "885d99b2993b43633a59ff45d4847781a2cb08248f403a29af816a5cf6f34f55"
+    },
+    {
+      "path": "dist/g350-four-layer-start-repeat-746/start.executed.sh",
+      "bytes": 3288,
+      "sha256": "7c4ea88bc4ca2e43a5ef7373be4f3b551d7c14c99e3b46eb062b0097986b74bd"
+    },
+    {
+      "path": "dist/g350-four-layer-start-repeat-746/start.log",
+      "bytes": 3573,
+      "sha256": "6e0db5f2e613c21bae081079dce491dee8b0e1de979a85f8e6b0826265ab3d29"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-four-layer-owned-via-progress/start-runtime-746-747-manifest.json"
+}

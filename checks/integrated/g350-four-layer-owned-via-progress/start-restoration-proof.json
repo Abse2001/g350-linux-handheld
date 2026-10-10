@@ -1,0 +1,39 @@
+{
+  "manifest": "checks/integrated/g350-four-layer-owned-via-progress/start-runtime-746-747-manifest.json",
+  "freshDestination": "/tmp/g350-four-layer-start-restore-748",
+  "results": [
+    {
+      "label": "archive",
+      "actualExitCode": 0,
+      "stdout": "Verified 6 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh",
+      "actualExitCode": 0,
+      "stdout": "Verified 6 evidence members; restored 6\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat",
+      "actualExitCode": 0,
+      "stdout": "Verified 6 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "inplace",
+      "actualExitCode": 0,
+      "stdout": "Verified 6 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "edited_refusal",
+      "actualExitCode": 1,
+      "editedFileSha256": "eca8a8a4bb8bf6980b4ca727ee6c4a0a089ac5561dc92ae44e86e9a0cb31c5fd",
+      "editedFilePreserved": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-four-layer-start-restore-748/dist/g350-four-layer-start-direct-747/execution.json\n"
+    }
+  ],
+  "fabricationReady": false
+}

@@ -1,0 +1,60 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-four-layer-owned-via-progress/bus-lanes-control-744.tar.gz",
+    "bytes": 2731031,
+    "sha256": "d0c3dceb088e7ba75968fda6a70b1f1220ab951a4bd545b87fbf8ac3f6abc33e"
+  },
+  "files": [
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/candidate.circuit.json",
+      "bytes": 17077285,
+      "sha256": "d11afc6ad5f3f310683e0681c6497781209d97484f9e683ccac340c04cda8e9e"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/execution.json",
+      "bytes": 289,
+      "sha256": "7effcd6f99949b30016bf5bf019e8d90a2fc80ad94177b6e06ee2e6071a66f99"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/execution.log",
+      "bytes": 2072,
+      "sha256": "1c5b8671674c50428895b7767392b4902271b360c0e193fc30fe79a2ab1039f5"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/fresh-filled.circuit.json",
+      "bytes": 20728996,
+      "sha256": "5f0b510cbfb3f2d473ff6b19f39d97fc599a7db06bce52af1634a49ee75a999e"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/helper.executed.mjs",
+      "bytes": 16177,
+      "sha256": "72b9657c2ceca02dad2b9d956d50c06e111a66c9eef3892d527c213fe16fe41f"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/input.simple-route.json",
+      "bytes": 3142921,
+      "sha256": "c6d428ee47db1d3d71b35b78e8bc54d48ba5222cbb5aa541b2e93d8200cc53cb"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/inputs.json",
+      "bytes": 714,
+      "sha256": "38f1b83daa9e6ca6b83836d1637c0c39c63163ef0e82b4fb69e5e658932741a5"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/output.span.json",
+      "bytes": 2111,
+      "sha256": "fd7532341a56f122f185ba585ce49ae970a9fd5c0e6d71b82c48a68e85e2f817"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/report.json",
+      "bytes": 2650,
+      "sha256": "1aaad785b3b28cdbf1b381a58a9f57e7a792f790c855b32e052cb3c7c86ad817"
+    },
+    {
+      "path": "dist/g350-ddr-bus-lanes-portal-default-control-744/solver-report.json",
+      "bytes": 1728,
+      "sha256": "1a8da0e3948b3a9e40d87107bd2a4f74a86a03a873bd919c630ab0685524e437"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-four-layer-owned-via-progress/bus-lanes-control-744-manifest.json"
+}

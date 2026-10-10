@@ -1,0 +1,39 @@
+{
+  "manifest": "checks/integrated/g350-four-layer-owned-via-progress/bus-lanes-control-744-manifest.json",
+  "freshDestination": "/tmp/g350-four-layer-bus-lanes-restore-745",
+  "results": [
+    {
+      "label": "archive",
+      "actualExitCode": 0,
+      "stdout": "Verified 10 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh",
+      "actualExitCode": 0,
+      "stdout": "Verified 10 evidence members; restored 10\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat",
+      "actualExitCode": 0,
+      "stdout": "Verified 10 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "inplace",
+      "actualExitCode": 0,
+      "stdout": "Verified 10 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "edited_refusal",
+      "actualExitCode": 1,
+      "editedFileSha256": "9e0e679f4e7f57c3a841661d05e470cc9ef0afcde8f8553e73192c886f88b2f5",
+      "editedFilePreserved": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-four-layer-bus-lanes-restore-745/dist/g350-ddr-bus-lanes-portal-default-control-744/candidate.circuit.json\n"
+    }
+  ],
+  "fabricationReady": false
+}

@@ -1,6 +1,31 @@
 # Current shaped-board DDR routing
 
 Latest checked continuation (2026-10-10 UTC): use
+`experiments/am3352-g350-full-board-four-layer-owned-via-replay.circuit.tsx` and read
+`cloud/DDR_FOUR_LAYER_OWNED_VIA_PROGRESS_2026-10-10.md` plus `checks/integrated/g350-four-layer-owned-via-progress/summary.json`.
+Fresh source737 / KiCad738 / Gerber739 retain all217 connections, 49DDR,
+298 ground ports, 1,032 numeric ports, 280 placements and824 standard through-vias.
+Native physical/manufacturing checks, all-rule DRC errors/warnings, opens,
+dangling copper and all-layer shorts are zero. Byte0 passes0.574882 mm;
+byte1 5.561624 mm and command/clock6.464305 mm still fail0.635 mm.
+All differential pairs pass0.127 mm. Build exit1 is solely those two failures;
+complete source/CAD/Gerber qualification exits0. fabricationReady=false.
+Four-layer matching includes CASn's existing top/bottom route. Two owned A0
+barrels move within1.5 mm; all original hole identities, dimensions, full depth,
+CPU/RAM endpoints, peripheral copper, placements and source constraints remain.
+Exact planned copper and hole records are reproduced by the fresh source.
+Public pinned BusLanes remains the starting point and its default adapter is
+retested by744. Keep all runtime pins and reviewed native checks.
+Native length includes1.6 mm per transition, not qualified electrical delay.
+Clock/stackup/package/via delay, impedance/coupling/returns, PDN/footprints,
+Linux and measured shell fit remain open. The board is not ready to order.
+Preserve source699/643/610/591/565/540/532/319 and all frozen evidence.
+Short-D9 planning730 and the still-incomplete parent724 must not be promoted.
+Further candidate edits require full independent qualification.
+
+## Previous BusLanes and smoothing checkpoint (preserved history)
+
+Latest checked continuation (2026-10-10 UTC): use
 `experiments/am3352-g350-full-board-bus-lanes-smoothed-replay.circuit.tsx` and read
 `cloud/DDR_BUS_LANES_SMOOTHED_PROGRESS_2026-10-10.md` plus `checks/integrated/g350-bus-lanes-timing-progress/summary.json`.
 Fresh source699 / KiCad700 / Gerber701 retain all217 connections, 49DDR,
