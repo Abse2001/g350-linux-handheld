@@ -1,11 +1,11 @@
 # DDR timing trial history and current continuation
 
-The newly qualified continuation is source 443 / KiCad 444 / Gerber 445. Read
-`cloud/DDR_BYTE0_MATCHED_2026-10-10.md` and its integrated summary. It preserves
+The newly qualified continuation is source 468 / KiCad 472 / Gerber 473. Read
+`cloud/DDR_BYTE1_INTEGRATED_2026-10-10.md` and its integrated summary. It preserves
 217/217 connections, zero DRC errors/warnings/opens/dangling copper/shorts and
-passes byte0 native matching at 0.574882 mm. Byte1 21.213572 mm and command/clock
-24.150328 mm remain unmatched; fabrication readiness is false. Source 319 is
-the preserved preceding checkpoint.
+passes byte0 native matching at 0.574882 mm. Byte1 improves to 15.221372 mm;
+command/clock remains 24.150328 mm. Two matching failures remain; fabrication
+readiness is false. Preserve ac0dcaf/source443 and source319.
 The following history describes the earlier 8284474 baseline and isolated trials.
 
 The preceding connected checkpoint is GitHub commit
@@ -219,3 +219,71 @@ restoration plus refusal to overwrite an edited member. Source 443 build exits
 1 for exactly two matching errors; the complete 444/445 wrapper exits 0.
 Constant-length diagnostic 450 removes one overlap but retains two; it remains
 rejected. Rigid block trial 451 is a separate unqualified repair.
+
+
+Verified byte0 checkpoint 443/444/445 was committed and pushed as
+`ac0dcafeb88a7d9ffffc623aa80fb80fb0c8ca31`. A fresh remote fetch agrees. Saved
+environment draft 20 retains all twelve exact repository refs, ten custom
+domains and the unchanged tested Install script; the refreshed Start commands
+were tested with actual exit 0. Current runtime connectivity remains connected
+and running, published spec 4. `cloud/TIMING_CONNECTION_SAVED_2026-10-10.json`
+records the separate saved configuration. Publication and new-task restoration
+remain separate product actions.
+
+Further native combination repairs preserve physical constraints and matching.
+Rigid block 451 removes a second overlap, leaving D7/D15. Block-three 453 and
+radial D15 454 do not clear it. Subset 455 restores checked D15 while retaining
+other byte1 gains: complete physical counts and fresh ground are zero, byte0
+0.574882 mm, byte1 15.221372 mm, command 24.150328 mm. D9 reshaping 456 finds no
+legal proposal; partial fold 458 introduces a self-short and is rejected. Whole
+fold recovery 460 preserves identical anchors and removes the acute corner,
+with complete physical and fresh-ground checks zero.
+
+Diagnostic 465 failed before DRC because derived pour annotations differed on
+unchanged foreign routes. The CAD delta helper now compares exact physical
+edges before enforcing DDR-only changes; any actual foreign copper change
+still fails. Fresh diagnostic 466 passes all-rule DRC with zero violations and
+unconnected items, preserving all vias, placements and other copper. It is a
+diagnostic, not source/numeric/Gerber qualification. Stable cache 467 is being
+replayed in fresh source 468 under the unchanged native checker pins.
+
+Independent command growth 426 reached a retained 7.650328 mm skew at round11
+(snapshot 457/463), but combination 461 with matched byte0 has 13 physical
+overlaps and is rejected. The old command worker and preliminary byte1 worker
+462 were stopped after preserving their inputs/retained evidence; explicit
+stop metadata distinguishes interrupted work from completion. Joint tuner 464
+uses legal 460 geometry, fresh ground for every accepted unit, whole-batch full
+physical checks and a 25-degree restriction on new bends. Round1 retains
+byte1 12.221372 and command 22.950328 mm; byte0 and all differential pairs remain
+matched. These planning results must not replace checked source 443 until full
+fresh-source/numeric/KiCad/Gerber qualification passes.
+
+The owned completed repair evidence is archived in `planning-integrated-repair-453-469`
+and exact compressed bytes in companion `compressed-planning-470`, both with
+verified member hashes. Compressed archive fresh extraction and selective
+restoration of an original circuit file pass. Only stopped/completed owned
+outputs are compressed; active 464/468, qualified 443/444/445, frozen evidence
+and the ignored KiCad image/archive remain intact. Keep fabricationReady false.
+
+## Integrated matching continuation and preserved connection
+
+Fresh source468 / independent CAD472 / Gerber473 complete qualification with
+exactly two native bus-skew failures and all other checks zero. The 447-member
+checked archive passes fresh/repeat/in-place restoration and edited-file refusal.
+The exact new Start code block first failed because a VFS container exhausted disk;
+after verified reversible compression of completed owned outputs/cache it passed
+with actual exit0. Install remains the tested revision19; no pins/assertions changed.
+Environment draft20 and actual connected/running instance metadata are recorded
+in `cloud/TIMING_CONNECTION_SAVED_2026-10-10.json`; saving is not publication.
+
+Joint ground-guarded tuner464 retains round16 with byte1 8.733572 mm and
+command/clock 13.650328 mm. Its round17 aborted inside the unchanged Manifold
+copper-fill engine after repeated fills; round17 was not retained. Snapshot492
+preserves the last fully checked round16. These gains require fresh editable-source,
+independent numeric KiCad and all-layer Gerber checks before promotion.
+D12 alternatives475–481 are longer or fail/no path. D9 trials482/483/485/494
+find no path. D9 full-pad trial484 passes native physical checks and fresh ground488,
+but its 19.083378 mm path worsens matching and changes barrels, so it is not adopted.
+Declared-channel growth490/491 fails to add length; coalesced existing D9 growth493
+also finds no accepted growth. Constraints, foreign copper, ground assertions and
+reviewed checks remain enforced. All failed histories and frozen evidence stay intact.

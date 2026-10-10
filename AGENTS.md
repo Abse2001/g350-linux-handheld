@@ -1,19 +1,19 @@
 # G350 board continuation
 
 Latest checked continuation (2026-10-10): use
-`experiments/am3352-g350-full-board-byte0-matched-corner-clean-replay.circuit.tsx`
-and read `cloud/DDR_BYTE0_MATCHED_2026-10-10.md` plus
-`checks/integrated/g350-byte0-matched-progress/summary.json`.
-Fresh source 443 / KiCad 444 / Gerber 445 preserve all 217 connections, 49 DDR,
+`experiments/am3352-g350-full-board-byte1-integrated-clean-replay.circuit.tsx`
+and read `cloud/DDR_BYTE1_INTEGRATED_2026-10-10.md` plus
+`checks/integrated/g350-integrated-byte1-progress/summary.json`.
+Fresh source 468 / KiCad 472 / Gerber 473 preserve all 217 connections, 49 DDR,
 298 ground ports, 1,032 numeric ports, 280 placements and 824 standard through-vias.
 Native physical checks, all-rule DRC errors/warnings, opens, dangling copper and
 all-layer shorts are zero. Byte0 passes native matching at 0.574882 mm; byte1
-21.213572 mm and command/clock 24.150328 mm still fail 0.635 mm. All pairs pass.
+15.221372 mm and command/clock 24.150328 mm still fail 0.635 mm. All pairs pass.
 Build exit is 1 for exactly those two failures; qualification wrapper exit is 0.
 Native length counts 1.6 mm per transition; byte0's planar spread is 8 mm with
 2–7 transitions. This is not electrical delay qualification. Preserve preceding
-7165c90 / source 319 and all frozen evidence. Further byte1/command combinations
-are unqualified; overlap repair 448 was rejected. Keep fabricationReady=false.
+ac0dcaf / source 443, source319 and all frozen evidence. Further byte1/command combinations
+are unqualified; joint tuner464 and rerouting trials require complete qualification. Keep fabricationReady=false.
 
 Read `docs/CLOUD_HANDOFF.md`, `design-status.json`, and `docs/G350_CURRENT_DDR.md`
 before editing hardware. The complete recorded user-visible conversation is in

@@ -29,13 +29,14 @@ for a in old:
  if a['type']!='pcb_trace':continue
  b=next(e for e in new if e.get('pcb_trace_id')==a['pcb_trace_id']);assert a['source_trace_id']==b['source_trace_id']
  if a['route']==b['route']:continue
- st=next(e for e in old if e.get('source_trace_id')==a['source_trace_id'] and e['type']=='source_trace');assert st['name'].startswith('DDR_')
+ st=next(e for e in old if e.get('source_trace_id')==a['source_trace_id'] and e['type']=='source_trace')
  assert [p for p in a['route'] if p['route_type']=='via']==[p for p in b['route'] if p['route_type']=='via']
  assert [a['route'][0],a['route'][-1]]==[b['route'][0],b['route'][-1]]
  removed=edges(a)-edges(b);added=edges(b)-edges(a)
  # Cached annotations and sub-nanometre floating serialization can differ
  # without changing any physical CAD edge. Only real copper deltas are applied.
  if not removed and not added:continue
+ assert st['name'].startswith('DDR_'), 'Foreign copper changed: '+st['name']
  assert removed and added
  matches=[];net=None
  for desc,num in removed.items():

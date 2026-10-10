@@ -22,6 +22,9 @@ const maxNewVias=process.env.G350_SPAN_MAX_NEW_VIAS===undefined?2:Number(process
 assert(Number.isInteger(maxNewVias)&&maxNewVias>=2&&maxNewVias<=8)
 const viaCostMm=Number(process.env.G350_SPAN_VIA_COST_MM??2),heuristicWeight=Number(process.env.G350_SPAN_HEURISTIC_WEIGHT??1.5),searchSeconds=Number(process.env.G350_SPAN_SEARCH_SECONDS??15)
 const gridMm=Number(process.env.G350_SPAN_GRID_MM??.025);assert([.02,.025,.04].includes(gridMm))
+// Search margin only; every native clearance/manufacturing check below remains mandatory.
+const viaCopperClearance=Number(process.env.G350_SPAN_VIA_COPPER_CLEARANCE_MM??.15)
+assert(Number.isFinite(viaCopperClearance)&&viaCopperClearance>=.1016&&viaCopperClearance<=.2)
 assert(Number.isFinite(searchSeconds)&&searchSeconds>0&&searchSeconds<=60)
 const indexes=trace.route.flatMap((p,i)=>p.route_type==='via'?[i]:[]);assert(indexes.length>=2)
 const viaRange=process.env.G350_SPAN_VIA_RANGE?.split(',').map(Number)??[0,indexes.length-1]
@@ -75,7 +78,7 @@ for(const waypoints of cases){
     distance+=length
    }
   }
-  const result=routeGuardedOuterBridge({connection:{name:own,pointsToConnect:[points[i-1],points[i]]},shapes:legShapes,searchBounds:bounds,seconds:searchSeconds,gridMm,maxVias:maxNewVias,viaGrid:gridMm,routingLayers,viaCostMm,heuristicWeight,viaCopperClearance:.15,rasterGuardMm:0,guardNonterminalOwnVias:true,primaryTerminalLayer:true,...(allowNewVias&&!direct&&i===1?{startTerminalLayers:routingLayers.filter(l=>l!==start.from_layer)}:{}),...(allowNewVias&&!direct&&i===points.length-1?{goalTerminalLayers:routingLayers.filter(l=>l!==end.to_layer)}:{})})
+  const result=routeGuardedOuterBridge({connection:{name:own,pointsToConnect:[points[i-1],points[i]]},shapes:legShapes,searchBounds:bounds,seconds:searchSeconds,gridMm,maxVias:maxNewVias,viaGrid:gridMm,routingLayers,viaCostMm,heuristicWeight,viaCopperClearance,rasterGuardMm:0,guardNonterminalOwnVias:true,primaryTerminalLayer:true,...(allowNewVias&&!direct&&i===1?{startTerminalLayers:routingLayers.filter(l=>l!==start.from_layer)}:{}),...(allowNewVias&&!direct&&i===points.length-1?{goalTerminalLayers:routingLayers.filter(l=>l!==end.to_layer)}:{})})
   legs.push({error:result.error??null,expanded:result.expanded,startBlocked:result.startBlocked,goalBlocked:result.goalBlocked});if(!result.route){failed=true;break}
   if(!allowNewVias){assert.equal(result.newVias,0);assert(result.route.every(p=>p.route_type==='wire'&&p.layer===layer))}
   route.push(...result.route.slice(i===1?0:1))
@@ -96,4 +99,4 @@ for(const waypoints of cases){
  record.newFullDepthVias=newVias.length
  record.accepted=true;const path=root+'/case-'+attempts.length+'.circuit.json';fs.writeFileSync(path,JSON.stringify(c,null,2)+'\n');record.candidate={path,sha256:hash(path)};retained??=path;console.log(JSON.stringify(record))
 }
-fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:hash(input)},name,layer,bounds,gridMm,planningBoundsInsideUnchangedOutline:true,directPads:direct,rebuildFromPads,maxNewVias,viaCostMm,heuristicWeight,searchSeconds,viaRange,removeIntermediate,allowNewVias,guardEarlierLegs,proposedRemovedOwnedViaIds:[...removedViaIds],removedOwnedVias:retained?removedViaIds.size:0,attempts,retained,allForeignHolesAndPeripheralGeometryExactlyPreserved:true,changedBarrelAccessLayers:!direct,requiresFreshGroundSourceAndIndependentChecks:true,planningOnly:true,fabricationReady:false},null,2)+'\n')
+fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:hash(input)},name,layer,bounds,gridMm,planningBoundsInsideUnchangedOutline:true,directPads:direct,rebuildFromPads,maxNewVias,viaCostMm,viaCopperClearance,heuristicWeight,searchSeconds,viaRange,removeIntermediate,allowNewVias,guardEarlierLegs,proposedRemovedOwnedViaIds:[...removedViaIds],removedOwnedVias:retained?removedViaIds.size:0,attempts,retained,allForeignHolesAndPeripheralGeometryExactlyPreserved:true,changedBarrelAccessLayers:!direct,requiresFreshGroundSourceAndIndependentChecks:true,planningOnly:true,fabricationReady:false},null,2)+'\n')
