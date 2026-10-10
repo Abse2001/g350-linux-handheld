@@ -52,16 +52,23 @@ native_check "$input" "$source_root/native.json" "$source_root/native.log"
 python3 scripts/collect-g350-full-solver-input.py "$source_root" "$verified_root/full-solver-input.json"
 G350_EXPORT_WITHOUT_POURS=1 node scripts/export-g350-large-kicad.mjs "$input" "$verified_root/candidate.kicad_pcb" > "$verified_root/export.log" 2>&1
 node scripts/prepare-am3352-kicad.mjs "$verified_root/candidate.kicad_pcb" "$input" > "$verified_root/preparation.log" 2>&1
-scripts/kicad-python.sh scripts/prepare-g350-ground-references.py "$verified_root/candidate.kicad_pcb" "$input" "$verified_root/filled" --all-layers > "$verified_root/ground-reference.log" 2>&1
-cp dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pro "$verified_root/filled/ground-reference.kicad_pro"
-cp "$verified_root/candidate.kicad_dru" "$verified_root/filled/ground-reference.kicad_dru"
+# Bundle the identical CAD sequence to avoid repeated VFS image copies.
+# The original host/wrapper flow remains available without a cloud image.
+if [[ -f .cloud-tools/kicad10-debian.tar ]]; then
+  bash scripts/cloud-kicad-tool.sh bash scripts/qualify-g350-kicad-full-checks.sh "$input" "$verified_root" "$verified_root/full-solver-input.json"
+else
+  scripts/kicad-python.sh scripts/prepare-g350-ground-references.py "$verified_root/candidate.kicad_pcb" "$input" "$verified_root/filled" --all-layers > "$verified_root/ground-reference.log" 2>&1
+  cp dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pro "$verified_root/filled/ground-reference.kicad_pro"
+  cp "$verified_root/candidate.kicad_dru" "$verified_root/filled/ground-reference.kicad_dru"
+  board="$verified_root/filled/ground-reference.kicad_pcb"
+  kicad-cli pcb drc "$board" --format json --severity-all --all-track-errors --refill-zones --save-board -o "$verified_root/filled/before-library-drc.json" > "$verified_root/filled/before-library-drc.log" 2>&1
+  scripts/kicad-python.sh scripts/copy-g350-kicad-ink-layers.py dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pcb "$board" > "$verified_root/filled/ink.log" 2>&1
+  scripts/kicad-python.sh scripts/prepare-kicad-library.py "$board" > "$verified_root/filled/library.log" 2>&1
+  kicad-cli pcb drc "$board" --format json --severity-all --all-track-errors --refill-zones --save-board --exit-code-violations -o "$verified_root/filled/drc.json" > "$verified_root/filled/drc.log" 2>&1
+  scripts/kicad-python.sh scripts/check-g350-full-kicad-connectivity.py "$board" "$input" "$verified_root/full-solver-input.json" "$verified_root/filled/final-connectivity.json" > "$verified_root/filled/connectivity.log" 2>&1
+  scripts/kicad-python.sh scripts/export-g350-ground-polygons.py "$board" "$verified_root/filled/ground-polygons.json" > "$verified_root/filled/polygons.log" 2>&1
+fi
 board="$verified_root/filled/ground-reference.kicad_pcb"
-kicad-cli pcb drc "$board" --format json --severity-all --all-track-errors --refill-zones --save-board -o "$verified_root/filled/before-library-drc.json" > "$verified_root/filled/before-library-drc.log" 2>&1
-scripts/kicad-python.sh scripts/copy-g350-kicad-ink-layers.py dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pcb "$board" > "$verified_root/filled/ink.log" 2>&1
-scripts/kicad-python.sh scripts/prepare-kicad-library.py "$board" > "$verified_root/filled/library.log" 2>&1
-kicad-cli pcb drc "$board" --format json --severity-all --all-track-errors --refill-zones --save-board --exit-code-violations -o "$verified_root/filled/drc.json" > "$verified_root/filled/drc.log" 2>&1
-scripts/kicad-python.sh scripts/check-g350-full-kicad-connectivity.py "$board" "$input" "$verified_root/full-solver-input.json" "$verified_root/filled/final-connectivity.json" > "$verified_root/filled/connectivity.log" 2>&1
-scripts/kicad-python.sh scripts/export-g350-ground-polygons.py "$board" "$verified_root/filled/ground-polygons.json" > "$verified_root/filled/polygons.log" 2>&1
 python3 scripts/rebuild-g350-filled-pours.py "$input" "$board" "$verified_root/filled/ground-polygons.json" "$verified_root/filled/final-connectivity.json" "$verified_root/fresh-filled.circuit.json" > "$verified_root/fill-reconstruction.log" 2>&1
 native_check "$verified_root/fresh-filled.circuit.json" "$verified_root/native-filled.json" "$verified_root/native-filled.log"
 python3 - <<'PY'

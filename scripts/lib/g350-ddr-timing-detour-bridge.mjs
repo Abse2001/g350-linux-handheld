@@ -7,13 +7,18 @@ import assert from 'node:assert/strict'
 
 // Conservative two-to-four-layer search for manual handoffs. Native planar
 // phases and independent physical/source checks remain required.
-export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false,startTerminalLayers,goalTerminalLayers}){
+export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false,startTerminalLayers,goalTerminalLayers,viaCostMm=2,heuristicWeight=1.5}){
 assert(Number.isFinite(overlapPenalty)&&overlapPenalty>0&&overlapPenalty<=100)
+assert(Number.isFinite(viaCostMm)&&viaCostMm>0&&viaCostMm<=10)
+assert(Number.isFinite(heuristicWeight)&&heuristicWeight>=1&&heuristicWeight<=2)
 assert(viaCopperClearance>=.1016&&viaCopperClearance<=.2)
 assert(routingLayers.length>=2&&routingLayers.length<=4&&new Set(routingLayers).size===routingLayers.length&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
-const layers=routingLayers,layerCount=layers.length,width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=2
+const layers=routingLayers,layerCount=layers.length,width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=viaCostMm
 assert([.02,.025,.04].includes(gridMm));assert(seconds>0&&seconds<=60)
-assert(Number.isInteger(maxVias)&&maxVias>=2&&maxVias<=6)
+// The connected board already contains a seven-barrel D2 channel. This is a
+// search resource bound, not a manufacturing waiver; native counts still gate
+// every result. Historical/default callers retain their original budgets.
+assert(Number.isInteger(maxVias)&&maxVias>=2&&maxVias<=8)
 assert([.02,.025,.04,.1,.2].includes(viaGrid))
 assert(rasterGuardMm===undefined||(Number.isFinite(rasterGuardMm)&&rasterGuardMm>=0&&rasterGuardMm<=gridMm*Math.SQRT1_2+1e-4))
 const distance=(s,p)=>{
@@ -75,14 +80,14 @@ function routeConnection(c,step,penalty=0){
  const distances=new Float64Array(N*layerCount*(maxVias+1));distances.fill(Infinity)
  const parents=new Int32Array(distances.length);parents.fill(-1)
  const heuristic=i=>{const p=xy(i);return Math.hypot(p.x-goal.x,p.y-goal.y)}
- const heap=new Heap();for(let l=0;l<layerCount;l++)if(startLayers.includes(layers[l])&&!blocked[l][si]){distances[l*N+si]=0;heap.push(l*N+si,1.5*heuristic(si),0)}
+ const heap=new Heap();for(let l=0;l<layerCount;l++)if(startLayers.includes(layers[l])&&!blocked[l][si]){distances[l*N+si]=0;heap.push(l*N+si,heuristicWeight*heuristic(si),0)}
  let finish=-1,expanded=0;const begun=performance.now()
  while(heap.a.length){
   const item=heap.pop(),id=item.id;if(item.g!==distances[id])continue
   const state=Math.floor(id/N),i=id%N,l=state%layerCount,count=Math.floor(state/layerCount),ix=i%nx,iy=Math.floor(i/nx)
   if(i===gi&&goalLayers.includes(layers[l])){finish=id;break}
   if(++expanded%50000===0&&performance.now()-begun>seconds*1000)return {error:'manual bridge timeout',expanded}
-  const relax=(next,cost)=>{const g=item.g+cost;if(g+1e-9<distances[next]){distances[next]=g;parents[next]=id;heap.push(next,g+1.5*heuristic(next%N),g)}}
+  const relax=(next,cost)=>{const g=item.g+cost;if(g+1e-9<distances[next]){distances[next]=g;parents[next]=id;heap.push(next,g+heuristicWeight*heuristic(next%N),g)}}
   for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]]){
    if(ix+dx<0||ix+dx>=nx||iy+dy<0||iy+dy>=ny)continue
    const next=i+dx+dy*nx;if(!blocked[l][next])relax(state*N+next,step*(dx&&dy?Math.SQRT2:1)+softCost[l][next])
@@ -103,7 +108,7 @@ function routeConnection(c,step,penalty=0){
  }
  const newVias=route.filter(p=>p.route_type==='via').length
  const lengthMm=route.reduce((sum,p,i)=>sum+(i?Math.hypot(p.x-route[i-1].x,p.y-route[i-1].y):0),0)
- return {route,expanded,newVias,lengthMm,overlapCost:Math.max(0,distances[finish]-newVias*viaCost-lengthMm),
+ return {route,expanded,newVias,lengthMm,viaCostMm,heuristicWeight,overlapCost:Math.max(0,distances[finish]-newVias*viaCost-lengthMm),
   startBlocked:blocked.map(b=>!!b[si]),goalBlocked:blocked.map(b=>!!b[gi]),elapsedSeconds:(performance.now()-begun)/1000}
 }
 

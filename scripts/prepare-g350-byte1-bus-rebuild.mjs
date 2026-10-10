@@ -6,11 +6,15 @@ import {createHash} from 'node:crypto'
 import * as checks from '@tscircuit/checks'
 import {ddrRouteLength} from './lib/g350-full-board-length-tuning.mjs'
 import {g350DdrPhysicalChecks,checkG350ViaTrackManufacturingClearance} from './lib/g350-ddr-physical-checks.mjs'
-const [input,root,goalText='55.31114610832671']=process.argv.slice(2);assert(input&&root&&!fs.existsSync(root));fs.mkdirSync(root)
+const [input,root,goalText='55.31114610832671',busName='DDR_BYTE1',templatePath='dist/g350-ddr-inner-ground-preserved-source-209/phase-0.input.simple-route.json']=process.argv.slice(2);assert(input&&root&&!fs.existsSync(root));fs.mkdirSync(root)
+assert(['DDR_BYTE0','DDR_BYTE1'].includes(busName))
+const dataOnly=process.env.G350_REBUILD_DATA_ONLY==='1'
+assert(process.env.G350_REBUILD_DATA_ONLY===undefined||['0','1'].includes(process.env.G350_REBUILD_DATA_ONLY))
 const goal=Number(goalText);assert(Number.isFinite(goal)&&goal>20&&goal<80)
 const old=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
-const bus=old.find(e=>e.type==='source_bus'&&e.name==='DDR_BYTE1');assert(bus&&bus.source_trace_ids.length===11&&bus.max_length_skew===.635)
-const ids=new Set(bus.source_trace_ids),ddr=old.filter(e=>e.type==='pcb_trace'&&ids.has(e.source_trace_id));assert.equal(ddr.length,11)
+const bus=old.find(e=>e.type==='source_bus'&&e.name===busName);assert(bus&&bus.source_trace_ids.length===11&&bus.max_length_skew===.635)
+const signals=new Map(old.filter(e=>e.type==='source_trace').map(e=>[e.source_trace_id,e.name]))
+const ids=new Set(bus.source_trace_ids.filter(id=>!dataOnly||!/DQS|DQSn/.test(signals.get(id)))),ddr=old.filter(e=>e.type==='pcb_trace'&&ids.has(e.source_trace_id));assert.equal(ddr.length,dataOnly?9:11)
 const removedTraceIds=new Set(ddr.map(t=>t.pcb_trace_id))
 const c=old.filter(e=>!(e.type==='pcb_trace'&&ids.has(e.source_trace_id))&&!(e.type==='pcb_via'&&removedTraceIds.has(e.pcb_trace_id)))
 const connections=[],prefixes=[],perNetBounds=[],removedHoles=[]
@@ -35,7 +39,7 @@ for(const t of ddr){
 const parent=new Map(),find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(x)!==x)parent.set(x,find(parent.get(x)));return parent.get(x)}
 for(const s of old.filter(e=>e.type==='source_trace'))for(const p of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(p))
 const ports=new Map(c.filter(e=>e.type==='pcb_port').map(e=>[e.pcb_port_id,e.source_port_id])),owners=new Map(c.filter(e=>e.type==='pcb_trace').map(e=>[e.pcb_trace_id,find(e.source_trace_id)]))
-const srj=JSON.parse(fs.readFileSync('dist/g350-ddr-inner-ground-preserved-source-209/phase-0.input.simple-route.json'))
+const srj=JSON.parse(fs.readFileSync(templatePath))
 const bounds={minX:-16,maxX:16,minY:-6,maxY:30},outline=c.find(e=>e.type==='pcb_board').outline
 const inside=(x,y)=>{let hit=false;for(let i=0,j=outline.length-1;i<outline.length;j=i++){const a=outline[i],b=outline[j];if((a.y>y)!==(b.y>y)&&x<(b.x-a.x)*(y-a.y)/(b.y-a.y)+a.x)hit=!hit}return hit}
 const corners=[{x:bounds.minX,y:bounds.minY},{x:bounds.maxX,y:bounds.minY},{x:bounds.maxX,y:bounds.maxY},{x:bounds.minX,y:bounds.maxY}]
@@ -54,5 +58,5 @@ const objects={'candidate.circuit.json':c,'solver-input.json':planning,'solver-o
 for(const [name,data]of Object.entries(objects))fs.writeFileSync(root+'/'+name,JSON.stringify(data,null,2)+'\n')
 fs.copyFileSync('scripts/prepare-g350-byte1-bus-rebuild.mjs',root+'/prepare.executed.mjs')
 const artifact=p=>({path:p,sha256:createHash('sha256').update(fs.readFileSync(p)).digest('hex')})
-fs.writeFileSync(root+'/preparation.json',JSON.stringify({source:artifact(input),physicalErrors:0,physicalCounts:counts,goalNativeMm:goal,prefixes:22,openChannels:11,removedOwnedInteriorHoleIds:removedHoles,foreignCopperAndLogicalDefinitionsExactlyPreserved:true,planningRectangleWithinAuthoredOutline:true,authoredOutlineUnchanged:true,files:[...Object.keys(objects),'prepare.executed.mjs'].map(n=>artifact(root+'/'+n)),planningOnly:true,requiresCompleteWholeBoardFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')
-console.log(JSON.stringify({physicalCounts:counts,prefixes:22,openChannels:11,removedOwnedInteriorHoles:removedHoles.length,goalNativeMm:goal}))
+fs.writeFileSync(root+'/preparation.json',JSON.stringify({source:artifact(input),template:artifact(templatePath),busName,dataOnly,physicalErrors:0,physicalCounts:counts,goalNativeMm:goal,prefixes:connections.length*2,openChannels:connections.length,removedOwnedInteriorHoleIds:removedHoles,foreignCopperAndLogicalDefinitionsExactlyPreserved:true,planningRectangleWithinAuthoredOutline:true,authoredOutlineUnchanged:true,files:[...Object.keys(objects),'prepare.executed.mjs'].map(n=>artifact(root+'/'+n)),planningOnly:true,requiresCompleteWholeBoardFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')
+console.log(JSON.stringify({physicalCounts:counts,busName,dataOnly,prefixes:connections.length*2,openChannels:connections.length,removedOwnedInteriorHoles:removedHoles.length,goalNativeMm:goal}))

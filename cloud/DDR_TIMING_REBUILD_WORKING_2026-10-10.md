@@ -1,9 +1,11 @@
 # DDR timing trial history and current continuation
 
-The newly qualified continuation is source 319 / KiCad 320 / Gerber 321. Read
-`cloud/DDR_GROUND_SAFE_BYTE_GROWTH_2026-10-10.md` and its integrated summary.
-It preserves 217/217 connections and improves checked native skews to
-15.124882 / 23.748074 / 24.300328 mm. Fabrication readiness is false.
+The newly qualified continuation is source 443 / KiCad 444 / Gerber 445. Read
+`cloud/DDR_BYTE0_MATCHED_2026-10-10.md` and its integrated summary. It preserves
+217/217 connections, zero DRC errors/warnings/opens/dangling copper/shorts and
+passes byte0 native matching at 0.574882 mm. Byte1 21.213572 mm and command/clock
+24.150328 mm remain unmatched; fabrication readiness is false. Source 319 is
+the preserved preceding checkpoint.
 The following history describes the earlier 8284474 baseline and isolated trials.
 
 The preceding connected checkpoint is GitHub commit
@@ -144,3 +146,76 @@ stopped after round 6 at 23.508074 mm with native ground intact. Both remain
 unqualified and separate from checked 319. Bisection 326 identifies CSn0 as
 the interacting native-ground-breaking command edit; retaining ODT passes.
 All owned evidence 222–327 is archived with member hashes and tested restoration.
+
+
+## Preserved whole-board timing continuation after 7165c90
+
+The starting connected checkpoint was 319/320/321. Complete source 443 /
+KiCad 444 / Gerber 445 qualification now passes and advances the checked entry. The current connection and draft revision 19 are recorded
+in `cloud/TIMING_CONNECTION_WORKING_2026-10-10.json`; all twelve pinned repos and
+ten additional domains are retained. Saved Install/Start remain the tested
+7165c90 configuration. Saving a draft does not publish it.
+
+Pair shortcut planning 366 and further data/command shortcuts 368 pass full
+physical checks and fresh locked ground. Actual existing full-depth barrels,
+all 280 placements, four layers, original constraints and peripheral copper
+are fixed. Native BusLanes rebuild 377 fails its budget; standard-barrel searches
+and matched-DDR rest-board recovery attempts do not produce a qualified board.
+Matched donor copper cannot be pasted across live peripheral routing. Native
+recovery pipelines 392/396 fail rather than complete. Freerouting diagnostics
+remain rejected for incomplete numeric connectivity and actual CAD violations.
+Their input/source/failed-output records are preserved in the planning archives.
+
+Combining independently checked bus gains in 400 creates three real overlaps.
+The planner rejects them. Combination 401 and selective command recovery 402
+pass full physics and a fresh locked native ground fill. Source 404 exceeds its
+300-second wall budget and remains unqualified. Re-running with a 900-second
+wall budget in 410 completes in 528.424 seconds, with only three bus-skew build
+errors. Qualification 405 exits 5 for one Inner2 copper-sliver warning, despite
+217/217 independent numeric connections, all 298 ground pads and no opens.
+Increasing the ground minimum neck in 416/417 does not resolve the warning.
+No rule, severity, exclusion or native assertion is weakened.
+
+Actual inserted planar bends in 413/415 improve byte 0 from 15.124882 mm to
+0.574882 mm. Every retained batch passes the complete physical checks and a
+fresh ground fill. Frozen snapshot 430 captures the first matching-limit pass.
+Failed direct corner edits 421/422 and single-vertex recovery 423 are preserved.
+Checked local DDR_D9 fold recovery 429 and merge 431 preserve all 824 standard
+barrels and all foreign copper. Fresh source 433 completes in 513.118 seconds,
+with exactly two emitted whole-bus matching errors: byte 1 and command/clock.
+It is not promoted: CAD diagnostic 438 finds an acute DDR_D6 copper corner.
+
+The genuine corner-opening repair 440 changes DDR_D6 from 52.762543 mm to
+52.489281 mm, opening its bend to 24.412 degrees while keeping byte 0 at
+0.574882 mm spread. Complete physical checks and fresh ground remain zero.
+Fresh-refill, all-rule CAD diagnostic 441 exits 0 with no violations or
+unconnected items. Cache 442 and its separate corner-clean editable entry are
+being replayed in 443. Actual fresh-source/native, numeric KiCad and all-layer
+Gerber qualification are still required before promotion. Diagnostics do not
+substitute for source/export proof.
+
+The optional tuning angle constraint prevents new acute bends; it adds a real
+geometry restriction and preserves default behavior. The native length model
+still adds 1.6 mm per layer transition. Byte 0 has two to seven transitions and
+an 8.000 mm planar-length spread despite passing the native spread. The new
+layer-length inventory records actual per-layer lengths and transitions; it
+makes no propagation-delay claim. Manufacturer stackup, target DDR clock,
+package/via parasitics, impedance, return paths and meander coupling remain
+necessary for electrical timing. Fabrication readiness remains false.
+
+Finished owned trials are preserved in three hash-indexed planning archives
+329–363, 364–399 and 400–432 under
+`checks/integrated/g350-byte0-matched-progress`. Archive member verification
+passes. Compressed original circuit bytes have separate indexed selective
+restoration in snapshots 408/436. Only completed owned raw outputs were replaced
+by verified compressed equivalents; frozen 25,814 files, older checked evidence,
+the tools image/archive and active worker inputs remain unchanged. Active
+byte1/command workers are excluded from immutable archives until frozen.
+
+The exact refreshed Start command block exits 0, including all pin checks,
+KiCad APIs, frozen and checked archive restoration and four geometry controls.
+The final 449-member checked archive passes fresh, repeat and in-place
+restoration plus refusal to overwrite an edited member. Source 443 build exits
+1 for exactly two matching errors; the complete 444/445 wrapper exits 0.
+Constant-length diagnostic 450 removes one overlap but retains two; it remains
+rejected. Rigid block trial 451 is a separate unqualified repair.

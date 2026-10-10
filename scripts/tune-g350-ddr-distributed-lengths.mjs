@@ -3,6 +3,7 @@
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
 import {createHash} from 'node:crypto'
+import {gzipSync} from 'node:zlib'
 import * as checks from '@tscircuit/checks'
 import {tuneOneG350DdrTrace,ddrRouteLength} from './lib/g350-full-board-length-tuning.mjs'
 import {createG350PlanarPlanningValidator} from './lib/g350-ddr-planar-planning-validator.mjs'
@@ -20,6 +21,9 @@ assert.equal(process.env.G350_LENGTH_SIMPLIFY_SECONDS,'0')
 assert.equal(process.env.G350_LENGTH_MOVE_BENDS,'1')
 const verifyGround=process.env.G350_LENGTH_VERIFY_GROUND==='1'
 assert(process.env.G350_LENGTH_VERIFY_GROUND===undefined||['0','1'].includes(process.env.G350_LENGTH_VERIFY_GROUND))
+const groundPerUnit=process.env.G350_LENGTH_GROUND_PER_UNIT==='1'
+assert(process.env.G350_LENGTH_GROUND_PER_UNIT===undefined||['0','1'].includes(process.env.G350_LENGTH_GROUND_PER_UNIT))
+assert(!groundPerUnit||verifyGround,'Per-unit ground checks require the existing fresh baseline and batch checks')
 const minimumWindow=Number(process.env.G350_LENGTH_MINIMUM_WINDOW_MM??'Infinity')
 assert(process.env.G350_LENGTH_MINIMUM_WINDOW_MM===undefined||(Number.isFinite(minimumWindow)&&minimumWindow>=0&&minimumWindow<=10))
 for(const p of ['scripts/tune-g350-ddr-distributed-lengths.mjs','scripts/lib/g350-full-board-length-tuning.mjs','scripts/lib/g350-ddr-planar-planning-validator.mjs','scripts/lib/g350-ddr-local-guard.mjs','scripts/lib/g350-ddr-physical-checks.mjs','scripts/lib/g350-locked-ground-fill.mjs'])fs.copyFileSync(p,root+'/'+p.replaceAll('/','__'))
@@ -30,16 +34,19 @@ const selectedBuses=process.env.G350_LENGTH_BUSES?.split(',')??['DDR_BYTE0','DDR
 assert(selectedBuses.length&&new Set(selectedBuses).size===selectedBuses.length&&selectedBuses.every(n=>['DDR_BYTE0','DDR_BYTE1','DDR_COMMAND_CLOCK'].includes(n)))
 const buses=circuit.filter(e=>e.type==='source_bus'&&selectedBuses.includes(e.name))
 assert.equal(buses.length,selectedBuses.length)
+const selectedSignals=process.env.G350_LENGTH_SIGNALS?.split(',')??null
+if(selectedSignals){assert(selectedSignals.length&&new Set(selectedSignals).size===selectedSignals.length);assert(selectedSignals.every(n=>circuit.some(e=>e.type==='source_trace'&&e.name===n&&buses.some(b=>b.source_trace_ids.includes(e.source_trace_id)))))}
 const pairs=[['DDR_DQS0','DDR_DQSn0'],['DDR_DQS1','DDR_DQSn1'],['DDR_CK','DDR_CKn']]
 const groups=()=>buses.map(b=>{const rows=circuit.filter(e=>e.type==='pcb_trace'&&b.source_trace_ids.includes(e.source_trace_id)).map(t=>({name:names.get(t.source_trace_id),lengthMm:ddrRouteLength(t.route)}));return {name:b.name,rows,skewMm:Math.max(...rows.map(r=>r.lengthMm))-Math.min(...rows.map(r=>r.lengthMm)),limitMm:b.max_length_skew}})
 const progress=[],batchChecks=[]
 const groundChecks=[]
+const unitGroundChecks=[]
 if(verifyGround){const g=await fillG350LockedGround(circuit);assert.equal(g.portErrors,0,'Ground-guarded planning requires a connected baseline');groundChecks.push({round:0,portErrors:g.portErrors,elapsedSeconds:g.elapsedSeconds});fs.writeFileSync(root+'/fresh-filled.circuit.json',JSON.stringify(g.circuit,null,2)+'\n')}
 const hash=s=>createHash('sha256').update(s).digest('hex')
-const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM'].map(k=>[k,process.env[k]??null]))
+const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES'].map(k=>[k,process.env[k]??null]))
 const persist=()=>{
  fs.writeFileSync(root+'/candidate.circuit.json',JSON.stringify(circuit,null,2)+'\n')
- fs.writeFileSync(root+'/report.json',JSON.stringify({input,inputSha256:hash(fs.readFileSync(input)),checksSha256:hash(fs.readFileSync('node_modules/@tscircuit/checks/dist/index.js')),roundsRequested:rounds,secondsPerProposal:seconds,environment,incrementalChecksScope:'Planar trace proposals; immutable via/pad/board checks reused within a batch, full unchanged checks before retaining every batch',progress,batchChecks,groundChecks,groups:groups(),skewErrors:checks.checkPcbBusLengthSkew(circuit),requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')
+ fs.writeFileSync(root+'/report.json',JSON.stringify({input,inputSha256:hash(fs.readFileSync(input)),checksSha256:hash(fs.readFileSync('node_modules/@tscircuit/checks/dist/index.js')),roundsRequested:rounds,secondsPerProposal:seconds,environment,incrementalChecksScope:'Planar trace proposals; immutable via/pad/board checks reused within a batch, full unchanged checks before retaining every batch',progress,batchChecks,groundChecks,unitGroundChecks,groups:groups(),skewErrors:checks.checkPcbBusLengthSkew(circuit),requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')
 }
 for(let round=1;round<=rounds;round++){
  const batchBefore=structuredClone(circuit);let accepted=0
@@ -49,6 +56,7 @@ for(let round=1;round<=rounds;round++){
   for(const pair of pairs){const ids=members.filter(t=>pair.includes(names.get(t.source_trace_id))).map(t=>t.source_trace_id);if(ids.length===2)units.push(ids)}
   units.sort((a,b)=>ddrRouteLength(circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===a[0]).route)-ddrRouteLength(circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===b[0]).route))
   for(const ids of units){
+   if(selectedSignals&&!ids.every(id=>selectedSignals.includes(names.get(id))))continue
    if(ids.some(id=>!circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===id).route.some(p=>p.route_type==='wire'&&proposalLayers.includes(p.layer))))continue
    const before=structuredClone(circuit);let success=false,details=[]
    const lengths=ids.map(id=>ddrRouteLength(circuit.find(t=>t.type==='pcb_trace'&&t.source_trace_id===id).route))
@@ -71,6 +79,17 @@ for(let round=1;round<=rounds;round++){
     }
     if(ids.length===2)success&&=Math.abs(details[0].afterMm-(details[1]?.afterMm??Infinity))<=.127
     success&&=details.some(d=>d.afterMm>d.beforeMm+.005)
+    if(success&&groundPerUnit){
+     const g=await fillG350LockedGround(circuit)
+     const record={round,bus:bus.name,signals:ids.map(id=>names.get(id)),step,portErrors:g.portErrors,elapsedSeconds:g.elapsedSeconds,passed:g.portErrors===0}
+     if(g.portErrors){
+      const payload=JSON.stringify(g.circuit,null,2)+'\n',path=root+'/rejected-unit-ground-'+(unitGroundChecks.length+1)+'.circuit.json.gz',compressed=gzipSync(payload,{level:6})
+      fs.writeFileSync(path,compressed)
+      record.rejectedArtifact={path,sha256:hash(compressed),originalSha256:hash(payload),originalBytes:Buffer.byteLength(payload)};record.errors=g.errors
+      success=false
+     }
+     unitGroundChecks.push(record);console.log(JSON.stringify({unitGroundCheck:{...record,errors:undefined}}))
+    }
     if(success)break
    }
    if(!success)circuit=before

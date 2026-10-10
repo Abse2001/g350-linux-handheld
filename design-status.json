@@ -5145,16 +5145,16 @@
     "report": "cloud/DDR_ZERO_SKEW_2026-10-06.md"
   },
   "currentContinuation": {
-    "stage": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_THREE_SKEW_FAILURES",
-    "entry": "experiments/am3352-g350-full-board-ground-safe-byte-growth-stable-replay.circuit.tsx",
-    "report": "cloud/DDR_GROUND_SAFE_BYTE_GROWTH_2026-10-10.md",
+    "stage": "WHOLE_BOARD_CONNECTED_ZERO_DRC_SHORTS_DDR_LENGTH_PROGRESS_TWO_SKEW_FAILURES",
+    "entry": "experiments/am3352-g350-full-board-byte0-matched-corner-clean-replay.circuit.tsx",
+    "report": "cloud/DDR_BYTE0_MATCHED_2026-10-10.md",
     "connectedConnections": 217,
     "requiredConnections": 217,
     "connectedDdrSignals": 49,
-    "nativeBusSkewFailures": 3,
+    "nativeBusSkewFailures": 2,
     "remaining": [
-      "Whole-board DDR matching: Byte0 15.124882 mm, Byte1 23.748074 mm, command/clock 24.300328 mm against 0.635 mm",
-      "Target clock, manufacturer stackup, impedance, package/via delay, nominal timing, coupling and return paths",
+      "Whole-board native DDR matching: byte1 21.213572 mm and command/clock 24.150328 mm versus 0.635 mm; byte0 passes 0.574882 mm",
+      "Native 1.6 mm per transition is not delay: byte0 planar spread is 8 mm with 2\u20137 transitions; actual stackup/clock/package/via/impedance/coupling/return paths remain unqualified",
       "PDN/footprint/electrical qualification, Linux and measured original-shell fit"
     ],
     "fabricationReady": false,
@@ -5163,7 +5163,9 @@
     "kicadErrors": 0,
     "kicadWarnings": 0,
     "allLayerGerberShorts": 0,
-    "summary": "checks/integrated/g350-ground-safe-byte-growth-progress/summary.json"
+    "summary": "checks/integrated/g350-byte0-matched-progress/summary.json",
+    "byte0PassesNativeMatching": true,
+    "sourceSha256": "85376c9e696221df8208f10525d1965e58c7c59ee72733d5755f30ada658ad69"
   },
   "runtimeUpgrade20261007": {
     "versions": {

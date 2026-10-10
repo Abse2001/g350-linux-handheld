@@ -78,6 +78,37 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
    assert(Math.abs(length(trace.route)-goalLength)<1e-7);tries++
    if(passesPhysical())found=true
   }
+  // Optional real triangular bend insertion for cramped routes whose existing
+  // vertices have exhausted their movement. The goal is solved geometrically;
+  // unchanged native checks still reject every bypass or clearance failure.
+  const insertFlag=process.env.G350_LENGTH_INSERT_BENDS
+  assert(insertFlag===undefined||['0','1'].includes(insertFlag))
+  const minimumNewBendAngle=Number(process.env.G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES??0)
+  assert(Number.isFinite(minimumNewBendAngle)&&minimumNewBendAngle>=0&&minimumNewBendAngle<=90)
+  const opensCorner=(a,p,b)=>{
+   if(!minimumNewBendAngle)return true
+   const la=Math.hypot(a.x-p.x,a.y-p.y),lb=Math.hypot(b.x-p.x,b.y-p.y)
+   if(!la||!lb)return false
+   const cosine=((a.x-p.x)*(b.x-p.x)+(a.y-p.y)*(b.y-p.y))/(la*lb)
+   return Math.acos(Math.max(-1,Math.min(1,cosine)))*180/Math.PI>=minimumNewBendAngle
+  }
+  if(!found&&insertFlag==='1'){
+   const shortSegments=original.slice(0,-1).map((a,i)=>({a,b:original[i+1],i}))
+    .filter(s=>s.a.route_type==='wire'&&s.b.route_type==='wire'&&s.a.layer===s.b.layer&&proposalLayers.includes(s.a.layer)&&Math.hypot(s.a.x-s.b.x,s.a.y-s.b.y)>.24)
+    .sort((a,b)=>Number(b.a.layer.startsWith('inner'))-Number(a.a.layer.startsWith('inner'))||Math.hypot(b.a.x-b.b.x,b.a.y-b.b.y)-Math.hypot(a.a.x-a.b.x,a.a.y-a.b.y))
+   inserted:for(const {a,b,i} of shortSegments)for(const fraction of [.5,.25,.75,.1,.9])for(const sign of [1,-1]){
+    if(Date.now()>deadline)break inserted
+    const span=Math.hypot(b.x-a.x,b.y-a.y),ux=(b.x-a.x)/span,uy=(b.y-a.y)/span
+    const gain=h=>Math.hypot(span*fraction,h)+Math.hypot(span*(1-fraction),h)-span
+    let lo=0,hi=delta+span
+    for(let k=0;k<60;k++){const mid=(lo+hi)/2;if(gain(mid)<delta)lo=mid;else hi=mid}
+    const h=(lo+hi)/2,p={route_type:'wire',x:a.x+ux*span*fraction-uy*h*sign,y:a.y+uy*span*fraction+ux*h*sign,layer:a.layer,width:.1016}
+    if(!opensCorner(a,p,b)||!g350AvoidsEscapeRegions([a,p,b],escapeRegions)||!localGuard([a,p,b]))continue
+    trace.route=[...original.slice(0,i+1),p,...original.slice(i+1)]
+    assert(Math.abs(length(trace.route)-goalLength)<1e-7);tries++
+    if(passesPhysical()){found=true;break inserted}
+   }
+  }
   // A short staircase need not contain a rectangle or a long straight.
   // Move one existing bend, solving its two-leg length exactly. This is only
   // a search proposal; unchanged full checks still qualify every acceptance.
@@ -99,7 +130,7 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
      if(gain(hi)<delta)continue
      for(let k=0;k<50;k++){const mid=(lo+hi)/2;if(gain(mid)<delta)lo=mid;else hi=mid}
      const nb=moved((lo+hi)/2)
-     if(!g350AvoidsEscapeRegions([a,nb,c],escapeRegions)||!localGuard([a,nb,c]))continue
+     if(!opensCorner(a,nb,c)||!g350AvoidsEscapeRegions([a,nb,c],escapeRegions)||!localGuard([a,nb,c]))continue
      trace.route=[...original.slice(0,i),nb,...original.slice(i+1)]
      assert(Math.abs(length(trace.route)-goalLength)<1e-7);tries++
      if(passesPhysical()){found=true;break bends}
