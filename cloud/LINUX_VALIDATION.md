@@ -91,3 +91,39 @@ four layers, 11/49 DDR channels. Seeded-strobe independent qualification, exact
 shell fit and all documented release gates remain outstanding. No routing,
 experimental promotion or fabrication publication was performed. Continue with
 `cloud/CONTINUE_BOARD.md` after publishing the reusable environment.
+
+## Connected timing checkpoint and low-disk KiCad (2026-10-10 UTC)
+
+Debian 13, Node 25.6.1, Bun 1.3.14 and official KiCad 10.0.6 / pcbnew 10.0.6+dfsg-1
+remain tested. Board runtime, eleven source references, solver/checker pins and
+reviewed checks SHA256: 1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc
+are unchanged. The new exact Start block is committed as
+`cloud/START_TIMING_CHECKED_2026-10-10.sh`; actual exit0 confirms frozen25,814
+files, all checked archives, runtime/upstreams, KiCadversion/pcbnew APIs and
+NumPy2.3.5/SciPy1.17.0/Shapely2.1.2 with all four C++controls. Install script
+remains unchanged from tested draft19. This tests the current prepared Linux
+filesystem; it does not claim a newly provisioned task or published configuration.
+
+`scripts/cloud-kicad-tool.sh` now uses a read-only container root, temporary
+Xvfb/XDG storage and an optional explicitly selected dist output mirror in
+/tmp. Results copy back after VFS container removal, with original-output
+concurrent-edit refusal and complete hash equality. Controls517 show all
+positive operations exit0 and modified-file refusal exit1 with edits preserved.
+Full source532/CAD533/Gerber534 and source540/CAD541/Gerber542 each qualify0
+using this wrapper. CLIflags, all-rule severities, numeric connectivity, native
+ground/physical assertions and Gerber checks stay unchanged. CAD515 reports
+a real ground open and is preserved as failed evidence.
+
+Keep `.cloud-tools/kicad10-debian.tar`, checksum and installed official image
+in the prepared filesystem. Archive SHA256 remains
+70a47643a9a6d89cca64579b5ef6bab5a290803ccc94ed9b9e170fb14c70b6bb.
+The source wrapper checksum-verifies and reloads that archive if the image
+is missing; the Start block also checks its hash. Frozen10.0.5 evidence is
+untouched. VFS still requires transient disk for one container; run containers
+sequentially and avoid concurrent source/archive writers during image copies.
+
+The new450-member checked archive passes exact archive, fresh/repeat/in-place
+restore and edited-file refusal. Test logs and commands are in
+`checks/integrated/g350-constant-neck-timing-progress/runtime-validation-544-manifest.json`.
+Unqualified trials are archived separately; never substitute them for the
+current checked entry. Fabrication readiness remains false.

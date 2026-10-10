@@ -26,7 +26,7 @@ assert(process.env.G350_LENGTH_GROUND_PER_UNIT===undefined||['0','1'].includes(p
 assert(!groundPerUnit||verifyGround,'Per-unit ground checks require the existing fresh baseline and batch checks')
 const minimumWindow=Number(process.env.G350_LENGTH_MINIMUM_WINDOW_MM??'Infinity')
 assert(process.env.G350_LENGTH_MINIMUM_WINDOW_MM===undefined||(Number.isFinite(minimumWindow)&&minimumWindow>=0&&minimumWindow<=10))
-for(const p of ['scripts/tune-g350-ddr-distributed-lengths.mjs','scripts/lib/g350-full-board-length-tuning.mjs','scripts/lib/g350-ddr-planar-planning-validator.mjs','scripts/lib/g350-ddr-local-guard.mjs','scripts/lib/g350-ddr-physical-checks.mjs','scripts/lib/g350-locked-ground-fill.mjs'])fs.copyFileSync(p,root+'/'+p.replaceAll('/','__'))
+for(const p of ['scripts/tune-g350-ddr-distributed-lengths.mjs','scripts/lib/g350-full-board-length-tuning.mjs','scripts/lib/g350-ddr-planar-planning-validator.mjs','scripts/lib/g350-ddr-local-guard.mjs','scripts/lib/g350-ddr-physical-checks.mjs','scripts/lib/g350-locked-ground-fill.mjs','scripts/lib/g350-locked-ground-fill-worker.mjs'])fs.copyFileSync(p,root+'/'+p.replaceAll('/','__'))
 let circuit=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
 const baseline=structuredClone(circuit),validator=createG350PlanarPlanningValidator(circuit)
 const names=new Map(circuit.filter(e=>e.type==='source_trace').map(e=>[e.source_trace_id,e.name]))
@@ -43,7 +43,7 @@ const groundChecks=[]
 const unitGroundChecks=[]
 if(verifyGround){const g=await fillG350LockedGround(circuit);assert.equal(g.portErrors,0,'Ground-guarded planning requires a connected baseline');groundChecks.push({round:0,portErrors:g.portErrors,elapsedSeconds:g.elapsedSeconds});fs.writeFileSync(root+'/fresh-filled.circuit.json',JSON.stringify(g.circuit,null,2)+'\n')}
 const hash=s=>createHash('sha256').update(s).digest('hex')
-const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES'].map(k=>[k,process.env[k]??null]))
+const environment=Object.fromEntries(['G350_LENGTH_SIMPLIFY_SECONDS','G350_LENGTH_MOVE_BENDS','G350_LENGTH_BALANCED_SEARCH','G350_LENGTH_SIGNAL_LAYERS','G350_LENGTH_STEPS','G350_LENGTH_BUSES','G350_LENGTH_VERIFY_GROUND','G350_LENGTH_MINIMUM_WINDOW_MM','G350_LENGTH_GROUND_PER_UNIT','G350_LENGTH_SIGNALS','G350_LENGTH_INSERT_BENDS','G350_LENGTH_MINIMUM_NEW_BEND_ANGLE_DEGREES','G350_LENGTH_MOVE_BLOCKS','G350_GROUND_FILL_ISOLATED_WORKER'].map(k=>[k,process.env[k]??null]))
 const persist=()=>{
  fs.writeFileSync(root+'/candidate.circuit.json',JSON.stringify(circuit,null,2)+'\n')
  fs.writeFileSync(root+'/report.json',JSON.stringify({input,inputSha256:hash(fs.readFileSync(input)),checksSha256:hash(fs.readFileSync('node_modules/@tscircuit/checks/dist/index.js')),roundsRequested:rounds,secondsPerProposal:seconds,environment,incrementalChecksScope:'Planar trace proposals; immutable via/pad/board checks reused within a batch, full unchanged checks before retaining every batch',progress,batchChecks,groundChecks,unitGroundChecks,groups:groups(),skewErrors:checks.checkPcbBusLengthSkew(circuit),requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n')

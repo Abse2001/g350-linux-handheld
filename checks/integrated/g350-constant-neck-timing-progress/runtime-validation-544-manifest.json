@@ -1,0 +1,45 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-constant-neck-timing-progress/runtime-validation-544.tar.gz",
+    "bytes": 2614,
+    "sha256": "7c5a7c55901832105b3a5a45b98f6c72454f95542949304f38f635f9062736af"
+  },
+  "files": [
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/mirror-controls.json",
+      "bytes": 125,
+      "sha256": "bb7d7a70c4a21453c4a53975bf2a1e23726f8e30847790362609e298c2296998"
+    },
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/qualification.log",
+      "bytes": 59,
+      "sha256": "67b3f3d319718fa0158a9a6c49d7d537d55d92dcc43a09dd6175fe6b3ea1797b"
+    },
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/source.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/start.executed.sh",
+      "bytes": 2453,
+      "sha256": "1c7170cfa5de361b67f1c09ab9df408048814078055a50e8db2dea1679a7a67c"
+    },
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/start.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/start.log",
+      "bytes": 3321,
+      "sha256": "4be0eaefb082a8ae7eddee84d429a26f6f175e4a1197f94c447863688a4600f9"
+    },
+    {
+      "path": "dist/g350-constant-neck-runtime-validation-544/summary.log",
+      "bytes": 209,
+      "sha256": "f3439bb077ef59ee5d4b174183c23f33ada577f99a5fc3c14d1037aaf46bbb08"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-constant-neck-timing-progress/runtime-validation-544-manifest.json"
+}

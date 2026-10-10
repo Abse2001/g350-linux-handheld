@@ -55,7 +55,7 @@ node scripts/prepare-am3352-kicad.mjs "$verified_root/candidate.kicad_pcb" "$inp
 # Bundle the identical CAD sequence to avoid repeated VFS image copies.
 # The original host/wrapper flow remains available without a cloud image.
 if [[ -f .cloud-tools/kicad10-debian.tar ]]; then
-  bash scripts/cloud-kicad-tool.sh bash scripts/qualify-g350-kicad-full-checks.sh "$input" "$verified_root" "$verified_root/full-solver-input.json"
+  G350_KICAD_OUTPUT_DIRECTORY="$verified_root" bash scripts/cloud-kicad-tool.sh bash scripts/qualify-g350-kicad-full-checks.sh "$input" "$verified_root" "$verified_root/full-solver-input.json"
 else
   scripts/kicad-python.sh scripts/prepare-g350-ground-references.py "$verified_root/candidate.kicad_pcb" "$input" "$verified_root/filled" --all-layers > "$verified_root/ground-reference.log" 2>&1
   cp dist/g350-checked-shortcuts-verified-179/filled/ground-reference.kicad_pro "$verified_root/filled/ground-reference.kicad_pro"

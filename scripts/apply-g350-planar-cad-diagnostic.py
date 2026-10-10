@@ -31,7 +31,10 @@ for a in old:
  if a['route']==b['route']:continue
  st=next(e for e in old if e.get('source_trace_id')==a['source_trace_id'] and e['type']=='source_trace')
  assert [p for p in a['route'] if p['route_type']=='via']==[p for p in b['route'] if p['route_type']=='via']
- assert [a['route'][0],a['route'][-1]]==[b['route'][0],b['route'][-1]]
+ # Fresh pours renumber their derived ownership tags. Numeric endpoints and
+ # every physical/port field still must match exactly, as in the source guard.
+ endpoint=lambda p:{k:v for k,v in p.items() if k not in ('copper_pour_id','is_inside_copper_pour')}
+ assert [endpoint(a['route'][0]),endpoint(a['route'][-1])]==[endpoint(b['route'][0]),endpoint(b['route'][-1])]
  removed=edges(a)-edges(b);added=edges(b)-edges(a)
  # Cached annotations and sub-nanometre floating serialization can differ
  # without changing any physical CAD edge. Only real copper deltas are applied.

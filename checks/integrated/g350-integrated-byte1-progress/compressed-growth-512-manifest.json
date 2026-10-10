@@ -1,0 +1,60 @@
+{
+  "archive": {
+    "path": "checks/integrated/g350-integrated-byte1-progress/compressed-growth-512.tar.gz",
+    "bytes": 10446029,
+    "sha256": "00d8130995eed8d068c20bee2865e0dfffc32211aa797c4523b6b026923e5c80"
+  },
+  "files": [
+    {
+      "path": ".cloud-tools/g350-timing-snapshots/compressed-completed-growth-504.json",
+      "bytes": 4154,
+      "sha256": "86e3cf766fb4cceccc8a582ce61afc7a69813bddf1ff503798aff93a8008edbc"
+    },
+    {
+      "path": "dist/g350-ddr-current-d9-coalesced-growth-493/candidate.circuit.json.gz",
+      "bytes": 1073118,
+      "sha256": "dc7a5f7214e7ca8542b143f8a13eee388d17fe8777e94b4067c20dd2bddd6517"
+    },
+    {
+      "path": "dist/g350-ddr-d9-coalesced-channel-small-growth-491/candidate.circuit.json.gz",
+      "bytes": 1061525,
+      "sha256": "ea9702ab2ce6ce81047231bb1a8d0895c84817500c9fe0fb333197fd1e1d5411"
+    },
+    {
+      "path": "dist/g350-ddr-d9-full-pad-fresh-ground-488/fresh-filled.circuit.json.gz",
+      "bytes": 1348926,
+      "sha256": "edc0cc1a7da31f22d1e967d0179529e39808a437c4a7ee624811bfefbc84e7ea"
+    },
+    {
+      "path": "dist/g350-ddr-d9-matched-board-full-pad-replan-484/case-1.circuit.json.gz",
+      "bytes": 1061525,
+      "sha256": "ea9702ab2ce6ce81047231bb1a8d0895c84817500c9fe0fb333197fd1e1d5411"
+    },
+    {
+      "path": "dist/g350-ddr-d9-new-channel-matching-490/candidate.circuit.json.gz",
+      "bytes": 1061525,
+      "sha256": "ea9702ab2ce6ce81047231bb1a8d0895c84817500c9fe0fb333197fd1e1d5411"
+    },
+    {
+      "path": "dist/g350-ddr-integrated-retained-snapshot-480/candidate.circuit.json.gz",
+      "bytes": 1067407,
+      "sha256": "77967a2a91af65d6822509a60faa935b6c6ce538834858e8106364694aba7bc2"
+    },
+    {
+      "path": "dist/g350-ddr-integrated-retained-snapshot-480/fresh-filled.circuit.json.gz",
+      "bytes": 1376941,
+      "sha256": "9545c071336feda8da8aec3b2e27727f7c50f45cf72586ff2385aa105cf930d4"
+    },
+    {
+      "path": "dist/g350-ddr-integrated-two-bus-ground-growth-464/candidate.circuit.json.gz",
+      "bytes": 1073157,
+      "sha256": "71a997a5b11b5614cd72273afcc190eb21aa6a16049f92dab8147e2e1868a637"
+    },
+    {
+      "path": "dist/g350-ddr-integrated-two-bus-ground-growth-464/fresh-filled.circuit.json.gz",
+      "bytes": 1402647,
+      "sha256": "ac03b3c26fe73a759188b0a68070ccea462c94fc3d39f35ff2590f11f2dcb4d6"
+    }
+  ],
+  "restore": "python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-integrated-byte1-progress/compressed-growth-512-manifest.json"
+}

@@ -3,10 +3,25 @@
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
 import {createHash} from 'node:crypto'
+import {Worker} from 'node:worker_threads'
 import * as checks from '@tscircuit/checks'
 import {CopperPourPipelineSolver,convertCircuitJsonToInputProblem,initializeManifoldGeometry} from '@tscircuit/copper-pour-solver'
 let initialization
 export async function fillG350LockedGround(input){
+ const isolation=process.env.G350_GROUND_FILL_ISOLATED_WORKER??'0'
+ assert(['0','1'].includes(isolation),'Ground fill isolation must be explicitly 0 or 1')
+ if(isolation==='1'){
+  // A new worker owns each Manifold heap. Retain the same pinned solver and
+  // assertions; an aborted worker rejects the proposal rather than bypassing it.
+  const worker=new Worker(new URL('./g350-locked-ground-fill-worker.mjs',import.meta.url),{workerData:{input},execArgv:process.execArgv.filter(arg=>!arg.startsWith('--input-type')),env:{...process.env,G350_GROUND_FILL_ISOLATED_WORKER:'0'}})
+  return await new Promise((resolve,reject)=>{
+   let result,failed=false
+   const timer=setTimeout(()=>{failed=true;void worker.terminate();reject(new Error('Isolated native ground fill exceeded 300 seconds'))},300000)
+   worker.once('message',value=>{result=value})
+   worker.once('error',error=>{failed=true;clearTimeout(timer);reject(error)})
+   worker.once('exit',code=>{clearTimeout(timer);if(failed)return;if(code!==0||!result)reject(new Error(`Isolated native ground fill exited ${code} without a completed result`));else resolve(result)})
+  })
+ }
  const inputHash=createHash('sha256').update(JSON.stringify(input)).digest('hex')
  assert.equal(JSON.parse(fs.readFileSync('node_modules/@tscircuit/copper-pour-solver/package.json')).version,'0.0.59')
  assert.equal(createHash('sha256').update(fs.readFileSync('node_modules/@tscircuit/checks/dist/index.js')).digest('hex'),'1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc')

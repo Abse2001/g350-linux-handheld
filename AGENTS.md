@@ -1,6 +1,24 @@
 # G350 board continuation
 
 Latest checked continuation (2026-10-10): use
+`experiments/am3352-g350-full-board-constant-neck-timing-replay.circuit.tsx`
+and read `cloud/DDR_CONSTANT_NECK_TIMING_2026-10-10.md` plus
+`checks/integrated/g350-constant-neck-timing-progress/summary.json`.
+Fresh source 540 / KiCad 541 / Gerber 542 preserve all 217 connections, 49 DDR,
+298 ground ports, 1,032 numeric ports, 280 placements and 824 standard through-vias.
+Native physical checks, all-rule DRC errors/warnings, opens, dangling copper and
+all-layer shorts are zero. Byte0 passes native matching at 0.574882 mm; byte1
+8.033572 mm and command/clock 12.450328 mm still fail 0.635 mm. All pairs pass.
+Build exit is 1 for exactly those two failures; qualification wrapper exit is 0.
+Native length counts 1.6 mm per transition; byte0's planar spread is 8 mm with
+2–7 transitions. This is not electrical delay qualification. Preserve source532
+as a qualified ground-safe fallback, preceding81078ba/ac0dcaf, source319 and all
+frozen evidence. Trial497/515 has a ground open and must not be promoted.
+Further tuning requires complete qualification. Keep fabricationReady=false.
+
+## Previous connected byte1 checkpoint (preserved history)
+
+Previous checked continuation (2026-10-10): use
 `experiments/am3352-g350-full-board-byte1-integrated-clean-replay.circuit.tsx`
 and read `cloud/DDR_BYTE1_INTEGRATED_2026-10-10.md` plus
 `checks/integrated/g350-integrated-byte1-progress/summary.json`.

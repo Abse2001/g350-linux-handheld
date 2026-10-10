@@ -92,6 +92,39 @@ export function tuneOneG350DdrTrace(circuit,trace,goalLength,seconds=10,{protect
    const cosine=((a.x-p.x)*(b.x-p.x)+(a.y-p.y)*(b.y-p.y))/(la*lb)
    return Math.acos(Math.max(-1,Math.min(1,cosine)))*180/Math.PI>=minimumNewBendAngle
   }
+  const blocksFlag=process.env.G350_LENGTH_MOVE_BLOCKS
+  assert(blocksFlag===undefined||['0','1'].includes(blocksFlag))
+  // Translate a contiguous bend group when moving one vertex collides with
+  // its own neighbouring staircase. Internal copper lengths stay unchanged;
+  // solve the two joining legs, then require the same physical checks.
+  if(!found&&blocksFlag==='1'){
+   blocks:for(const count of [2,3,4,6,8,12])for(let i=1;i+count<original.length;i++){
+    const a=original[i-1],d=original[i+count],block=original.slice(i,i+count)
+    if(!proposalLayers.includes(a.layer)||![a,...block,d].every(p=>p.route_type==='wire'&&p.layer===a.layer&&(p.width??.1016)===(a.width??.1016)))continue
+    const b=block[0],c=block.at(-1),ab=Math.hypot(b.x-a.x,b.y-a.y),cd=Math.hypot(c.x-d.x,c.y-d.y)
+    if(ab<.1||cd<.1)continue
+    const gx=(b.x-a.x)/ab+(c.x-d.x)/cd,gy=(b.y-a.y)/ab+(c.y-d.y)/cd
+    for(let j=0;j<(balanced?64:16);j++){
+     if(Date.now()>deadline)break blocks
+     const dx=Math.cos(j*2*Math.PI/(balanced?64:16)),dy=Math.sin(j*2*Math.PI/(balanced?64:16))
+     if(gx*dx+gy*dy<-.000001)continue
+     const moved=(p,h)=>({...p,x:p.x+dx*h,y:p.y+dy*h})
+     const gain=h=>{const nb=moved(b,h),nc=moved(c,h);return Math.hypot(nb.x-a.x,nb.y-a.y)+Math.hypot(nc.x-d.x,nc.y-d.y)-ab-cd}
+     let lo=0,hi=delta+ab+cd
+     if(gain(hi)<delta)continue
+     for(let k=0;k<50;k++){const mid=(lo+hi)/2;if(gain(mid)<delta)lo=mid;else hi=mid}
+     const next=block.map(p=>moved(p,(lo+hi)/2)),window=[a,...next,d]
+     if(!opensCorner(a,next[0],next[1])||!opensCorner(next.at(-2),next.at(-1),d))continue
+     const prev=original[i-2],after=original[i+count+1]
+     if(prev?.route_type==='wire'&&prev.layer===a.layer&&!opensCorner(prev,a,next[0]))continue
+     if(after?.route_type==='wire'&&after.layer===d.layer&&!opensCorner(next.at(-1),d,after))continue
+     if(!g350AvoidsEscapeRegions(window,escapeRegions)||!localGuard(window))continue
+     trace.route=[...original.slice(0,i),...next,...original.slice(i+count)]
+     assert(Math.abs(length(trace.route)-goalLength)<1e-7);tries++
+     if(passesPhysical()){found=true;break blocks}
+    }
+   }
+  }
   if(!found&&insertFlag==='1'){
    const shortSegments=original.slice(0,-1).map((a,i)=>({a,b:original[i+1],i}))
     .filter(s=>s.a.route_type==='wire'&&s.b.route_type==='wire'&&s.a.layer===s.b.layer&&proposalLayers.includes(s.a.layer)&&Math.hypot(s.a.x-s.b.x,s.a.y-s.b.y)>.24)

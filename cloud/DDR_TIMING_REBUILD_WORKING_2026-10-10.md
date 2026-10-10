@@ -287,3 +287,66 @@ but its 19.083378 mm path worsens matching and changes barrels, so it is not ado
 Declared-channel growth490/491 fails to add length; coalesced existing D9 growth493
 also finds no accepted growth. Constraints, foreign copper, ground assertions and
 reviewed checks remain enforced. All failed histories and frozen evidence stay intact.
+
+## Further joint tuning, independent ground repair, and low-disk CAD
+
+Verified source468 / CAD472 / Gerber473 was committed and pushed as81078ba.
+Environment draft21 was saved and re-read with all12 repositories,10 domains,
+unchanged tested Install19 and the exact Start block (actual exit0). The current
+connected/running observation and receipt are in the ignored prepared filesystem;
+saving still requires user publication and does not prove new-task restoration.
+
+Restart495 completes three batches with byte1 8.433572 / command12.450328 mm.
+Isolated block-growth507 completes three batches, adding0.7 mm to D9 and retaining
+byte1 8.033572 mm. Joint merge513 passes complete physics and fresh native ground.
+Fresh source497 completes in484.991 seconds, actual build1 for two bus errors.
+Its first qualification498 failed before CAD because a wrong baseline path was
+supplied; corrected qualification510 hit VFS disk exhaustion before xvfb. No
+checks were bypassed. These failed attempts and all candidate files are retained.
+
+The KiCad wrapper now keeps Xvfb and copied configuration/cache in temporary
+storage, and mirrors only an explicitly selected new dist output there during
+a container call. It uses the same verified official KiCad10 image/archive,
+read-only root and working-directory paths. After Docker removes its VFS copy,
+outputs copy back with full hash comparison. Concurrent output edits are refused
+and preserved (control517). KiCad version and pcbnew/connectivity/serializer APIs
+pass in the revised wrapper with actual exit0. The archive remains unchanged:
+70a47643a9a6d89cca64579b5ef6bab5a290803ccc94ed9b9e170fb14c70b6bb.
+
+With storage fixed, source497/CAD515 shows one real ground open: RAM92/94 are
+stranded. Numeric inspection518 reports216/217 connections and two missing pads.
+Native Manifold ground reports0 errors, illustrating why independent filled CAD
+remains mandatory. No ignore/exclusion or clearance/neck rule was altered.
+A legal full-depth ground via search520 finds no conservative free site within
+the island; the same-layer bridge search521 leaves only those two ground pads
+in the available component. D12 trials505/524 are longer;506 finds no shortcuts.
+Restoring A9's top detour522/525 does not clear the open and is not adopted.
+
+Restoring BA1's whole middle top span526/527 clears all-rule DRC and restores217
+connections, but removes10.8 mm of tuning. Four partial models528 identify the
+first span as the closure. Restoring only that7.2 mm span529/530 retains the
+other3.6 mm and passes complete native physics/ground, all-rule CAD and all217
+numeric connections. It preserves byte1 8.033572 mm, matched byte0 and all pairs.
+Fresh source532/CAD533/Gerber534 is running before any promotion. Constant-length
+neck reshaping535 failed;536 targets the intended bend by coordinates and remains
+a separate proposal until complete checks. All barrel/pad/placement/peripheral
+assertions and runtime pins stay enforced. Fabrication readiness remains false.
+
+## Fully qualified constant-length ground neck (2026-10-10 UTC)
+
+Source532 / CAD533 / Gerber534 complete qualification (wrapper0), preserving
+byte1 8.033572 mm with command18.300328 mm as a checked fallback. Wider
+constant-length BA1 bend537 / direct CAD538 pass all217 connections and zero
+all-rule DRC. Fresh source540 / CAD541 / Gerber542 complete qualification0,
+retaining command12.450328 mm with the same byte1 and matched byte0/pairs.
+The source exits1 solely for two whole-bus matching failures. Native ground,
+numeric CAD, Gerbers, original barrels/placements and all assertions remain
+enforced. Read DDR_CONSTANT_NECK_TIMING_2026-10-10.md for the current entry.
+
+The native-pour isolation option is G350_GROUND_FILL_ISOLATED_WORKER=1. Block
+translation is G350_LENGTH_MOVE_BLOCKS=1; both are optional and preserve default
+behavior. Controls501 retain the rejected-ground failure. The constant-neck
+helper targets BA1 by G350_NECK_X/Y with minimum offset0.1; its executed copy,
+input513 and Shapely model are preserved in planning-ram-ground-repair-515-538.
+The model is a proposal guide, never final connectivity proof. All future
+geometry still requires fresh editable source, all-rule CAD and Gerber checks.
