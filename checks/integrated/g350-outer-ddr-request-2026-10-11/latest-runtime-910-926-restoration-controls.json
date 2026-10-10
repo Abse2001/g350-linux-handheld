@@ -1,0 +1,33 @@
+{
+  "manifest": "checks/integrated/g350-outer-ddr-request-2026-10-11/latest-runtime-910-926-manifest.json",
+  "destination": "/tmp/g350-outer-ddr-restoration-931/latest-runtime-910-926-manifest",
+  "allFreshFileHashesMatch": true,
+  "editedFixturePreserved": true,
+  "results": {
+    "archive": {
+      "code": 0,
+      "stdout": "Verified 269 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "fresh": {
+      "code": 0,
+      "stdout": "Verified 269 evidence members; restored 269\n",
+      "stderr": ""
+    },
+    "repeat": {
+      "code": 0,
+      "stdout": "Verified 269 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "inPlace": {
+      "code": 0,
+      "stdout": "Verified 269 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "editedRefused": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-outer-ddr-restoration-931/latest-runtime-910-926-manifest/.cloud-tools/runtime-outer-ddr-910/.tscircuit/autorouting-artifacts/am3352-g350-full-board-ground-preserving-clean-corners-replay-circuit-tsx-0bfbe7422e/subcircuit_source_group_0-phase-0-order-0-stage-0.pcb-trace-paths.json\n"
+    }
+  }
+}

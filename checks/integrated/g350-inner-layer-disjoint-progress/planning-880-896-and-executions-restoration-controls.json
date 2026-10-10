@@ -1,0 +1,39 @@
+{
+  "manifest": "checks/integrated/g350-inner-layer-disjoint-progress/planning-880-896-and-executions-manifest.json",
+  "freshDestination": "/tmp/g350-inner-layer-planning-restore-904",
+  "results": [
+    {
+      "label": "archive",
+      "actualExitCode": 0,
+      "stdout": "Verified 108 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh",
+      "actualExitCode": 0,
+      "stdout": "Verified 108 evidence members; restored 108\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat",
+      "actualExitCode": 0,
+      "stdout": "Verified 108 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "inplace",
+      "actualExitCode": 0,
+      "stdout": "Verified 108 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "label": "edited_refusal",
+      "actualExitCode": 1,
+      "editedFileSha256": "197218fed87c4b3f1ec9e964d4c6276f7cc0e4bf34dc6cee9985b62185e721d9",
+      "editedFilePreserved": true,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-inner-layer-planning-restore-904/dist/g350-ddr-ba1-disjoint-window-checked-883/candidate.circuit.json\n"
+    }
+  ],
+  "fabricationReady": false
+}

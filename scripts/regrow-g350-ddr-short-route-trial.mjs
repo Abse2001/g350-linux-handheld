@@ -24,7 +24,19 @@ assert.deepEqual(omit(d),omit(original))
 t.route=strip(structuredClone(d.route));delete t.trace_length
 const groups=j=>j.filter(e=>e.type==='source_bus'&&e.name?.startsWith('DDR_')&&e.source_trace_ids.length>=2).map(b=>{const lengths=j.filter(e=>e.type==='pcb_trace'&&b.source_trace_ids.includes(e.source_trace_id)).map(e=>ddrRouteLength(e.route));return {name:b.name,skewMm:Math.max(...lengths)-Math.min(...lengths),limitMm:b.max_length_skew}})
 const bus=baseline.find(e=>e.type==='source_bus'&&e.name==='DDR_BYTE1'),goalMm=Math.max(...baseline.filter(e=>e.type==='pcb_trace'&&bus.source_trace_ids.includes(e.source_trace_id)).map(e=>ddrRouteLength(e.route)))-.25
-const validator=createG350PlanarPlanningValidator(baseline),complete=()=>{const counts=validator.complete(c);for(const n of ['checkPcbTraceViaCounts','checkTracesAreContiguous','checkPcbRoutingConstraints','checkSourceTracesMatchPcbTraceThickness'])counts[n]=checks[n](c).length;assert(Object.values(counts).every(n=>n===0));return counts}
+const validator=createG350PlanarPlanningValidator(baseline)
+let validated=null
+const complete=()=>{
+ // A retained round previously ran the identical complete checks twice:
+ // before filling and again while persisting unchanged copper. Reuse results
+ // only when every serialized record still has the exact validated SHA.
+ const circuitSha256=createHash('sha256').update(JSON.stringify(c)).digest('hex')
+ if(validated?.circuitSha256===circuitSha256)return validated.counts
+ const counts=validator.complete(c)
+ for(const n of ['checkPcbTraceViaCounts','checkTracesAreContiguous','checkPcbRoutingConstraints','checkSourceTracesMatchPcbTraceThickness'])counts[n]=checks[n](c).length
+ assert(Object.values(counts).every(n=>n===0))
+ validated={circuitSha256,counts};return counts
+}
 complete()
 fs.mkdirSync(root)
 for(const p of ['scripts/regrow-g350-ddr-short-route-trial.mjs','scripts/lib/g350-full-board-length-tuning.mjs','scripts/lib/g350-ddr-planar-planning-validator.mjs','scripts/lib/g350-ddr-local-guard.mjs','scripts/lib/g350-ddr-physical-checks.mjs','scripts/lib/g350-locked-ground-fill.mjs','scripts/lib/g350-locked-ground-fill-worker.mjs'])fs.copyFileSync(p,root+'/'+p.replaceAll('/','__'))
@@ -37,7 +49,8 @@ const persist=()=>{
  assert.deepEqual([t.route[0],t.route.at(-1)],[original.route[0],original.route.at(-1)])
  const afterGroups=groups(c),retained=afterGroups.every((g,i)=>g.skewMm<=beforeGroups[i].skewMm+1e-7)&&Math.abs(ddrRouteLength(t.route)-goalMm)<1e-6
  fs.writeFileSync(root+'/'+(retained?'candidate':'unqualified-trial')+'.circuit.json',JSON.stringify(c,null,2)+'\n')
- fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:inputHash},donor:{path:donorPath,sha256:donorHash},signal:'DDR_D9',goalMm,afterMm:ddrRouteLength(t.route),progress,beforeGroups,groups:afterGroups,counts:complete(),allOriginalHolesEndpointsAndForeignRecordsExactlyPreserved:true,retained,requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n');return retained
+ const counts=complete()
+ fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:inputHash},donor:{path:donorPath,sha256:donorHash},signal:'DDR_D9',goalMm,afterMm:ddrRouteLength(t.route),progress,beforeGroups,groups:afterGroups,counts,validatedCircuitSha256:validated.circuitSha256,allOriginalHolesEndpointsAndForeignRecordsExactlyPreserved:true,retained,requiresFreshSourceAndIndependentQualification:true,fabricationReady:false},null,2)+'\n');return retained
 }
 for(let round=1;round<=rounds&&ddrRouteLength(t.route)<goalMm-.005;round++){
  const oldRoute=structuredClone(t.route),beforeMm=ddrRouteLength(t.route);let accepted=false

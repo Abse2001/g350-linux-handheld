@@ -10,7 +10,7 @@ if(worker)argv.shift()
 const [input,phaseInput,root,signal,deltaText,mode='refine',spanFirst='auto',targetLayer='same',endStubText='',startStubText='']=argv
 assert(input&&phaseInput&&root&&signal&&deltaText)
 const delta=Number(deltaText)
-assert(['DDR_D9','DDR_A13','DDR_D12','DDR_D15','DDR_A0','DDR_A6'].includes(signal))
+assert(['DDR_D9','DDR_A13','DDR_D12','DDR_D15','DDR_A0','DDR_A6','DDR_CSn0'].includes(signal))
 assert(Number.isFinite(delta)&&delta!==0&&Math.abs(delta)<=8)
 assert(spanFirst==='auto'||/^\d+(?::\d+)?$/.test(spanFirst))
 assert(['same','inner1','inner2','bottom','top-remove-boundary-vias'].includes(targetLayer))

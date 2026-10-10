@@ -4935,7 +4935,7 @@
     "scope": "Scoped native and independent checks on the current shaped power/strobe replay; historical routed fixtures were not rebuilt."
   },
   "currentToolchain": {
-    "tscircuit": "0.0.2759",
+    "tscircuit": "0.0.2819",
     "core": "0.0.2107",
     "capacityAutorouter": "0.0.962",
     "cli": "0.1.2258",
@@ -5153,6 +5153,7 @@
     "connectedDdrSignals": 49,
     "nativeBusSkewFailures": 2,
     "remaining": [
+      "Requested Top/Bottom-only DDR replan remains unsolved: only 4 of the 49 checked DDR traces currently use outer layers exclusively; new native BusLanes and guarded trials are rejected/unqualified.",
       "Native DDR matching: byte1 4.211624 mm and command/clock 4.410969 mm versus0.635 mm; byte0 passes 0.574882 mm",
       "Native 1.6 mm per transition is not delay: byte0 planar spread is 8 mm with 2\u20137 transitions; actual stackup/clock/package/via/impedance/coupling/return paths remain unqualified",
       "PDN/footprint/electrical qualification, Linux and measured original-shell fit"
@@ -5193,5 +5194,30 @@
     },
     "report": "cloud/RUNTIME_REFRESH_2026-10-09.md",
     "checksSha256": "1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc"
+  },
+  "requestedDdrOuterRouting": {
+    "status": "LATEST_RUNTIME_VERIFIED_DDR_OUTER_ONLY_NOT_SOLVED",
+    "requestedDdrLayers": [
+      "top",
+      "bottom"
+    ],
+    "boardLayers": 4,
+    "router": "public Core SOLVERS.BusLanesSolver and SOLVERS.BusLanesPipelineSolver",
+    "latestTscircuit": "0.0.2819",
+    "fallbackOuterOnlyDdrSignals": 4,
+    "requiredDdrSignals": 49,
+    "completeOuterOnlyCandidatePromoted": false,
+    "fabricationReady": false,
+    "summary": "checks/integrated/g350-outer-ddr-request-2026-10-11/summary.json",
+    "report": "cloud/DDR_OUTER_LAYER_REQUEST_2026-10-11.md"
+  },
+  "runtimeRefresh20261011": {
+    "tscircuit": "0.0.2819",
+    "core": "0.0.2107",
+    "cli": "0.1.2258",
+    "checks": "0.0.242",
+    "sourceNonMetadataRecordsExactlyPreserved": true,
+    "report": "cloud/DDR_OUTER_LAYER_REQUEST_2026-10-11.md",
+    "validation": "dist/g350-outer-ddr-runtime-validation-926/validation.json"
   }
 }

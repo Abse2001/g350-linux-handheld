@@ -1,3 +1,23 @@
+## Current request: DDR on Top/Bottom only (2026-10-11, Africa/Tripoli)
+
+The user now requires DDR signal wires on Top and Bottom only, while retaining
+four PCB layers, and asks for latest tscircuit plus public Bus Lanes. Runtime
+wrapper 0.0.2819 is installed/source-verified; reviewed Core 0.0.2107, CLI 0.1.2258,
+checks 0.0.242 and solver pins remain. Read cloud/DDR_OUTER_LAYER_REQUEST_2026-10-11.md
+and checks/integrated/g350-outer-ddr-request-2026-10-11/summary.json first.
+The last connected source836/KiCad837/Gerber838 is a protected fallback: only4/49
+DDR traces already use outer layers exclusively. It does not satisfy the new
+Top/Bottom-only request. New public BusLanes package/whole-bus attempts fail or
+time out; guarded partial plans914/918/919/925 and reset merge927 are rejected.
+No new candidate is promoted. Do not describe these trials as routed or checked.
+Rebuild package approaches and qualify all49 signals/all217 board connections,
+298 grounds, all numeric pads, native physical/manufacturing checks, every KiCad
+rule/severity and all-layer shorts before promotion. Do not weaken checks/pins.
+All frozen sources remain. fabricationReady=false; electrical timing and shell
+fit remain open. Existing checkouts are isolated; do not create a worktree.
+
+## Previous checked four-layer signal checkpoint (preserved fallback)
+
 # G350 board continuation
 
 Latest checked continuation (2026-10-10 UTC): use

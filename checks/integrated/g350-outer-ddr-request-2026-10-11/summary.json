@@ -1,0 +1,941 @@
+{
+  "status": "LATEST_RUNTIME_VERIFIED_DDR_OUTER_ONLY_NOT_SOLVED",
+  "latestTscircuit": "0.0.2819",
+  "core": "0.0.2107",
+  "cli": "0.1.2258",
+  "checks": "0.0.242",
+  "nativeChecksSha256": "1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc",
+  "runtimeValidation": "dist/g350-outer-ddr-runtime-validation-926/validation.json",
+  "requestedDdrLayers": [
+    "top",
+    "bottom"
+  ],
+  "boardLayers": 4,
+  "router": "public Core SOLVERS.BusLanesSolver and SOLVERS.BusLanesPipelineSolver",
+  "checkedFallback": "experiments/am3352-g350-full-board-ground-preserving-clean-corners-replay.circuit.tsx",
+  "checkedFallbackSummary": "checks/integrated/g350-clean-corners-forward-progress/summary.json",
+  "fallbackOuterOnlyDdrSignals": 4,
+  "requiredDdrSignals": 49,
+  "fallbackAllDdrConnected": 49,
+  "fallbackAllBoardConnectionsConnected": 217,
+  "fallbackNativeBusSkewFailures": 2,
+  "fallbackBusSkewsMm": {
+    "byte0": 0.5748821978834115,
+    "byte1": 4.211624256092122,
+    "commandClock": 4.410969224522944
+  },
+  "nativeSkewLimitMm": 0.635,
+  "completeOuterOnlyCandidatePromoted": false,
+  "fabricationReady": false,
+  "trials": [
+    {
+      "directory": "dist/g350-ddr-outer-only-bus-lanes-connectivity-911",
+      "execution.json": {
+        "code": null,
+        "signal": "SIGTERM",
+        "deadlineExceeded": true,
+        "elapsedSeconds": 150.21707990299998
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-byte0-bus-lanes-912",
+      "execution.json": {
+        "code": 2,
+        "signal": null,
+        "deadlineExceeded": false,
+        "elapsedSeconds": 12.517763795999999
+      },
+      "solver-report.json": {
+        "solved": false,
+        "failed": true,
+        "error": "No legal coupled corridor and package approaches",
+        "failureCode": "coupled_routing_failed"
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-byte1-bus-lanes-913",
+      "execution.json": {
+        "code": 2,
+        "signal": null,
+        "deadlineExceeded": false,
+        "elapsedSeconds": 17.284475285
+      },
+      "solver-report.json": {
+        "solved": false,
+        "failed": true,
+        "error": "No legal coupled corridor and package approaches",
+        "failureCode": "coupled_routing_failed"
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-guarded-bridges-914",
+      "report.json": {
+        "routed": 19,
+        "required": 49,
+        "complete": false,
+        "counts": {
+          "checkEachPcbTraceNonOverlapping": 2,
+          "checkViaPadClearance": 0,
+          "checkViaTraceClearance": 0,
+          "checkPcbTraceSelfShorts": 0,
+          "checkCopperToBoardEdgeClearance": 0,
+          "checkDifferentNetViaSpacing": 5,
+          "checkHoleTraceClearance": 0,
+          "checkPadTraceClearance": 0,
+          "checkViasInPads": 0,
+          "checkViasOffBoard": 0,
+          "checkPcbTracesOutOfBoard": 0,
+          "checkPcbTraceViaCounts": 0,
+          "checkTracesAreContiguous": 0,
+          "checkPcbRoutingConstraints": 0,
+          "checkSourceTracesMatchPcbTraceThickness": 0,
+          "manufacturing": 6
+        },
+        "physicalPassed": false,
+        "attempts": [
+          {
+            "name": "DDR_D5"
+          },
+          {
+            "name": "DDR_D11"
+          },
+          {
+            "name": "DDR_D14"
+          },
+          {
+            "name": "DDR_D13"
+          },
+          {
+            "name": "DDR_D0"
+          },
+          {
+            "name": "DDR_D10"
+          },
+          {
+            "name": "DDR_DQSn0"
+          },
+          {
+            "name": "DDR_D2"
+          },
+          {
+            "name": "DDR_DQM1"
+          },
+          {
+            "name": "DDR_DQS0"
+          },
+          {
+            "name": "DDR_D7"
+          },
+          {
+            "name": "DDR_D4"
+          },
+          {
+            "name": "DDR_D3"
+          },
+          {
+            "name": "DDR_DQSn1"
+          },
+          {
+            "name": "DDR_D12"
+          },
+          {
+            "name": "DDR_D15"
+          },
+          {
+            "name": "DDR_D9"
+          },
+          {
+            "name": "DDR_DQM0"
+          },
+          {
+            "name": "DDR_D1"
+          },
+          {
+            "name": "DDR_DQS1"
+          },
+          {
+            "name": "DDR_D8"
+          },
+          {
+            "name": "DDR_D6"
+          },
+          {
+            "name": "DDR_BA0"
+          },
+          {
+            "name": "DDR_A3"
+          },
+          {
+            "name": "DDR_A5"
+          },
+          {
+            "name": "DDR_A7"
+          },
+          {
+            "name": "DDR_BA2"
+          },
+          {
+            "name": "DDR_RESETn"
+          },
+          {
+            "name": "DDR_A0"
+          },
+          {
+            "name": "DDR_A13"
+          },
+          {
+            "name": "DDR_WEn"
+          },
+          {
+            "name": "DDR_A2"
+          },
+          {
+            "name": "DDR_RASn"
+          },
+          {
+            "name": "DDR_A8"
+          },
+          {
+            "name": "DDR_A6"
+          },
+          {
+            "name": "DDR_CSn0"
+          },
+          {
+            "name": "DDR_A12"
+          },
+          {
+            "name": "DDR_A4"
+          },
+          {
+            "name": "DDR_A14"
+          },
+          {
+            "name": "DDR_A10"
+          },
+          {
+            "name": "DDR_A11"
+          },
+          {
+            "name": "DDR_CK"
+          },
+          {
+            "name": "DDR_BA1"
+          },
+          {
+            "name": "DDR_CKn"
+          },
+          {
+            "name": "DDR_ODT"
+          },
+          {
+            "name": "DDR_A1"
+          },
+          {
+            "name": "DDR_CKE"
+          },
+          {
+            "name": "DDR_CASn"
+          },
+          {
+            "name": "DDR_A9"
+          }
+        ]
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-uncoupled-byte0-915",
+      "execution.json": {
+        "code": null,
+        "signal": "SIGTERM",
+        "deadlineExceeded": true,
+        "elapsedSeconds": 150.19880167099998
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-uncoupled-command-916",
+      "execution.json": {
+        "code": 2,
+        "signal": null,
+        "deadlineExceeded": false,
+        "elapsedSeconds": 3.167005277
+      },
+      "solver-report.json": {
+        "solved": false,
+        "failed": true,
+        "error": "Negotiated lane search exhausted without a complete route",
+        "failureCode": "no_planar_route"
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-uncoupled-all-917",
+      "execution.json": {
+        "code": 2,
+        "signal": null,
+        "deadlineExceeded": false,
+        "elapsedSeconds": 5.341756478000001
+      },
+      "solver-report.json": {
+        "solved": false,
+        "failed": true,
+        "error": "Negotiated lane search exhausted without a complete route",
+        "failureCode": "no_planar_route"
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-fine-command-first-918",
+      "report.json": {
+        "routed": 10,
+        "required": 49,
+        "complete": false,
+        "counts": {
+          "checkEachPcbTraceNonOverlapping": 10,
+          "checkViaPadClearance": 0,
+          "checkViaTraceClearance": 0,
+          "checkPcbTraceSelfShorts": 9,
+          "checkCopperToBoardEdgeClearance": 0,
+          "checkDifferentNetViaSpacing": 2,
+          "checkHoleTraceClearance": 0,
+          "checkPadTraceClearance": 0,
+          "checkViasInPads": 0,
+          "checkViasOffBoard": 0,
+          "checkPcbTracesOutOfBoard": 0,
+          "checkPcbTraceViaCounts": 0,
+          "checkTracesAreContiguous": 0,
+          "checkPcbRoutingConstraints": 0,
+          "checkSourceTracesMatchPcbTraceThickness": 0,
+          "manufacturing": 5
+        },
+        "physicalPassed": false,
+        "attempts": [
+          {
+            "name": "DDR_BA0"
+          },
+          {
+            "name": "DDR_A3"
+          },
+          {
+            "name": "DDR_A5"
+          },
+          {
+            "name": "DDR_A7"
+          },
+          {
+            "name": "DDR_BA2"
+          },
+          {
+            "name": "DDR_RESETn"
+          },
+          {
+            "name": "DDR_A0"
+          },
+          {
+            "name": "DDR_A13"
+          },
+          {
+            "name": "DDR_WEn"
+          },
+          {
+            "name": "DDR_A2"
+          },
+          {
+            "name": "DDR_RASn"
+          },
+          {
+            "name": "DDR_A8"
+          },
+          {
+            "name": "DDR_A6"
+          },
+          {
+            "name": "DDR_CSn0"
+          },
+          {
+            "name": "DDR_A12"
+          },
+          {
+            "name": "DDR_A4"
+          },
+          {
+            "name": "DDR_A14"
+          },
+          {
+            "name": "DDR_A10"
+          },
+          {
+            "name": "DDR_A11"
+          },
+          {
+            "name": "DDR_CK"
+          },
+          {
+            "name": "DDR_BA1"
+          },
+          {
+            "name": "DDR_CKn"
+          },
+          {
+            "name": "DDR_ODT"
+          },
+          {
+            "name": "DDR_A1"
+          },
+          {
+            "name": "DDR_CKE"
+          },
+          {
+            "name": "DDR_CASn"
+          },
+          {
+            "name": "DDR_A9"
+          },
+          {
+            "name": "DDR_D5"
+          },
+          {
+            "name": "DDR_D11"
+          },
+          {
+            "name": "DDR_D14"
+          },
+          {
+            "name": "DDR_D13"
+          },
+          {
+            "name": "DDR_D0"
+          },
+          {
+            "name": "DDR_D10"
+          },
+          {
+            "name": "DDR_DQSn0"
+          },
+          {
+            "name": "DDR_D2"
+          },
+          {
+            "name": "DDR_DQM1"
+          },
+          {
+            "name": "DDR_DQS0"
+          },
+          {
+            "name": "DDR_D7"
+          },
+          {
+            "name": "DDR_D4"
+          },
+          {
+            "name": "DDR_D3"
+          },
+          {
+            "name": "DDR_DQSn1"
+          },
+          {
+            "name": "DDR_D12"
+          },
+          {
+            "name": "DDR_D15"
+          },
+          {
+            "name": "DDR_D9"
+          },
+          {
+            "name": "DDR_DQM0"
+          },
+          {
+            "name": "DDR_D1"
+          },
+          {
+            "name": "DDR_DQS1"
+          },
+          {
+            "name": "DDR_D8"
+          },
+          {
+            "name": "DDR_D6"
+          }
+        ]
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-flexible-package-escapes-919",
+      "report.json": {
+        "routed": 20,
+        "required": 49,
+        "complete": false,
+        "counts": {
+          "checkEachPcbTraceNonOverlapping": 8,
+          "checkViaPadClearance": 0,
+          "checkViaTraceClearance": 0,
+          "checkPcbTraceSelfShorts": 6,
+          "checkCopperToBoardEdgeClearance": 0,
+          "checkDifferentNetViaSpacing": 6,
+          "checkHoleTraceClearance": 0,
+          "checkPadTraceClearance": 0,
+          "checkViasInPads": 0,
+          "checkViasOffBoard": 0,
+          "checkPcbTracesOutOfBoard": 0,
+          "checkPcbTraceViaCounts": 0,
+          "checkTracesAreContiguous": 0,
+          "checkPcbRoutingConstraints": 0,
+          "checkSourceTracesMatchPcbTraceThickness": 0,
+          "manufacturing": 6
+        },
+        "physicalPassed": false,
+        "attempts": [
+          {
+            "name": "DDR_D5"
+          },
+          {
+            "name": "DDR_D11"
+          },
+          {
+            "name": "DDR_D14"
+          },
+          {
+            "name": "DDR_D13"
+          },
+          {
+            "name": "DDR_D0"
+          },
+          {
+            "name": "DDR_D10"
+          },
+          {
+            "name": "DDR_DQSn0"
+          },
+          {
+            "name": "DDR_D2"
+          },
+          {
+            "name": "DDR_DQM1"
+          },
+          {
+            "name": "DDR_DQS0"
+          },
+          {
+            "name": "DDR_D7"
+          },
+          {
+            "name": "DDR_D4"
+          },
+          {
+            "name": "DDR_D3"
+          },
+          {
+            "name": "DDR_DQSn1"
+          },
+          {
+            "name": "DDR_D12"
+          },
+          {
+            "name": "DDR_D15"
+          },
+          {
+            "name": "DDR_D9"
+          },
+          {
+            "name": "DDR_DQM0"
+          },
+          {
+            "name": "DDR_D1"
+          },
+          {
+            "name": "DDR_DQS1"
+          },
+          {
+            "name": "DDR_D8"
+          },
+          {
+            "name": "DDR_D6"
+          },
+          {
+            "name": "DDR_BA0"
+          },
+          {
+            "name": "DDR_A3"
+          },
+          {
+            "name": "DDR_A5"
+          },
+          {
+            "name": "DDR_A7"
+          },
+          {
+            "name": "DDR_BA2"
+          },
+          {
+            "name": "DDR_RESETn"
+          },
+          {
+            "name": "DDR_A0"
+          },
+          {
+            "name": "DDR_A13"
+          },
+          {
+            "name": "DDR_WEn"
+          },
+          {
+            "name": "DDR_A2"
+          },
+          {
+            "name": "DDR_RASn"
+          },
+          {
+            "name": "DDR_A8"
+          },
+          {
+            "name": "DDR_A6"
+          },
+          {
+            "name": "DDR_CSn0"
+          },
+          {
+            "name": "DDR_A12"
+          },
+          {
+            "name": "DDR_A4"
+          },
+          {
+            "name": "DDR_A14"
+          },
+          {
+            "name": "DDR_A10"
+          },
+          {
+            "name": "DDR_A11"
+          },
+          {
+            "name": "DDR_CK"
+          },
+          {
+            "name": "DDR_BA1"
+          },
+          {
+            "name": "DDR_CKn"
+          },
+          {
+            "name": "DDR_ODT"
+          },
+          {
+            "name": "DDR_A1"
+          },
+          {
+            "name": "DDR_CKE"
+          },
+          {
+            "name": "DDR_CASn"
+          },
+          {
+            "name": "DDR_A9"
+          }
+        ]
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-flexible-bus-lanes-920",
+      "execution.json": {
+        "code": null,
+        "signal": "SIGTERM",
+        "deadlineExceeded": true,
+        "elapsedSeconds": 150.24473480499998
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-peripheral-clearance-host-921",
+      "report.json": {
+        "counts": {
+          "checkEachPcbTraceNonOverlapping": 98,
+          "checkViaPadClearance": 0,
+          "checkViaTraceClearance": 0,
+          "checkPcbTraceSelfShorts": 0,
+          "checkCopperToBoardEdgeClearance": 0,
+          "checkDifferentNetViaSpacing": 0,
+          "checkHoleTraceClearance": 0,
+          "checkPadTraceClearance": 0,
+          "checkViasInPads": 0,
+          "checkViasOffBoard": 0,
+          "checkPcbTracesOutOfBoard": 0,
+          "checkTracesAreContiguous": 0,
+          "checkPcbRoutingConstraints": 0,
+          "checkSourceTracesMatchPcbTraceThickness": 0,
+          "manufacturing": 104
+        },
+        "physicalOpenGeometryPassed": false
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-peripheral-clearance-host-922",
+      "report.json": {
+        "counts": {
+          "checkEachPcbTraceNonOverlapping": 0,
+          "checkViaPadClearance": 0,
+          "checkViaTraceClearance": 0,
+          "checkPcbTraceSelfShorts": 0,
+          "checkCopperToBoardEdgeClearance": 0,
+          "checkDifferentNetViaSpacing": 0,
+          "checkHoleTraceClearance": 0,
+          "checkPadTraceClearance": 0,
+          "checkViasInPads": 0,
+          "checkViasOffBoard": 0,
+          "checkPcbTracesOutOfBoard": 0,
+          "checkTracesAreContiguous": 0,
+          "checkPcbRoutingConstraints": 0,
+          "checkSourceTracesMatchPcbTraceThickness": 0,
+          "manufacturing": 0
+        },
+        "physicalOpenGeometryPassed": true
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-pad-first-preparation-923",
+      "execution.json": {
+        "code": 2,
+        "signal": null,
+        "deadlineExceeded": false,
+        "elapsedSeconds": 4.288509863
+      },
+      "solver-report.json": {
+        "solved": false,
+        "failed": false,
+        "error": "No collision-free local dogbone assignment",
+        "failureCode": "preparation_exception",
+        "preparedEscapes": 0
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-pad-first-shifted-preparation-924",
+      "execution.json": {
+        "code": 2,
+        "signal": null,
+        "deadlineExceeded": false,
+        "elapsedSeconds": 4.386152871
+      },
+      "solver-report.json": {
+        "solved": false,
+        "failed": false,
+        "error": "No collision-free local dogbone assignment",
+        "failureCode": "preparation_exception",
+        "preparedEscapes": 0
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-shifted-conservative-bridges-925",
+      "report.json": {
+        "routed": 21,
+        "required": 49,
+        "complete": false,
+        "counts": {
+          "checkEachPcbTraceNonOverlapping": 11,
+          "checkViaPadClearance": 0,
+          "checkViaTraceClearance": 1,
+          "checkPcbTraceSelfShorts": 6,
+          "checkCopperToBoardEdgeClearance": 0,
+          "checkDifferentNetViaSpacing": 0,
+          "checkHoleTraceClearance": 0,
+          "checkPadTraceClearance": 0,
+          "checkViasInPads": 0,
+          "checkViasOffBoard": 0,
+          "checkPcbTracesOutOfBoard": 0,
+          "checkPcbTraceViaCounts": 0,
+          "checkTracesAreContiguous": 0,
+          "checkPcbRoutingConstraints": 0,
+          "checkSourceTracesMatchPcbTraceThickness": 0,
+          "manufacturing": 15
+        },
+        "physicalPassed": false,
+        "attempts": [
+          {
+            "name": "DDR_D5"
+          },
+          {
+            "name": "DDR_D11"
+          },
+          {
+            "name": "DDR_D14"
+          },
+          {
+            "name": "DDR_D13"
+          },
+          {
+            "name": "DDR_D0"
+          },
+          {
+            "name": "DDR_D10"
+          },
+          {
+            "name": "DDR_DQSn0"
+          },
+          {
+            "name": "DDR_D2"
+          },
+          {
+            "name": "DDR_DQM1"
+          },
+          {
+            "name": "DDR_DQS0"
+          },
+          {
+            "name": "DDR_D7"
+          },
+          {
+            "name": "DDR_D4"
+          },
+          {
+            "name": "DDR_D3"
+          },
+          {
+            "name": "DDR_DQSn1"
+          },
+          {
+            "name": "DDR_D12"
+          },
+          {
+            "name": "DDR_D15"
+          },
+          {
+            "name": "DDR_D9"
+          },
+          {
+            "name": "DDR_DQM0"
+          },
+          {
+            "name": "DDR_D1"
+          },
+          {
+            "name": "DDR_DQS1"
+          },
+          {
+            "name": "DDR_D8"
+          },
+          {
+            "name": "DDR_D6"
+          },
+          {
+            "name": "DDR_BA0"
+          },
+          {
+            "name": "DDR_A3"
+          },
+          {
+            "name": "DDR_A5"
+          },
+          {
+            "name": "DDR_A7"
+          },
+          {
+            "name": "DDR_BA2"
+          },
+          {
+            "name": "DDR_RESETn"
+          },
+          {
+            "name": "DDR_A0"
+          },
+          {
+            "name": "DDR_A13"
+          },
+          {
+            "name": "DDR_WEn"
+          },
+          {
+            "name": "DDR_A2"
+          },
+          {
+            "name": "DDR_RASn"
+          },
+          {
+            "name": "DDR_A8"
+          },
+          {
+            "name": "DDR_A6"
+          },
+          {
+            "name": "DDR_CSn0"
+          },
+          {
+            "name": "DDR_A12"
+          },
+          {
+            "name": "DDR_A4"
+          },
+          {
+            "name": "DDR_A14"
+          },
+          {
+            "name": "DDR_A10"
+          },
+          {
+            "name": "DDR_A11"
+          },
+          {
+            "name": "DDR_CK"
+          },
+          {
+            "name": "DDR_BA1"
+          },
+          {
+            "name": "DDR_CKn"
+          },
+          {
+            "name": "DDR_ODT"
+          },
+          {
+            "name": "DDR_A1"
+          },
+          {
+            "name": "DDR_CKE"
+          },
+          {
+            "name": "DDR_CASn"
+          },
+          {
+            "name": "DDR_A9"
+          }
+        ]
+      }
+    },
+    {
+      "directory": "dist/g350-ddr-outer-only-connected-reset-trial-927",
+      "report.json": {
+        "attempts": [
+          {
+            "name": "DDR_RESETn",
+            "counts": {
+              "checkEachPcbTraceNonOverlapping": 13,
+              "checkViaPadClearance": 0,
+              "checkViaTraceClearance": 2,
+              "checkPcbTraceSelfShorts": 0,
+              "checkCopperToBoardEdgeClearance": 0,
+              "checkDifferentNetViaSpacing": 1,
+              "checkHoleTraceClearance": 0,
+              "checkPadTraceClearance": 0,
+              "checkViasInPads": 0,
+              "checkViasOffBoard": 0,
+              "checkPcbTracesOutOfBoard": 0,
+              "checkPcbTraceViaCounts": 0,
+              "checkTracesAreContiguous": 0,
+              "checkPcbRoutingConstraints": 0,
+              "checkSourceTracesMatchPcbTraceThickness": 0,
+              "manufacturing": 38
+            },
+            "physicalPassed": false
+          }
+        ]
+      }
+    }
+  ],
+  "previousInnerLayerCandidateRejected": {
+    "source": 898,
+    "independentCad": 899,
+    "casnRestorePreflight": 909,
+    "missingRamGroundPins": [
+      92,
+      94
+    ],
+    "nativeGroundZeroDidNotProveIndependentConnectivity": true,
+    "notPromoted": true
+  }
+}

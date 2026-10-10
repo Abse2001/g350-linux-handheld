@@ -1,0 +1,33 @@
+{
+  "manifest": "checks/integrated/g350-outer-ddr-request-2026-10-11/rejected-inner-ground-897-909-manifest.json",
+  "destination": "/tmp/g350-outer-ddr-restoration-931/rejected-inner-ground-897-909-manifest",
+  "allFreshFileHashesMatch": true,
+  "editedFixturePreserved": true,
+  "results": {
+    "archive": {
+      "code": 0,
+      "stdout": "Verified 783 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "fresh": {
+      "code": 0,
+      "stdout": "Verified 783 evidence members; restored 783\n",
+      "stderr": ""
+    },
+    "repeat": {
+      "code": 0,
+      "stdout": "Verified 783 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "inPlace": {
+      "code": 0,
+      "stdout": "Verified 783 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "editedRefused": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-outer-ddr-restoration-931/rejected-inner-ground-897-909-manifest/dist/g350-ddr-inner-layer-casn-checked-restoration-907/candidate.circuit.json\n"
+    }
+  }
+}
