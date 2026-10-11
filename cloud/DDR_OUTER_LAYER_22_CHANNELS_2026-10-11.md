@@ -51,3 +51,10 @@ archives restore every completed checkpoint with file hashes, fresh/repeat/
 in-place controls and edited-file refusal. Start sources cloud/env.sh and
 verifies the latest wrapper, frozen fallback and checked22-channel source/CAD
 proofs. Save/publish the prepared environment separately from board fabrication.
+
+Final bounded addition1056 preserves every checked22 path and hole, attempts
+all27 missing signals with hard copper reservations and exact planning
+clearances, and finds no additional path. All16 physical checks remain zero;
+exit2 correctly reflects the unmet49-channel requirement. This is a routing
+blocker for the current paths, not a proof about all possible placements.
+Seventeen closed-run archives now preserve the completed continuation.

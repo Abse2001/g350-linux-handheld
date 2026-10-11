@@ -85,6 +85,7 @@ python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-dd
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/exact-clearance-and-independent-cad-diagnostics-1035-1037-manifest.json
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042-manifest.json
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/ram270-checked22-and-public-bus-trials-1049-1055-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/ram270-locked22-final-addition-trial-1056-manifest.json
 python3 - <<'VERIFY_CHECKED_PARTIAL_DDR'
 import json,hashlib
 from pathlib import Path

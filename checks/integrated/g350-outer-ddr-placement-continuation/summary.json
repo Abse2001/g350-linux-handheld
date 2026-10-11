@@ -185,6 +185,16 @@
       },
       "files": 44,
       "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-checked22-and-public-bus-trials-1049-1055-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-locked22-final-addition-trial-1056-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-locked22-final-addition-trial-1056.tar.gz",
+        "bytes": 2825670,
+        "sha256": "d55ed232bed8ebd995654256f318a0ecc7a51b964d03a8c15448a2a273e9c586"
+      },
+      "files": 13,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-locked22-final-addition-trial-1056-restoration.json"
     }
   ],
   "liveTrialsAtInitialSave": [
@@ -257,7 +267,7 @@
       "expectedIncompleteCheckerExitCode": 1
     }
   },
-  "closedNewTrialsThrough": 1055,
+  "closedNewTrialsThrough": 1056,
   "liveAt18Save": [
     1043
   ],
@@ -289,5 +299,13 @@
   "ram270FullExternalReferencesQualified": false,
   "liveAt22Save": [
     1056
-  ]
+  ],
+  "finalAdditionTrial": {
+    "report": "dist/g350-ddr-outer-only-ram270-locked22-additional-handoffs-1056/report.json",
+    "actualExitCode": 2,
+    "missingSignalsAttempted": 27,
+    "newPaths": 0,
+    "checked22Preserved": true
+  },
+  "currentlyLiveTrials": []
 }
