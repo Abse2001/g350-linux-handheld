@@ -13,8 +13,9 @@ assert(Number.isFinite(viaCostMm)&&viaCostMm>0&&viaCostMm<=10)
 assert(Number.isFinite(heuristicWeight)&&heuristicWeight>=1&&heuristicWeight<=2)
 assert(typeof guardTerminalOwnerCopper==='boolean')
 assert(typeof pruneDominatedViaStates==='boolean')
-// .254 permits the stricter full annulus spacing required by the board's
-// different-net via checker. This only increases the planning exclusion.
+// Copper spacing and drill spacing are distinct: this optional annulus
+// margin may be stricter than the source's0.15 mm copper minimum. The
+// physical drill exclusion below independently retains0.254 mm hole spacing.
 assert(viaCopperClearance>=.1016&&viaCopperClearance<=.254)
 assert(routingLayers.length>=2&&routingLayers.length<=4&&new Set(routingLayers).size===routingLayers.length&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
 const layers=routingLayers,layerCount=layers.length,width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=viaCostMm

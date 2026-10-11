@@ -1,0 +1,33 @@
+{
+  "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-and-joint-inner-references-manifest.json",
+  "destination": "/tmp/g350-outer-restoration-new-1",
+  "allFreshFileHashesMatch": true,
+  "editedFixturePreserved": true,
+  "results": {
+    "archive": {
+      "code": 0,
+      "stdout": "Verified 69 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "fresh": {
+      "code": 0,
+      "stdout": "Verified 69 evidence members; restored 69\n",
+      "stderr": ""
+    },
+    "repeat": {
+      "code": 0,
+      "stdout": "Verified 69 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "inPlace": {
+      "code": 0,
+      "stdout": "Verified 69 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    "editedRefused": {
+      "code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py\", line 45, in <module>\n    assert target.is_file() and digest(target) == row['sha256'], (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Preserving differing local evidence: /tmp/g350-outer-restoration-new-1/dist/g350-ddr-outer-only-centre-facing-inner-vref-1019/bridge.executed.mjs\n"
+    }
+  }
+}

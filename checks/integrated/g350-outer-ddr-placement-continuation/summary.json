@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_JOINT_PACKAGE_ESCAPES_PASS_DDR_INTERCONNECT_UNFINISHED",
+  "status": "18 checked local Top/Bottom DDR channels;31 missing; no board promotion",
   "ramPlacement": {
     "x": 0,
     "y": 6,
@@ -105,6 +105,56 @@
       },
       "files": 27,
       "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/centre-facing-fanouts-and-rejected-carriers-1006-1009-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/closed-bus-and-13-channel-progress-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/closed-bus-and-13-channel-progress.tar.gz",
+        "bytes": 15618747,
+        "sha256": "626a277a49f20aedc4cdaf7511199dd2eb99aa19befe9f79dc43fc967dd8ae31"
+      },
+      "files": 75,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/closed-bus-and-13-channel-progress-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-and-joint-inner-references-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-and-joint-inner-references.tar.gz",
+        "bytes": 18024806,
+        "sha256": "3844d72e986dc12e585e6fa60d62805bfbbcb7a7492041671b1c4145cf7c8b06"
+      },
+      "files": 69,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-and-joint-inner-references-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-kicad-dsn-and-router-diagnostics-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-kicad-dsn-and-router-diagnostics.tar.gz",
+        "bytes": 3218818,
+        "sha256": "f1277e972151e817831b0d522f2fbb416f4392eb02c2baf14355daabe6a95ad4"
+      },
+      "files": 37,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/checked17-kicad-dsn-and-router-diagnostics-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/exact-clearance-and-independent-cad-diagnostics-1035-1037-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/exact-clearance-and-independent-cad-diagnostics-1035-1037.tar.gz",
+        "bytes": 3550029,
+        "sha256": "c8f5020668c7dae422b4d96a67f1eec0fb6a41e4d8d7f30bcbcf638a35c15724"
+      },
+      "files": 20,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/exact-clearance-and-independent-cad-diagnostics-1035-1037-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042.tar.gz",
+        "bytes": 11952561,
+        "sha256": "a7be4d689c28e59ab6b556135831fc28facf14c20ec6ffce62ffb8a7fc095e44"
+      },
+      "files": 59,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042-restoration.json"
     }
   ],
   "liveTrialsAtInitialSave": [
@@ -135,5 +185,50 @@
     1007,
     1010,
     1011
+  ],
+  "checkedLocalCompleteDdrCarriers": 18,
+  "missingLocalDdrCarriers": 31,
+  "checkedLocalSource": "dist/g350-ddr-outer-only-checked18-joint-reservations-1040/physical-with-all-local-reservations.circuit.json",
+  "checkedLocalSourceSha256": "5e4abfcc38440ead3d86949b4e120cbb87cc3b6e3b2529fbe1c6d8e12c651fa5",
+  "checkedLocalReport": "dist/g350-ddr-outer-only-checked18-joint-reservations-1040/report.json",
+  "independentKicadDdrConnectivity": {
+    "path": "dist/g350-ddr-outer-only-checked18-kicad-planning-export-1042/ddr-connectivity.json",
+    "board": "dist/g350-ddr-outer-only-checked18-kicad-planning-export-1042/board.kicad_pcb",
+    "connected": 18,
+    "required": 49,
+    "missing": 31,
+    "expectedIncompleteCheckerExitCode": 1
+  },
+  "innerReferenceProofs": {
+    "13DdrPlus18PowerAnd21Ground": "dist/g350-ddr-outer-only-locked13-inner-ground-1026/report.json",
+    "referenceOnly18Power21Ground2Vref": "dist/g350-ddr-outer-only-centre-facing-vref-both-inner-1024/report.json",
+    "17DdrPlus41ReferencesQualified": false
+  },
+  "numericPortCounts": {
+    "requiredActiveSourcePorts": 1032,
+    "allSourcePhysicalPortsIncludingNC": 1161,
+    "physicalCopperLandRecords": 1165,
+    "additionalNonPlatedGuideHoles": 2
+  },
+  "fullTimingQualified": false,
+  "fullSourceQualified": false,
+  "fullCadQualified": false,
+  "preservedChecked17": {
+    "checkedLocalCompleteDdrCarriers": 17,
+    "missingLocalDdrCarriers": 32,
+    "checkedLocalSource": "dist/g350-ddr-outer-only-checked17-joint-reservations-1027/physical-with-all-local-reservations.circuit.json",
+    "checkedLocalSourceSha256": "cdd16946e83d33d9d4a2cb4b8dd832f4d273e398aa969a27c66a853938ece1f5",
+    "checkedLocalReport": "dist/g350-ddr-outer-only-checked17-joint-reservations-1027/report.json",
+    "independentKicadDdrConnectivity": {
+      "path": "dist/g350-ddr-outer-only-checked17-kicad-planning-export-1028/ddr-connectivity.json",
+      "connected": 17,
+      "required": 49,
+      "missing": 32,
+      "expectedIncompleteCheckerExitCode": 1
+    }
+  },
+  "closedNewTrialsThrough": 1042,
+  "liveAt18Save": [
+    1043
   ]
 }

@@ -76,3 +76,31 @@ assert hashlib.sha256(Path('dist/g350-ddr-ground-preserving-clean-corners-source
 assert json.loads(Path('design-status.json').read_text())['fabricationReady'] is False
 print('Joint49 CPU /91 RAM fanout evidence restored. DDR interconnect/reference/timing/source/CAD qualification is unfinished. Read cloud/DDR_OUTER_LAYER_PLACEMENT_CONTINUATION.md before routing.')
 VERIFY_JOINT_PACKAGE_ESCAPE_PROGRESS
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/closed-bus-and-13-channel-progress-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/checked17-and-joint-inner-references-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/checked17-kicad-dsn-and-router-diagnostics-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/exact-clearance-and-independent-cad-diagnostics-1035-1037-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042-manifest.json
+python3 - <<'VERIFY_CHECKED_PARTIAL_DDR'
+import json,hashlib
+from pathlib import Path
+s=json.loads(Path('checks/integrated/g350-outer-ddr-placement-continuation/summary.json').read_text())
+p=Path(s['checkedLocalSource']);assert hashlib.sha256(p.read_bytes()).hexdigest()==s['checkedLocalSourceSha256']
+a=json.loads(p.read_text());r=json.loads(Path(s['checkedLocalReport']).read_text())
+assert r['physicalPassed'] and all(v==0 for v in r['counts'].values())
+assert r['physicallyCheckedCompleteOuterChannels']==s['checkedLocalCompleteDdrCarriers']==18
+assert r['missingDdrChannels']==s['missingLocalDdrCarriers']==31 and r['allMissingCpuRamAnd42ReferenceFanoutsReserved']
+names={e['source_trace_id']:e['name']for e in a if e['type']=='source_trace' and e.get('name','').startswith('DDR_')};assert len(names)==49
+selected=set(r['selectedNames']);traces=[e for e in a if e['type']=='pcb_trace' and names.get(e.get('source_trace_id'))in selected and e['route'][0].get('start_pcb_port_id') and e['route'][-1].get('end_pcb_port_id')]
+assert len(traces)==18 and {names[t['source_trace_id']]for t in traces}==selected
+for t in traces:
+ for point in t['route']:
+  assert point['layer']in ['top','bottom'] if point['route_type']=='wire' else point['from_layer']in ['top','bottom']and point['to_layer']in ['top','bottom']
+board=Path(s['independentKicadDdrConnectivity']['board']);c=json.loads((board.parent/'ddr-connectivity.json').read_text())
+assert hashlib.sha256(board.read_bytes()).hexdigest()==c['boardSha256']
+assert c['requiredConnections']==49 and c['connectedConnections']==18 and c['disconnectedConnections']==31 and c['missingPadMemberships']==31
+assert not s['fullSourceQualified'] and not s['fullTimingQualified'] and not s['fullCadQualified'] and s['fabricationReady']is False
+assert json.loads(Path('design-status.json').read_text())['fabricationReady']is False
+print('Restored18 checked local Top/Bottom DDR connections;31 remain missing. Read cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md. Timing/full-board/order qualification remains open.')
+VERIFY_CHECKED_PARTIAL_DDR

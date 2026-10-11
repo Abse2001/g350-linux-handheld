@@ -11,5 +11,17 @@
     "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-centre-facing-append.log",
     "testedChangedRestoreAndAssertions": true
   },
-  "finalScriptSha256": "8409b241ae922a0434b1fc1529d8e0ba955d125db53f96d13199f8cf927be89d"
+  "finalScriptSha256": "c7929e413b3715e682d9645b20fe40243c9f85779cca686a946ea54136a60495",
+  "full17ChannelValidation": {
+    "exitCode": 0,
+    "scriptSha256": "4e8ce7dbdb9d18e5ecedd3e09c59087023e18da5291f977b5193a6621db638c2",
+    "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-17-channel-full-validation.log",
+    "allElevenArchiveRestorationsAndActual17RouteAssertionsExecuted": true
+  },
+  "checked18ChangedTailValidation": {
+    "exitCode": 0,
+    "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-18-channel-changed-tail.log",
+    "changedRestorationsAndActual18SourceRouteCadAssertionsTested": true,
+    "fullPreceding17ScriptExitCode": 0
+  }
 }

@@ -1,3 +1,7 @@
+Latest partial checkpoint: trial1040 checks18/49 Top/Bottom DDR channels,31 missing. Fresh KiCad1042 confirms18. Read the latest section of cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md; prior17-channel notes below are preserved history. All board/timing qualification remains open; fabricationReady=false.
+
+Latest partial interconnect result: read cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md. Trial1027 qualifies17 local Top/Bottom channels;32 remain missing. Older milestones below are preserved history.
+
 # G350 Top/Bottom DDR placement and escape continuation
 
 This is experimental routing work. No new board is promoted and

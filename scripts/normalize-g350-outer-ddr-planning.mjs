@@ -14,7 +14,7 @@ const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'),sha=
 assert.equal(hash('node_modules/@tscircuit/checks/dist/index.js'),'1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc')
 const base=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
 const ddr=new Map(base.filter(e=>e.type==='source_trace'&&e.name?.startsWith('DDR_')).map(e=>[e.source_trace_id,e.name]));assert.equal(ddr.size,49)
-const traces=base.filter(e=>e.type==='pcb_trace'&&ddr.has(e.source_trace_id));assert.equal(traces.length,49)
+const traces=base.filter(e=>e.type==='pcb_trace'&&ddr.has(e.source_trace_id));assert(traces.length>0&&traces.length<=49);assert.equal(new Set(traces.map(t=>t.source_trace_id)).size,traces.length)
 const ids=new Set(traces.map(t=>t.pcb_trace_id)),outside=e=>!(['pcb_trace','pcb_via'].includes(e.type)&&ids.has(e.pcb_trace_id))
 const output=structuredClone(base.filter(outside)),changes=[];let maximumCoordinateChangeMm=0
 for(const old of traces){
@@ -37,4 +37,4 @@ const parent=new Map(),find=x=>{if(!parent.has(x))parent.set(x,x);if(parent.get(
 for(const s of base.filter(e=>e.type==='source_trace'))for(const p of [...s.connected_source_port_ids,...s.connected_source_net_ids])parent.set(find(s.source_trace_id),find(p))
 const c=structuredClone(output),details=Object.fromEntries([...g350DdrPhysicalChecks,'checkPcbTracesOutOfBoard','checkPcbTraceViaCounts','checkTracesAreContiguous','checkPcbRoutingConstraints','checkSourceTracesMatchPcbTraceThickness'].map(n=>[n,checks[n](c)]));details.manufacturing=checkG350ViaTrackManufacturingClearance(c.map(e=>e.type==='pcb_trace'?{...e,source_trace_id:find(e.source_trace_id)}:e))
 const counts=Object.fromEntries(Object.entries(details).map(([k,v])=>[k,v.length])),physicalPassed=Object.values(counts).every(v=>v===0)
-fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:sha},canonicalCoordinates,maximumCoordinateChangeMm,changes,counts,details,physicalPassed,allForeignRecordsPreserved:true,planningOnly:true,missingRamReferences:true,sourceMatchingGroundAndCadUnqualified:true,fabricationReady:false},null,2)+'\n');console.log(JSON.stringify({counts,physicalPassed}));process.exitCode=physicalPassed?0:2
+fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:sha},canonicalCoordinates,maximumCoordinateChangeMm,changes,counts,details,physicalPassed,allForeignRecordsPreserved:true,physicalDdrCarriers:traces.length,missingDdrCarriers:49-traces.length,planningOnly:true,missingRamReferences:true,sourceMatchingGroundAndCadUnqualified:true,fabricationReady:false},null,2)+'\n');console.log(JSON.stringify({counts,physicalPassed}));process.exitCode=physicalPassed?0:2

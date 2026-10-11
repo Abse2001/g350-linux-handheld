@@ -6,10 +6,12 @@ import {SOLVERS} from '@tscircuit/core'
 import * as checks from '@tscircuit/checks'
 import {g350DdrPhysicalChecks,checkG350ViaTrackManufacturingClearance} from './lib/g350-ddr-physical-checks.mjs'
 const [input,reference,phase,root]=process.argv.slice(2);assert(input&&reference&&phase&&root&&!fs.existsSync(root))
-const stepCap=Number(process.env.G350_BUS_PUBLIC_STEP_CAP??20000);assert(Number.isInteger(stepCap)&&stepCap>=20000&&stepCap<=1000000)
+const stepCap=Number(process.env.G350_BUS_PUBLIC_STEP_CAP??20000);assert(Number.isInteger(stepCap)&&stepCap>=20000&&stepCap<=4000010)
 const interiorRectangleOnly=process.env.G350_BUS_INTERIOR_RECTANGLE_ONLY??'0';assert(['0','1'].includes(interiorRectangleOnly))
 const disjointBusProjection=process.env.G350_BUS_DISJOINT_CONSTRAINT_PROJECTION??'0';assert(['0','1'].includes(disjointBusProjection))
 const ramReference=process.env.G350_BUS_RAM_ESCAPES_REFERENCE
+const maxSearchIterations=Number(process.env.G350_BUS_MAX_SEARCH_ITERATIONS??200000)
+assert(Number.isInteger(maxSearchIterations)&&maxSearchIterations>=200000&&maxSearchIterations<=1000000)
 const maxLaneExpansions=process.env.G350_BUS_MAX_LANE_EXPANSIONS===undefined?undefined:Number(process.env.G350_BUS_MAX_LANE_EXPANSIONS)
 assert(maxLaneExpansions===undefined||(Number.isInteger(maxLaneExpansions)&&maxLaneExpansions>=20000&&maxLaneExpansions<=1000000))
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex'), hashes=[input,reference,phase].map(hash)
@@ -101,10 +103,10 @@ fs.writeFileSync(root+'/preflight.json',JSON.stringify({hashes,ramReference,ramR
 // 4,000 expansions and dense grid search allows 1,000,000. A blanket20,000
 // cap prematurely rejected dense searches. This only changes search effort;
 // every geometry, matching and subsequent native/source/CAD gate is unchanged.
-const solver=new SOLVERS.BusLanesPipelineSolver(problem,{maxSearchIterations:200000,...(maxLaneExpansions===undefined?{}:{maxLaneIterations:maxLaneExpansions})})
+const solver=new SOLVERS.BusLanesPipelineSolver(problem,{maxSearchIterations,...(maxLaneExpansions===undefined?{}:{maxLaneIterations:maxLaneExpansions})})
 let steps=0,exception=null
 try{while(!solver.solved&&!solver.failed&&steps<stepCap){solver.step();steps++;fs.writeFileSync(root+'/progress.json',JSON.stringify({steps,stepCap,phase:solver.phase,solved:solver.solved,failed:solver.failed,error:solver.error??null,stats:solver.stats,planningOnly:true,fabricationReady:false},null,2)+'\n')}}catch(e){exception=e.message}
-const report={steps,stepCap,maxLaneExpansions:maxLaneExpansions??'public solver default: visibility4000 / dense1000000',ramReference,ramReferenceSha,ramReferenceFanouts,interiorRegionProof,constraintProjection,aggregatePublicIterationLimit:solver.MAX_ITERATIONS,stepCapReached:steps===stepCap&&!solver.solved&&!solver.failed,phase:solver.phase,solved:solver.solved,failed:solver.failed,error:exception??solver.error??null,failureCode:solver.failureCode??null,stats:solver.stats,onlyPublicStepAndSolvedOutputUsed:true,sourceNativeMatchingGroundAndCadUnqualified:true,fabricationReady:false}
+const report={steps,stepCap,maxSearchIterations,maxLaneExpansions:maxLaneExpansions??'public solver default: visibility4000 / dense1000000',ramReference,ramReferenceSha,ramReferenceFanouts,interiorRegionProof,constraintProjection,aggregatePublicIterationLimit:solver.MAX_ITERATIONS,stepCapReached:steps===stepCap&&!solver.solved&&!solver.failed,phase:solver.phase,solved:solver.solved,failed:solver.failed,error:exception??solver.error??null,failureCode:solver.failureCode??null,stats:solver.stats,onlyPublicStepAndSolvedOutputUsed:true,sourceNativeMatchingGroundAndCadUnqualified:true,fabricationReady:false}
 if(solver.solved&&!exception)fs.writeFileSync(root+'/solved-planning.simple-route.json',JSON.stringify(solver.getOutput(),null,2)+'\n')
 assert.deepEqual([input,reference,phase].map(hash),hashes)
 if(ramReference)assert.equal(hash(ramReference),ramReferenceSha)

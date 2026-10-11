@@ -1,3 +1,25 @@
+Latest partial checkpoint: trial1040 checks18/49 Top/Bottom DDR channels,31 missing. Fresh KiCad1042 confirms18. Read the latest section of cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md; prior17-channel notes below are preserved history. All board/timing qualification remains open; fabricationReady=false.
+
+## Current partial DDR interconnect checkpoint (2026-10-11 UTC)
+
+Read cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md and the outer-placement
+summary first. Trial1027 retains17 complete CPU-to-RAM DDR paths on Top/Bottom,
+with32 missing. All16 local native physical/manufacturing/width/via-count/
+contiguity/constraint checks are zero, including remaining package fanouts and
+42 RAM reference reservations. Fresh KiCad1028 independently confirms17/49;
+its connectivity checker correctly exits1 for32 missing. This is a partial
+planning checkpoint, not a fresh editable source or a qualified board.
+RAM remains `(0,6)`, rotation90; PCB stays four layers. Trial1026 proves13 actual
+DDR paths compatible with18 power and21 ground approaches on inner layers;
+1024 proves41 reference approaches without actual DDR carriers. Do not combine
+these proofs into a claimed17-plus41 connected board. ZQ/peripheral/GND rebuild,
+full source replay, matching and independent all-rule CAD/Gerbers remain open.
+Preserve source836/KiCad837/Gerber838, hardware sources, all pins/native patch
+and pre-existing local edits. There are1032 required active source ports;
+1161 physical source ports include NC,1165 copper lands and2 NPTH guides.
+Keep fabricationReady=false. No routing is accepted from failed/incomplete
+public Bus Lanes output. The existing checkout is isolated; no worktree needed.
+
 ## Current local package milestone (2026-10-11 UTC)
 
 Read cloud/DDR_OUTER_LAYER_PLACEMENT_CONTINUATION.md and
