@@ -1,3 +1,7 @@
+Latest partial result: RAM `(0,6)`, rotation270; trial1054 checks22/49 Top/Bottom DDR channels and fresh KiCad1055 confirms22. Read cloud/DDR_OUTER_LAYER_22_CHANNELS_2026-10-11.md.27 remain missing; references/timing/full-board qualification are open. Earlier90-degree proofs are history. fabricationReady=false.
+
+Subsequent trials1043–1048 preserve a different checked18-channel option. All25 distinct supplied curves were searched exhaustively in their conflict graph (33 nodes, no budget exhaustion); maximum compatible count remains18. D11 replaces D14 in that alternative. This is a result for those curves, not a proof about board routability. The preserved1040/KiCad1042 checkpoint remains current.
+
 ## Latest checked partial result:18 outer-layer DDR channels
 
 Trial1036 corrects the planning-only raster margin while retaining actual

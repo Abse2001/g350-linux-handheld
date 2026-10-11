@@ -11,7 +11,7 @@
     "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-centre-facing-append.log",
     "testedChangedRestoreAndAssertions": true
   },
-  "finalScriptSha256": "c7929e413b3715e682d9645b20fe40243c9f85779cca686a946ea54136a60495",
+  "finalScriptSha256": "6d26160056c1fdf4cbb5e7685ea94b251ca4618e55c22502f504234ab2763c14",
   "full17ChannelValidation": {
     "exitCode": 0,
     "scriptSha256": "4e8ce7dbdb9d18e5ecedd3e09c59087023e18da5291f977b5193a6621db638c2",
@@ -23,5 +23,17 @@
     "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-18-channel-changed-tail.log",
     "changedRestorationsAndActual18SourceRouteCadAssertionsTested": true,
     "fullPreceding17ScriptExitCode": 0
+  },
+  "latest2821FullStartValidation": {
+    "exitCode": 0,
+    "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-2821-full-validation.log",
+    "scriptSha256": "a33c519fa044578d9d3994253f48c862b237b1a0745024085d61d772cec8a6d7",
+    "all15OuterContinuationArchivesAndFreshLatestSourceAnd18LocalChannelsVerified": true
+  },
+  "checked22ChangedTailValidation": {
+    "exitCode": 0,
+    "log": "checks/integrated/g350-outer-ddr-placement-continuation/start-22-channel-changed-tail.log",
+    "changedRestoreAnd22ActualSourceRouteCadAssertionsTested": true,
+    "fullPreceding2821ScriptExitCode": 0
   }
 }

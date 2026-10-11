@@ -1,9 +1,9 @@
 {
-  "status": "18 checked local Top/Bottom DDR channels;31 missing; no board promotion",
+  "status": "22 checked local Top/Bottom DDR channels at RAM270;27 missing; no board promotion",
   "ramPlacement": {
     "x": 0,
     "y": 6,
-    "rotation": 90
+    "rotation": 270
   },
   "boardLayers": 4,
   "requiredDdrWireLayers": [
@@ -22,7 +22,7 @@
   "wholeBoardSourceTimingGroundAndIndependentCadUnqualified": true,
   "protectedConnectedSource": "dist/g350-ddr-ground-preserving-clean-corners-source-836/compiled.circuit.json",
   "protectedConnectedSourceSha256": "c30da726262185a29e5a7c05009a97553ae454147c81a4d2f4c6d0632298d936",
-  "runtimeWrapper": "0.0.2819",
+  "runtimeWrapper": "0.0.2821",
   "reviewedChecksSha256": "1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc",
   "allClosedArchivesRestorationVerified": true,
   "archives": [
@@ -155,6 +155,36 @@
       },
       "files": 59,
       "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/alternative-byte-paths-and-exact-selection-1043-1048-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/alternative-byte-paths-and-exact-selection-1043-1048.tar.gz",
+        "bytes": 7794206,
+        "sha256": "5c9f159d28de9256a2cd06523a8c878982b202c83cdf3753052eecf1808c178b"
+      },
+      "files": 29,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/alternative-byte-paths-and-exact-selection-1043-1048-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/latest-wrapper-2821-full-source-replay-1044-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/latest-wrapper-2821-full-source-replay-1044.tar.gz",
+        "bytes": 3656736,
+        "sha256": "c5c8b7894ac0bd2e9e1170085572c5f3df98cb69eac3aa9ec05dbaec2165795b"
+      },
+      "files": 123,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/latest-wrapper-2821-full-source-replay-1044-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-checked22-and-public-bus-trials-1049-1055-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-checked22-and-public-bus-trials-1049-1055.tar.gz",
+        "bytes": 10338104,
+        "sha256": "ef8ef8b4aab016104aa17c1410dcbbe3cf43daf6a11a65b0c8a047801c0c5d51"
+      },
+      "files": 44,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/ram270-checked22-and-public-bus-trials-1049-1055-restoration.json"
     }
   ],
   "liveTrialsAtInitialSave": [
@@ -186,17 +216,17 @@
     1010,
     1011
   ],
-  "checkedLocalCompleteDdrCarriers": 18,
-  "missingLocalDdrCarriers": 31,
-  "checkedLocalSource": "dist/g350-ddr-outer-only-checked18-joint-reservations-1040/physical-with-all-local-reservations.circuit.json",
-  "checkedLocalSourceSha256": "5e4abfcc38440ead3d86949b4e120cbb87cc3b6e3b2529fbe1c6d8e12c651fa5",
-  "checkedLocalReport": "dist/g350-ddr-outer-only-checked18-joint-reservations-1040/report.json",
+  "checkedLocalCompleteDdrCarriers": 22,
+  "missingLocalDdrCarriers": 27,
+  "checkedLocalSource": "dist/g350-ddr-outer-only-ram270-checked22-joint-1054/physical-with-all-local-reservations.circuit.json",
+  "checkedLocalSourceSha256": "5c34ae674ce0c6aedf66a8e4736f3bbff72dfaa806af9e66be6cae529a882ca0",
+  "checkedLocalReport": "dist/g350-ddr-outer-only-ram270-checked22-joint-1054/report.json",
   "independentKicadDdrConnectivity": {
-    "path": "dist/g350-ddr-outer-only-checked18-kicad-planning-export-1042/ddr-connectivity.json",
-    "board": "dist/g350-ddr-outer-only-checked18-kicad-planning-export-1042/board.kicad_pcb",
-    "connected": 18,
+    "path": "dist/g350-ddr-outer-only-ram270-checked22-kicad-export-1055/ddr-connectivity.json",
+    "board": "dist/g350-ddr-outer-only-ram270-checked22-kicad-export-1055/board.kicad_pcb",
+    "connected": 22,
     "required": 49,
-    "missing": 31,
+    "missing": 27,
     "expectedIncompleteCheckerExitCode": 1
   },
   "innerReferenceProofs": {
@@ -227,8 +257,37 @@
       "expectedIncompleteCheckerExitCode": 1
     }
   },
-  "closedNewTrialsThrough": 1042,
+  "closedNewTrialsThrough": 1055,
   "liveAt18Save": [
     1043
+  ],
+  "alternativeConflictGraphProof": {
+    "path": "dist/g350-ddr-outer-only-exact-alternative-conflict-selection-1048/report.json",
+    "candidateCurves": 25,
+    "checkedCompatible": 18,
+    "searchNodes": 33,
+    "exhausted": false,
+    "scope": "Supplied fixed curves only; no general routability proof"
+  },
+  "latestWrapperFullSourceReplay": "dist/g350-ddr-latest-wrapper-2821-source-replay-1044/runtime-validation.json",
+  "preservedChecked18": {
+    "checkedLocalCompleteDdrCarriers": 18,
+    "missingLocalDdrCarriers": 31,
+    "checkedLocalSource": "dist/g350-ddr-outer-only-checked18-joint-reservations-1040/physical-with-all-local-reservations.circuit.json",
+    "checkedLocalSourceSha256": "5e4abfcc38440ead3d86949b4e120cbb87cc3b6e3b2529fbe1c6d8e12c651fa5",
+    "checkedLocalReport": "dist/g350-ddr-outer-only-checked18-joint-reservations-1040/report.json",
+    "independentKicadDdrConnectivity": {
+      "path": "dist/g350-ddr-outer-only-checked18-kicad-planning-export-1042/ddr-connectivity.json",
+      "board": "dist/g350-ddr-outer-only-checked18-kicad-planning-export-1042/board.kicad_pcb",
+      "connected": 18,
+      "required": 49,
+      "missing": 31,
+      "expectedIncompleteCheckerExitCode": 1
+    }
+  },
+  "innerReferenceProofsApplyToRamRotation": 90,
+  "ram270FullExternalReferencesQualified": false,
+  "liveAt22Save": [
+    1056
   ]
 }

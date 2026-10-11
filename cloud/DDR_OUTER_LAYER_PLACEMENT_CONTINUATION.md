@@ -1,3 +1,5 @@
+Latest partial result: RAM `(0,6)`, rotation270; trial1054 checks22/49 Top/Bottom DDR channels and fresh KiCad1055 confirms22. Read cloud/DDR_OUTER_LAYER_22_CHANNELS_2026-10-11.md.27 remain missing; references/timing/full-board qualification are open. Earlier90-degree proofs are history. fabricationReady=false.
+
 Latest partial checkpoint: trial1040 checks18/49 Top/Bottom DDR channels,31 missing. Fresh KiCad1042 confirms18. Read the latest section of cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md; prior17-channel notes below are preserved history. All board/timing qualification remains open; fabricationReady=false.
 
 Latest partial interconnect result: read cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md. Trial1027 qualifies17 local Top/Bottom channels;32 remain missing. Older milestones below are preserved history.

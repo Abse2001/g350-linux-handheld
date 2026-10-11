@@ -32,7 +32,12 @@ for e in circuit:
     if e['type'] == 'pcb_smtpad' and e.get('shape') == 'circle':
         ax.add_patch(Circle((e['x'], e['y']), e['radius'], facecolor='#dfb758', edgecolor='none', zorder=3))
 ax.set(xlim=(-10, 10), ylim=(-2, 29), xlabel='mm', ylabel='mm'); ax.set_aspect('equal'); ax.grid(alpha=.13)
-ax.text(-9, 26.8, 'AM3352', fontsize=10, color='#444'); ax.text(-9, 6, 'RAM (0, 6), 90°', fontsize=9, color='#444')
+ram_sources = {e['source_component_id'] for e in circuit if e['type'] == 'source_component' and e.get('name') == 'U_RAM'}
+ram_parts = [e for e in circuit if e['type'] == 'pcb_component' and e.get('source_component_id') in ram_sources]
+assert len(ram_parts) == 1
+ram = ram_parts[0]
+ax.text(-9, 26.8, 'AM3352', fontsize=10, color='#444')
+ax.text(-9, ram['center']['y'], f"RAM ({ram['center']['x']:g}, {ram['center']['y']:g}), {ram['rotation']:g}°", fontsize=9, color='#444')
 ax.set_title(f'G350 DDR routing progress: {len(names)} / 49 local channels\nTop = red · Bottom = blue · Gray = fixed copper / reserved fanouts', fontsize=11, pad=14)
 fig.text(.5, .025, f'EXPERIMENTAL — {49-len(names)} channels missing; source, timing and full CAD DRC unfinished.', ha='center', fontsize=8, color='#8b2f24')
 fig.tight_layout(rect=(0, .045, 1, 1)); fig.savefig(output); plt.close(fig)

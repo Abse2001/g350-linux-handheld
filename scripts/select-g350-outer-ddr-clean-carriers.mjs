@@ -9,6 +9,8 @@ const [input,jointPath,root]=process.argv.slice(2)
 assert(input&&jointPath&&root&&!fs.existsSync(root))
 const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex')
 const inputSha=hash(input),jointSha=hash(jointPath)
+const selectionMode=process.env.G350_DDR_CONFLICT_SELECTION??'greedy';assert(['greedy','exact'].includes(selectionMode))
+const graphSearch=[]
 assert.equal(hash('node_modules/@tscircuit/checks/dist/index.js'),'1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc')
 const base=JSON.parse(fs.readFileSync(input)).filter(e=>!e.type.includes('error'))
 const joint=JSON.parse(fs.readFileSync(jointPath)).filter(e=>!e.type.includes('error'))
@@ -61,10 +63,26 @@ let keep=new Set(ids),result=qualify(keep);const history=[]
 for(let round=0;round<4;round++){
  history.push({round,carriers:keep.size,counts:result.counts})
  if(Object.values(result.counts).every(n=>n===0))break
- const {edges,invalid}=conflicts(result,keep),remaining=new Set([...keep].filter(id=>!invalid.has(id))),selected=new Set()
+ const {edges,invalid}=conflicts(result,keep),eligible=[...keep].filter(id=>!invalid.has(id)),remaining=new Set(eligible);let selected=new Set()
  while(remaining.size){
   const best=[...remaining].sort((a,b)=>[...edges.get(a)].filter(id=>remaining.has(id)).length-[...edges.get(b)].filter(id=>remaining.has(id)).length||a.localeCompare(b))[0]
   selected.add(best);remaining.delete(best);for(const id of edges.get(best))remaining.delete(id)
+ }
+ if(selectionMode==='exact'){
+  assert(eligible.length<=30,'Bound exact search to30 candidate paths')
+  let best=new Set(selected),visited=0,limited=false
+  function visit(available,chosen){
+   if(++visited>1000000){limited=true;return}
+   if(chosen.length+available.length<=best.size)return
+   if(!available.length){best=new Set(chosen);return}
+   const active=new Set(available),degree=id=>[...edges.get(id)].filter(n=>active.has(n)).length
+   const isolated=available.filter(id=>degree(id)===0)
+   if(isolated.length){const singles=new Set(isolated);visit(available.filter(id=>!singles.has(id)),[...chosen,...isolated]);return}
+   const pivot=[...available].sort((a,b)=>degree(b)-degree(a)||a.localeCompare(b))[0]
+   visit(available.filter(id=>id!==pivot&&!edges.get(pivot).has(id)),[...chosen,pivot])
+   visit(available.filter(id=>id!==pivot),chosen)
+  }
+  visit(eligible,[]);selected=best;graphSearch.push({round,eligible:eligible.length,invalid:[...invalid],visited,limited,selected:selected.size,scope:'Only supplied candidate conflict graph; no routability proof'})
  }
  assert(selected.size<keep.size,'Selection must reduce actual conflicts')
  keep=selected;result=qualify(keep)
@@ -80,5 +98,5 @@ assert.equal(hash(input),inputSha);assert.equal(hash(jointPath),jointSha)
 fs.writeFileSync(root+'/partial-planning.circuit.json',JSON.stringify(result.circuit,null,2)+'\n')
 fs.writeFileSync(root+'/physical-with-all-local-reservations.circuit.json',JSON.stringify(result.physical,null,2)+'\n')
 const selectedNames=[...keep].map(id=>names.get(byId.get(id).source_trace_id))
-fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:inputSha},jointReference:{path:jointPath,sha256:jointSha},history,counts:result.counts,details:result.details,selectedNames,physicallyCheckedCompleteOuterChannels:passed?keep.size:0,required:49,missingDdrChannels:49-keep.size,allMissingCpuRamAnd42ReferenceFanoutsReserved:true,unchangedSelectedCopperAndAllForeignRecords:true,physicalPassed:passed,wholeBoardSourceReferenceGroundMatchingAndCadUnqualified:true,fabricationReady:false},null,2)+'\n')
+fs.writeFileSync(root+'/report.json',JSON.stringify({input:{path:input,sha256:inputSha},jointReference:{path:jointPath,sha256:jointSha},selectionMode,graphSearch,history,counts:result.counts,details:result.details,selectedNames,physicallyCheckedCompleteOuterChannels:passed?keep.size:0,required:49,missingDdrChannels:49-keep.size,allMissingCpuRamAnd42ReferenceFanoutsReserved:true,unchangedSelectedCopperAndAllForeignRecords:true,physicalPassed:passed,wholeBoardSourceReferenceGroundMatchingAndCadUnqualified:true,fabricationReady:false},null,2)+'\n')
 console.log(JSON.stringify({selectedNames,counts:result.counts,physicalPassed:passed,missing:49-keep.size}));process.exitCode=passed&&keep.size?0:2

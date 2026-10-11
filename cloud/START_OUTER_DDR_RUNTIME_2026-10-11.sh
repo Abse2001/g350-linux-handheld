@@ -34,12 +34,14 @@ bash scripts/setup-g350-routing-tools.sh
 python3 scripts/verify-g350-routing-tools.py
 
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-request-2026-10-11/latest-runtime-910-926-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/latest-wrapper-2821-full-source-replay-1044-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/alternative-byte-paths-and-exact-selection-1043-1048-manifest.json
 python3 - <<'VERIFY_LATEST_OUTER_RUNTIME'
 import hashlib,json
 from pathlib import Path
-assert json.loads(Path('node_modules/tscircuit/package.json').read_text())['version']=='0.0.2819'
+assert json.loads(Path('node_modules/tscircuit/package.json').read_text())['version']=='0.0.2821'
 assert hashlib.sha256(Path('node_modules/@tscircuit/checks/dist/index.js').read_bytes()).hexdigest()=='1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc'
-p=Path('.cloud-tools/runtime-outer-ddr-910/dist/latest-wrapper-source')
+p=Path('dist/g350-ddr-latest-wrapper-2821-source-replay-1044')
 a=json.loads((p/'compiled.circuit.json').read_text());b=json.loads(Path('dist/g350-ddr-ground-preserving-clean-corners-source-836/compiled.circuit.json').read_text())
 assert [e for e in a if e['type']!='source_project_metadata']==[e for e in b if e['type']!='source_project_metadata']
 r=json.loads((p/'result.json').read_text());assert r['code']==1 and not r['forcedTimeout'] and r['selectedPhaseFinished'] and r['freshCompiledSource'] and r['sourceDefinitionsUnchanged']
@@ -82,6 +84,7 @@ python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-dd
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/checked17-kicad-dsn-and-router-diagnostics-manifest.json
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/exact-clearance-and-independent-cad-diagnostics-1035-1037-manifest.json
 python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/checked18-and-corrected-grid-progress-1036-1042-manifest.json
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/ram270-checked22-and-public-bus-trials-1049-1055-manifest.json
 python3 - <<'VERIFY_CHECKED_PARTIAL_DDR'
 import json,hashlib
 from pathlib import Path
@@ -89,18 +92,18 @@ s=json.loads(Path('checks/integrated/g350-outer-ddr-placement-continuation/summa
 p=Path(s['checkedLocalSource']);assert hashlib.sha256(p.read_bytes()).hexdigest()==s['checkedLocalSourceSha256']
 a=json.loads(p.read_text());r=json.loads(Path(s['checkedLocalReport']).read_text())
 assert r['physicalPassed'] and all(v==0 for v in r['counts'].values())
-assert r['physicallyCheckedCompleteOuterChannels']==s['checkedLocalCompleteDdrCarriers']==18
-assert r['missingDdrChannels']==s['missingLocalDdrCarriers']==31 and r['allMissingCpuRamAnd42ReferenceFanoutsReserved']
+assert r['physicallyCheckedCompleteOuterChannels']==s['checkedLocalCompleteDdrCarriers']==22
+assert r['missingDdrChannels']==s['missingLocalDdrCarriers']==27 and r['allMissingCpuRamAnd42ReferenceFanoutsReserved']
 names={e['source_trace_id']:e['name']for e in a if e['type']=='source_trace' and e.get('name','').startswith('DDR_')};assert len(names)==49
 selected=set(r['selectedNames']);traces=[e for e in a if e['type']=='pcb_trace' and names.get(e.get('source_trace_id'))in selected and e['route'][0].get('start_pcb_port_id') and e['route'][-1].get('end_pcb_port_id')]
-assert len(traces)==18 and {names[t['source_trace_id']]for t in traces}==selected
+assert len(traces)==22 and {names[t['source_trace_id']]for t in traces}==selected
 for t in traces:
  for point in t['route']:
   assert point['layer']in ['top','bottom'] if point['route_type']=='wire' else point['from_layer']in ['top','bottom']and point['to_layer']in ['top','bottom']
 board=Path(s['independentKicadDdrConnectivity']['board']);c=json.loads((board.parent/'ddr-connectivity.json').read_text())
 assert hashlib.sha256(board.read_bytes()).hexdigest()==c['boardSha256']
-assert c['requiredConnections']==49 and c['connectedConnections']==18 and c['disconnectedConnections']==31 and c['missingPadMemberships']==31
+assert c['requiredConnections']==49 and c['connectedConnections']==22 and c['disconnectedConnections']==27 and c['missingPadMemberships']==27
 assert not s['fullSourceQualified'] and not s['fullTimingQualified'] and not s['fullCadQualified'] and s['fabricationReady']is False
 assert json.loads(Path('design-status.json').read_text())['fabricationReady']is False
-print('Restored18 checked local Top/Bottom DDR connections;31 remain missing. Read cloud/DDR_OUTER_LAYER_17_CHANNELS_2026-10-11.md. Timing/full-board/order qualification remains open.')
+print('Restored22 checked local Top/Bottom DDR connections;27 remain missing. Read cloud/DDR_OUTER_LAYER_22_CHANNELS_2026-10-11.md. Timing/full-board/order qualification remains open.')
 VERIFY_CHECKED_PARTIAL_DDR
