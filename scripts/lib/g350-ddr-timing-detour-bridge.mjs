@@ -7,11 +7,15 @@ import assert from 'node:assert/strict'
 
 // Conservative two-to-four-layer search for manual handoffs. Native planar
 // phases and independent physical/source checks remain required.
-export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false,startTerminalLayers,goalTerminalLayers,viaCostMm=2,heuristicWeight=1.5}){
+export function routeGuardedOuterBridge({connection,shapes,searchBounds,seconds=30,gridMm=.02,maxVias=4,viaGrid=.02,overlapPenalty=2,routingLayers=['top','bottom'],viaCopperClearance=.1016,primaryTerminalLayer=false,rasterGuardMm,guardNonterminalOwnVias=false,guardTerminalOwnerCopper=false,pruneDominatedViaStates=false,startTerminalLayers,goalTerminalLayers,viaCostMm=2,heuristicWeight=1.5}){
 assert(Number.isFinite(overlapPenalty)&&overlapPenalty>0&&overlapPenalty<=100)
 assert(Number.isFinite(viaCostMm)&&viaCostMm>0&&viaCostMm<=10)
 assert(Number.isFinite(heuristicWeight)&&heuristicWeight>=1&&heuristicWeight<=2)
-assert(viaCopperClearance>=.1016&&viaCopperClearance<=.2)
+assert(typeof guardTerminalOwnerCopper==='boolean')
+assert(typeof pruneDominatedViaStates==='boolean')
+// .254 permits the stricter full annulus spacing required by the board's
+// different-net via checker. This only increases the planning exclusion.
+assert(viaCopperClearance>=.1016&&viaCopperClearance<=.254)
 assert(routingLayers.length>=2&&routingLayers.length<=4&&new Set(routingLayers).size===routingLayers.length&&routingLayers.every(l=>['top','inner1','inner2','bottom'].includes(l)))
 const layers=routingLayers,layerCount=layers.length,width=.1016,clearance=.1016,land=.4572,drill=.254,viaCost=viaCostMm
 assert([.0125,.02,.025,.04].includes(gridMm));assert(seconds>0&&seconds<=60)
@@ -60,7 +64,10 @@ function routeConnection(c,step,penalty=0){
    const actualTerminalVia=s.hole&&s.owner===c.name&&(Math.hypot(s.x-start.x,s.y-start.y)<1e-8||Math.hypot(s.x-goal.x,s.y-goal.y)<1e-8)
    // A retained own barrel that is not this leg's terminal must not bypass
    // the added length. Keep historical callers unchanged unless requested.
-   const terminalContact=s.owner===c.name&&(!guardNonterminalOwnVias||!s.hole||actualTerminalVia)
+   // Supplied package stubs must not be re-entered farther along the route.
+   // Allow the local copper junction only inside the terminal annulus.
+   const nearTerminal=Math.min(Math.hypot(p.x-start.x,p.y-start.y),Math.hypot(p.x-goal.x,p.y-goal.y))<=land/2+width/2+1e-9
+   const terminalContact=s.owner===c.name&&(!guardNonterminalOwnVias||!s.hole||actualTerminalVia)&&(!guardTerminalOwnerCopper||(!s.pad||actualTerminalPad)&&(s.kind!=='segment'||nearTerminal))
    if(!s.viaOnly&&!terminalContact&&d<width/2+clearance+guard)for(const l of s.layers){
     if(s.soft)softCost[layers.indexOf(l)][i]+=penalty*(s.softWeight??1)
     else blocked[layers.indexOf(l)][i]=1
@@ -87,7 +94,11 @@ function routeConnection(c,step,penalty=0){
   const state=Math.floor(id/N),i=id%N,l=state%layerCount,count=Math.floor(state/layerCount),ix=i%nx,iy=Math.floor(i/nx)
   if(i===gi&&goalLayers.includes(layers[l])){finish=id;break}
   if(++expanded%50000===0&&performance.now()-begun>seconds*1000)return {error:'manual bridge timeout',expanded}
-  const relax=(next,cost)=>{const g=item.g+cost;if(g+1e-9<distances[next]){distances[next]=g;parents[next]=id;heap.push(next,g+heuristicWeight*heuristic(next%N),g)}}
+  const relax=(next,cost)=>{const g=item.g+cost;
+   // At identical XY/layer, a cheaper path using fewer vias has at least
+   // the same remaining search capacity. Discard costly resource loops.
+   if(pruneDominatedViaStates){const ns=Math.floor(next/N),nl=ns%layerCount,nc=Math.floor(ns/layerCount),ni=next%N;for(let k=0;k<nc;k++)if(distances[(k*layerCount+nl)*N+ni]<=g+1e-9)return}
+   if(g+1e-9<distances[next]){distances[next]=g;parents[next]=id;heap.push(next,g+heuristicWeight*heuristic(next%N),g)}}
   for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]]){
    if(ix+dx<0||ix+dx>=nx||iy+dy<0||iy+dy>=ny)continue
    const next=i+dx+dy*nx;if(!blocked[l][next])relax(state*N+next,step*(dx&&dy?Math.SQRT2:1)+softCost[l][next])

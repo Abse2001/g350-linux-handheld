@@ -1,3 +1,23 @@
+## Current local package milestone (2026-10-11 UTC)
+
+Read cloud/DDR_OUTER_LAYER_PLACEMENT_CONTINUATION.md and
+checks/integrated/g350-outer-ddr-placement-continuation/summary.json first.
+RAM `(0,6)`, rotation90, has jointly checked49 CPU and91 RAM local escapes:
+native physical/manufacturing/width/via-count/constraint/edge checks all zero.
+These are local fanouts, not49 CPU-to-RAM channels or a connected board.
+Trial1005 is the checked joint reference;1000 repairs only ODT's CPU approach;
+1004 is the open input with explicit removed branches requiring reconstruction.
+Manual1006 finds49 paths but fails physical checks. Public dual-package Bus
+Lanes1007 is initially running; central-aisle fanouts1008 also pass every local
+physical/manufacturing check. Inspect later execution reports before promotion. Preserve four layers, Top/Bottom DDR signal wires,
+all source bus/pair limits, reviewed pins/native patch and frozen hardware sources.
+Source836/KiCad837/Gerber838 remains the connected fallback, with inner DDR and
+two matching failures. No new board is promoted; fabricationReady=false.
+Do not treat missing power/ground/reference/LCD branches as complete. Require
+fresh editable source, all217 connections/298 grounds/1032 numeric pads, matching,
+every KiCad rule/severity and all-layer shorts before promotion. The existing
+checkout is isolated; do not create a worktree. Older sections preserve history.
+
 ## Current request: DDR on Top/Bottom only (2026-10-11, Africa/Tripoli)
 
 The user now requires DDR signal wires on Top and Bottom only, while retaining

@@ -46,3 +46,33 @@ r=json.loads((p/'result.json').read_text());assert r['code']==1 and not r['force
 assert json.loads(Path('design-status.json').read_text())['fabricationReady'] is False
 print('Latest tscircuit wrapper verified; requested Top/Bottom DDR remains unsolved. Preserve the connected fallback and read the new continuation report.')
 VERIFY_LATEST_OUTER_RUNTIME
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/bus-and-cpu-recovery-967-980-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/cpu-corridor-recovery-957-966-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/joint-package-physical-progress-1001-1005-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/near-cpu-preconditions-and-odt-repair-995-1000-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/ram-placement-and-escapes-945-956-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/reference-recovery-and-rejected-routes-981-994-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/rejected-preconditions-and-plans-933-944-manifest.json
+
+python3 scripts/restore-g350-routing-evidence.py checks/integrated/g350-outer-ddr-placement-continuation/centre-facing-fanouts-and-rejected-carriers-1006-1009-manifest.json
+
+python3 - <<'VERIFY_JOINT_PACKAGE_ESCAPE_PROGRESS'
+import hashlib,json
+from pathlib import Path
+summary=json.loads(Path('checks/integrated/g350-outer-ddr-placement-continuation/summary.json').read_text())
+assert summary['fabricationReady'] is False and summary['qualifyingCompleteDdrCarriers']==0
+trial=json.loads(Path('dist/g350-ddr-outer-only-joint-ram-checked-escape-plan-1005/trial-0.json').read_text())
+assert trial['allCpuAndRamEscapesPhysicalPassed'] and all(v==0 for v in trial['counts'].values())
+centre=json.loads(Path('dist/g350-ddr-outer-only-ram-centre-facing-escapes-1008/trial-0.json').read_text())
+assert centre['allCpuAndRamEscapesPhysicalPassed'] and all(v==0 for v in centre['counts'].values())
+assert hashlib.sha256(Path('dist/g350-ddr-ground-preserving-clean-corners-source-836/compiled.circuit.json').read_bytes()).hexdigest()==summary['protectedConnectedSourceSha256']
+assert json.loads(Path('design-status.json').read_text())['fabricationReady'] is False
+print('Joint49 CPU /91 RAM fanout evidence restored. DDR interconnect/reference/timing/source/CAD qualification is unfinished. Read cloud/DDR_OUTER_LAYER_PLACEMENT_CONTINUATION.md before routing.')
+VERIFY_JOINT_PACKAGE_ESCAPE_PROGRESS

@@ -1,0 +1,139 @@
+{
+  "status": "LOCAL_JOINT_PACKAGE_ESCAPES_PASS_DDR_INTERCONNECT_UNFINISHED",
+  "ramPlacement": {
+    "x": 0,
+    "y": 6,
+    "rotation": 90
+  },
+  "boardLayers": 4,
+  "requiredDdrWireLayers": [
+    "top",
+    "bottom"
+  ],
+  "localCpuEscapes": 49,
+  "localRamEscapes": 91,
+  "localReferenceEscapes": 42,
+  "jointFanoutNativePhysicalManufacturingWidthViaCountConstraintAndBoardEdgeErrors": 0,
+  "jointFanoutProof": "dist/g350-ddr-outer-only-joint-ram-checked-escape-plan-1005/trial-0.json",
+  "checkedCpuReference": "dist/g350-ddr-outer-only-near-cpu-odt-guarded-1000/physical-only-cpu-escapes.circuit.json",
+  "openInput": "dist/g350-ddr-outer-only-joint-ram-clearance-ripup-1004/incomplete-routing-input.circuit.json",
+  "qualifyingCompleteDdrCarriers": 0,
+  "requiredDdrCarriers": 49,
+  "wholeBoardSourceTimingGroundAndIndependentCadUnqualified": true,
+  "protectedConnectedSource": "dist/g350-ddr-ground-preserving-clean-corners-source-836/compiled.circuit.json",
+  "protectedConnectedSourceSha256": "c30da726262185a29e5a7c05009a97553ae454147c81a4d2f4c6d0632298d936",
+  "runtimeWrapper": "0.0.2819",
+  "reviewedChecksSha256": "1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc",
+  "allClosedArchivesRestorationVerified": true,
+  "archives": [
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/bus-and-cpu-recovery-967-980-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/bus-and-cpu-recovery-967-980.tar.gz",
+        "bytes": 7669157,
+        "sha256": "d5d5e8479056ffc7d1ad9c7d668e35abc2a44e09b69c0eaac55bbd268a90caab"
+      },
+      "files": 72,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/bus-and-cpu-recovery-967-980-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/cpu-corridor-recovery-957-966-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/cpu-corridor-recovery-957-966.tar.gz",
+        "bytes": 11116014,
+        "sha256": "4c37c5c7a0d04a1f2d91973d47b45be2f417f7f09090d3ddeb330a7d3da19d58"
+      },
+      "files": 63,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/cpu-corridor-recovery-957-966-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/joint-package-physical-progress-1001-1005-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/joint-package-physical-progress-1001-1005.tar.gz",
+        "bytes": 6072400,
+        "sha256": "7666701ac6bf09a3fe6263300d6add5ccf81ba67ff037dec626feab98f1881ef"
+      },
+      "files": 34,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/joint-package-physical-progress-1001-1005-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/near-cpu-preconditions-and-odt-repair-995-1000-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/near-cpu-preconditions-and-odt-repair-995-1000.tar.gz",
+        "bytes": 9671725,
+        "sha256": "e936e87f2eff13c483a7ce808165e2acf5d8e9afec056bd76d3b1d8956dbcd25"
+      },
+      "files": 44,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/near-cpu-preconditions-and-odt-repair-995-1000-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/ram-placement-and-escapes-945-956-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/ram-placement-and-escapes-945-956.tar.gz",
+        "bytes": 16306590,
+        "sha256": "d824771be1a0df11e3345e7c8c3c3ceb21a3240aff4ea2109aaad80e14297c89"
+      },
+      "files": 80,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/ram-placement-and-escapes-945-956-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/reference-recovery-and-rejected-routes-981-994-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/reference-recovery-and-rejected-routes-981-994.tar.gz",
+        "bytes": 22030510,
+        "sha256": "e6815f8902b2b5e0d9cbf222d18032c2b598e7c156b2e05f7ae86a00304b3336"
+      },
+      "files": 96,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/reference-recovery-and-rejected-routes-981-994-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/rejected-preconditions-and-plans-933-944-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/rejected-preconditions-and-plans-933-944.tar.gz",
+        "bytes": 13748142,
+        "sha256": "c972a72113faea08fab3d8e3ffb02c99189f1d7f04316ac6e07852dec5ee45b7"
+      },
+      "files": 192,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/rejected-preconditions-and-plans-933-944-restoration.json"
+    },
+    {
+      "manifest": "checks/integrated/g350-outer-ddr-placement-continuation/centre-facing-fanouts-and-rejected-carriers-1006-1009-manifest.json",
+      "archive": {
+        "path": "checks/integrated/g350-outer-ddr-placement-continuation/centre-facing-fanouts-and-rejected-carriers-1006-1009.tar.gz",
+        "bytes": 5984258,
+        "sha256": "5333f18a46742da5afd843873b338a8c7d506b028a5e919c63e7e0db38f7647c"
+      },
+      "files": 27,
+      "restoration": "checks/integrated/g350-outer-ddr-placement-continuation/centre-facing-fanouts-and-rejected-carriers-1006-1009-restoration.json"
+    }
+  ],
+  "liveTrialsAtInitialSave": [
+    1007,
+    1008
+  ],
+  "fabricationReady": false,
+  "centreFacingJointFanoutProof": "dist/g350-ddr-outer-only-ram-centre-facing-escapes-1008/trial-0.json",
+  "manual1009PhysicalRejection": {
+    "checkEachPcbTraceNonOverlapping": 306,
+    "checkViaPadClearance": 0,
+    "checkViaTraceClearance": 9,
+    "checkPcbTraceSelfShorts": 17,
+    "checkCopperToBoardEdgeClearance": 0,
+    "checkDifferentNetViaSpacing": 1,
+    "checkHoleTraceClearance": 0,
+    "checkPadTraceClearance": 0,
+    "checkViasInPads": 0,
+    "checkViasOffBoard": 0,
+    "checkPcbTracesOutOfBoard": 0,
+    "checkPcbTraceViaCounts": 0,
+    "checkTracesAreContiguous": 0,
+    "checkPcbRoutingConstraints": 0,
+    "checkSourceTracesMatchPcbTraceThickness": 0,
+    "manufacturing": 139
+  },
+  "liveAtInitialSave": [
+    1007,
+    1010,
+    1011
+  ]
+}
