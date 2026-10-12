@@ -1,5 +1,30 @@
 # G350 Top/Bottom DDR solver continuation
 
+Latest update, 2026-10-12 17:42 UTC: **DDR49 remains incomplete; `fabricationReady=false`.** The checked board checkpoint remains 26/49. No new diagnostic copper has been imported. The following update supersedes the earlier 14:32 status preserved below.
+
+The user selected a **400 MHz RAM clock and nominal 1.6 mm four-layer JLCPCB board** as documented analysis defaults. Read `cloud/DDR_ANALYSIS_DEFAULTS_2026-10-12.md` and `cloud/DDR_STACKUP_ESTIMATES_2026-10-12.md`. The latter includes a verified reproducible research archive. These are analysis targets and estimates; firmware, exact manufacturer construction, electrical timing, impedance and shell fit remain unqualified.
+
+The isolated 906-file carrier-shaping candidate now passes all **649 tests**, type checking, formatting and isolated package consumers. Production remains c115; the candidate has not been adopted. A fresh original eleven-case baseline is running: ten samples passed, and the final `outer-layers` sample is still running. Final artifact/native validation and candidate comparison remain pending. These benchmarks use the existing 47-signal samples and do not certify G350 DDR49.
+
+A source-native initialization with all eleven BYTE1 signals preferred on Top and the other 38 on Bottom passed physical approach checks with all 854 obstacles unchanged. It produces 76 Bottom approaches/full-span vias and keeps the 22 Top native endpoints unchanged. This preference does not constrain the later ordinary solver to those layers; final layer and via counts still need explicit verification.
+
+The new strobe routes were captured, but the new preferred clock reached its unchanged 6,000-step limit. A distinct clock control appended the exact 20 removed old DQS1 copper records as temporary conservative search guidance. It naturally returned the earlier clock geometry at step 1,684, inside the same limit. No old traces or vias were manufactured or added to the physical reference. With the two new strobes, six native paths connect all twelve endpoints and have zero subset DRC errors, but all three strict exterior pair-spacing checks still fail. The initial ordinary approaches also have 15 trace/via clashes with the selected paired network. This is a preliminary source-stage diagnostic, not accepted DDR routing.
+
+One original 43-signal ordinary negotiation, seeded with that same paired geometry, reached an external 180-second diagnostic limit without a complete state or failure certificate. Its last saved observation was 14,000 generator advances; source and full installed dependencies stayed unchanged, the owned process group was cleared, and new OOM events were zero. The result is inconclusive. No algorithm limit or physical assertion was relaxed.
+
+The solver's existing length constraints measure planar copper; the board checker also adds 1.6 mm per via record. Passing both existing skew limits requires equal total via counts within each matched bus/pair: `1.6 * abs(deltaViaCount) <= 2 * skewLimit`, and both limits are less than 0.8 mm. This is geometric accounting, not electrical delay. An explicit optional via-count constraint is being built in a separate source copy; it is untested and unadopted. A short phase profiler and the original package-coupling repair are the next bounded diagnostics.
+
+Actual local receipts (retain the ignored prepared filesystem):
+
+- Mixed initialization: `.cache/g350-c115-byte1-top-initialization-next/run/result.json`, SHA-256 `3b1f9f09b799ee6fc7b6557f4c891e6f6854e2603bb0acfe45650c0665f0df17`.
+- New paired prefix: `.cache/g350-c115-byte1-top-first-three-pairs-next/run/result.json`, SHA-256 `233adb1c9e68c9e9a66b83f71d6bd2fd9c654568c9a5bbecbd3711194ad10b31`.
+- Ordinary diagnostic postflight: `.cache/g350-c115-mixed-ordinary-first-stage-next/run/postflight.json`, SHA-256 `d84f89e1a847f2aebef10e32fe4fdc1a298b09239db351da163672ce009f5b39`.
+- Guided clock result/postflight: `.cache/g350-c115-mixed-ck-transient-guidance-next/run/result.json`, SHA-256 `b21712d4644ec6f904c9a32f5d7a8b1208b1e65fb5a469f06d9acd1f3ea7754e`; postflight SHA-256 `18d0ca43637c539b9ec44777363b3e419d2d7ddd8faeb97cc95c138b56f08955`.
+
+Environment Install and executable Start have been tested on Debian 13. Saved Start draft revision 42 preserves the tested Bash blocks, all twelve repositories, ten custom hosts and the 646-byte Install script. Its latest documentation records the incomplete routing status. Review/save/publication of the environment is separate from board fabrication approval.
+
+## Earlier status, preserved
+
 Status at 2026-10-12 14:32 UTC: **DDR49 is incomplete and the board is not ready to order. `fabricationReady=false`.** The PCB remains four layers; DDR signal wires must use Top and Bottom, with ordinary full-stack vias. Preserve the frozen hardware evidence, pin map, placements, widths, clearances, native checks patch and all matching assertions.
 
 The last checked board planning checkpoint has 26 of 49 DDR channels. The older connected inner-layer board does not meet the current layer requirement. No new solver output from the investigations below has been imported into the board. The fresh editable layout and full-board integration acceptance plan remain the continuation inputs; the other board connections, power/ground repairs and final independent CAD checks are still required.
