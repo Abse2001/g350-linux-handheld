@@ -41,9 +41,16 @@ pre-existing hashed files, including four dirty tracked files, local hardware
 work, lockfiles and the reviewed native-check patch, remained byte-for-byte
 unchanged. The exact report is
 [`artifacts/upstream-inspection-validation-2026-10-12.json`](artifacts/upstream-inspection-validation-2026-10-12.json).
-The changed upstream-checkout step used by Install was retested; a full fresh
-Install was not repeated while the solver/regression workers were running.
-The original full Linux setup validation is in `cloud/LINUX_VALIDATION.md`.
+After the eleven-case solver benchmark finished, the full saved Install body
+also passed with exit 0 at board setup commit
+`110ccd37bb281395f23f47a270bd2741bae410d4`. It verified all 25,814 evidence hashes,
+reinstalled the exact runtime, reapplied the reviewed checks patch, and passed
+typecheck, KiCad, Gerber-short and mechanical smoke checks. The 72 protected
+pre-existing file hashes and solver development HEAD still matched afterward.
+Python routing tools tested as Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0,
+Shapely 2.1.2/GEOS 3.13.1 and Debian g++ 14.2.0. The executed Install body
+has one extra final blank line; its commands match the saved 646-byte script.
+The original Linux setup validation is in `cloud/LINUX_VALIDATION.md`.
 
 For Bus Lanes development, retain the legacy Start commands and historical board
 notes. Prefix them with `source cloud/env.sh`, fetch the fork source, switch to
