@@ -44,3 +44,7 @@ bash cloud/START_OUTER_DDR_RUNTIME_2026-10-11.sh
 python3 scripts/restore-g350-routing-evidence.py \
   cloud/artifacts/g350-ti-ddr-linux-followup-2026-10-12.manifest.json \
   --destination .cloud-tools/ti-ddr-followup-restored-2026-10-12
+# Restore the verified RAM-placement and solver diagnostics separately.
+python3 scripts/restore-g350-routing-evidence.py \
+  cloud/artifacts/g350-ti-ddr-v7-linux-followup-2026-10-12.manifest.json \
+  --destination .cloud-tools/ti-ddr-v7-followup-restored-2026-10-12

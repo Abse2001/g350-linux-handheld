@@ -1,0 +1,113 @@
+{
+  "createdAt": "2026-10-12T23:47:22.659623+00:00",
+  "passed": true,
+  "execution": {
+    "startedAt": "2026-10-12T23:44:38.283323+00:00",
+    "command": [
+      "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "--smol",
+      "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-followup-report-next/launcher.ts"
+    ],
+    "policy": {
+      "wallSeconds": 300,
+      "rssBytes": 4294967296,
+      "sharedBytes": 25769803776,
+      "sampleSeconds": 0.05,
+      "termGraceSeconds": 5
+    },
+    "memoryBefore": {
+      "current": 16119914496,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "exitCode": 0,
+    "diagnosticStopped": false,
+    "stopReasons": [],
+    "accepted": false,
+    "currentGuardPid": 143030,
+    "pid": 143043,
+    "pgid": 143043,
+    "freshLeaderIdentity": {
+      "pid": 143043,
+      "pgid": 143043,
+      "sid": 143043,
+      "start": 5118953,
+      "state": "R",
+      "rss": 753664,
+      "argv": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-followup-report-next/launcher.ts"
+      ]
+    },
+    "endedAt": "2026-10-12T23:47:15.010429+00:00",
+    "wallSeconds": 156.72663718200056,
+    "cleanupOwnedGroupEmpty": true,
+    "peakOwnedRssBytes": 297422848,
+    "peakSharedBytes": 20760219648,
+    "memoryAfter": {
+      "current": 16250130432,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    }
+  },
+  "sourceUnchanged": true,
+  "sourceFileCounts": {
+    "/workspace/g350-linux-handheld": 9724,
+    "/workspace/bus-lanes-solver": 1058
+  },
+  "dependencyBefore": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "dependencyAfter": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "startScriptSha256": "1cbf9ba01e174c97fc02df761720e0dfad104a441deccad9e03b23fae032b694",
+  "savedStartSha256": "1cbf9ba01e174c97fc02df761720e0dfad104a441deccad9e03b23fae032b694",
+  "installScriptRerun": false,
+  "hardwareRoutingPerformed": false,
+  "accepted49": false,
+  "scope": "Actual full first Start Bash block, plus 660-member V7 supplemental restoration; no install-script or hardware-routing run",
+  "scriptPath": "cloud/START_TI_DDR_FOLLOWUP_2026-10-12.sh",
+  "rawStartValidationReportSha256": "a4b824f464842e0410a2a92da0c76eaf889446e629d31d34b9916addf74e183f",
+  "savedStartSha256Semantics": "Raw field hashes local tested script; configuration byte parity is checked separately on saved draft readback.",
+  "dependencyScope": "Complete solver installed tree47633/archivea512 checked before/after. Board startup checks package version pins and reviewed native patch; no full board installed-tree before/after claim.",
+  "supplementalArchiveSha256": "7153f16771d566e6f326c857087bbea3fdfee95eb1ddd959537cf2c245397a97",
+  "supplementalRestoredMembers": 660,
+  "existing1975ArchiveRestoredMembers": 0,
+  "publicationCompleted": false,
+  "fabricationReady": false
+}

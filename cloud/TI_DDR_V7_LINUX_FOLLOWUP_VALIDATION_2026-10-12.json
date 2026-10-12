@@ -1,0 +1,43 @@
+{
+  "manifest": "cloud/artifacts/g350-ti-ddr-v7-linux-followup-2026-10-12.manifest.json",
+  "indexedMembers": 660,
+  "checks": [
+    {
+      "stage": "archive-only",
+      "exitCode": 0,
+      "stdout": "Verified 660 evidence members; restored 0"
+    },
+    {
+      "stage": "fresh",
+      "exitCode": 0,
+      "stdout": "Verified 660 evidence members; restored 660"
+    },
+    {
+      "stage": "repeat",
+      "exitCode": 0,
+      "stdout": "Verified 660 evidence members; restored 0"
+    },
+    {
+      "stage": "edited-file-refusal",
+      "exitCode": 1,
+      "editedBytesPreserved": true,
+      "member": "board/.cloud-tools/ti-ddr-v7-followup-report-next/TI_DDR_V7_LINUX_FOLLOWUP_2026-10-12.md"
+    }
+  ],
+  "allRestoredBytesAndAppliedModesVerified": true,
+  "restorerAppliesModes": false,
+  "diagnosticOnly": true,
+  "accepted49": false,
+  "fabricationReady": false,
+  "archiveSha256": "7153f16771d566e6f326c857087bbea3fdfee95eb1ddd959537cf2c245397a97",
+  "archiveBytes": 9399885,
+  "manifestSha256": "d86f583952c16c52789b6823fb33cd23aea4bc738c1c9f165bbbded7a888c26e",
+  "rawProofSha256": "3b20ff6dba4151d1e60f6ae0a367caf5b64f851324f4d59cca7eb7b00ec5a21e",
+  "validatorSha256": "ccf6ac86389cda6e87b8e92abd917cb64131df31fbe089aadbf04b711982aae2",
+  "initialHelperFailure": "Preserved archive-validation-v1: successful 660 archive/fresh/repeat checks and explicit modes, then StopIteration selecting legacy report/ prefix; no refusal check ran in v1",
+  "actualSourceSha256": "2e81dc80bbeb7b9e687c5056a409979b0655592213fb993e9c029ae46bd847e7",
+  "qualificationReportSha256": "a57d11293bfc957d63cdf1b81f063870510349b5131ffa7487bcd23b8a052cc2",
+  "full49RouteScope": "Live full route excluded, no accepted49",
+  "nativeChecksCount": 17,
+  "nativeErrors": 0
+}
