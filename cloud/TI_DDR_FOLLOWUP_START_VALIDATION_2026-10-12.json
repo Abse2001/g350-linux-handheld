@@ -1,0 +1,120 @@
+{
+  "createdAt": "2026-10-12T22:39:26.939122+00:00",
+  "passed": true,
+  "execution": {
+    "startedAt": "2026-10-12T22:37:18.445843+00:00",
+    "command": [
+      "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "--smol",
+      "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-followup-report-next/launcher.ts"
+    ],
+    "policy": {
+      "wallSeconds": 300,
+      "rssBytes": 4294967296,
+      "sharedBytes": 25769803776,
+      "sampleSeconds": 0.05,
+      "termGraceSeconds": 5
+    },
+    "memoryBefore": {
+      "current": 11267272704,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "exitCode": 0,
+    "diagnosticStopped": false,
+    "stopReasons": [],
+    "accepted": false,
+    "currentGuardPid": 133611,
+    "pid": 133631,
+    "pgid": 133631,
+    "freshLeaderIdentity": {
+      "pid": 133631,
+      "pgid": 133631,
+      "sid": 133631,
+      "start": 4714969,
+      "state": "R",
+      "rss": 90112,
+      "argv": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-followup-report-next/launcher.ts"
+      ]
+    },
+    "endedAt": "2026-10-12T22:39:19.531251+00:00",
+    "wallSeconds": 121.08524646699516,
+    "cleanupOwnedGroupEmpty": true,
+    "peakOwnedRssBytes": 296456192,
+    "peakSharedBytes": 15826587648,
+    "memoryAfter": {
+      "current": 11445948416,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    }
+  },
+  "sourceUnchanged": true,
+  "sourceFileCounts": {
+    "/workspace/g350-linux-handheld": 9718,
+    "/workspace/bus-lanes-solver": 1058
+  },
+  "dependencyBefore": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "dependencyAfter": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "startScriptSha256": "f255949422cdea67a29162335b79d8bf1d1a2dc2079c9d8ecc62d00f9cb5f93a",
+  "savedStartSha256": "f255949422cdea67a29162335b79d8bf1d1a2dc2079c9d8ecc62d00f9cb5f93a",
+  "installScriptRerun": false,
+  "hardwareRoutingPerformed": false,
+  "accepted49": false,
+  "scope": "Actual full first saved Start Bash block, including fresh1975 evidence restoration into ignored namespace",
+  "scriptPath": "cloud/START_TI_DDR_FOLLOWUP_2026-10-12.sh",
+  "savedDraftRevisionReadBack": 45,
+  "installBytesUnchanged": 646,
+  "repositoriesRetained": 12,
+  "additionalDomainsRetained": 10,
+  "savedBoardRef": "a16daf3ec8d151c10fca3b3f832fe8dfc11c6789",
+  "savedSolverRef": "c1151212be7b9de4b34b07436d135d874e6c0466",
+  "otherTwoSavedBashBlocksUnchanged": true,
+  "publicationCompleted": false,
+  "fabricationReady": false,
+  "dependencyScope": "Complete solver installed tree47633/archivea512 before/after. Board startup checks package version pins and reviewed native patch; no full board installed-tree before/after claim.",
+  "savedStartSha256Semantics": "Raw verifier field hashes the local script; saved configuration parity is independently read back at revision45 and exact first Bash bytes compared.",
+  "savedConfigFirstBashSha256": "f255949422cdea67a29162335b79d8bf1d1a2dc2079c9d8ecc62d00f9cb5f93a",
+  "savedConfigStartSkillSha256": "3cf93c34aba3c477bda553a906ea0ed9ad3631bc3327ba0e78d8ff430cde12fc",
+  "savedConfigInstallScriptSha256": "d80866ea55f2ce2cee54f938fda35ee8eebb4a0c323d801dff0eea8ec5ce0e5d",
+  "savedConfigReadbackRecordSha256": "b97d4ac9ed2ac248ddd2bae7b997c3a4c37a50eb2acb9bd29e18da2a656bd622"
+}

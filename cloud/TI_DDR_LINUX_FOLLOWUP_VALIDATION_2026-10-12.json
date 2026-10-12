@@ -59,7 +59,18 @@
     "elevenOriginalProducerPasses": 11,
     "rootSession": 82355,
     "postflightSha256": "2b0aa0274e4c7e7555b425e44facfbf48c5c5ff965fdc6cfe053566da295733d",
-    "freshAll22Comparison": "running, not qualified yet"
+    "freshAll22Comparison": {
+      "exitCode": 0,
+      "rootSession": 48885,
+      "trustEligible": true,
+      "postflightSha256": "3c63bf646daf0675e2bb841229b6677867e5e88c7c0ef64a04193129b24634d7",
+      "resultSha256": "a768562f7b94d27b683b56ac09b041a40f6ee15e95f95e84616bbaad46eb39be",
+      "allElevenRawCachesBaselineIdentical": true,
+      "freshNativeAll22Passed": true,
+      "allElevenPNGsIndividuallyViewedOriginal": true,
+      "rootVisualReviewSha256": "4e6eb4382bad629ec7bcc5083eae1b261a6cc4c4f516e0e9a9ddeb7004849442",
+      "runtimeComparison": "Candidate6681.361s vs baseline6143.396s,8.76% longer on contended machine; no causal speed/performance equivalence claim"
+    }
   },
   "additive914Validation": {
     "sourceManifestSha256": "9670e70cc80a6633e13dd2f3f5a1c601abf78da7d73ded01d12fcc3c0e1bd9ff",
@@ -83,6 +94,37 @@
     "sourceAndDependenciesHeld": true,
     "new914SourceIncludedInArchive": false,
     "sourceAdopted": false,
-    "new49Qualified": false
+    "new49Qualified": false,
+    "actualV6FullPipeline": {
+      "rootSession": 23185,
+      "packetSha256": "e51c5e3be155e7a4c66d350ddf1e9480b47502f278a4970a820f809398e399be",
+      "postflightSha256": "0aad57bda81bc962448b312d9ba337554d373034f0da2b2e60a05b7abe925bf5",
+      "childExitCode": -15,
+      "stop": "WALL_STOP",
+      "guardSeconds": 300.0277,
+      "latestPublicSteps": 140000,
+      "phase": "route_shared_layers",
+      "publicTraces": 0,
+      "naturalSolverFailure": false,
+      "resultPresent": false,
+      "sourceAndDepsHeld": true,
+      "oomDelta": 0,
+      "accepted49": false
+    }
+  },
+  "updatedAt": "2026-10-12T22:41:45.975637+00:00",
+  "newStartValidation": {
+    "scriptSha256": "f255949422cdea67a29162335b79d8bf1d1a2dc2079c9d8ecc62d00f9cb5f93a",
+    "reportPath": "cloud/TI_DDR_FOLLOWUP_START_VALIDATION_2026-10-12.json",
+    "rootSession": 76600,
+    "exitCode": 0,
+    "sourceUnchanged": true,
+    "hardwareRoutingPerformed": false,
+    "evidenceMembersRestored": 1975,
+    "draftRevisionReadBack": 45,
+    "allTwelveRepositoriesTenDomainsAndInstallRetained": true,
+    "completeSolverInstalledDependenciesUnchanged": true,
+    "boardVersionPinsAndReviewedPatchVerified": true,
+    "completeBoardInstalledTreeBeforeAfterClaimed": false
   }
 }
