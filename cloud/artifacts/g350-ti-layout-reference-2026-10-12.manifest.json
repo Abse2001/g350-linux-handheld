@@ -1,0 +1,774 @@
+{
+  "archive": "cloud/artifacts/g350-ti-layout-reference-2026-10-12.tar.gz",
+  "bytes": 2055148,
+  "sha256": "323a0b05de74039b8daa21c1f7584d0d4a2dbd49d9e4f64acd872fb07f51b75b",
+  "indexedFiles": 182,
+  "originalSourceBindings": [
+    {
+      "path": "/workspace/g350-linux-handheld/bun.lock",
+      "sha256": "657fc6ad5be611a11a807e74de07e5fd65bb08ec5ee53062474af7519b0ca0fd",
+      "bytes": 83979,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-converter-placement.circuit.tsx",
+      "sha256": "771daaba540f50d57ac158723a061359216262fbb463735904f4f02bb8a2465a",
+      "bytes": 352,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-critical-placement.circuit.tsx",
+      "sha256": "11834e82b3fb3e170d82319b368ac73faa9737c687430bbc5a50deeb1c7e275f",
+      "bytes": 359,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ddr-bootstrap.circuit.tsx",
+      "sha256": "0ab661bf8f6a43d17f25bc00afb2763e74fe77c4c090fc3548aa88f942b99d03",
+      "bytes": 414,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ddr-corridor.circuit.tsx",
+      "sha256": "7ecf5902b516bc2418aed9d6420ff03b19bf69334b3b85c37143e2f345f65896",
+      "bytes": 361,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-display-placement.circuit.tsx",
+      "sha256": "e4936f005ca1e359519a34c111567d875857976e6da145b2a718c4c760dced7c",
+      "bytes": 1019,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-full-board-clock-cluster.circuit.tsx",
+      "sha256": "ece4811000ac401e333617f08f8b8ba9e1b5b915ee1ea5017eb6f4d91b5d8311",
+      "bytes": 861,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-full-board-four-mil-replay.circuit.tsx",
+      "sha256": "ce6627f61d05e7978bd4c950384e7fb41ffc76c4cb15752a9a8f215a33067e23",
+      "bytes": 1048,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-full-board-ground-preserving-clean-corners-replay.circuit.tsx",
+      "sha256": "2040283e146af2efcebe6c77e6c34b5a501d9d28dde0368d73cbdae7ca2349a5",
+      "bytes": 1970,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-full-board-replay.circuit.tsx",
+      "sha256": "cc1407901f2ad583a995ff293b694385b9aa9181e9488521f79879cdeb2f1907",
+      "bytes": 2150,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-harness-placement.circuit.tsx",
+      "sha256": "671a5ccb2ffbe75289d8fb33255d4274a019d6fd203b6dd0b478ee1a0bf156a0",
+      "bytes": 556,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-outer-ddr-clear-corridor-layout.circuit.tsx",
+      "sha256": "c8a859a74114242304dcf35448e5e1b40d044fb71acb56b7a3b7692364290860",
+      "bytes": 1490,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-pin-allocation.circuit.tsx",
+      "sha256": "46a8198016c2a23804a9ffee5b6f84b4caa5d419c5e69c2366947c9a85f66b06",
+      "bytes": 591,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-pmic-placement.circuit.tsx",
+      "sha256": "15d4d3f596bc2df7f1ec9cea0e62ca726c1c197cfc2485227dc53afd5884aa69",
+      "bytes": 325,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ram90-four-layer.circuit.tsx",
+      "sha256": "da5bf1d4a903786d05296b2a212067454b90a525496d31dee0137eafe18ca207",
+      "bytes": 1024,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ram90-inner-ddr.circuit.tsx",
+      "sha256": "917f0e386a79b02a14ef05636de8535896a18c6b8b2f534c975366444bd208b7",
+      "bytes": 2376,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
+      "sha256": "af2a1a2c775860251dff95b53f261c616698fbb9731d190dd5e1063a82e3a270",
+      "bytes": 1581,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ti-top-bottom-ddr-v2-layout.circuit.tsx",
+      "sha256": "eef9fd77a5596b7605ae19be58be6f63d305384adfc39144f137d939699d3729",
+      "bytes": 2314,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ti-top-bottom-ddr-v4-reference-bypass.circuit.tsx",
+      "sha256": "3942905830c9fb809d36124e402793e5e11b8c43bb097647f43b28773e54c26c",
+      "bytes": 1929,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ti-top-bottom-ddr-v5-layout.circuit.tsx",
+      "sha256": "f0078ed609b7431a0a598619f7fef5a39fe6225303e191effc5857923e155cf0",
+      "bytes": 1325,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-powered-host.circuit.tsx",
+      "sha256": "328221adf3028d464eb6c3c9daa6c5bc2e7d0d2cea7ef94a3e925801686fd32e",
+      "bytes": 6306,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/AM3352BZCZ100.tsx",
+      "sha256": "9818d5494e2460af36d898f788681bdb23f5e87d3d382556baefdbe1efff5ff2",
+      "bytes": 40439,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402CG180J500NT.tsx",
+      "sha256": "4b8ddb87b479a21a9744b10741c52317d7c5cdd5ee9773533a215d5dc9f6bed2",
+      "bytes": 2914,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF0000TCE.tsx",
+      "sha256": "97b44fa5ad9b6b704a399f3765241cae4741e70750b1e68c9c98a2be9de0f9f8",
+      "bytes": 1875,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF1002TCE.tsx",
+      "sha256": "86905928977cace7c81dc69e4b483c97393aa45fb7955036decf36fac98ced1b",
+      "bytes": 1877,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF1003TCE.tsx",
+      "sha256": "ab561bbdc9991940714135e190be1510189d2150eac0e993496e829eb08c37fc",
+      "bytes": 1878,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF1004TCE.tsx",
+      "sha256": "b4ba7033a00c931f61b84db03a673b2a6a885a0395565465160b464a233713bb",
+      "bytes": 1876,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF3302TCE.tsx",
+      "sha256": "e119fb572088fa8dc918111a86a9e4078ff1ec6e17f64f22ff73456925316e1c",
+      "bytes": 1877,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF330JTCE.tsx",
+      "sha256": "bb60730766146a367094b6a00578930b26ea7b6c3d21a7b3af1488a132b2820b",
+      "bytes": 1876,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0402WGF4701TCE.tsx",
+      "sha256": "122137b7dde08a93c0068c1bae3c06616703a45ef6c65abe764a8ee7f425a418",
+      "bytes": 1878,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0603WAF1201T5E.tsx",
+      "sha256": "2eeb887280751882cca719270590845b08317fb61f88171706f269998a1371f8",
+      "bytes": 1897,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0603WAF150JT5E.tsx",
+      "sha256": "8b566f3736d935a641b5c0c02a61454a4bcfe5aac591209c985ec54a3ae73704",
+      "bytes": 1895,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0603WAF5101T5E.tsx",
+      "sha256": "53272ba878b2edabce678f95b3efe4ecd4a0bb9247efb99145a5cedde9a8ca67",
+      "bytes": 1897,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0603WAF7323T5E.tsx",
+      "sha256": "4f50c58b173df9da6a97132bf30245d710b521508d5c5af1067b6d0a3c56c249",
+      "bytes": 1894,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/A_0_5_54PFGPZ.tsx",
+      "sha256": "02181f383bd71a59f9a9545fb11244cb5077e03f3ea6e4b24f176a7781931dd2",
+      "bytes": 10979,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/BZT52B5V1.tsx",
+      "sha256": "69da5b544becfe654b2dc8755617ab8d2b84b2d3596838a733636cd0e43df163",
+      "bytes": 3067,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL05A105KA5NQNC.tsx",
+      "sha256": "5ba8098f8c029b1ee45475fc74a5c58d3b402b3fd54a407f1e90aab661f62636",
+      "bytes": 2914,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL05B103KB5NNNC.tsx",
+      "sha256": "adf08675df7c77142960f84296b75d090cfea50bd2f68904a311ea4e6e3e8acd",
+      "bytes": 2915,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL05B104KO5NNNC.tsx",
+      "sha256": "16de55bd3373178d95e49d7c212e255b4a0c864a75f287b942abe49007e83110",
+      "bytes": 2913,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL10A225KP8NNNC.tsx",
+      "sha256": "475bcbef4fcb96ffcb129e000847ca9ce06e1a83e0d40bdd9ee920111ee5f5c5",
+      "bytes": 2884,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL10A475KO8NNNC.tsx",
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "bytes": 2887,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL10B221KB8NNNC.tsx",
+      "sha256": "b52571069ffe0d68dac52ddd7146e3fe158f778be311e7e360b0fa42565f7190",
+      "bytes": 2884,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL10B224KA8NNNC.tsx",
+      "sha256": "040e705a007dd565d600586138de73f8bbbd0e346d4357ec8e33662b4d762ca9",
+      "bytes": 2888,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL31A226KAHNNNE.tsx",
+      "sha256": "e5dc41160c9fa477d18e466246c719d9e759673d1d88e2fe58794e6d72e77bfe",
+      "bytes": 2862,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/CL31B475KBHNNNE.tsx",
+      "sha256": "b70b9686c3c74fff26d1ce6e8b88092beaa0029b7e35ed0dce76000d5275f923",
+      "bytes": 2868,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/DF65_3P_1_7V_21_.tsx",
+      "sha256": "e352f1329fa869411d631bcb1b9861064a4639f725fdfe1014d7cbbe181b086c",
+      "bytes": 4072,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/DM3D_SF.tsx",
+      "sha256": "b802fb2f36767d0851e6ac021c88a3db29e5bc989a4ef594774b68e41ce51d46",
+      "bytes": 4173,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/MAX98357AETE_T.tsx",
+      "sha256": "3bb035b1fe0a673a09d4ef1eba50d0ef70727e874ed0950bbbba9fec290c45b7",
+      "bytes": 5064,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/MBR0540T1G.tsx",
+      "sha256": "636f4c73be93d90f6d24f17efb5e5ac8a568e08002476cb403a9c84797a3a571",
+      "bytes": 4000,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/MCP23017_E_SO.tsx",
+      "sha256": "74699c6bdfbb020526c9cfd8f00ad03c81d6e2c1c00118ce8513acbed3586570",
+      "bytes": 6978,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/MT41K256M16TW_107_P.tsx",
+      "sha256": "8e1ecc5c4c542565227dff59534063975ec6759f7c101abc4b0902a3a5928acc",
+      "bytes": 12907,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/RC0402FR_07240RL.tsx",
+      "sha256": "67bab85f8a0e1979ab9e139a81a815cffcd8400e0c241016eaba1361ce102c9a",
+      "bytes": 1882,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/RC0402FR_0749R9L.tsx",
+      "sha256": "8263244665dc493835acd8a87917cf3cbf07fd390087f56374a435955bb30326",
+      "bytes": 1880,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/SM02B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "2a9d1c9cc0ba56ec98245f1a056c77c61cc1b9f911ecb0db2d2002f5a236cdfc",
+      "bytes": 2322,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/SN74LVC1G125DBVR.tsx",
+      "sha256": "9504e39da8c867e0683eba60365ba3dc10f51f7f4e1e66a13a3b115cc750276d",
+      "bytes": 2476,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/SX32Y024000BC1T001.tsx",
+      "sha256": "a4aa1edbd960e3a0dbc6a042af2bdb783301e4475c59312f4537d2bf307f4d06",
+      "bytes": 2251,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TPS3808G33DBVR.tsx",
+      "sha256": "dd3f90fc3216fb297f059a7937eeb9e798bfd44b3618448b94573a68a84ce32a",
+      "bytes": 2464,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TPS61023DRLR.tsx",
+      "sha256": "214f59239c3936f4884e12971f22607dbbf9b04e556ec9797f72bdd43e2c2eac",
+      "bytes": 2490,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TPS61165DBVR.tsx",
+      "sha256": "5d4c6464d402863a49d782bd6750c1429b2399e48849b65bd17cb21fe786aae9",
+      "bytes": 2451,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TPS62162DSGR.tsx",
+      "sha256": "90d6c46995a9cc4239019fd5b00cd7f9f065cc4291b76df476f7222c30c7137b",
+      "bytes": 2846,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TPS65217CRSLR.tsx",
+      "sha256": "86a08612e6a145825eef92e232b8e48d8bf6bad4eaa8a226da7c9bed8ed23d86",
+      "bytes": 9159,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TS_1187A_B_A_B.tsx",
+      "sha256": "c48b934fc226e3f196e61e899249a340d1b0ba0f4297bfea30af9b0ea678f1bf",
+      "bytes": 3342,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/TYPE_C_31_M_12.tsx",
+      "sha256": "fc11aacca99ff4e19b4262b93da03944c42decfd60399084914ef603c808350e",
+      "bytes": 7098,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45",
+      "bytes": 565628,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/USBLC6_2SC6/USBLC6_2SC6.step",
+      "sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff",
+      "bytes": 3277419,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "sha256": "7279b8dbf13f2a33f68471379cbaa79bd0638043f1a5be7c9799774f64f9b31d",
+      "bytes": 2837,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/VLCF5020T_100M1R1_1.tsx",
+      "sha256": "093fbb3780bac7c6045956a3d74b5fda1bc561946c2b11df0b7a5ba285f3dbde",
+      "bytes": 1753,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/XFL4020_222MEC.tsx",
+      "sha256": "ab84fd4a7822f844a523b11a1b0e60c2b79a7af5063519e1d3fdd1484ccfb180",
+      "bytes": 1827,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/Boot.tsx",
+      "sha256": "3880a048c27b966b959cb3a2b7924e5252dcdd2f2cde9c4d69aa1ec32b27bb39",
+      "bytes": 4306,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/DdrConstraints.tsx",
+      "sha256": "e4caa94ff1dddcbe4f09275924513186c9055adbeb7b0e04ff37c1df79bfaaae",
+      "bytes": 2065,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/FourLayerDdrConstraints.tsx",
+      "sha256": "4de0ed25e99eb1c4f23745af93822ff9dfc6302906c980700d5862a5887c72a2",
+      "bytes": 3028,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/HostSignals.ts",
+      "sha256": "33cf590b778cdbf5efaf48879c8be579bdae70238bb017d865a6a4cd84825877",
+      "bytes": 977,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/Power.tsx",
+      "sha256": "18b6d987ac276b9e5098ff2e1ea28b5406e3135bc77f4aee10647820cbfd4cf5",
+      "bytes": 9432,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/PowerNetworks.ts",
+      "sha256": "63d4259ae52644bef32b070d1fd82ae0f83571beb3c86a47bb9e3f577be1c1a2",
+      "bytes": 8079,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/RamBypassLoops.tsx",
+      "sha256": "5d40c91bab78e99999458127d16611ec937f470642af879479c2c6611151e7cb",
+      "bytes": 1303,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/RamReferenceEscapes.tsx",
+      "sha256": "944912d0300f3ec5650623e23c9bda1e4ef4fe92e24905ee97ea500da0503216",
+      "bytes": 1543,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/Storage.tsx",
+      "sha256": "7c949eb22627e05e1f15222d4baf9b222e1ffd835260cbf8ef847041bfc26f42",
+      "bytes": 4709,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/StorageLayout.ts",
+      "sha256": "d90150a06de93c3a138c38006119d85115cba811c0c6f7aadba57e5c0fbdc1fa",
+      "bytes": 795,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/UsbCDevice.tsx",
+      "sha256": "cf8a7289925d6543fc2e08a78bbedd20c15d7c345cc03655908246128b35dca1",
+      "bytes": 5032,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/cpu-ball-map.json",
+      "sha256": "f936e408a702a5eb42d68d2cd834d7ccefb98930eda205ac234144c0c10213df",
+      "bytes": 7529,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/memory-byte1-swizzled-connections.json",
+      "sha256": "9e833a40b6cd5ccffbe5499254455d1f6f713c7278a0f6195d0aa9dab6546671",
+      "bytes": 7099,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+      "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50",
+      "bytes": 7099,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/memory-connections.json",
+      "sha256": "1469f03da9f6d6420723aa547c9831beb59a98bde0cbd9d5162fd3d40fe4f572",
+      "bytes": 7099,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/BacklightPinAllocation.tsx",
+      "sha256": "92bbae935e03ab6821e18529c17aa14865207c19026c25c8f4865c77659af710",
+      "bytes": 3621,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/ControlsAndAudio.tsx",
+      "sha256": "6a88cdf3456e018e4f5d3d4051be04826f390dd6ecbc4819b55e8ea5dc8eb47e",
+      "bytes": 4856,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/ConverterPlacement.tsx",
+      "sha256": "7b3b6a65e4d5d90e46934cdb5ad14475ba8d732cacd788f884aa3eb38ceff823",
+      "bytes": 730,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/CriticalPlacement.tsx",
+      "sha256": "c69ca782498f6cb594d694dd5bafcb3b3d58b31ddd4a266404a5f2a30647449c",
+      "bytes": 807,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/DdrCorridorPlacement.tsx",
+      "sha256": "800353a3c9630a3fc16e81be3adceff381def0f883c2d27d04073a04bcad1b71",
+      "bytes": 821,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/Display.tsx",
+      "sha256": "305152a48e568b9fb4e4049df21f46d7c541e1ac9c5ab2dbde07d7d5edf5641f",
+      "bytes": 6169,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/G350DdrBootstrap.tsx",
+      "sha256": "8a354699d91342ef559553f07850e6e2eae4d3aec775d661b52b9ea8eb189fb6",
+      "bytes": 2474,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/G350RestRoutingReplay.ts",
+      "sha256": "f347ff480d9038168a1484dcec6bafc50a069b531844387a0632b14fd15588a7",
+      "bytes": 2508,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/HarnessPlacement.tsx",
+      "sha256": "6e6e97a0c23eb30e83fdc5514566279d2c9d097cf80f0c91255d5dbb806885f2",
+      "bytes": 5904,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/LayoutOnly.tsx",
+      "sha256": "5c89af36fe0f1e6a147a564287d3420e543e07a70bfcc04a67a8cc22d9839655",
+      "bytes": 2429,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/PmicPlacement.tsx",
+      "sha256": "f4ef0fd3f67e77f29afdfe8b262459ac2bb24a272351b3c3c55cd0120bbe1a5c",
+      "bytes": 1187,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/Rgb888Power.tsx",
+      "sha256": "2b35d9f58b0f62b9dd2135db447efda55f4b1eae07cffccd5b0adb2c84067d5b",
+      "bytes": 1045,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/converter-placements.json",
+      "sha256": "e7fcd9c89e4cb819639e4f1f4b7b6dbcd76818c58e64b1e634f4ebe5fa1a70e5",
+      "bytes": 1590,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/cpu-bypass-placements.json",
+      "sha256": "ab52aa9d75dccc8d34eb4d283e577a7dff1165eb8b22961f81a2a1522fb4ae3e",
+      "bytes": 5474,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/ddr-corridor-placements.json",
+      "sha256": "2dc409f699decce9d26d46e77c53f8662dda95d0c8e63284c7e9ddc309bf2718",
+      "bytes": 4383,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-full-board-dangling-clean-rest-routing.json",
+      "sha256": "24ddedd0857b55edaf7d804264c35b84a7d8dc593b9fb58bdbed0ccd58737da5",
+      "bytes": 4011376,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-full-board-ground-preserving-clean-corners-paths.json",
+      "sha256": "24b46ecf031c6c5e84b03e713123ffac4992438837c5396d737c090ea37a2f52",
+      "bytes": 1316614,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-outer-ddr-clear-corridor.json",
+      "sha256": "c2e0143dbce5b2bddad34da28d95b1d2fd5e504462a3251df25796658fef66b4",
+      "bytes": 426,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-ram90-zero-skew-paths.json",
+      "sha256": "076fbb77cf1be1e901a3e0c83d8a59b78aa351c64ae076ab0a8324a77290e112",
+      "bytes": 795989,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-rest-routing-cache.json",
+      "sha256": "b9446b07abad0078ecf600e140e58154d0ba69ee1a05ba5e9aee361aebf83468",
+      "bytes": 1256484,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-ti-top-bottom-ddr-v1.json",
+      "sha256": "c64a275cb8a7ebb35d5119b549716105c97b17d71872417c9b16fb9280c3676e",
+      "bytes": 755,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/g350-ti-top-bottom-ddr-v5.json",
+      "sha256": "9a2db339d081c6c5a1f8489a3161ee42b40308116a74f597582dff97e9ff53a0",
+      "bytes": 938,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/host-placements.json",
+      "sha256": "21a508c6cd218a40931b493da6b3347234c99305a831580469764a5c92c2b92d",
+      "bytes": 19711,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/placement/pmic-placements.json",
+      "sha256": "fd6ab78d417c8c38c3d0f4574085e339c8ff5011fd29fe46dec43510567a2659",
+      "bytes": 1714,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/ram-ball-map.json",
+      "sha256": "7998a87e977af7f9b8bbc69cc6879e9df4820778434401bc9ed4ac5c0ef6f752",
+      "bytes": 2094,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/ram-bypass-loop-layout.json",
+      "sha256": "f80de5f3cba3b387fb802d2189400f9f736ccc883817d4ee237f1030f4130049",
+      "bytes": 2448,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/ram-reference-escapes.json",
+      "sha256": "c70eeaca398606d24fae6288b0e3aab9f52a4e10858164ea5b318bdcd9bf912e",
+      "bytes": 42952,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/mechanical/g350-provisional-outline.json",
+      "sha256": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+      "bytes": 957,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/package-lock.json",
+      "sha256": "3e72b2417c85bfb7207b1a5fd1eae5e74bf6c8ff619d84b865850bc52ac97ff7",
+      "bytes": 165737,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/package.json",
+      "sha256": "e24b6d23af101cccd7a92cfacbcda28c512e36c4ea7e48c9a22baaa01515eb11",
+      "bytes": 10858,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/patch-tscircuit-via-pad-check.mjs",
+      "sha256": "5ee58d113348805cfbe0875821b187b48fdad3ca93d3e0d8b26b1df54b3f68f6",
+      "bytes": 2637,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/tscircuit.config.json",
+      "sha256": "96817bade27262c7626a6b394bc1745a26045d40ae7bd30fa19c93ac56e5d9d1",
+      "bytes": 97,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/tsconfig.json",
+      "sha256": "923e93e798cdafa75dd3479551c2221fccf1889515e7d0cee722b054ed61c718",
+      "bytes": 652,
+      "kind": "original-source-import-closure"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/dist/g350-ddr-clear-cpu-ram-corridor-1081/fresh-layout.circuit.json",
+      "sha256": "9ed86875ab52717a660ab1798fcd8c6a33e9cac143d10f019e0a1ce19c06b97b",
+      "bytes": 3711560,
+      "kind": "immutable-layout-reference"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/AGENTS.md",
+      "sha256": "d3086d9ff8887bd296ed0d480fcbef732686bf45e075ae766a0a292518086723",
+      "bytes": 34853,
+      "kind": "preserved-dirty-or-v1-source"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/cloud/CONTINUE_BOARD.md",
+      "sha256": "bb9a879c5c68c3718d24c82a77326f5b175d47899f101407b1e1ee106c8b19ef",
+      "bytes": 33286,
+      "kind": "preserved-dirty-or-v1-source"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/prepare-g350-ram90-four-layer.mjs",
+      "sha256": "ec6b56c59d2c8f72f969934076dd3597014833e8b2e8e4387c1045f03eaadda0",
+      "bytes": 6877,
+      "kind": "preserved-dirty-or-v1-source"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/tune-g350-ram90-native-lengths.mjs",
+      "sha256": "5bfe731744159cf9f65ddde71b513cb1a0d2384574e740cd11bc087ce69b4b40",
+      "bytes": 10429,
+      "kind": "preserved-dirty-or-v1-source"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/experiments/am3352-g350-ti-top-bottom-ddr-v1-layout.circuit.tsx",
+      "sha256": "905ad41e826030883c1c96609679b6b3fd17733d0e42cd3106579a1f31f84d7f",
+      "bytes": 2309,
+      "kind": "preserved-dirty-or-v1-source"
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/tests/fixtures/g350-am3352/circuit.json",
+      "sha256": "584923a0f43680d260bab975ef797c01ad4aa5dcc68169a093b11582f4bb757a",
+      "bytes": 1572048,
+      "kind": "frozen-original-repro"
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/tests/fixtures/g350-am3352/native-input.json",
+      "sha256": "d77ad8c4e8e72a44976dfd7d947d09233f307fe7cb469b8ac6368918ed322064",
+      "bytes": 645632,
+      "kind": "frozen-original-repro"
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/tests/fixtures/g350-am3352/metadata.json",
+      "sha256": "2fe523ccf24fa34b81625ceece14cc9c207f749aeb7e843e8d27a95aed52c8da",
+      "bytes": 13289,
+      "kind": "frozen-original-repro"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/.cloud-tools/node/bin/node",
+      "sha256": "fa8cf99324985af3bd564c0d1133eb33c023c0c6ab8f67a5aeb491c61527c41e",
+      "bytes": 128548112,
+      "kind": "pinned-runtime"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "sha256": "9fd36f87e4b90b07632b987a2e4ec81ca15a62c81bf983190cea6d715be2ad74",
+      "bytes": 92752752,
+      "kind": "pinned-runtime"
+    }
+  ],
+  "sourcePacketSha256": "60e056fe3d6bcee5d8bd1baa7558b65420c093e128a0a799bee42f2ee36a88bb",
+  "freshSourceSha256": "98a50b122e6a550c3020c935886d6832dbae34e333ea135e28e9bc555c973d5e",
+  "freshRefilledCadSha256": "0dbb1d17c537b9d4a1ffca68c01a676f68715c9517418b2e82bdd4e571b4e450",
+  "fabricationReady": false
+}
