@@ -1,0 +1,1294 @@
+{
+  "status": "READ_ONLY_STATIC_NATIVE_ENDPOINT_MANHATTAN_REFERENCES_NOT_ROUTING_OR_TIMING_PASS",
+  "inputPath": "/workspace/bus-lanes-solver/.cache/g350-c115-first-reserved-three-results-next/initial-input.json",
+  "inputSha256": "61b7d6fe3cd67cbe1c61272c81f6cd6732c01d1d9b83697d809709d99c3ece4e",
+  "mappingPath": "/workspace/bus-lanes-solver/.cache/g350-source-bound-ddr49-logical-mapping.json",
+  "mappingSha256": "bd009131249a734e2ae0297b2150678f769108dbdfa617c5a3862d89de3fd8d5",
+  "nativeConnections": 49,
+  "copperLayers": 4,
+  "signalAllowedLayers": [
+    "top",
+    "bottom"
+  ],
+  "rowCount": 49,
+  "classes": [
+    {
+      "busId": "DDR_RESET",
+      "memberCount": 1,
+      "logicalNames": [
+        "DDR_RESETn"
+      ],
+      "longestManhattanMm": 9.6,
+      "longestNames": [
+        "DDR_RESETn"
+      ],
+      "existingSkewMm": null,
+      "proposedMinLengthMm": null,
+      "proposedMaxLengthMm": null,
+      "fixtureModified": false,
+      "reference": "Asynchronous RESET outside TI synchronous matched classes; no invented bus bound"
+    },
+    {
+      "busId": "DDR_BYTE0",
+      "memberCount": 11,
+      "logicalNames": [
+        "DDR_D2",
+        "DDR_D6",
+        "DDR_D0",
+        "DDR_DQS0",
+        "DDR_DQSn0",
+        "DDR_D4",
+        "DDR_DQM0",
+        "DDR_D1",
+        "DDR_D7",
+        "DDR_D3",
+        "DDR_D5"
+      ],
+      "longestManhattanMm": 14.399999999999999,
+      "longestNames": [
+        "DDR_D7"
+      ],
+      "existingSkewMm": 0.635,
+      "proposedMinLengthMm": null,
+      "proposedMaxLengthMm": 14.399999999999999,
+      "fixtureModified": false,
+      "DQLMmm": 14.399999999999999,
+      "reference": "TI Table7-69 rows1/2 MAX-column nominal length; final accounting must be reviewed"
+    },
+    {
+      "busId": "DDR_BYTE1",
+      "memberCount": 11,
+      "logicalNames": [
+        "DDR_D8",
+        "DDR_D9",
+        "DDR_D10",
+        "DDR_D11",
+        "DDR_DQM1",
+        "DDR_D12",
+        "DDR_DQSn1",
+        "DDR_DQS1",
+        "DDR_D13",
+        "DDR_D14",
+        "DDR_D15"
+      ],
+      "longestManhattanMm": 14.4,
+      "longestNames": [
+        "DDR_D8",
+        "DDR_D9",
+        "DDR_D12"
+      ],
+      "existingSkewMm": 0.635,
+      "proposedMinLengthMm": null,
+      "proposedMaxLengthMm": 14.4,
+      "fixtureModified": false,
+      "DQLMmm": 14.4,
+      "reference": "TI Table7-69 rows1/2 MAX-column nominal length; final accounting must be reviewed"
+    },
+    {
+      "busId": "DDR_COMMAND_CLOCK",
+      "memberCount": 26,
+      "logicalNames": [
+        "DDR_ODT",
+        "DDR_CSn0",
+        "DDR_BA0",
+        "DDR_A3",
+        "DDR_A5",
+        "DDR_A7",
+        "DDR_RASn",
+        "DDR_CASn",
+        "DDR_WEn",
+        "DDR_BA2",
+        "DDR_A0",
+        "DDR_A2",
+        "DDR_A9",
+        "DDR_A13",
+        "DDR_CK",
+        "DDR_CKn",
+        "DDR_A10",
+        "DDR_A12",
+        "DDR_A1",
+        "DDR_A11",
+        "DDR_A14",
+        "DDR_BA1",
+        "DDR_A4",
+        "DDR_A6",
+        "DDR_A8",
+        "DDR_CKE"
+      ],
+      "longestManhattanMm": 16.0,
+      "longestNames": [
+        "DDR_A14"
+      ],
+      "existingSkewMm": 0.635,
+      "proposedMinLengthMm": 22.35,
+      "proposedMaxLengthMm": 24.89,
+      "fixtureModified": false,
+      "CACLMmm": 23.62,
+      "nominalRangeMm": [
+        22.35,
+        24.89
+      ],
+      "reference": "TI Table7-68 row13/note9"
+    }
+  ],
+  "pairs": [
+    {
+      "logicalNames": [
+        "DDR_DQS0",
+        "DDR_DQSn0"
+      ],
+      "existingTraceGapMm": 0.12,
+      "existingSkewMm": 0.127,
+      "maxUncoupledLengthExplicit": null
+    },
+    {
+      "logicalNames": [
+        "DDR_DQS1",
+        "DDR_DQSn1"
+      ],
+      "existingTraceGapMm": 0.12,
+      "existingSkewMm": 0.127,
+      "maxUncoupledLengthExplicit": null
+    },
+    {
+      "logicalNames": [
+        "DDR_CK",
+        "DDR_CKn"
+      ],
+      "existingTraceGapMm": 0.12,
+      "existingSkewMm": 0.127,
+      "maxUncoupledLengthExplicit": null
+    }
+  ],
+  "rows": [
+    {
+      "sourceTraceId": "source_trace_0",
+      "logicalName": "DDR_ODT",
+      "endpoints": [
+        {
+          "x": -2,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_6",
+          "pcb_port_id": "pcb_port_6",
+          "port_selector": "U_SOC.G1"
+        },
+        {
+          "x": -1.1999999999999993,
+          "y": 9.2,
+          "layer": "top",
+          "pointId": "pcb_port_333",
+          "pcb_port_id": "pcb_port_333",
+          "port_selector": "U_RAM.K1"
+        }
+      ],
+      "manhattanMm": 4.800000000000001
+    },
+    {
+      "sourceTraceId": "source_trace_1",
+      "logicalName": "DDR_D8",
+      "endpoints": [
+        {
+          "x": -0.4,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_8",
+          "pcb_port_id": "pcb_port_8",
+          "port_selector": "U_SOC.J1"
+        },
+        {
+          "x": 4.4,
+          "y": 3.599999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_390",
+          "pcb_port_id": "pcb_port_390",
+          "port_selector": "U_RAM.C8"
+        }
+      ],
+      "manhattanMm": 14.4
+    },
+    {
+      "sourceTraceId": "source_trace_2",
+      "logicalName": "DDR_D9",
+      "endpoints": [
+        {
+          "x": 0.4,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_9",
+          "pcb_port_id": "pcb_port_9",
+          "port_selector": "U_SOC.K1"
+        },
+        {
+          "x": 6,
+          "y": 4.399999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_372",
+          "pcb_port_id": "pcb_port_372",
+          "port_selector": "U_RAM.A7"
+        }
+      ],
+      "manhattanMm": 14.4
+    },
+    {
+      "sourceTraceId": "source_trace_3",
+      "logicalName": "DDR_D2",
+      "endpoints": [
+        {
+          "x": 2.8,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_12",
+          "pcb_port_id": "pcb_port_12",
+          "port_selector": "U_SOC.N1"
+        },
+        {
+          "x": 2.8000000000000003,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_360",
+          "pcb_port_id": "pcb_port_360",
+          "port_selector": "U_RAM.E3"
+        }
+      ],
+      "manhattanMm": 5.6
+    },
+    {
+      "sourceTraceId": "source_trace_4",
+      "logicalName": "DDR_D6",
+      "endpoints": [
+        {
+          "x": 3.6,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_49",
+          "pcb_port_id": "pcb_port_49",
+          "port_selector": "U_SOC.P3"
+        },
+        {
+          "x": 1.9999999999999996,
+          "y": 3.5999999999999996,
+          "layer": "top",
+          "pointId": "pcb_port_393",
+          "pcb_port_id": "pcb_port_393",
+          "port_selector": "U_RAM.F8"
+        }
+      ],
+      "manhattanMm": 12.8
+    },
+    {
+      "sourceTraceId": "source_trace_5",
+      "logicalName": "DDR_CSn0",
+      "endpoints": [
+        {
+          "x": -1.2,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_25",
+          "pcb_port_id": "pcb_port_25",
+          "port_selector": "U_SOC.H2"
+        },
+        {
+          "x": -1.9999999999999996,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_350",
+          "pcb_port_id": "pcb_port_350",
+          "port_selector": "U_RAM.L2"
+        }
+      ],
+      "manhattanMm": 6.3999999999999995
+    },
+    {
+      "sourceTraceId": "source_trace_6",
+      "logicalName": "DDR_BA0",
+      "endpoints": [
+        {
+          "x": -5.2,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_56",
+          "pcb_port_id": "pcb_port_56",
+          "port_selector": "U_SOC.C4"
+        },
+        {
+          "x": -2.7999999999999994,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_351",
+          "pcb_port_id": "pcb_port_351",
+          "port_selector": "U_RAM.M2"
+        }
+      ],
+      "manhattanMm": 9.6
+    },
+    {
+      "sourceTraceId": "source_trace_7",
+      "logicalName": "DDR_A3",
+      "endpoints": [
+        {
+          "x": -5.2,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_38",
+          "pcb_port_id": "pcb_port_38",
+          "port_selector": "U_SOC.C3"
+        },
+        {
+          "x": -3.5999999999999996,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_352",
+          "pcb_port_id": "pcb_port_352",
+          "port_selector": "U_RAM.N2"
+        }
+      ],
+      "manhattanMm": 8.0
+    },
+    {
+      "sourceTraceId": "source_trace_8",
+      "logicalName": "DDR_A5",
+      "endpoints": [
+        {
+          "x": -6,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_1",
+          "pcb_port_id": "pcb_port_1",
+          "port_selector": "U_SOC.B1"
+        },
+        {
+          "x": -4.4,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_353",
+          "pcb_port_id": "pcb_port_353",
+          "port_selector": "U_RAM.P2"
+        }
+      ],
+      "manhattanMm": 6.399999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_9",
+      "logicalName": "DDR_A7",
+      "endpoints": [
+        {
+          "x": -3.6,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_22",
+          "pcb_port_id": "pcb_port_22",
+          "port_selector": "U_SOC.E2"
+        },
+        {
+          "x": -5.2,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_354",
+          "pcb_port_id": "pcb_port_354",
+          "port_selector": "U_RAM.R2"
+        }
+      ],
+      "manhattanMm": 7.199999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_10",
+      "logicalName": "DDR_RESETn",
+      "endpoints": [
+        {
+          "x": -2,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_24",
+          "pcb_port_id": "pcb_port_24",
+          "port_selector": "U_SOC.G2"
+        },
+        {
+          "x": -6,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_355",
+          "pcb_port_id": "pcb_port_355",
+          "port_selector": "U_RAM.T2"
+        }
+      ],
+      "manhattanMm": 9.6
+    },
+    {
+      "sourceTraceId": "source_trace_11",
+      "logicalName": "DDR_D10",
+      "endpoints": [
+        {
+          "x": 0.4,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_27",
+          "pcb_port_id": "pcb_port_27",
+          "port_selector": "U_SOC.K2"
+        },
+        {
+          "x": 4.4,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_358",
+          "pcb_port_id": "pcb_port_358",
+          "port_selector": "U_RAM.C3"
+        }
+      ],
+      "manhattanMm": 10.4
+    },
+    {
+      "sourceTraceId": "source_trace_12",
+      "logicalName": "DDR_D11",
+      "endpoints": [
+        {
+          "x": 0.4,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_45",
+          "pcb_port_id": "pcb_port_45",
+          "port_selector": "U_SOC.K3"
+        },
+        {
+          "x": 6,
+          "y": 8.399999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_340",
+          "pcb_port_id": "pcb_port_340",
+          "port_selector": "U_RAM.A2"
+        }
+      ],
+      "manhattanMm": 12.000000000000002
+    },
+    {
+      "sourceTraceId": "source_trace_13",
+      "logicalName": "DDR_DQM1",
+      "endpoints": [
+        {
+          "x": -0.4,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_26",
+          "pcb_port_id": "pcb_port_26",
+          "port_selector": "U_SOC.J2"
+        },
+        {
+          "x": 3.6000000000000005,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_359",
+          "pcb_port_id": "pcb_port_359",
+          "port_selector": "U_RAM.D3"
+        }
+      ],
+      "manhattanMm": 10.400000000000002
+    },
+    {
+      "sourceTraceId": "source_trace_14",
+      "logicalName": "DDR_D0",
+      "endpoints": [
+        {
+          "x": 2,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_47",
+          "pcb_port_id": "pcb_port_47",
+          "port_selector": "U_SOC.M3"
+        },
+        {
+          "x": 2.0000000000000004,
+          "y": 8.399999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_345",
+          "pcb_port_id": "pcb_port_345",
+          "port_selector": "U_RAM.F2"
+        }
+      ],
+      "manhattanMm": 6.400000000000002
+    },
+    {
+      "sourceTraceId": "source_trace_15",
+      "logicalName": "DDR_DQS0",
+      "endpoints": [
+        {
+          "x": 3.6,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_13",
+          "pcb_port_id": "pcb_port_13",
+          "port_selector": "U_SOC.P1"
+        },
+        {
+          "x": 2.0000000000000004,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_361",
+          "pcb_port_id": "pcb_port_361",
+          "port_selector": "U_RAM.F3"
+        }
+      ],
+      "manhattanMm": 7.199999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_16",
+      "logicalName": "DDR_DQSn0",
+      "endpoints": [
+        {
+          "x": 3.6,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_31",
+          "pcb_port_id": "pcb_port_31",
+          "port_selector": "U_SOC.P2"
+        },
+        {
+          "x": 1.2000000000000002,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_362",
+          "pcb_port_id": "pcb_port_362",
+          "port_selector": "U_RAM.G3"
+        }
+      ],
+      "manhattanMm": 8.8
+    },
+    {
+      "sourceTraceId": "source_trace_17",
+      "logicalName": "DDR_D4",
+      "endpoints": [
+        {
+          "x": 2.8,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_48",
+          "pcb_port_id": "pcb_port_48",
+          "port_selector": "U_SOC.N3"
+        },
+        {
+          "x": 1.9999999999999998,
+          "y": 4.3999999999999995,
+          "layer": "top",
+          "pointId": "pcb_port_377",
+          "pcb_port_id": "pcb_port_377",
+          "port_selector": "U_RAM.F7"
+        }
+      ],
+      "manhattanMm": 11.200000000000003
+    },
+    {
+      "sourceTraceId": "source_trace_18",
+      "logicalName": "DDR_RASn",
+      "endpoints": [
+        {
+          "x": -2,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_60",
+          "pcb_port_id": "pcb_port_60",
+          "port_selector": "U_SOC.G4"
+        },
+        {
+          "x": -0.39999999999999974,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_364",
+          "pcb_port_id": "pcb_port_364",
+          "port_selector": "U_RAM.J3"
+        }
+      ],
+      "manhattanMm": 9.6
+    },
+    {
+      "sourceTraceId": "source_trace_19",
+      "logicalName": "DDR_CASn",
+      "endpoints": [
+        {
+          "x": -2.8,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_5",
+          "pcb_port_id": "pcb_port_5",
+          "port_selector": "U_SOC.F1"
+        },
+        {
+          "x": -1.1999999999999997,
+          "y": 7.6000000000000005,
+          "layer": "top",
+          "pointId": "pcb_port_365",
+          "pcb_port_id": "pcb_port_365",
+          "port_selector": "U_RAM.K3"
+        }
+      ],
+      "manhattanMm": 7.199999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_20",
+      "logicalName": "DDR_WEn",
+      "endpoints": [
+        {
+          "x": -6,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_19",
+          "pcb_port_id": "pcb_port_19",
+          "port_selector": "U_SOC.B2"
+        },
+        {
+          "x": -1.9999999999999998,
+          "y": 7.6000000000000005,
+          "layer": "top",
+          "pointId": "pcb_port_366",
+          "pcb_port_id": "pcb_port_366",
+          "port_selector": "U_RAM.L3"
+        }
+      ],
+      "manhattanMm": 10.399999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_21",
+      "logicalName": "DDR_BA2",
+      "endpoints": [
+        {
+          "x": -6,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_37",
+          "pcb_port_id": "pcb_port_37",
+          "port_selector": "U_SOC.B3"
+        },
+        {
+          "x": -2.7999999999999994,
+          "y": 7.6000000000000005,
+          "layer": "top",
+          "pointId": "pcb_port_367",
+          "pcb_port_id": "pcb_port_367",
+          "port_selector": "U_RAM.M3"
+        }
+      ],
+      "manhattanMm": 10.4
+    },
+    {
+      "sourceTraceId": "source_trace_22",
+      "logicalName": "DDR_A0",
+      "endpoints": [
+        {
+          "x": -2.8,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_41",
+          "pcb_port_id": "pcb_port_41",
+          "port_selector": "U_SOC.F3"
+        },
+        {
+          "x": -3.5999999999999996,
+          "y": 7.6000000000000005,
+          "layer": "top",
+          "pointId": "pcb_port_368",
+          "pcb_port_id": "pcb_port_368",
+          "port_selector": "U_RAM.N3"
+        }
+      ],
+      "manhattanMm": 8.0
+    },
+    {
+      "sourceTraceId": "source_trace_23",
+      "logicalName": "DDR_A2",
+      "endpoints": [
+        {
+          "x": -3.6,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_58",
+          "pcb_port_id": "pcb_port_58",
+          "port_selector": "U_SOC.E4"
+        },
+        {
+          "x": -4.4,
+          "y": 7.600000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_369",
+          "pcb_port_id": "pcb_port_369",
+          "port_selector": "U_RAM.P3"
+        }
+      ],
+      "manhattanMm": 8.799999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_24",
+      "logicalName": "DDR_A9",
+      "endpoints": [
+        {
+          "x": -5.2,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_2",
+          "pcb_port_id": "pcb_port_2",
+          "port_selector": "U_SOC.C1"
+        },
+        {
+          "x": -5.2,
+          "y": 7.600000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_370",
+          "pcb_port_id": "pcb_port_370",
+          "port_selector": "U_RAM.R3"
+        }
+      ],
+      "manhattanMm": 5.599999999999998
+    },
+    {
+      "sourceTraceId": "source_trace_25",
+      "logicalName": "DDR_A13",
+      "endpoints": [
+        {
+          "x": -1.2,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_43",
+          "pcb_port_id": "pcb_port_43",
+          "port_selector": "U_SOC.H3"
+        },
+        {
+          "x": -6,
+          "y": 7.600000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_371",
+          "pcb_port_id": "pcb_port_371",
+          "port_selector": "U_RAM.T3"
+        }
+      ],
+      "manhattanMm": 12.0
+    },
+    {
+      "sourceTraceId": "source_trace_26",
+      "logicalName": "DDR_D12",
+      "endpoints": [
+        {
+          "x": 0.4,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_63",
+          "pcb_port_id": "pcb_port_63",
+          "port_selector": "U_SOC.K4"
+        },
+        {
+          "x": 3.5999999999999996,
+          "y": 4.3999999999999995,
+          "layer": "top",
+          "pointId": "pcb_port_375",
+          "pcb_port_id": "pcb_port_375",
+          "port_selector": "U_RAM.D7"
+        }
+      ],
+      "manhattanMm": 14.399999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_27",
+      "logicalName": "DDR_DQSn1",
+      "endpoints": [
+        {
+          "x": 1.2,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_28",
+          "pcb_port_id": "pcb_port_28",
+          "port_selector": "U_SOC.L2"
+        },
+        {
+          "x": 5.2,
+          "y": 4.399999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_373",
+          "pcb_port_id": "pcb_port_373",
+          "port_selector": "U_RAM.B7"
+        }
+      ],
+      "manhattanMm": 13.600000000000001
+    },
+    {
+      "sourceTraceId": "source_trace_28",
+      "logicalName": "DDR_DQS1",
+      "endpoints": [
+        {
+          "x": 1.2,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_10",
+          "pcb_port_id": "pcb_port_10",
+          "port_selector": "U_SOC.L1"
+        },
+        {
+          "x": 4.4,
+          "y": 4.399999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_374",
+          "pcb_port_id": "pcb_port_374",
+          "port_selector": "U_RAM.C7"
+        }
+      ],
+      "manhattanMm": 12.0
+    },
+    {
+      "sourceTraceId": "source_trace_29",
+      "logicalName": "DDR_D13",
+      "endpoints": [
+        {
+          "x": 1.2,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_46",
+          "pcb_port_id": "pcb_port_46",
+          "port_selector": "U_SOC.L3"
+        },
+        {
+          "x": 4.4,
+          "y": 8.399999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_342",
+          "pcb_port_id": "pcb_port_342",
+          "port_selector": "U_RAM.C2"
+        }
+      ],
+      "manhattanMm": 9.600000000000001
+    },
+    {
+      "sourceTraceId": "source_trace_30",
+      "logicalName": "DDR_DQM0",
+      "endpoints": [
+        {
+          "x": 2,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_29",
+          "pcb_port_id": "pcb_port_29",
+          "port_selector": "U_SOC.M2"
+        },
+        {
+          "x": 2.7999999999999994,
+          "y": 4.3999999999999995,
+          "layer": "top",
+          "pointId": "pcb_port_376",
+          "pcb_port_id": "pcb_port_376",
+          "port_selector": "U_RAM.E7"
+        }
+      ],
+      "manhattanMm": 10.4
+    },
+    {
+      "sourceTraceId": "source_trace_31",
+      "logicalName": "DDR_D1",
+      "endpoints": [
+        {
+          "x": 2,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_65",
+          "pcb_port_id": "pcb_port_65",
+          "port_selector": "U_SOC.M4"
+        },
+        {
+          "x": 0.3999999999999996,
+          "y": 3.6,
+          "layer": "top",
+          "pointId": "pcb_port_395",
+          "pcb_port_id": "pcb_port_395",
+          "port_selector": "U_RAM.H8"
+        }
+      ],
+      "manhattanMm": 13.600000000000001
+    },
+    {
+      "sourceTraceId": "source_trace_32",
+      "logicalName": "DDR_D7",
+      "endpoints": [
+        {
+          "x": 3.6,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_67",
+          "pcb_port_id": "pcb_port_67",
+          "port_selector": "U_SOC.P4"
+        },
+        {
+          "x": 0.39999999999999974,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_379",
+          "pcb_port_id": "pcb_port_379",
+          "port_selector": "U_RAM.H7"
+        }
+      ],
+      "manhattanMm": 14.399999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_33",
+      "logicalName": "DDR_CK",
+      "endpoints": [
+        {
+          "x": -4.4,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_21",
+          "pcb_port_id": "pcb_port_21",
+          "port_selector": "U_SOC.D2"
+        },
+        {
+          "x": -0.4000000000000003,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_380",
+          "pcb_port_id": "pcb_port_380",
+          "port_selector": "U_RAM.J7"
+        }
+      ],
+      "manhattanMm": 13.6
+    },
+    {
+      "sourceTraceId": "source_trace_34",
+      "logicalName": "DDR_CKn",
+      "endpoints": [
+        {
+          "x": -4.4,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_3",
+          "pcb_port_id": "pcb_port_3",
+          "port_selector": "U_SOC.D1"
+        },
+        {
+          "x": -1.2000000000000002,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_381",
+          "pcb_port_id": "pcb_port_381",
+          "port_selector": "U_RAM.K7"
+        }
+      ],
+      "manhattanMm": 12.0
+    },
+    {
+      "sourceTraceId": "source_trace_35",
+      "logicalName": "DDR_A10",
+      "endpoints": [
+        {
+          "x": -2.8,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_59",
+          "pcb_port_id": "pcb_port_59",
+          "port_selector": "U_SOC.F4"
+        },
+        {
+          "x": -2.0000000000000004,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_382",
+          "pcb_port_id": "pcb_port_382",
+          "port_selector": "U_RAM.L7"
+        }
+      ],
+      "manhattanMm": 11.999999999999998
+    },
+    {
+      "sourceTraceId": "source_trace_36",
+      "logicalName": "DDR_A12",
+      "endpoints": [
+        {
+          "x": -3.6,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_40",
+          "pcb_port_id": "pcb_port_40",
+          "port_selector": "U_SOC.E3"
+        },
+        {
+          "x": -3.6000000000000005,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_384",
+          "pcb_port_id": "pcb_port_384",
+          "port_selector": "U_RAM.N7"
+        }
+      ],
+      "manhattanMm": 10.4
+    },
+    {
+      "sourceTraceId": "source_trace_37",
+      "logicalName": "DDR_A1",
+      "endpoints": [
+        {
+          "x": -1.2,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_7",
+          "pcb_port_id": "pcb_port_7",
+          "port_selector": "U_SOC.H1"
+        },
+        {
+          "x": -4.4,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_385",
+          "pcb_port_id": "pcb_port_385",
+          "port_selector": "U_RAM.P7"
+        }
+      ],
+      "manhattanMm": 12.0
+    },
+    {
+      "sourceTraceId": "source_trace_38",
+      "logicalName": "DDR_A11",
+      "endpoints": [
+        {
+          "x": -2.8,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_23",
+          "pcb_port_id": "pcb_port_23",
+          "port_selector": "U_SOC.F2"
+        },
+        {
+          "x": -5.2,
+          "y": 4.4,
+          "layer": "top",
+          "pointId": "pcb_port_386",
+          "pcb_port_id": "pcb_port_386",
+          "port_selector": "U_RAM.R7"
+        }
+      ],
+      "manhattanMm": 12.0
+    },
+    {
+      "sourceTraceId": "source_trace_39",
+      "logicalName": "DDR_A14",
+      "endpoints": [
+        {
+          "x": -1.2,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_61",
+          "pcb_port_id": "pcb_port_61",
+          "port_selector": "U_SOC.H4"
+        },
+        {
+          "x": -6,
+          "y": 4.400000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_387",
+          "pcb_port_id": "pcb_port_387",
+          "port_selector": "U_RAM.T7"
+        }
+      ],
+      "manhattanMm": 16.0
+    },
+    {
+      "sourceTraceId": "source_trace_40",
+      "logicalName": "DDR_D14",
+      "endpoints": [
+        {
+          "x": 1.2,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_64",
+          "pcb_port_id": "pcb_port_64",
+          "port_selector": "U_SOC.L4"
+        },
+        {
+          "x": 6,
+          "y": 7.599999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_356",
+          "pcb_port_id": "pcb_port_356",
+          "port_selector": "U_RAM.A3"
+        }
+      ],
+      "manhattanMm": 12.8
+    },
+    {
+      "sourceTraceId": "source_trace_41",
+      "logicalName": "DDR_D15",
+      "endpoints": [
+        {
+          "x": 2,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_11",
+          "pcb_port_id": "pcb_port_11",
+          "port_selector": "U_SOC.M1"
+        },
+        {
+          "x": 5.2,
+          "y": 3.599999999999999,
+          "layer": "top",
+          "pointId": "pcb_port_389",
+          "pcb_port_id": "pcb_port_389",
+          "port_selector": "U_RAM.B8"
+        }
+      ],
+      "manhattanMm": 12.8
+    },
+    {
+      "sourceTraceId": "source_trace_42",
+      "logicalName": "DDR_D3",
+      "endpoints": [
+        {
+          "x": 2.8,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_30",
+          "pcb_port_id": "pcb_port_30",
+          "port_selector": "U_SOC.N2"
+        },
+        {
+          "x": 0.4000000000000003,
+          "y": 7.6,
+          "layer": "top",
+          "pointId": "pcb_port_363",
+          "pcb_port_id": "pcb_port_363",
+          "port_selector": "U_RAM.H3"
+        }
+      ],
+      "manhattanMm": 8.8
+    },
+    {
+      "sourceTraceId": "source_trace_43",
+      "logicalName": "DDR_D5",
+      "endpoints": [
+        {
+          "x": 2.8,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_66",
+          "pcb_port_id": "pcb_port_66",
+          "port_selector": "U_SOC.N4"
+        },
+        {
+          "x": 1.2000000000000004,
+          "y": 8.4,
+          "layer": "top",
+          "pointId": "pcb_port_346",
+          "pcb_port_id": "pcb_port_346",
+          "port_selector": "U_RAM.G2"
+        }
+      ],
+      "manhattanMm": 8.799999999999999
+    },
+    {
+      "sourceTraceId": "source_trace_44",
+      "logicalName": "DDR_BA1",
+      "endpoints": [
+        {
+          "x": -3.6,
+          "y": 13.2,
+          "layer": "top",
+          "pointId": "pcb_port_4",
+          "pcb_port_id": "pcb_port_4",
+          "port_selector": "U_SOC.E1"
+        },
+        {
+          "x": -3.6000000000000005,
+          "y": 3.6000000000000005,
+          "layer": "top",
+          "pointId": "pcb_port_400",
+          "pcb_port_id": "pcb_port_400",
+          "port_selector": "U_RAM.N8"
+        }
+      ],
+      "manhattanMm": 9.599999999999998
+    },
+    {
+      "sourceTraceId": "source_trace_45",
+      "logicalName": "DDR_A4",
+      "endpoints": [
+        {
+          "x": -5.2,
+          "y": 14,
+          "layer": "top",
+          "pointId": "pcb_port_20",
+          "pcb_port_id": "pcb_port_20",
+          "port_selector": "U_SOC.C2"
+        },
+        {
+          "x": -4.4,
+          "y": 3.600000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_401",
+          "pcb_port_id": "pcb_port_401",
+          "port_selector": "U_RAM.P8"
+        }
+      ],
+      "manhattanMm": 11.2
+    },
+    {
+      "sourceTraceId": "source_trace_46",
+      "logicalName": "DDR_A6",
+      "endpoints": [
+        {
+          "x": -4.4,
+          "y": 16.4,
+          "layer": "top",
+          "pointId": "pcb_port_75",
+          "pcb_port_id": "pcb_port_75",
+          "port_selector": "U_SOC.D5"
+        },
+        {
+          "x": -5.2,
+          "y": 3.600000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_402",
+          "pcb_port_id": "pcb_port_402",
+          "port_selector": "U_RAM.R8"
+        }
+      ],
+      "manhattanMm": 13.599999999999998
+    },
+    {
+      "sourceTraceId": "source_trace_47",
+      "logicalName": "DDR_A8",
+      "endpoints": [
+        {
+          "x": -4.4,
+          "y": 15.6,
+          "layer": "top",
+          "pointId": "pcb_port_57",
+          "pcb_port_id": "pcb_port_57",
+          "port_selector": "U_SOC.D4"
+        },
+        {
+          "x": -6,
+          "y": 3.600000000000001,
+          "layer": "top",
+          "pointId": "pcb_port_403",
+          "pcb_port_id": "pcb_port_403",
+          "port_selector": "U_RAM.T8"
+        }
+      ],
+      "manhattanMm": 13.599999999999998
+    },
+    {
+      "sourceTraceId": "source_trace_48",
+      "logicalName": "DDR_CKE",
+      "endpoints": [
+        {
+          "x": -2,
+          "y": 14.8,
+          "layer": "top",
+          "pointId": "pcb_port_42",
+          "pcb_port_id": "pcb_port_42",
+          "port_selector": "U_SOC.G3"
+        },
+        {
+          "x": -1.2000000000000006,
+          "y": 2.8,
+          "layer": "top",
+          "pointId": "pcb_port_413",
+          "pcb_port_id": "pcb_port_413",
+          "port_selector": "U_RAM.K9"
+        }
+      ],
+      "manhattanMm": 12.799999999999999
+    }
+  ],
+  "accounting": "A new opt-in input may use derived bus minLength/maxLength for planar pad-to-pad copper, including owned fixed/package-approach copper as counted by existing fixedRouteLength. No actual via depth or internal package delay is supplied by TI XY figures or these native points. TI text does not prescribe the checker-specific1.6 mm-per-transition convention. Final electrical flight-time accounting remains open. Frozen fixtures are unchanged.",
+  "fabricationReady": false
+}

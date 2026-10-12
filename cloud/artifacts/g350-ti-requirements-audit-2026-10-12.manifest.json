@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-10-12T18:11:13.419196+00:00",
+  "scope": "Source-bound staticTIrequirements/49-padendpointManhattanreferences, noacceptedrouting/planes/timing/manufacturing",
+  "originalIgnoredAuditManifestSha256": "7c357d4ac1dfbac54a125a1bb1e34b5819bfde3195d6d4484b23e98435b72d66",
+  "sourceBindings": [
+    {
+      "path": "/workspace/g350-linux-handheld/reference/am3352/am3352.txt",
+      "sha256": "13b2c98b7e8812cedd065d4aa7949a17da56903589a6f3aa0fe73d61eec19c0b",
+      "bytes": 466934
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/reference/am3352/am3352.pdf",
+      "sha256": "ec145b6b19a7ff35118bb0ec06b5ae9c51aa97ccdf4da935f2176d9168af0205",
+      "bytes": 3838166
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/reference/am3352/micron-ddr3l.txt",
+      "sha256": "7c082c092dff9be4d8cec8620ca4595a6e3313544a21bd1cef11ab39d86bea47",
+      "bytes": 430621
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/reference/am3352/micron-ddr3l.pdf",
+      "sha256": "3b0a5ce422db7f8edaa2a44e389c03fc175b28a253acd2eed799016cbdd622e8",
+      "bytes": 3176800
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/AM3352BZCZ100.tsx",
+      "sha256": "9818d5494e2460af36d898f788681bdb23f5e87d3d382556baefdbe1efff5ff2",
+      "bytes": 40439
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/imports/MT41K256M16TW_107_P.tsx",
+      "sha256": "8e1ecc5c4c542565227dff59534063975ec6759f7c101abc4b0902a3a5928acc",
+      "bytes": 12907
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/cpu-ball-map.json",
+      "sha256": "f936e408a702a5eb42d68d2cd834d7ccefb98930eda205ac234144c0c10213df",
+      "bytes": 7529
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/memory-connections.json",
+      "sha256": "1469f03da9f6d6420723aa547c9831beb59a98bde0cbd9d5162fd3d40fe4f572",
+      "bytes": 7099
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/memory-byte1-swizzled-connections.json",
+      "sha256": "9e833a40b6cd5ccffbe5499254455d1f6f713c7278a0f6195d0aa9dab6546671",
+      "bytes": 7099
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/PowerNetworks.ts",
+      "sha256": "63d4259ae52644bef32b070d1fd82ae0f83571beb3c86a47bb9e3f577be1c1a2",
+      "bytes": 8079
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/DdrConstraints.tsx",
+      "sha256": "e4caa94ff1dddcbe4f09275924513186c9055adbeb7b0e04ff37c1df79bfaaae",
+      "bytes": 2065
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/lib/am3352/FourLayerDdrConstraints.tsx",
+      "sha256": "4de0ed25e99eb1c4f23745af93822ff9dfc6302906c980700d5862a5887c72a2",
+      "bytes": 3028
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/g350-source-bound-ddr49-logical-mapping.json",
+      "sha256": "bd009131249a734e2ae0297b2150678f769108dbdfa617c5a3862d89de3fd8d5",
+      "bytes": 22394
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/g350-c115-first-reserved-three-results-next/initial-input.json",
+      "sha256": "61b7d6fe3cd67cbe1c61272c81f6cd6732c01d1d9b83697d809709d99c3ece4e",
+      "bytes": 315868
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/lib/route-lengths.ts",
+      "sha256": "39344e8f84cddadd3ee965431b48a2cb13e48df61df34b38052842b5d6e14f42",
+      "bytes": 4760
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/lib/geometry.ts",
+      "sha256": "b8b714914176b5296502767251e16bc073858aaefae513652ada9a55124f5561",
+      "bytes": 3240
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/lib/exterior-pair-spacing.ts",
+      "sha256": "d77ded49084862311f3e9cdbed9a04ec3af4825726ba86bd55810a27701e337e",
+      "bytes": 5369
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/lib/shared-pair-spacing.ts",
+      "sha256": "31cb78e9be4ee80c344c0eb4923e9926a637f7f0d55dae27d2648fe6cadc8742",
+      "bytes": 4865
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/lib/pair-coupling.ts",
+      "sha256": "7ac92ca0503b0333a7915b334747f29a9114c24db9f79cb60d3bf9ef0a6ae202",
+      "bytes": 3603
+    }
+  ],
+  "files": [
+    {
+      "path": "cloud/TI_DDR_ROUTING_RULES_2026-10-12.md",
+      "bytes": 16145,
+      "sha256": "e950a34001e57983548414d072d31d0f769455f33256e15e00f5bfe7e5248f07"
+    },
+    {
+      "path": "cloud/artifacts/g350-ti-native-manhattan-2026-10-12.json",
+      "bytes": 32343,
+      "sha256": "ea16dbec1eda46e54cff39c74276cce32b89d4ec9d39c20698790bad0d545e15"
+    }
+  ],
+  "nativeEndpointLayers": [
+    "top"
+  ],
+  "allowedDdrSignalLayers": [
+    "top",
+    "bottom"
+  ],
+  "physicalCopperLayers": 4,
+  "signalCount": 49,
+  "fabricationReady": false,
+  "metadataClarification": "Originalignoredmanifest fieldddrSignalLayers meantnativeendpointlayers; permittedroutinglayersremainTopBottom. Source/table applicability and newderivedinput constraints aredocumented, frozenfixturesunchanged."
+}
