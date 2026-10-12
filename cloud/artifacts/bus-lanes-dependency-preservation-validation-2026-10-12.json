@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-12T02:03:10.390323+00:00",
+  "scope": "Isolated proposal for reusable nonmutating Start verification; no main, board, installed dependency or archive changes",
+  "sourceRevision": "7d5d73fa739d7d48e7bef4c13217d98c8ecc27f9",
+  "libTree": "8b126296de1b027322d20193bcaaa54ac807812e",
+  "helperFiles": [
+    {
+      "file": "audit-installed-dependencies.py",
+      "sha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59"
+    },
+    {
+      "file": "verify-installed-dependencies.py",
+      "sha256": "749cad354ad094398790f31e3fef808e7fd3a2af1921ee25afe98e6490975523"
+    },
+    {
+      "file": "README.md",
+      "sha256": "688231eeab0d7fd0301cde4c2dd53ee343ac861ce86758a86363515c3102e75f"
+    }
+  ],
+  "archive": {
+    "receiptPath": "/workspace/bus-lanes-solver/.cache/topology-installed-dependencies-20261012T0154Z/archive-receipt.json",
+    "trustedReceiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archivePath": "/workspace/bus-lanes-solver/.cache/topology-installed-dependencies-20261012T0154Z/installed-node-modules.tar.gz",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "manifestSha256": "d63c5b0cd99e16523bc36c1939415dfa598e6cdf7a639ef6dc9e4a999d99d605",
+    "files": 8496,
+    "directories": 1158,
+    "symlinks": 29,
+    "excludedPaths": [],
+    "externalSymlinks": []
+  },
+  "independentContentReview": {
+    "all9683MemberBytesTypesModesAndTargetsMatched": true,
+    "uniqueSafePathsAndInternalClosure": true,
+    "originalReceiptManifestArchiveAndToolUnchanged": true,
+    "originalAuditReportSha256": "2a580eeaa9ecda9384f96cda48b397e1434f6b156da33853ff3455f0b49f46c4"
+  },
+  "negativeControls": [
+    {
+      "name": "genuine-toy-tree-and-archive",
+      "accepted": true
+    },
+    {
+      "name": "wrong-trusted-receipt-sha",
+      "rejected": true
+    },
+    {
+      "name": "receipt-bytes-tampered",
+      "rejected": true
+    },
+    {
+      "name": "manifest-bytes-tampered",
+      "rejected": true
+    },
+    {
+      "name": "genuine-archive-checksum-tampered",
+      "rejected": true
+    },
+    {
+      "name": "genuine-archive-missing",
+      "rejected": true
+    },
+    {
+      "name": "audit-tool-bytes-tampered",
+      "rejected": true
+    },
+    {
+      "name": "installed-file-content-changed",
+      "rejected": true
+    },
+    {
+      "name": "installed-file-mode-changed",
+      "rejected": true
+    },
+    {
+      "name": "installed-symlink-target-changed",
+      "rejected": true
+    }
+  ],
+  "prototypeStartChain": {
+    "sourcedBoardEnv": true,
+    "copiedAuditAndTrustedVerifierChainExitCode": 0,
+    "exactFrozenSourceGitByteModeAndClosureExitCode": 0,
+    "bunVersion": "1.3.14",
+    "solverSteps": 0,
+    "finalBoardPathsStillNeedOwnerTest": true
+  },
+  "sourcePrepareOnly": {
+    "sourceFiles": 120,
+    "driverFiles": 51,
+    "fixtureFiles": 6,
+    "runtimeConfigurationFiles": 1,
+    "caseCount": 11,
+    "sourceAuditSha256": "114981968509148d3fbc4a9973534d74ff4f5df02bb077f849a9ca1aeaf23142",
+    "inputAuditSha256": "145acb43285f080e686d7c0c0dcc6c7ba00c3b988d5a5c512c38729fa16b63b7",
+    "all24DirectPackageAndEntryFingerprintsBoundToFullArchivedTree": true,
+    "all11TrustedInputsFixedCopperFanoutAndConstructorCapsEqual73ef043": true,
+    "installedArchiveBindingReportSha256": "699add34d7f5d5e344635bb0af58b6582b3cfa54cd12cc49982ff6c02898cd7b"
+  },
+  "limitations": [
+    "Historical73ef043 runs recorded24 direct package/entry fingerprints and fanout identity; this later full-tree snapshot is not a retroactive full-tree run-start attestation.",
+    "Recorded absolute realpaths support this prepared root; relocation requires a separately reviewed explicit mapping.",
+    "Archive remains under ignored bus.cache in prepared filesystem; neither helper silently installs, resolves, restores or overwrites dependencies.",
+    "Board runtime and KiCad cloud-tools are unchanged; no hardware routing or fabrication acceptance is established."
+  ]
+}
