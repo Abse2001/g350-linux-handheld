@@ -1,0 +1,88 @@
+{
+  "manifest": "cloud/artifacts/g350-ti-ddr-linux-followup-2026-10-12.manifest.json",
+  "indexedMembers": 1975,
+  "checks": [
+    {
+      "stage": "archive-only",
+      "exitCode": 0,
+      "stdout": "Verified 1975 evidence members; restored 0"
+    },
+    {
+      "stage": "fresh",
+      "exitCode": 0,
+      "stdout": "Verified 1975 evidence members; restored 1975"
+    },
+    {
+      "stage": "repeat",
+      "exitCode": 0,
+      "stdout": "Verified 1975 evidence members; restored 0"
+    },
+    {
+      "stage": "edited-file-refusal",
+      "exitCode": 1,
+      "editedBytesPreserved": true,
+      "member": "report/TI_DDR_LINUX_FOLLOWUP_2026-10-12-v2.md",
+      "refusalCauseConfirmed": "Preserving differing local evidence: exact selected member"
+    }
+  ],
+  "allRestoredBytesAndAppliedModesVerified": true,
+  "restorerAppliesModes": false,
+  "diagnosticOnly": true,
+  "accepted49": false,
+  "fabricationReady": false,
+  "validationLogSha256": {
+    "repeat.log": "c4ba1ba72aaabf2122dc011642046d3485caa89df5e2041a2a8417f7037dac5d",
+    "edited-refusal.log": "5bf99d22ff82345b5bb87f27b876e0a86da26a82dbdbec7a35f3e0c5658d02ef",
+    "archive-only.log": "c4ba1ba72aaabf2122dc011642046d3485caa89df5e2041a2a8417f7037dac5d",
+    "fresh.log": "81c88a401bfc084be3ddae30f2e97406bc390da73fb6f0544880ed48be324e68"
+  },
+  "createdAt": "2026-10-12T22:29:30Z",
+  "archive": {
+    "path": "cloud/artifacts/g350-ti-ddr-linux-followup-2026-10-12.tar.gz",
+    "bytes": 15209227,
+    "sha256": "e7e3af6354ca757e2c80d651afaa27a7ffb2e1f0fd88f95c8f7a4c4de6cecd7a"
+  },
+  "manifestSha256": "2ce977bf61db17d249398121f470b69cc4c177df53fa00599d310a616357b5b6",
+  "inventorySha256": "fae1424abfcf4ef0fe151849bed668391266ea84b9fa44d53320e73a1495fb55",
+  "rawValidationPath": ".cloud-tools/ti-ddr-followup-report-next/archive-validation-v1/validation.json",
+  "restoreHelperSha256": "e7600cd88d8b2a1c602c37fa4a1f4979c9379a7dd4950b0876ebda182e0a070d",
+  "preparationTimeReportSha256": "518b1b9746bf23c4d4b051643960e87b231643c79cc5bc32d238fa20c48ba353",
+  "firstPackagingFailurePreserved": {
+    "cause": "Relative output path used with absolute relative_to after tar verification; normalized before corrected build",
+    "completeArchiveSha256Held": "e7e3af6354ca757e2c80d651afaa27a7ffb2e1f0fd88f95c8f7a4c4de6cecd7a"
+  },
+  "sourcePinsPreserved": true,
+  "userOwnedDirtyFilesPreserved": true,
+  "old913Regression": {
+    "sourceFileCount": 913,
+    "sourceCommit": "d86215bad2b64ea279660febcbb34ba89f58a83b",
+    "elevenOriginalProducerPasses": 11,
+    "rootSession": 82355,
+    "postflightSha256": "2b0aa0274e4c7e7555b425e44facfbf48c5c5ff965fdc6cfe053566da295733d",
+    "freshAll22Comparison": "running, not qualified yet"
+  },
+  "additive914Validation": {
+    "sourceManifestSha256": "9670e70cc80a6633e13dd2f3f5a1c601abf78da7d73ded01d12fcc3c0e1bd9ff",
+    "fullRun": {
+      "passes": 689,
+      "failures": 3,
+      "cause": "Root omitted cloud/env.sh; benchmark subprocesses could not find bun",
+      "session": 43632
+    },
+    "correctedSameSourceSelectedRun": {
+      "passes": 3,
+      "failures": 0,
+      "session": 35742
+    },
+    "singleFull692PassRunClaimed": false,
+    "typeFormatPackagedConsumers": {
+      "allExit0": true,
+      "resultSha256": "3862a513954665f3f6e6b205b52309218c6b35668c8bcfb457266f3d740a0ba0",
+      "postflightSha256": "e619a0827d92f7f3ff2893c70f6ba1d3ad627b049d5189e7a8b688327ca94204"
+    },
+    "sourceAndDependenciesHeld": true,
+    "new914SourceIncludedInArchive": false,
+    "sourceAdopted": false,
+    "new49Qualified": false
+  }
+}
