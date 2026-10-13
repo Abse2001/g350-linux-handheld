@@ -1,0 +1,114 @@
+{
+  "scope": "COMPLETED_V12E_SOURCE_NATIVE17_C_METADATA_LOCAL_FANOUT_AND_OBSERVER_DIAGNOSTICS_ONLY",
+  "capturedThrough": "2026-10-13 C source capture and private observer controls; excludes new changing producer",
+  "boardSourceSha256": "0e2ce064e896db1d087474716d2e82b86155dbe28eecf28ce1727e73a466fee1",
+  "EInputSha256": "dc67beee6b0e901f914835cd0fe27fad0060066e3213001574a98eefb8c44fa8",
+  "CInputSha256": "786455d8588fc68ac858e54f6d0ee77bdb4bfe90892bb43dd8f5cfccfcf5e10d",
+  "broadInputSha256": "426114af63353d474d9a65e7f0753341830ea29ac4e832a1aad37cdd7f12ad1b",
+  "EBridgeManifestSha256": "982198893435f9ea4150f80bbaeee91b25bad733eff97e223da187b3cd0dd815",
+  "CBridgeManifestSha256": "4b9ce30d4d9ebedf2568290ef6837a6dd8907e17923106acb62c42c415159c65",
+  "partCount": 280,
+  "physicalCopperLayers": 4,
+  "DDRSignalsRequested": 49,
+  "nativePlacementReferenceChecks": 17,
+  "nativePlacementReferenceErrors": 0,
+  "CGeometryAndNative17InheritedNotRerun": true,
+  "CChangedOnlyTwoBusFourLayerLists": true,
+  "ELocalJointDogboneViaRecords": 76,
+  "CLocalJointDogboneViaRecords": 96,
+  "bothLocalIndividual49AndJoint49All4RotationsPass": true,
+  "localDogbonesAreNot49Interconnects": true,
+  "EPublicWallStopSeconds": 1200.2459753389994,
+  "EPublicOutputPresent": false,
+  "EWrapperToolExitUnknownAfterTransportLoss": true,
+  "privateObserverControlsPerEngine": 43,
+  "privateObserverControlledOriginalCallsPerEngine": 73,
+  "privateObserverPublishedRowsPerEngine": 132,
+  "privateObserverNodeAndBunPass": true,
+  "privateObserverFutureProducerModuleOriginQualified": false,
+  "privateObserverNewRoutingBenchmarkQualified": false,
+  "runtimePins": {
+    "Node": "25.6.1",
+    "Bun": "1.3.14",
+    "tscircuit": "0.0.2821",
+    "Core": "0.0.2107",
+    "CLI": "0.1.2258",
+    "checks": "0.0.242"
+  },
+  "reviewedNativePatchSha256": "1a8af4949af444b5c5488c554e1c1fef9efad0fe5e4c9497554038d0453788cc",
+  "records": {
+    "EActualCoreNative17": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-actual-core-native17-COLLECTED-root.json",
+      "sha256": "48b8e20a4663c700883ac0f5498fbddbf6a3fba569cf7170f2eb1ca98283e9b0",
+      "sessionId": 83071,
+      "status": "FRESH_CORE_AND_NATIVE17_PASS_STRICT_FORWARD_ASSET_PATH_COMPARISON_FAILURE",
+      "toolExitCode": 2
+    },
+    "ECombinedPureParity": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-actual-forward-pure-COLLECTED-root.json",
+      "sha256": "c51ebd913d26f053a7a2c39d87907c74dd813cf7896a9ed2d357b1a767862473",
+      "sessionId": 88248,
+      "status": "V12E_ACTUAL_CORE_NATIVE17_AND_NARROW_SOURCE_PARITY_COMBINED_PASS",
+      "toolExitCode": 0
+    },
+    "EPureProps": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-pure-react-v2-COLLECTED-root.json",
+      "sha256": "666a88888df34cf7bce491be25a8f51a95c835c49f3348f19abb037462a48be9",
+      "sessionId": 76292,
+      "status": "PURE_ACTUAL_REACT_V12E_THREE_X_PROPS_PASS",
+      "toolExitCode": 0
+    },
+    "EProposedLocalFanout": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-proposed-fanout-COLLECTED-root.json",
+      "sha256": "d064dd349c6dcd6a0a1ea9131c935bf052fe8a94a7565f0272d55223800064a2",
+      "sessionId": 20095,
+      "status": "PROPOSED_V12E_PATCHED_LOCAL_ALL49_JOINT_FANOUT_PASS_4_ORIENTATIONS",
+      "toolExitCode": 0
+    },
+    "ClosedDNativeFanoutFailure": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12d-actual-COLLECTED-root.json",
+      "sha256": "136baffd3e16641d58259ef37721b5b0685e2365f1947eeae90925e36a4027ef",
+      "sessionId": 53128,
+      "status": null,
+      "toolExitCode": 0
+    },
+    "ClosedEWallStopDCarriers": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-public-RECOVERED-CLOSED-root.json",
+      "sha256": "fe2b60659ba1591a1fae20c403ea7754c8527fc651122c994c0800867fa5a3c9",
+      "sessionId": 36822,
+      "status": "RECOVERED_WALL_STOP1200_NO_NATURAL_OUTPUT",
+      "toolExitCode": null
+    },
+    "COptionsLocalFanout": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-c-options-fanout-COLLECTED-root.json",
+      "sha256": "8c37ed97127810e90612fe3effc09ce122dc6e8fc7701bdf430ced59893db3fd",
+      "sessionId": 26082,
+      "status": "C_OPTIONS_LOCAL49_JOINT_ALL4_PASS_96VIA_HYPOTHESIS_ONLY",
+      "toolExitCode": 0
+    },
+    "CActualFinalProps": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v12e-c-pure-capture-COLLECTED-root.json",
+      "sha256": "342cf80a004965514259d1546bec0317431eb2bd777d212939544602568c085e",
+      "sessionId": 89331,
+      "status": null,
+      "toolExitCode": 0
+    },
+    "PrivateSelectionObserverControls": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/private-selection-observer-qualification-COLLECTED-root.json",
+      "sha256": "ec4e4f94965e3ce709200b31a408c50f50f339aaa8b7c9aeb3bdf243ba5159cb",
+      "sessionId": 42707,
+      "status": null,
+      "toolExitCode": 0
+    }
+  },
+  "frozenHardwareAndProtected4Untouched": true,
+  "referenceQualified": false,
+  "TIplaneArrangement": false,
+  "accepted49": false,
+  "electricalTimingQualified": false,
+  "fabricationReady": false,
+  "newArchiveOrStartRestoreQualificationClaimed": false,
+  "newReportCommittedOrPushed": false,
+  "EPublicPeakOwnedRssBytes": 1288675328,
+  "EZeroOomAndOwnedGroupEmpty": true
+}

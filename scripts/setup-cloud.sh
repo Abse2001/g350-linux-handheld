@@ -47,6 +47,10 @@ GIT_CONFIG_COUNT=2 \
 node scripts/patch-tscircuit-via-pad-check.mjs
 node scripts/checkout-cloud-upstreams.mjs
 npm install --prefix .cloud-tools/bun --no-package-lock bun@1.3.14
+# Prepare the reviewed exporter separately; preserve installed packages.
+python3 scripts/prepare-isolated-cli-physical-vias.py \
+  --cli-package-directory node_modules/@tscircuit/cli \
+  --output-directory .cloud-tools/cli-physical-vias
 if [[ "$ID" == ubuntu ]]; then
   python3 -m venv .cloud-tools/python
   .cloud-tools/python/bin/pip install 'reportlab>=4,<5' 'pypdf>=6,<7'
