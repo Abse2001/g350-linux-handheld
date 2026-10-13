@@ -1,0 +1,118 @@
+{
+  "accepted49": false,
+  "actualTrackedFullStartExecuted": true,
+  "archiveSha256": "05d762635f0892861f5005f47cf5b840a7496f21a330c85e36a7d7df3f3c049a",
+  "bootstrapHelperSha256": "b43531921f3ee396a2e72cf8a55c180c7f9fa0ce73a298e65df8a663a5ba40fd",
+  "closedV4RestoredNamespace": "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed",
+  "createdUtc": "2026-10-13T13:13:33.472612+00:00",
+  "dependencyAfter": {
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveBytes": 101071149,
+    "archiveContentBoundByTrustedReceiptAndHash": true,
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "verified": true
+  },
+  "dependencyBefore": {
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveBytes": 101071149,
+    "archiveContentBoundByTrustedReceiptAndHash": true,
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "verified": true
+  },
+  "dependencyHeld": true,
+  "environmentDraftSaved": false,
+  "execution": {
+    "accepted": false,
+    "cleanupOwnedGroupEmpty": true,
+    "command": [
+      "bash",
+      "/workspace/g350-linux-handheld/cloud/START_TI_DDR_FOLLOWUP_2026-10-12.sh"
+    ],
+    "currentGuardPid": 242409,
+    "diagnosticStopped": false,
+    "endedAt": "2026-10-13T13:13:24.819241+00:00",
+    "exitCode": 0,
+    "freshLeaderIdentity": {
+      "argv": [
+        "bash",
+        "/workspace/g350-linux-handheld/cloud/START_TI_DDR_FOLLOWUP_2026-10-12.sh"
+      ],
+      "pgid": 242534,
+      "pid": 242534,
+      "rss": 319488,
+      "sid": 242534,
+      "start": 9949508,
+      "state": "R"
+    },
+    "memoryAfter": {
+      "current": 19521982464,
+      "events": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0
+      }
+    },
+    "memoryBefore": {
+      "current": 18978631680,
+      "events": {
+        "high": 0,
+        "low": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_group_kill": 0,
+        "oom_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_group_kill": 0,
+      "oom_kill": 0
+    },
+    "peakOwnedRssBytes": 286220288,
+    "peakSharedBytes": 23536881664,
+    "pgid": 242534,
+    "pid": 242534,
+    "policy": {
+      "rssBytes": 4294967296,
+      "sampleSeconds": 0.05,
+      "sharedBytes": 25769803776,
+      "termGraceSeconds": 5,
+      "wallSeconds": 300
+    },
+    "signalErrorCount": 0,
+    "signalErrors": [],
+    "startedAt": "2026-10-13T13:09:43.831536+00:00",
+    "stopReasons": [],
+    "wallSeconds": 220.98743860599643
+  },
+  "fabricationReady": false,
+  "hardwareRoutingPerformed": false,
+  "installScriptRerun": false,
+  "passed": true,
+  "protectedSha256After": {
+    "/workspace/g350-linux-handheld/AGENTS.md": "d3086d9ff8887bd296ed0d480fcbef732686bf45e075ae766a0a292518086723",
+    "/workspace/g350-linux-handheld/cloud/CONTINUE_BOARD.md": "bb9a879c5c68c3718d24c82a77326f5b175d47899f101407b1e1ee106c8b19ef",
+    "/workspace/g350-linux-handheld/scripts/prepare-g350-ram90-four-layer.mjs": "ec6b56c59d2c8f72f969934076dd3597014833e8b2e8e4387c1045f03eaadda0",
+    "/workspace/g350-linux-handheld/scripts/tune-g350-ram90-native-lengths.mjs": "5bfe731744159cf9f65ddde71b513cb1a0d2384574e740cd11bc087ce69b4b40"
+  },
+  "restoredInternalInventorySha256": "02ffea2568e19b957b2498f8995ff015c1b767e28686a132d540828388d8302a",
+  "runtimeOrHardwareAdopted": false,
+  "sourceBeforeAfterHeld": true,
+  "sourceFileCounts": {
+    "/workspace/bus-lanes-solver": 1058,
+    "/workspace/g350-linux-handheld": 9735
+  },
+  "startScriptSha256": "62d98dba2772b97cded1ec39bb51914f6761499a660be7add1a3352932005122",
+  "trackedManifestSha256": "c445edd385778f883b57fa58060b8bd866d268924f76fc8dadb187061d8fae5e"
+}

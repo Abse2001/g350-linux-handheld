@@ -59,3 +59,27 @@ python3 .cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13/report/verify-rep
   --destination .cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13 \
   --apply-indexed-modes --create-trusted-resolver-links
 # Recover indexed records/modes only; no installs, source adoption or diagnostic routing.
+
+# Restore the closed V4 software/runtime diagnostics as evidence only.
+# Keep the bootstrap verifier available before recovering its archived copy.
+python3 - <<'PY'
+import hashlib
+from pathlib import Path
+helper = Path('/workspace/g350-linux-handheld/cloud/restore-v4-closed-evidence.py')
+if hashlib.sha256(helper.read_bytes()).hexdigest() != 'b43531921f3ee396a2e72cf8a55c180c7f9fa0ce73a298e65df8a663a5ba40fd':
+    raise SystemExit('Closed V4 recovery helper differs from tested bytes.')
+PY
+python3 /workspace/g350-linux-handheld/cloud/restore-v4-closed-evidence.py restore \
+  --manifest /workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json \
+  --manifest-sha256 c445edd385778f883b57fa58060b8bd866d268924f76fc8dadb187061d8fae5e \
+  --archive /workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz \
+  --destination /workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed \
+  --prior-map /dev/stdin <<'JSON'
+{
+  "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-linux-followup-2026-10-12.manifest.json": "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-followup-restored-2026-10-12",
+  "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-linux-followup-2026-10-12.manifest.json": "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-followup-restored-2026-10-12",
+  "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json": "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13"
+}
+JSON
+# Historical controller paths/authorities and private Git are not reconstructed.
+# No saved diagnostic is launched; board/runtime adoption remains a separate task.

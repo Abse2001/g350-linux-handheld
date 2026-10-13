@@ -1,0 +1,1131 @@
+{
+  "accepted49": false,
+  "all11Qualified": false,
+  "allSixRefusalRootTreesByteModeLinkExact": true,
+  "archiveBytes": 76595190,
+  "archivePath": "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+  "archiveSha256": "05d762635f0892861f5005f47cf5b840a7496f21a330c85e36a7d7df3f3c049a",
+  "archiveSourceRowsHeld": true,
+  "createdUtc": "2026-10-13T12:16:48.000186+00:00",
+  "editedFileRefusedAndPreserved": true,
+  "externalManifestSha256": "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+  "extraRuntimeRefusedBeforeWrites": true,
+  "extraSourceRefusedBeforeWrites": true,
+  "fabricationReady": false,
+  "foreignResolverRefusedAndPreserved": true,
+  "fresh": {
+    "accepted49": false,
+    "changedModes": 1389,
+    "createdResolverLinks": 10,
+    "fabricationReady": false,
+    "fullSourceFiles": 928,
+    "installedDependencyTreeAuditedHere": false,
+    "membersVerified": 2446,
+    "priorMappingsVerified": 27,
+    "privateGitReconstructed": false,
+    "restoredFiles": 2446,
+    "runnableLegacyControllersQualified": false,
+    "runtimeCopies": 3,
+    "runtimeFiles": 126
+  },
+  "indexedSymlinkRefusedAndPreserved": true,
+  "inventorySha256": "02ffea2568e19b957b2498f8995ff015c1b767e28686a132d540828388d8302a",
+  "members": 2446,
+  "nodeBunCoreNativeCadInstallStartNetworkGitConfigurationExecuted": false,
+  "nonrealRootRefusedBeforeWrites": true,
+  "parentArchivesHeld": true,
+  "passed": true,
+  "prior1539InventoryHeld": true,
+  "privateGitReconstructed": false,
+  "protectedAndStartHeld": true,
+  "repeat": {
+    "accepted49": false,
+    "changedModes": 0,
+    "createdResolverLinks": 0,
+    "fabricationReady": false,
+    "fullSourceFiles": 928,
+    "installedDependencyTreeAuditedHere": false,
+    "membersVerified": 2446,
+    "priorMappingsVerified": 27,
+    "privateGitReconstructed": false,
+    "restoredFiles": 0,
+    "runnableLegacyControllersQualified": false,
+    "runtimeCopies": 3,
+    "runtimeFiles": 126
+  },
+  "runnableLegacyControllersQualified": false,
+  "runs": [
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/build-extension-inventory.py",
+          "--output",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/closed-runs-inventory.json"
+        ],
+        "currentGuardPid": 232623,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:15:48.508953+00:00",
+        "exitCode": 0,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/build-extension-inventory.py",
+            "--output",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/closed-runs-inventory.json"
+          ],
+          "pgid": 232624,
+          "pid": 232624,
+          "rss": 196608,
+          "sid": 232624,
+          "start": 9625913,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 21704847360,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 21703258112,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 19447808,
+        "peakSharedBytes": 21718188032,
+        "pgid": 232624,
+        "pid": 232624,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:15:47.881962+00:00",
+        "stopReasons": [],
+        "wallSeconds": 0.6267668950022198
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "f9e9c1811f26fb83f1f71cb4c29b26cec2c4cbf686689f3ea603d9fa917cc580",
+      "name": "inventory",
+      "outerExit": 0,
+      "wallSeconds": 0.72550764499465
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "build",
+          "--inventory",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/closed-runs-inventory.json",
+          "--inventory-sha256",
+          "02ffea2568e19b957b2498f8995ff015c1b767e28686a132d540828388d8302a",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json"
+        ],
+        "currentGuardPid": 232625,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:15:54.768429+00:00",
+        "exitCode": 0,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "build",
+            "--inventory",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/closed-runs-inventory.json",
+            "--inventory-sha256",
+            "02ffea2568e19b957b2498f8995ff015c1b767e28686a132d540828388d8302a",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json"
+          ],
+          "pgid": 232626,
+          "pid": 232626,
+          "rss": 192512,
+          "sid": 232626,
+          "start": 9626094,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 21790785536,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 21709815808,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 21946368,
+        "peakSharedBytes": 21806247936,
+        "pgid": 232626,
+        "pid": 232626,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:15:49.695369+00:00",
+        "stopReasons": [],
+        "wallSeconds": 5.072849100004532
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "214257d0e13bc8a8e90cb626e36641e3e4625744826e0016dd143512f8cf1b1d",
+      "name": "build",
+      "outerExit": 0,
+      "wallSeconds": 5.158630680991337
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-validation",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232627,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:08.028438+00:00",
+        "exitCode": 0,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-validation",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232628,
+          "pid": 232628,
+          "rss": 319488,
+          "sid": 232628,
+          "start": 9626613,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22307778560,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 21791043584,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 42401792,
+        "peakSharedBytes": 22344482816,
+        "pgid": 232628,
+        "pid": 232628,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:15:54.884221+00:00",
+        "stopReasons": [],
+        "wallSeconds": 13.143965761002619
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "ad68d341c9b04bb97aee0e32da5db5cb63b13b3bae995aec575a10b62d97329f",
+      "name": "fresh-restore",
+      "outerExit": 0,
+      "wallSeconds": 13.228702353997505
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-validation",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232629,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:17.971643+00:00",
+        "exitCode": 0,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-validation",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232630,
+          "pid": 232630,
+          "rss": 278528,
+          "sid": 232630,
+          "start": 9627937,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22308265984,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22306824192,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41345024,
+        "peakSharedBytes": 22357843968,
+        "pgid": 232630,
+        "pid": 232630,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:08.123813+00:00",
+        "stopReasons": [],
+        "wallSeconds": 9.847624179994455
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "283a7da335b949af3dafee9d4f30d2eccae421b23f70d69d35e28b0000ff521b",
+      "name": "repeat-restore",
+      "outerExit": 0,
+      "wallSeconds": 9.938471143002971
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "verify",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-validation",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232639,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:23.566713+00:00",
+        "exitCode": 0,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "verify",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-validation",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232640,
+          "pid": 232640,
+          "rss": 94208,
+          "sid": 232640,
+          "start": 9628930,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22307991552,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22307770368,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41177088,
+        "peakSharedBytes": 22344589312,
+        "pgid": 232640,
+        "pid": 232640,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:18.049694+00:00",
+        "stopReasons": [],
+        "wallSeconds": 5.516803550010081
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "be369d59e38352d8f47d0d2038d26fe2753db1598f54157a7497de4061f395a1",
+      "name": "complete-verify",
+      "outerExit": 0,
+      "wallSeconds": 5.591794920997927
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-edited-control",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232641,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:26.638262+00:00",
+        "exitCode": 1,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-edited-control",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232642,
+          "pid": 232642,
+          "rss": 397312,
+          "sid": 232642,
+          "start": 9629490,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22321516544,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22307471360,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41181184,
+        "peakSharedBytes": 22344413184,
+        "pgid": 232642,
+        "pid": 232642,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:23.651652+00:00",
+        "stopReasons": [],
+        "wallSeconds": 2.986429900993244
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "203edc7ab1a4b513d8c1bd5ecffbe71bfd10a6a31cd33715c190701877c05856",
+      "name": "edited-file-refusal",
+      "outerExit": 1,
+      "wallSeconds": 3.066775476996554
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-symlink-control",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232651,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:30.875417+00:00",
+        "exitCode": 1,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-symlink-control",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232652,
+          "pid": 232652,
+          "rss": 475136,
+          "sid": 232652,
+          "start": 9629797,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22308540416,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22307766272,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41353216,
+        "peakSharedBytes": 22356697088,
+        "pgid": 232652,
+        "pid": 232652,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:26.717097+00:00",
+        "stopReasons": [],
+        "wallSeconds": 4.151700149988756
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "99c50c35d1ddbed55660ede2c0cbcd4f8388d963907e59a7f163d49f165121b5",
+      "name": "indexed-symlink-refusal",
+      "outerExit": 1,
+      "wallSeconds": 4.256492653003079
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-nonreal-control",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232687,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:34.001617+00:00",
+        "exitCode": 1,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-nonreal-control",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232688,
+          "pid": 232688,
+          "rss": 151552,
+          "sid": 232688,
+          "start": 9630222,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22308286464,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22307905536,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 40505344,
+        "peakSharedBytes": 22344278016,
+        "pgid": 232688,
+        "pid": 232688,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:30.973665+00:00",
+        "stopReasons": [],
+        "wallSeconds": 3.027652835007757
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "a2e8ba3736979b0a97e51b47a2def8d4525b9a7529b62285c73178716e019265",
+      "name": "nonreal-parent-refusal",
+      "outerExit": 1,
+      "wallSeconds": 3.116450925997924
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-foreign-control",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232689,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:39.540044+00:00",
+        "exitCode": 1,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-foreign-control",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232690,
+          "pid": 232690,
+          "rss": 217088,
+          "sid": 232690,
+          "start": 9630534,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22308519936,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22307946496,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41164800,
+        "peakSharedBytes": 22344839168,
+        "pgid": 232690,
+        "pid": 232690,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:34.090079+00:00",
+        "stopReasons": [],
+        "wallSeconds": 5.449780672002817
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "67f1ac87d2becfeb262f24d25e9cb85541d1fd00bb698d823fc18a7c8b842a6a",
+      "name": "foreign-resolver-refusal",
+      "outerExit": 1,
+      "wallSeconds": 5.537323837997974
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-extra-source-control",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232691,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:43.195315+00:00",
+        "exitCode": 1,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-extra-source-control",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232692,
+          "pid": 232692,
+          "rss": 90112,
+          "sid": 232692,
+          "start": 9631092,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22308646912,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22307897344,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41160704,
+        "peakSharedBytes": 22344757248,
+        "pgid": 232692,
+        "pid": 232692,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:39.669703+00:00",
+        "stopReasons": [],
+        "wallSeconds": 3.5254248150013154
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "2143de8edc3d6caed75bd8b69bbbe12263d7fdc74da66a28f9ccf26929afbc46",
+      "name": "extra-source-refusal",
+      "outerExit": 1,
+      "wallSeconds": 3.6315375310077798
+    },
+    {
+      "execution": {
+        "accepted": false,
+        "cleanupOwnedGroupEmpty": true,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+          "restore",
+          "--manifest",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+          "--manifest-sha256",
+          "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+          "--archive",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+          "--destination",
+          "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-extra-runtime-control",
+          "--prior-map",
+          "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+        ],
+        "currentGuardPid": 232693,
+        "diagnosticStopped": false,
+        "endedAt": "2026-10-13T12:16:46.016564+00:00",
+        "exitCode": 1,
+        "freshLeaderIdentity": {
+          "argv": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+            "-B",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/archive-tools.py",
+            "restore",
+            "--manifest",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.manifest.json",
+            "--manifest-sha256",
+            "33277f575ae5a770388d923b235dc6d24f9ee066943ff12b49af1a1845afde67",
+            "--archive",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/g350-ti-ddr-v4-closed-runs-2026-10-13.tar.gz",
+            "--destination",
+            "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13-v4-closed-extra-runtime-control",
+            "--prior-map",
+            "/workspace/g350-linux-handheld/.cloud-tools/continued-v4-closed-runs-persistence-next/controls-v1/prior-map.json"
+          ],
+          "pgid": 232694,
+          "pid": 232694,
+          "rss": 86016,
+          "sid": 232694,
+          "start": 9631452,
+          "state": "R"
+        },
+        "memoryAfter": {
+          "current": 22308880384,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "memoryBefore": {
+          "current": 22308388864,
+          "events": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0
+        },
+        "peakOwnedRssBytes": 41177088,
+        "peakSharedBytes": 22345248768,
+        "pgid": 232694,
+        "pid": 232694,
+        "policy": {
+          "rssBytes": 1073741824,
+          "sampleSeconds": 0.05,
+          "sharedBytes": 27917287424,
+          "termGraceSeconds": 5,
+          "wallSeconds": 180
+        },
+        "signalErrorCount": 0,
+        "signalErrors": [],
+        "startedAt": "2026-10-13T12:16:43.272049+00:00",
+        "stopReasons": [],
+        "wallSeconds": 2.743794317007996
+      },
+      "guardStderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "guardStdoutSha256": "89f5642ad0f5c71c5f0303e2a868a5f07ddd26d168fdda6eab9fb663146595ac",
+      "name": "extra-runtime-refusal",
+      "outerExit": 1,
+      "wallSeconds": 2.827578602998983
+    }
+  ],
+  "source928Held": true,
+  "verified": {
+    "accepted49": false,
+    "changedModes": 0,
+    "createdResolverLinks": 0,
+    "fabricationReady": false,
+    "fullSourceFiles": 928,
+    "installedDependencyTreeAuditedHere": false,
+    "membersVerified": 2446,
+    "priorMappingsVerified": 27,
+    "privateGitReconstructed": false,
+    "restoredFiles": 0,
+    "runnableLegacyControllersQualified": false,
+    "runtimeCopies": 3,
+    "runtimeFiles": 126
+  }
+}
