@@ -1,0 +1,103 @@
+{
+  "createdAt": "2026-10-13T03:31:47.971857+00:00",
+  "passed": true,
+  "execution": {
+    "startedAt": "2026-10-13T03:28:52.732108+00:00",
+    "command": [
+      "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "--smol",
+      "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-start-validation-next/launcher.ts"
+    ],
+    "policy": {
+      "wallSeconds": 300,
+      "rssBytes": 4294967296,
+      "sharedBytes": 25769803776,
+      "sampleSeconds": 0.05,
+      "termGraceSeconds": 5
+    },
+    "memoryBefore": {
+      "current": 17630478336,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "exitCode": 0,
+    "diagnosticStopped": false,
+    "stopReasons": [],
+    "accepted": false,
+    "currentGuardPid": 175154,
+    "pid": 175277,
+    "pgid": 175277,
+    "freshLeaderIdentity": {
+      "pid": 175277,
+      "pgid": 175277,
+      "sid": 175277,
+      "start": 6464398,
+      "state": "R",
+      "rss": 266240,
+      "argv": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-start-validation-next/launcher.ts"
+      ]
+    },
+    "endedAt": "2026-10-13T03:31:40.145839+00:00",
+    "wallSeconds": 167.4136356040035,
+    "cleanupOwnedGroupEmpty": true,
+    "peakOwnedRssBytes": 297312256,
+    "peakSharedBytes": 22394056704,
+    "memoryAfter": {
+      "current": 17273692160,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    }
+  },
+  "sourceUnchanged": true,
+  "sourceFileCounts": {
+    "/workspace/g350-linux-handheld": 9729,
+    "/workspace/bus-lanes-solver": 1058
+  },
+  "dependencyBefore": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "dependencyAfter": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "startScriptSha256": "0d17b577e428a9a5efd8f21390add57b97c6bbee37eef040b4e78318a79fb490",
+  "savedStartSha256": "0d17b577e428a9a5efd8f21390add57b97c6bbee37eef040b4e78318a79fb490",
+  "installScriptRerun": false,
+  "hardwareRoutingPerformed": false,
+  "accepted49": false
+}

@@ -48,3 +48,14 @@ python3 scripts/restore-g350-routing-evidence.py \
 python3 scripts/restore-g350-routing-evidence.py \
   cloud/artifacts/g350-ti-ddr-v7-linux-followup-2026-10-12.manifest.json \
   --destination .cloud-tools/ti-ddr-v7-followup-restored-2026-10-12
+
+# PROPOSAL ONLY: add after existing1975/660 restores once this exact block is tested.
+# The surrounding saved Start sources cloud/env.sh and audits the trusted solver dependencies.
+python3 scripts/restore-g350-routing-evidence.py \
+  cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json \
+  --destination .cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13
+python3 .cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13/report/verify-replay-files.py \
+  --manifest cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json \
+  --destination .cloud-tools/ti-ddr-v7-diagnostics-restored-2026-10-13 \
+  --apply-indexed-modes --create-trusted-resolver-links
+# Recover indexed records/modes only; no installs, source adoption or diagnostic routing.

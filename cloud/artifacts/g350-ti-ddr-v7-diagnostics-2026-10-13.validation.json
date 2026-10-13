@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-10-13T03:23:44.759556+00:00",
+  "scope": "Actual root-authorized additive evidence archive and private restoration only; no routing/source adoption/configuration save",
+  "allCommandsActualExit0": true,
+  "records": [
+    {
+      "name": "build",
+      "command": [
+        "python3",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-followup-report-next/build-indexed-archive.py",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/inventory.proposed.json",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.tar.gz",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json"
+      ],
+      "startedAt": "2026-10-13T03:23:17.675706+00:00",
+      "endedAt": "2026-10-13T03:23:28.298805+00:00",
+      "wallSeconds": 10.623126170001342,
+      "actualExitCode": 0,
+      "stdout": "{\"archive\": {\"path\": \"cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.tar.gz\", \"bytes\": 23469705, \"sha256\": \"d9c2ce0267ab86592c071ef384603493b1b8afabb044ed3a3619329493411624\"}, \"verifiedMembers\": 2643, \"accepted49\": false, \"fabricationReady\": false}\n",
+      "stderr": "",
+      "stdoutSha256": "16d3000cf1f04a8f65074399bb546e7f83b289aa8e327244a6aa0b5d8cb69b5c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "archive-fresh-repeat-refusal",
+      "command": [
+        "python3",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-followup-report-next/validate-indexed-archive.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/archive-validation-v1",
+        "report/TI_DDR_V7_DIAGNOSTICS_2026-10-13.proposed.md"
+      ],
+      "startedAt": "2026-10-13T03:23:28.301834+00:00",
+      "endedAt": "2026-10-13T03:23:34.493460+00:00",
+      "wallSeconds": 6.191629478002142,
+      "actualExitCode": 0,
+      "stdout": "{\"allChecksPassed\": true, \"indexedMembers\": 2643, \"accepted49\": false, \"fabricationReady\": false}\n",
+      "stderr": "",
+      "stdoutSha256": "7e6b3f7231bf9ee219f8b6f560968eb1c61b06a00e6f4311281b0aa9c9eefc0c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "prepared-dependencies",
+      "command": [
+        "python3",
+        "/workspace/g350-linux-handheld/cloud/verify-installed-dependencies.py",
+        "--receipt",
+        "/workspace/bus-lanes-solver/.cache/topology-installed-dependencies-20261012T0154Z/archive-receipt.json",
+        "--expected-receipt-sha256",
+        "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+        "--audit-tool",
+        "/workspace/g350-linux-handheld/cloud/audit-installed-dependencies.py"
+      ],
+      "startedAt": "2026-10-13T03:23:34.495830+00:00",
+      "endedAt": "2026-10-13T03:23:36.411882+00:00",
+      "wallSeconds": 1.9160516019983334,
+      "actualExitCode": 0,
+      "stdout": "{\"absoluteRoot\": \"/workspace/bus-lanes-solver/node_modules\", \"archiveBytes\": 101071149, \"archiveContentBoundByTrustedReceiptAndHash\": true, \"archiveSha256\": \"a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec\", \"nonmutating\": true, \"receiptSha256\": \"1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7\", \"toolSha256\": \"61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59\", \"treeSha256\": \"47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6\", \"verified\": true}\n",
+      "stderr": "",
+      "stdoutSha256": "a8656a594d142d68421963746b55c41292c3120f53b1fdfe4611790d8271c9c5",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "restored-modes-links",
+      "command": [
+        "python3",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/verify-replay-files.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json",
+        "--destination",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/archive-validation-v1/restored",
+        "--apply-indexed-modes",
+        "--create-trusted-resolver-links"
+      ],
+      "startedAt": "2026-10-13T03:23:36.415150+00:00",
+      "endedAt": "2026-10-13T03:23:37.523377+00:00",
+      "wallSeconds": 1.1082270550032263,
+      "actualExitCode": 0,
+      "stdout": "{\"accepted49\": false, \"changedModes\": 0, \"createdResolverLinks\": 26, \"fabricationReady\": false, \"indexedFilesVerified\": 2643, \"indexedModesVerified\": true, \"installedDependenciesAuditedHere\": false, \"solverImportedOrLaunched\": false, \"trustedResolverLinks\": [\"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/node_modules\", \"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/source/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/source/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/source/node_modules\"]}\n",
+      "stderr": "",
+      "stdoutSha256": "d17928943d6dd8e59c73d8a51886987eead02569dacf623c3baad5c7aec6a5c9",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "repeat-modes-links",
+      "command": [
+        "python3",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/verify-replay-files.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.manifest.json",
+        "--destination",
+        "/workspace/g350-linux-handheld/.cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/archive-validation-v1/restored",
+        "--create-trusted-resolver-links"
+      ],
+      "startedAt": "2026-10-13T03:23:37.524064+00:00",
+      "endedAt": "2026-10-13T03:23:38.869216+00:00",
+      "wallSeconds": 1.3452074870001525,
+      "actualExitCode": 0,
+      "stdout": "{\"accepted49\": false, \"changedModes\": 0, \"createdResolverLinks\": 0, \"fabricationReady\": false, \"indexedFilesVerified\": 2643, \"indexedModesVerified\": true, \"installedDependenciesAuditedHere\": false, \"solverImportedOrLaunched\": false, \"trustedResolverLinks\": [\"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/node_modules\", \"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/source/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/source/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/source/node_modules\"]}\n",
+      "stderr": "",
+      "stdoutSha256": "8837cf76f13c955d4888960bed700dcdac435b9dc56b4955022e40259fe18c4d",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "exact-start-append-fresh",
+      "command": [
+        "bash",
+        "-euc",
+        "source cloud/env.sh\nsource .cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/START_ADDITIVE_RESTORE.proposed.sh"
+      ],
+      "startedAt": "2026-10-13T03:23:38.870515+00:00",
+      "endedAt": "2026-10-13T03:23:42.069785+00:00",
+      "wallSeconds": 3.1992756689942325,
+      "actualExitCode": 0,
+      "stdout": "Verified 2643 evidence members; restored 2643\n{\"accepted49\": false, \"changedModes\": 1609, \"createdResolverLinks\": 26, \"fabricationReady\": false, \"indexedFilesVerified\": 2643, \"indexedModesVerified\": true, \"installedDependenciesAuditedHere\": false, \"solverImportedOrLaunched\": false, \"trustedResolverLinks\": [\"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/node_modules\", \"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/source/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/source/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/source/node_modules\"]}\n",
+      "stderr": "",
+      "stdoutSha256": "6db26f3ba6fdb19307fec5f6624e685b05172b14e420288deff802dedb04a36f",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "exact-start-append-repeat",
+      "command": [
+        "bash",
+        "-euc",
+        "source cloud/env.sh\nsource .cloud-tools/ti-ddr-v7-diagnostics-followup-proposal-next/START_ADDITIVE_RESTORE.proposed.sh"
+      ],
+      "startedAt": "2026-10-13T03:23:42.070444+00:00",
+      "endedAt": "2026-10-13T03:23:44.713714+00:00",
+      "wallSeconds": 2.6432814780055196,
+      "actualExitCode": 0,
+      "stdout": "Verified 2643 evidence members; restored 0\n{\"accepted49\": false, \"changedModes\": 0, \"createdResolverLinks\": 0, \"fabricationReady\": false, \"indexedFilesVerified\": 2643, \"indexedModesVerified\": true, \"installedDependenciesAuditedHere\": false, \"solverImportedOrLaunched\": false, \"trustedResolverLinks\": [\"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/node_modules\", \"solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/source/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/source/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/node_modules\", \"solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/source/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/node_modules\", \"solver/.cache/g350-ti-v7-manual-dqs0-top-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-callback-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/node_modules\", \"solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/source/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/node_modules\", \"solver/.cache/g350-ti-v7-strong-public-pipeline-next/source/node_modules\"]}\n",
+      "stderr": "",
+      "stdoutSha256": "af5c1c43ff49ecf0f56bf9c5cf8c1b579492ec080c16899e0ac0f76535b94905",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "archive": {
+    "path": "cloud/artifacts/g350-ti-ddr-v7-diagnostics-2026-10-13.tar.gz",
+    "bytes": 23469705,
+    "sha256": "d9c2ce0267ab86592c071ef384603493b1b8afabb044ed3a3619329493411624"
+  },
+  "externalManifestSha256": "055e5cf6be5a9f8e7fad8c5a0f98a560cc8c8ecaa1d863b281d3d75c99145739",
+  "inventorySha256": "fd05fcf0392a917708a99090628584de7d46bab77ef1eb9c99328247c9de946a",
+  "indexedFiles": 2642,
+  "membersIncludingInternalManifest": 2643,
+  "archiveValidationReportSha256": "9afe68f7b6e61f5ab1eacba3674a56c5cc4a436251bbea24dc23601b06c6931b",
+  "modeAndLinkFresh": {
+    "accepted49": false,
+    "changedModes": 0,
+    "createdResolverLinks": 26,
+    "fabricationReady": false,
+    "indexedFilesVerified": 2643,
+    "indexedModesVerified": true,
+    "installedDependenciesAuditedHere": false,
+    "solverImportedOrLaunched": false,
+    "trustedResolverLinks": [
+      "solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/node_modules",
+      "solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/source/node_modules",
+      "solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/node_modules",
+      "solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/node_modules",
+      "solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/node_modules",
+      "solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-manual-dqs0-top-next/node_modules",
+      "solver/.cache/g350-ti-v7-manual-dqs0-top-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-site-callback-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-site-callback-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-strong-public-pipeline-next/node_modules",
+      "solver/.cache/g350-ti-v7-strong-public-pipeline-next/source/node_modules"
+    ]
+  },
+  "modeAndLinkRepeat": {
+    "accepted49": false,
+    "changedModes": 0,
+    "createdResolverLinks": 0,
+    "fabricationReady": false,
+    "indexedFilesVerified": 2643,
+    "indexedModesVerified": true,
+    "installedDependenciesAuditedHere": false,
+    "solverImportedOrLaunched": false,
+    "trustedResolverLinks": [
+      "solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/node_modules",
+      "solver/.cache/g350-enclosed-terminal-precheck-center-package-next/negative-old914/source/node_modules",
+      "solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/node_modules",
+      "solver/.cache/g350-ti-v7-adaptive-public-pipeline-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/node_modules",
+      "solver/.cache/g350-ti-v7-clock-csn0-scene-capture-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-clock-terminal-owner-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-command-bottom-clock-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/node_modules",
+      "solver/.cache/g350-ti-v7-csn0-coarse-fine-replay-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-dqs0-assembly-clock-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-manual-dqs0-top-next/node_modules",
+      "solver/.cache/g350-ti-v7-manual-dqs0-top-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/node_modules",
+      "solver/.cache/g350-ti-v7-reserved-endpoints-public-pipeline-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-site-callback-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-site-callback-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/node_modules",
+      "solver/.cache/g350-ti-v7-site-core-capture-diagnostic-next/source/node_modules",
+      "solver/.cache/g350-ti-v7-strong-public-pipeline-next/node_modules",
+      "solver/.cache/g350-ti-v7-strong-public-pipeline-next/source/node_modules"
+    ]
+  },
+  "exactStartAppendSha256": "ffe67e3d27c410400945b3efc07d828d7f8b37359809cb616e5c85831a09beb9",
+  "startAppendFreshAndRepeatActualExit0": true,
+  "completeSavedEnvironmentStartExecuted": false,
+  "preparedInstalledDependencyAuditActualExit0": true,
+  "protectedDirty4Before": [
+    {
+      "path": "/workspace/g350-linux-handheld/AGENTS.md",
+      "bytes": 34853,
+      "mode": 384,
+      "sha256": "d3086d9ff8887bd296ed0d480fcbef732686bf45e075ae766a0a292518086723",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/cloud/CONTINUE_BOARD.md",
+      "bytes": 33286,
+      "mode": 384,
+      "sha256": "bb9a879c5c68c3718d24c82a77326f5b175d47899f101407b1e1ee106c8b19ef",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/prepare-g350-ram90-four-layer.mjs",
+      "bytes": 6877,
+      "mode": 384,
+      "sha256": "ec6b56c59d2c8f72f969934076dd3597014833e8b2e8e4387c1045f03eaadda0",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/tune-g350-ram90-native-lengths.mjs",
+      "bytes": 10429,
+      "mode": 384,
+      "sha256": "5bfe731744159cf9f65ddde71b513cb1a0d2384574e740cd11bc087ce69b4b40",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    }
+  ],
+  "protectedDirty4After": [
+    {
+      "path": "/workspace/g350-linux-handheld/AGENTS.md",
+      "bytes": 34853,
+      "mode": 384,
+      "sha256": "d3086d9ff8887bd296ed0d480fcbef732686bf45e075ae766a0a292518086723",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/cloud/CONTINUE_BOARD.md",
+      "bytes": 33286,
+      "mode": 384,
+      "sha256": "bb9a879c5c68c3718d24c82a77326f5b175d47899f101407b1e1ee106c8b19ef",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/prepare-g350-ram90-four-layer.mjs",
+      "bytes": 6877,
+      "mode": 384,
+      "sha256": "ec6b56c59d2c8f72f969934076dd3597014833e8b2e8e4387c1045f03eaadda0",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/scripts/tune-g350-ram90-native-lengths.mjs",
+      "bytes": 10429,
+      "mode": 384,
+      "sha256": "5bfe731744159cf9f65ddde71b513cb1a0d2384574e740cd11bc087ce69b4b40",
+      "role": "pre-existing dirty tracked file; preserve bytes"
+    }
+  ],
+  "protectedDirty4Exact": true,
+  "runnerSha256": "3c24b0be7c798cf970ba64cd69a4b86d6ad973b71b4bb40e5c76e79b4ae20f9c",
+  "newSourceOrDependenciesAdopted": false,
+  "routingExecuted": false,
+  "commitOrPushPerformed": false,
+  "draftSaved": false,
+  "accepted49": false,
+  "fabricationReady": false
+}
