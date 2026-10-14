@@ -1,0 +1,71 @@
+{
+  "validatedUtc": "2026-10-14T01:07:55.664074+00:00",
+  "archiveSha256": "80de5dd72cf593d0a7c3ce062270b5b279506a238749760cc0bb5aa52f6276bc",
+  "manifestSha256": "d470d3bcecd18bd49d6a2ab40cda03a2015bb7b967c9a2b66489ac6f335fa642",
+  "helperSha256": "9c5ece026f7f2321d71107f7397f7a6cd4a5592fec9b6a5a7c746a56c6a3dd9d",
+  "all91RestoredBytesSizesModesIndependentlyVerified": true,
+  "temporaryDirectoryRemoved": true,
+  "cases": [
+    {
+      "case": "restore",
+      "exitCode": 0,
+      "result": {
+        "archiveVerified": true,
+        "memberCount": 91,
+        "existingExactFiles": 0,
+        "absentFiles": 91,
+        "createdFiles": 91,
+        "restoreRequested": true,
+        "symlinksRestored": 0,
+        "runtimeImports": 0,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "case": "verify",
+      "exitCode": 0,
+      "result": {
+        "archiveVerified": true,
+        "memberCount": 91,
+        "existingExactFiles": 91,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "symlinksRestored": 0,
+        "runtimeImports": 0,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "case": "repeat-restore",
+      "exitCode": 0,
+      "result": {
+        "archiveVerified": true,
+        "memberCount": 91,
+        "existingExactFiles": 91,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "symlinksRestored": 0,
+        "runtimeImports": 0,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "case": "different-destination-refused",
+      "exitCode": 1,
+      "existingFilePreserved": true
+    }
+  ],
+  "dataOnly": true,
+  "projectImports": 0,
+  "startReplayQualified": false,
+  "operationalClosureQualified": false,
+  "fabricationReady": false
+}
