@@ -1,0 +1,818 @@
+{
+  "acceptedCurrent49DDR": false,
+  "allElevenBenchmarkAccepted": false,
+  "allSelectedOriginalSourcesHeldBeforeAfter": true,
+  "archive": {
+    "bytes": 306724,
+    "mode": 384,
+    "path": "cloud/artifacts/g350-ti-ddr-solver-unit-633-evidence-2026-10-14.tar.gz",
+    "sha256": "892ba480c26fabe947b9c33e0a394871fae4cdaf87c5b0a736bdca84054d1ff1"
+  },
+  "archiveBuilt": true,
+  "dataExtractionAndAllHashesModesTested": true,
+  "deterministicFormat": "USTAR; sorted regular files; uid/gid/mtime zero; empty uname/gname; gzip filename empty and mtime zero",
+  "executionAuthorityIncluded": false,
+  "externalReplayRequirements": "Exact source/ancestor evidence and installed locked dependencies remain required. Archived historical controllers name local paths outside this payload and confer no fresh process authority. Data extraction is not a Start, replay, benchmark, CAD, or hardware qualification.",
+  "fabricationReady": false,
+  "files": [
+    {
+      "archivePath": "board/cloud/TI_DDR_SOLVER_UNIT_QUALIFICATION_2026-10-14.md",
+      "bytes": 5093,
+      "category": "report",
+      "mode": 384,
+      "relativePath": "cloud/TI_DDR_SOLVER_UNIT_QUALIFICATION_2026-10-14.md",
+      "repository": "board",
+      "sha256": "32415b6dbaad805c9c0a3a729050384cee58029c120c463cfdebfaa73a9e434d"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-closed-metadata-successor-next/run-prefork-reserve-failure/execution.json",
+      "bytes": 759,
+      "category": "closed-prefork-no-child-failure",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-closed-metadata-successor-next/run-prefork-reserve-failure/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "da340bc080d4db3bbe696bcc68a5f3c087034467eafea4c83d4b158fb6a7cecf"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/EXECUTION-postaudit.json",
+      "bytes": 3487,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "d54617a9c2a625321e04abb8b69b8a98f8f4b318e57465f617563de82d352f04"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/PREPARED.json",
+      "bytes": 62948,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "80e940db64bf6d453222be3b8956baf3a422c4aeb05ca2eb5839ab1fe02b7d4d"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/guard.py",
+      "bytes": 6999,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "1fa4aba7049e42c69c7713ae8ed3cfbe66e70d58a032872a3d39613d0dbe79d5"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/run/child.log",
+      "bytes": 751,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "5cf63f15415abe8f22e0452bff1292ef6cc6601a477f59e8ad1a0356064ff4de"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/run/execution.json",
+      "bytes": 1529,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-isolated-diagnostic-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "255339f4d6b17fcf62714bb3d80a2e869e29db14341b3466174da9e41fd0cdab"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-shared26-successor-next/EXECUTION-postaudit.json",
+      "bytes": 3484,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-shared26-successor-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "599a50575f27388dc7030fe6dedf18b93b766fe0aa74c29f8b32b9826593a646"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-shared26-successor-next/PREPARED.json",
+      "bytes": 12875,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-shared26-successor-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "fdb2aa0baafa0b720f6a0a33758d34999f5de811f61900fc7a6a9c72dfc733e8"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-shared26-successor-next/guard.py",
+      "bytes": 8691,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-shared26-successor-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "d0ed118a3aa259e1e7d112cbb2394a9c5e9dd9407bec295f2e5dd3f293fdc107"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-shared26-successor-next/run/child.log",
+      "bytes": 751,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-shared26-successor-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "b710b92bf2fe4ade026af14bfc4d53ca7c453d29a64332560c6bb9e5bfaee637"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-c115-original-native-grid-shared26-successor-next/run/execution.json",
+      "bytes": 1526,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-c115-original-native-grid-shared26-successor-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "949fda1fdff5cd9fc3ed25089bb72509d26b0e9d709d6aaab94cb44c1b6a9293"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/EXECUTION-postaudit.json",
+      "bytes": 3276,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "a8844ac0a454b0be66755b2bb8b11c50da39407c3e554b52c2fd68936b90eb17"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/PREPARED.json",
+      "bytes": 329775,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "4c5a65fca23568b027d48ade49f81ed52f1516509a43af8945f4aa2c83bffb38"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/commands.json",
+      "bytes": 523,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/commands.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "f5fbf26200f6f5597256e922f84e5e05dd202077c6b0d206110cd22b3395fb81"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/guard.py",
+      "bytes": 6088,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "1e7855781deec5dc57efb31354ba0537c5275a7c1c7761f5d27561460ca25c8a"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/leader.py",
+      "bytes": 1055,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/leader.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "729633b941d8ec8b3e6b3cef1a51ad6c020434250a514c817c21a995357315b8"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/run/child.log",
+      "bytes": 1408,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "f3dfd94999b253178249808af23229373974b03c65877017c9e272c4a1db5f62"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/run/execution.json",
+      "bytes": 1631,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "3727269b30fb993400374798474eafa493b52ed9ae57806cc53b43a7130204e9"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/run/steps.json",
+      "bytes": 676,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-focused-sourceonly-next/run/steps.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "8592c254641c4657143072744c2bfd148e0f3bf3335aac3778bfba020690ed2b"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/EXECUTION-postaudit.json",
+      "bytes": 3676,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "95a621ba2c39992ec5b03d333c83fed6aec4fefa8cbbb3daeb3f8d0e833805a5"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/PREPARED.json",
+      "bytes": 4792,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "4a6074e0f817388429bd9cad3dc533b67eda73cddda5c6ada408f6acd019b375"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/guard.py",
+      "bytes": 6921,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "c4ad0b7c9826ce2a4cc9297ca4c11ea3f0c76969f2558755fadb735f0ce79f26"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/run/child.log",
+      "bytes": 923,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "071f154ad74ab77ba251f7782b02b263cd52e4704f77fdddc96514b38aac7e11"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/run/execution.json",
+      "bytes": 1830,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-focused-successor-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "60624ab169cf766b264c3ce01dd9be821258ae36ed6a2acd70b6eada90d19e70"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/EXECUTION-postaudit.json",
+      "bytes": 3129,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "86f775db328f11228f80a6c67a75de71de01b9e2ab0ea3f78ec640fc9d9efc19"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/PREPARED.json",
+      "bytes": 2465,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "61849af6b1cfd5aece92f30b129824a74a49c3ee28bf03bba20334ceeaabdd1c"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/guard.py",
+      "bytes": 6668,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "9bc484d56536989fcc4da7ff743acc0066a1b7052f4b31d4ced2db03330156f8"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/run/child.log",
+      "bytes": 67053,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "36a930750e87976d8a795f9f377decbcc68ea994977750d2eb186d281aafabd0"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/run/execution.json",
+      "bytes": 1461,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-canonical-prune-cartesian-oracle-witness-v2-fullsuite-successor-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "225054d4adf6df453bdb3306531f280a68ee44c1dd6f81f1e93d693a3bb30707"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-count-conditioned-site-recovery-next/audit-installed-dependencies.py",
+      "bytes": 6677,
+      "category": "scope-source-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-count-conditioned-site-recovery-next/audit-installed-dependencies.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-count-conditioned-site-recovery-next/process_scope.py",
+      "bytes": 9686,
+      "category": "scope-source-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-count-conditioned-site-recovery-next/process_scope.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "7bdc74b15af3ba5b2c306d34a816b48cf8b9d68479b0c06a57f43787d4a4a993"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-count-conditioned-site-recovery-next/verify-installed-dependencies.py",
+      "bytes": 4328,
+      "category": "scope-source-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-count-conditioned-site-recovery-next/verify-installed-dependencies.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "749cad354ad094398790f31e3fef808e7fd3a2af1921ee25afe98e6490975523"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/EXECUTION-postaudit.json",
+      "bytes": 3264,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "29d650d77723b86c38609a15482eb1cccdffd762dae3f3ef273250cb4f5bfe85"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/PREPARED.json",
+      "bytes": 335131,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "0e1724bee9371f5974dea9aaa1877fefa09b3eef158925022d088fefd536ea8f"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/guard.py",
+      "bytes": 7374,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "14192f13d41ccc73fff29c50952754972f360c27c057e5a67e686db112499831"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/run/child.log",
+      "bytes": 23898,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "bd3fea4525a03138a549e40812d53c4930b3f04484eb573e15f20380f386c22d"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/run/execution.json",
+      "bytes": 1581,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "033e21a794181b795cc8a64c981b11d195ead32dfb834e1448b2d6e34e3e5821"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/EXECUTION-postaudit.json",
+      "bytes": 3486,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "1db2cb69aba831c08bdcb8c3bf9450b0ef60efdbb12bf5d06ac9fc16bbb0e9f2"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/PREPARED.json",
+      "bytes": 12009,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "2b6ab700b74ed3493f1e94a4a9bed53ce281417e60e9842cfa13034a96e28e16"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/guard.py",
+      "bytes": 6146,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "df9bf5613c451eb5ea3dc83dc8157a0ee9dccfa4b364ca1560252baa9dcdbad6"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/run/child.log",
+      "bytes": 36542,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "e8ee78be6a7e82d11e4a7445a972757c5d7c20133a9a09f5d507246f4f9a4896"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/run/execution.json",
+      "bytes": 1580,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-normal-2g-successor-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "fd252f843d3cc5164f8bdab98617bc420ad012f9dd6ce8eab69fa7e815c2ac58"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/EXECUTION-postaudit.json",
+      "bytes": 3339,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "8d78ced6bdb416415aeb904190fb740580451f08eb89a3c021a3efc9898fd16c"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/PREPARED.json",
+      "bytes": 12029,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "d983c907363dc3bcd0319fee1e5e79bf4158cf2905993a8f33ac0447f4eb6e4b"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/guard.py",
+      "bytes": 6065,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "4c43f3202956ce476941fb3e1cfda4a5f176a675050acfa2f099b41066040352"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/run/child.log",
+      "bytes": 67281,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "19b19972e6996fde48fc4562e7ee39ad7f501d2efae3a176852eb1c95d392fe5"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/run/execution.json",
+      "bytes": 1490,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-2g-successor-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "bb7b0c1de8b27c5b570580fd4c139c16a95dde291ece168567e40f8f13a6c609"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/EXECUTION-postaudit.json",
+      "bytes": 3473,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "5ae0d12fb8eb580b2ca6e052ac3cf5a113911a8b0aa598f2fc93501f4166692c"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/PREPARED.json",
+      "bytes": 12130,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "c40fc0709695fbcdf912230ab6c09429e1e7e6a27d16915f1490db4512d316ed"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/guard.py",
+      "bytes": 6018,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "e3bab51ac20710a0629b3923ed313f0c1734f4be28cb5601807762e17f9001db"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/run/child.log",
+      "bytes": 23888,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "737271adf8d33b6250e1e2233478473e3988a3090ee9155af43b7fce38cb755b"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/run/execution.json",
+      "bytes": 1610,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-fullsuite-smol-successor-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "666dfe1e8e76e29298aef29f9ce1ed77eb2fc306ad543ca247a9ab10098ffb24"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/EXECUTION-postaudit.json",
+      "bytes": 3324,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/EXECUTION-postaudit.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "c0351c8e9d3e18fdd754c7cbb5f305e7cffcd0de74bf62c5cffa8bcb4c9ec9ef"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/PREPARED.json",
+      "bytes": 161565,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/PREPARED.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "740b4d6a534096ab1f09267e472de2b86ab2a79a314777f9d48f554e47f200c2"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/commands.json",
+      "bytes": 823,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/commands.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "4393413589303208f24cbb58a6e88f874dc9e1c5c8dfe0434eb2322fba962d59"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/guard.py",
+      "bytes": 6051,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/guard.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "6750c29e7e4b679c6b2dc3355494443b5470542a78ac9a171c775b78d640bdb3"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/leader.py",
+      "bytes": 1076,
+      "category": "closed-unit-helper",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/leader.py",
+      "repository": "bus-lanes-solver",
+      "sha256": "7d1b1ad5be9eeae3c94bb84ed03595d3ce14ad10a4190b1779e2b0f2fd194e32"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/child.log",
+      "bytes": 3267,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/child.log",
+      "repository": "bus-lanes-solver",
+      "sha256": "3dcf366083c92dd66f65f9e56a42500c8b9fb11e66e9bce36feaac923aec2900"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/execution.json",
+      "bytes": 1623,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/execution.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "da7a29c6d2f532aed0e8ab8ddb48d7dacaed587246fecc34d6bb440d1d206cbb"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/result.json",
+      "bytes": 1280,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/result.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "3cfa3c120c20c2eccf828af3508f1704da4cae6c717f050a2f5084ff556b6442"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/steps.json",
+      "bytes": 976,
+      "category": "closed-unit-receipt-or-log",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-qualifier-next/run/steps.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "eb3931c46b4f53828cff50ae0efba1dcd8d4a508c5b08fdedc768d7f00c5df67"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/PREPARED-canonical-source-proposal.json",
+      "bytes": 5221,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/PREPARED-canonical-source-proposal.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "3ad5173400a9becf2b070366cdbb0db834ff49c197cf6d542cf065b3bcce2c12"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/adoption.patch",
+      "bytes": 7613,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/adoption.patch",
+      "repository": "bus-lanes-solver",
+      "sha256": "8b976a2ba625e00aa6aae143fb22a059bcf9aef83243aa0ff453108d3dcb6891"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/qualification-only/lib/coupled-pair-routing-canonical-witness.ts",
+      "bytes": 34670,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/qualification-only/lib/coupled-pair-routing-canonical-witness.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "8da85fcc8d48c8f09c98ffa2f8a2601af615200be83a919c7206ad86400313aa"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/qualification-only/tests/coupled-handoff-length-canonical-parity.test.ts",
+      "bytes": 2503,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/qualification-only/tests/coupled-handoff-length-canonical-parity.test.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "0c5bd10e4e25f58dccb429a189cdbf8600888a976e9ed01227db5b075579ca42"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/source/lib/coupled-handoff-length-bound.ts",
+      "bytes": 1452,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/source/lib/coupled-handoff-length-bound.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "131b199be1ca2f08cc47da8dc77ffe401420d524687a6f10e759d489d5c96991"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/source/lib/coupled-pair-routing.ts",
+      "bytes": 35108,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/source/lib/coupled-pair-routing.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "0091533c1c85733277cf8b70057368b1b9d7822599af20744055e73e4afc2d95"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/source/tests/coupled-handoff-length-bound.test.ts",
+      "bytes": 4297,
+      "category": "unit-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-coupled-handoff-length-prune-canonical-sourceonly-next/source/tests/coupled-handoff-length-bound.test.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "58de1bd186bfa4c2d4370c58f6181632eefefe4ca4eb6301cacf4def5fe1cb36"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-sourceonly-next/SOURCE-manifest.json",
+      "bytes": 2242,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-sourceonly-next/SOURCE-manifest.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "5b1e120f64baabaec7168e6b63efe84da28c422c3bc5fbaefc546e29d302895a"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-sourceonly-next/adoption.patch",
+      "bytes": 1148,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-sourceonly-next/adoption.patch",
+      "repository": "bus-lanes-solver",
+      "sha256": "ed25b91400897460c03a0a0c76e78839f26c2e61fff2c06455604644acefe370"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-sourceonly-next/cartesian-membership-qualification.test.ts",
+      "bytes": 2752,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-sourceonly-next/cartesian-membership-qualification.test.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "7fd4427090e2911eff661b0cd95dd624fcc015ebb4aeaea6b3c9769d7a6de432"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-sourceonly-next/grid-native-length-bounds.candidate.ts",
+      "bytes": 8829,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-sourceonly-next/grid-native-length-bounds.candidate.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "81bb4ade0a133b47238e24ed125b694f0a1398f5b86d15bc3604d7ba2e20b500"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-witness-v2-sourceonly-next/SOURCE-manifest.json",
+      "bytes": 3172,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-witness-v2-sourceonly-next/SOURCE-manifest.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "4e70ef31ecd1e99e830fe18ca9eb975fc474b6c84619a14fd3200d76c0fa4ae3"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-witness-v2-sourceonly-next/cartesian-membership-qualification.test.ts",
+      "bytes": 3072,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-witness-v2-sourceonly-next/cartesian-membership-qualification.test.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "de277a4054cde80f15059e68bc0b53e90a7ccb24af3812e85e75311c277636ca"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/g350-grid-membership-cartesian-oracle-witness-v2-sourceonly-next/grid-native-length-bounds.candidate.ts",
+      "bytes": 8829,
+      "category": "oracle-patch-or-witness",
+      "mode": 384,
+      "relativePath": ".cache/g350-grid-membership-cartesian-oracle-witness-v2-sourceonly-next/grid-native-length-bounds.candidate.ts",
+      "repository": "bus-lanes-solver",
+      "sha256": "81bb4ade0a133b47238e24ed125b694f0a1398f5b86d15bc3604d7ba2e20b500"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-cartesian-focused-COLLECTED-root.json",
+      "bytes": 5719,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-cartesian-focused-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "3447c7d5a72a0685500447f761e82ea001064c2db6954bae1b3cdc5517a31dcd"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-cartesian-witness-v2-focused-COLLECTED-root.json",
+      "bytes": 6495,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-cartesian-witness-v2-focused-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "f61de94ce2c6511bf363f357bbf4a95f094d9f030d82c700092538abae8a619a"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-cartesian-witness-v2-fullsuite-COLLECTED-root.json",
+      "bytes": 5609,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-cartesian-witness-v2-fullsuite-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "9af2c5b06f751d9a89d28cf25f9d7f3161563d9ad48c3f4c0fcfd5b75bad2f06"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-fullsuite-normal-2g-COLLECTED-root.json",
+      "bytes": 5933,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-fullsuite-normal-2g-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "9fa0dd2b78be64963b6a7c94cc9cb196b70e12f7a9ae5a9b2080552e547408a5"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-fullsuite-smol-2g-COLLECTED-root.json",
+      "bytes": 5683,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-fullsuite-smol-2g-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "fbe69c0244c670d42c304fe742b1a46909d9ec0e5e153d46e413f5b980d9b4a1"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-fullsuite-smol-COLLECTED-root.json",
+      "bytes": 5950,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-fullsuite-smol-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "aa2aa8a62455d7737523ffe963988eede56e2f2dcd8295f3f101cce7c49b74bb"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-handoff-length-focused-COLLECTED-root.json",
+      "bytes": 3759,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-handoff-length-focused-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "c8847cfb416145d05cc5a20385b17d5316c43d40a189502b67b5675da0bec75a"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-handoff-length-fullsuite-COLLECTED-root.json",
+      "bytes": 3688,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-handoff-length-fullsuite-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "b4cdde8badb70e0f544e5df61d13dc8ba84d37ce08125f49194434cc59cb8ba1"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-original-grid-baseline-COLLECTED-root.json",
+      "bytes": 6721,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-original-grid-baseline-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "f1d2c80e5310875d90cde92cbd5162fa3934cc0ceeb3687d895ec3d0e41cfd63"
+    },
+    {
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/canonical-original-grid-shared26-COLLECTED-root.json",
+      "bytes": 5915,
+      "category": "closed-unit-root-collection",
+      "mode": 384,
+      "relativePath": ".cache/root-routing-progress/canonical-original-grid-shared26-COLLECTED-root.json",
+      "repository": "bus-lanes-solver",
+      "sha256": "d37aff362dc66f62b81109d04e110092589638c5d56c292055f9f0bedd3477ea"
+    }
+  ],
+  "hardwareSourcesIncluded": false,
+  "historicalControllersStandaloneRunnable": false,
+  "internalIndex": {
+    "bytes": 41148,
+    "mode": 384,
+    "path": "UNIT-EVIDENCE-INDEX.json",
+    "sha256": "a125f367e6b72e9ae03eaa747cdd205cc33fbb4169aea07855669160720bc5b7"
+  },
+  "logicalPayloadBytes": 1497633,
+  "originalPlanAndReportUnchanged": true,
+  "payloadFileCount": 86,
+  "protectedFourHeld": true,
+  "reproducibleArchiveBytesVerifiedByTwoBuilds": true,
+  "restoredControllersOrImportsExecuted": false,
+  "runtimeDependenciesIncluded": false,
+  "schemaVersion": 1,
+  "scope": "DATA_ONLY_633_PASS_UNIT_QUALIFICATION_C2_PLUS_9EE_NO_EXECUTION_AUTHORITY",
+  "selectionPlan": {
+    "bytes": 42803,
+    "mode": 384,
+    "path": "cloud/TI_DDR_SOLVER_UNIT_ARCHIVE_PLAN_2026-10-14.json",
+    "sha256": "bf42893491e0e7e17c5776f86570fb2a6b60ec5844680110c1a14599ddc4ff04"
+  },
+  "standaloneReplayClosureIncluded": false,
+  "totalRegularMemberCount": 87
+}

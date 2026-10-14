@@ -1,0 +1,16 @@
+# G350 solver unit evidence archive — 2026-10-14 UTC
+
+The selected evidence for the completed **633 passed / 0 failed** unit invocation is now archived and tested as data. The archive contains the plan's exact 86 files (1,497,633 bytes) plus one hash index. A fresh temporary extraction verified all 87 files against their bytes, sizes and modes; the temporary directory was then removed. Two independent archive builds produced identical compressed bytes. All selected source files, the original plan/report and the four protected pre-existing files remained unchanged.
+
+- Archive: [`g350-ti-ddr-solver-unit-633-evidence-2026-10-14.tar.gz`](artifacts/g350-ti-ddr-solver-unit-633-evidence-2026-10-14.tar.gz), 306,724 bytes, SHA256 `892ba480c26fabe947b9c33e0a394871fae4cdaf87c5b0a736bdca84054d1ff1`.
+- Outer manifest: [`g350-ti-ddr-solver-unit-633-evidence-2026-10-14.manifest.json`](artifacts/g350-ti-ddr-solver-unit-633-evidence-2026-10-14.manifest.json), SHA256 `ca1ad18b4cbe962c5ffd2b7469504267024c885d7cd5aa59e618778b3c8920b6`.
+- Validation: [`TI_DDR_SOLVER_UNIT_ARCHIVE_VALIDATION_2026-10-14.json`](TI_DDR_SOLVER_UNIT_ARCHIVE_VALIDATION_2026-10-14.json), SHA256 `4b3161a35ce2757f30ffc76799d339ee698fd5ceb43a922a2c5b9a506eca5205`.
+- Immutable selection plan: [`TI_DDR_SOLVER_UNIT_ARCHIVE_PLAN_2026-10-14.json`](TI_DDR_SOLVER_UNIT_ARCHIVE_PLAN_2026-10-14.json), SHA256 `bf42893491e0e7e17c5776f86570fb2a6b60ec5844680110c1a14599ddc4ff04`.
+
+The preserved execution is Root 39636: exit 0, 633 passed / 0 failed, 561,678 assertions across 186 files, 170.367 seconds, 773,263,360 bytes peak owned RSS, zero OOM events, an empty owned process group, and unchanged source/dependencies. Its Root collection is SHA256 `9af2c5b06f751d9a89d28cf25f9d7f3161563d9ad48c3f4c0fcfd5b75bad2f06` and its postaudit is SHA256 `86f775db328f11228f80a6c67a75de71de01b9e2ab0ea3f78ec640fc9d9efc19`. The full invocation includes three qualification-only original-generator parity witnesses that are absent from the private commits.
+
+This archive covers minimal handoff commit `c2b8b24efd96c789a17a58b8908aebc1043fbb53` and the separate single-test memory change `9ee651ea2e403ba8d0b12b5f104fcd6fa04080c2`, based on `c1151212be7b9de4b34b07436d135d874e6c0466`. It retains selected closed failures, helpers, patches and independent witnesses, as specified by the original plan. The [original qualification report](TI_DDR_SOLVER_UNIT_QUALIFICATION_2026-10-14.md) remains unchanged and records the earlier pre-build state; this report records the subsequent archive build.
+
+Extraction restores evidence bytes only. No archived helper was imported or executed, and no test, routing, CAD or runtime worker was launched for this archive work. Historical controllers refer to paths and locked dependencies outside this payload and provide no fresh execution authority. The archive omits dependencies, private Git objects, operational all-eleven results, active work and hardware sources. It does not establish standalone replay or Start restoration. New cache-fixed candidate work is excluded and receives no qualification from this 633-test result.
+
+All-eleven benchmarks, the current 49-signal DDR interconnect, redesigned references, electrical timing and ordering remain unqualified. `fabricationReady=false`.
