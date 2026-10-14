@@ -1,0 +1,1071 @@
+{
+  "createdUtc": "2026-10-14T02:54:02.105210+00:00",
+  "status": "SELECTED_DATA_ARCHIVE_PLAN_ONLY_NOT_BUILT_OR_RESTORE_TESTED",
+  "purpose": "Preserve the exact643-qualified private-stack source snapshots, new patches/oracles and closed unit/phase/focused outcomes including failures. No fresh execution authority or runtime replay claim.",
+  "scope": "Private d7f stack based on canonicalc115; exact outline-scalar full643/0 and meaningful one-pass constructor observation. All11 benchmark acceptance and current49 board qualification excluded.",
+  "archiveFormatPlanned": "Hash-indexed selected data retaining exact bytes and modes",
+  "executionAuthorityIncluded": false,
+  "historicalControllersStandaloneRunnable": false,
+  "canonicalBaselineCommit": "c1151212be7b9de4b34b07436d135d874e6c0466",
+  "privateCandidateCommit": "d7f7c1254d34dfdd2853f069d7277c79ce6ebf5e",
+  "privateCandidateTree": "987f566bc38168ca12d4ad75f1c2cb418e7379d5",
+  "privateChangedPaths": [
+    "lib/coupled-pair-routing.ts",
+    "lib/coupled-handoff-length-bound.ts",
+    "tests/coupled-handoff-length-bound.test.ts",
+    "tests/grid-native-length-bounds.test.ts",
+    "lib/select-route-candidates.ts",
+    "tests/route-candidate-cache-cardinality.test.ts",
+    "lib/vector-scene.ts",
+    "tests/point-rectangle-raster.test.ts",
+    "lib/board-outline.ts",
+    "lib/grid-visibility.ts",
+    "tests/board-outline-raster-scalar.test.ts"
+  ],
+  "qualificationOnlyWitnessTestsOutsidePrivateCommit": 3,
+  "qualifiedSourceFileCount": 908,
+  "actualFullCounters": {
+    "pass": 643,
+    "fail": 0,
+    "tests": 643,
+    "files": 189,
+    "expectCalls": 649202
+  },
+  "qualificationFullPostauditSha256": "8190819345c2906436d2407dfa383080bb11655720c044184bf00759f45a56c2",
+  "qualificationRootCollectionSha256": "79df921e70c3561cb93b3cb1fcf6f8935d6365fb2a4c2630656dc580ed44fdbd",
+  "fullPolicyPreserved": {
+    "wallSeconds": 300,
+    "ownedRssBytes": 2147483648,
+    "sharedBytes": 27917287424,
+    "preforkReserveBytes": 2147483648,
+    "nativeTestTimeoutMs": 5000,
+    "coarseTestTimeoutMs": 30000
+  },
+  "focusedOriginalGuardTool2AndExpected28Preserved": true,
+  "actualFocused30AndTypes0DerivedByMetadataOnlyCorrection": true,
+  "focusedCorrectionDidNotExecuteApplicationsAgain": true,
+  "phaseReferenceCells": 3633468,
+  "phaseBoundedCells": 9801,
+  "observedReferenceConstructorMsBefore": 4497.473849,
+  "observedReferenceConstructorMsAfter": 876.988797,
+  "phaseComparisonDoesNotQualifyWholeBenchmark": true,
+  "rectangleOnlyConstructorChangeWasNoise": true,
+  "files": [
+    {
+      "repository": "board",
+      "relativePath": "cloud/TI_DDR_SOLVER_UNIT_643_QUALIFICATION_2026-10-14.md",
+      "archivePath": "board/cloud/TI_DDR_SOLVER_UNIT_643_QUALIFICATION_2026-10-14.md",
+      "sha256": "4a78a671f9c098a19f2858a5549acfa71337f9f84193ad7aec2c62e86b6df226",
+      "bytes": 5467,
+      "mode": 384,
+      "category": "new643-report"
+    },
+    {
+      "repository": "board",
+      "relativePath": "cloud/TI_DDR_SOLVER_UNIT_ARCHIVE_BUILT_2026-10-14.md",
+      "archivePath": "board/cloud/TI_DDR_SOLVER_UNIT_ARCHIVE_BUILT_2026-10-14.md",
+      "sha256": "15207ff2888ab28b0f08a375e8823ac8667153ee1c0fd6141675063af51b2826",
+      "bytes": 3281,
+      "mode": 384,
+      "category": "preserved633-archive-record"
+    },
+    {
+      "repository": "board",
+      "relativePath": "cloud/TI_DDR_SOLVER_UNIT_ARCHIVE_VALIDATION_2026-10-14.json",
+      "archivePath": "board/cloud/TI_DDR_SOLVER_UNIT_ARCHIVE_VALIDATION_2026-10-14.json",
+      "sha256": "4b3161a35ce2757f30ffc76799d339ee698fd5ceb43a922a2c5b9a506eca5205",
+      "bytes": 4529,
+      "mode": 384,
+      "category": "preserved633-archive-validation"
+    },
+    {
+      "repository": "board",
+      "relativePath": "cloud/TI_DDR_SOLVER_UNIT_QUALIFICATION_2026-10-14.md",
+      "archivePath": "board/cloud/TI_DDR_SOLVER_UNIT_QUALIFICATION_2026-10-14.md",
+      "sha256": "32415b6dbaad805c9c0a3a729050384cee58029c120c463cfdebfaa73a9e434d",
+      "bytes": 5093,
+      "mode": 384,
+      "category": "preserved633-report"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "5386ac0409a256730a92e6d93c0ff3bfed97be65db5d258bbb6534fef25737ba",
+      "bytes": 7237,
+      "mode": 384,
+      "category": "preserved-636pass-1timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/PREPARED.json",
+      "sha256": "6579e69626fdf9b346830a75666fc220b0037f84dd80f03ea80ae09f7f5a0857",
+      "bytes": 7280,
+      "mode": 384,
+      "category": "preserved-636pass-1timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/run/child.log",
+      "sha256": "85cf7c9416183140fa38798d4bebf0fb66ed21fe587ba40b108f8f09145c6c19",
+      "bytes": 67672,
+      "mode": 384,
+      "category": "preserved-636pass-1timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-post-comparator-fullsuite-sourceonly-next/run/execution.json",
+      "sha256": "32c24ff834a1588092852aa920f389eb63c5099e1360c0f04449367a86e3ea6e",
+      "bytes": 1461,
+      "mode": 384,
+      "category": "preserved-636pass-1timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "aec7a26adf53219d6d3e8608d859d7fe75983ffe17f2742313e33a75717a6a9d",
+      "bytes": 3336,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/PREPARED.json",
+      "sha256": "17fb0ef4091105823b57d738d5ef8dc15c085d5f38d95365030b3a0e354cf7cf",
+      "bytes": 330504,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/child.log",
+      "sha256": "7886df41de9f79132facecdd84fa531e1d5240f47ce347ff22b961ac96faff32",
+      "bytes": 1336,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/execution.json",
+      "sha256": "18bb74a6cc744551658e09a496ecee54ff4450ac3ad6aeb3244ab2ab6e46ab45",
+      "bytes": 1624,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/result.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/result.json",
+      "sha256": "cf7c924390d0574af54fa5bbe0dfb168fab19f3e0644502ec7e1b9217bd08a66",
+      "bytes": 915,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/steps.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-focused-sourceonly-next/run/steps.json",
+      "sha256": "46d76f5394fa2860d5233b967dc1495c198c4d703bd5e7fe82b7e92aebd3980d",
+      "bytes": 655,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "062c036e2428edef4cba5e128b1769682b28db56b77d187e9a6a4acfce1b5117",
+      "bytes": 3130,
+      "mode": 384,
+      "category": "preserved-635pass-2timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/PREPARED.json",
+      "sha256": "9e47dc21c5125a8e467e22f1268511cc1a4c97a276d651ac9a36445cfda758c1",
+      "bytes": 2537,
+      "mode": 384,
+      "category": "preserved-635pass-2timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/run/child.log",
+      "sha256": "326aa92d71ecdb25f154a628e4373946ab1a7af7bbbc2a7c0753f6d767e03357",
+      "bytes": 67962,
+      "mode": 384,
+      "category": "preserved-635pass-2timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-stacked-fullsuite-sourceonly-next/run/execution.json",
+      "sha256": "ba850166616348e2fac09ecdf505dc380aeb32e492dfb4d46246d3130799f084",
+      "bytes": 1461,
+      "mode": 384,
+      "category": "preserved-635pass-2timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "50dd614fe4c3281751acdc884aa64c4c4310e69f6d2391f5aced153b8c4ca520",
+      "bytes": 7418,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/PREPARED.json",
+      "sha256": "df045a0a78d94f82ff5b1697f26fb4fb99b0008e088f137837c85e2ee455bdcb",
+      "bytes": 10903,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/leader.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/leader.py",
+      "sha256": "da959b8d9161300679c53e681d054fe7bb88ddfd5786104867ad888e75ea72dd",
+      "bytes": 3970,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/log_parser.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/log_parser.py",
+      "sha256": "d41744d4ada99f7bc0da8e7a94e36eb6c21dce195617a6a22ff4fe7f1b35407e",
+      "bytes": 4007,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/execution.json",
+      "sha256": "9d629673ef21fb5488fa88cea6143ac6c9940c3d41c6728c751316d1b0035468",
+      "bytes": 1650,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/new906-child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/new906-child.log",
+      "sha256": "3f0440a7c0028a13e62a5376c4077a3cd9bd053f23c4f3b7694921cb4555cac3",
+      "bytes": 1107,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/old905-child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/old905-child.log",
+      "sha256": "4a1a36a6fb8b1317feea719530532216d8bb9dc7ab54943a783257d4999edac8",
+      "bytes": 1107,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/parser-controls.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/parser-controls.json",
+      "sha256": "23ebc4ce791ec540b5cd4063332fbdfc10c07a52a4b1b37152de17f1d3a306fe",
+      "bytes": 741,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/result.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/result.json",
+      "sha256": "822d127397c2976853c574b376149ba446aa19514a0fe2fbda04b42440f60071",
+      "bytes": 13318,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/steps.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-parser-v2-sourceonly-next/run/steps.json",
+      "sha256": "8a690d5045342526194687a741cedf6aef2fbab4b03aec80339e2d1f1efd5dd5",
+      "bytes": 11513,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-sourceonly-next/PREPARED.json",
+      "sha256": "83bfc88c9cbdee22cb70b9e13c1886a72bd34ef3f098b435fa15129e2ef83cdd",
+      "bytes": 8170,
+      "mode": 384,
+      "category": "preserved-unexecuted-parser-summary-duplicate-hold"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-cardinality-timeout-comparator-sourceonly-next/leader.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-cardinality-timeout-comparator-sourceonly-next/leader.py",
+      "sha256": "af7f489d0c2e667df43f4ec3a73b3175567dfa305c6c4586ddd857d731444acd",
+      "bytes": 4990,
+      "mode": 384,
+      "category": "preserved-unexecuted-parser-summary-duplicate-hold"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "9dc2c077739997ae33f876888b8133d782a94ade086c8979d5928469488fe1ae",
+      "bytes": 14277,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/PREPARED.json",
+      "sha256": "ccdc13a288bc79c65c5b27562e13809c92972897f245dcb735fe50717f89fb07",
+      "bytes": 15376,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/guard.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/guard.py",
+      "sha256": "f4e53917902f3c5b4d831309d510e055d45ce9bc3a05d6e27ff5a60b11808d76",
+      "bytes": 9370,
+      "mode": 384,
+      "category": "closed-qualification-only-phase-observation-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/observed-grid-native-length-bounds.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/observed-grid-native-length-bounds.test.ts",
+      "sha256": "fe4a4c1adcf429bacd042a36248fe41ffd50435e6896ce7005873319b76f69ac",
+      "bytes": 11094,
+      "mode": 384,
+      "category": "closed-qualification-only-phase-observation-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/preload.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/preload.ts",
+      "sha256": "372945892338f30ec3431e184cbd7ea8d9e22d132169c356e1c4d0c804fc9759",
+      "bytes": 1429,
+      "mode": 384,
+      "category": "closed-qualification-only-phase-observation-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/child.log",
+      "sha256": "0384ffb3ab32bc66509a614be1329e5d546130ebd12c50f4db9b849e84a6eed9",
+      "bytes": 24549,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/execution.json",
+      "sha256": "e5c8076f7c774f8b057dda0fa14e3b11331a7afd3539b930143f4cea43d1bac1",
+      "bytes": 8075,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/native-phases.jsonl",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/native-phases.jsonl",
+      "sha256": "340bf001059ee65f329a4215542f07e8e90482d9889dcc62ec3775e8073e77c9",
+      "bytes": 6637,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/result.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-native-grid-prefix-phase-observer-sourceonly-next/run/result.json",
+      "sha256": "86afcefe7767bb5b0eea437477510bc038fe67fe148f305896efb28e5b5b74a3",
+      "bytes": 70111,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-focused-count30-metadata-correction-sourceonly-next/COUNT-CORRECTED-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-focused-count30-metadata-correction-sourceonly-next/COUNT-CORRECTED-postaudit.json",
+      "sha256": "fe7c3fc82d21b5ad8704326459c4e6e484d714475338966707160dbc332f9fa0",
+      "bytes": 4654,
+      "mode": 384,
+      "category": "closed-metadata-only-count30-correction-no-app-rerun"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-focused-count30-metadata-correction-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-focused-count30-metadata-correction-sourceonly-next/PREPARED.json",
+      "sha256": "0fc8b2b9c314567a78e0eb15d05e64889020a3b001d8c8a241a5ae56c8cc6753",
+      "bytes": 7018,
+      "mode": 384,
+      "category": "closed-metadata-only-count30-correction-no-app-rerun"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-focused-count30-metadata-correction-sourceonly-next/qualify.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-focused-count30-metadata-correction-sourceonly-next/qualify.py",
+      "sha256": "af59398d56c72782bc81a8dbf0b397325451162616920e17f57d4ef1e2b0faea",
+      "bytes": 5256,
+      "mode": 384,
+      "category": "closed-metadata-only-count30-correction-no-app-rerun"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "be510e34bbfc5855aa3b7bbe0c5bf23821dd5d3f1ee45673fb1f8aca344aad8c",
+      "bytes": 3362,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/PREPARED.json",
+      "sha256": "e2b99e1ec083aad24e1df62044e7369835034cc09f0b556da4b4c14791b349f0",
+      "bytes": 335871,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/PRIVATE-commit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/PRIVATE-commit.json",
+      "sha256": "471fc5cc27f8b03565e574e022dc9e7ede75694b79b4c0915ef69633ec971263",
+      "bytes": 319,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/commands.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/commands.json",
+      "sha256": "2c0cbc4639dae0b8c046cce1af45edf7bbd119f34b6d45914cd38d7c6e24ce44",
+      "bytes": 730,
+      "mode": 384,
+      "category": "closed-original-count-mismatch-controller-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/guard.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/guard.py",
+      "sha256": "0fadfcd7a5f102bb55540af8f34eda8e3893ac4f152b14580b58d84bde37db13",
+      "bytes": 6942,
+      "mode": 384,
+      "category": "closed-original-count-mismatch-controller-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/leader.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/leader.py",
+      "sha256": "d622132e4ddc9b0084255432d7e0c18e90fa4686b027f2ed681728b1b85cec27",
+      "bytes": 1053,
+      "mode": 384,
+      "category": "closed-original-count-mismatch-controller-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/run/child.log",
+      "sha256": "63e3814ea8ba29aa4b24e1c5bddf483b23c443a011b4c26742dbdbf5164d3c25",
+      "bytes": 3257,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/run/execution.json",
+      "sha256": "51d94d3a6c4afce08b30a223da307c6795c86a7b71ccec197095dbd4989c50aa",
+      "bytes": 1614,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/run/result.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/run/result.json",
+      "sha256": "7349c3175042b4e63f14bf5356ebd26fb3d76068a820f490cfa1641bc8a8fc3a",
+      "bytes": 1154,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/run/steps.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/run/steps.json",
+      "sha256": "4227eca5848175c988b468822630b8efbb9b37de47fee0a0b67ee60bea294b4f",
+      "bytes": 882,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/board-outline.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/board-outline.ts",
+      "sha256": "33d12ec69e910e0b8d089804b07054b70d7f8488fe2369d2a6a801f78c738731",
+      "bytes": 8284,
+      "mode": 384,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/coupled-handoff-length-bound.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/coupled-handoff-length-bound.ts",
+      "sha256": "131b199be1ca2f08cc47da8dc77ffe401420d524687a6f10e759d489d5c96991",
+      "bytes": 1452,
+      "mode": 420,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/coupled-pair-routing-canonical-witness.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/coupled-pair-routing-canonical-witness.ts",
+      "sha256": "8da85fcc8d48c8f09c98ffa2f8a2601af615200be83a919c7206ad86400313aa",
+      "bytes": 34670,
+      "mode": 420,
+      "category": "qualification-only-original-generator-witness-not-private-commit"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/coupled-pair-routing.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/coupled-pair-routing.ts",
+      "sha256": "0091533c1c85733277cf8b70057368b1b9d7822599af20744055e73e4afc2d95",
+      "bytes": 35108,
+      "mode": 420,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/grid-visibility.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/grid-visibility.ts",
+      "sha256": "f9718174f712bf6f298bfc0829b4352be5e0dbca445881b100d772ebc2427754",
+      "bytes": 47328,
+      "mode": 384,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/select-route-candidates.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/select-route-candidates.ts",
+      "sha256": "36ce7fa6d89fe6513c3f881d4426ab1a8ff6b1a0c0cca82102f873186db8b210",
+      "bytes": 11920,
+      "mode": 420,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/vector-scene.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/lib/vector-scene.ts",
+      "sha256": "638c70ed7ffa42b389495157689f955420015fc6d527ddd49ee72e84e4fb6bd0",
+      "bytes": 14354,
+      "mode": 384,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/board-outline-raster-scalar.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/board-outline-raster-scalar.test.ts",
+      "sha256": "1dd6606ff435dc638b29f1cc773eb0d6eae33e8bea35c964a0c099f3dffc43f3",
+      "bytes": 3764,
+      "mode": 384,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/coupled-handoff-length-bound.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/coupled-handoff-length-bound.test.ts",
+      "sha256": "58de1bd186bfa4c2d4370c58f6181632eefefe4ca4eb6301cacf4def5fe1cb36",
+      "bytes": 4297,
+      "mode": 420,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/coupled-handoff-length-canonical-parity.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/coupled-handoff-length-canonical-parity.test.ts",
+      "sha256": "0c5bd10e4e25f58dccb429a189cdbf8600888a976e9ed01227db5b075579ca42",
+      "bytes": 2503,
+      "mode": 420,
+      "category": "qualification-only-original-generator-witness-not-private-commit"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/grid-native-length-bounds.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/grid-native-length-bounds.test.ts",
+      "sha256": "81bb4ade0a133b47238e24ed125b694f0a1398f5b86d15bc3604d7ba2e20b500",
+      "bytes": 8829,
+      "mode": 420,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/point-rectangle-raster.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/point-rectangle-raster.test.ts",
+      "sha256": "b78a91460ab6cf216c8e50cf1dbbaf6985bc2d466df7d7c3f8cb1b9ed54f445f",
+      "bytes": 3711,
+      "mode": 384,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/route-candidate-cache-cardinality.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-focused-sourceonly-next/source/tests/route-candidate-cache-cardinality.test.ts",
+      "sha256": "43204e353bb545b36191234d37a69b61f03bd0f2e82def60e220f9c12aa32e1d",
+      "bytes": 2629,
+      "mode": 420,
+      "category": "exact-qualified-private-stack-source-snapshot"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "8190819345c2906436d2407dfa383080bb11655720c044184bf00759f45a56c2",
+      "bytes": 7264,
+      "mode": 384,
+      "category": "closed643pass0full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/PREPARED.json",
+      "sha256": "769ffd1eb96604752daa29dbf1e78caceaa10386ce8d0f3c43248377b9deaba9",
+      "bytes": 6398,
+      "mode": 384,
+      "category": "closed643pass0full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/run/child.log",
+      "sha256": "5f9ff4bcc40f0914f8ce235ff2a47b1135a1764028ef06aa91d772283a02e9ca",
+      "bytes": 68180,
+      "mode": 384,
+      "category": "closed643pass0full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/run/execution.json",
+      "sha256": "92ebf1de0be666801131a897bdcffad02d4697a041b5320ee49aaac21ebc4761",
+      "bytes": 1461,
+      "mode": 384,
+      "category": "closed643pass0full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/run/memory.jsonl",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-fullsuite-sourceonly-next/run/memory.jsonl",
+      "sha256": "c7e282be9560be257adc30057be70e6e0e6498afafc3bd445cdfd931e2099fb8",
+      "bytes": 1211016,
+      "mode": 384,
+      "category": "closed643pass0full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "fa9403a325803fa39b0048199593700c1aee6154841e5284bc96e86cbd3e6725",
+      "bytes": 14386,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/PREPARED.json",
+      "sha256": "1c65488f61a31d54e2817566cca58bc8723fec1a4e7566119ab19eea8cbf340e",
+      "bytes": 19467,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/guard.py",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/guard.py",
+      "sha256": "adaf3b4c118922ded1ec9870c8cdc1f4548a928dfd3c8c746b3c58c1b6544357",
+      "bytes": 12156,
+      "mode": 384,
+      "category": "closed-qualification-only-phase-observation-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/observed-grid-native-length-bounds.test.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/observed-grid-native-length-bounds.test.ts",
+      "sha256": "30686d61a56097f9609a13bda55f594ca542278561ed05c54d03eb36b5a633c3",
+      "bytes": 11096,
+      "mode": 384,
+      "category": "closed-qualification-only-phase-observation-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/preload.ts",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/preload.ts",
+      "sha256": "372945892338f30ec3431e184cbd7ea8d9e22d132169c356e1c4d0c804fc9759",
+      "bytes": 1429,
+      "mode": 384,
+      "category": "closed-qualification-only-phase-observation-source"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/child.log",
+      "sha256": "865f8bc628e1ce8c6d725f42cbd52490249ff6ef580789c3da0bb9ee8e374899",
+      "bytes": 24539,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/execution.json",
+      "sha256": "c4b2f50e76650a399ad0a491ac6dc6e12e534d56024971336af20f52cc860ca6",
+      "bytes": 8080,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/memory.jsonl",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/memory.jsonl",
+      "sha256": "cb6ab13948c3f60b9c4cdb35b22b136417d7bb89a9deab809c03eac77baf1154",
+      "bytes": 1601034,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/native-phases.jsonl",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/native-phases.jsonl",
+      "sha256": "29201257b3f69e54a436a8fbb260bab07b384afd12f522d54c819e4f09d7bb6f",
+      "bytes": 6629,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/result.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-prefix-phase-count30-sourceonly-next/run/result.json",
+      "sha256": "d7d19d5448c289168383136bc8cfb627652e8b5a9ddd4d6bc5af023e0fdcb028",
+      "bytes": 70253,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-single-pass-sourceonly-next/SOURCE-proposal.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-single-pass-sourceonly-next/SOURCE-proposal.json",
+      "sha256": "37b0bec02c5ac22d8d6f1efd960972cd796c6dcbdf3e4890ea82ff10d1667920",
+      "bytes": 3285,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-outline-raster-single-pass-sourceonly-next/adoption.patch",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-outline-raster-single-pass-sourceonly-next/adoption.patch",
+      "sha256": "54834df325362904074ffc9585b7a6db48ee0bd2abb9ac2de695a970af3f5337",
+      "bytes": 6493,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-focused-sourceonly-next/PRIVATE-commit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-focused-sourceonly-next/PRIVATE-commit.json",
+      "sha256": "f1a164a45c4ee7d68f80c7514c620f3e81a790c7b5bda103f7c1b351f0d93fc7",
+      "bytes": 283,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/EXECUTION-postaudit.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/EXECUTION-postaudit.json",
+      "sha256": "0c0073cbf5fa5b5b92bb8da0895035e2d70436ac1e17d7078c39cbab15ff6cb5",
+      "bytes": 14336,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/PREPARED.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/PREPARED.json",
+      "sha256": "ec328f967e6d9a33369f9852dc948f2350e85c06d1ff8f699fb49a0a1bd862a6",
+      "bytes": 17021,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/child.log",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/child.log",
+      "sha256": "826f6b875f88dd48eb5b746413c3069e2c5364169026f80b963bfcb956a891c8",
+      "bytes": 24540,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/execution.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/execution.json",
+      "sha256": "1c9abe00af5bdfbf63f0fa8faf44c91aa1d594174cadb8a84bb5bce030dc180c",
+      "bytes": 8081,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/native-phases.jsonl",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/native-phases.jsonl",
+      "sha256": "f9fe7b044f49797ec3b97b65e8553c6d1eb34fc56f3acfb9aa0af6dcf297871f",
+      "bytes": 6623,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/result.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-prefix-phase-sourceonly-next/run/result.json",
+      "sha256": "9050d8028904167639c4fac5fd8816e5ad9cdaa6dc9498c1e992cb4b0c06e868",
+      "bytes": 70199,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-sourceonly-next/SOURCE-proposal.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-sourceonly-next/SOURCE-proposal.json",
+      "sha256": "12d6957e17d38d06570a75a0650dae3a007dd2240403d6ae813a4fa2b8f300ed",
+      "bytes": 3301,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-canonical-point-rectangle-raster-sourceonly-next/adoption.patch",
+      "archivePath": "bus-lanes-solver/.cache/g350-canonical-point-rectangle-raster-sourceonly-next/adoption.patch",
+      "sha256": "9bdcff3ee0730033effdcaf9312e9ad11c9a2c1c71e351df73cfda84fedaf281",
+      "bytes": 6261,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-ti-v12e-c-domain-cardinality-cache-fix-sourceonly-next/SOURCE-proposal.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-ti-v12e-c-domain-cardinality-cache-fix-sourceonly-next/SOURCE-proposal.json",
+      "sha256": "8024a38234fba32f40665696829f31c7f640d3d69a72281e6efa0d47d59312d0",
+      "bytes": 3213,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-ti-v12e-c-domain-cardinality-cache-fix-sourceonly-next/cardinality.patch",
+      "archivePath": "bus-lanes-solver/.cache/g350-ti-v12e-c-domain-cardinality-cache-fix-sourceonly-next/cardinality.patch",
+      "sha256": "bf021f43ea97a95aa2bf0caac54389a4f631672d12959ccb09f3950d985e8a07",
+      "bytes": 451,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/g350-ti-v12e-c-domain-cardinality-canonical-regression-sourceonly-next/SOURCE-proposal.json",
+      "archivePath": "bus-lanes-solver/.cache/g350-ti-v12e-c-domain-cardinality-canonical-regression-sourceonly-next/SOURCE-proposal.json",
+      "sha256": "eeeedc8d586c443ecd4547a9898ee6a0824ff6ae791d3f4b7880561df9492d54",
+      "bytes": 1295,
+      "mode": 384,
+      "category": "source-proposal-or-private-commit-data"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/cardinality-focused-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/cardinality-focused-COLLECTED-root.json",
+      "sha256": "5f4370c69098238f9b838bbbcf76ed36dcc4a1b19e058b7c71427e3ddd9e0eba",
+      "bytes": 2266,
+      "mode": 384,
+      "category": "closed-cardinality-types-and-focused"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/cardinality-full-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/cardinality-full-COLLECTED-root.json",
+      "sha256": "7929891b9f938b3349f98cb6f92541ea9c600017544d76db37d3907cfb24610e",
+      "bytes": 2156,
+      "mode": 384,
+      "category": "preserved-635pass-2timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/cardinality-post-comparator-full-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/cardinality-post-comparator-full-COLLECTED-root.json",
+      "sha256": "c8fd7a8a4a66ff585ae847b7532e5c48168c7afd55e7c72eb0e7224c9319d747",
+      "bytes": 2164,
+      "mode": 384,
+      "category": "preserved-636pass-1timeout-full"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/cardinality-timeout-comparator-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/cardinality-timeout-comparator-COLLECTED-root.json",
+      "sha256": "67b933aeb996c324a1730b8696c1e02e2a92d44e381267ec4a29189c18c73cec",
+      "bytes": 2340,
+      "mode": 384,
+      "category": "closed-nine-case-old-new-comparator-not-full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/native-grid-prefix-phases-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/native-grid-prefix-phases-COLLECTED-root.json",
+      "sha256": "6ef352e2e6909033248fdbd3ab35c0e1aa02ba33659bad4dab3266a79bb8ce13",
+      "bytes": 9142,
+      "mode": 384,
+      "category": "closed-original-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/outline-all11-output-parent-preworker-failure.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/outline-all11-output-parent-preworker-failure.json",
+      "sha256": "b826c89733cd5e333d8f3ebe72711dd299abb8a5c34356edf0fb948a9e432d01",
+      "bytes": 478,
+      "mode": 384,
+      "category": "closed-all11-output-parent-preworker-failure-no-application"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/outline-scalar-focused-count-mismatch-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/outline-scalar-focused-count-mismatch-COLLECTED-root.json",
+      "sha256": "00a9f387ab655c9acead3969c48059c1003c4b8770f0d48afd8b5035d107d146",
+      "bytes": 2460,
+      "mode": 384,
+      "category": "preserved-actual30pass-original-wrapper-count-failure"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/outline-scalar-fullsuite-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/outline-scalar-fullsuite-COLLECTED-root.json",
+      "sha256": "79df921e70c3561cb93b3cb1fcf6f8935d6365fb2a4c2630656dc580ed44fdbd",
+      "bytes": 2261,
+      "mode": 384,
+      "category": "closed643pass0full-suite"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/outline-scalar-prefix-phase-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/outline-scalar-prefix-phase-COLLECTED-root.json",
+      "sha256": "c759002e702f02184901c2b1a556690d54970fc9b8ee8598a3baab254b1591b3",
+      "bytes": 9202,
+      "mode": 384,
+      "category": "closed-material-one-pass-outline-constructor-phase"
+    },
+    {
+      "repository": "bus-lanes-solver",
+      "relativePath": ".cache/root-routing-progress/point-rectangle-prefix-phase-COLLECTED-root.json",
+      "archivePath": "bus-lanes-solver/.cache/root-routing-progress/point-rectangle-prefix-phase-COLLECTED-root.json",
+      "sha256": "72eca2b780e697d218a4497abe34af096c1f2c18360359d1ac24836243484831",
+      "bytes": 9205,
+      "mode": 384,
+      "category": "closed-rectangle-correctness-no-material-speedup"
+    }
+  ],
+  "selectedFileCount": 104,
+  "selectedBytes": 4566697,
+  "referencedPreservedHistoryNotInPayload": [
+    {
+      "path": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-solver-unit-633-evidence-2026-10-14.tar.gz",
+      "sha256": "892ba480c26fabe947b9c33e0a394871fae4cdaf87c5b0a736bdca84054d1ff1",
+      "bytes": 306724,
+      "includedInPlannedPayload": false,
+      "reason": "Previously built immutable633 DATA archive holds original prune/helper/oracle patches and earlier resource/query/guard failures; not duplicated in this successor."
+    },
+    {
+      "path": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-solver-unit-633-evidence-2026-10-14.manifest.json",
+      "sha256": "ca1ad18b4cbe962c5ffd2b7469504267024c885d7cd5aa59e618778b3c8920b6",
+      "bytes": 42331,
+      "includedInPlannedPayload": false,
+      "reason": "Hash-indexed prior633 payload inventory."
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/g350-positive-native-bank-replay-v5-next/full-unit-v1-receipt.json",
+      "sha256": "9f69ebc16bf964695c6af4f4ce8f6ac40226522c8de5b6d7a15dc81a8b5de01c",
+      "bytes": 4527,
+      "includedInPlannedPayload": false,
+      "reason": "Preserved earlierV5 failure/history reference from the immutable633 archive plan."
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/v5-benchmark-COLLECTED-root-after-case2-fail.json",
+      "sha256": "d18bf7f324db43b0911d77160c8a786beca02be28f73c57bbb50f8329ba8886f",
+      "bytes": 3589,
+      "includedInPlannedPayload": false,
+      "reason": "Preserved earlierV5 failure/history reference from the immutable633 archive plan."
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/handoff-length-prune-fullsuite-COLLECTED-root.json",
+      "sha256": "272743f85ae29aca690c21b73991b1b6b21cfd491055586f4fd27c039eeb0be6",
+      "bytes": 3769,
+      "includedInPlannedPayload": false,
+      "reason": "Preserved earlierV5 failure/history reference from the immutable633 archive plan."
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/g350-canonical-outline-raster-benchmark-sourceonly-next/PREPARED.json",
+      "sha256": "22ac8875c7aaa27603c800b874e40aab6d52a9a4353c90d0741ec8e5089402b1",
+      "bytes": 120400,
+      "includedInPlannedPayload": false,
+      "reason": "Selected all11 baseline178/candidate184 source bindings; not a benchmark acceptance result."
+    },
+    {
+      "path": "/workspace/bus-lanes-solver/.cache/g350-canonical-outline-raster-all11-30g-operational-sourceonly-next/PREPARED.json",
+      "sha256": "0a4423f0b2f7d30eb371784a3e9adb182ba548f20cf694624daacd8357226da7",
+      "bytes": 14692,
+      "includedInPlannedPayload": false,
+      "reason": "Current Root-owned all11 baseline stage is active; operational packet and active artifacts excluded."
+    }
+  ],
+  "excluded": [
+    "complete documentation/assets tree",
+    "node_modules and dependency archives",
+    "Node/Bun/SDK/container executables",
+    "private .git metadata",
+    "Root approval receipts/tokens",
+    "active all11 artifacts",
+    "hardware sources and frozen KiCad evidence",
+    "credentials",
+    "broadV5 experimental source"
+  ],
+  "sourceSnapshotsIncludedOnly": [
+    "eleven changed private-stack paths",
+    "qualification-only original-generator reference and three-test witness",
+    "new minimal patches/regression metadata",
+    "closed observation/parser/correction helpers"
+  ],
+  "completePrivateRuntimeReconstructedOrExecutedFromPayload": false,
+  "installedPinsOrSourceAdoptionChanged": false,
+  "allElevenBaselineRunningAtPreparation": true,
+  "allElevenBenchmarkAccepted": false,
+  "acceptedCurrent49DDR": false,
+  "fabricationReady": false,
+  "archiveBuilt": false,
+  "restoreTested": false,
+  "actualWorkersOrImportsDuringPlanPreparation": 0,
+  "allElevenInitialOutputParentFailurePreservedWithoutApplicationResult": true
+}
