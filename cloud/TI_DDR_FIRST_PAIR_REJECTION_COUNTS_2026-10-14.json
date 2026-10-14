@@ -1,0 +1,159 @@
+{
+  "scope": "OPT_IN_BOUNDED_REJECTION_STAGE_DIAGNOSTICS_ONLY",
+  "rows": [
+    {
+      "pairNames": [
+        "source_trace_15",
+        "source_trace_16"
+      ],
+      "layer": "inner1",
+      "invocations": 1,
+      "acceptedInvocations": 0,
+      "rejections": {
+        "center_search_unsolved": 248,
+        "handoff_length_limit": 94,
+        "package_escape_unsolved": 12,
+        "joined_visibility": 6,
+        "shape_angle_or_shared_gap": 4,
+        "shaped_length_limit": 28,
+        "no_finished_shape": 8,
+        "center_path_degenerate": 2
+      },
+      "firstSamples": {
+        "center_search_unsolved": {
+          "failed": true,
+          "expanded": 0,
+          "capped": false
+        },
+        "handoff_length_limit": {},
+        "package_escape_unsolved": {
+          "member": "source_trace_16",
+          "end": 1,
+          "failed": true,
+          "expanded": 39570,
+          "capped": false
+        },
+        "joined_visibility": {},
+        "shape_angle_or_shared_gap": {
+          "trim": 1.5
+        },
+        "shaped_length_limit": {
+          "trim": 0.75
+        },
+        "no_finished_shape": {},
+        "center_path_degenerate": {
+          "vertices": 47
+        }
+      }
+    },
+    {
+      "pairNames": [
+        "source_trace_15",
+        "source_trace_16"
+      ],
+      "layer": "top",
+      "invocations": 1,
+      "acceptedInvocations": 0,
+      "rejections": {
+        "center_search_unsolved": 264,
+        "handoff_length_limit": 68,
+        "package_escape_unsolved": 32
+      },
+      "firstSamples": {
+        "center_search_unsolved": {
+          "failed": true,
+          "expanded": 0,
+          "capped": false
+        },
+        "handoff_length_limit": {},
+        "package_escape_unsolved": {
+          "member": "source_trace_16",
+          "end": 0,
+          "failed": true,
+          "expanded": 6464,
+          "capped": false
+        }
+      }
+    },
+    {
+      "pairNames": [
+        "source_trace_15",
+        "source_trace_16"
+      ],
+      "layer": "inner2",
+      "invocations": 1,
+      "acceptedInvocations": 0,
+      "rejections": {
+        "center_search_unsolved": 248,
+        "handoff_length_limit": 94,
+        "package_escape_unsolved": 12,
+        "joined_visibility": 6,
+        "shape_angle_or_shared_gap": 4,
+        "shaped_length_limit": 28,
+        "no_finished_shape": 8,
+        "center_path_degenerate": 2
+      },
+      "firstSamples": {
+        "center_search_unsolved": {
+          "failed": true,
+          "expanded": 0,
+          "capped": false
+        },
+        "handoff_length_limit": {},
+        "package_escape_unsolved": {
+          "member": "source_trace_16",
+          "end": 1,
+          "failed": true,
+          "expanded": 39570,
+          "capped": false
+        },
+        "joined_visibility": {},
+        "shape_angle_or_shared_gap": {
+          "trim": 1.5
+        },
+        "shaped_length_limit": {
+          "trim": 0.75
+        },
+        "no_finished_shape": {},
+        "center_path_degenerate": {
+          "vertices": 47
+        }
+      }
+    },
+    {
+      "pairNames": [
+        "source_trace_15",
+        "source_trace_16"
+      ],
+      "layer": "bottom",
+      "invocations": 1,
+      "acceptedInvocations": 0,
+      "rejections": {
+        "center_search_unsolved": 254,
+        "handoff_length_limit": 90,
+        "package_escape_unsolved": 16
+      },
+      "firstSamples": {
+        "center_search_unsolved": {
+          "failed": true,
+          "expanded": 0,
+          "capped": false
+        },
+        "handoff_length_limit": {},
+        "package_escape_unsolved": {
+          "member": "source_trace_15",
+          "end": 0,
+          "failed": true,
+          "expanded": 0,
+          "capped": false
+        }
+      }
+    }
+  ],
+  "maximumPairLayerRows": 12,
+  "maximumSamplesPerStagePerRow": 1,
+  "noPerStepLogs": true,
+  "originalAlgorithmsCapsConstraintsAndLayerOrderHeld": true,
+  "all49Accepted": false,
+  "fabricationReady": false
+}
