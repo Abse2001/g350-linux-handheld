@@ -1,0 +1,157 @@
+{
+  "scope": "ROOT_ACTUAL_SOURCE23_SOURCE_DATA_RESTORATION_VALIDATION",
+  "fileCount": 333,
+  "logicalBytes": 114966454,
+  "archive": {
+    "path": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source23-core-native-cli-cad-public-failure-2026-10-14.tar.gz",
+    "sha256": "059a5c88759284a67d2302f9263e95d0b4604726effb8aacefebca583318d8bd",
+    "bytes": 5879087
+  },
+  "manifest": {
+    "path": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source23-core-native-cli-cad-public-failure-2026-10-14.manifest.json",
+    "sha256": "a6dee536ea8fe0cfa3a53db25590f63fbd176d7fe8fe878fdd7d38c69d6036df"
+  },
+  "restorer": {
+    "path": "/workspace/g350-linux-handheld/scripts/restore-g350-source23-core-native-cli-cad-source-data.py",
+    "sha256": "085a3fd86aa449729370bbb683ac37b83303a825c181610dcc15794a2534adf6"
+  },
+  "allCasesPassed": true,
+  "caseCount": 9,
+  "cases": [
+    {
+      "case": "fresh restoration exact333 bytes and modes",
+      "passed": true,
+      "result": {
+        "archiveVerified": true,
+        "memberCount": 333,
+        "existingExactFiles": 0,
+        "absentFiles": 333,
+        "createdFiles": 333,
+        "restoreRequested": true,
+        "symlinksRestored": 0,
+        "runtimeImports": 0,
+        "operationalClosureQualified": false,
+        "exclusiveAtomicPublication": true,
+        "historicalAuthoritiesEvidenceOnly": true,
+        "sdkAndRuntimeReconstructed": false,
+        "actualSource23ConnectedSignals": 23,
+        "actualSource23MissingSignals": 26,
+        "actualCoreToolSessionId": 70837,
+        "actualNativeApiToolSessionId": 98163,
+        "actualCliToolSessionId": 13711,
+        "actualCadToolSessionId": 60233,
+        "actualKiCad98DogbonesAnd23GraphsPassed": true,
+        "allRuleDrcQualified": false,
+        "actualPublicDiagnosticSteps": 40000,
+        "actualPublicGeneratedCarriers": 0,
+        "referenceQualified": false,
+        "electricalTimingQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "case": "idempotent repeat zero writes",
+      "passed": true,
+      "result": {
+        "archiveVerified": true,
+        "memberCount": 333,
+        "existingExactFiles": 333,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "symlinksRestored": 0,
+        "runtimeImports": 0,
+        "operationalClosureQualified": false,
+        "exclusiveAtomicPublication": true,
+        "historicalAuthoritiesEvidenceOnly": true,
+        "sdkAndRuntimeReconstructed": false,
+        "actualSource23ConnectedSignals": 23,
+        "actualSource23MissingSignals": 26,
+        "actualCoreToolSessionId": 70837,
+        "actualNativeApiToolSessionId": 98163,
+        "actualCliToolSessionId": 13711,
+        "actualCadToolSessionId": 60233,
+        "actualKiCad98DogbonesAnd23GraphsPassed": true,
+        "allRuleDrcQualified": false,
+        "actualPublicDiagnosticSteps": 40000,
+        "actualPublicGeneratedCarriers": 0,
+        "referenceQualified": false,
+        "electricalTimingQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "case": "different leaf refused with zero writes",
+      "passed": true,
+      "exitCode": 1
+    },
+    {
+      "case": "symlink leaf refused with zero writes",
+      "passed": true,
+      "exitCode": 1
+    },
+    {
+      "case": "symlink parent refused with zero writes",
+      "passed": true,
+      "exitCode": 1
+    },
+    {
+      "case": "parent file collision refused with zero writes",
+      "passed": true,
+      "exitCode": 1
+    },
+    {
+      "case": "wrong manifest pin refused with zero writes",
+      "passed": true,
+      "exitCode": 1
+    },
+    {
+      "case": "altered archive refused with zero writes",
+      "passed": true,
+      "exitCode": 1
+    },
+    {
+      "case": "live existing333 exact zero writes",
+      "passed": true,
+      "result": {
+        "archiveVerified": true,
+        "memberCount": 333,
+        "existingExactFiles": 333,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "symlinksRestored": 0,
+        "runtimeImports": 0,
+        "operationalClosureQualified": false,
+        "exclusiveAtomicPublication": true,
+        "historicalAuthoritiesEvidenceOnly": true,
+        "sdkAndRuntimeReconstructed": false,
+        "actualSource23ConnectedSignals": 23,
+        "actualSource23MissingSignals": 26,
+        "actualCoreToolSessionId": 70837,
+        "actualNativeApiToolSessionId": 98163,
+        "actualCliToolSessionId": 13711,
+        "actualCadToolSessionId": 60233,
+        "actualKiCad98DogbonesAnd23GraphsPassed": true,
+        "allRuleDrcQualified": false,
+        "actualPublicDiagnosticSteps": 40000,
+        "actualPublicGeneratedCarriers": 0,
+        "referenceQualified": false,
+        "electricalTimingQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "all333LiveSourceBytesAndModesHeld": true,
+  "temporaryDirectoriesRemoved": true,
+  "runtimeOrSdkImported": false,
+  "currentDdrConnections": 23,
+  "missingDdrConnections": 26,
+  "historicalEvidenceOnly": true,
+  "operationalClosureQualified": false,
+  "accepted49": false,
+  "fabricationReady": false
+}
