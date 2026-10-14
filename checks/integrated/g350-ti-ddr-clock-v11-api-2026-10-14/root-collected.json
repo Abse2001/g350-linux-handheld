@@ -1,0 +1,94 @@
+{
+  "authorizedByRoot": true,
+  "toolSessionId": 50372,
+  "toolSessionCollected": true,
+  "toolExitCode": 0,
+  "toolWrapperExitCode": 0,
+  "postauditPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/clock-v11-clockscope-api-30g-bounded-overlap-next/EXECUTION-postaudit.json",
+  "postauditSha256": "31672c711037854dcf23295b7ce047418ad0fdedf86902cd55bb8a50296ac4d1",
+  "execution": {
+    "startedAt": "2026-10-14T06:43:20.173538+00:00",
+    "command": [
+      "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-v11-clockscope-original-api-sourceonly-next/check-original-clockscope-api.ts",
+      "/workspace/g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/combined-ca-carrier-input.json",
+      "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-pair-static-followthrough-next/finite-fully-paired-result-v11.json",
+      "/workspace/bus-lanes-solver/.cache/root-routing-progress/clock-v11-clockscope-api-30g-bounded-overlap-next/run/original-api-result.json"
+    ],
+    "policy": {
+      "wallSeconds": 60,
+      "rssBytes": 536870912,
+      "sharedBytes": 32212254720,
+      "sampleSeconds": 0.05,
+      "termGraceSeconds": 5
+    },
+    "memoryBefore": {
+      "current": 27324559360,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "exitCode": 0,
+    "diagnosticStopped": false,
+    "stopReasons": [],
+    "accepted": false,
+    "currentGuardPid": 366692,
+    "pid": 366701,
+    "pgid": 366701,
+    "freshLeaderIdentity": {
+      "pid": 366701,
+      "pgid": 366701,
+      "sid": 366701,
+      "start": 16271142,
+      "state": "R",
+      "rss": 180224,
+      "argv": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-v11-clockscope-original-api-sourceonly-next/check-original-clockscope-api.ts",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/combined-ca-carrier-input.json",
+        "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-pair-static-followthrough-next/finite-fully-paired-result-v11.json",
+        "/workspace/bus-lanes-solver/.cache/root-routing-progress/clock-v11-clockscope-api-30g-bounded-overlap-next/run/original-api-result.json"
+      ]
+    },
+    "endedAt": "2026-10-14T06:43:20.409624+00:00",
+    "wallSeconds": 0.23572334300843067,
+    "cleanupOwnedGroupEmpty": true,
+    "peakOwnedRssBytes": 65167360,
+    "peakSharedBytes": 27369517056,
+    "memoryAfter": {
+      "current": 27323887616,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "signalErrors": [],
+    "signalErrorCount": 0
+  },
+  "sourceAndDependenciesHeld": true,
+  "originalApiClockPairQualified": true,
+  "sourceManifestSha256": "b80647c2d81cf24d28d3ffd38c6226f4a5ba0ed35731570845cc664c624e8492",
+  "knownOtherBenchmarkSession": 42982,
+  "knownOtherBenchmarkNotClaimedClosed": true,
+  "original26gRefusal47950Preserved": true,
+  "original3786WrapperFailurePreserved": true,
+  "nativeExecuted": false,
+  "freshSourceCoreExecuted": false,
+  "freshCadExecuted": false,
+  "accepted49": false,
+  "fabricationReady": false
+}

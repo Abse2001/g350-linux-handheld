@@ -1,0 +1,110 @@
+{
+  "scope": "one-corrected-clock-only-api-bounded-overlap-with-known-benchmark",
+  "originalApiClockPairQualified": true,
+  "execution": {
+    "startedAt": "2026-10-14T06:43:20.173538+00:00",
+    "command": [
+      "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-v11-clockscope-original-api-sourceonly-next/check-original-clockscope-api.ts",
+      "/workspace/g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/combined-ca-carrier-input.json",
+      "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-pair-static-followthrough-next/finite-fully-paired-result-v11.json",
+      "/workspace/bus-lanes-solver/.cache/root-routing-progress/clock-v11-clockscope-api-30g-bounded-overlap-next/run/original-api-result.json"
+    ],
+    "policy": {
+      "wallSeconds": 60,
+      "rssBytes": 536870912,
+      "sharedBytes": 32212254720,
+      "sampleSeconds": 0.05,
+      "termGraceSeconds": 5
+    },
+    "memoryBefore": {
+      "current": 27324559360,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "exitCode": 0,
+    "diagnosticStopped": false,
+    "stopReasons": [],
+    "accepted": false,
+    "currentGuardPid": 366692,
+    "pid": 366701,
+    "pgid": 366701,
+    "freshLeaderIdentity": {
+      "pid": 366701,
+      "pgid": 366701,
+      "sid": 366701,
+      "start": 16271142,
+      "state": "R",
+      "rss": 180224,
+      "argv": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-v11-clockscope-original-api-sourceonly-next/check-original-clockscope-api.ts",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/combined-ca-carrier-input.json",
+        "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-pair-static-followthrough-next/finite-fully-paired-result-v11.json",
+        "/workspace/bus-lanes-solver/.cache/root-routing-progress/clock-v11-clockscope-api-30g-bounded-overlap-next/run/original-api-result.json"
+      ]
+    },
+    "endedAt": "2026-10-14T06:43:20.409624+00:00",
+    "wallSeconds": 0.23572334300843067,
+    "cleanupOwnedGroupEmpty": true,
+    "peakOwnedRssBytes": 65167360,
+    "peakSharedBytes": 27369517056,
+    "memoryAfter": {
+      "current": 27323887616,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "signalErrors": [],
+    "signalErrorCount": 0
+  },
+  "sourceAndDependenciesHeld": true,
+  "sourceAndArtifactsHeld": true,
+  "dependenciesBefore": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "dependenciesAfter": {
+    "verified": true,
+    "nonmutating": true,
+    "receiptSha256": "1a49a60909258b542c7f4899e6378fa9f10c1cea08ef1aaf4b5366480dbf71b7",
+    "archiveSha256": "a5122317cc21862873121f8ddefa2ec605cf36c67ec9b688fd5d866391ea43ec",
+    "archiveBytes": 101071149,
+    "treeSha256": "47633d41b2b4d3f88c83a220327912b59445cdc4f301e4235393a6d5c910e9b6",
+    "toolSha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+    "absoluteRoot": "/workspace/bus-lanes-solver/node_modules",
+    "archiveContentBoundByTrustedReceiptAndHash": true
+  },
+  "sourceManifestSha256": "b80647c2d81cf24d28d3ffd38c6226f4a5ba0ed35731570845cc664c624e8492",
+  "preservedOriginalSerialGuardNotInvoked": true,
+  "preservedOriginalSourcePacketSha256": "e411e30515e7cf47a44fb5a519f4555c3704f947f21b96d913c52abb5f65e94d",
+  "knownOtherBenchmarkSession": 42982,
+  "knownOtherBenchmarkNotClaimedClosed": true,
+  "otherBenchmarkGroupPresentAfter": true,
+  "originalApiReportSha256": "85a3adefe6814e75b0ef1c661b4e273ebeb06b781b1543b91bf5d7d5de957d21",
+  "accepted49": false,
+  "fabricationReady": false
+}

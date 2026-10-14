@@ -1,0 +1,368 @@
+{
+  "scope": "original-c72-clock-only-vector-self-shared-exterior-coupling-planar-pair-qualification",
+  "input": {
+    "path": "/workspace/g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/combined-ca-carrier-input.json",
+    "sha256": "a9bc974e0b518c67a02a2b63e420904443fe3fdc1da87441a6f887294fc7ed37"
+  },
+  "candidate": {
+    "path": "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-clock-pair-static-followthrough-next/finite-fully-paired-result-v11.json",
+    "sha256": "38824626a89acbcc86dc450a86bf11a65d7bdc12229adf0a9ed858b3b357aae6"
+  },
+  "exactMaterialHeld": true,
+  "sourceRouteCount": 2,
+  "completeHardwareCARequested": 26,
+  "explicitlyClockOnlyDifferentialView": true,
+  "unchangedFullPhysicalInputRetained": true,
+  "globallyUnqualifiedOtherDifferentialPairs": [
+    {
+      "connectionNames": [
+        "source_trace_15",
+        "source_trace_16"
+      ],
+      "lengthTolerance": 0.127,
+      "traceGap": 0.12
+    },
+    {
+      "connectionNames": [
+        "source_trace_28",
+        "source_trace_27"
+      ],
+      "lengthTolerance": 0.127,
+      "traceGap": 0.12
+    }
+  ],
+  "originalFullDifferentialPairArrayUnchanged": true,
+  "continuity": [
+    {
+      "connectionName": "source_trace_33",
+      "pathVisible": true,
+      "segmentsVisible": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "selfClear": true,
+      "conventionalAngles": true,
+      "fixedPlanarLength": 1.1313708498984765
+    },
+    {
+      "connectionName": "source_trace_34",
+      "pathVisible": true,
+      "segmentsVisible": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "selfClear": true,
+      "conventionalAngles": true,
+      "fixedPlanarLength": 1.1313708498984774
+    }
+  ],
+  "shared": [
+    {
+      "connectionNames": [
+        "source_trace_33",
+        "source_trace_34"
+      ],
+      "requestedGapMm": 0.12,
+      "sharedSectionPresent": true,
+      "minEdgeGapMm": 0.11999999999999823,
+      "maxEdgeGapMm": 0.13788464461847422,
+      "maxSamplingErrorMm": 0.001,
+      "sharedCopperMm": [
+        17.68315316291398,
+        17.866732613757748
+      ],
+      "maxAllowedEdgeGapMm": 0.1402581115847945,
+      "matched": true
+    }
+  ],
+  "exterior": [
+    {
+      "connectionNames": [
+        "source_trace_33",
+        "source_trace_34"
+      ],
+      "applicable": true,
+      "matched": true,
+      "maxExteriorEdgeGapMm": 0.1378800540495846,
+      "maxSamplingErrorMm": 0.001,
+      "separatedExteriorLengthMm": 0
+    }
+  ],
+  "coupling": [
+    {
+      "connectionNames": [
+        "source_trace_33",
+        "source_trace_34"
+      ],
+      "conductors": [
+        {
+          "name": "source_trace_33",
+          "totalLengthMm": 21.17470019353157,
+          "uncoupledLengthMm": 4.82212717828571,
+          "coupledFraction": 0.772269400075909
+        },
+        {
+          "name": "source_trace_34",
+          "totalLengthMm": 21.087923568524403,
+          "uncoupledLengthMm": 4.620037463892982,
+          "coupledFraction": 0.7809154870615712
+        }
+      ],
+      "maxUncoupledLengthMm": null,
+      "matched": true
+    }
+  ],
+  "pairLengths": [
+    {
+      "busId": "pair_0",
+      "minLengthMm": null,
+      "aboveMinimumLength": true,
+      "maxLengthMm": null,
+      "withinLengthLimit": true,
+      "toleranceMm": 0.127,
+      "skewMm": 0.0867766250071682,
+      "matched": true,
+      "lengths": [
+        {
+          "name": "source_trace_33",
+          "carrierLengthMm": 20.043329343633097,
+          "fixedLengthMm": 1.1313708498984765,
+          "totalLengthMm": 21.174700193531574
+        },
+        {
+          "name": "source_trace_34",
+          "carrierLengthMm": 19.95655271862593,
+          "fixedLengthMm": 1.1313708498984774,
+          "totalLengthMm": 21.087923568524406
+        }
+      ]
+    }
+  ],
+  "clockWindow": [
+    {
+      "busId": "DDR_COMMAND_CLOCK",
+      "minLengthMm": 20.95,
+      "aboveMinimumLength": true,
+      "maxLengthMm": 23.49,
+      "withinLengthLimit": true,
+      "toleranceMm": 0.635,
+      "skewMm": 0.0867766250071682,
+      "matched": true,
+      "lengths": [
+        {
+          "name": "source_trace_33",
+          "carrierLengthMm": 20.043329343633097,
+          "fixedLengthMm": 1.1313708498984765,
+          "totalLengthMm": 21.174700193531574
+        },
+        {
+          "name": "source_trace_34",
+          "carrierLengthMm": 19.95655271862593,
+          "fixedLengthMm": 1.1313708498984774,
+          "totalLengthMm": 21.087923568524406
+        }
+      ]
+    }
+  ],
+  "nativeManufacturingCheckerExecuted": false,
+  "freshCoreExecuted": false,
+  "freshCadExecuted": false,
+  "originalGridOrPublicSolverExecuted": false,
+  "accepted49": false,
+  "fabricationReady": false,
+  "fullCohortTimingPassed": false,
+  "electricalDelayModelQualified": false,
+  "allOriginalApiClockChecksPassed": true
+}
