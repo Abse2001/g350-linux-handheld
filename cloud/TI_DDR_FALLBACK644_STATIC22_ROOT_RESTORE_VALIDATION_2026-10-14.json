@@ -1,0 +1,177 @@
+{
+  "scope": "ROOT_INDEPENDENT_TEMP_AND_LIVE_READONLY_185_RESTORER_VALIDATION",
+  "at": "2026-10-14T18:04:57.250025+00:00",
+  "proposalManifestSha256": "d6542fb903db7896b1a00723d7c3184120a3ec721d541812bb9f6066d3de0860",
+  "restorerSha256": "ba7a08cc2f0f015d5b664a5b9555c6e7c12858e4a4216e643e6b5628d1e1e819",
+  "archiveSha256": "1c2c2ec267de71e288bded72c3c66bb40cd5aeae7c397374a5bed7eaabd30ab8",
+  "indexSha256": "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+  "cases": [
+    {
+      "label": "verify-empty-no-write",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/fresh"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"archiveVerified\": true, \"memberCount\": 185, \"existingExactFiles\": 0, \"absentFiles\": 185, \"createdFiles\": 0, \"restoreRequested\": false, \"symlinksRestored\": 0, \"runtimeImports\": 0, \"operationalClosureQualified\": false, \"exclusiveAtomicPublication\": true, \"historicalAuthoritiesEvidenceOnly\": true, \"sdkAndRuntimeReconstructed\": false, \"actualFocusedExpectedRedExitCode\": 1, \"actualFocusedGreenAndParityExitCode\": 0, \"actualDefaultTestPassCount\": 644, \"actualDefaultTestFailCount\": 0, \"static22GenuineSourceCoreNativeCadQualified\": false, \"elevenBenchmarkOutcomePackaged\": false, \"accepted49\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh-185-exact-restore",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/fresh",
+        "--restore"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"archiveVerified\": true, \"memberCount\": 185, \"existingExactFiles\": 0, \"absentFiles\": 185, \"createdFiles\": 185, \"restoreRequested\": true, \"symlinksRestored\": 0, \"runtimeImports\": 0, \"operationalClosureQualified\": false, \"exclusiveAtomicPublication\": true, \"historicalAuthoritiesEvidenceOnly\": true, \"sdkAndRuntimeReconstructed\": false, \"actualFocusedExpectedRedExitCode\": 1, \"actualFocusedGreenAndParityExitCode\": 0, \"actualDefaultTestPassCount\": 644, \"actualDefaultTestFailCount\": 0, \"static22GenuineSourceCoreNativeCadQualified\": false, \"elevenBenchmarkOutcomePackaged\": false, \"accepted49\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    },
+    {
+      "label": "repeat-zero-writes",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/fresh",
+        "--restore"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"archiveVerified\": true, \"memberCount\": 185, \"existingExactFiles\": 185, \"absentFiles\": 0, \"createdFiles\": 0, \"restoreRequested\": true, \"symlinksRestored\": 0, \"runtimeImports\": 0, \"operationalClosureQualified\": false, \"exclusiveAtomicPublication\": true, \"historicalAuthoritiesEvidenceOnly\": true, \"sdkAndRuntimeReconstructed\": false, \"actualFocusedExpectedRedExitCode\": 1, \"actualFocusedGreenAndParityExitCode\": 0, \"actualDefaultTestPassCount\": 644, \"actualDefaultTestFailCount\": 0, \"static22GenuineSourceCoreNativeCadQualified\": false, \"elevenBenchmarkOutcomePackaged\": false, \"accepted49\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    },
+    {
+      "label": "byte-collision",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/byte-collision",
+        "--restore"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 201, in <module>\n    main()\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 156, in main\n    require(len(data) == row[\"bytes\"] and digest(data) == row[\"sha256\"] and mode == row[\"mode\"],\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 17, in require\n    raise ValueError(message)\nValueError: Existing differing destination refused: /tmp/g350-root185-pdro7f6r/byte-collision/g350-linux-handheld/.cloud-tools/ddr-source31-canonical227-one-epoch-sourceonly-next/exact-canonical227-scene.py\n"
+    },
+    {
+      "label": "mode-collision",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/mode-collision",
+        "--restore"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 201, in <module>\n    main()\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 156, in main\n    require(len(data) == row[\"bytes\"] and digest(data) == row[\"sha256\"] and mode == row[\"mode\"],\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 17, in require\n    raise ValueError(message)\nValueError: Existing differing destination refused: /tmp/g350-root185-pdro7f6r/mode-collision/g350-linux-handheld/.cloud-tools/ddr-source31-canonical227-one-epoch-sourceonly-next/exact-canonical227-scene.py\n"
+    },
+    {
+      "label": "symlink-parent-refused",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/symbol-parent",
+        "--restore"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 201, in <module>\n    main()\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 146, in main\n    parent_fd = directory_fd(PurePosixPath(name).parent, root_fd=root_fd)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 40, in directory_fd\n    next_descriptor = os.open(part, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=descriptor)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nNotADirectoryError: [Errno 20] Not a directory: 'bus-lanes-solver'\n"
+    },
+    {
+      "label": "forged-index-self-hash-refused",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/tmp/g350-root185-pdro7f6r/forged.json",
+        "--manifest-sha256",
+        "45d61fc4596e1de399c93627c0a807b8f308ddc4846a2b24b93995c7f946fa9f",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/tmp/g350-root185-pdro7f6r/forged",
+        "--restore"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 201, in <module>\n    main()\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 96, in main\n    require(args.manifest_sha256 == EXPECTED_INDEX_SHA256 and digest(raw_manifest) == EXPECTED_INDEX_SHA256, \"Pinned Source/DATA manifest hash differs\")\n  File \"/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py\", line 17, in require\n    raise ValueError(message)\nValueError: Pinned Source/DATA manifest hash differs\n"
+    },
+    {
+      "label": "live-existing185-exact-verification-no-restore",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/restore-g350-fallback644-static22-source-data.py",
+        "--manifest",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.index.json",
+        "--manifest-sha256",
+        "d06676b5843343739e63fd94debcd7fba4741e6b1fe0e9b4ff45a12d60f480e4",
+        "--archive",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-fallback644-and-static22-source-data-preservation-proposal-next/g350-fallback644-static22-source-data.tar.gz",
+        "--workspace",
+        "/workspace"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"archiveVerified\": true, \"memberCount\": 185, \"existingExactFiles\": 185, \"absentFiles\": 0, \"createdFiles\": 0, \"restoreRequested\": false, \"symlinksRestored\": 0, \"runtimeImports\": 0, \"operationalClosureQualified\": false, \"exclusiveAtomicPublication\": true, \"historicalAuthoritiesEvidenceOnly\": true, \"sdkAndRuntimeReconstructed\": false, \"actualFocusedExpectedRedExitCode\": 1, \"actualFocusedGreenAndParityExitCode\": 0, \"actualDefaultTestPassCount\": 644, \"actualDefaultTestFailCount\": 0, \"static22GenuineSourceCoreNativeCadQualified\": false, \"elevenBenchmarkOutcomePackaged\": false, \"accepted49\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "temporaryPayloadsRemoved": true,
+  "all185FreshHashesSizesModesVerified": true,
+  "liveExisting185Exact": true,
+  "liveRestoreWrites": 0,
+  "sourceAndProposalHeld": true,
+  "sdkApplicationsLaunched": 0,
+  "runtimeClosureQualified": false,
+  "accepted49": false,
+  "fabricationReady": false
+}
