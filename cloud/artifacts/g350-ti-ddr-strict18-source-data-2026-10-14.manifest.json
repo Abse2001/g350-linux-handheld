@@ -1,0 +1,2164 @@
+{
+  "schemaVersion": 1,
+  "scope": "SOURCE_DATA_ONLY_ACTUAL_STRICT18_CAPTURE86442_TYPES45112_CORE36930",
+  "regularFilesOnly": true,
+  "archive": {
+    "name": "g350-strict18-source-data.tar.gz",
+    "bytes": 3312360,
+    "sha256": "e4c115f3fdcb615e2bd2df6a7086add0e9f1e02d2185ea5c4ac1d804f400c363"
+  },
+  "fileCount": 217,
+  "logicalBytes": 58742862,
+  "files": [
+    {
+      "path": "bus-lanes-solver/.cache/root-routing-progress/run-strict18-core-root.py",
+      "bytes": 4881,
+      "mode": 384,
+      "sha256": "cf0d9eb3ddc2aca0299847152d5609dbfba31bf7305fd9e40e23581c238da25e",
+      "reasons": [
+        "original-historical-root-stage-guard"
+      ]
+    },
+    {
+      "path": "bus-lanes-solver/.cache/root-routing-progress/run-strict18-source-capture-root.py",
+      "bytes": 5662,
+      "mode": 384,
+      "sha256": "5a4e92cb06571aa64310698a8eff3c82f87676bb66f556a2d02fa3f61c8d26a7",
+      "reasons": [
+        "original-historical-root-stage-guard"
+      ]
+    },
+    {
+      "path": "bus-lanes-solver/.cache/root-routing-progress/run-strict18-types-root.py",
+      "bytes": 3363,
+      "mode": 384,
+      "sha256": "efb15f8000234dd599d6b85e001a931dc4b18516598d3169dc8784dc3631fd65",
+      "reasons": [
+        "original-historical-root-stage-guard"
+      ]
+    },
+    {
+      "path": "bus-lanes-solver/.cache/root-routing-progress/strict18-core-36930-COLLECTED-root.json",
+      "bytes": 3189,
+      "mode": 384,
+      "sha256": "9c36f2ea1f655a5ac7472ed032a7c414555d1f23ab67dcb53beea02c31387cfc",
+      "reasons": [
+        "actual-collected-source-types-core-stage"
+      ]
+    },
+    {
+      "path": "bus-lanes-solver/.cache/root-routing-progress/strict18-source-capture-86442-COLLECTED-root.json",
+      "bytes": 3176,
+      "mode": 384,
+      "sha256": "958629c84d3b3da1245e2ac38bd356240eba6a3bafa5f5f2c8b84cc109b1c6be",
+      "reasons": [
+        "actual-collected-source-types-core-stage"
+      ]
+    },
+    {
+      "path": "bus-lanes-solver/.cache/root-routing-progress/strict18-types-45112-COLLECTED-root.json",
+      "bytes": 4113,
+      "mode": 384,
+      "sha256": "d5d4b470069ba51e9ec181c2117b79dd4640d301e92d0eef0c20528eb435d597",
+      "reasons": [
+        "actual-collected-source-types-core-stage"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-byte1-matched-cohort-followthrough-sourceonly-next/NORMALIZED_MATCHED_DQS0_INNER1_SOURCE30_BOTTOM_SOURCE40_INNER2_SOURCE31_INNER1_JOINT_DATASET18_08.json",
+      "bytes": 65009,
+      "mode": 384,
+      "sha256": "21316c4be094f8ec42c2d69a02b70e716ff80c5b49a3b906be78873450ad62d4",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "exact-reference-shadow-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-byte1-matched-cohort-followthrough-sourceonly-next/STRICT_MATCHED_DQS0_INNER1_SOURCE30_BOTTOM_SOURCE40_INNER2_SOURCE31_INNER1_RECIPROCAL18_REPORT08.json",
+      "bytes": 327715,
+      "mode": 384,
+      "sha256": "d8d52732bb2fc7d0b671fd2b27054dc42cfbc427ac88a96fe5caf7172384126c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "exact-reference-shadow-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-fresh-core-native-sourceonly-next/PREPARED-manifest.json",
+      "bytes": 16121,
+      "mode": 384,
+      "sha256": "b3dd5e002ecbddcb4a66e74195d24035471ca5fcf7f0fc2c26f7299f1bbd7948",
+      "reasons": [
+        "historical-guard-binding-manifest"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-fresh-core-native-sourceonly-next/guard.py",
+      "bytes": 9716,
+      "mode": 384,
+      "sha256": "bed5a1c5897cab42e8dbe47869589a9a46d775df6d0ebb27d17984dcfdd73fc7",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-fresh-core-native-sourceonly-next/projection_controls.py",
+      "bytes": 18851,
+      "mode": 384,
+      "sha256": "3b2443057b5ad2ad7cb04f4e196370750e6e96556ba37ed1d6561adc44c04311",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-fresh-core-native-sourceonly-next/run-native/native18-report.json",
+      "bytes": 132158,
+      "mode": 384,
+      "sha256": "55f3b2a9629532e24d74ad3527e155d9491a921b7a6253a6e51d192597a2a159",
+      "reasons": [
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-fresh-core-native-sourceonly-next/run_stage.py",
+      "bytes": 4436,
+      "mode": 384,
+      "sha256": "4727181b97a478bc979810f7c8ef2e497bc6d150595a65d8cf3fa10dbc27fd82",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/PREPARED-manifest.json",
+      "bytes": 25435,
+      "mode": 384,
+      "sha256": "7ff211851fd30ad91b66726da1d17c00ab59c253a48499646ea8ffa7e4883281",
+      "reasons": [
+        "historical-guard-binding-manifest"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/SOURCE-manifest.json",
+      "bytes": 52243,
+      "mode": 384,
+      "sha256": "bae8860cdab59f683004cd99794503662ea6e8253936341d53c979a48940c5fc",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "original-144-source-manifest"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/audit-installed-dependencies.py",
+      "bytes": 6677,
+      "mode": 384,
+      "sha256": "61f1410ddde649491049278dde0bbe44a05fa86f33cbeeb1c3910b1922f09b59",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/capture-manual-pair-source.ts",
+      "bytes": 12712,
+      "mode": 384,
+      "sha256": "173c450d9e034071c77cf2f466cdb698c669266c98aaec00aef1e5c9163473cd",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/guard.py",
+      "bytes": 14635,
+      "mode": 384,
+      "sha256": "bea515e5b2c074ca5e2e8f4ad46bc8efad6dea456ec256b1ddc98c0b4985d607",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/inventory.py",
+      "bytes": 1496,
+      "mode": 384,
+      "sha256": "62dabe10d3cd4a52f610b68ccc41935d7b08e4896a4336104002ab1195e54d89",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/manual-pair-source-overlay.tsx",
+      "bytes": 5781,
+      "mode": 384,
+      "sha256": "7018de41f8e95e643020d6a2aeb0af826d6c4d93af085eb8d804556ff51d6333",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/process_scope.py",
+      "bytes": 9686,
+      "mode": 384,
+      "sha256": "7bdc74b15af3ba5b2c306d34a816b48cf8b9d68479b0c06a57f43787d4a4a993",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/render-manual-pair-core.ts",
+      "bytes": 19770,
+      "mode": 384,
+      "sha256": "e156fdb97c6585c87c8fd605e3670480211b95673205da50574c9f92dc99c6be",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin",
+        "core-owned-source-or-explicit-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/run-core/raw-core.json",
+      "bytes": 5517928,
+      "mode": 384,
+      "sha256": "7793a13abbc457569cb15c1a9bc549ce585dbd75ac85acd6e384441557075c06",
+      "reasons": [
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/run_stage.py",
+      "bytes": 6560,
+      "mode": 384,
+      "sha256": "3c550e0f732157f2ed8d51b9181c3652f7e6ebf386885981fb73595a44e1402d",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-clock-v11-manual-pair-source-successor-next/verify-installed-dependencies.py",
+      "bytes": 4328,
+      "mode": 384,
+      "sha256": "749cad354ad094398790f31e3fef808e7fd3a2af1921ee25afe98e6490975523",
+      "reasons": [
+        "actual-root-stdlib-guard-helper"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-hs-all32-capture-first-type4096-root-successor-next/source/hs-reference-overlay.tsx",
+      "bytes": 4291,
+      "mode": 384,
+      "sha256": "8dc2d97feb397a9a7b30dd227a09b6a11e1ba6a455b8f4a2cc56e871fe4b4b28",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-hs-all32-capture-first-type4096-root-successor-next/source/joint-owner-proposal.json",
+      "bytes": 323875,
+      "mode": 384,
+      "sha256": "e91b62cdb5abca7bf8d4ae6d5c9ee5bfd2f297788d6557502d9cbd647adc19b3",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package-approaches-source-overlay-next/all101-source-candidate/grouped-proposal.json",
+      "bytes": 120979,
+      "mode": 384,
+      "sha256": "fffd02510548c16606eff4f6489da9860e45af82aca1cbc8e053a1201bc148a5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package-approaches-source-overlay-next/all101-source-candidate/package-approaches-overlay.tsx",
+      "bytes": 5067,
+      "mode": 384,
+      "sha256": "ccefaa9dc217391fbee3b33d03c30083d1f80f98f51b791ddc8200f46767326c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-core-qualification-source-next/run-core/fresh-core.circuit.json",
+      "bytes": 4579755,
+      "mode": 384,
+      "sha256": "ed33a0a335b1fbf0da9adcdeacaa954b655c3c4964c600efb6ef3c72aef4040e",
+      "reasons": [
+        "core-owned-source-or-explicit-origin",
+        "exact-reference-shadow-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/combined-input.json",
+      "bytes": 887931,
+      "mode": 384,
+      "sha256": "ed97be5fae82111e8e08247ba97f2a4a5977d33bd1b901a0428a1cf155af59fc",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "exact-reference-shadow-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-plus96-signals-combined-sourceonly-next/native-context.json",
+      "bytes": 1653027,
+      "mode": 384,
+      "sha256": "e9edfcd1b47c6d04ffa2a817a6957ed5b395a8f8f2d4554a03cf28eda589e44e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "exact-reference-shadow-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-clock-v11-source-contract-next/capture-clock-fidelity-source.ts",
+      "bytes": 6146,
+      "mode": 384,
+      "sha256": "96c0040d99a86f962e404b68b9e8d50748fbd3fc84e2fb6bfeed2219c0f1c212",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-clock-v11-source-contract-next/clock-fidelity-source-overlay.tsx",
+      "bytes": 5078,
+      "mode": 384,
+      "sha256": "56d729476ad4b95e941283c2a749fd540e91c0e8f2e38e37e41e4e8664e457e5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-clock-v11-source-contract-next/clock-fidelity-source-proposal.json",
+      "bytes": 79263,
+      "mode": 384,
+      "sha256": "ad1ed113e5c35b81b94839808d8e22c8c00aafb2f9f57889e4a3d8a1794bb973",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin",
+        "core-owned-source-or-explicit-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-clock-v11-source-contract-next/clock-source-overlay.tsx",
+      "bytes": 6453,
+      "mode": 384,
+      "sha256": "892116867484435c137067c7b954579271ed581a07f2dc661d3ede86d06f6425",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-clock-v11-source-contract-next/clock-source-proposal.json",
+      "bytes": 59201,
+      "mode": 384,
+      "sha256": "8e915b931c52149df3f85ae80796341c581e61a3b322ac5ec6d7759b7f936d85",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-clock-v11-source-contract-next/render-clock-fidelity-core.ts",
+      "bytes": 16529,
+      "mode": 384,
+      "sha256": "05446323854f63fe6f1387eea6127cc5790feb18c93d3b4311cbffaa77a5d09c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-joint-native-sourceonly-next/combined-source-overlay.tsx",
+      "bytes": 3499,
+      "mode": 384,
+      "sha256": "3d3dc00de19d4395bc7c3d0168496f20df413f6a695cb79c74a8dff0a1d2b6ec",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-package101-signal96-joint-native-sourceonly-next/signal-source-proposal.json",
+      "bytes": 90930,
+      "mode": 384,
+      "sha256": "7430bd5d5201af6e53dde9d07dc38395811adb4e6fc923949d4b4a772c8d304a",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin",
+        "core-owned-source-or-explicit-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict13-reference-layout-sourceonly-next/derive-concrete-layout.py",
+      "bytes": 12509,
+      "mode": 384,
+      "sha256": "88ea3d3f9ce0d1e1ff3f3cccfa837aaca27cc8bdce9243846758a7a174e60a1d",
+      "reasons": [
+        "exact-reference-shadow-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/CANDIDATE_GROUND_ANNULUS_BINDINGS.json",
+      "bytes": 55683,
+      "mode": 384,
+      "sha256": "59030db672f14b29a035386518183bda22f6fcf4ccf7e0d8560e84987380804a",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/CLEAR_GND_RIBBON_PIECES_AND_FIXED_OWNER_SUPPLEMENT.json",
+      "bytes": 318119,
+      "mode": 384,
+      "sha256": "e0bde2d83468268eb717ed4a6986c80d9350aa860b3cd6e5db092f015695c13d",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/CLOCK_REFERENCE_RECONSTRUCTION_COMPARISON.json",
+      "bytes": 241158,
+      "mode": 384,
+      "sha256": "a0254e5f60f617770b44e30f47c917c9df3afe833db6257d326dedb8512d5d68",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/GEOMETRY_CONTROLS.json",
+      "bytes": 1119,
+      "mode": 384,
+      "sha256": "31f208074ab45e174637967e19e99d412a4eaeb4bd6127ac9052519d436ee464",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/README.md",
+      "bytes": 4146,
+      "mode": 384,
+      "sha256": "fd6034b7d9ffac9679c8b0f91d330b557ea4a4a8127dcc5f485659a597ac7d72",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/REFERENCE_LAYOUT_AND_SHADOW_REPORT.json",
+      "bytes": 5400238,
+      "mode": 384,
+      "sha256": "0620c69b581cf55889f7e52a13b83c10d239d4e97e849e1676096d9f46710731",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/SOURCE-manifest.json",
+      "bytes": 4497,
+      "mode": 384,
+      "sha256": "41229cda1bc322b2cd82959a030777418b9ffe38eeb1aecc4b91ba356ce1fc6b",
+      "reasons": [
+        "strict18-unqualified-reference-provenance"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/SUMMARY.json",
+      "bytes": 15086,
+      "mode": 384,
+      "sha256": "8bec044fabbe02ffbc04a0d7fa928cf3114a510eb5a8be67fc5da275ddb192de",
+      "reasons": [
+        "strict18-unqualified-reference-provenance",
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/TOP_CLOCK_CONNECTED_GROUND_CORRIDOR_CANDIDATE.json",
+      "bytes": 4525,
+      "mode": 384,
+      "sha256": "27ee740ccc347d1161d62be6c30608cee43cd518dc9020f8e938fb7a30084a54",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/VALIDATION.json",
+      "bytes": 1829,
+      "mode": 384,
+      "sha256": "850c33bfa6c51c2c60208e1b66ab584c1ac09f43e8ed337f51d70c55975cc9c4",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/bind-candidate-ground-annuli.py",
+      "bytes": 6312,
+      "mode": 384,
+      "sha256": "4e59d11b4ec37994707a313a441fb9fc8bbff390bad014f0395f7d560dc49622",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/compare-clock-reference-reconstruction.py",
+      "bytes": 6978,
+      "mode": 384,
+      "sha256": "1f5a7de1f2b84a8b60664c63ca340a3f67c9792f346a517b34878ce0fd0ca475",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/derive-clear-ribbon-supplement.py",
+      "bytes": 8057,
+      "mode": 384,
+      "sha256": "f3f2869734b0b40873106cb3431dc6ff259ce05e331f542d50993478e559c333",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/derive-connected-clock-ground-corridor.py",
+      "bytes": 4268,
+      "mode": 384,
+      "sha256": "c54486b94fd22bb25c5a41fbfc8140454a08df805417c39dc859d5778593b4d1",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-concrete-reference-peer-next/derive-current18-reference-layout.py",
+      "bytes": 16654,
+      "mode": 384,
+      "sha256": "c070370e28f76f6e522c09d2781248d18273ab90e1454859b81e27eded1c2553",
+      "reasons": [
+        "sealed-reference-shadow-source-data-HOLD"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-independent-peer-next/PEER_REVIEW.json",
+      "bytes": 2620,
+      "mode": 384,
+      "sha256": "d32584f952b21f2951bea80d71ebcb8bcdd8c7ae4659b874c38a2d64f4d13f78",
+      "reasons": [
+        "actual-independent-finite-source-peer",
+        "independent-source-peer-stdlib-controls"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/SOURCE-manifest.json",
+      "bytes": 4124,
+      "mode": 384,
+      "sha256": "6c4bf7ee94347c8cb21307b22d6ef231e136589a77752f0702f34fa8d3ab2c4d",
+      "reasons": [
+        "sealed-owned-alias-core-source"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/render-strict18-core.ts",
+      "bytes": 29359,
+      "mode": 384,
+      "sha256": "0242b6f5626d6fb0525041417ea3d4bc406f4bb5335cfba0a72fb242cc1e4db0",
+      "reasons": [
+        "core-owned-source-or-explicit-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/POSTAUDIT.json",
+      "bytes": 5757,
+      "mode": 384,
+      "sha256": "26850fd549ebd7a11a8cac42a0ed43c5594e2f59d9eae4fa0237983a3fce3eed",
+      "reasons": [
+        "actual-stage-postaudit",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/ROOT_AUTHORITY.json",
+      "bytes": 5204,
+      "mode": 384,
+      "sha256": "aa9df7f13a558737d858b16dc90b0485041553101dd3280334a7845204937daf",
+      "reasons": [
+        "actual-stage-output",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/core-controls.json",
+      "bytes": 258698,
+      "mode": 384,
+      "sha256": "10b126f8e0aa01977e646b7607a31175d7094d04d0af92a0b833ff9cad5e9885",
+      "reasons": [
+        "actual-stage-output",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/owned/child.log",
+      "bytes": 383,
+      "mode": 384,
+      "sha256": "857390785efda05975e6add1785815d54dfc5664e686780c43d9d3c047721524",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/owned/execution.json",
+      "bytes": 2209,
+      "mode": 384,
+      "sha256": "1a25e1d21c9ea550ff24635805f161480e992f2432679798d5f508c0b3471c07",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/owned/memory.jsonl",
+      "bytes": 780986,
+      "mode": 384,
+      "sha256": "0fdf7640a3e46793cbd8d43aa17c34a219d67078e6bc6bd6242fe26a02ee80a4",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-owned-alias-successor-next/run-core/raw-core.json",
+      "bytes": 5553670,
+      "mode": 384,
+      "sha256": "81a72280365352ac9116563921536a2aced6f7ea2b65f330535927582537c76a",
+      "reasons": [
+        "actual-stage-output",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-sourceonly-next/SOURCE-manifest.json",
+      "bytes": 3565,
+      "mode": 384,
+      "sha256": "2511e3a077be28685b8e8dd444164ae061a1e9a3657eb1f9af16e03a682c7a83",
+      "reasons": [
+        "preserved-core2511-predecessor"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-core-sourceonly-next/render-strict18-core.ts",
+      "bytes": 26459,
+      "mode": 384,
+      "sha256": "6ca64db4939b0205855ea5fa2ad2e58471225f2f47f430bb39eba70de4e6cef8",
+      "reasons": [
+        "preserved-core2511-source"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-independent-peer-next/PEER_REVIEW.json",
+      "bytes": 4061,
+      "mode": 384,
+      "sha256": "7d614d4a37ef4f4196d04b406fdeecbef60289daf0991059167b60bb919eeee1",
+      "reasons": [
+        "actual-independent-finite-source-peer",
+        "independent-source-peer-stdlib-controls"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/README.md",
+      "bytes": 3314,
+      "mode": 384,
+      "sha256": "8be44854cda5188567752ea04d8c0ca15aecef5c44dc4a8fbc620e543537f8a0",
+      "reasons": [
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/SOURCE-manifest.json",
+      "bytes": 93056,
+      "mode": 384,
+      "sha256": "be1969ab1a99af7e823213c44166505eaf765048e6809fcd5f2fbd6aea5bd15e",
+      "reasons": [
+        "sealed-source147",
+        "core-owned-source-or-explicit-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/STDLIB_CONTROLS.json",
+      "bytes": 4560,
+      "mode": 384,
+      "sha256": "dd94c76a27f68a2e75579a09abc180e3cd2369059b7bfa5340dc34c51f6a47c1",
+      "reasons": [
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/authorized-all4-routing-input.json",
+      "bytes": 888138,
+      "mode": 384,
+      "sha256": "9854091da1482959626a54bc3e5438591743ce9bf7b2bcf416ab91b3773fb9b7",
+      "reasons": [
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/capture-strict18-source.ts",
+      "bytes": 11610,
+      "mode": 384,
+      "sha256": "e267f12d50ea0bd493786f699afa37ba37b0fcf7af75890e125da7f05ab983f7",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/POSTAUDIT.json",
+      "bytes": 5788,
+      "mode": 384,
+      "sha256": "78c7044a5978484e3be790ba7e13177aab06404123f3f6cdd505b8b9e2acb36b",
+      "reasons": [
+        "actual-stage-postaudit",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/ROOT_AUTHORITY.json",
+      "bytes": 4561,
+      "mode": 384,
+      "sha256": "026c747f960a645489e64c449bf1ab27b7c16a76cab3d55b9405cd6518f26130",
+      "reasons": [
+        "actual-stage-output",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/owned/child.log",
+      "bytes": 274,
+      "mode": 384,
+      "sha256": "e651ca72192d20fb57ab4c8cff89b4ffbc8c059462cfbbc7dcaea67c858cda43",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/owned/execution.json",
+      "bytes": 2275,
+      "mode": 384,
+      "sha256": "6b3d73688d212edd939168dcde6a151480f20f7cd6547ab41238be52d2aeeb2a",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/owned/memory.jsonl",
+      "bytes": 74712,
+      "mode": 384,
+      "sha256": "16a83fed1ed2e65747b26281628f402aa8b6e4e21f51dbe3e0d21c3792fa37aa",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/source-capture.json",
+      "bytes": 6111141,
+      "mode": 384,
+      "sha256": "1de98e56067474319db0ea16edba060421d6795114de593eac0ad24e8802f2da",
+      "reasons": [
+        "actual-stage-output",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-capture/source-tree-diagnostic.json",
+      "bytes": 12122088,
+      "mode": 384,
+      "sha256": "b343bdbb2d482dcdd8b5dc8635f185f6b565ebae4ad8eb15c0ece71ca4f21f38",
+      "reasons": [
+        "actual-stage-output",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-types/POSTAUDIT.json",
+      "bytes": 6325,
+      "mode": 384,
+      "sha256": "85eb0948b7ac0d3db6b4d8a0b7e8a83148dcb89e5dd1d6535848441a8b329868",
+      "reasons": [
+        "actual-stage-postaudit",
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-types/owned/child.log",
+      "bytes": 0,
+      "mode": 384,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-types/owned/execution.json",
+      "bytes": 3038,
+      "mode": 384,
+      "sha256": "47f8cfcbce814150c029170e58e1eaafe1258c43b7641e694d4bca240996edba",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/run-types/owned/memory.jsonl",
+      "bytes": 556370,
+      "mode": 384,
+      "sha256": "6671fe940d331d3f813e9063d082514781253bdd0786f8aa2e0a34c1d9cf6db1",
+      "reasons": [
+        "actual-stage-authority-process-and-output-data"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/strict18-source-overlay.tsx",
+      "bytes": 8657,
+      "mode": 384,
+      "sha256": "44efa61272dac2ad4c12d3ec4ffc584cb1f5d2953743a611c25a052f5f72413a",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/strict18-source-proposal.json",
+      "bytes": 245626,
+      "mode": 384,
+      "sha256": "02c2957a1e514cc55211efe0b3bd53647a4e9d4aee4d6eb5da6852515342b4e4",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ddr-strict18-manual-source-integration-sourceonly-next/validate-source-proposal.py",
+      "bytes": 10206,
+      "mode": 384,
+      "sha256": "3c1ee65ef011e4665f97ec49a4984717657ab0202201db71f8e382f30f9de0e0",
+      "reasons": [
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-converter-placement.circuit.tsx",
+      "bytes": 352,
+      "mode": 384,
+      "sha256": "771daaba540f50d57ac158723a061359216262fbb463735904f4f02bb8a2465a",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-critical-placement.circuit.tsx",
+      "bytes": 359,
+      "mode": 384,
+      "sha256": "11834e82b3fb3e170d82319b368ac73faa9737c687430bbc5a50deeb1c7e275f",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ddr-bootstrap.circuit.tsx",
+      "bytes": 414,
+      "mode": 384,
+      "sha256": "0ab661bf8f6a43d17f25bc00afb2763e74fe77c4c090fc3548aa88f942b99d03",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ddr-corridor.circuit.tsx",
+      "bytes": 361,
+      "mode": 384,
+      "sha256": "7ecf5902b516bc2418aed9d6420ff03b19bf69334b3b85c37143e2f345f65896",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-display-placement.circuit.tsx",
+      "bytes": 1019,
+      "mode": 384,
+      "sha256": "e4936f005ca1e359519a34c111567d875857976e6da145b2a718c4c760dced7c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-full-board-clock-cluster.circuit.tsx",
+      "bytes": 861,
+      "mode": 384,
+      "sha256": "ece4811000ac401e333617f08f8b8ba9e1b5b915ee1ea5017eb6f4d91b5d8311",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-full-board-four-mil-replay.circuit.tsx",
+      "bytes": 1048,
+      "mode": 384,
+      "sha256": "ce6627f61d05e7978bd4c950384e7fb41ffc76c4cb15752a9a8f215a33067e23",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-full-board-ground-preserving-clean-corners-replay.circuit.tsx",
+      "bytes": 1970,
+      "mode": 384,
+      "sha256": "2040283e146af2efcebe6c77e6c34b5a501d9d28dde0368d73cbdae7ca2349a5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-full-board-replay.circuit.tsx",
+      "bytes": 2150,
+      "mode": 384,
+      "sha256": "cc1407901f2ad583a995ff293b694385b9aa9181e9488521f79879cdeb2f1907",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-harness-placement.circuit.tsx",
+      "bytes": 556,
+      "mode": 384,
+      "sha256": "671a5ccb2ffbe75289d8fb33255d4274a019d6fd203b6dd0b478ee1a0bf156a0",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-outer-ddr-clear-corridor-layout.circuit.tsx",
+      "bytes": 1490,
+      "mode": 384,
+      "sha256": "c8a859a74114242304dcf35448e5e1b40d044fb71acb56b7a3b7692364290860",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-pin-allocation.circuit.tsx",
+      "bytes": 591,
+      "mode": 384,
+      "sha256": "46a8198016c2a23804a9ffee5b6f84b4caa5d419c5e69c2366947c9a85f66b06",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-pmic-placement.circuit.tsx",
+      "bytes": 325,
+      "mode": 384,
+      "sha256": "15d4d3f596bc2df7f1ec9cea0e62ca726c1c197cfc2485227dc53afd5884aa69",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ram90-four-layer.circuit.tsx",
+      "bytes": 1024,
+      "mode": 384,
+      "sha256": "da5bf1d4a903786d05296b2a212067454b90a525496d31dee0137eafe18ca207",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ram90-inner-ddr.circuit.tsx",
+      "bytes": 2376,
+      "mode": 384,
+      "sha256": "917f0e386a79b02a14ef05636de8535896a18c6b8b2f534c975366444bd208b7",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ram90-zero-skew-replay.circuit.tsx",
+      "bytes": 1581,
+      "mode": 384,
+      "sha256": "af2a1a2c775860251dff95b53f261c616698fbb9731d190dd5e1063a82e3a270",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v10-ca-top-bytes-bottom-layout.circuit.tsx",
+      "bytes": 4144,
+      "mode": 384,
+      "sha256": "bcc445ac8a5e52329bcaa0b3d6aca2cf3e3e12b14681c7fdebad6e1d99868415",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v2-layout.circuit.tsx",
+      "bytes": 2314,
+      "mode": 384,
+      "sha256": "eef9fd77a5596b7605ae19be58be6f63d305384adfc39144f137d939699d3729",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v4-reference-bypass.circuit.tsx",
+      "bytes": 1929,
+      "mode": 384,
+      "sha256": "3942905830c9fb809d36124e402793e5e11b8c43bb097647f43b28773e54c26c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v5-layout.circuit.tsx",
+      "bytes": 1325,
+      "mode": 384,
+      "sha256": "f0078ed609b7431a0a598619f7fef5a39fe6225303e191effc5857923e155cf0",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v6-alternate-layout.circuit.tsx",
+      "bytes": 248,
+      "mode": 384,
+      "sha256": "eacc5961db9b999fa1d6ec3fe2c691785ccff83c86e2f428a28e9267f922d7d3",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v7-ram-right-layout.circuit.tsx",
+      "bytes": 1252,
+      "mode": 384,
+      "sha256": "54a27be307fc6eb4333ed3e6aa1a6992f56227eb32a552ea0ef72356954b9943",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-g350-ti-top-bottom-ddr-v9-ram-y0_2-layout.circuit.tsx",
+      "bytes": 1339,
+      "mode": 384,
+      "sha256": "f6a3f53fd35073f4181560513a965d444693cbca9be88256440dd9f9ba00118f",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/experiments/am3352-powered-host.circuit.tsx",
+      "bytes": 6306,
+      "mode": 384,
+      "sha256": "328221adf3028d464eb6c3c9daa6c5bc2e7d0d2cea7ef94a3e925801686fd32e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/AM3352BZCZ100.tsx",
+      "bytes": 40439,
+      "mode": 384,
+      "sha256": "9818d5494e2460af36d898f788681bdb23f5e87d3d382556baefdbe1efff5ff2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402CG180J500NT.tsx",
+      "bytes": 2914,
+      "mode": 384,
+      "sha256": "4b8ddb87b479a21a9744b10741c52317d7c5cdd5ee9773533a215d5dc9f6bed2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF0000TCE.tsx",
+      "bytes": 1875,
+      "mode": 384,
+      "sha256": "97b44fa5ad9b6b704a399f3765241cae4741e70750b1e68c9c98a2be9de0f9f8",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF1002TCE.tsx",
+      "bytes": 1877,
+      "mode": 384,
+      "sha256": "86905928977cace7c81dc69e4b483c97393aa45fb7955036decf36fac98ced1b",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF1003TCE.tsx",
+      "bytes": 1878,
+      "mode": 384,
+      "sha256": "ab561bbdc9991940714135e190be1510189d2150eac0e993496e829eb08c37fc",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF1004TCE.tsx",
+      "bytes": 1876,
+      "mode": 384,
+      "sha256": "b4ba7033a00c931f61b84db03a673b2a6a885a0395565465160b464a233713bb",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF3302TCE.tsx",
+      "bytes": 1877,
+      "mode": 384,
+      "sha256": "e119fb572088fa8dc918111a86a9e4078ff1ec6e17f64f22ff73456925316e1c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF330JTCE.tsx",
+      "bytes": 1876,
+      "mode": 384,
+      "sha256": "bb60730766146a367094b6a00578930b26ea7b6c3d21a7b3af1488a132b2820b",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0402WGF4701TCE.tsx",
+      "bytes": 1878,
+      "mode": 384,
+      "sha256": "122137b7dde08a93c0068c1bae3c06616703a45ef6c65abe764a8ee7f425a418",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0603WAF1201T5E.tsx",
+      "bytes": 1897,
+      "mode": 384,
+      "sha256": "2eeb887280751882cca719270590845b08317fb61f88171706f269998a1371f8",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0603WAF150JT5E.tsx",
+      "bytes": 1895,
+      "mode": 384,
+      "sha256": "8b566f3736d935a641b5c0c02a61454a4bcfe5aac591209c985ec54a3ae73704",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0603WAF5101T5E.tsx",
+      "bytes": 1897,
+      "mode": 384,
+      "sha256": "53272ba878b2edabce678f95b3efe4ecd4a0bb9247efb99145a5cedde9a8ca67",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0603WAF7323T5E.tsx",
+      "bytes": 1894,
+      "mode": 384,
+      "sha256": "4f50c58b173df9da6a97132bf30245d710b521508d5c5af1067b6d0a3c56c249",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/A_0_5_54PFGPZ.tsx",
+      "bytes": 10979,
+      "mode": 384,
+      "sha256": "02181f383bd71a59f9a9545fb11244cb5077e03f3ea6e4b24f176a7781931dd2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/BZT52B5V1.tsx",
+      "bytes": 3067,
+      "mode": 384,
+      "sha256": "69da5b544becfe654b2dc8755617ab8d2b84b2d3596838a733636cd0e43df163",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL05A105KA5NQNC.tsx",
+      "bytes": 2914,
+      "mode": 384,
+      "sha256": "5ba8098f8c029b1ee45475fc74a5c58d3b402b3fd54a407f1e90aab661f62636",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL05B103KB5NNNC.tsx",
+      "bytes": 2915,
+      "mode": 384,
+      "sha256": "adf08675df7c77142960f84296b75d090cfea50bd2f68904a311ea4e6e3e8acd",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL05B104KO5NNNC.tsx",
+      "bytes": 2913,
+      "mode": 384,
+      "sha256": "16de55bd3373178d95e49d7c212e255b4a0c864a75f287b942abe49007e83110",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL10A225KP8NNNC.tsx",
+      "bytes": 2884,
+      "mode": 384,
+      "sha256": "475bcbef4fcb96ffcb129e000847ca9ce06e1a83e0d40bdd9ee920111ee5f5c5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL10A475KO8NNNC.tsx",
+      "bytes": 2887,
+      "mode": 384,
+      "sha256": "29887a64812e31e60abd7b1bd7b70ffb30ffce4cd22c35e9255370a1e798b462",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL10B221KB8NNNC.tsx",
+      "bytes": 2884,
+      "mode": 384,
+      "sha256": "b52571069ffe0d68dac52ddd7146e3fe158f778be311e7e360b0fa42565f7190",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL10B224KA8NNNC.tsx",
+      "bytes": 2888,
+      "mode": 384,
+      "sha256": "040e705a007dd565d600586138de73f8bbbd0e346d4357ec8e33662b4d762ca9",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL31A226KAHNNNE.tsx",
+      "bytes": 2862,
+      "mode": 384,
+      "sha256": "e5dc41160c9fa477d18e466246c719d9e759673d1d88e2fe58794e6d72e77bfe",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/CL31B475KBHNNNE.tsx",
+      "bytes": 2868,
+      "mode": 384,
+      "sha256": "b70b9686c3c74fff26d1ce6e8b88092beaa0029b7e35ed0dce76000d5275f923",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/DF65_3P_1_7V_21_.tsx",
+      "bytes": 4072,
+      "mode": 384,
+      "sha256": "e352f1329fa869411d631bcb1b9861064a4639f725fdfe1014d7cbbe181b086c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/DM3D_SF.tsx",
+      "bytes": 4173,
+      "mode": 384,
+      "sha256": "b802fb2f36767d0851e6ac021c88a3db29e5bc989a4ef594774b68e41ce51d46",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/MAX98357AETE_T.tsx",
+      "bytes": 5064,
+      "mode": 384,
+      "sha256": "3bb035b1fe0a673a09d4ef1eba50d0ef70727e874ed0950bbbba9fec290c45b7",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/MBR0540T1G.tsx",
+      "bytes": 4000,
+      "mode": 384,
+      "sha256": "636f4c73be93d90f6d24f17efb5e5ac8a568e08002476cb403a9c84797a3a571",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/MCP23017_E_SO.tsx",
+      "bytes": 6978,
+      "mode": 384,
+      "sha256": "74699c6bdfbb020526c9cfd8f00ad03c81d6e2c1c00118ce8513acbed3586570",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/MT41K256M16TW_107_P.tsx",
+      "bytes": 12907,
+      "mode": 384,
+      "sha256": "8e1ecc5c4c542565227dff59534063975ec6759f7c101abc4b0902a3a5928acc",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/RC0402FR_07240RL.tsx",
+      "bytes": 1882,
+      "mode": 384,
+      "sha256": "67bab85f8a0e1979ab9e139a81a815cffcd8400e0c241016eaba1361ce102c9a",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/RC0402FR_0749R9L.tsx",
+      "bytes": 1880,
+      "mode": 384,
+      "sha256": "8263244665dc493835acd8a87917cf3cbf07fd390087f56374a435955bb30326",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/SM02B_SRSS_TB_LF__SN_.tsx",
+      "bytes": 2322,
+      "mode": 384,
+      "sha256": "2a9d1c9cc0ba56ec98245f1a056c77c61cc1b9f911ecb0db2d2002f5a236cdfc",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/SN74LVC1G125DBVR.tsx",
+      "bytes": 2476,
+      "mode": 384,
+      "sha256": "9504e39da8c867e0683eba60365ba3dc10f51f7f4e1e66a13a3b115cc750276d",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/SX32Y024000BC1T001.tsx",
+      "bytes": 2251,
+      "mode": 384,
+      "sha256": "a4aa1edbd960e3a0dbc6a042af2bdb783301e4475c59312f4537d2bf307f4d06",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TPS3808G33DBVR.tsx",
+      "bytes": 2464,
+      "mode": 384,
+      "sha256": "dd3f90fc3216fb297f059a7937eeb9e798bfd44b3618448b94573a68a84ce32a",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TPS61023DRLR.tsx",
+      "bytes": 2490,
+      "mode": 384,
+      "sha256": "214f59239c3936f4884e12971f22607dbbf9b04e556ec9797f72bdd43e2c2eac",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TPS61165DBVR.tsx",
+      "bytes": 2451,
+      "mode": 384,
+      "sha256": "5d4c6464d402863a49d782bd6750c1429b2399e48849b65bd17cb21fe786aae9",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TPS62162DSGR.tsx",
+      "bytes": 2846,
+      "mode": 384,
+      "sha256": "90d6c46995a9cc4239019fd5b00cd7f9f065cc4291b76df476f7222c30c7137b",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TPS65217CRSLR.tsx",
+      "bytes": 9159,
+      "mode": 384,
+      "sha256": "86a08612e6a145825eef92e232b8e48d8bf6bad4eaa8a226da7c9bed8ed23d86",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TS_1187A_B_A_B.tsx",
+      "bytes": 3342,
+      "mode": 384,
+      "sha256": "c48b934fc226e3f196e61e899249a340d1b0ba0f4297bfea30af9b0ea678f1bf",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/TYPE_C_31_M_12.tsx",
+      "bytes": 7098,
+      "mode": 384,
+      "sha256": "fc11aacca99ff4e19b4262b93da03944c42decfd60399084914ef603c808350e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/USBLC6_2SC6/USBLC6_2SC6.obj",
+      "bytes": 565628,
+      "mode": 384,
+      "sha256": "b4a68fd1399fd2ab9e7baf51fd4bb6dd8b2a8be45c2b632e1f2c84723c5d7e45",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/USBLC6_2SC6/USBLC6_2SC6.step",
+      "bytes": 3277419,
+      "mode": 384,
+      "sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/USBLC6_2SC6/USBLC6_2SC6.tsx",
+      "bytes": 2837,
+      "mode": 384,
+      "sha256": "7279b8dbf13f2a33f68471379cbaa79bd0638043f1a5be7c9799774f64f9b31d",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/VLCF5020T_100M1R1_1.tsx",
+      "bytes": 1753,
+      "mode": 384,
+      "sha256": "093fbb3780bac7c6045956a3d74b5fda1bc561946c2b11df0b7a5ba285f3dbde",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/XFL4020_222MEC.tsx",
+      "bytes": 1827,
+      "mode": 384,
+      "sha256": "ab84fd4a7822f844a523b11a1b0e60c2b79a7af5063519e1d3fdd1484ccfb180",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/Boot.tsx",
+      "bytes": 4306,
+      "mode": 384,
+      "sha256": "3880a048c27b966b959cb3a2b7924e5252dcdd2f2cde9c4d69aa1ec32b27bb39",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/DdrConstraints.tsx",
+      "bytes": 2065,
+      "mode": 384,
+      "sha256": "e4caa94ff1dddcbe4f09275924513186c9055adbeb7b0e04ff37c1df79bfaaae",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/FourLayerDdrConstraints.tsx",
+      "bytes": 3028,
+      "mode": 384,
+      "sha256": "4de0ed25e99eb1c4f23745af93822ff9dfc6302906c980700d5862a5887c72a2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/HostSignals.ts",
+      "bytes": 977,
+      "mode": 384,
+      "sha256": "33cf590b778cdbf5efaf48879c8be579bdae70238bb017d865a6a4cd84825877",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/Power.tsx",
+      "bytes": 9432,
+      "mode": 384,
+      "sha256": "18b6d987ac276b9e5098ff2e1ea28b5406e3135bc77f4aee10647820cbfd4cf5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/PowerNetworks.ts",
+      "bytes": 8079,
+      "mode": 384,
+      "sha256": "63d4259ae52644bef32b070d1fd82ae0f83571beb3c86a47bb9e3f577be1c1a2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/RamBypassLoops.tsx",
+      "bytes": 1303,
+      "mode": 384,
+      "sha256": "5d40c91bab78e99999458127d16611ec937f470642af879479c2c6611151e7cb",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/RamReferenceEscapes.tsx",
+      "bytes": 1543,
+      "mode": 384,
+      "sha256": "944912d0300f3ec5650623e23c9bda1e4ef4fe92e24905ee97ea500da0503216",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/Storage.tsx",
+      "bytes": 4709,
+      "mode": 384,
+      "sha256": "7c949eb22627e05e1f15222d4baf9b222e1ffd835260cbf8ef847041bfc26f42",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/StorageLayout.ts",
+      "bytes": 795,
+      "mode": 384,
+      "sha256": "d90150a06de93c3a138c38006119d85115cba811c0c6f7aadba57e5c0fbdc1fa",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/UsbCDevice.tsx",
+      "bytes": 5032,
+      "mode": 384,
+      "sha256": "cf8a7289925d6543fc2e08a78bbedd20c15d7c345cc03655908246128b35dca1",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/cpu-ball-map.json",
+      "bytes": 7529,
+      "mode": 384,
+      "sha256": "f936e408a702a5eb42d68d2cd834d7ccefb98930eda205ac234144c0c10213df",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/memory-byte1-swizzled-connections.json",
+      "bytes": 7099,
+      "mode": 384,
+      "sha256": "9e833a40b6cd5ccffbe5499254455d1f6f713c7278a0f6195d0aa9dab6546671",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/memory-byte1-top-centered-swizzled-connections.json",
+      "bytes": 7099,
+      "mode": 384,
+      "sha256": "6e9df46944e0ec389be0f992f4783cbf1031e080727f87f0f9f911c95f32ab50",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/memory-connections.json",
+      "bytes": 7099,
+      "mode": 384,
+      "sha256": "1469f03da9f6d6420723aa547c9831beb59a98bde0cbd9d5162fd3d40fe4f572",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/BacklightPinAllocation.tsx",
+      "bytes": 3621,
+      "mode": 384,
+      "sha256": "92bbae935e03ab6821e18529c17aa14865207c19026c25c8f4865c77659af710",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/ControlsAndAudio.tsx",
+      "bytes": 4856,
+      "mode": 384,
+      "sha256": "6a88cdf3456e018e4f5d3d4051be04826f390dd6ecbc4819b55e8ea5dc8eb47e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/ConverterPlacement.tsx",
+      "bytes": 730,
+      "mode": 384,
+      "sha256": "7b3b6a65e4d5d90e46934cdb5ad14475ba8d732cacd788f884aa3eb38ceff823",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/CriticalPlacement.tsx",
+      "bytes": 807,
+      "mode": 384,
+      "sha256": "c69ca782498f6cb594d694dd5bafcb3b3d58b31ddd4a266404a5f2a30647449c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/DdrCorridorPlacement.tsx",
+      "bytes": 821,
+      "mode": 384,
+      "sha256": "800353a3c9630a3fc16e81be3adceff381def0f883c2d27d04073a04bcad1b71",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/Display.tsx",
+      "bytes": 6169,
+      "mode": 384,
+      "sha256": "305152a48e568b9fb4e4049df21f46d7c541e1ac9c5ab2dbde07d7d5edf5641f",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/G350DdrBootstrap.tsx",
+      "bytes": 2474,
+      "mode": 384,
+      "sha256": "8a354699d91342ef559553f07850e6e2eae4d3aec775d661b52b9ea8eb189fb6",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/G350RestRoutingReplay.ts",
+      "bytes": 2508,
+      "mode": 384,
+      "sha256": "f347ff480d9038168a1484dcec6bafc50a069b531844387a0632b14fd15588a7",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/G350V10DdrLayerPolicy.ts",
+      "bytes": 884,
+      "mode": 384,
+      "sha256": "39f34408a66f6c3b26970b4b8cc7bf5aebecc54724226b269d93a4143544c285",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/HarnessPlacement.tsx",
+      "bytes": 5904,
+      "mode": 384,
+      "sha256": "6e6e97a0c23eb30e83fdc5514566279d2c9d097cf80f0c91255d5dbb806885f2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/LayoutOnly.tsx",
+      "bytes": 2429,
+      "mode": 384,
+      "sha256": "5c89af36fe0f1e6a147a564287d3420e543e07a70bfcc04a67a8cc22d9839655",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/PmicPlacement.tsx",
+      "bytes": 1187,
+      "mode": 384,
+      "sha256": "f4ef0fd3f67e77f29afdfe8b262459ac2bb24a272351b3c3c55cd0120bbe1a5c",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/Rgb888Power.tsx",
+      "bytes": 1045,
+      "mode": 384,
+      "sha256": "2b35d9f58b0f62b9dd2135db447efda55f4b1eae07cffccd5b0adb2c84067d5b",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/converter-placements.json",
+      "bytes": 1590,
+      "mode": 384,
+      "sha256": "e7fcd9c89e4cb819639e4f1f4b7b6dbcd76818c58e64b1e634f4ebe5fa1a70e5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/cpu-bypass-placements.json",
+      "bytes": 5474,
+      "mode": 384,
+      "sha256": "ab52aa9d75dccc8d34eb4d283e577a7dff1165eb8b22961f81a2a1522fb4ae3e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/ddr-corridor-placements.json",
+      "bytes": 4383,
+      "mode": 384,
+      "sha256": "2dc409f699decce9d26d46e77c53f8662dda95d0c8e63284c7e9ddc309bf2718",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-full-board-dangling-clean-rest-routing.json",
+      "bytes": 4011376,
+      "mode": 384,
+      "sha256": "24ddedd0857b55edaf7d804264c35b84a7d8dc593b9fb58bdbed0ccd58737da5",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-full-board-ground-preserving-clean-corners-paths.json",
+      "bytes": 1316614,
+      "mode": 384,
+      "sha256": "24b46ecf031c6c5e84b03e713123ffac4992438837c5396d737c090ea37a2f52",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-outer-ddr-clear-corridor.json",
+      "bytes": 426,
+      "mode": 384,
+      "sha256": "c2e0143dbce5b2bddad34da28d95b1d2fd5e504462a3251df25796658fef66b4",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-ram90-zero-skew-paths.json",
+      "bytes": 795989,
+      "mode": 384,
+      "sha256": "076fbb77cf1be1e901a3e0c83d8a59b78aa351c64ae076ab0a8324a77290e112",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-rest-routing-cache.json",
+      "bytes": 1256484,
+      "mode": 384,
+      "sha256": "b9446b07abad0078ecf600e140e58154d0ba69ee1a05ba5e9aee361aebf83468",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-ti-ddr-v10-layer-policy.json",
+      "bytes": 5690,
+      "mode": 384,
+      "sha256": "0ddbad4a46cf7df87f53c8bdceefaf1f620aea28fb980c1a439d24e4f9c49117",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-ti-top-bottom-ddr-v1.json",
+      "bytes": 755,
+      "mode": 384,
+      "sha256": "c64a275cb8a7ebb35d5119b549716105c97b17d71872417c9b16fb9280c3676e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-ti-top-bottom-ddr-v5.json",
+      "bytes": 939,
+      "mode": 384,
+      "sha256": "6e293bad4b8bc1855e805a74978d770d8eaf91af7d90fe273ec4181319e2703e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-ti-top-bottom-ddr-v7-translation.json",
+      "bytes": 2259,
+      "mode": 384,
+      "sha256": "92f65984edb1544e804c88550de860e97436188cf5d3d75c3d1ee53dacff9556",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/g350-ti-top-bottom-ddr-v9-y0_2-translation.json",
+      "bytes": 2309,
+      "mode": 384,
+      "sha256": "ba4b444ef5427aa146ab354d5d63f8dce4c264d41fa58fb9babd6733667b8cb1",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/host-placements.json",
+      "bytes": 19711,
+      "mode": 384,
+      "sha256": "21a508c6cd218a40931b493da6b3347234c99305a831580469764a5c92c2b92d",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/placement/pmic-placements.json",
+      "bytes": 1714,
+      "mode": 384,
+      "sha256": "fd6ab78d417c8c38c3d0f4574085e339c8ff5011fd29fe46dec43510567a2659",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/ram-ball-map.json",
+      "bytes": 2094,
+      "mode": 384,
+      "sha256": "7998a87e977af7f9b8bbc69cc6879e9df4820778434401bc9ed4ac5c0ef6f752",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/ram-bypass-loop-layout.json",
+      "bytes": 2448,
+      "mode": 384,
+      "sha256": "f80de5f3cba3b387fb802d2189400f9f736ccc883817d4ee237f1030f4130049",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/lib/am3352/ram-reference-escapes.json",
+      "bytes": 42952,
+      "mode": 384,
+      "sha256": "c70eeaca398606d24fae6288b0e3aab9f52a4e10858164ea5b318bdcd9bf912e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/mechanical/g350-provisional-outline.json",
+      "bytes": 957,
+      "mode": 384,
+      "sha256": "968ec1a77f31e4f7e19d10fe5c74873f5a0e20826cf9a1dc92a2189c88e59785",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v11-ca-byte1-top-layer-bridge-next/v11-final-layer-overlay.tsx",
+      "bytes": 4397,
+      "mode": 384,
+      "sha256": "2dd97d9a7afb7c634afa450e0f61ea8ea7f618060182f884c88cd6e5b81e1669",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v11-ca-byte1-top-layer-bridge-next/v11-layer-policy.json",
+      "bytes": 5684,
+      "mode": 384,
+      "sha256": "8c8abbd477d322df7b3a3a5266bd78d23e85c641523a19bcb447473a6be17a77",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12b-four-carrier-ddr-source-next/v12b-final-layer-overlay.tsx",
+      "bytes": 5082,
+      "mode": 384,
+      "sha256": "59f47d8172c81ce1f8cf52faf91f12865012fc28b28478b760761b68e75bcda1",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12b-four-carrier-ddr-source-next/v12b-layer-policy.json",
+      "bytes": 6501,
+      "mode": 384,
+      "sha256": "13ee918cc3cc168a38a49dcca200d099a6d08674d56359434a9d28f383a3ec1a",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12c-distinct-cohort-carriers-next/v12c-final-layer-overlay.tsx",
+      "bytes": 5116,
+      "mode": 384,
+      "sha256": "03069c022d2ce420f6d6cfd78521fcd524fd5100742b3dcf8cad665d53cd320e",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12c-distinct-cohort-carriers-next/v12c-layer-policy.json",
+      "bytes": 6089,
+      "mode": 384,
+      "sha256": "fce642650fb96cc3fa90e8286b6a7528461a2ebb646755e67c2bf8ef3ad27bb8",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12d-byte0-top-reset-bottom-next/v12d-final-layer-overlay.tsx",
+      "bytes": 5145,
+      "mode": 384,
+      "sha256": "8d60263f397adac39be858bd41662c4637f88fda91abd136dd05e2cc11412b8f",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12d-byte0-top-reset-bottom-next/v12d-layer-policy.json",
+      "bytes": 6073,
+      "mode": 384,
+      "sha256": "5594b9956c1762eb601a02190b12faf25116423517889905124c366770e28ee2",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12e-c-cohort-layer-swap-source-next/v12e-c-final-layer-overlay.tsx",
+      "bytes": 1976,
+      "mode": 384,
+      "sha256": "7abd71ce216cda53bc0dfb6335d5220a16d567def4280847bead73736ac85c7d",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12e-c-fresh-ti-window-source-next/v12e-c-fresh-ti-window-overlay.tsx",
+      "bytes": 1568,
+      "mode": 384,
+      "sha256": "ea0951ca0c6597f252dc11eb3c3a40e19e2421f4d99faf18adf5752ac13d99cf",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    },
+    {
+      "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v12e-ram7-reference-right-source-proposal-next/v12e-ram7-reference-right-overlay.tsx",
+      "bytes": 3073,
+      "mode": 384,
+      "sha256": "820ca656db88862ebabd914a2b25ba6a1ccdd3cacab5d993a86950e08f5cda92",
+      "reasons": [
+        "source147-or-explicit-bound-origin",
+        "source147-or-explicit-bound-origin"
+      ]
+    }
+  ],
+  "tarFormat": "DETERMINISTIC_PAX_PATH_HEADERS_FOR_IMMUTABLE_LONG_FILENAMES",
+  "expandedTarBytes": 59105280,
+  "source147ProvenanceDescriptorsIncluded": true,
+  "sourceClosurePayloadCount": 147,
+  "sourceClosureModelDescriptorCount": 1,
+  "exactFullSource147PayloadsIncluded": true,
+  "exactProjectHardwareStepIncluded": {
+    "path": "g350-linux-handheld/.cloud-tools/ti-ddr-v10-ca-top-bytes-bottom-prefork-successor-next/source/imports/USBLC6_2SC6/USBLC6_2SC6.step",
+    "sha256": "53901e8dbe77366e4c00f90fd3613933fd2db1f1453ddc9eee51d8a18d44dbff",
+    "bytes": 3277419,
+    "alreadyFrozen314ArchiveSha256": "e7d286d456eec4bd6a7f721502ce87e9775ae847bbfde41929ff581701a641df",
+    "alreadyFrozen314IndexSha256": "7c741294e616877a20b4a8e69903a7473136bff140c0e6b19eb67a4706709230"
+  },
+  "actualSourceCaptureTypesCorePassed": true,
+  "actualCoreControlsPassed": 120,
+  "historicalAuthoritiesEvidenceOnly": true,
+  "freshAuthorityAndOutputsRequiredForNewTasks": true,
+  "runtimeReconstructed": false,
+  "sdkReconstructed": false,
+  "native18Qualified": false,
+  "cad18Qualified": false,
+  "referenceQualified": false,
+  "electricalTimingQualified": false,
+  "accepted49": false,
+  "fabricationReady": false
+}
