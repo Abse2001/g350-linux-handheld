@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-15",
+  "scope": "CURRENT_DQS0_BASELINE_AND_INTERRUPTED_CORNER_FALLBACK_TEST",
+  "checkedBoard": {
+    "connections": 23,
+    "required": 49,
+    "newCopperAdopted": 0
+  },
+  "candidateSourceManifestSha256": "0ddcdc664af48342c74734ab4e81c468a7e370c618cdf9feb87fa767649893ef",
+  "focusedTestSha256": "52d21164c9f485e71aa80e4d6de8d4ed781a330ebb62c5817991110eaa0b6f90",
+  "runs": [
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/corner-baseline-3801-EXPECTED-RED-COLLECTED-root.json",
+      "sha256": "b4fbd04144181fecec783f831bd90f9bd885ca455ba06492b33b8cb95fba69a0",
+      "receipt": {
+        "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_18_AUTHENTIC_PRIOR_CLOSURES",
+        "phase": "tests",
+        "sourceManifestSha256": "0ddcdc664af48342c74734ab4e81c468a7e370c618cdf9feb87fa767649893ef",
+        "rootGuardProposalManifestSha256": "4f597aa817c2561e9eaaa0916928ce3ae594e71756b4b18e69c34737c888cdcf",
+        "rootStageContractSha256": "c159005abd3e1deaed25e389b8a45664cf2083fbe03375c89bac6bc2bfe6cbd7",
+        "execution": {
+          "startedAt": "2026-10-15T00:06:12.432147+00:00",
+          "command": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "test",
+            "/workspace/bus-lanes-solver/.cache/paired-corner-handoff-fallback-sourceonly-next/focused-current631.test.ts",
+            "--timeout",
+            "55000"
+          ],
+          "policy": {
+            "wallSeconds": 60,
+            "rssBytes": 1073741824,
+            "sharedBytes": 32212254720,
+            "sampleSeconds": 0.05,
+            "termGraceSeconds": 5
+          },
+          "memoryBefore": {
+            "current": 23512031232,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "exitCode": 1,
+          "diagnosticStopped": false,
+          "stopReasons": [],
+          "accepted": false,
+          "currentGuardPid": 461455,
+          "pid": 461476,
+          "pgid": 461476,
+          "freshLeaderIdentity": {
+            "pid": 461476,
+            "pgid": 461476,
+            "sid": 461476,
+            "start": 22528456,
+            "state": "R",
+            "rss": 69632,
+            "argv": [
+              "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+              "--smol",
+              "test",
+              "/workspace/bus-lanes-solver/.cache/paired-corner-handoff-fallback-sourceonly-next/focused-current631.test.ts",
+              "--timeout",
+              "55000"
+            ]
+          },
+          "endedAt": "2026-10-15T00:06:20.169802+00:00",
+          "wallSeconds": 7.737221840012353,
+          "cleanupOwnedGroupEmpty": true,
+          "peakOwnedRssBytes": 428097536,
+          "peakSharedBytes": 23919456256,
+          "memoryAfter": {
+            "current": 23510556672,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "oomDelta": {
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          },
+          "signalErrors": [],
+          "signalErrorCount": 0
+        },
+        "sourceAndDependenciesHeld": true,
+        "stageNaturallyCompleted": true,
+        "passed": false,
+        "baselineExpectedRedActuallyObserved": true,
+        "authorizedByRoot": true,
+        "toolSessionId": 3801,
+        "toolSessionCollected": true,
+        "toolWrapperExitCode": 2,
+        "toolExitCode": 2,
+        "postauditPath": "/tmp/g350-focused-stage17-corner-baseline-20261015-0006/POSTAUDIT.json",
+        "postauditSha256": "38b6802d1cb9adca1d85d0c8e9cf7466c38db28b6883242e44c12da4a950f113",
+        "childLogPath": "/tmp/g350-focused-stage17-corner-baseline-20261015-0006/owned/child.log",
+        "childLogSha256": "40d89afc52e6a41bd47e766a1a75af5141db3e609d3cdc181471ca446b36b81d",
+        "actualTestCounts": {
+          "pass": 2,
+          "fail": 1,
+          "expect": 23
+        },
+        "exactDiagnosticWitness": {
+          "scope": "FOCUSED_CURRENT631_PAIR_DIAGNOSTIC",
+          "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+          "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-layer-fallback-sourceonly-next/lib",
+          "naturalGeneratorCompletion": true,
+          "originalYieldCount": 5568,
+          "returnedCarrierCount": 0,
+          "full49Accepted": false,
+          "fabricationReady": false
+        },
+        "independentlyObservedOwnedGroupEmpty": true,
+        "all49Accepted": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/corner-proposed-86792-RSS-STOP-COLLECTED-root.json",
+      "sha256": "798c16f7b2fd01af12b950670e914f68de9d97a980a2640f160ffca9a20eb1a2",
+      "receipt": {
+        "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_19_AUTHENTIC_PRIOR_CLOSURES",
+        "phase": "tests",
+        "sourceManifestSha256": "0ddcdc664af48342c74734ab4e81c468a7e370c618cdf9feb87fa767649893ef",
+        "rootGuardProposalManifestSha256": "3ca1ecfc033811879c01097eb37e798460e0b628054820fcfe21114731a72b97",
+        "rootStageContractSha256": "70e3c2dbe49a53808e53b46c9426694ff32a6c5de62d5477d1ff2383e80c33ed",
+        "execution": {
+          "startedAt": "2026-10-15T00:10:42.098297+00:00",
+          "command": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "test",
+            "/workspace/bus-lanes-solver/.cache/paired-corner-handoff-fallback-sourceonly-next/focused-current631.test.ts",
+            "--timeout",
+            "55000"
+          ],
+          "policy": {
+            "wallSeconds": 60,
+            "rssBytes": 1073741824,
+            "sharedBytes": 32212254720,
+            "sampleSeconds": 0.05,
+            "termGraceSeconds": 5
+          },
+          "memoryBefore": {
+            "current": 23532437504,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "exitCode": -15,
+          "diagnosticStopped": true,
+          "stopReasons": [
+            "OWNED_RSS_STOP"
+          ],
+          "accepted": false,
+          "currentGuardPid": 461932,
+          "pid": 461945,
+          "pgid": 461945,
+          "freshLeaderIdentity": {
+            "pid": 461945,
+            "pgid": 461945,
+            "sid": 461945,
+            "start": 22555424,
+            "state": "R",
+            "rss": 90112,
+            "argv": [
+              "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+              "--smol",
+              "test",
+              "/workspace/bus-lanes-solver/.cache/paired-corner-handoff-fallback-sourceonly-next/focused-current631.test.ts",
+              "--timeout",
+              "55000"
+            ]
+          },
+          "stoppedAt": "2026-10-15T00:11:03.571557+00:00",
+          "stopElapsedSeconds": 21.46367579398793,
+          "signalErrors": [],
+          "signalErrorCount": 0,
+          "endedAt": "2026-10-15T00:11:03.728091+00:00",
+          "wallSeconds": 21.629319214000134,
+          "cleanupOwnedGroupEmpty": true,
+          "peakOwnedRssBytes": 1080479744,
+          "peakSharedBytes": 24570568704,
+          "memoryAfter": {
+            "current": 23508668416,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "oomDelta": {
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "sourceAndDependenciesHeld": true,
+        "stageNaturallyCompleted": false,
+        "passed": false,
+        "authorizedByRoot": true,
+        "toolSessionId": 86792,
+        "toolSessionCollected": true,
+        "toolWrapperExitCode": 2,
+        "toolExitCode": 2,
+        "postauditPath": "/tmp/g350-focused-stage17-corner-proposed-20261015-0011/POSTAUDIT.json",
+        "postauditSha256": "9320c2893a89abee5744868df13d24ec9c967705a6cfbad46979ea680da973d4",
+        "childLogPath": "/tmp/g350-focused-stage17-corner-proposed-20261015-0011/owned/child.log",
+        "childLogSha256": "7f8c3f5dad82998da57a62c305ed16dee2fc6003e45235cf9b276dae7d9728ad",
+        "actualTestCounts": null,
+        "focusedCurrentPairCompletionWitnessPresent": false,
+        "independentlyObservedOwnedGroupEmpty": true,
+        "resourceStop": "OWNED_RSS_STOP",
+        "newRoutesAdopted": 0,
+        "all49Accepted": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "proposedGreenProved": false,
+  "full644AndAll11QualificationPassedForThisChange": false,
+  "fabricationReady": false
+}

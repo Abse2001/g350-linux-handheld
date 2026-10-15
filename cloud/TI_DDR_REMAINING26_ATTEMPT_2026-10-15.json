@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "recordDateUtc": "2026-10-15",
+  "scope": "PORTABLE_FAILED_CURRENT23_HELD_REMAINING26_ROUTING_RESULT",
+  "sourceAndAppsExecutedByRecordAuthor": false,
+  "artifactProvenance": [
+    {
+      "originPath": "/workspace/g350-linux-handheld/.cloud-tools/ddr-current23-held-remaining26-public-sourceonly-next/SOURCE-manifest.json",
+      "sha256": "1ba7cf5d0fb5093a1c544593414e8bcb7e0a34c71ee616c92f3600bef62f58ad",
+      "bytes": 158427,
+      "mode": 384
+    },
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/remaining26-held23-66744-FAILED-COLLECTED-root.json",
+      "sha256": "b0bd6267f4c969539978e203b8411e95ff0e14d05514334fbd3a27f451dc2ec9",
+      "bytes": 3187,
+      "mode": 384
+    },
+    {
+      "originPath": "/tmp/g350-current23-held-remaining26-20261015-0155/output/DIAGNOSTIC_RESULT.json",
+      "sha256": "73097dd791219a4a3b7a29f7237e4491f7606c492e4a88a57733e3aaec1cfdfd",
+      "bytes": 2351,
+      "mode": 384
+    },
+    {
+      "originPath": "/tmp/g350-current23-held-remaining26-20261015-0155/output/RAW_FINAL_STATE.json",
+      "sha256": "f191cd876565e4d3ae6427a42fbc589bbb1d786c4d51c0ef1b6a606c57935655",
+      "bytes": 1168419,
+      "mode": 384
+    },
+    {
+      "originPath": "/tmp/g350-current23-held-remaining26-20261015-0155/POSTAUDIT.json",
+      "sha256": "f08e59b99eaa5f75f42f790cce42fc709aa3cdc57b5e90a51346bcacca6a94a5",
+      "bytes": 11508,
+      "mode": 384
+    },
+    {
+      "originPath": "/tmp/g350-current23-held-remaining26-20261015-0155/output/ACTUAL_CONSTRUCTOR_INPUT.json",
+      "sha256": "797213fdc25c07227d9609cb618af2834466f6ed39911964ea478d3f7f0e412c",
+      "bytes": 1057727,
+      "mode": 384
+    },
+    {
+      "originPath": "/workspace/g350-linux-handheld/.cloud-tools/ddr-source3-current23-partial-corridor-timing-sourceonly-next/SOURCE3_PARTIAL_CORRIDOR_TIMING_REPORT.json",
+      "sha256": "4ecdd9f1f08fce562cf99393ae614bc4056e9d27e6acffaceae7bb3e8120a482",
+      "bytes": 19531,
+      "mode": 384
+    },
+    {
+      "originPath": "/tmp/g350-faithful23-api-root-20261014-2225/faithful-current23-original-api-report.json",
+      "sha256": "c59896791349f88592c67de7847fa42d4b61d8bc0e5779020d4b18344eb4d146",
+      "bytes": 143346,
+      "mode": 384
+    },
+    {
+      "originPath": "/workspace/g350-linux-handheld/.cloud-tools/ddr-source23-display-compact-cli-kicad-output-path-successor-next/run-cad/output/kicad-source23-report.json",
+      "sha256": "d8c68a14b47d0cc6b00f5c915af5a301d980525c3e2278c646db2ae543961b16",
+      "bytes": 431063,
+      "mode": 384
+    }
+  ],
+  "checkedBoard": {
+    "heldPhysicalDdrCarrierCount": 23,
+    "missingDdrSignalCount": 26,
+    "all49SignalRosterSize": 49,
+    "held23SourceUnchanged": true,
+    "priorFreshKiCadConfirmedActual23": true,
+    "priorFaithful77568ContinuousOriginalApiConfirmedActual23": true,
+    "priorPairTestsRemainPartialEvidence": true,
+    "strictAxis45FailedCarrierCount": 10,
+    "strictAxis45FailedSegmentCount": 178,
+    "maxUncoupledLengthBoundStillUnset": true
+  },
+  "attempt": {
+    "toolSessionId": 66744,
+    "toolSessionCollected": true,
+    "wrapperExitCode": 2,
+    "naturalSdkChildExitCode": 1,
+    "originalStepCalls": 425,
+    "recordedStartedAtUtc": "2026-10-14T23:54:57.260658+00:00",
+    "recordedEndedAtUtc": "2026-10-14T23:55:18.219019+00:00",
+    "wallSeconds": 20.958014330011792,
+    "peakOwnedRssBytes": 736456704,
+    "resourceStopped": false,
+    "ownedGroupEmptyActuallyObserved": true,
+    "sourceAndDependenciesHeld": true,
+    "failureCode": "no_planar_route",
+    "publicPartialNames": [
+      "source_trace_0",
+      "source_trace_3",
+      "source_trace_19"
+    ],
+    "publicPartialCount": 3,
+    "adoptedPartialCount": 0,
+    "acceptedNewRouteCount": 0,
+    "partialRoutesMustNotBeAddedToHeld23AsConnectedBoard": true
+  },
+  "preservedMaterial": {
+    "fixedTraceCountIncludingExactHeld23Bodies": 286,
+    "hardObstacleCount": 1298,
+    "actualExistingSignalViaEventCount": 98,
+    "pendingActualBarrelEndpointCount": 52,
+    "physicalMaterialRowCount": 1396,
+    "physicalBarrelCount": 227,
+    "allowedCopperLayers": [
+      "top",
+      "inner1",
+      "inner2",
+      "bottom"
+    ],
+    "newPhysicalViasCreated": 0,
+    "geometryChangesLimitedToSolverEndpointLayerScalars": true
+  },
+  "sourceTrace3UnacceptedLengthIssue": {
+    "carrierPlanarLengthMm": 4.743617082949133,
+    "fixedPlanarLengthMm": 1.131370849898477,
+    "totalPlanarLengthMm": 5.87498793284761,
+    "remainingByte0MinTotalPlanarMm": 12.560455230226653,
+    "remainingByte0MaxTotalPlanarMm": 13.2,
+    "extraPlanarLengthToLowerBoundMm": 6.685467297379043,
+    "fullByteSkewLimitMm": 0.635,
+    "rawSelfIntersectionSegmentIndices": [
+      10,
+      12
+    ],
+    "rawEndpointDirectionChangeDegrees": 180.0,
+    "rawEndpointReversalAndTimingNotPassed": true,
+    "electricalDelayNotInferredFromPlanarLength": true
+  },
+  "sourceOnlyPlanningHold": {
+    "witnessSha256": "4ecdd9f1f08fce562cf99393ae614bc4056e9d27e6acffaceae7bb3e8120a482",
+    "targetTotalPlanarMm": [
+      12.65,
+      12.85,
+      13.05
+    ],
+    "referenceReservationName": "TOP_B0_GND_BODY",
+    "retainedReferenceReservationPassed": false,
+    "referenceHoldReason": "The physically clear Top serpentine occupies retained TOP_B0_GND_BODY; no reservation is removed or considered implemented copper.",
+    "allPlanningCandidatesUnadopted": true,
+    "planningGeometryChecksAreNotNativeApiCadQualification": true
+  },
+  "exactOriginalDiagnosticResult": {
+    "scope": "ROOT_ONE_CURRENT23_HELD_REMAINING26_PUBLIC_DIAGNOSTIC",
+    "diagnosticOnlyNotReleaseQualification": true,
+    "originalAll11AcceptanceClaimed": false,
+    "fixReleaseQualificationPassed": false,
+    "publicConstructorCalls": 1,
+    "originalStepCalls": 425,
+    "naturalSdkSolved": false,
+    "naturalSdkFailed": true,
+    "thrown": null,
+    "phase": "failed",
+    "error": "Negotiated lane search exhausted without a complete route",
+    "failureCode": "no_planar_route",
+    "actualGeneratedCarrierCount": 3,
+    "actualUniqueGeneratedCarrierCount": 3,
+    "missingRemaining26": [
+      "source_trace_6",
+      "source_trace_7",
+      "source_trace_10",
+      "source_trace_14",
+      "source_trace_17",
+      "source_trace_18",
+      "source_trace_20",
+      "source_trace_21",
+      "source_trace_22",
+      "source_trace_23",
+      "source_trace_25",
+      "source_trace_30",
+      "source_trace_32",
+      "source_trace_35",
+      "source_trace_36",
+      "source_trace_37",
+      "source_trace_38",
+      "source_trace_39",
+      "source_trace_42",
+      "source_trace_43",
+      "source_trace_44",
+      "source_trace_45",
+      "source_trace_47"
+    ],
+    "getOutputCalledOnlyWhenSolved": false,
+    "allCurrent286FixedRowsAnd26NumericRequestsHeld": true,
+    "held23RawCopperUnchanged": true,
+    "finalFull49IndependentValidationRequired": true,
+    "actualConstructorInputOtherFieldsAndOwnedEndpointsHeld": true,
+    "onlyRemaining26ScalarLayerChoicesMayChange": true,
+    "genuine98FixedViaEventsRepresentExisting227Material": true,
+    "current1396MaterialRowsRepresentedBy1298ObstaclesAnd98Events": true,
+    "independentActualOutputGeometryPairsFullRulesAndNativeDrillChecksRequired": true,
+    "verifiedPairedFallbackSource": true,
+    "max40000Rationale": "Previous same public constructor budget is retained as a bounded current-placement diagnostic; completeness is not guaranteed",
+    "checkpointCount": 1,
+    "checkpointBytes": 13372,
+    "checkpointByteLimit": 40000000,
+    "maximumCheckpointCount": 41,
+    "all4LayerAuthorityDerivedFrom52PendingActualCurrentFullSpanBarrels": true,
+    "newGeneratedCarriersRequireEditableSourceAdoptionAndFreshCoreNativeApiCadQualification": true,
+    "uncoupledLengthDiagnosticsNeverImplyAbsentWholeCouplingLimitPass": true,
+    "sourceCoreNativeCliCadCalls": 0,
+    "referenceQualified": false,
+    "electricalTimingPassed": false,
+    "all49Accepted": false,
+    "fabricationReady": false
+  },
+  "promotionRequirements": {
+    "newEditableSourceReplayAndFreshCoreNativeApiCadRequired": true,
+    "originalFull49RulesAndAllThreePairValidationRequired": true,
+    "full49ValidationMustAvoidDoubleCountingHeld23Bodies": true
+  },
+  "fixReleaseQualificationPassed": false,
+  "full49TimingPassed": false,
+  "referenceQualified": false,
+  "electricalTimingQualified": false,
+  "accepted49": false,
+  "fabricationReady": false
+}
