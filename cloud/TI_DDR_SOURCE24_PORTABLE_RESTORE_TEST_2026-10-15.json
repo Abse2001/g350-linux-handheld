@@ -1,0 +1,183 @@
+{
+  "scope": "ROOT_ACTUAL_SOURCE24_THROUGH_API_PORTABLE_RESTORE_CONTROLS",
+  "passed": true,
+  "controlCount": 13,
+  "controls": [
+    {
+      "control": "missing base refuses before restoration",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "fresh two-root restoration",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 98,
+        "existingExactFiles": 0,
+        "absentFiles": 98,
+        "createdFiles": 98,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 210,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "idempotent restoration",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 98,
+        "existingExactFiles": 98,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 210,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "verification without writes",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 98,
+        "existingExactFiles": 98,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 210,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "wrong index pin refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "corrupt archive refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "late existing collision prevents any early restoration",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "existing mode mismatch refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "archive symlink refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "destination ancestor symlink refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "overlapping destination roots refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "changed preserved base refused",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "final independent verification after refusal controls",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 98,
+        "existingExactFiles": 98,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 210,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "indexSha256": "8c85472bbbf03d5092f6d382781435f6b805d9fb80bc655a4e3ebebfde43860a",
+  "archiveSha256": "bd072ca47eea8e1b2d4c88612f9444e8137f361083b973a8d9bfc5f7f98774f7",
+  "restorerSha256": "6a252e9a61d3f50d0e418f37aeada64a13579bde423cc448b99b5e33a015a385",
+  "restoredFileCount": 98,
+  "requiredBaseFileCount": 210,
+  "isolatedRoot": "/tmp/g350-source24-portable-controls-7e0t2cq5",
+  "sourceOrHardwareEdited": false,
+  "runtimeImported": false,
+  "newSdkScopeOpened": false,
+  "fabricationReady": false
+}

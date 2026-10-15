@@ -1,0 +1,1017 @@
+{
+  "scope": "SOURCE24_UNQUALIFIED_VIA_GEOMETRY_AND_LAYER_PARTITION_TIMING_GAP_AUDIT",
+  "createdAt": "2026-10-15T04:14:52.911359+00:00",
+  "evidence": {
+    "Core39": {
+      "path": "/tmp/g350-source24-core-root-20261015-0310/output/raw-core.json",
+      "sha256": "85c99a617ee1bbaeb88046e3ce37bfa420f86affb4dd897ef7db685ea72b72f0",
+      "bytes": 5498361,
+      "mode": 384
+    },
+    "Native41": {
+      "path": "/tmp/g350-source24-native-root-20261015-0324/output/native24-report.json",
+      "sha256": "601a7eadcf1fb773d3d457c614f61eee41f3de7969847171e817aa11487a347d",
+      "bytes": 234387,
+      "mode": 384
+    },
+    "API42": {
+      "path": "/tmp/g350-source24-api-root-20261015-0345/output/actual-original-api24.json",
+      "sha256": "8e7d35898516aa5bf5c9bf703f820f9bfc9a4de2e6c0c468ac399cc2745bb251",
+      "bytes": 55195,
+      "mode": 384
+    },
+    "originalPlanarLengthImplementation": {
+      "path": "/workspace/bus-lanes-solver/.cache/g350-ti-v12e-c-runtime128-cpu34-active-observer-next/source/lib/route-lengths.ts",
+      "sha256": "39344e8f84cddadd3ee965431b48a2cb13e48df61df34b38052842b5d6e14f42",
+      "bytes": 4760,
+      "mode": 420
+    }
+  },
+  "inputsHeldBeforeAfter": true,
+  "currentCheckedPhysicalGraphs": 24,
+  "originalRequests": 49,
+  "missingRequests": 25,
+  "wholeSource24AcceptanceClaimed": false,
+  "assumptions": {
+    "boardThicknessMm": 1.6,
+    "clockMHz": 400,
+    "clockPeriodNs": 2.5,
+    "ddrUnitIntervalNs": 1.25,
+    "outerDielectricExamplesMm": [
+      0.1,
+      0.15,
+      0.2
+    ],
+    "depthModel": "Top0,Inner1=h,Inner2=1.6-h,Bottom1.6",
+    "seriesViaModel": "Two top-to-carrier transitions; total active vertical distance=2*carrierDepth. Full-through barrel portions beyond the selected inner layer are open branches, not added series length.",
+    "actualManufacturerStackupSelected": false,
+    "actualLayerDepthsKnown": false,
+    "actualCopperThicknessOrResinDkOrDkFrequencyModelKnown": false,
+    "viaDelayModeled": false,
+    "packageDelayModeled": false,
+    "impedanceAndReturnReferenceQualified": false,
+    "electricalDelayCalculated": false
+  },
+  "loadedCohorts": [
+    {
+      "busId": "DDR_BYTE0",
+      "loadedCount": 5,
+      "fullOriginalCount": 11,
+      "actualPlanarMatched": true,
+      "actualPlanarSkewMm": 0.5275905949317732,
+      "actualPlanarToleranceMm": 0.635,
+      "actualPlanarHeadroomMm": 0.10740940506822683,
+      "actualPlanarMaximumMm": 13.2,
+      "assumedScenarios": [
+        {
+          "outerDielectricAssumptionMm": 0.1,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.1,
+            "inner2": 1.5,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_16",
+          "maximumSourceTraceId": "source_trace_4",
+          "minimumGeometricMm": 12.867864635294879,
+          "maximumGeometricMm": 13.395455230226652,
+          "geometricSkewMm": 0.5275905949317732,
+          "exceedsPoint635ReferenceOnly": false,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_14",
+              "carrierLayer": "inner1",
+              "planarMm": 12.672447327281727,
+              "topFixedPlanarMm": 9.941076477383248,
+              "carrierPlanarMm": 2.7313708498984783,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 12.872447327281726
+            },
+            {
+              "sourceTraceId": "source_trace_15",
+              "carrierLayer": "inner1",
+              "planarMm": 12.71486951841296,
+              "topFixedPlanarMm": 1.1313708498984767,
+              "carrierPlanarMm": 11.583498668514483,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 12.91486951841296
+            },
+            {
+              "sourceTraceId": "source_trace_31",
+              "carrierLayer": "inner1",
+              "planarMm": 12.840600414340333,
+              "topFixedPlanarMm": 1.131370849898477,
+              "carrierPlanarMm": 11.709229564441856,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 13.040600414340332
+            },
+            {
+              "sourceTraceId": "source_trace_4",
+              "carrierLayer": "inner1",
+              "planarMm": 13.195455230226653,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.064084380328177,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 13.395455230226652
+            },
+            {
+              "sourceTraceId": "source_trace_16",
+              "carrierLayer": "inner1",
+              "planarMm": 12.66786463529488,
+              "topFixedPlanarMm": 1.1313708498984762,
+              "carrierPlanarMm": 11.536493785396404,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 12.867864635294879
+            }
+          ]
+        },
+        {
+          "outerDielectricAssumptionMm": 0.15,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.15,
+            "inner2": 1.4500000000000002,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_16",
+          "maximumSourceTraceId": "source_trace_4",
+          "minimumGeometricMm": 12.96786463529488,
+          "maximumGeometricMm": 13.495455230226653,
+          "geometricSkewMm": 0.5275905949317732,
+          "exceedsPoint635ReferenceOnly": false,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_14",
+              "carrierLayer": "inner1",
+              "planarMm": 12.672447327281727,
+              "topFixedPlanarMm": 9.941076477383248,
+              "carrierPlanarMm": 2.7313708498984783,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 12.972447327281728
+            },
+            {
+              "sourceTraceId": "source_trace_15",
+              "carrierLayer": "inner1",
+              "planarMm": 12.71486951841296,
+              "topFixedPlanarMm": 1.1313708498984767,
+              "carrierPlanarMm": 11.583498668514483,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 13.014869518412961
+            },
+            {
+              "sourceTraceId": "source_trace_31",
+              "carrierLayer": "inner1",
+              "planarMm": 12.840600414340333,
+              "topFixedPlanarMm": 1.131370849898477,
+              "carrierPlanarMm": 11.709229564441856,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 13.140600414340334
+            },
+            {
+              "sourceTraceId": "source_trace_4",
+              "carrierLayer": "inner1",
+              "planarMm": 13.195455230226653,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.064084380328177,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 13.495455230226653
+            },
+            {
+              "sourceTraceId": "source_trace_16",
+              "carrierLayer": "inner1",
+              "planarMm": 12.66786463529488,
+              "topFixedPlanarMm": 1.1313708498984762,
+              "carrierPlanarMm": 11.536493785396404,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 12.96786463529488
+            }
+          ]
+        },
+        {
+          "outerDielectricAssumptionMm": 0.2,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.2,
+            "inner2": 1.4000000000000001,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_16",
+          "maximumSourceTraceId": "source_trace_4",
+          "minimumGeometricMm": 13.06786463529488,
+          "maximumGeometricMm": 13.595455230226653,
+          "geometricSkewMm": 0.5275905949317732,
+          "exceedsPoint635ReferenceOnly": false,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_14",
+              "carrierLayer": "inner1",
+              "planarMm": 12.672447327281727,
+              "topFixedPlanarMm": 9.941076477383248,
+              "carrierPlanarMm": 2.7313708498984783,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 13.072447327281727
+            },
+            {
+              "sourceTraceId": "source_trace_15",
+              "carrierLayer": "inner1",
+              "planarMm": 12.71486951841296,
+              "topFixedPlanarMm": 1.1313708498984767,
+              "carrierPlanarMm": 11.583498668514483,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 13.114869518412961
+            },
+            {
+              "sourceTraceId": "source_trace_31",
+              "carrierLayer": "inner1",
+              "planarMm": 12.840600414340333,
+              "topFixedPlanarMm": 1.131370849898477,
+              "carrierPlanarMm": 11.709229564441856,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 13.240600414340333
+            },
+            {
+              "sourceTraceId": "source_trace_4",
+              "carrierLayer": "inner1",
+              "planarMm": 13.195455230226653,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.064084380328177,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 13.595455230226653
+            },
+            {
+              "sourceTraceId": "source_trace_16",
+              "carrierLayer": "inner1",
+              "planarMm": 12.66786463529488,
+              "topFixedPlanarMm": 1.1313708498984762,
+              "carrierPlanarMm": 11.536493785396404,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 13.06786463529488
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "busId": "DDR_BYTE1",
+      "loadedCount": 11,
+      "fullOriginalCount": 11,
+      "actualPlanarMatched": true,
+      "actualPlanarSkewMm": 0.6271022553606684,
+      "actualPlanarToleranceMm": 0.635,
+      "actualPlanarHeadroomMm": 0.007897744639331572,
+      "actualPlanarMaximumMm": 14.4,
+      "assumedScenarios": [
+        {
+          "outerDielectricAssumptionMm": 0.1,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.1,
+            "inner2": 1.5,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_40",
+          "maximumSourceTraceId": "source_trace_26",
+          "minimumGeometricMm": 14.277102255360669,
+          "maximumGeometricMm": 17.240916292848976,
+          "geometricSkewMm": 2.963814037488307,
+          "exceedsPoint635ReferenceOnly": true,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_29",
+              "carrierLayer": "inner2",
+              "planarMm": 13.740090000889612,
+              "topFixedPlanarMm": 1.1313708498984747,
+              "carrierPlanarMm": 12.608719150991137,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 16.740090000889612
+            },
+            {
+              "sourceTraceId": "source_trace_41",
+              "carrierLayer": "inner2",
+              "planarMm": 13.797128663836501,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 12.665757813938026,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 16.797128663836503
+            },
+            {
+              "sourceTraceId": "source_trace_26",
+              "carrierLayer": "bottom",
+              "planarMm": 14.040916292848976,
+              "topFixedPlanarMm": 1.1313708498984765,
+              "carrierPlanarMm": 12.909545442950499,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 17.240916292848976
+            },
+            {
+              "sourceTraceId": "source_trace_27",
+              "carrierLayer": "inner2",
+              "planarMm": 13.542653789032027,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.411282939133551,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 16.542653789032027
+            },
+            {
+              "sourceTraceId": "source_trace_40",
+              "carrierLayer": "inner1",
+              "planarMm": 14.07710225536067,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.945731405462194,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 14.277102255360669
+            },
+            {
+              "sourceTraceId": "source_trace_12",
+              "carrierLayer": "inner2",
+              "planarMm": 14.05,
+              "topFixedPlanarMm": 1.1313708498984738,
+              "carrierPlanarMm": 12.918629150101527,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 17.05
+            },
+            {
+              "sourceTraceId": "source_trace_2",
+              "carrierLayer": "inner2",
+              "planarMm": 13.799999999999999,
+              "topFixedPlanarMm": 1.1313708498984751,
+              "carrierPlanarMm": 12.668629150101523,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 16.799999999999997
+            },
+            {
+              "sourceTraceId": "source_trace_28",
+              "carrierLayer": "inner2",
+              "planarMm": 13.542653789032022,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.411282939133546,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 16.542653789032023
+            },
+            {
+              "sourceTraceId": "source_trace_11",
+              "carrierLayer": "bottom",
+              "planarMm": 13.45000000000005,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 12.318629150101575,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 16.650000000000052
+            },
+            {
+              "sourceTraceId": "source_trace_13",
+              "carrierLayer": "bottom",
+              "planarMm": 13.8,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.668629150101525,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 17.0
+            },
+            {
+              "sourceTraceId": "source_trace_1",
+              "carrierLayer": "bottom",
+              "planarMm": 13.450000000000001,
+              "topFixedPlanarMm": 1.1313708498984751,
+              "carrierPlanarMm": 12.318629150101525,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 16.650000000000002
+            }
+          ]
+        },
+        {
+          "outerDielectricAssumptionMm": 0.15,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.15,
+            "inner2": 1.4500000000000002,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_40",
+          "maximumSourceTraceId": "source_trace_26",
+          "minimumGeometricMm": 14.37710225536067,
+          "maximumGeometricMm": 17.240916292848976,
+          "geometricSkewMm": 2.8638140374883054,
+          "exceedsPoint635ReferenceOnly": true,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_29",
+              "carrierLayer": "inner2",
+              "planarMm": 13.740090000889612,
+              "topFixedPlanarMm": 1.1313708498984747,
+              "carrierPlanarMm": 12.608719150991137,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 16.640090000889614
+            },
+            {
+              "sourceTraceId": "source_trace_41",
+              "carrierLayer": "inner2",
+              "planarMm": 13.797128663836501,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 12.665757813938026,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 16.6971286638365
+            },
+            {
+              "sourceTraceId": "source_trace_26",
+              "carrierLayer": "bottom",
+              "planarMm": 14.040916292848976,
+              "topFixedPlanarMm": 1.1313708498984765,
+              "carrierPlanarMm": 12.909545442950499,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 17.240916292848976
+            },
+            {
+              "sourceTraceId": "source_trace_27",
+              "carrierLayer": "inner2",
+              "planarMm": 13.542653789032027,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.411282939133551,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 16.44265378903203
+            },
+            {
+              "sourceTraceId": "source_trace_40",
+              "carrierLayer": "inner1",
+              "planarMm": 14.07710225536067,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.945731405462194,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 14.37710225536067
+            },
+            {
+              "sourceTraceId": "source_trace_12",
+              "carrierLayer": "inner2",
+              "planarMm": 14.05,
+              "topFixedPlanarMm": 1.1313708498984738,
+              "carrierPlanarMm": 12.918629150101527,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 16.950000000000003
+            },
+            {
+              "sourceTraceId": "source_trace_2",
+              "carrierLayer": "inner2",
+              "planarMm": 13.799999999999999,
+              "topFixedPlanarMm": 1.1313708498984751,
+              "carrierPlanarMm": 12.668629150101523,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 16.7
+            },
+            {
+              "sourceTraceId": "source_trace_28",
+              "carrierLayer": "inner2",
+              "planarMm": 13.542653789032022,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.411282939133546,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 16.442653789032022
+            },
+            {
+              "sourceTraceId": "source_trace_11",
+              "carrierLayer": "bottom",
+              "planarMm": 13.45000000000005,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 12.318629150101575,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 16.650000000000052
+            },
+            {
+              "sourceTraceId": "source_trace_13",
+              "carrierLayer": "bottom",
+              "planarMm": 13.8,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.668629150101525,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 17.0
+            },
+            {
+              "sourceTraceId": "source_trace_1",
+              "carrierLayer": "bottom",
+              "planarMm": 13.450000000000001,
+              "topFixedPlanarMm": 1.1313708498984751,
+              "carrierPlanarMm": 12.318629150101525,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 16.650000000000002
+            }
+          ]
+        },
+        {
+          "outerDielectricAssumptionMm": 0.2,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.2,
+            "inner2": 1.4000000000000001,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_40",
+          "maximumSourceTraceId": "source_trace_26",
+          "minimumGeometricMm": 14.47710225536067,
+          "maximumGeometricMm": 17.240916292848976,
+          "geometricSkewMm": 2.763814037488306,
+          "exceedsPoint635ReferenceOnly": true,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_29",
+              "carrierLayer": "inner2",
+              "planarMm": 13.740090000889612,
+              "topFixedPlanarMm": 1.1313708498984747,
+              "carrierPlanarMm": 12.608719150991137,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 16.540090000889613
+            },
+            {
+              "sourceTraceId": "source_trace_41",
+              "carrierLayer": "inner2",
+              "planarMm": 13.797128663836501,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 12.665757813938026,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 16.5971286638365
+            },
+            {
+              "sourceTraceId": "source_trace_26",
+              "carrierLayer": "bottom",
+              "planarMm": 14.040916292848976,
+              "topFixedPlanarMm": 1.1313708498984765,
+              "carrierPlanarMm": 12.909545442950499,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 17.240916292848976
+            },
+            {
+              "sourceTraceId": "source_trace_27",
+              "carrierLayer": "inner2",
+              "planarMm": 13.542653789032027,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.411282939133551,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 16.342653789032028
+            },
+            {
+              "sourceTraceId": "source_trace_40",
+              "carrierLayer": "inner1",
+              "planarMm": 14.07710225536067,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.945731405462194,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 14.47710225536067
+            },
+            {
+              "sourceTraceId": "source_trace_12",
+              "carrierLayer": "inner2",
+              "planarMm": 14.05,
+              "topFixedPlanarMm": 1.1313708498984738,
+              "carrierPlanarMm": 12.918629150101527,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 16.85
+            },
+            {
+              "sourceTraceId": "source_trace_2",
+              "carrierLayer": "inner2",
+              "planarMm": 13.799999999999999,
+              "topFixedPlanarMm": 1.1313708498984751,
+              "carrierPlanarMm": 12.668629150101523,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 16.599999999999998
+            },
+            {
+              "sourceTraceId": "source_trace_28",
+              "carrierLayer": "inner2",
+              "planarMm": 13.542653789032022,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.411282939133546,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 16.34265378903202
+            },
+            {
+              "sourceTraceId": "source_trace_11",
+              "carrierLayer": "bottom",
+              "planarMm": 13.45000000000005,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 12.318629150101575,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 16.650000000000052
+            },
+            {
+              "sourceTraceId": "source_trace_13",
+              "carrierLayer": "bottom",
+              "planarMm": 13.8,
+              "topFixedPlanarMm": 1.131370849898476,
+              "carrierPlanarMm": 12.668629150101525,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 17.0
+            },
+            {
+              "sourceTraceId": "source_trace_1",
+              "carrierLayer": "bottom",
+              "planarMm": 13.450000000000001,
+              "topFixedPlanarMm": 1.1313708498984751,
+              "carrierPlanarMm": 12.318629150101525,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 16.650000000000002
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "busId": "DDR_COMMAND_CLOCK",
+      "loadedCount": 8,
+      "fullOriginalCount": 26,
+      "actualPlanarMatched": true,
+      "actualPlanarSkewMm": 0.08544335811761172,
+      "actualPlanarToleranceMm": 0.635,
+      "actualPlanarHeadroomMm": 0.5495566418823883,
+      "actualPlanarMaximumMm": 23.49,
+      "assumedScenarios": [
+        {
+          "outerDielectricAssumptionMm": 0.1,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.1,
+            "inner2": 1.5,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_34",
+          "maximumSourceTraceId": "source_trace_46",
+          "minimumGeometricMm": 21.514556643840397,
+          "maximumGeometricMm": 24.60000000070771,
+          "geometricSkewMm": 3.0854433568673123,
+          "exceedsPoint635ReferenceOnly": true,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_33",
+              "carrierLayer": "inner1",
+              "planarMm": 21.39777715793513,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.266406308036654,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 21.59777715793513
+            },
+            {
+              "sourceTraceId": "source_trace_34",
+              "carrierLayer": "inner1",
+              "planarMm": 21.314556643840397,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.18318579394192,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 21.514556643840397
+            },
+            {
+              "sourceTraceId": "source_trace_48",
+              "carrierLayer": "inner2",
+              "planarMm": 21.400000000480993,
+              "topFixedPlanarMm": 1.131370849898477,
+              "carrierPlanarMm": 20.268629150582516,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 24.400000000480993
+            },
+            {
+              "sourceTraceId": "source_trace_5",
+              "carrierLayer": "inner1",
+              "planarMm": 21.40000000000924,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629150110762,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 21.60000000000924
+            },
+            {
+              "sourceTraceId": "source_trace_8",
+              "carrierLayer": "inner2",
+              "planarMm": 21.40000000195801,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629152059532,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 24.40000000195801
+            },
+            {
+              "sourceTraceId": "source_trace_9",
+              "carrierLayer": "inner2",
+              "planarMm": 21.39999999999883,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629150100352,
+              "activeViaSeriesMm": 3.0,
+              "geometricTotalMm": 24.39999999999883
+            },
+            {
+              "sourceTraceId": "source_trace_24",
+              "carrierLayer": "inner1",
+              "planarMm": 21.399999999775964,
+              "topFixedPlanarMm": 1.1313708498984778,
+              "carrierPlanarMm": 20.268629149877487,
+              "activeViaSeriesMm": 0.2,
+              "geometricTotalMm": 21.599999999775964
+            },
+            {
+              "sourceTraceId": "source_trace_46",
+              "carrierLayer": "bottom",
+              "planarMm": 21.40000000070771,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.268629150809232,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 24.60000000070771
+            }
+          ]
+        },
+        {
+          "outerDielectricAssumptionMm": 0.15,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.15,
+            "inner2": 1.4500000000000002,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_34",
+          "maximumSourceTraceId": "source_trace_46",
+          "minimumGeometricMm": 21.614556643840398,
+          "maximumGeometricMm": 24.60000000070771,
+          "geometricSkewMm": 2.985443356867311,
+          "exceedsPoint635ReferenceOnly": true,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_33",
+              "carrierLayer": "inner1",
+              "planarMm": 21.39777715793513,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.266406308036654,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 21.697777157935132
+            },
+            {
+              "sourceTraceId": "source_trace_34",
+              "carrierLayer": "inner1",
+              "planarMm": 21.314556643840397,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.18318579394192,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 21.614556643840398
+            },
+            {
+              "sourceTraceId": "source_trace_48",
+              "carrierLayer": "inner2",
+              "planarMm": 21.400000000480993,
+              "topFixedPlanarMm": 1.131370849898477,
+              "carrierPlanarMm": 20.268629150582516,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 24.300000000480992
+            },
+            {
+              "sourceTraceId": "source_trace_5",
+              "carrierLayer": "inner1",
+              "planarMm": 21.40000000000924,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629150110762,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 21.70000000000924
+            },
+            {
+              "sourceTraceId": "source_trace_8",
+              "carrierLayer": "inner2",
+              "planarMm": 21.40000000195801,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629152059532,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 24.30000000195801
+            },
+            {
+              "sourceTraceId": "source_trace_9",
+              "carrierLayer": "inner2",
+              "planarMm": 21.39999999999883,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629150100352,
+              "activeViaSeriesMm": 2.9000000000000004,
+              "geometricTotalMm": 24.299999999998832
+            },
+            {
+              "sourceTraceId": "source_trace_24",
+              "carrierLayer": "inner1",
+              "planarMm": 21.399999999775964,
+              "topFixedPlanarMm": 1.1313708498984778,
+              "carrierPlanarMm": 20.268629149877487,
+              "activeViaSeriesMm": 0.3,
+              "geometricTotalMm": 21.699999999775965
+            },
+            {
+              "sourceTraceId": "source_trace_46",
+              "carrierLayer": "bottom",
+              "planarMm": 21.40000000070771,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.268629150809232,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 24.60000000070771
+            }
+          ]
+        },
+        {
+          "outerDielectricAssumptionMm": 0.2,
+          "depthsAssumedMm": {
+            "top": 0,
+            "inner1": 0.2,
+            "inner2": 1.4000000000000001,
+            "bottom": 1.6
+          },
+          "minimumSourceTraceId": "source_trace_34",
+          "maximumSourceTraceId": "source_trace_46",
+          "minimumGeometricMm": 21.714556643840396,
+          "maximumGeometricMm": 24.60000000070771,
+          "geometricSkewMm": 2.885443356867313,
+          "exceedsPoint635ReferenceOnly": true,
+          "notAnElectricalOrOriginalCheckerPassFail": true,
+          "lengths": [
+            {
+              "sourceTraceId": "source_trace_33",
+              "carrierLayer": "inner1",
+              "planarMm": 21.39777715793513,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.266406308036654,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 21.79777715793513
+            },
+            {
+              "sourceTraceId": "source_trace_34",
+              "carrierLayer": "inner1",
+              "planarMm": 21.314556643840397,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.18318579394192,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 21.714556643840396
+            },
+            {
+              "sourceTraceId": "source_trace_48",
+              "carrierLayer": "inner2",
+              "planarMm": 21.400000000480993,
+              "topFixedPlanarMm": 1.131370849898477,
+              "carrierPlanarMm": 20.268629150582516,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 24.200000000480994
+            },
+            {
+              "sourceTraceId": "source_trace_5",
+              "carrierLayer": "inner1",
+              "planarMm": 21.40000000000924,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629150110762,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 21.800000000009238
+            },
+            {
+              "sourceTraceId": "source_trace_8",
+              "carrierLayer": "inner2",
+              "planarMm": 21.40000000195801,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629152059532,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 24.20000000195801
+            },
+            {
+              "sourceTraceId": "source_trace_9",
+              "carrierLayer": "inner2",
+              "planarMm": 21.39999999999883,
+              "topFixedPlanarMm": 1.1313708498984758,
+              "carrierPlanarMm": 20.268629150100352,
+              "activeViaSeriesMm": 2.8000000000000003,
+              "geometricTotalMm": 24.19999999999883
+            },
+            {
+              "sourceTraceId": "source_trace_24",
+              "carrierLayer": "inner1",
+              "planarMm": 21.399999999775964,
+              "topFixedPlanarMm": 1.1313708498984778,
+              "carrierPlanarMm": 20.268629149877487,
+              "activeViaSeriesMm": 0.4,
+              "geometricTotalMm": 21.799999999775963
+            },
+            {
+              "sourceTraceId": "source_trace_46",
+              "carrierLayer": "bottom",
+              "planarMm": 21.40000000070771,
+              "topFixedPlanarMm": 1.1313708498984774,
+              "carrierPlanarMm": 20.268629150809232,
+              "activeViaSeriesMm": 3.2,
+              "geometricTotalMm": 24.60000000070771
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "differentialPairs": [
+    {
+      "pair": "DQS0",
+      "sourceTraceIds": [
+        "source_trace_15",
+        "source_trace_16"
+      ],
+      "carrierLayer": "inner1",
+      "actualPlanarSkewMm": 0.04700488311808115,
+      "actualPlanarToleranceMm": 0.127,
+      "actualPlanarHeadroomMm": 0.07999511688191885,
+      "assumedScenarios": [
+        {
+          "outerDielectricAssumptionMm": 0.1,
+          "seriesActiveViaMmEachSignal": 0.2,
+          "geometricPairSkewMm": 0.04700488311808115
+        },
+        {
+          "outerDielectricAssumptionMm": 0.15,
+          "seriesActiveViaMmEachSignal": 0.3,
+          "geometricPairSkewMm": 0.04700488311808115
+        },
+        {
+          "outerDielectricAssumptionMm": 0.2,
+          "seriesActiveViaMmEachSignal": 0.4,
+          "geometricPairSkewMm": 0.04700488311808115
+        }
+      ]
+    },
+    {
+      "pair": "DQS1",
+      "sourceTraceIds": [
+        "source_trace_28",
+        "source_trace_27"
+      ],
+      "carrierLayer": "inner2",
+      "actualPlanarSkewMm": 5.329070518200751e-15,
+      "actualPlanarToleranceMm": 0.127,
+      "actualPlanarHeadroomMm": 0.12699999999999467,
+      "assumedScenarios": [
+        {
+          "outerDielectricAssumptionMm": 0.1,
+          "seriesActiveViaMmEachSignal": 3.0,
+          "geometricPairSkewMm": 3.552713678800501e-15
+        },
+        {
+          "outerDielectricAssumptionMm": 0.15,
+          "seriesActiveViaMmEachSignal": 2.9000000000000004,
+          "geometricPairSkewMm": 7.105427357601002e-15
+        },
+        {
+          "outerDielectricAssumptionMm": 0.2,
+          "seriesActiveViaMmEachSignal": 2.8000000000000003,
+          "geometricPairSkewMm": 7.105427357601002e-15
+        }
+      ]
+    },
+    {
+      "pair": "CK",
+      "sourceTraceIds": [
+        "source_trace_33",
+        "source_trace_34"
+      ],
+      "carrierLayer": "inner1",
+      "actualPlanarSkewMm": 0.08322051409473374,
+      "actualPlanarToleranceMm": 0.127,
+      "actualPlanarHeadroomMm": 0.04377948590526626,
+      "assumedScenarios": [
+        {
+          "outerDielectricAssumptionMm": 0.1,
+          "seriesActiveViaMmEachSignal": 0.2,
+          "geometricPairSkewMm": 0.08322051409473374
+        },
+        {
+          "outerDielectricAssumptionMm": 0.15,
+          "seriesActiveViaMmEachSignal": 0.3,
+          "geometricPairSkewMm": 0.08322051409473374
+        },
+        {
+          "outerDielectricAssumptionMm": 0.2,
+          "seriesActiveViaMmEachSignal": 0.4,
+          "geometricPairSkewMm": 0.08322051409473374
+        }
+      ]
+    }
+  ],
+  "source14LayerPartition": {
+    "sourceTraceId": "source_trace_14",
+    "topFixedPlanarMm": 9.941076477383247,
+    "inner1CarrierPlanarMm": 2.7313708498984783,
+    "otherLoadedByte0TopFixedRangeMm": [
+      1.131370849898476,
+      1.131370849898477
+    ],
+    "additionalTopInsteadOfInner1Mm": 8.809705627484771,
+    "equalGeometricLengthDoesNotEstablishEqualDelay": true
+  },
+  "propagationModelNeeded": "tau=Lt/vt+Lcarrier/vlayer+sum(active-via-delay)+CPU-package-delay+RAM-package-delay. Include bends, discontinuities, unused via-stub loading and receiver/source conditions in the electrical model; no velocity or package value assumed here.",
+  "recommendedDirection": [
+    "Choose the exact manufacturer four-layer1.6mm stackup and qualify continuous reference/return paths for every used layer, including transitions.",
+    "Use actual per-layer propagation and package delay to tune each byte and CA/clock cohort; do not match across bytes solely because layers differ.",
+    "Prioritize Byte1 source_trace_40 on shallowInner1 versus deepInner2/Bottom peers, and Inner1CK versus deeperCA members. Reduce layer/depth heterogeneity where physically feasible, then retune the real checked routes.",
+    "Preserve Source14 geometry until a replacement is checked; account for its9.941076mmTop partition rather than treating all planar millimeters as one propagation medium.",
+    "Finish all49 actual routes and whole-cohort checks; validate impedance, return transitions, via discontinuities and timing margin before fabrication."
+  ],
+  "originalPlanarRulesChanged": false,
+  "originalPlanarPassesPreserved": true,
+  "SDKOrBunOrCoreNativeApiCliCadOrRoutingExecuted": false,
+  "workspaceWrites": 0,
+  "fullCohortTimingPassed": false,
+  "electricalTimingPassed": false,
+  "referenceQualified": false,
+  "all49Accepted": false,
+  "fabricationReady": false
+}
