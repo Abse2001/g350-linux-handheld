@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-15",
+  "checkedBoardDdrConnections": 23,
+  "required": 49,
+  "newRoutesAdopted": 0,
+  "runs": [
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/corner-priority-60763-RSS-STOP-COLLECTED-root.json",
+      "sha256": "1754c6493b448e24c9f22934af8ff702c17fe4c5de310b5fc79aad274a56bc3b",
+      "receipt": {
+        "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_20_AUTHENTIC_PRIOR_CLOSURES",
+        "phase": "tests",
+        "sourceManifestSha256": "79adad65fc46b5fa2611b476088a606bf3f27dd5d34180bfe37c6fa0211d1aef",
+        "rootGuardProposalManifestSha256": "782f47212ebea49433e5df865efaefac041cb2bd6b37a53866c4426e36ca42cc",
+        "rootStageContractSha256": "ea0b14170ce64f32c71ddebffee010af7e3472ecf5594cdb4eabda284aef1999",
+        "execution": {
+          "startedAt": "2026-10-15T00:21:19.669753+00:00",
+          "command": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "test",
+            "/workspace/bus-lanes-solver/.cache/paired-corner-pair-priority-sourceonly-next/focused-current631.test.ts",
+            "--timeout",
+            "55000"
+          ],
+          "policy": {
+            "wallSeconds": 60,
+            "rssBytes": 1073741824,
+            "sharedBytes": 32212254720,
+            "sampleSeconds": 0.05,
+            "termGraceSeconds": 5
+          },
+          "memoryBefore": {
+            "current": 23512969216,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "exitCode": -15,
+          "diagnosticStopped": true,
+          "stopReasons": [
+            "OWNED_RSS_STOP"
+          ],
+          "accepted": false,
+          "currentGuardPid": 463136,
+          "pid": 463140,
+          "pgid": 463140,
+          "freshLeaderIdentity": {
+            "pid": 463140,
+            "pgid": 463140,
+            "sid": 463140,
+            "start": 22619188,
+            "state": "R",
+            "rss": 94208,
+            "argv": [
+              "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+              "--smol",
+              "test",
+              "/workspace/bus-lanes-solver/.cache/paired-corner-pair-priority-sourceonly-next/focused-current631.test.ts",
+              "--timeout",
+              "55000"
+            ]
+          },
+          "stoppedAt": "2026-10-15T00:21:42.284712+00:00",
+          "stopElapsedSeconds": 22.601181963982526,
+          "signalErrors": [],
+          "signalErrorCount": 0,
+          "endedAt": "2026-10-15T00:21:42.431778+00:00",
+          "wallSeconds": 22.761791185999755,
+          "cleanupOwnedGroupEmpty": true,
+          "peakOwnedRssBytes": 1077477376,
+          "peakSharedBytes": 24571801600,
+          "memoryAfter": {
+            "current": 23512641536,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "oomDelta": {
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "sourceAndDependenciesHeld": true,
+        "stageNaturallyCompleted": false,
+        "passed": false,
+        "authorizedByRoot": true,
+        "toolSessionId": 60763,
+        "toolSessionCollected": true,
+        "toolWrapperExitCode": 2,
+        "toolExitCode": 2,
+        "postauditPath": "/tmp/g350-focused-stage17-corner-priority-20261015-0021/POSTAUDIT.json",
+        "postauditSha256": "7542eb91b43cbfd1f352f1160e3884d80855829832c01c0d098ffb786b798e3d",
+        "childLogPath": "/tmp/g350-focused-stage17-corner-priority-20261015-0021/owned/child.log",
+        "childLogSha256": "985e5c52c0ec2aff50f3cdb48b3eeaab452cd5ae08e6f33796e5e66384bf0a45",
+        "actualTestCounts": null,
+        "focusedCurrentPairCompletionWitnessPresent": false,
+        "independentlyObservedOwnedGroupEmpty": true,
+        "resourceStop": "OWNED_RSS_STOP",
+        "newRoutesAdopted": 0,
+        "all49Accepted": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/corner-allocation-59592-RSS-STOP-WITNESS-COLLECTED-root.json",
+      "sha256": "0f42fb16eb9496f7757b061ba5530c0214ae63c4fe7c22dc22540bff1ba0010f",
+      "receipt": {
+        "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_21_AUTHENTIC_PRIOR_CLOSURES",
+        "phase": "tests",
+        "sourceManifestSha256": "49a9f64dc8a2c4c7aa13f66e2d93954bd18ba2ebbafa184de9eb558455979e5f",
+        "rootGuardProposalManifestSha256": "07c067398f053aa47fdc7474f697311bcccfdad7ac8e67ded3ef4b6f1afb2623",
+        "rootStageContractSha256": "31cfcb64df7178c709390f62f234d821fa850b71de38dab2eb406f735e9a5a3a",
+        "execution": {
+          "startedAt": "2026-10-15T00:31:40.949995+00:00",
+          "command": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "test",
+            "/workspace/bus-lanes-solver/.cache/paired-corner-allocation-cleanup-successor-sourceonly-next/focused-current631.test.ts",
+            "--timeout",
+            "55000"
+          ],
+          "policy": {
+            "wallSeconds": 60,
+            "rssBytes": 1073741824,
+            "sharedBytes": 32212254720,
+            "sampleSeconds": 0.05,
+            "termGraceSeconds": 5
+          },
+          "memoryBefore": {
+            "current": 23517880320,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "exitCode": -15,
+          "diagnosticStopped": true,
+          "stopReasons": [
+            "OWNED_RSS_STOP"
+          ],
+          "accepted": false,
+          "currentGuardPid": 464223,
+          "pid": 464228,
+          "pgid": 464228,
+          "freshLeaderIdentity": {
+            "pid": 464228,
+            "pgid": 464228,
+            "sid": 464228,
+            "start": 22681330,
+            "state": "R",
+            "rss": 90112,
+            "argv": [
+              "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+              "--smol",
+              "test",
+              "/workspace/bus-lanes-solver/.cache/paired-corner-allocation-cleanup-successor-sourceonly-next/focused-current631.test.ts",
+              "--timeout",
+              "55000"
+            ]
+          },
+          "stoppedAt": "2026-10-15T00:32:04.729277+00:00",
+          "stopElapsedSeconds": 23.76791231901734,
+          "signalErrors": [],
+          "signalErrorCount": 0,
+          "endedAt": "2026-10-15T00:32:04.874236+00:00",
+          "wallSeconds": 23.923727592016803,
+          "cleanupOwnedGroupEmpty": true,
+          "peakOwnedRssBytes": 1074499584,
+          "peakSharedBytes": 24573751296,
+          "memoryAfter": {
+            "current": 23517667328,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "oomDelta": {
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "sourceAndDependenciesHeld": true,
+        "stageNaturallyCompleted": false,
+        "passed": false,
+        "allocationDiagnosticEvidenceAvailable": true,
+        "allocationWitnessPath": "/tmp/g350-focused-stage17-corner-allocation-20261015-0031/GRID_ALLOCATION_WITNESS.json",
+        "allocationWitnessSha256": "5dba77fd80e78fc6995f085d216de8ac28aa404c9cd9d6c7a6745f9c1f828a57",
+        "allocationWitnessBytes": 5561,
+        "authorizedByRoot": true,
+        "toolSessionId": 59592,
+        "toolSessionCollected": true,
+        "toolWrapperExitCode": 2,
+        "toolExitCode": 2,
+        "postauditPath": "/tmp/g350-focused-stage17-corner-allocation-20261015-0031/POSTAUDIT.json",
+        "postauditSha256": "b0951dc96dd8f8bd6d9a2549f58e2015b7b1db67d084fa78b984b4a92b611b5e",
+        "childLogPath": "/tmp/g350-focused-stage17-corner-allocation-20261015-0031/owned/child.log",
+        "childLogSha256": "b7198304c83186f430033af2bc63a5f3eddb3f637437725b169ec40dc3d3bbd4",
+        "actualTestCounts": null,
+        "focusedCurrentPairCompletionWitnessPresent": false,
+        "independentlyObservedOwnedGroupEmpty": true,
+        "resourceStop": "OWNED_RSS_STOP",
+        "instrumentedGreenDoesNotProveOptOut79Green": true,
+        "newRoutesAdopted": 0,
+        "all49Accepted": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source14-grid-15884-NATURAL-FAILED-DIAGNOSTIC-COLLECTED-root.json",
+      "sha256": "4ab5ba6b35e54ef7b0f7004ac27c64dcdedb337f71d2ee7472e239fd65657b8e",
+      "receipt": {
+        "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_22_AUTHENTIC_PRIOR_CLOSURES",
+        "phase": "routing",
+        "sourceManifestSha256": "8303428fe1b43bc1e6a2cb7b94fbf8a2f3f39c5774db1f23c9dc33de2650818d",
+        "rootGuardProposalManifestSha256": "237100503261c3fa543b4b3f7e003844c92d15c0d30afe2a5289e4534dbae6dd",
+        "rootStageContractSha256": "4908d1e35d64d5e4525f480da7dcd8619a58e78ccf8e93120249afcf109c490d",
+        "execution": {
+          "startedAt": "2026-10-15T00:39:46.752449+00:00",
+          "command": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-current23-original-grid-inner1-sourceonly-next/route-source14-grid.ts",
+            "/tmp/g350-current23-held-remaining26-source14-grid-20261015-0041/ROOT_AUTHORITY.json"
+          ],
+          "policy": {
+            "wallSeconds": 90,
+            "rssBytes": 2147483648,
+            "sharedBytes": 32212254720,
+            "sampleSeconds": 0.05,
+            "termGraceSeconds": 5
+          },
+          "memoryBefore": {
+            "current": 23521050624,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "exitCode": 0,
+          "diagnosticStopped": false,
+          "stopReasons": [],
+          "accepted": false,
+          "currentGuardPid": 464837,
+          "pid": 464851,
+          "pgid": 464851,
+          "freshLeaderIdentity": {
+            "pid": 464851,
+            "pgid": 464851,
+            "sid": 464851,
+            "start": 22729932,
+            "state": "R",
+            "rss": 94208,
+            "argv": [
+              "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+              "--smol",
+              "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-current23-original-grid-inner1-sourceonly-next/route-source14-grid.ts",
+              "/tmp/g350-current23-held-remaining26-source14-grid-20261015-0041/ROOT_AUTHORITY.json"
+            ]
+          },
+          "endedAt": "2026-10-15T00:39:48.822424+00:00",
+          "wallSeconds": 2.069805616978556,
+          "cleanupOwnedGroupEmpty": true,
+          "peakOwnedRssBytes": 66064384,
+          "peakSharedBytes": 23568904192,
+          "memoryAfter": {
+            "current": 23521927168,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "oomDelta": {
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          },
+          "signalErrors": [],
+          "signalErrorCount": 0
+        },
+        "sourceAndDependenciesHeld": true,
+        "diagnosticCompleted": true,
+        "passed": true,
+        "originalGridSolvedCandidate": false,
+        "candidateTotalPlanarWithinWindow": false,
+        "resultPath": "/tmp/g350-current23-held-remaining26-source14-grid-20261015-0041/output/DIAGNOSTIC_RESULT.json",
+        "resultSha256": "7ad06b376cef0f97de43f24fa8dff5f5288e69c1318959b9a2fc8edf803f210e",
+        "authorizedByRoot": true,
+        "toolSessionId": 15884,
+        "toolSessionCollected": true,
+        "toolWrapperExitCode": 0,
+        "toolExitCode": 0,
+        "postauditPath": "/tmp/g350-current23-held-remaining26-source14-grid-20261015-0041/POSTAUDIT.json",
+        "postauditSha256": "664f5479ca93b3338d567ee9aaad6be81f63f0feeadfd8f1a4befed3da9b3d10",
+        "independentlyObservedOwnedGroupEmpty": true,
+        "gridTermination": "NATURAL_FAILED",
+        "gridExpanded": 0,
+        "gridStep": 0.0508,
+        "newRoutesAdopted": 0,
+        "all49Accepted": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "originPath": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source14-fine-grid-42702-NATURAL-FAILED-DIAGNOSTIC-COLLECTED-root.json",
+      "sha256": "d76f32323474922c74731d2572a9468b910378257789ce9ffc0475c8fff336fd",
+      "receipt": {
+        "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_23_AUTHENTIC_PRIOR_CLOSURES",
+        "phase": "routing",
+        "sourceManifestSha256": "a490123295f2162a832dac12e9fe25c4ae83ad610f00b5d547f55657962debbf",
+        "rootGuardProposalManifestSha256": "5bead18edf5d3a829a52ac264348be973f0c56fa02717d6dbda3d9c4f7e5b5c7",
+        "rootStageContractSha256": "d67a86a6e971d109bf9696f8f3e63de39a15053309d55d25ce44b508df55b8bb",
+        "execution": {
+          "startedAt": "2026-10-15T00:45:37.848836+00:00",
+          "command": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-current23-fine-grid-inner1-sourceonly-next/route-source14-fine-grid.ts",
+            "/tmp/g350-current23-held-remaining26-source14-fine-grid-20261015-0047/ROOT_AUTHORITY.json"
+          ],
+          "policy": {
+            "wallSeconds": 90,
+            "rssBytes": 2147483648,
+            "sharedBytes": 32212254720,
+            "sampleSeconds": 0.05,
+            "termGraceSeconds": 5
+          },
+          "memoryBefore": {
+            "current": 23524798464,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "exitCode": 0,
+          "diagnosticStopped": false,
+          "stopReasons": [],
+          "accepted": false,
+          "currentGuardPid": 465298,
+          "pid": 465303,
+          "pgid": 465303,
+          "freshLeaderIdentity": {
+            "pid": 465303,
+            "pgid": 465303,
+            "sid": 465303,
+            "start": 22765057,
+            "state": "R",
+            "rss": 94208,
+            "argv": [
+              "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+              "--smol",
+              "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-current23-fine-grid-inner1-sourceonly-next/route-source14-fine-grid.ts",
+              "/tmp/g350-current23-held-remaining26-source14-fine-grid-20261015-0047/ROOT_AUTHORITY.json"
+            ]
+          },
+          "endedAt": "2026-10-15T00:45:39.744576+00:00",
+          "wallSeconds": 1.8954439169901889,
+          "cleanupOwnedGroupEmpty": true,
+          "peakOwnedRssBytes": 70762496,
+          "peakSharedBytes": 23577116672,
+          "memoryAfter": {
+            "current": 23524978688,
+            "events": {
+              "low": 0,
+              "high": 0,
+              "max": 0,
+              "oom": 0,
+              "oom_kill": 0,
+              "oom_group_kill": 0
+            }
+          },
+          "oomDelta": {
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          },
+          "signalErrors": [],
+          "signalErrorCount": 0
+        },
+        "sourceAndDependenciesHeld": true,
+        "diagnosticCompleted": true,
+        "passed": true,
+        "originalGridSolvedCandidate": false,
+        "candidateTotalPlanarWithinWindow": false,
+        "resultPath": "/tmp/g350-current23-held-remaining26-source14-fine-grid-20261015-0047/output/DIAGNOSTIC_RESULT.json",
+        "resultSha256": "a14fdd287aadc45a968253ee8bc5add8f5fd6798aa29cc3744c951ebc4edbcb5",
+        "authorizedByRoot": true,
+        "toolSessionId": 42702,
+        "toolSessionCollected": true,
+        "toolWrapperExitCode": 0,
+        "toolExitCode": 0,
+        "postauditPath": "/tmp/g350-current23-held-remaining26-source14-fine-grid-20261015-0047/POSTAUDIT.json",
+        "postauditSha256": "7410e667924519f41da629fa4243efdd71aedda4ce9471e6bb20060b76c95291",
+        "independentlyObservedOwnedGroupEmpty": true,
+        "gridTermination": "NATURAL_FAILED",
+        "gridExpanded": 0,
+        "gridStep": 0.010159999999999999,
+        "constructorFailureReason": "REACHABILITY_COMPONENT_REJECTION",
+        "constructorAttachments": {
+          "starts": 8,
+          "ends": 8,
+          "cellCount": 1413721
+        },
+        "newRoutesAdopted": 0,
+        "all49Accepted": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "memoryCauseProven": false,
+  "source14CoarseFailureDoesNotProvePhysicalInfeasibility": true,
+  "fabricationReady": false,
+  "fineInner1Result": {
+    "gridStepMm": 0.010159999999999999,
+    "gridCells": 1413721,
+    "startAttachments": 8,
+    "endAttachments": 8,
+    "failureReason": "REACHABILITY_COMPONENT_REJECTION",
+    "expanded": 0,
+    "newRoute": false
+  }
+}
