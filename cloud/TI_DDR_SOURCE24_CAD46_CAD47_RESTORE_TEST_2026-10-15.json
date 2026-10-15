@@ -1,0 +1,300 @@
+{
+  "scope": "ROOT_ACTUAL_THROUGH47_SMALL32_DELTA_PACK_AND_RESTORE_CONTROLS",
+  "passed": true,
+  "controlCount": 29,
+  "controls": [
+    {
+      "control": "missing old333 prerequisite refuses without delta writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing API98 prerequisites refuse without delta writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing API98 file refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "same-length changed API98 file refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "API98 mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "API98 prerequisite symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "bad API98 index hash refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing all CLI45 prerequisites refuses without delta writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing CLI45 file refuses before new32 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "same-length changed CLI45 file refuses before new32 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "CLI45 mode mismatch refuses before new32 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "CLI45 prerequisite symlink refuses before new32 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "bad CLI45 index hash refuses before new32 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing CLI45 index refuses before new32 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "fresh two-root delta restoration",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 32,
+        "existingExactFiles": 0,
+        "absentFiles": 32,
+        "createdFiles": 32,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "idempotent delta restoration",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 32,
+        "existingExactFiles": 32,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "verify-only makes no writes",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 32,
+        "existingExactFiles": 32,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "wrong delta index pin refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "corrupt delta archive refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "late collision prevents early restoration",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "delta existing mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "archive symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "delta ancestor symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "overlapping roots refuse",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "changed old333 prerequisite refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "delta overlap with API98 refuses despite rebound valid pins",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "delta overlap with old333 refuses despite rebound valid pins",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "delta overlap with CLI45 refuses despite rebound valid pins",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "final independent verification after all refusal controls",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 32,
+        "existingExactFiles": 32,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "archivePath": "/tmp/g350-source24-through47-small32-portable-root/packed/g350-ti-ddr-source24-cad46-cad47-small-source-data-2026-10-15.tar.gz",
+  "archiveSha256": "0d8ece262e52fd80ba99885b78f8cebf16650cb332232006a6b0d093b0304005",
+  "archiveBytes": 327745,
+  "indexPath": "/tmp/g350-source24-through47-small32-portable-root/packed/g350-ti-ddr-source24-cad46-cad47-small-source-data-2026-10-15.manifest.json",
+  "indexSha256": "ed804e00a4eea89e4bf4ae0e00bed042f4afd3aa1b5583dcd6be9b25f05bb771",
+  "restorerPath": "/tmp/g350-source24-through47-small32-portable-root/packed/restore-g350-source24-through47-small-source-data.py",
+  "restorerSha256": "d5642e2d50a84b8e68765ed2371313063d8ea19d5b99ac644cb502fa822443ce",
+  "fileCount": 32,
+  "logicalBytes": 2558901,
+  "expandedTarBytes": 2600960,
+  "requiredOld333Rows": 211,
+  "requiredApi98Rows": 98,
+  "requiredCli45Rows": 45,
+  "privateTestRootsCleaned": true,
+  "sourceOrHardwareEdited": false,
+  "SDKOrAppsImported": false,
+  "newSdkScopeOpened": false,
+  "workspaceFilesWritten": false,
+  "allMutationsPrivateTmp": true,
+  "source24AcceptedByPacker": false,
+  "historicalPartial24Recorded": true,
+  "all49Accepted": false,
+  "fabricationReady": false
+}
