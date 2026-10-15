@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "scope": "PORTABLE_C30_CLOCK_SEARCH_OUTCOMES_2026_10_15",
+  "board": "G350 AM3352 handheld",
+  "currentCheckedBoard": {
+    "completeDdrChannels": 23,
+    "requiredDdrChannels": 49,
+    "missingDdrChannels": 26,
+    "standardDogboneVias": 98,
+    "newRoutesAdoptedFromTheseDiagnostics": 0,
+    "all49Accepted": false,
+    "referenceQualified": false,
+    "electricalTimingPassed": false,
+    "fixReleaseQualificationPassed": false,
+    "fabricationReady": false
+  },
+  "sourcePins": {
+    "genuineBoardSourceManifestSha256": "68798e7d9132d01d15cd2b67db31fdfe5d18bc745c86defd39de9e598129d565",
+    "faithfulCurrent49InputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+    "c30SourceManifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695"
+  },
+  "commonGeometryAndLimits": {
+    "pairNames": [
+      "source_trace_33",
+      "source_trace_34"
+    ],
+    "layer": "inner1",
+    "fullInputRequests": 49,
+    "fixedCopperPrimitives": 2362,
+    "ownerTerminalDisks": 98,
+    "earlierFourPartialRailsIncludedAsHardCopper": false,
+    "allOriginalRoutingPredicatesHeld": true,
+    "wallLimitSeconds": 90,
+    "ownedRssLimitBytes": 2147483648,
+    "pairYieldLimit": 40000,
+    "allocationWitnessLastEventsLimit": 8,
+    "allocationWitnessBytesLimit": 16384
+  },
+  "legacyFirstVisit": {
+    "collection": {
+      "repository": "tscircuit/bus-lanes-solver",
+      "path": ".cache/root-routing-progress/c30-clock-30459-PAIR-YIELD-CAP-DIAGNOSTIC-COLLECTED-root.json",
+      "sha256": "ac40496f5e872481c6e021ab665d09dd5b30256f4e3f1cd9d2a81fa98b244e02"
+    },
+    "postauditSha256": "fdb43879b715e897d2c415617d4a5879dcae5ccce74168b71c996ca7a6705fa6",
+    "sourceManifestSha256": "3d13327912ce80b39e524ea41f15caf0e69c34c5d90811c770b311efe0de42a9",
+    "guardProposalManifestSha256": "a45f06ee2cee9f2707d03a9aef157ad3371232a1038aa2ec11759efb740446df",
+    "execution": {
+      "toolSessionId": 30459,
+      "toolSessionCollected": true,
+      "toolWrapperExitCode": 0,
+      "ownedChildExitCode": 0,
+      "wallSeconds": 37.32717849398614,
+      "peakOwnedRssBytes": 643731456,
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "ownedGroupObservedEmpty": true,
+      "guardObservedAbsent": true,
+      "sourceAndDependenciesHeld": true,
+      "gitMetadataHeld": true,
+      "workspaceFreeFloorHeld": true
+    },
+    "diagnosticCompleted": true,
+    "testSuccess": null,
+    "termination": "ORIGINAL_PAIR_YIELD_CAP",
+    "naturalGeneratorCompletion": false,
+    "originalPairYieldCount": 40000,
+    "returnedCarrierCount": 0,
+    "pairAccepted": false,
+    "allocationObservedEvents": 2916,
+    "lastEightAllocationPasses": "legacy",
+    "compactFallbackReachedBeforeCap": false,
+    "interpretation": "The pair generator was interrupted at its yield limit before compact fallback. This is not a natural-null result or proof that no route exists."
+  },
+  "directCompact": {
+    "collection": {
+      "repository": "tscircuit/bus-lanes-solver",
+      "path": ".cache/root-routing-progress/c30-clock-direct-64637-WALL-STOP-COLLECTED-root.json",
+      "sha256": "e792141e7b897c41dfac12b1ec6ca6e860a7a28a4cf2e7cc4acdf5225d0e71aa"
+    },
+    "postauditSha256": "8247036abfd2decb8e55bfcfd1dd9600e09efb7c344f0f0c242209fd9166784a",
+    "sourceManifestSha256": "f3a9fa7a4ea6750fb21b59d84b5c22ecabe88706d56ea40828f4dea94c8c975a",
+    "guardProposalManifestSha256": "92ea6772e41422342136917cd39e117f2f00b600b3d217daf177af00eb8cec51",
+    "execution": {
+      "toolSessionId": 64637,
+      "toolSessionCollected": true,
+      "toolWrapperExitCode": 2,
+      "ownedChildExitCode": -15,
+      "wallSeconds": 90.2838149080053,
+      "peakOwnedRssBytes": 528244736,
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "ownedGroupObservedEmpty": true,
+      "guardObservedAbsent": true,
+      "sourceAndDependenciesHeld": true,
+      "gitMetadataHeld": true,
+      "workspaceFreeFloorHeld": true
+    },
+    "existingInvocation": "routeCoupledPair(input,pair,fixed,negotiation,false,true)",
+    "searchOrderChanged": true,
+    "directCompactOnly": true,
+    "exactOriginalFull49Call": false,
+    "diagnosticCompleted": false,
+    "testSuccess": null,
+    "stopReason": "WALL_STOP",
+    "naturalGeneratorCompletion": null,
+    "originalPairYieldCount": null,
+    "returnedCarrierCount": null,
+    "finalDiagnosticAndRawPairResultsWritten": false,
+    "pairAccepted": false,
+    "allocationObservedEvents": 989,
+    "lastEightAllocationPasses": "compact",
+    "interpretation": "The 90-second resource guard stopped the child before final diagnostic/raw results. Completion, yield count and returned carrier count remain unknown; this is neither natural null nor a demonstrated 40000-yield cap."
+  },
+  "regressions": {
+    "full644": {
+      "collection": {
+        "repository": "tscircuit/bus-lanes-solver",
+        "path": ".cache/root-routing-progress/c30-full644-97882-644-PASS-COLLECTED-root.json",
+        "sha256": "fd882588a7aef9ec86c9b000d6b92840b3dd8119cfadf53ccffd94754a0e1f2b"
+      },
+      "pass": 644,
+      "fail": 0,
+      "expectCalls": 649237,
+      "files": 189
+    },
+    "focusedOptout9": {
+      "collection": {
+        "repository": "tscircuit/bus-lanes-solver",
+        "path": ".cache/root-routing-progress/c30-optout9-31557-NINE-PASS-NATURAL-PAIR-COLLECTED-root.json",
+        "sha256": "bb4baff6c344e8f1e2ce0bb7921e353c3a6a043961cc4fb2a6e7da3a2dd17a54"
+      },
+      "pass": 9,
+      "fail": 0,
+      "expectCalls": 117,
+      "naturalDqs0YieldCount": 5573,
+      "returnedDqs0Carriers": 2,
+      "allocationObserverInstalled": false
+    },
+    "allElevenCurrentC30BenchmarksQualified": false,
+    "historicalF940BenchmarkStatus": "10 accepted, control-inner1 timed out; historical wrapper unknown remains unknown. It is not an all-eleven pass."
+  },
+  "nextAction": "Preserve these outcomes. Do not repeat either unchanged run or increase limits without a new, evidence-based hypothesis. Independent pair/whole-board geometry, matching, references, electrical timing and fabrication qualification remain required.",
+  "portableReportExcludesPrivateAuthorityAndNonce": true,
+  "reportAuthorRanSdkOrRouter": false
+}
