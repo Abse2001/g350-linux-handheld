@@ -1,0 +1,454 @@
+{
+  "scope": "ROOT_ACTUAL_SOURCE32_THROUGH71_CONDITIONAL_PACK_RESTORE_CONTROLS",
+  "passed": true,
+  "controlCount": 20,
+  "controls": [
+    {
+      "control": "missing1023 prerequisites refuse before new creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missingall466 predecessor files refuse before new creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing466 predecessor row refuses without new writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "same-length changed466 predecessor row refuses without new writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "predecessor466 mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "predecessor466 symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "invalidpredecessor466 index refuses before new creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "archivebyte tamper refuses before new creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "wrong newindex pin refuses before new creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newindex byte tamper refuses before new creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "fresh two-rootN restore afterexact1023",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 315,
+        "existingExactFiles": 0,
+        "absentFiles": 315,
+        "createdFiles": 315,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedSource29Through60FilesVerified": 466,
+        "requiredPreservedUnionFilesVerified": 1023,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "idempotentNrestore",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 315,
+        "existingExactFiles": 315,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedSource29Through60FilesVerified": 466,
+        "requiredPreservedUnionFilesVerified": 1023,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "verifyonlyN nowrites",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 315,
+        "existingExactFiles": 315,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedSource29Through60FilesVerified": 466,
+        "requiredPreservedUnionFilesVerified": 1023,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "late differingdata destination prevents earlycreation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination ancestor symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "overlappingroots refuse",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "valid reboundarchive reshipping466 predecessor refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "finalN independentverification",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 315,
+        "existingExactFiles": 315,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedSource29Through60FilesVerified": 466,
+        "requiredPreservedUnionFilesVerified": 1023,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "scalarPrivacyControlCount": 13,
+  "scalarPrivacyControls": [
+    {
+      "control": "exact four-field public metadata pin and alias accepted without IO",
+      "passed": true
+    },
+    {
+      "control": "public metadata path mutation denied before body read",
+      "passed": true
+    },
+    {
+      "control": "public metadata sha256 mutation denied before body read",
+      "passed": true
+    },
+    {
+      "control": "public metadata bytes mutation denied before body read",
+      "passed": true
+    },
+    {
+      "control": "public metadata mode mutation denied before body read",
+      "passed": true
+    },
+    {
+      "control": "native private ROOT_AUTHORITY denied without IO",
+      "passed": true
+    },
+    {
+      "control": "native private BOUND-manifest denied without IO",
+      "passed": true
+    },
+    {
+      "control": "API private API_ROOT_AUTHORITY denied without IO",
+      "passed": true
+    },
+    {
+      "control": "API private API-BOUND denied without IO",
+      "passed": true
+    },
+    {
+      "control": "projection private PROJECTION-BOUND denied without IO",
+      "passed": true
+    },
+    {
+      "control": "known private-root context basename denied without IO",
+      "passed": true
+    },
+    {
+      "control": "false AUTHORITY.template remains admitted",
+      "passed": true
+    },
+    {
+      "control": "exact public source requires its exact archive alias; private and benign wrong aliases denied",
+      "passed": true
+    }
+  ],
+  "archivePath": "/tmp/g350-source32-through71-portable-root/packed/g350-ti-ddr-source32-through-cad71-source-data-2026-10-15.tar.gz",
+  "archiveSha256": "6fcb88d32a4ffa8ea371706ece696289690c05142a28dca9168f4c40b946a0b3",
+  "archiveBytes": 5349001,
+  "indexPath": "/tmp/g350-source32-through71-portable-root/packed/g350-ti-ddr-source32-through-cad71-source-data-2026-10-15.manifest.json",
+  "indexSha256": "88355cb25a68816e1cd6e2133e66b52feff010387cfc1f1e56af8ecc1b964d68",
+  "restorerPath": "/tmp/g350-source32-through71-portable-root/packed/restore-g350-source32-through71-source-data.py",
+  "restorerSha256": "f316e006aa8ada49ee6ce004e1901d123a6f48ae432aa0c4bf7a1e69b28b43af",
+  "fileCount": 315,
+  "logicalBytes": 63904514,
+  "expandedTarBytes": 64368640,
+  "requiredPriorUnionFiles": 1023,
+  "allSelectedLiveOriginalsRehashed": true,
+  "all1023LivePrerequisitesRehashed": true,
+  "sixRestorerSafetyFunctionsHeld": true,
+  "exclusiveAtomicPublicationBlockHeldByReviewedTemplate": true,
+  "archiveDeterministic": true,
+  "privateTestRootsCleaned": true,
+  "SDKOrAppsImported": false,
+  "newSdkScopeOpened": false,
+  "workspaceFilesWritten": false,
+  "allMutationsPrivateTmp": true,
+  "privateAuthorityOrBoundOrNonceRestored": false,
+  "historicalCollectionsConferNoAuthority": true,
+  "partialHardware32RecordedForReviewOnly": true,
+  "finalSelectionSha256": "6c9b7c153293b48d8f411c6419e6eb83ab28a2c5e8142d603bf613bf00633a82",
+  "actualStages68To71": {
+    "68": {
+      "passed": true,
+      "toolWrapperExitCode": 0,
+      "collection": {
+        "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source32-native-11297-PASS-COLLECTED-root.json",
+        "sha256": "a693c1a7fe96dab55ef58eac5a5b1db285382fd98c58067c454e8700233e3c03",
+        "bytes": 34549,
+        "mode": 384
+      },
+      "postaudit": {
+        "path": "/tmp/g350-source32-native-root-20261015-after67/POSTAUDIT.json",
+        "sha256": "b561211f959d3f40d1d902dd755feae423a64094b9b8858b2146dc7636f95b96",
+        "bytes": 34060,
+        "mode": 384
+      },
+      "report": {
+        "path": "/tmp/g350-source32-native-root-20261015-after67/output/native32-report.json",
+        "sha256": "4ebb7a8de36e934d6e0e1f45554453aefdb34eac498d76c4eb5ac17b75f6eaa2",
+        "bytes": 271687,
+        "mode": 384
+      }
+    },
+    "69": {
+      "passed": true,
+      "toolWrapperExitCode": 0,
+      "collection": {
+        "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source32-api-20114-PASS-COLLECTED-root.json",
+        "sha256": "cfaffe9d86d5fd4f8b445d963ca19f207662a5bbe21991b16c8fc94d8a3650d2",
+        "bytes": 59604,
+        "mode": 384
+      },
+      "postaudit": {
+        "path": "/tmp/g350-source32-api-root-20261015-after68/POSTAUDIT.json",
+        "sha256": "e18a15f4666627125e7b0f9e30f5a2c0aa450007cb7d44e5749c323bc1218c18",
+        "bytes": 58570,
+        "mode": 384
+      },
+      "report": {
+        "path": "/tmp/g350-source32-api-root-20261015-after68/api/output/actual-original-api32.json",
+        "sha256": "c66ded4ae5f54f6eea460de221480bb22c0421b623d8f83d20b223148569a39f",
+        "bytes": 102366,
+        "mode": 384
+      }
+    },
+    "70": {
+      "passed": true,
+      "toolWrapperExitCode": 0,
+      "collection": {
+        "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source32-cli-68586-PASS-COLLECTED-root.json",
+        "sha256": "7832f30f432f6af34714e3ed111150b467b80721494547924c011734427a646c",
+        "bytes": 34728,
+        "mode": 384
+      },
+      "postaudit": {
+        "path": "/tmp/g350-source32-cli-root-20261015-after69/POSTAUDIT.json",
+        "sha256": "9a6db8bc5810cb4e75daeaff7ef9d8827a2730c88bf8c8614da13e8b7a505755",
+        "bytes": 34235,
+        "mode": 384
+      },
+      "report": {
+        "path": "/tmp/g350-source32-cli-root-20261015-after69/output/cli-export-report.json",
+        "sha256": "664585b85a038cd934fc0b6ae67ec3e209340c7ed01228c013e2a1322a9894ba",
+        "bytes": 2942,
+        "mode": 384
+      }
+    },
+    "71": {
+      "passed": true,
+      "toolWrapperExitCode": 0,
+      "collection": {
+        "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source32-cad-27100-PASS-COLLECTED-root.json",
+        "sha256": "2ad37b28f8f364d79dc8341d0bc3e185fa75f3095c9cb2678c73e92a51ce48c0",
+        "bytes": 47253,
+        "mode": 384
+      },
+      "postaudit": {
+        "path": "/tmp/g350-source32-cad-root-20261015-after70/POSTAUDIT.json",
+        "sha256": "9294065891f340585fda0f14b11a39482c0e1635c5eb24042a2cff95bb939a63",
+        "bytes": 46520,
+        "mode": 384
+      },
+      "report": {
+        "path": "/tmp/g350-source32-cad-root-20261015-after70/output/kicad-source32-report.json",
+        "sha256": "3182ab17d4d91f26f0c1d0fc423957174d92f84e7e3298cffe3fdbd49cfdb510",
+        "bytes": 349367,
+        "mode": 384
+      }
+    }
+  },
+  "finalReportMetadata": {
+    "currentPartialCheckedConnections": 32,
+    "remainingOriginal49Requests": 17,
+    "partial32Reviewed": true,
+    "all49Accepted": false,
+    "referenceQualified": false,
+    "electricalTimingQualified": false,
+    "fabricationReady": false
+  },
+  "publicEvidencePins": {
+    "partial32Adoption": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source32-PARTIAL32-ADOPTED-after67-68-69-70-71-root.json",
+      "sha256": "f2666dbc6db137ae3a5582a6e050d92e418cc0ef81c2f65e6df69ed299763a76",
+      "bytes": 2466,
+      "mode": 384
+    },
+    "actual67ThreeStageCollection": {
+      "path": "/workspace/bus-lanes-solver/.cache/root-routing-progress/source32-three-stage-95645-PASS-COLLECTED-root.json",
+      "sha256": "a6ee3d2308288697fe7452034139ee8f6e6dcdf7d18802b6d2227dcc6ff5e900",
+      "bytes": 55824,
+      "mode": 384
+    },
+    "actual67Core": {
+      "path": "/tmp/g350-source32-three-stage-root-20261015-after66/core/output/raw-core.json",
+      "sha256": "8ff53b8f95e06f5323e324f146f6860c45f3dec2bf02ba308c6c0202671d1b03",
+      "bytes": 5473315,
+      "mode": 384
+    },
+    "actual67CoreControls": {
+      "path": "/tmp/g350-source32-three-stage-root-20261015-after66/core/output/core-controls.json",
+      "sha256": "708fac226b6cfdb1f21a8a5bd0fdb50e23b1d5ee8e45e14140c40f5f0793ce7f",
+      "bytes": 1333392,
+      "mode": 384
+    }
+  },
+  "operationalClosureQualified": false,
+  "all49Accepted": false,
+  "referenceQualified": false,
+  "electricalTimingQualified": false,
+  "fabricationReady": false,
+  "intendedPersistence": {
+    "archive": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source32-through-cad71-source-data-2026-10-15.tar.gz",
+    "index": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source32-through-cad71-source-data-2026-10-15.manifest.json",
+    "restorer": "/workspace/g350-linux-handheld/scripts/restore-g350-source32-through71-source-data.py"
+  }
+}
