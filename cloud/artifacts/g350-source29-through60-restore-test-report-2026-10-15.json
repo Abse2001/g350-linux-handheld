@@ -1,0 +1,267 @@
+{
+  "scope": "ROOT_ACTUAL_SOURCE29_THROUGH60_466_PACK_RESTORE_CONTROLS",
+  "passed": true,
+  "controlCount": 20,
+  "controls": [
+    {
+      "control": "missing557 prerequisites refuse before466 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missingall171 predecessor files refuse before466 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing171 predecessor row refuses without466writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "same-length changed171 predecessor row refuses without466writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "predecessor171 mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "predecessor171 symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "invalidpredecessor171 index refuses before466creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "archivebyte tamper refuses before466creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "wrong newindex pin refuses before466creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newindex byte tamper refuses before466creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "fresh two-root466 restore afterexact557",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 466,
+        "existingExactFiles": 0,
+        "absentFiles": 466,
+        "createdFiles": 466,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedUnionFilesVerified": 557,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "idempotent466restore",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 466,
+        "existingExactFiles": 466,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedUnionFilesVerified": 557,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "verifyonly466 nowrites",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 466,
+        "existingExactFiles": 466,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedUnionFilesVerified": 557,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "late differingdata destination prevents earlycreation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination ancestor symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "overlappingroots refuse",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "valid reboundarchive reshipping171 predecessor refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "final466 independentverification",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 466,
+        "existingExactFiles": 466,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedSource26Through52FilesVerified": 171,
+        "requiredPreservedUnionFilesVerified": 557,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "archivePath": "/tmp/g350-source29-through60-portable-root/packed/g350-ti-ddr-source29-through-cad60-source-data-2026-10-15.tar.gz",
+  "archiveSha256": "8d81425376cd4ac8d1f0f93a83021c56c06e894051af758ce959c008bfe9e88f",
+  "archiveBytes": 4277964,
+  "indexPath": "/tmp/g350-source29-through60-portable-root/packed/g350-ti-ddr-source29-through-cad60-source-data-2026-10-15.manifest.json",
+  "indexSha256": "7a39295995479be5b4328d8fe32f9a89d94e3acf4215f075ab8022cd3c475eab",
+  "restorerPath": "/tmp/g350-source29-through60-portable-root/packed/restore-g350-source29-through60-source-data.py",
+  "restorerSha256": "649776f59da98c245a4d08548304e3d02bd6e322f2699227df1c17407b7683ee",
+  "fileCount": 466,
+  "logicalBytes": 46002686,
+  "expandedTarBytes": 46632960,
+  "requiredPriorUnionFiles": 557,
+  "all466LiveOriginalsRehashed": true,
+  "all557LivePrerequisitesRehashed": true,
+  "sixRestorerSafetyFunctionsHeld": true,
+  "exclusiveAtomicPublicationBlockHeld": true,
+  "archiveDeterministic": true,
+  "privateTestRootsCleaned": true,
+  "SDKOrAppsImported": false,
+  "newSdkScopeOpened": false,
+  "workspaceFilesWritten": false,
+  "allMutationsPrivateTmp": true,
+  "privateAuthorityOrBoundOrNonceRestored": false,
+  "historicalCollectionsConferNoAuthority": true,
+  "partialHardware29Recorded": true,
+  "operationalClosureQualified": false,
+  "all49Accepted": false,
+  "fabricationReady": false,
+  "intendedPersistence": {
+    "archive": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source29-through-cad60-source-data-2026-10-15.tar.gz",
+    "index": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source29-through-cad60-source-data-2026-10-15.manifest.json",
+    "restorer": "/workspace/g350-linux-handheld/scripts/restore-g350-source29-through60-source-data.py"
+  }
+}
