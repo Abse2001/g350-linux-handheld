@@ -1,0 +1,541 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-15",
+  "rootCollectedReceipt": {
+    "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_26_AUTHENTIC_PRIOR_CLOSURES",
+    "phase": "tests",
+    "sourceManifestSha256": "d0232d3cf9611d143a48de9b95a9048d5cd362be04808ff4dc84954e90ec1ab6",
+    "rootGuardProposalManifestSha256": "65a8c6c30a58e52cffdad34be444bfffc08a8caa258beb13cc1c7fec14082592",
+    "rootStageContractSha256": "15ce45074d805408a6209e1a60823f03777c33c5d49cc53fd588b471c7c9c72b",
+    "execution": {
+      "startedAt": "2026-10-15T01:17:15.408932+00:00",
+      "command": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "test",
+        "/workspace/bus-lanes-solver/.cache/paired-grid-scratch-capacity-reuse-sourceonly-next/focused-current631.test.ts",
+        "--timeout",
+        "55000"
+      ],
+      "policy": {
+        "wallSeconds": 60,
+        "rssBytes": 1073741824,
+        "sharedBytes": 32212254720,
+        "sampleSeconds": 0.05,
+        "termGraceSeconds": 5
+      },
+      "memoryBefore": {
+        "current": 23528042496,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "exitCode": 1,
+      "diagnosticStopped": false,
+      "stopReasons": [],
+      "accepted": false,
+      "currentGuardPid": 468144,
+      "pid": 468148,
+      "pgid": 468148,
+      "freshLeaderIdentity": {
+        "pid": 468148,
+        "pgid": 468148,
+        "sid": 468148,
+        "start": 22954763,
+        "state": "R",
+        "rss": 94208,
+        "argv": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "test",
+          "/workspace/bus-lanes-solver/.cache/paired-grid-scratch-capacity-reuse-sourceonly-next/focused-current631.test.ts",
+          "--timeout",
+          "55000"
+        ]
+      },
+      "endedAt": "2026-10-15T01:17:50.236785+00:00",
+      "wallSeconds": 34.8276970339939,
+      "cleanupOwnedGroupEmpty": true,
+      "peakOwnedRssBytes": 619495424,
+      "peakSharedBytes": 24127475712,
+      "memoryAfter": {
+        "current": 23529852928,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "signalErrors": [],
+      "signalErrorCount": 0
+    },
+    "sourceAndDependenciesHeld": true,
+    "stageNaturallyCompleted": true,
+    "passed": false,
+    "observedEarlyNamedPasses": [
+      "capacity leases choose the smallest idle fit and isolate stale releases",
+      "capacity-sized travel remains valid across shrink reuse and later growth",
+      "capacity-backed public searches preserve fresh paths yields and cancel isolation",
+      "legacy first success is byte-identical with undefined or explicit negotiation",
+      "a failed no-package search does not repeat identical legacy work",
+      "hard occupancy matches fresh reference across changing grid sizes and copper"
+    ],
+    "observedEarlyNamedPassCount": 6,
+    "observedSuiteSummaryCounts": {
+      "pass": 6,
+      "fail": 1
+    },
+    "authorizedByRoot": true,
+    "toolSessionId": 60822,
+    "toolSessionCollected": true,
+    "toolWrapperExitCode": 2,
+    "toolExitCode": 2,
+    "postauditPath": "/tmp/g350-focused-stage17-scratch-capacity-reuse-20261015-0127/POSTAUDIT.json",
+    "postauditSha256": "a276bcb5168d5707aa6f678ab4dca399c3f241b867db1beea657b7561139ca2d",
+    "childLogPath": "/tmp/g350-focused-stage17-scratch-capacity-reuse-20261015-0127/owned/child.log",
+    "childLogSha256": "d6eb89120c5c2cfe5f8c621424c824a25a7e407c1e689f3341fb135550049c22",
+    "actualTestCounts": {
+      "pass": 6,
+      "fail": 1,
+      "expect": 3865
+    },
+    "testSuiteCompleted": true,
+    "focusedCurrentPairCompletionWitnessPresent": true,
+    "focusedCurrentPairWitness": {
+      "scope": "FOCUSED_CURRENT631_PAIR_DIAGNOSTIC",
+      "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+      "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-grid-scratch-capacity-reuse-sourceonly-next/lib",
+      "naturalGeneratorCompletion": false,
+      "originalYieldCount": 40000,
+      "returnedCarrierCount": 0,
+      "full49Accepted": false,
+      "fabricationReady": false
+    },
+    "originalPairGeneratorNaturallyCompleted": false,
+    "originalPairGeneratorYieldCapReached": true,
+    "originalPairReturnedCarrierCount": 0,
+    "independentlyObservedOwnedGroupEmpty": true,
+    "allocationDiagnosticEvidenceAvailable": true,
+    "allocationWitnessPath": "/tmp/g350-focused-stage17-scratch-capacity-reuse-20261015-0127/GRID_ALLOCATION_WITNESS.json",
+    "allocationWitnessSha256": "a4c00352a3ff882d0070fcfabba870e6af74d81978ef85ec94eb2608a04e683a",
+    "allocationWitnessBytes": 5638,
+    "resourceStop": null,
+    "memoryLimitHit": false,
+    "instrumentedOutcomeDoesNotProveOptOut79Green": true,
+    "newRoutesAdopted": 0,
+    "all49Accepted": false,
+    "fabricationReady": false
+  },
+  "allocationWitness": {
+    "scope": "ROOT_OPT_IN_LAST8_GRID_ALLOCATION_WITNESS",
+    "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+    "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-grid-scratch-capacity-reuse-sourceonly-next/lib",
+    "observedEvents": 3795,
+    "maximumEvents": 8,
+    "maximumBytes": 16384,
+    "events": [
+      {
+        "event": {
+          "phase": "after",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 4,
+            "y": 13.6
+          },
+          "end": {
+            "x": 4.6464,
+            "y": 12.686
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": 0.952,
+            "maxX": 7.6944,
+            "minY": 9.638,
+            "maxY": 16.648
+          },
+          "nx": 665,
+          "ny": 691,
+          "cellCount": 459515,
+          "actualStep": 0.010159999999999999,
+          "actualBounds": {
+            "minX": 0.952,
+            "maxX": 7.6944,
+            "minY": 9.638,
+            "maxY": 16.648
+          },
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "memory": {
+          "rss": 614617088,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "cancel",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 4,
+            "y": 13.6
+          },
+          "end": {
+            "x": 4.6464,
+            "y": 12.686
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": 0.952,
+            "maxX": 7.6944,
+            "minY": 9.638,
+            "maxY": 16.648
+          },
+          "nx": 665,
+          "ny": 691,
+          "cellCount": 459515,
+          "actualStep": 0.010159999999999999,
+          "actualBounds": {
+            "minX": 0.952,
+            "maxX": 7.6944,
+            "minY": 9.638,
+            "maxY": 16.648
+          },
+          "expanded": 39491,
+          "solved": true,
+          "failed": false
+        },
+        "memory": {
+          "rss": 614879232,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "before",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 3.6000000000000005,
+            "y": 8.6
+          },
+          "end": {
+            "x": 8.481200000000001,
+            "y": 11.345600000000001
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": 0.5520000000000005,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.393600000000001
+          },
+          "nx": null,
+          "ny": null,
+          "cellCount": null,
+          "actualStep": null,
+          "actualBounds": null,
+          "expanded": null,
+          "solved": null,
+          "failed": null
+        },
+        "memory": {
+          "rss": 615010304,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "after",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 3.6000000000000005,
+            "y": 8.6
+          },
+          "end": {
+            "x": 8.481200000000001,
+            "y": 11.345600000000001
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": 0.5520000000000005,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.393600000000001
+          },
+          "nx": 1082,
+          "ny": 872,
+          "cellCount": 943504,
+          "actualStep": 0.010159999999999999,
+          "actualBounds": {
+            "minX": 0.5520000000000005,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.393600000000001
+          },
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "memory": {
+          "rss": 615510016,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "cancel",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 3.6000000000000005,
+            "y": 8.6
+          },
+          "end": {
+            "x": 8.481200000000001,
+            "y": 11.345600000000001
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": 0.5520000000000005,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.393600000000001
+          },
+          "nx": 1082,
+          "ny": 872,
+          "cellCount": 943504,
+          "actualStep": 0.010159999999999999,
+          "actualBounds": {
+            "minX": 0.5520000000000005,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.393600000000001
+          },
+          "expanded": 66179,
+          "solved": true,
+          "failed": false
+        },
+        "memory": {
+          "rss": 615510016,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "before",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 2.8000000000000003,
+            "y": 8.6
+          },
+          "end": {
+            "x": 8.481200000000001,
+            "y": 11.124000000000002
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": -0.24799999999999978,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.172000000000002
+          },
+          "nx": null,
+          "ny": null,
+          "cellCount": null,
+          "actualStep": null,
+          "actualBounds": null,
+          "expanded": null,
+          "solved": null,
+          "failed": null
+        },
+        "memory": {
+          "rss": 615510016,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "after",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 2.8000000000000003,
+            "y": 8.6
+          },
+          "end": {
+            "x": 8.481200000000001,
+            "y": 11.124000000000002
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": -0.24799999999999978,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.172000000000002
+          },
+          "nx": 1161,
+          "ny": 850,
+          "cellCount": 986850,
+          "actualStep": 0.010159999999999999,
+          "actualBounds": {
+            "minX": -0.24799999999999978,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.172000000000002
+          },
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "memory": {
+          "rss": 616427520,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "cancel",
+          "role": "escape",
+          "pass": "corners",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 2.8000000000000003,
+            "y": 8.6
+          },
+          "end": {
+            "x": 8.481200000000001,
+            "y": 11.124000000000002
+          },
+          "requestedStep": 0.010159999999999999,
+          "requestedBounds": {
+            "minX": -0.24799999999999978,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.172000000000002
+          },
+          "nx": 1161,
+          "ny": 850,
+          "cellCount": 986850,
+          "actualStep": 0.010159999999999999,
+          "actualBounds": {
+            "minX": -0.24799999999999978,
+            "maxX": 11.529200000000001,
+            "minY": 5.552,
+            "maxY": 14.172000000000002
+          },
+          "expanded": 93000,
+          "solved": false,
+          "failed": true
+        },
+        "memory": {
+          "rss": 616951808,
+          "heapTotal": 295221248,
+          "heapUsed": 307014287,
+          "external": 290049711,
+          "arrayBuffers": 938296
+        }
+      }
+    ],
+    "routingOrderAndPredicatesUnchanged": true,
+    "full49Accepted": false,
+    "fabricationReady": false
+  },
+  "interpretation": {
+    "sixControlTestsPassed": true,
+    "suiteCompleted": true,
+    "pairGeneratorNaturallyCompleted": false,
+    "pairGeneratorStoppedAtUnchangedYieldCap": 40000,
+    "pairRoutesReturned": 0,
+    "memoryGuardHitThisRun": false,
+    "releaseQualificationPassed": false,
+    "checkedDdrConnections": 23,
+    "requiredDdrConnections": 49,
+    "fabricationReady": false
+  },
+  "experimentalPatch": {
+    "path": "cloud/artifacts/g350-grid-scratch-capacity-reuse-2026-10-15.patch",
+    "sha256": "8b0747f8d9b592555a58184fb178cd2aff5343a344cd82c058ea1b0597735edb",
+    "beforeGridScratchSha256": "2e824effaee6dc53b86a645270f75a69ce63214328efca24988c500c3408ea8d",
+    "afterGridScratchSha256": "d3aef8117096716932e04f791da461583c939947fe97ea6eebd085981d4f8901",
+    "notAppliedToInstalledRuntime": true,
+    "format": "Unified diff with zero context; verify the before-file hash before using git apply --unidiff-zero"
+  }
+}

@@ -1,0 +1,22 @@
+--- a/lib/grid-scratch.ts
++++ b/lib/grid-scratch.ts
+@@ -4,0 +5 @@
++  /** Buffer capacity; a search may use a smaller active prefix. */
+@@ -35 +36,8 @@
+-    const bucket = this.available.get(cellCount)
++    let capacity = cellCount
++    if (!this.available.has(cellCount)) {
++      let adequate = Infinity
++      for (const size of this.available.keys())
++        if (size >= cellCount && size < adequate) adequate = size
++      if (adequate < Infinity) capacity = adequate
++    }
++    const bucket = this.available.get(capacity)
+@@ -42 +50 @@
+-    if (bucket && !bucket.length) this.available.delete(cellCount)
++    if (bucket && !bucket.length) this.available.delete(capacity)
+@@ -51,2 +59,2 @@
+-    if (withTravel && !scratch.travel)
+-      scratch.travel = new Float64Array(cellCount)
++    if (withTravel && (!scratch.travel || scratch.travel.length < scratch.cellCount))
++      scratch.travel = new Float64Array(scratch.cellCount)
