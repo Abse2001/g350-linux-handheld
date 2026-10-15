@@ -452,5 +452,871 @@
     "failureReason": "REACHABILITY_COMPONENT_REJECTION",
     "expanded": 0,
     "newRoute": false
+  },
+  "rasterStampReuseResult": {
+    "rootCollectedReceipt": {
+      "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_24_AUTHENTIC_PRIOR_CLOSURES",
+      "phase": "tests",
+      "sourceManifestSha256": "ee1fa28923a94d49286c2d4547a9df58e82961450e3b320182caba55d002d5b8",
+      "rootGuardProposalManifestSha256": "49891989ba7a0fe9f14360f308299aa065c063db4ef950f17d4aed1ec14a6601",
+      "rootStageContractSha256": "8aa6da34409139398452337cfbe3d4cb9b9546957afb11b63dc161f12e90e9fb",
+      "execution": {
+        "startedAt": "2026-10-15T00:53:41.790940+00:00",
+        "command": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "test",
+          "/workspace/bus-lanes-solver/.cache/paired-grid-raster-stamp-overlap-parity-sourceonly-next/focused-current631.test.ts",
+          "--timeout",
+          "55000"
+        ],
+        "policy": {
+          "wallSeconds": 60,
+          "rssBytes": 1073741824,
+          "sharedBytes": 32212254720,
+          "sampleSeconds": 0.05,
+          "termGraceSeconds": 5
+        },
+        "memoryBefore": {
+          "current": 23525314560,
+          "events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "exitCode": -15,
+        "diagnosticStopped": true,
+        "stopReasons": [
+          "OWNED_RSS_STOP"
+        ],
+        "accepted": false,
+        "currentGuardPid": 465865,
+        "pid": 465869,
+        "pgid": 465869,
+        "freshLeaderIdentity": {
+          "pid": 465869,
+          "pgid": 465869,
+          "sid": 465869,
+          "start": 22813422,
+          "state": "R",
+          "rss": 102400,
+          "argv": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "test",
+            "/workspace/bus-lanes-solver/.cache/paired-grid-raster-stamp-overlap-parity-sourceonly-next/focused-current631.test.ts",
+            "--timeout",
+            "55000"
+          ]
+        },
+        "stoppedAt": "2026-10-15T00:54:09.383751+00:00",
+        "stopElapsedSeconds": 27.581814913020935,
+        "signalErrors": [],
+        "signalErrorCount": 0,
+        "endedAt": "2026-10-15T00:54:09.528908+00:00",
+        "wallSeconds": 27.737662123021437,
+        "cleanupOwnedGroupEmpty": true,
+        "peakOwnedRssBytes": 1074266112,
+        "peakSharedBytes": 24581238784,
+        "memoryAfter": {
+          "current": 23525175296,
+          "events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "sourceAndDependenciesHeld": true,
+      "stageNaturallyCompleted": false,
+      "passed": false,
+      "authorizedByRoot": true,
+      "toolSessionId": 24627,
+      "toolSessionCollected": true,
+      "toolWrapperExitCode": 2,
+      "toolExitCode": 2,
+      "postauditPath": "/tmp/g350-focused-stage17-raster-stamp-reuse-20261015-0051/POSTAUDIT.json",
+      "postauditSha256": "062be462b68e88eecd35de24e32734eca955ccb2bcf719e0d53f854a3f9b7289",
+      "childLogPath": "/tmp/g350-focused-stage17-raster-stamp-reuse-20261015-0051/owned/child.log",
+      "childLogSha256": "f5ed8c68741df59df1127619a4aebbddb52c4d0675fcf8871eae4cbf791914d3",
+      "actualTestCounts": null,
+      "focusedCurrentPairCompletionWitnessPresent": false,
+      "independentlyObservedOwnedGroupEmpty": true,
+      "resourceStop": "OWNED_RSS_STOP",
+      "allocationDiagnosticEvidenceAvailable": true,
+      "allocationWitnessPath": "/tmp/g350-focused-stage17-raster-stamp-reuse-20261015-0051/GRID_ALLOCATION_WITNESS.json",
+      "allocationWitnessSha256": "32a01ae40ef5dbf36b8aa9861bf13dcad31316ded3519dc674efb9b0882cebe2",
+      "allocationWitnessBytes": 5276,
+      "instrumentedGreenDoesNotProveOptOut79Green": true,
+      "newRoutesAdopted": 0,
+      "all49Accepted": false,
+      "fabricationReady": false
+    },
+    "allocationWitness": {
+      "scope": "ROOT_OPT_IN_LAST8_GRID_ALLOCATION_WITNESS",
+      "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+      "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-grid-raster-stamp-overlap-parity-sourceonly-next/lib",
+      "observedEvents": 3733,
+      "maximumEvents": 8,
+      "maximumBytes": 16384,
+      "events": [
+        {
+          "event": {
+            "phase": "cancel",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 2.8000000000000003,
+              "y": 8.6
+            },
+            "end": {
+              "x": 8.158000000000001,
+              "y": 11.124000000000002
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": -0.24799999999999978,
+              "maxX": 11.206000000000001,
+              "minY": 5.552,
+              "maxY": 14.172000000000002
+            },
+            "nx": 1129,
+            "ny": 850,
+            "cellCount": 959650,
+            "actualStep": 0.010159999999999999,
+            "actualBounds": {
+              "minX": -0.24799999999999978,
+              "maxX": 11.206000000000001,
+              "minY": 5.552,
+              "maxY": 14.172000000000002
+            },
+            "expanded": 500000,
+            "solved": false,
+            "failed": true
+          },
+          "memory": {
+            "rss": 1070882816,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "before",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 4,
+              "y": 14.4
+            },
+            "end": {
+              "x": 4.3232,
+              "y": 12.464400000000001
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.416400000000001,
+              "maxY": 17.448
+            },
+            "nx": null,
+            "ny": null,
+            "cellCount": null,
+            "actualStep": null,
+            "actualBounds": null,
+            "expanded": null,
+            "solved": null,
+            "failed": null
+          },
+          "memory": {
+            "rss": 1071013888,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "after",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 4,
+              "y": 14.4
+            },
+            "end": {
+              "x": 4.3232,
+              "y": 12.464400000000001
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.416400000000001,
+              "maxY": 17.448
+            },
+            "nx": 633,
+            "ny": 792,
+            "cellCount": 501336,
+            "actualStep": 0.010159999999999999,
+            "actualBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.416400000000001,
+              "maxY": 17.448
+            },
+            "expanded": 0,
+            "solved": false,
+            "failed": false
+          },
+          "memory": {
+            "rss": 1071013888,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "cancel",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 4,
+              "y": 14.4
+            },
+            "end": {
+              "x": 4.3232,
+              "y": 12.464400000000001
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.416400000000001,
+              "maxY": 17.448
+            },
+            "nx": 633,
+            "ny": 792,
+            "cellCount": 501336,
+            "actualStep": 0.010159999999999999,
+            "actualBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.416400000000001,
+              "maxY": 17.448
+            },
+            "expanded": 8441,
+            "solved": true,
+            "failed": false
+          },
+          "memory": {
+            "rss": 1071013888,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "before",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 4,
+              "y": 13.6
+            },
+            "end": {
+              "x": 4.3232,
+              "y": 12.686
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.638,
+              "maxY": 16.648
+            },
+            "nx": null,
+            "ny": null,
+            "cellCount": null,
+            "actualStep": null,
+            "actualBounds": null,
+            "expanded": null,
+            "solved": null,
+            "failed": null
+          },
+          "memory": {
+            "rss": 1071144960,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "after",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 4,
+              "y": 13.6
+            },
+            "end": {
+              "x": 4.3232,
+              "y": 12.686
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.638,
+              "maxY": 16.648
+            },
+            "nx": 633,
+            "ny": 691,
+            "cellCount": 437403,
+            "actualStep": 0.010159999999999999,
+            "actualBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.638,
+              "maxY": 16.648
+            },
+            "expanded": 0,
+            "solved": false,
+            "failed": false
+          },
+          "memory": {
+            "rss": 1071144960,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "cancel",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 4,
+              "y": 13.6
+            },
+            "end": {
+              "x": 4.3232,
+              "y": 12.686
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.638,
+              "maxY": 16.648
+            },
+            "nx": 633,
+            "ny": 691,
+            "cellCount": 437403,
+            "actualStep": 0.010159999999999999,
+            "actualBounds": {
+              "minX": 0.952,
+              "maxX": 7.3712,
+              "minY": 9.638,
+              "maxY": 16.648
+            },
+            "expanded": 38446,
+            "solved": true,
+            "failed": false
+          },
+          "memory": {
+            "rss": 1071144960,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        },
+        {
+          "event": {
+            "phase": "before",
+            "role": "escape",
+            "pass": "corners",
+            "pairNames": [
+              "source_trace_15",
+              "source_trace_16"
+            ],
+            "layer": "inner1",
+            "start": {
+              "x": 2.8000000000000003,
+              "y": 8.6
+            },
+            "end": {
+              "x": 8.158000000000001,
+              "y": 11.124000000000002
+            },
+            "requestedStep": 0.010159999999999999,
+            "requestedBounds": {
+              "minX": -0.24799999999999978,
+              "maxX": 11.206000000000001,
+              "minY": 5.552,
+              "maxY": 14.172000000000002
+            },
+            "nx": null,
+            "ny": null,
+            "cellCount": null,
+            "actualStep": null,
+            "actualBounds": null,
+            "expanded": null,
+            "solved": null,
+            "failed": null
+          },
+          "memory": {
+            "rss": 1071144960,
+            "heapTotal": 452081664,
+            "heapUsed": 666926076,
+            "external": 650398876,
+            "arrayBuffers": 10084268
+          }
+        }
+      ],
+      "routingOrderAndPredicatesUnchanged": true,
+      "full49Accepted": false,
+      "fabricationReady": false
+    },
+    "memoryIssueResolved": false,
+    "testsCompleted": false,
+    "noUnchangedRerun": true
+  },
+  "remainingLayersResult": {
+    "rootCollectedReceipt": {
+      "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_25_AUTHENTIC_PRIOR_CLOSURES",
+      "phase": "routing",
+      "sourceManifestSha256": "251c339a040a43ec0c5dcfb428157e37cdd2ecc07d7de134a505e932c4bf237b",
+      "rootGuardProposalManifestSha256": "a49b54c08382d027b4cff1c498ca2ba5ec94477dc451ea8928ad00057b7d4499",
+      "rootStageContractSha256": "b8333e50782ea252222f2dc69b5337b05296d6dfbc874fb928c249bd8a2ec6fe",
+      "execution": {
+        "startedAt": "2026-10-15T00:58:52.015389+00:00",
+        "command": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-current23-remaining-layers-fine-grid-sourceonly-next/route-source14-remaining-layers.ts",
+          "/tmp/g350-current23-held-remaining26-source14-remaining-layers-20261015-0102/ROOT_AUTHORITY.json"
+        ],
+        "policy": {
+          "wallSeconds": 90,
+          "rssBytes": 2147483648,
+          "sharedBytes": 32212254720,
+          "sampleSeconds": 0.05,
+          "termGraceSeconds": 5
+        },
+        "memoryBefore": {
+          "current": 23524982784,
+          "events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "exitCode": 0,
+        "diagnosticStopped": false,
+        "stopReasons": [],
+        "accepted": false,
+        "currentGuardPid": 466565,
+        "pid": 466570,
+        "pgid": 466570,
+        "freshLeaderIdentity": {
+          "pid": 466570,
+          "pgid": 466570,
+          "sid": 466570,
+          "start": 22844472,
+          "state": "R",
+          "rss": 118784,
+          "argv": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-current23-remaining-layers-fine-grid-sourceonly-next/route-source14-remaining-layers.ts",
+            "/tmp/g350-current23-held-remaining26-source14-remaining-layers-20261015-0102/ROOT_AUTHORITY.json"
+          ]
+        },
+        "endedAt": "2026-10-15T00:58:54.795868+00:00",
+        "wallSeconds": 2.780232338991482,
+        "cleanupOwnedGroupEmpty": true,
+        "peakOwnedRssBytes": 112889856,
+        "peakSharedBytes": 23619219456,
+        "memoryAfter": {
+          "current": 23525392384,
+          "events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "signalErrors": [],
+        "signalErrorCount": 0
+      },
+      "sourceAndDependenciesHeld": true,
+      "diagnosticCompleted": true,
+      "passed": true,
+      "originalGridSolvedCandidate": false,
+      "candidateTotalPlanarWithinWindow": false,
+      "resultPath": "/tmp/g350-current23-held-remaining26-source14-remaining-layers-20261015-0102/output/DIAGNOSTIC_RESULT.json",
+      "resultSha256": "4b136beac25488e9e4debfa2ef626181048ea4dcd457c609d6fc10cb21ac2c38",
+      "authorizedByRoot": true,
+      "toolSessionId": 59892,
+      "toolSessionCollected": true,
+      "toolWrapperExitCode": 0,
+      "toolExitCode": 0,
+      "postauditPath": "/tmp/g350-current23-held-remaining26-source14-remaining-layers-20261015-0102/POSTAUDIT.json",
+      "postauditSha256": "6db99dcf50f466b463be3df86eef158f6a474bf5761e8d5c8c19343576485ec8",
+      "independentlyObservedOwnedGroupEmpty": true,
+      "newRoutesAdopted": 0,
+      "sourceNativeCheckedCount": 23,
+      "originalGridTermination": "ALL_REMAINING_LAYERS_TESTED",
+      "totalExpanded": 383387,
+      "attemptedLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "all49Accepted": false,
+      "fabricationReady": false
+    },
+    "diagnosticResult": {
+      "diagnosticCompleted": true,
+      "scope": "SOURCE14_REMAINING_LAYERS_FINE_GRID",
+      "termination": "ALL_REMAINING_LAYERS_TESTED",
+      "inputSha256": "f8d98c40b160798e712cfe7dee1e0fc6e2eff87a8225bc45477ee01cc28c7e36",
+      "full49RulesSidecarSha256": "c3b0445fddf5e083fcd3a1b03105cefff42fa1cb3edf808ec7e1e145c42e39e6",
+      "faithfulFull49InputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+      "requestedLayerOrder": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "attemptedLayers": [
+        "top",
+        "inner2",
+        "bottom"
+      ],
+      "unattemptedLayers": [],
+      "inner1NotRepeated": true,
+      "maximumOriginalGridConstructors": 3,
+      "originalGridConstructorCalls": 3,
+      "originalStepCalls": 767,
+      "maximumTotalExpanded": 400000,
+      "totalExpanded": 383387,
+      "maximumStepBatch": 500,
+      "capStopRule": "SHARED_NEXT_ORIGINAL_500_POP_STEP_REQUIRES_HEADROOM",
+      "rows": [
+        {
+          "selectedLayer": "top",
+          "selectedConnection": {
+            "name": "source_trace_14",
+            "source_trace_id": "source_trace_14",
+            "nominalTraceWidth": 0.1016,
+            "width": 0.1016,
+            "pointsToConnect": [
+              {
+                "x": 2.4000000000000012,
+                "y": 14.400000000000002,
+                "layer": "top",
+                "pointId": "pcb_via_155"
+              },
+              {
+                "x": 3.6000000000000005,
+                "y": 9.4,
+                "layer": "top",
+                "pointId": "pcb_via_156"
+              }
+            ]
+          },
+          "termination": "NATURAL_FAILED",
+          "constructorState": {
+            "expanded": 0,
+            "solved": false,
+            "failed": true
+          },
+          "constructorAttachments": {
+            "starts": 8,
+            "ends": 8,
+            "cellCount": 1413721
+          },
+          "constructorFailureReason": "REACHABILITY_COMPONENT_REJECTION",
+          "terminalBeforeCancel": {
+            "expanded": 0,
+            "solved": false,
+            "failed": true
+          },
+          "stateAfterCancel": {
+            "expanded": 0,
+            "solved": false,
+            "failed": true
+          },
+          "originalStepCalls": 0,
+          "sharedExpandedBefore": 0,
+          "sharedExpandedAfter": 0,
+          "constructorOptions": {
+            "checkReachability": true,
+            "maxLength": 12.068629150101522,
+            "step": 0.010159999999999999,
+            "bounds": {
+              "minX": -3.03431458505076,
+              "maxX": 9.034314585050762,
+              "minY": 5.865685414949241,
+              "maxY": 17.934314585050764
+            }
+          },
+          "gridStep": 0.010159999999999999,
+          "gridNx": 1189,
+          "gridNy": 1189,
+          "gridOrigin": {
+            "x": -3.03431458505076,
+            "y": 5.865685414949241
+          },
+          "geometryVisible": null,
+          "carrierLengthMm": null,
+          "totalPlanarLengthMm": null,
+          "totalPlanarWithinWindow": false,
+          "runtimeMilliseconds": 222.66033399999998
+        },
+        {
+          "selectedLayer": "inner2",
+          "selectedConnection": {
+            "name": "source_trace_14",
+            "source_trace_id": "source_trace_14",
+            "nominalTraceWidth": 0.1016,
+            "width": 0.1016,
+            "pointsToConnect": [
+              {
+                "x": 2.4000000000000012,
+                "y": 14.400000000000002,
+                "layer": "inner2",
+                "pointId": "pcb_via_155"
+              },
+              {
+                "x": 3.6000000000000005,
+                "y": 9.4,
+                "layer": "inner2",
+                "pointId": "pcb_via_156"
+              }
+            ]
+          },
+          "termination": "NATURAL_FAILED",
+          "constructorState": {
+            "expanded": 0,
+            "solved": false,
+            "failed": true
+          },
+          "constructorAttachments": {
+            "starts": 8,
+            "ends": 8,
+            "cellCount": 1413721
+          },
+          "constructorFailureReason": "REACHABILITY_COMPONENT_REJECTION",
+          "terminalBeforeCancel": {
+            "expanded": 0,
+            "solved": false,
+            "failed": true
+          },
+          "stateAfterCancel": {
+            "expanded": 0,
+            "solved": false,
+            "failed": true
+          },
+          "originalStepCalls": 0,
+          "sharedExpandedBefore": 0,
+          "sharedExpandedAfter": 0,
+          "constructorOptions": {
+            "checkReachability": true,
+            "maxLength": 12.068629150101522,
+            "step": 0.010159999999999999,
+            "bounds": {
+              "minX": -3.03431458505076,
+              "maxX": 9.034314585050762,
+              "minY": 5.865685414949241,
+              "maxY": 17.934314585050764
+            }
+          },
+          "gridStep": 0.010159999999999999,
+          "gridNx": 1189,
+          "gridNy": 1189,
+          "gridOrigin": {
+            "x": -3.03431458505076,
+            "y": 5.865685414949241
+          },
+          "geometryVisible": null,
+          "carrierLengthMm": null,
+          "totalPlanarLengthMm": null,
+          "totalPlanarWithinWindow": false,
+          "runtimeMilliseconds": 221.18591300000003
+        },
+        {
+          "selectedLayer": "bottom",
+          "selectedConnection": {
+            "name": "source_trace_14",
+            "source_trace_id": "source_trace_14",
+            "nominalTraceWidth": 0.1016,
+            "width": 0.1016,
+            "pointsToConnect": [
+              {
+                "x": 2.4000000000000012,
+                "y": 14.400000000000002,
+                "layer": "bottom",
+                "pointId": "pcb_via_155"
+              },
+              {
+                "x": 3.6000000000000005,
+                "y": 9.4,
+                "layer": "bottom",
+                "pointId": "pcb_via_156"
+              }
+            ]
+          },
+          "termination": "NATURAL_FAILED",
+          "constructorState": {
+            "expanded": 0,
+            "solved": false,
+            "failed": false
+          },
+          "constructorAttachments": {
+            "starts": 8,
+            "ends": 8,
+            "cellCount": 1413721
+          },
+          "constructorFailureReason": null,
+          "terminalBeforeCancel": {
+            "expanded": 383387,
+            "solved": false,
+            "failed": true
+          },
+          "stateAfterCancel": {
+            "expanded": 383387,
+            "solved": false,
+            "failed": true
+          },
+          "originalStepCalls": 767,
+          "sharedExpandedBefore": 0,
+          "sharedExpandedAfter": 383387,
+          "constructorOptions": {
+            "checkReachability": true,
+            "maxLength": 12.068629150101522,
+            "step": 0.010159999999999999,
+            "bounds": {
+              "minX": -3.03431458505076,
+              "maxX": 9.034314585050762,
+              "minY": 5.865685414949241,
+              "maxY": 17.934314585050764
+            }
+          },
+          "gridStep": 0.010159999999999999,
+          "gridNx": 1189,
+          "gridNy": 1189,
+          "gridOrigin": {
+            "x": -3.03431458505076,
+            "y": 5.865685414949241
+          },
+          "geometryVisible": null,
+          "carrierLengthMm": null,
+          "totalPlanarLengthMm": null,
+          "totalPlanarWithinWindow": false,
+          "runtimeMilliseconds": 641.409931
+        }
+      ],
+      "fixedStubLengthMm": 1.1313708498984765,
+      "minimumCarrierLengthMm": 11.429084380328177,
+      "maximumCarrierLengthMm": 12.068629150101522,
+      "totalPlanarWindowMm": [
+        12.560455230226653,
+        13.2
+      ],
+      "candidatePath": null,
+      "candidateSha256": null,
+      "winningLayer": null,
+      "inputAndAll286FixedTracesAnd1298ObstaclesHeld": true,
+      "all23BodiesRemainFixed": true,
+      "all98ViaEventsAnd52TerminalsHeld": true,
+      "full49SidecarRetained": true,
+      "completeLengthBoundOnlyChangesGridBounds": true,
+      "runtimeMilliseconds": 1101.715139,
+      "engine": "1.3.14",
+      "nativeCalls": 0,
+      "originalApiFull49Calls": 0,
+      "freshCoreCalls": 0,
+      "cadCalls": 0,
+      "isolatedGridCandidateOnly": true,
+      "sourceNativeCheckedCountRemains23": true,
+      "all49Accepted": false,
+      "referenceQualified": false,
+      "electricalTimingPassed": false,
+      "fabricationReady": false
+    },
+    "noCandidateAdopted": true,
+    "noUnchangedSingleLayerRerun": true
   }
 }
