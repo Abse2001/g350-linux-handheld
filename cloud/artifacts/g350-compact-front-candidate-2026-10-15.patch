@@ -1,0 +1,276 @@
+--- a/lib/coupled-pair-routing.ts
++++ b/lib/coupled-pair-routing.ts
+@@ -21,0 +22,39 @@
++
++/** Resolve a blocked package front from existing continuous-scene vertices.
++ * The whole entry capsule reserves both offset rails, not only a clear point. */
++export function compactFrontPortals(
++  scene: VectorScene,
++  front: Point,
++  packageBounds: SimpleRouteJson["bounds"] | undefined,
++  axis: "x" | "y",
++  direction: number,
++  envelope: number,
++  ownCenter: Point,
++  otherCenter: Point,
++): Point[] {
++  if (scene.visible(front, front)) return [front]
++  if (!packageBounds) return []
++  const crossAxis = axis === "x" ? "y" : "x"
++  const low = crossAxis === "x" ? packageBounds.minX : packageBounds.minY
++  const high = crossAxis === "x" ? packageBounds.maxX : packageBounds.maxY
++  const cost = (point: Point) =>
++    2 * distance(point, ownCenter) + distance(point, otherCenter)
++  return scene.vertices().filter((point) => {
++    const outward = direction * (point[axis] - front[axis])
++    const projection = { ...point, [axis]: front[axis] }
++    return point[crossAxis] >= low && point[crossAxis] <= high &&
++      outward >= 0 && outward <= 2 * envelope &&
++      scene.visible(point, projection)
++  }).filter((point, index, choices) =>
++    choices.findIndex((other) => distance(point, other) < 1e-8) === index,
++  ).sort((a, b) => cost(a) - cost(b)).slice(0, 4)
++}
++
++export type CoupledGridAllocationEvent = Readonly<Record<string, unknown>>
++let coupledGridAllocationObserver: ((event: CoupledGridAllocationEvent) => void) | undefined
++/** Opt-in scalar allocation diagnostics only; no observer exists by default. */
++export function observeCoupledGridAllocations(observer: (event: CoupledGridAllocationEvent) => void) {
++  const previous = coupledGridAllocationObserver
++  coupledGridAllocationObserver = observer
++  return () => { coupledGridAllocationObserver = previous }
++}
+@@ -58,0 +98,3 @@
++  // Internal one-time retry; preserve the original negotiation mode.
++  cornerHandoffFallback = false,
++  compactFrontFallback = false,
+@@ -97,0 +140,15 @@
++  const allocationObserver = coupledGridAllocationObserver
++  const emitGrid = allocationObserver ? (
++    phase: "before" | "after" | "cancel", role: "center" | "escape" | "other",
++    start: Point, end: Point, requestedStep?: number,
++    requestedBounds?: SimpleRouteJson["bounds"], search?: GridVisibilitySearch,
++  ) => {
++    // Read only scalar fields from this reviewed Source constructor, never SDK state.
++    const grid = search as unknown as { nx: number; ny: number; stepSize: number; gridBounds: SimpleRouteJson["bounds"] } | undefined
++    allocationObserver({ phase, role, pass: compactFrontFallback ? "compact" : cornerHandoffFallback ? "corners" : "legacy",
++      pairNames: [...pair.connectionNames], layer, start: { x: start.x, y: start.y }, end: { x: end.x, y: end.y },
++      requestedStep: requestedStep ?? null, requestedBounds: requestedBounds ? { ...requestedBounds } : null,
++      nx: grid?.nx ?? null, ny: grid?.ny ?? null, cellCount: grid ? grid.nx * grid.ny : null,
++      actualStep: grid?.stepSize ?? null, actualBounds: grid ? { ...grid.gridBounds } : null,
++      expanded: search?.expanded ?? null, solved: search?.solved ?? null, failed: search?.failed ?? null })
++  } : undefined
+@@ -121,0 +179,4 @@
++  let hasPackageCornerChoices = false
++  const packageCornerChoices: Point[][] = [[], []]
++  const compactFronts: Point[] = []
++  const compactBounds: (SimpleRouteJson["bounds"] | undefined)[] = []
+@@ -149,0 +211 @@
++    if (compactFrontFallback) compactFronts[i] = front
+@@ -150,0 +213 @@
++    hasPackageCornerChoices = true
+@@ -158,0 +222,2 @@
++    if (compactFrontFallback)
++      compactBounds[i] = { minX: left, maxX: right, minY: bottom, maxY: top }
+@@ -178,0 +244,7 @@
++    if (cornerHandoffFallback)
++      packageCornerChoices[i] = [
++        { x: left, y: bottom },
++        { x: left, y: top },
++        { x: right, y: bottom },
++        { x: right, y: top },
++      ]
+@@ -185,0 +258 @@
++      ...packageCornerChoices[i],
+@@ -308,0 +382,16 @@
++  if (compactFrontFallback) {
++    const virtual = {
++      name: "pair_corridor",
++      pointsToConnect: compactFronts.map((point) => ({ ...point, layer })),
++    }
++    const portalScene = new VectorScene(input, virtual, envelope,
++      negotiation ? [...corridorCopper, ...negotiation.copper] : corridorCopper)
++    // Already-clear fronts add no topology after the exhausted legacy pass.
++    if (compactFronts.every((front) => portalScene.visible(front, front))) return null
++    const choices = compactFronts.map((front, end) => compactFrontPortals(
++      portalScene, front, compactBounds[end], axis, end === 0 ? sign : -sign,
++      envelope, centers[end], centers[1 - end],
++    ))
++    if (choices.some((points) => points.length === 0)) return null
++    for (let end = 0; end < 2; end++) handoffChoices[end] = choices[end]
++  }
+@@ -344,0 +434,3 @@
++  // Keep the legacy pass unchanged. During the extra fallback, try two
++  // corner handoffs before mixed choices, preserving order within both groups.
++  for (const prioritizeCorners of cornerHandoffFallback ? [true, false] : [false])
+@@ -346 +438,4 @@
+-    for (const second of handoffChoices[1])
++    for (const second of handoffChoices[1]) {
++      if (cornerHandoffFallback &&
++        (packageCornerChoices[0].includes(first) && packageCornerChoices[1].includes(second)) !== prioritizeCorners)
++        continue
+@@ -387,0 +483 @@
++        if (emitGrid && !direct && (fine || input.connections.length > 12)) emitGrid("before", "center", ends[0], ends[1])
+@@ -406,0 +503 @@
++          if (emitGrid && centerSearch instanceof GridVisibilitySearch) emitGrid("after", "center", ends[0], ends[1], undefined, undefined, centerSearch)
+@@ -418,0 +516 @@
++          if (emitGrid && centerSearch instanceof GridVisibilitySearch) emitGrid("cancel", "center", ends[0], ends[1], undefined, undefined, centerSearch)
+@@ -573,0 +672 @@
++                if (emitGrid && !directEscape) emitGrid("before", "escape", source, target, fine ? approachStep : undefined, fine ? localBounds : undefined)
+@@ -593,0 +693 @@
++                  if (emitGrid && search instanceof GridVisibilitySearch) emitGrid("after", "escape", source, target, fine ? approachStep : undefined, fine ? localBounds : undefined, search)
+@@ -603,0 +704 @@
++                  if (emitGrid && search instanceof GridVisibilitySearch) emitGrid("cancel", "escape", source, target, fine ? approachStep : undefined, fine ? localBounds : undefined, search)
+@@ -830,0 +932 @@
++                if (emitGrid && !direct) emitGrid("before", "other", other.pointsToConnect[0], other.pointsToConnect[1])
+@@ -845,0 +948 @@
++                  if (emitGrid && check instanceof GridVisibilitySearch) emitGrid("after", "other", other.pointsToConnect[0], other.pointsToConnect[1], undefined, undefined, check)
+@@ -855,0 +959 @@
++                  if (emitGrid && check instanceof GridVisibilitySearch) emitGrid("cancel", "other", other.pointsToConnect[0], other.pointsToConnect[1], undefined, undefined, check)
+@@ -923 +1027,7 @@
+-  return best
++    }
++  if (best || cornerHandoffFallback || compactFrontFallback || !hasPackageCornerChoices) return best
++  // Only a naturally exhausted legacy search reaches this one-time fallback.
++  // Forward undefined negotiation unchanged; cancellation cannot enter here.
++  const compact = yield* routeCoupledPair(input, pair, fixed, negotiation, false, true)
++  if (compact) return compact
++  return yield* routeCoupledPair(input, pair, fixed, negotiation, true)
+--- a/lib/grid-scratch.ts
++++ b/lib/grid-scratch.ts
+@@ -4,0 +5 @@
++  /** Buffer capacity; a search may use a smaller active prefix. */
+@@ -35 +36,8 @@
+-    const bucket = this.available.get(cellCount)
++    let capacity = cellCount
++    if (!this.available.has(cellCount)) {
++      let adequate = Infinity
++      for (const size of this.available.keys())
++        if (size >= cellCount && size < adequate) adequate = size
++      if (adequate < Infinity) capacity = adequate
++    }
++    const bucket = this.available.get(capacity)
+@@ -42 +50 @@
+-    if (bucket && !bucket.length) this.available.delete(cellCount)
++    if (bucket && !bucket.length) this.available.delete(capacity)
+@@ -51,2 +59,2 @@
+-    if (withTravel && !scratch.travel)
+-      scratch.travel = new Float64Array(cellCount)
++    if (withTravel && (!scratch.travel || scratch.travel.length < scratch.cellCount))
++      scratch.travel = new Float64Array(scratch.cellCount)
+--- a/lib/grid-visibility.ts
++++ b/lib/grid-visibility.ts
+@@ -155,0 +156,28 @@
++
++// Raster constructors are synchronous. Retain one bounded stamp buffer rather
++// than a fresh multi-megabyte array on every hard-grid cache miss.
++const maxRasterStampCells = 8_000_000
++let rasterStampBuffer = new Uint32Array(0)
++let rasterStampBorrowed = false
++function acquireRasterStamps(n: number) {
++  // A nested borrower must not alias or release the current owner's stamps.
++  if (rasterStampBorrowed || n > maxRasterStampCells)
++    return { stamps: new Uint32Array(n), release() {} }
++  rasterStampBorrowed = true
++  try {
++    if (rasterStampBuffer.length < n) rasterStampBuffer = new Uint32Array(n)
++    else rasterStampBuffer.fill(0, 0, n)
++  } catch (error) {
++    rasterStampBorrowed = false
++    throw error
++  }
++  let active = true
++  return {
++    stamps: rasterStampBuffer,
++    release() {
++      if (!active) return
++      active = false
++      rasterStampBorrowed = false
++    },
++  }
++}
+@@ -636 +664,3 @@
+-      const testedBy = new Uint32Array(n)
++      const rasterStamps = acquireRasterStamps(n)
++      const testedBy = rasterStamps.stamps
++      try {
+@@ -704,0 +735,3 @@
++      }
++      } finally {
++        rasterStamps.release()
+--- a/lib/negotiate-lanes.ts
++++ b/lib/negotiate-lanes.ts
+@@ -220,26 +220,42 @@
+-        // Paired alternatives use their own coupled search. They only need
+-        // the shared grid coordinates for accumulated intersection history.
+-        const projector = new GridHistoryProjector(scene)
+-        if (!histories.has(layer))
+-          histories.set(layer, new Float32Array(projector.cellCount))
+-        searches.set(layer, projector)
+-        // Generate rigid paired alternatives independently of provisional
+-        // lanes; compatibility selection can then move those lanes around the
+-        // new corridor instead of forcing every retry back to the old topology.
+-        const generator = routeCoupledPair(input, unit.pair, fixed, {
+-          copper: [],
+-          penalty: 0,
+-          variant: visit - 1,
+-        })
+-        let step = generator.next()
+-        try {
+-          // The enclosing solver owns the work budget. Fine package searches
+-          // may need more steps before yielding a feasible coupled corridor.
+-          while (!step.done) {
+-            yield routedLanes
+-            step = generator.next()
+-          }
+-        } finally {
+-          if (!step.done) step = generator.return(null)
+-        }
+-        if (!step.value) {
++        let routedPair: Trace[] | null = null
++        for (const candidateLayer of available) {
++          for (const c of unit.connections)
++            for (const point of c.pointsToConnect) point.layer = candidateLayer
++          // Paired alternatives use their own coupled search. They only need
++          // the shared grid coordinates for accumulated intersection history.
++          const pairScene =
++            candidateLayer === layer
++              ? scene
++              : new VectorScene(input, connection, width, sceneCopper)
++          const projector = new GridHistoryProjector(pairScene)
++          if (!histories.has(candidateLayer))
++            histories.set(
++              candidateLayer,
++              new Float32Array(projector.cellCount),
++            )
++          searches.set(candidateLayer, projector)
++          // Generate rigid paired alternatives independently of provisional
++          // lanes; compatibility selection can then move those lanes around the
++          // new corridor instead of forcing every retry back to the old topology.
++          const generator = routeCoupledPair(input, unit.pair, fixed, {
++            copper: [],
++            penalty: 0,
++            variant: visit - 1,
++          })
++          let step = generator.next()
++          try {
++            // The enclosing solver owns the work budget. Fine package searches
++            // may need more steps before yielding a feasible coupled corridor.
++            while (!step.done) {
++              yield routedLanes
++              step = generator.next()
++            }
++          } finally {
++            if (!step.done) step = generator.return(null)
++          }
++          if (step.value) {
++            routedPair = step.value
++            break
++          }
++        }
++        if (!routedPair) {
+@@ -257,2 +273,2 @@
+-        candidates.add(connection.name, step.value)
+-        for (const trace of step.value)
++        candidates.add(connection.name, routedPair)
++        for (const trace of routedPair)

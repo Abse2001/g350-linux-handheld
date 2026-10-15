@@ -538,5 +538,43 @@
     "manifestPath": "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/SOURCE-manifest.json",
     "manifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
     "description": "Fallback to clearance-checked compact package-front portals after unchanged legacy pair routing fails, before existing corner fallback; capacity-reused grid scratch; exact original constraints retained."
+  },
+  "experimentalPatch": {
+    "path": "cloud/artifacts/g350-compact-front-candidate-2026-10-15.patch",
+    "reconstructionProof": {
+      "sourceManifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
+      "baselineCommit": "34073bca2808c181ae40c7afbb2bdf869d3d7538",
+      "all120BaselineFilesMatchedGitBlobs": true,
+      "changedFiles": [
+        {
+          "path": "lib/coupled-pair-routing.ts",
+          "beforeSha256": "0091533c1c85733277cf8b70057368b1b9d7822599af20744055e73e4afc2d95",
+          "afterSha256": "8f7141e025d270d65fd0e1030330bcd9385dc4eeaea81637b15068c5443d9bb3"
+        },
+        {
+          "path": "lib/grid-scratch.ts",
+          "beforeSha256": "2e824effaee6dc53b86a645270f75a69ce63214328efca24988c500c3408ea8d",
+          "afterSha256": "d3aef8117096716932e04f791da461583c939947fe97ea6eebd085981d4f8901"
+        },
+        {
+          "path": "lib/grid-visibility.ts",
+          "beforeSha256": "f9718174f712bf6f298bfc0829b4352be5e0dbca445881b100d772ebc2427754",
+          "afterSha256": "577790af44054d6bbe09b1896f3206c329253f3bbce1028709b278677e127f48"
+        },
+        {
+          "path": "lib/negotiate-lanes.ts",
+          "beforeSha256": "ebf73c9affdfcd4283639358fd3d529d15c7fe2cedfb8a7552fd9e472e80a464",
+          "afterSha256": "f940e934bca93b129700f1e36a22e959add4b946215d02627e037710c83b4df7"
+        }
+      ],
+      "patchSha256": "77053e518692796518b0b6f0f642ad5e4ddcd2d190cb7977b62d64d11e023979",
+      "zeroContextRequiresUnidiffZero": true,
+      "dryRunAndReconstructionPassed": true,
+      "baselineAndCandidateUnchanged": true,
+      "runtimeSdkExecuted": false,
+      "fixReleaseQualificationPassed": false,
+      "all49Accepted": false,
+      "fabricationReady": false
+    }
   }
 }

@@ -1,0 +1,5 @@
+The unseeded full49 c30 public run generated the two DDR strobe pairs (Source15/16 and27/28), then reached the unchanged40,000-step global solver limit while the clock-pair search remained unfinished. The full solver naturally reported `search_budget_exhausted`; the clock generator was interrupted by that global limit, so this does not establish a natural clock-pair failure.
+
+Actual60819: child1/wrapper2,58.252 seconds,998,494,208-byte peak RSS, zero OOM. Source/SDK inventories,263 fixed traces,98 genuine via events and all original49 bus/pair constraints held. The owned group and guard were independently observed closed. Checkpoints show two provisional carriers at6,000 steps and four at24,000.
+
+The four provisional carriers remain failed-run diagnostics and have not been applied to hardware. The checked board remains23/49 with26 missing. Full matching, references, electrical timing and independent board checks remain open; fabricationReady=false. A fresh clock-pair probe must reproduce the actual dense-negotiation call, including its terminal reservations; adding the four provisional rails as hard copper would change that scene.

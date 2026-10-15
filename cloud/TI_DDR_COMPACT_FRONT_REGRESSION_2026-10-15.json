@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-15",
+  "candidateManifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
+  "fullExistingSuite": {
+    "scope": "ROOT_C30_FULL644_WITH32_AUTHENTIC_PRIOR_CLOSURES",
+    "phase": "full644",
+    "sourceManifestSha256": "6ebbb77fe8ed925aa831fd23daf62e9af39a040228a52de03990914574c8c240",
+    "rootGuardProposalManifestSha256": "6ebbb77fe8ed925aa831fd23daf62e9af39a040228a52de03990914574c8c240",
+    "regressionBaseManifestSha256": "0914171903f82b043a53261edf4783b15d93b2492e8c2a11955b1624541b651d",
+    "candidateSourceManifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
+    "execution": {
+      "startedAt": "2026-10-15T02:14:09.790111+00:00",
+      "command": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "test"
+      ],
+      "policy": {
+        "wallSeconds": 360,
+        "rssBytes": 2147483648,
+        "sharedBytes": 32212254720,
+        "sampleSeconds": 0.05,
+        "termGraceSeconds": 5
+      },
+      "memoryBefore": {
+        "current": 23675846656,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "exitCode": 0,
+      "diagnosticStopped": false,
+      "stopReasons": [],
+      "accepted": false,
+      "currentGuardPid": 473352,
+      "pid": 473357,
+      "pgid": 473357,
+      "freshLeaderIdentity": {
+        "pid": 473357,
+        "pgid": 473357,
+        "sid": 473357,
+        "start": 23296486,
+        "state": "R",
+        "rss": 114688,
+        "argv": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "test"
+        ]
+      },
+      "endedAt": "2026-10-15T02:16:34.856073+00:00",
+      "wallSeconds": 145.06578456700663,
+      "cleanupOwnedGroupEmpty": true,
+      "peakOwnedRssBytes": 729788416,
+      "peakSharedBytes": 24389013504,
+      "memoryAfter": {
+        "current": 23709650944,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "signalErrors": [],
+      "signalErrorCount": 0
+    },
+    "sourceAndDependenciesHeld": true,
+    "stageNaturallyCompleted": true,
+    "observedCounts": {
+      "pass": 644,
+      "fail": 0
+    },
+    "passed": true,
+    "workspaceFreeBytesFloorHeld": true,
+    "gitMetadataHeld": true,
+    "authorizedByRoot": true,
+    "toolSessionId": 97882,
+    "toolSessionCollected": true,
+    "toolWrapperExitCode": 0,
+    "toolExitCode": 0,
+    "postauditPath": "/tmp/g350-c30-regression-root-full644-20261015-0214/POSTAUDIT.json",
+    "postauditSha256": "ac7513ea3eb76d588bdb5af50fb8a92ab3ac10054abe1894460fdf1faf50474d",
+    "childLogPath": "/tmp/g350-c30-regression-root-full644-20261015-0214/owned/child.log",
+    "childLogSha256": "a71d088bbfa6c7c12f6c195121644bea47da2bae2a13a51a12e6c97b6d86c8dd",
+    "actualTestCounts": {
+      "pass": 644,
+      "fail": 0,
+      "expect": 649237,
+      "files": 189
+    },
+    "testSuiteCompleted": true,
+    "independentlyObservedOwnedGroupEmpty": true,
+    "independentlyObservedGuardAbsent": true,
+    "allElevenCurrentAcceptanceStillRequired": true,
+    "fixReleaseQualificationPassed": false,
+    "newRoutesAdopted": 0,
+    "all49Accepted": false,
+    "fabricationReady": false
+  },
+  "independentObserverDisabledFocusedSuite": {
+    "scope": "ROOT_C30_OPTOUT9_WITH33_AUTHENTIC_PRIOR_CLOSURES",
+    "phase": "optout9",
+    "sourceManifestSha256": "6ebbb77fe8ed925aa831fd23daf62e9af39a040228a52de03990914574c8c240",
+    "rootGuardProposalManifestSha256": "6ebbb77fe8ed925aa831fd23daf62e9af39a040228a52de03990914574c8c240",
+    "regressionBaseManifestSha256": "0914171903f82b043a53261edf4783b15d93b2492e8c2a11955b1624541b651d",
+    "candidateSourceManifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
+    "execution": {
+      "startedAt": "2026-10-15T02:17:39.095523+00:00",
+      "command": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "test",
+        "/tmp/g350-c30-full644-optout-regression-sourceonly-next/focused-current631-optout.test.ts",
+        "--timeout",
+        "55000"
+      ],
+      "policy": {
+        "wallSeconds": 60,
+        "rssBytes": 1073741824,
+        "sharedBytes": 32212254720,
+        "sampleSeconds": 0.05,
+        "termGraceSeconds": 5
+      },
+      "memoryBefore": {
+        "current": 23683563520,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "exitCode": 0,
+      "diagnosticStopped": false,
+      "stopReasons": [],
+      "accepted": false,
+      "currentGuardPid": 475672,
+      "pid": 475677,
+      "pgid": 475677,
+      "freshLeaderIdentity": {
+        "pid": 475677,
+        "pgid": 475677,
+        "sid": 475677,
+        "start": 23317449,
+        "state": "R",
+        "rss": 16384,
+        "argv": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "test",
+          "/tmp/g350-c30-full644-optout-regression-sourceonly-next/focused-current631-optout.test.ts",
+          "--timeout",
+          "55000"
+        ]
+      },
+      "endedAt": "2026-10-15T02:17:51.097164+00:00",
+      "wallSeconds": 12.000699263997376,
+      "cleanupOwnedGroupEmpty": true,
+      "peakOwnedRssBytes": 352432128,
+      "peakSharedBytes": 24013156352,
+      "memoryAfter": {
+        "current": 23681310720,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "signalErrors": [],
+      "signalErrorCount": 0
+    },
+    "sourceAndDependenciesHeld": true,
+    "stageNaturallyCompleted": true,
+    "observedCounts": {
+      "pass": 9,
+      "fail": 0
+    },
+    "passed": true,
+    "workspaceFreeBytesFloorHeld": true,
+    "gitMetadataHeld": true,
+    "focusedCurrentPairWitness": {
+      "scope": "FOCUSED_CURRENT631_PAIR_DIAGNOSTIC",
+      "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+      "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/lib",
+      "naturalGeneratorCompletion": true,
+      "originalYieldCount": 5573,
+      "returnedCarrierCount": 2,
+      "allocationObserverInstalledForDdrCase": false,
+      "diagnosticMode": "optout",
+      "returnedTracesSha256": "91736aecadf9e51d1c0f4e608a333a20458b37a54bf23ec8ec48b113ee682a9e",
+      "full49Accepted": false,
+      "fabricationReady": false
+    },
+    "authorizedByRoot": true,
+    "toolSessionId": 31557,
+    "toolSessionCollected": true,
+    "toolWrapperExitCode": 0,
+    "toolExitCode": 0,
+    "postauditPath": "/tmp/g350-c30-regression-root-optout9-20261015-0217/POSTAUDIT.json",
+    "postauditSha256": "a19171677cde121a92b729f98c91810abbba9be59112537ee8f1b7c9995f3236",
+    "childLogPath": "/tmp/g350-c30-regression-root-optout9-20261015-0217/owned/child.log",
+    "childLogSha256": "d49f78e8452ef2f8f9e24b5baf13a71881a00b5c06ea14619f7bb71916069535",
+    "actualTestCounts": {
+      "pass": 9,
+      "fail": 0,
+      "expect": 117,
+      "files": 1
+    },
+    "testSuiteCompleted": true,
+    "originalPairGeneratorNaturallyCompleted": true,
+    "originalPairReturnedCarrierCount": 2,
+    "allocationObserverInstalledForDdrCase": false,
+    "allocationWitnessFileAbsent": true,
+    "independentlyObservedOwnedGroupEmpty": true,
+    "independentlyObservedGuardAbsent": true,
+    "allElevenCurrentAcceptanceStillRequired": true,
+    "fixReleaseQualificationPassed": false,
+    "newRoutesAdopted": 0,
+    "all49Accepted": false,
+    "fabricationReady": false
+  },
+  "qualification": {
+    "all644OriginalTestAssertionsPreserved": true,
+    "existingSuiteExpectedAssertionCount": 649237,
+    "newFocusedControlsPassedWithAndWithoutDdrObserver": true,
+    "oldF940ResultsNotSubstitutedForCurrentC30": true,
+    "currentAllElevenBenchmarksStillPending": true,
+    "unseededFull49Hit40000GlobalCapAfterFourProvisionalCarriers": true,
+    "newCopperAdopted": 0,
+    "checkedBoardConnections": 23,
+    "requiredDdrConnections": 49,
+    "fixReleaseQualificationPassed": false,
+    "all49Accepted": false,
+    "fabricationReady": false
+  }
+}
