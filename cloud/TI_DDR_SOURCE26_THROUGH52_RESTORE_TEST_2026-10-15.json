@@ -1,0 +1,263 @@
+{
+  "scope": "ROOT_ACTUAL_SOURCE26_THROUGH52_171_PACK_RESTORE_CONTROLS",
+  "passed": true,
+  "controlCount": 20,
+  "controls": [
+    {
+      "control": "missing386 prerequisites refuse before171 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missingall32 predecessor files refuse before171 creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "missing32 predecessor row refuses without171writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "same-length changed32 predecessor row refuses without171writes",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "predecessor32 mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "predecessor32 symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "invalidpredecessor32 index refuses before171creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "archivebyte tamper refuses before171creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "wrong newindex pin refuses before171creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newindex byte tamper refuses before171creation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "fresh two-root171 restore afterexact386",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 171,
+        "existingExactFiles": 0,
+        "absentFiles": 171,
+        "createdFiles": 171,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedUnionFilesVerified": 386,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "idempotent171restore",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 171,
+        "existingExactFiles": 171,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": true,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedUnionFilesVerified": 386,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "verifyonly171 nowrites",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 171,
+        "existingExactFiles": 171,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedUnionFilesVerified": 386,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    },
+    {
+      "control": "late differingdata destination prevents earlycreation",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination mode mismatch refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "newdestination ancestor symlink refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "overlappingroots refuse",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "valid reboundarchive reshipping32 predecessor refuses",
+      "passed": true,
+      "exitCode": 1,
+      "observed": null
+    },
+    {
+      "control": "final171 independentverification",
+      "passed": true,
+      "exitCode": 0,
+      "observed": {
+        "archiveVerified": true,
+        "memberCount": 171,
+        "existingExactFiles": 171,
+        "absentFiles": 0,
+        "createdFiles": 0,
+        "restoreRequested": false,
+        "requiredPreserved333FilesVerified": 211,
+        "requiredPreservedSource24ApiFilesVerified": 98,
+        "requiredPreservedSource24Cli45FilesVerified": 45,
+        "requiredPreservedSource24Through47FilesVerified": 32,
+        "requiredPreservedUnionFilesVerified": 386,
+        "exactRootAliases": [
+          "workspace",
+          "temporary"
+        ],
+        "symlinksRestored": 0,
+        "exclusiveAtomicPublication": true,
+        "runtimeImports": 0,
+        "sdkOrRuntimeReconstructed": false,
+        "RootAuthorityOrNonceRestored": false,
+        "BoundManifestRestored": false,
+        "historicalReceiptsConferNoAuthority": true,
+        "operationalClosureQualified": false,
+        "accepted49": false,
+        "fabricationReady": false
+      }
+    }
+  ],
+  "archivePath": "/tmp/g350-source26-through52-portable-root/packed/g350-ti-ddr-source26-through-cad52-source-data-2026-10-15.tar.gz",
+  "archiveSha256": "bd9a1bc49265e65eeef1bac242a03d0e6e1376b7b6b9c63d56543105ed1501e2",
+  "archiveBytes": 2455631,
+  "indexPath": "/tmp/g350-source26-through52-portable-root/packed/g350-ti-ddr-source26-through-cad52-source-data-2026-10-15.manifest.json",
+  "indexSha256": "264cda5a1855071306af251c8d784b9fb313b94ca836a8a66717a19a8dddf240",
+  "restorerPath": "/tmp/g350-source26-through52-portable-root/packed/restore-g350-source26-through52-source-data.py",
+  "restorerSha256": "182929cc943d24831b977bc70072bbdba7202c9761223c5fbafd54e62523d1ea",
+  "fileCount": 171,
+  "logicalBytes": 35171929,
+  "expandedTarBytes": 35389440,
+  "requiredPriorUnionFiles": 386,
+  "all171LiveOriginalsRehashed": true,
+  "all386LivePrerequisitesRehashed": true,
+  "sixRestorerSafetyFunctionsHeld": true,
+  "exclusiveAtomicPublicationBlockHeld": true,
+  "archiveDeterministic": true,
+  "privateTestRootsCleaned": true,
+  "SDKOrAppsImported": false,
+  "newSdkScopeOpened": false,
+  "workspaceFilesWritten": false,
+  "allMutationsPrivateTmp": true,
+  "privateAuthorityOrBoundOrNonceRestored": false,
+  "historicalCollectionsConferNoAuthority": true,
+  "partialHardware26Recorded": true,
+  "operationalClosureQualified": false,
+  "all49Accepted": false,
+  "fabricationReady": false,
+  "intendedPersistence": {
+    "archive": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source26-through-cad52-source-data-2026-10-15.tar.gz",
+    "index": "/workspace/g350-linux-handheld/cloud/artifacts/g350-ti-ddr-source26-through-cad52-source-data-2026-10-15.manifest.json",
+    "restorer": "/workspace/g350-linux-handheld/scripts/restore-g350-source26-through52-source-data.py"
+  }
+}
