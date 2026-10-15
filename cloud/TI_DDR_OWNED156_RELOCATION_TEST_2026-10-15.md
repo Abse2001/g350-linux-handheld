@@ -1,0 +1,7 @@
+A derived Source14 dogbone moves only its existing RAM barrel156 from(3.6,9.4) to(3.567,10.2), with a strict45 Top stub from actual pad(3.2,9.8) through(3.567,10.167). All285 other traces,1298 obstacles,23 checked carriers, barrel dimensions/counts and full49 rules remain exact. Baseline source and frozen exports were not changed. Nominal local clearance is tight and is not independent native qualification.
+
+Actual88558 completed the diagnostic with no candidate. Inner2 failed its constructor component check with8 start/8 end attachments. Bottom was still active after399,999 expansions/800 step calls and reached the shared400,000 cap; it did not naturally fail. Child/wrapper0 means the diagnostic completed, not routing success. Process2.507 seconds, peak115,781,632 bytes, no OOM, source/SDK inventories held and owned group closed. One fresh larger bounded Bottom trial is prepared to resolve the remaining search frontier, without claiming continuum completeness.
+
+No copper is adopted. Checked board remains23/49 DDR connections; matching, references, electrical timing, full-board checks and shell fit remain open. fabricationReady=false.
+
+Actual32392 subsequently tested the identical Bottom geometry with a1.5million expansion cap. It naturally failed after478,323 expansions/957 calls, below that cap, with no candidate. Child/wrapper0,2.219 seconds,109,084,672-byte peak RSS, zero OOM, source/SDK inventories held and owned group closed. This ends unchanged owned156 search retries; it does not prove all continuous paths or other geometry impossible.

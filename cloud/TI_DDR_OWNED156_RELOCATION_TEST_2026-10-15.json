@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-15",
+  "rootCollectedReceipt": {
+    "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_27_AUTHENTIC_PRIOR_CLOSURES",
+    "phase": "routing",
+    "sourceManifestSha256": "3a745a05ff6f5104244058fd51219ea9e2f83f4bd36f529d00c0eaac2755ff2e",
+    "rootGuardProposalManifestSha256": "e55c4dfe35951f84491ec134314bc71de7be31e455ac065e3a36cf91e8834928",
+    "rootStageContractSha256": "c012581593e0eeba34fbd27041ca944b215af5077df3e4efa7f3c20b59c8d57a",
+    "execution": {
+      "startedAt": "2026-10-15T01:26:15.051387+00:00",
+      "command": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-owned156-relocation-inner2-bottom-sourceonly-next/route-source14-owned156-relocation.ts",
+        "/tmp/g350-current23-held-remaining26-source14-owned156-relocation-20261015-0130/ROOT_AUTHORITY.json"
+      ],
+      "policy": {
+        "wallSeconds": 90,
+        "rssBytes": 2147483648,
+        "sharedBytes": 32212254720,
+        "sampleSeconds": 0.05,
+        "termGraceSeconds": 5
+      },
+      "memoryBefore": {
+        "current": 23531384832,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "exitCode": 0,
+      "diagnosticStopped": false,
+      "stopReasons": [],
+      "accepted": false,
+      "currentGuardPid": 469146,
+      "pid": 469181,
+      "pgid": 469181,
+      "freshLeaderIdentity": {
+        "pid": 469181,
+        "pgid": 469181,
+        "sid": 469181,
+        "start": 23008769,
+        "state": "R",
+        "rss": 94208,
+        "argv": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-owned156-relocation-inner2-bottom-sourceonly-next/route-source14-owned156-relocation.ts",
+          "/tmp/g350-current23-held-remaining26-source14-owned156-relocation-20261015-0130/ROOT_AUTHORITY.json"
+        ]
+      },
+      "endedAt": "2026-10-15T01:26:17.558219+00:00",
+      "wallSeconds": 2.5066634220129345,
+      "cleanupOwnedGroupEmpty": true,
+      "peakOwnedRssBytes": 115781632,
+      "peakSharedBytes": 23627960320,
+      "memoryAfter": {
+        "current": 23531483136,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "signalErrors": [],
+      "signalErrorCount": 0
+    },
+    "sourceAndDependenciesHeld": true,
+    "diagnosticCompleted": true,
+    "passed": true,
+    "originalGridSolvedCandidate": false,
+    "candidateTotalPlanarWithinWindow": false,
+    "resultPath": "/tmp/g350-current23-held-remaining26-source14-owned156-relocation-20261015-0130/output/DIAGNOSTIC_RESULT.json",
+    "resultSha256": "e187999ec64d8dfc73fb7be60c67c4ff8c0f825cdd305b7f6b77d80e8eb7a932",
+    "authorizedByRoot": true,
+    "toolSessionId": 88558,
+    "toolSessionCollected": true,
+    "toolWrapperExitCode": 0,
+    "toolExitCode": 0,
+    "postauditPath": "/tmp/g350-current23-held-remaining26-source14-owned156-relocation-20261015-0130/POSTAUDIT.json",
+    "postauditSha256": "9503b9e4d4bacc7e5e2a0325584811918bccba1f08614dbe5d949cb9c0e48c56",
+    "independentlyObservedOwnedGroupEmpty": true,
+    "newRoutesAdopted": 0,
+    "sourceNativeCheckedCount": 23,
+    "originalGridTermination": "SHARED_EXPANSION_CAP",
+    "totalExpanded": 399999,
+    "attemptedLayers": [
+      "inner2",
+      "bottom"
+    ],
+    "all49Accepted": false,
+    "fabricationReady": false
+  },
+  "diagnosticResult": {
+    "diagnosticCompleted": true,
+    "scope": "SOURCE14_RELOCATED156_INNER2_BOTTOM_FINE_GRID",
+    "termination": "SHARED_EXPANSION_CAP",
+    "inputSha256": "4b0799b0555de923a151b49b9514d0f921fc92861e576784b339b2fb965d5323",
+    "full49RulesSidecarSha256": "c3b0445fddf5e083fcd3a1b03105cefff42fa1cb3edf808ec7e1e145c42e39e6",
+    "faithfulFull49InputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+    "requestedLayerOrder": [
+      "inner2",
+      "bottom"
+    ],
+    "attemptedLayers": [
+      "inner2",
+      "bottom"
+    ],
+    "unattemptedLayers": [],
+    "inner1AndTopNotRepeated": true,
+    "maximumOriginalGridConstructors": 2,
+    "originalGridConstructorCalls": 2,
+    "originalStepCalls": 800,
+    "maximumTotalExpanded": 400000,
+    "totalExpanded": 399999,
+    "maximumStepBatch": 500,
+    "capStopRule": "SHARED_NEXT_ORIGINAL_500_POP_STEP_REQUIRES_HEADROOM",
+    "rows": [
+      {
+        "selectedLayer": "inner2",
+        "selectedConnection": {
+          "name": "source_trace_14",
+          "source_trace_id": "source_trace_14",
+          "nominalTraceWidth": 0.1016,
+          "width": 0.1016,
+          "pointsToConnect": [
+            {
+              "x": 2.4000000000000012,
+              "y": 14.400000000000002,
+              "layer": "inner2",
+              "pointId": "pcb_via_155"
+            },
+            {
+              "x": 3.567,
+              "y": 10.2,
+              "layer": "inner2",
+              "pointId": "pcb_via_156"
+            }
+          ]
+        },
+        "termination": "NATURAL_FAILED",
+        "constructorState": {
+          "expanded": 0,
+          "solved": false,
+          "failed": true
+        },
+        "constructorAttachments": {
+          "starts": 8,
+          "ends": 8,
+          "cellCount": 1418481
+        },
+        "constructorFailureReason": "REACHABILITY_COMPONENT_REJECTION",
+        "terminalBeforeCancel": {
+          "expanded": 0,
+          "solved": false,
+          "failed": true
+        },
+        "stateAfterCancel": {
+          "expanded": 0,
+          "solved": false,
+          "failed": true
+        },
+        "originalStepCalls": 0,
+        "sharedExpandedBefore": 0,
+        "sharedExpandedAfter": 0,
+        "constructorOptions": {
+          "checkReachability": true,
+          "maxLength": 12.082298197659837,
+          "step": 0.010159999999999999,
+          "bounds": {
+            "minX": -3.0576491088299176,
+            "maxX": 9.02464910882992,
+            "minY": 6.258850891170082,
+            "maxY": 18.34114910882992
+          }
+        },
+        "gridStep": 0.010159999999999999,
+        "gridNx": 1191,
+        "gridNy": 1191,
+        "gridOrigin": {
+          "x": -3.0576491088299176,
+          "y": 6.258850891170082
+        },
+        "geometryVisible": null,
+        "carrierLengthMm": null,
+        "totalPlanarLengthMm": null,
+        "totalPlanarWithinWindow": false,
+        "runtimeMilliseconds": 207.613609
+      },
+      {
+        "selectedLayer": "bottom",
+        "selectedConnection": {
+          "name": "source_trace_14",
+          "source_trace_id": "source_trace_14",
+          "nominalTraceWidth": 0.1016,
+          "width": 0.1016,
+          "pointsToConnect": [
+            {
+              "x": 2.4000000000000012,
+              "y": 14.400000000000002,
+              "layer": "bottom",
+              "pointId": "pcb_via_155"
+            },
+            {
+              "x": 3.567,
+              "y": 10.2,
+              "layer": "bottom",
+              "pointId": "pcb_via_156"
+            }
+          ]
+        },
+        "termination": "SHARED_EXPANSION_CAP",
+        "constructorState": {
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "constructorAttachments": {
+          "starts": 8,
+          "ends": 8,
+          "cellCount": 1418481
+        },
+        "constructorFailureReason": null,
+        "terminalBeforeCancel": {
+          "expanded": 399999,
+          "solved": false,
+          "failed": false
+        },
+        "stateAfterCancel": {
+          "expanded": 399999,
+          "solved": false,
+          "failed": true
+        },
+        "originalStepCalls": 800,
+        "sharedExpandedBefore": 0,
+        "sharedExpandedAfter": 399999,
+        "constructorOptions": {
+          "checkReachability": true,
+          "maxLength": 12.082298197659837,
+          "step": 0.010159999999999999,
+          "bounds": {
+            "minX": -3.0576491088299176,
+            "maxX": 9.02464910882992,
+            "minY": 6.258850891170082,
+            "maxY": 18.34114910882992
+          }
+        },
+        "gridStep": 0.010159999999999999,
+        "gridNx": 1191,
+        "gridNy": 1191,
+        "gridOrigin": {
+          "x": -3.0576491088299176,
+          "y": 6.258850891170082
+        },
+        "geometryVisible": null,
+        "carrierLengthMm": null,
+        "totalPlanarLengthMm": null,
+        "totalPlanarWithinWindow": false,
+        "runtimeMilliseconds": 670.114675
+      }
+    ],
+    "fixedStubLengthMm": 1.1177018023401626,
+    "minimumCarrierLengthMm": 11.44275342788649,
+    "maximumCarrierLengthMm": 12.082298197659837,
+    "totalPlanarWindowMm": [
+      12.560455230226653,
+      13.2
+    ],
+    "candidatePath": null,
+    "candidateSha256": null,
+    "winningLayer": null,
+    "derivedInputAndAll286CurrentTracesAnd1298ObstaclesHeld": true,
+    "baseInputSha256": "f8d98c40b160798e712cfe7dee1e0fc6e2eff87a8225bc45477ee01cc28c7e36",
+    "owned156RelocationProofSha256": "261a68ef46cdca5fc4327cf6255bac5c096a6a9b700c922cea1259b54a82527c",
+    "onlyOwned156TerminalAndStub243Changed": true,
+    "all285OtherTracesAndAll1298ObstaclesAndAll23BodiesHeld": true,
+    "all23BodiesRemainFixed": true,
+    "all98ViaEventsAnd52TerminalCountsRetained": true,
+    "all97OtherViaEventsAnd51OtherTerminalsHeld": true,
+    "full49SidecarRetained": true,
+    "completeLengthBoundOnlyChangesGridBounds": true,
+    "runtimeMilliseconds": 896.7874869999999,
+    "engine": "1.3.14",
+    "nativeCalls": 0,
+    "originalApiFull49Calls": 0,
+    "freshCoreCalls": 0,
+    "cadCalls": 0,
+    "isolatedGridCandidateOnly": true,
+    "sourceNativeCheckedCountRemains23": true,
+    "all49Accepted": false,
+    "referenceQualified": false,
+    "electricalTimingPassed": false,
+    "fabricationReady": false
+  },
+  "checkedDdrConnections": 23,
+  "requiredDdrConnections": 49,
+  "newRoutesAdopted": 0,
+  "fabricationReady": false,
+  "largerBottomTrial": {
+    "rootCollectedReceipt": {
+      "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_28_AUTHENTIC_PRIOR_CLOSURES",
+      "phase": "routing",
+      "sourceManifestSha256": "bd9f5e4f3e81b803f096fc49d8a3cc21680ea4bf24f963e8e1cd3f7303c17186",
+      "rootGuardProposalManifestSha256": "fd399c86e1d31b55f650b69f7cbee2cb16ac4cde82d2b0f79d68b606e23bcf15",
+      "rootStageContractSha256": "999b1596881d934c00546f6b4f914a5804941dd71aaae5f0aaaa5286930c5ff5",
+      "execution": {
+        "startedAt": "2026-10-15T01:32:39.268874+00:00",
+        "command": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-owned156-bottom1500k-sourceonly-next/route-source14-owned156-bottom1500k.ts",
+          "/tmp/g350-current23-held-remaining26-source14-owned156-bottom1500k-20261015-0137/ROOT_AUTHORITY.json"
+        ],
+        "policy": {
+          "wallSeconds": 90,
+          "rssBytes": 2147483648,
+          "sharedBytes": 32212254720,
+          "sampleSeconds": 0.05,
+          "termGraceSeconds": 5
+        },
+        "memoryBefore": {
+          "current": 23535591424,
+          "events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "exitCode": 0,
+        "diagnosticStopped": false,
+        "stopReasons": [],
+        "accepted": false,
+        "currentGuardPid": 469734,
+        "pid": 469738,
+        "pgid": 469738,
+        "freshLeaderIdentity": {
+          "pid": 469738,
+          "pgid": 469738,
+          "sid": 469738,
+          "start": 23047185,
+          "state": "R",
+          "rss": 360448,
+          "argv": [
+            "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+            "--smol",
+            "/workspace/g350-linux-handheld/.cloud-tools/ddr-source14-owned156-bottom1500k-sourceonly-next/route-source14-owned156-bottom1500k.ts",
+            "/tmp/g350-current23-held-remaining26-source14-owned156-bottom1500k-20261015-0137/ROOT_AUTHORITY.json"
+          ]
+        },
+        "endedAt": "2026-10-15T01:32:41.487598+00:00",
+        "wallSeconds": 2.218563485017512,
+        "cleanupOwnedGroupEmpty": true,
+        "peakOwnedRssBytes": 109084672,
+        "peakSharedBytes": 23625437184,
+        "memoryAfter": {
+          "current": 23536410624,
+          "events": {
+            "low": 0,
+            "high": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_kill": 0,
+            "oom_group_kill": 0
+          }
+        },
+        "oomDelta": {
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "signalErrors": [],
+        "signalErrorCount": 0
+      },
+      "sourceAndDependenciesHeld": true,
+      "diagnosticCompleted": true,
+      "passed": true,
+      "originalGridSolvedCandidate": false,
+      "candidateTotalPlanarWithinWindow": false,
+      "resultPath": "/tmp/g350-current23-held-remaining26-source14-owned156-bottom1500k-20261015-0137/output/DIAGNOSTIC_RESULT.json",
+      "resultSha256": "0efae7bf6e4147d2dbca505b7be85ea6bc9d5923db07dfbb190e58aa6b601a85",
+      "authorizedByRoot": true,
+      "toolSessionId": 32392,
+      "toolSessionCollected": true,
+      "toolWrapperExitCode": 0,
+      "toolExitCode": 0,
+      "postauditPath": "/tmp/g350-current23-held-remaining26-source14-owned156-bottom1500k-20261015-0137/POSTAUDIT.json",
+      "postauditSha256": "b81c9614694444ac5519b0de6fddbac5ba97c0a5a18badaad430fa2e5f412cde",
+      "independentlyObservedOwnedGroupEmpty": true,
+      "newRoutesAdopted": 0,
+      "sourceNativeCheckedCount": 23,
+      "originalGridTermination": "ALL_REMAINING_LAYERS_TESTED",
+      "totalExpanded": 478323,
+      "attemptedLayers": [
+        "bottom"
+      ],
+      "all49Accepted": false,
+      "fabricationReady": false
+    },
+    "diagnosticResult": {
+      "diagnosticCompleted": true,
+      "scope": "SOURCE14_RELOCATED156_BOTTOM_1500K_FINE_GRID",
+      "termination": "ALL_REMAINING_LAYERS_TESTED",
+      "inputSha256": "4b0799b0555de923a151b49b9514d0f921fc92861e576784b339b2fb965d5323",
+      "full49RulesSidecarSha256": "c3b0445fddf5e083fcd3a1b03105cefff42fa1cb3edf808ec7e1e145c42e39e6",
+      "faithfulFull49InputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+      "requestedLayerOrder": [
+        "bottom"
+      ],
+      "attemptedLayers": [
+        "bottom"
+      ],
+      "unattemptedLayers": [],
+      "inner1AndTopNotRepeated": true,
+      "maximumOriginalGridConstructors": 1,
+      "originalGridConstructorCalls": 1,
+      "originalStepCalls": 957,
+      "maximumTotalExpanded": 1500000,
+      "totalExpanded": 478323,
+      "maximumStepBatch": 500,
+      "capStopRule": "SHARED_NEXT_ORIGINAL_500_POP_STEP_REQUIRES_HEADROOM",
+      "rows": [
+        {
+          "selectedLayer": "bottom",
+          "selectedConnection": {
+            "name": "source_trace_14",
+            "source_trace_id": "source_trace_14",
+            "nominalTraceWidth": 0.1016,
+            "width": 0.1016,
+            "pointsToConnect": [
+              {
+                "x": 2.4000000000000012,
+                "y": 14.400000000000002,
+                "layer": "bottom",
+                "pointId": "pcb_via_155"
+              },
+              {
+                "x": 3.567,
+                "y": 10.2,
+                "layer": "bottom",
+                "pointId": "pcb_via_156"
+              }
+            ]
+          },
+          "termination": "NATURAL_FAILED",
+          "constructorState": {
+            "expanded": 0,
+            "solved": false,
+            "failed": false
+          },
+          "constructorAttachments": {
+            "starts": 8,
+            "ends": 8,
+            "cellCount": 1418481
+          },
+          "constructorFailureReason": null,
+          "terminalBeforeCancel": {
+            "expanded": 478323,
+            "solved": false,
+            "failed": true
+          },
+          "stateAfterCancel": {
+            "expanded": 478323,
+            "solved": false,
+            "failed": true
+          },
+          "originalStepCalls": 957,
+          "sharedExpandedBefore": 0,
+          "sharedExpandedAfter": 478323,
+          "constructorOptions": {
+            "checkReachability": true,
+            "maxLength": 12.082298197659837,
+            "step": 0.010159999999999999,
+            "bounds": {
+              "minX": -3.0576491088299176,
+              "maxX": 9.02464910882992,
+              "minY": 6.258850891170082,
+              "maxY": 18.34114910882992
+            }
+          },
+          "gridStep": 0.010159999999999999,
+          "gridNx": 1191,
+          "gridNy": 1191,
+          "gridOrigin": {
+            "x": -3.0576491088299176,
+            "y": 6.258850891170082
+          },
+          "geometryVisible": null,
+          "carrierLengthMm": null,
+          "totalPlanarLengthMm": null,
+          "totalPlanarWithinWindow": false,
+          "runtimeMilliseconds": 677.8996689999999
+        }
+      ],
+      "fixedStubLengthMm": 1.1177018023401626,
+      "minimumCarrierLengthMm": 11.44275342788649,
+      "maximumCarrierLengthMm": 12.082298197659837,
+      "totalPlanarWindowMm": [
+        12.560455230226653,
+        13.2
+      ],
+      "candidatePath": null,
+      "candidateSha256": null,
+      "winningLayer": null,
+      "derivedInputAndAll286CurrentTracesAnd1298ObstaclesHeld": true,
+      "baseInputSha256": "f8d98c40b160798e712cfe7dee1e0fc6e2eff87a8225bc45477ee01cc28c7e36",
+      "owned156RelocationProofSha256": "261a68ef46cdca5fc4327cf6255bac5c096a6a9b700c922cea1259b54a82527c",
+      "onlyOwned156TerminalAndStub243Changed": true,
+      "all285OtherTracesAndAll1298ObstaclesAndAll23BodiesHeld": true,
+      "all23BodiesRemainFixed": true,
+      "all98ViaEventsAnd52TerminalCountsRetained": true,
+      "all97OtherViaEventsAnd51OtherTerminalsHeld": true,
+      "full49SidecarRetained": true,
+      "completeLengthBoundOnlyChangesGridBounds": true,
+      "runtimeMilliseconds": 698.468564,
+      "engine": "1.3.14",
+      "nativeCalls": 0,
+      "originalApiFull49Calls": 0,
+      "freshCoreCalls": 0,
+      "cadCalls": 0,
+      "isolatedGridCandidateOnly": true,
+      "sourceNativeCheckedCountRemains23": true,
+      "all49Accepted": false,
+      "referenceQualified": false,
+      "electricalTimingPassed": false,
+      "fabricationReady": false
+    }
+  },
+  "owned156RelocationAdopted": false
+}

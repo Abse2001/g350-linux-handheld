@@ -1,0 +1,7 @@
+The compact-front fallback completed the exact current-input DQS0 pair test: **9 passed, 0 failed, 1,269 assertions**. The pair generator naturally returned two carriers after5,573 yields, below the unchanged40,000 limit. The focused test checked endpoints, layer, width, continuity, physical clearance, self-intersections, angles, pair length/skew, spacing and the existing local pair validator.
+
+The fallback selects a small set of package-front portals only after the legacy attempt fails, checks the complete paired entry segment, and retains the existing corner fallback. It uses geometry from the current input; it does not seed a saved trace or change routing constraints.
+
+Actual85694: child/wrapper0,8.439 seconds, peak355,729,408 bytes, zero OOM. The original source, SDK inventories and strict process ownership checks held; the actual process group and wrapper were independently observed closed. The preceding63101 process-identity refusal ran no tests and remains a separate negative record with unknown child exit; this successful rerun does not identify its cause.
+
+This is a focused solver milestone. Full49 generation, uninstrumented behavior, full regressions, all11 benchmarks and independent board validation remain pending. No copper was applied to the checked board, which remains23/49 DDR connections with98 dogbones. Reference planes, electrical timing and shell fit remain unfinished; fabricationReady=false.

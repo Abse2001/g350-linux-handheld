@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "dateUtc": "2026-10-15",
+  "rootCollectedReceipt": {
+    "scope": "ROOT_ONE_REVIEWED_FOCUSED_STAGE_WITH_30_AUTHENTIC_PRIOR_CLOSURES",
+    "phase": "tests",
+    "sourceManifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
+    "rootGuardProposalManifestSha256": "1f90168a3fb3f1d60f38aa5fe218c7044ea5c48e9db93e1a51d7d47c54da15f3",
+    "rootStageContractSha256": "01d6a9df579f43b561116337f2c68997cc7c696621d8533b9009a573118d4020",
+    "execution": {
+      "startedAt": "2026-10-15T01:49:28.894606+00:00",
+      "command": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "test",
+        "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/focused-current631.test.ts",
+        "--timeout",
+        "55000"
+      ],
+      "policy": {
+        "wallSeconds": 60,
+        "rssBytes": 1073741824,
+        "sharedBytes": 32212254720,
+        "sampleSeconds": 0.05,
+        "termGraceSeconds": 5
+      },
+      "memoryBefore": {
+        "current": 23537025024,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "exitCode": 0,
+      "diagnosticStopped": false,
+      "stopReasons": [],
+      "accepted": false,
+      "currentGuardPid": 470734,
+      "pid": 470739,
+      "pgid": 470739,
+      "freshLeaderIdentity": {
+        "pid": 470739,
+        "pgid": 470739,
+        "sid": 470739,
+        "start": 23148118,
+        "state": "R",
+        "rss": 90112,
+        "argv": [
+          "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+          "--smol",
+          "test",
+          "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/focused-current631.test.ts",
+          "--timeout",
+          "55000"
+        ]
+      },
+      "endedAt": "2026-10-15T01:49:37.333785+00:00",
+      "wallSeconds": 8.438805672019953,
+      "cleanupOwnedGroupEmpty": true,
+      "peakOwnedRssBytes": 355729408,
+      "peakSharedBytes": 23872720896,
+      "memoryAfter": {
+        "current": 23537831936,
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        }
+      },
+      "oomDelta": {
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "signalErrors": [],
+      "signalErrorCount": 0
+    },
+    "sourceAndDependenciesHeld": true,
+    "stageNaturallyCompleted": true,
+    "passed": true,
+    "observedEarlyNamedPasses": [
+      "capacity leases choose the smallest idle fit and isolate stale releases",
+      "capacity-sized travel remains valid across shrink reuse and later growth",
+      "capacity-backed public searches preserve fresh paths yields and cancel isolation",
+      "legacy first success is byte-identical with undefined or explicit negotiation",
+      "a failed no-package search does not repeat identical legacy work",
+      "hard occupancy matches fresh reference across changing grid sizes and copper",
+      "compact fronts reserve the complete paired entry and retain a clear front",
+      "zero compact portals preserve the existing corner fallback"
+    ],
+    "observedEarlyNamedPassCount": 8,
+    "observedSuiteSummaryCounts": {
+      "pass": 9,
+      "fail": 0
+    },
+    "authorizedByRoot": true,
+    "toolSessionId": 85694,
+    "toolSessionCollected": true,
+    "toolWrapperExitCode": 0,
+    "toolExitCode": 0,
+    "postauditPath": "/tmp/g350-focused-stage17-compact-front-identity-20261015-0148/POSTAUDIT.json",
+    "postauditSha256": "01bd653b5c2ffb07a6c625037c264ac3a5d1513c340c24ea7fccbf1a4e0601f7",
+    "childLogPath": "/tmp/g350-focused-stage17-compact-front-identity-20261015-0148/owned/child.log",
+    "childLogSha256": "c10245be09c198f61e507774fd3a0648a3b198c5165d15a5b862313b8612e6d7",
+    "actualTestCounts": {
+      "pass": 9,
+      "fail": 0,
+      "expect": 1269
+    },
+    "testSuiteCompleted": true,
+    "focusedCurrentPairCompletionWitnessPresent": true,
+    "focusedCurrentPairWitness": {
+      "scope": "FOCUSED_CURRENT631_PAIR_DIAGNOSTIC",
+      "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+      "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/lib",
+      "naturalGeneratorCompletion": true,
+      "originalYieldCount": 5573,
+      "returnedCarrierCount": 2,
+      "full49Accepted": false,
+      "fabricationReady": false
+    },
+    "originalPairGeneratorNaturallyCompleted": true,
+    "originalPairGeneratorYieldCapReached": false,
+    "originalPairReturnedCarrierCount": 2,
+    "independentlyObservedOwnedGroupEmpty": true,
+    "independentlyObservedGuardAbsent": true,
+    "allocationDiagnosticEvidenceAvailable": true,
+    "allocationWitnessPath": "/tmp/g350-focused-stage17-compact-front-identity-20261015-0148/GRID_ALLOCATION_WITNESS.json",
+    "allocationWitnessSha256": "4e00a9c8d894d8de052d287da9356413db0e8427973d06c15a71df967ec40ed6",
+    "allocationWitnessBytes": 5654,
+    "resourceStop": null,
+    "memoryLimitHit": false,
+    "instrumentedOutcomeDoesNotProveOptOut79Green": true,
+    "newRoutesAdopted": 0,
+    "all49Accepted": false,
+    "fabricationReady": false
+  },
+  "allocationWitness": {
+    "scope": "ROOT_OPT_IN_LAST8_GRID_ALLOCATION_WITNESS",
+    "inputSha256": "631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d",
+    "sourceRoot": "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/lib",
+    "observedEvents": 1149,
+    "maximumEvents": 8,
+    "maximumBytes": 16384,
+    "events": [
+      {
+        "event": {
+          "phase": "after",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 4,
+            "y": 14.4
+          },
+          "end": {
+            "x": 3.9216525686445305,
+            "y": 12.65354743135547
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": 0.8736525686445304,
+            "maxX": 7.048,
+            "minY": 9.60554743135547,
+            "maxY": 17.448
+          },
+          "nx": 123,
+          "ny": 156,
+          "cellCount": 19188,
+          "actualStep": 0.0508,
+          "actualBounds": {
+            "minX": 0.8736525686445304,
+            "maxX": 7.048,
+            "minY": 9.60554743135547,
+            "maxY": 17.448
+          },
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "memory": {
+          "rss": 351973376,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "cancel",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 4,
+            "y": 14.4
+          },
+          "end": {
+            "x": 3.9216525686445305,
+            "y": 12.65354743135547
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": 0.8736525686445304,
+            "maxX": 7.048,
+            "minY": 9.60554743135547,
+            "maxY": 17.448
+          },
+          "nx": 123,
+          "ny": 156,
+          "cellCount": 19188,
+          "actualStep": 0.0508,
+          "actualBounds": {
+            "minX": 0.8736525686445304,
+            "maxX": 7.048,
+            "minY": 9.60554743135547,
+            "maxY": 17.448
+          },
+          "expanded": 153,
+          "solved": true,
+          "failed": false
+        },
+        "memory": {
+          "rss": 351973376,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "before",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 3.6000000000000005,
+            "y": 8.6
+          },
+          "end": {
+            "x": 1.9865374313554693,
+            "y": 11.325366940755242
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": -1.0614625686445307,
+            "maxX": 6.648000000000001,
+            "minY": 5.552,
+            "maxY": 14.373366940755242
+          },
+          "nx": null,
+          "ny": null,
+          "cellCount": null,
+          "actualStep": null,
+          "actualBounds": null,
+          "expanded": null,
+          "solved": null,
+          "failed": null
+        },
+        "memory": {
+          "rss": 350171136,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "after",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 3.6000000000000005,
+            "y": 8.6
+          },
+          "end": {
+            "x": 1.9865374313554693,
+            "y": 11.325366940755242
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": -1.0614625686445307,
+            "maxX": 6.648000000000001,
+            "minY": 5.552,
+            "maxY": 14.373366940755242
+          },
+          "nx": 153,
+          "ny": 175,
+          "cellCount": 26775,
+          "actualStep": 0.0508,
+          "actualBounds": {
+            "minX": -1.0614625686445307,
+            "maxX": 6.648000000000001,
+            "minY": 5.552,
+            "maxY": 14.373366940755242
+          },
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "memory": {
+          "rss": 350302208,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "cancel",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 3.6000000000000005,
+            "y": 8.6
+          },
+          "end": {
+            "x": 1.9865374313554693,
+            "y": 11.325366940755242
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": -1.0614625686445307,
+            "maxX": 6.648000000000001,
+            "minY": 5.552,
+            "maxY": 14.373366940755242
+          },
+          "nx": 153,
+          "ny": 175,
+          "cellCount": 26775,
+          "actualStep": 0.0508,
+          "actualBounds": {
+            "minX": -1.0614625686445307,
+            "maxX": 6.648000000000001,
+            "minY": 5.552,
+            "maxY": 14.373366940755242
+          },
+          "expanded": 359,
+          "solved": true,
+          "failed": false
+        },
+        "memory": {
+          "rss": 350302208,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "before",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 2.8000000000000003,
+            "y": 8.6
+          },
+          "end": {
+            "x": 1.8298425686445303,
+            "y": 11.48206180346618
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": -1.2181574313554697,
+            "maxX": 5.848000000000001,
+            "minY": 5.552,
+            "maxY": 14.53006180346618
+          },
+          "nx": null,
+          "ny": null,
+          "cellCount": null,
+          "actualStep": null,
+          "actualBounds": null,
+          "expanded": null,
+          "solved": null,
+          "failed": null
+        },
+        "memory": {
+          "rss": 350302208,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "after",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 2.8000000000000003,
+            "y": 8.6
+          },
+          "end": {
+            "x": 1.8298425686445303,
+            "y": 11.48206180346618
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": -1.2181574313554697,
+            "maxX": 5.848000000000001,
+            "minY": 5.552,
+            "maxY": 14.53006180346618
+          },
+          "nx": 141,
+          "ny": 178,
+          "cellCount": 25098,
+          "actualStep": 0.0508,
+          "actualBounds": {
+            "minX": -1.2181574313554697,
+            "maxX": 5.848000000000001,
+            "minY": 5.552,
+            "maxY": 14.53006180346618
+          },
+          "expanded": 0,
+          "solved": false,
+          "failed": false
+        },
+        "memory": {
+          "rss": 350433280,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      },
+      {
+        "event": {
+          "phase": "cancel",
+          "role": "escape",
+          "pass": "compact",
+          "pairNames": [
+            "source_trace_15",
+            "source_trace_16"
+          ],
+          "layer": "inner1",
+          "start": {
+            "x": 2.8000000000000003,
+            "y": 8.6
+          },
+          "end": {
+            "x": 1.8298425686445303,
+            "y": 11.48206180346618
+          },
+          "requestedStep": 0.0508,
+          "requestedBounds": {
+            "minX": -1.2181574313554697,
+            "maxX": 5.848000000000001,
+            "minY": 5.552,
+            "maxY": 14.53006180346618
+          },
+          "nx": 141,
+          "ny": 178,
+          "cellCount": 25098,
+          "actualStep": 0.0508,
+          "actualBounds": {
+            "minX": -1.2181574313554697,
+            "maxX": 5.848000000000001,
+            "minY": 5.552,
+            "maxY": 14.53006180346618
+          },
+          "expanded": 412,
+          "solved": true,
+          "failed": false
+        },
+        "memory": {
+          "rss": 350433280,
+          "heapTotal": 183821312,
+          "heapUsed": 138450193,
+          "external": 130672401,
+          "arrayBuffers": 938296
+        }
+      }
+    ],
+    "routingOrderAndPredicatesUnchanged": false,
+    "originalLegacyAndCornerOrderAndPredicatesPreserved": true,
+    "compactFrontFallbackAdded": true,
+    "full49Accepted": false,
+    "fabricationReady": false
+  },
+  "focusedTestLog": "bun test v1.3.14 (0d9b296a)\n\n.cache/paired-compact-front-portals-truthful-witness-successor-next/focused-current631.test.ts:\n(pass) capacity leases choose the smallest idle fit and isolate stale releases [1.47ms]\n(pass) capacity-sized travel remains valid across shrink reuse and later growth [0.31ms]\n(pass) capacity-backed public searches preserve fresh paths yields and cancel isolation [62.95ms]\n(pass) legacy first success is byte-identical with undefined or explicit negotiation [91.87ms]\n(pass) a failed no-package search does not repeat identical legacy work [4.28ms]\n(pass) hard occupancy matches fresh reference across changing grid sizes and copper [26.51ms]\n(pass) compact fronts reserve the complete paired entry and retain a clear front [1.95ms]\n(pass) zero compact portals preserve the existing corner fallback [171.06ms]\n{\"scope\":\"FOCUSED_CURRENT631_PAIR_DIAGNOSTIC\",\"inputSha256\":\"631ac37009bb602a3a1e67d3ffe7a932669e38ee372d60b29ce196d3c76ddd6d\",\"sourceRoot\":\"/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/lib\",\"naturalGeneratorCompletion\":true,\"originalYieldCount\":5573,\"returnedCarrierCount\":2,\"full49Accepted\":false,\"fabricationReady\":false}\n(pass) current631 DQS0 returns a complete pair through unchanged public checks [6775.76ms]\n\n 9 pass\n 0 fail\n 1269 expect() calls\nRan 9 tests across 1 file. [7.33s]\n",
+  "interpretation": {
+    "checkedBoardDdrConnections": 23,
+    "requiredDdrConnections": 49,
+    "genuineDogbones": 98,
+    "newRoutesAdopted": 0,
+    "full49GenerationPending": true,
+    "fullRegressionAndAll11BenchmarksPending": true,
+    "originalRuntimeUnchanged": true,
+    "fabricationReady": false
+  },
+  "sourceCandidate": {
+    "manifestPath": "/workspace/bus-lanes-solver/.cache/paired-compact-front-portals-truthful-witness-successor-next/SOURCE-manifest.json",
+    "manifestSha256": "c30fbbd13883917ab3636fe523f4192a04d1236713764bb830feca57265e8695",
+    "description": "Fallback to clearance-checked compact package-front portals after unchanged legacy pair routing fails, before existing corner fallback; capacity-reused grid scratch; exact original constraints retained."
+  }
+}

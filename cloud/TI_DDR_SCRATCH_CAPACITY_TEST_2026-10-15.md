@@ -3,3 +3,5 @@ The scratch-capacity reuse experiment completed all seven focused tests: **6 pas
 This run stayed below the unchanged1GiB RSS guard: peak619,495,424 bytes,34.828 seconds, zero OOM. Source/SDK inventories held and the owned process group closed. This is useful bounded memory evidence, not a released or fully routed solver fix. The independent opt-out behavior, full regression suite, all11 benchmarks, full49 matching, references and electrical qualification remain open. The checked board remains23/49; fabricationReady=false.
 
 The saved patch changes only idle scratch-buffer capacity reuse, retaining the64MiB pool cap and exclusive leases. Its baseline and resulting file hashes are in the JSON. It is an experimental source patch; installed runtime and original source remain unchanged.
+
+The saved zero-context patch passed a dry-run and reconstruction check in a fresh temporary directory: applying it to the hash-verified original scratch file reproduced the exact tested candidate hash. The original file remained unchanged.
