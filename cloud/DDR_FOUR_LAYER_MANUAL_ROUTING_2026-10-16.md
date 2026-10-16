@@ -1,4 +1,85 @@
-Latest reproducible DDR connectivity milestone: **actual253 / Source257, 49/49 DDR paths**.
+Latest reproducible DDR matching milestone: **actual268 / Source272, 49/49 DDR paths, both data bytes matched**.
+DDR signals still use Top, Inner1, Inner2 and Bottom. This is the requested
+four-signal-layer experiment; it does not establish TI's reference-plane,
+controlled-impedance or signal-integrity requirements. TI's standard four-layer
+arrangement reserves Inner1 for ground and Inner2 for DDR power.
+
+The fresh editable Core replay passes all 35 fidelity controls and independently
+connects every real CPU/RAM numeric-pad pair. All 280 real hardware identities,
+1165 lands, 129 original fixed reference barrels and the two declared capacitor
+placement/PDN changes are retained. The replay contains 234 actual fullspan vias.
+No numeric pin or bit swaps, extra copper layers, rule changes or edits to the
+raw Core geometry are used.
+
+| Source272 group | Whole planar spread | Limit | Result |
+| --- | ---: | ---: | --- |
+| Byte0, all 11 members | 0.5771666935 mm | 0.635 mm | Pass |
+| Byte1, all 11 members | 0.5769421603 mm | 0.635 mm | Pass |
+| Command/clock, all 26 members | 17.4387009342 mm | 0.635 mm | Fail |
+
+All three differential-pair planar skews pass the retained 0.127 mm limit.
+Nine of 26 command/clock signals reach the retained 20.95 mm minimum; the other
+17 still require tuning. Planar matching is not electrical timing validation.
+Compact tuning arms also require TI spacing review: some satisfy the preserved
+physical clearance rule but are closer than TI's typical 3W center spacing.
+
+Fresh native273 completes the 16 focused checks without exceptions. Fifteen
+geometry checks return zero findings; the remaining finding is command/clock
+bus skew. All findings are retained. The other 16 legacy native checks have not
+been rerun on this snapshot, so this is not a full-board DRC pass.
+Auth274 authenticates all 234 vias and finds no foreign via-to-track clearance
+violation. The independent literal-pour aggregate covers all 16 actual fresh
+pours, 234 vias and 5097 DDR wire segments across all 49 owners, with zero
+foreign-margin violations. Minimum foreign edge gap is 0.1183205295 mm against
+the retained 0.1016 mm requirement.
+
+Both new capacitor PDN lands have positive-area contacts to their actual fresh
+filled polygons. The ground pour also contacts the annulus of a genuine held
+ground barrel, its real Top trace and the numeric RAM ground pin. These local
+contacts do not prove continuous DDR reference planes or return paths.
+Independent CAD, controlled impedance, electrical delay, complete reference
+continuity and full-board fabrication qualification remain open.
+
+[Four-layer both-bytes-matched snapshot](artifacts/g350-four-layer-both-bytes-matched49-source272-2026-10-16.png).
+Candidate268 SHA256 is
+`fcc50ba7874af9724526a443367f70eeb42bff6179eb07ef8fd3ff929c0c6c77`;
+fresh Source272 raw SHA256 is
+`33584d197a1bb45a0dc76ac0a69e7016866a2369f1750c72d5eedc41ef444594`.
+The first normal-memory Core271 attempt stopped at the unchanged 2 GiB owned
+RSS cap; the identical source, inputs and checks passed as Core272 with Bun's
+`--smol` mode. The failed receipt and its partial output remain preserved.
+The accepted default remains unchanged; `all49Accepted=false` and
+`fabricationReady=false`. The board is not ready to order.
+
+The frozen checkpoint is `.cloud-tools/ddr-four-layer-post259-v2-2026-10-16`.
+Its [portable Source272 archive](artifacts/g350-four-layer-both-bytes-matched49-source272-v2-2026-10-16.tar.gz)
+contains 119 regular evidence files, is 13,615,307 bytes, and has SHA256
+`4ebb4ac4e750534c62de43f200d01a3ad81bb0c05bae0369e87c75351cd71f4b`.
+The [manifest](artifacts/g350-four-layer-both-bytes-matched49-source272-v2-2026-10-16.manifest.json)
+requires Source209, Source228, Source248 and Source257 in order after the
+existing Source32 restore chain. The two immutable 3D assets remain exact members
+of the Source257 dependency; this increment does not duplicate or modify them.
+
+The [restoration validation](artifacts/g350-four-layer-source272-v2-restoration-validation-2026-10-16.json)
+passes isolated extraction under umask077, all 119 member hashes/sizes/modes and
+normalized headers, a second extraction restoring zero files, and all 105 local
+plus four prerequisite workspace targets. It also exercises the existing
+workspace helper's actual `--restore` branch with zero restored files after
+verifying every target and the existing dependency symlink; both stay unchanged.
+The v2 manifest includes the required `solverSourceRoot` from the pinned base.
+The first unpublished snapshot/archive is preserved separately with its missing
+metadata entry; no frozen evidence was repaired in place.
+
+After restoring the prerequisites, restore this checkpoint from the board root:
+
+```bash
+source cloud/env.sh
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-both-bytes-matched49-source272-v2-2026-10-16.manifest.json --destination . --verify-archive
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-both-bytes-matched49-source272-v2-2026-10-16.manifest.json --destination .
+python scripts/restore-g350-four-layer-routing-workspace.py --saved-directory .cloud-tools/ddr-four-layer-post259-v2-2026-10-16 --restore
+```
+
+Historical reproducible DDR connectivity milestone: **actual253 / Source257, 49/49 DDR paths**.
 D12 is now connected. DDR wires use Top, Inner1, Inner2 and Bottom, as requested.
 This all-four-signal-layer experiment still requires reference-plane redesign
 and qualification; TI's standard four-layer arrangement reserves the inner
