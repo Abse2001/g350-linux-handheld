@@ -1,4 +1,74 @@
-Current partial Source checkpoint: **actual223 / Source228, 47/49 DDR paths**.
+Latest reproducible routing checkpoint: **actual243 / Source248, 48/49 DDR paths**.
+Only D12/source26 remains disconnected. DQM0/source30 is now connected at
+11.6836294063 mm. The routing uses Top, Inner1, Inner2 and Bottom. This is the
+requested all-four-signal-layer experiment; it is not TI's standard four-layer
+arrangement with continuous inner ground and DDR-power planes.
+
+The real editable replay moves only C_DDR_RAM_12 by +0.79 mm in X, translates
+its two lands and reroutes its two Bottom reference connections. All 280 real
+hardware identities, the other 279 placements, 1163 other lands, 163 other
+reference traces and all 129 fixed reference vias are preserved. Two RAM
+dogbones and the declared ordinary trace bodies change; no numeric pin swaps
+are made. The original width, clearance, fullspan-via and length rules remain.
+
+Actual243 passes all 48 model physical checks. Fresh244 passes all six critical
+conductors, five original report APIs and C31 in both actual DQS1 views.
+Projector245/capture246/Core248 reproduce 48 connected and one pending actual
+numeric-pad graph, with all 35 fidelity controls passing. Core248 contains
+229 real fullspan vias and 313 physical trace rows. Failed Core247's OBJ-loader
+attempt is preserved; the stage-logging-only retry248 passed without changing
+asset handling, geometry or assertions. Its earlier failure remains unexplained.
+
+Native249 completes all 16 focused checks: physical10 and the other five
+geometry checks return zero findings; three bus-skew failures remain.
+Auth250 authenticates all 229 vias with zero foreign via-to-track violations.
+The fresh literal-pour audit and independently checked coverage aggregate cover
+all 14 actual BREP pours, 229 vias and 957 routed wire segments across 48 owners,
+with zero foreign-margin violations. Minimum edge gap is
+0.11832052949719676 mm against 0.1016 mm.
+
+| Group | Routed subset length spread | Limit | Result |
+| --- | ---: | ---: | --- |
+| Byte 0 | 6.6552022816 mm | 0.635 mm | Fail |
+| Byte 1 | 2.3907853135 mm, D12 pending | 0.635 mm | Fail |
+| Command/clock | 17.4387009342 mm | 0.635 mm | Fail |
+
+All three planar differential-pair skew observations pass 0.127 mm. This does
+not establish electrical delay, controlled impedance, return-path continuity,
+TI compliance, independent CAD or fabrication readiness. Only 3/26 CA signals
+meet the retained 20.95 mm minimum. The separate Source236 47-path timing
+fallback has 13/26 CA signals at minimum and a 15.8185999215 mm CA spread; its
+timing and 15-pour results must not be attributed to Source248.
+
+Preview: [four-layer Source248 snapshot](artifacts/g350-four-layer-partial48-source248-2026-10-16.png).
+The yellow dashed line marks the pending D12 connection.
+The separate evidence folder is `.cloud-tools/ddr-four-layer-post232-2026-10-16`.
+Candidate243 SHA256 is
+`cf4808ac8cfd61832979cfd95bec76e22605bfc43d3d0138bbbf5086cfe59720`;
+fresh Source248 raw SHA256 is
+`c5129a2ec734e873c209ab8cdccf2cad1753d177f1c87857ffae0cf7ff12a486`.
+The later 251/252 D12 corridor tests preserve all 48 routes and both critical
+views but find no qualified final path in their bounded models. They do not
+prove board-wide impossibility. The accepted default remains Source32 at
+32/49; `all49Accepted=false`; `fabricationReady=false`.
+
+The [portable Source248 archive](artifacts/g350-four-layer-partial48-source248-2026-10-16.tar.gz)
+contains 194 regular files and 158 workspace restore targets. It is 11,222,356
+bytes, SHA256 `e5d10d729ee0fc7fed74fdafbcb169a4f78083645d81064130dc30c2809d9e24`.
+Its [manifest](artifacts/g350-four-layer-partial48-source248-2026-10-16.manifest.json)
+requires Source209 and Source228 in that order, after the existing Source32
+restore chain. The [restoration validation](artifacts/g350-four-layer-source248-restoration-validation-2026-10-16.json)
+records an isolated extraction under umask077, exact hashes/sizes/modes and
+normalized headers for all 194 members, a second extraction restoring zero
+files, and verification of all 158 workspace targets. Only the test's owned
+extracted payload was removed after the pass; the saved board was untouched.
+The final post232 snapshot closes at scope252 plus the completed
+pour audit and reviewed plot; later experiments require a new saved directory.
+Use `latestSourceVerifiedCheckpoint` in its `PROGRESS.json` to resume the
+48-path board. Its older `primaryCandidate` entry deliberately preserves the
+separate Source233/236 timing fallback.
+
+Historical partial Source checkpoint: **actual223 / Source228, 47/49 DDR paths**.
 The two missing nets are D12/source26 and DQM0/source30. Actual223 passes all 47
 route physical checks. Fresh225 validates all six critical conductors and all
 five bus/pair/shared/coupling/exterior report APIs in both actual DQS1 views.
@@ -33,9 +103,10 @@ normalized tar headers for all 196 members, a second extraction restoring zero
 files, and successful verification of all 172 workspace targets. The frozen
 post209 folder and both archive checkpoints remain immutable.
 
-The later merged233 candidate has separate Core236/native237/auth238 results.
-It is outside this archive and requires its own literal-pour audit; Source228's
-pour result does not qualify that different geometry.
+The later merged233 candidate has separate Core236/native237/auth238 results
+and a completed all15-pour aggregate over its exact 227 vias and 7456 routed
+wire segments. It is outside the Source228 archive and is retained separately
+with the newer Source248 evidence. No pour or timing result crosses scenes.
 
 Independent46-path timing fallback: **CA204 / Source209,46/49 DDR paths**.
 Source209 passes all35 fidelity controls; native213 has zero findings in
@@ -103,7 +174,8 @@ isolated changed-content/changed-mode preservation fixtures pass. Neither
 restorer runs a routing SDK or promotes the default board.
 
 The complete restore order is Source32 (including its predecessors), Source209,
-then Source228. After the Source32 and Source209 commands above, continue:
+Source228, then Source248. After the Source32 and Source209 commands above,
+continue:
 
 ```bash
 cd /workspace/g350-linux-handheld
@@ -124,6 +196,22 @@ preserves differing local files or modes by refusing replacement. The workspace
 helper reconstructs only missing recorded inputs and verifies all existing ones.
 This restores the partial diagnostic layout and evidence without running a
 routing SDK, changing the default board, or accepting the two missing routes.
+
+Then restore the latest 48-path Source248 checkpoint:
+
+```bash
+python3 scripts/restore-g350-routing-evidence.py \
+  cloud/artifacts/g350-four-layer-partial48-source248-2026-10-16.manifest.json
+
+python3 scripts/restore-g350-four-layer-routing-workspace.py \
+  --saved-directory .cloud-tools/ddr-four-layer-post232-2026-10-16 --restore
+python3 scripts/restore-g350-four-layer-routing-workspace.py \
+  --saved-directory .cloud-tools/ddr-four-layer-post232-2026-10-16
+```
+
+Read the restored post232 `README.md` and `latestSourceVerifiedCheckpoint`
+before continuing. Only D12 is pending in this checkpoint; the older 47-path
+fallback keeps its own geometry, counts, timing and pour evidence.
 
 Historical verified partial checkpoint: **actual197,46/49 DDR paths**.
 The three-owner body-via repair preserves A6, the other43 route bodies, all263
