@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "archiveSha256": "c4cfe7d590a67368586ef49a6178dbc6b6519576a654a690d8f5ef91be0b9178",
+  "members": 597,
+  "workspaceRestoreTargets": 404,
+  "umask": "077",
+  "allMemberHashesSizesModesVerified": true,
+  "source33BFactoryModesPreserved": true,
+  "tarHeadersNormalized": true,
+  "secondExtractionRestoredZero": true,
+  "logs": [
+    "Verified 597 evidence members; restored 597",
+    "Verified 597 evidence members; restored 0",
+    "{\"savedFilesVerified\": 404, \"restoredFiles\": 0, \"mode\": \"verify\", \"routingExecuted\": false, \"all49Accepted\": false, \"fabricationReady\": false}"
+  ],
+  "isolatedPayloadRemovedAfterVerification": true,
+  "scope": "G350_SOURCE209_PARTIAL46_PORTABLE_EVIDENCE_RESTORATION_VALIDATION",
+  "verifiedAt": "2026-10-16T19:13:06.291043+00:00",
+  "archive": "cloud/artifacts/g350-four-layer-partial46-source209-2026-10-16.tar.gz",
+  "manifest": "cloud/artifacts/g350-four-layer-partial46-source209-2026-10-16.manifest.json",
+  "legacySource32ArchiveVerification": {
+    "members": 315,
+    "passed": true,
+    "extractionAttempted": false
+  },
+  "refusalControls": {
+    "fixture": "/tmp/g350-mode-aware-archive-smoke-9rwlqp0c",
+    "differingBytesPreservedAndRefused": true,
+    "differingModesPreservedAndRefused": true,
+    "idempotent": true,
+    "umask022RestoresExact600And644": true
+  },
+  "runtimeChecksEdited": false,
+  "protectedUserFilesEdited": false,
+  "all49Accepted": false,
+  "fabricationReady": false,
+  "restorerSources": [
+    {
+      "path": "scripts/restore-g350-routing-evidence.py",
+      "sha256": "148bad0fc4132ece5f78f18b05e4bc71d79019312343eda954ed7ca91874a643"
+    },
+    {
+      "path": "scripts/restore-g350-four-layer-routing-workspace.py",
+      "sha256": "6c5d321a256eadf58697f0f565b5bffa4a55491fce39ed0db7e7675604b6f3cc"
+    }
+  ]
+}
