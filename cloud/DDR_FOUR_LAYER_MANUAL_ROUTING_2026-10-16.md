@@ -1,4 +1,43 @@
-Current verified partial routing candidate: **CA204 / Source209,46/49 DDR paths**.
+Current partial Source checkpoint: **actual223 / Source228, 47/49 DDR paths**.
+The two missing nets are D12/source26 and DQM0/source30. Actual223 passes all 47
+route physical checks. Fresh225 validates all six critical conductors and all
+five bus/pair/shared/coupling/exterior report APIs in both actual DQS1 views.
+Source224/capture227/Core228 reproduce 47 connected and two pending numeric-pad
+graphs, with all 35 fidelity controls passing and 227 real fullspan vias.
+
+Fresh native230 completes 16 focused checks: physical10 and the other five
+geometry checks return zero findings; three bus-skew failures remain unfiltered.
+Auth231 authenticates all 227 via owners and reports zero foreign via-to-track
+violations. The completed literal audit covers all 14 fresh BREP pours, 227 vias
+and 937 routed wire segments across 47 owners: zero violations, minimum foreign
+edge gap 0.11832052949719676 mm against 0.1016 mm. These checks do not establish
+reference-plane continuity, TI compliance, electrical timing, CAD or fabrication
+readiness. The accepted default board remains 32/49.
+
+The separate evidence folder is `.cloud-tools/ddr-four-layer-post209-2026-10-16`.
+Candidate223 SHA256 is
+`ddaa4efd8d20f16cefca89b9166e834a956113194beed6f0f13903e346e36ea0`.
+Preview: [four-layer Source228 snapshot](artifacts/g350-four-layer-partial47-source228-2026-10-16.png).
+Yellow dashed connections identify the two missing nets.
+CA204's length-tuning changes have not been combined with this 47-path model.
+Source209 remains an independent 46-path timing fallback with its own immutable
+archive and checks below. `all49Accepted=false`; `fabricationReady=false`.
+
+The [portable Source228 archive](artifacts/g350-four-layer-partial47-source228-2026-10-16.tar.gz)
+contains 196 regular files and 172 workspace restore targets. It is 10,505,776
+bytes, SHA256 `4fff876a140edbd45cffdc445bd82d7b45a5abcedc630b8ea5633a4d1d9937f1`.
+Its [manifest](artifacts/g350-four-layer-partial47-source228-2026-10-16.manifest.json)
+requires the Source209 archive first. The [restoration validation](artifacts/g350-four-layer-source228-restoration-validation-2026-10-16.json)
+records a fresh isolated extraction under umask077, exact hashes/sizes/modes and
+normalized tar headers for all 196 members, a second extraction restoring zero
+files, and successful verification of all 172 workspace targets. The frozen
+post209 folder and both archive checkpoints remain immutable.
+
+The later merged233 candidate has separate Core236/native237/auth238 results.
+It is outside this archive and requires its own literal-pour audit; Source228's
+pour result does not qualify that different geometry.
+
+Independent46-path timing fallback: **CA204 / Source209,46/49 DDR paths**.
 Source209 passes all35 fidelity controls; native213 has zero findings in
 the original physical10 and the other five focused geometry checks, with
 three bus-skew failures retained. Auth214 covers all226 real via owners.
@@ -62,6 +101,29 @@ it first checks the project path and falls back to the manifest's directory only
 when that project path is missing. Legacy315-member archive verification and
 isolated changed-content/changed-mode preservation fixtures pass. Neither
 restorer runs a routing SDK or promotes the default board.
+
+The complete restore order is Source32 (including its predecessors), Source209,
+then Source228. After the Source32 and Source209 commands above, continue:
+
+```bash
+cd /workspace/g350-linux-handheld
+umask 077
+source cloud/env.sh
+
+python3 scripts/restore-g350-routing-evidence.py \
+  cloud/artifacts/g350-four-layer-partial47-source228-2026-10-16.manifest.json
+
+python3 scripts/restore-g350-four-layer-routing-workspace.py \
+  --saved-directory .cloud-tools/ddr-four-layer-post209-2026-10-16 --restore
+python3 scripts/restore-g350-four-layer-routing-workspace.py \
+  --saved-directory .cloud-tools/ddr-four-layer-post209-2026-10-16
+```
+
+The archive helper restores indexed file modes independently of umask and
+preserves differing local files or modes by refusing replacement. The workspace
+helper reconstructs only missing recorded inputs and verifies all existing ones.
+This restores the partial diagnostic layout and evidence without running a
+routing SDK, changing the default board, or accepting the two missing routes.
 
 Historical verified partial checkpoint: **actual197,46/49 DDR paths**.
 The three-owner body-via repair preserves A6, the other43 route bodies, all263
