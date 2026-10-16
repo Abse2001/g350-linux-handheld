@@ -1,4 +1,48 @@
-Latest reproducible DDR matching milestone: **actual268 / Source272, 49/49 DDR paths, both data bytes matched**.
+Latest connected editable DDR source: **actual286 / Source289, 49/49 DDR paths, both data bytes matched**. DDR signals use Top, Inner1, Inner2 and Bottom, following the user's four-signal-layer choice. This does not establish TI reference-plane continuity, impedance, spacing or electrical timing. TI's standard four-layer arrangement reserves the inner layers for ground and DDR power.
+
+Fresh Source289 passes all 35 fidelity controls and reproduces all 49 real CPU/RAM numeric-pad connections. It retains 280 hardware identities, 1165 lands, 129 original fixed reference barrels, the two existing capacitor placement/PDN changes and 234 actual fullspan vias. The latest change moves Source42's matching from Top to Bottom to open a control-routing corridor; all 48 other bodies, both original carrier vias and the entire foundation remain literal.
+
+| Source289 group | Whole planar spread | Limit | Result |
+| --- | ---: | ---: | --- |
+| Byte0, all 11 members | 0.5771666935 mm | 0.635 mm | Pass |
+| Byte1, all 11 members | 0.5769421603 mm | 0.635 mm | Pass |
+| Command/clock, all 26 members | 17.6628187566 mm | 0.635 mm | Fail |
+
+Fifteen of 26 command/clock signals reach the retained 20.95 mm minimum; eleven remain short. All three differential-pair planar skews pass 0.127 mm. These centerline measurements do not qualify electrical delay. Some existing compact tuning arms remain closer than TI's typical 3W guidance; wider-spaced variants are separate, unaccepted studies.
+
+Native290 and Native294 complete two disjoint sets of 16 checks on the same exact Source289 raw, controls and plan. Together they cover all 32 original native checks with no exceptions. The complete reports retain **951 findings**: 70 source declarations lacking qualifying PCB traces, 718 port-connectivity findings, 162 trace-thickness warnings and one command/clock skew finding. No thickness warning directly names any of the 49 DDR signal declarations. This is a complete check invocation record, **not a full-board pass**. Auth291 authenticates all 234 vias and returns zero foreign via-to-track violations or identity failures.
+
+Source289 generates 19 literal pours. Their current foreign margins and PDN/plane connectivity have not been independently qualified; Source272's 16-pour proof is not inherited. The separate fresh KiCad export/check work uses frozen Source272 and cannot qualify Source289. Continuous returns, controlled impedance, SI, full-board connectivity, fabrication checks and exact shell fit remain open.
+
+The [current validation summary](artifacts/g350-four-layer-source289-validation-summary-2026-10-16.json) binds the exact source, model and unfiltered reports. Candidate286 SHA256 is `adf4821e147029e694dffe97f5894fe060e9607d9510867e20a9e9b7f6fd621e`; raw Source289 SHA256 is `b7809be35568d45e117abf239edc290b2c379f9e02ec9427206798b0e60a567e`. The accepted default selection is unchanged. `all49Accepted=false`, `fabricationReady=false`; the board is not ready to order.
+
+The [portable Source289 archive](artifacts/g350-four-layer-both-bytes-ca15-connected49-source289-2026-10-16.tar.gz) contains 156 regular files, is 15,536,110 bytes, and has SHA256 `998a6b8a90d6d31fecf55a1f3ed7c2cdf0dabab47f01311ad5793d7e05ddeb1d`. Its [manifest](artifacts/g350-four-layer-both-bytes-ca15-connected49-source289-2026-10-16.manifest.json) requires the prior Source209, Source228, Source248, Source257 and Source272-v2 archives in order, after the existing Source32 restore chain. It freezes work through actual294, including unsuccessful attempts and all native findings; later experiments are separate.
+
+The [Source289 restoration test](artifacts/g350-four-layer-source289-restoration-validation-2026-10-16.json) passes all 156 member hashes, sizes, modes and normalized headers under umask077. Isolated extraction restores 156 files; a second extraction restores zero. It verifies all 135 local and 32 prerequisite workspace targets, seven data-only workspace evidence copies and both inherited immutable assets. The existing workspace helper's actual `--restore` branch restores zero files, and all targets and the preexisting dependency symlink remain unchanged.
+
+After restoring the prerequisites, restore Source289 from the board root:
+
+```bash
+source cloud/env.sh
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-both-bytes-ca15-connected49-source289-2026-10-16.manifest.json --destination . --verify-archive
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-both-bytes-ca15-connected49-source289-2026-10-16.manifest.json --destination .
+python scripts/restore-g350-four-layer-routing-workspace.py --saved-directory .cloud-tools/ddr-four-layer-post274-2026-10-16 --restore
+```
+
+Separate later physical model: **actual299, 49/49 paths, both data bytes matched, 16/26 command/clock signals at minimum**. Only Source24's Bottom tuning body changes from the Source289 model. Its whole planar length is 21.0394076698 mm; the other 48 bodies and foundation remain literal. The seven-row bank uses 0.31 mm pitch, with 0.306 mm minimum nonlocal center spacing. The new body passes its foreign-DDR 3W/4W audit without exceptions, with nearest foreign center spacing 0.3071671857 mm. Two local contiguous corner pairs remain below 3W; this is not whole-route TI qualification. Both actual critical views, all five routing API checks and all 49 final physical model checks pass. Ten command/clock members remain short; full command/clock skew still fails.
+
+Model299 has **no fresh Source/Core replay, native board, pour or CAD qualification**. Source289 remains the latest editable checkpoint. Its checks and Source272's pour/CAD results are not inherited by this model. The [supplemental Model299 archive](artifacts/g350-four-layer-ca16-model299-source289-base-2026-10-16.tar.gz) is 1,325,974 bytes, SHA256 `bf63e126db40168b7bdda4031d10a9ed8e56f87d1de67118caa3fb9ff64257cb`. Its [manifest](artifacts/g350-four-layer-ca16-model299-source289-base-2026-10-16.manifest.json) requires Source289 after the five earlier archives. The [restoration test](artifacts/g350-four-layer-model299-restoration-validation-2026-10-16.json) verifies all 17 members, isolated extraction and all 180 actual local/prerequisite targets before and after the existing helper's zero-write restore. The first archive-helper attempt failed Python parsing before any payload write; its original source and failure receipt remain separate and unchanged. The corrected successor passes AST/compile review and actual build/restore validation.
+
+After restoring Source289 and its prerequisites:
+
+```bash
+source cloud/env.sh
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-ca16-model299-source289-base-2026-10-16.manifest.json --destination . --verify-archive
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-ca16-model299-source289-base-2026-10-16.manifest.json --destination .
+python scripts/restore-g350-four-layer-routing-workspace.py --saved-directory .cloud-tools/ddr-four-layer-model299-2026-10-16 --restore
+```
+
+Previous scoped pour-qualified DDR milestone: **actual268 / Source272, 49/49 DDR paths, both data bytes matched**.
 DDR signals still use Top, Inner1, Inner2 and Bottom. This is the requested
 four-signal-layer experiment; it does not establish TI's reference-plane,
 controlled-impedance or signal-integrity requirements. TI's standard four-layer

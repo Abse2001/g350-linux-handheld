@@ -1,0 +1,291 @@
+{
+  "scope": "G350_FOUR_SIGNAL_LAYER_ACTUAL286_SOURCE289_PARTIAL_DDR_VALIDATION",
+  "branch": "codex/cloud-handoff",
+  "latestUserLayerChoice": "DDR signal routing may use Top, Inner1, Inner2 and Bottom; reference redesign still requires validation",
+  "evidence": {
+    "model": {
+      "path": "/tmp/g350-source42-bottom-matching49-finite1g-root-20261016-run286/byte0-result.json",
+      "sha256": "f0e46cc0245c1e5a4cf18563c8fab72adb642e38dd96ef2a57f5b872cb8aaebd",
+      "bytes": 3263176
+    },
+    "candidate": {
+      "path": "/tmp/g350-source42-bottom-matching49-finite1g-root-20261016-run286/byte0-result.candidate.json",
+      "sha256": "adf4821e147029e694dffe97f5894fe060e9607d9510867e20a9e9b7f6fd621e",
+      "bytes": 12830421
+    },
+    "sourceControls": {
+      "path": "/tmp/g350-both-bytes-ca15-matched49-core-smol-root-20261016-run289/byte0-result.json",
+      "sha256": "4a4df2d96e926d1a4770324875127d8b4d373bcb86ccf2d46477b6723ab08217",
+      "bytes": 4463509
+    },
+    "sourceRaw": {
+      "path": "/tmp/g350-both-bytes-ca15-matched49-core289-raw.json",
+      "sha256": "b7809be35568d45e117abf239edc290b2c379f9e02ec9427206798b0e60a567e",
+      "bytes": 6759315
+    },
+    "authenticatedVias": {
+      "path": "/tmp/g350-both-bytes-ca15-matched49-via-track-root-20261016-run291/byte0-result.json",
+      "sha256": "a0f291527001b6918310032ab72cb81880401e2487592fbc7854ae2e3d99b6ae",
+      "bytes": 10025392
+    },
+    "full32Coverage": {
+      "path": "/tmp/g350-native32-source289-coverage-summary-root-20261016.json",
+      "sha256": "96954fcb55f97959e4436954d722002668e2e428aeacda91f2dd1182353bff76",
+      "bytes": 4136
+    }
+  },
+  "DDRPathsConnected": 49,
+  "DDRPathsRequired": 49,
+  "freshSourceReplayChecksPassed": 35,
+  "sourceHardware": {
+    "realParts": 280,
+    "semanticCopperLands": 1165,
+    "heldOriginalReferenceBarrels": 129,
+    "actualFullspanVias": 234,
+    "capacitorChanges": "Exact pre-existing cap12 X+0.79 mm and cap8 (0,7.9) Bottom with two named PDN nodes, no further hardware changes"
+  },
+  "layerUsage": [
+    {
+      "layer": "top",
+      "DDRSignalOwners": 49,
+      "DDRWireSegments": 361,
+      "summedPlanarCenterlineLengthMm": 110.8435038612256
+    },
+    {
+      "layer": "inner1",
+      "DDRSignalOwners": 19,
+      "DDRWireSegments": 1644,
+      "summedPlanarCenterlineLengthMm": 190.27936054159147
+    },
+    {
+      "layer": "inner2",
+      "DDRSignalOwners": 21,
+      "DDRWireSegments": 2180,
+      "summedPlanarCenterlineLengthMm": 243.26423282954926
+    },
+    {
+      "layer": "bottom",
+      "DDRSignalOwners": 17,
+      "DDRWireSegments": 1549,
+      "summedPlanarCenterlineLengthMm": 153.92261128997268
+    }
+  ],
+  "planarMatching": {
+    "byte0SpreadMm": 0.5771666935110122,
+    "byte1SpreadMm": 0.5769421602573104,
+    "retainedByteSkewLimitMm": 0.635,
+    "caMinimumLengthMm": 20.95,
+    "caMinimumPassing": 15,
+    "caMembers": 26,
+    "caSpreadMm": 17.66281875658197,
+    "caMinimumFailingOwners": [
+      "source_trace_0",
+      "source_trace_19",
+      "source_trace_5",
+      "source_trace_20",
+      "source_trace_7",
+      "source_trace_22",
+      "source_trace_8",
+      "source_trace_37",
+      "source_trace_9",
+      "source_trace_24",
+      "source_trace_25"
+    ],
+    "CAFullGroupMatched": false,
+    "allThreePairPlanarSkewsPass": true,
+    "pairSkewLimitMm": 0.127,
+    "electricalTimingQualified": false
+  },
+  "nativeChecks": {
+    "scope": "ACTUAL_SOURCE289_FRESH32_NATIVE_CHECK_COVERAGE_TWO_DISJOINT_COMPLETED_INVOCATIONS",
+    "inputBindings": {
+      "raw": {
+        "path": "/tmp/g350-both-bytes-ca15-matched49-core289-raw.json",
+        "sha256": "b7809be35568d45e117abf239edc290b2c379f9e02ec9427206798b0e60a567e"
+      },
+      "controls": {
+        "path": "/tmp/g350-both-bytes-ca15-matched49-core-smol-root-20261016-run289/byte0-result.json",
+        "sha256": "4a4df2d96e926d1a4770324875127d8b4d373bcb86ccf2d46477b6723ab08217"
+      },
+      "reviewedSourcePlan": {
+        "path": "/tmp/g350-both-bytes-ca15-matched49-projector-root-20261016-run287/byte0-result.json",
+        "sha256": "373d1400453ebe44ea8ea0fc56b7f45be71f4720f60248d779c8cc8c224f045d"
+      }
+    },
+    "reports": [
+      {
+        "path": "/tmp/g350-both-bytes-ca15-matched49-native-root-20261016-run290/byte0-result.json",
+        "sha256": "30f0ab71705cef55d3bab9beef405603e4c735182b968826847b0fe269e5a877"
+      },
+      {
+        "path": "/tmp/g350-both-bytes-ca15-matched49-native-complement-root-20261016-run294/byte0-result.json",
+        "sha256": "e5654635f91360ef3bae93defcfeb608bc55727b770143b21609ab676e355599"
+      }
+    ],
+    "all32FreshCallsCompleted": true,
+    "exceptions": 0,
+    "checks": [
+      {
+        "name": "checkEachPcbTraceNonOverlapping",
+        "findingCount": 0
+      },
+      {
+        "name": "checkViaPadClearance",
+        "findingCount": 0
+      },
+      {
+        "name": "checkViaTraceClearance",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbTraceSelfShorts",
+        "findingCount": 0
+      },
+      {
+        "name": "checkCopperToBoardEdgeClearance",
+        "findingCount": 0
+      },
+      {
+        "name": "checkDifferentNetViaSpacing",
+        "findingCount": 0
+      },
+      {
+        "name": "checkHoleTraceClearance",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPadTraceClearance",
+        "findingCount": 0
+      },
+      {
+        "name": "checkViasInPads",
+        "findingCount": 0
+      },
+      {
+        "name": "checkViasOffBoard",
+        "findingCount": 0
+      },
+      {
+        "name": "checkTracesAreContiguous",
+        "findingCount": 0
+      },
+      {
+        "name": "checkDanglingTraces",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbBusLengthSkew",
+        "findingCount": 1
+      },
+      {
+        "name": "checkPcbRoutingConstraints",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbTraceViaCounts",
+        "findingCount": 0
+      },
+      {
+        "name": "checkCopperPourShorts",
+        "findingCount": 0
+      },
+      {
+        "name": "checkSourceTracesHavePcbTraces",
+        "findingCount": 70
+      },
+      {
+        "name": "checkEachPcbPortConnectedToPcbTraces",
+        "findingCount": 718
+      },
+      {
+        "name": "checkSourceTracesMatchPcbTraceThickness",
+        "findingCount": 162
+      },
+      {
+        "name": "checkPcbTraceLengths",
+        "findingCount": 0
+      },
+      {
+        "name": "checkSameNetViaSpacing",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPadPadClearance",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbTracesOutOfBoard",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbBendZoneTraces",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbComponentsOutOfBoard",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbComponentOverCutout",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbCopperOverKeepout",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPcbComponentOverlap",
+        "findingCount": 0
+      },
+      {
+        "name": "checkPinMustBeConnected",
+        "findingCount": 0
+      },
+      {
+        "name": "checkSameNameNetsAreConnected",
+        "findingCount": 0
+      },
+      {
+        "name": "checkSourcePinVoltageCompatibility",
+        "findingCount": 0
+      },
+      {
+        "name": "checkTwoTerminalSwitchContactsOnDifferentNets",
+        "findingCount": 0
+      }
+    ],
+    "totalUnfilteredFindings": 951,
+    "thicknessFindingsForThe49DirectLogicalDdrSignalDeclarations": 0,
+    "thicknessWarningTotal": 162,
+    "allFindingsRemainInOriginalUnfilteredReports": true,
+    "nativeBoardPassed": false,
+    "fullBoardPassed": false,
+    "TIQualified": false,
+    "electricalTimingQualified": false,
+    "fabricationReady": false
+  },
+  "viaOwnershipAndForeignClearance": {
+    "actualVias": 234,
+    "authenticatedVias": 234,
+    "identityFailures": 0,
+    "ambiguousVias": 0,
+    "foreignViaTrackViolations": 0,
+    "invalidSegments": 0,
+    "unresolvedSegmentOwners": 0
+  },
+  "currentLiteralPours": {
+    "count": 19,
+    "currentForeignMarginAuditComplete": false,
+    "source272PourQualificationInherited": false,
+    "source281PourQualificationInherited": false
+  },
+  "frozenSource272IndependentCadWorkIsSeparate": true,
+  "defaultBoardSelectionChanged": false,
+  "fullBoardPassed": false,
+  "controlledImpedanceQualified": false,
+  "TIReferenceContinuityQualified": false,
+  "TISpacingQualified": false,
+  "electricalTimingQualified": false,
+  "all49Accepted": false,
+  "fabricationReady": false
+}
