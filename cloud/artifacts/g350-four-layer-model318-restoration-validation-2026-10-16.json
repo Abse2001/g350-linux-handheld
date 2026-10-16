@@ -1,0 +1,63 @@
+{
+  "scope": "MODEL318_INCREMENT_ISOLATED_EXTRACTION_AND239_TARGET_NOOP_RESTORE_NOT_SOURCE_QUALIFICATION",
+  "passed": true,
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-four-layer-ca17-model318-source313-base-2026-10-16.manifest.json",
+        "--destination",
+        "/tmp/g350-model318-smoke-9v4459ru/extracted",
+        "--verify-archive"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 23 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-four-layer-ca17-model318-source313-base-2026-10-16.manifest.json",
+        "--destination",
+        "/tmp/g350-model318-smoke-9v4459ru/extracted"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 23 evidence members; restored 23\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-four-layer-routing-workspace.py",
+        "--saved-directory",
+        "/tmp/g350-model318-smoke-9v4459ru/extracted/.cloud-tools/ddr-four-layer-model318-2026-10-16",
+        "--restore"
+      ],
+      "returncode": 0,
+      "stdout": "{\"savedFilesVerified\": 19, \"restoredFiles\": 0, \"mode\": \"restore\", \"routingExecuted\": false, \"all49Accepted\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "archiveSha256": "f7090db168c637688eaaa4b6456a1de83edc0d2e3ead44a2a7458a12ec82ccc6",
+  "manifestSha256": "53c4db6ad308559d5ef5f5c991b24d758550e3dcc7b0c8c033656b1231856c15",
+  "isolatedPayloadRemoved": true,
+  "all239ActualTargetsUnchanged": true,
+  "existingHelperRestoreCodePathExecuted": true,
+  "restoredWorkspaceFiles": 0,
+  "latestEditableSource": 313,
+  "primaryModelScope": 318,
+  "sdkExecuted": false,
+  "all49Accepted": false,
+  "fullBoardPassed": false,
+  "nativeBoardPassed": false,
+  "currentPourQualified": false,
+  "fullTimingPassed": false,
+  "electricalTimingQualified": false,
+  "tiQualified": false,
+  "referenceContinuityQualified": false,
+  "cadQualified": false,
+  "defaultBoardPromoted": false,
+  "fabricationReady": false
+}

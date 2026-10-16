@@ -1,0 +1,40 @@
+{
+  "scope": "CURRENT_START_SHELL_ACTIVATION_AND_LINKED_RESTORE_VALIDATION",
+  "startFile": "cloud/START_CURRENT_FOUR_LAYER_DDR.md",
+  "startSha256": "88ec6821237861ca5cf4f4cfe84571c9f926d3e632f5ec1d7a81737198fc037d",
+  "activationCommand": "cd /workspace/g350-linux-handheld\nsource cloud/env.sh\ngit branch --show-current\nnode --version\nbun --version\n",
+  "returncode": 0,
+  "stdout": "codex/cloud-handoff\nv25.6.1\n1.3.14\n",
+  "stderr": "",
+  "activationPassed": true,
+  "restoreTests": [
+    {
+      "path": "cloud/artifacts/g350-four-layer-source289-restoration-validation-2026-10-16.json",
+      "sha256": "6d7e2de56748a0c5e468b827834a3d5880b96ee178cc8f196295275cf4c11c80",
+      "actualTargetsVerifiedByPriorIsolatedTest": 167,
+      "passed": true
+    },
+    {
+      "path": "cloud/artifacts/g350-four-layer-model299-restoration-validation-2026-10-16.json",
+      "sha256": "a9bc21da493a56fb29a7b81166f36c1ad211782a9f305af3e1749fed2fe237ed",
+      "actualTargetsVerifiedByPriorIsolatedTest": 180,
+      "passed": true
+    },
+    {
+      "path": "cloud/artifacts/g350-four-layer-source313-restoration-validation-2026-10-16.json",
+      "sha256": "52da1b2eee1fd094625ddbe5ec087c2eac55b7d41bafd16bb9f7cdaf280c966b",
+      "actualTargetsVerifiedByPriorIsolatedTest": 220,
+      "passed": true
+    },
+    {
+      "path": "cloud/artifacts/g350-four-layer-model318-restoration-validation-2026-10-16.json",
+      "sha256": "5fa8f2868c0d57bbc759e9aaef923440c7188ec091a0415fcba980217348f8e0",
+      "actualTargetsVerifiedByPriorIsolatedTest": 239,
+      "passed": true
+    }
+  ],
+  "installScriptChanged": false,
+  "repositoriesChanged": false,
+  "networkChanged": false,
+  "fabricationReady": false
+}

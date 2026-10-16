@@ -1,0 +1,102 @@
+{
+  "scope": "SOURCE272_CAD310_PORTABLE64_EVIDENCE_AND216_TARGET_NOOP_RESTORE_NOT_BOARD_QUALIFICATION",
+  "passed": true,
+  "archive": "/workspace/g350-linux-handheld/cloud/artifacts/g350-source272-cad310-connected49-capped-default-drc-2026-10-16.tar.gz",
+  "archiveSha256": "e6b63b3e768f620eeaacd1ac5abadca747edf063ae79842c82fea9786fd0d753",
+  "manifest": "/workspace/g350-linux-handheld/cloud/artifacts/g350-source272-cad310-connected49-capped-default-drc-2026-10-16.manifest.json",
+  "manifestSha256": "1ada576fa863f460a925f7e7f76b9fa796646f477e0d0007d6647a42644b9135",
+  "validator": {
+    "path": "/tmp/g350-source272-cad310-portable-archive-sourceonly.py",
+    "sha256": "93b33ebe3af66555896820a5cb794eb016f5fe744d58a5ee52f3d0187ac4fe4f"
+  },
+  "genericRestorer": {
+    "path": "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+    "sha256": "148bad0fc4132ece5f78f18b05e4bc71d79019312343eda954ed7ca91874a643"
+  },
+  "workspaceHelper": {
+    "path": "/workspace/g350-linux-handheld/scripts/restore-g350-four-layer-routing-workspace.py",
+    "sha256": "6c5d321a256eadf58697f0f565b5bffa4a55491fce39ed0db7e7675604b6f3cc"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-source272-cad310-connected49-capped-default-drc-2026-10-16.manifest.json",
+        "--destination",
+        "/tmp/g350-cad310-archive-smoke-rsn0my_c/extracted",
+        "--verify-archive"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 64 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-source272-cad310-connected49-capped-default-drc-2026-10-16.manifest.json",
+        "--destination",
+        "/tmp/g350-cad310-archive-smoke-rsn0my_c/extracted"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 64 evidence members; restored 64\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-source272-cad310-connected49-capped-default-drc-2026-10-16.manifest.json",
+        "--destination",
+        "/tmp/g350-cad310-archive-smoke-rsn0my_c/extracted"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 64 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-four-layer-routing-workspace.py",
+        "--saved-directory",
+        "/tmp/g350-cad310-archive-smoke-rsn0my_c/extracted/.cloud-tools/ddr-source272-cad310-2026-10-16",
+        "--restore"
+      ],
+      "returncode": 0,
+      "stdout": "{\"savedFilesVerified\": 50, \"restoredFiles\": 0, \"mode\": \"restore\", \"routingExecuted\": false, \"all49Accepted\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "normalizedHeadersVerified": true,
+  "all64MemberHashesBytesModesVerified": true,
+  "all216ActualTargetsUnchanged": true,
+  "all10WorkspaceDataOnlyCopiesUnchanged": true,
+  "restoredWorkspaceFiles": 0,
+  "dependencyLinkChanged": false,
+  "isolatedPayloadRemoved": true,
+  "sourceCoreScope": 272,
+  "latestCadScope": 310,
+  "scoped49CadConnectivityPassed": true,
+  "reportedDrcViolations": 2102,
+  "reportedDrcOpens": 499,
+  "drcFindingCountsAreExhaustive": false,
+  "negative304Evidence": {
+    "recordedProcessExitCode": 0,
+    "recordedKiCadExitCode": 0,
+    "semanticReportComplete": false,
+    "scoped49GeometryAndConnectivityPassed": false,
+    "reportFailureType": "TypeError",
+    "zeroExitIsNotSemanticQualification": true
+  },
+  "sdkExecuted": false,
+  "all49Accepted": false,
+  "fullBoardPassed": false,
+  "fullTimingPassed": false,
+  "electricalTimingQualified": false,
+  "tiQualified": false,
+  "referenceContinuityQualified": false,
+  "cadManufacturingQualified": false,
+  "defaultBoardPromoted": false,
+  "fabricationReady": false
+}
