@@ -1,4 +1,77 @@
-Latest reproducible routing checkpoint: **actual243 / Source248, 48/49 DDR paths**.
+Latest reproducible DDR connectivity milestone: **actual253 / Source257, 49/49 DDR paths**.
+D12 is now connected. DDR wires use Top, Inner1, Inner2 and Bottom, as requested.
+This all-four-signal-layer experiment still requires reference-plane redesign
+and qualification; TI's standard four-layer arrangement reserves the inner
+layers for continuous ground and DDR power.
+
+Fresh Source257 reproduces all 49 real CPU-to-RAM numeric-pad connections with
+all 35 fidelity controls passing. It preserves all 280 real hardware identities,
+1165 lands and the 129 fixed reference barrels. Two capacitors have explicit,
+reviewable placement/reference deltas: C_DDR_RAM_12 X+0.79 mm and C_DDR_RAM_8
+at (0, 7.9) on Bottom. The latter has two real new net-declared PDN vias.
+CPU2/CPU11 dogbones, the D12 endpoint approaches and declared signal bodies
+have exact inverse records; no numeric pin or bit swaps are made.
+
+Native258 completes 16 focused checks. Physical clearance, shorts, dangling
+copper, contiguity, routing constraints and via checks return zero findings;
+three bus-skew findings remain. Auth259 authenticates all 234 real vias and
+finds no foreign via-to-track clearance violation. Fresh literal-pour checks
+cover all 14 actual pours, 234 vias and 979 routed wire segments: zero foreign
+margin violations, minimum gap 0.1183205295 mm against 0.1016 mm.
+
+The moved capacitor's new PDN lands lie wholly inside actual fresh power and
+ground pours. Ground contact to a genuine held package-reference barrel is
+proved through its positive-width copper annulus, real Top trace and numeric
+RAM ground pin. The earlier stricter full-held-land-disk test and its negative
+result are preserved. No geometry or manufacturing clearance rule was changed.
+These are local PDN contacts; complete DDR return-path continuity remains open.
+
+| Source257 group | Whole planar spread | Limit | Result |
+| --- | ---: | ---: | --- |
+| Byte0 | 6.6552022816 mm | 0.635 mm | Fail |
+| Byte1 | 2.4000719198 mm | 0.635 mm | Fail |
+| Command/clock | 17.4387009342 mm | 0.635 mm | Fail |
+
+All three differential-pair planar skews pass 0.127 mm. Later matching work has
+separate geometry and fresh checks; its results must not be attributed to this
+Source257 snapshot. No electrical delay, controlled impedance, TI spacing or
+reference compliance, independent CAD or fabrication readiness is claimed.
+Some compact tuning arms meet the preserved physical spacing rule while being
+closer than TI's typical 3W spacing; they still need SI review or redesign.
+
+[Four-layer connected49 snapshot](artifacts/g350-four-layer-connected49-source257-2026-10-16.png).
+The frozen evidence is `.cloud-tools/ddr-four-layer-post252-2026-10-16`;
+resume from its `latestSourceVerifiedCheckpoint`. Candidate253 SHA256 is
+`f76709a0c4cf1a19920b1e9361e7d5f994ee1671f975836f88d775e17651df87`;
+fresh Source257 raw SHA256 is
+`db3cc308c41304d57c37ca027de5bfa45379e149c1eb313940eed65050807d6d`.
+The older Source24848 and separate Source23647 CA timing fallback remain intact.
+The accepted default is unchanged; `all49Accepted=false`; `fabricationReady=false`.
+The board is not ready to order.
+
+The [portable Source257 archive](artifacts/g350-four-layer-connected49-source257-2026-10-16.tar.gz)
+contains 110 regular members: 108 saved evidence files plus two exact immutable
+board-relative 3D assets. It is 8,420,938 bytes, SHA256
+`8e18d75892787b85fe99b13de607871dab8009a19ff03d0515a4c4b835efb3ac`.
+Its [manifest](artifacts/g350-four-layer-connected49-source257-2026-10-16.manifest.json)
+requires the Source209, Source228 and Source248 archives in that order after
+the existing Source32 restoration chain. The [restore validation](artifacts/g350-four-layer-source257-restoration-validation-2026-10-16.json)
+passes an isolated extraction under umask077, all headers/hashes/sizes/modes,
+a second extraction restoring zero files, all 90 local and 23 prerequisite
+workspace targets, and both asset copies. Actual board assets were read only;
+only the test's owned extracted payload was removed after success.
+
+After the prerequisite archives and workspace files are restored, restore this
+increment with the existing scripts (existing differing bytes are refused):
+
+```bash
+source cloud/env.sh
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-connected49-source257-2026-10-16.manifest.json --destination . --verify-archive
+python scripts/restore-g350-routing-evidence.py cloud/artifacts/g350-four-layer-connected49-source257-2026-10-16.manifest.json --destination .
+python scripts/restore-g350-four-layer-routing-workspace.py --saved-directory .cloud-tools/ddr-four-layer-post252-2026-10-16 --restore
+```
+
+Historical reproducible routing checkpoint: **actual243 / Source248, 48/49 DDR paths**.
 Only D12/source26 remains disconnected. DQM0/source30 is now connected at
 11.6836294063 mm. The routing uses Top, Inner1, Inner2 and Bottom. This is the
 requested all-four-signal-layer experiment; it is not TI's standard four-layer
