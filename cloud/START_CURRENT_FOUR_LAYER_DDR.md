@@ -65,6 +65,15 @@ sources. Keep the pinned KiCad image/archive and rootfs under ignored
 `.cloud-tools`; current source and reports reconstruct or verify the tools.
 
 Use the restored prepared filesystem first. If routing evidence is missing,
+run `python3 scripts/restore-g350-current-ddr-workspace.py --restore` from the
+board root. Without `--restore`, the command verifies the existing workspace.
+The composed command was tested in both modes after the complete restoration:
+all368 current targets,120 solver source files and immutable assets pass, and
+the repeat restore writes zero files. It authenticates the pinned seven-step
+Source32 lineage and eleven current increments before restoring them. It does
+not route, reconstruct current process authority or qualify fabrication.
+
+For the underlying archive procedure,
 follow the current report and its hash-pinned archive manifests. Restore the
 Source32 lineage, then Source209 → Source228 → Source248 → Source257 →
 Source272-v2 → Source289 → Model299 → Source313 → Model318 → Model328,

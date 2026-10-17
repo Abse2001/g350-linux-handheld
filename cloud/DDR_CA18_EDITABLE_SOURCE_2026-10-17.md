@@ -1,5 +1,10 @@
 Latest editable checkpoint: **Source333 / Model328**, with all49 actual CPU/RAM numeric-pad graphs connected and all35 source fidelity controls passing. All280 real hardware identities, placement, pin mapping, four copper layers and reviewed runtime pins are preserved. The fresh source contains236 fullspan vias and19 literal copper pours.
 
+The [recovered continuation report](DDR_RECOVERED_CONTINUATION_2026-10-17.md)
+records the tested one-command workspace restorer and fresh bounded physical
+replay344. Geometry remains literal Model328. Later ODT/power/length studies
+remain unaccepted; the current board and qualification limits below are held.
+
 | Actual Source333 layer | DDR owners using layer | Nonzero DDR wire segments |
 | --- | ---: | ---: |
 | Top | 49 | 362 |

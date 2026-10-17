@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "scope": "RECOVERED_MODEL328_FRESH_BOUNDED_PHYSICAL_REPLAY",
+  "acceptedSourceBaseline": 333,
+  "acceptedPhysicalModelBaseline": 328,
+  "rootFreshScope": 344,
+  "physicalWorkerBeforeGCSourceSha256": "f36c0e79a78d5fadebef849716d636d31e2e181da0dde964eaee04dd478fb70e",
+  "physicalWorkerWithGCSourceSha256": "ad8893197842905848a89a6ab00ed2ecb7c8884e23a3ed52cd23d3a267ff368a",
+  "onlyWorkerChanges": "Four Bun.gc(true) calls around report/candidate serialization; all100 req assertions literal",
+  "predecessorStoppedScopes": [
+    {
+      "scope": 342,
+      "reason": "OWNED_RSS_STOP",
+      "passed": false
+    },
+    {
+      "scope": 343,
+      "reason": "OWNED_RSS_STOP",
+      "passed": false
+    }
+  ],
+  "freshScopeCompleted": true,
+  "execution": {
+    "startedAt": "2026-10-17T12:33:09.674147+00:00",
+    "command": [
+      "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+      "--smol",
+      "/tmp/g350-recovered-model328-v5-periodic-gc-sourceonly.ts",
+      "--output",
+      "/tmp/g350-recovered-model328-gc-baseline-root-20261017-run344/byte0-result.json",
+      "--budget-ms",
+      "165000"
+    ],
+    "policy": {
+      "wallSeconds": 180,
+      "rssBytes": 1073741824,
+      "sharedBytes": 32212254720,
+      "sampleSeconds": 0.05,
+      "termGraceSeconds": 5
+    },
+    "memoryBefore": {
+      "current": 4329758720,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "exitCode": 0,
+    "diagnosticStopped": false,
+    "stopReasons": [],
+    "accepted": false,
+    "currentGuardPid": 23918,
+    "pid": 23921,
+    "pgid": 23921,
+    "freshLeaderIdentity": {
+      "pid": 23921,
+      "pgid": 23921,
+      "sid": 23921,
+      "start": 3390501,
+      "state": "R",
+      "rss": 90112,
+      "argv": [
+        "/workspace/g350-linux-handheld/.cloud-tools/bun/node_modules/bun/bin/bun.exe",
+        "--smol",
+        "/tmp/g350-recovered-model328-v5-periodic-gc-sourceonly.ts",
+        "--output",
+        "/tmp/g350-recovered-model328-gc-baseline-root-20261017-run344/byte0-result.json",
+        "--budget-ms",
+        "165000"
+      ]
+    },
+    "endedAt": "2026-10-17T12:33:34.556758+00:00",
+    "wallSeconds": 24.882504070999858,
+    "cleanupOwnedGroupEmpty": true,
+    "peakOwnedRssBytes": 612888576,
+    "peakSharedBytes": 4995923968,
+    "memoryAfter": {
+      "current": 4494028800,
+      "events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      }
+    },
+    "oomDelta": {
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "signalErrors": [],
+    "signalErrorCount": 0
+  },
+  "literalSavedGeometryEquality": {
+    "carrierTraces": true,
+    "joinedNumericPadTraces": true,
+    "full49FanoutInput": true,
+    "heldCarrierTraces": true,
+    "ordinaryCarrierTraces": true,
+    "workingChanges": true,
+    "endpointInverses": true,
+    "bodyInverses": true
+  },
+  "all49Connected": true,
+  "byte0PlanarSkewMm": 0.5771666935110122,
+  "byte1PlanarSkewMm": 0.5769421602573104,
+  "commandClockObservation": {
+    "minimumPassingCount": 18,
+    "observedWholeSkewMm": 17.66281875658197
+  },
+  "source333Original32NativeChecksRerunHere": false,
+  "freshCoreExecutedHere": false,
+  "CADExecutedHere": false,
+  "timingPassed": false,
+  "electricalTimingQualified": false,
+  "boardChanged": false,
+  "all49Accepted": false,
+  "fabricationReady": false,
+  "portableDataArchive": {
+    "path": "cloud/artifacts/g350-recovered-four-layer-continuation-2026-10-17.tar.gz",
+    "bytes": 680580,
+    "sha256": "69742f8c56e68427fcaced83cf311bf7d4f973bf1816e3c66f8f6343cb68385d"
+  },
+  "portableDataManifest": "cloud/artifacts/g350-recovered-four-layer-continuation-2026-10-17.manifest.json",
+  "savedStartDraftRevision": 124,
+  "cleanUpstreamReproPR": "https://github.com/tscircuit/bus-lanes-solver/pull/65",
+  "unacceptedStudiesRemainDataOnly": true
+}
