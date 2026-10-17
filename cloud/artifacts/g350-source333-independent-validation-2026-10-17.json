@@ -1,0 +1,467 @@
+{
+  "scope": "INDEPENDENT_PURE_STDLIB_SOURCE333_CURRENT_SUMMARY_FRESHNESS_AND_UNFILTERED_FINDINGS_AUDIT_NOT_GEOMETRY_REEXECUTION",
+  "createdAt": "2026-10-17T00:44:06.517022+00:00",
+  "passed": true,
+  "reviewedSummary": {
+    "path": "/workspace/g350-linux-handheld/cloud/artifacts/g350-source333-root-validation-2026-10-17.json",
+    "sha256": "417ac24e4f468ec94286ba36403432d9a32ce422f3350d57a17d0da8b7270f0c",
+    "bytes": 13421
+  },
+  "inputPinsIndependentlyRehashed": [
+    {
+      "path": "/tmp/g350-four-body-ca18-strong-self-root-20261017-run328/byte0-result.candidate.json",
+      "sha256": "056cac41c6a654b417f6c088d871b8aab41bdaf1bfd42f570acd9dd42d7a09c8",
+      "bytes": 19304077
+    },
+    {
+      "path": "/tmp/g350-both-bytes-ca18-model328-projector-root-20261017-run331/byte0-result.json",
+      "sha256": "7a10f9b14d9e6656ad7033279fdfdf2ca60047e855fdc9c36466cc9223250103",
+      "bytes": 6255111
+    },
+    {
+      "path": "/tmp/g350-both-bytes-ca18-model328-capture-root-20261017-run332/byte0-result.json",
+      "sha256": "a164a7b04c44096c8d0f9cdcc33fd09d0d4a2e37047f699aebd38aa527cc4237",
+      "bytes": 10475425
+    },
+    {
+      "path": "/tmp/g350-both-bytes-ca18-model328-core333-raw.json",
+      "sha256": "fcb39e6bb43d972f8d511671ffe30b40819d53aeaeb48fd05d8017f30667990d",
+      "bytes": 6723834
+    },
+    {
+      "path": "/tmp/g350-both-bytes-ca18-model328-core-smol-root-20261017-run333/byte0-result.json",
+      "sha256": "435bf9061803ed2c903eeba7085e1f2b4bc77f6cdd7fd8137f024df9b49f1f38",
+      "bytes": 4401005
+    },
+    {
+      "path": "/tmp/g350-source333-ca18-focused-native-root-20261017-run334/byte0-result.json",
+      "sha256": "797d1a892c19f4c41735eda1c54535550c9ebb2552c5b3c608d38770d0d7e59e",
+      "bytes": 1590078
+    },
+    {
+      "path": "/tmp/g350-source333-ca18-via-track-root-20261017-run335/byte0-result.json",
+      "sha256": "46e2c5737899d698b9cbd195cd1901d4df3d88ce446bbe2f7eb85035c51b501d",
+      "bytes": 9928634
+    },
+    {
+      "path": "/tmp/g350-source333-ca18-native-complement-root-20261017-run336/byte0-result.json",
+      "sha256": "18b7156eb1fbf375edea1ca14b7ac834b8a8390037425fb294efdd882ffddaaf",
+      "bytes": 1579498
+    },
+    {
+      "path": "/tmp/g350-source333-all19-pour-coverage-root-20261017-run341/coverage-report.json",
+      "sha256": "0809cf15db6c208c76b472ff52b076cf5e364bd425513176266a195835ad9a5c",
+      "bytes": 105403
+    },
+    {
+      "path": "/tmp/g350-source333-all19-literal-pour-audit-root-20261017-run339/pour-report.json",
+      "sha256": "5a8efbe29acd794722f9209a977438bcdc63eb99951dd7a4923dbb281ed1ae81",
+      "bytes": 35668565
+    },
+    {
+      "path": "/tmp/g350-source333-last108-literal-pour-audit-root-20261017-run340/pour-report.json",
+      "sha256": "93806f62f07fd0bbe046d8ac9aa3e326f222f877fdc57408066eb7a4414432fe",
+      "bytes": 2282011
+    }
+  ],
+  "rawInventoryIndependentlyCounted": {
+    "source_project_metadata": 1,
+    "source_group": 1,
+    "source_net": 98,
+    "source_port": 1719,
+    "source_component": 280,
+    "source_manually_placed_via": 236,
+    "source_board": 1,
+    "source_refdes_convention_warning": 5,
+    "source_component_internal_connection": 5,
+    "source_trace": 1097,
+    "source_bus": 8,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 3,
+    "pcb_component": 516,
+    "pcb_board": 1,
+    "pcb_smtpad": 1161,
+    "pcb_solder_paste": 1121,
+    "pcb_silkscreen_path": 1692,
+    "pcb_silkscreen_circle": 12,
+    "pcb_silkscreen_text": 248,
+    "pcb_fabrication_note_path": 14,
+    "pcb_courtyard_outline": 247,
+    "pcb_courtyard_circle": 20,
+    "pcb_keepout": 2,
+    "pcb_hole": 2,
+    "pcb_plated_hole": 4,
+    "pcb_courtyard_rect": 13,
+    "pcb_note_rect": 1,
+    "pcb_via": 236,
+    "pcb_port": 1719,
+    "pcb_fabrication_note_text": 5,
+    "pcb_trace": 319,
+    "pcb_connector_not_in_accessible_orientation_warning": 2,
+    "cad_component": 248,
+    "pcb_courtyard_overlap_error": 3,
+    "pcb_copper_pour": 19
+  },
+  "freshCoreControlsPassed": 35,
+  "actualOwnedGraphs": 49,
+  "independentNativeGraphs": 49,
+  "freshNative32DisjointOriginalRoster": true,
+  "nativeExceptionCount": 0,
+  "nativeTotalUnfilteredFindings": 951,
+  "nativeUnfilteredCounts": [
+    {
+      "name": "checkEachPcbTraceNonOverlapping",
+      "findings": 0
+    },
+    {
+      "name": "checkViaPadClearance",
+      "findings": 0
+    },
+    {
+      "name": "checkViaTraceClearance",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbTraceSelfShorts",
+      "findings": 0
+    },
+    {
+      "name": "checkCopperToBoardEdgeClearance",
+      "findings": 0
+    },
+    {
+      "name": "checkDifferentNetViaSpacing",
+      "findings": 0
+    },
+    {
+      "name": "checkHoleTraceClearance",
+      "findings": 0
+    },
+    {
+      "name": "checkPadTraceClearance",
+      "findings": 0
+    },
+    {
+      "name": "checkViasInPads",
+      "findings": 0
+    },
+    {
+      "name": "checkViasOffBoard",
+      "findings": 0
+    },
+    {
+      "name": "checkTracesAreContiguous",
+      "findings": 0
+    },
+    {
+      "name": "checkDanglingTraces",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbBusLengthSkew",
+      "findings": 1
+    },
+    {
+      "name": "checkPcbRoutingConstraints",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbTraceViaCounts",
+      "findings": 0
+    },
+    {
+      "name": "checkCopperPourShorts",
+      "findings": 0
+    },
+    {
+      "name": "checkSourceTracesHavePcbTraces",
+      "findings": 70
+    },
+    {
+      "name": "checkEachPcbPortConnectedToPcbTraces",
+      "findings": 718
+    },
+    {
+      "name": "checkSourceTracesMatchPcbTraceThickness",
+      "findings": 162
+    },
+    {
+      "name": "checkPcbTraceLengths",
+      "findings": 0
+    },
+    {
+      "name": "checkSameNetViaSpacing",
+      "findings": 0
+    },
+    {
+      "name": "checkPadPadClearance",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbTracesOutOfBoard",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbBendZoneTraces",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbComponentsOutOfBoard",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbComponentOverCutout",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbCopperOverKeepout",
+      "findings": 0
+    },
+    {
+      "name": "checkPcbComponentOverlap",
+      "findings": 0
+    },
+    {
+      "name": "checkPinMustBeConnected",
+      "findings": 0
+    },
+    {
+      "name": "checkSameNameNetsAreConnected",
+      "findings": 0
+    },
+    {
+      "name": "checkSourcePinVoltageCompatibility",
+      "findings": 0
+    },
+    {
+      "name": "checkTwoTerminalSwitchContactsOnDifferentNets",
+      "findings": 0
+    }
+  ],
+  "direct49WidthFindingCount": 0,
+  "unresolvedWidthIdentities": [],
+  "actualViaAliasesAndOwnerEvidenceIndependentlyAuthenticated": 236,
+  "logicalUf": "Only actual SourceTrace connected SourcePort/SourceNet declarations; no component/copper/geometric union",
+  "allRoutedDdrSegmentsIndependentlyCounted": 5573,
+  "allPhysicalSegmentsIncludingReferences": 5747,
+  "layerUsageIndependentlyCounted": {
+    "top": {
+      "nonzeroWireSegments": 362,
+      "ddrOwnersUsingLayer": 49
+    },
+    "inner1": {
+      "nonzeroWireSegments": 1684,
+      "ddrOwnersUsingLayer": 19
+    },
+    "bottom": {
+      "nonzeroWireSegments": 1449,
+      "ddrOwnersUsingLayer": 17
+    },
+    "inner2": {
+      "nonzeroWireSegments": 2078,
+      "ddrOwnersUsingLayer": 22
+    }
+  },
+  "all19CompletedPourComparisonAndExemptionRostersIndependentlyReconstructed": true,
+  "pourComparisons": [
+    {
+      "pour": "pcb_copper_pour_0",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832076504618552
+    },
+    {
+      "pour": "pcb_copper_pour_28",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832095347299301
+    },
+    {
+      "pour": "pcb_copper_pour_33",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832076962815255
+    },
+    {
+      "pour": "pcb_copper_pour_37",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832076504618563
+    },
+    {
+      "pour": "pcb_copper_pour_38",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832084159474984
+    },
+    {
+      "pour": "pcb_copper_pour_39",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832102811862391
+    },
+    {
+      "pour": "pcb_copper_pour_48",
+      "sourceReport": "report_0",
+      "foreignVias": 156,
+      "foreignWires": 1684,
+      "sameNetExemptions": 80,
+      "minimumForeignEdgeMm": 0.11832102811862535
+    },
+    {
+      "pour": "pcb_copper_pour_49",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.1183205294971966
+    },
+    {
+      "pour": "pcb_copper_pour_62",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832095898259412
+    },
+    {
+      "pour": "pcb_copper_pour_66",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832076504618591
+    },
+    {
+      "pour": "pcb_copper_pour_78",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832076504618574
+    },
+    {
+      "pour": "pcb_copper_pour_84",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832081100677541
+    },
+    {
+      "pour": "pcb_copper_pour_87",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11917714781388768
+    },
+    {
+      "pour": "pcb_copper_pour_89",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832076504618702
+    },
+    {
+      "pour": "pcb_copper_pour_91",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832092887720067
+    },
+    {
+      "pour": "pcb_copper_pour_95",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832106450724975
+    },
+    {
+      "pour": "pcb_copper_pour_102",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832076504618602
+    },
+    {
+      "pour": "pcb_copper_pour_107",
+      "sourceReport": "report_0",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832076504618569
+    },
+    {
+      "pour": "pcb_copper_pour_108",
+      "sourceReport": "report_1",
+      "foreignVias": 185,
+      "foreignWires": 2078,
+      "sameNetExemptions": 51,
+      "minimumForeignEdgeMm": 0.11832076504618436
+    }
+  ],
+  "excludedPartial339Pour108NotCounted": true,
+  "fresh340Pour108CountedExactlyOnce": true,
+  "minimumRecordedForeignEdgeGapMm": 0.1183205294971966,
+  "rawWirePlanarCohortsIndependentlyMeasured": [
+    {
+      "cohort": "DDR_BYTE0",
+      "members": 11,
+      "skewMm": 0.5771666935110193
+    },
+    {
+      "cohort": "DDR_BYTE1",
+      "members": 11,
+      "skewMm": 0.5769421602573086
+    },
+    {
+      "cohort": "DDR_COMMAND_CLOCK",
+      "members": 26,
+      "skewMm": 17.662818756581974
+    }
+  ],
+  "actualCaAtMinimum": 18,
+  "actualCaStillShort": {
+    "source_trace_0": 3.8769552621700467,
+    "source_trace_19": 6.991168824543144,
+    "source_trace_5": 5.497056274847715,
+    "source_trace_20": 12.100131019127415,
+    "source_trace_7": 9.791168824543158,
+    "source_trace_22": 9.919148740949055,
+    "source_trace_8": 6.879403055013904,
+    "source_trace_9": 7.997056274847746
+  },
+  "currentPlaneContinuityNotClaimed": true,
+  "noInheritedSource313PourOrSource272CadQualification": true,
+  "allInputsUnchanged": true,
+  "nativeOrSdkExecutedByPeer": false,
+  "suppliedHelpersExecutedByPeer": false,
+  "geometryDistanceAlgorithmsReexecuted": false,
+  "referenceWirePourClearanceQualified": false,
+  "ownNetReentryQualified": false,
+  "regeneratedPlaneContinuityQualified": false,
+  "referenceQualified": false,
+  "tiQualified": false,
+  "cadQualified": false,
+  "electricalTimingQualified": false,
+  "fullBoardPassed": false,
+  "all49Accepted": false,
+  "fabricationReady": false
+}

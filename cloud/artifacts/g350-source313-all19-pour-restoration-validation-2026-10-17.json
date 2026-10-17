@@ -1,0 +1,67 @@
+{
+  "scope": "SOURCE313_POUR327_PORTABLE26_AND242_TARGET_ZERO_WRITE_SMOKE_NOT_BOARD_QUALIFICATION",
+  "passed": true,
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-source313-scoped-all19-pour-margin-2026-10-17.manifest.json",
+        "--destination",
+        "/tmp/g350-pour327-smoke-unb9k2mj/extracted",
+        "--verify-archive"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 26 evidence members; restored 0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-routing-evidence.py",
+        "/workspace/g350-linux-handheld/cloud/artifacts/g350-source313-scoped-all19-pour-margin-2026-10-17.manifest.json",
+        "--destination",
+        "/tmp/g350-pour327-smoke-unb9k2mj/extracted"
+      ],
+      "returncode": 0,
+      "stdout": "Verified 26 evidence members; restored 26\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/g350-linux-handheld/scripts/restore-g350-four-layer-routing-workspace.py",
+        "--saved-directory",
+        "/tmp/g350-pour327-smoke-unb9k2mj/extracted/.cloud-tools/ddr-source313-pour327-2026-10-17",
+        "--restore"
+      ],
+      "returncode": 0,
+      "stdout": "{\"savedFilesVerified\": 22, \"restoredFiles\": 0, \"mode\": \"restore\", \"routingExecuted\": false, \"all49Accepted\": false, \"fabricationReady\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "archiveSha256": "ecdbf50bc83fc7231e9969bacfe1d2d3d2dcba7eb2fc3aabd7155cca0efce040",
+  "manifestSha256": "47bbeca1ea9f1d4442f08bfb229e6a667607f1e6d2e4622f1225d79828faf0d4",
+  "normalizedHeadersVerified": true,
+  "all26MemberHashesBytesModesVerified": true,
+  "all242ActualTargetsUnchanged": true,
+  "isolatedPayloadRemoved": true,
+  "restoredWorkspaceFiles": 0,
+  "scopedPourMarginAggregateSha256": "60a3e0f6c0ca9bf0a91390385e314f116b7926cad2bcaa7e0ce6e99d4f9aa5cd",
+  "sdkExecuted": false,
+  "geometryRecomputed": false,
+  "all49Accepted": false,
+  "fullBoardPassed": false,
+  "nativeBoardPassed": false,
+  "fullTimingPassed": false,
+  "electricalTimingQualified": false,
+  "tiQualified": false,
+  "referenceContinuityQualified": false,
+  "cadQualified": false,
+  "defaultBoardPromoted": false,
+  "fabricationReady": false,
+  "currentPourQualified": false,
+  "ownNetReentryQualified": false,
+  "freshPdnPlaneConnectivityQualified": false,
+  "referenceWireGeometryIncluded": false
+}

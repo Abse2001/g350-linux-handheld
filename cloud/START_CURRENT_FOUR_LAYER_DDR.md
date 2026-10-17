@@ -23,26 +23,39 @@ checks 0.0.242. Attached upstream source is for inspection. Installation and
 Linux/KiCad setup history remain in `cloud/SETUP_REQUEST.md`, `AGENTS.md` and
 `docs/CLOUD_HANDOFF.md`; `cloud/CONTINUE_BOARD.md` preserves board history.
 
-For current routing, read `cloud/DDR_FOUR_LAYER_MANUAL_ROUTING_2026-10-16.md`
-first. Its latest section supersedes older counts and Top/Bottom-only requests.
+For current routing, read `cloud/DDR_CA18_EDITABLE_SOURCE_2026-10-17.md`
+first, then `cloud/DDR_FOUR_LAYER_MANUAL_ROUTING_2026-10-16.md` for history.
+The current report supersedes older counts and Top/Bottom-only requests.
 The user chose DDR signals on all four copper layers: Top, Inner1, Inner2 and
 Bottom. TI's usual four-layer stack instead reserves inner reference planes;
 the chosen arrangement still needs reference redesign and electrical review.
 
-The latest editable checkpoint is Source313 / candidate299: all 49 genuine
-CPU/RAM connections, 35 fresh fidelity checks, 280 real parts and 234 fullspan
+The latest editable checkpoint is Source333 / physical Model328: all 49 genuine
+CPU/RAM numeric-pad graphs, 35 fresh fidelity checks, 280 real parts and 236 fullspan
 vias. Both 11-member byte groups pass planar skew at 0.5771666935 and
 0.5769421603 mm against 0.635 mm. All three pair skews pass 0.127 mm.
-Command/clock is unfinished: 16/26 reach minimum, ten remain short, full skew
+Command/clock is unfinished: 18/26 reach minimum, eight remain short, full skew
 17.6628187566 mm fails. All 32 native checks completed with 951 unfiltered
-findings; auth315 authenticates all 234 vias without foreign track violations.
-All 19 current pours remain independently unqualified.
+findings: one bus-skew failure, 70 unrouted declarations, 718 connectivity
+findings and 162 width warnings. None of the width warnings directly names a
+current DDR declaration; no finding is filtered or waived. Auth335 authenticates
+all 236 actual vias without foreign track violations or unresolved identities.
+Audits339/340 and coverage341 complete the scoped foreign-copper margin
+check of all 19 literal Source333 pours, all 236 vias and 5573 DDR wire segments,
+with zero findings and minimum edge gap 0.1183205295 mm against 0.1016 mm.
+This excludes reference-wire geometry and does not qualify reference continuity,
+own-net reentry or PDN connectivity. Later models do not inherit this result.
 
-Separate physical model318 tunes Source37 to 21.2000 mm, retains all 49 paths
-and both byte groups, and reaches 17/26 command/clock minima with nine short.
-It passes the fresh physical49/changed-join/critical API/C31/reference/PDN gates,
-but has no fresh editable-source/native-board/pour/CAD qualification. Do not
-silently replace Source313 with that model or combine incompatible studies.
+All four layers contain DDR traces. The current segment counts are Top362,
+Inner1 1684, Inner2 2078 and Bottom1449. Model328 changes only bodies20/23/25/36
+from Model318, with two genuine additional Source25 vias. Source25 now reaches
+21.1965717360 mm. The Source20 clearance repair shortens it to12.1001310191 mm;
+it remains underlength. Both bytes and all other45 bodies remain held. Changed
+edges introduce no preferred3W self-spacing failures; retained old preferred
+self/foreign-spacing findings remain unwaived. Whole TI qualification is false.
+The remaining short command/clock owners are0/19/5/20/7/22/8/9. Source0/ODT
+fanout alternatives remain studies; no partial route or incomplete power-via
+replacement is adopted. Preserve true package pins and all power connections.
 
 Source272 has a separate fresh KiCad10 scoped49 connectivity proof. Read
 `cloud/DDR_SOURCE272_KICAD_CONNECTIVITY_2026-10-16.md`: its default DRC retains
@@ -54,10 +67,19 @@ sources. Keep the pinned KiCad image/archive and rootfs under ignored
 Use the restored prepared filesystem first. If routing evidence is missing,
 follow the current report and its hash-pinned archive manifests. Restore the
 Source32 lineage, then Source209 → Source228 → Source248 → Source257 →
-Source272-v2 → Source289 → Model299 → Source313 → Model318, in order.
-The four newest increments passed isolated archive extraction and the existing
-workspace helper's actual zero-write `--restore` branch, checking 167, 180,
-220 and 239 respective prerequisite/local targets. All hashes and modes remain
+Source272-v2 → Source289 → Model299 → Source313 → Model318 → Model328,
+then the current Source333 increment, in order. Model328's verified archive
+contains66 files and301 cumulative restore targets. The Source313 pour327
+increment is separate historical evidence, not a Source333 prerequisite.
+Current Source333 archive:
+`cloud/artifacts/g350-four-layer-both-bytes-ca18-connected49-source333-2026-10-17.tar.gz`,
+SHA256 `3b42fefada48d7338fbd674c9461d0b46ab6f51690102465816c3861c0ad2fe9`.
+Use its adjacent `.manifest.json` and canonical saved directory
+`.cloud-tools/ddr-four-layer-source333-2026-10-17`. Its71 members passed
+normalized-header/hash/size/mode checks, isolated extraction and all368 actual
+local/prerequisite targets before and after zero-write workspace restore.
+Completed increments pass isolated archive extraction and the existing
+workspace helper's actual zero-write `--restore` branch. All hashes and modes remain
 in their manifests and linked restore reports. Extract newer archives into a
 task-owned `/tmp` directory to preserve workspace disk capacity, then pass that
 directory's full `.cloud-tools/...` saved path to
